@@ -1,0 +1,2 @@
+using UnityEngine;
+namespace DungeonSlash { [CreateAssetMenu(menuName = "Dungeon Slash/Monster Attack Data")] public sealed class MonsterAttackData : ScriptableObject { [Tooltip("Leave empty when this attack should not announce a name.")] public string displayName = ""; [Min(0f)] public float damage = 12f; [Min(0f)] public float shieldDamage = 24f; [Min(.01f)] public float windupDuration = .75f; [Min(.01f)] public float recoveryDuration = .5f; public bool guardable = true; } }

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5268a9354c4f1c4090b31c19da88ddf, type: 3}
+  m_Name: PlayerCombatData
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  shieldMax: 30
+  normalShieldRegen: 5
+  brokenShieldRegen: 5
+  baseAttackDamage: 10
+  baseChargeDamage: 30
+  attackCooldown: 1
+  minimumAttackCooldown: 0.15
+  chargeDuration: 0.75
+  inputMoveTolerance: 24
+  attackSegmentWidth: 18
+  guardSwipeDistance: 70
+  swipeSampleWindowSeconds: 0.12
+  minimumSwipeDistance: 84
+  minimumSwipeSpeed: 520
+  minimumDirectionConsistency: 0.8

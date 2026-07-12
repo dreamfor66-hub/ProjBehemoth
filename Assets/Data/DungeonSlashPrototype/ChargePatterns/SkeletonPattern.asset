@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0cbc4f62c19624aade3eeb05750182, type: 3}
+  m_Name: SkeletonPattern
+  m_EditorClassIdentifier: 
+  displayName: Skeleton Core Exposure
+  timeLimit: 4
+  weakPoints:
+  - id: core-1
+    normalizedPosition: {x: -62, y: 20}
+    hitRadius: 30
+    requiredChargeHits: 1
+  - id: core-2
+    normalizedPosition: {x: 66, y: -38}
+    hitRadius: 30
+    requiredChargeHits: 1

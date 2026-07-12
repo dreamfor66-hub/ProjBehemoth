@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: Renewal
+  m_EditorClassIdentifier: 
+  id: Renewal
+  displayName: "\uC7AC\uC0DD"
+  description: "\uC989\uC2DC \uCCB4\uB825 +30"
+  maxStacks: 3
+  modifiers:
+  - kind: 5
+    value: 30

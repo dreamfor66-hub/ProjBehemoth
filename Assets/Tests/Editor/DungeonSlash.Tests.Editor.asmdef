@@ -1,0 +1,21 @@
+{
+  "name": "DungeonSlash.Tests.Editor",
+  "rootNamespace": "DungeonSlash.Tests",
+  "references": [
+    "DungeonSlash"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

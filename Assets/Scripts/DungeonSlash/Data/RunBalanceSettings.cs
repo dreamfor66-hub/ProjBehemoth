@@ -1,0 +1,2 @@
+using UnityEngine;
+namespace DungeonSlash { [CreateAssetMenu(menuName = "Dungeon Slash/Run Balance Settings")] public sealed class RunBalanceSettings : ScriptableObject { [Min(1)] public int startingGold = 25; [Min(1)] public int initialExperienceRequirement = 45; [Min(1)] public int experienceRequirementGrowth = 25; [Min(1)] public int goddessExperience = 35; [Min(1f)] public float fountainHeal = 35f; [Min(1)] public int rewardGold = 24; [Min(1)] public int eliteGoldBonus = 20; } }

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: SteelLine
+  m_EditorClassIdentifier: 
+  id: SteelLine
+  displayName: "\uAC15\uCCA0\uC758 \uC120"
+  description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +25%"
+  maxStacks: 3
+  modifiers:
+  - kind: 0
+    value: 0.25

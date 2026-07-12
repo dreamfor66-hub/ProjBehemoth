@@ -1,0 +1,3 @@
+using System.Collections.Generic;
+using UnityEngine;
+namespace DungeonSlash { [CreateAssetMenu(menuName = "Dungeon Slash/Monster Data")] public sealed class MonsterData : ScriptableObject { public string displayName = "Skeleton"; [Min(1f)] public float maxHp = 80f; [Min(.1f)] public float normalAttackInterval = 2f; [Min(.1f)] public float chargeInterval = 6f; [Min(.1f)] public float stunDuration = 3f; [Min(1f)] public float stunDamageMultiplier = 1.5f; [Min(0)] public int experienceReward = 18; [Min(0)] public int goldReward = 10; [Min(10f)] public float bodyHitRadius = 115f; public MonsterAttackData normalAttack; public MonsterAttackData chargeAttack; public List<ChargePatternData> chargePatterns = new(); public Color bodyColor = new(.78f, .3f, .3f); } }
