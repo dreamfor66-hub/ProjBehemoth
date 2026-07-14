@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DungeonSlash
 {
-    public enum PointerGestureState { None, Pressed, Charging, Charged, Attacking, Guarding }
+    public enum PointerGestureState { None, Pressed, Charging, Charged, SecondCharging, SecondCharged, Attacking, Guarding }
     public enum ShieldState { Ready, Guarding, Broken, Recharging }
     public enum MonsterState { Idle, Attacking, Charging, Stunned, Dead }
     public enum DamageType { NormalAttack, ChargeAttack, MonsterAttack, Special }
@@ -48,12 +48,30 @@ namespace DungeonSlash
         public float StunDamageMultiplier { get; private set; } = 1f;
         public float ShieldOnHit { get; private set; }
         public float ShieldOnWeakPoint { get; private set; }
+        public float AttackReach { get; private set; }
+        public float MonsterKillHeal { get; private set; }
+        public float AllDamageMultiplier { get; private set; } = 1f;
+        public float DamageReduction { get; private set; }
+        public float DamagePerAttackDistance { get; private set; }
+        public bool ChargeGuardEnabled => chargeGuardSources > 0;
+        public bool DoubleChargeEnabled => doubleChargeSources > 0;
         public bool IsAlive => CurrentHp > 0f;
-        public bool IsGuarding => ShieldState == ShieldState.Guarding;
+        public bool IsGuarding => ShieldState == ShieldState.Guarding || chargeGuardActive;
 
         private readonly PlayerCombatData data;
         private float normalShieldRegen;
         private float brokenShieldRegen;
+        private bool chargeGuardActive;
+        private int chargeGuardSources;
+        private int doubleChargeSources;
+        private readonly List<TemporaryModifier> temporaryModifiers = new();
+
+        private readonly struct TemporaryModifier
+        {
+            public StatModifier Modifier { get; }
+            public float ExpiresAt { get; }
+            public TemporaryModifier(StatModifier modifier, float expiresAt) { Modifier = modifier; ExpiresAt = expiresAt; }
+        }
 
         public PlayerCombatRuntime(PlayerCombatData source)
         {
@@ -71,12 +89,19 @@ namespace DungeonSlash
             AttackCooldownRemaining = 0f;
             NormalDamageMultiplier = ChargeDamageMultiplier = AttackCooldownMultiplier = ChargeDurationMultiplier = StunDamageMultiplier = 1f;
             ShieldOnHit = ShieldOnWeakPoint = 0f;
+            AttackReach = MonsterKillHeal = 0f;
+            AllDamageMultiplier = 1f;
+            DamageReduction = 0f;
+            DamagePerAttackDistance = 0f;
+            chargeGuardActive = false;
+            chargeGuardSources = doubleChargeSources = 0;
+            temporaryModifiers.Clear();
             normalShieldRegen = data.normalShieldRegen;
             brokenShieldRegen = data.brokenShieldRegen;
         }
 
-        public float NormalAttackDamage => data.baseAttackDamage * NormalDamageMultiplier;
-        public float ChargeAttackDamage => data.baseChargeDamage * ChargeDamageMultiplier;
+        public float NormalAttackDamage => data.baseAttackDamage * NormalDamageMultiplier * AllDamageMultiplier;
+        public float ChargeAttackDamage => data.baseChargeDamage * ChargeDamageMultiplier * AllDamageMultiplier;
         public float CurrentCooldown => Mathf.Max(data.minimumAttackCooldown, data.attackCooldown * AttackCooldownMultiplier);
         public float CurrentChargeDuration => data.chargeDuration * ChargeDurationMultiplier;
         public float ChargeTolerance => data.inputMoveTolerance;
@@ -90,6 +115,7 @@ namespace DungeonSlash
         public void Tick(float deltaTime)
         {
             AttackCooldownRemaining = Mathf.Max(0f, AttackCooldownRemaining - deltaTime);
+            ExpireTemporaryModifiers();
             if (!IsAlive || IsGuarding) return;
 
             if (ShieldState == ShieldState.Broken)
@@ -125,6 +151,11 @@ namespace DungeonSlash
             return true;
         }
 
+        public void SetChargeGuard(bool enabled)
+        {
+            chargeGuardActive = enabled && IsAlive && ShieldState != ShieldState.Broken && ShieldCurrent > 0f;
+        }
+
         public void RestoreShield(float amount) => ShieldCurrent = Mathf.Min(ShieldMax, ShieldCurrent + amount);
         public void RestoreShieldForNavigation()
         {
@@ -132,26 +163,72 @@ namespace DungeonSlash
             ShieldState = ShieldState.Ready;
         }
         public void Heal(float amount) => CurrentHp = Mathf.Min(MaxHp, CurrentHp + amount);
+        public void Revive(float healthFraction)
+        {
+            CurrentHp = Mathf.Max(1f, MaxHp * Mathf.Clamp01(healthFraction));
+            RestoreShieldForNavigation();
+        }
+        public DamageResult TakeEnvironmentalDamage(float damage)
+        {
+            var appliedDamage = Mathf.Max(0f, damage);
+            CurrentHp = Mathf.Max(0f, CurrentHp - appliedDamage);
+            return new DamageResult(appliedDamage, 0f, !IsAlive, false);
+        }
 
         public void ApplyModifiers(IEnumerable<StatModifier> modifiers)
         {
             foreach (var modifier in modifiers)
+                ApplyModifier(modifier, 1f);
+        }
+
+        /// <summary>Applies a stat effect for one combat. A zero duration lasts until the combat ends.</summary>
+        public void ApplyCombatModifier(StatModifier modifier, float duration)
+        {
+            ApplyModifier(modifier, 1f);
+            temporaryModifiers.Add(new TemporaryModifier(modifier, duration > 0f ? Time.unscaledTime + duration : float.PositiveInfinity));
+        }
+
+        public void ClearCombatModifiers()
+        {
+            foreach (var modifier in temporaryModifiers) ApplyModifier(modifier.Modifier, -1f);
+            temporaryModifiers.Clear();
+        }
+
+        private void ExpireTemporaryModifiers()
+        {
+            var now = Time.unscaledTime;
+            for (var index = temporaryModifiers.Count - 1; index >= 0; index--)
             {
-                switch (modifier.kind)
-                {
-                    case ModifierKind.NormalDamage: NormalDamageMultiplier += modifier.value; break;
-                    case ModifierKind.ChargeDamage: ChargeDamageMultiplier += modifier.value; break;
-                    case ModifierKind.AttackCooldownMultiplier: AttackCooldownMultiplier = Mathf.Max(.1f, AttackCooldownMultiplier - modifier.value); break;
-                    case ModifierKind.ChargeDurationMultiplier: ChargeDurationMultiplier = Mathf.Max(.2f, ChargeDurationMultiplier - modifier.value); break;
-                    case ModifierKind.MaxHp: MaxHp += modifier.value; CurrentHp += modifier.value; break;
-                    case ModifierKind.Heal: Heal(modifier.value); break;
-                    case ModifierKind.ShieldMax: ShieldMax += modifier.value; ShieldCurrent += modifier.value; break;
-                    case ModifierKind.NormalShieldRegen: normalShieldRegen += modifier.value; break;
-                    case ModifierKind.BrokenShieldRegen: brokenShieldRegen += modifier.value; break;
-                    case ModifierKind.ShieldOnHit: ShieldOnHit += modifier.value; break;
-                    case ModifierKind.ShieldOnWeakPoint: ShieldOnWeakPoint += modifier.value; break;
-                    case ModifierKind.StunDamageMultiplier: StunDamageMultiplier += modifier.value; break;
-                }
+                if (temporaryModifiers[index].ExpiresAt > now) continue;
+                ApplyModifier(temporaryModifiers[index].Modifier, -1f);
+                temporaryModifiers.RemoveAt(index);
+            }
+        }
+
+        private void ApplyModifier(StatModifier modifier, float direction)
+        {
+            var value = modifier.value * direction;
+            switch (modifier.kind)
+            {
+                case ModifierKind.NormalDamage: NormalDamageMultiplier += value; break;
+                case ModifierKind.ChargeDamage: ChargeDamageMultiplier += value; break;
+                case ModifierKind.AttackCooldownMultiplier: AttackCooldownMultiplier = Mathf.Max(.1f, AttackCooldownMultiplier - value); break;
+                case ModifierKind.ChargeDurationMultiplier: ChargeDurationMultiplier = Mathf.Max(.2f, ChargeDurationMultiplier - value); break;
+                case ModifierKind.MaxHp: MaxHp = Mathf.Max(1f, MaxHp + value); CurrentHp = Mathf.Clamp(CurrentHp + (direction > 0f ? modifier.value : 0f), 0f, MaxHp); break;
+                case ModifierKind.Heal: if (direction > 0f) Heal(modifier.value); break;
+                case ModifierKind.ShieldMax: ShieldMax = Mathf.Max(0f, ShieldMax + value); ShieldCurrent = Mathf.Clamp(ShieldCurrent + (direction > 0f ? modifier.value : 0f), 0f, ShieldMax); break;
+                case ModifierKind.NormalShieldRegen: normalShieldRegen += value; break;
+                case ModifierKind.BrokenShieldRegen: brokenShieldRegen += value; break;
+                case ModifierKind.ShieldOnHit: ShieldOnHit += value; break;
+                case ModifierKind.ShieldOnWeakPoint: ShieldOnWeakPoint += value; break;
+                case ModifierKind.StunDamageMultiplier: StunDamageMultiplier += value; break;
+                case ModifierKind.AttackReach: AttackReach += value; break;
+                case ModifierKind.MonsterKillHeal: MonsterKillHeal += value; break;
+                case ModifierKind.AllDamageMultiplier: AllDamageMultiplier = Mathf.Max(.1f, AllDamageMultiplier + value); break;
+                case ModifierKind.DamageReduction: DamageReduction = Mathf.Clamp01(DamageReduction + value); break;
+                case ModifierKind.ChargeGuardEnabled: chargeGuardSources += direction > 0f ? 1 : -1; break;
+                case ModifierKind.DoubleChargeEnabled: doubleChargeSources += direction > 0f ? 1 : -1; break;
+                case ModifierKind.DamagePerAttackDistance: DamagePerAttackDistance += value; break;
             }
         }
 
@@ -165,8 +242,9 @@ namespace DungeonSlash
                 return new DamageResult(0f, request.ShieldDamage, false, true);
             }
 
-            CurrentHp = Mathf.Max(0f, CurrentHp - request.RawDamage);
-            return new DamageResult(request.RawDamage, 0f, !IsAlive, false);
+            var reducedDamage = request.RawDamage * (1f - DamageReduction);
+            CurrentHp = Mathf.Max(0f, CurrentHp - reducedDamage);
+            return new DamageResult(reducedDamage, 0f, !IsAlive, false);
         }
     }
 
@@ -199,6 +277,8 @@ namespace DungeonSlash
     public sealed class MonsterRuntime
     {
         public MonsterData Data { get; }
+        public float MaxHp { get; }
+        public float DamageMultiplier { get; }
         public float CurrentHp { get; private set; }
         public MonsterState State { get; private set; }
         public float StateTimer { get; private set; }
@@ -210,10 +290,12 @@ namespace DungeonSlash
         public int ChargePatternIndex { get; private set; }
         private readonly List<WeakPointRuntime> weakPoints = new();
 
-        public MonsterRuntime(MonsterData data)
+        public MonsterRuntime(MonsterData data, float healthMultiplier = 1f, float damageMultiplier = 1f)
         {
             Data = data;
-            CurrentHp = data.maxHp;
+            MaxHp = data.maxHp * Mathf.Max(.1f, healthMultiplier);
+            DamageMultiplier = Mathf.Max(.1f, damageMultiplier);
+            CurrentHp = MaxHp;
             State = MonsterState.Idle;
             NormalAttackTimer = data.normalAttackInterval;
             ChargeTimer = data.chargeInterval;
@@ -248,7 +330,12 @@ namespace DungeonSlash
         public bool ShouldCharge => State == MonsterState.Idle && ChargeTimer <= 0f;
         public void BeginNormalAttack() { State = MonsterState.Attacking; StateTimer = Data.normalAttack.windupDuration; }
         public bool IsNormalAttackReadyToHit => State == MonsterState.Attacking && StateTimer <= 0f;
-        public void CompleteNormalAttack() { State = MonsterState.Idle; NormalAttackTimer = Data.normalAttackInterval; }
+        public void CompleteNormalAttack()
+        {
+            if (!IsAlive) return;
+            State = MonsterState.Idle;
+            NormalAttackTimer = Data.normalAttackInterval;
+        }
         public void StartCharge(Vector2 center)
         {
             State = MonsterState.Charging;
@@ -262,7 +349,15 @@ namespace DungeonSlash
 
         public bool ChargeExpired => State == MonsterState.Charging && StateTimer <= 0f;
         public bool AllWeakPointsDestroyed => weakPoints.Count > 0 && weakPoints.All(point => point.IsDestroyed);
-        public void EndCharge() { foreach (var point in weakPoints) point.Deactivate(); weakPoints.Clear(); State = MonsterState.Idle; ChargeTimer = Data.chargeInterval; NormalAttackTimer = Data.normalAttackInterval; }
+        public void EndCharge()
+        {
+            if (!IsAlive) return;
+            foreach (var point in weakPoints) point.Deactivate();
+            weakPoints.Clear();
+            State = MonsterState.Idle;
+            ChargeTimer = Data.chargeInterval;
+            NormalAttackTimer = Data.normalAttackInterval;
+        }
         public void EnterStun() { foreach (var point in weakPoints) point.Deactivate(); weakPoints.Clear(); State = MonsterState.Stunned; StateTimer = Data.stunDuration; }
         public void TakeDamage(float damage)
         {

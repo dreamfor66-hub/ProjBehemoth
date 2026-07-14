@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: FrostOgre
+  m_EditorClassIdentifier: 
+  displayName: "\uC11C\uB9AC \uAC70\uC778"
+  maxHp: 350
+  normalAttackInterval: 2.55
+  chargeInterval: 5.4
+  stunDuration: 4.3
+  stunDamageMultiplier: 1.65
+  experienceReward: 116
+  goldReward: 14
+  bodyHitRadius: 108
+  normalAttack: {fileID: 11400000, guid: 62019fdb93c09c04ab93e187c5fc7966, type: 2}
+  chargeAttack: {fileID: 11400000, guid: b7513afe2ed561847b341b11ae578676, type: 2}
+  chargePatterns:
+  - {fileID: 11400000, guid: 950849819312d4d46a00e3ad80f08fa4, type: 2}
+  bodyColor: {r: 0.22, g: 0.52, b: 0.76, a: 1}

@@ -19,7 +19,7 @@ namespace DungeonSlash
             leaveButton = newLeaveButton;
         }
 
-        public void Show(IReadOnlyList<EquipmentData> equipment, RunState run, Action<EquipmentData> buy, Action leave)
+        public void Show(IReadOnlyList<EquipmentData> equipment, RunState run, ShopSystem shop, Action<EquipmentData> buy, Action leave)
         {
             panel.SetActive(true);
             var canBuyAnything = false;
@@ -29,8 +29,7 @@ namespace DungeonSlash
                 items[index].gameObject.SetActive(visible);
                 if (!visible) continue;
                 var item = equipment[index];
-                var alreadyOwned = run.EquippedItems.Contains(item) && item.maxPurchaseCount <= 1;
-                var affordable = !alreadyOwned && run.Gold >= item.price;
+                var affordable = shop != null ? shop.CanPurchase(run, item) : (!run.EquippedItems.Contains(item) && run.Gold >= item.price);
                 canBuyAnything |= affordable;
                 items[index].Bind(item, affordable, buy);
             }

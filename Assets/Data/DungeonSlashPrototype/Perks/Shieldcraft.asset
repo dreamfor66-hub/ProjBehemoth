@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Shieldcraft
   m_EditorClassIdentifier: 
   id: Shieldcraft
-  displayName: "\uBC29\uD328\uACF5"
-  description: "\uCD5C\uB300 \uBC29\uD328 +30"
+  displayName: "\uBC29\uD328 \uC7A5\uC778"
+  description: "\uCD5C\uB300 \uC2E4\uB4DC +25"
+  icon: {fileID: 21300000, guid: c65a1753f6ae5614189bbd968b1a3d4a, type: 3}
   maxStacks: 3
   modifiers:
   - kind: 6
-    value: 30
+    value: 25

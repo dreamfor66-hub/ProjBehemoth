@@ -52,6 +52,7 @@ namespace DungeonSlash
         public bool IsCleared { get; set; }
         public bool IsRevealed { get; set; }
         public bool IsMajorRoom { get; set; }
+        public ChestContent ChestContent { get; set; } = ChestContent.Relic;
         public HashSet<int> Connections { get; } = new();
         public DungeonRoom(int id, DungeonPosition position) { RoomId = id; Position = position; }
     }
@@ -110,10 +111,11 @@ namespace DungeonSlash
     public sealed class DungeonRunState
     {
         public int Seed { get; }
+        public int Floor { get; }
         public DungeonGraph Graph { get; }
         public PlayerDungeonState Player { get; }
         private readonly HashSet<string> revealedConnections = new();
-        public DungeonRunState(int seed, DungeonGraph graph) { Seed = seed; Graph = graph; Player = new PlayerDungeonState(graph.StartRoom); }
+        public DungeonRunState(int seed, DungeonGraph graph, int floor = 1) { Seed = seed; Floor = Math.Max(1, floor); Graph = graph; Player = new PlayerDungeonState(graph.StartRoom); }
         public void RevealConnection(DungeonRoom from, DungeonRoom to) => revealedConnections.Add(ConnectionKey(from, to));
         public bool IsConnectionRevealed(DungeonRoom from, DungeonRoom to) => revealedConnections.Contains(ConnectionKey(from, to));
         private static string ConnectionKey(DungeonRoom a, DungeonRoom b) => a.RoomId < b.RoomId ? $"{a.RoomId}:{b.RoomId}" : $"{b.RoomId}:{a.RoomId}";

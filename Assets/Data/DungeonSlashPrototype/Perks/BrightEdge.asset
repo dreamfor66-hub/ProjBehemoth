@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: BrightEdge
   m_EditorClassIdentifier: 
   id: BrightEdge
-  displayName: "\uC12C\uAD11\uC758 \uCE7C\uB0A0"
-  description: "\uCC28\uC9C0 \uACF5\uACA9 \uD53C\uD574 +35%"
-  maxStacks: 3
+  displayName: "\uBC1D\uC740 \uB0A0"
+  description: "\uCC28\uC9C0 \uACF5\uACA9 \uD53C\uD574 +20%"
+  icon: {fileID: 21300000, guid: 5ac2ae8429b2ad94ba1adb7bce6a8dd7, type: 3}
+  maxStacks: 5
   modifiers:
   - kind: 1
-    value: 0.35
+    value: 0.2

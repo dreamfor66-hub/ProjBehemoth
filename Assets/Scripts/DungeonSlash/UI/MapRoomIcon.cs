@@ -149,8 +149,10 @@ namespace DungeonSlash
             RoomEncounterType.Elite => "\uC815\uC608",
             RoomEncounterType.Boss => "\uBCF4\uC2A4",
             RoomEncounterType.Reward => "\uBCF4\uC0C1",
-            RoomEncounterType.MajorReward => "\uB300\uBCF4\uC0C1",
+            RoomEncounterType.MajorReward => "\uC0C1\uC790",
             RoomEncounterType.Fountain => "\uBD84\uC218",
+            RoomEncounterType.PoisonFountain => "\uBD84\uC218",
+            RoomEncounterType.Chest => "\uC0C1\uC790",
             RoomEncounterType.Goddess => "\uC5EC\uC2E0",
             RoomEncounterType.Shop => "\uC0C1\uC810",
             _ => "?"

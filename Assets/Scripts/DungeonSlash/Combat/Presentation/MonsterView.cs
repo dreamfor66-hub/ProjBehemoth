@@ -55,7 +55,7 @@ namespace DungeonSlash
                 };
                 stateLabel.enabled = !string.IsNullOrEmpty(stateLabel.text);
             }
-            SetGauge(hpFill, runtime.CurrentHp / runtime.Data.maxHp);
+            SetGauge(hpFill, runtime.MaxHp <= 0f ? 0f : runtime.CurrentHp / runtime.MaxHp);
             if (chargeTimeLabel != null)
             {
                 var charging = runtime.State == MonsterState.Charging && runtime.StateTimer > 0f;

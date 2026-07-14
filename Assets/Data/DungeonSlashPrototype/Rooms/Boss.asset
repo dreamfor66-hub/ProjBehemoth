@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697c3def854419429c68345d6a1241b, type: 3}
   m_Name: Boss
   m_EditorClassIdentifier: 
-  encounterType: 8
+  encounterType: 10
   displayName: Boss
   mapColor: {r: 1, g: 0.72, b: 0.18, a: 1}
   revealAtStart: 1

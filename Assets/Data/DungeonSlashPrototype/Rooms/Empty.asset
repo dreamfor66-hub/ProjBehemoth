@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697c3def854419429c68345d6a1241b, type: 3}
   m_Name: Empty
   m_EditorClassIdentifier: 
-  encounterType: 9
+  encounterType: 11
   displayName: Empty
   mapColor: {r: 0.6, g: 0.65, b: 0.72, a: 1}
   revealAtStart: 0

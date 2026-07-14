@@ -11,11 +11,20 @@ namespace DungeonSlash
         [SerializeField] private DungeonGenerationSettings generationSettings;
         private FacingDirection? hoveredDirection;
         public DungeonRunState State { get; private set; }
+        public int Floor { get; private set; } = 1;
         public event Action<DungeonRoom> RoomEntered;
         public void Configure(DungeonMapView map, NavigationChoiceView choices, DungeonGenerationSettings settings) { mapView = map; navigation = choices; generationSettings = settings; }
         public void BeginRun(int seed)
         {
-            State = new DungeonGenerator(generationSettings).Generate(seed);
+            Floor = 1;
+            State = new DungeonGenerator(generationSettings).Generate(seed, Floor);
+            RefreshNavigation();
+        }
+        public void BeginNextFloor()
+        {
+            Floor++;
+            var nextSeed = State == null ? Floor * 7919 : State.Seed + Floor * 7919;
+            State = new DungeonGenerator(generationSettings).Generate(nextSeed, Floor);
             RefreshNavigation();
         }
         public void RefreshNavigation()

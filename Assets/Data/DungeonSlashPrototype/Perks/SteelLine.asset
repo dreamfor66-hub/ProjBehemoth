@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: SteelLine
   m_EditorClassIdentifier: 
   id: SteelLine
-  displayName: "\uAC15\uCCA0\uC758 \uC120"
-  description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +25%"
-  maxStacks: 3
+  displayName: "\uAC15\uCCA0 \uC120"
+  description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +15%"
+  icon: {fileID: 21300000, guid: b439a3e77c8fbe94bb769be3d3d59113, type: 3}
+  maxStacks: 5
   modifiers:
   - kind: 0
-    value: 0.25
+    value: 0.15

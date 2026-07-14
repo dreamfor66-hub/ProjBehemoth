@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: FrostBat
+  m_EditorClassIdentifier: 
+  displayName: "\uC11C\uB9AC \uBC15\uC950"
+  maxHp: 112
+  normalAttackInterval: 1.15
+  chargeInterval: 5.1
+  stunDuration: 2.8
+  stunDamageMultiplier: 1.65
+  experienceReward: 37
+  goldReward: 6
+  bodyHitRadius: 108
+  normalAttack: {fileID: 11400000, guid: a420b28ef252d4744bf1c1cc898b0988, type: 2}
+  chargeAttack: {fileID: 11400000, guid: dc26edc22e0fbb44294d4519c48f4ac0, type: 2}
+  chargePatterns:
+  - {fileID: 11400000, guid: 127889f0096f3784e8e0c8b99d91158b, type: 2}
+  bodyColor: {r: 0.42, g: 0.76, b: 1, a: 1}

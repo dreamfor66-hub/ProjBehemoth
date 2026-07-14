@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209799e5a106c5b448ef6bdbf92d4fb7, type: 3}
   m_Name: RunBalanceSettings
   m_EditorClassIdentifier: 
-  startingGold: 25
+  startingGold: 38
   initialExperienceRequirement: 45
   experienceRequirementGrowth: 25
   goddessExperience: 35
   fountainHeal: 35
+  toxicFountainHeal: 24
+  poisonTravelDamage: 6
+  poisonActionSlow: 0.15
   rewardGold: 24
   eliteGoldBonus: 20

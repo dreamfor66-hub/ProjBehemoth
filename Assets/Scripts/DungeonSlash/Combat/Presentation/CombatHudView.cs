@@ -15,9 +15,10 @@ namespace DungeonSlash
         [SerializeField] private RectTransform chargeGaugeRoot;
         [SerializeField] private ArcGaugeGraphic chargeGaugeTrack;
         [SerializeField] private ArcGaugeGraphic chargeGaugeFill;
+        [SerializeField] private ArcGaugeGraphic chargeGaugeSecondFill;
         [SerializeField] private Vector2 chargePointerOffset = new(0f, 90f);
 
-        public void Configure(Image newPlayerHp, Image newShield, Image newMonsterHp, Text newPlayerStats, Text newMonsterStats, RectTransform newChargeGaugeRoot, ArcGaugeGraphic newChargeGaugeTrack, ArcGaugeGraphic newChargeGaugeFill, Text newPlayerHpText = null, Text newShieldText = null)
+        public void Configure(Image newPlayerHp, Image newShield, Image newMonsterHp, Text newPlayerStats, Text newMonsterStats, RectTransform newChargeGaugeRoot, ArcGaugeGraphic newChargeGaugeTrack, ArcGaugeGraphic newChargeGaugeFill, Text newPlayerHpText = null, Text newShieldText = null, ArcGaugeGraphic newChargeGaugeSecondFill = null)
         {
             playerHp = newPlayerHp;
             shield = newShield;
@@ -29,10 +30,11 @@ namespace DungeonSlash
             chargeGaugeRoot = newChargeGaugeRoot;
             chargeGaugeTrack = newChargeGaugeTrack;
             chargeGaugeFill = newChargeGaugeFill;
+            chargeGaugeSecondFill = newChargeGaugeSecondFill;
             chargePointerOffset = new Vector2(0f, 90f);
         }
 
-        public void Bind(PlayerCombatRuntime player, MonsterRuntime monster, PointerGestureState gesture, float chargeProgress, Vector2 chargeOrigin)
+        public void Bind(PlayerCombatRuntime player, MonsterRuntime monster, PointerGestureState gesture, float chargeProgress, Vector2 chargeOrigin, float secondChargeProgress = 0f)
         {
             var hasPlayer = player != null;
             SetBarVisible(playerHp, hasPlayer);
@@ -60,13 +62,15 @@ namespace DungeonSlash
                 monsterStats.enabled = false;
             }
 
-            var showCharge = gesture == PointerGestureState.Charging || gesture == PointerGestureState.Charged;
+            var showCharge = gesture is PointerGestureState.Charging or PointerGestureState.Charged or PointerGestureState.SecondCharging or PointerGestureState.SecondCharged;
             if (chargeGaugeRoot != null) chargeGaugeRoot.gameObject.SetActive(showCharge);
             if (showCharge)
             {
                 if (chargeGaugeRoot != null) chargeGaugeRoot.anchoredPosition = chargeOrigin + chargePointerOffset;
                 if (chargeGaugeFill != null) chargeGaugeFill.SetFillAmount(chargeProgress);
+                if (chargeGaugeSecondFill != null) chargeGaugeSecondFill.SetFillAmount(secondChargeProgress);
             }
+            else if (chargeGaugeSecondFill != null) chargeGaugeSecondFill.SetFillAmount(0f);
         }
 
         private static void SetBarVisible(Image fill, bool visible)

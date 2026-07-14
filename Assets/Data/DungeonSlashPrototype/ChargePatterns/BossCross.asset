@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BossCross
   m_EditorClassIdentifier: 
   displayName: Cross Core
-  timeLimit: 3
+  timeLimit: 4
   weakPoints:
   - id: core-1
     normalizedPosition: {x: -72, y: 0}

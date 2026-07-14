@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: ImpactShield
+  m_EditorClassIdentifier: 
+  id: ImpactShield
+  displayName: "\uCDA9\uACA9 \uBC29\uD328"
+  description: "\uC801\uC911 \uC2DC \uC2E4\uB4DC +3"
+  icon: {fileID: 21300000, guid: 69aa37287c9ecd346a32bfb4e1b37d85, type: 3}
+  maxStacks: 3
+  modifiers:
+  - kind: 9
+    value: 7

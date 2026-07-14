@@ -166,6 +166,22 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void MonsterRuntime_DeadMonsterCannotBeReturnedToIdleByAResolvedCounterEffect()
+        {
+            var data = ScriptableObject.CreateInstance<MonsterData>();
+            data.maxHp = 10f;
+            var runtime = new MonsterRuntime(data);
+
+            runtime.TakeDamage(10f);
+            runtime.CompleteNormalAttack();
+            runtime.EndCharge();
+
+            Assert.That(runtime.IsAlive, Is.False);
+            Assert.That(runtime.State, Is.EqualTo(MonsterState.Dead));
+            Object.DestroyImmediate(data);
+        }
+
+        [Test]
         public void PlayerHud_ShowsHpAndShieldValuesInsideTheirGauges()
         {
             var root = new GameObject("HudRoot", typeof(RectTransform), typeof(Canvas));
@@ -306,6 +322,158 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void Potion_CombatStartStatEffectLastsForItsConfiguredTriggerMaximum()
+        {
+            var playerData = ScriptableObject.CreateInstance<PlayerCombatData>();
+            playerData.maxHp = 100f; playerData.shieldMax = 50f; playerData.baseAttackDamage = 10f;
+            var balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
+            balance.initialExperienceRequirement = 100;
+            var potion = ScriptableObject.CreateInstance<EquipmentData>();
+            potion.itemKind = ShopItemKind.Potion;
+            potion.trigger = new EquipmentTrigger { triggerType = TriggerType.OnCombatStartAfterConsume, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1, triggerMaxCount = 2 };
+            potion.targetType = TargetType.Owner;
+            potion.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectMagnitude = .3f, effectCount = 1, effectStatType = ModifierKind.AllDamageMultiplier };
+            var state = new RunState(playerData, balance);
+
+            Assert.That(state.TryStorePotion(potion), Is.True);
+            Assert.That(state.TryUsePotion(potion), Is.True);
+            state.BeginCombat();
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(13f).Within(.001f));
+            state.BeginCombat();
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(13f).Within(.001f));
+            state.BeginCombat();
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(10f).Within(.001f));
+
+            Object.DestroyImmediate(playerData);
+            Object.DestroyImmediate(balance);
+            Object.DestroyImmediate(potion);
+        }
+
+        [Test]
+        public void Potion_RevivesThePlayerOnceAfterDeath()
+        {
+            var playerData = ScriptableObject.CreateInstance<PlayerCombatData>();
+            playerData.maxHp = 100f; playerData.shieldMax = 50f;
+            var balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
+            balance.initialExperienceRequirement = 100;
+            var potion = ScriptableObject.CreateInstance<EquipmentData>();
+            potion.itemKind = ShopItemKind.Potion;
+            potion.trigger = new EquipmentTrigger { triggerType = TriggerType.OnConsume, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1, triggerMaxCount = 1 };
+            potion.targetType = TargetType.Owner;
+            potion.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectMagnitude = .35f, effectCount = 1, effectStatType = ModifierKind.RevivalHealthFraction };
+            var state = new RunState(playerData, balance);
+
+            state.TryStorePotion(potion);
+            Assert.That(state.TryUsePotion(potion), Is.True);
+            state.Player.TakeEnvironmentalDamage(150f);
+            Assert.That(state.Player.IsAlive, Is.False);
+            Assert.That(state.TryConsumeRevival(), Is.True);
+            Assert.That(state.Player.CurrentHp, Is.EqualTo(35f).Within(.001f));
+            Assert.That(state.TryConsumeRevival(), Is.False);
+
+            Object.DestroyImmediate(playerData);
+            Object.DestroyImmediate(balance);
+            Object.DestroyImmediate(potion);
+        }
+
+        [Test]
+        public void Poison_SlowsActionsAndDamagesOnEachRoomMove()
+        {
+            var playerData = ScriptableObject.CreateInstance<PlayerCombatData>();
+            playerData.maxHp = 100f; playerData.shieldMax = 50f; playerData.attackCooldown = 1f; playerData.minimumAttackCooldown = .1f; playerData.chargeDuration = 1f;
+            var balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
+            balance.initialExperienceRequirement = 100;
+            var state = new RunState(playerData, balance);
+
+            state.ApplyPoison(6f, .15f);
+            var travelDamage = state.ApplyTravelHazard();
+
+            Assert.That(state.Player.CurrentCooldown, Is.EqualTo(1.15f).Within(.001f));
+            Assert.That(state.Player.CurrentChargeDuration, Is.EqualTo(1.15f).Within(.001f));
+            Assert.That(travelDamage.HpDamage, Is.EqualTo(6f).Within(.001f));
+            Assert.That(state.Player.CurrentHp, Is.EqualTo(94f).Within(.001f));
+            Object.DestroyImmediate(playerData);
+            Object.DestroyImmediate(balance);
+        }
+
+        [Test]
+        public void SecondFloorGeneration_UsesHiddenChestOutcomes()
+        {
+            var settings = ScriptableObject.CreateInstance<DungeonGenerationSettings>();
+            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumChestDistance = 4;
+            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.chestRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
+            var state = new DungeonGenerator(settings).Generate(8812, 2);
+            var chests = state.Graph.Rooms.Where(room => room.Type == RoomEncounterType.Chest).ToArray();
+
+            Assert.That(state.Floor, Is.EqualTo(2));
+            Assert.That(chests.Length, Is.EqualTo(2));
+            Assert.That(chests.All(room => room.ChestContent is ChestContent.Gold or ChestContent.Relic or ChestContent.Mimic), Is.True);
+            Assert.That(state.Graph.Rooms.Any(room => room.Type == RoomEncounterType.MajorReward), Is.False);
+            Object.DestroyImmediate(settings);
+        }
+
+        [Test]
+        public void FirstFloorGeneration_HasExactlyOneGoldChestAndOneRelicChest()
+        {
+            var settings = ScriptableObject.CreateInstance<DungeonGenerationSettings>();
+            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumChestDistance = 4;
+            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.chestRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
+            var state = new DungeonGenerator(settings).Generate(5581, 1);
+            var chests = state.Graph.Rooms.Where(room => room.Type == RoomEncounterType.Chest).ToArray();
+
+            Assert.That(chests.Length, Is.EqualTo(2));
+            Assert.That(chests.All(room => room.IsRevealed), Is.True, "Both first-floor chests must be discoverable on the map.");
+            Assert.That(chests.Count(room => room.ChestContent == ChestContent.Gold), Is.EqualTo(1));
+            Assert.That(chests.Count(room => room.ChestContent == ChestContent.Relic), Is.EqualTo(1));
+            Assert.That(state.Graph.Rooms.Any(room => room.Type == RoomEncounterType.MajorReward), Is.False);
+            Object.DestroyImmediate(settings);
+        }
+
+        [Test]
+        public void FirstFloorGeneration_HasNoPoisonFountain()
+        {
+            var settings = ScriptableObject.CreateInstance<DungeonGenerationSettings>();
+            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumChestDistance = 4;
+            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.chestRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
+            var state = new DungeonGenerator(settings).Generate(9217, 1);
+
+            Assert.That(state.Graph.Rooms.Any(room => room.Type == RoomEncounterType.PoisonFountain), Is.False);
+            Object.DestroyImmediate(settings);
+        }
+
+        [Test]
+        public void EquipmentTrigger_UsesAttackFiltersCountsAndConditionsInsteadOfHardcodedRelicRules()
+        {
+            var playerData = ScriptableObject.CreateInstance<PlayerCombatData>(); playerData.maxHp = 100f; playerData.shieldMax = 30f;
+            var balance = ScriptableObject.CreateInstance<RunBalanceSettings>(); balance.initialExperienceRequirement = 100;
+            var relic = ScriptableObject.CreateInstance<EquipmentData>();
+            relic.itemKind = ShopItemKind.Relic;
+            relic.trigger = new EquipmentTrigger { triggerType = TriggerType.OnHit, triggerAttackTypeFilter = TriggerAttackTypeFilter.NormalAttack | TriggerAttackTypeFilter.ChargeAttack, triggerAttackWayFilter = TriggerAttackWayFilter.Downward, triggerCount = 2, triggerMaxCount = 1 };
+            relic.condition = new EquipmentCondition { conditionType = ConditionType.OwnerCharge };
+            relic.targetType = TargetType.Enemy;
+            relic.effect = new EquipmentEffect { effectType = EffectType.ExtraAttack, effectMagnitude = .55f, effectCount = 1 };
+            var state = new RunState(playerData, balance);
+            Assert.That(state.TryEquip(relic), Is.True);
+
+            var ordinary = new EquipmentTriggerContext(default, TriggerAttackType.Normal, TriggerAttackWay.Downward, true, false);
+            var extra = new EquipmentTriggerContext(default, TriggerAttackType.Additional, TriggerAttackWay.Downward, true, false);
+            var noCharge = new EquipmentTriggerContext(default, TriggerAttackType.Normal, TriggerAttackWay.Downward, false, false);
+            Assert.That(state.TriggerEquipment(TriggerType.OnHit, noCharge), Is.Empty, "Condition must run after the trigger filters and cadence.");
+            Assert.That(state.TriggerEquipment(TriggerType.OnHit, extra), Is.Empty, "Additional attacks only chain when a data filter explicitly allows them.");
+            Assert.That(state.TriggerEquipment(TriggerType.OnHit, ordinary).Count, Is.EqualTo(1), "The failed condition still consumed the first matching trigger cadence.");
+            Assert.That(state.TriggerEquipment(TriggerType.OnHit, ordinary), Is.Empty, "TriggerMaxCount=1 must stop later activations.");
+            Assert.That(state.Player.NormalDamageMultiplier, Is.EqualTo(1f));
+            Object.DestroyImmediate(playerData); Object.DestroyImmediate(balance); Object.DestroyImmediate(relic);
+        }
+
+        [Test]
+        public void EquipmentData_RemovesLegacyRelicPotionAndModifierFields()
+        {
+            foreach (var legacyField in new[] { "RelicEffect", "RelicMagnitude", "Modifiers", "PotionEffect", "PotionMagnitude", "PotionBattleCount" })
+                Assert.That(typeof(EquipmentData).GetField(legacyField, System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.IgnoreCase), Is.Null);
+        }
+
+        [Test]
         public void RewardExperienceGauge_UsesCurrentExperienceOverRequiredExperience()
         {
             var root = new GameObject("RewardRoot", typeof(RectTransform), typeof(Canvas));
@@ -386,8 +554,8 @@ namespace DungeonSlash.Tests
         public void DungeonGeneration_IsDeterministicAndRespectsBossDistance()
         {
             var settings = ScriptableObject.CreateInstance<DungeonGenerationSettings>();
-            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumMajorRewardDistance = 4;
-            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.majorRewardRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
+            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumChestDistance = 4;
+            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.chestRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
             var generator = new DungeonGenerator(settings);
             var first = generator.Generate(4512); var second = generator.Generate(4512);
             Assert.That(first.Graph.Rooms.Count, Is.EqualTo(20));
@@ -485,6 +653,31 @@ namespace DungeonSlash.Tests
             var unknownIcon = icons.Single(icon => icon != currentIcon);
             Assert.That(unknownIcon.transform.Find("Label").GetComponent<UnityEngine.UI.Text>().text, Is.EqualTo("?"));
             Assert.That(unknownIcon.GetComponent<UnityEngine.UI.Image>().color, Is.EqualTo(new Color(1f, .76f, .18f, 1f)));
+            Object.DestroyImmediate(root);
+            Object.DestroyImmediate(iconRoot);
+            Object.DestroyImmediate(connectionRoot);
+        }
+
+        [Test]
+        public void Minimap_RevealedChestKeepsItsTypeLabelWhileItIsReachable()
+        {
+            var root = new GameObject("MapRoot", typeof(RectTransform), typeof(Canvas));
+            var content = new GameObject("Content", typeof(RectTransform)).GetComponent<RectTransform>();
+            content.transform.SetParent(root.transform, false);
+            var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var iconPrefab = iconRoot.AddComponent<MapRoomIcon>(); iconPrefab.Configure(iconRoot.GetComponent<UnityEngine.UI.Image>(), iconLabel);
+            var connectionRoot = new GameObject("ConnectionPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+            var view = root.AddComponent<DungeonMapView>(); view.Configure(content, iconPrefab, connectionRoot.GetComponent<UnityEngine.UI.Image>());
+            var graph = new DungeonGraph();
+            var start = graph.AddRoom(new DungeonPosition(0, 0)); start.Type = RoomEncounterType.Start; start.IsCleared = true;
+            var chest = graph.AddRoom(new DungeonPosition(1, 0)); chest.Type = RoomEncounterType.Chest; chest.IsRevealed = true;
+            graph.Connect(start, chest);
+
+            view.Render(new DungeonRunState(1, graph), FacingDirection.East);
+
+            var targetIcon = content.GetComponentsInChildren<MapRoomIcon>().Single(icon => icon.GetComponent<RectTransform>().anchoredPosition.x > 0f);
+            Assert.That(targetIcon.transform.Find("Label").GetComponent<UnityEngine.UI.Text>().text, Is.EqualTo("\uC0C1\uC790"));
             Object.DestroyImmediate(root);
             Object.DestroyImmediate(iconRoot);
             Object.DestroyImmediate(connectionRoot);
@@ -736,8 +929,40 @@ namespace DungeonSlash.Tests
             Assert.That(components.OfType<CombatController>().Count(), Is.EqualTo(1));
             Assert.That(components.OfType<DungeonController>().Count(), Is.EqualTo(1));
             var serializedCombat = new SerializedObject(combatController);
-            foreach (var propertyName in new[] { "damageNumberRoot", "damageNumberPrefab", "weakPointBreakFxRoot", "weakPointBreakFxPrefab" })
+            foreach (var propertyName in new[] { "damageNumberRoot", "damageNumberPrefab", "weakPointBreakFxRoot", "weakPointBreakFxPrefab", "mimicMonster" })
                 Assert.That(serializedCombat.FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"CombatController.{propertyName} is not connected.");
+            Assert.That(serializedCombat.FindProperty("bossMonsters").arraySize, Is.EqualTo(3), "Each floor needs its own boss definition.");
+            Assert.That(serializedCombat.FindProperty("floorTwoMonsters").arraySize, Is.GreaterThanOrEqualTo(4), "Floor two needs its own roster plus the returning foe.");
+            Assert.That(serializedCombat.FindProperty("floorThreeMonsters").arraySize, Is.GreaterThanOrEqualTo(3), "Floor three needs its own roster.");
+            Assert.That(serializedCombat.FindProperty("eliteMonsters").arraySize, Is.EqualTo(3), "Each floor needs its own elite definition.");
+
+            var runController = components.OfType<RunController>().Single();
+            var serializedRun = new SerializedObject(runController);
+            var equipment = serializedRun.FindProperty("equipment");
+            Assert.That(equipment.arraySize, Is.GreaterThanOrEqualTo(9), "The shop needs both premium relics and tactical potions.");
+            var allShopItems = Enumerable.Range(0, equipment.arraySize).Select(index => equipment.GetArrayElementAtIndex(index).objectReferenceValue as EquipmentData).ToArray();
+            Assert.That(allShopItems.Count(item => item.IsPotion), Is.GreaterThanOrEqualTo(5), "The run needs several potion types.");
+            Assert.That(allShopItems.Count(item => item.IsRelic), Is.GreaterThanOrEqualTo(4), "The run needs a meaningful relic pool.");
+            Assert.That(allShopItems.Count(item => item.IsRelic && item.effect.effectType is EffectType.ExtraAttack or EffectType.Damage), Is.GreaterThanOrEqualTo(3), "Relics should supply distinct trigger-driven actions instead of perk-like stat bundles.");
+            Assert.That(allShopItems.All(item => item.icon != null), Is.True, "Every relic and potion needs an icon asset for the run HUD.");
+            Assert.That(allShopItems.All(item => AssetDatabase.GetAssetPath(item.icon).EndsWith(".png", System.StringComparison.OrdinalIgnoreCase)), Is.True, "Run HUD item icons must be editable PNG sprite assets, not generated Texture2D assets.");
+            var allPerks = Enumerable.Range(0, serializedRun.FindProperty("perks").arraySize).Select(index => serializedRun.FindProperty("perks").GetArrayElementAtIndex(index).objectReferenceValue as PerkData).ToArray();
+            Assert.That(allPerks.All(perk => perk.icon != null), Is.True, "Every perk needs a skill icon asset for the run HUD.");
+            Assert.That(allPerks.All(perk => AssetDatabase.GetAssetPath(perk.icon).EndsWith(".png", System.StringComparison.OrdinalIgnoreCase)), Is.True, "Run HUD skill icons must be editable PNG sprite assets, not generated Texture2D assets.");
+            var serializedRunHud = new SerializedObject(components.OfType<RunHudView>().Single());
+            foreach (var propertyName in new[] { "perkGrid", "relicGrid", "potionGrid", "iconPrefab", "tooltip" })
+                Assert.That(serializedRunHud.FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"RunHudView.{propertyName} must support the icon inventory UI.");
+            foreach (var propertyName in new[] { "perkGrid", "relicGrid", "potionGrid" })
+            {
+                var grid = (serializedRunHud.FindProperty(propertyName).objectReferenceValue as RectTransform).GetComponent<UnityEngine.UI.GridLayoutGroup>();
+                Assert.That(grid.startAxis, Is.EqualTo(UnityEngine.UI.GridLayoutGroup.Axis.Horizontal));
+                Assert.That(grid.constraint, Is.EqualTo(UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount));
+                Assert.That(grid.constraintCount, Is.EqualTo(5));
+                var expectedSlotCount = propertyName == "potionGrid" ? 3 : 15;
+                Assert.That(grid.GetComponentsInChildren<RunHudIconView>(true).Length, Is.EqualTo(expectedSlotCount), $"{propertyName} needs its visible icon slots as scene children.");
+            }
+            Assert.That(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/UI/RunHudIconView.prefab").GetComponent<RunHudIconView>(), Is.Not.Null, "The run HUD needs a reusable hoverable item-icon view.");
+            Assert.That(new SerializedObject(components.OfType<PerkChoiceView>().Single()).FindProperty("title").objectReferenceValue, Is.Not.Null, "Relic and perk selections need a panel title.");
             var mapView = components.OfType<DungeonMapView>().Single();
             Assert.That(new SerializedObject(mapView).FindProperty("connectionPrefab").objectReferenceValue, Is.Not.Null, "DungeonMapView.connectionPrefab is not connected.");
             Assert.That(new SerializedObject(mapView).FindProperty("spacing").floatValue, Is.InRange(38f, 44f), "Dungeon-style routes must be drawn inside nearly adjoining room tiles, not in wide gaps.");
@@ -760,7 +985,7 @@ namespace DungeonSlash.Tests
 
             var combatHud = components.OfType<CombatHudView>().Single();
             var serializedHud = new SerializedObject(combatHud);
-            foreach (var propertyName in new[] { "chargeGaugeRoot", "chargeGaugeTrack", "chargeGaugeFill", "playerHpText", "shieldText" })
+            foreach (var propertyName in new[] { "chargeGaugeRoot", "chargeGaugeTrack", "chargeGaugeFill", "chargeGaugeSecondFill", "playerHpText", "shieldText" })
                 Assert.That(serializedHud.FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"CombatHudView.{propertyName} is not connected.");
 
             var chargeFill = serializedHud.FindProperty("chargeGaugeFill").objectReferenceValue as ArcGaugeGraphic;

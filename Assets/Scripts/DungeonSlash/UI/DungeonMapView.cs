@@ -41,7 +41,7 @@ namespace DungeonSlash
                     CreateReachableIcon(current, neighbour, state.Player.Facing, hoveredDirection, mapSpacing, routes);
             }
 
-            foreach (var room in state.Graph.Rooms.Where(room => room.IsVisited && room != current && (!showSelectionTargets || !currentNeighbours.Contains(room))))
+            foreach (var room in state.Graph.Rooms.Where(room => (room.IsVisited || room.IsRevealed) && room != current && (!showSelectionTargets || !currentNeighbours.Contains(room))))
                 CreateKnownIcon(room, state.Player.Facing, mapSpacing, routes);
         }
 
@@ -74,7 +74,7 @@ namespace DungeonSlash
 
         private static List<DungeonRoom> CollectVisibleRooms(DungeonRunState state, IEnumerable<DungeonRoom> currentNeighbours, bool showSelectionTargets)
         {
-            var rooms = state.Graph.Rooms.Where(room => room.IsVisited).ToList();
+            var rooms = state.Graph.Rooms.Where(room => room.IsVisited || room.IsRevealed).ToList();
             if (showSelectionTargets)
                 rooms.AddRange(currentNeighbours.Where(room => !room.IsVisited));
             return rooms;
@@ -100,7 +100,9 @@ namespace DungeonSlash
             PlaceIcon(icon, target.Position, mapSpacing);
             var targetDirection = DirectionTo(current, target);
             var highlighted = hoveredDirection == targetDirection;
-            var style = target.IsVisited && target.IsCleared ? MapRoomIconStyle.ClearedExit : target.IsVisited ? MapRoomIconStyle.KnownRoom : MapRoomIconStyle.UnknownReachable;
+            // A room revealed by map generation (boss, elite, chest) must retain its identity while it
+            // becomes selectable. Only genuinely unknown adjacent rooms display a question mark.
+            var style = target.IsVisited && target.IsCleared ? MapRoomIconStyle.ClearedExit : target.IsVisited || target.IsRevealed || target.IsMajorRoom ? MapRoomIconStyle.KnownRoom : MapRoomIconStyle.UnknownReachable;
             icon.Bind(target, style, facing, highlighted, RoutesFor(target, routes));
             activeIcons.Add(icon);
         }

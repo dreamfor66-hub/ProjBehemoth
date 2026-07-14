@@ -15,8 +15,23 @@ MonoBehaviour:
   id: ChargeCoil
   displayName: "\uCC28\uC9C0 \uCF54\uC77C"
   description: "\uCC28\uC9C0 \uC2DC\uAC04 -12%"
+  icon: {fileID: 21300000, guid: f12cb7aa504a78a478ae9c8757f67f37, type: 3}
+  itemKind: 0
   price: 24
   maxPurchaseCount: 1
-  modifiers:
-  - kind: 3
-    value: 0.12
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0.12
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 3

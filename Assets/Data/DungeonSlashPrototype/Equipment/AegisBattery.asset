@@ -15,8 +15,23 @@ MonoBehaviour:
   id: AegisBattery
   displayName: "\uC774\uC9C0\uC2A4 \uBC30\uD130\uB9AC"
   description: "\uCD5C\uB300 \uBC29\uD328 +25"
+  icon: {fileID: 21300000, guid: adb80d2426532b7408a6a5e0805ddfbd, type: 3}
+  itemKind: 0
   price: 28
   maxPurchaseCount: 1
-  modifiers:
-  - kind: 6
-    value: 25
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 25
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 6

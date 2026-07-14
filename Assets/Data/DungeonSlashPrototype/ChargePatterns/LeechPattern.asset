@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LeechPattern
   m_EditorClassIdentifier: 
   displayName: Leech Core Exposure
-  timeLimit: 3
+  timeLimit: 5
   weakPoints:
   - id: core-1
     normalizedPosition: {x: -55, y: 38}

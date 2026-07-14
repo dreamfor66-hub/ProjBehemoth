@@ -15,8 +15,23 @@ MonoBehaviour:
   id: EdgeCharm
   displayName: "\uB0A0 \uC120 \uBD80\uC801"
   description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +15%"
+  icon: {fileID: 21300000, guid: 97ff1da32de8a8544a2dbb7ac627f7d5, type: 3}
+  itemKind: 0
   price: 22
   maxPurchaseCount: 1
-  modifiers:
-  - kind: 0
-    value: 0.15
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0.15
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
