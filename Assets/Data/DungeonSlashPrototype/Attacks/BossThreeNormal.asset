@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   displayName: "\uBCA0\uAE30"
-  damage: 26
-  shieldDamage: 36
+  damage: 31.2
+  shieldDamage: 31.2
   windupDuration: 0.87
   recoveryDuration: 0.5
   guardable: 1

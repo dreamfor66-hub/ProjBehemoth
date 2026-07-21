@@ -244,7 +244,9 @@ namespace DungeonSlash
             }
 
             var deltaTime = Time.deltaTime;
+            var keyboardGuard = Player != null && input != null && input.IsGuardKeyHeld;
             var chargeGuard = Player != null && Player.ChargeGuardEnabled && input != null && input.IsChargingAction;
+            Player.SetKeyboardGuard(keyboardGuard);
             Player.SetChargeGuard(chargeGuard);
             Player.Tick(deltaTime);
             foreach (var monster in activeMonsters.Where(monster => monster.Runtime.IsAlive))
@@ -449,7 +451,7 @@ namespace DungeonSlash
                     }
 
                     hitAny = true;
-                    ShakeCombat(charged ? 8f : 4f, charged ? .13f : .08f);
+                    ShakeCombat(charged ? 8f : 3.5f, charged ? .13f : .08f);
                     var dealtDamage = runtime.IsStunned ? baseDamage * Player.StunDamageMultiplier : baseDamage;
                     if (!InfiniteBattleEnabled)
                         damageResolver.ApplyToMonster(runtime, baseDamage, Player.StunDamageMultiplier);
@@ -760,6 +762,7 @@ namespace DungeonSlash
             if (!IsActive || isFinishing) return;
             var result = new CombatResult(playerWon, !Player.IsAlive, activeMonsters.Select(monster => monster.Runtime.Data).ToArray());
             IsActive = false;
+            Player?.SetKeyboardGuard(false);
             Player?.SetChargeGuard(false);
             isFinishing = true;
             if (playerWon && activeMonsters.Any(monster => monster.View != null))

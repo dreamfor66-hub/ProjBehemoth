@@ -28,6 +28,7 @@ namespace DungeonSlash
         public float SecondChargeProgress { get; private set; }
         public Vector2 ChargeOrigin => latestPosition;
         public bool IsChargingAction => State is PointerGestureState.Charging or PointerGestureState.Charged or PointerGestureState.SecondCharging or PointerGestureState.SecondCharged;
+        public bool IsGuardKeyHeld => Input.GetKey(KeyCode.Space);
         public void Configure(CombatSceneView scene, CombatController controller) { sceneView = scene; combat = controller; }
 
         private void Update()

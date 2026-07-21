@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 100
   shieldMax: 25
-  normalShieldRegen: 3
-  brokenShieldRegen: 3
-  baseAttackDamage: 10
-  baseChargeDamage: 25
+  normalShieldRegen: 2.5
+  brokenShieldRegen: 5
+  baseAttackDamage: 14
+  baseChargeDamage: 21
   attackCooldown: 1
   minimumAttackCooldown: 0.2
   chargeDuration: 0.75

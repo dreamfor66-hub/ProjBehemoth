@@ -98,12 +98,13 @@ namespace DungeonSlash
         public bool ChargeGuardEnabled => chargeGuardSources > 0;
         public bool DoubleChargeEnabled => doubleChargeSources > 0;
         public bool IsAlive => CurrentHp > 0f;
-        public bool IsGuarding => ShieldState == ShieldState.Guarding || chargeGuardActive;
+        public bool IsGuarding => IsAlive && ShieldState != ShieldState.Broken && ShieldCurrent > 0f && (ShieldState == ShieldState.Guarding || chargeGuardActive || keyboardGuardActive);
 
         private readonly PlayerCombatData data;
         private float normalShieldRegen;
         private float brokenShieldRegen;
         private bool chargeGuardActive;
+        private bool keyboardGuardActive;
         private int chargeGuardSources;
         private int doubleChargeSources;
         private readonly List<TemporaryModifier> temporaryModifiers = new();
@@ -136,6 +137,7 @@ namespace DungeonSlash
             DamageReduction = 0f;
             DamagePerAttackDistance = 0f;
             chargeGuardActive = false;
+            keyboardGuardActive = false;
             chargeGuardSources = doubleChargeSources = 0;
             temporaryModifiers.Clear();
             normalShieldRegen = data.normalShieldRegen;
@@ -204,6 +206,11 @@ namespace DungeonSlash
         public void SetChargeGuard(bool enabled)
         {
             chargeGuardActive = enabled && IsAlive && ShieldState != ShieldState.Broken && ShieldCurrent > 0f;
+        }
+
+        public void SetKeyboardGuard(bool enabled)
+        {
+            keyboardGuardActive = enabled && IsAlive && ShieldState != ShieldState.Broken && ShieldCurrent > 0f;
         }
 
         public void RestoreShield(float amount) => ShieldCurrent = Mathf.Min(ShieldMax, ShieldCurrent + amount);

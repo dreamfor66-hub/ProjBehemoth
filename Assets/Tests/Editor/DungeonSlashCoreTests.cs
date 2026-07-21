@@ -422,6 +422,27 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void KeyboardGuard_IsActiveOnlyWhileHeldAndDoesNotClearAnExistingGestureGuard()
+        {
+            var data = ScriptableObject.CreateInstance<PlayerCombatData>();
+            var player = new PlayerCombatRuntime(data);
+
+            player.SetKeyboardGuard(true);
+            Assert.That(player.IsGuarding, Is.True);
+            var guardedResult = new DamageResolver().ApplyToPlayer(player, new DamageRequest(DamageType.MonsterAttack, 10f, 10f, true));
+            Assert.That(guardedResult.WasGuarded, Is.True);
+            Assert.That(player.CurrentHp, Is.EqualTo(player.MaxHp));
+            player.SetKeyboardGuard(false);
+            Assert.That(player.IsGuarding, Is.False);
+
+            player.TrySetGuard(true);
+            player.SetKeyboardGuard(true);
+            player.SetKeyboardGuard(false);
+            Assert.That(player.IsGuarding, Is.True, "Releasing Space must not cancel a guard started by the existing pointer gesture.");
+            Object.DestroyImmediate(data);
+        }
+
+        [Test]
         public void Shield_IsFullyRestoredAndGuardReadyWhenReturningToNavigation()
         {
             var data = ScriptableObject.CreateInstance<PlayerCombatData>();
@@ -682,22 +703,23 @@ namespace DungeonSlash.Tests
             Assert.That(monsterAssetNames.All(name => name.StartsWith("Data_Monster_", System.StringComparison.Ordinal)), Is.True, "Generated predecessor assets must not coexist with canonical Data_Monster assets.");
             Assert.That(monsterAssets.All(entry => entry.asset != null && entry.asset.name == entry.fileName), Is.True, "The ScriptableObject name must match its canonical monster filename.");
             Assert.That(monsterAssets.All(entry => entry.asset.attacks != null && entry.asset.GetAttack(MonsterAttackType.Normal) != null && entry.asset.GetAttack(MonsterAttackType.Charge) != null), Is.True, "Every generated monster must own its normal and charge definitions through AttackData.");
+            Assert.That(monsterAssets.SelectMany(entry => entry.asset.attacks).All(attack => Mathf.Approximately(attack.shieldDamage, attack.damage)), Is.True, "Every attack must deal its base damage to both HP and shield.");
             Assert.That(monsterAssets.SelectMany(entry => entry.asset.GetAttacks(MonsterAttackType.Charge)).All(attack => attack.chargeWeakPoints != null && attack.chargeWeakPoints.Count > 0), Is.True, "Charge weak points must live directly on the charge AttackData.");
             Assert.That(monsterAssets.SelectMany(entry => entry.asset.GetAttacks(MonsterAttackType.Charge)).Select(attack => attack.chargeTimeLimit).Distinct().Count(), Is.GreaterThan(1), "Charge windows retain the distinct weak-point and pattern timings.");
             Assert.That(System.IO.Directory.Exists("Assets/Data/DungeonSlashPrototype/ChargePatterns"), Is.False, "ChargePatternData assets must not remain after the AttackData migration.");
             Assert.That(frostBat.normalAttackInterval, Is.GreaterThanOrEqualTo(2f), "The frost bat is a low-pressure summoned minion, not an independent rapid-fire threat.");
             Assert.That(frostBat.maxHp, Is.LessThanOrEqualTo(80f));
             Assert.That(frostBat.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(3.6f).Within(.001f), "The 2.1-second frost bat pattern receives a +1.5 second reaction window.");
-            Assert.That(frostBat.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(.62f).Within(.001f), "Every normal-attack telegraph receives the global +0.12 second reaction buffer.");
+            Assert.That(frostBat.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(.682f).Within(.001f), "Minion normal-attack windups receive the global 1.1x reaction-time multiplier.");
             Assert.That(yeti.normalAttackInterval, Is.GreaterThan(5f), "The yeti needs a long, punishable heavy-attack cycle.");
-            Assert.That(yeti.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(1.17f).Within(.001f));
+            Assert.That(yeti.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(1.287f).Within(.001f));
             Assert.That(yeti.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(8.48f).Within(.001f), "The two-hit heavy weak points receive 1.6 times the one-hit charge window.");
             Assert.That(yeti.GetAttack(MonsterAttackType.Normal).shieldDamage, Is.GreaterThanOrEqualTo(30f), "The yeti's single hit must break a full base shield.");
             Assert.That(shadeLancer.normalAttackInterval, Is.GreaterThan(5f), "The shade lancer also supplies a slow heavy rhythm on B3.");
             Assert.That(frostOgre.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard.maxGuard, Is.LessThanOrEqualTo(45f), "The directional gate must be breakable with an early-run horizontal combo.");
             Assert.That(frostQueen.normalAttackInterval, Is.GreaterThanOrEqualTo(2.5f), "The queen and her two minions need breathing room between attack cycles.");
             Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).combatMechanics.hitCount, Is.EqualTo(3));
-            Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).damage, Is.LessThanOrEqualTo(20f), "Soul Barrage may be a triple hit, but cannot delete a full HP bar after one guard break.");
+            Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).damage, Is.LessThanOrEqualTo(24f), "Soul Barrage may be a triple hit, but cannot delete a full HP bar after one guard break.");
             Assert.That(mimic.maxHp, Is.GreaterThanOrEqualTo(350f), "A chest mimic must be elite-grade, not a regular minion.");
             Assert.That(mimic.GetAttack(MonsterAttackType.Normal).shieldDamage, Is.GreaterThanOrEqualTo(30f));
             Assert.That(mimic.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(6.4f).Within(.001f), "The two-hit Mimic weak points receive 1.6 times the one-hit charge window.");
@@ -844,8 +866,8 @@ namespace DungeonSlash.Tests
             Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).combatMechanics.hitCount, Is.EqualTo(3));
             var minotaurCharge = minotaur.GetAttack(MonsterAttackType.Charge);
             Assert.That(minotaurCharge.combatMechanics.hitCount, Is.EqualTo(3));
-            Assert.That(minotaurCharge.damage, Is.EqualTo(22.5f).Within(.001f));
-            Assert.That(minotaurCharge.shieldDamage, Is.EqualTo(43.2f).Within(.001f));
+            Assert.That(minotaurCharge.damage, Is.EqualTo(27f).Within(.001f));
+            Assert.That(minotaurCharge.shieldDamage, Is.EqualTo(minotaurCharge.damage).Within(.001f));
             var mazeGuard = mazeGuardian.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard;
             Assert.That(mazeGuard.enabled, Is.True);
             Assert.That(mazeGuard.breakByAttackWay, Is.EqualTo(TriggerAttackWayFilter.Upward | TriggerAttackWayFilter.Downward));

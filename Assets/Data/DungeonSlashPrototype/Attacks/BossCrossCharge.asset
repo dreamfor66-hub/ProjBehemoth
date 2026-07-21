@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   displayName: Cross Core
-  damage: 40
-  shieldDamage: 72
+  damage: 48
+  shieldDamage: 48
   windupDuration: 0.5
   recoveryDuration: 0.5
   guardable: 1
-  chargeTimeLimit: 3.7
+  chargeTimeLimit: 7
   chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: -72, y: 0}

@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   displayName: "\uC0AC\uB0E5 \uC120\uACE0"
-  damage: 39.6
-  shieldDamage: 72
+  damage: 47.52
+  shieldDamage: 47.52
   windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
-  chargeTimeLimit: 4
+  chargeTimeLimit: 6
   chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: -75, y: 35}
