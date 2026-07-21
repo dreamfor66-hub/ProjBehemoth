@@ -19,6 +19,17 @@ namespace DungeonSlash
         [Min(0f)] public float inputMoveTolerance = 24f;
         [Min(0f)] public float attackSegmentWidth = 18f;
         [Min(1f)] public float guardSwipeDistance = 64f;
+        [Min(0f)] public float guardBodyOuterMargin = 16f;
+        [Min(.01f)] public float guardRestConfirmSeconds = .1f;
+        [Min(0f)] public float guardRestStationaryDistance = 1f;
+
+        [Header("Target Traversal Attack")]
+        [Tooltip("Distance beyond the monster's hit boundary required to confirm a completed through-slash.")]
+        [Min(1f)] public float traversalExitDistance = 48f;
+        [Tooltip("How long the pointer must remain still outside a crossed monster before confirming the slash.")]
+        [Min(.01f)] public float traversalStopConfirmSeconds = .1f;
+        [Tooltip("Per-frame pointer movement still treated as stationary while waiting to confirm a slash.")]
+        [Min(0f)] public float traversalStationaryDistance = 1f;
 
         [Header("Swipe Recognition")]
         [Min(.02f)] public float swipeSampleWindowSeconds = .12f;

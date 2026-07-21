@@ -25,6 +25,7 @@ namespace DungeonSlash
 
         public RunState State { get; private set; }
         public IReadOnlyList<EquipmentData> Equipment => equipment;
+        public IReadOnlyList<PerkData> AvailablePerks => perks;
         public PerkSystem Perks { get; private set; }
         public ShopSystem Shop { get; private set; }
         private EquipmentSystem equipmentSystem;
@@ -86,6 +87,17 @@ namespace DungeonSlash
         public bool TryBuy(EquipmentData item) => Shop.TryPurchase(State, item);
         public bool TryUsePotion(EquipmentData potion) => State != null && State.TryUsePotion(potion);
         public bool TryGrantRelic(EquipmentData relic) => State != null && relic != null && relic.IsRelic && !State.EquippedItems.Contains(relic) && equipmentSystem.Apply(State, relic);
+        public bool TryGrantPerk(PerkData perk)
+        {
+            if (State == null || Perks == null || perk == null) return false;
+            var existing = State.ActivePerks.FirstOrDefault(active => active.Data == perk);
+            if (existing != null && !existing.CanStack) return false;
+            Perks.Apply(State, perk);
+            return true;
+        }
+        public bool TryGrantEquipment(EquipmentData item) => State != null && item != null && equipmentSystem != null && equipmentSystem.Apply(State, item);
+        public bool TryRemovePerk(PerkData perk) => State != null && State.TryRemovePerk(perk);
+        public bool TryRemoveEquipment(EquipmentData item) => State != null && State.TryRemoveEquipment(item);
         public EquipmentData GetChestRelic(int seed, int salt)
         {
             var random = new System.Random(seed + salt * 577);

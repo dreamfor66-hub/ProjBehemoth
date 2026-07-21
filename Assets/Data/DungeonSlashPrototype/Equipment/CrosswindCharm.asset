@@ -32,7 +32,7 @@ MonoBehaviour:
   targetType: 1
   effect:
     effectType: 0
-    effectMagnitude: 0.65
+    effectMagnitude: 0.5
     effectCount: 1
     effectAngle: 90
     effectTime: 0

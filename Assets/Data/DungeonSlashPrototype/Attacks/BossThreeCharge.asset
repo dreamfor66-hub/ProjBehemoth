@@ -12,9 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: BossThreeCharge
   m_EditorClassIdentifier: 
+  type: 1
   displayName: "\uBCCD\uC758 \uD3ED\uBC1C"
-  damage: 61.199997
-  shieldDamage: 100.799995
-  windupDuration: 2.4
+  damage: 46
+  shieldDamage: 64
+  windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
+  chargeTimeLimit: 4.4
+  chargeWeakPoints:
+  - id: core-1
+    normalizedPosition: {x: -76, y: 40}
+    hitRadius: 30
+    requiredChargeHits: 1
+  - id: core-2
+    normalizedPosition: {x: -30, y: -46}
+    hitRadius: 30
+    requiredChargeHits: 1
+  - id: core-3
+    normalizedPosition: {x: 30, y: -46}
+    hitRadius: 30
+    requiredChargeHits: 1
+  - id: core-4
+    normalizedPosition: {x: 76, y: 40}
+    hitRadius: 30
+    requiredChargeHits: 1
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

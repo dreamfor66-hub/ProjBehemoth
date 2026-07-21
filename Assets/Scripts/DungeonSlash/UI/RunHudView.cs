@@ -46,7 +46,7 @@ namespace DungeonSlash
             tooltip = newTooltip;
         }
 
-        public void Bind(DungeonRunState dungeon, RunState run, Action<EquipmentData> usePotion = null)
+        public void Bind(DungeonRunState dungeon, RunState run, Action<EquipmentData> usePotion = null, Action<PerkData> removePerk = null, Action<EquipmentData> removeEquipment = null)
         {
             if (roomInfo != null)
             {
@@ -62,34 +62,42 @@ namespace DungeonSlash
             }
             if (run == null) return;
 
-            BindPerks(run);
-            BindRelics(run);
-            BindPotions(run, usePotion);
+            BindPerks(run, removePerk);
+            BindRelics(run, removeEquipment);
+            BindPotions(run, usePotion, removeEquipment);
         }
 
-        private void BindPerks(RunState run)
+        private void BindPerks(RunState run, Action<PerkData> removePerk)
         {
             EnsureIconCount(perkIcons, perkGrid, run.ActivePerks.Count);
             for (var index = 0; index < perkIcons.Count; index++)
             {
                 var visible = index < run.ActivePerks.Count;
                 perkIcons[index].gameObject.SetActive(visible);
-                if (visible) perkIcons[index].Bind(run.ActivePerks[index].Data, run.ActivePerks[index].StackCount, tooltip);
+                if (visible)
+                {
+                    var perk = run.ActivePerks[index].Data;
+                    perkIcons[index].Bind(perk, run.ActivePerks[index].StackCount, tooltip, removePerk == null ? null : () => removePerk(perk));
+                }
             }
         }
 
-        private void BindRelics(RunState run)
+        private void BindRelics(RunState run, Action<EquipmentData> removeEquipment)
         {
             EnsureIconCount(relicIcons, relicGrid, run.EquippedItems.Count);
             for (var index = 0; index < relicIcons.Count; index++)
             {
                 var visible = index < run.EquippedItems.Count;
                 relicIcons[index].gameObject.SetActive(visible);
-                if (visible) relicIcons[index].Bind(run.EquippedItems[index], tooltip);
+                if (visible)
+                {
+                    var item = run.EquippedItems[index];
+                    relicIcons[index].Bind(item, tooltip, null, removeEquipment == null ? null : () => removeEquipment(item));
+                }
             }
         }
 
-        private void BindPotions(RunState run, Action<EquipmentData> usePotion)
+        private void BindPotions(RunState run, Action<EquipmentData> usePotion, Action<EquipmentData> removeEquipment)
         {
             EnsureIconCount(potionIcons, potionGrid, run.PotionSlotCapacity);
             for (var index = 0; index < potionIcons.Count; index++)
@@ -101,7 +109,7 @@ namespace DungeonSlash
                     continue;
                 }
                 var potion = run.Potions[index];
-                potionIcons[index].Bind(potion, tooltip, usePotion == null ? null : () => usePotion(potion));
+                potionIcons[index].Bind(potion, tooltip, usePotion == null ? null : () => usePotion(potion), removeEquipment == null ? null : () => removeEquipment(potion));
             }
         }
 

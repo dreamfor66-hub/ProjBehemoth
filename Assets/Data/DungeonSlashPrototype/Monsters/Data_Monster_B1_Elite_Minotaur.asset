@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: Minotaur
+  m_Name: Data_Monster_B1_Elite_Minotaur
   m_EditorClassIdentifier: 
   displayName: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
-  maxHp: 300
+  maxHp: 450
   normalAttackInterval: 2.7
   chargeInterval: 5.8
   stunDuration: 4
@@ -21,8 +21,7 @@ MonoBehaviour:
   experienceReward: 56
   goldReward: 12
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: 5f17b4da654a51141bdde0ba15231bf0, type: 2}
-  chargeAttack: {fileID: 11400000, guid: 4bf05108d5347134aa9b519872d865d7, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: 4efe3ac3d9e92d845b493e0e38432ef1, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 5f17b4da654a51141bdde0ba15231bf0, type: 2}
+  - {fileID: 11400000, guid: 4bf05108d5347134aa9b519872d865d7, type: 2}
   bodyColor: {r: 0.75, g: 0.38, b: 0.18, a: 1}

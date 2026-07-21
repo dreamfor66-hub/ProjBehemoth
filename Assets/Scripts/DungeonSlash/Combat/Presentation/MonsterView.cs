@@ -15,6 +15,8 @@ namespace DungeonSlash
         [SerializeField] private Text chargeTimeLabel;
         [SerializeField] private Image attackNameBackdrop;
         [SerializeField] private Image chargeTimeBackdrop;
+        [SerializeField] private Image directionalGuardFill;
+        [SerializeField] private Text directionalGuardLabel;
         private float attackNameHideAt;
 
         public RectTransform Root => root;
@@ -29,7 +31,7 @@ namespace DungeonSlash
             Configure(newRoot, newBody, newStateLabel, newHpFill, newAttackNameLabel, newChargeTimeLabel, null, null);
         }
 
-        public void Configure(RectTransform newRoot, Image newBody, Text newStateLabel, Image newHpFill, Text newAttackNameLabel, Text newChargeTimeLabel, Image newAttackNameBackdrop, Image newChargeTimeBackdrop)
+        public void Configure(RectTransform newRoot, Image newBody, Text newStateLabel, Image newHpFill, Text newAttackNameLabel, Text newChargeTimeLabel, Image newAttackNameBackdrop, Image newChargeTimeBackdrop, Image newDirectionalGuardFill = null, Text newDirectionalGuardLabel = null)
         {
             root = newRoot;
             body = newBody;
@@ -39,6 +41,8 @@ namespace DungeonSlash
             chargeTimeLabel = newChargeTimeLabel;
             attackNameBackdrop = newAttackNameBackdrop;
             chargeTimeBackdrop = newChargeTimeBackdrop;
+            directionalGuardFill = newDirectionalGuardFill;
+            directionalGuardLabel = newDirectionalGuardLabel;
         }
 
         public void Bind(MonsterRuntime runtime)
@@ -64,6 +68,18 @@ namespace DungeonSlash
                 SetVisible(chargeTimeBackdrop, charging);
             }
             else SetVisible(chargeTimeBackdrop, false);
+
+            var showDirectionalGuard = runtime.HasDirectionalGuard;
+            SetGauge(directionalGuardFill, runtime.DirectionalGuardMax <= 0f ? 0f : runtime.DirectionalGuardCurrent / runtime.DirectionalGuardMax);
+            if (directionalGuardFill != null)
+                directionalGuardFill.color = runtime.IsDirectionalGuardActive ? new Color(.3f, .88f, 1f) : new Color(.32f, .52f, .65f);
+            SetVisible(directionalGuardFill, showDirectionalGuard);
+            SetVisible(directionalGuardFill != null ? directionalGuardFill.transform.parent.GetComponent<Image>() : null, showDirectionalGuard);
+            if (directionalGuardLabel != null)
+            {
+                directionalGuardLabel.text = runtime.DirectionalGuardLabel;
+                directionalGuardLabel.enabled = showDirectionalGuard;
+            }
 
             if (attackNameLabel != null && attackNameLabel.enabled && Time.unscaledTime >= attackNameHideAt)
             {
@@ -118,6 +134,9 @@ namespace DungeonSlash
             SetAlpha(chargeTimeLabel, alpha);
             SetAlpha(attackNameBackdrop, alpha);
             SetAlpha(chargeTimeBackdrop, alpha);
+            SetAlpha(directionalGuardFill, alpha);
+            SetAlpha(directionalGuardLabel, alpha);
+            SetAlpha(directionalGuardFill != null ? directionalGuardFill.transform.parent.GetComponent<Image>() : null, alpha);
         }
 
         private static void SetAlpha(Graphic graphic, float alpha)

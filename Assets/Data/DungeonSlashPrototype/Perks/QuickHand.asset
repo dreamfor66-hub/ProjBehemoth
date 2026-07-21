@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: QuickHand
   displayName: "\uC7AC\uBE60\uB978 \uC190"
-  description: "\uC77C\uBC18 \uACF5\uACA9 \uC7AC\uC0AC\uC6A9 \uB300\uAE30\uC2DC\uAC04
-    -10%"
+  description: "\uACF5\uACA9 \uC7AC\uC0AC\uC6A9 \uB300\uAE30\uC2DC\uAC04 -15%"
   icon: {fileID: 21300000, guid: f701431fffac50e47ac473732848a7a6, type: 3}
-  maxStacks: 3
+  maxStacks: 5
   modifiers:
   - kind: 2
-    value: 0.1
+    value: 0.15

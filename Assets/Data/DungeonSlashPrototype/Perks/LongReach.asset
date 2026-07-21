@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: LongReach
   displayName: "\uAE34 \uD314"
-  description: "\uBCA0\uAE30 \uACF5\uACA9 \uAC70\uB9AC +45"
+  description: "\uBCA0\uAE30 \uACF5\uACA9 \uAC70\uB9AC +50"
   icon: {fileID: 21300000, guid: 75a60500f1f1b1f42a2cbdf57558d400, type: 3}
   maxStacks: 3
   modifiers:
   - kind: 12
-    value: 45
+    value: 50

@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: BossThree
+  m_Name: Data_Monster_B3_Boss_SoulEater
   m_EditorClassIdentifier: 
   displayName: "\uC601\uD63C \uD3EC\uC2DD\uC790"
-  maxHp: 1500
-  normalAttackInterval: 1.55
-  chargeInterval: 4.15
+  maxHp: 1800
+  normalAttackInterval: 2.6
+  chargeInterval: 7
   stunDuration: 4.8
   stunDamageMultiplier: 1.65
-  experienceReward: 166
-  goldReward: 17
+  experienceReward: 400
+  goldReward: 13
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: e4ffb9549f60808409b7a4e02129d7f7, type: 2}
-  chargeAttack: {fileID: 11400000, guid: a7b144dabd51371468be9250fdfaaaff, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: 90db7423a7fc67d43a8547d786121726, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: e4ffb9549f60808409b7a4e02129d7f7, type: 2}
+  - {fileID: 11400000, guid: a7b144dabd51371468be9250fdfaaaff, type: 2}
   bodyColor: {r: 0.58, g: 0.12, b: 0.72, a: 1}

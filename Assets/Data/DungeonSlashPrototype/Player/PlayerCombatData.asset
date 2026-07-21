@@ -13,17 +13,23 @@ MonoBehaviour:
   m_Name: PlayerCombatData
   m_EditorClassIdentifier: 
   maxHp: 100
-  shieldMax: 30
+  shieldMax: 25
   normalShieldRegen: 3
   brokenShieldRegen: 3
   baseAttackDamage: 10
-  baseChargeDamage: 30
+  baseChargeDamage: 25
   attackCooldown: 1
   minimumAttackCooldown: 0.2
   chargeDuration: 0.75
   inputMoveTolerance: 24
   attackSegmentWidth: 18
   guardSwipeDistance: 70
+  guardBodyOuterMargin: 70
+  guardRestConfirmSeconds: 0.1
+  guardRestStationaryDistance: 1
+  traversalExitDistance: 48
+  traversalStopConfirmSeconds: 0.1
+  traversalStationaryDistance: 1
   swipeSampleWindowSeconds: 0.12
   minimumSwipeDistance: 84
   minimumSwipeSpeed: 520

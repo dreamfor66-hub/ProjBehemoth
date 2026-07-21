@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: Data_Monster_Special_Minion_Mimic
   m_EditorClassIdentifier: 
   displayName: "\uBBF8\uBBF9"
-  maxHp: 118
-  normalAttackInterval: 1.8
-  chargeInterval: 5.7
-  stunDuration: 3
+  maxHp: 525
+  normalAttackInterval: 1.55
+  chargeInterval: 5
+  stunDuration: 3.4
   stunDamageMultiplier: 1.65
-  experienceReward: 39
-  goldReward: 8
+  experienceReward: 117
+  goldReward: 15
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: 86f9d67ee77363f45828775250d601c2, type: 2}
-  chargeAttack: {fileID: 11400000, guid: 7827019fa6c47584e8df4f26eb533e9b, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: 111eb725d839f364a9e4007a7e9676ea, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 86f9d67ee77363f45828775250d601c2, type: 2}
+  - {fileID: 11400000, guid: 7827019fa6c47584e8df4f26eb533e9b, type: 2}
   bodyColor: {r: 0.52, g: 0.28, b: 0.12, a: 1}

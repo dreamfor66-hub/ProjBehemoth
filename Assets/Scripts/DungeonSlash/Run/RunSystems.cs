@@ -173,6 +173,34 @@ namespace DungeonSlash
             return true;
         }
 
+        public bool TryRemovePerk(PerkData perk)
+        {
+            var active = ActivePerks.FirstOrDefault(candidate => candidate.Data == perk);
+            if (active == null) return false;
+            ActivePerks.Remove(active);
+            for (var stack = 0; stack < active.StackCount; stack++)
+                Player.RemoveModifiers(perk.modifiers);
+            return true;
+        }
+
+        public bool TryRemoveEquipment(EquipmentData item)
+        {
+            if (item == null) return false;
+            if (item.IsPotion)
+            {
+                var potion = potions.FirstOrDefault(candidate => candidate.Data == item);
+                if (potion == null) return false;
+                potions.Remove(potion);
+                return true;
+            }
+
+            if (!EquippedItems.Remove(item)) return false;
+            var equipped = equippedEquipment.FirstOrDefault(candidate => candidate.Data == item);
+            if (equipped != null) equippedEquipment.Remove(equipped);
+            RemovePermanentEquipmentEffect(item);
+            return true;
+        }
+
         public IReadOnlyList<EquipmentActivation> TriggerEquipment(TriggerType triggerType, EquipmentTriggerContext context)
         {
             var activations = new List<EquipmentActivation>();
@@ -250,6 +278,23 @@ namespace DungeonSlash
                     else Player.ApplyCombatModifier(modifier, effect.effectTime);
                     break;
             }
+        }
+
+        private void RemovePermanentEquipmentEffect(EquipmentData item)
+        {
+            if (item.trigger.triggerType != TriggerType.OnAcquire || item.targetType != TargetType.Owner) return;
+            var effect = item.effect;
+            if (effect.effectType != EffectType.StatIncrease) return;
+            if (effect.effectStatType == ModifierKind.RevivalHealthFraction)
+            {
+                revivalHealthFraction = 0f;
+                foreach (var equipped in EquippedItems.Where(candidate => candidate.trigger.triggerType == TriggerType.OnAcquire && candidate.targetType == TargetType.Owner && candidate.effect.effectType == EffectType.StatIncrease && candidate.effect.effectStatType == ModifierKind.RevivalHealthFraction))
+                    revivalHealthFraction = Mathf.Max(revivalHealthFraction, equipped.effect.effectMagnitude);
+                return;
+            }
+            if (effect.effectStatType == ModifierKind.Gold) return;
+            var modifier = new StatModifier { kind = effect.effectStatType, value = effect.effectMagnitude * Mathf.Max(1, effect.effectCount) };
+            Player.RemoveModifiers(new[] { modifier });
         }
 
         public bool TryConsumeRevival()

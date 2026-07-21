@@ -24,13 +24,15 @@ namespace DungeonSlash
         [SerializeField] private Sprite fountainEventSprite;
         [SerializeField] private Sprite goddessEventSprite;
         [SerializeField] private Sprite merchantEventSprite;
+        [SerializeField] private DebugCheatOverlay cheatOverlay;
         [SerializeField] private int seed = 12345;
 
         private readonly Dictionary<int, RoomEventProgress> roomEvents = new();
         private int previousSeed;
+        private bool isCheatCombat;
         public GameFlowState State { get; private set; }
 
-        public void Configure(RunController run, DungeonController dungeon, CombatController combat, PerkChoiceView perks, ShopView shop, ResultView result, RunHudView hud, RoomTransitionView transition, EncounterMessageView encounterMessage, RoomEventView roomEvent, RewardPopupView rewardPopup, Sprite goldSprite, Sprite fountainSprite, Sprite goddessSprite, Sprite merchantSprite)
+        public void Configure(RunController run, DungeonController dungeon, CombatController combat, PerkChoiceView perks, ShopView shop, ResultView result, RunHudView hud, RoomTransitionView transition, EncounterMessageView encounterMessage, RoomEventView roomEvent, RewardPopupView rewardPopup, Sprite goldSprite, Sprite fountainSprite, Sprite goddessSprite, Sprite merchantSprite, DebugCheatOverlay cheat = null)
         {
             runController = run;
             dungeonController = dungeon;
@@ -47,12 +49,31 @@ namespace DungeonSlash
             fountainEventSprite = fountainSprite;
             goddessEventSprite = goddessSprite;
             merchantEventSprite = merchantSprite;
+            cheatOverlay = cheat;
         }
 
         private void Awake()
         {
             dungeonController.RoomEntered += EnterRoom;
             combatController.Completed += CombatCompleted;
+            if (cheatOverlay != null)
+            {
+                cheatOverlay.BattleRequested += HandleCheatBattleRequested;
+                cheatOverlay.InventoryChanged += RefreshHud;
+                cheatOverlay.VisibilityChanged += RefreshHud;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if (dungeonController != null) dungeonController.RoomEntered -= EnterRoom;
+            if (combatController != null) combatController.Completed -= CombatCompleted;
+            if (cheatOverlay != null)
+            {
+                cheatOverlay.BattleRequested -= HandleCheatBattleRequested;
+                cheatOverlay.InventoryChanged -= RefreshHud;
+                cheatOverlay.VisibilityChanged -= RefreshHud;
+            }
         }
 
         private void Start() => StartNewRun();
@@ -62,6 +83,7 @@ namespace DungeonSlash
             StopAllCoroutines();
             seed = CreateRandomSeed();
             roomEvents.Clear();
+            isCheatCombat = false;
             State = GameFlowState.RunStart;
             HideTransientViews();
             resultView?.Hide();
@@ -69,8 +91,23 @@ namespace DungeonSlash
             combatController.ShowPlayer(runController.State);
             dungeonController.BeginRun(seed);
             dungeonController.State.Player.CurrentRoom.IsCleared = true;
+            cheatOverlay?.Bind(runController, combatController);
             ShowNavigation();
         }
+
+        public bool StartCheatBattle(MonsterData monster)
+        {
+            if (monster == null || runController?.State == null || combatController == null || combatController.IsActive || State is GameFlowState.RunVictory or GameFlowState.RunDefeat)
+                return false;
+            StopAllCoroutines();
+            HideTransientViews();
+            dungeonController.HideNavigation();
+            isCheatCombat = true;
+            StartCoroutine(BeginCombatEvent(dungeonController.State.Player.CurrentRoom, new[] { monster }));
+            return true;
+        }
+
+        private void HandleCheatBattleRequested(MonsterData monster) => StartCheatBattle(monster);
 
         private int CreateRandomSeed()
         {
@@ -273,6 +310,11 @@ namespace DungeonSlash
             roomEventView.ShowChoice("\uC774\uB7F0 \uACF3\uC5D0 \uC0C1\uC778...? \uC218\uC0C1\uD558\uC9C0\uB9CC \uB9D0\uC744 \uAC78\uC5B4\uBCFC\uAE4C?", merchantEventSprite, "\uC608", "\uC544\uB2C8\uC624", () =>
             {
                 memory.MarkMerchantDeparted();
+                if (RollsMerchantMutantAmbush(dungeonController.State.Seed, room.RoomId, dungeonController.Floor) && combatController.MerchantMutant != null)
+                {
+                    StartCoroutine(BeginMerchantMutantAmbush(room));
+                    return;
+                }
                 State = GameFlowState.Shop;
                 ShowShop(room);
             }, () =>
@@ -280,6 +322,18 @@ namespace DungeonSlash
                 memory.MarkMerchantDeparted();
                 ShowNavigation();
             });
+        }
+
+        /// <summary>Each merchant independently has a 5% ambush roll from B2 onward.</summary>
+        public static bool RollsMerchantMutantAmbush(int runSeed, int roomId, int floor)
+        {
+            if (floor < 2) return false;
+            return new System.Random(unchecked(runSeed + roomId * 1619 + floor * 7919)).Next(100) < 5;
+        }
+
+        private IEnumerator BeginMerchantMutantAmbush(DungeonRoom room)
+        {
+            yield return BeginCombatEvent(room, new[] { combatController.MerchantMutant }, "\uC0C1\uC778\uC774 \uAC00\uBA74\uC744 \uBC97\uC5B4\uB358\uC84C\uB2E4. \uB3CC\uC5F0\uBCC0\uC774 \uC0C1\uC778\uC774 \uC2B5\uACA9\uD55C\uB2E4!");
         }
 
         private IEnumerator ShowMerchantGone(DungeonRoom room)
@@ -307,6 +361,12 @@ namespace DungeonSlash
 
         private void CombatCompleted(CombatResult result)
         {
+            if (isCheatCombat)
+            {
+                isCheatCombat = false;
+                StartCoroutine(CompleteCheatBattle(result.PlayerWon));
+                return;
+            }
             var room = dungeonController.State.Player.CurrentRoom;
             if (result.PlayerDied) { ShowResult(false); return; }
             room.IsCleared = true;
@@ -316,6 +376,16 @@ namespace DungeonSlash
                 _ => null
             };
             GrantAndShowReward(runController.GetCombatReward(result.Monsters, room.Type == RoomEncounterType.Elite), afterReward);
+        }
+
+        private IEnumerator CompleteCheatBattle(bool won)
+        {
+            State = GameFlowState.RoomEvent;
+            if (!won && !runController.State.Player.IsAlive)
+                runController.State.Player.Revive(.5f);
+            RefreshHud();
+            yield return ShowEventMessage(won ? "테스트 배틀 승리!" : "테스트 배틀 패배 — HP를 복구했습니다.", null);
+            ShowNavigation();
         }
 
         private void GrantAndShowReward(CombatReward reward, Action afterReward = null)
@@ -463,10 +533,17 @@ namespace DungeonSlash
         private void RefreshHud()
         {
             if (runHud == null || dungeonController == null || runController == null || runController.State == null) return;
+            var cheatOpen = cheatOverlay != null && cheatOverlay.IsOpen;
             runHud.Bind(dungeonController.State, runController.State, potion =>
             {
                 if (runController.TryUsePotion(potion)) RefreshHud();
-            });
+            }, cheatOpen ? perk =>
+            {
+                if (runController.TryRemovePerk(perk)) RefreshHud();
+            } : null, cheatOpen ? item =>
+            {
+                if (runController.TryRemoveEquipment(item)) RefreshHud();
+            } : null);
         }
 
         private void ShowResult(bool victory)

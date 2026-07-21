@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: Leech
+  m_Name: Data_Monster_B1_Minion_Leech
   m_EditorClassIdentifier: 
   displayName: "\uD761\uD608\uD615"
-  maxHp: 95
+  maxHp: 142.5
   normalAttackInterval: 1.7
   chargeInterval: 6.4
   stunDuration: 3
@@ -21,8 +21,7 @@ MonoBehaviour:
   experienceReward: 31
   goldReward: 8
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: ebacb0118efb8ca4c9145e6e70c7c5b9, type: 2}
-  chargeAttack: {fileID: 11400000, guid: ab99cbab44e106344af2ab03891b9931, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: bba14f6b8d2d2a84c80a987b977b58ea, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: ebacb0118efb8ca4c9145e6e70c7c5b9, type: 2}
+  - {fileID: 11400000, guid: ab99cbab44e106344af2ab03891b9931, type: 2}
   bodyColor: {r: 0.62, g: 0.18, b: 0.28, a: 1}

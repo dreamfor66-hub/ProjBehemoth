@@ -78,7 +78,8 @@ namespace DungeonSlash
                 candidate.ChestContent = floor == 1 ? ChestContent.Gold : RollChestContent(random);
                 unassigned.Remove(candidate);
             }
-            for (var i = 0; i < settings.eliteRoomCount; i++)
+            // Elite routes become a meaningful map decision after B1: B1=1, B2=2, B3=3.
+            for (var i = 0; i < Math.Max(1, floor); i++)
             {
                 var candidate = unassigned.OrderByDescending(room => distances[room.RoomId]).ThenBy(_ => random.Next()).FirstOrDefault();
                 if (candidate == null) return false;
@@ -87,7 +88,8 @@ namespace DungeonSlash
 
             AssignMinimum(unassigned, RoomEncounterType.Reward, settings.minimumRewardRooms, random);
             AssignMinimum(unassigned, RoomEncounterType.Fountain, settings.minimumFountainRooms, random);
-            AssignMinimum(unassigned, RoomEncounterType.Shop, settings.minimumShopRooms, random);
+            // Shops are a floor-level resource: B1 has one merchant, B2 two, B3 three, and so on.
+            AssignMinimum(unassigned, RoomEncounterType.Shop, floor, random);
             AssignMinimum(unassigned, RoomEncounterType.Goddess, settings.minimumGoddessRooms, random);
             var combatCount = Math.Max(1, (int)Math.Ceiling(graph.Rooms.Count * (settings.combatRoomRatioMin + settings.combatRoomRatioMax) * .5f));
             AssignMinimum(unassigned, RoomEncounterType.Combat, Math.Min(combatCount, unassigned.Count), random);

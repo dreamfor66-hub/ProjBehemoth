@@ -21,14 +21,157 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void WeakPointHit_ForgivesASmallNearMissWithoutChangingBodyCollision()
+        {
+            var segment = new AttackSegment(new Vector2(-100f, 0f), new Vector2(100f, 0f), 18f);
+            var point = new WeakPointRuntime(new WeakPointDefinition { id = "near", normalizedPosition = Vector2.zero, hitRadius = 30f }, new Vector2(0f, 50f));
+            var bodyEquivalent = new CircleHitShape(point.HitShape.Center, point.HitShape.Radius);
+
+            Assert.That(SegmentHitResolver.Intersects(segment, bodyEquivalent), Is.False, "The raw circle is deliberately just outside the exact capsule cast.");
+            Assert.That(WeakPointHitResolver.Resolve(segment, new[] { point }), Has.Count.EqualTo(1), "Weak points accept a near-grazing slash.");
+        }
+
+        [Test]
+        public void TargetTraversal_ConfirmsWhenAStrokeCrossesThenEscapesBeyondTheConfiguredDistance()
+        {
+            var target = new CircleHitShape(Vector2.zero, 40f);
+            var stroke = new AttackSegment(new Vector2(-100f, 0f), new Vector2(110f, 0f), 18f);
+            var confirmation = new TargetTraversalConfirmation();
+            var escapedDistance = TargetTraversalResolver.OutsideDistance(target, stroke.End, stroke.Width);
+
+            Assert.That(TargetTraversalResolver.Touches(stroke, target), Is.True);
+            Assert.That(TargetTraversalResolver.Contains(target, stroke.Start, stroke.Width), Is.False);
+            Assert.That(TargetTraversalResolver.Contains(target, stroke.End, stroke.Width), Is.False);
+            Assert.That(confirmation.Observe(true, false, false, escapedDistance, 210f, 0f, 48f, 1f, .1f), Is.True);
+        }
+
+        [Test]
+        public void TargetTraversal_ConfirmsAfterPointStartsInsideThenRestsOutsideForPointOneSeconds()
+        {
+            var target = new CircleHitShape(Vector2.zero, 40f);
+            var confirmation = new TargetTraversalConfirmation();
+            confirmation.BeginInsideTarget();
+            var outside = new Vector2(52f, 0f); // 3 logical pixels beyond the 40 + 9 hit boundary.
+            var escapedDistance = TargetTraversalResolver.OutsideDistance(target, outside, 18f);
+
+            Assert.That(confirmation.Observe(true, true, false, escapedDistance, 3f, 0f, 48f, 1f, .1f), Is.False);
+            Assert.That(confirmation.Observe(false, false, false, escapedDistance, 0f, .05f, 48f, 1f, .1f), Is.False);
+            Assert.That(confirmation.Observe(false, false, false, escapedDistance, 0f, .15f, 48f, 1f, .1f), Is.True);
+        }
+
+        [Test]
+        public void TargetTraversal_ConfirmsAfterPointRestsInsideTheCrossedMonsterForPointOneSeconds()
+        {
+            var confirmation = new TargetTraversalConfirmation();
+
+            Assert.That(confirmation.Observe(true, false, true, 0f, 18f, 0f, 48f, 1f, .1f), Is.False);
+            Assert.That(confirmation.Observe(false, true, true, 0f, 0f, .04f, 48f, 1f, .1f), Is.False);
+            Assert.That(confirmation.Observe(false, true, true, 0f, 0f, .14f, 48f, 1f, .1f), Is.True);
+        }
+
+        [Test]
+        public void AttackHitCast_ShowsTheExactCapsuleUsedByTheSlashSegment()
+        {
+            var root = new GameObject("FxRoot", typeof(RectTransform)).GetComponent<RectTransform>();
+            var lineObject = new GameObject("Line", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(AttackLineView));
+            lineObject.transform.SetParent(root, false);
+            var view = lineObject.GetComponent<AttackLineView>();
+            view.Configure(lineObject.GetComponent<RectTransform>(), lineObject.GetComponent<UnityEngine.UI.Image>());
+
+            view.Show(new AttackSegment(new Vector2(-50f, 30f), new Vector2(50f, 30f), 18f), false);
+            var cast = root.Find("AttackHitCast").GetComponent<RectTransform>();
+
+            Assert.That(cast.anchoredPosition, Is.EqualTo(new Vector2(0f, 30f)));
+            Assert.That(cast.sizeDelta, Is.EqualTo(new Vector2(118f, 18f)), "The capsule has the segment length plus one radius at each end.");
+            Assert.That(cast.GetComponent<CapsuleCastGraphic>().color, Is.EqualTo(new Color(1f, .12f, .12f, .34f)));
+            Object.DestroyImmediate(root.gameObject);
+        }
+
+        [Test]
+        public void WeakPointView_UsesTheSameDiameterAsItsGameplayHitCircle()
+        {
+            var root = new GameObject("WeakPoint", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<RectTransform>();
+            var view = root.gameObject.AddComponent<WeakPointView>();
+            view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), null);
+            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 30f }, new Vector2(42f, -18f));
+
+            view.Bind(runtime);
+
+            Assert.That(root.anchoredPosition, Is.EqualTo(new Vector2(42f, -18f)));
+            Assert.That(root.sizeDelta, Is.EqualTo(new Vector2(60f, 60f)));
+            Object.DestroyImmediate(root.gameObject);
+        }
+
+        [Test]
         public void WeakPoint_ConsumesOnlyOneHitPerResolvedAttack()
         {
             var point = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 2 }, Vector2.zero);
+            Assert.That(point.RequiredHits, Is.EqualTo(2));
             Assert.That(point.ApplyChargeHit(), Is.True);
             Assert.That(point.RemainingHits, Is.EqualTo(1));
             Assert.That(point.ApplyChargeHit(), Is.True);
             Assert.That(point.IsDestroyed, Is.True);
             Assert.That(point.ApplyChargeHit(), Is.False);
+        }
+
+        [Test]
+        public void WeakPointView_BuildsOneSegmentForEachRequiredChargeHit()
+        {
+            var root = new GameObject("WeakPoint", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<RectTransform>();
+            var display = new GameObject("RemainingHitDisplay", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            display.transform.SetParent(root, false);
+            var view = root.gameObject.AddComponent<WeakPointView>();
+            view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), display);
+            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 2 }, Vector2.zero);
+
+            view.Bind(runtime);
+
+            var grid = root.Find("RemainingHitDisplay/HitSegments");
+            Assert.That(grid, Is.Not.Null);
+            Assert.That(grid.childCount, Is.EqualTo(2));
+            Object.DestroyImmediate(root.gameObject);
+        }
+
+        [Test]
+        public void WeakPointView_HidesTheHitBarForOneHitWeakPoints()
+        {
+            var root = new GameObject("WeakPoint", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<RectTransform>();
+            var display = new GameObject("RemainingHitDisplay", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            display.transform.SetParent(root, false);
+            var view = root.gameObject.AddComponent<WeakPointView>();
+            view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), display);
+            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 1 }, Vector2.zero);
+
+            view.Bind(runtime);
+
+            var grid = root.Find("RemainingHitDisplay/HitSegments");
+            Assert.That(grid, Is.Not.Null);
+            Assert.That(grid.gameObject.activeSelf, Is.False);
+            Object.DestroyImmediate(root.gameObject);
+        }
+
+        [Test]
+        public void CombatSceneView_CameraShakeReturnsTheCombatAreaToItsRestingPosition()
+        {
+            var area = new GameObject("CombatArea", typeof(RectTransform)).GetComponent<RectTransform>();
+            area.anchoredPosition = new Vector2(12f, -20f);
+            var player = new GameObject("PlayerAnchor", typeof(RectTransform)).GetComponent<RectTransform>();
+            var monster = new GameObject("MonsterAnchor", typeof(RectTransform)).GetComponent<RectTransform>();
+            var view = area.gameObject.AddComponent<CombatSceneView>();
+            view.Configure(area, player, monster);
+
+            view.TriggerCameraShake(12f, .15f);
+            view.TickCameraShake(.03f);
+            Assert.That(view.IsCameraShaking, Is.True);
+            Assert.That(area.anchoredPosition, Is.Not.EqualTo(new Vector2(12f, -20f)));
+
+            view.TickCameraShake(.2f);
+            Assert.That(view.IsCameraShaking, Is.False);
+            Assert.That(area.anchoredPosition, Is.EqualTo(new Vector2(12f, -20f)));
+
+            Object.DestroyImmediate(player.gameObject);
+            Object.DestroyImmediate(monster.gameObject);
+            Object.DestroyImmediate(area.gameObject);
         }
 
         [Test]
@@ -48,9 +191,31 @@ namespace DungeonSlash.Tests
         public void PlayerDownwardSwipe_IsPrioritizedAsGuardAcrossTheWholePlayerArea()
         {
             var player = new Vector2(0f, -275f);
-            Assert.That(GuardGestureResolver.IsPlayerDownwardGuard(player, new Vector2(128f, -190f), new Vector2(118f, -300f), 70f), Is.True);
-            Assert.That(GuardGestureResolver.IsPlayerDownwardGuard(player, new Vector2(0f, -220f), new Vector2(100f, -270f), 70f), Is.False, "A mostly horizontal motion must not guard.");
-            Assert.That(GuardGestureResolver.IsPlayerDownwardGuard(player, new Vector2(172f, -210f), new Vector2(170f, -292f), 70f), Is.False, "Gestures that begin outside the player slot must not guard.");
+            var body = new RectHitShape(player, new Vector2(270f, 270f));
+            Assert.That(GuardGestureResolver.IsPlayerDownwardGuard(body, new Vector2(128f, -190f), new Vector2(118f, -300f), 70f, 16f), Is.True);
+            Assert.That(GuardGestureResolver.IsPlayerDownwardGuard(body, new Vector2(0f, -220f), new Vector2(100f, -270f), 70f, 16f), Is.False, "A mostly horizontal motion must not guard.");
+            Assert.That(GuardGestureResolver.IsPlayerDownwardGuard(body, new Vector2(172f, -210f), new Vector2(170f, -292f), 70f, 16f), Is.False, "Gestures beyond the body and its configured outer margin must not guard.");
+        }
+
+        [Test]
+        public void PlayerDownwardRest_ConfirmsGuardForAnOutsideOrInsidePressThatSettlesOnThePlayer()
+        {
+            var player = new Vector2(0f, -275f);
+            var body = new RectHitShape(player, new Vector2(270f, 270f));
+            var confirmation = new GuardRestConfirmation();
+            var outsidePress = new Vector2(0f, -100f);
+            var insideHold = new Vector2(0f, -260f);
+
+            Assert.That(RectHitResolver.Intersects(new AttackSegment(outsidePress, insideHold, 0f), body, 16f), Is.True, "A drag that began outside must register its entry through the body guard zone.");
+            Assert.That(GuardGestureResolver.IsPlayerRestGuardCandidate(body, outsidePress, insideHold, 70f), Is.True, "A downward stroke may begin outside the player before settling inside.");
+            Assert.That(GuardGestureResolver.IsPlayerRestGuardCandidate(body, new Vector2(0f, -200f), new Vector2(0f, -300f), 70f), Is.True, "A downward stroke may also begin inside the player.");
+            Assert.That(GuardGestureResolver.IsPlayerRestGuardCandidate(body, outsidePress, new Vector2(185f, -260f), 70f), Is.False, "The held pointer must settle inside the actual body, not merely its outer guard margin.");
+            Assert.That(GuardGestureResolver.IsDownwardApproach(outsidePress, insideHold), Is.True, "An outside-to-body downward entry should qualify without the normal guard distance threshold.");
+            Assert.That(GuardGestureResolver.IsDownwardApproach(insideHold, outsidePress), Is.False, "Upward motion into the player must not use the loose entry guard.");
+
+            Assert.That(confirmation.Observe(true, true, 6f, 0f, 1f, .1f), Is.False);
+            Assert.That(confirmation.Observe(false, true, 0f, .05f, 1f, .1f), Is.False);
+            Assert.That(confirmation.Observe(false, true, 0f, .16f, 1f, .1f), Is.True);
         }
 
         [Test]
@@ -322,6 +487,22 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void ChargeStart_UsesTheSharedAttackCooldown()
+        {
+            var data = ScriptableObject.CreateInstance<PlayerCombatData>();
+            data.attackCooldown = 1f;
+            var player = new PlayerCombatRuntime(data);
+
+            Assert.That(player.CanStartCharge(), Is.True);
+            player.StartAttackCooldown();
+            Assert.That(player.CanStartCharge(), Is.False);
+
+            player.Tick(1f);
+            Assert.That(player.CanStartCharge(), Is.True);
+            Object.DestroyImmediate(data);
+        }
+
+        [Test]
         public void Potion_CombatStartStatEffectLastsForItsConfiguredTriggerMaximum()
         {
             var playerData = ScriptableObject.CreateInstance<PlayerCombatData>();
@@ -442,6 +623,247 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void DungeonGeneration_CreatesOneMerchantPerBasementFloor()
+        {
+            var settings = ScriptableObject.CreateInstance<DungeonGenerationSettings>();
+            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumChestDistance = 4;
+            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.chestRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
+            var generator = new DungeonGenerator(settings);
+
+            for (var floor = 1; floor <= 3; floor++)
+            {
+                var state = generator.Generate(3500 + floor, floor);
+                Assert.That(state.Graph.Rooms.Count(room => room.Type == RoomEncounterType.Shop), Is.EqualTo(floor), $"B{floor} must contain exactly {floor} merchants.");
+            }
+            Object.DestroyImmediate(settings);
+        }
+
+        [Test]
+        public void DungeonGeneration_CreatesOneElitePerBasementFloor()
+        {
+            var settings = ScriptableObject.CreateInstance<DungeonGenerationSettings>();
+            settings.minRooms = 20; settings.maxRooms = 20; settings.minimumBossDistance = 7; settings.minimumChestDistance = 4;
+            settings.minimumRewardRooms = 2; settings.minimumFountainRooms = 1; settings.minimumShopRooms = 1; settings.minimumGoddessRooms = 1; settings.eliteRoomCount = 1; settings.chestRoomCount = 1; settings.loopChance = .2f; settings.maxGenerationAttempts = 200;
+            var generator = new DungeonGenerator(settings);
+
+            for (var floor = 1; floor <= 3; floor++)
+            {
+                var state = generator.Generate(4100 + floor, floor);
+                Assert.That(state.Graph.Rooms.Count(room => room.Type == RoomEncounterType.Elite), Is.EqualTo(floor), $"B{floor} must contain exactly {floor} elite rooms.");
+            }
+            Object.DestroyImmediate(settings);
+        }
+
+        [Test]
+        public void MonsterProfiles_B2AndBeyondUseDistinctCadencesAndMimicIsEliteStrength()
+        {
+            var frostBat = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Minion_FrostBat.asset");
+            var yeti = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Minion_Yeti.asset");
+            var shadeLancer = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B3_Minion_ShadeLancer.asset");
+            var frostOgre = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Elite_FrostOgre.asset");
+            var frostQueen = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Boss_FrostQueen.asset");
+            var soulKnight = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B3_Elite_SoulKnight.asset");
+            var mimicAssets = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/DungeonSlashPrototype/Monsters" })
+                .Select(AssetDatabase.GUIDToAssetPath)
+                .Select(AssetDatabase.LoadAssetAtPath<MonsterData>)
+                .Where(monster => monster.displayName == "\uBBF8\uBBF9")
+                .ToArray();
+            Assert.That(mimicAssets.Length, Is.EqualTo(1), "The chest event must reference the single special Mimic asset.");
+            var mimic = mimicAssets[0];
+            var monsterAssetNames = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/DungeonSlashPrototype/Monsters" })
+                .Select(AssetDatabase.GUIDToAssetPath)
+                .Select(System.IO.Path.GetFileNameWithoutExtension)
+                .ToArray();
+            var monsterAssets = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/DungeonSlashPrototype/Monsters" })
+                .Select(AssetDatabase.GUIDToAssetPath)
+                .Select(path => (asset: AssetDatabase.LoadAssetAtPath<MonsterData>(path), fileName: System.IO.Path.GetFileNameWithoutExtension(path)))
+                .ToArray();
+
+            Assert.That(monsterAssetNames.All(name => name.StartsWith("Data_Monster_", System.StringComparison.Ordinal)), Is.True, "Generated predecessor assets must not coexist with canonical Data_Monster assets.");
+            Assert.That(monsterAssets.All(entry => entry.asset != null && entry.asset.name == entry.fileName), Is.True, "The ScriptableObject name must match its canonical monster filename.");
+            Assert.That(monsterAssets.All(entry => entry.asset.attacks != null && entry.asset.GetAttack(MonsterAttackType.Normal) != null && entry.asset.GetAttack(MonsterAttackType.Charge) != null), Is.True, "Every generated monster must own its normal and charge definitions through AttackData.");
+            Assert.That(monsterAssets.SelectMany(entry => entry.asset.GetAttacks(MonsterAttackType.Charge)).All(attack => attack.chargeWeakPoints != null && attack.chargeWeakPoints.Count > 0), Is.True, "Charge weak points must live directly on the charge AttackData.");
+            Assert.That(monsterAssets.SelectMany(entry => entry.asset.GetAttacks(MonsterAttackType.Charge)).Select(attack => attack.chargeTimeLimit).Distinct().Count(), Is.GreaterThan(1), "Charge windows retain the distinct weak-point and pattern timings.");
+            Assert.That(System.IO.Directory.Exists("Assets/Data/DungeonSlashPrototype/ChargePatterns"), Is.False, "ChargePatternData assets must not remain after the AttackData migration.");
+            Assert.That(frostBat.normalAttackInterval, Is.GreaterThanOrEqualTo(2f), "The frost bat is a low-pressure summoned minion, not an independent rapid-fire threat.");
+            Assert.That(frostBat.maxHp, Is.LessThanOrEqualTo(80f));
+            Assert.That(frostBat.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(3.6f).Within(.001f), "The 2.1-second frost bat pattern receives a +1.5 second reaction window.");
+            Assert.That(frostBat.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(.62f).Within(.001f), "Every normal-attack telegraph receives the global +0.12 second reaction buffer.");
+            Assert.That(yeti.normalAttackInterval, Is.GreaterThan(5f), "The yeti needs a long, punishable heavy-attack cycle.");
+            Assert.That(yeti.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(1.17f).Within(.001f));
+            Assert.That(yeti.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(8.48f).Within(.001f), "The two-hit heavy weak points receive 1.6 times the one-hit charge window.");
+            Assert.That(yeti.GetAttack(MonsterAttackType.Normal).shieldDamage, Is.GreaterThanOrEqualTo(30f), "The yeti's single hit must break a full base shield.");
+            Assert.That(shadeLancer.normalAttackInterval, Is.GreaterThan(5f), "The shade lancer also supplies a slow heavy rhythm on B3.");
+            Assert.That(frostOgre.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard.maxGuard, Is.LessThanOrEqualTo(45f), "The directional gate must be breakable with an early-run horizontal combo.");
+            Assert.That(frostQueen.normalAttackInterval, Is.GreaterThanOrEqualTo(2.5f), "The queen and her two minions need breathing room between attack cycles.");
+            Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).combatMechanics.hitCount, Is.EqualTo(3));
+            Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).damage, Is.LessThanOrEqualTo(20f), "Soul Barrage may be a triple hit, but cannot delete a full HP bar after one guard break.");
+            Assert.That(mimic.maxHp, Is.GreaterThanOrEqualTo(350f), "A chest mimic must be elite-grade, not a regular minion.");
+            Assert.That(mimic.GetAttack(MonsterAttackType.Normal).shieldDamage, Is.GreaterThanOrEqualTo(30f));
+            Assert.That(mimic.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(6.4f).Within(.001f), "The two-hit Mimic weak points receive 1.6 times the one-hit charge window.");
+        }
+
+        [Test]
+        public void SummonedMonsterScale_ScalesWeakPointGeometryAndCanStaggerActions()
+        {
+            var chargeAttack = ScriptableObject.CreateInstance<MonsterAttackData>();
+            chargeAttack.type = MonsterAttackType.Charge;
+            chargeAttack.chargeWeakPoints = new List<WeakPointDefinition>
+            {
+                new() { id = "core", normalizedPosition = new Vector2(100f, 20f), hitRadius = 30f, requiredChargeHits = 1 }
+            };
+            var data = ScriptableObject.CreateInstance<MonsterData>();
+            data.normalAttackInterval = 2f;
+            data.chargeInterval = 6f;
+            data.attacks = new List<MonsterAttackData> { chargeAttack };
+            var runtime = new MonsterRuntime(data, visualScale: .62f);
+
+            runtime.DelayActions(.45f);
+            Assert.That(runtime.NormalAttackTimer, Is.EqualTo(2.45f).Within(.001f));
+            Assert.That(runtime.ChargeTimer, Is.EqualTo(6.45f).Within(.001f));
+            runtime.StartCharge(Vector2.zero);
+            Assert.That(runtime.WeakPoints[0].HitShape.Center, Is.EqualTo(new Vector2(62f, 12.4f)));
+            Assert.That(runtime.WeakPoints[0].HitShape.Radius, Is.EqualTo(18.6f).Within(.001f));
+
+            Object.DestroyImmediate(data);
+            Object.DestroyImmediate(chargeAttack);
+        }
+
+        [Test]
+        public void DirectionalGuard_BlocksUntilTheMatchingSlashBreaksItThenRebuilds()
+        {
+            var data = ScriptableObject.CreateInstance<MonsterData>();
+            data.maxHp = 100f;
+            data.normalAttackInterval = 2f;
+            data.chargeInterval = 6f;
+            var normalAttack = ScriptableObject.CreateInstance<MonsterAttackData>();
+            normalAttack.type = MonsterAttackType.Normal;
+            normalAttack.combatMechanics = new MonsterCombatMechanics
+            {
+                directionalGuard = new DirectionalGuardData
+                {
+                    enabled = true,
+                    breakByAttackWay = TriggerAttackWayFilter.Horizontal,
+                    maxGuard = 30f,
+                    rebuildDelay = .5f,
+                    rebuildPerSecond = 30f
+                }
+            };
+            data.attacks = new List<MonsterAttackData> { normalAttack };
+            var runtime = new MonsterRuntime(data);
+
+            Assert.That(runtime.TryAbsorbDirectionalGuard(TriggerAttackWay.Upward, 15f, out var wrongWayAbsorbed, out var matchedWrongWay, out var wrongWayBroke), Is.True);
+            Assert.That(matchedWrongWay, Is.False);
+            Assert.That(wrongWayAbsorbed, Is.EqualTo(0f));
+            Assert.That(wrongWayBroke, Is.False);
+            Assert.That(runtime.DirectionalGuardCurrent, Is.EqualTo(30f));
+
+            Assert.That(runtime.TryAbsorbDirectionalGuard(TriggerAttackWay.Horizontal, 30f, out var absorbed, out var matched, out var broken), Is.True);
+            Assert.That(matched, Is.True);
+            Assert.That(absorbed, Is.EqualTo(30f));
+            Assert.That(broken, Is.True);
+            Assert.That(runtime.IsDirectionalGuardActive, Is.False);
+            runtime.Tick(.5f, Vector2.zero);
+            runtime.Tick(1f, Vector2.zero);
+            Assert.That(runtime.IsDirectionalGuardActive, Is.True);
+            Assert.That(runtime.DirectionalGuardCurrent, Is.EqualTo(30f));
+            Object.DestroyImmediate(normalAttack);
+            Object.DestroyImmediate(data);
+        }
+
+        [Test]
+        public void MultiHitMonster_AttacksAgainAfterTheFirstHitInsteadOfEndingItsSequence()
+        {
+            var data = ScriptableObject.CreateInstance<MonsterData>();
+            var attack = ScriptableObject.CreateInstance<MonsterAttackData>();
+            attack.type = MonsterAttackType.Normal;
+            attack.windupDuration = .1f;
+            attack.combatMechanics.hitCount = 3;
+            attack.combatMechanics.followupDelay = .2f;
+            data.attacks = new List<MonsterAttackData> { attack };
+            data.normalAttackInterval = 3f;
+            data.chargeInterval = 9f;
+            var runtime = new MonsterRuntime(data);
+
+            runtime.BeginNormalAttack();
+            runtime.Tick(.1f, Vector2.zero);
+            Assert.That(runtime.IsNormalAttackReadyToHit, Is.True);
+            Assert.That(runtime.AdvanceNormalAttack(), Is.True);
+            Assert.That(runtime.RemainingNormalAttackHits, Is.EqualTo(2));
+            runtime.Tick(.2f, Vector2.zero);
+            Assert.That(runtime.AdvanceNormalAttack(), Is.True);
+            runtime.Tick(.2f, Vector2.zero);
+            Assert.That(runtime.AdvanceNormalAttack(), Is.False);
+            Assert.That(runtime.State, Is.EqualTo(MonsterState.Idle));
+            Object.DestroyImmediate(attack);
+            Object.DestroyImmediate(data);
+        }
+
+        [Test]
+        public void MultiHitCharge_AttacksAgainAfterWeakPointExposureEnds()
+        {
+            var data = ScriptableObject.CreateInstance<MonsterData>();
+            var attack = ScriptableObject.CreateInstance<MonsterAttackData>();
+            attack.type = MonsterAttackType.Charge;
+            attack.chargeTimeLimit = .1f;
+            attack.chargeWeakPoints = new List<WeakPointDefinition> { new() { id = "core", normalizedPosition = Vector2.zero, hitRadius = 30f } };
+            attack.combatMechanics.hitCount = 3;
+            attack.combatMechanics.followupDelay = .2f;
+            data.attacks = new List<MonsterAttackData> { attack };
+            var runtime = new MonsterRuntime(data);
+
+            runtime.StartCharge(Vector2.zero);
+            runtime.Tick(.1f, Vector2.zero);
+            Assert.That(runtime.ChargeExpired, Is.True);
+            Assert.That(runtime.AdvanceChargeAttack(), Is.True);
+            Assert.That(runtime.RemainingChargeHits, Is.EqualTo(2));
+            Assert.That(runtime.WeakPoints, Is.Empty, "Follow-up hits must not leave the expired weak-point exposure active.");
+            runtime.Tick(.2f, Vector2.zero);
+            Assert.That(runtime.AdvanceChargeAttack(), Is.True);
+            runtime.Tick(.2f, Vector2.zero);
+            Assert.That(runtime.AdvanceChargeAttack(), Is.False);
+            Assert.That(runtime.RemainingChargeHits, Is.EqualTo(0));
+            Object.DestroyImmediate(attack);
+            Object.DestroyImmediate(data);
+        }
+
+        [Test]
+        public void MonsterMechanicAssets_ConfigureLeechEliteAndFrostQueenRules()
+        {
+            var leech = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B1_Minion_Leech.asset");
+            var minotaur = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B1_Elite_Minotaur.asset");
+            var mazeGuardian = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset");
+            var frostOgre = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Elite_FrostOgre.asset");
+            var frostQueen = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Boss_FrostQueen.asset");
+            var soulKnight = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B3_Elite_SoulKnight.asset");
+
+            Assert.That(leech.GetAttack(MonsterAttackType.Normal).combatMechanics.healOnUnguardedHit, Is.GreaterThan(0f));
+            Assert.That(frostOgre.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard.enabled, Is.True);
+            Assert.That(frostOgre.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard.breakByAttackWay, Is.EqualTo(TriggerAttackWayFilter.Horizontal));
+            Assert.That(frostOgre.GetAttack(MonsterAttackType.Normal).combatMechanics.hitCount, Is.EqualTo(2));
+            Assert.That(soulKnight.GetAttack(MonsterAttackType.Normal).combatMechanics.hitCount, Is.EqualTo(3));
+            var minotaurCharge = minotaur.GetAttack(MonsterAttackType.Charge);
+            Assert.That(minotaurCharge.combatMechanics.hitCount, Is.EqualTo(3));
+            Assert.That(minotaurCharge.damage, Is.EqualTo(22.5f).Within(.001f));
+            Assert.That(minotaurCharge.shieldDamage, Is.EqualTo(43.2f).Within(.001f));
+            var mazeGuard = mazeGuardian.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard;
+            Assert.That(mazeGuard.enabled, Is.True);
+            Assert.That(mazeGuard.breakByAttackWay, Is.EqualTo(TriggerAttackWayFilter.Upward | TriggerAttackWayFilter.Downward));
+            var queenCharge = frostQueen.GetAttack(MonsterAttackType.Charge);
+            Assert.That(queenCharge.chargeSummonMechanics.openingSummons.Count, Is.EqualTo(2));
+            Assert.That(queenCharge.chargeSummonMechanics.openingSummons.All(monster => monster == queenCharge.chargeSummonMechanics.summonOnFailedCharge), Is.True);
+            Assert.That(queenCharge.chargeSummonMechanics.healOnFailedChargeWhileSummonAlive, Is.GreaterThan(0f));
+        }
+
+        [Test]
+        public void MerchantMutantAmbush_StartsAtB2AndUsesFivePercentRolls()
+        {
+            Assert.That(Enumerable.Range(1, 100).Any(seed => GameFlowController.RollsMerchantMutantAmbush(seed, 4, 1)), Is.False);
+            var ambushes = Enumerable.Range(1, 1000).Count(seed => GameFlowController.RollsMerchantMutantAmbush(seed, 4, 2));
+            Assert.That(ambushes, Is.InRange(35, 65), "The deterministic merchant ambush sequence should remain near its 5% design rate.");
+        }
+
+        [Test]
         public void EquipmentTrigger_UsesAttackFiltersCountsAndConditionsInsteadOfHardcodedRelicRules()
         {
             var playerData = ScriptableObject.CreateInstance<PlayerCombatData>(); playerData.maxHp = 100f; playerData.shieldMax = 30f;
@@ -474,6 +896,43 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
+        public void DebugCheatOverlay_AwakeWiresSerializedActionButtons()
+        {
+            var root = new GameObject("CheatOverlay");
+            var panel = new GameObject("CheatPanel");
+            var start = new GameObject("Start", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)).GetComponent<UnityEngine.UI.Button>();
+            var addPerk = new GameObject("AddPerk", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)).GetComponent<UnityEngine.UI.Button>();
+            var addEquipment = new GameObject("AddEquipment", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)).GetComponent<UnityEngine.UI.Button>();
+            var status = new GameObject("Status", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            var overlay = root.AddComponent<DebugCheatOverlay>();
+            var serialized = new SerializedObject(overlay);
+            serialized.FindProperty("panel").objectReferenceValue = panel;
+            serialized.FindProperty("startBattleButton").objectReferenceValue = start;
+            serialized.FindProperty("addPerkButton").objectReferenceValue = addPerk;
+            serialized.FindProperty("addEquipmentButton").objectReferenceValue = addEquipment;
+            serialized.FindProperty("statusLabel").objectReferenceValue = status;
+            serialized.ApplyModifiedPropertiesWithoutUndo();
+
+            // Awake runs after scene fields are deserialized. Invoke it after assigning
+            // the test fields to reproduce that runtime lifecycle exactly.
+            typeof(DebugCheatOverlay).GetMethod("Awake", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)?.Invoke(overlay, null);
+            start.onClick.Invoke();
+            Assert.That(status.text, Is.Not.Empty, "The serialized Start Battle button must invoke the overlay callback at runtime.");
+            status.text = string.Empty;
+            addPerk.onClick.Invoke();
+            Assert.That(status.text, Is.Not.Empty, "The serialized Add Perk button must invoke the overlay callback at runtime.");
+            status.text = string.Empty;
+            addEquipment.onClick.Invoke();
+            Assert.That(status.text, Is.Not.Empty, "The serialized Add Equipment button must invoke the overlay callback at runtime.");
+            Object.DestroyImmediate(root);
+            Object.DestroyImmediate(panel);
+            Object.DestroyImmediate(start.gameObject);
+            Object.DestroyImmediate(addPerk.gameObject);
+            Object.DestroyImmediate(addEquipment.gameObject);
+            Object.DestroyImmediate(status.gameObject);
+        }
+
+        [Test]
         public void RewardExperienceGauge_UsesCurrentExperienceOverRequiredExperience()
         {
             var root = new GameObject("RewardRoot", typeof(RectTransform), typeof(Canvas));
@@ -498,6 +957,48 @@ namespace DungeonSlash.Tests
             Object.DestroyImmediate(popup.gameObject);
             Object.DestroyImmediate(playerData);
             Object.DestroyImmediate(balance);
+        }
+
+        [Test]
+        public void CheatInventoryRemoval_ReversesPerkAndPermanentRelicStatsAndCanDiscardPotions()
+        {
+            var player = ScriptableObject.CreateInstance<PlayerCombatData>();
+            player.maxHp = 100f;
+            player.baseAttackDamage = 10f;
+            var balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
+            balance.initialExperienceRequirement = 40;
+            var perk = ScriptableObject.CreateInstance<PerkData>();
+            perk.maxStacks = 3;
+            perk.modifiers = new List<StatModifier> { new() { kind = ModifierKind.NormalDamage, value = .25f } };
+            var relic = ScriptableObject.CreateInstance<EquipmentData>();
+            relic.itemKind = ShopItemKind.Relic;
+            relic.trigger = new EquipmentTrigger { triggerType = TriggerType.OnAcquire, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1 };
+            relic.targetType = TargetType.Owner;
+            relic.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectMagnitude = .4f, effectCount = 1, effectStatType = ModifierKind.NormalDamage };
+            var potion = ScriptableObject.CreateInstance<EquipmentData>();
+            potion.itemKind = ShopItemKind.Potion;
+            var state = new RunState(player, balance);
+            var perkSystem = new PerkSystem(new[] { perk });
+
+            perkSystem.Apply(state, perk);
+            perkSystem.Apply(state, perk);
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(15f).Within(.001f));
+            Assert.That(state.TryRemovePerk(perk), Is.True);
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(10f).Within(.001f));
+
+            Assert.That(state.TryEquip(relic), Is.True);
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(14f).Within(.001f));
+            Assert.That(state.TryRemoveEquipment(relic), Is.True);
+            Assert.That(state.Player.NormalAttackDamage, Is.EqualTo(10f).Within(.001f));
+
+            Assert.That(state.TryStorePotion(potion), Is.True);
+            Assert.That(state.TryRemoveEquipment(potion), Is.True);
+            Assert.That(state.Potions, Is.Empty);
+            Object.DestroyImmediate(player);
+            Object.DestroyImmediate(balance);
+            Object.DestroyImmediate(perk);
+            Object.DestroyImmediate(relic);
+            Object.DestroyImmediate(potion);
         }
 
         [Test]
@@ -915,8 +1416,16 @@ namespace DungeonSlash.Tests
 
             var flow = components.OfType<GameFlowController>().Single();
             var serializedFlow = new SerializedObject(flow);
-            foreach (var propertyName in new[] { "runController", "dungeonController", "combatController", "perkChoiceView", "shopView", "resultView", "runHud", "roomTransitionView", "encounterMessageView", "roomEventView", "rewardPopupView", "goldEventSprite", "fountainEventSprite", "goddessEventSprite", "merchantEventSprite" })
+            foreach (var propertyName in new[] { "runController", "dungeonController", "combatController", "perkChoiceView", "shopView", "resultView", "runHud", "roomTransitionView", "encounterMessageView", "roomEventView", "rewardPopupView", "goldEventSprite", "fountainEventSprite", "goddessEventSprite", "merchantEventSprite", "cheatOverlay" })
                 Assert.That(serializedFlow.FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"GameFlowController.{propertyName} is not connected.");
+
+            var cheat = components.OfType<DebugCheatOverlay>().Single();
+            var serializedCheat = new SerializedObject(cheat);
+            foreach (var propertyName in new[] { "panel", "startBattleButton", "infiniteBattleButton", "addPerkButton", "addEquipmentButton", "infiniteBattleLabel", "statusLabel" })
+                Assert.That(serializedCheat.FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"DebugCheatOverlay.{propertyName} is not connected.");
+            Assert.That(serializedCheat.FindProperty("monsterButtons").arraySize, Is.GreaterThanOrEqualTo(18));
+            Assert.That(serializedCheat.FindProperty("perkButtons").arraySize, Is.GreaterThanOrEqualTo(18));
+            Assert.That(serializedCheat.FindProperty("equipmentButtons").arraySize, Is.GreaterThanOrEqualTo(18));
 
             var transition = components.OfType<RoomTransitionView>().Single();
             Assert.That(new SerializedObject(transition).FindProperty("walkBackdrop").objectReferenceValue, Is.Not.Null, "Room travel needs a visible walking layer, not a full-screen fade.");
@@ -929,7 +1438,7 @@ namespace DungeonSlash.Tests
             Assert.That(components.OfType<CombatController>().Count(), Is.EqualTo(1));
             Assert.That(components.OfType<DungeonController>().Count(), Is.EqualTo(1));
             var serializedCombat = new SerializedObject(combatController);
-            foreach (var propertyName in new[] { "damageNumberRoot", "damageNumberPrefab", "weakPointBreakFxRoot", "weakPointBreakFxPrefab", "mimicMonster" })
+            foreach (var propertyName in new[] { "damageNumberRoot", "damageNumberPrefab", "weakPointBreakFxRoot", "weakPointBreakFxPrefab", "mimicMonster", "merchantMutant" })
                 Assert.That(serializedCombat.FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"CombatController.{propertyName} is not connected.");
             Assert.That(serializedCombat.FindProperty("bossMonsters").arraySize, Is.EqualTo(3), "Each floor needs its own boss definition.");
             Assert.That(serializedCombat.FindProperty("floorTwoMonsters").arraySize, Is.GreaterThanOrEqualTo(4), "Floor two needs its own roster plus the returning foe.");
@@ -963,6 +1472,9 @@ namespace DungeonSlash.Tests
             }
             Assert.That(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/UI/RunHudIconView.prefab").GetComponent<RunHudIconView>(), Is.Not.Null, "The run HUD needs a reusable hoverable item-icon view.");
             Assert.That(new SerializedObject(components.OfType<PerkChoiceView>().Single()).FindProperty("title").objectReferenceValue, Is.Not.Null, "Relic and perk selections need a panel title.");
+            var perkChoiceItem = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/UI/PerkChoiceItem.prefab").GetComponent<PerkChoiceItem>();
+            foreach (var propertyName in new[] { "button", "label", "icon" })
+                Assert.That(new SerializedObject(perkChoiceItem).FindProperty(propertyName).objectReferenceValue, Is.Not.Null, $"PerkChoiceItem.{propertyName} must render icon-equipped reward choices.");
             var mapView = components.OfType<DungeonMapView>().Single();
             Assert.That(new SerializedObject(mapView).FindProperty("connectionPrefab").objectReferenceValue, Is.Not.Null, "DungeonMapView.connectionPrefab is not connected.");
             Assert.That(new SerializedObject(mapView).FindProperty("spacing").floatValue, Is.InRange(38f, 44f), "Dungeon-style routes must be drawn inside nearly adjoining room tiles, not in wide gaps.");

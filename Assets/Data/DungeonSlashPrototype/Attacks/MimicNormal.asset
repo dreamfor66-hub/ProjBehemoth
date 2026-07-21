@@ -12,9 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: MimicNormal
   m_EditorClassIdentifier: 
+  type: 0
   displayName: "\uBCA0\uAE30"
-  damage: 17
-  shieldDamage: 28
-  windupDuration: 0.75
+  damage: 30
+  shieldDamage: 50
+  windupDuration: 0.87
   recoveryDuration: 0.5
   guardable: 1
+  chargeTimeLimit: 2.5
+  chargeWeakPoints: []
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

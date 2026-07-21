@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: FrostOgre
+  m_Name: Data_Monster_B2_Elite_FrostOgre
   m_EditorClassIdentifier: 
   displayName: "\uC11C\uB9AC \uAC70\uC778"
-  maxHp: 350
-  normalAttackInterval: 2.55
-  chargeInterval: 5.4
-  stunDuration: 4.3
+  maxHp: 525
+  normalAttackInterval: 4.8
+  chargeInterval: 11
+  stunDuration: 4.5
   stunDamageMultiplier: 1.65
-  experienceReward: 116
+  experienceReward: 117
   goldReward: 14
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: 62019fdb93c09c04ab93e187c5fc7966, type: 2}
-  chargeAttack: {fileID: 11400000, guid: b7513afe2ed561847b341b11ae578676, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: 950849819312d4d46a00e3ad80f08fa4, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 62019fdb93c09c04ab93e187c5fc7966, type: 2}
+  - {fileID: 11400000, guid: b7513afe2ed561847b341b11ae578676, type: 2}
   bodyColor: {r: 0.22, g: 0.52, b: 0.76, a: 1}

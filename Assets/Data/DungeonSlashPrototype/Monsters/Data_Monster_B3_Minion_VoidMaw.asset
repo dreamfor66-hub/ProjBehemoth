@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: VoidMaw
+  m_Name: Data_Monster_B3_Minion_VoidMaw
   m_EditorClassIdentifier: 
   displayName: "\uACF5\uD5C8\uC758 \uC544\uAC00\uB9AC"
-  maxHp: 188
-  normalAttackInterval: 1.65
-  chargeInterval: 4.4
-  stunDuration: 3.4
+  maxHp: 300
+  normalAttackInterval: 1.45
+  chargeInterval: 8.5
+  stunDuration: 3.5
   stunDamageMultiplier: 1.65
-  experienceReward: 62
-  goldReward: 12
+  experienceReward: 67
+  goldReward: 10
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: df0e057fede1e224caf8e5c3006b44a1, type: 2}
-  chargeAttack: {fileID: 11400000, guid: d3f3b536c34ae3341b1cb11ad033098c, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: 3cdf27c4d9d0d49468dffc0a842bfd05, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: df0e057fede1e224caf8e5c3006b44a1, type: 2}
+  - {fileID: 11400000, guid: d3f3b536c34ae3341b1cb11ad033098c, type: 2}
   bodyColor: {r: 0.35, g: 0.1, b: 0.48, a: 1}

@@ -14,25 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: CorePrism
   displayName: "\uD575\uC2EC \uD504\uB9AC\uC998"
-  description: "\uCC28\uC9C0 \uBCA0\uAE30 \uD53C\uD574 +45%, \uC57D\uC810 \uD0C0\uACA9
-    \uC2E4\uB4DC +12"
+  description: "\uCC28\uC9C0 \uBCA0\uAE30 \uD53C\uD574 +45%"
   icon: {fileID: 21300000, guid: a1e84b52c2287994db9e6b5e78a2c76a, type: 3}
   itemKind: 0
   price: 74
   maxPurchaseCount: 1
   trigger:
     triggerType: 4
-    triggerAttackTypeFilter: 7
-    triggerAttackWayFilter: 7
+    triggerAttackTypeFilter: 0
+    triggerAttackWayFilter: 0
     triggerCount: 1
     triggerMaxCount: 0
   condition:
     conditionType: 0
   targetType: 0
   effect:
-    effectType: 0
-    effectMagnitude: 0
+    effectType: 2
+    effectMagnitude: 0.45
     effectCount: 1
     effectAngle: 0
     effectTime: 0
-    effectStatType: 0
+    effectStatType: 1

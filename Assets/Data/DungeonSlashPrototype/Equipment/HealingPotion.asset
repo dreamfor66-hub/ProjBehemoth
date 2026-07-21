@@ -21,8 +21,8 @@ MonoBehaviour:
   maxPurchaseCount: 2
   trigger:
     triggerType: 5
-    triggerAttackTypeFilter: 7
-    triggerAttackWayFilter: 7
+    triggerAttackTypeFilter: -1
+    triggerAttackWayFilter: -1
     triggerCount: 1
     triggerMaxCount: 1
   condition:

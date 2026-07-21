@@ -1,7 +1,9 @@
 {
   "name": "DungeonSlash",
   "rootNamespace": "DungeonSlash",
-  "references": [],
+  "references": [
+    "Unity.InputSystem"
+  ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

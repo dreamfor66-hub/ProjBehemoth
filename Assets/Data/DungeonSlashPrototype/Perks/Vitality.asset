@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Vitality
   displayName: "\uC0DD\uBA85\uB825"
-  description: "\uCD5C\uB300 HP +20"
+  description: "\uCD5C\uB300 HP +10"
   icon: {fileID: 21300000, guid: a5b3ee5cdfe5ec249b64800706bf842c, type: 3}
   maxStacks: 3
   modifiers:

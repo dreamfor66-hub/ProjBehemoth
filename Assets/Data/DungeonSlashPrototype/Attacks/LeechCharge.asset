@@ -12,9 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: LeechCharge
   m_EditorClassIdentifier: 
+  type: 1
   displayName: "\uD761\uD608 \uC1E0\uB3C4"
   damage: 28.8
   shieldDamage: 46.8
-  windupDuration: 2.4
+  windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
+  chargeTimeLimit: 4
+  chargeWeakPoints:
+  - id: core-1
+    normalizedPosition: {x: -55, y: 38}
+    hitRadius: 30
+    requiredChargeHits: 1
+  - id: core-2
+    normalizedPosition: {x: 62, y: 28}
+    hitRadius: 30
+    requiredChargeHits: 1
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

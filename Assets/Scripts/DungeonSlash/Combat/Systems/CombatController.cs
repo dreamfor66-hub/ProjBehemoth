@@ -25,19 +25,23 @@ namespace DungeonSlash
     {
         private const float FinalImpactHoldSeconds = .5f;
         private const float MonsterFadeSeconds = .45f;
+        private const float SummonedMinionScale = .62f;
 
         private sealed class ActiveMonster
         {
             public MonsterRuntime Runtime { get; }
             public MonsterView View { get; }
             public Vector2 Position { get; }
+            public float VisualScale { get; }
             public List<WeakPointView> WeakPointViews { get; } = new();
+            public float WeakPointVisualHoldUntil { get; set; }
 
-            public ActiveMonster(MonsterRuntime runtime, MonsterView view, Vector2 position)
+            public ActiveMonster(MonsterRuntime runtime, MonsterView view, Vector2 position, float visualScale)
             {
                 Runtime = runtime;
                 View = view;
                 Position = position;
+                VisualScale = Mathf.Clamp(visualScale, .25f, 1f);
             }
         }
 
@@ -52,6 +56,7 @@ namespace DungeonSlash
         [SerializeField] private MonsterData eliteFallback;
         [SerializeField] private List<MonsterData> bossMonsters = new();
         [SerializeField] private MonsterData mimicMonster;
+        [SerializeField] private MonsterData merchantMutant;
         [SerializeField] private Transform playerSpawnRoot;
         [SerializeField] private Transform monsterSpawnRoot;
         [SerializeField] private Transform weakPointRoot;
@@ -74,10 +79,26 @@ namespace DungeonSlash
         private int normalEncountersOnFloor;
 
         public bool IsActive { get; private set; }
+        public bool InfiniteBattleEnabled { get; private set; }
         public bool HasPreparedMonsters => activeMonsters.Any(monster => monster.Runtime.IsAlive);
         public PlayerCombatRuntime Player => run?.Player;
         public MonsterData MimicMonster => mimicMonster;
+        public MonsterData MerchantMutant => merchantMutant;
         public event Action<CombatResult> Completed;
+
+        public IReadOnlyList<MonsterData> GetDebugMonsterCatalog() => normalMonsters
+            .Concat(floorTwoMonsters)
+            .Concat(floorThreeMonsters)
+            .Concat(eliteMonsters)
+            .Concat(bossMonsters)
+            .Append(mimicMonster)
+            .Append(merchantMutant)
+            .Where(monster => monster != null)
+            .Distinct()
+            .OrderBy(monster => monster.displayName)
+            .ToArray();
+
+        public void SetInfiniteBattle(bool enabled) => InfiniteBattleEnabled = enabled;
 
         public void ShowPlayer(RunState runState)
         {
@@ -88,7 +109,7 @@ namespace DungeonSlash
             RefreshHud();
         }
 
-        public void Configure(CombatSceneView newSceneView, CombatInputController newInput, CombatHudView newHud, PlayerCombatData newPlayerData, List<MonsterData> newFloorOneMonsters, List<MonsterData> newFloorTwoMonsters, List<MonsterData> newFloorThreeMonsters, List<MonsterData> newEliteMonsters, List<MonsterData> newBosses, MonsterData newMimic, Transform newPlayerRoot, Transform newMonsterRoot, Transform newWeakPointRoot, Transform newWeakPointBreakFxRoot, PlayerView newPlayerPrefab, MonsterView newMonsterPrefab, WeakPointView newWeakPointPrefab, WeakPointBreakFxView newWeakPointBreakFxPrefab, AttackLineView newAttackLine, Transform newDamageNumberRoot, DamageNumberView newDamageNumberPrefab)
+        public void Configure(CombatSceneView newSceneView, CombatInputController newInput, CombatHudView newHud, PlayerCombatData newPlayerData, List<MonsterData> newFloorOneMonsters, List<MonsterData> newFloorTwoMonsters, List<MonsterData> newFloorThreeMonsters, List<MonsterData> newEliteMonsters, List<MonsterData> newBosses, MonsterData newMimic, MonsterData newMerchantMutant, Transform newPlayerRoot, Transform newMonsterRoot, Transform newWeakPointRoot, Transform newWeakPointBreakFxRoot, PlayerView newPlayerPrefab, MonsterView newMonsterPrefab, WeakPointView newWeakPointPrefab, WeakPointBreakFxView newWeakPointBreakFxPrefab, AttackLineView newAttackLine, Transform newDamageNumberRoot, DamageNumberView newDamageNumberPrefab)
         {
             sceneView = newSceneView;
             input = newInput;
@@ -101,6 +122,7 @@ namespace DungeonSlash
             eliteFallback = eliteMonsters.FirstOrDefault(monster => monster != null);
             bossMonsters = newBosses ?? new List<MonsterData>();
             mimicMonster = newMimic;
+            merchantMutant = newMerchantMutant;
             playerSpawnRoot = newPlayerRoot;
             monsterSpawnRoot = newMonsterRoot;
             weakPointRoot = newWeakPointRoot;
@@ -138,6 +160,7 @@ namespace DungeonSlash
         {
             run = runState;
             encounterFloor = Mathf.Max(1, floor);
+            sceneView?.ResetCameraShake();
             run?.Player?.ResetAttackCooldown();
             var combatStartEffect = run?.BeginCombat() ?? default;
             ClearMonsterViews();
@@ -147,16 +170,13 @@ namespace DungeonSlash
             playerView.Root.anchoredPosition = Vector2.zero;
 
             var validMonsters = encounterMonsters?.Where(data => data != null).ToArray() ?? Array.Empty<MonsterData>();
+            var encounterLeader = validMonsters.FirstOrDefault();
             for (var index = 0; index < validMonsters.Length; index++)
             {
-                var position = sceneView.GetMonsterFormationPosition(index, validMonsters.Length);
-                // Floor identity and balance now live in each monster asset; never double-scale them here.
-                var runtime = new MonsterRuntime(validMonsters[index]);
-                var view = Instantiate(monsterPrefab, monsterSpawnRoot);
-                view.Root.anchoredPosition = position - sceneView.MonsterPosition;
-                view.ResetOpacity();
-                view.Bind(runtime);
-                activeMonsters.Add(new ActiveMonster(runtime, view, position));
+                var isOpeningSummon = index > 0 && encounterLeader != null && GetOpeningSummons(encounterLeader).Contains(validMonsters[index]);
+                var scale = isOpeningSummon ? SummonedMinionScale : 1f;
+                var actionDelay = isOpeningSummon ? .45f + (index - 1) * .75f : 0f;
+                SpawnMonster(validMonsters[index], sceneView.GetMonsterFormationPosition(index, validMonsters.Length), scale, actionDelay);
             }
 
             ApplyOpeningRockDamage(combatStartEffect.OpeningRockDamage);
@@ -179,7 +199,10 @@ namespace DungeonSlash
             if (roomType == RoomEncounterType.Boss)
             {
                 var boss = bossMonsters.Count == 0 ? null : bossMonsters[Mathf.Clamp(floor - 1, 0, bossMonsters.Count - 1)];
-                return boss == null ? Array.Empty<MonsterData>() : new[] { boss };
+                if (boss == null) return Array.Empty<MonsterData>();
+                var encounter = new List<MonsterData> { boss };
+                encounter.AddRange(GetOpeningSummons(boss).Where(monster => monster != null));
+                return encounter;
             }
             if (roomType == RoomEncounterType.Elite)
             {
@@ -194,6 +217,13 @@ namespace DungeonSlash
             var pool = GetNormalMonsterPool(floor);
             var data = pool.Count == 0 ? null : pool[Mathf.Abs(roomId) % pool.Count];
             return data == null ? Array.Empty<MonsterData>() : new[] { data };
+        }
+
+        private static IEnumerable<MonsterData> GetOpeningSummons(MonsterData monster)
+        {
+            return monster?.GetAttacks(MonsterAttackType.Charge)
+                .SelectMany(attack => attack.chargeSummonMechanics?.openingSummons ?? Enumerable.Empty<MonsterData>())
+                ?? Enumerable.Empty<MonsterData>();
         }
 
         private IReadOnlyList<MonsterData> GetNormalMonsterPool(int floor)
@@ -230,41 +260,39 @@ namespace DungeonSlash
 
         private void ProcessMonsterActions()
         {
-            foreach (var monster in activeMonsters.Where(monster => monster.Runtime.IsAlive))
+            for (var index = 0; index < activeMonsters.Count; index++)
             {
+                var monster = activeMonsters[index];
+                if (!monster.Runtime.IsAlive) continue;
                 var runtime = monster.Runtime;
-                if (runtime.ShouldCharge && runtime.Data.chargePatterns.Count > 0)
+                if (runtime.ShouldCharge && runtime.HasChargeAttack)
                 {
                     runtime.StartCharge(monster.Position);
-                    monster.View.ShowAttackName(runtime.Data.chargeAttack.displayName, runtime.StateTimer);
+                    monster.View.ShowAttackName(runtime.CurrentChargeAttack.displayName, runtime.StateTimer);
                     continue;
                 }
                 if (runtime.ShouldNormalAttack)
                 {
                     runtime.BeginNormalAttack();
-                    monster.View.ShowAttackName(runtime.Data.normalAttack.displayName, runtime.Data.normalAttack.windupDuration);
+                    monster.View.ShowAttackName(runtime.NormalAttack?.displayName, runtime.NormalAttackPresentationDuration);
                     continue;
                 }
                 if (runtime.IsNormalAttackReadyToHit)
                 {
-                    var attack = runtime.Data.normalAttack;
-                    var result = damageResolver.ApplyToPlayer(Player, new DamageRequest(DamageType.MonsterAttack, attack.damage * runtime.DamageMultiplier, attack.shieldDamage * runtime.DamageMultiplier, attack.guardable));
-                    ShowPlayerDamage(result);
-                    ResolveDamageTriggers(result, monster);
-                    runtime.CompleteNormalAttack();
+                    var result = ApplyMonsterAttack(monster, runtime.NormalAttack);
+                    runtime.AdvanceNormalAttack();
                     if (!IsActive) return;
                     if (result.TargetDied && !TryRevivePlayer()) { Finish(false); return; }
                 }
                 if (runtime.ChargeExpired)
                 {
-                    var attack = runtime.Data.chargeAttack;
-                    var result = damageResolver.ApplyToPlayer(Player, new DamageRequest(DamageType.MonsterAttack, attack.damage * runtime.DamageMultiplier, attack.shieldDamage * runtime.DamageMultiplier, attack.guardable));
-                    ShowPlayerDamage(result);
-                    ResolveDamageTriggers(result, monster);
-                    runtime.EndCharge();
-                    ClearWeakPointViews(monster);
+                    var result = ApplyMonsterAttack(monster, runtime.CurrentChargeAttack);
                     if (!IsActive) return;
                     if (result.TargetDied && !TryRevivePlayer()) { Finish(false); return; }
+                    ClearWeakPointViews(monster);
+                    if (runtime.AdvanceChargeAttack()) continue;
+                    ResolveFailedCharge(monster);
+                    runtime.EndCharge();
                 }
             }
         }
@@ -276,7 +304,7 @@ namespace DungeonSlash
             return true;
         }
 
-        public bool IsGuardGesture(Vector2 pressPosition, Vector2 releasePosition) => IsActive && GuardGestureResolver.IsPlayerDownwardGuard(sceneView.PlayerPosition, pressPosition, releasePosition, Player.GuardSwipeDistance);
+        public bool IsGuardGesture(Vector2 pressPosition, Vector2 releasePosition) => IsActive && GuardGestureResolver.IsPlayerDownwardGuard(GetPlayerBodyShape(), pressPosition, releasePosition, Player.GuardSwipeDistance, Player.GuardBodyOuterMargin);
 
         public bool TryBeginGuard(Vector2 pressPosition, Vector2 releasePosition)
         {
@@ -284,12 +312,84 @@ namespace DungeonSlash
             return Player.TrySetGuard(true);
         }
 
+        public bool TryBeginRestGuard(Vector2 pressPosition, Vector2 holdingPosition)
+        {
+            if (!IsActive ||
+                !IsRestGuardCandidate(pressPosition, holdingPosition) ||
+                !activeMonsters.Any(monster => monster.Runtime.IsAlive && !monster.Runtime.IsStunned))
+                return false;
+            return Player.TrySetGuard(true);
+        }
+
+        public bool IsRestGuardCandidate(Vector2 pressPosition, Vector2 holdingPosition)
+        {
+            return IsActive && GuardGestureResolver.IsPlayerRestGuardCandidate(GetPlayerBodyShape(), pressPosition, holdingPosition, Player.GuardSwipeDistance);
+        }
+
+        public bool IsPointerInsidePlayerBody(Vector2 position) => RectHitResolver.Contains(GetPlayerBodyShape(), position);
+
+        public bool TryBeginBodyEntryGuard(Vector2 pressPosition, Vector2 holdingPosition)
+        {
+            if (!IsActive ||
+                !IsPointerInsidePlayerBody(holdingPosition) ||
+                !GuardGestureResolver.IsDownwardApproach(pressPosition, holdingPosition) ||
+                !activeMonsters.Any(monster => monster.Runtime.IsAlive && !monster.Runtime.IsStunned))
+                return false;
+            return Player.TrySetGuard(true);
+        }
+
+        public bool DoesPathTouchPlayerGuardZone(Vector2 from, Vector2 to)
+        {
+            return RectHitResolver.Intersects(new AttackSegment(from, to, 0f), GetPlayerBodyShape(), Player.GuardBodyOuterMargin);
+        }
+
+        /// <summary>Finds the first living monster crossed by the current pointer movement, using the same width as the player's hit sweep.</summary>
+        public bool TryFindTraversalTarget(Vector2 from, Vector2 to, out int targetIndex)
+        {
+            targetIndex = -1;
+            var movement = new AttackSegment(from, to, Player?.SegmentWidth ?? 0f);
+            for (var index = 0; index < activeMonsters.Count; index++)
+            {
+                var monster = activeMonsters[index];
+                if (!monster.Runtime.IsAlive) continue;
+                var target = new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale);
+                if (!TargetTraversalResolver.Touches(movement, target)) continue;
+                targetIndex = index;
+                return true;
+            }
+            return false;
+        }
+
+        public bool TryGetTraversalTargetState(int targetIndex, Vector2 position, out bool insideTarget, out float outsideDistance)
+        {
+            insideTarget = false;
+            outsideDistance = 0f;
+            if (targetIndex < 0 || targetIndex >= activeMonsters.Count) return false;
+            var monster = activeMonsters[targetIndex];
+            if (!monster.Runtime.IsAlive) return false;
+            var target = new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale);
+            var width = Player?.SegmentWidth ?? 0f;
+            insideTarget = TargetTraversalResolver.Contains(target, position, width);
+            outsideDistance = TargetTraversalResolver.OutsideDistance(target, position, width);
+            return true;
+        }
+
+        public bool DoesTraversalTargetTouch(int targetIndex, Vector2 from, Vector2 to)
+        {
+            if (targetIndex < 0 || targetIndex >= activeMonsters.Count) return false;
+            var monster = activeMonsters[targetIndex];
+            if (!monster.Runtime.IsAlive) return false;
+            var target = new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale);
+            return TargetTraversalResolver.Touches(new AttackSegment(from, to, Player?.SegmentWidth ?? 0f), target);
+        }
+
         public void ExecuteAttack(AttackSegment segment, bool charged) => ExecuteAttack(segment, charged, 1);
 
         public void ExecuteAttack(AttackSegment segment, bool charged, int chargeLevel)
         {
             if (!IsActive || !Player.IsAlive || (!charged && !Player.CanNormalAttack())) return;
-            if (!charged) Player.StartAttackCooldown();
+            // Charge attacks use their own input preparation, but still consume the shared follow-up attack cooldown.
+            Player.StartAttackCooldown();
             segment = ExtendForAttackReach(segment, Player.AttackReach);
             if (attackLine != null) attackLine.Show(segment, charged);
             var directDamageMultiplier = charged && chargeLevel >= 2 ? 2f : 1f;
@@ -318,32 +418,103 @@ namespace DungeonSlash
                 {
                     foreach (var point in WeakPointHitResolver.Resolve(segment, runtime.WeakPoints))
                     {
+                        var previousRemainingHits = point.RemainingHits;
                         if (!point.ApplyChargeHit()) continue;
+                        ShowWeakPointChargeHit(monster, point, previousRemainingHits);
                         Player.RestoreShield(Player.ShieldOnWeakPoint);
                         if (point.IsDestroyed) ShowWeakPointBreak(point.HitShape.Center);
+                        ShakeCombat(point.IsDestroyed ? 12f : 6f, point.IsDestroyed ? .16f : .1f);
                     }
                     if (runtime.AllWeakPointsDestroyed)
                     {
                         runtime.EnterStun();
-                        ClearWeakPointViews(monster);
+                        HoldWeakPointViewsForImpact(monster);
                     }
                 }
-                if (SegmentHitResolver.Intersects(segment, new CircleHitShape(monster.Position, runtime.Data.bodyHitRadius)))
+                if (SegmentHitResolver.Intersects(segment, new CircleHitShape(monster.Position, runtime.Data.bodyHitRadius * monster.VisualScale)))
                 {
-                    hitAny = true;
                     var baseDamage = (charged ? Player.ChargeAttackDamage : Player.NormalAttackDamage) * damageMultiplier * GetDirectAttackDamageMultiplier(segment, isDirectAttack);
+                    if (runtime.TryAbsorbDirectionalGuard(GetAttackWay(segment), baseDamage, out var absorbedDamage, out var matchedDirection, out var guardBroken))
+                    {
+                        monster.View?.Bind(runtime);
+                        var impact = ClosestPointOnSegment(segment, monster.Position);
+                        if (matchedDirection)
+                            ShowDamage(impact, $"방벽 -{absorbedDamage:0}", new Color(.28f, .86f, 1f));
+                        else
+                            ShowDamage(impact, "방향 불일치", new Color(.62f, .72f, .82f));
+                        if (guardBroken)
+                            ShowDamage(monster.Position + new Vector2(0f, 42f), "방벽 파괴", new Color(.48f, 1f, 1f));
+                        ShakeCombat(guardBroken ? 5f : 2.5f, .07f);
+                        continue;
+                    }
+
+                    hitAny = true;
+                    ShakeCombat(charged ? 8f : 4f, charged ? .13f : .08f);
                     var dealtDamage = runtime.IsStunned ? baseDamage * Player.StunDamageMultiplier : baseDamage;
-                    damageResolver.ApplyToMonster(runtime, baseDamage, Player.StunDamageMultiplier);
+                    if (!InfiniteBattleEnabled)
+                        damageResolver.ApplyToMonster(runtime, baseDamage, Player.StunDamageMultiplier);
                     // Update immediately: the final hit must visibly empty the HP gauge before its impact hold.
                     monster.View?.Bind(runtime);
                     if (!runtime.IsAlive && Player.MonsterKillHeal > 0f) Player.Heal(Player.MonsterKillHeal);
                     Player.RestoreShield(Player.ShieldOnHit);
-                    ShowDamage(ClosestPointOnSegment(segment, monster.Position), $"{dealtDamage:0}", charged ? new Color(1f, .78f, .16f) : Color.white);
+                    if (!InfiniteBattleEnabled)
+                        ShowDamage(ClosestPointOnSegment(segment, monster.Position), $"{dealtDamage:0}", charged ? new Color(1f, .78f, .16f) : Color.white);
                     ResolveEquipmentTriggers(TriggerType.OnHit, BuildAttackContext(segment, attackType, charged, monster), monster, chainDepth);
                 }
 
             }
             return hitAny;
+        }
+
+        private DamageResult ApplyMonsterAttack(ActiveMonster source, MonsterAttackData attack)
+        {
+            var runtime = source.Runtime;
+            if (attack == null) return default;
+            var rawDamage = InfiniteBattleEnabled ? 0f : attack.damage * runtime.DamageMultiplier;
+            var result = damageResolver.ApplyToPlayer(Player, new DamageRequest(DamageType.MonsterAttack, rawDamage, attack.shieldDamage * runtime.DamageMultiplier, attack.guardable));
+            ShowPlayerDamage(result);
+            if (result.HpDamage > 0f)
+                ShakeCombat(8f, .14f);
+            else if (result.ShieldDamage > 0f)
+                ShakeCombat(result.WasGuarded ? 3f : 4.5f, .09f);
+            ResolveDamageTriggers(result, source);
+            var mechanics = attack.combatMechanics;
+            if (result.HpDamage > 0f && mechanics != null && mechanics.healOnUnguardedHit > 0f)
+            {
+                var healed = runtime.Heal(mechanics.healOnUnguardedHit);
+                if (healed > 0f)
+                {
+                    source.View?.Bind(runtime);
+                    ShowDamage(source.Position, $"+{healed:0}", new Color(.38f, 1f, .5f));
+                }
+            }
+            return result;
+        }
+
+        private void ResolveFailedCharge(ActiveMonster source)
+        {
+            var mechanics = source.Runtime.CurrentChargeAttack?.chargeSummonMechanics;
+            var summon = mechanics?.summonOnFailedCharge;
+            if (summon == null) return;
+
+            var hasLivingSummon = activeMonsters.Any(monster => monster != source && monster.Runtime.IsAlive && monster.Runtime.Data == summon);
+            if (hasLivingSummon)
+            {
+                var healed = source.Runtime.Heal(mechanics.healOnFailedChargeWhileSummonAlive);
+                if (healed > 0f)
+                {
+                    source.View?.Bind(source.Runtime);
+                    source.View?.ShowAttackName("빙결 흡수", .8f);
+                    ShowDamage(source.Position, $"+{healed:0}", new Color(.38f, 1f, .5f));
+                }
+                return;
+            }
+
+            var existingSummons = activeMonsters.Count(monster => monster.Runtime.IsAlive && monster.Runtime.Data == summon);
+            var direction = existingSummons % 2 == 0 ? -1f : 1f;
+            var position = source.Position + new Vector2(direction * 176f, -16f);
+            SpawnMonster(summon, position, SummonedMinionScale, .45f).View?.ShowAttackName("소환됨", .7f);
+            source.View?.ShowAttackName("빙결 소환", .8f);
         }
 
         private void ResolveDamageTriggers(DamageResult result, ActiveMonster source)
@@ -389,9 +560,11 @@ namespace DungeonSlash
         {
             var baseDamage = Player.NormalAttackDamage * Mathf.Max(0f, effect.effectMagnitude) * Mathf.Max(1, effect.effectCount);
             var dealtDamage = target.Runtime.IsStunned ? baseDamage * Player.StunDamageMultiplier : baseDamage;
-            damageResolver.ApplyToMonster(target.Runtime, baseDamage, Player.StunDamageMultiplier);
+            if (!InfiniteBattleEnabled)
+                damageResolver.ApplyToMonster(target.Runtime, baseDamage, Player.StunDamageMultiplier);
             target.View?.Bind(target.Runtime);
-            ShowDamage(target.Position, $"{dealtDamage:0}", new Color(.8f, .55f, 1f));
+            if (!InfiniteBattleEnabled)
+                ShowDamage(target.Position, $"{dealtDamage:0}", new Color(.8f, .55f, 1f));
         }
 
         private EquipmentTriggerContext BuildAttackContext(AttackSegment segment, TriggerAttackType attackType, bool charged, ActiveMonster target)
@@ -424,18 +597,35 @@ namespace DungeonSlash
             }
         }
 
-        private void ClearWeakPointViews(ActiveMonster monster)
+        private void ClearWeakPointViews(ActiveMonster monster, bool force = false)
         {
+            if (!force && monster.WeakPointVisualHoldUntil > Time.unscaledTime) return;
             foreach (var view in monster.WeakPointViews)
                 if (view != null) Destroy(view.gameObject);
             monster.WeakPointViews.Clear();
+            monster.WeakPointVisualHoldUntil = 0f;
+        }
+
+        private ActiveMonster SpawnMonster(MonsterData data, Vector2 position, float visualScale = 1f, float initialActionDelay = 0f)
+        {
+            // Floor identity and balance now live in each monster asset; never double-scale them here.
+            var runtime = new MonsterRuntime(data, visualScale: visualScale);
+            runtime.DelayActions(initialActionDelay);
+            var view = Instantiate(monsterPrefab, monsterSpawnRoot);
+            view.Root.anchoredPosition = position - sceneView.MonsterPosition;
+            view.Root.localScale = Vector3.one * runtime.VisualScale;
+            view.ResetOpacity();
+            view.Bind(runtime);
+            var active = new ActiveMonster(runtime, view, position, runtime.VisualScale);
+            activeMonsters.Add(active);
+            return active;
         }
 
         private void ClearMonsterViews()
         {
             foreach (var monster in activeMonsters)
             {
-                ClearWeakPointViews(monster);
+                ClearWeakPointViews(monster, true);
                 if (monster.View != null) Destroy(monster.View.gameObject);
             }
             activeMonsters.Clear();
@@ -444,6 +634,13 @@ namespace DungeonSlash
         private void EnsurePlayerView()
         {
             if (playerView == null) playerView = Instantiate(playerPrefab, playerSpawnRoot);
+        }
+
+        private RectHitShape GetPlayerBodyShape()
+        {
+            var root = playerView != null ? playerView.Root : playerPrefab != null ? playerPrefab.Root : null;
+            var size = root != null ? root.rect.size : new Vector2(270f, 270f);
+            return new RectHitShape(sceneView.PlayerPosition, size);
         }
 
         private void RefreshHud()
@@ -476,15 +673,36 @@ namespace DungeonSlash
             view.Show(position, message, color);
         }
 
+        private void ShakeCombat(float magnitude, float duration)
+        {
+            sceneView?.TriggerCameraShake(magnitude, duration);
+        }
+
         private void ShowWeakPointBreak(Vector2 position)
         {
             if (weakPointBreakFxRoot == null || weakPointBreakFxPrefab == null) return;
             Instantiate(weakPointBreakFxPrefab, weakPointBreakFxRoot).Play(position, FinalImpactHoldSeconds);
         }
 
+        private void ShowWeakPointChargeHit(ActiveMonster monster, WeakPointRuntime point, int previousRemainingHits)
+        {
+            for (var index = 0; index < monster.Runtime.WeakPoints.Count; index++)
+            {
+                if (monster.Runtime.WeakPoints[index] != point) continue;
+                if (index < monster.WeakPointViews.Count)
+                    monster.WeakPointViews[index]?.PlayChargeHit(previousRemainingHits, point.RemainingHits);
+                return;
+            }
+        }
+
+        private static void HoldWeakPointViewsForImpact(ActiveMonster monster)
+        {
+            monster.WeakPointVisualHoldUntil = Mathf.Max(monster.WeakPointVisualHoldUntil, Time.unscaledTime + .18f);
+        }
+
         private void ApplyOpeningRockDamage(float damage)
         {
-            if (damage <= 0f) return;
+            if (damage <= 0f || InfiniteBattleEnabled) return;
             foreach (var monster in activeMonsters)
             {
                 var appliedDamage = Mathf.Min(damage, Mathf.Max(0f, monster.Runtime.CurrentHp - 1f));

@@ -19,4 +19,4 @@ MonoBehaviour:
   maxStacks: 3
   modifiers:
   - kind: 10
-    value: 14
+    value: 10

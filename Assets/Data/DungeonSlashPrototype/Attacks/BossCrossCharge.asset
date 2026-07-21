@@ -9,12 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0cbc4f62c19624aade3eeb05750182, type: 3}
-  m_Name: BossCross
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: BossCrossCharge
   m_EditorClassIdentifier: 
+  type: 1
   displayName: Cross Core
-  timeLimit: 4
-  weakPoints:
+  damage: 40
+  shieldDamage: 72
+  windupDuration: 0.5
+  recoveryDuration: 0.5
+  guardable: 1
+  chargeTimeLimit: 3.7
+  chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: -72, y: 0}
     hitRadius: 30
@@ -31,3 +37,17 @@ MonoBehaviour:
     normalizedPosition: {x: 0, y: -62}
     hitRadius: 30
     requiredChargeHits: 1
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

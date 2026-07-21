@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: Skeleton
+  m_Name: Data_Monster_B1_Minion_Skeleton
   m_EditorClassIdentifier: 
   displayName: "\uD574\uACE8"
-  maxHp: 86
+  maxHp: 129
   normalAttackInterval: 2
   chargeInterval: 6
   stunDuration: 3
@@ -21,8 +21,7 @@ MonoBehaviour:
   experienceReward: 28
   goldReward: 7
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: a0b1e84ad876d8347b0f8155d64f6f37, type: 2}
-  chargeAttack: {fileID: 11400000, guid: 1111e51f96e99a34ba3d4dce6eaa4138, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: fe10629da71eccd4f8a21323bca67011, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: a0b1e84ad876d8347b0f8155d64f6f37, type: 2}
+  - {fileID: 11400000, guid: 1111e51f96e99a34ba3d4dce6eaa4138, type: 2}
   bodyColor: {r: 0.75, g: 0.76, b: 0.7, a: 1}

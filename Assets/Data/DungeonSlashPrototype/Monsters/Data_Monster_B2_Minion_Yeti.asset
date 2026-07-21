@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
-  m_Name: Yeti
+  m_Name: Data_Monster_B2_Minion_Yeti
   m_EditorClassIdentifier: 
   displayName: "\uC124\uC778"
-  maxHp: 172
-  normalAttackInterval: 2.35
-  chargeInterval: 6.3
-  stunDuration: 3.4
+  maxHp: 277.5
+  normalAttackInterval: 5.2
+  chargeInterval: 11.8
+  stunDuration: 4
   stunDamageMultiplier: 1.65
-  experienceReward: 57
-  goldReward: 10
+  experienceReward: 62
+  goldReward: 16
   bodyHitRadius: 108
-  normalAttack: {fileID: 11400000, guid: 8dc4737da615aa142a89650bb5b99895, type: 2}
-  chargeAttack: {fileID: 11400000, guid: 578add83884b95148a1606bf32430f34, type: 2}
-  chargePatterns:
-  - {fileID: 11400000, guid: 692d2cf87f310504b9576892ff6fca56, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 8dc4737da615aa142a89650bb5b99895, type: 2}
+  - {fileID: 11400000, guid: 578add83884b95148a1606bf32430f34, type: 2}
   bodyColor: {r: 0.78, g: 0.9, b: 1, a: 1}

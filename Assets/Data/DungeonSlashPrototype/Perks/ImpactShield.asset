@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ImpactShield
   displayName: "\uCDA9\uACA9 \uBC29\uD328"
-  description: "\uC801\uC911 \uC2DC \uC2E4\uB4DC +3"
+  description: "\uC801\uC911 \uC2DC \uC2E4\uB4DC +2"
   icon: {fileID: 21300000, guid: 69aa37287c9ecd346a32bfb4e1b37d85, type: 3}
-  maxStacks: 3
+  maxStacks: 2
   modifiers:
   - kind: 9
-    value: 7
+    value: 2
