@@ -2,7 +2,8 @@
   "name": "DungeonSlash.Tests.Editor",
   "rootNamespace": "DungeonSlash.Tests",
   "references": [
-    "DungeonSlash"
+    "DungeonSlash",
+    "Unity.TextMeshPro"
   ],
   "includePlatforms": [
     "Editor"

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: ForgeTrio
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.forgetrio.displayname
+    lastText: "\uC6A9\uAD11\uB85C\uC758 \uAD70\uC9D1"
+  - propertyPath: hint
+    key: data.encounterdata.forgetrio.hint
+    lastText: 
+  textOwnerGuid: e49d4a11b183e6344818c103c91d22f5
+  id: ForgeTrio
+  displayName: "\uC6A9\uAD11\uB85C\uC758 \uAD70\uC9D1"
+  hint: 
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: f0b4f786e4b270c44b8e73139e4f47f9, type: 2}
+    offset: {x: 0, y: 80}
+    scale: 0.68
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: 63c9c898a50e8ff409d9b3af59f6623e, type: 2}
+    offset: {x: -190, y: -55}
+    scale: 0.68
+    actionDelay: 1.6
+  - monster: {fileID: 11400000, guid: f0b4f786e4b270c44b8e73139e4f47f9, type: 2}
+    offset: {x: 190, y: -55}
+    scale: 0.68
+    actionDelay: 3.2

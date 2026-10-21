@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Chainling
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.chainling.displayname
+    lastText: "\uC1E0\uC0AC\uC2AC \uD558\uC778"
+  - propertyPath: encounterHint
+    key: data.monsterdata.chainling.encounterhint
+    lastText: 
+  textOwnerGuid: ab51196a5afd49b45ac54ea6884e73fb
+  displayName: "\uC1E0\uC0AC\uC2AC \uD558\uC778"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 72
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 20
+  goldReward: 11
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: d993f8061f9e17641a1309f487a02195, type: 2}
+  - {fileID: 11400000, guid: c205172d5d84c6a4d93a67f3d12730fd, type: 2}
+  bodyColor: {r: 0.48, g: 0.78080004, b: 0.8, a: 1}

@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B1_Minion_Leech
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b1_minion_leech.displayname
+    lastText: "\uD761\uD608\uD615"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b1_minion_leech.encounterhint
+    lastText: 
+  textOwnerGuid: d841fd1131349e1438084c0ab5b600d2
   displayName: "\uD761\uD608\uD615"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 142.5
   normalAttackInterval: 1.7
   chargeInterval: 6.4

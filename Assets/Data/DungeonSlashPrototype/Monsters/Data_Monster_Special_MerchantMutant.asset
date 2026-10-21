@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_Special_MerchantMutant
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_special_merchantmutant.displayname
+    lastText: "\uC0C1\uC778 \uB3CC\uC5F0\uBCC0\uC774"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_special_merchantmutant.encounterhint
+    lastText: 
+  textOwnerGuid: 47d6d43ce99c4764985d63037cfb301e
   displayName: "\uC0C1\uC778 \uB3CC\uC5F0\uBCC0\uC774"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 960
   normalAttackInterval: 1.15
   chargeInterval: 3.45

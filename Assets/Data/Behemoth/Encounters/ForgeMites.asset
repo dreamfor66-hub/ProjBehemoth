@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: ForgeMites
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.forgemites.displayname
+    lastText: "\uC6A9\uAD11\uB85C \uC9C4\uB4DC\uAE30"
+  - propertyPath: hint
+    key: data.encounterdata.forgemites.hint
+    lastText: 
+  textOwnerGuid: de438ce9cd26fae479cf7250d74c3e38
+  id: ForgeMites
+  displayName: "\uC6A9\uAD11\uB85C \uC9C4\uB4DC\uAE30"
+  hint: 
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: f0b4f786e4b270c44b8e73139e4f47f9, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

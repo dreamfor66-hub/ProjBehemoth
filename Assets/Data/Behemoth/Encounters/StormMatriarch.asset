@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: StormMatriarch
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.stormmatriarch.displayname
+    lastText: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+  - propertyPath: hint
+    key: data.encounterdata.stormmatriarch.hint
+    lastText: 
+  textOwnerGuid: 2ba4fc90d398c2949bd579645b8c5199
+  id: StormMatriarch
+  displayName: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+  hint: 
+  category: 10
+  members:
+  - monster: {fileID: 11400000, guid: 5946ee0bd997e36448ff353d80ebfdde, type: 2}
+    offset: {x: 0, y: 80}
+    scale: 0.9
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: c082165dde8685f4ab9e002c0cb302e1, type: 2}
+    offset: {x: -190, y: -55}
+    scale: 0.68
+    actionDelay: 0.85
+  - monster: {fileID: 11400000, guid: c082165dde8685f4ab9e002c0cb302e1, type: 2}
+    offset: {x: 190, y: -55}
+    scale: 0.68
+    actionDelay: 1.7

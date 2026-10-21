@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697c3def854419429c68345d6a1241b, type: 3}
   m_Name: Fountain
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.roomtypedata.fountain.displayname
+    lastText: Fountain
+  textOwnerGuid: c67b12054e479fb45b14623d45267b61
   encounterType: 3
   displayName: Fountain
   mapColor: {r: 0.6, g: 0.65, b: 0.72, a: 1}

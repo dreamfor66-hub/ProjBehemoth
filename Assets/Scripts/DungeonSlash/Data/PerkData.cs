@@ -4,7 +4,7 @@ using UnityEngine;
 namespace DungeonSlash
 {
     [CreateAssetMenu(menuName = "Dungeon Slash/Perk Data")]
-    public sealed class PerkData : ScriptableObject
+    public sealed class PerkData : LocalizedData
     {
         public string id;
         public string displayName;

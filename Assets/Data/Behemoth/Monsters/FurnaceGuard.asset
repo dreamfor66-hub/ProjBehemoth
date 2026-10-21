@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: FurnaceGuard
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.furnaceguard.displayname
+    lastText: "\uC6A9\uAD11\uB85C \uD30C\uC218\uAFBC"
+  - propertyPath: encounterHint
+    key: data.monsterdata.furnaceguard.encounterhint
+    lastText: 
+  textOwnerGuid: 9469c878ad41a4541a76da6c6883d1ed
+  displayName: "\uC6A9\uAD11\uB85C \uD30C\uC218\uAFBC"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 205
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 30
+  goldReward: 15
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 3fbf96da3d2554048813d790edaaff8b, type: 2}
+  - {fileID: 11400000, guid: 454ad0f66e614c745bb28a56090edf32, type: 2}
+  bodyColor: {r: 0.60160005, g: 0.48, b: 0.8, a: 1}

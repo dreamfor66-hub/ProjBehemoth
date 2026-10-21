@@ -1,3 +1,4 @@
+using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,8 +17,8 @@ namespace DungeonSlash
     public sealed class MapRoomIcon : MonoBehaviour
     {
         [SerializeField] private Image image;
-        [SerializeField] private Text label;
-        [SerializeField] private Text facingArrow;
+        [SerializeField] private TextMeshProUGUI label;
+        [SerializeField] private TextMeshProUGUI facingArrow;
         [SerializeField] private Image northRoute;
         [SerializeField] private Image eastRoute;
         [SerializeField] private Image southRoute;
@@ -26,11 +27,11 @@ namespace DungeonSlash
         private bool pulse;
         private bool highlighted;
 
-        public void Configure(Image newImage, Text newLabel) => Configure(newImage, newLabel, null, null, null, null, null);
+        public void Configure(Image newImage, TextMeshProUGUI newLabel) => Configure(newImage, newLabel, null, null, null, null, null);
 
-        public void Configure(Image newImage, Text newLabel, Text newFacingArrow) => Configure(newImage, newLabel, newFacingArrow, null, null, null, null);
+        public void Configure(Image newImage, TextMeshProUGUI newLabel, TextMeshProUGUI newFacingArrow) => Configure(newImage, newLabel, newFacingArrow, null, null, null, null);
 
-        public void Configure(Image newImage, Text newLabel, Text newFacingArrow, Image newNorthRoute, Image newEastRoute, Image newSouthRoute, Image newWestRoute)
+        public void Configure(Image newImage, TextMeshProUGUI newLabel, TextMeshProUGUI newFacingArrow, Image newNorthRoute, Image newEastRoute, Image newSouthRoute, Image newWestRoute)
         {
             image = newImage;
             label = newLabel;
@@ -143,18 +144,19 @@ namespace DungeonSlash
 
         private static string RoomLabel(RoomEncounterType type) => type switch
         {
-            RoomEncounterType.Start => "\uC2DC\uC791",
+            RoomEncounterType.Start => GameText.Get("ui.maproomicon.5cc146fe"),
             RoomEncounterType.Empty => string.Empty,
-            RoomEncounterType.Combat => "\uC804\uD22C",
-            RoomEncounterType.Elite => "\uC815\uC608",
-            RoomEncounterType.Boss => "\uBCF4\uC2A4",
-            RoomEncounterType.Reward => "\uBCF4\uC0C1",
-            RoomEncounterType.MajorReward => "\uC0C1\uC790",
-            RoomEncounterType.Fountain => "\uBD84\uC218",
-            RoomEncounterType.PoisonFountain => "\uBD84\uC218",
-            RoomEncounterType.Chest => "\uC0C1\uC790",
-            RoomEncounterType.Goddess => "\uC5EC\uC2E0",
-            RoomEncounterType.Shop => "\uC0C1\uC810",
+            RoomEncounterType.Combat => GameText.Get("ui.maproomicon.f1b4d56d"),
+            RoomEncounterType.Elite => GameText.Get("ui.maproomicon.a492ce8"),
+            RoomEncounterType.Boss => GameText.Get("ui.maproomicon.49257a85"),
+            RoomEncounterType.Reward => GameText.Get("ui.maproomicon.a422e3c6"),
+            RoomEncounterType.MajorReward => GameText.Get("ui.maproomicon.5b5ef854"),
+            RoomEncounterType.Fountain => GameText.Get("ui.maproomicon.3938c211"),
+            RoomEncounterType.PoisonFountain => GameText.Get("ui.maproomicon.3938c211"),
+            RoomEncounterType.Chest => GameText.Get("ui.maproomicon.5b5ef854"),
+            RoomEncounterType.Goddess => GameText.Get("ui.maproomicon.1bca6671"),
+            RoomEncounterType.Shop => GameText.Get("ui.maproomicon.db564fd4"),
+            RoomEncounterType.Event => "?",
             _ => "?"
         };
     }

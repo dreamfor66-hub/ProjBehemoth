@@ -40,10 +40,12 @@ namespace DungeonSlash
 
         public void BeginRun()
         {
+            if (RunSession.SelectedCharacter != null) playerData = RunSession.SelectedCharacter;
             State = new RunState(playerData, balanceSettings);
             Perks = new PerkSystem(perks);
             equipmentSystem = new EquipmentSystem();
             Shop = new ShopSystem(equipmentSystem);
+            if (playerData.startingRelic != null) State.TryEquip(playerData.startingRelic);
         }
 
         public CombatReward GetCombatReward(MonsterData monster, bool elite)
@@ -89,7 +91,7 @@ namespace DungeonSlash
         public bool TryGrantRelic(EquipmentData relic) => State != null && relic != null && relic.IsRelic && !State.EquippedItems.Contains(relic) && equipmentSystem.Apply(State, relic);
         public bool TryGrantPerk(PerkData perk)
         {
-            if (State == null || Perks == null || perk == null) return false;
+            if (State == null || Perks == null || !PerkSystem.IsAvailable(perk)) return false;
             var existing = State.ActivePerks.FirstOrDefault(active => active.Data == perk);
             if (existing != null && !existing.CanStack) return false;
             Perks.Apply(State, perk);
@@ -98,10 +100,17 @@ namespace DungeonSlash
         public bool TryGrantEquipment(EquipmentData item) => State != null && item != null && equipmentSystem != null && equipmentSystem.Apply(State, item);
         public bool TryRemovePerk(PerkData perk) => State != null && State.TryRemovePerk(perk);
         public bool TryRemoveEquipment(EquipmentData item) => State != null && State.TryRemoveEquipment(item);
+        public IReadOnlyList<EquipmentData> GetExclusiveChoices(int seed)
+        {
+            if (State.ExclusiveCount >= RunState.ExclusiveLimit) return System.Array.Empty<EquipmentData>();
+            var random = new System.Random(seed);
+            return equipment.Where(item => item != null && State.CanOffer(item) && item.scope == RelicScope.Exclusive && item.exclusiveCharacter == State.Player.Data.character && !State.EquippedItems.Contains(item))
+                .OrderBy(_ => random.Next()).Take(3).ToArray();
+        }
         public EquipmentData GetChestRelic(int seed, int salt)
         {
             var random = new System.Random(seed + salt * 577);
-            var relics = equipment.Where(item => item != null && item.IsRelic && !State.EquippedItems.Contains(item)).OrderBy(_ => random.Next()).ToList();
+            var relics = equipment.Where(CanOfferSharedRelic).OrderBy(item => OfferScore(item, random)).ToList();
             return relics.Count == 0 ? null : relics[0];
         }
         public EquipmentData GetPotionDrop(int seed, int salt)
@@ -113,16 +122,15 @@ namespace DungeonSlash
         public IReadOnlyList<EquipmentData> GetRelicChoices(int seed, int salt)
         {
             var random = new System.Random(seed + salt * 997);
-            return equipment.Where(item => item != null && item.IsRelic && !State.EquippedItems.Contains(item))
-                .OrderBy(_ => random.Next()).Take(3).ToList();
+            return equipment.Where(CanOfferSharedRelic)
+                .OrderBy(item => OfferScore(item, random)).Take(3).ToList();
         }
 
         public IReadOnlyList<EquipmentData> GetShopInventory(int seed, int roomId)
         {
             var random = new System.Random(seed + roomId * 4099);
             var result = new List<EquipmentData>();
-            var premiumRelics = equipment.Where(item => item != null && item.IsRelic && !State.EquippedItems.Contains(item))
-                .OrderByDescending(item => item.price).ThenBy(_ => random.Next()).ToList();
+            var premiumRelics = equipment.Where(CanOfferSharedRelic).OrderBy(item => OfferScore(item, random)).ToList();
             if (premiumRelics.Count > 0) result.Add(premiumRelics[0]);
             var potionCandidates = equipment.Where(item => item != null && item.IsPotion && !result.Contains(item)).OrderBy(_ => random.Next()).ToList();
             foreach (var candidate in potionCandidates)
@@ -130,7 +138,7 @@ namespace DungeonSlash
                 if (result.Count >= 3) break;
                 result.Add(candidate);
             }
-            var fallbackCandidates = equipment.Where(item => item != null && item.IsRelic && !State.EquippedItems.Contains(item) && !result.Contains(item)).OrderBy(_ => random.Next()).ToList();
+            var fallbackCandidates = equipment.Where(item => CanOfferSharedRelic(item) && !result.Contains(item)).OrderBy(item => OfferScore(item, random)).ToList();
             foreach (var candidate in fallbackCandidates)
             {
                 if (result.Count >= 3) break;
@@ -138,5 +146,8 @@ namespace DungeonSlash
             }
             return result;
         }
+        private double OfferScore(EquipmentData item, System.Random random) => -System.Math.Log(System.Math.Max(.000001, random.NextDouble())) / (item.grantedSpell != null ? System.Math.Max(.001, State.MagicOfferWeight) : 1);
+        private bool CanOfferSharedRelic(EquipmentData item) => item != null && State.CanOffer(item) && item.IsRelic && item.scope == RelicScope.Shared && !State.EquippedItems.Contains(item)
+            && (item.grantedSpell == null || State.RuntimeFor(item.grantedSpell) == null);
     }
 }

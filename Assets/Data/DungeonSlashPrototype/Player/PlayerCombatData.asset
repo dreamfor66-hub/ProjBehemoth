@@ -12,25 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5268a9354c4f1c4090b31c19da88ddf, type: 3}
   m_Name: PlayerCombatData
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.playercombatdata.playercombatdata.displayname
+    lastText: "\uC6CC\uB9AC\uC5B4"
+  - propertyPath: description
+    key: data.playercombatdata.playercombatdata.description
+    lastText: 
+  textOwnerGuid: 4ab9c7dadbeaaf049b29d5ce300fe1dd
+  character: 0
+  displayName: "\uC6CC\uB9AC\uC5B4"
+  description: 
+  characterColor: {r: 0.22, g: 0.65, b: 0.9, a: 1}
+  portrait: {fileID: 0}
+  gameVariables: {fileID: 0}
+  startingRelic: {fileID: 0}
+  startingSpells: []
+  monkForms: []
   maxHp: 100
   shieldMax: 25
+  guardDamageReduction: 1
   normalShieldRegen: 2.5
   brokenShieldRegen: 5
   baseAttackDamage: 14
   baseChargeDamage: 21
   attackCooldown: 1
-  minimumAttackCooldown: 0.2
   chargeDuration: 0.75
-  inputMoveTolerance: 24
-  attackSegmentWidth: 18
-  guardSwipeDistance: 70
-  guardBodyOuterMargin: 70
-  guardRestConfirmSeconds: 0.1
-  guardRestStationaryDistance: 1
-  traversalExitDistance: 48
-  traversalStopConfirmSeconds: 0.1
-  traversalStationaryDistance: 1
-  swipeSampleWindowSeconds: 0.12
-  minimumSwipeDistance: 84
-  minimumSwipeSpeed: 520
-  minimumDirectionConsistency: 0.8

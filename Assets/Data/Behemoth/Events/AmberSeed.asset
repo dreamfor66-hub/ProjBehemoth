@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: AmberSeed
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.amberseed.displayname
+    lastText: "\uB531 \uD558\uB098 \uB0A8\uC740 \uC5F4\uB9E4"
+  - propertyPath: narrative
+    key: data.randomeventdata.amberseed.narrative
+    lastText: "\uBE5B\uB098\uB294 \uC5F4\uB9E4 \uC548\uC5D0 \uC791\uC740 \uC528\uC557\uC774
+      \uC788\uB2E4. \uAC00\uC9C0\uC5D0\uB294 \uD53C\uB97C \uBA39\uACE0 \uC790\uB780\uB2E4\uB294
+      \uD45C\uC2DD\uC774 \uB0A8\uC544 \uC788\uB2E4.\n\n\uC9C0\uAE08 \uBC30\uB97C
+      \uCC44\uC6B8 \uC218\uB3C4, \uC624\uB798 \uD488\uACE0 \uAC08 \uC218\uB3C4 \uC788\uACA0\uB2E4."
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.amberseed.options.0.title
+    lastText: "\uB0B4 \uD53C\uB85C \uC2F9\uC744 \uD2D4\uC6B4\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.amberseed.options.0.description
+    lastText: "\uCCB4\uB825 -10. \uD638\uBC15\uBE5B \uC2F9: \uC804\uD22C 3\uC2B9\uB9C8\uB2E4
+      \uCD5C\uB300\xB7\uD604\uC7AC \uCCB4\uB825 +4."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.amberseed.options.1.title
+    lastText: "\uC528\uC557\uC9F8 \uC539\uC5B4 \uC0BC\uD0A8\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.amberseed.options.1.description
+    lastText: "\uCCB4\uB825 20 \uD68C\uBCF5. \uC528\uC557\uC740 \uC0AC\uB77C\uC9C4\uB2E4."
+  textOwnerGuid: a04fa7615e63a844185ead2a471a79af
+  id: AmberSeed
+  displayName: "\uB531 \uD558\uB098 \uB0A8\uC740 \uC5F4\uB9E4"
+  narrative: "\uBE5B\uB098\uB294 \uC5F4\uB9E4 \uC548\uC5D0 \uC791\uC740 \uC528\uC557\uC774
+    \uC788\uB2E4. \uAC00\uC9C0\uC5D0\uB294 \uD53C\uB97C \uBA39\uACE0 \uC790\uB780\uB2E4\uB294
+    \uD45C\uC2DD\uC774 \uB0A8\uC544 \uC788\uB2E4.\n\n\uC9C0\uAE08 \uBC30\uB97C \uCC44\uC6B8
+    \uC218\uB3C4, \uC624\uB798 \uD488\uACE0 \uAC08 \uC218\uB3C4 \uC788\uACA0\uB2E4."
+  illustration: {fileID: 21300000, guid: 9b837489b55b63440b899ff825a8b5fe, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 1
+  maxAct: 2
+  weight: 1
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/TheLegendsWereTrue
+  referenceExperience: "\uC9C0\uAE08 \uD68C\uBCF5\uACFC \uC774\uD6C4 \uB204\uC801
+    \uC131\uC7A5\uC758 \uC120\uD0DD."
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uB0B4 \uD53C\uB85C \uC2F9\uC744 \uD2D4\uC6B4\uB2E4"
+    description: "\uCCB4\uB825 -10. \uD638\uBC15\uBE5B \uC2F9: \uC804\uD22C 3\uC2B9\uB9C8\uB2E4
+      \uCD5C\uB300\xB7\uD604\uC7AC \uCCB4\uB825 +4."
+    goldCost: 0
+    hpCost: 10
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 2900393ef75c6e542881f42f9ee141ec, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uC528\uC557\uC9F8 \uC539\uC5B4 \uC0BC\uD0A8\uB2E4"
+    description: "\uCCB4\uB825 20 \uD68C\uBCF5. \uC528\uC557\uC740 \uC0AC\uB77C\uC9C4\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 6
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 20
+      stat: 4

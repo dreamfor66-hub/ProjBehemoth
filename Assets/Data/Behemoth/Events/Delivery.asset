@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: Delivery
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.delivery.displayname
+    lastText: "\uC0C1\uC790\uAC00 \uB450 \uAC1C\uB2E4"
+  - propertyPath: narrative
+    key: data.randomeventdata.delivery.narrative
+    lastText: "\uC0C1\uC790\uC5D0\uB294 \uB2F9\uC2E0 \uC774\uB984\uC774 \uD558\uB098\uC529
+      \uC801\uD600 \uC788\uB2E4. \uD558\uB098\uB294 \uC9C0\uB09C\uBC88\uC758 \uB2F9\uC2E0,
+      \uB2E4\uB978 \uD558\uB098\uB294 \uC544\uC9C1 \uB9CC\uB098\uC9C0 \uBABB\uD55C
+      \uB2F9\uC2E0\uC5D0\uAC8C \uC654\uB2E4.\n\n\uC9D0\uAFBC\uC740 \uD558\uB098\uB9CC
+      \uACE0\uB974\uB77C\uB294 \uB4EF \uC190\uC744 \uD3B8\uB2E4."
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.delivery.options.0.title
+    lastText: "\uB9E1\uACA8 \uB454 \uBB3C\uAC74\uC744 \uBC1B\uB294\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.delivery.options.0.description
+    lastText: "\uACF5\uC6A9 \uC720\uBB3C \uD558\uB098 \uC120\uD0DD, \uACE8\uB4DC
+      +45."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.delivery.options.1.title
+    lastText: "\uC7A5\uBE44 \uB300\uC2E0 \uC5EC\uBE44\uB97C \uBC1B\uB294\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.delivery.options.1.description
+    lastText: "\uBCF4\uC720 \uD37D \uD558\uB098 \uC81C\uAC70. \uACE8\uB4DC +100."
+  textOwnerGuid: a8a0118921996ec409b5302773362a91
+  id: Delivery
+  displayName: "\uC0C1\uC790\uAC00 \uB450 \uAC1C\uB2E4"
+  narrative: "\uC0C1\uC790\uC5D0\uB294 \uB2F9\uC2E0 \uC774\uB984\uC774 \uD558\uB098\uC529
+    \uC801\uD600 \uC788\uB2E4. \uD558\uB098\uB294 \uC9C0\uB09C\uBC88\uC758 \uB2F9\uC2E0,
+    \uB2E4\uB978 \uD558\uB098\uB294 \uC544\uC9C1 \uB9CC\uB098\uC9C0 \uBABB\uD55C
+    \uB2F9\uC2E0\uC5D0\uAC8C \uC654\uB2E4.\n\n\uC9D0\uAFBC\uC740 \uD558\uB098\uB9CC
+    \uACE0\uB974\uB77C\uB294 \uB4EF \uC190\uC744 \uD3B8\uB2E4."
+  illustration: {fileID: 21300000, guid: be3823d317994f9449e82d368dc4fbd6, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 2
+  maxAct: 3
+  weight: 5
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/DoorsOfLightAndDark
+  referenceExperience: "\uC57D\uC18D\uD55C \uC720\uBB3C \uC131\uC7A5\uACFC \uD37D
+    \uD558\uB098\uB97C \uBC84\uB9AC\uB294 \uC790\uAE08 \uC804\uD658."
+  requiredFlag: DeliveryWaiting
+  forbiddenFlag: 
+  options:
+  - title: "\uB9E1\uACA8 \uB454 \uBB3C\uAC74\uC744 \uBC1B\uB294\uB2E4"
+    description: "\uACF5\uC6A9 \uC720\uBB3C \uD558\uB098 \uC120\uD0DD, \uACE8\uB4DC
+      +45."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 1
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 5
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 45
+      stat: 4
+    - kind: 9
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: DeliveryWaiting
+      amount: 0
+      stat: 4
+  - title: "\uC7A5\uBE44 \uB300\uC2E0 \uC5EC\uBE44\uB97C \uBC1B\uB294\uB2E4"
+    description: "\uBCF4\uC720 \uD37D \uD558\uB098 \uC81C\uAC70. \uACE8\uB4DC +100."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 12
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 5
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 100
+      stat: 4
+    - kind: 9
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: DeliveryWaiting
+      amount: 0
+      stat: 4

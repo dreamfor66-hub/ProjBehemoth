@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: Vitality
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.vitality.displayname
+    lastText: "\uC0DD\uBA85\uB825"
+  - propertyPath: description
+    key: data.perkdata.vitality.description
+    lastText: "\uCD5C\uB300 HP +10"
+  textOwnerGuid: 27a76068effc45f4f9f7cfd0606dac59
   id: Vitality
   displayName: "\uC0DD\uBA85\uB825"
   description: "\uCD5C\uB300 HP +10"

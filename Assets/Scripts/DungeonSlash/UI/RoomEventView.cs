@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -10,14 +11,14 @@ namespace DungeonSlash
     {
         [SerializeField] private GameObject panel;
         [SerializeField] private Image illustration;
-        [SerializeField] private Text message;
+        [SerializeField] private TextMeshProUGUI message;
         [SerializeField] private Button yesButton;
-        [SerializeField] private Text yesLabel;
+        [SerializeField] private TextMeshProUGUI yesLabel;
         [SerializeField] private Button noButton;
-        [SerializeField] private Text noLabel;
+        [SerializeField] private TextMeshProUGUI noLabel;
         [SerializeField, Min(.1f)] private float messageSeconds = 1.2f;
 
-        public void Configure(GameObject newPanel, Image newIllustration, Text newMessage, Button newYesButton, Text newYesLabel, Button newNoButton, Text newNoLabel)
+        public void Configure(GameObject newPanel, Image newIllustration, TextMeshProUGUI newMessage, Button newYesButton, TextMeshProUGUI newYesLabel, Button newNoButton, TextMeshProUGUI newNoLabel)
         {
             panel = newPanel;
             illustration = newIllustration;
@@ -62,7 +63,7 @@ namespace DungeonSlash
             SetButtonVisible(noButton, false);
         }
 
-        private static void ConfigureButton(Button button, Text label, string text, Action clicked)
+        private static void ConfigureButton(Button button, TextMeshProUGUI label, string text, Action clicked)
         {
             if (button == null) return;
             button.gameObject.SetActive(true);

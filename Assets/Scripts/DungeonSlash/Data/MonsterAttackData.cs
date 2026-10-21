@@ -6,7 +6,7 @@ namespace DungeonSlash
     public enum MonsterAttackType { Normal, Charge }
 
     [CreateAssetMenu(menuName = "Dungeon Slash/Monster Attack Data")]
-    public sealed class MonsterAttackData : ScriptableObject
+    public sealed class MonsterAttackData : LocalizedData
     {
         public MonsterAttackType type = MonsterAttackType.Normal;
         [Tooltip("Leave empty when this attack should not announce a name.")]
@@ -17,6 +17,8 @@ namespace DungeonSlash
         [Min(.01f)] public float windupDuration = .75f;
         [Min(.01f)] public float recoveryDuration = .5f;
         public bool guardable = true;
+        [Tooltip("Optional living support needed to perform this attack.")]
+        public string requiredSupportId;
 
         [Header("Charge")]
         [Tooltip("Only used by Charge attacks. This is the weak-point exposure window.")]

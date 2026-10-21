@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B1_Elite_Minotaur
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b1_elite_minotaur.displayname
+    lastText: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b1_elite_minotaur.encounterhint
+    lastText: 
+  textOwnerGuid: 5803c6e2e3ecb6d45a6edf579959d88c
   displayName: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 450
   normalAttackInterval: 2.7
   chargeInterval: 5.8

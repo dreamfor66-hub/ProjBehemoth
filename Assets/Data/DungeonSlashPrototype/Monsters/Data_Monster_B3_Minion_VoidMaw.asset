@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B3_Minion_VoidMaw
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_minion_voidmaw.displayname
+    lastText: "\uACF5\uD5C8\uC758 \uC544\uAC00\uB9AC"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_minion_voidmaw.encounterhint
+    lastText: 
+  textOwnerGuid: 74285b100b3b0f94ba2ebc118d2e4f77
   displayName: "\uACF5\uD5C8\uC758 \uC544\uAC00\uB9AC"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 300
   normalAttackInterval: 1.45
   chargeInterval: 8.5

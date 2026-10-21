@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B2_Minion_Yeti
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b2_minion_yeti.displayname
+    lastText: "\uC124\uC778"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b2_minion_yeti.encounterhint
+    lastText: 
+  textOwnerGuid: 756c766eabf90b04192ff6bf4e09c953
   displayName: "\uC124\uC778"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 277.5
   normalAttackInterval: 5.2
   chargeInterval: 11.8

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: LampPriest
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.lamppriest.displayname
+    lastText: "\uAC80\uC740 \uB4F1\uBD88 \uC0AC\uC81C"
+  - propertyPath: encounterHint
+    key: data.monsterdata.lamppriest.encounterhint
+    lastText: 
+  textOwnerGuid: 9177932eaa22ed644a46bfee82533abb
+  displayName: "\uAC80\uC740 \uB4F1\uBD88 \uC0AC\uC81C"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 290
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 37
+  goldReward: 18
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 321e73389075fdc40984317ebe362f44, type: 2}
+  - {fileID: 11400000, guid: aecedb3260170e942aef9034c9e3fa94, type: 2}
+  bodyColor: {r: 0.8, g: 0.57600003, b: 0.48, a: 1}

@@ -1,3 +1,4 @@
+using TMPro;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,10 +8,10 @@ namespace DungeonSlash
     public sealed class EncounterMessageView : MonoBehaviour
     {
         [SerializeField] private GameObject panel;
-        [SerializeField] private Text message;
+        [SerializeField] private TextMeshProUGUI message;
         [SerializeField, Min(.1f)] private float displaySeconds = 1.15f;
 
-        public void Configure(GameObject newPanel, Text newMessage)
+        public void Configure(GameObject newPanel, TextMeshProUGUI newMessage)
         {
             panel = newPanel;
             message = newMessage;

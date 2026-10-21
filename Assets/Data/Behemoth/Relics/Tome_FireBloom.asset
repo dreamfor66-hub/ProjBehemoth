@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: Tome_FireBloom
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.tome_firebloom.displayname
+    lastText: "\uD654\uC5FC \uAC1C\uD654\uC758 \uB9C8\uB3C4\uC11C"
+  - propertyPath: description
+    key: data.equipmentdata.tome_firebloom.description
+    lastText: "\uD68D\uB4DD \uC989\uC2DC \uC8FC\uBB38 \uC2B5\uB4DD. \uCCB4\uB825
+      \uBE44\uC728\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801 \uC8FC\uC704\uC5D0 \uD3ED\uBC1C\uD55C\uB2E4.
+      \uBC18\uACBD \uC548\uC758 \uC801\uC744 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4."
+  textOwnerGuid: c3b4cfaa851b1d341af693c62e38624f
+  id: Tome_FireBloom
+  displayName: "\uD654\uC5FC \uAC1C\uD654\uC758 \uB9C8\uB3C4\uC11C"
+  description: "\uD68D\uB4DD \uC989\uC2DC \uC8FC\uBB38 \uC2B5\uB4DD. \uCCB4\uB825
+    \uBE44\uC728\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801 \uC8FC\uC704\uC5D0 \uD3ED\uBC1C\uD55C\uB2E4.
+    \uBC18\uACBD \uC548\uC758 \uC801\uC744 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: c8a3d8385928cec45913643ae9437b0a, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  startingMechanic: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - editorLabel: "\uAE30\uC874 \uD6A8\uACFC"
+    trigger:
+      triggerType: 4
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 2
+      effectMagnitude: 0
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - editorLabel: OnAcquire
+    trigger:
+      triggerType: 4
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 12
+      effectMagnitude: 0
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 11400000, guid: 4ac44dd5af0d27e48bc766d668de9c77, type: 2}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 38
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    form: {fileID: 0}
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

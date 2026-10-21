@@ -115,6 +115,24 @@ namespace DungeonSlash
             hitCast.color = new Color(1f, .12f, .12f, .34f);
             hitCast.raycastTarget = false;
         }
+        public void ShowSpellArea(Vector2 center, float radius, Color color)
+        {
+            if (line == null || line.parent == null) return;
+            var area = new GameObject("SpellImpactArea", typeof(RectTransform), typeof(CanvasRenderer), typeof(SpellAreaGraphic));
+            area.transform.SetParent(line.parent, false); area.GetComponent<RectTransform>().anchoredPosition = center;
+            area.GetComponent<SpellAreaGraphic>().Initialize(radius, color); Destroy(area, .45f);
+        }
+        public void ShowSpell(AttackSegment segment, Color color)
+        {
+            ShowAdditional(segment, false, .85f);
+            if (auxiliaryLines.Count > 0)
+            {
+                var path = auxiliaryLines[auxiliaryLines.Count - 1];
+                path.Image.color = color;
+                path.Cast.color = new Color(color.r, color.g, color.b, .16f);
+                path.HideAt = Time.unscaledTime + .35f;
+            }
+        }
 
         private static void ConfigureLine(RectTransform target, Image targetImage, AttackSegment segment, Color color)
         {

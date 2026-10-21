@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6103bbe31eb9e04fa0ae1c85cad2dcb, type: 3}
+  m_Name: Ash
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.stagesetdata.ash.displayname
+    lastText: "\uC601\uD63C\uC758 \uC7BF\uB354\uBBF8"
+  textOwnerGuid: 1c2a013dbb28b6845b06438ab3bba8c1
+  id: Ash
+  displayName: "\uC601\uD63C\uC758 \uC7BF\uB354\uBBF8"
+  act: 3
+  easyCombatCount: 6
+  tripleCombatCount: 9
+  packChance: 0.35
+  earlyCombats:
+  - {fileID: 11400000, guid: 2fe11abe68498b443ba39bd1a11d2467, type: 2}
+  - {fileID: 11400000, guid: 7eeaee2d43c807f49885bd3ecad9a42e, type: 2}
+  - {fileID: 11400000, guid: 9986605e2d34b7647ae4dc3269dde980, type: 2}
+  hardCombats:
+  - {fileID: 11400000, guid: 5570aed3c0d364a4989cbc47f695a308, type: 2}
+  - {fileID: 11400000, guid: 843bb3811b5c8e247957bb8aa1c2c9eb, type: 2}
+  - {fileID: 11400000, guid: 54f0329bdb5825c44931145e55940e25, type: 2}
+  elites:
+  - {fileID: 11400000, guid: 3252c05c6cd29704da9a449f00d9a093, type: 2}
+  - {fileID: 11400000, guid: 96cb453d191437d4499fd1f332f5b293, type: 2}
+  - {fileID: 11400000, guid: df4e07263d7598c4e910d7d29e550c91, type: 2}
+  bosses:
+  - {fileID: 11400000, guid: a33249ad6319be7439852254d7eb8c92, type: 2}
+  - {fileID: 11400000, guid: f7e1cf8b35f975d4dbbb4efc37f7ef60, type: 2}
+  - {fileID: 11400000, guid: 329af7b73977405418dd037d8d3e0a37, type: 2}

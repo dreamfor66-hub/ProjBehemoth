@@ -12,10 +12,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
   m_Name: RagePotion
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.ragepotion.displayname
+    lastText: "\uACA9\uB178\uC758 \uD3EC\uC158"
+  - propertyPath: description
+    key: data.equipmentdata.ragepotion.description
+    lastText: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 +35%"
+  textOwnerGuid: 31ab5f7dee2e7c045893a3a87b4a23c0
   id: RagePotion
   displayName: "\uACA9\uB178\uC758 \uD3EC\uC158"
   description: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 +35%"
   icon: {fileID: 21300000, guid: 94bc069e94ecaf3429130599931528bd, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  startingMechanic: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - editorLabel: "\uAE30\uC874 \uD6A8\uACFC"
+    trigger:
+      triggerType: 6
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 3
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 2
+      effectMagnitude: 0.35
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 15
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
   itemKind: 1
   price: 28
   maxPurchaseCount: 1
@@ -25,6 +76,10 @@ MonoBehaviour:
     triggerAttackWayFilter: 7
     triggerCount: 1
     triggerMaxCount: 3
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
   condition:
     conditionType: 0
   targetType: 0
@@ -35,3 +90,19 @@ MonoBehaviour:
     effectAngle: 0
     effectTime: 0
     effectStatType: 15
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    form: {fileID: 0}
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

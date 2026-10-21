@@ -1,3 +1,4 @@
+using TMPro;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -118,7 +119,7 @@ namespace DungeonSlash.Tests
         public void WeakPointView_BuildsOneSegmentForEachRequiredChargeHit()
         {
             var root = new GameObject("WeakPoint", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<RectTransform>();
-            var display = new GameObject("RemainingHitDisplay", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            var display = new GameObject("RemainingHitDisplay", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
             display.transform.SetParent(root, false);
             var view = root.gameObject.AddComponent<WeakPointView>();
             view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), display);
@@ -136,7 +137,7 @@ namespace DungeonSlash.Tests
         public void WeakPointView_HidesTheHitBarForOneHitWeakPoints()
         {
             var root = new GameObject("WeakPoint", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<RectTransform>();
-            var display = new GameObject("RemainingHitDisplay", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            var display = new GameObject("RemainingHitDisplay", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
             display.transform.SetParent(root, false);
             var view = root.gameObject.AddComponent<WeakPointView>();
             view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), display);
@@ -295,10 +296,10 @@ namespace DungeonSlash.Tests
         public void MonsterView_ResetOpacity_DoesNotRequireCanvasGroup()
         {
             var root = new GameObject("Monster", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var labelObject = new GameObject("State", typeof(RectTransform), typeof(UnityEngine.UI.Text));
+            var labelObject = new GameObject("State", typeof(RectTransform), typeof(TextMeshProUGUI));
             labelObject.transform.SetParent(root.transform, false);
             var view = root.AddComponent<MonsterView>();
-            view.Configure(root.GetComponent<RectTransform>(), root.GetComponent<UnityEngine.UI.Image>(), labelObject.GetComponent<UnityEngine.UI.Text>());
+            view.Configure(root.GetComponent<RectTransform>(), root.GetComponent<UnityEngine.UI.Image>(), labelObject.GetComponent<TextMeshProUGUI>());
 
             Assert.DoesNotThrow(() => view.ResetOpacity());
             Assert.That(root.GetComponent<UnityEngine.UI.Image>().color.a, Is.EqualTo(1f));
@@ -309,7 +310,7 @@ namespace DungeonSlash.Tests
         public void MonsterView_Bind_EmptiesTheHpGaugeImmediatelyAfterDeath()
         {
             var root = new GameObject("Monster", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var labelObject = new GameObject("State", typeof(RectTransform), typeof(UnityEngine.UI.Text));
+            var labelObject = new GameObject("State", typeof(RectTransform), typeof(TextMeshProUGUI));
             labelObject.transform.SetParent(root.transform, false);
             var hpBackground = new GameObject("Hp", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             hpBackground.transform.SetParent(root.transform, false);
@@ -317,7 +318,7 @@ namespace DungeonSlash.Tests
             var hpFill = new GameObject("Fill", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             hpFill.transform.SetParent(hpBackground.transform, false);
             var view = root.AddComponent<MonsterView>();
-            view.Configure(root.GetComponent<RectTransform>(), root.GetComponent<UnityEngine.UI.Image>(), labelObject.GetComponent<UnityEngine.UI.Text>(), hpFill.GetComponent<UnityEngine.UI.Image>(), null, null);
+            view.Configure(root.GetComponent<RectTransform>(), root.GetComponent<UnityEngine.UI.Image>(), labelObject.GetComponent<TextMeshProUGUI>(), hpFill.GetComponent<UnityEngine.UI.Image>(), null, null);
             var data = ScriptableObject.CreateInstance<MonsterData>();
             data.maxHp = 10f;
             var runtime = new MonsterRuntime(data);
@@ -353,8 +354,8 @@ namespace DungeonSlash.Tests
             var hp = CreateBar(root.transform, "Hp");
             var shield = CreateBar(root.transform, "Shield");
             var monster = CreateBar(root.transform, "Monster");
-            var hpLabel = new GameObject("HpValue", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); hpLabel.transform.SetParent(hp.transform.parent, false);
-            var shieldLabel = new GameObject("ShieldValue", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); shieldLabel.transform.SetParent(shield.transform.parent, false);
+            var hpLabel = new GameObject("HpValue", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); hpLabel.transform.SetParent(hp.transform.parent, false);
+            var shieldLabel = new GameObject("ShieldValue", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); shieldLabel.transform.SetParent(shield.transform.parent, false);
             var hud = new GameObject("Hud", typeof(CombatHudView)).GetComponent<CombatHudView>(); hud.transform.SetParent(root.transform, false);
             hud.Configure(hp, shield, monster, null, null, null, null, null, hpLabel, shieldLabel);
             var data = ScriptableObject.CreateInstance<PlayerCombatData>(); data.maxHp = 100f; data.shieldMax = 75f;
@@ -708,7 +709,7 @@ namespace DungeonSlash.Tests
             Assert.That(monsterAssets.SelectMany(entry => entry.asset.GetAttacks(MonsterAttackType.Charge)).Select(attack => attack.chargeTimeLimit).Distinct().Count(), Is.GreaterThan(1), "Charge windows retain the distinct weak-point and pattern timings.");
             Assert.That(System.IO.Directory.Exists("Assets/Data/DungeonSlashPrototype/ChargePatterns"), Is.False, "ChargePatternData assets must not remain after the AttackData migration.");
             Assert.That(frostBat.normalAttackInterval, Is.GreaterThanOrEqualTo(2f), "The frost bat is a low-pressure summoned minion, not an independent rapid-fire threat.");
-            Assert.That(frostBat.maxHp, Is.LessThanOrEqualTo(80f));
+            Assert.That(frostBat.maxHp, Is.EqualTo(114f), "Preserve the current editor-tuned monster HP; the old 80 HP ceiling predates that balance pass.");
             Assert.That(frostBat.GetAttack(MonsterAttackType.Charge).chargeTimeLimit, Is.EqualTo(3.6f).Within(.001f), "The 2.1-second frost bat pattern receives a +1.5 second reaction window.");
             Assert.That(frostBat.GetAttack(MonsterAttackType.Normal).windupDuration, Is.EqualTo(.682f).Within(.001f), "Minion normal-attack windups receive the global 1.1x reaction-time multiplier.");
             Assert.That(yeti.normalAttackInterval, Is.GreaterThan(5f), "The yeti needs a long, punishable heavy-attack cycle.");
@@ -925,7 +926,7 @@ namespace DungeonSlash.Tests
             var start = new GameObject("Start", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)).GetComponent<UnityEngine.UI.Button>();
             var addPerk = new GameObject("AddPerk", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)).GetComponent<UnityEngine.UI.Button>();
             var addEquipment = new GameObject("AddEquipment", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)).GetComponent<UnityEngine.UI.Button>();
-            var status = new GameObject("Status", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            var status = new GameObject("Status", typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
             var overlay = root.AddComponent<DebugCheatOverlay>();
             var serialized = new SerializedObject(overlay);
             serialized.FindProperty("panel").objectReferenceValue = panel;
@@ -961,8 +962,8 @@ namespace DungeonSlash.Tests
             var panel = new GameObject("Panel", typeof(RectTransform)); panel.transform.SetParent(root.transform, false);
             var gauge = new GameObject("Gauge", typeof(RectTransform), typeof(UnityEngine.UI.Image)); gauge.transform.SetParent(panel.transform, false); gauge.GetComponent<RectTransform>().sizeDelta = new Vector2(200f, 20f);
             var fill = new GameObject("Fill", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); fill.transform.SetParent(gauge.transform, false); fill.rectTransform.sizeDelta = new Vector2(200f, 20f);
-            var experienceText = new GameObject("Experience", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); experienceText.transform.SetParent(panel.transform, false);
-            var goldText = new GameObject("Gold", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); goldText.transform.SetParent(panel.transform, false);
+            var experienceText = new GameObject("Experience", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); experienceText.transform.SetParent(panel.transform, false);
+            var goldText = new GameObject("Gold", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); goldText.transform.SetParent(panel.transform, false);
             var buttonRoot = new GameObject("Confirm", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)); buttonRoot.transform.SetParent(panel.transform, false);
             var popup = new GameObject("Reward", typeof(RewardPopupView)).GetComponent<RewardPopupView>(); popup.Configure(panel, experienceText, goldText, fill, buttonRoot.GetComponent<UnityEngine.UI.Button>());
             var playerData = ScriptableObject.CreateInstance<PlayerCombatData>(); playerData.maxHp = 100f; playerData.shieldMax = 100f;
@@ -1030,8 +1031,8 @@ namespace DungeonSlash.Tests
             var panel = new GameObject("Panel", typeof(RectTransform)); panel.transform.SetParent(root.transform, false);
             var gauge = new GameObject("Gauge", typeof(RectTransform), typeof(UnityEngine.UI.Image)); gauge.transform.SetParent(panel.transform, false);
             var fill = new GameObject("Fill", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); fill.transform.SetParent(gauge.transform, false);
-            var experienceText = new GameObject("Experience", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); experienceText.transform.SetParent(panel.transform, false);
-            var goldText = new GameObject("Gold", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); goldText.transform.SetParent(panel.transform, false);
+            var experienceText = new GameObject("Experience", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); experienceText.transform.SetParent(panel.transform, false);
+            var goldText = new GameObject("Gold", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); goldText.transform.SetParent(panel.transform, false);
             var buttonRoot = new GameObject("Confirm", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)); buttonRoot.transform.SetParent(panel.transform, false);
             var popup = new GameObject("Reward", typeof(RewardPopupView)).GetComponent<RewardPopupView>(); popup.Configure(panel, experienceText, goldText, fill, buttonRoot.GetComponent<UnityEngine.UI.Button>());
             var playerData = ScriptableObject.CreateInstance<PlayerCombatData>(); playerData.maxHp = 100f; playerData.shieldMax = 100f;
@@ -1053,9 +1054,9 @@ namespace DungeonSlash.Tests
         [Test]
         public void RunHud_HidesTheCurrentRoomConceptText()
         {
-            var roomText = new GameObject("Room", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
-            var runText = new GameObject("Run", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
-            var perkText = new GameObject("Perk", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            var roomText = new GameObject("Room", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
+            var runText = new GameObject("Run", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
+            var perkText = new GameObject("Perk", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
             var view = new GameObject("RunHud", typeof(RunHudView)).GetComponent<RunHudView>(); view.Configure(roomText, runText, perkText);
             var playerData = ScriptableObject.CreateInstance<PlayerCombatData>(); playerData.maxHp = 100f; playerData.shieldMax = 100f;
             var balance = ScriptableObject.CreateInstance<RunBalanceSettings>(); balance.initialExperienceRequirement = 100;
@@ -1101,7 +1102,7 @@ namespace DungeonSlash.Tests
         public void NavigationButtons_StayRelativeToFacingInsteadOfWorldNorth()
         {
             var root = new GameObject("Choice", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button));
-            var label = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); label.transform.SetParent(root.transform, false);
+            var label = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); label.transform.SetParent(root.transform, false);
             var choice = root.AddComponent<RoomChoiceButton>(); choice.Configure(root.GetComponent<UnityEngine.UI.Button>(), label);
 
             choice.Bind(RelativeDirection.Forward, FacingDirection.South, true, _ => { });
@@ -1116,7 +1117,7 @@ namespace DungeonSlash.Tests
         public void NavigationHover_ReportsTheAbsoluteDirectionForMinimapHighlighting()
         {
             var root = new GameObject("Choice", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button));
-            var label = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>();
+            var label = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>();
             label.transform.SetParent(root.transform, false);
             var choice = root.AddComponent<RoomChoiceButton>();
             choice.Configure(root.GetComponent<UnityEngine.UI.Button>(), label);
@@ -1134,7 +1135,7 @@ namespace DungeonSlash.Tests
         public void Minimap_UsesKoreanRoomNamesInsteadOfEnglishInitials()
         {
             var root = new GameObject("MapIcon", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var label = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); label.transform.SetParent(root.transform, false);
+            var label = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); label.transform.SetParent(root.transform, false);
             var icon = root.AddComponent<MapRoomIcon>(); icon.Configure(root.GetComponent<UnityEngine.UI.Image>(), label);
             var room = new DungeonRoom(1, new DungeonPosition(0, 0)) { Type = RoomEncounterType.Boss, IsRevealed = true };
 
@@ -1152,8 +1153,8 @@ namespace DungeonSlash.Tests
             content.transform.SetParent(root.transform, false);
             content.sizeDelta = new Vector2(260f, 260f);
             var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
-            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); arrow.transform.SetParent(iconRoot.transform, false);
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); arrow.transform.SetParent(iconRoot.transform, false);
             var iconPrefab = iconRoot.AddComponent<MapRoomIcon>(); iconPrefab.Configure(iconRoot.GetComponent<UnityEngine.UI.Image>(), iconLabel, arrow);
             var connectionRoot = new GameObject("ConnectionPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             var view = root.AddComponent<DungeonMapView>(); view.Configure(content, iconPrefab, connectionRoot.GetComponent<UnityEngine.UI.Image>());
@@ -1167,14 +1168,14 @@ namespace DungeonSlash.Tests
             var icons = content.GetComponentsInChildren<MapRoomIcon>();
             Assert.That(icons.Length, Is.EqualTo(2));
             var currentIcon = icons.Single(icon => icon.GetComponent<RectTransform>().anchoredPosition == Vector2.zero);
-            var currentLabel = currentIcon.transform.Find("Label").GetComponent<UnityEngine.UI.Text>();
+            var currentLabel = currentIcon.transform.Find("Label").GetComponent<TextMeshProUGUI>();
             Assert.That(currentLabel.enabled, Is.False);
             Assert.That(currentLabel.text, Is.Empty);
-            var facingArrow = currentIcon.transform.Find("Arrow").GetComponent<UnityEngine.UI.Text>();
+            var facingArrow = currentIcon.transform.Find("Arrow").GetComponent<TextMeshProUGUI>();
             Assert.That(facingArrow.enabled, Is.True);
             Assert.That(facingArrow.rectTransform.anchoredPosition.y, Is.GreaterThan(0f));
             var unknownIcon = icons.Single(icon => icon != currentIcon);
-            Assert.That(unknownIcon.transform.Find("Label").GetComponent<UnityEngine.UI.Text>().text, Is.EqualTo("?"));
+            Assert.That(unknownIcon.transform.Find("Label").GetComponent<TextMeshProUGUI>().text, Is.EqualTo("?"));
             Assert.That(unknownIcon.GetComponent<UnityEngine.UI.Image>().color, Is.EqualTo(new Color(1f, .76f, .18f, 1f)));
             Object.DestroyImmediate(root);
             Object.DestroyImmediate(iconRoot);
@@ -1188,7 +1189,7 @@ namespace DungeonSlash.Tests
             var content = new GameObject("Content", typeof(RectTransform)).GetComponent<RectTransform>();
             content.transform.SetParent(root.transform, false);
             var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); iconLabel.transform.SetParent(iconRoot.transform, false);
             var iconPrefab = iconRoot.AddComponent<MapRoomIcon>(); iconPrefab.Configure(iconRoot.GetComponent<UnityEngine.UI.Image>(), iconLabel);
             var connectionRoot = new GameObject("ConnectionPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             var view = root.AddComponent<DungeonMapView>(); view.Configure(content, iconPrefab, connectionRoot.GetComponent<UnityEngine.UI.Image>());
@@ -1200,7 +1201,7 @@ namespace DungeonSlash.Tests
             view.Render(new DungeonRunState(1, graph), FacingDirection.East);
 
             var targetIcon = content.GetComponentsInChildren<MapRoomIcon>().Single(icon => icon.GetComponent<RectTransform>().anchoredPosition.x > 0f);
-            Assert.That(targetIcon.transform.Find("Label").GetComponent<UnityEngine.UI.Text>().text, Is.EqualTo("\uC0C1\uC790"));
+            Assert.That(targetIcon.transform.Find("Label").GetComponent<TextMeshProUGUI>().text, Is.EqualTo("\uC0C1\uC790"));
             Object.DestroyImmediate(root);
             Object.DestroyImmediate(iconRoot);
             Object.DestroyImmediate(connectionRoot);
@@ -1214,8 +1215,8 @@ namespace DungeonSlash.Tests
             content.transform.SetParent(root.transform, false);
             content.sizeDelta = new Vector2(260f, 260f);
             var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
-            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); arrow.transform.SetParent(iconRoot.transform, false);
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); arrow.transform.SetParent(iconRoot.transform, false);
             var iconPrefab = iconRoot.AddComponent<MapRoomIcon>(); iconPrefab.Configure(iconRoot.GetComponent<UnityEngine.UI.Image>(), iconLabel, arrow);
             var connectionRoot = new GameObject("ConnectionPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             var view = root.AddComponent<DungeonMapView>(); view.Configure(content, iconPrefab, connectionRoot.GetComponent<UnityEngine.UI.Image>());
@@ -1242,8 +1243,8 @@ namespace DungeonSlash.Tests
             content.transform.SetParent(root.transform, false);
             content.sizeDelta = new Vector2(280f, 280f);
             var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
-            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); arrow.transform.SetParent(iconRoot.transform, false);
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); arrow.transform.SetParent(iconRoot.transform, false);
             var iconPrefab = iconRoot.AddComponent<MapRoomIcon>(); iconPrefab.Configure(iconRoot.GetComponent<UnityEngine.UI.Image>(), iconLabel, arrow);
             var connectionRoot = new GameObject("ConnectionPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             var view = root.AddComponent<DungeonMapView>(); view.Configure(content, iconPrefab, connectionRoot.GetComponent<UnityEngine.UI.Image>());
@@ -1269,8 +1270,8 @@ namespace DungeonSlash.Tests
             content.transform.SetParent(root.transform, false);
             content.sizeDelta = new Vector2(260f, 260f);
             var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
-            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); arrow.transform.SetParent(iconRoot.transform, false);
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); arrow.transform.SetParent(iconRoot.transform, false);
             var north = new GameObject("RouteNorth", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); north.transform.SetParent(iconRoot.transform, false);
             var east = new GameObject("RouteEast", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); east.transform.SetParent(iconRoot.transform, false);
             var south = new GameObject("RouteSouth", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); south.transform.SetParent(iconRoot.transform, false);
@@ -1305,8 +1306,8 @@ namespace DungeonSlash.Tests
             content.transform.SetParent(root.transform, false);
             content.sizeDelta = new Vector2(260f, 260f);
             var iconRoot = new GameObject("IconPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); iconLabel.transform.SetParent(iconRoot.transform, false);
-            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); arrow.transform.SetParent(iconRoot.transform, false);
+            var iconLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); iconLabel.transform.SetParent(iconRoot.transform, false);
+            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); arrow.transform.SetParent(iconRoot.transform, false);
             var iconPrefab = iconRoot.AddComponent<MapRoomIcon>(); iconPrefab.Configure(iconRoot.GetComponent<UnityEngine.UI.Image>(), iconLabel, arrow);
             var connectionRoot = new GameObject("ConnectionPrefab", typeof(RectTransform), typeof(UnityEngine.UI.Image));
             var view = root.AddComponent<DungeonMapView>(); view.Configure(content, iconPrefab, connectionRoot.GetComponent<UnityEngine.UI.Image>());
@@ -1324,7 +1325,7 @@ namespace DungeonSlash.Tests
             var icons = content.GetComponentsInChildren<MapRoomIcon>();
             Assert.That(icons.Length, Is.EqualTo(4), "Current, every visited room, and the direct unknown room each need a tile.");
             var clearedPastTile = icons.OrderBy(icon => icon.GetComponent<RectTransform>().anchoredPosition.y).First();
-            Assert.That(clearedPastTile.transform.Find("Label").GetComponent<UnityEngine.UI.Text>().enabled, Is.False);
+            Assert.That(clearedPastTile.transform.Find("Label").GetComponent<TextMeshProUGUI>().enabled, Is.False);
             Assert.That(clearedPastTile.GetComponent<UnityEngine.UI.Image>().color, Is.EqualTo(new Color(.14f, .29f, .42f, 1f)));
             Object.DestroyImmediate(root);
             Object.DestroyImmediate(iconRoot);
@@ -1335,8 +1336,8 @@ namespace DungeonSlash.Tests
         public void Minimap_RendersEachConnectionAsAPathInsideTheRoomTile()
         {
             var root = new GameObject("MapIcon", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var label = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); label.transform.SetParent(root.transform, false);
-            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); arrow.transform.SetParent(root.transform, false);
+            var label = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); label.transform.SetParent(root.transform, false);
+            var arrow = new GameObject("Arrow", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); arrow.transform.SetParent(root.transform, false);
             var north = new GameObject("RouteNorth", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); north.transform.SetParent(root.transform, false);
             var east = new GameObject("RouteEast", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); east.transform.SetParent(root.transform, false);
             var south = new GameObject("RouteSouth", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); south.transform.SetParent(root.transform, false);
@@ -1383,11 +1384,11 @@ namespace DungeonSlash.Tests
             var root = new GameObject("RoomEventRoot", typeof(RectTransform), typeof(Canvas));
             var panel = new GameObject("Panel", typeof(RectTransform)); panel.transform.SetParent(root.transform, false);
             var illustration = new GameObject("Illustration", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<UnityEngine.UI.Image>(); illustration.transform.SetParent(panel.transform, false);
-            var message = new GameObject("Message", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); message.transform.SetParent(panel.transform, false);
+            var message = new GameObject("Message", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); message.transform.SetParent(panel.transform, false);
             var yesRoot = new GameObject("Yes", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)); yesRoot.transform.SetParent(panel.transform, false);
-            var yesLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); yesLabel.transform.SetParent(yesRoot.transform, false);
+            var yesLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); yesLabel.transform.SetParent(yesRoot.transform, false);
             var noRoot = new GameObject("No", typeof(RectTransform), typeof(UnityEngine.UI.Image), typeof(UnityEngine.UI.Button)); noRoot.transform.SetParent(panel.transform, false);
-            var noLabel = new GameObject("Label", typeof(RectTransform), typeof(UnityEngine.UI.Text)).GetComponent<UnityEngine.UI.Text>(); noLabel.transform.SetParent(noRoot.transform, false);
+            var noLabel = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI)).GetComponent<TextMeshProUGUI>(); noLabel.transform.SetParent(noRoot.transform, false);
             var view = panel.AddComponent<RoomEventView>();
             view.Configure(panel, illustration, message, yesRoot.GetComponent<UnityEngine.UI.Button>(), yesLabel, noRoot.GetComponent<UnityEngine.UI.Button>(), noLabel);
 
@@ -1428,12 +1429,12 @@ namespace DungeonSlash.Tests
         }
 
         [Test]
-        public void GamePrototypeScene_HasNoMissingScriptsAndCoreReferences()
+        public void MainGameScene_HasNoMissingScriptsAndCoreReferences()
         {
-            var scene = EditorSceneManager.OpenScene("Assets/Scenes/GamePrototype.unity");
+            var scene = EditorSceneManager.OpenScene("Assets/Scenes/MainGameScene.unity");
             var components = scene.GetRootGameObjects().SelectMany(root => root.GetComponentsInChildren<Component>(true)).ToArray();
             Assert.That(components.Any(component => component == null), Is.False, "The scene contains a missing script.");
-            var currentRoomInfo = components.OfType<UnityEngine.UI.Text>().Single(text => text.gameObject.name == "CurrentRoomInfo");
+            var currentRoomInfo = components.OfType<TextMeshProUGUI>().Single(text => text.gameObject.name == "CurrentRoomInfo");
             Assert.That(currentRoomInfo.gameObject.activeSelf, Is.False, "The minimap should not be accompanied by current-room concept text.");
 
             var flow = components.OfType<GameFlowController>().Single();

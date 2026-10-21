@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee0b8ac17cb858428547c2e32588d13, type: 3}
+  m_Name: TrailDog
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.companiondata.traildog.displayname
+    lastText: "\uAE38\uB3D9\uBB34"
+  textOwnerGuid: c6d66f4a1e280544b805c94668f5f3e7
+  displayName: "\uAE38\uB3D9\uBB34"
+  prefab: {fileID: 6474503742904246444, guid: a5dc20c1e5b3b164d873decb6b8a4fd0, type: 3}
+  playerOffset: {x: -200, y: 70}
+  idleBobHeight: 3
+  attackLungeDistance: 32

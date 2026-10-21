@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: FrostOgreNormal
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.frostogrenormal.displayname
+    lastText: "\uC5BC\uC74C \uC5F0\uD0C0"
+  textOwnerGuid: 62019fdb93c09c04ab93e187c5fc7966
   type: 0
   displayName: "\uC5BC\uC74C \uC5F0\uD0C0"
   damage: 33.6
@@ -19,6 +24,7 @@ MonoBehaviour:
   windupDuration: 1.12
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 2.5
   chargeWeakPoints: []
   combatMechanics:

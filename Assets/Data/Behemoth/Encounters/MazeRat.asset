@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: MazeRat
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.mazerat.displayname
+    lastText: "\uAD74\uC950"
+  - propertyPath: hint
+    key: data.encounterdata.mazerat.hint
+    lastText: 
+  textOwnerGuid: af7650117c33bd34492ad22fe692d766
+  id: MazeRat
+  displayName: "\uAD74\uC950"
+  hint: 
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: e38eba67e08948347ab295b6c79c7e34, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

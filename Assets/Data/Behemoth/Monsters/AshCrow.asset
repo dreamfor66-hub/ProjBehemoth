@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: AshCrow
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.ashcrow.displayname
+    lastText: "\uC7AC\uAE4C\uB9C8\uADC0"
+  - propertyPath: encounterHint
+    key: data.monsterdata.ashcrow.encounterhint
+    lastText: 
+  textOwnerGuid: bb3b020db885c984995fc41f14641176
+  displayName: "\uC7AC\uAE4C\uB9C8\uADC0"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 125
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 24
+  goldReward: 12
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 534a34ddf14274144933cf14dac68bd7, type: 2}
+  - {fileID: 11400000, guid: 3a523a8387306714fb7fa10fd5018e75, type: 2}
+  bodyColor: {r: 0.8, g: 0.48, b: 0.7679999, a: 1}

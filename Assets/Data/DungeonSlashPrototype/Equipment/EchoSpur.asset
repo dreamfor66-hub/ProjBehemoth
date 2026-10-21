@@ -12,11 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
   m_Name: EchoSpur
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.echospur.displayname
+    lastText: "\uC6B8\uB9BC\uC758 \uBC1C\uB4A4\uCD95"
+  - propertyPath: description
+    key: data.equipmentdata.echospur.description
+    lastText: "\uB0B4\uB824\uBCA0\uAE30 \uC801\uC911 \uC2DC, \uAC19\uC740 \uAE38\uC774\uC758
+      \uCD94\uAC00 \uACF5\uACA9"
+  textOwnerGuid: 85821ab2f3c42cd439b52ec961737605
   id: EchoSpur
   displayName: "\uC6B8\uB9BC\uC758 \uBC1C\uB4A4\uCD95"
   description: "\uB0B4\uB824\uBCA0\uAE30 \uC801\uC911 \uC2DC, \uAC19\uC740 \uAE38\uC774\uC758
     \uCD94\uAC00 \uACF5\uACA9"
   icon: {fileID: 21300000, guid: e4b323fea958f994ab60fc303f781273, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  startingMechanic: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - editorLabel: "\uAE30\uC874 \uD6A8\uACFC"
+    trigger:
+      triggerType: 1
+      triggerAttackTypeFilter: 3
+      triggerAttackWayFilter: 4
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 1
+    effects:
+    - effectType: 0
+      effectMagnitude: 0.55
+      effectCount: 1
+      effectAngle: 12
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
   itemKind: 0
   price: 74
   maxPurchaseCount: 1
@@ -26,6 +78,10 @@ MonoBehaviour:
     triggerAttackWayFilter: 4
     triggerCount: 1
     triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
   condition:
     conditionType: 0
   targetType: 1
@@ -36,3 +92,19 @@ MonoBehaviour:
     effectAngle: 12
     effectTime: 0
     effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    form: {fileID: 0}
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

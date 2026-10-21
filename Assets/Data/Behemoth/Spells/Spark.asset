@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f8821b35880c4995327257ee3bced, type: 3}
+  m_Name: Spark
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.spelldata.spark.displayname
+    lastText: "\uC2A4\uD30C\uD06C"
+  - propertyPath: description
+    key: data.spelldata.spark.description
+    lastText: "\uBB34\uC791\uC704 \uC801 \uD558\uB098\uB97C \uACA8\uB0E5\uD574 \uBC88\uAC1C\uB97C
+      \uBED7\uB294\uB2E4. \uD53C\uB8B0\uCE68\uC774 \uC788\uC73C\uBA74 \uC6B0\uC120\uD55C\uB2E4.
+      \uACBD\uB85C\uC758 \uC801\uB3C4 \uC801\uC911\uD55C\uB2E4."
+  textOwnerGuid: b5628e2176861b947869198ac7b4693b
+  id: Spark
+  displayName: "\uC2A4\uD30C\uD06C"
+  description: "\uBB34\uC791\uC704 \uC801 \uD558\uB098\uB97C \uACA8\uB0E5\uD574 \uBC88\uAC1C\uB97C
+    \uBED7\uB294\uB2E4. \uD53C\uB8B0\uCE68\uC774 \uC788\uC73C\uBA74 \uC6B0\uC120\uD55C\uB2E4.
+    \uACBD\uB85C\uC758 \uC801\uB3C4 \uC801\uC911\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: 86672ff7dc0b2c34bbb23e1ecc40dd94, type: 3}
+  element: 2
+  shape: 0
+  defaultSlot: 3
+  castingSeconds: 0.3
+  cooldownSeconds: 5.5
+  openingCooldownSeconds: 4
+  damage: 13
+  width: 25
+  radius: 145
+  chainTargets: 3
+  slowSeconds: 0

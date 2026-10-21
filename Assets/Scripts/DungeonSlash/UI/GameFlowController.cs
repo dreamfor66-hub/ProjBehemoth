@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace DungeonSlash
 {
     public enum GameFlowState { RunStart, DungeonNavigation, RoomEntering, RoomEvent, Combat, RoomReward, PerkChoice, Shop, RunVictory, RunDefeat }
 
-    public sealed class GameFlowController : MonoBehaviour
+    public sealed partial class GameFlowController : MonoBehaviour
     {
         [SerializeField] private RunController runController;
         [SerializeField] private DungeonController dungeonController;
@@ -81,6 +82,7 @@ namespace DungeonSlash
         public void StartNewRun()
         {
             StopAllCoroutines();
+            combatController.ResetEncounter();
             seed = CreateRandomSeed();
             roomEvents.Clear();
             isCheatCombat = false;
@@ -88,11 +90,14 @@ namespace DungeonSlash
             HideTransientViews();
             resultView?.Hide();
             runController.BeginRun();
+            runController.State.Seed = seed;
+            BindExpansion();
             combatController.ShowPlayer(runController.State);
             dungeonController.BeginRun(seed);
             dungeonController.State.Player.CurrentRoom.IsCleared = true;
             cheatOverlay?.Bind(runController, combatController);
             ShowNavigation();
+            ShowStartExplanation();
         }
 
         public bool StartCheatBattle(MonsterData monster)
@@ -111,6 +116,7 @@ namespace DungeonSlash
 
         private int CreateRandomSeed()
         {
+            if (RunSession.ForcedSeed.HasValue) return RunSession.ForcedSeed.Value;
             var next = Guid.NewGuid().GetHashCode();
             while (next == 0 || next == previousSeed) next = Guid.NewGuid().GetHashCode();
             previousSeed = next;
@@ -143,7 +149,7 @@ namespace DungeonSlash
                     yield return BeginCombatEvent(room);
                     yield break;
                 case RoomEncounterType.Reward:
-                    yield return ShowEventMessage("\uBC14\uB2E5\uC5D0 \uAE08\uD654\uAC00 \uB5A8\uC5B4\uC838 \uC788\uB2E4.", goldEventSprite);
+                    yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.5ca48218"), goldEventSprite);
                     room.IsCleared = true;
                     GrantAndShowReward(runController.GetGoldRoomReward(false));
                     yield break;
@@ -162,7 +168,7 @@ namespace DungeonSlash
                     ShowChestChoice(room);
                     yield break;
                 case RoomEncounterType.Goddess:
-                    yield return ShowEventMessage("\uC5EC\uC2E0\uC0C1\uC774\uB2E4. \uAE30\uC6B4\uC774 \uCDA9\uB9CC\uD574\uC84C\uB2E4.", goddessEventSprite);
+                    yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.79570a59"), goddessEventSprite);
                     room.IsCleared = true;
                     GrantAndShowReward(runController.GetGoddessRoomReward());
                     yield break;
@@ -170,9 +176,12 @@ namespace DungeonSlash
                     HandleMerchantRoom(room);
                     yield break;
                 case RoomEncounterType.Empty:
-                    yield return ShowEventMessage("\uC544\uBB34\uAC83\uB3C4 \uC5C6\uB2E4.", null);
+                    yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.b2f5746"), null);
                     room.IsCleared = true;
                     ShowNavigation();
+                    yield break;
+                case RoomEncounterType.Event:
+                    ShowRandomEvent(room);
                     yield break;
                 default:
                     room.IsCleared = true;
@@ -191,14 +200,14 @@ namespace DungeonSlash
             {
                 // A malformed encounter must never leave the flow parked behind an empty announcement.
                 room.IsCleared = true;
-                yield return ShowEventMessage("\uBAAC\uC2A4\uD130\uC758 \uD754\uC801\uC740 \uC5C6\uC5B4\uC84C\uB2E4.", null);
+                yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.247f5404"), null);
                 ShowNavigation();
                 yield break;
             }
             if (encounterMessageView != null)
             {
-                var monsterName = monster == null || string.IsNullOrWhiteSpace(monster.displayName) ? "\uC54C \uC218 \uC5C6\uB294 \uBAAC\uC2A4\uD130" : monster.displayName;
-                yield return encounterMessageView.Show(string.IsNullOrWhiteSpace(announcement) ? $"{monsterName}\uC774(\uAC00) \uB098\uD0C0\uB0AC\uB2E4!" : announcement);
+                var monsterName = monster == null || string.IsNullOrWhiteSpace(monster.displayName) ? GameText.Get("ui.gameflowcontroller.9b3dd503") : monster.displayName;
+                yield return encounterMessageView.Show(string.IsNullOrWhiteSpace(announcement) ? GameText.Format("ui.gameflowcontroller.a61799fd", monsterName) : announcement);
             }
             State = GameFlowState.Combat;
             combatController.BeginPreparedCombat();
@@ -219,7 +228,7 @@ namespace DungeonSlash
                     return;
             }
             if (roomEventView == null) { ShowNavigation(); return; }
-            roomEventView.ShowChoice("\uBD84\uC218\uB300\uB2E4. \uBB3C\uC744 \uB9C8\uC2E4\uAE4C?", fountainEventSprite, "\uC608", "\uC544\uB2C8\uC624", () => StartCoroutine(DrinkFountain(memory)), ShowNavigation);
+            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.543192e4"), fountainEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(DrinkFountain(memory)), ShowNavigation);
         }
 
         private IEnumerator DrinkFountain(RoomEventProgress memory)
@@ -229,14 +238,14 @@ namespace DungeonSlash
             var healed = runController.State.Player.CurrentHp - before;
             memory.DrinkFromFountain();
             RefreshHud();
-            yield return ShowEventMessage($"\uAE30\uC6B4\uC774 \uCDA9\uB9CC\uD574\uC84C\uB2E4. HP\uAC00 {healed:0}\uB9CC\uD07C \uD68C\uBCF5\uB410\uB2E4.", fountainEventSprite);
+            yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.93765ef1", healed), fountainEventSprite);
             ShowNavigation();
         }
 
         private IEnumerator ShowDriedFountain(DungeonRoom room)
         {
             State = GameFlowState.RoomEvent;
-            yield return ShowEventMessage("\uB9C8\uB978 \uBD84\uC218\uB300\uB9CC \uB369\uADF8\uB7EC\uB2C8 \uB193\uC5EC\uC838 \uC788\uB2E4.", fountainEventSprite);
+            yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.896390ff"), fountainEventSprite);
             room.IsCleared = true;
             ShowNavigation();
         }
@@ -246,14 +255,14 @@ namespace DungeonSlash
             State = GameFlowState.RoomEvent;
             if (roomEventView == null) { room.IsCleared = true; ShowNavigation(); return; }
             // Poison is intentionally a gamble: it must present exactly like an ordinary fountain.
-            roomEventView.ShowChoice("\uBD84\uC218\uB300\uB2E4. \uBB3C\uC744 \uB9C8\uC2E4\uAE4C?", fountainEventSprite, "\uC608", "\uC544\uB2C8\uC624", () => StartCoroutine(DrinkPoisonFountain(room)), () => { room.IsCleared = true; ShowNavigation(); });
+            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.543192e4"), fountainEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(DrinkPoisonFountain(room)), () => { room.IsCleared = true; ShowNavigation(); });
         }
 
         private IEnumerator DrinkPoisonFountain(DungeonRoom room)
         {
             var healed = runController.DrinkToxicFountain();
             RefreshHud();
-            yield return ShowEventMessage($"\uC77C\uC2DC\uC801\uC73C\uB85C HP\uAC00 {healed:0}\uB9CC\uD07C \uD68C\uBCF5\uB410\uB2E4. \uB300\uC2E0 \uB3C5\uC5D0 \uC911\uB3C5\uB410\uB2E4.", fountainEventSprite);
+            yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.1fd680ca", healed), fountainEventSprite);
             room.IsCleared = true;
             ShowNavigation();
         }
@@ -262,7 +271,7 @@ namespace DungeonSlash
         {
             State = GameFlowState.RoomEvent;
             if (roomEventView == null) { room.IsCleared = true; ShowNavigation(); return; }
-            roomEventView.ShowChoice("\uBCF4\uBB3C\uC0C1\uC790\uB2E4. \uC5F4\uC5B4\uBCFC\uAE4C?", goldEventSprite, "\uC608", "\uC544\uB2C8\uC624", () => StartCoroutine(OpenChest(room)), () => { room.IsCleared = true; ShowNavigation(); });
+            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.f792ceab"), goldEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(OpenChest(room)), () => { room.IsCleared = true; ShowNavigation(); });
         }
 
         private IEnumerator OpenChest(DungeonRoom room)
@@ -273,7 +282,7 @@ namespace DungeonSlash
                 var trapDamage = runController.State.Player.TakeEnvironmentalDamage(8f);
                 RefreshHud();
                 if (trapDamage.TargetDied) { ShowResult(false); yield break; }
-                yield return BeginCombatEvent(room, new[] { combatController.MimicMonster }, "\uBCF4\uBB3C\uC0C1\uC790\uAC00 \uC774\uBE68\uC744 \uB4DC\uB7EC\uB0C8\uB2E4! \uBBF8\uBBF9\uC774 \uC2B5\uACA9\uD55C\uB2E4!");
+                yield return BeginCombatEvent(room, new[] { combatController.MimicMonster }, GameText.Get("ui.gameflowcontroller.f8df763f"));
                 yield break;
             }
 
@@ -285,9 +294,14 @@ namespace DungeonSlash
             }
             var relic = runController.GetChestRelic(dungeonController.State.Seed, room.RoomId * 37);
             if (relic != null && runController.TryGrantRelic(relic))
-                yield return ShowEventMessage($"\uC0C1\uC790 \uC548\uC5D0\uC11C {relic.displayName}\uC744(\uB97C) \uBC1C\uACAC\uD588\uB2E4.", goldEventSprite);
+                yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.cf8e328f", relic.displayName), goldEventSprite);
             else
-                yield return ShowEventMessage("\uC0C1\uC790 \uC548\uC740 \uBE44\uC5B4 \uC788\uB2E4.", goldEventSprite);
+                yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.f46f36d2"), goldEventSprite);
+            if (expansionView != null && runController.State.PendingSpellOffers.Count > 0)
+            {
+                var resolved = false; expansionView.ResolvePendingSpells(() => resolved = true);
+                while (!resolved) yield return null;
+            }
             AfterRoomResolution();
         }
 
@@ -307,7 +321,7 @@ namespace DungeonSlash
 
             State = GameFlowState.RoomEvent;
             if (roomEventView == null) { ShowNavigation(); return; }
-            roomEventView.ShowChoice("\uC774\uB7F0 \uACF3\uC5D0 \uC0C1\uC778...? \uC218\uC0C1\uD558\uC9C0\uB9CC \uB9D0\uC744 \uAC78\uC5B4\uBCFC\uAE4C?", merchantEventSprite, "\uC608", "\uC544\uB2C8\uC624", () =>
+            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.5db06efc"), merchantEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () =>
             {
                 memory.MarkMerchantDeparted();
                 if (RollsMerchantMutantAmbush(dungeonController.State.Seed, room.RoomId, dungeonController.Floor) && combatController.MerchantMutant != null)
@@ -333,13 +347,13 @@ namespace DungeonSlash
 
         private IEnumerator BeginMerchantMutantAmbush(DungeonRoom room)
         {
-            yield return BeginCombatEvent(room, new[] { combatController.MerchantMutant }, "\uC0C1\uC778\uC774 \uAC00\uBA74\uC744 \uBC97\uC5B4\uB358\uC84C\uB2E4. \uB3CC\uC5F0\uBCC0\uC774 \uC0C1\uC778\uC774 \uC2B5\uACA9\uD55C\uB2E4!");
+            yield return BeginCombatEvent(room, new[] { combatController.MerchantMutant }, GameText.Get("ui.gameflowcontroller.417a7ff1"));
         }
 
         private IEnumerator ShowMerchantGone(DungeonRoom room)
         {
             State = GameFlowState.RoomEvent;
-            yield return ShowEventMessage("\uC0C1\uC778\uC774 \uC788\uC5C8\uB358 \uC790\uB9AC. \uADF8\uC0C8 \uC5C6\uC5B4\uC84C\uB2E4.", null);
+            yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.c9592d2e"), null);
             room.IsCleared = true;
             ShowNavigation();
         }
@@ -369,6 +383,9 @@ namespace DungeonSlash
             }
             var room = dungeonController.State.Player.CurrentRoom;
             if (result.PlayerDied) { ShowResult(false); return; }
+            runController.State.WonCombats++;
+            if (HandleEventCombat(result)) return;
+            if (room.Type == RoomEncounterType.Combat) runController.State.NormalCombatsInAct++;
             room.IsCleared = true;
             Action afterReward = room.Type switch
             {
@@ -384,7 +401,7 @@ namespace DungeonSlash
             if (!won && !runController.State.Player.IsAlive)
                 runController.State.Player.Revive(.5f);
             RefreshHud();
-            yield return ShowEventMessage(won ? "테스트 배틀 승리!" : "테스트 배틀 패배 — HP를 복구했습니다.", null);
+            yield return ShowEventMessage(won ? GameText.Get("ui.gameflowcontroller.8cea5541") : GameText.Get("ui.gameflowcontroller.57fa3b03"), null);
             ShowNavigation();
         }
 
@@ -430,7 +447,8 @@ namespace DungeonSlash
 
         private void ShowRelicChoice(int roomId, bool bossRoom)
         {
-            var choices = runController.GetRelicChoices(dungeonController.State.Seed, roomId + dungeonController.Floor * 1000);
+            if (bossRoom && dungeonController.Floor >= 3) { ShowResult(true); return; }
+            var choices = bossRoom ? runController.GetExclusiveChoices(dungeonController.State.Seed + roomId + dungeonController.Floor * 1000) : runController.GetRelicChoices(dungeonController.State.Seed, roomId + dungeonController.Floor * 1000);
             if (choices.Count == 0)
             {
                 if (bossRoom) ResolveBossFloor();
@@ -438,6 +456,19 @@ namespace DungeonSlash
                 return;
             }
             State = GameFlowState.PerkChoice;
+            if (expansionView != null)
+            {
+                expansionView.ShowModal(bossRoom ? GameText.Get("ui.gameflowcontroller.803375ba") : GameText.Get("ui.gameflowcontroller.f79abb6d"),
+                    bossRoom ? GameText.Get("ui.gameflowcontroller.18c9beaf") : GameText.Get("ui.gameflowcontroller.74aabc17"),
+                    choices.Select(relic => new PresentationChoice {
+                        Title = relic.displayName, Description = relic.description, Icon = relic.icon,
+                        Selected = () => {
+                            runController.TryGrantRelic(relic); RefreshHud();
+                            expansionView.ResolvePendingSpells(() => { if (bossRoom) ResolveBossFloor(); else AfterRoomResolution(); });
+                        }
+                    }));
+                return;
+            }
             perkChoiceView.ShowRelics(choices, relic =>
             {
                 runController.TryGrantRelic(relic);
@@ -446,6 +477,7 @@ namespace DungeonSlash
                 if (bossRoom) ResolveBossFloor();
                 else AfterRoomResolution();
             });
+            perkChoiceView.SetTitle(bossRoom ? GameText.Get("ui.gameflowcontroller.803375ba") : GameText.Get("ui.gameflowcontroller.f79abb6d"));
         }
 
         private void ResolveBossFloor()
@@ -456,14 +488,17 @@ namespace DungeonSlash
 
         private IEnumerator EnterNextFloorRoutine()
         {
+            State = GameFlowState.RoomEntering;
             var player = runController.State.Player;
             player.Heal(player.MaxHp);
             player.RestoreShieldForNavigation();
             RefreshHud();
             var nextFloor = dungeonController.Floor + 1;
-            yield return ShowEventMessage($"\uBCF4\uC2A4\uB97C \uC4F0\uB7EC\uB728\uB838\uB2E4. \uC81C {nextFloor}\uCE35\uC73C\uB85C \uB0B4\uB824\uAC04\uB2E4.", null);
+            yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.dfe4d6f2", nextFloor), null);
             roomEvents.Clear();
             dungeonController.BeginNextFloor();
+            runController.State.CurrentAct = nextFloor;
+            runController.State.NormalCombatsInAct = 0;
             dungeonController.State.Player.CurrentRoom.IsCleared = true;
             ShowNavigation();
         }
@@ -473,9 +508,10 @@ namespace DungeonSlash
             var inventory = runController.GetShopInventory(dungeonController.State.Seed, room.RoomId);
             shopView.Show(inventory, runController.State, runController.Shop, item =>
             {
-                runController.TryBuy(item);
-                ShowShop(room);
-                RefreshHud();
+                void Purchase() { runController.TryBuy(item); expansionView.ResolvePendingSpells(() => { ShowShop(room); RefreshHud(); }); }
+                if (item.grantedSpell != null && runController.State.Slot(item.grantedSpell.defaultSlot) != null)
+                    expansionView.OfferSpell(item.grantedSpell, accepted => { if (accepted) Purchase(); else ShowShop(room); });
+                else Purchase();
             }, () =>
             {
                 shopView.Hide();
@@ -528,12 +564,15 @@ namespace DungeonSlash
             rewardPopupView?.Hide();
             shopView?.Hide();
             perkChoiceView?.Hide();
+            expansionView?.HideModal();
         }
 
         private void RefreshHud()
         {
             if (runHud == null || dungeonController == null || runController == null || runController.State == null) return;
             var cheatOpen = cheatOverlay != null && cheatOverlay.IsOpen;
+            expansionView?.RefreshCombat(combatController);
+            expansionView?.SetStage(combatController.StageName(dungeonController.Floor), dungeonController.Floor);
             runHud.Bind(dungeonController.State, runController.State, potion =>
             {
                 if (runController.TryUsePotion(potion)) RefreshHud();
@@ -550,7 +589,7 @@ namespace DungeonSlash
         {
             State = victory ? GameFlowState.RunVictory : GameFlowState.RunDefeat;
             HideTransientViews();
-            resultView.Show(victory ? "RUN COMPLETE" : "RUN FAILED", victory ? "The boss has fallen. Your run growth will be reset." : "You were defeated. Your run growth will be reset.", StartNewRun);
+            resultView.Show(victory ? GameText.Get("ui.gameflowcontroller.91119a7") : GameText.Get("ui.gameflowcontroller.4f664436"), victory ? GameText.Get("ui.gameflowcontroller.543f0daf") : GameText.Get("ui.gameflowcontroller.c34162cb"), RunSession.ReturnToSelection);
         }
     }
 }

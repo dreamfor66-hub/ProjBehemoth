@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: MinotaurNormal
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.minotaurnormal.displayname
+    lastText: "\uD718\uB450\uB974\uAE30"
+  textOwnerGuid: 5f17b4da654a51141bdde0ba15231bf0
   type: 0
   displayName: "\uD718\uB450\uB974\uAE30"
   damage: 30
@@ -19,6 +24,7 @@ MonoBehaviour:
   windupDuration: 0.87
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 2.5
   chargeWeakPoints: []
   combatMechanics:

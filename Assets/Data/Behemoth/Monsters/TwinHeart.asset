@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: TwinHeart
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.twinheart.displayname
+    lastText: "\uC30D\uC2EC\uC7A5 \uD3EC\uC2DD\uC790"
+  - propertyPath: encounterHint
+    key: data.monsterdata.twinheart.encounterhint
+    lastText: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
+      \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
+      \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+  textOwnerGuid: b009b1177e85c714d9c56d2df9e5482c
+  displayName: "\uC30D\uC2EC\uC7A5 \uD3EC\uC2DD\uC790"
+  encounterHint: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
+    \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
+    \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+  pattern: 4
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 380
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 44
+  goldReward: 21
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 04b0c846181b10246a68f007986e8b84, type: 2}
+  - {fileID: 11400000, guid: b44431716913222439fcee6d7a0baf9c, type: 2}
+  - {fileID: 11400000, guid: 293407e1bdbbf424f80faf39a4f6bba7, type: 2}
+  - {fileID: 11400000, guid: ea99ba6ab9427ab40943a5ebf2c365e2, type: 2}
+  bodyColor: {r: 0.8, g: 0.78720003, b: 0.48, a: 1}

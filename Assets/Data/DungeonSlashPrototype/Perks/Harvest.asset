@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: Harvest
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.harvest.displayname
+    lastText: "\uC0DD\uBA85 \uC218\uD655"
+  - propertyPath: description
+    key: data.perkdata.harvest.description
+    lastText: "\uBAAC\uC2A4\uD130 \uCC98\uCE58 \uC2DC HP 4 \uD68C\uBCF5"
+  textOwnerGuid: a251bb27ca5f7cf42af5fb927a7ff8e9
   id: Harvest
   displayName: "\uC0DD\uBA85 \uC218\uD655"
   description: "\uBAAC\uC2A4\uD130 \uCC98\uCE58 \uC2DC HP 4 \uD68C\uBCF5"

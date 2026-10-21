@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: ArcaneGuard
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.arcaneguard.displayname
+    lastText: "\uBE44\uC804 \uBC29\uBCBD"
+  - propertyPath: description
+    key: data.equipmentdata.arcaneguard.description
+    lastText: "\uC8FC\uBB38 \uBC1C\uB3D9 \uC2DC \uAC00\uB4DC\uAC8C\uC774\uC9C0 +4."
+  textOwnerGuid: 76a652c7b697f294da64ac269860f400
+  id: ArcaneGuard
+  displayName: "\uBE44\uC804 \uBC29\uBCBD"
+  description: "\uC8FC\uBB38 \uBC1C\uB3D9 \uC2DC \uAC00\uB4DC\uAC8C\uC774\uC9C0 +4."
+  icon: {fileID: 21300000, guid: 5edf6d5bb7cac6f46828d5ed649c463f, type: 3}
+  scope: 2
+  exclusiveCharacter: 5
+  startingMechanic: 0
+  power: 47
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - editorLabel: OnSpellCast
+    trigger:
+      triggerType: 12
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 4
+      effectMagnitude: 4
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 80
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    form: {fileID: 0}
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

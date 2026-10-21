@@ -36,9 +36,10 @@ namespace DungeonSlash
                 cooldown.enabled = coolingDown;
             }
 
-            var bodyColor = runtime.IsAlive ? new Color(.17f, .58f, .9f) : Color.gray;
+            var bodyColor = runtime.IsAlive ? runtime.IsEnraged ? new Color(1f, .32f, .14f) : runtime.Data.characterColor : Color.gray;
             if (body != null) body.color = bodyColor;
-            if (head != null) head.color = runtime.IsAlive ? new Color(.32f, .77f, 1f) : Color.gray;
+            if (head != null) head.color = runtime.IsAlive ? Color.Lerp(bodyColor, Color.white, .35f) : Color.gray;
+            if (guardFx != null) guardFx.color = runtime.IsPerfectWindow ? new Color(1f, .9f, .35f, .9f) : new Color(.3f, .75f, 1f, .55f);
         }
 
         private void SetCooldownProgress(float progress)

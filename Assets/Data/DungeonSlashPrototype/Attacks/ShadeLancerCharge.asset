@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: ShadeLancerCharge
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.shadelancercharge.displayname
+    lastText: "\uBCCD\uC758 \uD3ED\uBC1C"
+  textOwnerGuid: 67bc9b192344dcb478c0eede8811074a
   type: 1
   displayName: "\uBCCD\uC758 \uD3ED\uBC1C"
   damage: 69.6
@@ -19,16 +24,19 @@ MonoBehaviour:
   windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 8.48
   chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: -54, y: 32}
     hitRadius: 30
     requiredChargeHits: 2
+    optional: 0
   - id: core-2
     normalizedPosition: {x: 55, y: -28}
     hitRadius: 30
     requiredChargeHits: 2
+    optional: 0
   combatMechanics:
     directionalGuard:
       enabled: 0

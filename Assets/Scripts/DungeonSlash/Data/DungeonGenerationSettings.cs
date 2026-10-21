@@ -20,5 +20,6 @@ namespace DungeonSlash
         [Range(0f, 1f)] public float combatRoomRatioMin = .35f;
         [Range(0f, 1f)] public float combatRoomRatioMax = .55f;
         [Min(1)] public int maxGenerationAttempts = 60;
+        [Range(0, 8)] public int eventRoomCount = 3;
     }
 }

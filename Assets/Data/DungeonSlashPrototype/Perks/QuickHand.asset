@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: QuickHand
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.quickhand.displayname
+    lastText: "\uC7AC\uBE60\uB978 \uC190"
+  - propertyPath: description
+    key: data.perkdata.quickhand.description
+    lastText: "\uACF5\uACA9 \uC7AC\uC0AC\uC6A9 \uB300\uAE30\uC2DC\uAC04 -15%"
+  textOwnerGuid: 18c84008e753dac498fb5b9580c9aff9
   id: QuickHand
   displayName: "\uC7AC\uBE60\uB978 \uC190"
   description: "\uACF5\uACA9 \uC7AC\uC0AC\uC6A9 \uB300\uAE30\uC2DC\uAC04 -15%"

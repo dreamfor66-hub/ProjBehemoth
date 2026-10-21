@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: AshHoundCharge
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.ashhoundcharge.displayname
+    lastText: "\uBCCD\uC758 \uD3ED\uBC1C"
+  textOwnerGuid: cfbed7127bdc3c240b309ee1fa0917af
   type: 1
   displayName: "\uBCCD\uC758 \uD3ED\uBC1C"
   damage: 31.2
@@ -19,12 +24,14 @@ MonoBehaviour:
   windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 3.3
   chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: 0, y: 32}
     hitRadius: 30
     requiredChargeHits: 1
+    optional: 0
   combatMechanics:
     directionalGuard:
       enabled: 0

@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: MimicCharge
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.mimiccharge.displayname
+    lastText: "\uBCCD\uC758 \uD3ED\uBC1C"
+  textOwnerGuid: 7827019fa6c47584e8df4f26eb533e9b
   type: 1
   displayName: "\uBCCD\uC758 \uD3ED\uBC1C"
   damage: 64.8
@@ -19,16 +24,19 @@ MonoBehaviour:
   windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 6.4
   chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: -42, y: 26}
     hitRadius: 30
     requiredChargeHits: 2
+    optional: 0
   - id: core-2
     normalizedPosition: {x: 44, y: 26}
     hitRadius: 30
     requiredChargeHits: 2
+    optional: 0
   combatMechanics:
     directionalGuard:
       enabled: 0

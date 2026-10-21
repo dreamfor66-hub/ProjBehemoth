@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: Hourglass
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.hourglass.displayname
+    lastText: "\uB0B4\uC77C\uC758 \uD55C\uC228"
+  - propertyPath: narrative
+    key: data.randomeventdata.hourglass.narrative
+    lastText: "\uBAA8\uB798\uC2DC\uACC4\uB97C \uB4A4\uC9D1\uC790 \uBAB8\uC774 \uAC00\uBCBC\uC6CC\uC9C4\uB2E4.
+      \uC720\uB9AC\uC5D0\uB294 \uAE08\uC774 \uD558\uB098 \uB298\uC5C8\uB2E4.\n\n\uBA48\uCDB0
+      \uC120 \uBAA8\uB798\uC54C\uC744 \uC138\uB2E4 \uBCF4\uB2C8, \uC624\uB798\uB41C
+      \uB3D9\uC791 \uD558\uB098\uAC00 \uC0C8\uC0BC \uB5A0\uC624\uB978\uB2E4."
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.hourglass.options.0.title
+    lastText: "\uB0B4\uC77C\uC744 \uC870\uAE08 \uC798\uB77C \uB0B8\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.hourglass.options.0.description
+    lastText: "\uCD5C\uB300 \uCCB4\uB825 -8. \uAE68\uC5B4\uC9C4 \uBAA8\uB798\uC2DC\uACC4:
+      \uCC28\uC9C0 \uC900\uBE44\uC2DC\uAC04\uACFC \uC8FC\uBB38 \uCFE8\uD0C0\uC784
+      -12%."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.hourglass.options.1.title
+    lastText: "\uC624\uB798\uB41C \uB3D9\uC791\uC744 \uBC84\uB9AC\uACE0 \uB2E4\uC2DC
+      \uC775\uD78C\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.hourglass.options.1.description
+    lastText: "\uBCF4\uC720 \uD37D \uD558\uB098 \uC81C\uAC70 \uD6C4 \uC0C8 \uD37D\uC744
+      \uB450 \uBC88 \uC120\uD0DD\uD55C\uB2E4."
+  - propertyPath: options.Array.data[2].title
+    key: data.randomeventdata.hourglass.options.2.title
+    lastText: "\uAE08 \uAC04 \uC720\uB9AC\uB97C \uBAA8\uC740\uB2E4"
+  - propertyPath: options.Array.data[2].description
+    key: data.randomeventdata.hourglass.options.2.description
+    lastText: "\uACE8\uB4DC +10. \uC2DC\uAC04\uC758 \uD798\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
+  textOwnerGuid: 02b0c4da36ea2854a8109ddc7cca55b9
+  id: Hourglass
+  displayName: "\uB0B4\uC77C\uC758 \uD55C\uC228"
+  narrative: "\uBAA8\uB798\uC2DC\uACC4\uB97C \uB4A4\uC9D1\uC790 \uBAB8\uC774 \uAC00\uBCBC\uC6CC\uC9C4\uB2E4.
+    \uC720\uB9AC\uC5D0\uB294 \uAE08\uC774 \uD558\uB098 \uB298\uC5C8\uB2E4.\n\n\uBA48\uCDB0
+    \uC120 \uBAA8\uB798\uC54C\uC744 \uC138\uB2E4 \uBCF4\uB2C8, \uC624\uB798\uB41C
+    \uB3D9\uC791 \uD558\uB098\uAC00 \uC0C8\uC0BC \uB5A0\uC624\uB978\uB2E4."
+  illustration: {fileID: 21300000, guid: 9b837489b55b63440b899ff825a8b5fe, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 1
+  maxAct: 3
+  weight: 1
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/DoorsOfLightAndDark
+  referenceExperience: "\uC720\uC6A9\uD55C \uC720\uBB3C\uACFC \uBCF4\uC720 \uC131\uC7A5
+    \uC7AC\uC815\uBE44 \uC0AC\uC774\uC758 \uC120\uD0DD."
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uB0B4\uC77C\uC744 \uC870\uAE08 \uC798\uB77C \uB0B8\uB2E4"
+    description: "\uCD5C\uB300 \uCCB4\uB825 -8. \uAE68\uC5B4\uC9C4 \uBAA8\uB798\uC2DC\uACC4:
+      \uCC28\uC9C0 \uC900\uBE44\uC2DC\uAC04\uACFC \uC8FC\uBB38 \uCFE8\uD0C0\uC784
+      -12%."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 8
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: af374b32b3a0c6b479cc7d076f4c6da7, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uC624\uB798\uB41C \uB3D9\uC791\uC744 \uBC84\uB9AC\uACE0 \uB2E4\uC2DC
+      \uC775\uD78C\uB2E4"
+    description: "\uBCF4\uC720 \uD37D \uD558\uB098 \uC81C\uAC70 \uD6C4 \uC0C8 \uD37D\uC744
+      \uB450 \uBC88 \uC120\uD0DD\uD55C\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 12
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 3
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 3
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uAE08 \uAC04 \uC720\uB9AC\uB97C \uBAA8\uC740\uB2E4"
+    description: "\uACE8\uB4DC +10. \uC2DC\uAC04\uC758 \uD798\uC740 \uC5BB\uC9C0
+      \uC54A\uB294\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 5
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 10
+      stat: 4

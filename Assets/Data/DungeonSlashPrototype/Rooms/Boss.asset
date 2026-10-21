@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697c3def854419429c68345d6a1241b, type: 3}
   m_Name: Boss
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.roomtypedata.boss.displayname
+    lastText: Boss
+  textOwnerGuid: a850a214de1c41c488beb8321e8708ea
   encounterType: 10
   displayName: Boss
   mapColor: {r: 1, g: 0.72, b: 0.18, a: 1}

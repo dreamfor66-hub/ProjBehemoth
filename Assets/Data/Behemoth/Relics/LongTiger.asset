@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: LongTiger
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.longtiger.displayname
+    lastText: "\uB9F9\uD638\uC758 \uB450\uB8E8\uB9C8\uB9AC"
+  - propertyPath: description
+    key: data.equipmentdata.longtiger.description
+    lastText: "\u2193\u2191\u2191 \uD6C4 \uCC28\uC9C0\uB85C \uB9F9\uD638\uBD95\uAD8C
+      \uD574\uAE08. \uCC28\uC9C0 \uD53C\uD574 \xD72.5. \uAE34 \uD328\uD134\uC774
+      \uC6B0\uC120\uD55C\uB2E4."
+  textOwnerGuid: 1d4616d98200fc448aec993139cebfef
+  id: LongTiger
+  displayName: "\uB9F9\uD638\uC758 \uB450\uB8E8\uB9C8\uB9AC"
+  description: "\u2193\u2191\u2191 \uD6C4 \uCC28\uC9C0\uB85C \uB9F9\uD638\uBD95\uAD8C
+    \uD574\uAE08. \uCC28\uC9C0 \uD53C\uD574 \xD72.5. \uAE34 \uD328\uD134\uC774 \uC6B0\uC120\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: 73da2e96893a2654295e0a5d611ef911, type: 3}
+  scope: 2
+  exclusiveCharacter: 4
+  startingMechanic: 0
+  power: 38
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - editorLabel: OnAcquire
+    trigger:
+      triggerType: 4
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 13
+      effectMagnitude: 0
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 11400000, guid: 22162dfe5f46abf4a99a321a2220da67, type: 2}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 80
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    form: {fileID: 0}
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

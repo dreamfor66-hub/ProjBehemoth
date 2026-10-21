@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B3_Boss_SoulEater
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_boss_souleater.displayname
+    lastText: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_boss_souleater.encounterhint
+    lastText: 
+  textOwnerGuid: b544a9bd660854044b65489c136cbc78
   displayName: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 1800
   normalAttackInterval: 2.6
   chargeInterval: 7

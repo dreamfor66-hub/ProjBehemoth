@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,17 +9,17 @@ namespace DungeonSlash
         [SerializeField] private Image playerHp;
         [SerializeField] private Image shield;
         [SerializeField] private Image monsterHp;
-        [SerializeField] private Text playerHpText;
-        [SerializeField] private Text shieldText;
-        [SerializeField] private Text playerStats;
-        [SerializeField] private Text monsterStats;
+        [SerializeField] private TextMeshProUGUI playerHpText;
+        [SerializeField] private TextMeshProUGUI shieldText;
+        [SerializeField] private TextMeshProUGUI playerStats;
+        [SerializeField] private TextMeshProUGUI monsterStats;
         [SerializeField] private RectTransform chargeGaugeRoot;
         [SerializeField] private ArcGaugeGraphic chargeGaugeTrack;
         [SerializeField] private ArcGaugeGraphic chargeGaugeFill;
         [SerializeField] private ArcGaugeGraphic chargeGaugeSecondFill;
         [SerializeField] private Vector2 chargePointerOffset = new(0f, 90f);
 
-        public void Configure(Image newPlayerHp, Image newShield, Image newMonsterHp, Text newPlayerStats, Text newMonsterStats, RectTransform newChargeGaugeRoot, ArcGaugeGraphic newChargeGaugeTrack, ArcGaugeGraphic newChargeGaugeFill, Text newPlayerHpText = null, Text newShieldText = null, ArcGaugeGraphic newChargeGaugeSecondFill = null)
+        public void Configure(Image newPlayerHp, Image newShield, Image newMonsterHp, TextMeshProUGUI newPlayerStats, TextMeshProUGUI newMonsterStats, RectTransform newChargeGaugeRoot, ArcGaugeGraphic newChargeGaugeTrack, ArcGaugeGraphic newChargeGaugeFill, TextMeshProUGUI newPlayerHpText = null, TextMeshProUGUI newShieldText = null, ArcGaugeGraphic newChargeGaugeSecondFill = null)
         {
             playerHp = newPlayerHp;
             shield = newShield;
@@ -43,8 +44,8 @@ namespace DungeonSlash
             {
                 SetGauge(playerHp, player.CurrentHp / player.MaxHp);
                 SetGauge(shield, player.ShieldMax <= 0f ? 0f : player.ShieldCurrent / player.ShieldMax);
-                SetValueText(playerHpText, $"HP {player.CurrentHp:0} / {player.MaxHp:0}");
-                SetValueText(shieldText, $"SHIELD {player.ShieldCurrent:0} / {player.ShieldMax:0}");
+                SetValueText(playerHpText, GameText.Format("ui.combathudview.dfe9f229", player.CurrentHp, player.MaxHp));
+                SetValueText(shieldText, GameText.Format("ui.combathudview.82e84bd4", player.ShieldCurrent, player.ShieldMax));
                 SetShieldAvailability(player);
             }
             else
@@ -96,7 +97,7 @@ namespace DungeonSlash
             rect.sizeDelta = new Vector2(parent.rect.width * value, 0f);
         }
 
-        private static void SetValueText(Text label, string value)
+        private static void SetValueText(TextMeshProUGUI label, string value)
         {
             if (label != null) label.text = value;
         }

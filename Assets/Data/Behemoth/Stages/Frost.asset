@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6103bbe31eb9e04fa0ae1c85cad2dcb, type: 3}
+  m_Name: Frost
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.stagesetdata.frost.displayname
+    lastText: "\uC11C\uB9AC\uC758 \uC131\uC18C"
+  textOwnerGuid: 87d58353c431c8341bb0023eca025f7b
+  id: Frost
+  displayName: "\uC11C\uB9AC\uC758 \uC131\uC18C"
+  act: 2
+  easyCombatCount: 6
+  tripleCombatCount: 9
+  packChance: 0.35
+  earlyCombats:
+  - {fileID: 11400000, guid: 176380a8483dd8f46bc1195407fa96aa, type: 2}
+  - {fileID: 11400000, guid: 81eb1667f0a7dda4cadc5ece953adeca, type: 2}
+  - {fileID: 11400000, guid: 5cb83e26a11297a4d8ecf7ef1703f3d9, type: 2}
+  hardCombats:
+  - {fileID: 11400000, guid: ae897defe2d277c41845044d3b146055, type: 2}
+  - {fileID: 11400000, guid: 4225f2542d4b1464f851bd3d98dff98a, type: 2}
+  - {fileID: 11400000, guid: 0669f54c132a61548924f1c8c9d88dee, type: 2}
+  elites:
+  - {fileID: 11400000, guid: e051fb19596681840888b2eb625f86cf, type: 2}
+  - {fileID: 11400000, guid: 7dfcf6b2e9908ef47a98bae2d3430fa6, type: 2}
+  - {fileID: 11400000, guid: d5778e36b9e3b1c46ae8fe6c914057bc, type: 2}
+  bosses:
+  - {fileID: 11400000, guid: 437c56cb53f318245a5de6d944d5f635, type: 2}
+  - {fileID: 11400000, guid: 028223c6a4e508b40b90f88eef4ee7c3, type: 2}
+  - {fileID: 11400000, guid: 2ba4fc90d398c2949bd579645b8c5199, type: 2}

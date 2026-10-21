@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6103bbe31eb9e04fa0ae1c85cad2dcb, type: 3}
+  m_Name: Forge
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.stagesetdata.forge.displayname
+    lastText: "\uBD88\uC528\uC758 \uC6A9\uAD11\uB85C"
+  textOwnerGuid: 45dcaa14c4431f641979c3efd64b6fd3
+  id: Forge
+  displayName: "\uBD88\uC528\uC758 \uC6A9\uAD11\uB85C"
+  act: 1
+  easyCombatCount: 6
+  tripleCombatCount: 9
+  packChance: 0.35
+  earlyCombats:
+  - {fileID: 11400000, guid: a96bc0b710c4d8b49b66b4c45e453032, type: 2}
+  - {fileID: 11400000, guid: da80e18f5464f0043b381ea2f65609b6, type: 2}
+  - {fileID: 11400000, guid: de438ce9cd26fae479cf7250d74c3e38, type: 2}
+  hardCombats:
+  - {fileID: 11400000, guid: 92f107cfdd4b9b0488c233d43ace1bcf, type: 2}
+  - {fileID: 11400000, guid: e49d4a11b183e6344818c103c91d22f5, type: 2}
+  - {fileID: 11400000, guid: 95d9a88f6ae75914787b771abe9c6b15, type: 2}
+  elites:
+  - {fileID: 11400000, guid: 9a777f0b61bcfb0459f33760ca46aa2f, type: 2}
+  - {fileID: 11400000, guid: d0066bee8c0743c4c9481060c2d4beee, type: 2}
+  - {fileID: 11400000, guid: dd335d7b2f6e98141b930c6f4242f4ba, type: 2}
+  bosses:
+  - {fileID: 11400000, guid: 755eefa7a1ae497419c3c3590914e300, type: 2}
+  - {fileID: 11400000, guid: b88970964fce2654fa7d02d9861f13b4, type: 2}
+  - {fileID: 11400000, guid: 51698a0cd042aad4c96db310819ba030, type: 2}

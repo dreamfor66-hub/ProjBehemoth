@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,7 +9,7 @@ namespace DungeonSlash
     public sealed class RoomChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField] private Button button;
-        [SerializeField] private Text label;
+        [SerializeField] private TextMeshProUGUI label;
         [SerializeField] private Image icon;
         [SerializeField] private Sprite forwardIcon;
         [SerializeField] private Sprite sideIcon;
@@ -17,7 +18,7 @@ namespace DungeonSlash
         private Action<FacingDirection?> hoverChanged;
         private bool hovered;
 
-        public void Configure(Button newButton, Text newLabel, Image newIcon = null, Sprite newForwardIcon = null, Sprite newSideIcon = null, Sprite newBackIcon = null)
+        public void Configure(Button newButton, TextMeshProUGUI newLabel, Image newIcon = null, Sprite newForwardIcon = null, Sprite newSideIcon = null, Sprite newBackIcon = null)
         {
             button = newButton;
             label = newLabel;
@@ -84,10 +85,10 @@ namespace DungeonSlash
             label.enabled = !hasSprite;
             label.text = direction switch
             {
-                RelativeDirection.Forward => "\uC804\uC9C4",
-                RelativeDirection.Left => "\uC67C\uCABD",
-                RelativeDirection.Right => "\uC624\uB978\uCABD",
-                _ => "\uD6C4\uC9C4"
+                RelativeDirection.Forward => GameText.Get("ui.roomchoicebutton.9c4b935"),
+                RelativeDirection.Left => GameText.Get("ui.roomchoicebutton.f13ebcf2"),
+                RelativeDirection.Right => GameText.Get("ui.roomchoicebutton.89e1f8c4"),
+                _ => GameText.Get("ui.roomchoicebutton.f19749f5")
             };
         }
 

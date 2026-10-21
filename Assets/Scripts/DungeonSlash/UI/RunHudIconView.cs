@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,7 +10,7 @@ namespace DungeonSlash
     {
         [SerializeField] private Button button;
         [SerializeField] private Image iconImage;
-        [SerializeField] private Text stackLabel;
+        [SerializeField] private TextMeshProUGUI stackLabel;
 
         private ItemTooltipView tooltip;
         private string itemName;
@@ -17,7 +18,7 @@ namespace DungeonSlash
         private bool hasItem;
         private Action removed;
 
-        public void Configure(Button newButton, Image newIconImage, Text newStackLabel)
+        public void Configure(Button newButton, Image newIconImage, TextMeshProUGUI newStackLabel)
         {
             button = newButton;
             iconImage = newIconImage;
@@ -70,7 +71,7 @@ namespace DungeonSlash
             if (stackLabel != null)
             {
                 stackLabel.enabled = stacks > 1;
-                stackLabel.text = stacks > 1 ? $"x{stacks}" : string.Empty;
+                stackLabel.text = stacks > 1 ? GameText.Format("ui.runhudiconview.4e2ccfa3", stacks) : string.Empty;
             }
             if (button == null) return;
             button.onClick.RemoveAllListeners();

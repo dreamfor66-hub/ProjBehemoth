@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: FurnaceMite
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.furnacemite.displayname
+    lastText: "\uC6A9\uAD11\uB85C \uC9C4\uB4DC\uAE30"
+  - propertyPath: encounterHint
+    key: data.monsterdata.furnacemite.encounterhint
+    lastText: 
+  textOwnerGuid: f0b4f786e4b270c44b8e73139e4f47f9
+  displayName: "\uC6A9\uAD11\uB85C \uC9C4\uB4DC\uAE30"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 44
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 18
+  goldReward: 10
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 7e864b85b2166c24db1fecb134a94654, type: 2}
+  - {fileID: 11400000, guid: 84226e88ccc5f2542884709772372f40, type: 2}
+  bodyColor: {r: 0.48, g: 0.78080004, b: 0.8, a: 1}

@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: BatNormal
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.batnormal.displayname
+    lastText: "\uBB3C\uAE30"
+  textOwnerGuid: 1137619b6692df146b8982c485a37dd8
   type: 0
   displayName: "\uBB3C\uAE30"
   damage: 10.8
@@ -19,6 +24,7 @@ MonoBehaviour:
   windupDuration: 0.957
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 2.5
   chargeWeakPoints: []
   combatMechanics:

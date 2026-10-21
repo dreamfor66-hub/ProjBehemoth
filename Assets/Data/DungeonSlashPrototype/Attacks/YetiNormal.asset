@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: YetiNormal
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.yetinormal.displayname
+    lastText: "\uBCA0\uAE30"
+  textOwnerGuid: 8dc4737da615aa142a89650bb5b99895
   type: 0
   displayName: "\uBCA0\uAE30"
   damage: 38.4
@@ -19,6 +24,7 @@ MonoBehaviour:
   windupDuration: 1.287
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 2.5
   chargeWeakPoints: []
   combatMechanics:

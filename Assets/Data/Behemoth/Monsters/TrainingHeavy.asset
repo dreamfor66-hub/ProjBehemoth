@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: TrainingHeavy
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.trainingheavy.displayname
+    lastText: "\uD6C8\uB828 \uC778\uD615"
+  - propertyPath: encounterHint
+    key: data.monsterdata.trainingheavy.encounterhint
+    lastText: 
+  textOwnerGuid: 787679510883c7c4883af0dbb6f93640
+  displayName: "\uD6C8\uB828 \uC778\uD615"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 240
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 0
+  goldReward: 0
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: f7679910f4e90ce4fb9bdca3752b81a9, type: 2}
+  - {fileID: 11400000, guid: ecf75ad34038fb64bbb637b1fbc8f2e7, type: 2}
+  bodyColor: {r: 0.52479994, g: 0.48, b: 0.8, a: 1}

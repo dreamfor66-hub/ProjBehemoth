@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: Pilgrim
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.pilgrim.displayname
+    lastText: "\uC9D0 \uD558\uB098\uB9CC \uBD80\uD0C1\uD558\uB124"
+  - propertyPath: narrative
+    key: data.randomeventdata.pilgrim.narrative
+    lastText: "\uC9D0 \uC548\uC5D0\uB294 \uC774\uB984\uC774 \uC0C8\uACA8\uC9C4 \uB3CC\uB4E4\uC774
+      \uAC00\uB4DD\uD558\uB2E4.\n\n\u201C\uC0AC\uB78C \uB300\uC2E0 \uB3CC\uC544\uAC00\uB294
+      \uC774\uB984\uB4E4\uC774\uB124. \uC5EC\uBE44\uAC00 \uBAA8\uC790\uB77C \uC774
+      \uB3CC\uC744 \uB450\uACE0 \uAC08 \uBED4\uD588\uC5B4.\u201D"
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.pilgrim.options.0.title
+    lastText: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.pilgrim.options.0.description
+    lastText: "25\uACE8\uB4DC \uC18C\uBAA8. \uC21C\uB840\uC790\uC758 \uC11C\uC57D
+      \uD68D\uB4DD. \uAC00\uB4DC 3\uD68C\uB9C8\uB2E4 \uAC8C\uC774\uC9C0 +3. \uC778\uC5F0\uC744
+      \uB0A8\uAE34\uB2E4."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.pilgrim.options.1.title
+    lastText: "\uC0D8\uC758 \uC704\uCE58\uB97C \uC11C\uB85C \uB098\uB208\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.pilgrim.options.1.description
+    lastText: "\uCCB4\uB825 12 \uD68C\uBCF5. \uC11C\uC57D\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
+  - propertyPath: options.Array.data[2].title
+    key: data.randomeventdata.pilgrim.options.2.title
+    lastText: "\uC598\uAC00 \uC9C0\uB984\uAE38\uC744 \uCC3E\uC744 \uAC70\uC57C"
+  - propertyPath: options.Array.data[2].description
+    key: data.randomeventdata.pilgrim.options.2.description
+    lastText: "\uAC15\uC544\uC9C0\uAC00 \uAE38\uC744 \uCC3E\uB294\uB2E4. \uC11C\uC57D
+      \uD68D\uB4DD, \uCCB4\uB825 12 \uD68C\uBCF5, \uC778\uC5F0\uC744 \uB0A8\uAE34\uB2E4."
+  textOwnerGuid: 044a1d8b41194c549b8ddf358bb40c65
+  id: Pilgrim
+  displayName: "\uC9D0 \uD558\uB098\uB9CC \uBD80\uD0C1\uD558\uB124"
+  narrative: "\uC9D0 \uC548\uC5D0\uB294 \uC774\uB984\uC774 \uC0C8\uACA8\uC9C4 \uB3CC\uB4E4\uC774
+    \uAC00\uB4DD\uD558\uB2E4.\n\n\u201C\uC0AC\uB78C \uB300\uC2E0 \uB3CC\uC544\uAC00\uB294
+    \uC774\uB984\uB4E4\uC774\uB124. \uC5EC\uBE44\uAC00 \uBAA8\uC790\uB77C \uC774
+    \uB3CC\uC744 \uB450\uACE0 \uAC08 \uBED4\uD588\uC5B4.\u201D"
+  illustration: {fileID: 21300000, guid: 20bea494ec69d234f941b9cf15bcea35, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 1
+  maxAct: 3
+  weight: 1
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/TheLegendsWereTrue
+  referenceExperience: "\uD604\uC7AC \uC790\uC6D0\uC744 \uBBF8\uB798 \uC778\uC5F0\uC5D0
+    \uD22C\uC790\uD558\uAC70\uB098 \uB2F9\uC7A5 \uD68C\uBCF5\uC744 \uC120\uD0DD."
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
+    description: "25\uACE8\uB4DC \uC18C\uBAA8. \uC21C\uB840\uC790\uC758 \uC11C\uC57D
+      \uD68D\uB4DD. \uAC00\uB4DC 3\uD68C\uB9C8\uB2E4 \uAC8C\uC774\uC9C0 +3. \uC778\uC5F0\uC744
+      \uB0A8\uAE34\uB2E4."
+    goldCost: 25
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 8
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: PilgrimMet
+      amount: 0
+      stat: 4
+  - title: "\uC0D8\uC758 \uC704\uCE58\uB97C \uC11C\uB85C \uB098\uB208\uB2E4"
+    description: "\uCCB4\uB825 12 \uD68C\uBCF5. \uC11C\uC57D\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 6
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 12
+      stat: 4
+  - title: "\uC598\uAC00 \uC9C0\uB984\uAE38\uC744 \uCC3E\uC744 \uAC70\uC57C"
+    description: "\uAC15\uC544\uC9C0\uAC00 \uAE38\uC744 \uCC3E\uB294\uB2E4. \uC11C\uC57D
+      \uD68D\uB4DD, \uCCB4\uB825 12 \uD68C\uBCF5, \uC778\uC5F0\uC744 \uB0A8\uAE34\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 6
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 12
+      stat: 4
+    - kind: 8
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: PilgrimMet
+      amount: 0
+      stat: 4

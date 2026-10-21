@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
   m_Name: BossThreeCharge
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.bossthreecharge.displayname
+    lastText: "\uBCCD\uC758 \uD3ED\uBC1C"
+  textOwnerGuid: a7b144dabd51371468be9250fdfaaaff
   type: 1
   displayName: "\uBCCD\uC758 \uD3ED\uBC1C"
   damage: 55.2
@@ -19,24 +24,29 @@ MonoBehaviour:
   windupDuration: 0.01
   recoveryDuration: 0.5
   guardable: 1
+  requiredSupportId: 
   chargeTimeLimit: 4.4
   chargeWeakPoints:
   - id: core-1
     normalizedPosition: {x: -76, y: 40}
     hitRadius: 30
     requiredChargeHits: 1
+    optional: 0
   - id: core-2
     normalizedPosition: {x: -30, y: -46}
     hitRadius: 30
     requiredChargeHits: 1
+    optional: 0
   - id: core-3
     normalizedPosition: {x: 30, y: -46}
     hitRadius: 30
     requiredChargeHits: 1
+    optional: 0
   - id: core-4
     normalizedPosition: {x: 76, y: 40}
     hitRadius: 30
     requiredChargeHits: 1
+    optional: 0
   combatMechanics:
     directionalGuard:
       enabled: 0

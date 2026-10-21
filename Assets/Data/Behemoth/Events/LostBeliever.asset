@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: LostBeliever
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.lostbeliever.displayname
+    lastText: "\uADF8 \uB3CC\uC5D0 \uC801\uD78C \uC774\uB984"
+  - propertyPath: narrative
+    key: data.randomeventdata.lostbeliever.narrative
+    lastText: "\uC18C\uB144\uC774 \uC954 \uB3CC\uC5D0\uB294 \uC775\uC219\uD55C \uC774\uB984\uC774
+      \uC788\uB2E4. \uC21C\uB840\uC790\uC758 \uC9D0\uC5D0\uC11C \uBCF8 \uC774\uB984\uC774\uB2E4.\n\n\uB4F1\uBD88\uC740
+      \uC18C\uB144\uC758 \uC190\uC744 \uB5A0\uB098 \uB2F9\uC2E0 \uCABD\uC73C\uB85C
+      \uC870\uAE08\uC529 \uAE30\uC6B4\uB2E4."
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.lostbeliever.options.0.title
+    lastText: "\uC11C\uC57D\uC758 \uB3CC\uC744 \uB9DE\uCDB0 \uBCF8\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.lostbeliever.options.0.description
+    lastText: "\uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD: \uCC28\uC9C0 \uC801\uC911\uACFC
+      \uC8FC\uBB38 \uBC1C\uB3D9\uC5D0 \uD53C\uD574 6 \uCD94\uAC00."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.lostbeliever.options.1.title
+    lastText: "\uC704\uD5D8\uD55C \uC0DB\uAE38\uC744 \uD568\uAED8 \uAC77\uB294\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.lostbeliever.options.1.description
+    lastText: "\uCCB4\uB825 -18. \uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD."
+  - propertyPath: options.Array.data[2].title
+    key: data.randomeventdata.lostbeliever.options.2.title
+    lastText: "\uB3CC\uC544\uAC08 \uAE38\uC744 \uADF8\uB824 \uC900\uB2E4"
+  - propertyPath: options.Array.data[2].description
+    key: data.randomeventdata.lostbeliever.options.2.description
+    lastText: "\uB2F5\uB840\uC758 \uC57D\uCD08\uB85C \uCCB4\uB825 15 \uD68C\uBCF5.
+      \uB4F1\uBD88\uC740 \uC18C\uB144\uC5D0\uAC8C \uB0A8\uB294\uB2E4."
+  textOwnerGuid: be7331d68afcaaa4bbb16cc5d097b544
+  id: LostBeliever
+  displayName: "\uADF8 \uB3CC\uC5D0 \uC801\uD78C \uC774\uB984"
+  narrative: "\uC18C\uB144\uC774 \uC954 \uB3CC\uC5D0\uB294 \uC775\uC219\uD55C \uC774\uB984\uC774
+    \uC788\uB2E4. \uC21C\uB840\uC790\uC758 \uC9D0\uC5D0\uC11C \uBCF8 \uC774\uB984\uC774\uB2E4.\n\n\uB4F1\uBD88\uC740
+    \uC18C\uB144\uC758 \uC190\uC744 \uB5A0\uB098 \uB2F9\uC2E0 \uCABD\uC73C\uB85C
+    \uC870\uAE08\uC529 \uAE30\uC6B4\uB2E4."
+  illustration: {fileID: 21300000, guid: 20bea494ec69d234f941b9cf15bcea35, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 2
+  maxAct: 3
+  weight: 1
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/TheLegendsWereTrue
+  referenceExperience: "\uC774\uC804 \uC0AC\uAC74\uC758 \uC778\uC5F0\uC73C\uB85C
+    \uD2B9\uBCC4 \uBCF4\uC0C1, \uC5C6\uC73C\uBA74 \uD604\uC7AC \uCCB4\uB825\uC73C\uB85C
+    \uB3D5\uAC70\uB098 \uB2E4\uB978 \uD68C\uBCF5 \uC120\uD0DD."
+  requiredFlag: PilgrimMet
+  forbiddenFlag: 
+  options:
+  - title: "\uC11C\uC57D\uC758 \uB3CC\uC744 \uB9DE\uCDB0 \uBCF8\uB2E4"
+    description: "\uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD: \uCC28\uC9C0
+      \uC801\uC911\uACFC \uC8FC\uBB38 \uBC1C\uB3D9\uC5D0 \uD53C\uD574 6 \uCD94\uAC00."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 18be5b53cf7152041bc7a008f62a3aad, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uC704\uD5D8\uD55C \uC0DB\uAE38\uC744 \uD568\uAED8 \uAC77\uB294\uB2E4"
+    description: "\uCCB4\uB825 -18. \uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD."
+    goldCost: 0
+    hpCost: 18
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 18be5b53cf7152041bc7a008f62a3aad, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uB3CC\uC544\uAC08 \uAE38\uC744 \uADF8\uB824 \uC900\uB2E4"
+    description: "\uB2F5\uB840\uC758 \uC57D\uCD08\uB85C \uCCB4\uB825 15 \uD68C\uBCF5.
+      \uB4F1\uBD88\uC740 \uC18C\uB144\uC5D0\uAC8C \uB0A8\uB294\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 6
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 15
+      stat: 4

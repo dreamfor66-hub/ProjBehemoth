@@ -1,3 +1,4 @@
+using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,13 +33,13 @@ namespace DungeonSlash
 
         [SerializeField] private RectTransform root;
         [SerializeField] private Image body;
-        [SerializeField] private Text remainingHits;
+        [SerializeField] private TextMeshProUGUI remainingHits;
         private RectTransform hitSegmentRoot;
         private readonly List<HitSegment> hitSegments = new();
         private int displayedRequiredHits = -1;
         private int displayedRemainingHits = -1;
 
-        public void Configure(RectTransform newRoot, Image newBody, Text newRemainingHits)
+        public void Configure(RectTransform newRoot, Image newBody, TextMeshProUGUI newRemainingHits)
         {
             root = newRoot;
             body = newBody;
@@ -57,7 +58,7 @@ namespace DungeonSlash
             if (body != null)
             {
                 body.enabled = runtime.IsActive && !runtime.IsDestroyed;
-                body.color = Color.white;
+                body.color = runtime.IsOptional ? new Color(.45f, 1f, .72f) : Color.white;
             }
             if (remainingHits != null) remainingHits.enabled = false;
 
@@ -128,7 +129,7 @@ namespace DungeonSlash
 
         private static HitSegment CreateSegment(RectTransform parent, int index, float totalWidth)
         {
-            var segmentObject = new GameObject($"HitSegment_{index + 1}", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Outline));
+            var segmentObject = new GameObject(GameText.Format("ui.weakpointview.2d1fe896", index + 1), typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Outline));
             var segmentRoot = segmentObject.GetComponent<RectTransform>();
             segmentRoot.SetParent(parent, false);
             segmentRoot.anchorMin = new Vector2(0f, .5f);

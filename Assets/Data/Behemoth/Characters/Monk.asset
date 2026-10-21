@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5268a9354c4f1c4090b31c19da88ddf, type: 3}
+  m_Name: Monk
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.playercombatdata.monk.displayname
+    lastText: "\uBABD\uD06C"
+  - propertyPath: description
+    key: data.playercombatdata.monk.description
+    lastText: "\uC5EC\uB7EC \uACF5\uACA9\uC744 \uD558\uB098\uC758 \uACF5\uACA9 \uCC98\uB7FC
+      \uBB3C \uD750\uB974\uB4EF \uC5F0\uACB0\uD558\uB294 \uB0A0\uB835\uD55C \uBAB8\uB180\uB9BC\uC758
+      \uBB34\uC608\uAC00 \uC785\uB2C8\uB2E4."
+  textOwnerGuid: 6a262dc71ab556449a37ed19ca26c0cc
+  character: 4
+  displayName: "\uBABD\uD06C"
+  description: "\uC5EC\uB7EC \uACF5\uACA9\uC744 \uD558\uB098\uC758 \uACF5\uACA9 \uCC98\uB7FC
+    \uBB3C \uD750\uB974\uB4EF \uC5F0\uACB0\uD558\uB294 \uB0A0\uB835\uD55C \uBAB8\uB180\uB9BC\uC758
+    \uBB34\uC608\uAC00 \uC785\uB2C8\uB2E4."
+  characterColor: {r: 0.95, g: 0.75, b: 0.3, a: 1}
+  portrait: {fileID: 21300000, guid: f701431fffac50e47ac473732848a7a6, type: 3}
+  gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
+  startingRelic: {fileID: 11400000, guid: b7e632a71dec8d641b22b585670f40bb, type: 2}
+  startingSpells: []
+  monkForms:
+  - {fileID: 11400000, guid: 5bbcb162be08ee84e8521e53b9dd5aad, type: 2}
+  - {fileID: 11400000, guid: abcf378eb883e734c8f74eee8a49c155, type: 2}
+  - {fileID: 11400000, guid: 43d43b5b7dfd9114ebb7c48dd40ba06b, type: 2}
+  - {fileID: 11400000, guid: 7564aaf1ee542d34b923d7d467a136d9, type: 2}
+  - {fileID: 11400000, guid: 9eed9111b6b302f46bf577cb55b5149b, type: 2}
+  - {fileID: 11400000, guid: 22162dfe5f46abf4a99a321a2220da67, type: 2}
+  mechanics:
+    ragePerNormalAttack: 12
+    rageThreshold: 40
+    rageDrainPerSecond: 20
+    rageIdleDecay: 2
+    enragedDamageMultiplier: 1.5
+    enragedCooldownMultiplier: 0.62
+    enragedDamageReduction: 0.3
+    drawDamageMultiplier: 1.5
+    sheathParrySeconds: 0.1
+    wizardCooldownMultiplier: 0.5
+    castingGuardRegen: 0
+  maxHp: 95
+  shieldMax: 25
+  guardDamageReduction: 1
+  normalShieldRegen: 0
+  brokenShieldRegen: 5
+  baseAttackDamage: 7.5
+  baseChargeDamage: 13
+  attackCooldown: 0.55
+  chargeDuration: 0.75

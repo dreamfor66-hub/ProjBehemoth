@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,8 +18,8 @@ namespace DungeonSlash
         [SerializeField] private Button infiniteBattleButton;
         [SerializeField] private Button addPerkButton;
         [SerializeField] private Button addEquipmentButton;
-        [SerializeField] private Text infiniteBattleLabel;
-        [SerializeField] private Text statusLabel;
+        [SerializeField] private TextMeshProUGUI infiniteBattleLabel;
+        [SerializeField] private TextMeshProUGUI statusLabel;
 
         private readonly List<MonsterData> monsters = new();
         private readonly List<PerkData> perks = new();
@@ -35,7 +36,7 @@ namespace DungeonSlash
         public event Action InventoryChanged;
         public event Action VisibilityChanged;
 
-        public void Configure(GameObject newPanel, IEnumerable<Button> newMonsterButtons, IEnumerable<Button> newPerkButtons, IEnumerable<Button> newEquipmentButtons, Button newStartBattleButton, Button newInfiniteBattleButton, Text newInfiniteBattleLabel, Button newAddPerkButton, Button newAddEquipmentButton, Text newStatusLabel)
+        public void Configure(GameObject newPanel, IEnumerable<Button> newMonsterButtons, IEnumerable<Button> newPerkButtons, IEnumerable<Button> newEquipmentButtons, Button newStartBattleButton, Button newInfiniteBattleButton, TextMeshProUGUI newInfiniteBattleLabel, Button newAddPerkButton, Button newAddEquipmentButton, TextMeshProUGUI newStatusLabel)
         {
             panel = newPanel;
             monsterButtons = new List<Button>(newMonsterButtons ?? Array.Empty<Button>());
@@ -110,7 +111,7 @@ namespace DungeonSlash
             if (open)
             {
                 PopulateLists();
-                SetStatus("몬스터를 선택한 뒤 배틀 시작을 누르세요.");
+                SetStatus(GameText.Get("ui.debugcheatoverlay.f94d1cf7"));
             }
         }
 
@@ -170,14 +171,14 @@ namespace DungeonSlash
                 button.gameObject.SetActive(visible);
                 if (!visible) continue;
                 var item = equipment[index];
-                var prefix = item.IsPotion ? "포션 " : "유물 ";
+                var prefix = item.IsPotion ? GameText.Get("ui.debugcheatoverlay.33c2f52b") : GameText.Get("ui.debugcheatoverlay.3439cc1b");
                 SetButton(button, prefix + item.displayName, item == selectedEquipment, () => { selectedEquipment = item; BindEquipmentButtons(); });
             }
         }
 
         private static void SetButton(Button button, string label, bool selected, Action clicked)
         {
-            var text = button.GetComponentInChildren<Text>(true);
+            var text = button.GetComponentInChildren<TextMeshProUGUI>(true);
             if (text != null) text.text = label;
             if (button.image != null) button.image.color = selected ? new Color(.78f, .56f, .16f) : new Color(.16f, .27f, .42f);
             button.onClick.RemoveAllListeners();
@@ -186,7 +187,7 @@ namespace DungeonSlash
 
         private void RequestBattle()
         {
-            if (selectedMonster == null) { SetStatus("몬스터를 선택하세요."); return; }
+            if (selectedMonster == null) { SetStatus(GameText.Get("ui.debugcheatoverlay.9b49ea72")); return; }
             SetOpen(false);
             BattleRequested?.Invoke(selectedMonster);
         }
@@ -196,29 +197,29 @@ namespace DungeonSlash
             infiniteBattle = !infiniteBattle;
             combat?.SetInfiniteBattle(infiniteBattle);
             UpdateInfiniteBattleLabel();
-            SetStatus(infiniteBattle ? "무한 배틀: 양쪽 HP가 감소하지 않습니다." : "무한 배틀 해제");
+            SetStatus(infiniteBattle ? GameText.Get("ui.debugcheatoverlay.36cd1624") : GameText.Get("ui.debugcheatoverlay.84d3cfc5"));
         }
 
         private void AddSelectedPerk()
         {
-            if (selectedPerk == null) { SetStatus("퍽을 선택하세요."); return; }
-            if (!run.TryGrantPerk(selectedPerk)) { SetStatus("퍽을 더 추가할 수 없습니다."); return; }
-            SetStatus($"{selectedPerk.displayName} 추가");
+            if (selectedPerk == null) { SetStatus(GameText.Get("ui.debugcheatoverlay.6ee59f11")); return; }
+            if (!run.TryGrantPerk(selectedPerk)) { SetStatus(GameText.Get("ui.debugcheatoverlay.4f7a5151")); return; }
+            SetStatus(GameText.Format("ui.debugcheatoverlay.3599f487", selectedPerk.displayName));
             InventoryChanged?.Invoke();
         }
 
         private void AddSelectedEquipment()
         {
-            if (selectedEquipment == null) { SetStatus("장비를 선택하세요."); return; }
-            if (!run.TryGrantEquipment(selectedEquipment)) { SetStatus(selectedEquipment.IsPotion ? "포션 슬롯이 가득 찼습니다." : "이미 보유 중인 유물입니다."); return; }
-            SetStatus($"{selectedEquipment.displayName} 추가");
+            if (selectedEquipment == null) { SetStatus(GameText.Get("ui.debugcheatoverlay.9c2a558d")); return; }
+            if (!run.TryGrantEquipment(selectedEquipment)) { SetStatus(selectedEquipment.IsPotion ? GameText.Get("ui.debugcheatoverlay.eed3920e") : GameText.Get("ui.debugcheatoverlay.6d1a009f")); return; }
+            SetStatus(GameText.Format("ui.debugcheatoverlay.3599f487", selectedEquipment.displayName));
             InventoryChanged?.Invoke();
         }
 
         private void UpdateInfiniteBattleLabel()
         {
             if (infiniteBattleLabel != null)
-                infiniteBattleLabel.text = infiniteBattle ? "무한 배틀: ON" : "무한 배틀: OFF";
+                infiniteBattleLabel.text = infiniteBattle ? GameText.Get("ui.debugcheatoverlay.4b9195f8") : GameText.Get("ui.debugcheatoverlay.841ae6d2");
         }
 
         private void SetStatus(string message)

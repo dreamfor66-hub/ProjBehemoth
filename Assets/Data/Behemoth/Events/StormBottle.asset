@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: StormBottle
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.stormbottle.displayname
+    lastText: "\uBC88\uAC1C\uB97C \uD30C\uB294 \uD589\uC0C1"
+  - propertyPath: narrative
+    key: data.randomeventdata.stormbottle.narrative
+    lastText: "\uBCD1\uB9C8\uB2E4 \uC11C\uB85C \uB2E4\uB978 \uCC9C\uB465\uC18C\uB9AC\uAC00
+      \uB09C\uB2E4. \uD589\uC0C1\uC740 \uBCD1 \uD558\uB098\uB97C \uADC0\uC5D0 \uB300\uACE0
+      \uACE0\uAC1C\uB97C \uC813\uB294\uB2E4.\n\n\u201C\uC774\uAC74 \uB69C\uAED1\uC744
+      \uB530\uBA74 \uAC80\uC73C\uB85C \uC62E\uACA8 \uAC11\uB2C8\uB2E4. \uC8FC\uBB38\uC774
+      \uD544\uC694\uD558\uC2DC\uBA74 \uC606 \uCC45\uC744 \uBCF4\uC138\uC694.\u201D"
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.stormbottle.options.0.title
+    lastText: "\uD3ED\uD48D \uD55C \uBCD1"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.stormbottle.options.0.description
+    lastText: "45\uACE8\uB4DC \uC18C\uBAA8. \uCC28\uC9C0 \uC801\uC911\uC5D0 \uBC88\uAC1C
+      \uD53C\uD574 8\uC744 \uB354\uD558\uB294 \uC720\uBB3C \uD68D\uB4DD."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.stormbottle.options.1.title
+    lastText: "\uBC88\uAC1C\uB97C \uC77D\uB294 \uBC95"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.stormbottle.options.1.description
+    lastText: "25\uACE8\uB4DC \uC18C\uBAA8. \uC8FC\uBB38 \uD558\uB098 \uC120\uD0DD."
+  - propertyPath: options.Array.data[2].title
+    key: data.randomeventdata.stormbottle.options.2.title
+    lastText: "\uBE48 \uBCD1 \uC218\uAC70\uB97C \uB3D5\uB294\uB2E4"
+  - propertyPath: options.Array.data[2].description
+    key: data.randomeventdata.stormbottle.options.2.description
+    lastText: "\uACE8\uB4DC +12. \uC720\uBB3C\uACFC \uC8FC\uBB38\uC740 \uC0AC\uC9C0
+      \uC54A\uB294\uB2E4."
+  textOwnerGuid: cb0e211d7f24e3c4f841327d244641f0
+  id: StormBottle
+  displayName: "\uBC88\uAC1C\uB97C \uD30C\uB294 \uD589\uC0C1"
+  narrative: "\uBCD1\uB9C8\uB2E4 \uC11C\uB85C \uB2E4\uB978 \uCC9C\uB465\uC18C\uB9AC\uAC00
+    \uB09C\uB2E4. \uD589\uC0C1\uC740 \uBCD1 \uD558\uB098\uB97C \uADC0\uC5D0 \uB300\uACE0
+    \uACE0\uAC1C\uB97C \uC813\uB294\uB2E4.\n\n\u201C\uC774\uAC74 \uB69C\uAED1\uC744
+    \uB530\uBA74 \uAC80\uC73C\uB85C \uC62E\uACA8 \uAC11\uB2C8\uB2E4. \uC8FC\uBB38\uC774
+    \uD544\uC694\uD558\uC2DC\uBA74 \uC606 \uCC45\uC744 \uBCF4\uC138\uC694.\u201D"
+  illustration: {fileID: 21300000, guid: be3823d317994f9449e82d368dc4fbd6, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 1
+  maxAct: 3
+  weight: 1
+  minNormalCombatsInAct: 4
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/RelicTrader
+  referenceExperience: "\uC11C\uB85C \uB2E4\uB978 \uBCF4\uC0C1\uC758 \uAC70\uB798.
+    \uB3C8\uC774 \uC5C6\uB2E4\uACE0 \uAC19\uC740 \uBB3C\uAC74\uC744 \uC678\uC0C1\uC73C\uB85C
+    \uC8FC\uC9C0 \uC54A\uC74C."
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uD3ED\uD48D \uD55C \uBCD1"
+    description: "45\uACE8\uB4DC \uC18C\uBAA8. \uCC28\uC9C0 \uC801\uC911\uC5D0 \uBC88\uAC1C
+      \uD53C\uD574 8\uC744 \uB354\uD558\uB294 \uC720\uBB3C \uD68D\uB4DD."
+    goldCost: 45
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: e1c386bffa4941445bea048264e464d0, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uBC88\uAC1C\uB97C \uC77D\uB294 \uBC95"
+    description: "25\uACE8\uB4DC \uC18C\uBAA8. \uC8FC\uBB38 \uD558\uB098 \uC120\uD0DD."
+    goldCost: 25
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 4
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uBE48 \uBCD1 \uC218\uAC70\uB97C \uB3D5\uB294\uB2E4"
+    description: "\uACE8\uB4DC +12. \uC720\uBB3C\uACFC \uC8FC\uBB38\uC740 \uC0AC\uC9C0
+      \uC54A\uB294\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 5
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 12
+      stat: 4

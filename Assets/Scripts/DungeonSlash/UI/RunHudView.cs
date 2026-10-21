@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,10 @@ namespace DungeonSlash
 {
     public sealed class RunHudView : MonoBehaviour
     {
-        [SerializeField] private Text roomInfo;
-        [SerializeField] private Text runInfo;
+        [SerializeField] private TextMeshProUGUI roomInfo;
+        [SerializeField] private TextMeshProUGUI runInfo;
         // Retained solely for compatibility with the minimal HUD test configuration.
-        [SerializeField] private Text perkInfo;
+        [SerializeField] private TextMeshProUGUI perkInfo;
         [SerializeField] private RectTransform perkGrid;
         [SerializeField] private RectTransform relicGrid;
         [SerializeField] private RectTransform potionGrid;
@@ -28,14 +29,14 @@ namespace DungeonSlash
             CacheIcons(potionIcons, potionGrid);
         }
 
-        public void Configure(Text newRoomInfo, Text newRunInfo, Text newPerkInfo)
+        public void Configure(TextMeshProUGUI newRoomInfo, TextMeshProUGUI newRunInfo, TextMeshProUGUI newPerkInfo)
         {
             roomInfo = newRoomInfo;
             runInfo = newRunInfo;
             perkInfo = newPerkInfo;
         }
 
-        public void Configure(Text newRoomInfo, Text newRunInfo, RectTransform newPerkGrid, RectTransform newRelicGrid, RectTransform newPotionGrid, RunHudIconView newIconPrefab, ItemTooltipView newTooltip)
+        public void Configure(TextMeshProUGUI newRoomInfo, TextMeshProUGUI newRunInfo, RectTransform newPerkGrid, RectTransform newRelicGrid, RectTransform newPotionGrid, RunHudIconView newIconPrefab, ItemTooltipView newTooltip)
         {
             roomInfo = newRoomInfo;
             runInfo = newRunInfo;
@@ -54,7 +55,7 @@ namespace DungeonSlash
                 roomInfo.enabled = false;
             }
             if (runInfo != null)
-                runInfo.text = $"{dungeon.Floor}\uCE35  LV {run.Level}  XP {run.Experience}/{run.RequiredExperience}\nGold {run.Gold}";
+                runInfo.text = GameText.Format("ui.runhudview.55f14293", dungeon.Floor, run.Level, run.Experience, run.RequiredExperience, run.Gold);
             if (perkInfo != null)
             {
                 perkInfo.text = string.Empty;

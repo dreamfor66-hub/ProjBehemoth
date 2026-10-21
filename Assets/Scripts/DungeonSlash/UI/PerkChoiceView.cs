@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace DungeonSlash
     {
         [SerializeField] private GameObject panel;
         [SerializeField] private List<PerkChoiceItem> items = new();
-        [SerializeField] private Text title;
+        [SerializeField] private TextMeshProUGUI title;
 
-        public void Configure(GameObject newPanel, IEnumerable<PerkChoiceItem> newItems, Text newTitle = null)
+        public void Configure(GameObject newPanel, IEnumerable<PerkChoiceItem> newItems, TextMeshProUGUI newTitle = null)
         {
             panel = newPanel;
             items = newItems.ToList();
@@ -21,7 +22,7 @@ namespace DungeonSlash
 
         public void Show(IReadOnlyList<PerkData> perks, Action<PerkData> selected)
         {
-            if (title != null) title.text = "\uD37D \uC120\uD0DD";
+            if (title != null) title.text = GameText.Get("ui.perkchoiceview.62fc6faf");
             panel.SetActive(true);
             for (var i = 0; i < items.Count; i++) items[i].gameObject.SetActive(i < perks.Count);
             for (var i = 0; i < perks.Count; i++) items[i].Bind(perks[i], selected);
@@ -29,12 +30,13 @@ namespace DungeonSlash
 
         public void ShowRelics(IReadOnlyList<EquipmentData> relics, Action<EquipmentData> selected)
         {
-            if (title != null) title.text = "\uC720\uBB3C \uD68D\uB4DD";
+            if (title != null) title.text = GameText.Get("ui.perkchoiceview.f79abb6d");
             panel.SetActive(true);
             for (var i = 0; i < items.Count; i++) items[i].gameObject.SetActive(i < relics.Count);
             for (var i = 0; i < relics.Count; i++) items[i].Bind(relics[i], selected);
         }
 
         public void Hide() => panel.SetActive(false);
+        public void SetTitle(string text) { if (title != null) title.text = text; }
     }
 }

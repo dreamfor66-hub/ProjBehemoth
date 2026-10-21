@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,13 +7,13 @@ namespace DungeonSlash
     public sealed class DamageNumberView : MonoBehaviour
     {
         [SerializeField] private RectTransform root;
-        [SerializeField] private Text label;
+        [SerializeField] private TextMeshProUGUI label;
         [SerializeField] private float lifetime = .8f;
         [SerializeField] private float riseSpeed = 52f;
         private float spawnedAt;
         private Color baseColor;
 
-        public void Configure(RectTransform newRoot, Text newLabel)
+        public void Configure(RectTransform newRoot, TextMeshProUGUI newLabel)
         {
             root = newRoot;
             label = newLabel;

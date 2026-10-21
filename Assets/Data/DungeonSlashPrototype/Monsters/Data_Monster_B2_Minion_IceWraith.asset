@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B2_Minion_IceWraith
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b2_minion_icewraith.displayname
+    lastText: "\uC5BC\uC74C \uADC0\uC2E0"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b2_minion_icewraith.encounterhint
+    lastText: 
+  textOwnerGuid: 3767fc650961daa46940e81e17116958
   displayName: "\uC5BC\uC74C \uADC0\uC2E0"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 198
   normalAttackInterval: 1.5
   chargeInterval: 7

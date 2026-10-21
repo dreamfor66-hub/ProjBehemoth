@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: ForgePair
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.forgepair.displayname
+    lastText: "\uBD88\uAF43\uACFC \uC1E0\uC0AC\uC2AC"
+  - propertyPath: hint
+    key: data.encounterdata.forgepair.hint
+    lastText: 
+  textOwnerGuid: 92f107cfdd4b9b0488c233d43ace1bcf
+  id: ForgePair
+  displayName: "\uBD88\uAF43\uACFC \uC1E0\uC0AC\uC2AC"
+  hint: 
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: ab51196a5afd49b45ac54ea6884e73fb, type: 2}
+    offset: {x: -135, y: 35}
+    scale: 0.68
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: 63c9c898a50e8ff409d9b3af59f6623e, type: 2}
+    offset: {x: 135, y: -30}
+    scale: 0.68
+    actionDelay: 1.6

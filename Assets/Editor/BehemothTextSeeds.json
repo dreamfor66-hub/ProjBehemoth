@@ -1,0 +1,994 @@
+{
+  "entries": [
+    {
+      "key": "ui.stat.shieldmax",
+      "kr": "최대 가드게이지",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.spell.details",
+      "kr": "{0} {1}\n캐스팅 {2:0.00}초 · 쿨타임 {3:0.0}초\n{4}",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.monsterview.500afc29",
+      "kr": " · 독 {0}",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/MonsterView.cs"
+    },
+    {
+      "key": "ui.monsterview.95434960",
+      "kr": " · 둔화",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/MonsterView.cs"
+    },
+    {
+      "key": "ui.monsterview.16148c80",
+      "kr": " · 기절",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/MonsterView.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.19ed98b1",
+      "kr": "분노",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.4676f734",
+      "kr": "격노",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.d6b28340",
+      "kr": "{0} {1:0}/100",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.2cfc90f3",
+      "kr": "  유예 피해 {0:0}",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.4c2f512d",
+      "kr": "납도 패리 성공 · 다음 발도 차지",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.b8ce3228",
+      "kr": "납도 · 다음 공격 발도 +50%",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.c088ba75",
+      "kr": "발도 · 가드로 납도",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.c7a3a29b",
+      "kr": " · 차지로 발동",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.e3f2e38",
+      "kr": "초식 두 번 → 차지",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.57448830",
+      "kr": "{0}  {1}",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.b0f8c0f9",
+      "kr": "가드 · 방향으로 준비된 주문 발동",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.charactercombatruntime.aabc49f9",
+      "kr": "가드",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatruntime.2aa89c79",
+      "kr": "가로",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatruntime.e951ad3d",
+      "kr": "올려",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatruntime.668dc945",
+      "kr": "내려",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatruntime.29a11b1",
+      "kr": "전방향",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatruntime.96a6a71b",
+      "kr": "{0} 방벽 {1:0} / {2:0}",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatruntime.ed3e470e",
+      "kr": "방벽 회복 {0:0} / {1:0}",
+      "source": "Scripts/DungeonSlash/Combat/Runtime/CombatRuntime.cs"
+    },
+    {
+      "key": "ui.combatcontroller.deb723db",
+      "kr": "패리 발도",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.9b76b68d",
+      "kr": "발도",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.12ab6e58",
+      "kr": "방벽 -{0:0}",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.c0f8301f",
+      "kr": "방향 불일치",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.8e353679",
+      "kr": "방벽 파괴",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.bf583bce",
+      "kr": "PERFECT",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.f4a2f0dc",
+      "kr": "납도 패리",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.e55ce145",
+      "kr": "빙결 흡수",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.bdcc2933",
+      "kr": "소환됨",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.f6ad320",
+      "kr": "빙결 소환",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatcontroller.fd5c20f9",
+      "kr": "부활",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatController.cs"
+    },
+    {
+      "key": "ui.combatexpansion.674bdc24",
+      "kr": "제 {0}막",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.a49c9ee9",
+      "kr": "같은 방향 · 반격 준비!",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.4b4fc6cb",
+      "kr": "분노 고조",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.b419b64",
+      "kr": "독 {0:0}",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.a17c6ce1",
+      "kr": "심장 파괴 · 공격 차단",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.32dafe8b",
+      "kr": "두 심장 파괴 · 본체 기절",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.b41e53e6",
+      "kr": "강아지 협공",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.4520ed9e",
+      "kr": "빈 주문 슬롯",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.98b418ae",
+      "kr": "재사용 {0:0.0}초",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.combatexpansion.411a9b44",
+      "kr": "캐스팅 미완료",
+      "source": "Scripts/DungeonSlash/Combat/Systems/CombatExpansion.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.b7b7a578",
+      "kr": "골드 부족",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.d3c41de9",
+      "kr": "체력 부족",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.470f2a23",
+      "kr": "최대 체력 부족",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.5844d85e",
+      "kr": "회복 포션 필요",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.94f41882",
+      "kr": "해당 유물 필요",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.ad3c2ff",
+      "kr": "해당 퍽 필요",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.f87e5029",
+      "kr": "이전 사건의 단서 필요",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.209c6ec6",
+      "kr": "전용 유물 한도 도달",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.2273fe56",
+      "kr": "교환할 공용 유물 필요 (마도서 제외)",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.77f5a29c",
+      "kr": "제거할 퍽 필요",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.11d7e512",
+      "kr": "강화 가능한 퍽 필요",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.randomeventsystem.7baef27d",
+      "kr": "이미 획득한 유물",
+      "source": "Scripts/DungeonSlash/Rooms/RandomEventSystem.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.f94d1cf7",
+      "kr": "몬스터를 선택한 뒤 배틀 시작을 누르세요.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.33c2f52b",
+      "kr": "포션 ",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.3439cc1b",
+      "kr": "유물 ",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.9b49ea72",
+      "kr": "몬스터를 선택하세요.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.36cd1624",
+      "kr": "무한 배틀: 양쪽 HP가 감소하지 않습니다.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.84d3cfc5",
+      "kr": "무한 배틀 해제",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.6ee59f11",
+      "kr": "퍽을 선택하세요.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.4f7a5151",
+      "kr": "퍽을 더 추가할 수 없습니다.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.3599f487",
+      "kr": "{0} 추가",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.9c2a558d",
+      "kr": "장비를 선택하세요.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.eed3920e",
+      "kr": "포션 슬롯이 가득 찼습니다.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.6d1a009f",
+      "kr": "이미 보유 중인 유물입니다.",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.4b9195f8",
+      "kr": "무한 배틀: ON",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.debugcheatoverlay.841ae6d2",
+      "kr": "무한 배틀: OFF",
+      "source": "Scripts/DungeonSlash/UI/DebugCheatOverlay.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.5ca48218",
+      "kr": "바닥에 금화가 떨어져 있다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.79570a59",
+      "kr": "여신상이다. 기운이 충만해졌다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.b2f5746",
+      "kr": "아무것도 없다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.247f5404",
+      "kr": "몬스터의 흔적은 없어졌다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.9b3dd503",
+      "kr": "알 수 없는 몬스터",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.a61799fd",
+      "kr": "{0}이(가) 나타났다!",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.543192e4",
+      "kr": "분수대다. 물을 마실까?",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.ca483b7",
+      "kr": "예",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.9c8a9f7f",
+      "kr": "아니오",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.93765ef1",
+      "kr": "기운이 충만해졌다. HP가 {0:0}만큼 회복됐다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.896390ff",
+      "kr": "마른 분수대만 덩그러니 놓여져 있다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.1fd680ca",
+      "kr": "일시적으로 HP가 {0:0}만큼 회복됐다. 대신 독에 중독됐다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.f792ceab",
+      "kr": "보물상자다. 열어볼까?",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.f8df763f",
+      "kr": "보물상자가 이빨을 드러냈다! 미믹이 습격한다!",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.cf8e328f",
+      "kr": "상자 안에서 {0}을(를) 발견했다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.f46f36d2",
+      "kr": "상자 안은 비어 있다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.5db06efc",
+      "kr": "이런 곳에 상인...? 수상하지만 말을 걸어볼까?",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.417a7ff1",
+      "kr": "상인이 가면을 벗어던졌다. 돌연변이 상인이 습격한다!",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.c9592d2e",
+      "kr": "상인이 있었던 자리. 그새 없어졌다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.8cea5541",
+      "kr": "테스트 배틀 승리!",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.57fa3b03",
+      "kr": "테스트 배틀 패배 — HP를 복구했습니다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.803375ba",
+      "kr": "전용 유물 · 하나를 선택",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.f79abb6d",
+      "kr": "유물 획득",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.18c9beaf",
+      "kr": "남겨진 힘 중 하나를 계승한다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.74aabc17",
+      "kr": "가져갈 유물을 고른다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.dfe4d6f2",
+      "kr": "보스를 쓰러뜨렸다. 제 {0}층으로 내려간다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.91119a7",
+      "kr": "탐험 완료",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.4f664436",
+      "kr": "탐험 종료",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.543f0daf",
+      "kr": "세 막의 보스를 쓰러뜨렸다. 새로운 캐릭터와 빌드로 다시 도전해보자.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowcontroller.c34162cb",
+      "kr": "이번 탐험은 여기까지. 캐릭터를 다시 선택해 새로운 길에 도전하자.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowController.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.ca3d25b5",
+      "kr": "의 탐험",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.34facc8c",
+      "kr": "\n\n빠르게 긋기: 일반공격\n전장 홀드 후 긋기: 차지 · 약점 파괴\n캐릭터를 누르는 동안: 가드",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.a8b9dc2c",
+      "kr": "\n가드 유지 후 방향으로 긋고 떼기: 주문",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.a63f7436",
+      "kr": "\n\n지도에서 길을 골라 탐험하자. 막을 내려가면 체력이 회복된다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.44d9a674",
+      "kr": "고요한 방",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.2d68940e",
+      "kr": "잠시 숨을 고른다. 새로운 흔적은 보이지 않는다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.77b4b9fc",
+      "kr": "골드 -{0}",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.bd8c797",
+      "kr": "체력 -{0:0}",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.5b6889a1",
+      "kr": "최대 체력 -{0:0}",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.ffbb9952",
+      "kr": "회복 포션 1개 사용",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.5cf1ad0d",
+      "kr": "선택 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.52949f16",
+      "kr": " · 앞으로 {0:0}전투",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.20ed3cd1",
+      "kr": "갚을 골드 +{0:0} · 승리마다 최대 15골드 상환",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.faa291fc",
+      "kr": "골드 +{0:0}",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.84ab5d91",
+      "kr": "체력 +{0:0}",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.9a1c4500",
+      "kr": "능력 변화 · {0} {1:+0.##;-0.##}",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.9f2ed0e0",
+      "kr": "유물 획득 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.75c6600c",
+      "kr": "새로운 인연과 단서를 얻었다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.8dabb184",
+      "kr": "남은 유물 후보가 없어 골드 20을 얻었다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.d1e98751",
+      "kr": "전용 유물 선택",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.d1e21774",
+      "kr": "유물 선택",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.7bf1bd68",
+      "kr": "현재 빌드와 어울리는 보상을 고르자.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.8b1abf43",
+      "kr": "남은 퍽 후보가 없어 골드 15를 얻었다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.66154851",
+      "kr": "배움의 기회",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.62bbe05c",
+      "kr": "이번 사건을 통해 얻을 퍽을 고르자.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.ef9eaadd",
+      "kr": "퍽 획득 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.7b666ce8",
+      "kr": "모든 주문을 알아 골드 20을 얻었다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.805b2755",
+      "kr": "주문 습득",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.7c97cdb8",
+      "kr": "주문마다 발동 방향이 정해져 있다. 같은 방향의 주문은 교체한다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.e6ff57af",
+      "kr": "\n캐스팅 {0:0.00}초 · 재사용 {1:0.0}초",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.d76dc5b8",
+      "kr": "주문 습득 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.ef14f1f9",
+      "kr": "새 주문을 포기했다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.ad4ca858",
+      "kr": "전투의 흔적만 남아 있다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.bd5f93d",
+      "kr": "넘겨줄 유물",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.26125a92",
+      "kr": "선택한 공용 유물의 효과를 잃는다. 시작·전용 유물과 이미 익힌 지식인 마도서는 넘기지 않는다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.274cc0ec",
+      "kr": "넘겨준 유물 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.32ce9f51",
+      "kr": "내려놓을 퍽",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.a76f5823",
+      "kr": "강화할 퍽",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.c4b91a69",
+      "kr": "현재 보유한 퍽에서 선택한다.",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.61725663",
+      "kr": "퍽 제거 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.62b8ab8c",
+      "kr": "퍽 강화 · ",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.dc3590e0",
+      "kr": "최대 체력",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.e1fc90f9",
+      "kr": "일반 피해 배율",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.9baea365",
+      "kr": "차지 피해 배율",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.d7e402c1",
+      "kr": "공격 쿨타임 감소",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.5570f829",
+      "kr": "차지 시간 감소",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.546de53b",
+      "kr": "피해 감소",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.1a4697c5",
+      "kr": "피로: 공격 쿨타임 +20%",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.3851cc8c",
+      "kr": "균열: 최대 가드게이지 -8",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.gameflowexpansion.5ee9b14f",
+      "kr": "무딘 날: 모든 피해 -20%",
+      "source": "Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
+    },
+    {
+      "key": "ui.maproomicon.5cc146fe",
+      "kr": "시작",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.f1b4d56d",
+      "kr": "전투",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.a492ce8",
+      "kr": "정예",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.49257a85",
+      "kr": "보스",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.a422e3c6",
+      "kr": "보상",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.5b5ef854",
+      "kr": "상자",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.3938c211",
+      "kr": "분수",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.1bca6671",
+      "kr": "여신",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.maproomicon.db564fd4",
+      "kr": "상점",
+      "source": "Scripts/DungeonSlash/UI/MapRoomIcon.cs"
+    },
+    {
+      "key": "ui.outgameview.2e282e20",
+      "kr": "체력   {0:0}\n일반 공격   {1:0}\n공격 쿨타임   {2:0.00}초\n차지 공격   {3:0} · 준비 {4:0.00}초\n가드게이지   {5:0} · 회복 {6:0.#}/초\n가드 피해 감소   100%",
+      "source": "Scripts/DungeonSlash/UI/OutGameView.cs"
+    },
+    {
+      "key": "ui.outgameview.c86889d0",
+      "kr": "시작 유물 · {0}\n\n{1}",
+      "source": "Scripts/DungeonSlash/UI/OutGameView.cs"
+    },
+    {
+      "key": "ui.perkchoiceview.62fc6faf",
+      "kr": "퍽 선택",
+      "source": "Scripts/DungeonSlash/UI/PerkChoiceView.cs"
+    },
+    {
+      "key": "ui.perkchoiceview.f79abb6d",
+      "kr": "유물 획득",
+      "source": "Scripts/DungeonSlash/UI/PerkChoiceView.cs"
+    },
+    {
+      "key": "ui.roomchoicebutton.9c4b935",
+      "kr": "전진",
+      "source": "Scripts/DungeonSlash/UI/RoomChoiceButton.cs"
+    },
+    {
+      "key": "ui.roomchoicebutton.f13ebcf2",
+      "kr": "왼쪽",
+      "source": "Scripts/DungeonSlash/UI/RoomChoiceButton.cs"
+    },
+    {
+      "key": "ui.roomchoicebutton.89e1f8c4",
+      "kr": "오른쪽",
+      "source": "Scripts/DungeonSlash/UI/RoomChoiceButton.cs"
+    },
+    {
+      "key": "ui.roomchoicebutton.f19749f5",
+      "kr": "후진",
+      "source": "Scripts/DungeonSlash/UI/RoomChoiceButton.cs"
+    },
+    {
+      "key": "ui.runexpansionview.c2509e30",
+      "kr": "탐험을 마칠까?",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.db812935",
+      "kr": "현재 런의 성장은 초기화돼. 캐릭터 선택 화면으로 돌아갈 수 있어.",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.7b8abde6",
+      "kr": "계속 탐험",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.db5d33bd",
+      "kr": "캐릭터 선택으로",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.6f239e9",
+      "kr": "강아지 동료",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.1cc61eb9",
+      "kr": "길잡이 위습",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.660793f8",
+      "kr": " ({0}전투)",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.9c90367",
+      "kr": "빚 {0}골드",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.98b418ae",
+      "kr": "재사용 {0:0.0}초",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.9ebf2a5b",
+      "kr": "준비 완료",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.9dd5ca8c",
+      "kr": "캐스팅 {0:0.00}초",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.781bae3a",
+      "kr": "계속",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.848d307f",
+      "kr": "주문 교체",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.4cf1a98",
+      "kr": "{0} {1}\n{2}\n\n새 주문도 같은 방향을 사용한다.",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.cc287719",
+      "kr": " 습득",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.903af72b",
+      "kr": "\n기존 주문을 잊고 교체한다.",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.76082537",
+      "kr": " 유지",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.1ddf41c5",
+      "kr": "새 주문을 포기한다.",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runhudview.55f14293",
+      "kr": "{0}층  LV {1}  XP {2}/{3}\nGold {4}",
+      "source": "Scripts/DungeonSlash/UI/RunHudView.cs"
+    },
+    {
+      "key": "ui.combathudview.dfe9f229",
+      "kr": "HP {0:0} / {1:0}",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/CombatHudView.cs"
+    },
+    {
+      "key": "ui.combathudview.82e84bd4",
+      "kr": "SHIELD {0:0} / {1:0}",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/CombatHudView.cs"
+    },
+    {
+      "key": "ui.monsterview.86116ee5",
+      "kr": "{0:0.0}",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/MonsterView.cs"
+    },
+    {
+      "key": "ui.weakpointview.2d1fe896",
+      "kr": "HitSegment_{0}",
+      "source": "Scripts/DungeonSlash/Combat/Presentation/WeakPointView.cs"
+    },
+    {
+      "key": "ui.perkchoiceitem.69655f06",
+      "kr": "{0}\n<size=13>{1}</size>",
+      "source": "Scripts/DungeonSlash/UI/PerkChoiceItem.cs"
+    },
+    {
+      "key": "ui.rewardpopupview.7b064702",
+      "kr": "GOLD  +{0:0000}",
+      "source": "Scripts/DungeonSlash/UI/RewardPopupView.cs"
+    },
+    {
+      "key": "ui.rewardpopupview.a0c2a5d4",
+      "kr": "LV {0}  EXP {1:0000} / {2:0000}",
+      "source": "Scripts/DungeonSlash/UI/RewardPopupView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.31655660",
+      "kr": "{0} {1}\n<size=13>{2}</size>",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.b3a6d243",
+      "kr": "B{0} · {1}",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runexpansionview.5d4342db",
+      "kr": "{0} / {1}",
+      "source": "Scripts/DungeonSlash/UI/RunExpansionView.cs"
+    },
+    {
+      "key": "ui.runhudiconview.4e2ccfa3",
+      "kr": "x{0}",
+      "source": "Scripts/DungeonSlash/UI/RunHudIconView.cs"
+    },
+    {
+      "key": "ui.shopitemview.79a2a3",
+      "kr": "{0}  {1}G\n<size=13>{2}</size>",
+      "source": "Scripts/DungeonSlash/UI/ShopItemView.cs"
+    }
+  ]
+}

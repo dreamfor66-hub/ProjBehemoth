@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: MirrorKnight
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.mirrorknight.displayname
+    lastText: "\uAC70\uC6B8\uAE30\uC0AC"
+  - propertyPath: encounterHint
+    key: data.monsterdata.mirrorknight.encounterhint
+    lastText: "\uAC19\uC740 \uBC29\uD5A5\uC758 \uBB34\uAE30 \uACF5\uACA9\uC744 \uC5F0\uC18D\uC73C\uB85C
+      \uB9DE\uC73C\uBA74 \uBC18\uACA9\uD55C\uB2E4. \uBC29\uD5A5\uC744 \uBC14\uAFB8\uAC70\uB098
+      0.7\uCD08 \uBC18\uACA9 \uC900\uBE44\uC5D0 \uAC00\uB4DC\uB85C \uB300\uC751\uD558\uC790."
+  textOwnerGuid: 127cfd7704f940544a6713d4985b0a57
+  displayName: "\uAC70\uC6B8\uAE30\uC0AC"
+  encounterHint: "\uAC19\uC740 \uBC29\uD5A5\uC758 \uBB34\uAE30 \uACF5\uACA9\uC744
+    \uC5F0\uC18D\uC73C\uB85C \uB9DE\uC73C\uBA74 \uBC18\uACA9\uD55C\uB2E4. \uBC29\uD5A5\uC744
+    \uBC14\uAFB8\uAC70\uB098 0.7\uCD08 \uBC18\uACA9 \uC900\uBE44\uC5D0 \uAC00\uB4DC\uB85C
+    \uB300\uC751\uD558\uC790."
+  pattern: 1
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 185
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 29
+  goldReward: 14
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: e4baaa68e3dc3a7488d3650ebfef272a, type: 2}
+  - {fileID: 11400000, guid: 5095b4ece7b7a994c8a3a1051f9adb3b, type: 2}
+  bodyColor: {r: 0.736, g: 0.8, b: 0.48, a: 1}

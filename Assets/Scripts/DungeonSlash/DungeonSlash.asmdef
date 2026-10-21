@@ -2,7 +2,8 @@
   "name": "DungeonSlash",
   "rootNamespace": "DungeonSlash",
   "references": [
-    "Unity.InputSystem"
+    "Unity.InputSystem",
+    "Unity.TextMeshPro"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

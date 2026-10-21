@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: ClockworkJudge
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.clockworkjudge.displayname
+    lastText: "\uD0DC\uC5FD \uC7AC\uD310\uAD00"
+  - propertyPath: encounterHint
+    key: data.monsterdata.clockworkjudge.encounterhint
+    lastText: 
+  textOwnerGuid: c74f2cb928ee024438e0735a5f2ba33f
+  displayName: "\uD0DC\uC5FD \uC7AC\uD310\uAD00"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 420
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 48
+  goldReward: 23
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 0d13169f4e5a2e4448b04c7ff4f49a9a, type: 2}
+  - {fileID: 11400000, guid: 6069393bb14d0034ab6cf223248b2fc4, type: 2}
+  - {fileID: 11400000, guid: f7e6d37066580ce469ab96330f4d9a68, type: 2}
+  bodyColor: {r: 0.8, g: 0.48, b: 0.7104001, a: 1}

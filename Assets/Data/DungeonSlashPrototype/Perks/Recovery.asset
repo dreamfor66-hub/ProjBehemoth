@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: Recovery
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.recovery.displayname
+    lastText: "\uC7AC\uC0DD\uC758 \uD638\uD761"
+  - propertyPath: description
+    key: data.perkdata.recovery.description
+    lastText: "\uC2E4\uB4DC \uC790\uC5F0 \uD68C\uBCF5 +2"
+  textOwnerGuid: 0b2d23373339d4c41a8bbdf06b1452dd
   id: Recovery
   displayName: "\uC7AC\uC0DD\uC758 \uD638\uD761"
   description: "\uC2E4\uB4DC \uC790\uC5F0 \uD68C\uBCF5 +2"

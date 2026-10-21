@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: Renewal
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.renewal.displayname
+    lastText: "\uC7AC\uC0DD"
+  - propertyPath: description
+    key: data.perkdata.renewal.description
+    lastText: "\uC989\uC2DC \uCCB4\uB825 30 \uD68C\uBCF5"
+  textOwnerGuid: 446f8623b7294ea4e880d98d454ff38b
   id: Renewal
   displayName: "\uC7AC\uC0DD"
   description: "\uC989\uC2DC \uCCB4\uB825 30 \uD68C\uBCF5"

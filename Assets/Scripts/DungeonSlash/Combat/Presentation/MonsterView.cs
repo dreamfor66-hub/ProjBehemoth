@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -9,29 +10,29 @@ namespace DungeonSlash
     {
         [SerializeField] private RectTransform root;
         [SerializeField] private Image body;
-        [SerializeField] private Text stateLabel;
+        [SerializeField] private TextMeshProUGUI stateLabel;
         [SerializeField] private Image hpFill;
-        [SerializeField] private Text attackNameLabel;
-        [SerializeField] private Text chargeTimeLabel;
+        [SerializeField] private TextMeshProUGUI attackNameLabel;
+        [SerializeField] private TextMeshProUGUI chargeTimeLabel;
         [SerializeField] private Image attackNameBackdrop;
         [SerializeField] private Image chargeTimeBackdrop;
         [SerializeField] private Image directionalGuardFill;
-        [SerializeField] private Text directionalGuardLabel;
+        [SerializeField] private TextMeshProUGUI directionalGuardLabel;
         private float attackNameHideAt;
 
         public RectTransform Root => root;
 
-        public void Configure(RectTransform newRoot, Image newBody, Text newStateLabel)
+        public void Configure(RectTransform newRoot, Image newBody, TextMeshProUGUI newStateLabel)
         {
             Configure(newRoot, newBody, newStateLabel, null, null, null);
         }
 
-        public void Configure(RectTransform newRoot, Image newBody, Text newStateLabel, Image newHpFill, Text newAttackNameLabel, Text newChargeTimeLabel)
+        public void Configure(RectTransform newRoot, Image newBody, TextMeshProUGUI newStateLabel, Image newHpFill, TextMeshProUGUI newAttackNameLabel, TextMeshProUGUI newChargeTimeLabel)
         {
             Configure(newRoot, newBody, newStateLabel, newHpFill, newAttackNameLabel, newChargeTimeLabel, null, null);
         }
 
-        public void Configure(RectTransform newRoot, Image newBody, Text newStateLabel, Image newHpFill, Text newAttackNameLabel, Text newChargeTimeLabel, Image newAttackNameBackdrop, Image newChargeTimeBackdrop, Image newDirectionalGuardFill = null, Text newDirectionalGuardLabel = null)
+        public void Configure(RectTransform newRoot, Image newBody, TextMeshProUGUI newStateLabel, Image newHpFill, TextMeshProUGUI newAttackNameLabel, TextMeshProUGUI newChargeTimeLabel, Image newAttackNameBackdrop, Image newChargeTimeBackdrop, Image newDirectionalGuardFill = null, TextMeshProUGUI newDirectionalGuardLabel = null)
         {
             root = newRoot;
             body = newBody;
@@ -51,12 +52,10 @@ namespace DungeonSlash
             if (body != null) body.color = runtime.State == MonsterState.Stunned ? new Color(1f, .86f, .22f) : runtime.Data.bodyColor;
             if (stateLabel != null)
             {
-                stateLabel.text = runtime.State switch
-                {
-                    MonsterState.Attacking => "Attacking",
-                    MonsterState.Charging => "Charging",
-                    _ => string.Empty
-                };
+                stateLabel.text = runtime.Data.displayName
+                    + (runtime.PoisonStacks > 0 ? GameText.Format("ui.monsterview.500afc29", runtime.PoisonStacks) : "")
+                    + (runtime.SlowRemaining > 0 ? GameText.Get("ui.monsterview.95434960") : "")
+                    + (runtime.State == MonsterState.Stunned ? GameText.Get("ui.monsterview.16148c80") : "");
                 stateLabel.enabled = !string.IsNullOrEmpty(stateLabel.text);
             }
             SetGauge(hpFill, runtime.MaxHp <= 0f ? 0f : runtime.CurrentHp / runtime.MaxHp);
@@ -64,7 +63,7 @@ namespace DungeonSlash
             {
                 var charging = runtime.State == MonsterState.Charging && runtime.StateTimer > 0f;
                 chargeTimeLabel.enabled = charging;
-                if (charging) chargeTimeLabel.text = $"{runtime.StateTimer:0.0}";
+                if (charging) chargeTimeLabel.text = GameText.Format("ui.monsterview.86116ee5", runtime.StateTimer);
                 SetVisible(chargeTimeBackdrop, charging);
             }
             else SetVisible(chargeTimeBackdrop, false);

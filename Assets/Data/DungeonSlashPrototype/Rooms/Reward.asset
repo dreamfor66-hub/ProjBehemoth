@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697c3def854419429c68345d6a1241b, type: 3}
   m_Name: Reward
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.roomtypedata.reward.displayname
+    lastText: Reward
+  textOwnerGuid: 863db984f8576534b80a2a08a5435c1a
   encounterType: 2
   displayName: Reward
   mapColor: {r: 0.6, g: 0.65, b: 0.72, a: 1}

@@ -91,6 +91,7 @@ namespace DungeonSlash
             // Shops are a floor-level resource: B1 has one merchant, B2 two, B3 three, and so on.
             AssignMinimum(unassigned, RoomEncounterType.Shop, floor, random);
             AssignMinimum(unassigned, RoomEncounterType.Goddess, settings.minimumGoddessRooms, random);
+            AssignMinimum(unassigned, RoomEncounterType.Event, settings.eventRoomCount, random);
             var combatCount = Math.Max(1, (int)Math.Ceiling(graph.Rooms.Count * (settings.combatRoomRatioMin + settings.combatRoomRatioMax) * .5f));
             AssignMinimum(unassigned, RoomEncounterType.Combat, Math.Min(combatCount, unassigned.Count), random);
             foreach (var room in unassigned) room.Type = random.NextDouble() < .55 ? RoomEncounterType.Combat : RoomEncounterType.Empty;

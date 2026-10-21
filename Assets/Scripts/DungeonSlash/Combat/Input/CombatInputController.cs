@@ -1,255 +1,153 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 namespace DungeonSlash
 {
     public sealed class CombatInputController : MonoBehaviour
     {
         [SerializeField] private CombatSceneView sceneView;
         [SerializeField] private CombatController combat;
-        private Vector2 pressPosition;
-        private Vector2 latestPosition;
-        private float heldSeconds;
-        private bool tracking;
-        private bool chargeEligible;
-        private bool chargeCompleted;
-        private bool secondChargeCompleted;
-        private bool capturingSwipe;
-        private bool capturedSwipeIsCharged;
-        private int capturedSwipeChargeLevel;
-        private Vector2 capturedSwipeStart;
-        private Vector2 capturedSwipeEnd;
-        private readonly SwipeGestureAnalyzer swipeAnalyzer = new();
-        private readonly TargetTraversalConfirmation traversalConfirmation = new();
-        private readonly GuardRestConfirmation guardRestConfirmation = new();
-        private int traversalTargetIndex = -1;
-        private bool guardEntryStartedOutsideBody;
+        private sealed class Contact
+        {
+            public Vector2 Start, Latest, AttackStart;
+            public float Held;
+            public bool Guard, Eligible, Charged, Capturing, Consumed;
+            public int ChargeLevel = 1, Target = -1;
+            public float StillSince = -1f;
+            public readonly SwipeGestureAnalyzer Analyzer = new();
+            public readonly TargetTraversalConfirmation Traversal = new();
+        }
+        private readonly Dictionary<int, Contact> contacts = new();
         public PointerGestureState State { get; private set; }
         public float ChargeProgress { get; private set; }
         public float SecondChargeProgress { get; private set; }
-        public Vector2 ChargeOrigin => latestPosition;
+        public Vector2 ChargeOrigin { get; private set; }
+        public float CastingSeconds { get; private set; }
         public bool IsChargingAction => State is PointerGestureState.Charging or PointerGestureState.Charged or PointerGestureState.SecondCharging or PointerGestureState.SecondCharged;
         public bool IsGuardKeyHeld => Input.GetKey(KeyCode.Space);
+        public bool IsGuardHeld => contacts.Values.Any(contact => contact.Guard && !contact.Consumed) || IsGuardKeyHeld;
         public void Configure(CombatSceneView scene, CombatController controller) { sceneView = scene; combat = controller; }
-
+        private void Awake() => Input.simulateMouseWithTouches = false;
+        private void OnDisable() => CancelAll();
+        private void OnApplicationFocus(bool focused) { if (!focused) CancelAll(); }
         private void Update()
         {
-            if (combat.Player == null)
+            if (combat == null || combat.Player == null || !combat.IsActive || combat.InputPaused) { CancelAll(); return; }
+            if (Input.touchCount > 0)
             {
-                State = PointerGestureState.None;
-                tracking = false;
-                capturingSwipe = false;
-                ResetTraversal();
-                ResetGuardRest();
-                guardEntryStartedOutsideBody = false;
-                ChargeProgress = 0f;
-                SecondChargeProgress = 0f;
-                return;
+                foreach (var touch in Input.touches)
+                {
+                    if (touch.phase == TouchPhase.Began) Begin(touch.fingerId, touch.position);
+                    else if (touch.phase is TouchPhase.Ended or TouchPhase.Canceled) End(touch.fingerId, touch.position, touch.phase == TouchPhase.Canceled);
+                    else Move(touch.fingerId, touch.position);
+                }
             }
-
-            if (!combat.IsActive)
+            else
             {
-                State = PointerGestureState.None;
-                tracking = false;
-                capturingSwipe = false;
-                ResetTraversal();
-                ResetGuardRest();
-                guardEntryStartedOutsideBody = false;
-                ChargeProgress = 0f;
-                SecondChargeProgress = 0f;
-                return;
+                if (Input.GetMouseButtonDown(0)) Begin(-1, Input.mousePosition);
+                if (Input.GetMouseButton(0)) Move(-1, Input.mousePosition);
+                if (Input.GetMouseButtonUp(0)) End(-1, Input.mousePosition, false);
             }
-
-            if (Input.GetMouseButtonDown(0) && sceneView.TryScreenToLogical(Input.mousePosition, null, out var start))
+            var held = IsGuardHeld;
+            combat.Player.TrySetGuard(held);
+            if (held && combat.Run.Spellbook.Count > 0) CastingSeconds += Time.deltaTime; else CastingSeconds = 0;
+            RefreshState();
+        }
+        private bool OverButton(Vector2 position)
+        {
+            if (EventSystem.current == null) return false;
+            var hits = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current) { position = position }, hits);
+            return hits.Any(hit => hit.gameObject.GetComponentInParent<Button>() != null);
+        }
+        private void Begin(int id, Vector2 screen)
+        {
+            if (OverButton(screen) || !sceneView.TryScreenToLogical(screen, null, out var position)) return;
+            var guard = combat.IsPointerInsidePlayerBody(position) || IsGuardKeyHeld;
+            var contact = new Contact { Start = position, Latest = position, Guard = guard, Eligible = !guard && combat.Player.CanStartCharge() };
+            contact.Analyzer.Reset(position, Time.unscaledTime); contacts[id] = contact;
+            if (guard) combat.Player.TrySetGuard(true);
+        }
+        private void Move(int id, Vector2 screen)
+        {
+            if (!contacts.TryGetValue(id, out var contact) || contact.Consumed) return;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(sceneView.LogicalArea, screen, null, out var current);
+            var previous = contact.Latest; contact.Latest = current; contact.Held += Time.deltaTime;
+            if (contact.Guard) return;
+            var player = combat.Player;
+            if (contact.Capturing) { if (ConfirmTraversal(contact, previous, current)) Commit(contact); return; }
+            contact.Analyzer.AddSample(current, Time.unscaledTime, player.SwipeSampleWindowSeconds);
+            if (contact.Eligible)
             {
-                tracking = combat.TryBeginGesture(start); pressPosition = start; latestPosition = start; heldSeconds = 0f; ChargeProgress = 0f; SecondChargeProgress = 0f;
-                // A press that began during recovery cannot become a charge later just by holding it.
-                chargeEligible = combat.Player.CanStartCharge();
-                chargeCompleted = false; secondChargeCompleted = false; capturingSwipe = false; ResetTraversal(); ResetGuardRest(); guardEntryStartedOutsideBody = tracking && !combat.IsPointerInsidePlayerBody(start); swipeAnalyzer.Reset(start, Time.unscaledTime); State = tracking ? PointerGestureState.Pressed : PointerGestureState.None;
+                if (contact.Held >= player.CurrentChargeDuration) contact.Charged = true;
+                if (player.DoubleChargeEnabled && contact.Held >= player.CurrentChargeDuration * 2f) contact.ChargeLevel = 2;
+                if (Vector2.Distance(current, contact.Start) > player.ChargeTolerance) contact.Eligible = false;
             }
-            if (!tracking) return;
-            if (Input.GetMouseButton(0) && sceneView.TryScreenToLogical(Input.mousePosition, null, out var current))
+            if ((!contact.Eligible || contact.Charged) && contact.Analyzer.TryGetGesture(player.MinimumSwipeDistance, player.MinimumSwipeSpeed, player.MinimumDirectionConsistency, out var gesture))
             {
-                var previousPosition = latestPosition;
-                latestPosition = current;
-                if (capturingSwipe)
-                {
-                    var previous = capturedSwipeEnd;
-                    capturedSwipeEnd = current;
-                    if (TryConfirmTraversal(previous, current))
-                    {
-                        CommitTraversalAttack();
-                        return;
-                    }
-                    if (TryBeginBodyEntryGuard(current))
-                    {
-                        State = PointerGestureState.Guarding;
-                        tracking = false;
-                        capturingSwipe = false;
-                        return;
-                    }
-                    State = PointerGestureState.Attacking;
-                    return;
-                }
-
-                heldSeconds += Time.unscaledDeltaTime;
-                swipeAnalyzer.AddSample(current, Time.unscaledTime, combat.Player.SwipeSampleWindowSeconds);
-                if (chargeEligible && Vector2.Distance(current, pressPosition) > combat.Player.ChargeTolerance)
-                {
-                    chargeEligible = false;
-                    if (!chargeCompleted) ChargeProgress = 0f;
-                    if (!secondChargeCompleted) SecondChargeProgress = 0f;
-                }
-
-                if (chargeEligible && !chargeCompleted)
-                {
-                    ChargeProgress = Mathf.Clamp01(heldSeconds / combat.Player.CurrentChargeDuration);
-                    chargeCompleted = ChargeProgress >= 1f;
-                }
-                if (chargeEligible && chargeCompleted && combat.Player.DoubleChargeEnabled && !secondChargeCompleted)
-                {
-                    SecondChargeProgress = Mathf.Clamp01((heldSeconds - combat.Player.CurrentChargeDuration) / combat.Player.CurrentChargeDuration);
-                    secondChargeCompleted = SecondChargeProgress >= 1f;
-                }
-
-                if (TryBeginBodyEntryGuard(current))
-                {
-                    State = PointerGestureState.Guarding;
-                    tracking = false;
-                    return;
-                }
-
-                if (TryBeginRestGuard(previousPosition, current))
-                {
-                    State = PointerGestureState.Guarding;
-                    tracking = false;
-                    return;
-                }
-
-                if ((!chargeEligible || chargeCompleted) && swipeAnalyzer.TryGetGesture(combat.Player.MinimumSwipeDistance, combat.Player.MinimumSwipeSpeed, combat.Player.MinimumDirectionConsistency, out var gesture))
-                {
-                    var charged = chargeCompleted;
-                    if (!charged && combat.IsGuardGesture(pressPosition, current))
-                    {
-                        combat.TryBeginGuard(pressPosition, current);
-                        State = PointerGestureState.Guarding; tracking = false;
-                        return;
-                    }
-
-                    capturingSwipe = true;
-                    capturedSwipeIsCharged = charged;
-                    capturedSwipeChargeLevel = secondChargeCompleted ? 2 : 1;
-                    // Keep the original gesture-derived start for the final release attack.
-                    capturedSwipeStart = gesture.TrailStart;
-                    capturedSwipeEnd = current;
-                    ResetTraversal();
-                    // Traversal confirmation sees the entire input from its real press point,
-                    // including a press that began inside the target before the flick was recognized.
-                    if (TryConfirmTraversal(pressPosition, capturedSwipeEnd))
-                    {
-                        CommitTraversalAttack();
-                        return;
-                    }
-                    State = PointerGestureState.Attacking;
-                    return;
-                }
-
-                State = !chargeEligible ? PointerGestureState.Pressed : !chargeCompleted ? PointerGestureState.Charging : combat.Player.DoubleChargeEnabled ? secondChargeCompleted ? PointerGestureState.SecondCharged : PointerGestureState.SecondCharging : PointerGestureState.Charged;
-            }
-            if (Input.GetMouseButtonUp(0))
-            {
-                if (sceneView.TryScreenToLogical(Input.mousePosition, null, out var releasedPosition)) latestPosition = releasedPosition;
-                if (capturingSwipe)
-                {
-                    capturedSwipeEnd = latestPosition;
-                    if (TryBeginBodyEntryGuard(capturedSwipeEnd))
-                    {
-                        State = PointerGestureState.Guarding;
-                    }
-                    else if (!capturedSwipeIsCharged && combat.IsGuardGesture(pressPosition, capturedSwipeEnd))
-                    {
-                        combat.TryBeginGuard(pressPosition, capturedSwipeEnd);
-                        State = PointerGestureState.Guarding;
-                    }
-                    else
-                    {
-                        combat.ExecuteAttack(new AttackSegment(capturedSwipeStart, capturedSwipeEnd, combat.Player.SegmentWidth), capturedSwipeIsCharged, capturedSwipeChargeLevel);
-                    }
-                }
-                tracking = false; State = PointerGestureState.None; ChargeProgress = 0f; SecondChargeProgress = 0f;
-                capturingSwipe = false;
-                ResetTraversal();
-                ResetGuardRest();
-                guardEntryStartedOutsideBody = false;
+                contact.Capturing = true; contact.AttackStart = gesture.TrailStart;
+                if (ConfirmTraversal(contact, contact.Start, current)) Commit(contact);
             }
         }
-
-        private bool TryConfirmTraversal(Vector2 from, Vector2 to)
+        private void End(int id, Vector2 screen, bool canceled)
         {
-            if (traversalTargetIndex < 0 && !combat.TryFindTraversalTarget(from, to, out traversalTargetIndex))
-                return false;
-            if (!combat.TryGetTraversalTargetState(traversalTargetIndex, from, out var wasInsideTarget, out _) ||
-                !combat.TryGetTraversalTargetState(traversalTargetIndex, to, out var isInsideTarget, out var outsideDistance))
-                return false;
-
-            var touchesTarget = combat.DoesTraversalTargetTouch(traversalTargetIndex, from, to);
-            return traversalConfirmation.Observe(
-                touchesTarget,
-                wasInsideTarget,
-                isInsideTarget,
-                outsideDistance,
-                Vector2.Distance(from, to),
-                Time.unscaledTime,
-                combat.Player.TraversalExitDistance,
-                combat.Player.TraversalStationaryDistance,
-                combat.Player.TraversalStopConfirmSeconds);
+            if (!contacts.TryGetValue(id, out var contact)) return;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(sceneView.LogicalArea, screen, null, out var released);
+            contact.Latest = released;
+            if (!canceled && !contact.Consumed)
+            {
+                if (contact.Guard)
+                {
+                    var stroke = released - contact.Start;
+                    if (stroke.magnitude >= combat.Player.Data.Variables.spellSwipeDistance) combat.TryCastSpell(CombatController.ResolveDirection(stroke), CastingSeconds);
+                }
+                else if (contact.Capturing) Commit(contact);
+            }
+            contacts.Remove(id);
+            combat.Player.TrySetGuard(IsGuardHeld);
+            if (!IsGuardHeld) CastingSeconds = 0;
         }
-
-        private void CommitTraversalAttack()
+        private bool ConfirmTraversal(Contact contact, Vector2 from, Vector2 to)
         {
-            combat.ExecuteAttack(new AttackSegment(capturedSwipeStart, capturedSwipeEnd, combat.Player.SegmentWidth), capturedSwipeIsCharged, capturedSwipeChargeLevel);
-            tracking = false;
-            capturingSwipe = false;
-            State = PointerGestureState.None;
-            ChargeProgress = 0f;
-            SecondChargeProgress = 0f;
-            ResetTraversal();
+            var direction = (to - contact.AttackStart).normalized;
+            var crossed = combat.FarthestTraversalTarget(from, to, contact.AttackStart, direction);
+            if (crossed >= 0 && crossed != contact.Target)
+            { contact.Target = crossed; contact.Traversal.Reset(); }
+            if (contact.Target < 0) return false;
+            var moving = Vector2.Distance(from, to) > combat.Player.TraversalStationaryDistance;
+            if (moving) contact.StillSince = -1f;
+            else if (contact.StillSince < 0) contact.StillSince = Time.unscaledTime;
+            if (!moving && contact.StillSince >= 0 && Time.unscaledTime - contact.StillSince >= combat.Player.TraversalStopConfirmSeconds) return true;
+            if (!combat.TryGetTraversalTargetState(contact.Target, from, out var wasInside, out _) || !combat.TryGetTraversalTargetState(contact.Target, to, out var inside, out var outside)) return false;
+            var confirmed = contact.Traversal.Observe(combat.DoesTraversalTargetTouch(contact.Target, from, to), wasInside, inside, outside, Vector2.Distance(from, to), Time.unscaledTime,
+                combat.Player.TraversalExitDistance, combat.Player.TraversalStationaryDistance, combat.Player.TraversalStopConfirmSeconds);
+            return confirmed && !combat.HasTraversalTargetAhead(contact.Target, to, direction);
         }
-
-        private void ResetTraversal()
+        private void Commit(Contact contact)
         {
-            traversalTargetIndex = -1;
-            traversalConfirmation.Reset();
+            combat.ExecuteAttack(new AttackSegment(contact.AttackStart, contact.Latest, combat.Player.SegmentWidth), contact.Charged, contact.ChargeLevel);
+            contact.Consumed = true;
         }
-
-        private bool TryBeginRestGuard(Vector2 previousPosition, Vector2 currentPosition)
+        private void RefreshState()
         {
-            var isCandidate = combat.IsRestGuardCandidate(pressPosition, currentPosition);
-            var pathTouchesGuardZone = combat.DoesPathTouchPlayerGuardZone(previousPosition, currentPosition);
-            if (!guardRestConfirmation.Observe(
-                    pathTouchesGuardZone,
-                    isCandidate,
-                    Vector2.Distance(previousPosition, currentPosition),
-                    Time.unscaledTime,
-                    combat.Player.GuardRestStationaryDistance,
-                    combat.Player.GuardRestConfirmSeconds))
-                return false;
-
-            if (!combat.TryBeginRestGuard(pressPosition, currentPosition))
-                return false;
-
-            ResetGuardRest();
-            return true;
+            ChargeProgress = SecondChargeProgress = 0;
+            var contact = contacts.Values.FirstOrDefault(item => !item.Guard && !item.Consumed);
+            if (contact != null)
+            {
+                ChargeOrigin = contact.Latest;
+                ChargeProgress = contact.Eligible || contact.Charged ? Mathf.Clamp01(contact.Held / combat.Player.CurrentChargeDuration) : 0;
+                SecondChargeProgress = combat.Player.DoubleChargeEnabled ? Mathf.Clamp01(contact.Held / combat.Player.CurrentChargeDuration - 1f) : 0;
+                State = contact.Capturing ? PointerGestureState.Attacking : contact.Charged ? PointerGestureState.Charged : contact.Eligible ? PointerGestureState.Charging : PointerGestureState.Pressed;
+            }
+            else State = IsGuardHeld ? PointerGestureState.Guarding : PointerGestureState.None;
         }
-
-        private bool TryBeginBodyEntryGuard(Vector2 currentPosition)
+        public void CancelAll()
         {
-            if (!guardEntryStartedOutsideBody || !combat.TryBeginBodyEntryGuard(pressPosition, currentPosition)) return false;
-            guardEntryStartedOutsideBody = false;
-            ResetGuardRest();
-            return true;
+            contacts.Clear(); State = PointerGestureState.None; CastingSeconds = ChargeProgress = SecondChargeProgress = 0;
+            combat?.Player?.TrySetGuard(false);
         }
-
-        private void ResetGuardRest() => guardRestConfirmation.Reset();
-
+        public void ResetCasting() => CastingSeconds = 0;
     }
 }

@@ -16,14 +16,23 @@ namespace DungeonSlash
         public bool OwnerCharging { get; }
         public bool EnemyStunned { get; }
         public bool HasAttack => AttackType != TriggerAttackType.None;
+        public MonsterRuntime Target { get; }
+        public SpellData Spell { get; }
+        public MonkFormData Form { get; }
+        public float Damage { get; }
+        public float GuardDamage { get; }
+        public bool Draw { get; }
+        public int EnemyCount { get; }
+        public SwipeDirection Direction => CombatController.ResolveDirection(Segment.End - Segment.Start);
 
-        public EquipmentTriggerContext(AttackSegment segment, TriggerAttackType attackType, TriggerAttackWay attackWay, bool ownerCharging, bool enemyStunned)
+        public EquipmentTriggerContext(AttackSegment segment, TriggerAttackType attackType, TriggerAttackWay attackWay, bool ownerCharging, bool enemyStunned, MonsterRuntime target = null, SpellData spell = null, MonkFormData form = null, float damage = 0, float guardDamage = 0, bool draw = false, int enemyCount = 1)
         {
             Segment = segment;
             AttackType = attackType;
             AttackWay = attackWay;
             OwnerCharging = ownerCharging;
             EnemyStunned = enemyStunned;
+            Target = target; Spell = spell; Form = form; Damage = damage; GuardDamage = guardDamage; Draw = draw; EnemyCount = enemyCount;
         }
 
         public static EquipmentTriggerContext Simple(bool ownerCharging = false, bool enemyStunned = false) =>
@@ -36,6 +45,7 @@ namespace DungeonSlash
         public EquipmentEffect Effect { get; }
         public TargetType Target { get; }
         public EquipmentTriggerContext Context { get; }
+        public string BuffKey { get; }
 
         public EquipmentActivation(EquipmentData source, EquipmentTriggerContext context)
         {
@@ -43,7 +53,10 @@ namespace DungeonSlash
             Effect = source.effect;
             Target = source.targetType;
             Context = context;
+            BuffKey = source.GetInstanceID().ToString();
         }
+        public EquipmentActivation(EquipmentData source, EquipmentAbility ability, EquipmentEffect effect, EquipmentTriggerContext context, string key)
+        { Source = source; Effect = effect; Target = ability.target; Context = context; BuffKey = key; }
     }
 
     internal sealed class EquipmentTriggerState
@@ -116,7 +129,7 @@ namespace DungeonSlash
         public void AddStack() => StackCount++;
     }
 
-    public sealed class RunState
+    public sealed partial class RunState
     {
         public PlayerCombatRuntime Player { get; }
         public int Level { get; private set; } = 1;
@@ -135,6 +148,7 @@ namespace DungeonSlash
         private readonly List<EquipmentTriggerState> equippedEquipment = new();
         private readonly List<EquipmentTriggerState> potions = new();
         private readonly List<EquipmentTriggerState> pendingCombatPotions = new();
+        private readonly List<AbilityTriggerState> pendingPotionAbilities = new();
         private float revivalHealthFraction;
         private float poisonTravelDamage;
 
@@ -142,6 +156,8 @@ namespace DungeonSlash
         {
             settings = balance;
             Player = new PlayerCombatRuntime(playerData);
+            Player.Owner = this;
+            foreach (var spell in playerData.startingSpells) LearnSpell(spell);
             RequiredExperience = balance.initialExperienceRequirement;
             Gold = balance.startingGold;
         }
@@ -165,11 +181,17 @@ namespace DungeonSlash
         public bool TryEquip(EquipmentData item)
         {
             if (item == null || !item.IsRelic || EquippedItems.Contains(item)) return false;
+            if (item.scope == RelicScope.Exclusive && (item.exclusiveCharacter != Player.Data.character || ExclusiveCount >= ExclusiveLimit)) return false;
             EquippedItems.Add(item);
             var state = new EquipmentTriggerState(item);
             equippedEquipment.Add(state);
-            if (state.TryActivate(TriggerType.OnAcquire, EquipmentTriggerContext.Simple(), out var activation))
+            RegisterAbilities(item);
+            Player.ApplyModifiers(item.additionalModifiers);
+            if (item.abilities.Count == 0 && item.grantedSpell != null && RuntimeFor(item.grantedSpell) == null && !LearnSpell(item.grantedSpell)) PendingSpellOffers.Enqueue(item.grantedSpell);
+            if (item.abilities.Count == 0 && state.TryActivate(TriggerType.OnAcquire, EquipmentTriggerContext.Simple(), out var activation))
                 ApplyOwnerActivation(activation, permanent: true);
+            foreach (var ability in abilityStates.Where(ability => ability.Source == item))
+                foreach (var acquired in ability.Trigger(this, TriggerType.OnAcquire, EquipmentTriggerContext.Simple())) ApplyOwnerActivation(acquired, true);
             return true;
         }
 
@@ -197,7 +219,14 @@ namespace DungeonSlash
             if (!EquippedItems.Remove(item)) return false;
             var equipped = equippedEquipment.FirstOrDefault(candidate => candidate.Data == item);
             if (equipped != null) equippedEquipment.Remove(equipped);
+            abilityStates.RemoveAll(state => state.Source == item);
+            for (var i = abilityBuffs.Count - 1; i >= 0; i--)
+                if (abilityBuffs[i].sourceId == item.GetInstanceID()) RemoveBuffAt(i);
+            foreach (var ability in item.abilities.Where(ability => ability.trigger.triggerType == TriggerType.OnAcquire && ability.target == TargetType.Owner))
+                foreach (var effect in ability.effects.Where(effect => effect.effectType == EffectType.StatIncrease && effect.effectStatType != ModifierKind.Gold && effect.effectStatType != ModifierKind.RevivalHealthFraction))
+                    Player.RemoveModifiers(new[] { new StatModifier { kind = effect.effectStatType, value = EffectValue(effect, default) } });
             RemovePermanentEquipmentEffect(item);
+            Player.RemoveModifiers(item.additionalModifiers);
             return true;
         }
 
@@ -205,7 +234,8 @@ namespace DungeonSlash
         {
             var activations = new List<EquipmentActivation>();
             foreach (var state in equippedEquipment)
-                if (state.TryActivate(triggerType, context, out var activation)) activations.Add(activation);
+                if (state.Data.abilities.Count == 0 && state.TryActivate(triggerType, context, out var activation)) activations.Add(activation);
+            foreach (var state in abilityStates) activations.AddRange(state.Trigger(this, triggerType, context));
             return activations;
         }
 
@@ -221,9 +251,21 @@ namespace DungeonSlash
             var state = potions.FirstOrDefault(candidate => candidate.Data == potion);
             if (state == null) return false;
             // A full-health heal is not consumed. The check is based on the generic effect, not a potion subtype.
-            if (potion.effect.effectType == EffectType.Heal && potion.targetType == TargetType.Owner && Player.CurrentHp >= Player.MaxHp) return false;
+            var onlyHealing = potion.abilities.Count > 0 ? potion.abilities.SelectMany(ability => ability.effects).All(effect => effect.effectType == EffectType.Heal) : IsHealingPotion(potion);
+            if (onlyHealing && Player.CurrentHp >= Player.MaxHp) return false;
 
             potions.Remove(state);
+            if (potion.abilities.Count > 0)
+            {
+                for (var i = 0; i < potion.abilities.Count; i++)
+                {
+                    var ability = new AbilityTriggerState(potion, potion.abilities[i], i);
+                    if (ability.Ability.trigger.triggerType == TriggerType.OnCombatStartAfterConsume) pendingPotionAbilities.Add(ability);
+                    else foreach (var activated in ability.Trigger(this, TriggerType.OnConsume, default))
+                        if (activated.Target == TargetType.Owner) ApplyOwnerActivation(activated, false); else PendingAbilityEffects.Enqueue(activated);
+                }
+                return true;
+            }
             if (potion.trigger.triggerType == TriggerType.OnCombatStartAfterConsume)
             {
                 pendingCombatPotions.Add(state);
@@ -237,7 +279,23 @@ namespace DungeonSlash
         public CombatStartEffectResult BeginCombat()
         {
             Player.ClearCombatModifiers();
+            ClearAbilityCombatState();
+            Player.BeginCharacterCombat();
+            if (EventBurdens.ContainsKey("Fatigue")) Player.ApplyCombatModifier(new StatModifier { kind = ModifierKind.AttackCooldownMultiplier, value = -.2f }, 0);
+            if (EventBurdens.ContainsKey("CrackedGuard")) Player.ApplyCombatModifier(new StatModifier { kind = ModifierKind.ShieldMax, value = -8f }, 0);
+            if (EventBurdens.ContainsKey("BluntEdge")) Player.ApplyCombatModifier(new StatModifier { kind = ModifierKind.AllDamageMultiplier, value = -.2f }, 0);
+            EmitEvent(TriggerType.OnCombatStart, default);
+            foreach (var spell in spellbook) spell.BeginCombat(Player);
             var openingDamage = 0f;
+            foreach (var ability in pendingPotionAbilities.ToArray())
+            {
+                ability.BeginCombat();
+                foreach (var activation in ability.Trigger(this, TriggerType.OnCombatStartAfterConsume, default))
+                    if (activation.Target == TargetType.Owner) ApplyOwnerActivation(activation, false);
+                    else if (activation.Effect.effectType == EffectType.Damage) openingDamage += EffectValue(activation.Effect, default);
+                    else PendingAbilityEffects.Enqueue(activation);
+                if (ability.HasReachedMaximum) pendingPotionAbilities.Remove(ability);
+            }
             foreach (var state in pendingCombatPotions.ToArray())
             {
                 if (state.TryActivate(TriggerType.OnCombatStartAfterConsume, EquipmentTriggerContext.Simple(), out var activation))
@@ -255,6 +313,7 @@ namespace DungeonSlash
         public void ApplyOwnerActivation(EquipmentActivation activation, bool permanent)
         {
             if (activation.Target != TargetType.Owner) return;
+            if (ApplyExtendedOwnerEffect(activation, permanent)) return;
             var effect = activation.Effect;
             var count = Mathf.Max(1, effect.effectCount);
             switch (effect.effectType)
@@ -263,17 +322,18 @@ namespace DungeonSlash
                     Player.Heal(effect.effectMagnitude * count);
                     break;
                 case EffectType.StatIncrease:
+                    var value = EffectValue(effect, activation.Context);
                     if (effect.effectStatType == ModifierKind.Gold)
                     {
-                        GainGold(Mathf.RoundToInt(effect.effectMagnitude * count));
+                        GainGold(Mathf.RoundToInt(value));
                         break;
                     }
                     if (effect.effectStatType == ModifierKind.RevivalHealthFraction)
                     {
-                        revivalHealthFraction = Mathf.Max(revivalHealthFraction, effect.effectMagnitude);
+                        revivalHealthFraction = Mathf.Max(revivalHealthFraction, value);
                         break;
                     }
-                    var modifier = new StatModifier { kind = effect.effectStatType, value = effect.effectMagnitude * count };
+                    var modifier = new StatModifier { kind = effect.effectStatType, value = value };
                     if (permanent) Player.ApplyModifiers(new[] { modifier });
                     else Player.ApplyCombatModifier(modifier, effect.effectTime);
                     break;
@@ -282,6 +342,7 @@ namespace DungeonSlash
 
         private void RemovePermanentEquipmentEffect(EquipmentData item)
         {
+            if (item.abilities.Count > 0) return;
             if (item.trigger.triggerType != TriggerType.OnAcquire || item.targetType != TargetType.Owner) return;
             var effect = item.effect;
             if (effect.effectType != EffectType.StatIncrease) return;
@@ -304,6 +365,9 @@ namespace DungeonSlash
             revivalHealthFraction = 0f;
             return true;
         }
+        public static bool IsHealingPotion(EquipmentData item) => item != null && item.IsPotion && (item.abilities.Count > 0
+            ? item.abilities.Any(ability => ability.target == TargetType.Owner && ability.effects.Any(effect => effect.effectType == EffectType.Heal))
+            : item.targetType == TargetType.Owner && item.effect.effectType == EffectType.Heal);
 
         public void ApplyPoison(float travelDamage, float actionSlow)
         {
@@ -322,7 +386,8 @@ namespace DungeonSlash
     public sealed class PerkSystem
     {
         private readonly List<PerkData> allPerks;
-        public PerkSystem(IEnumerable<PerkData> perks) => allPerks = perks.Where(perk => perk != null).ToList();
+        public static bool IsAvailable(PerkData perk) => perk != null && !perk.modifiers.Any(modifier => modifier.kind is ModifierKind.AttackReach or ModifierKind.NormalShieldRegen or ModifierKind.ShieldOnHit or ModifierKind.ShieldOnWeakPoint or ModifierKind.MonsterKillHeal or ModifierKind.ChargeGuardEnabled or ModifierKind.DoubleChargeEnabled or ModifierKind.DamagePerAttackDistance);
+        public PerkSystem(IEnumerable<PerkData> perks) => allPerks = perks.Where(IsAvailable).ToList();
         public IReadOnlyList<PerkData> GetChoices(RunState run, int seed)
         {
             var random = new System.Random(seed + run.Level * 1009 + run.ActivePerks.Count * 71);
@@ -330,6 +395,7 @@ namespace DungeonSlash
         }
         public void Apply(RunState run, PerkData perk)
         {
+            if (!IsAvailable(perk)) return;
             var existing = run.ActivePerks.FirstOrDefault(active => active.Data == perk);
             if (existing != null) existing.AddStack(); else run.ActivePerks.Add(new PerkRuntime(perk));
             run.Player.ApplyModifiers(perk.modifiers);

@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B1_Minion_Skeleton
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b1_minion_skeleton.displayname
+    lastText: "\uD574\uACE8"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b1_minion_skeleton.encounterhint
+    lastText: 
+  textOwnerGuid: f71f3849353c3a741b7371d1d3419ed1
   displayName: "\uD574\uACE8"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 129
   normalAttackInterval: 2
   chargeInterval: 6

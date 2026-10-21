@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -9,15 +10,15 @@ namespace DungeonSlash
     public sealed class RewardPopupView : MonoBehaviour
     {
         [SerializeField] private GameObject panel;
-        [SerializeField] private Text experienceText;
-        [SerializeField] private Text goldText;
+        [SerializeField] private TextMeshProUGUI experienceText;
+        [SerializeField] private TextMeshProUGUI goldText;
         [SerializeField] private Image experienceFill;
         [SerializeField] private Button confirmButton;
         [SerializeField, Min(.1f)] private float experienceAnimationSeconds = .8f;
 
         private Coroutine animation;
 
-        public void Configure(GameObject newPanel, Text newExperienceText, Text newGoldText, Image newExperienceFill, Button newConfirmButton)
+        public void Configure(GameObject newPanel, TextMeshProUGUI newExperienceText, TextMeshProUGUI newGoldText, Image newExperienceFill, Button newConfirmButton)
         {
             panel = newPanel;
             experienceText = newExperienceText;
@@ -63,7 +64,7 @@ namespace DungeonSlash
         {
             SetExperienceVisible(reward.Experience > 0);
             SetGoldVisible(reward.Gold > 0);
-            if (goldText != null && reward.Gold > 0) goldText.text = $"GOLD  +{reward.Gold:0000}";
+            if (goldText != null && reward.Gold > 0) goldText.text = GameText.Format("ui.rewardpopupview.7b064702", reward.Gold);
             if (confirmButton != null)
             {
                 confirmButton.onClick.RemoveAllListeners();
@@ -99,7 +100,7 @@ namespace DungeonSlash
 
         private void SetExperience(int level, int experience, int requirement, float ratio)
         {
-            if (experienceText != null) experienceText.text = $"LV {level}  EXP {experience:0000} / {requirement:0000}";
+            if (experienceText != null) experienceText.text = GameText.Format("ui.rewardpopupview.a0c2a5d4", level, experience, requirement);
             if (experienceFill != null)
             {
                 var normalized = Mathf.Clamp01(ratio);

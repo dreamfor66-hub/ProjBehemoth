@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: DeepBreath
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.deepbreath.displayname
+    lastText: "\uAE4A\uC740 \uD638\uD761"
+  - propertyPath: description
+    key: data.perkdata.deepbreath.description
+    lastText: "\uCC28\uC9C0 \uC644\uB8CC \uC2DC\uAC04 -15%"
+  textOwnerGuid: 7499e5a16f7935e4c854cfb712288e54
   id: DeepBreath
   displayName: "\uAE4A\uC740 \uD638\uD761"
   description: "\uCC28\uC9C0 \uC644\uB8CC \uC2DC\uAC04 -15%"

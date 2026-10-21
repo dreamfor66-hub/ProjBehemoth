@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
   m_Name: Shieldcraft
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.shieldcraft.displayname
+    lastText: "\uBC29\uD328 \uC7A5\uC778"
+  - propertyPath: description
+    key: data.perkdata.shieldcraft.description
+    lastText: "\uCD5C\uB300 \uC2E4\uB4DC +5"
+  textOwnerGuid: 376b1b9a3d24a2740858db807b9c5c05
   id: Shieldcraft
   displayName: "\uBC29\uD328 \uC7A5\uC778"
   description: "\uCD5C\uB300 \uC2E4\uB4DC +5"

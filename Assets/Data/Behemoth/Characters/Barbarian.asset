@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5268a9354c4f1c4090b31c19da88ddf, type: 3}
+  m_Name: Barbarian
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.playercombatdata.barbarian.displayname
+    lastText: "\uBC14\uBC14\uB9AC\uC548"
+  - propertyPath: description
+    key: data.playercombatdata.barbarian.description
+    lastText: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798,
+      \uC2DD\uC744 \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774
+      \uBC1C\uC0B0\uD558\uB294 \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
+  textOwnerGuid: 4c52b075e3e670648bffbe142abba8ee
+  character: 2
+  displayName: "\uBC14\uBC14\uB9AC\uC548"
+  description: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798,
+    \uC2DD\uC744 \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774
+    \uBC1C\uC0B0\uD558\uB294 \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
+  characterColor: {r: 0.95, g: 0.4, b: 0.25, a: 1}
+  portrait: {fileID: 21300000, guid: c8a3d8385928cec45913643ae9437b0a, type: 3}
+  gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
+  startingRelic: {fileID: 11400000, guid: 0fe44b539e1a6604aa354582f4b1c385, type: 2}
+  startingSpells: []
+  monkForms: []
+  mechanics:
+    ragePerNormalAttack: 12
+    rageThreshold: 40
+    rageDrainPerSecond: 25
+    rageIdleDecay: 2
+    enragedDamageMultiplier: 1.3
+    enragedCooldownMultiplier: 0.8
+    enragedDamageReduction: 0.25
+    drawDamageMultiplier: 1.5
+    sheathParrySeconds: 0.1
+    wizardCooldownMultiplier: 0.5
+    castingGuardRegen: 0
+  maxHp: 120
+  shieldMax: 20
+  guardDamageReduction: 1
+  normalShieldRegen: 0
+  brokenShieldRegen: 5
+  baseAttackDamage: 14.5
+  baseChargeDamage: 31
+  attackCooldown: 1.05
+  chargeDuration: 0.95

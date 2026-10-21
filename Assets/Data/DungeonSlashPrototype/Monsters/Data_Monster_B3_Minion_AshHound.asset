@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
   m_Name: Data_Monster_B3_Minion_AshHound
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_minion_ashhound.displayname
+    lastText: "\uC7AC \uC0AC\uB0E5\uAC1C"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_minion_ashhound.encounterhint
+    lastText: 
+  textOwnerGuid: b26dee8bc7d43af4e8bc812b5bf6296e
   displayName: "\uC7AC \uC0AC\uB0E5\uAC1C"
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
   maxHp: 247.5
   normalAttackInterval: 1.05
   chargeInterval: 6.2

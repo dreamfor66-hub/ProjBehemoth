@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: SoulKnight
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.soulknight.displayname
+    lastText: "\uC601\uD63C \uAE30\uC0AC"
+  - propertyPath: hint
+    key: data.encounterdata.soulknight.hint
+    lastText: 
+  textOwnerGuid: 3252c05c6cd29704da9a449f00d9a093
+  id: SoulKnight
+  displayName: "\uC601\uD63C \uAE30\uC0AC"
+  hint: 
+  category: 8
+  members:
+  - monster: {fileID: 11400000, guid: aa4d74befd776d949b9e6a0902de56ab, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

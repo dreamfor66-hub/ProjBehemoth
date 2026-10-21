@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace DungeonSlash
 {
+    public enum MonsterPattern { Standard, MirrorCounter, BloodFury, Orbit, LinkedHeart, Summoner }
     [Serializable]
     public sealed class DirectionalGuardData
     {
@@ -38,9 +39,15 @@ namespace DungeonSlash
     }
 
     [CreateAssetMenu(menuName = "Dungeon Slash/Monster Data")]
-    public sealed class MonsterData : ScriptableObject
+    public sealed class MonsterData : LocalizedData
     {
         public string displayName = "Skeleton";
+        [TextArea] public string encounterHint;
+        public MonsterPattern pattern;
+        public string supportId;
+        public bool diesWithLeader;
+        public float orbitRadius = 170f;
+        public float orbitSpeed = .55f;
         [Min(1f)] public float maxHp = 80f;
         [Min(.1f)] public float normalAttackInterval = 2f;
         [Min(.1f)] public float chargeInterval = 6f;

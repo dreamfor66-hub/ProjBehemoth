@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,11 +8,11 @@ namespace DungeonSlash
     public sealed class ItemTooltipView : MonoBehaviour
     {
         [SerializeField] private GameObject panel;
-        [SerializeField] private Text title;
-        [SerializeField] private Text description;
+        [SerializeField] private TextMeshProUGUI title;
+        [SerializeField] private TextMeshProUGUI description;
         [SerializeField] private RectTransform positionRoot;
 
-        public void Configure(GameObject newPanel, Text newTitle, Text newDescription, RectTransform newPositionRoot)
+        public void Configure(GameObject newPanel, TextMeshProUGUI newTitle, TextMeshProUGUI newDescription, RectTransform newPositionRoot)
         {
             panel = newPanel;
             title = newTitle;
@@ -26,6 +27,16 @@ namespace DungeonSlash
             if (title != null) title.text = itemName;
             if (description != null) description.text = itemDescription;
             panel.SetActive(true);
+            if (description != null && panel.transform is RectTransform box)
+            {
+                var maxHeight = positionRoot != null ? positionRoot.rect.height - 16f : 700f;
+                var height = Mathf.Clamp(description.preferredHeight + 74f, 140f, Mathf.Max(140f, maxHeight));
+                box.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+                var body = description.rectTransform;
+                body.anchorMin = body.anchorMax = new Vector2(.5f, 1f); body.pivot = new Vector2(.5f, 1f); body.anchoredPosition = new Vector2(0, -57);
+                body.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height - 65f);
+                if (title != null) { var heading = title.rectTransform; heading.anchorMin = heading.anchorMax = new Vector2(.5f, 1f); heading.pivot = new Vector2(.5f, 1f); heading.anchoredPosition = new Vector2(0, -12); }
+            }
             PositionAt(screenPosition);
         }
 

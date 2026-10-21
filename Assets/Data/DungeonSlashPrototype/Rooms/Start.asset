@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697c3def854419429c68345d6a1241b, type: 3}
   m_Name: Start
   m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.roomtypedata.start.displayname
+    lastText: Start
+  textOwnerGuid: 55e4c2c08f44c294497d2c9639c789dc
   encounterType: 0
   displayName: Start
   mapColor: {r: 1, g: 0.72, b: 0.18, a: 1}

@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: PerfectMending
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.perfectmending.displayname
+    lastText: "\uC644\uBCBD\uD55C \uC218\uD638"
+  - propertyPath: description
+    key: data.equipmentdata.perfectmending.description
+    lastText: "\uAC00\uB4DC \uC2DC\uC791 0.1\uCD08\uC5D0 \uD37C\uD399\uD2B8\uAC00\uB4DC
+      \uAC00\uB2A5. \uC131\uACF5 \uC2DC \uAC8C\uC774\uC9C0\uB97C \uC4F0\uC9C0 \uC54A\uACE0
+      10\uCD08 \uB3D9\uC548 \uD53C\uD574 +30%. \uAC31\uC2E0\uB418\uBA70 \uC911\uCCA9\uB418\uC9C0
+      \uC54A\uB294\uB2E4."
+  textOwnerGuid: a7e00142310f8114c86ceda0674924c0
+  id: PerfectMending
+  displayName: "\uC644\uBCBD\uD55C \uC218\uD638"
+  description: "\uAC00\uB4DC \uC2DC\uC791 0.1\uCD08\uC5D0 \uD37C\uD399\uD2B8\uAC00\uB4DC
+    \uAC00\uB2A5. \uC131\uACF5 \uC2DC \uAC8C\uC774\uC9C0\uB97C \uC4F0\uC9C0 \uC54A\uACE0
+    10\uCD08 \uB3D9\uC548 \uD53C\uD574 +30%. \uAC31\uC2E0\uB418\uBA70 \uC911\uCCA9\uB418\uC9C0
+    \uC54A\uB294\uB2E4."
+  icon: {fileID: 21300000, guid: f12cb7aa504a78a478ae9c8757f67f37, type: 3}
+  scope: 2
+  exclusiveCharacter: 0
+  startingMechanic: 0
+  power: 2
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - editorLabel: Passive
+    trigger:
+      triggerType: 7
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 11
+      effectMagnitude: 0.1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 13
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - editorLabel: OnPerfectGuard
+    trigger:
+      triggerType: 14
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+    conditions: []
+    target: 0
+    effects:
+    - effectType: 2
+      effectMagnitude: 0.3
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 10
+      effectStatType: 15
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: perfect
+  itemKind: 0
+  price: 80
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    form: {fileID: 0}
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

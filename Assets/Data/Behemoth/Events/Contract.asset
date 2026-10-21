@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: Contract
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.contract.displayname
+    lastText: "\uBD89\uC740 \uC11C\uBA85"
+  - propertyPath: narrative
+    key: data.randomeventdata.contract.narrative
+    lastText: "\uACC4\uC57D\uC11C\uC5D0\uB294 \uD798\uC744 \uBE4C\uB824 \uC900\uB2E4\uB294
+      \uD55C \uC904\uB9CC \uC788\uB2E4. \uC11C\uBA85\uB780\uC740 \uC774\uC0C1\uD558\uB9AC\uB9CC\uD07C
+      \uAE38\uB2E4.\n\n\uD589\uC0C1\uC774 \uBE48 \uC789\uD06C\uBCD1\uC744 \uB4E4\uC5B4
+      \uBCF4\uC778\uB2E4.\n\u201C\uADF8\uB9CC\uD07C\uC758 \uD53C\uAC00 \uC544\uB2C8\uB77C,
+      \uADF8\uB9CC\uD07C\uC758 \uBBF8\uB798\uC785\uB2C8\uB2E4.\u201D"
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.contract.options.0.title
+    lastText: "\uC9E7\uACE0 \uAD75\uAC8C"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.contract.options.0.description
+    lastText: "\uCD5C\uB300 \uCCB4\uB825 -18. \uBD89\uC740 \uACC4\uC57D\uC11C: \uBAA8\uB4E0
+      \uD53C\uD574 +25%."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.contract.options.1.title
+    lastText: "\uBC31\uC9C0 \uACC4\uC57D\uC11C\uB97C \uB418\uD310\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.contract.options.1.description
+    lastText: "\uACE8\uB4DC +25. \uACC4\uC57D\uC758 \uD798\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
+  textOwnerGuid: e8161cf9482d6114b94fca9cda9cfa9e
+  id: Contract
+  displayName: "\uBD89\uC740 \uC11C\uBA85"
+  narrative: "\uACC4\uC57D\uC11C\uC5D0\uB294 \uD798\uC744 \uBE4C\uB824 \uC900\uB2E4\uB294
+    \uD55C \uC904\uB9CC \uC788\uB2E4. \uC11C\uBA85\uB780\uC740 \uC774\uC0C1\uD558\uB9AC\uB9CC\uD07C
+    \uAE38\uB2E4.\n\n\uD589\uC0C1\uC774 \uBE48 \uC789\uD06C\uBCD1\uC744 \uB4E4\uC5B4
+    \uBCF4\uC778\uB2E4.\n\u201C\uADF8\uB9CC\uD07C\uC758 \uD53C\uAC00 \uC544\uB2C8\uB77C,
+    \uADF8\uB9CC\uD07C\uC758 \uBBF8\uB798\uC785\uB2C8\uB2E4.\u201D"
+  illustration: {fileID: 21300000, guid: be3823d317994f9449e82d368dc4fbd6, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  minAct: 1
+  maxAct: 3
+  weight: 1
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/Symbiote
+  referenceExperience: "\uCD5C\uB300 \uCCB4\uB825\uC774\uB77C\uB294 \uC601\uAD6C
+    \uB300\uAC00\uC640 \uAC15\uD55C \uC131\uC7A5, \uB610\uB294 \uB2E4\uB978 \uC18C\uC561
+    \uBCF4\uC0C1."
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uC9E7\uACE0 \uAD75\uAC8C"
+    description: "\uCD5C\uB300 \uCCB4\uB825 -18. \uBD89\uC740 \uACC4\uC57D\uC11C:
+      \uBAA8\uB4E0 \uD53C\uD574 +25%."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 18
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 79f116f127bf73f4db9a2a581e0bce84, type: 2}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uBC31\uC9C0 \uACC4\uC57D\uC11C\uB97C \uB418\uD310\uB2E4"
+    description: "\uACE8\uB4DC +25. \uACC4\uC57D\uC758 \uD798\uC740 \uC5BB\uC9C0
+      \uC54A\uB294\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    effects:
+    - kind: 5
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      encounter: {fileID: 0}
+      flag: 
+      amount: 25
+      stat: 4
