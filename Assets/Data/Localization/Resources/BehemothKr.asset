@@ -2304,33 +2304,36 @@ MonoBehaviour:
     kr: "\uACA9\uB178\uC758 \uC2EC\uC7A5"
     source: Assets/Data/Behemoth/Relics/Starter_Barbarian.asset:displayName
   - key: data.equipmentdata.starter_barbarian.description
-    kr: "\uC77C\uBC18\uACF5\uACA9 \uACA9\uB178 +12. 40 \uC774\uC0C1\uC5D0\uC11C \uCC28\uC9C0\uD558\uBA74
-      \uBD84\uB178 100. \uBD84\uB178 \uC911 \uBB34\uAE30 \uD53C\uD574 +30%, \uACF5\uACA9
+    kr: "\uC77C\uBC18 \uACF5\uACA9 \uC2DC \uACA9\uB178 \uC911\uCCA9\uC744 12 \uC5BB\uC2B5\uB2C8\uB2E4.\n\uACA9\uB178
+      40 \uC774\uC0C1\uC5D0\uC11C \uCC28\uC9C0\uD558\uBA74 \uBD84\uB178 \uC0C1\uD0DC
+      \uC9C4\uC785.\n\uBD84\uB178 \uC911 \uBB34\uAE30 \uD53C\uD574 +30%, \uACF5\uACA9
       \uCFE8\uD0C0\uC784 -20%, \uBC1B\uB294 \uCCB4\uB825 \uD53C\uD574 -25%. \uCD08\uB2F9
-      \uACA9\uB178 25 \uC18C\uBAA8. \uBD84\uB178 \uC911 \uC77C\uBC18\uACF5\uACA9\uC740
-      \uACA9\uB178\uB97C \uCC44\uC6B0\uC9C0 \uC54A\uB294\uB2E4."
+      \uACA9\uB178 25 \uC18C\uBAA8."
     source: Assets/Data/Behemoth/Relics/Starter_Barbarian.asset:description
   - key: data.equipmentdata.starter_monk.displayname
     kr: "\uCD08\uC2DD\uC758 \uB450\uB8E8\uB9C8\uB9AC"
     source: Assets/Data/Behemoth/Relics/Starter_Monk.asset:displayName
   - key: data.equipmentdata.starter_monk.description
-    kr: "\uC77C\uBC18 \uACF5\uACA9 \uC2DC, \uBC29\uD5A5\uC5D0 \uB530\uB77C \uCD08\uC2DD\uC744
-      \uC900\uBE44\uD569\uB2C8\uB2E4. \uC77C\uC815\uD55C \uD328\uD134\uC744 \uB9CC\uB4E0
-      \uD6C4, \uCC28\uC9C0 \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC
-      \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.\n\u2193\u2191 \uBD95\uAD8C: 1.7\uBC30
-      \uCC28\uC9C0 \uD53C\uD574\n\u2191\u2191 \uBC31\uB82C\uAD8C: 0.55\uBC30 \uCC28\uC9C0
-      3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9: \uAC00\uB4DC +5, \uB2E4\uC74C
-      1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574 -50%.\n\u2192\u2191 \uC5F0\uD658:
-      \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C \uCFE8\uD0C0\uC784 -40%."
+    kr: "\uC77C\uBC18 \uACF5\uACA9 \uBC29\uD5A5\uC5D0 \uB530\uB77C \uCD08\uC2DD\uC744
+      \uC900\uBE44\uD569\uB2C8\uB2E4. \uD328\uD134\uC744 \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0
+      \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC \uD560 \uC218
+      \uC788\uC2B5\uB2C8\uB2E4. \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC\uD558\uBA74
+      \uC544\uB798\uC640 \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\n\u2193\u2191
+      \uBD95\uAD8C: 1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2190\u2192 \uBC31\uB82C\uAD8C:
+      0.55\uBC30 \uCC28\uC9C0 3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9:
+      \uAC00\uB4DC +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574
+      -50%.\n\u2192\u2191 \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C
+      \uCFE8\uD0C0\uC784 -40%."
     source: Assets/Data/Behemoth/Relics/Starter_Monk.asset:description
   - key: data.equipmentdata.starter_rogue.displayname
-    kr: "\uB3C5 \uBB3B\uC740 \uCE7C\uB0A0"
+    kr: "\uADF8\uB9BC\uC790 \uB9DD\uD1A0"
     source: Assets/Data/Behemoth/Relics/Starter_Rogue.asset:displayName
   - key: data.equipmentdata.starter_rogue.description
-    kr: "\uC77C\uBC18\uACF5\uACA9 \uC801\uC911 \uC2DC \uB3C5 1\uC911\uCCA9. \uB3C5\uC740
-      \uC911\uCCA9\uB2F9 1 \uD53C\uD574\uB97C 2\uCD08\uB9C8\uB2E4 \uC8FC\uBA70 8\uCD08
-      \uC9C0\uC18D, \uCD5C\uB300 8\uC911\uCCA9. \uBE60\uB978 \uD0C0\uACA9\uACFC \uB3C5\uC758
-      \uC2DC\uAC04\uC744 \uD568\uAED8 \uC774\uC6A9\uD55C\uB2E4."
+    kr: "\uC804\uD22C \uAC1C\uC2DC \uC2DC \uC740\uC2E0\uD558\uBA70, \uC801\uC774
+      \uB208\uCE58\uCC44\uAE30 \uC804\uC5D0 \uBA3C\uC800 \uD589\uB3D9\uD560 \uC218
+      \uC788\uC2B5\uB2C8\uB2E4. \uAC01 \uD589\uB3D9 \uB9C8\uB2E4 25% \uD655\uB960\uB85C
+      \uBC1C\uAC01\uB429\uB2C8\uB2E4. \uC801\uC774 \uACF5\uACA9\uBC1B\uC73C\uBA74
+      \uC989\uC2DC \uBC1C\uAC01\uB429\uB2C8\uB2E4."
     source: Assets/Data/Behemoth/Relics/Starter_Rogue.asset:description
   - key: data.equipmentdata.starter_samurai.displayname
     kr: "\uACE0\uC694\uD55C \uCE7C\uC9D1"
@@ -2346,18 +2349,14 @@ MonoBehaviour:
     source: Assets/Data/Behemoth/Relics/Starter_Warrior.asset:displayName
   - key: data.equipmentdata.starter_warrior.description
     kr: "\uC804\uD22C \uC911 \uAC00\uB4DC\uAC8C\uC774\uC9C0\uAC00 \uCD08\uB2F9 2.5
-      \uD68C\uBCF5\uB41C\uB2E4. \uAC00\uB4DC \uC131\uACF5 \uC2DC \uCCB4\uB825 \uD53C\uD574\uB97C
-      \uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+      \uD68C\uBCF5\uB429\uB2C8\uB2E4."
     source: Assets/Data/Behemoth/Relics/Starter_Warrior.asset:description
   - key: data.equipmentdata.starter_wizard.displayname
     kr: "\uC9D1\uC911\uC758 \uC218\uC815"
     source: Assets/Data/Behemoth/Relics/Starter_Wizard.asset:displayName
   - key: data.equipmentdata.starter_wizard.description
-    kr: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8\uB85C \uC2DC\uC791. \uC8FC\uBB38 \uCFE8\uD0C0\uC784
-      -25%. \uC8FC\uBB38 \uBC1C\uB3D9 \uC2DC \uAC00\uB4DC +2. \uC8FC\uBB38\uC744
-      \uC900\uBE44\uD558\uBA70 \uAC00\uB4DC\uD558\uBA74 \uCD08\uB2F9 \uAC00\uB4DC
-      +0.75. \uC9C0\uD321\uC774\uB85C \uC57D\uC810\uC744 \uAE68\uACE0 \uC8FC\uBB38\uACFC
-      \uBB34\uAE30 \uACF5\uACA9\uC744 \uBC88\uAC08\uC544 \uC0AC\uC6A9\uD55C\uB2E4."
+    kr: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8\uB97C \uAC00\uC9C0\uACE0 \uAC8C\uC784\uC744
+      \uC2DC\uC791\uD569\uB2C8\uB2E4.\n\uC8FC\uBB38 \uCFE8\uD0C0\uC784 -25%"
     source: Assets/Data/Behemoth/Relics/Starter_Wizard.asset:description
   - key: data.equipmentdata.stormbottle.displayname
     kr: "\uBCD1 \uC18D\uC758 \uD3ED\uD48D"
@@ -3212,3 +3211,169 @@ MonoBehaviour:
   - key: ui.stat.shieldmax
     kr: "\uCD5C\uB300 \uAC00\uB4DC\uAC8C\uC774\uC9C0"
     source: Scripts/DungeonSlash/UI/GameFlowExpansion.cs
+  - key: data.buffdata.burn.displayname
+    kr: "\uD654\uC0C1"
+    source: Assets/Data/Behemoth/Buffs/Burn.asset:displayName
+  - key: data.buffdata.burn.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Burn.asset:description
+  - key: data.buffdata.form_burst.displayname
+    kr: "\uBD95\uAD8C"
+    source: Assets/Data/Behemoth/Buffs/Form_Burst.asset:displayName
+  - key: data.buffdata.form_burst.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Burst.asset:description
+  - key: data.buffdata.form_dragon.displayname
+    kr: "\uC720\uB8E1\uC5F0\uD0C0"
+    source: Assets/Data/Behemoth/Buffs/Form_Dragon.asset:displayName
+  - key: data.buffdata.form_dragon.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Dragon.asset:description
+  - key: data.buffdata.form_flow.displayname
+    kr: "\uC5F0\uD658"
+    source: Assets/Data/Behemoth/Buffs/Form_Flow.asset:displayName
+  - key: data.buffdata.form_flow.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Flow.asset:description
+  - key: data.buffdata.form_flow_0_flow.displayname
+    kr: Form_Flow
+    source: Assets/Data/Behemoth/Buffs/Form_Flow_0_flow.asset:displayName
+  - key: data.buffdata.form_flow_0_flow.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Flow_0_flow.asset:description
+  - key: data.buffdata.form_multi.displayname
+    kr: "\uBC31\uB82C\uAD8C"
+    source: Assets/Data/Behemoth/Buffs/Form_Multi.asset:displayName
+  - key: data.buffdata.form_multi.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Multi.asset:description
+  - key: data.buffdata.form_shelter.displayname
+    kr: "\uD638\uC2E0\uACA9"
+    source: Assets/Data/Behemoth/Buffs/Form_Shelter.asset:displayName
+  - key: data.buffdata.form_shelter.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Shelter.asset:description
+  - key: data.buffdata.form_shelter_0_shelter.displayname
+    kr: Form_Shelter
+    source: Assets/Data/Behemoth/Buffs/Form_Shelter_0_shelter.asset:displayName
+  - key: data.buffdata.form_shelter_0_shelter.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Shelter_0_shelter.asset:description
+  - key: data.buffdata.form_tiger.displayname
+    kr: "\uB9F9\uD638\uBD95\uAD8C"
+    source: Assets/Data/Behemoth/Buffs/Form_Tiger.asset:displayName
+  - key: data.buffdata.form_tiger.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Form_Tiger.asset:description
+  - key: data.buffdata.guardianbell_0_damagereduction.displayname
+    kr: GuardianBell
+    source: Assets/Data/Behemoth/Buffs/GuardianBell_0_DamageReduction.asset:displayName
+  - key: data.buffdata.guardianbell_0_damagereduction.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/GuardianBell_0_DamageReduction.asset:description
+  - key: data.buffdata.horizontalflow.displayname
+    kr: "\uAC00\uC18D"
+    source: Assets/Data/Behemoth/Buffs/HorizontalFlow.asset:displayName
+  - key: data.buffdata.horizontalflow.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/HorizontalFlow.asset:description
+  - key: data.buffdata.lightningrod.displayname
+    kr: "\uD53C\uB8B0\uCE68"
+    source: Assets/Data/Behemoth/Buffs/LightningRod.asset:displayName
+  - key: data.buffdata.lightningrod.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/LightningRod.asset:description
+  - key: data.buffdata.painfrenzy_0_weapondamagebonus.displayname
+    kr: PainFrenzy
+    source: Assets/Data/Behemoth/Buffs/PainFrenzy_0_WeaponDamageBonus.asset:displayName
+  - key: data.buffdata.painfrenzy_0_weapondamagebonus.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/PainFrenzy_0_WeaponDamageBonus.asset:description
+  - key: data.buffdata.perfectguardwindow.displayname
+    kr: "\uD37C\uD399\uD2B8 \uAC00\uB4DC"
+    source: Assets/Data/Behemoth/Buffs/PerfectGuardWindow.asset:displayName
+  - key: data.buffdata.perfectguardwindow.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/PerfectGuardWindow.asset:description
+  - key: data.buffdata.perfectmending_0_perfect.displayname
+    kr: PerfectMending
+    source: Assets/Data/Behemoth/Buffs/PerfectMending_0_perfect.asset:displayName
+  - key: data.buffdata.perfectmending_0_perfect.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/PerfectMending_0_perfect.asset:description
+  - key: data.buffdata.poison.displayname
+    kr: "\uB3C5"
+    source: Assets/Data/Behemoth/Buffs/Poison.asset:displayName
+  - key: data.buffdata.poison.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Poison.asset:description
+  - key: data.buffdata.prepareddraw.displayname
+    kr: "\uCC28\uC9C0 \uBC1C\uB3C4 \uC900\uBE44"
+    source: Assets/Data/Behemoth/Buffs/PreparedDraw.asset:displayName
+  - key: data.buffdata.prepareddraw.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/PreparedDraw.asset:description
+  - key: data.buffdata.rage.displayname
+    kr: "\uBD84\uB178"
+    source: Assets/Data/Behemoth/Buffs/Rage.asset:displayName
+  - key: data.buffdata.rage.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Rage.asset:description
+  - key: data.buffdata.sheathed.displayname
+    kr: "\uB0A9\uB3C4"
+    source: Assets/Data/Behemoth/Buffs/Sheathed.asset:displayName
+  - key: data.buffdata.sheathed.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Sheathed.asset:description
+  - key: data.buffdata.sheathparrywindow.displayname
+    kr: "\uB0A9\uB3C4 \uD328\uB9AC"
+    source: Assets/Data/Behemoth/Buffs/SheathParryWindow.asset:displayName
+  - key: data.buffdata.sheathparrywindow.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/SheathParryWindow.asset:description
+  - key: data.buffdata.slow.displayname
+    kr: "\uB454\uD654"
+    source: Assets/Data/Behemoth/Buffs/Slow.asset:displayName
+  - key: data.buffdata.slow.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/Slow.asset:description
+  - key: data.buffdata.spellblade_0_spell-draw.displayname
+    kr: SpellBlade
+    source: Assets/Data/Behemoth/Buffs/SpellBlade_0_spell-draw.asset:displayName
+  - key: data.buffdata.spellblade_0_spell-draw.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/SpellBlade_0_spell-draw.asset:description
+  - key: data.buffdata.staffconduit_0_staff-cast.displayname
+    kr: StaffConduit
+    source: Assets/Data/Behemoth/Buffs/StaffConduit_0_staff-cast.asset:displayName
+  - key: data.buffdata.staffconduit_0_staff-cast.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/StaffConduit_0_staff-cast.asset:description
+  - key: data.buffdata.staffconduit_1_staff-damage.displayname
+    kr: StaffConduit
+    source: Assets/Data/Behemoth/Buffs/StaffConduit_1_staff-damage.asset:displayName
+  - key: data.buffdata.staffconduit_1_staff-damage.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/StaffConduit_1_staff-damage.asset:description
+  - key: data.formdata.rage.displayname
+    kr: "\uBD84\uB178"
+    source: Assets/Data/Behemoth/Forms/Rage.asset:displayName
+  - key: data.combatresourcedata.fury.displayname
+    kr: "\uACA9\uB178"
+    source: Assets/Data/Behemoth/Resources/Fury.asset:displayName
+  - key: data.buffdata.delayeddamage.displayname
+    kr: "\uC9C0\uC5F0 \uD53C\uD574"
+    source: Assets/Data/Behemoth/Buffs/DelayedDamage.asset:displayName
+  - key: data.buffdata.delayeddamage.description
+    kr: 
+    source: Assets/Data/Behemoth/Buffs/DelayedDamage.asset:description
+  - key: ui.stealth.status
+    kr: "\uC740\uC2E0 \xB7 \uD589\uB3D9 \uD6C4 \uBC1C\uAC01 {0:0}%\n\uCC28\uC9C0\xB7\uC8FC\uBB38
+      \uC900\uBE44 \uAC00\uB2A5 \xB7 \uC801 \uC801\uC911 \uC2DC \uC804\uCCB4 \uBC1C\uAC01"
+    source: Assets/Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs
+  - key: ui.stealth.unaware
+    kr: "\uBBF8\uC778\uC9C0"
+    source: Assets/Scripts/DungeonSlash/Combat/Presentation/MonsterView.cs
+  - key: ui.stealth.revealed
+    kr: "\uBC1C\uAC01!"
+    source: Assets/Scripts/DungeonSlash/Combat/Systems/CombatController.cs

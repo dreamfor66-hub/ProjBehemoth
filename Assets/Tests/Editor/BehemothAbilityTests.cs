@@ -28,7 +28,7 @@ namespace DungeonSlash.Tests
         [Test] public void NewUnnamedItemCanComposeTriggersEffectsAndRules_WithoutAnyPowerEnum()
         {
             var item = ScriptableObject.CreateInstance<EquipmentData>(); item.scope = RelicScope.Shared;
-            var onHit = new EquipmentAbility { trigger = new EquipmentTrigger { triggerType = TriggerType.OnHit, triggerCount = 2 }, target = TargetType.Owner };
+            var onHit = new EquipmentAbility { trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.OnHit, triggerCount = 2 }, target = TargetType.Owner };
             onHit.effects.Add(new EquipmentEffect { effectType = EffectType.RestoreGuard, effectMagnitude = 3, effectCount = 1 });
             onHit.effects.Add(new EquipmentEffect { effectType = EffectType.Heal, effectMagnitude = 2, effectCount = 1 });
             item.abilities.Add(onHit);
@@ -91,7 +91,8 @@ namespace DungeonSlash.Tests
             {
                 var run = Run(kind); run.Player.TrySetGuard(true); run.Player.Tick(.3f); new DamageResolver().ApplyToPlayer(run.Player, new DamageRequest(DamageType.MonsterAttack, 8, 8, true)); run.Player.TrySetGuard(false); var shield = run.Player.ShieldCurrent;
                 run.EmitEvent(kind == CharacterKind.Wizard ? TriggerType.OnSpellCast : TriggerType.OnFormFinish, default);
-                Assert.That(run.Player.ShieldCurrent, Is.EqualTo(shield + 2).Within(.001), kind.ToString());
+                var expected=run.Player.Data.startingRelic.abilities.Where(a=>a.trigger.triggerType==(kind==CharacterKind.Wizard?TriggerType.OnSpellCast:TriggerType.OnFormFinish)).SelectMany(a=>a.effects).Where(e=>e.effectType==EffectType.RestoreGuard).Sum(e=>e.effectMagnitude);
+                Assert.That(run.Player.ShieldCurrent, Is.EqualTo(shield + expected).Within(.001), kind.ToString());
             }
         }
         [Test] public void OpeningSpellsRequirePreparation_AndTwoBaseBoltsDoNotKillMazeRat()
@@ -104,7 +105,7 @@ namespace DungeonSlash.Tests
         [Test] public void ElementConditionsApplyToTheSpellBeingPrepared_NotThePreviousAction()
         {
             var item = ScriptableObject.CreateInstance<EquipmentData>();
-            var ability = new EquipmentAbility { trigger = new EquipmentTrigger { triggerType = TriggerType.Passive }, target = TargetType.Owner };
+            var ability = new EquipmentAbility { trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.Passive }, target = TargetType.Owner };
             ability.conditions.Add(new AbilityCondition { kind = AbilityConditionKind.ElementIs, element = SpellElement.Fire });
             ability.effects.Add(new EquipmentEffect { effectType = EffectType.RuleModifier, rule = AbilityRule.CastTimeReduction, effectMagnitude = .4f, effectCount = 1 });
             ability.effects.Add(new EquipmentEffect { effectType = EffectType.RuleModifier, rule = AbilityRule.SpellCooldownReduction, effectMagnitude = .3f, effectCount = 1 });

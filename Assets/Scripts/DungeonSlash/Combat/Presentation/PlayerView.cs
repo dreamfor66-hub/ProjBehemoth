@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,10 +37,11 @@ namespace DungeonSlash
                 cooldown.enabled = coolingDown;
             }
 
-            var bodyColor = runtime.IsAlive ? runtime.IsEnraged ? new Color(1f, .32f, .14f) : runtime.Data.characterColor : Color.gray;
+            var tint = runtime.Buffs?.Active.FirstOrDefault(buff => buff.Data.tintOwner);
+            var bodyColor = runtime.IsAlive ? tint != null ? tint.Data.presentationColor : runtime.Data.characterColor : Color.gray;
             if (body != null) body.color = bodyColor;
             if (head != null) head.color = runtime.IsAlive ? Color.Lerp(bodyColor, Color.white, .35f) : Color.gray;
-            if (guardFx != null) guardFx.color = runtime.IsPerfectWindow ? new Color(1f, .9f, .35f, .9f) : new Color(.3f, .75f, 1f, .55f);
+            if (guardFx != null) guardFx.color = new Color(.3f, .75f, 1f, .55f);
         }
 
         private void SetCooldownProgress(float progress)

@@ -104,7 +104,7 @@ namespace DungeonSlash
                     var spells = content.spells.Where(spell => run.MagicIntroduced && spell != null && run.RuntimeFor(spell) == null).OrderBy(spell => StableHash(spell.id, run.Seed + run.SeenEvents.Count)).Take(3).ToArray();
                     if (spells.Length == 0) { run.GainGold(20); messages.Add(GameText.Get("ui.gameflowexpansion.7b666ce8")); break; }
                     expansionView.ShowModal(GameText.Get("ui.gameflowexpansion.805b2755"), GameText.Get("ui.gameflowexpansion.7c97cdb8"), spells.Select(spell => new PresentationChoice {
-                        Title = MonkFormData.DirectionLabel(spell.defaultSlot) + " " + spell.displayName, Description = RunExpansionView.SpellDetails(spell, run.Player), Icon = spell.icon,
+                        Title = FormData.DirectionLabel(spell.defaultSlot) + " " + spell.displayName, Description = RunExpansionView.SpellDetails(spell, run.Player), Icon = spell.icon,
                         Selected = () => expansionView.OfferSpell(spell, accepted => { messages.Add(accepted ? GameText.Get("ui.gameflowexpansion.d76dc5b8") + spell.displayName : GameText.Get("ui.gameflowexpansion.ef14f1f9")); next(); })
                     })); return;
                 case EventEffectKind.Fight:

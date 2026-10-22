@@ -20,6 +20,8 @@ namespace DungeonSlash
             public readonly TargetTraversalConfirmation Traversal = new();
         }
         private readonly Dictionary<int, Contact> contacts = new();
+        private bool guardActionHeld;
+        private int guardActionSerial;
         public PointerGestureState State { get; private set; }
         public float ChargeProgress { get; private set; }
         public float SecondChargeProgress { get; private set; }
@@ -52,6 +54,7 @@ namespace DungeonSlash
             }
             var held = IsGuardHeld;
             combat.Player.TrySetGuard(held);
+            TrackGuardAction();
             if (held && combat.Run.Spellbook.Count > 0) CastingSeconds += Time.deltaTime; else CastingSeconds = 0;
             RefreshState();
         }
@@ -69,6 +72,7 @@ namespace DungeonSlash
             var contact = new Contact { Start = position, Latest = position, Guard = guard, Eligible = !guard && combat.Player.CanStartCharge() };
             contact.Analyzer.Reset(position, Time.unscaledTime); contacts[id] = contact;
             if (guard) combat.Player.TrySetGuard(true);
+            TrackGuardAction();
         }
         private void Move(int id, Vector2 screen)
         {
@@ -107,7 +111,21 @@ namespace DungeonSlash
             }
             contacts.Remove(id);
             combat.Player.TrySetGuard(IsGuardHeld);
+            TrackGuardAction(canceled);
             if (!IsGuardHeld) CastingSeconds = 0;
+        }
+        private void TrackGuardAction(bool canceled = false)
+        {
+            var held = IsGuardHeld;
+            if (held && !guardActionHeld) guardActionSerial = combat.Run.ActionSerial;
+            // Spells/weapons/potions already complete their action; overlapping guard contacts count once.
+            if (!held && guardActionHeld && !canceled && combat.IsActive && !combat.InputPaused
+                && combat.Run.Awareness.IsConcealed && guardActionSerial == combat.Run.ActionSerial)
+            {
+                combat.Run.StartAction(default);
+                combat.Run.CompleteAction(TriggerType.OnGuardEnded, default);
+            }
+            guardActionHeld = held;
         }
         private bool ConfirmTraversal(Contact contact, Vector2 from, Vector2 to)
         {
@@ -145,6 +163,7 @@ namespace DungeonSlash
         }
         public void CancelAll()
         {
+            guardActionHeld = false;
             contacts.Clear(); State = PointerGestureState.None; CastingSeconds = ChargeProgress = SecondChargeProgress = 0;
             combat?.Player?.TrySetGuard(false);
         }

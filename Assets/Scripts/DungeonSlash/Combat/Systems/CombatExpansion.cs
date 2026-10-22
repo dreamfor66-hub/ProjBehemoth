@@ -70,6 +70,7 @@ namespace DungeonSlash
                 if (poisonDamage > 0)
                 { ShowDamage(monster.Position, GameText.Format("ui.combatexpansion.b419b64", poisonDamage), new Color(.6f, 1f, .25f)); run.EmitEvent(TriggerType.OnPoisonTick, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, runtime, damage: poisonDamage)); }
                 if (!runtime.IsAlive) { ReportKill(runtime, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, runtime)); continue; }
+                if (runtime.IsUnaware) continue;
                 if (runtime.Data.pattern == MonsterPattern.LinkedHeart && string.IsNullOrEmpty(runtime.Data.supportId))
                 {
                     if (runtime.CurrentChargeAttack != null && !string.IsNullOrEmpty(runtime.CurrentChargeAttack.requiredSupportId) && !runtime.LivingSupports.Contains(runtime.CurrentChargeAttack.requiredSupportId))
@@ -159,6 +160,7 @@ namespace DungeonSlash
         }
         private void HitSpell(ActiveMonster target, SpellData spell, float damage)
         {
+            if (damage > 0 || spell.slowSeconds > 0) target.Runtime.NotifyAttacked();
             DealMagic(target, damage, spell.Color);
             if (spell.slowSeconds > 0) target.Runtime.Slow(spell.slowSeconds + Player.Rule(AbilityRule.SlowDurationBonus));
             // No weak-point resolution: spells cannot replace weapon/staff charge attacks.

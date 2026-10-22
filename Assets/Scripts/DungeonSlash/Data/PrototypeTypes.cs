@@ -33,7 +33,9 @@ namespace DungeonSlash
         OnAcquire,
         OnConsume,
         OnCombatStartAfterConsume,
-        Passive, OnCombatStart, OnTimer, OnKill, OnPoisonTick, OnSpellCast, OnSheathParry, OnPerfectGuard, OnFormFinish, OnWeakPointBreak, OnCombatWon, OnAttackResolved
+        Passive, OnCombatStart, OnTimer, OnKill, OnPoisonTick, OnSpellCast, OnSheathParry, OnPerfectGuard, OnFormFinish, OnWeakPointBreak, OnCombatWon, OnAttackResolved,
+        OnBuffStart, OnBuffEnd, OnBuffStack, OnConditionMet, OnGuardStarted, OnGuardEnded, OnBeforeGuard, OnActionPreparing, OnSignal,
+        OnActionCompleted, OnEncounterRevealed
     }
 
     [Flags]
@@ -41,8 +43,9 @@ namespace DungeonSlash
     [Flags]
     public enum TriggerAttackWayFilter { Horizontal = 1, Upward = 2, Downward = 4, All = Horizontal | Upward | Downward }
     public enum ConditionType { None, OwnerCharge, EnemyStun }
-    public enum TargetType { Owner, Enemy }
-    public enum EffectType { ExtraAttack, Damage, StatIncrease, Heal, RestoreGuard, ApplyStatus, DetonatePoison, ReduceSpellCooldown, ResetAttackCooldown, AddRage, StoreGuardDamage, RuleModifier, LearnSpell, UnlockForm, SummonCompanion, EchoSpell, SpreadStatus, Interrupt }
+    public enum TargetType { Owner, Enemy, OwnerStat, ThisBuff, Action, Hit }
+    public enum EffectType { ExtraAttack, Damage, StatIncrease, Heal, RestoreGuard, ApplyStatus, DetonatePoison, ReduceSpellCooldown, ResetAttackCooldown, AddResource, StoreGuardDamage, RuleModifier, LearnSpell, UnlockForm, SummonCompanion, EchoSpell, SpreadStatus, Interrupt,
+        AddBuff, RemoveBuff, ChangeBuffStack, SetBuffStack, SetResource, ApplyForm, ActionDamage, ActionExtraHits, ActionCharge, GuardCost, EmitSignal, PayDeferredDamage, ClearDeferredDamage, MarkAction, ChangeBuffValue }
 
     [Serializable]
     public struct EquipmentTrigger
@@ -56,6 +59,9 @@ namespace DungeonSlash
         [Min(0)] public float cooldownSeconds;
         public bool resetCountEachCombat;
         public bool includeAdditionalAttacks;
+        [Range(0,100)] public float chancePercent;
+        public BuffTagData signal;
+        public bool UsesAttackFilters => triggerType is TriggerType.OnAttack or TriggerType.OnHit or TriggerType.OnKill or TriggerType.OnAttackResolved or TriggerType.OnActionPreparing or TriggerType.OnWeakPointBreak;
     }
 
     [Serializable]
@@ -80,7 +86,12 @@ namespace DungeonSlash
         [Min(1)] public int statusCap;
         public AbilityRule rule;
         public SpellData spell;
-        public MonkFormData form;
+        public FormData form;
+        public BuffData buff;
+        public BuffTagData buffTag;
+        public CombatResourceData resource;
+        public List<EffectValueVariable> valueVariables;
+        public GuardFeedback guardFeedback;
         public CompanionData companion;
         [Min(0)] public int buffUses;
         public TriggerType consumeOn;

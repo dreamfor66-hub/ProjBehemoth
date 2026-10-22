@@ -74,7 +74,7 @@ internal static partial class BehemothContentBuilder
         var item = Asset<EquipmentData>(Root + "/Relics/" + id + ".asset");
         item.id = id; item.displayName = title; item.description = text; item.scope = scope; item.power = power;
         item.icon = Icon(icon); item.itemKind = ShopItemKind.Relic; item.price = 80;
-        item.trigger = new EquipmentTrigger { triggerType = TriggerType.OnAcquire, triggerCount = 1, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All };
+        item.trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.OnAcquire, triggerCount = 1, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All };
         item.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectCount = 1, effectStatType = ModifierKind.NormalDamage, effectMagnitude = 0 };
         item.additionalModifiers.Clear();
         if (power != RelicPower.None) relics[power] = item;
@@ -108,16 +108,16 @@ internal static partial class BehemothContentBuilder
     }
     private static void BuildForms()
     {
-        Form("Burst", "붕권", new[] { SwipeDirection.Up, SwipeDirection.Down }, MonkFinisher.Burst, 2.5f, 1);
-        Form("Multi", "백렬권", new[] { SwipeDirection.Up, SwipeDirection.Up }, MonkFinisher.MultiHit, .65f, 3);
-        Form("Shelter", "호신격", new[] { SwipeDirection.Down, SwipeDirection.Right }, MonkFinisher.Shelter, 1f, 1);
-        Form("Flow", "연환", new[] { SwipeDirection.Right, SwipeDirection.Up }, MonkFinisher.Flow, 1.15f, 1);
-        Form("Tiger", "맹호붕권", new[] { SwipeDirection.Down, SwipeDirection.Up, SwipeDirection.Up }, MonkFinisher.Burst, 4f, 1, RelicPower.LongTiger);
-        Form("Dragon", "유룡연타", new[] { SwipeDirection.Up, SwipeDirection.Down, SwipeDirection.Right }, MonkFinisher.MultiHit, .75f, 4, RelicPower.LongDragon);
+        Form("Burst", "붕권", new[] { SwipeDirection.Up, SwipeDirection.Down }, FormFinisher.Burst, 2.5f, 1);
+        Form("Multi", "백렬권", new[] { SwipeDirection.Up, SwipeDirection.Up }, FormFinisher.MultiHit, .65f, 3);
+        Form("Shelter", "호신격", new[] { SwipeDirection.Down, SwipeDirection.Right }, FormFinisher.Shelter, 1f, 1);
+        Form("Flow", "연환", new[] { SwipeDirection.Right, SwipeDirection.Up }, FormFinisher.Flow, 1.15f, 1);
+        Form("Tiger", "맹호붕권", new[] { SwipeDirection.Down, SwipeDirection.Up, SwipeDirection.Up }, FormFinisher.Burst, 4f, 1, RelicPower.LongTiger);
+        Form("Dragon", "유룡연타", new[] { SwipeDirection.Up, SwipeDirection.Down, SwipeDirection.Right }, FormFinisher.MultiHit, .75f, 4, RelicPower.LongDragon);
     }
-    private static void Form(string id, string title, SwipeDirection[] pattern, MonkFinisher finisher, float damage, int hits, RelicPower power = RelicPower.None)
+    private static void Form(string id, string title, SwipeDirection[] pattern, FormFinisher finisher, float damage, int hits, RelicPower power = RelicPower.None)
     {
-        var form = Asset<MonkFormData>(Root + "/Forms/" + id + ".asset");
+        var form = Asset<FormData>(Root + "/Forms/" + id + ".asset");
         form.displayName = title; form.pattern = pattern; form.finisher = finisher; form.damageMultiplier = damage; form.hits = hits; form.requiredPower = power; EditorUtility.SetDirty(form);
     }
     private static void BuildCharacters()
@@ -132,14 +132,14 @@ internal static partial class BehemothContentBuilder
     }
     private static void Character(CharacterKind kind, string title, string text, StartingMechanic mechanic, string relicTitle, string relicText, float hp, float shield, float reduction, float normal, float charge, float cooldown, float chargeTime, Color color, string icon)
     {
-        var starter = Relic("Starter_" + kind, relicTitle, relicText, RelicScope.Starting, RelicPower.None, icon); starter.startingMechanic = mechanic; starter.exclusiveCharacter = kind; EditorUtility.SetDirty(starter);
+        var starter = Relic("Starter_" + kind, relicTitle, relicText, RelicScope.Starting, RelicPower.None, icon); starter.exclusiveCharacter = kind; EditorUtility.SetDirty(starter);
         var player = Asset<PlayerCombatData>(Root + "/Characters/" + kind + ".asset");
         player.character = kind; player.displayName = title; player.description = text; player.characterColor = color; player.portrait = Icon(icon); player.gameVariables = content.variables;
         player.startingRelic = starter; player.maxHp = hp; player.shieldMax = shield; player.guardDamageReduction = reduction;
         player.normalShieldRegen = kind == CharacterKind.Warrior ? 2.5f : 0; player.brokenShieldRegen = 5f;
         player.baseAttackDamage = normal; player.baseChargeDamage = charge; player.attackCooldown = cooldown; player.chargeDuration = chargeTime;
         player.startingSpells.Clear(); if (kind == CharacterKind.Wizard) player.startingSpells.Add(content.spells.First(spell => spell.id == "EnergyBolt"));
-        player.monkForms.Clear(); if (kind == CharacterKind.Monk) player.monkForms.AddRange(AssetDatabase.FindAssets("t:MonkFormData", new[] { Root + "/Forms" }).Select(guid => AssetDatabase.LoadAssetAtPath<MonkFormData>(AssetDatabase.GUIDToAssetPath(guid))));
+        player.forms.Clear(); if (kind == CharacterKind.Monk) player.forms.AddRange(AssetDatabase.FindAssets("t:FormData", new[] { Root + "/Forms" }).Select(guid => AssetDatabase.LoadAssetAtPath<FormData>(AssetDatabase.GUIDToAssetPath(guid))));
         content.characters.Add(player); EditorUtility.SetDirty(player);
     }
     private static void BuildExclusiveRelics()

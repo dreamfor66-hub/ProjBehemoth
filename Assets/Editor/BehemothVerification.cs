@@ -26,6 +26,24 @@ internal static class BehemothVerification
         }
         else if (command == "tests" || command == "expansion-tests")
             RunTests(command == "expansion-tests");
+        else if (command == "unit-tests")
+        {
+            runner=ScriptableObject.CreateInstance<TestRunnerApi>();runner.RegisterCallbacks(new Results());
+            File.WriteAllText("Logs/Behemoth-TestCases.txt","");
+            runner.Execute(new ExecutionSettings(new Filter{testMode=TestMode.EditMode,testNames=new[]{"DungeonSlash.Tests.BehemothBuffTests","DungeonSlash.Tests.BehemothAbilityTests","DungeonSlash.Tests.BehemothExpansionTests","DungeonSlash.Tests.BehemothFeedbackTests","DungeonSlash.Tests.DungeonSlashCoreTests"}}));
+        }
+        else if (command == "stealth-tests")
+        {
+            BehemothTextEditor.PrepareForVerification();
+            runner = ScriptableObject.CreateInstance<TestRunnerApi>(); runner.RegisterCallbacks(new Results());
+            File.WriteAllText("Logs/Behemoth-TestCases.txt", ""); File.WriteAllText("Logs/Behemoth-PlaytestMatrix.txt", "");
+            runner.Execute(new ExecutionSettings(new Filter { testMode = TestMode.EditMode, testNames = new[] {
+                "DungeonSlash.Tests.BehemothStealthTests",
+                "DungeonSlash.Tests.BehemothPlaytests.Stealth_PhysicalChargeAndLongCast_FreezePackUntilImpact_NoDoubleAction",
+                "DungeonSlash.Tests.BehemothPlaytests.Stealth_PotionsNonDamageSpellGuardAndInvalidInput_RollOnlyCompletedActions",
+                "DungeonSlash.Tests.BehemothPlaytests.Stealth_OtherFiveClasses_ImmediateTimersAndOriginalUI_NoConcealmentDelay"
+            } }));
+        }
         else if (command == "selection") EditorSceneManager.OpenScene("Assets/Scenes/OutGameScene.unity");
         else if (command == "texts-export") BehemothTextEditor.ExportDefault();
         else if (command == "typography") BehemothTypography.FinalizeScenes();

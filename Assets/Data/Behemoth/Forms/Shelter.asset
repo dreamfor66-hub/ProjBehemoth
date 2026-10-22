@@ -24,48 +24,5 @@ MonoBehaviour:
   hits: 1
   requiredPower: 0
   requiresUnlock: 0
-  effects:
-  - effectType: 11
-    effectMagnitude: 0.5
-    effectCount: 1
-    effectAngle: 0
-    effectTime: 0
-    effectStatType: 0
-    scale: 0
-    scaleRatio: 0
-    maximumMagnitude: 0
-    element: 0
-    targets: 0
-    status: 0
-    statusDamage: 0
-    statusCap: 0
-    rule: 31
-    spell: {fileID: 0}
-    form: {fileID: 0}
-    companion: {fileID: 0}
-    buffUses: 1
-    consumeOn: 2
-    consumeAttackTypes: 0
-    buffGroup: shelter
-  - effectType: 4
-    effectMagnitude: 5
-    effectCount: 1
-    effectAngle: 0
-    effectTime: 0
-    effectStatType: 0
-    scale: 0
-    scaleRatio: 0
-    maximumMagnitude: 0
-    element: 0
-    targets: 0
-    status: 0
-    statusDamage: 0
-    statusCap: 0
-    rule: 0
-    spell: {fileID: 0}
-    form: {fileID: 0}
-    companion: {fileID: 0}
-    buffUses: 0
-    consumeOn: 0
-    consumeAttackTypes: 0
-    buffGroup: 
+  buff: {fileID: 11400000, guid: 09c3cbcb8719f8149b8fb2bc4d0e1a15, type: 2}
+  effects: []

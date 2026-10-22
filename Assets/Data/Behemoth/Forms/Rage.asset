@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabbf50f26f13bf4885dcaf0058e2002, type: 3}
+  m_Name: Rage
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.formdata.rage.displayname
+    lastText: "\uBD84\uB178"
+  textOwnerGuid: 69b9751f83fab454ca38302eb98cb3bc
+  displayName: "\uBD84\uB178"
+  pattern: 
+  finisher: 0
+  damageMultiplier: 1
+  hits: 1
+  requiredPower: 0
+  requiresUnlock: 0
+  buff: {fileID: 11400000, guid: e0e6262f5fb8b9d4a9b6353f4057bcf4, type: 2}
+  effects: []

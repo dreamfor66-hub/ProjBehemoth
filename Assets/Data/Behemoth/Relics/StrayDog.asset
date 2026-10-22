@@ -30,14 +30,14 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: dadbc8f9f615e9a4885ce2e16aae38d8, type: 3}
   scope: 3
   exclusiveCharacter: 0
-  startingMechanic: 0
   power: 49
   legacyGrantedSpell: {fileID: 0}
   additionalModifiers: []
   abilities:
-  - editorLabel: OnAcquire
+  - mergeConditionTrigger: 0
+    conditions: []
     trigger:
-      triggerType: 4
+      triggerType: 7
       triggerAttackTypeFilter: 7
       triggerAttackWayFilter: 7
       triggerCount: 1
@@ -46,8 +46,9 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions: []
-    target: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 2
     effects:
     - effectType: 14
       effectMagnitude: 0
@@ -66,12 +67,18 @@ MonoBehaviour:
       rule: 0
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
       companion: {fileID: 11400000, guid: c6d66f4a1e280544b805c94668f5f3e7, type: 2}
       buffUses: 0
       consumeOn: 0
       consumeAttackTypes: 0
       buffGroup: 
-  - editorLabel: OnTimer
+  - mergeConditionTrigger: 0
+    conditions: []
     trigger:
       triggerType: 9
       triggerAttackTypeFilter: 7
@@ -82,7 +89,8 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions: []
+      chancePercent: 100
+      signal: {fileID: 0}
     target: 1
     effects:
     - effectType: 1
@@ -91,8 +99,8 @@ MonoBehaviour:
       effectAngle: 0
       effectTime: 0
       effectStatType: 0
-      scale: 7
-      scaleRatio: 1
+      scale: 0
+      scaleRatio: 0
       maximumMagnitude: 0
       element: 0
       targets: 2
@@ -102,6 +110,17 @@ MonoBehaviour:
       rule: 0
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables:
+      - type: 7
+        buff: {fileID: 0}
+        resource: {fileID: 0}
+        rule: 0
+        multiplier: 1
+        limit: 0
+      guardFeedback: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -120,6 +139,8 @@ MonoBehaviour:
     cooldownSeconds: 0
     resetCountEachCombat: 0
     includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
   condition:
     conditionType: 0
   targetType: 0
@@ -141,6 +162,11 @@ MonoBehaviour:
     rule: 0
     spell: {fileID: 0}
     form: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    resource: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

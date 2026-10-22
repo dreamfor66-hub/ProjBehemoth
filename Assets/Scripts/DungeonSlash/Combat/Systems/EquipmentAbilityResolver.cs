@@ -43,25 +43,29 @@ namespace DungeonSlash
                 }
                 if (effect.effectType == EffectType.SpreadStatus)
                 {
-                    foreach (var target in living.Where(item => item != original)) target.Runtime.AddPoison(Mathf.Max(1, Mathf.RoundToInt(value)), effect.statusDamage, effect.effectTime, Mathf.Max(1, effect.statusCap));
+                    foreach (var target in living.Where(item => item != original)) if(run.CanApplyBuff(effect.buff,context)){target.Runtime.NotifyAttacked();target.Runtime.Buffs.Add(effect.buff,Mathf.Max(1,Mathf.RoundToInt(value)),run,activation.Source,Player.AllDamageMultiplier);}
                     continue;
                 }
                 foreach (var target in targets)
                 {
                     switch (effect.effectType)
                     {
+                        case EffectType.AddBuff: if(effect.buff!=null && run.CanApplyBuff(effect.buff,context)){target.Runtime.NotifyAttacked();target.Runtime.Buffs.Add(effect.buff, Mathf.Max(1, Mathf.RoundToInt(value)), run, activation.Source, Player.AllDamageMultiplier);} break;
+                        case EffectType.RemoveBuff: target.Runtime.Buffs.Remove(effect.buff, effect.buffTag); break;
+                        case EffectType.ApplyForm: if (effect.form != null) target.Runtime.Buffs.Add(effect.form.buff, root: run, source: activation.Source); break;
                         case EffectType.Damage:
                             if (activation.Source != null && activation.Source.abilities.Count == 0) ApplyEquipmentDamage(target, effect);
                             else DealMagic(target, value * (effect.scale is EffectScale.NormalWeapon or EffectScale.ChargeWeapon or EffectScale.DamageDealt ? 1 : Player.AllDamageMultiplier), AbilityColor(effect.element));
                             break;
                         case EffectType.ApplyStatus:
-                            if (effect.status == StatusKind.Poison && Player.Rule(AbilityRule.DisablePoison) <= 0) target.Runtime.AddPoison(Mathf.RoundToInt(value), effect.statusDamage * Player.AllDamageMultiplier, effect.effectTime, Mathf.Max(1, effect.statusCap));
+                            target.Runtime.NotifyAttacked();
+                            if (effect.status == StatusKind.Poison && Player.Rule(AbilityRule.BlockBuff) <= 0) target.Runtime.AddPoison(Mathf.RoundToInt(value), effect.statusDamage * Player.AllDamageMultiplier, effect.effectTime, Mathf.Max(1, effect.statusCap));
                             else if (effect.status == StatusKind.Slow) target.Runtime.Slow(effect.effectTime);
                             else if (effect.status == StatusKind.LightningRod) target.Runtime.LightningRodUntil = Player.CombatTime + effect.effectTime;
                             else if (effect.status == StatusKind.Burn) target.Runtime.AddBurn(effect.statusDamage * Player.AllDamageMultiplier, effect.effectTime);
                             break;
                         case EffectType.DetonatePoison: DealMagic(target, target.Runtime.DetonatePoison(value), AbilityColor(effect.element)); break;
-                        case EffectType.Interrupt: target.Runtime.Interrupt(value); break;
+                        case EffectType.Interrupt: target.Runtime.NotifyAttacked(); target.Runtime.Interrupt(value); break;
                     }
                     if (activation.Source != null)
                         foreach (var data in activation.Source.abilities.SelectMany(ability => ability.effects).Where(node => node.effectType == EffectType.SummonCompanion).Select(node => node.companion))

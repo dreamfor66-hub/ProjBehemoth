@@ -26,12 +26,12 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9df05599a234e8a488a6a70be278bee1, type: 3}
   scope: 2
   exclusiveCharacter: 1
-  startingMechanic: 0
   power: 13
   legacyGrantedSpell: {fileID: 0}
   additionalModifiers: []
   abilities:
-  - editorLabel: OnPoisonTick
+  - mergeConditionTrigger: 0
+    conditions: []
     trigger:
       triggerType: 11
       triggerAttackTypeFilter: 7
@@ -42,7 +42,8 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions: []
+      chancePercent: 100
+      signal: {fileID: 0}
     target: 0
     effects:
     - effectType: 3
@@ -51,8 +52,8 @@ MonoBehaviour:
       effectAngle: 0
       effectTime: 0
       effectStatType: 0
-      scale: 3
-      scaleRatio: 0.12
+      scale: 0
+      scaleRatio: 0
       maximumMagnitude: 0
       element: 0
       targets: 0
@@ -62,6 +63,17 @@ MonoBehaviour:
       rule: 0
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables:
+      - type: 3
+        buff: {fileID: 0}
+        resource: {fileID: 0}
+        rule: 0
+        multiplier: 0.12
+        limit: 0
+      guardFeedback: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -80,6 +92,8 @@ MonoBehaviour:
     cooldownSeconds: 0
     resetCountEachCombat: 0
     includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
   condition:
     conditionType: 0
   targetType: 0
@@ -101,6 +115,11 @@ MonoBehaviour:
     rule: 0
     spell: {fileID: 0}
     form: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    resource: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

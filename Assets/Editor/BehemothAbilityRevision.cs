@@ -34,7 +34,7 @@ internal static partial class BehemothContentBuilder
             var spell = item.grantedSpell;
             var old = item.effect;
             if (old.effectType == EffectType.Damage && !item.IsPotion) { old.scale = EffectScale.NormalWeapon; old.scaleRatio = old.effectMagnitude; old.effectMagnitude = 0; }
-            var ability = new EquipmentAbility { editorLabel = "기존 효과", trigger = item.trigger, target = item.targetType, effects = new() { old } };
+            var ability = new EquipmentAbility { trigger = item.trigger, target = item.targetType, effects = new() { old } };
             ability.trigger.resetCountEachCombat = true;
             if (item.condition.conditionType == ConditionType.EnemyStun) ability.conditions.Add(When(AbilityConditionKind.TargetStunned));
             if (item.condition.conditionType == ConditionType.OwnerCharge) ability.trigger.triggerAttackTypeFilter = TriggerAttackTypeFilter.ChargeAttack;
@@ -52,11 +52,11 @@ internal static partial class BehemothContentBuilder
         { var result = Ability(TriggerType.OnHit, TargetType.Enemy, new[] { effect }, conditions); result.trigger.triggerAttackTypeFilter = filter; return result; }
         EquipmentAbility Acquire(params EquipmentEffect[] effects) => Ability(TriggerType.OnAcquire, TargetType.Owner, effects);
         SpellData S(string id) => content.spells.Single(item => item.id == id);
-        MonkFormData F(string id) => AssetDatabase.LoadAssetAtPath<MonkFormData>(Root + "/Forms/" + id + ".asset");
+        FormData F(string id) => AssetDatabase.LoadAssetAtPath<FormData>(Root + "/Forms/" + id + ".asset");
         var enraged = When(AbilityConditionKind.Enraged);
         var stunned = When(AbilityConditionKind.TargetStunned);
         var horizontal = When(AbilityConditionKind.Horizontal);
-        var drawn = When(AbilityConditionKind.DrawAttack);
+        var drawn = When(AbilityConditionKind.ActionHasTag);
         var formUsed = When(AbilityConditionKind.HasForm);
 
         Recipe(RelicPower.ShieldBash, "가드로 소모한 게이지의 50%를 저장하여 다음 무기 적중에 더한다.", Ability(TriggerType.OnGuard, TargetType.Owner, new[] { Scaled(EffectType.StoreGuardDamage, EffectScale.GuardDamage, .5f) }));
@@ -77,7 +77,7 @@ internal static partial class BehemothContentBuilder
         Recipe(RelicPower.TwinDaggers, "좌·우 일반공격을 연속하면 공격 쿨타임이 4%씩 감소, 최대 40%. 상·하 공격으로 초기화.", Passive(AbilityRule.HorizontalCooldownPerHit, .04f), Passive(AbilityRule.HorizontalCooldownCap, .4f));
         var spread = E(EffectType.SpreadStatus, 2, 8); spread.scale = EffectScale.PoisonStacks; spread.scaleRatio = .5f; spread.statusDamage = 1; spread.statusCap = 8;
         Recipe(RelicPower.VenomSpread, "처치한 적의 독 절반에 2중첩을 더해 다른 적에게 전파한다. 독 피해는 중첩당 1, 최대 8중첩.", Ability(TriggerType.OnKill, TargetType.Enemy, new[] { spread }));
-        Recipe(RelicPower.FirstStrike, "독 부여를 중단한다. 일반 피해 +25%. 각 적에게 첫 무기 적중 피해 +250%.", Acquire(Stat(ModifierKind.NormalDamage, .25f)), Passive(AbilityRule.DisablePoison, 1), Passive(AbilityRule.WeaponDamageBonus, 2.5f, When(AbilityConditionKind.FirstWeaponHit)));
+        Recipe(RelicPower.FirstStrike, "독 부여를 중단한다. 일반 피해 +25%. 각 적에게 첫 무기 적중 피해 +250%.", Acquire(Stat(ModifierKind.NormalDamage, .25f)), Passive(AbilityRule.BlockBuff, 1), Passive(AbilityRule.WeaponDamageBonus, 2.5f, When(AbilityConditionKind.FirstWeaponHit)));
         Recipe(RelicPower.PoisonLeech, "독 피해의 12%만큼 체력을 회복한다.", Ability(TriggerType.OnPoisonTick, TargetType.Owner, new[] { Scaled(EffectType.Heal, EffectScale.DamageDealt, .12f) }));
         Recipe(RelicPower.Executioner, "기절한 대상에게 무기 피해 +35%.", Passive(AbilityRule.WeaponDamageBonus, .35f, stunned));
         Recipe(RelicPower.DeadlyDose, "일반공격이 독을 1중첩 더 부여한다. 독 피해 1, 8초 지속, 최대 8중첩.", Hit(Poison(), TriggerAttackTypeFilter.NormalAttack));
@@ -86,30 +86,30 @@ internal static partial class BehemothContentBuilder
 
         Recipe(RelicPower.DeferredPain, "분노 중 체력 피해를 5초에 나누어 받는다. 분노 종료 시 남은 피해를 받고, 전투 승리 시 사라진다.", Passive(AbilityRule.DeferredDamageSeconds, 5, enraged));
         Recipe(RelicPower.RageLeech, "분노 중 직접 무기 피해의 10%만큼 체력을 회복한다.", Ability(TriggerType.OnHit, TargetType.Owner, new[] { Scaled(EffectType.Heal, EffectScale.DamageDealt, .1f) }, enraged));
-        var sustain = Ability(TriggerType.OnAttack, TargetType.Owner, new[] { E(EffectType.AddRage, 6) }, enraged); sustain.trigger.triggerAttackTypeFilter = TriggerAttackTypeFilter.NormalAttack;
-        Recipe(RelicPower.LongRage, "분노 소모가 초당 8 감소한다. 분노 중 일반공격 시 격노 +6.", Passive(AbilityRule.RageDrainReduction, 8), sustain);
+        var sustain = Ability(TriggerType.OnAttack, TargetType.Owner, new[] { E(EffectType.AddResource, 6) }, enraged); sustain.trigger.triggerAttackTypeFilter = TriggerAttackTypeFilter.NormalAttack;
+        Recipe(RelicPower.LongRage, "분노 소모가 초당 8 감소한다. 분노 중 일반공격 시 격노 +6.", Passive(AbilityRule.ResourceDrainReduction, 8), sustain);
         var rageHit = Passive(AbilityRule.ChargeDamageBonus, 0, enraged); var rageFx = rageHit.effects[0]; rageFx.scale = EffectScale.Rage; rageFx.scaleRatio = .01f; rageHit.effects[0] = rageFx;
-        var rageCost = Ability(TriggerType.OnAttackResolved, TargetType.Owner, new[] { E(EffectType.AddRage, -35) }, enraged); rageCost.trigger.triggerAttackTypeFilter = TriggerAttackTypeFilter.ChargeAttack;
+        var rageCost = Ability(TriggerType.OnAttackResolved, TargetType.Owner, new[] { E(EffectType.AddResource, -35) }, enraged); rageCost.trigger.triggerAttackTypeFilter = TriggerAttackTypeFilter.ChargeAttack;
         Recipe(RelicPower.RageCharge, "분노 중 차지 피해가 현재 격노 1당 1% 증가한다. 해당 차지 후 격노 35 소모.", rageHit, rageCost);
-        Recipe(RelicPower.ExecuteRage, "분노 중 처치 시 격노 +30, 체력 +3.", Ability(TriggerType.OnKill, TargetType.Owner, new[] { E(EffectType.AddRage, 30), E(EffectType.Heal, 3) }, enraged));
+        Recipe(RelicPower.ExecuteRage, "분노 중 처치 시 격노 +30, 체력 +3.", Ability(TriggerType.OnKill, TargetType.Owner, new[] { E(EffectType.AddResource, 30), E(EffectType.Heal, 3) }, enraged));
         Recipe(RelicPower.Unstoppable, "차지는 방향 방벽을 무시한다. 차지 피해 +20%.", Passive(AbilityRule.IgnoreDirectionalGuard, 1), Acquire(Stat(ModifierKind.ChargeDamage, .2f)));
         R(RelicPower.BloodFrenzy).displayName = "피로 지핀 불꽃";
         var fire = When(AbilityConditionKind.ElementIs); fire.element = SpellElement.Fire;
-        Recipe(RelicPower.BloodFrenzy, "잿불 화살 습득. 화염 주문 발동 시 격노 +15. 분노 중 화염 주문 피해 +30%.", Acquire(Learn(S("Ember"))), Ability(TriggerType.OnSpellCast, TargetType.Owner, new[] { E(EffectType.AddRage, 15) }, fire), Passive(AbilityRule.SpellDamageBonus, .3f, enraged, fire));
+        Recipe(RelicPower.BloodFrenzy, "잿불 화살 습득. 화염 주문 발동 시 격노 +15. 분노 중 화염 주문 피해 +30%.", Acquire(Learn(S("Ember"))), Ability(TriggerType.OnSpellCast, TargetType.Owner, new[] { E(EffectType.AddResource, 15) }, fire), Passive(AbilityRule.SpellDamageBonus, .3f, enraged, fire));
         var thunder = E(EffectType.Damage, 8); thunder.element = SpellElement.Lightning;
         var lightning = When(AbilityConditionKind.ElementIs); lightning.element = SpellElement.Lightning;
         Recipe(RelicPower.ThunderousCharge, "스파크 습득. 차지 적중 시 번개 피해 8 추가. 번개 주문 발동 시 가드게이지 +2.", Acquire(Learn(S("Spark"))), Hit(thunder, TriggerAttackTypeFilter.ChargeAttack), Ability(TriggerType.OnSpellCast, TargetType.Owner, new[] { E(EffectType.RestoreGuard, 2) }, lightning));
 
-        Recipe(RelicPower.DrawMastery, "발도 피해 보정이 +50%에서 +85%로 증가.", Passive(AbilityRule.DrawDamageBonus, .35f));
-        var patience = Passive(AbilityRule.DrawDamageBonus, 0); var waitFx = patience.effects[0]; waitFx.scale = EffectScale.SheathTime; waitFx.scaleRatio = .3f; waitFx.maximumMagnitude = 1; patience.effects[0] = waitFx;
+        Recipe(RelicPower.DrawMastery, "발도 피해 보정이 +50%에서 +85%로 증가.", Passive(AbilityRule.ActionDamageBonus, .35f));
+        var patience = Passive(AbilityRule.ActionDamageBonus, 0); var waitFx = patience.effects[0]; waitFx.scale = EffectScale.SheathTime; waitFx.scaleRatio = .3f; waitFx.maximumMagnitude = 1; patience.effects[0] = waitFx;
         Recipe(RelicPower.PatientSheath, "납도 유지 1초당 발도 피해 +30%, 최대 +100%.", patience);
         Recipe(RelicPower.PerfectRiposte, "납도패리 성공 시 공격한 적에게 차지 공격력의 50% 피해.", Ability(TriggerType.OnSheathParry, TargetType.Enemy, new[] { Scaled(EffectType.Damage, EffectScale.ChargeWeapon, .5f) }));
         Recipe(RelicPower.BloodlessDraw, "발도 적중 시 체력 2 회복.", Ability(TriggerType.OnHit, TargetType.Owner, new[] { E(EffectType.Heal, 2) }, drawn));
-        Recipe(RelicPower.DoubleDraw, "발도가 한 번 더 적중한다. 약점에도 추가로 적중한다.", Passive(AbilityRule.DrawExtraHits, 1));
-        var nextDraw = RuleEffect(AbilityRule.DrawDamageBonus, .4f, uses: 1, consume: TriggerType.OnAttack, group: "spell-draw");
+        Recipe(RelicPower.DoubleDraw, "발도가 한 번 더 적중한다. 약점에도 추가로 적중한다.", Passive(AbilityRule.ActionExtraHits, 1));
+        var nextDraw = RuleEffect(AbilityRule.ActionDamageBonus, .4f, uses: 1, consume: TriggerType.OnAttack, group: "spell-draw");
         Recipe(RelicPower.SpellBlade, "에너지 볼트 습득. 납도 중 캐스팅 시간 -25%. 주문 발동 후 다음 발도 피해 +40%.", Acquire(Learn(S("EnergyBolt"))), Passive(AbilityRule.CastTimeReduction, .25f, When(AbilityConditionKind.Sheathed)), Ability(TriggerType.OnSpellCast, TargetType.Owner, new[] { nextDraw }));
         Recipe(RelicPower.ParryRecovery, "납도패리 성공 시 공격 쿨타임 즉시 초기화.", Ability(TriggerType.OnSheathParry, TargetType.Owner, new[] { E(EffectType.ResetAttackCooldown, 0) }));
-        Recipe(RelicPower.ShadowSheath, "납도패리 판정 시간이 0.1초 늘어난다.", Passive(AbilityRule.SheathParryWindowBonus, .1f));
+        Recipe(RelicPower.ShadowSheath, "납도패리 판정 시간이 0.1초 늘어난다.", Passive(AbilityRule.BuffDurationBonus, .1f));
 
         var shelter = When(AbilityConditionKind.FormIs); shelter.form = F("Shelter");
         var multi = When(AbilityConditionKind.FormIs); multi.form = F("Multi");
@@ -175,7 +175,7 @@ internal static partial class BehemothContentBuilder
         Debug.Log("BEHEMOTH_ABILITY_REVISION_READY");
     }
     private static EquipmentAbility Ability(TriggerType trigger, TargetType target, IEnumerable<EquipmentEffect> effects, params AbilityCondition[] conditions)
-        => new() { editorLabel = trigger.ToString(), trigger = new EquipmentTrigger { triggerType = trigger, triggerCount = 1, resetCountEachCombat = true, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All }, target = target, effects = effects.ToList(), conditions = conditions.ToList() };
+        => new() { trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = trigger, triggerCount = 1, resetCountEachCombat = true, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All }, target = target, effects = effects.ToList(), conditions = conditions.ToList() };
     private static EquipmentAbility Add(EquipmentData item, TriggerType trigger, TargetType target, params EquipmentEffect[] effects)
     { var result = Ability(trigger, target, effects); item.abilities.Add(result); return result; }
     private static EquipmentEffect E(EffectType kind, float value, float time = 0) => new() { effectType = kind, effectMagnitude = value, effectCount = 1, effectTime = time };
@@ -193,29 +193,25 @@ internal static partial class BehemothContentBuilder
         foreach (var player in content.characters)
         {
             if (player.character == CharacterKind.Warrior) continue; // User-tuned reference is immutable in this migration.
-            player.mechanics ??= new CharacterMechanicSettings();
             switch (player.character)
             {
                 case CharacterKind.Rogue: player.baseAttackDamage = 5.5f; player.baseChargeDamage = 17; player.attackCooldown = .48f; player.chargeDuration = .65f;
-                    Add(player.startingRelic, TriggerType.OnHit, TargetType.Enemy, Poison()).trigger.triggerAttackTypeFilter = TriggerAttackTypeFilter.NormalAttack;
-                    player.startingRelic.description = "일반공격 적중 시 독 1중첩. 독은 중첩당 1 피해를 2초마다 주며 8초 지속, 최대 8중첩. 빠른 타격과 독의 시간을 함께 이용한다."; break;
+                    BehemothStealthRevision.Configure(player.startingRelic); break;
                 case CharacterKind.Barbarian: player.baseAttackDamage = 14.5f; player.baseChargeDamage = 31; player.attackCooldown = 1.05f; player.chargeDuration = .95f;
-                    player.mechanics.enragedDamageMultiplier = 1.3f; player.mechanics.enragedCooldownMultiplier = .8f; player.mechanics.enragedDamageReduction = .25f; player.mechanics.rageDrainPerSecond = 25;
                     player.startingRelic.description = "일반공격 격노 +12. 40 이상에서 차지하면 분노 100. 분노 중 무기 피해 +30%, 공격 쿨타임 -20%, 받는 체력 피해 -25%. 초당 격노 25 소모. 분노 중 일반공격은 격노를 채우지 않는다."; break;
                 case CharacterKind.Samurai: player.baseAttackDamage = 9; player.baseChargeDamage = 20; player.attackCooldown = .82f; player.chargeDuration = .75f; break;
                 case CharacterKind.Monk: player.baseAttackDamage = 7.5f; player.baseChargeDamage = 13; player.attackCooldown = .55f; player.chargeDuration = .75f;
                     Add(player.startingRelic, TriggerType.OnFormFinish, TargetType.Owner, E(EffectType.RestoreGuard, 2));
                     player.startingRelic.description = "마지막 일반공격 두 방향 → 방향 무관 차지, 사용 시 기록 초기화. 가드해도 연계 유지. 초식 사용 시 가드 +2.\n↑↓ 붕권: 차지 ×1.7.\n↑↑ 백렬권: 차지 ×0.55로 3회, 약점도 3회.\n↓→ 호신격: 차지 ×1, 가드 +3, 다음 체력 피해 -50%.\n→↑ 연환: 차지 ×1, 다음 일반공격 2회 쿨타임 -40%."; break;
                 case CharacterKind.Wizard: player.baseAttackDamage = 13.5f; player.baseChargeDamage = 18; player.attackCooldown = .85f; player.chargeDuration = .8f; player.shieldMax = 20;
-                    player.mechanics.wizardCooldownMultiplier = .75f; player.mechanics.castingGuardRegen = .75f;
                     Add(player.startingRelic, TriggerType.OnSpellCast, TargetType.Owner, E(EffectType.RestoreGuard, 2));
                     player.startingRelic.description = "에너지 볼트로 시작. 주문 쿨타임 -25%. 주문 발동 시 가드 +2. 주문을 준비하며 가드하면 초당 가드 +0.75. 지팡이로 약점을 깨고 주문과 무기 공격을 번갈아 사용한다."; break;
             }
             EditorUtility.SetDirty(player); EditorUtility.SetDirty(player.startingRelic);
         }
-        foreach (var guid in AssetDatabase.FindAssets("t:MonkFormData", new[] { Root }))
+        foreach (var guid in AssetDatabase.FindAssets("t:FormData", new[] { Root }))
         {
-            var form = AssetDatabase.LoadAssetAtPath<MonkFormData>(AssetDatabase.GUIDToAssetPath(guid));
+            var form = AssetDatabase.LoadAssetAtPath<FormData>(AssetDatabase.GUIDToAssetPath(guid));
             form.requiresUnlock = form.pattern.Length > 2; form.effects.Clear();
             form.damageMultiplier = form.name switch { "Burst" => 1.7f, "Multi" => .55f, "Tiger" => 2.5f, "Dragon" => .6f, _ => 1f };
             if (form.name == "Shelter") { var shield = RuleEffect(AbilityRule.DamageReduction, .5f, uses: 1, consume: TriggerType.OnHurt, group: "shelter"); form.effects.Add(shield); form.effects.Add(E(EffectType.RestoreGuard, 3)); }

@@ -34,7 +34,7 @@ namespace DungeonSlash.Tests
             var start = player.CombatTime;
             AttackSegment Stroke(SwipeDirection direction, bool weakpoint = false)
             {
-                var vector = direction == SwipeDirection.Up ? Vector2.up : direction == SwipeDirection.Down ? Vector2.down : Vector2.right;
+                var vector = direction == SwipeDirection.Up ? Vector2.up : direction == SwipeDirection.Down ? Vector2.down : direction==SwipeDirection.Left?Vector2.left:Vector2.right;
                 if (weakpoint && enemy.State == MonsterState.Charging)
                 {
                     var remaining = enemy.WeakPoints.Where(point => !point.IsDestroyed).ToArray();
@@ -51,7 +51,7 @@ namespace DungeonSlash.Tests
                 if (enemy.State == MonsterState.Attacking)
                 { Guard(true); chargeStarted = castStarted = -1; yield return null; continue; }
                 var completingForm = kind == CharacterKind.Monk && player.PreparedForm == null && (enemy.State != MonsterState.Charging || enemy.StateTimer > player.CurrentChargeDuration + player.CurrentCooldown * (2 - player.Combo.Count));
-                var needsCharge = enemy.State == MonsterState.Charging && !completingForm || kind == CharacterKind.Barbarian && !player.IsEnraged && player.Rage >= player.Data.mechanics.rageThreshold || kind == CharacterKind.Monk && player.PreparedForm != null;
+                var needsCharge = enemy.State == MonsterState.Charging && !completingForm || kind == CharacterKind.Barbarian && !(player.ActiveForm != null) && player.Resource(player.Data.resources.FirstOrDefault()) >= 40 || kind == CharacterKind.Monk && player.PreparedForm != null;
                 if (needsCharge)
                 {
                     Guard(false); castStarted = -1;
@@ -73,13 +73,15 @@ namespace DungeonSlash.Tests
                 if (kind == CharacterKind.Samurai) Guard(true); else Guard(false);
                 if (player.CanNormalAttack())
                 {
-                    if (kind == CharacterKind.Samurai && player.SheathElapsed < .12f) { yield return null; continue; }
+                    if (kind == CharacterKind.Samurai && (player.Buffs.Active.FirstOrDefault(b=>b.Data.name=="Sheathed")?.ElapsedTime ?? 0) < .12f) { yield return null; continue; }
                     Guard(false);
                     var direction = SwipeDirection.Right;
                     if (kind == CharacterKind.Monk)
                     {
-                        if (player.Combo.Count == 0) direction = player.ShieldCurrent < player.ShieldMax * .5f && enemy.State != MonsterState.Charging ? SwipeDirection.Down : SwipeDirection.Up;
-                        else direction = player.Combo.Last() == SwipeDirection.Down ? SwipeDirection.Right : enemy.State == MonsterState.Charging && enemy.WeakPoints.Any(point => point.RemainingHits > 1) ? SwipeDirection.Up : SwipeDirection.Down;
+                        var finisher=player.ShieldCurrent<player.ShieldMax*.5f && enemy.State!=MonsterState.Charging?FormFinisher.Shelter:enemy.State==MonsterState.Charging && enemy.WeakPoints.Any(point=>point.RemainingHits>1)?FormFinisher.MultiHit:FormFinisher.Burst;
+                        var pattern=player.Data.forms.First(f=>f.finisher==finisher && !f.requiresUnlock).pattern;
+                        var progress=0;for(var i=1;i<pattern.Length && i<=player.Combo.Count;i++)if(player.Combo.Skip(player.Combo.Count-i).SequenceEqual(pattern.Take(i)))progress=i;
+                        direction=pattern[progress];
                     }
                     combat.ExecuteAttack(Stroke(direction), false); result.attacks++;
                 }

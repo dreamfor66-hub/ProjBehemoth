@@ -30,12 +30,12 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 48f562b97e9fae84a81cbc7f52f943d1, type: 3}
   scope: 0
   exclusiveCharacter: 0
-  startingMechanic: 0
   power: 0
   legacyGrantedSpell: {fileID: 0}
   additionalModifiers: []
   abilities:
-  - editorLabel: "\uAE30\uC874 \uD6A8\uACFC"
+  - mergeConditionTrigger: 0
+    conditions: []
     trigger:
       triggerType: 1
       triggerAttackTypeFilter: 3
@@ -46,7 +46,8 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions: []
+      chancePercent: 100
+      signal: {fileID: 0}
     target: 1
     effects:
     - effectType: 0
@@ -66,6 +67,11 @@ MonoBehaviour:
       rule: 0
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -84,6 +90,8 @@ MonoBehaviour:
     cooldownSeconds: 0
     resetCountEachCombat: 0
     includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
   condition:
     conditionType: 0
   targetType: 1
@@ -105,6 +113,11 @@ MonoBehaviour:
     rule: 0
     spell: {fileID: 0}
     form: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    resource: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

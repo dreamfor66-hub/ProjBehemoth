@@ -52,7 +52,8 @@ namespace DungeonSlash
             if (body != null) body.color = runtime.State == MonsterState.Stunned ? new Color(1f, .86f, .22f) : runtime.Data.bodyColor;
             if (stateLabel != null)
             {
-                stateLabel.text = runtime.Data.displayName
+                stateLabel.text = (runtime.IsUnaware ? GameText.Get("ui.stealth.unaware") + "\n" : "")
+                    + runtime.Data.displayName
                     + (runtime.PoisonStacks > 0 ? GameText.Format("ui.monsterview.500afc29", runtime.PoisonStacks) : "")
                     + (runtime.SlowRemaining > 0 ? GameText.Get("ui.monsterview.95434960") : "")
                     + (runtime.State == MonsterState.Stunned ? GameText.Get("ui.monsterview.16148c80") : "");

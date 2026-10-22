@@ -13,7 +13,6 @@ namespace DungeonSlash
         public Sprite icon;
         public RelicScope scope;
         public CharacterKind exclusiveCharacter;
-        public StartingMechanic startingMechanic;
         [HideInInspector] public RelicPower power; // Migration metadata only; never used by gameplay dispatch.
         [UnityEngine.Serialization.FormerlySerializedAs("grantedSpell"), SerializeField, HideInInspector] private SpellData legacyGrantedSpell;
         public SpellData grantedSpell { get { foreach (var ability in abilities) foreach (var node in ability.effects) if (node.effectType == EffectType.LearnSpell) return node.spell; return legacyGrantedSpell; } set => legacyGrantedSpell = value; }
@@ -35,5 +34,6 @@ namespace DungeonSlash
 
         public bool IsPotion => itemKind == ShopItemKind.Potion;
         public bool IsRelic => itemKind == ShopItemKind.Relic;
+        private void OnValidate()=>BuffUnitData.ValidateGroups(abilities);
     }
 }

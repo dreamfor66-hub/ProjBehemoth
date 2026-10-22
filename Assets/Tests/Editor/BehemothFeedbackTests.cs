@@ -12,7 +12,7 @@ namespace DungeonSlash.Tests
         private RunBalanceSettings balance;
         [SetUp] public void Setup() => balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
         [TearDown] public void Cleanup() => Object.DestroyImmediate(balance);
-        private RunState Run(CharacterKind kind) => new(Content.characters.Single(data => data.character == kind), balance);
+        private RunState Run(CharacterKind kind) { var data=Content.characters.Single(data => data.character == kind); var run=new RunState(data,balance);run.TryEquip(data.startingRelic);run.BeginCombat();return run; }
         private EquipmentData Relic(RelicPower power) => Content.equipment.Single(data => data.power == power);
         private static DamageResult Hit(PlayerCombatRuntime player) => new DamageResolver().ApplyToPlayer(player, new DamageRequest(DamageType.MonsterAttack, 10, 10, true));
         [TestCase(CharacterKind.Warrior)] [TestCase(CharacterKind.Rogue)] [TestCase(CharacterKind.Barbarian)]
@@ -26,16 +26,16 @@ namespace DungeonSlash.Tests
         [Test] public void WarriorRelic_OpensPerfectGuard_RefreshesRatherThanStacks_ExpiresInCombatTime()
         {
             var run = Run(CharacterKind.Warrior); run.TryEquip(Relic(RelicPower.PerfectMending)); var player = run.Player;
-            player.TrySetGuard(true); Assert.That(Hit(player).WasPerfectGuard, Is.True); Assert.That(player.AllDamageMultiplier, Is.EqualTo(1.3f).Within(.001));
-            player.Tick(.2f); player.TrySetGuard(false); player.TrySetGuard(true); Hit(player); Assert.That(player.AllDamageMultiplier, Is.EqualTo(1.3f).Within(.001));
+            player.TrySetGuard(true);player.Buffs.Tick(0); Assert.That(Hit(player).WasPerfectGuard, Is.True);player.Buffs.Tick(0); Assert.That(player.AllDamageMultiplier, Is.EqualTo(1.3f).Within(.001));
+            player.Tick(.2f); player.TrySetGuard(false); player.TrySetGuard(true);player.Buffs.Tick(0); Hit(player);player.Buffs.Tick(0); Assert.That(player.AllDamageMultiplier, Is.EqualTo(1.3f).Within(.001));
             player.TrySetGuard(false); player.Tick(10.01f); Assert.That(player.AllDamageMultiplier, Is.EqualTo(1).Within(.001));
             player.TrySetGuard(true); Hit(player); player.EndCharacterCombat(); Assert.That(player.AllDamageMultiplier, Is.EqualTo(1).Within(.001));
         }
         [Test] public void RageAttackSustain_RequiresExclusiveRelic()
         {
-            var run = Run(CharacterKind.Barbarian); var player = run.Player; player.AddRage(50); player.PrepareAttack(SwipeDirection.Up, true); player.Tick(1);
-            var before = player.Rage; player.PrepareAttack(SwipeDirection.Right, false); Assert.That(player.Rage, Is.EqualTo(before));
-            run.TryEquip(Relic(RelicPower.LongRage)); player.PrepareAttack(SwipeDirection.Right, false); run.EmitEvent(TriggerType.OnAttack, run.ActionContext); Assert.That(player.Rage, Is.EqualTo(before + 6));
+            var run = Run(CharacterKind.Barbarian); var player = run.Player; player.AddResource(player.Data.resources.FirstOrDefault(), 50); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(1);
+            var before = player.Resource(player.Data.resources.FirstOrDefault()); player.PrepareAttack(SwipeDirection.Right, false); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(before));
+            run.TryEquip(Relic(RelicPower.LongRage)); player.PrepareAttack(SwipeDirection.Right, false); run.EmitEvent(TriggerType.OnAttack, run.ActionContext); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(before + 6));
         }
         [Test] public void NormalPackProgression_200Seeds_NoEarlyPack_NoActOneTrio_GradualProbability()
         {

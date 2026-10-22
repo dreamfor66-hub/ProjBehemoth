@@ -28,12 +28,23 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: f12cb7aa504a78a478ae9c8757f67f37, type: 3}
   scope: 2
   exclusiveCharacter: 2
-  startingMechanic: 0
   power: 18
   legacyGrantedSpell: {fileID: 0}
   additionalModifiers: []
   abilities:
-  - editorLabel: OnHit
+  - mergeConditionTrigger: 0
+    conditions:
+    - kind: 16
+      invert: 0
+      threshold: 0.5
+      direction: 0
+      element: 0
+      form: {fileID: 0}
+      buff: {fileID: 11400000, guid: e0e6262f5fb8b9d4a9b6353f4057bcf4, type: 2}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      comparator: 3
+      rule: 0
     trigger:
       triggerType: 1
       triggerAttackTypeFilter: 7
@@ -44,13 +55,8 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions:
-    - kind: 1
-      invert: 0
-      threshold: 0.5
-      direction: 0
-      element: 0
-      form: {fileID: 0}
+      chancePercent: 100
+      signal: {fileID: 0}
     target: 0
     effects:
     - effectType: 3
@@ -59,8 +65,8 @@ MonoBehaviour:
       effectAngle: 0
       effectTime: 0
       effectStatType: 0
-      scale: 3
-      scaleRatio: 0.1
+      scale: 0
+      scaleRatio: 0
       maximumMagnitude: 0
       element: 0
       targets: 0
@@ -70,6 +76,17 @@ MonoBehaviour:
       rule: 0
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables:
+      - type: 3
+        buff: {fileID: 0}
+        resource: {fileID: 0}
+        rule: 0
+        multiplier: 0.1
+        limit: 0
+      guardFeedback: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -88,6 +105,8 @@ MonoBehaviour:
     cooldownSeconds: 0
     resetCountEachCombat: 0
     includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
   condition:
     conditionType: 0
   targetType: 0
@@ -109,6 +128,11 @@ MonoBehaviour:
     rule: 0
     spell: {fileID: 0}
     form: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    resource: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

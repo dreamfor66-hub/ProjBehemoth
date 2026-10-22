@@ -65,16 +65,17 @@ namespace DungeonSlash.Tests
             var samurai = Run(CharacterKind.Samurai).Player; samurai.TrySetGuard(true); samurai.Tick(.15f); Hurt(samurai);
             Assert.That(samurai.CurrentHp, Is.EqualTo(samurai.MaxHp));
             foreach (var kind in System.Enum.GetValues(typeof(CharacterKind)).Cast<CharacterKind>())
-            { var player = Run(kind).Player; player.TrySetGuard(true); player.Tick(.3f); var result = Hurt(player, 5); Assert.That(result.HpDamage, Is.Zero); Assert.That(result.ShieldDamage, Is.EqualTo(5)); }
+            { var player = Run(kind).Player; player.TrySetGuard(true); player.Buffs.Tick(0); player.Tick(.3f); var result = Hurt(player, 5); Assert.That(result.HpDamage, Is.Zero); Assert.That(result.ShieldDamage, Is.EqualTo(5)); }
         }
         [Test] public void Samurai_SheathParryDraw_OrdinaryDrawNotCharge_ResheathCannotSpamParry()
         {
-            var player = Run(CharacterKind.Samurai).Player; player.TrySetGuard(true);
+            var run=Run(CharacterKind.Samurai); var player=run.Player; player.TrySetGuard(true);player.Buffs.Tick(0);
             var result = Hurt(player); Assert.That(result.WasSheathParry, Is.True); Assert.That(result.WasPerfectGuard, Is.False); Assert.That(player.ShieldCurrent, Is.EqualTo(player.ShieldMax)); player.TrySetGuard(false);
-            var first = player.PrepareAttack(SwipeDirection.Right, false);
-            Assert.That(first.Charged, Is.True); Assert.That(first.Multiplier, Is.EqualTo(1.5f)); Assert.That(player.IsSheathed, Is.False);
-            player.TrySetGuard(true); player.Tick(.2f); player.TrySetGuard(false); player.TrySetGuard(true);
-            Assert.That(player.IsPerfectWindow, Is.False);
+            player.Buffs.Tick(0);var first = player.PrepareAttack(SwipeDirection.Right, false);run.EmitEvent(TriggerType.OnAttackResolved,run.ActionContext);player.Buffs.Tick(0);
+            Assert.That(first.Charged, Is.True); Assert.That(first.Multiplier, Is.EqualTo(1.5f)); Assert.That(player.Buffs.Active.Any(b => b.Data.name == "Sheathed"), Is.False);
+            Assert.That(run.ActionContext.AttackType,Is.EqualTo(TriggerAttackType.Charge));
+            player.TrySetGuard(true);player.Buffs.Tick(0); player.Tick(.2f); player.TrySetGuard(false); player.TrySetGuard(true);player.Buffs.Tick(0);
+            Assert.That(player.Buffs.Active.Any(b => b.Data.name == "PerfectGuardWindow"), Is.False);
             var ordinary = player.PrepareAttack(SwipeDirection.Left, false); Assert.That(ordinary.Draw, Is.True); Assert.That(ordinary.Charged, Is.False);
         }
         [Test] public void Poison_TicksExactlyEveryTwoSeconds_AndDetonationConsumesStacks()
@@ -90,27 +91,27 @@ namespace DungeonSlash.Tests
         {
             var player = Run(CharacterKind.Barbarian).Player;
             for (var i = 0; i < 4; i++) player.PrepareAttack(SwipeDirection.Right, false);
-            Assert.That(player.IsEnraged, Is.False); Assert.That(player.Rage, Is.EqualTo(48));
-            player.PrepareAttack(SwipeDirection.Up, true); Assert.That(player.IsEnraged, Is.True); Assert.That(player.Rage, Is.EqualTo(100));
-            var damage = player.NormalAttackDamage; player.Tick(5.01f); Assert.That(player.IsEnraged, Is.False); Assert.That(player.NormalAttackDamage, Is.LessThan(damage));
+            Assert.That((player.ActiveForm != null), Is.False); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(48));
+            player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); Assert.That((player.ActiveForm != null), Is.True); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(100));
+            var damage = player.NormalAttackDamage; player.Tick(5.01f);player.Buffs.Tick(0); Assert.That((player.ActiveForm != null), Is.False); Assert.That(player.NormalAttackDamage, Is.LessThan(damage));
         }
         [Test] public void Barbarian_DeferredDamagePaidOverTime_ClearedOnVictory_AndDumpedOnRageEnd()
         {
             var run = Run(CharacterKind.Barbarian); run.TryEquip(Power(RelicPower.DeferredPain)); var player = run.Player;
-            player.AddRage(60); player.PrepareAttack(SwipeDirection.Up, true); Hurt(player, 20, false);
+            player.AddResource(player.Data.resources.FirstOrDefault(), 60); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); Hurt(player, 20, false);player.Buffs.Tick(0);
             Assert.That(player.CurrentHp, Is.EqualTo(player.MaxHp)); Assert.That(player.DeferredDamage, Is.EqualTo(15).Within(.001f));
             player.Tick(1); Assert.That(player.CurrentHp, Is.EqualTo(player.MaxHp - 3f).Within(.001f));
             player.EndCharacterCombat(); Assert.That(player.DeferredDamage, Is.Zero);
-            run.BeginCombat(); player.AddRage(60); player.PrepareAttack(SwipeDirection.Up, true); player.Tick(3.9f); Hurt(player, 20, false);
-            var before = player.CurrentHp; player.Tick(.2f); Assert.That(player.DeferredDamage, Is.Zero); Assert.That(player.CurrentHp, Is.EqualTo(before - 15f).Within(.001f));
+            run.BeginCombat(); player.AddResource(player.Data.resources.FirstOrDefault(), 60); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(3.9f); Hurt(player, 20, false);player.Buffs.Tick(0);
+            var before = player.CurrentHp; player.Tick(.2f);player.Buffs.Tick(0);player.Buffs.Tick(0); Assert.That(player.DeferredDamage, Is.Zero); Assert.That(player.CurrentHp, Is.EqualTo(before - 15f).Within(.001f));
         }
-        [TestCase(SwipeDirection.Up, SwipeDirection.Down, MonkFinisher.Burst)]
-        [TestCase(SwipeDirection.Up, SwipeDirection.Up, MonkFinisher.MultiHit)]
-        [TestCase(SwipeDirection.Down, SwipeDirection.Right, MonkFinisher.Shelter)]
-        [TestCase(SwipeDirection.Right, SwipeDirection.Up, MonkFinisher.Flow)]
-        public void Monk_LastTwoNormals_ChargeDirectionIndependent_GuardPreservesCombo(SwipeDirection first, SwipeDirection second, MonkFinisher finisher)
+        [TestCase(SwipeDirection.Up, SwipeDirection.Down, FormFinisher.Burst)]
+        [TestCase(SwipeDirection.Up, SwipeDirection.Up, FormFinisher.MultiHit)]
+        [TestCase(SwipeDirection.Down, SwipeDirection.Right, FormFinisher.Shelter)]
+        [TestCase(SwipeDirection.Right, SwipeDirection.Up, FormFinisher.Flow)]
+        public void Monk_LastTwoNormals_ChargeDirectionIndependent_GuardPreservesCombo(SwipeDirection first, SwipeDirection second, FormFinisher finisher)
         {
-            var player = Run(CharacterKind.Monk).Player; player.PrepareAttack(SwipeDirection.Left, false); player.PrepareAttack(first, false); player.TrySetGuard(true); player.TrySetGuard(false); player.PrepareAttack(second, false);
+            var player = Run(CharacterKind.Monk).Player;var authored=player.Data.forms.First(f=>f.finisher==finisher && !f.requiresUnlock);first=authored.pattern[0];second=authored.pattern[1]; player.PrepareAttack(SwipeDirection.Left, false); player.PrepareAttack(first, false); player.TrySetGuard(true); player.TrySetGuard(false); player.PrepareAttack(second, false);
             Assert.That(player.PreparedForm.finisher, Is.EqualTo(finisher));
             var attack = player.PrepareAttack(SwipeDirection.Left, true); Assert.That(attack.Form.finisher, Is.EqualTo(finisher)); Assert.That(player.Combo.Count, Is.Zero);
         }
@@ -124,7 +125,7 @@ namespace DungeonSlash.Tests
         {
             var wizard = Run(CharacterKind.Wizard); var warrior = Run(CharacterKind.Warrior); var spell = content.spells[0];
             wizard.LearnSpell(spell); warrior.LearnSpell(spell); wizard.RuntimeFor(spell).Use(wizard.Player); warrior.RuntimeFor(spell).Use(warrior.Player);
-            Assert.That(wizard.RuntimeFor(spell).Cooldown, Is.EqualTo(warrior.RuntimeFor(spell).Cooldown * wizard.Player.Data.mechanics.wizardCooldownMultiplier));
+            Assert.That(wizard.RuntimeFor(spell).Cooldown, Is.EqualTo(warrior.RuntimeFor(spell).Cooldown * wizard.Player.SpellCooldownMultiplier));
             foreach (var item in content.spells) warrior.LearnSpell(item);
             Assert.That(warrior.Spellbook.Count, Is.EqualTo(4)); Assert.That(warrior.AssignSpell(SwipeDirection.Left, spell), Is.False);
             Assert.That(Enumerable.Range(0, 4).Count(i => warrior.Slot((SwipeDirection)i) == spell), Is.EqualTo(1));

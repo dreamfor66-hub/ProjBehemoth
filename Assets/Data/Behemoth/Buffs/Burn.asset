@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce851a250858b54f83937ffbf20b60f, type: 3}
+  m_Name: Burn
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.buffdata.burn.displayname
+    lastText: "\uD654\uC0C1"
+  - propertyPath: description
+    key: data.buffdata.burn.description
+    lastText: 
+  textOwnerGuid: eec4c7304af3e2a4ca09a4fd82c53275
+  displayName: "\uD654\uC0C1"
+  description: 
+  Tags:
+  - {fileID: 11400000, guid: 97db42a3e12600f478aee4dca8a3b843, type: 2}
+  Units:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 9
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 1
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 1
+      effectMagnitude: 0
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables:
+      - type: 13
+        buff: {fileID: 0}
+        resource: {fileID: 0}
+        rule: 0
+        multiplier: 1
+        limit: 0
+      guardFeedback: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  ReleaseData:
+    Type: 10
+    Time: 4
+    ResetOnStack: 1
+    Count: 1
+  DuplicationData:
+    Type: 2
+    MaxStackCount: 1
+    ConsiderTagIsDuplicate: {fileID: 11400000, guid: 97db42a3e12600f478aee4dca8a3b843, type: 2}
+  showInHud: 0
+  presentationColor: {r: 1, g: 1, b: 1, a: 1}
+  tintOwner: 0
+  form: {fileID: 0}

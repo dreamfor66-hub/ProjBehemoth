@@ -18,23 +18,25 @@ MonoBehaviour:
     lastText: "\uCD08\uC2DD\uC758 \uB450\uB8E8\uB9C8\uB9AC"
   - propertyPath: description
     key: data.equipmentdata.starter_monk.description
-    lastText: "\uC77C\uBC18 \uACF5\uACA9 \uC2DC, \uBC29\uD5A5\uC5D0 \uB530\uB77C
-      \uCD08\uC2DD\uC744 \uC900\uBE44\uD569\uB2C8\uB2E4. \uC77C\uC815\uD55C \uD328\uD134\uC744
-      \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0 \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744
-      \uB9C8\uBB34\uB9AC \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.\n\u2193\u2191 \uBD95\uAD8C:
-      1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2191\u2191 \uBC31\uB82C\uAD8C: 0.55\uBC30
-      \uCC28\uC9C0 3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9: \uAC00\uB4DC
-      +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574 -50%.\n\u2192\u2191
-      \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C \uCFE8\uD0C0\uC784
-      -40%."
+    lastText: "\uC77C\uBC18 \uACF5\uACA9 \uBC29\uD5A5\uC5D0 \uB530\uB77C \uCD08\uC2DD\uC744
+      \uC900\uBE44\uD569\uB2C8\uB2E4. \uD328\uD134\uC744 \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0
+      \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC \uD560 \uC218
+      \uC788\uC2B5\uB2C8\uB2E4. \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC\uD558\uBA74
+      \uC544\uB798\uC640 \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\n\u2193\u2191
+      \uBD95\uAD8C: 1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2190\u2192 \uBC31\uB82C\uAD8C:
+      0.55\uBC30 \uCC28\uC9C0 3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9:
+      \uAC00\uB4DC +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574
+      -50%.\n\u2192\u2191 \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C
+      \uCFE8\uD0C0\uC784 -40%."
   textOwnerGuid: b7e632a71dec8d641b22b585670f40bb
   id: Starter_Monk
   displayName: "\uCD08\uC2DD\uC758 \uB450\uB8E8\uB9C8\uB9AC"
-  description: "\uC77C\uBC18 \uACF5\uACA9 \uC2DC, \uBC29\uD5A5\uC5D0 \uB530\uB77C
-    \uCD08\uC2DD\uC744 \uC900\uBE44\uD569\uB2C8\uB2E4. \uC77C\uC815\uD55C \uD328\uD134\uC744
-    \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0 \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744
-    \uB9C8\uBB34\uB9AC \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.\n\u2193\u2191 \uBD95\uAD8C:
-    1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2191\u2191 \uBC31\uB82C\uAD8C: 0.55\uBC30
+  description: "\uC77C\uBC18 \uACF5\uACA9 \uBC29\uD5A5\uC5D0 \uB530\uB77C \uCD08\uC2DD\uC744
+    \uC900\uBE44\uD569\uB2C8\uB2E4. \uD328\uD134\uC744 \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0
+    \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC \uD560 \uC218
+    \uC788\uC2B5\uB2C8\uB2E4. \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC\uD558\uBA74 \uC544\uB798\uC640
+    \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\n\u2193\u2191 \uBD95\uAD8C:
+    1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2190\u2192 \uBC31\uB82C\uAD8C: 0.55\uBC30
     \uCC28\uC9C0 3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9: \uAC00\uB4DC
     +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574 -50%.\n\u2192\u2191
     \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C \uCFE8\uD0C0\uC784
@@ -42,12 +44,12 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: f701431fffac50e47ac473732848a7a6, type: 3}
   scope: 1
   exclusiveCharacter: 4
-  startingMechanic: 5
   power: 0
   legacyGrantedSpell: {fileID: 0}
   additionalModifiers: []
   abilities:
-  - editorLabel: "\uAE30\uC874 \uD6A8\uACFC"
+  - mergeConditionTrigger: 0
+    conditions: []
     trigger:
       triggerType: 4
       triggerAttackTypeFilter: 7
@@ -58,7 +60,8 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions: []
+      chancePercent: 100
+      signal: {fileID: 0}
     target: 0
     effects:
     - effectType: 2
@@ -78,6 +81,11 @@ MonoBehaviour:
       rule: 0
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -96,6 +104,8 @@ MonoBehaviour:
     cooldownSeconds: 0
     resetCountEachCombat: 0
     includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
   condition:
     conditionType: 0
   targetType: 0
@@ -117,6 +127,11 @@ MonoBehaviour:
     rule: 0
     spell: {fileID: 0}
     form: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    resource: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

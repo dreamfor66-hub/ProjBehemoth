@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d806886f7c8354b8204aae2b3a6210, type: 3}
+  m_Name: CombatStatusCatalog
+  m_EditorClassIdentifier: 
+  poison: {fileID: 11400000, guid: db6f1ff1855ee704da2fe90507ead119, type: 2}
+  burn: {fileID: 11400000, guid: eec4c7304af3e2a4ca09a4fd82c53275, type: 2}
+  slow: {fileID: 11400000, guid: 3339a97c23ac60241bf0a18b11b000e1, type: 2}
+  lightningRod: {fileID: 11400000, guid: cb1e2eb37f66fc24e98d2b6ba9f96da7, type: 2}

@@ -27,4 +27,3 @@ MonoBehaviour:
   minimumSwipeSpeed: 520
   minimumDirectionConsistency: 0.8
   spellSwipeDistance: 65
-  perfectGuardSeconds: 0.14

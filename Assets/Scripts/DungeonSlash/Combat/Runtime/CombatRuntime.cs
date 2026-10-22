@@ -77,24 +77,25 @@ namespace DungeonSlash
 
     public sealed partial class PlayerCombatRuntime
     {
-        public float MaxHp { get; private set; }
+        private float baseMaxHp; public float MaxHp { get => baseMaxHp + BuffStat(ModifierKind.MaxHp); private set => baseMaxHp = value; }
         public float CurrentHp { get; private set; }
-        public float ShieldMax { get; private set; }
+        private float baseShieldMax; public float ShieldMax { get => baseShieldMax + BuffStat(ModifierKind.ShieldMax); private set => baseShieldMax = value; }
         public float ShieldCurrent { get; private set; }
         public ShieldState ShieldState { get; private set; }
         public float AttackCooldownRemaining { get; private set; }
-        public float NormalDamageMultiplier { get; private set; } = 1f;
-        public float ChargeDamageMultiplier { get; private set; } = 1f;
-        public float AttackCooldownMultiplier { get; private set; } = 1f;
-        public float ChargeDurationMultiplier { get; private set; } = 1f;
-        public float StunDamageMultiplier { get; private set; } = 1f;
-        public float ShieldOnHit { get; private set; }
-        public float ShieldOnWeakPoint { get; private set; }
-        public float AttackReach { get; private set; }
-        public float MonsterKillHeal { get; private set; }
-        public float AllDamageMultiplier { get; private set; } = 1f;
-        public float DamageReduction { get; private set; }
-        public float DamagePerAttackDistance { get; private set; }
+        private float baseNormalDamageMultiplier = 1f; public float NormalDamageMultiplier { get => baseNormalDamageMultiplier + BuffStat(ModifierKind.NormalDamage); private set => baseNormalDamageMultiplier = value; }
+        private float baseChargeDamageMultiplier = 1f; public float ChargeDamageMultiplier { get => baseChargeDamageMultiplier + BuffStat(ModifierKind.ChargeDamage); private set => baseChargeDamageMultiplier = value; }
+        private float baseAttackCooldownMultiplier = 1f; public float AttackCooldownMultiplier { get => baseAttackCooldownMultiplier - BuffStat(ModifierKind.AttackCooldownMultiplier); private set => baseAttackCooldownMultiplier = value; }
+        private float baseChargeDurationMultiplier = 1f; public float ChargeDurationMultiplier { get => baseChargeDurationMultiplier - BuffStat(ModifierKind.ChargeDurationMultiplier); private set => baseChargeDurationMultiplier = value; }
+        private float baseStunDamageMultiplier = 1f; public float StunDamageMultiplier { get => baseStunDamageMultiplier + BuffStat(ModifierKind.StunDamageMultiplier); private set => baseStunDamageMultiplier = value; }
+        private float baseShieldOnHit; public float ShieldOnHit { get => baseShieldOnHit + BuffStat(ModifierKind.ShieldOnHit); private set => baseShieldOnHit = value; }
+        private float baseShieldOnWeakPoint; public float ShieldOnWeakPoint { get => baseShieldOnWeakPoint + BuffStat(ModifierKind.ShieldOnWeakPoint); private set => baseShieldOnWeakPoint = value; }
+        private float baseAttackReach; public float AttackReach { get => baseAttackReach + BuffStat(ModifierKind.AttackReach); private set => baseAttackReach = value; }
+        private float baseMonsterKillHeal; public float MonsterKillHeal { get => baseMonsterKillHeal + BuffStat(ModifierKind.MonsterKillHeal); private set => baseMonsterKillHeal = value; }
+        private float allDamageMultiplier = 1f;
+        public float AllDamageMultiplier { get => Mathf.Max(.1f,allDamageMultiplier + BuffStat(ModifierKind.AllDamageMultiplier) + Rule(AbilityRule.DamageMultiplier)); private set => allDamageMultiplier = value; }
+        private float baseDamageReduction; public float DamageReduction { get => baseDamageReduction + BuffStat(ModifierKind.DamageReduction); private set => baseDamageReduction = value; }
+        private float baseDamagePerAttackDistance; public float DamagePerAttackDistance { get => baseDamagePerAttackDistance + BuffStat(ModifierKind.DamagePerAttackDistance); private set => baseDamagePerAttackDistance = value; }
         public bool ChargeGuardEnabled => chargeGuardSources > 0;
         public bool DoubleChargeEnabled => doubleChargeSources > 0;
         public bool IsAlive => CurrentHp > 0f;
@@ -107,15 +108,6 @@ namespace DungeonSlash
         private bool keyboardGuardActive;
         private int chargeGuardSources;
         private int doubleChargeSources;
-        private readonly List<TemporaryModifier> temporaryModifiers = new();
-
-        private readonly struct TemporaryModifier
-        {
-            public StatModifier Modifier { get; }
-            public float ExpiresAt { get; }
-            public TemporaryModifier(StatModifier modifier, float expiresAt) { Modifier = modifier; ExpiresAt = expiresAt; }
-        }
-
         public PlayerCombatRuntime(PlayerCombatData source)
         {
             data = source;
@@ -139,15 +131,15 @@ namespace DungeonSlash
             chargeGuardActive = false;
             keyboardGuardActive = false;
             chargeGuardSources = doubleChargeSources = 0;
-            temporaryModifiers.Clear();
+            Buffs.Clear();
             normalShieldRegen = data.normalShieldRegen;
             brokenShieldRegen = data.brokenShieldRegen;
             ResetCharacter();
         }
 
-        public float NormalAttackDamage => data.baseAttackDamage * NormalDamageMultiplier * AllDamageMultiplier * RageDamageMultiplier;
-        public float ChargeAttackDamage => data.baseChargeDamage * ChargeDamageMultiplier * AllDamageMultiplier * RageDamageMultiplier;
-        public float CurrentCooldown => Mathf.Max(data.minimumAttackCooldown, data.attackCooldown * AttackCooldownMultiplier * RageSpeedMultiplier * FlowSpeedMultiplier * Mathf.Max(.2f, 1 - Rule(AbilityRule.AttackCooldownReduction)));
+        public float NormalAttackDamage => data.baseAttackDamage * NormalDamageMultiplier * AllDamageMultiplier * (1+Rule(AbilityRule.WeaponBaseMultiplier));
+        public float ChargeAttackDamage => data.baseChargeDamage * ChargeDamageMultiplier * AllDamageMultiplier * (1+Rule(AbilityRule.WeaponBaseMultiplier));
+        public float CurrentCooldown => Mathf.Max(data.minimumAttackCooldown, data.attackCooldown * AttackCooldownMultiplier * Mathf.Max(.2f, 1 + Rule(AbilityRule.CooldownMultiplier)) * Mathf.Max(.2f, 1 - Rule(AbilityRule.AttackCooldownReduction)));
         public float CurrentChargeDuration => data.chargeDuration * ChargeDurationMultiplier * Mathf.Max(.2f, 1 - Rule(AbilityRule.ChargeTimeReduction));
         public float ChargeTolerance => data.inputMoveTolerance;
         public float SegmentWidth => data.attackSegmentWidth;
@@ -167,18 +159,18 @@ namespace DungeonSlash
         {
             AttackCooldownRemaining = Mathf.Max(0f, AttackCooldownRemaining - deltaTime);
             TickCharacter(deltaTime);
-            ExpireTemporaryModifiers();
+            CurrentHp = Mathf.Min(CurrentHp, MaxHp); ShieldCurrent = Mathf.Min(ShieldCurrent, ShieldMax);
             if (!IsAlive || IsGuarding) return;
 
             if (ShieldState == ShieldState.Broken)
             {
-                ShieldCurrent = Mathf.Min(ShieldMax, ShieldCurrent + brokenShieldRegen * deltaTime);
+                ShieldCurrent = Mathf.Min(ShieldMax, ShieldCurrent + (brokenShieldRegen + BuffStat(ModifierKind.BrokenShieldRegen)) * deltaTime);
                 if (ShieldCurrent >= ShieldMax)
                     ShieldState = ShieldState.Ready;
             }
             else
             {
-                ShieldCurrent = Mathf.Min(ShieldMax, ShieldCurrent + normalShieldRegen * deltaTime);
+                ShieldCurrent = Mathf.Min(ShieldMax, ShieldCurrent + (normalShieldRegen + BuffStat(ModifierKind.NormalShieldRegen)) * deltaTime);
                 if (ShieldCurrent < ShieldMax)
                     ShieldState = ShieldState.Recharging;
                 else if (ShieldState == ShieldState.Recharging)
@@ -247,85 +239,71 @@ namespace DungeonSlash
                 ApplyModifier(modifier, -1f);
         }
 
-        /// <summary>Applies a stat effect for one combat. A zero duration lasts until the combat ends.</summary>
+        /// <summary>Compatibility API. Timed effects use the common Buff manager.</summary>
         public void ApplyCombatModifier(StatModifier modifier, float duration)
         {
-            ApplyModifier(modifier, 1f);
-            temporaryModifiers.Add(new TemporaryModifier(modifier, duration > 0f ? CombatTime + duration : float.PositiveInfinity));
+            var buff = ScriptableObject.CreateInstance<BuffData>(); buff.hideFlags = HideFlags.HideAndDontSave;
+            buff.name="runtime-stat-"+System.Guid.NewGuid().ToString("N");
+            buff.ReleaseData = new BuffReleaseData { Type = duration > 0 ? BuffReleaseType.Time : BuffReleaseType.Stage, Time = duration, Count = 1 };
+            buff.Units.Add(new EquipmentAbility { trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.Passive }, target = TargetType.OwnerStat,
+                effects = new List<EquipmentEffect> { new EquipmentEffect { effectType = EffectType.StatIncrease, effectStatType = modifier.kind, effectMagnitude = modifier.value, effectCount = 1 } } });
+            Buffs.Add(buff, root: Owner); Buffs.Tick(0);
         }
-
-        public void ClearCombatModifiers()
-        {
-            foreach (var modifier in temporaryModifiers) ApplyModifier(modifier.Modifier, -1f);
-            temporaryModifiers.Clear();
-        }
-
-        private void ExpireTemporaryModifiers()
-        {
-            var now = CombatTime;
-            for (var index = temporaryModifiers.Count - 1; index >= 0; index--)
-            {
-                if (temporaryModifiers[index].ExpiresAt > now) continue;
-                ApplyModifier(temporaryModifiers[index].Modifier, -1f);
-                temporaryModifiers.RemoveAt(index);
-            }
-        }
-
+        public void ClearCombatModifiers() => Buffs.EndCombat();
         private void ApplyModifier(StatModifier modifier, float direction)
         {
             var value = modifier.value * direction;
             switch (modifier.kind)
             {
-                case ModifierKind.NormalDamage: NormalDamageMultiplier += value; break;
-                case ModifierKind.ChargeDamage: ChargeDamageMultiplier += value; break;
-                case ModifierKind.AttackCooldownMultiplier: AttackCooldownMultiplier = Mathf.Max(.1f, AttackCooldownMultiplier - value); break;
-                case ModifierKind.ChargeDurationMultiplier: ChargeDurationMultiplier = Mathf.Max(.2f, ChargeDurationMultiplier - value); break;
-                case ModifierKind.MaxHp: MaxHp = Mathf.Max(1f, MaxHp + value); CurrentHp = Mathf.Clamp(CurrentHp + (direction > 0f ? Mathf.Max(0, modifier.value) : 0f), 0f, MaxHp); break;
+                case ModifierKind.NormalDamage: baseNormalDamageMultiplier += value; break;
+                case ModifierKind.ChargeDamage: baseChargeDamageMultiplier += value; break;
+                case ModifierKind.AttackCooldownMultiplier: baseAttackCooldownMultiplier = Mathf.Max(.1f, baseAttackCooldownMultiplier - value); break;
+                case ModifierKind.ChargeDurationMultiplier: baseChargeDurationMultiplier = Mathf.Max(.2f, baseChargeDurationMultiplier - value); break;
+                case ModifierKind.MaxHp: baseMaxHp = Mathf.Max(1f, baseMaxHp + value); CurrentHp = Mathf.Clamp(CurrentHp + (direction > 0f ? Mathf.Max(0, modifier.value) : 0f), 0f, baseMaxHp); break;
                 case ModifierKind.Heal: if (direction > 0f) Heal(modifier.value); break;
-                case ModifierKind.ShieldMax: ShieldMax = Mathf.Max(0f, ShieldMax + value); ShieldCurrent = Mathf.Clamp(ShieldCurrent + (direction > 0f ? Mathf.Max(0, modifier.value) : 0f), 0f, ShieldMax); break;
+                case ModifierKind.ShieldMax: baseShieldMax = Mathf.Max(0f, baseShieldMax + value); ShieldCurrent = Mathf.Clamp(ShieldCurrent + (direction > 0f ? Mathf.Max(0, modifier.value) : 0f), 0f, baseShieldMax); break;
                 case ModifierKind.NormalShieldRegen: normalShieldRegen += value; break;
                 case ModifierKind.BrokenShieldRegen: brokenShieldRegen += value; break;
-                case ModifierKind.ShieldOnHit: ShieldOnHit += value; break;
-                case ModifierKind.ShieldOnWeakPoint: ShieldOnWeakPoint += value; break;
-                case ModifierKind.StunDamageMultiplier: StunDamageMultiplier += value; break;
-                case ModifierKind.AttackReach: AttackReach += value; break;
-                case ModifierKind.MonsterKillHeal: MonsterKillHeal += value; break;
-                case ModifierKind.AllDamageMultiplier: AllDamageMultiplier = Mathf.Max(.1f, AllDamageMultiplier + value); break;
-                case ModifierKind.DamageReduction: DamageReduction = Mathf.Clamp01(DamageReduction + value); break;
+                case ModifierKind.ShieldOnHit: baseShieldOnHit += value; break;
+                case ModifierKind.ShieldOnWeakPoint: baseShieldOnWeakPoint += value; break;
+                case ModifierKind.StunDamageMultiplier: baseStunDamageMultiplier += value; break;
+                case ModifierKind.AttackReach: baseAttackReach += value; break;
+                case ModifierKind.MonsterKillHeal: baseMonsterKillHeal += value; break;
+                case ModifierKind.AllDamageMultiplier: allDamageMultiplier = Mathf.Max(.1f, allDamageMultiplier + value); break;
+                case ModifierKind.DamageReduction: baseDamageReduction = Mathf.Clamp01(baseDamageReduction + value); break;
                 case ModifierKind.ChargeGuardEnabled: chargeGuardSources += direction > 0f ? 1 : -1; break;
                 case ModifierKind.DoubleChargeEnabled: doubleChargeSources += direction > 0f ? 1 : -1; break;
-                case ModifierKind.DamagePerAttackDistance: DamagePerAttackDistance += value; break;
+                case ModifierKind.DamagePerAttackDistance: baseDamagePerAttackDistance += value; break;
             }
         }
 
         internal DamageResult ReceiveDamage(DamageRequest request)
         {
             var context = new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, request.Source?.IsStunned ?? false, request.Source);
-            if (IsSheathParryWindow)
-            { OnSheathParry(context); Owner?.EmitEvent(TriggerType.OnGuard, context); return new DamageResult(0f, 0f, false, true, false, true); }
-            var perfect = IsPerfectWindow && IsGuarding && request.IsGuardable;
-            if (perfect)
-            {
-                OnPerfectGuard(context); Owner?.EmitEvent(TriggerType.OnGuard, context);
-                return new DamageResult(0f, 0f, false, true, true);
-            }
             if (IsGuarding && request.IsGuardable)
             {
-                ShieldCurrent = Mathf.Max(0f, ShieldCurrent - request.ShieldDamage);
+                var mutable = new ActionEffectContext();
+                context = new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, request.Source, guardDamage: request.ShieldDamage, mutable: mutable);
+                Owner?.EmitEvent(TriggerType.OnBeforeGuard, context);
+                var guardDamage = request.ShieldDamage * Mathf.Max(0, mutable.GuardCostMultiplier);
+                ShieldCurrent = Mathf.Max(0f, ShieldCurrent - guardDamage);
                 if (ShieldCurrent <= 0f)
                     ShieldState = ShieldState.Broken;
                 const float chip = 0f;
                 ApplyCharacterDamage(chip);
                 GuardHitCount++;
                 Owner?.EmitEvent(TriggerType.OnGuard, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, request.Source, guardDamage: request.ShieldDamage));
-                return new DamageResult(chip, request.ShieldDamage, !IsAlive, true);
+                return new DamageResult(chip, guardDamage, !IsAlive, true, mutable.GuardFeedback == GuardFeedback.Perfect, mutable.GuardFeedback == GuardFeedback.Parry);
             }
 
-            var reducedDamage = request.RawDamage * (1f - EffectiveDamageReduction);
+            var hitPacket=new ActionEffectContext();
+            var incoming=new EquipmentTriggerContext(default,TriggerAttackType.None,TriggerAttackWay.None,false,false,request.Source,damage:request.RawDamage,mutable:hitPacket);
+            var hitEffects=Owner?.BeginHit(TriggerType.OnHurt,incoming);
+            var reducedDamage = request.RawDamage * Mathf.Max(0,1+hitPacket.DamageBonus) * (1f - EffectiveDamageReduction);
             ApplyCharacterDamage(reducedDamage);
             var hurt = new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, request.Source, damage: reducedDamage);
             Owner?.CompleteAction(TriggerType.OnHurt, hurt);
-            Owner?.EmitEvent(TriggerType.OnHurt, hurt);
+            if(hitEffects!=null)Owner.FinishHit(hitEffects,reducedDamage);
             return new DamageResult(reducedDamage, 0f, !IsAlive, false);
         }
     }
@@ -375,6 +353,9 @@ namespace DungeonSlash
         public IReadOnlyList<WeakPointRuntime> WeakPoints => weakPoints;
         public bool IsAlive => State != MonsterState.Dead;
         public bool IsStunned => State == MonsterState.Stunned;
+        public EncounterAwarenessRuntime Awareness { get; set; }
+        public bool IsUnaware => Awareness?.IsConcealed == true;
+        public void NotifyAttacked() => Awareness?.Reveal();
         public MonsterAttackData NormalAttack => Data?.GetAttack(MonsterAttackType.Normal);
         public MonsterAttackData CurrentChargeAttack { get; private set; }
         public bool HasChargeAttack => AllowedChargeAttacks().Any();
@@ -435,6 +416,7 @@ namespace DungeonSlash
         {
             if (!IsAlive) return;
             TickStatus(deltaTime);
+            if (IsUnaware) return;
             deltaTime *= SlowRemaining > 0 ? .65f : 1f;
             StateTimer = Mathf.Max(0f, StateTimer - deltaTime);
             TickDirectionalGuard(deltaTime);
@@ -460,8 +442,8 @@ namespace DungeonSlash
             }
         }
 
-        public bool ShouldNormalAttack => State == MonsterState.Idle && NormalAttackTimer <= 0f && ChargeTimer > 0f;
-        public bool ShouldCharge => State == MonsterState.Idle && ChargeTimer <= 0f;
+        public bool ShouldNormalAttack => !IsUnaware && State == MonsterState.Idle && NormalAttackTimer <= 0f && ChargeTimer > 0f;
+        public bool ShouldCharge => !IsUnaware && State == MonsterState.Idle && ChargeTimer <= 0f;
         public float NormalAttackPresentationDuration => (NormalAttack?.windupDuration ?? 0f) + Mathf.Max(0, (NormalCombatMechanics?.hitCount ?? 1) - 1) * (NormalCombatMechanics?.followupDelay ?? .01f);
         public void BeginNormalAttack()
         {
@@ -530,6 +512,7 @@ namespace DungeonSlash
         public void TakeDamage(float damage)
         {
             if (!IsAlive) return;
+            if (damage > 0) NotifyAttacked();
             CurrentHp = Mathf.Max(0f, CurrentHp - damage);
             if (CurrentHp <= 0f) { State = MonsterState.Dead; ClearWeakPoints(); }
         }

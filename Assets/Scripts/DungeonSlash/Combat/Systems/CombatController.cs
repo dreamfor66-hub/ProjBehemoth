@@ -79,6 +79,7 @@ namespace DungeonSlash
         private int encounterFloor = 1;
         private int trackedFloor = -1;
         private int normalEncountersOnFloor;
+        private bool showedConcealed;
 
         public bool IsActive { get; private set; }
         public bool InfiniteBattleEnabled { get; private set; }
@@ -176,6 +177,7 @@ namespace DungeonSlash
             sceneView?.ResetCameraShake();
             run?.Player?.ResetAttackCooldown();
             var combatStartEffect = run?.BeginCombat() ?? default;
+            showedConcealed = run?.Awareness.IsConcealed == true;
             ClearMonsterViews();
             reportedKills.Clear();
             isFinishing = false;
@@ -510,6 +512,7 @@ namespace DungeonSlash
                     if (isDirectAttack) baseDamage = ModifyDirectDamage(monster, segment, charged, baseDamage);
                     if (!(isDirectAttack && charged && Player.Rule(AbilityRule.IgnoreDirectionalGuard) > 0) && runtime.TryAbsorbDirectionalGuard(GetAttackWay(segment), baseDamage, out var absorbedDamage, out var matchedDirection, out var guardBroken))
                     {
+                        runtime.NotifyAttacked();
                         monster.View?.Bind(runtime);
                         var impact = ClosestPointOnSegment(segment, monster.Position);
                         if (matchedDirection)
@@ -522,6 +525,12 @@ namespace DungeonSlash
                         continue;
                     }
 
+                    var hitContext=BuildAttackContext(segment,attackType,charged,monster,baseDamage);
+                    var hitPacket=new ActionEffectContext();
+                    hitContext=new EquipmentTriggerContext(hitContext.Segment,hitContext.AttackType,hitContext.AttackWay,hitContext.OwnerCharging,hitContext.EnemyStunned,runtime,form:hitContext.Form,damage:baseDamage,draw:hitContext.Draw,enemyCount:hitContext.EnemyCount,mutable:hitPacket,actionTags:currentAttack.Tags);
+                    var hitEffects=run.BeginHit(TriggerType.OnHit,hitContext);
+                    runtime.NotifyAttacked();
+                    baseDamage*=Mathf.Max(0,1+hitPacket.DamageBonus);
                     hitAny = true;
                     ShakeCombat(charged ? 8f : 3.5f, charged ? .13f : .08f);
                     var dealtDamage = runtime.IsStunned ? baseDamage * Player.StunDamageMultiplier : baseDamage;
@@ -533,7 +542,7 @@ namespace DungeonSlash
                     Player.RestoreShield(Player.ShieldOnHit);
                     if (!InfiniteBattleEnabled)
                         ShowDamage(ClosestPointOnSegment(segment, monster.Position), $"{dealtDamage:0}", charged ? new Color(1f, .78f, .16f) : Color.white);
-                    ResolveEquipmentTriggers(TriggerType.OnHit, BuildAttackContext(segment, attackType, charged, monster, dealtDamage), monster, chainDepth);
+                    run.FinishHit(hitEffects,dealtDamage);ResolveQueuedAbilities(chainDepth);
                     if (!runtime.IsAlive) ReportKill(runtime, BuildAttackContext(segment, attackType, charged, monster, dealtDamage));
                     if (isDirectAttack) OnExpandedDirectHit(monster, segment, charged, dealtDamage);
                 }
@@ -627,7 +636,7 @@ namespace DungeonSlash
 
         private EquipmentTriggerContext BuildAttackContext(AttackSegment segment, TriggerAttackType attackType, bool charged, ActiveMonster target, float damage = 0)
         {
-            return new EquipmentTriggerContext(segment, attackType, GetAttackWay(segment), charged || (input != null && input.IsChargingAction), target != null && target.Runtime.IsStunned, target?.Runtime, form: currentAttack.Form, damage: damage, draw: currentAttack.Draw, enemyCount: activeMonsters.Count(item => item.Runtime.IsAlive));
+            return new EquipmentTriggerContext(segment, attackType, GetAttackWay(segment), charged || (input != null && input.IsChargingAction), target != null && target.Runtime.IsStunned, target?.Runtime, form: currentAttack.Form, damage: damage, draw: currentAttack.Draw, enemyCount: activeMonsters.Count(item => item.Runtime.IsAlive),actionTags:currentAttack.Tags);
         }
 
         private float GetDirectAttackDamageMultiplier(AttackSegment segment, bool isDirectAttack)
@@ -668,6 +677,8 @@ namespace DungeonSlash
         {
             // Floor identity and balance now live in each monster asset; never double-scale them here.
             var runtime = new MonsterRuntime(data, visualScale: visualScale);
+            runtime.Awareness = run.Awareness;
+            runtime.Buffs.Run=run;
             runtime.DelayActions(initialActionDelay);
             var view = Instantiate(monsterPrefab, monsterSpawnRoot);
             view.Root.anchoredPosition = position - sceneView.MonsterPosition;
@@ -704,6 +715,12 @@ namespace DungeonSlash
         private void RefreshHud()
         {
             RefreshCompanions();
+            if (run != null)
+            {
+                if (showedConcealed && !run.Awareness.IsConcealed && IsActive)
+                    ShowDamage(sceneView.PlayerPosition + Vector2.up * 130, GameText.Get("ui.stealth.revealed"), new Color(1f, .7f, .35f));
+                showedConcealed = run.Awareness.IsConcealed;
+            }
             if (hud == null || Player == null) return;
             var gesture = input == null ? PointerGestureState.None : input.State;
             var progress = input == null ? 0f : input.ChargeProgress;

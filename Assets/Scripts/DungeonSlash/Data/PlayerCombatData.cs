@@ -14,8 +14,8 @@ namespace DungeonSlash
         public GameVariables gameVariables;
         public EquipmentData startingRelic;
         public List<SpellData> startingSpells = new();
-        public List<MonkFormData> monkForms = new();
-        public CharacterMechanicSettings mechanics = new();
+        [UnityEngine.Serialization.FormerlySerializedAs("monkForms")] public List<FormData> forms = new();
+        public List<CombatResourceData> resources = new();
         [Header("Health and Shield")]
         [Min(1f)] public float maxHp = 100f;
         [Min(0f)] public float shieldMax = 100f;

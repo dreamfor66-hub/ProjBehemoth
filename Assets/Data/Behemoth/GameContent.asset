@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bc95876323afc43b9eb751d9720b82, type: 3}
   m_Name: GameContent
   m_EditorClassIdentifier: 
-  schemaVersion: 8
+  schemaVersion: 14
   variables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   characters:
   - {fileID: 11400000, guid: 30d0c9972668937499d3654a45690659, type: 2}

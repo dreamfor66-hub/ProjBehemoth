@@ -71,7 +71,7 @@ namespace DungeonSlash
             for (var i = 0; i < 4; i++)
             {
                 var spell = run.State.Slot((SwipeDirection)i);
-                var arrow = MonkFormData.DirectionLabel((SwipeDirection)i);
+                var arrow = FormData.DirectionLabel((SwipeDirection)i);
                 spellButtons[i].gameObject.SetActive(spell != null);
                 if (spell == null) continue;
                 var runtime = run.State.RuntimeFor(spell);
@@ -125,7 +125,7 @@ namespace DungeonSlash
             if (run.State.RuntimeFor(spell) != null) { completed(true); return; }
             var previous = run.State.Slot(spell.defaultSlot);
             if (previous == null) { run.State.LearnSpell(spell); RefreshCombat(combat); completed(true); return; }
-            ShowModal(GameText.Get("ui.runexpansionview.848d307f"), GameText.Format("ui.runexpansionview.4cf1a98", MonkFormData.DirectionLabel(spell.defaultSlot), previous.displayName, previous.description), new[] {
+            ShowModal(GameText.Get("ui.runexpansionview.848d307f"), GameText.Format("ui.runexpansionview.4cf1a98", FormData.DirectionLabel(spell.defaultSlot), previous.displayName, previous.description), new[] {
                 new PresentationChoice { Title = spell.displayName + GameText.Get("ui.runexpansionview.cc287719"), Description = SpellDetails(spell, run.State.Player) + GameText.Get("ui.runexpansionview.903af72b"), Icon = spell.icon,
                     Selected = () => { run.State.LearnSpell(spell, true); RefreshCombat(combat); completed(true); } },
                 new PresentationChoice { Title = previous.displayName + GameText.Get("ui.runexpansionview.76082537"), Description = GameText.Get("ui.runexpansionview.1ddf41c5"), Icon = previous.icon, Selected = () => completed(false) }
@@ -136,6 +136,6 @@ namespace DungeonSlash
             if (run.State.PendingSpellOffers.Count == 0) { completed?.Invoke(); return; }
             OfferSpell(run.State.PendingSpellOffers.Dequeue(), _ => ResolvePendingSpells(completed));
         }
-        public static string SpellDetails(SpellData spell, PlayerCombatRuntime player) => GameText.Format("ui.spell.details", MonkFormData.DirectionLabel(spell.defaultSlot), spell.displayName, spell.castingSeconds * player.SpellCastingFor(spell), spell.cooldownSeconds * player.SpellCooldownFor(spell), spell.description);
+        public static string SpellDetails(SpellData spell, PlayerCombatRuntime player) => GameText.Format("ui.spell.details", FormData.DirectionLabel(spell.defaultSlot), spell.displayName, spell.castingSeconds * player.SpellCastingFor(spell), spell.cooldownSeconds * player.SpellCooldownFor(spell), spell.description);
     }
 }

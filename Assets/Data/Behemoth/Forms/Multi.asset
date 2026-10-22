@@ -24,4 +24,5 @@ MonoBehaviour:
   hits: 3
   requiredPower: 0
   requiresUnlock: 0
+  buff: {fileID: 11400000, guid: ce1b348e1e68c2f4cbcbe1b5e0ea6920, type: 2}
   effects: []

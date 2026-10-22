@@ -18,14 +18,18 @@ namespace DungeonSlash
         public bool HasAttack => AttackType != TriggerAttackType.None;
         public MonsterRuntime Target { get; }
         public SpellData Spell { get; }
-        public MonkFormData Form { get; }
+        public FormData Form { get; }
         public float Damage { get; }
         public float GuardDamage { get; }
         public bool Draw { get; }
         public int EnemyCount { get; }
+        public BuffInstance Buff { get; }
+        public ActionEffectContext Mutable { get; }
+        public BuffTagData Signal { get; }
+        public IReadOnlyCollection<BuffTagData> ActionTags { get; }
         public SwipeDirection Direction => CombatController.ResolveDirection(Segment.End - Segment.Start);
 
-        public EquipmentTriggerContext(AttackSegment segment, TriggerAttackType attackType, TriggerAttackWay attackWay, bool ownerCharging, bool enemyStunned, MonsterRuntime target = null, SpellData spell = null, MonkFormData form = null, float damage = 0, float guardDamage = 0, bool draw = false, int enemyCount = 1)
+        public EquipmentTriggerContext(AttackSegment segment, TriggerAttackType attackType, TriggerAttackWay attackWay, bool ownerCharging, bool enemyStunned, MonsterRuntime target = null, SpellData spell = null, FormData form = null, float damage = 0, float guardDamage = 0, bool draw = false, int enemyCount = 1, BuffInstance buff = null, ActionEffectContext mutable = null, BuffTagData signal = null, IReadOnlyCollection<BuffTagData> actionTags = null)
         {
             Segment = segment;
             AttackType = attackType;
@@ -33,7 +37,12 @@ namespace DungeonSlash
             OwnerCharging = ownerCharging;
             EnemyStunned = enemyStunned;
             Target = target; Spell = spell; Form = form; Damage = damage; GuardDamage = guardDamage; Draw = draw; EnemyCount = enemyCount;
+            Buff = buff; Mutable = mutable; Signal = signal;
+            ActionTags=actionTags ?? mutable?.Tags;
         }
+        public EquipmentTriggerContext WithBuff(BuffInstance buff) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, Form, Damage, GuardDamage, Draw, EnemyCount, buff, Mutable, Signal, ActionTags);
+        public EquipmentTriggerContext WithSignal(BuffTagData signal) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, Form, Damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, signal, ActionTags);
+        public EquipmentTriggerContext WithDamage(float damage) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, Form, damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, Signal, ActionTags);
 
         public static EquipmentTriggerContext Simple(bool ownerCharging = false, bool enemyStunned = false) =>
             new(default, TriggerAttackType.None, TriggerAttackWay.None, ownerCharging, enemyStunned);
@@ -55,7 +64,7 @@ namespace DungeonSlash
             Context = context;
             BuffKey = source.GetInstanceID().ToString();
         }
-        public EquipmentActivation(EquipmentData source, EquipmentAbility ability, EquipmentEffect effect, EquipmentTriggerContext context, string key)
+        public EquipmentActivation(EquipmentData source, BuffUnitData ability, EquipmentEffect effect, EquipmentTriggerContext context, string key)
         { Source = source; Effect = effect; Target = ability.target; Context = context; BuffKey = key; }
     }
 
@@ -220,8 +229,7 @@ namespace DungeonSlash
             var equipped = equippedEquipment.FirstOrDefault(candidate => candidate.Data == item);
             if (equipped != null) equippedEquipment.Remove(equipped);
             abilityStates.RemoveAll(state => state.Source == item);
-            for (var i = abilityBuffs.Count - 1; i >= 0; i--)
-                if (abilityBuffs[i].sourceId == item.GetInstanceID()) RemoveBuffAt(i);
+            Buffs.RemoveSource(item);
             foreach (var ability in item.abilities.Where(ability => ability.trigger.triggerType == TriggerType.OnAcquire && ability.target == TargetType.Owner))
                 foreach (var effect in ability.effects.Where(effect => effect.effectType == EffectType.StatIncrease && effect.effectStatType != ModifierKind.Gold && effect.effectStatType != ModifierKind.RevivalHealthFraction))
                     Player.RemoveModifiers(new[] { new StatModifier { kind = effect.effectStatType, value = EffectValue(effect, default) } });
@@ -232,6 +240,7 @@ namespace DungeonSlash
 
         public IReadOnlyList<EquipmentActivation> TriggerEquipment(TriggerType triggerType, EquipmentTriggerContext context)
         {
+            Buffs.Dispatch(triggerType, context);
             var activations = new List<EquipmentActivation>();
             foreach (var state in equippedEquipment)
                 if (state.Data.abilities.Count == 0 && state.TryActivate(triggerType, context, out var activation)) activations.Add(activation);
@@ -264,20 +273,31 @@ namespace DungeonSlash
                     else foreach (var activated in ability.Trigger(this, TriggerType.OnConsume, default))
                         if (activated.Target == TargetType.Owner) ApplyOwnerActivation(activated, false); else PendingAbilityEffects.Enqueue(activated);
                 }
+                CompletePotionAction();
                 return true;
             }
             if (potion.trigger.triggerType == TriggerType.OnCombatStartAfterConsume)
             {
                 pendingCombatPotions.Add(state);
+                CompletePotionAction();
                 return true;
             }
             if (state.TryActivate(TriggerType.OnConsume, EquipmentTriggerContext.Simple(), out var activation))
                 ApplyOwnerActivation(activation, permanent: false);
+            CompletePotionAction();
             return true;
+        }
+
+        private void CompletePotionAction()
+        {
+            if (!Awareness.IsConcealed) return;
+            StartAction(default);
+            CompleteAction(TriggerType.OnConsume, default);
         }
 
         public CombatStartEffectResult BeginCombat()
         {
+            Awareness.End();
             Player.ClearCombatModifiers();
             ClearAbilityCombatState();
             Player.BeginCharacterCombat();
@@ -285,6 +305,7 @@ namespace DungeonSlash
             if (EventBurdens.ContainsKey("CrackedGuard")) Player.ApplyCombatModifier(new StatModifier { kind = ModifierKind.ShieldMax, value = -8f }, 0);
             if (EventBurdens.ContainsKey("BluntEdge")) Player.ApplyCombatModifier(new StatModifier { kind = ModifierKind.AllDamageMultiplier, value = -.2f }, 0);
             EmitEvent(TriggerType.OnCombatStart, default);
+            Awareness.Begin(Rule(AbilityRule.EncounterConcealment) > 0, Rule(AbilityRule.DetectionChancePerAction));
             foreach (var spell in spellbook) spell.BeginCombat(Player);
             var openingDamage = 0f;
             foreach (var ability in pendingPotionAbilities.ToArray())
@@ -312,7 +333,7 @@ namespace DungeonSlash
 
         public void ApplyOwnerActivation(EquipmentActivation activation, bool permanent)
         {
-            if (activation.Target != TargetType.Owner) return;
+            if (activation.Target == TargetType.Enemy) return;
             if (ApplyExtendedOwnerEffect(activation, permanent)) return;
             var effect = activation.Effect;
             var count = Mathf.Max(1, effect.effectCount);

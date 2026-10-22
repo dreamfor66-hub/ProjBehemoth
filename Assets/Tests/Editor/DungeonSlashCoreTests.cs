@@ -533,7 +533,7 @@ namespace DungeonSlash.Tests
             balance.initialExperienceRequirement = 100;
             var potion = ScriptableObject.CreateInstance<EquipmentData>();
             potion.itemKind = ShopItemKind.Potion;
-            potion.trigger = new EquipmentTrigger { triggerType = TriggerType.OnCombatStartAfterConsume, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1, triggerMaxCount = 2 };
+            potion.trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.OnCombatStartAfterConsume, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1, triggerMaxCount = 2 };
             potion.targetType = TargetType.Owner;
             potion.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectMagnitude = .3f, effectCount = 1, effectStatType = ModifierKind.AllDamageMultiplier };
             var state = new RunState(playerData, balance);
@@ -561,7 +561,7 @@ namespace DungeonSlash.Tests
             balance.initialExperienceRequirement = 100;
             var potion = ScriptableObject.CreateInstance<EquipmentData>();
             potion.itemKind = ShopItemKind.Potion;
-            potion.trigger = new EquipmentTrigger { triggerType = TriggerType.OnConsume, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1, triggerMaxCount = 1 };
+            potion.trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.OnConsume, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1, triggerMaxCount = 1 };
             potion.targetType = TargetType.Owner;
             potion.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectMagnitude = .35f, effectCount = 1, effectStatType = ModifierKind.RevivalHealthFraction };
             var state = new RunState(playerData, balance);
@@ -893,7 +893,7 @@ namespace DungeonSlash.Tests
             var balance = ScriptableObject.CreateInstance<RunBalanceSettings>(); balance.initialExperienceRequirement = 100;
             var relic = ScriptableObject.CreateInstance<EquipmentData>();
             relic.itemKind = ShopItemKind.Relic;
-            relic.trigger = new EquipmentTrigger { triggerType = TriggerType.OnHit, triggerAttackTypeFilter = TriggerAttackTypeFilter.NormalAttack | TriggerAttackTypeFilter.ChargeAttack, triggerAttackWayFilter = TriggerAttackWayFilter.Downward, triggerCount = 2, triggerMaxCount = 1 };
+            relic.trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.OnHit, triggerAttackTypeFilter = TriggerAttackTypeFilter.NormalAttack | TriggerAttackTypeFilter.ChargeAttack, triggerAttackWayFilter = TriggerAttackWayFilter.Downward, triggerCount = 2, triggerMaxCount = 1 };
             relic.condition = new EquipmentCondition { conditionType = ConditionType.OwnerCharge };
             relic.targetType = TargetType.Enemy;
             relic.effect = new EquipmentEffect { effectType = EffectType.ExtraAttack, effectMagnitude = .55f, effectCount = 1 };
@@ -995,7 +995,7 @@ namespace DungeonSlash.Tests
             perk.modifiers = new List<StatModifier> { new() { kind = ModifierKind.NormalDamage, value = .25f } };
             var relic = ScriptableObject.CreateInstance<EquipmentData>();
             relic.itemKind = ShopItemKind.Relic;
-            relic.trigger = new EquipmentTrigger { triggerType = TriggerType.OnAcquire, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1 };
+            relic.trigger = new EquipmentTrigger { chancePercent = 100,  triggerType = TriggerType.OnAcquire, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All, triggerCount = 1 };
             relic.targetType = TargetType.Owner;
             relic.effect = new EquipmentEffect { effectType = EffectType.StatIncrease, effectMagnitude = .4f, effectCount = 1, effectStatType = ModifierKind.NormalDamage };
             var potion = ScriptableObject.CreateInstance<EquipmentData>();

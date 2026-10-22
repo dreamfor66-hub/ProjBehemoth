@@ -22,7 +22,6 @@ namespace DungeonSlash
         [Min(1)] public float minimumSwipeSpeed = 520f;
         [Range(0, 1)] public float minimumDirectionConsistency = .8f;
         [Min(20)] public float spellSwipeDistance = 65f;
-        public float perfectGuardSeconds = .14f;
         private static GameVariables fallback;
         public static GameVariables Default
         {

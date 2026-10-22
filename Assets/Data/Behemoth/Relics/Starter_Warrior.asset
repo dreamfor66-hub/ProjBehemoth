@@ -19,23 +19,21 @@ MonoBehaviour:
   - propertyPath: description
     key: data.equipmentdata.starter_warrior.description
     lastText: "\uC804\uD22C \uC911 \uAC00\uB4DC\uAC8C\uC774\uC9C0\uAC00 \uCD08\uB2F9
-      2.5 \uD68C\uBCF5\uB41C\uB2E4. \uAC00\uB4DC \uC131\uACF5 \uC2DC \uCCB4\uB825
-      \uD53C\uD574\uB97C \uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+      2.5 \uD68C\uBCF5\uB429\uB2C8\uB2E4."
   textOwnerGuid: 0681921da450dae449d0b24a76aa81fa
   id: Starter_Warrior
   displayName: "\uC218\uD638\uC790\uC758 \uBC29\uD328"
   description: "\uC804\uD22C \uC911 \uAC00\uB4DC\uAC8C\uC774\uC9C0\uAC00 \uCD08\uB2F9
-    2.5 \uD68C\uBCF5\uB41C\uB2E4. \uAC00\uB4DC \uC131\uACF5 \uC2DC \uCCB4\uB825 \uD53C\uD574\uB97C
-    \uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+    2.5 \uD68C\uBCF5\uB429\uB2C8\uB2E4."
   icon: {fileID: 21300000, guid: adb80d2426532b7408a6a5e0805ddfbd, type: 3}
   scope: 1
   exclusiveCharacter: 0
-  startingMechanic: 1
   power: 0
   legacyGrantedSpell: {fileID: 0}
   additionalModifiers: []
   abilities:
-  - editorLabel: "\uAE30\uC874 \uD6A8\uACFC"
+  - mergeConditionTrigger: 0
+    conditions: []
     trigger:
       triggerType: 4
       triggerAttackTypeFilter: 7
@@ -46,15 +44,16 @@ MonoBehaviour:
       cooldownSeconds: 0
       resetCountEachCombat: 1
       includeAdditionalAttacks: 0
-    conditions: []
+      chancePercent: 100
+      signal: {fileID: 0}
     target: 0
     effects:
-    - effectType: 2
-      effectMagnitude: 0
+    - effectType: 11
+      effectMagnitude: 0.25
       effectCount: 1
       effectAngle: 0
       effectTime: 0
-      effectStatType: 0
+      effectStatType: 17
       scale: 0
       scaleRatio: 0
       maximumMagnitude: 0
@@ -63,9 +62,14 @@ MonoBehaviour:
       status: 0
       statusDamage: 0
       statusCap: 0
-      rule: 0
+      rule: 32
       spell: {fileID: 0}
       form: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      resource: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -84,6 +88,8 @@ MonoBehaviour:
     cooldownSeconds: 0
     resetCountEachCombat: 0
     includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
   condition:
     conditionType: 0
   targetType: 0
@@ -105,6 +111,11 @@ MonoBehaviour:
     rule: 0
     spell: {fileID: 0}
     form: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    resource: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

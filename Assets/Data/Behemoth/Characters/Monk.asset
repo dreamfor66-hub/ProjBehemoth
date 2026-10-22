@@ -32,25 +32,14 @@ MonoBehaviour:
   gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   startingRelic: {fileID: 11400000, guid: b7e632a71dec8d641b22b585670f40bb, type: 2}
   startingSpells: []
-  monkForms:
+  forms:
   - {fileID: 11400000, guid: 5bbcb162be08ee84e8521e53b9dd5aad, type: 2}
   - {fileID: 11400000, guid: abcf378eb883e734c8f74eee8a49c155, type: 2}
   - {fileID: 11400000, guid: 43d43b5b7dfd9114ebb7c48dd40ba06b, type: 2}
   - {fileID: 11400000, guid: 7564aaf1ee542d34b923d7d467a136d9, type: 2}
   - {fileID: 11400000, guid: 9eed9111b6b302f46bf577cb55b5149b, type: 2}
   - {fileID: 11400000, guid: 22162dfe5f46abf4a99a321a2220da67, type: 2}
-  mechanics:
-    ragePerNormalAttack: 12
-    rageThreshold: 40
-    rageDrainPerSecond: 20
-    rageIdleDecay: 2
-    enragedDamageMultiplier: 1.5
-    enragedCooldownMultiplier: 0.62
-    enragedDamageReduction: 0.3
-    drawDamageMultiplier: 1.5
-    sheathParrySeconds: 0.1
-    wizardCooldownMultiplier: 0.5
-    castingGuardRegen: 0
+  resources: []
   maxHp: 95
   shieldMax: 25
   guardDamageReduction: 1

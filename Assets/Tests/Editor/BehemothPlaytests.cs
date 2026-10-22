@@ -144,6 +144,7 @@ namespace DungeonSlash.Tests
             Assert.That(combat.TryCastSpell(SwipeDirection.Left, 10), Is.True);
             Assert.That(leader.CurrentHp, Is.LessThan(leaderBeforeBurst)); Assert.That(Runtime(actors[2]).CurrentHp, Is.EqualTo(outsideBurst), "A burst is local to its priority target, not global damage.");
             run.LearnSpell(frost, true); combat.Player.ResetAttackCooldown(); Assert.That(combat.TryCastSpell(SwipeDirection.Left, 10), Is.True);
+            foreach(var actor in actors)Runtime(actor).Buffs.Tick(0);
             Assert.That(leader.SlowRemaining, Is.GreaterThan(0)); Assert.That(Runtime(actors[2]).SlowRemaining, Is.GreaterThan(0));
             Matrix("폭발은 타깃 주변 실제 범위만 적중 / 서리 파동의 범위 둔화");
             yield return new ExitPlayMode();
@@ -184,7 +185,7 @@ namespace DungeonSlash.Tests
             yield return new ExitPlayMode();
         }
 
-        [UnityTest] public IEnumerator ClassCoreLoops_RealWeaponHits_PoisonRageDrawAndMonkMultiHit()
+        [UnityTest] public IEnumerator ClassCoreLoops_RealWeaponHits_StealthRageDrawAndMonkMultiHit()
         {
             EditorSceneManager.OpenScene("Assets/Scenes/MainGameScene.unity"); yield return new EnterPlayMode();
             foreach (var kind in new[] { CharacterKind.Rogue, CharacterKind.Barbarian, CharacterKind.Samurai, CharacterKind.Monk })
@@ -195,28 +196,31 @@ namespace DungeonSlash.Tests
                 var horizontal = new AttackSegment(center + Vector2.left * 160, center + Vector2.right * 160, 18);
                 if (kind == CharacterKind.Rogue)
                 {
-                    combat.ExecuteAttack(horizontal, false); Assert.That(enemy.PoisonStacks, Is.EqualTo(1)); var afterHit = enemy.CurrentHp;
+                    Assert.That(enemy.IsUnaware, Is.True); var timer = enemy.NormalAttackTimer;
                     for (var until = Time.time + 2.1f; Time.time < until;) yield return null;
-                    Assert.That(enemy.CurrentHp, Is.LessThan(afterHit)); Matrix("로그 일반 적중 → 독 부여 → 실제 2초 틱 피해");
+                    Assert.That(enemy.NormalAttackTimer, Is.EqualTo(timer));
+                    combat.ExecuteAttack(horizontal, false); yield return null;
+                    Assert.That(enemy.PoisonStacks, Is.Zero); Assert.That(enemy.IsUnaware, Is.False);
+                    Assert.That(enemy.NormalAttackTimer, Is.LessThan(timer)); Matrix("로그 은신 대기 → 일반 적중 → 독 없이 전체 발각·기존 쿨타임 시작");
                 }
                 else if (kind == CharacterKind.Barbarian)
                 {
                     for (var i = 0; i < 4; i++) { combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, false); }
-                    Assert.That(combat.Player.IsEnraged, Is.False); combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true); Assert.That(combat.Player.IsEnraged, Is.True);
+                    Assert.That((combat.Player.ActiveForm != null), Is.False); combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true);yield return null; Assert.That((combat.Player.ActiveForm != null), Is.True);
                     for (var until = Time.time + 5.1f; Time.time < until;) yield return null;
-                    Assert.That(combat.Player.IsEnraged, Is.False); Matrix("바바리안 일반공격 격노 → 차지 분노 → 실제 시간 경과로 종료");
+                    Assert.That((combat.Player.ActiveForm != null), Is.False); Matrix("바바리안 일반공격 격노 → 차지 분노 → 실제 시간 경과로 종료");
                 }
                 else if (kind == CharacterKind.Samurai)
                 {
-                    combat.Player.TrySetGuard(true); var parry = new DamageResolver().ApplyToPlayer(combat.Player, new DamageRequest(DamageType.MonsterAttack, 15, 15, true));
+                    combat.Player.TrySetGuard(true);combat.Player.Buffs.Tick(0); var parry = new DamageResolver().ApplyToPlayer(combat.Player, new DamageRequest(DamageType.MonsterAttack, 15, 15, true));combat.Player.Buffs.Tick(0);
                     Assert.That(parry.WasSheathParry, Is.True); enemy.StartCharge(center); var points = enemy.WeakPoints.ToArray();
-                    combat.ExecuteAttack(horizontal, false); Assert.That(points.All(point => point.RemainingHits == 0), Is.True); Assert.That(combat.Player.IsSheathed, Is.False);
+                    combat.ExecuteAttack(horizontal, false);combat.Player.Buffs.Tick(0); Assert.That(points.All(point => point.RemainingHits == 0), Is.True); Assert.That(combat.Player.Buffs.Active.Any(b => b.Data.name == "Sheathed"), Is.False);
                     Matrix("사무라이 납도 패리 → 일반 입력의 차지 발도 → 약점 파괴");
                 }
                 else
                 {
-                    var vertical = new AttackSegment(center + Vector2.down * 140, center + Vector2.up * 140, 18);
-                    combat.ExecuteAttack(vertical, false); combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(vertical, false);
+                    var form=combat.Player.Data.forms.First(f=>f.finisher==FormFinisher.MultiHit && !f.requiresUnlock);
+                    foreach(var direction in form.pattern){var vector=direction==SwipeDirection.Left?Vector2.left:direction==SwipeDirection.Right?Vector2.right:direction==SwipeDirection.Up?Vector2.up:Vector2.down;combat.Player.ResetAttackCooldown();combat.ExecuteAttack(new AttackSegment(center-vector*140,center+vector*140,18),false);}
                     enemy.StartCharge(center); var points = enemy.WeakPoints.ToArray();
                     combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true);
                     Assert.That(points.All(point => point.RemainingHits == 0), Is.True); Assert.That(combat.Player.Combo.Count, Is.Zero);
