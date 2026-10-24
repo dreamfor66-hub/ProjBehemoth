@@ -13,7 +13,7 @@ namespace DungeonSlash.Tests
         private RunBalanceSettings balance;
         [SetUp] public void SetUp()
         {
-            content=AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/Behemoth/GameContent.asset");
+            content=AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
             balance=AssetDatabase.LoadAssetAtPath<RunBalanceSettings>(AssetDatabase.GUIDToAssetPath(AssetDatabase.FindAssets("t:RunBalanceSettings").First()));
         }
         private RunState Run(CharacterKind kind)
@@ -96,7 +96,7 @@ namespace DungeonSlash.Tests
             Assert.That(content.perks.All(p=>p.icon!=null),Is.True);Assert.That(content.equipment.All(e=>e.icon!=null),Is.True);Assert.That(content.spells.All(s=>s.icon!=null&&s.castingSeconds<=.6f&&s.mpCost>=8),Is.True);
             foreach(var guid in AssetDatabase.FindAssets("t:MonsterData",new[]{"Assets/Data"}))Assert.That(AssetDatabase.LoadAssetAtPath<MonsterData>(AssetDatabase.GUIDToAssetPath(guid)).portrait,Is.Not.Null,AssetDatabase.GUIDToAssetPath(guid));
         }
-        private BuffData Buff(string name)=>AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/"+name+".asset");
+        private BuffData Buff(string name)=>AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/"+name+".asset");
         private static void Flush(RunState run){run.Buffs.Tick(0);run.Buffs.Tick(0);}
         private static float Bonus(RunState run,EquipmentTriggerContext context)
         {return run.BeginHit(TriggerType.OnHit,context).Where(e=>e.Effect.effectType==EffectType.Damage).Sum(e=>run.EffectValue(e.Effect,e.Context));}
@@ -117,7 +117,7 @@ namespace DungeonSlash.Tests
         {
             var run=Run(CharacterKind.Samurai);Take(run,"PatientDraw",2);Take(run,"LongBlade",2);
             var sheath=Buff("Sheathed");run.Buffs.Add(sheath,1,run);Flush(run);run.Buffs.Tick(2);
-            var drawTag=AssetDatabase.LoadAssetAtPath<BuffTagData>("Assets/Data/Behemoth/BuffTags/DrawAttack.asset");
+            var drawTag=AssetDatabase.LoadAssetAtPath<BuffTagData>("Assets/Data/Combat/BuffTags/DrawAttack.asset");
             var context=new EquipmentTriggerContext(default,TriggerAttackType.Charge,TriggerAttackWay.Horizontal,true,false,Target(),actionTags:new[]{drawTag});
             run.StartAction(context);run.Buffs.Remove(sheath);Flush(run);
             Assert.That(run.Rule(AbilityRule.FlatWeaponDamage,context),Is.EqualTo(24).Within(.01));

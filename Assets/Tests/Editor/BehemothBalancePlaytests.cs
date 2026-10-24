@@ -51,7 +51,7 @@ namespace DungeonSlash.Tests
                 if (enemy.State == MonsterState.Attacking)
                 { Guard(true); chargeStarted = castStarted = -1; yield return null; continue; }
                 var completingForm = kind == CharacterKind.Monk && player.PreparedAttackBuff == null && (enemy.State != MonsterState.Charging || enemy.StateTimer > player.CurrentChargeDuration + player.CurrentCooldown * (2 - player.Combo.Count));
-                var fury=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Fury.asset");
+                var fury=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Fury.asset");
                 var needsCharge = enemy.State == MonsterState.Charging && !completingForm || kind == CharacterKind.Barbarian && (player.Buffs.Find(fury)?.StackCount ?? 0) >= 40 || kind == CharacterKind.Monk && player.PreparedAttackBuff != null;
                 if (needsCharge)
                 {

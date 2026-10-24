@@ -8,7 +8,7 @@ namespace DungeonSlash.Tests
 {
     public sealed class BehemothAbilityTests
     {
-        private GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/Behemoth/GameContent.asset");
+        private GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
         private RunBalanceSettings balance;
         [SetUp] public void Setup() => balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
         [TearDown] public void Cleanup() => Object.DestroyImmediate(balance);
@@ -17,7 +17,7 @@ namespace DungeonSlash.Tests
         [Test] public void EveryProductionEquipmentUsesEditableAbilityList_NoPowerDispatchInCombat()
         {
             Assert.That(Content.equipment.All(item => item.abilities.Count > 0), Is.True);
-            foreach (var path in System.IO.Directory.GetFiles("Assets/Scripts/DungeonSlash/Combat", "*.cs", System.IO.SearchOption.AllDirectories))
+            foreach (var path in System.IO.Directory.GetFiles("Assets/Scripts/Combat", "*.cs", System.IO.SearchOption.AllDirectories))
             {
                 var source = System.IO.File.ReadAllText(path);
                 Assert.That(source.Contains("HasPower(RelicPower."), Is.False, path);
@@ -102,7 +102,7 @@ namespace DungeonSlash.Tests
         {
             var wizard = Run(CharacterKind.Wizard); var spell = wizard.Spellbook.Single();
             Assert.That(spell.Cooldown, Is.GreaterThan(0));
-            var rat = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Behemoth/Monsters/TunnelRat.asset");
+            var rat = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/TunnelRat.asset");
             Assert.That(spell.Data.damage * 2, Is.LessThan(rat.maxHp));
         }
         [Test] public void ElementConditionsApplyToTheSpellBeingPrepared_NotThePreviousAction()

@@ -8,7 +8,7 @@ namespace DungeonSlash.Tests
 {
     public sealed class BehemothFeedbackTests
     {
-        private GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/Behemoth/GameContent.asset");
+        private GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
         private RunBalanceSettings balance;
         [SetUp] public void Setup() => balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
         [TearDown] public void Cleanup() => Object.DestroyImmediate(balance);
@@ -34,7 +34,7 @@ namespace DungeonSlash.Tests
         [Test] public void RageAttackSustain_RequiresExclusiveRelic()
         {
             var run = Run(CharacterKind.Barbarian); var player = run.Player;
-            var fury=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Fury.asset");var rage=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Rage.asset");
+            var fury=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Fury.asset");var rage=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Rage.asset");
             player.Buffs.Add(fury,50); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(1);player.Buffs.UpdateState(0);
             var before = player.Buffs.Find(rage).StackCount; player.PrepareAttack(SwipeDirection.Right, false); Assert.That(player.Buffs.Find(rage).StackCount, Is.EqualTo(before));
             run.TryEquip(Relic(RelicPower.LongRage)); player.PrepareAttack(SwipeDirection.Right, false); run.EmitEvent(TriggerType.OnAttack, run.ActionContext);player.Buffs.UpdateState(0); Assert.That(player.Buffs.Find(rage).StackCount, Is.EqualTo(before + 6));

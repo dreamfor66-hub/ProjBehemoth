@@ -19,13 +19,13 @@ namespace DungeonSlash.Tests
         [UnityTearDown] public IEnumerator RestoreEditorAfterFailure()
         { Time.timeScale = 1; if (Application.isPlaying) yield return new ExitPlayMode(); RunSession.ForcedSeed = null; }
         private const BindingFlags Private = BindingFlags.Instance | BindingFlags.NonPublic;
-        private static GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/Behemoth/GameContent.asset");
+        private static GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
         private static object Call(object target, string name, params object[] args) => target.GetType().GetMethod(name, Private).Invoke(target, args);
         private static T Field<T>(object target, string name) => (T)target.GetType().GetField(name, Private).GetValue(target);
         private static object[] Actors(CombatController combat) => ((IList)Field<object>(combat, "activeMonsters")).Cast<object>().ToArray();
         private static MonsterRuntime Runtime(object actor) => (MonsterRuntime)actor.GetType().GetProperty("Runtime").GetValue(actor);
         private static Vector2 Position(object actor) => (Vector2)actor.GetType().GetProperty("Position").GetValue(actor);
-        private static EncounterData Encounter(string id) => AssetDatabase.LoadAssetAtPath<EncounterData>("Assets/Data/Behemoth/Encounters/" + id + ".asset");
+        private static EncounterData Encounter(string id) => AssetDatabase.LoadAssetAtPath<EncounterData>("Assets/Data/Dungeon/Encounters/" + id + ".asset");
         private static Vector2 Screen(CombatSceneView view, Vector2 logical) => RectTransformUtility.WorldToScreenPoint(null, view.LogicalArea.TransformPoint(logical));
         private static void Matrix(string item, string result = "PASS") { Directory.CreateDirectory("Logs"); File.AppendAllText("Logs/Behemoth-PlaytestMatrix.txt", DateTime.Now.ToString("s") + " | " + item + " | " + result + "\n"); }
         private static void SetupCharacter(CharacterKind kind)
@@ -206,7 +206,7 @@ namespace DungeonSlash.Tests
                 else if (kind == CharacterKind.Barbarian)
                 {
                     for (var i = 0; i < 4; i++) { combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, false); }
-                    var rage=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Rage.asset");
+                    var rage=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Rage.asset");
                     Assert.That(combat.Run.Buffs.Has(rage), Is.False); combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true);yield return null; Assert.That(combat.Run.Buffs.Has(rage), Is.True);
                     for (var until = Time.time + 5.1f; Time.time < until;) yield return null;
                     Assert.That(combat.Run.Buffs.Has(rage), Is.False); Matrix("바바리안 격노 중첩 → 같은 양의 분노 중첩으로 전환 → 실제 소모 종료");

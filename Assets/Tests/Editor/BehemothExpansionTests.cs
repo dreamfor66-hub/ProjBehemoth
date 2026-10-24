@@ -12,12 +12,12 @@ namespace DungeonSlash.Tests
         private RunBalanceSettings balance;
         private string history;
         [SetUp] public void SetUp()
-        { content = AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/Behemoth/GameContent.asset"); Assert.That(content, Is.Not.Null); balance = ScriptableObject.CreateInstance<RunBalanceSettings>(); history = PlayerPrefs.GetString("Behemoth.EventHistory.v1", ""); }
+        { content = AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset"); Assert.That(content, Is.Not.Null); balance = ScriptableObject.CreateInstance<RunBalanceSettings>(); history = PlayerPrefs.GetString("Behemoth.EventHistory.v1", ""); }
         [TearDown] public void TearDown() { PlayerPrefs.SetString("Behemoth.EventHistory.v1", history); Object.DestroyImmediate(balance); }
         private RunState Run(CharacterKind kind)
         { var data = content.characters.Single(item => item.character == kind); var run = new RunState(data, balance); run.TryEquip(data.startingRelic); run.BeginCombat(); return run; }
         private EquipmentData Power(RelicPower power) => content.equipment.Single(item => item.power == power);
-        private static BuffData State(string name) => AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/" + name + ".asset");
+        private static BuffData State(string name) => AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/" + name + ".asset");
         private static DamageResult Hurt(PlayerCombatRuntime player, float damage = 20, bool guardable = true)
             => new DamageResolver().ApplyToPlayer(player, new DamageRequest(DamageType.MonsterAttack, damage, damage, guardable));
 

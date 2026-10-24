@@ -1,0 +1,11 @@
+SCENE Assets/Scenes/OutGameScene.unity loaded
+SCENE Assets/Scenes/MainGameScene.unity loaded
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeVolumeDebugShader
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeVolumeFragmentationDebugShader
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeVolumeOffsetDebugShader
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeVolumeSamplingDebugShader
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeSamplingDebugMesh
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeSamplingDebugTexture
+PREEXISTING PACKAGE REFERENCE Assets/Data/Rendering/PC_Renderer.asset:probeVolumeResources.probeVolumeBlendStatesCS
+Content: characters=6, stages=3, equipment=103, perks=41, spells=16, events=23
+FAILURES 0

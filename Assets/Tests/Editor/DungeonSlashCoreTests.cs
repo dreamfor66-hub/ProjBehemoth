@@ -679,29 +679,31 @@ namespace DungeonSlash.Tests
         [Test]
         public void MonsterProfiles_B2AndBeyondUseDistinctCadencesAndMimicIsEliteStrength()
         {
-            var frostBat = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Minion_FrostBat.asset");
-            var yeti = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Minion_Yeti.asset");
-            var shadeLancer = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B3_Minion_ShadeLancer.asset");
-            var frostOgre = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Elite_FrostOgre.asset");
-            var frostQueen = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Boss_FrostQueen.asset");
-            var soulKnight = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B3_Elite_SoulKnight.asset");
-            var mimicAssets = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/DungeonSlashPrototype/Monsters" })
+            var frostBat = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_FrostBat.asset");
+            var yeti = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_Yeti.asset");
+            var shadeLancer = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_ShadeLancer.asset");
+            var frostOgre = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_FrostOgre.asset");
+            var frostQueen = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_FrostQueen.asset");
+            var soulKnight = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_SoulKnight.asset");
+            var mimicAssets = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/Combat/Monsters" })
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<MonsterData>)
                 .Where(monster => monster.displayName == "\uBBF8\uBBF9")
                 .ToArray();
             Assert.That(mimicAssets.Length, Is.EqualTo(1), "The chest event must reference the single special Mimic asset.");
             var mimic = mimicAssets[0];
-            var monsterAssetNames = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/DungeonSlashPrototype/Monsters" })
+            var monsterAssetNames = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/Combat/Monsters" })
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(System.IO.Path.GetFileNameWithoutExtension)
+                .Where(name => name.StartsWith("Data_Monster_", System.StringComparison.Ordinal))
                 .ToArray();
-            var monsterAssets = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/DungeonSlashPrototype/Monsters" })
+            var monsterAssets = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/Combat/Monsters" })
                 .Select(AssetDatabase.GUIDToAssetPath)
+                .Where(path => System.IO.Path.GetFileNameWithoutExtension(path).StartsWith("Data_Monster_", System.StringComparison.Ordinal))
                 .Select(path => (asset: AssetDatabase.LoadAssetAtPath<MonsterData>(path), fileName: System.IO.Path.GetFileNameWithoutExtension(path)))
                 .ToArray();
 
-            Assert.That(monsterAssetNames.All(name => name.StartsWith("Data_Monster_", System.StringComparison.Ordinal)), Is.True, "Generated predecessor assets must not coexist with canonical Data_Monster assets.");
+            Assert.That(monsterAssetNames.Length, Is.EqualTo(17), "All 17 designer-tuned canonical monsters must survive the production folder merge.");
             Assert.That(monsterAssets.All(entry => entry.asset != null && entry.asset.name == entry.fileName), Is.True, "The ScriptableObject name must match its canonical monster filename.");
             Assert.That(monsterAssets.All(entry => entry.asset.attacks != null && entry.asset.GetAttack(MonsterAttackType.Normal) != null && entry.asset.GetAttack(MonsterAttackType.Charge) != null), Is.True, "Every generated monster must own its normal and charge definitions through AttackData.");
             Assert.That(monsterAssets.SelectMany(entry => entry.asset.attacks).All(attack => Mathf.Approximately(attack.shieldDamage, attack.damage)), Is.True, "Every attack must deal its base damage to both HP and shield.");
@@ -853,12 +855,12 @@ namespace DungeonSlash.Tests
         [Test]
         public void MonsterMechanicAssets_ConfigureLeechEliteAndFrostQueenRules()
         {
-            var leech = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B1_Minion_Leech.asset");
-            var minotaur = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B1_Elite_Minotaur.asset");
-            var mazeGuardian = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset");
-            var frostOgre = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Elite_FrostOgre.asset");
-            var frostQueen = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B2_Boss_FrostQueen.asset");
-            var soulKnight = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/DungeonSlashPrototype/Monsters/Data_Monster_B3_Elite_SoulKnight.asset");
+            var leech = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset");
+            var minotaur = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset");
+            var mazeGuardian = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset");
+            var frostOgre = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_FrostOgre.asset");
+            var frostQueen = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_FrostQueen.asset");
+            var soulKnight = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_SoulKnight.asset");
 
             Assert.That(leech.GetAttack(MonsterAttackType.Normal).combatMechanics.healOnUnguardedHit, Is.GreaterThan(0f));
             Assert.That(frostOgre.GetAttack(MonsterAttackType.Normal).combatMechanics.directionalGuard.enabled, Is.True);
