@@ -31,8 +31,8 @@ namespace DungeonSlash
         public int WonCombats { get; set; }
         public int CurrentAct { get; set; } = 1;
         public int NormalCombatsInAct { get; set; }
-        public bool MagicIntroduced => CurrentAct >= 2 || NormalCombatsInAct >= 4;
-        public float MagicOfferWeight => CurrentAct >= 2 ? 1f : NormalCombatsInAct >= 4 ? .2f : 0;
+        public bool MagicIntroduced => true;
+        public float MagicOfferWeight => 1;
         public bool CanOffer(EquipmentData item) => item != null && (item.grantedSpell == null || MagicIntroduced);
         public int SpellCasts { get; set; }
         public Dictionary<string, int> EventBurdens { get; } = new();
@@ -45,16 +45,25 @@ namespace DungeonSlash
         }
         public SpellData Slot(SwipeDirection slot) => spellSlots[(int)slot];
         public SpellRuntime RuntimeFor(SpellData spell) => spellbook.FirstOrDefault(item => item.Data == spell);
+        public bool RememberSpell(SpellData spell)
+        {
+            if(spell==null||RuntimeFor(spell)!=null)return false;
+            spellbook.Add(new SpellRuntime(spell));return true;
+        }
         public bool LearnSpell(SpellData spell) => LearnSpell(spell, false);
         public bool LearnSpell(SpellData spell, bool replace)
         {
-            if (spell == null || spellbook.Any(item => item.Data == spell)) return false;
+            if (spell == null || Slot(spell.defaultSlot) == spell) return false;
             var previous = Slot(spell.defaultSlot);
             if (previous != null && !replace) return false;
-            if (previous != null) spellbook.RemoveAll(item => item.Data == previous);
-            spellbook.Add(new SpellRuntime(spell));
+            RememberSpell(spell);
             spellSlots[(int)spell.defaultSlot] = spell;
             return true;
+        }
+        public bool EquipKnownSpell(SpellData spell)
+        {
+            if (spell == null || RuntimeFor(spell) == null) return false;
+            spellSlots[(int)spell.defaultSlot] = spell; return true;
         }
         public bool AssignSpell(SwipeDirection slot, SpellData spell)
         {

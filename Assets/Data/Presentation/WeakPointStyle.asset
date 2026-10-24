@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55f1e464ebf5c144bb2ddc643e2856b, type: 3}
+  m_Name: WeakPointStyle
+  m_EditorClassIdentifier: 
+  stroke: {r: 0.9098039, g: 0.32941177, b: 0.21568628, a: 1}
+  shadow: {r: 0.74509805, g: 0.20784314, b: 0.17254902, a: 1}
+  core: {r: 0.98039216, g: 0.5921569, b: 0.2901961, a: 1}
+  outline: {r: 0.08235294, g: 0.047058824, b: 0.078431375, a: 1}
+  ringThickness: 1.5
+  diagonalGap: 1.5
+  spokeLength: 2.5
+  coreRadius: 1.25
+  breakLifetime: 0.38
+  breakDistance: 17

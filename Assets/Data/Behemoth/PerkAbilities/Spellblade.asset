@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: Spellblade
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.spellblade_1e672325.displayname
+    lastText: "\uB9C8\uAC80 \uBC29\uCD9C"
+  - propertyPath: description
+    key: data.equipmentdata.spellblade_1e672325.description
+    lastText: "\uC778\uCC48\uD2B8\uB41C \uC77C\uBC18\uACF5\uACA9\uC744 \uC801\uC911\uC2DC\uD0AC
+      \uB54C\uB9C8\uB2E4 \uB2E4\uC74C \uCC28\uC9C0 \uACF5\uACA9\uC5D0 \uD574\uB2F9
+      \uC18D\uC131 \uD53C\uD574 4\uB97C \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: 1e672325ab9fd5949b03368d04d26cc4
+  id: Spellblade
+  displayName: "\uB9C8\uAC80 \uBC29\uCD9C"
+  description: "\uC778\uCC48\uD2B8\uB41C \uC77C\uBC18\uACF5\uACA9\uC744 \uC801\uC911\uC2DC\uD0AC
+    \uB54C\uB9C8\uB2E4 \uB2E4\uC74C \uCC28\uC9C0 \uACF5\uACA9\uC5D0 \uD574\uB2F9
+    \uC18D\uC131 \uD53C\uD574 4\uB97C \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: -3490760376169491121, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions:
+    - kind: 16
+      invert: 0
+      threshold: 0.5
+      direction: 0
+      element: 0
+      buff: {fileID: 0}
+      buffTag: {fileID: 11400000, guid: c4df8375790c68a4d8ae8586094c92ba, type: 2}
+      comparator: 3
+      rule: 0
+    trigger:
+      triggerType: 1
+      triggerAttackTypeFilter: 1
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: 123627a1bf7ad1949ad2f359099fd22e, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions:
+    - kind: 16
+      invert: 0
+      threshold: 0.5
+      direction: 0
+      element: 0
+      buff: {fileID: 0}
+      buffTag: {fileID: 11400000, guid: 08e8bd06602313a479588308755df18c, type: 2}
+      comparator: 3
+      rule: 0
+    trigger:
+      triggerType: 1
+      triggerAttackTypeFilter: 1
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: 64abc743856561e4ba3a9f35b451e186, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions:
+    - kind: 16
+      invert: 0
+      threshold: 0.5
+      direction: 0
+      element: 0
+      buff: {fileID: 0}
+      buffTag: {fileID: 11400000, guid: 428c49c6999b7594fa19e135bd73d711, type: 2}
+      comparator: 3
+      rule: 0
+    trigger:
+      triggerType: 1
+      triggerAttackTypeFilter: 1
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: c2fa187ab4e033a43b38d522bb8ec08f, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 20
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 0
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

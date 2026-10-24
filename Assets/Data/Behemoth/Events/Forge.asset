@@ -18,39 +18,124 @@ MonoBehaviour:
     lastText: "\uB0A0\uC774 \uC544\uB2C8\uB77C \uBC84\uB987\uC744 \uAC04\uB2E4"
   - propertyPath: narrative
     key: data.randomeventdata.forge.narrative
-    lastText: "\uC7A5\uC778\uC740 \uAC80\uC744 \uBCF4\uC9C0\uB3C4 \uC54A\uB294\uB2E4.\n\u201C\uD55C
-      \uBC88 \uD718\uB458\uB7EC \uBD10.\u201D\n\n\uBD88\uAF43 \uC18D\uC5D0\uC11C
-      \uC9C0\uB09C \uC804\uD22C\uC758 \uBC84\uB987\uC774 \uB3C4\uB4DC\uB77C\uC9C4\uB2E4.\n\u201C\uB0A8\uAE38\uAE4C,
-      \uAC08\uC544 \uC5C6\uC568\uAE4C?\u201D"
+    lastText: "\uBB34\uAE30 \uC815\uBE44\uC2E4\uC5D0\uC11C \uB9DD\uCE58 \uC18C\uB9AC\uAC00
+      \uB4E4\uB9B0\uB2E4.\r\n\r\n\uC7A5\uC778\uC774 \uB0B4 \uC7A5\uBE44\uB97C \uBCF4\uB354\uB2C8
+      \uBC29\uD328\uC758 \uCC0C\uADF8\uB7EC\uC9C4 \uBD80\uBD84\uC744 \uAC00\uB9AC\uD0A8\uB2E4.\r\n\r\n\uADF8\uAC74
+      \uAE08\uBC29 \uD3B4\uC9C0\uC9C0. \uC2F8\uC6B0\uB294 \uC790\uC138\uB3C4 \uBD10
+      \uC904 \uC218 \uC788\uACE0."
   - propertyPath: options.Array.data[0].title
     key: data.randomeventdata.forge.options.0.title
     lastText: "\uC775\uC219\uD55C \uAE30\uC220\uC744 \uBCBC\uB9B0\uB2E4"
   - propertyPath: options.Array.data[0].description
     key: data.randomeventdata.forge.options.0.description
-    lastText: "30\uACE8\uB4DC \uC18C\uBAA8. \uBCF4\uC720 \uD37D \uD558\uB098\uB97C
+    lastText: "30\uACE8\uB4DC \uC18C\uBAA8. \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098\uB97C
       \uAC15\uD654."
   - propertyPath: options.Array.data[1].title
     key: data.randomeventdata.forge.options.1.title
     lastText: "\uD558\uB098\uB97C \uBC84\uB9AC\uACE0 \uB450 \uAC1C\uB97C \uBC30\uC6B4\uB2E4"
   - propertyPath: options.Array.data[1].description
     key: data.randomeventdata.forge.options.1.description
-    lastText: "\uBCF4\uC720 \uD37D \uD558\uB098 \uC81C\uAC70 \uD6C4 \uC0C8 \uD37D
-      \uB450 \uBC88 \uC120\uD0DD."
+    lastText: "\uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uC81C\uAC70 \uD6C4 \uC0C8
+      \uB2A5\uB825 \uB450 \uBC88 \uC120\uD0DD."
   - propertyPath: options.Array.data[2].title
     key: data.randomeventdata.forge.options.2.title
     lastText: "\uBC29\uD328\uC758 \uCC0C\uADF8\uB7EC\uC9C4 \uACF3\uB9CC \uD3B8\uB2E4"
   - propertyPath: options.Array.data[2].description
     key: data.randomeventdata.forge.options.2.description
-    lastText: "\uCD5C\uB300 \uAC00\uB4DC\uAC8C\uC774\uC9C0 +3. \uD37D\uC740 \uBC14\uB00C\uC9C0
-      \uC54A\uB294\uB2E4."
+    lastText: "\uCD5C\uB300 \uAC00\uB4DC\uAC8C\uC774\uC9C0 +3. \uB2A5\uB825\uC740
+      \uBC14\uB00C\uC9C0 \uC54A\uB294\uB2E4."
+  - propertyPath: options.Array.data[0].resultText
+    key: data.randomeventdata.forge.options.0.resulttext
+    lastText: 
+  - propertyPath: options.Array.data[1].resultText
+    key: data.randomeventdata.forge.options.1.resulttext
+    lastText: 
+  - propertyPath: options.Array.data[2].resultText
+    key: data.randomeventdata.forge.options.2.resulttext
+    lastText: 
+  - propertyPath: pages.Array.data[0].narrative
+    key: data.randomeventdata.forge.pages.0.narrative
+    lastText: "\uBB34\uAE30 \uC815\uBE44\uC2E4\uC5D0\uC11C \uB9DD\uCE58 \uC18C\uB9AC\uAC00
+      \uB4E4\uB9B0\uB2E4.\r\n\r\n\uC7A5\uC778\uC774 \uB0B4 \uC7A5\uBE44\uB97C \uBCF4\uB354\uB2C8
+      \uBC29\uD328\uC758 \uCC0C\uADF8\uB7EC\uC9C4 \uBD80\uBD84\uC744 \uAC00\uB9AC\uD0A8\uB2E4.\r\n\r\n\uADF8\uAC74
+      \uAE08\uBC29 \uD3B4\uC9C0\uC9C0. \uC2F8\uC6B0\uB294 \uC790\uC138\uB3C4 \uBD10
+      \uC904 \uC218 \uC788\uACE0."
+  - propertyPath: pages.Array.data[0].options.Array.data[0].title
+    key: data.randomeventdata.forge.pages.0.options.0.title
+    lastText: "\uBC29\uD328\uB9CC \uC218\uB9AC\uD55C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[0].description
+    key: data.randomeventdata.forge.pages.0.options.0.description
+    lastText: "\uCD5C\uB300 \uC2E4\uB4DC +3"
+  - propertyPath: pages.Array.data[0].options.Array.data[0].resultText
+    key: data.randomeventdata.forge.pages.0.options.0.resulttext
+    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
+      \uB098\uC130\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[1].title
+    key: data.randomeventdata.forge.pages.0.options.1.title
+    lastText: "\uC2F8\uC6B0\uB294 \uC790\uC138\uB97C \uBD10 \uB2EC\uB77C\uACE0 \uD55C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[1].description
+    key: data.randomeventdata.forge.pages.0.options.1.description
+    lastText: 
+  - propertyPath: pages.Array.data[0].options.Array.data[1].resultText
+    key: data.randomeventdata.forge.pages.0.options.1.resulttext
+    lastText: 
+  - propertyPath: pages.Array.data[0].options.Array.data[2].title
+    key: data.randomeventdata.forge.pages.0.options.2.title
+    lastText: "\uB5A0\uB09C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[2].description
+    key: data.randomeventdata.forge.pages.0.options.2.description
+    lastText: 
+  - propertyPath: pages.Array.data[0].options.Array.data[2].resultText
+    key: data.randomeventdata.forge.pages.0.options.2.resulttext
+    lastText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+  - propertyPath: pages.Array.data[1].narrative
+    key: data.randomeventdata.forge.pages.1.narrative
+    lastText: "\uD55C \uBC88 \uD718\uB458\uB7EC \uBD10.\r\n\r\n\uBA87 \uBC88 \uC6C0\uC9C1\uC774\uC790
+      \uC7A5\uC778\uC774 \uBC1C\uACFC \uC190\uBAA9\uC758 \uC704\uCE58\uB97C \uC9DA\uC5B4
+      \uC900\uB2E4.\r\n\r\n\uC9C0\uAE08 \uAE30\uC220\uC744 \uB2E4\uB4EC\uC744\uAE4C,
+      \uB098\uC05C \uBC84\uB987 \uD558\uB098\uB97C \uBC84\uB9AC\uACE0 \uC0C8\uB85C
+      \uBC30\uC6B8\uAE4C?"
+  - propertyPath: pages.Array.data[1].options.Array.data[0].title
+    key: data.randomeventdata.forge.pages.1.options.0.title
+    lastText: "\uC775\uC219\uD55C \uAE30\uC220\uC744 \uB2E4\uB4EC\uB294\uB2E4."
+  - propertyPath: pages.Array.data[1].options.Array.data[0].description
+    key: data.randomeventdata.forge.pages.1.options.0.description
+    lastText: "\uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
+  - propertyPath: pages.Array.data[1].options.Array.data[0].resultText
+    key: data.randomeventdata.forge.pages.1.options.0.resulttext
+    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
+      \uB098\uC130\uB2E4."
+  - propertyPath: pages.Array.data[1].options.Array.data[1].title
+    key: data.randomeventdata.forge.pages.1.options.1.title
+    lastText: "\uAE30\uC220 \uD558\uB098\uB97C \uBC84\uB9AC\uACE0 \uC0C8\uB85C \uBC30\uC6B4\uB2E4."
+  - propertyPath: pages.Array.data[1].options.Array.data[1].description
+    key: data.randomeventdata.forge.pages.1.options.1.description
+    lastText: "\uB2A5\uB825 \uD558\uB098 \uC81C\uAC70 \xB7 \uC0C8 \uB2A5\uB825 \uC120\uD0DD
+      \xB7 \uC0C8 \uB2A5\uB825 \uC120\uD0DD"
+  - propertyPath: pages.Array.data[1].options.Array.data[1].resultText
+    key: data.randomeventdata.forge.pages.1.options.1.resulttext
+    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
+      \uB098\uC130\uB2E4."
+  - propertyPath: pages.Array.data[1].options.Array.data[2].title
+    key: data.randomeventdata.forge.pages.1.options.2.title
+    lastText: "\uB5A0\uB09C\uB2E4."
+  - propertyPath: pages.Array.data[1].options.Array.data[2].description
+    key: data.randomeventdata.forge.pages.1.options.2.description
+    lastText: 
+  - propertyPath: pages.Array.data[1].options.Array.data[2].resultText
+    key: data.randomeventdata.forge.pages.1.options.2.resulttext
+    lastText: "\uC7A5\uC778\uC740 \uAE09\uD560\uC218\uB85D \uBC1C\uBC11\uBD80\uD130
+      \uBCF4\uB77C\uB294 \uB9D0\uC744 \uB0A8\uACBC\uB2E4."
   textOwnerGuid: af7a1ec3a072fce4da8bfdb5e90a4855
   id: Forge
+  excludedFromRandomPool: 1
   displayName: "\uB0A0\uC774 \uC544\uB2C8\uB77C \uBC84\uB987\uC744 \uAC04\uB2E4"
-  narrative: "\uC7A5\uC778\uC740 \uAC80\uC744 \uBCF4\uC9C0\uB3C4 \uC54A\uB294\uB2E4.\n\u201C\uD55C
-    \uBC88 \uD718\uB458\uB7EC \uBD10.\u201D\n\n\uBD88\uAF43 \uC18D\uC5D0\uC11C \uC9C0\uB09C
-    \uC804\uD22C\uC758 \uBC84\uB987\uC774 \uB3C4\uB4DC\uB77C\uC9C4\uB2E4.\n\u201C\uB0A8\uAE38\uAE4C,
-    \uAC08\uC544 \uC5C6\uC568\uAE4C?\u201D"
-  illustration: {fileID: 21300000, guid: be3823d317994f9449e82d368dc4fbd6, type: 3}
+  narrative: "\uBB34\uAE30 \uC815\uBE44\uC2E4\uC5D0\uC11C \uB9DD\uCE58 \uC18C\uB9AC\uAC00
+    \uB4E4\uB9B0\uB2E4.\r\n\r\n\uC7A5\uC778\uC774 \uB0B4 \uC7A5\uBE44\uB97C \uBCF4\uB354\uB2C8
+    \uBC29\uD328\uC758 \uCC0C\uADF8\uB7EC\uC9C4 \uBD80\uBD84\uC744 \uAC00\uB9AC\uD0A8\uB2E4.\r\n\r\n\uADF8\uAC74
+    \uAE08\uBC29 \uD3B4\uC9C0\uC9C0. \uC2F8\uC6B0\uB294 \uC790\uC138\uB3C4 \uBD10
+    \uC904 \uC218 \uC788\uACE0."
+  illustration: {fileID: -2082710374031993758, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   minAct: 1
   maxAct: 3
@@ -58,12 +143,13 @@ MonoBehaviour:
   minNormalCombatsInAct: 0
   referenceUrl: https://op.gg/ko/slay-the-spire2/events/DoorsOfLightAndDark
   referenceExperience: "\uC774\uBBF8 \uAC00\uC9C4 \uC131\uC7A5\uC758 \uAC15\uD654\uC640
-    \uD558\uB098\uB97C \uBC84\uB9AC\uB294 \uC7AC\uAD6C\uC131."
+    \uD558\uB098\uB97C \uBC84\uB9AC\uB294 \uC7AC\uAD6C\uC131.\n\uC11C\uC0AC/\uC5F0\uCD9C:
+    Docs/Production/EventSequences-Castle.md\n\uC11C\uC0AC/\uC5F0\uCD9C: Docs/Production/EventSequences-Castle.md"
   requiredFlag: 
   forbiddenFlag: 
   options:
   - title: "\uC775\uC219\uD55C \uAE30\uC220\uC744 \uBCBC\uB9B0\uB2E4"
-    description: "30\uACE8\uB4DC \uC18C\uBAA8. \uBCF4\uC720 \uD37D \uD558\uB098\uB97C
+    description: "30\uACE8\uB4DC \uC18C\uBAA8. \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098\uB97C
       \uAC15\uD654."
     goldCost: 30
     hpCost: 0
@@ -73,6 +159,12 @@ MonoBehaviour:
     requiredRelic: {fileID: 0}
     requiredPerk: 
     requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: 
+    requirements: []
     effects:
     - kind: 13
       relic: {fileID: 0}
@@ -82,8 +174,8 @@ MonoBehaviour:
       amount: 0
       stat: 4
   - title: "\uD558\uB098\uB97C \uBC84\uB9AC\uACE0 \uB450 \uAC1C\uB97C \uBC30\uC6B4\uB2E4"
-    description: "\uBCF4\uC720 \uD37D \uD558\uB098 \uC81C\uAC70 \uD6C4 \uC0C8 \uD37D
-      \uB450 \uBC88 \uC120\uD0DD."
+    description: "\uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uC81C\uAC70 \uD6C4 \uC0C8
+      \uB2A5\uB825 \uB450 \uBC88 \uC120\uD0DD."
     goldCost: 0
     hpCost: 0
     maxHpCost: 0
@@ -92,6 +184,12 @@ MonoBehaviour:
     requiredRelic: {fileID: 0}
     requiredPerk: 
     requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: 
+    requirements: []
     effects:
     - kind: 12
       relic: {fileID: 0}
@@ -115,8 +213,8 @@ MonoBehaviour:
       amount: 0
       stat: 4
   - title: "\uBC29\uD328\uC758 \uCC0C\uADF8\uB7EC\uC9C4 \uACF3\uB9CC \uD3B8\uB2E4"
-    description: "\uCD5C\uB300 \uAC00\uB4DC\uAC8C\uC774\uC9C0 +3. \uD37D\uC740 \uBC14\uB00C\uC9C0
-      \uC54A\uB294\uB2E4."
+    description: "\uCD5C\uB300 \uAC00\uB4DC\uAC8C\uC774\uC9C0 +3. \uB2A5\uB825\uC740
+      \uBC14\uB00C\uC9C0 \uC54A\uB294\uB2E4."
     goldCost: 0
     hpCost: 0
     maxHpCost: 0
@@ -125,6 +223,12 @@ MonoBehaviour:
     requiredRelic: {fileID: 0}
     requiredPerk: 
     requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: 
+    requirements: []
     effects:
     - kind: 7
       relic: {fileID: 0}
@@ -133,3 +237,163 @@ MonoBehaviour:
       flag: 
       amount: 3
       stat: 6
+  pages:
+  - narrative: "\uBB34\uAE30 \uC815\uBE44\uC2E4\uC5D0\uC11C \uB9DD\uCE58 \uC18C\uB9AC\uAC00
+      \uB4E4\uB9B0\uB2E4.\r\n\r\n\uC7A5\uC778\uC774 \uB0B4 \uC7A5\uBE44\uB97C \uBCF4\uB354\uB2C8
+      \uBC29\uD328\uC758 \uCC0C\uADF8\uB7EC\uC9C4 \uBD80\uBD84\uC744 \uAC00\uB9AC\uD0A8\uB2E4.\r\n\r\n\uADF8\uAC74
+      \uAE08\uBC29 \uD3B4\uC9C0\uC9C0. \uC2F8\uC6B0\uB294 \uC790\uC138\uB3C4 \uBD10
+      \uC904 \uC218 \uC788\uACE0."
+    illustration: {fileID: -2082710374031993758, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+    options:
+    - title: "\uBC29\uD328\uB9CC \uC218\uB9AC\uD55C\uB2E4."
+      description: "\uCD5C\uB300 \uC2E4\uB4DC +3"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
+        \uB098\uC130\uB2E4."
+      requirements: []
+      effects:
+      - kind: 7
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        encounter: {fileID: 0}
+        flag: 
+        amount: 3
+        stat: 6
+    - title: "\uC2F8\uC6B0\uB294 \uC790\uC138\uB97C \uBD10 \uB2EC\uB77C\uACE0 \uD55C\uB2E4."
+      description: 
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: 1
+      failurePage: -1
+      resultText: 
+      requirements: []
+      effects: []
+    - title: "\uB5A0\uB09C\uB2E4."
+      description: 
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+      requirements: []
+      effects: []
+    routes: []
+  - narrative: "\uD55C \uBC88 \uD718\uB458\uB7EC \uBD10.\r\n\r\n\uBA87 \uBC88 \uC6C0\uC9C1\uC774\uC790
+      \uC7A5\uC778\uC774 \uBC1C\uACFC \uC190\uBAA9\uC758 \uC704\uCE58\uB97C \uC9DA\uC5B4
+      \uC900\uB2E4.\r\n\r\n\uC9C0\uAE08 \uAE30\uC220\uC744 \uB2E4\uB4EC\uC744\uAE4C,
+      \uB098\uC05C \uBC84\uB987 \uD558\uB098\uB97C \uBC84\uB9AC\uACE0 \uC0C8\uB85C
+      \uBC30\uC6B8\uAE4C?"
+    illustration: {fileID: -2082710374031993758, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+    options:
+    - title: "\uC775\uC219\uD55C \uAE30\uC220\uC744 \uB2E4\uB4EC\uB294\uB2E4."
+      description: "\uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
+      goldCost: 30
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
+        \uB098\uC130\uB2E4."
+      requirements: []
+      effects:
+      - kind: 13
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+    - title: "\uAE30\uC220 \uD558\uB098\uB97C \uBC84\uB9AC\uACE0 \uC0C8\uB85C \uBC30\uC6B4\uB2E4."
+      description: "\uB2A5\uB825 \uD558\uB098 \uC81C\uAC70 \xB7 \uC0C8 \uB2A5\uB825
+        \uC120\uD0DD \xB7 \uC0C8 \uB2A5\uB825 \uC120\uD0DD"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
+        \uB098\uC130\uB2E4."
+      requirements: []
+      effects:
+      - kind: 12
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 3
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 3
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+    - title: "\uB5A0\uB09C\uB2E4."
+      description: 
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC7A5\uC778\uC740 \uAE09\uD560\uC218\uB85D \uBC1C\uBC11\uBD80\uD130
+        \uBCF4\uB77C\uB294 \uB9D0\uC744 \uB0A8\uACBC\uB2E4."
+      requirements: []
+      effects: []
+    routes: []
+  entryRoutes: []

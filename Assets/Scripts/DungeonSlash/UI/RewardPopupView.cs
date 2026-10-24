@@ -31,6 +31,7 @@ namespace DungeonSlash
         {
             if (panel == null || finalState == null) return;
             panel.SetActive(true);
+            panel.transform.SetAsLastSibling();
             PrepareRewardText(reward, confirmed);
             if (reward.Experience <= 0)
             {
@@ -47,6 +48,7 @@ namespace DungeonSlash
         {
             if (panel == null || state == null) return;
             panel.SetActive(true);
+            panel.transform.SetAsLastSibling();
             StopAnimation();
             PrepareRewardText(reward, confirmed);
             if (reward.Experience > 0)

@@ -26,7 +26,7 @@ MonoBehaviour:
   description: "\uC77C\uBC18\uACF5\uACA9\uC774 \uB3C5\uC744 1\uC911\uCCA9 \uB354
     \uBD80\uC5EC\uD55C\uB2E4. \uB3C5 \uD53C\uD574 1, 8\uCD08 \uC9C0\uC18D, \uCD5C\uB300
     8\uC911\uCCA9."
-  icon: {fileID: 21300000, guid: 5edf6d5bb7cac6f46828d5ed649c463f, type: 3}
+  icon: {fileID: 6136726090811837194, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 1
   power: 15
@@ -65,12 +65,11 @@ MonoBehaviour:
       statusCap: 8
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: db6f1ff1855ee704da2fe90507ead119, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -111,12 +110,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

@@ -56,12 +56,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 11400000, guid: 3b3c9ee7c11672342a98e8f0586dcaa3, type: 2}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -83,18 +82,16 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables:
       - type: 16
         buff: {fileID: 0}
-        resource: {fileID: 0}
         rule: 10
         multiplier: 1
         limit: 0
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -116,18 +113,16 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables:
       - type: 16
         buff: {fileID: 0}
-        resource: {fileID: 0}
         rule: 11
         multiplier: 1
         limit: 0
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -165,12 +160,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -187,6 +181,11 @@ MonoBehaviour:
     MaxStackCount: 1
     ConsiderTagIsDuplicate: {fileID: 0}
   showInHud: 1
+  attackFeedbackKey: ui.combatcontroller.9b76b68d
+  attackFeedbackPriority: 1
+  harmful: 0
   presentationColor: {r: 1, g: 1, b: 1, a: 1}
   tintOwner: 0
-  form: {fileID: 0}
+  attackPattern: 
+  requiresUnlock: 0
+  attackRole: 0

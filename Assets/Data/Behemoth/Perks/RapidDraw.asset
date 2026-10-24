@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: RapidDraw
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.rapiddraw.displayname
+    lastText: "\uC5F0\uC18D \uBC1C\uB3C4"
+  - propertyPath: description
+    key: data.perkdata.rapiddraw.description
+    lastText: "\uBC1C\uB3C4 \uD6C4 2\uCD08 \uC548\uC5D0 \uB2E4\uC2DC \uBC1C\uB3C4\uD558\uBA74
+      \uBB3C\uB9AC \uD53C\uD574 4\uC758 \uC794\uACA9\uC774 \uBC1C\uC0DD\uD55C\uB2E4."
+  textOwnerGuid: 7db60eeb9c7643148a2025989469a9ff
+  id: RapidDraw
+  displayName: "\uC5F0\uC18D \uBC1C\uB3C4"
+  description: "\uBC1C\uB3C4 \uD6C4 2\uCD08 \uC548\uC5D0 \uB2E4\uC2DC \uBC1C\uB3C4\uD558\uBA74
+    \uBB3C\uB9AC \uD53C\uD574 4\uC758 \uC794\uACA9\uC774 \uBC1C\uC0DD\uD55C\uB2E4."
+  icon: {fileID: -4737426781762327817, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 2
+  exclusiveCharacter: 3
+  abilitySource: {fileID: 11400000, guid: 14e8203fb2038cf499771f8513abfb24, type: 2}
+  maxStacks: 99
+  modifiers: []

@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 9e125daff88f88043857b870d7c5c07f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemyStates_02_ChainBrother_Idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 935.25
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c190bd435bf9cb0800000000000000
+      internalID: -4854962634664371179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_ChainBrother_Ready
+      rect:
+        serializedVersion: 2
+        x: 315.25
+        y: 935.25
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7ddcc016af4de80800000000000000
+      internalID: -8154617730527537191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_ChainBrother_Attack
+      rect:
+        serializedVersion: 2
+        x: 630.5
+        y: 935.25
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f5587f3ea8e2010800000000000000
+      internalID: 1166022065250459403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_ChainBrother_Dead
+      rect:
+        serializedVersion: 2
+        x: 945.75
+        y: 935.25
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bcecbf03839638f0800000000000000
+      internalID: -561098912447009613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_Chainling_Idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 623.5
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741db7875a335cf60800000000000000
+      internalID: 8053900294406000967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_Chainling_Ready
+      rect:
+        serializedVersion: 2
+        x: 315.25
+        y: 623.5
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e25437e5b4830950800000000000000
+      internalID: 6414116211108631273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_Chainling_Attack
+      rect:
+        serializedVersion: 2
+        x: 630.5
+        y: 623.5
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f10677ec833d9a30800000000000000
+      internalID: 4223588705815101939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_Chainling_Dead
+      rect:
+        serializedVersion: 2
+        x: 945.75
+        y: 623.5
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff0d56e464e03070800000000000000
+      internalID: 8084212453142761468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderImp_Idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 311.75
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3d618bc4f303270800000000000000
+      internalID: 8228146117944464347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderImp_Ready
+      rect:
+        serializedVersion: 2
+        x: 315.25
+        y: 311.75
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6673a0edfa8687c0800000000000000
+      internalID: -4069412390282496406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderImp_Attack
+      rect:
+        serializedVersion: 2
+        x: 630.5
+        y: 311.75
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86757f38d237414a0800000000000000
+      internalID: -6623542512630409368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderImp_Dead
+      rect:
+        serializedVersion: 2
+        x: 945.75
+        y: 311.75
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd75b545f63c4e10800000000000000
+      internalID: 2183180346432257458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderPriest_Idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8aae43c2b7ce3a0800000000000000
+      internalID: -6634792721227011883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderPriest_Ready
+      rect:
+        serializedVersion: 2
+        x: 315.25
+        y: 0
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a520fe29d0f201820800000000000000
+      internalID: 2886859096490705498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderPriest_Attack
+      rect:
+        serializedVersion: 2
+        x: 630.5
+        y: 0
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5317bffb015f966d0800000000000000
+      internalID: -2996594624749145803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStates_02_CinderPriest_Dead
+      rect:
+        serializedVersion: 2
+        x: 945.75
+        y: 0
+        width: 315.25
+        height: 311.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadbf59b8d9411ad0800000000000000
+      internalID: -2733322303665357394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnemyStates_02_ChainBrother_Attack: 1166022065250459403
+      EnemyStates_02_ChainBrother_Dead: -561098912447009613
+      EnemyStates_02_ChainBrother_Idle: -4854962634664371179
+      EnemyStates_02_ChainBrother_Ready: -8154617730527537191
+      EnemyStates_02_Chainling_Attack: 4223588705815101939
+      EnemyStates_02_Chainling_Dead: 8084212453142761468
+      EnemyStates_02_Chainling_Idle: 8053900294406000967
+      EnemyStates_02_Chainling_Ready: 6414116211108631273
+      EnemyStates_02_CinderImp_Attack: -6623542512630409368
+      EnemyStates_02_CinderImp_Dead: 2183180346432257458
+      EnemyStates_02_CinderImp_Idle: 8228146117944464347
+      EnemyStates_02_CinderImp_Ready: -4069412390282496406
+      EnemyStates_02_CinderPriest_Attack: -2996594624749145803
+      EnemyStates_02_CinderPriest_Dead: -2733322303665357394
+      EnemyStates_02_CinderPriest_Idle: -6634792721227011883
+      EnemyStates_02_CinderPriest_Ready: 2886859096490705498
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

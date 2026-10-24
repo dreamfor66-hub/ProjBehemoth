@@ -19,6 +19,19 @@ namespace DungeonSlash
         [SerializeField] private Image directionalGuardFill;
         [SerializeField] private TextMeshProUGUI directionalGuardLabel;
         private float attackNameHideAt;
+        public ArcadePresentation presentation;
+        private CombatSpriteAnimator animator;
+        public float arcadeArtScale=1.65f;
+        private float attackUntil;
+        private MonsterData boundData;
+        public void PlayAttack(){attackUntil=Time.time+.3f;if(animator!=null)animator.Play(animator.library,CombatVisualState.Attack,true);}
+        public void PlayDead(){if(boundData!=null)Animate(boundData,CombatVisualState.Dead);}
+        private void Animate(MonsterData data,CombatVisualState state)
+        {
+            if(presentation==null||!presentation.arcade||data.combatAnimation==null||body==null)return;
+            animator=animator!=null?animator:body.GetComponent<CombatSpriteAnimator>()??body.gameObject.AddComponent<CombatSpriteAnimator>();
+            animator.presentation=presentation;animator.Play(data.combatAnimation,state);
+        }
 
         public RectTransform Root => root;
 
@@ -49,7 +62,14 @@ namespace DungeonSlash
         public void Bind(MonsterRuntime runtime)
         {
             if (runtime == null || runtime.Data == null) return;
-            if (body != null) body.color = runtime.State == MonsterState.Stunned ? new Color(1f, .86f, .22f) : runtime.Data.bodyColor;
+            boundData=runtime.Data;
+            if (body != null)
+            {
+                body.sprite = runtime.Data.portrait;body.preserveAspect = runtime.Data.portrait != null;
+                body.color = runtime.State == MonsterState.Stunned ? new Color(1f, .89f, .65f) : runtime.Data.portrait != null ? Color.white : runtime.Data.bodyColor;
+                body.rectTransform.localScale=Vector3.one*(presentation!=null&&presentation.arcade?arcadeArtScale:1);
+                Animate(runtime.Data,!runtime.IsAlive?CombatVisualState.Dead:Time.time<attackUntil?CombatVisualState.Attack:runtime.State is MonsterState.Charging or MonsterState.Attacking?CombatVisualState.Ready:CombatVisualState.Idle);
+            }
             if (stateLabel != null)
             {
                 stateLabel.text = (runtime.IsUnaware ? GameText.Get("ui.stealth.unaware") + "\n" : "")
@@ -62,9 +82,10 @@ namespace DungeonSlash
             SetGauge(hpFill, runtime.MaxHp <= 0f ? 0f : runtime.CurrentHp / runtime.MaxHp);
             if (chargeTimeLabel != null)
             {
-                var charging = runtime.State == MonsterState.Charging && runtime.StateTimer > 0f;
+                var charging = (runtime.State is MonsterState.Charging or MonsterState.Attacking) && runtime.StateTimer > 0f;
                 chargeTimeLabel.enabled = charging;
-                if (charging) chargeTimeLabel.text = GameText.Format("ui.monsterview.86116ee5", runtime.StateTimer);
+                if (charging) chargeTimeLabel.text = runtime.StateTimer.ToString("0.0")+GameText.Get("ui.feedback.seconds");
+                if(charging&&attackNameLabel!=null){attackNameLabel.text=(runtime.State==MonsterState.Charging?runtime.CurrentChargeAttack:runtime.NormalAttack)?.displayName;attackNameLabel.enabled=true;attackNameHideAt=Time.unscaledTime+.1f;SetVisible(attackNameBackdrop,true);}
                 SetVisible(chargeTimeBackdrop, charging);
             }
             else SetVisible(chargeTimeBackdrop, false);

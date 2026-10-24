@@ -13,9 +13,11 @@ namespace DungeonSlash
         private void BindExpansion() { eventCombatCompleted = null; activeEvent = null; expansionView?.Bind(runController, combatController); }
         private void ShowStartExplanation()
         {
+            var arcade=GetComponentInChildren<ArcadeHudController>();if(arcade==null)arcade=UnityEngine.Object.FindFirstObjectByType<ArcadeHudController>();
+            if(arcade!=null){arcade.StartHint();return;}
             if (expansionView == null) return;
             var data = runController.State.Player.Data;
-            expansionView.ShowMessage(data.displayName + GameText.Get("ui.gameflowexpansion.ca3d25b5"), data.description + GameText.Get("ui.gameflowexpansion.34facc8c") + (runController.State.Spellbook.Count > 0 ? GameText.Get("ui.gameflowexpansion.a8b9dc2c") : "") + GameText.Get("ui.gameflowexpansion.a63f7436"), () => RefreshHud());
+            expansionView.ShowMessage(data.displayName + GameText.Get("ui.gameflowexpansion.ca3d25b5"), GameText.Get("ui.run.start.controls") + (runController.State.Spellbook.Count > 0 ? "\n\n" + GameText.Get("ui.run.start.magic") : ""), () => RefreshHud());
         }
         private void ShowRandomEvent(DungeonRoom room)
         {
@@ -28,6 +30,7 @@ namespace DungeonSlash
                 expansionView.ShowMessage(GameText.Get("ui.gameflowexpansion.44d9a674"), GameText.Get("ui.gameflowexpansion.2d68940e"), AfterRoomResolution); return;
             }
             var current = activeEvent;
+            if (current.pages.Count > 0) { ShowEventSequence(room, current); return; }
             var options = current.options.Select(option =>
             {
                 var unavailable = RandomEventSystem.UnavailableReason(option, runController.State);
@@ -38,7 +41,9 @@ namespace DungeonSlash
                 if (option.consumeHealingPotion) costs.Add(GameText.Get("ui.gameflowexpansion.ffbb9952"));
                 return new PresentationChoice {
                     Title = option.title,
-                    Description = option.description + (costs.Count > 0 ? "\n" + string.Join(" · ", costs) : "") + (unavailable != null ? "\n[" + unavailable + "]" : ""),
+                    Description = option.description,
+                    Requirements = string.Join(" · ",costs.Concat(unavailable==null?Array.Empty<string>():new[]{unavailable})),
+                    PreviewItem = option.effects.Select(e=>e.relic).FirstOrDefault(r=>r!=null),
                     Enabled = unavailable == null,
                     Selected = () =>
                     {
@@ -57,11 +62,14 @@ namespace DungeonSlash
         {
             RefreshHud();
             if (index >= effects.Count)
-            { expansionView.ShowMessage(story.displayName, string.Join("\n", messages), AfterRoomResolution); return; }
+            { ShowEventConclusion(story, string.Join("\n", messages)); return; }
             var effect = effects[index]; var run = runController.State;
             Action next = () => ApplyEventEffects(story, effects, index + 1, messages);
             switch (effect.kind)
             {
+                case EventEffectKind.LearnSpell:
+                    if (effect.spell != null) { expansionView.OfferSpell(effect.spell, accepted => { if (accepted) { messages.Add(GameText.Format("ui.event.learnedspell", effect.spell.displayName)); next(); } else expansionView.ShowMessage(story.displayName, GameText.Get("ui.event.lessondeclined"), AfterRoomResolution); }); return; }
+                    break;
                 case EventEffectKind.Potion:
                     var foundPotion = runController.GetPotionDrop(run.Seed, run.SeenEvents.Count);
                     if (foundPotion != null && runController.TryGrantEquipment(foundPotion)) messages.Add(foundPotion.displayName);
@@ -90,7 +98,7 @@ namespace DungeonSlash
                         : runController.GetRelicChoices(run.Seed, run.SeenEvents.Count * 997);
                     if (relics.Count == 0) { run.GainGold(20); messages.Add(GameText.Get("ui.gameflowexpansion.8dabb184")); break; }
                     expansionView.ShowModal(effect.kind == EventEffectKind.ExclusiveChoice ? GameText.Get("ui.gameflowexpansion.d1e98751") : GameText.Get("ui.gameflowexpansion.d1e21774"), GameText.Get("ui.gameflowexpansion.7bf1bd68"), relics.Select(relic => new PresentationChoice {
-                        Title = relic.displayName, Description = relic.description, Icon = relic.icon,
+                        Title = relic.displayName, Description = relic.description, Icon = relic.icon, PreviewItem = relic,
                         Selected = () => { if (runController.TryGrantRelic(relic)) messages.Add(GameText.Get("ui.gameflowexpansion.9f2ed0e0") + relic.displayName); expansionView.ResolvePendingSpells(next); }
                     })); return;
                 case EventEffectKind.PerkChoice:
@@ -101,10 +109,10 @@ namespace DungeonSlash
                         Selected = () => { runController.TryGrantPerk(perk); messages.Add(GameText.Get("ui.gameflowexpansion.ef9eaadd") + perk.displayName); next(); }
                     })); return;
                 case EventEffectKind.SpellChoice:
-                    var spells = content.spells.Where(spell => run.MagicIntroduced && spell != null && run.RuntimeFor(spell) == null).OrderBy(spell => StableHash(spell.id, run.Seed + run.SeenEvents.Count)).Take(3).ToArray();
+                    var spells = content.spells.Where(spell => run.MagicIntroduced && spell != null && spell.tier < 2 && run.RuntimeFor(spell) == null).OrderBy(spell => StableHash(spell.id, run.Seed + run.SeenEvents.Count)).Take(3).ToArray();
                     if (spells.Length == 0) { run.GainGold(20); messages.Add(GameText.Get("ui.gameflowexpansion.7b666ce8")); break; }
                     expansionView.ShowModal(GameText.Get("ui.gameflowexpansion.805b2755"), GameText.Get("ui.gameflowexpansion.7c97cdb8"), spells.Select(spell => new PresentationChoice {
-                        Title = FormData.DirectionLabel(spell.defaultSlot) + " " + spell.displayName, Description = RunExpansionView.SpellDetails(spell, run.Player), Icon = spell.icon,
+                        Title = SwipeDirectionUtility.Label(spell.defaultSlot) + " " + spell.displayName, Description = RunExpansionView.SpellDetails(spell, run.Player), Icon = spell.icon,
                         Selected = () => expansionView.OfferSpell(spell, accepted => { messages.Add(accepted ? GameText.Get("ui.gameflowexpansion.d76dc5b8") + spell.displayName : GameText.Get("ui.gameflowexpansion.ef14f1f9")); next(); })
                     })); return;
                 case EventEffectKind.Fight:

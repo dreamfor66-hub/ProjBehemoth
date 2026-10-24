@@ -79,6 +79,7 @@ namespace DungeonSlash
     {
         private float baseMaxHp; public float MaxHp { get => baseMaxHp + BuffStat(ModifierKind.MaxHp); private set => baseMaxHp = value; }
         public float CurrentHp { get; private set; }
+        public void DieFromExhaustion(){CurrentHp=0;}
         private float baseShieldMax; public float ShieldMax { get => baseShieldMax + BuffStat(ModifierKind.ShieldMax); private set => baseShieldMax = value; }
         public float ShieldCurrent { get; private set; }
         public ShieldState ShieldState { get; private set; }
@@ -132,14 +133,18 @@ namespace DungeonSlash
             keyboardGuardActive = false;
             chargeGuardSources = doubleChargeSources = 0;
             Buffs.Clear();
+            extraPermanentStats.Clear();
+            RefillMp();
             normalShieldRegen = data.normalShieldRegen;
             brokenShieldRegen = data.brokenShieldRegen;
             ResetCharacter();
         }
 
-        public float NormalAttackDamage => data.baseAttackDamage * NormalDamageMultiplier * AllDamageMultiplier * (1+Rule(AbilityRule.WeaponBaseMultiplier));
-        public float ChargeAttackDamage => data.baseChargeDamage * ChargeDamageMultiplier * AllDamageMultiplier * (1+Rule(AbilityRule.WeaponBaseMultiplier));
-        public float CurrentCooldown => Mathf.Max(data.minimumAttackCooldown, data.attackCooldown * AttackCooldownMultiplier * Mathf.Max(.2f, 1 + Rule(AbilityRule.CooldownMultiplier)) * Mathf.Max(.2f, 1 - Rule(AbilityRule.AttackCooldownReduction)));
+        public float NormalAttackDamage => (data.baseAttackDamage * NormalDamageMultiplier + BuffStat(ModifierKind.FlatNormalDamage)) * AllDamageMultiplier * (1+Rule(AbilityRule.WeaponBaseMultiplier));
+        public float ChargeAttackDamage => (data.baseChargeDamage * ChargeDamageMultiplier + BuffStat(ModifierKind.FlatChargeDamage)) * AllDamageMultiplier * (1+Rule(AbilityRule.WeaponBaseMultiplier));
+        public float CriticalChance => Mathf.Clamp01(data.criticalChance+BuffStat(ModifierKind.CriticalChance));
+        public float CriticalDamageMultiplier => Mathf.Max(1,data.criticalDamageMultiplier+BuffStat(ModifierKind.CriticalDamageMultiplier));
+        public float CurrentCooldown => Mathf.Max(data.minimumAttackCooldown, data.attackCooldown * AttackCooldownMultiplier * Mathf.Max(.2f, 1 + Rule(AbilityRule.CooldownMultiplier)) * Mathf.Max(.2f, 1 - Rule(AbilityRule.AttackCooldownReduction))) / (Owner?.Fatigue.AttackSpeedMultiplier??1);
         public float CurrentChargeDuration => data.chargeDuration * ChargeDurationMultiplier * Mathf.Max(.2f, 1 - Rule(AbilityRule.ChargeTimeReduction));
         public float ChargeTolerance => data.inputMoveTolerance;
         public float SegmentWidth => data.attackSegmentWidth;
@@ -215,6 +220,10 @@ namespace DungeonSlash
             ShieldState = ShieldState.Ready;
         }
         public void Heal(float amount) => CurrentHp = Mathf.Min(MaxHp, CurrentHp + amount);
+        public void ClampResources()
+        {
+            CurrentHp=Mathf.Min(CurrentHp,MaxHp);ShieldCurrent=Mathf.Min(ShieldCurrent,ShieldMax);RestoreMp(0);
+        }
         public void Revive(float healthFraction)
         {
             CurrentHp = Mathf.Max(1f, MaxHp * Mathf.Clamp01(healthFraction));
@@ -274,6 +283,12 @@ namespace DungeonSlash
                 case ModifierKind.ChargeGuardEnabled: chargeGuardSources += direction > 0f ? 1 : -1; break;
                 case ModifierKind.DoubleChargeEnabled: doubleChargeSources += direction > 0f ? 1 : -1; break;
                 case ModifierKind.DamagePerAttackDistance: baseDamagePerAttackDistance += value; break;
+                default:
+                    extraPermanentStats.TryGetValue(modifier.kind,out var previous);
+                    var total=previous+value;
+                    if(Mathf.Abs(total)<.000001f)extraPermanentStats.Remove(modifier.kind);
+                    else extraPermanentStats[modifier.kind]=total;
+                    break;
             }
         }
 
@@ -597,9 +612,27 @@ namespace DungeonSlash
         { HpDamage = hpDamage; ShieldDamage = shieldDamage; TargetDied = targetDied; WasGuarded = wasGuarded; WasPerfectGuard = wasPerfectGuard; WasSheathParry = wasSheathParry; }
     }
 
+    public readonly struct MonsterDamageResult
+    {
+        public readonly float Damage;
+        public readonly bool IsCritical;
+        public readonly bool WasStunned;
+        public MonsterDamageResult(float damage,bool critical,bool stunned){Damage=damage;IsCritical=critical;WasStunned=stunned;}
+    }
+
     public sealed class DamageResolver
     {
         public DamageResult ApplyToPlayer(PlayerCombatRuntime player, DamageRequest request) => player.ReceiveDamage(request);
         public void ApplyToMonster(MonsterRuntime monster, float damage, float stunMultiplier) => monster.TakeDamage(monster.IsStunned ? damage * stunMultiplier : damage);
+        public MonsterDamageResult ApplyToMonster(MonsterRuntime monster,float damage,PlayerCombatRuntime player,System.Random random,bool apply=true)
+        {
+            if(monster==null||!monster.IsAlive||damage<=0)return default;
+            var stunned=monster.IsStunned;
+            var chance=player.CriticalChance;
+            var critical=stunned||chance>=1||chance>0&&random.NextDouble()<chance;
+            var total=damage*(stunned?player.StunDamageMultiplier:1)*(critical?player.CriticalDamageMultiplier:1)*(player.Owner?.Fatigue.FinalDamageMultiplier??1);
+            if(apply)monster.TakeDamage(total);
+            return new MonsterDamageResult(total,critical,stunned);
+        }
     }
 }

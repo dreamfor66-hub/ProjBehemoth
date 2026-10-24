@@ -56,12 +56,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 1
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -99,12 +98,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 426cf37c1a7e05546bdc0eb0ccd8c424, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -126,12 +124,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 11400000, guid: 97d517057e7c11b4b9d1fc83bd34e5f0, type: 2}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -139,14 +136,20 @@ MonoBehaviour:
       buffGroup: 
   ReleaseData:
     Type: 10
-    Time: 0.1
+    Time: 0.3
     ResetOnStack: 0
+    ResetOnReapplyAtCap: 0
     Count: 1
   DuplicationData:
     Type: 1
     MaxStackCount: 1
     ConsiderTagIsDuplicate: {fileID: 0}
   showInHud: 0
+  attackFeedbackKey: 
+  attackFeedbackPriority: 0
+  harmful: 0
   presentationColor: {r: 1, g: 1, b: 1, a: 1}
   tintOwner: 0
-  form: {fileID: 0}
+  attackPattern: 
+  requiresUnlock: 0
+  attackRole: 0

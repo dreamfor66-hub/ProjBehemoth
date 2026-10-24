@@ -16,7 +16,6 @@ namespace DungeonSlash
         [SerializeField] private TextMeshProUGUI yesLabel;
         [SerializeField] private Button noButton;
         [SerializeField] private TextMeshProUGUI noLabel;
-        [SerializeField, Min(.1f)] private float messageSeconds = 1.2f;
 
         public void Configure(GameObject newPanel, Image newIllustration, TextMeshProUGUI newMessage, Button newYesButton, TextMeshProUGUI newYesLabel, Button newNoButton, TextMeshProUGUI newNoLabel)
         {
@@ -32,7 +31,9 @@ namespace DungeonSlash
         public IEnumerator ShowTimed(string text, Sprite sprite)
         {
             ShowBase(text, sprite);
-            yield return new WaitForSecondsRealtime(messageSeconds);
+            var confirmed=false;
+            ConfigureButton(yesButton,yesLabel,GameText.Get("ui.common.confirm"),()=>confirmed=true);
+            while(!confirmed && panel.activeSelf)yield return null;
             Hide();
         }
 
@@ -52,10 +53,12 @@ namespace DungeonSlash
         {
             if (panel == null) return;
             panel.SetActive(true);
+            panel.transform.SetAsLastSibling();
             if (message != null) message.text = text;
             if (illustration != null)
             {
                 illustration.sprite = sprite;
+                illustration.color = Color.white;
                 illustration.enabled = sprite != null;
                 illustration.preserveAspect = true;
             }

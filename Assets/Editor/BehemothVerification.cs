@@ -24,13 +24,28 @@ internal static class BehemothVerification
             BehemothContentBuilder.Build();
             if (command == "build-tests") EditorApplication.delayCall += () => RunTests(false);
         }
+        else if (command == "ashen-tests")
+        {
+            runner = ScriptableObject.CreateInstance<TestRunnerApi>(); runner.RegisterCallbacks(new Results());
+            File.WriteAllText("Logs/Behemoth-TestCases.txt", "");
+            runner.Execute(new ExecutionSettings(new Filter { testMode = TestMode.EditMode, testNames = new[] { "DungeonSlash.Tests.AshenVowContentTests" } }));
+        }
         else if (command == "tests" || command == "expansion-tests")
             RunTests(command == "expansion-tests");
+        else if (command == "functional-tests")
+        {
+            BehemothTextEditor.PrepareForVerification();
+            runner = ScriptableObject.CreateInstance<TestRunnerApi>(); runner.RegisterCallbacks(new Results());
+            File.WriteAllText("Logs/Behemoth-TestCases.txt", ""); File.WriteAllText("Logs/Behemoth-PlaytestMatrix.txt", "");
+            // The two long balance comparisons have a separate recorded matrix; run every functional case.
+            runner.Execute(new ExecutionSettings(new Filter { testMode = TestMode.EditMode,
+                groupNames = new[] { @"!^DungeonSlash\.Tests\.BehemothPlaytests\.Balance_" } }));
+        }
         else if (command == "unit-tests")
         {
             runner=ScriptableObject.CreateInstance<TestRunnerApi>();runner.RegisterCallbacks(new Results());
             File.WriteAllText("Logs/Behemoth-TestCases.txt","");
-            runner.Execute(new ExecutionSettings(new Filter{testMode=TestMode.EditMode,testNames=new[]{"DungeonSlash.Tests.BehemothBuffTests","DungeonSlash.Tests.BehemothAbilityTests","DungeonSlash.Tests.BehemothExpansionTests","DungeonSlash.Tests.BehemothFeedbackTests","DungeonSlash.Tests.DungeonSlashCoreTests"}}));
+            runner.Execute(new ExecutionSettings(new Filter{testMode=TestMode.EditMode,testNames=new[]{"DungeonSlash.Tests.BehemothBuffTests","DungeonSlash.Tests.BehemothBuffUnificationTests","DungeonSlash.Tests.BehemothAbilityTests","DungeonSlash.Tests.BehemothExpansionTests","DungeonSlash.Tests.BehemothFeedbackTests","DungeonSlash.Tests.DungeonSlashCoreTests"}}));
         }
         else if (command == "stealth-tests")
         {
@@ -43,6 +58,15 @@ internal static class BehemothVerification
                 "DungeonSlash.Tests.BehemothPlaytests.Stealth_PotionsNonDamageSpellGuardAndInvalidInput_RollOnlyCompletedActions",
                 "DungeonSlash.Tests.BehemothPlaytests.Stealth_OtherFiveClasses_ImmediateTimersAndOriginalUI_NoConcealmentDelay"
             } }));
+        }
+        else if (command == "ui-tests")
+        {
+            BehemothUiPreparation.Prepare();
+            runner = ScriptableObject.CreateInstance<TestRunnerApi>(); runner.RegisterCallbacks(new Results());
+            File.WriteAllText("Logs/Behemoth-TestCases.txt", ""); File.WriteAllText("Logs/Behemoth-PlaytestMatrix.txt", "");
+            runner.Execute(new ExecutionSettings(new Filter { testMode = TestMode.EditMode,
+                testNames = new[] { "DungeonSlash.Tests.BehemothUiTests", "DungeonSlash.Tests.BehemothPlaytests.UI_CentralSelectionAndSummary_ModalPriority_FixedMerchant",
+                    "DungeonSlash.Tests.BehemothAbilityTests.SpellIntroduction_AllRewardSources_NoEarlyBooks_LateActOneRare_ActTwoNormal" } }));
         }
         else if (command == "selection") EditorSceneManager.OpenScene("Assets/Scenes/OutGameScene.unity");
         else if (command == "texts-export") BehemothTextEditor.ExportDefault();
@@ -64,7 +88,7 @@ internal static class BehemothVerification
     }
     private sealed class Results : ICallbacks
     {
-        public void RunStarted(ITestAdaptor testsToRun) { File.WriteAllText("Logs/Behemoth-TestStatus.txt", "Running " + testsToRun.TestCaseCount + " tests"); }
+        public void RunStarted(ITestAdaptor testsToRun) { File.WriteAllText("Logs/Behemoth-TestStatus.txt", "Running requested test selection"); }
         public void RunFinished(ITestResultAdaptor result)
         {
             TestRunnerApi.SaveResultToFile(result, "Logs/Behemoth-TestResults.xml");

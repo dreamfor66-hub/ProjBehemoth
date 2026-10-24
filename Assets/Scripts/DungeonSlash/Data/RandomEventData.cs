@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace DungeonSlash
 {
-    public enum EventEffectKind { Relic, SharedRelicChoice, ExclusiveChoice, PerkChoice, SpellChoice, Gold, Heal, Stat, SetFlag, RemoveFlag, Fight, SacrificeRelic, RemovePerk, UpgradePerk, Burden, GoldDebt, Potion }
+    public enum EventEffectKind { Relic, SharedRelicChoice, ExclusiveChoice, PerkChoice, SpellChoice, Gold, Heal, Stat, SetFlag, RemoveFlag, Fight, SacrificeRelic, RemovePerk, UpgradePerk, Burden, GoldDebt, Potion, LearnSpell }
     [Serializable]
     public sealed class EventEffect
     {
@@ -19,7 +19,7 @@ namespace DungeonSlash
     public sealed class EventOption
     {
         public string title;
-        [TextArea] public string description;
+        [TextArea(5, 12)] public string description;
         [Min(0)] public int goldCost;
         [Min(0)] public float hpCost;
         [Min(0)] public float maxHpCost;
@@ -28,13 +28,58 @@ namespace DungeonSlash
         public EquipmentData requiredRelic;
         public string requiredPerk;
         public string requiredFlag;
+        public SupplyData supply;
+        [Min(0)] public int supplyCost;
+        public int nextPage = -1;
+        public int failurePage = -1;
+        [TextArea] public string resultText;
+        public List<EventRequirement> requirements = new();
         public List<EventEffect> effects = new();
+    }
+    public enum EventRequirementKind { MaxMp, SpellCasts, LearnedSpells, KnowsSpell, Flag, WonCombats, OwnsRelic }
+    [Serializable] public sealed class EventRequirement
+    {
+        public EventRequirementKind kind;
+        public float amount;
+        public SpellData spell;
+        public EquipmentData relic;
+        public string flag;
+        public bool invert;
+        public bool Matches(RunState run)
+        {
+            var result = kind switch
+            {
+                EventRequirementKind.MaxMp => run.Player.MaxMp >= amount,
+                EventRequirementKind.SpellCasts => run.SpellCasts >= amount,
+                EventRequirementKind.LearnedSpells => run.Spellbook.Count >= amount,
+                EventRequirementKind.KnowsSpell => spell != null && run.RuntimeFor(spell) != null,
+                EventRequirementKind.Flag => run.EventFlags.Contains(flag),
+                EventRequirementKind.WonCombats => run.WonCombats >= amount,
+                EventRequirementKind.OwnsRelic => relic != null && run.EquippedItems.Contains(relic),
+                _ => false
+            };
+            return invert ? !result : result;
+        }
+    }
+    [Serializable] public sealed class EventPage
+    {
+        [TextArea(3,8)] public string narrative;
+        public Sprite illustration;
+        public List<EventOption> options = new();
+        public List<EventEntryRoute> routes = new();
+    }
+    [Serializable] public sealed class EventEntryRoute
+    {
+        public List<EventRequirement> requirements = new();
+        public int page;
     }
     [CreateAssetMenu(menuName = "Dungeon Slash/Random Event")]
     public sealed class RandomEventData : LocalizedData
     {
         public string id;
         public string displayName;
+        [Tooltip("Keep authored pages but exclude this event from random encounters.")]
+        public bool excludedFromRandomPool;
         [TextArea(3, 8)] public string narrative;
         public Sprite illustration;
         public Color accent = new(.65f, .8f, .65f);
@@ -47,5 +92,7 @@ namespace DungeonSlash
         public string requiredFlag;
         public string forbiddenFlag;
         public List<EventOption> options = new();
+        public List<EventPage> pages = new();
+        public List<EventEntryRoute> entryRoutes = new();
     }
 }

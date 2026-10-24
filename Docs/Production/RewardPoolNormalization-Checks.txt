@@ -1,0 +1,31 @@
+Scoped saved-pool / natural chest and first-merchant checks. Existing Unity instance.
+PASS all six ordinary books exist once in the saved playable equipment pool
+PASS existing ordinary classification and prices preserved
+PASS all twelve regular spellbooks reach the playable pool
+PASS advanced spells remain outside ordinary book rewards
+PASS natural B1 chest can offer 인챈트 파이어
+PASS natural first merchant can stock 인챈트 파이어
+Tome_EnchantFire: chest 37/1024; merchant 108/1024
+PASS natural B1 chest can offer 인챈트 아이스
+PASS natural first merchant can stock 인챈트 아이스
+Tome_EnchantIce: chest 40/1024; merchant 119/1024
+PASS natural B1 chest can offer 인챈트 라이트닝
+PASS natural first merchant can stock 인챈트 라이트닝
+Tome_EnchantLightning: chest 35/1024; merchant 120/1024
+PASS natural B1 chest can offer 독안개
+PASS natural first merchant can stock 독안개
+Tome_PoisonMist: chest 38/1024; merchant 125/1024
+PASS natural B1 chest can offer 정화
+PASS natural first merchant can stock 정화
+Tome_Cleanse: chest 36/1024; merchant 115/1024
+PASS natural B1 chest can offer 벼락표식
+PASS natural first merchant can stock 벼락표식
+Tome_LightningMark: chest 31/1024; merchant 112/1024
+PASS enchantments are possible, never a forced merchant slot
+PASS merchant remains three ordinary items plus three potions
+PASS natural enchantment merchant entry previews and is purchasable with starting gold
+PASS merchant purchase spends gold once and learns the existing enchantment
+PASS purchase does not refill or reroll merchant stock
+PASS naturally drawn chest book is granted through normal relic acquisition
+PASS chest enchantment can be stored without replacing the prepared spell
+COMPLETE

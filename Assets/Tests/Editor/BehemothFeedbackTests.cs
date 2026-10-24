@@ -33,9 +33,11 @@ namespace DungeonSlash.Tests
         }
         [Test] public void RageAttackSustain_RequiresExclusiveRelic()
         {
-            var run = Run(CharacterKind.Barbarian); var player = run.Player; player.AddResource(player.Data.resources.FirstOrDefault(), 50); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(1);
-            var before = player.Resource(player.Data.resources.FirstOrDefault()); player.PrepareAttack(SwipeDirection.Right, false); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(before));
-            run.TryEquip(Relic(RelicPower.LongRage)); player.PrepareAttack(SwipeDirection.Right, false); run.EmitEvent(TriggerType.OnAttack, run.ActionContext); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(before + 6));
+            var run = Run(CharacterKind.Barbarian); var player = run.Player;
+            var fury=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Fury.asset");var rage=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Rage.asset");
+            player.Buffs.Add(fury,50); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(1);player.Buffs.UpdateState(0);
+            var before = player.Buffs.Find(rage).StackCount; player.PrepareAttack(SwipeDirection.Right, false); Assert.That(player.Buffs.Find(rage).StackCount, Is.EqualTo(before));
+            run.TryEquip(Relic(RelicPower.LongRage)); player.PrepareAttack(SwipeDirection.Right, false); run.EmitEvent(TriggerType.OnAttack, run.ActionContext);player.Buffs.UpdateState(0); Assert.That(player.Buffs.Find(rage).StackCount, Is.EqualTo(before + 6));
         }
         [Test] public void NormalPackProgression_200Seeds_NoEarlyPack_NoActOneTrio_GradualProbability()
         {

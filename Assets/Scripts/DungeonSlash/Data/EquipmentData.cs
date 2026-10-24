@@ -9,7 +9,7 @@ namespace DungeonSlash
     {
         public string id;
         public string displayName;
-        [TextArea] public string description;
+        [TextArea(5, 12)] public string description;
         public Sprite icon;
         public RelicScope scope;
         public CharacterKind exclusiveCharacter;

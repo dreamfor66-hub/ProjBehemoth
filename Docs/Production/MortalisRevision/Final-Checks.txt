@@ -1,0 +1,30 @@
+PASS aim brackets and potion cursor remain inside native canvas
+PASS cancel releases potion input lock and preserves item
+PASS click opens actions without consuming
+PASS confirmed title and product name
+PASS discard removes item without applying drink or throw effects
+PASS drink heals 35 once and consumes one potion
+PASS drinking poison applies visible harmful owner status
+PASS drunk poison damages player on later tick
+PASS empty target does not consume potion
+PASS existing cleanse removes self poison
+PASS full-health healing drink and invalid throw disabled
+PASS hover only opens side description
+PASS invalid full-health drink preserves potion
+PASS invalid out-of-combat throw preserves item
+PASS inventory potion click opens shared actions without consuming
+PASS inventory potion icons refresh from current stored items
+PASS inventory removes consumed or discarded potion without room refresh
+PASS inventory throw returns to combat targeting with input still blocked
+PASS new raster logo replaces rejected wordmark
+PASS out-of-combat stone cannot be thrown or pre-consumed
+PASS poison throw applies three enemy poison stacks
+PASS potion choice pauses combat
+PASS start still opens illustrated character selection
+PASS stone potion offers aimed throw rather than drink
+PASS stone throw deals authored 26 damage to selected enemy
+PASS target selection resolves visible enemy
+PASS throw animation completes and resumes combat
+PASS throw enters paused target selection
+PASS thrown poison deals real periodic damage
+PASS title has black background

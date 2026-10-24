@@ -8,6 +8,8 @@ namespace DungeonSlash
     {
         [SerializeField] private Image playerHp;
         [SerializeField] private Image shield;
+        public SlantedGuardGauge guardGauge;
+        public ArcadePresentation presentation;
         [SerializeField] private Image monsterHp;
         [SerializeField] private TextMeshProUGUI playerHpText;
         [SerializeField] private TextMeshProUGUI shieldText;
@@ -38,6 +40,9 @@ namespace DungeonSlash
         public void Bind(PlayerCombatRuntime player, MonsterRuntime monster, PointerGestureState gesture, float chargeProgress, Vector2 chargeOrigin, float secondChargeProgress = 0f)
         {
             var hasPlayer = player != null;
+            var slanted=guardGauge!=null&&(presentation==null||presentation.arcade);
+            if(guardGauge!=null)guardGauge.gameObject.SetActive(hasPlayer&&slanted);
+            if(shield!=null){shield.enabled=!slanted;var track=shield.transform.parent.GetComponent<Image>();if(track!=null)track.enabled=!slanted;}
             SetBarVisible(playerHp, hasPlayer);
             SetBarVisible(shield, hasPlayer);
             if (hasPlayer)
@@ -47,6 +52,7 @@ namespace DungeonSlash
                 SetValueText(playerHpText, GameText.Format("ui.combathudview.dfe9f229", player.CurrentHp, player.MaxHp));
                 SetValueText(shieldText, GameText.Format("ui.combathudview.82e84bd4", player.ShieldCurrent, player.ShieldMax));
                 SetShieldAvailability(player);
+                if(slanted){guardGauge.gameObject.SetActive(true);guardGauge.SetValue(player.ShieldMax>0?player.ShieldCurrent/player.ShieldMax:0);}
             }
             else
             {
@@ -68,7 +74,8 @@ namespace DungeonSlash
             if (showCharge)
             {
                 if (chargeGaugeRoot != null) chargeGaugeRoot.anchoredPosition = chargeOrigin + chargePointerOffset;
-                if (chargeGaugeFill != null) chargeGaugeFill.SetFillAmount(chargeProgress);
+                if (chargeGaugeFill != null){chargeGaugeFill.color=chargeProgress>=1?new Color32(124,167,163,255):new Color32(230,155,80,255);chargeGaugeFill.SetFillAmount(chargeProgress);}
+                if (chargeGaugeSecondFill != null)chargeGaugeSecondFill.color=secondChargeProgress>=1?new Color32(243,230,191,255):new Color32(188,96,70,255);
                 if (chargeGaugeSecondFill != null) chargeGaugeSecondFill.SetFillAmount(secondChargeProgress);
             }
             else if (chargeGaugeSecondFill != null) chargeGaugeSecondFill.SetFillAmount(0f);
@@ -86,6 +93,7 @@ namespace DungeonSlash
         {
             if (fill == null) return;
             value = Mathf.Clamp01(value);
+            if(fill.transform.parent is RectTransform vertical && vertical.rect.height>vertical.rect.width*2){fill.type=Image.Type.Filled;fill.fillMethod=Image.FillMethod.Vertical;fill.fillOrigin=0;fill.fillAmount=value;return;}
             fill.fillAmount = value;
             fill.type = Image.Type.Simple;
             var rect = fill.rectTransform;
@@ -106,7 +114,7 @@ namespace DungeonSlash
         {
             var guardAvailable = player.IsAlive && player.ShieldState != ShieldState.Broken && player.ShieldCurrent > 0f;
             if (shield != null)
-                shield.color = guardAvailable ? new Color(.96f, .98f, 1f, 1f) : new Color(.34f, .44f, .53f, .9f);
+                shield.color = guardAvailable ? new Color32(147,171,182,255) : new Color32(75,74,96,255);
             if (shieldText != null)
                 shieldText.color = guardAvailable ? new Color(.06f, .08f, .12f, 1f) : new Color(.86f, .9f, .94f, 1f);
         }

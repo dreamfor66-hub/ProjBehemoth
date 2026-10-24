@@ -8,7 +8,7 @@ namespace DungeonSlash
         private BuffManager buffs;
         public BuffManager Buffs => buffs ??= new BuffManager(monster: this);
         private BuffInstance Status(StatusKind kind) { var data = CombatStatusCatalog.Instance?.Get(kind); return data != null ? Buffs.Find(data, data.DuplicationData.ConsiderTagIsDuplicate) : null; }
-        public int PoisonStacks => Status(StatusKind.Poison)?.StackCount ?? 0;
+        public int PoisonStacks => Mathf.RoundToInt(Status(StatusKind.Poison)?.StackCount ?? 0);
         public float PoisonRemaining => Remaining(StatusKind.Poison);
         public float SlowRemaining => Remaining(StatusKind.Slow);
         public float LightningRodUntil { get => Remaining(StatusKind.LightningRod) > 0 ? (Buffs.Run?.Player.CombatTime ?? 0)+Remaining(StatusKind.LightningRod) : 0; set => ApplyStatus(StatusKind.LightningRod, Mathf.Max(.01f, value-(Buffs.Run?.Player.CombatTime ?? 0))); }
@@ -29,11 +29,11 @@ namespace DungeonSlash
             var data = CombatStatusCatalog.Instance?.Get(kind); if (data == null || !IsAlive) return;
             Buffs.Add(data, stacks, root, source, potency,duration:duration>0?duration:-1);
         }
-        public void AddPoison(int stacks, float damage = 3f, float duration = 8f, int cap = 60)
+        public void AddPoison(int stacks, float damage = 3f, float duration = 8f, int cap = 60,RunState root=null,EquipmentData source=null)
         {
             var data = CombatStatusCatalog.Instance?.poison; if (data == null || !IsAlive) return;
             // Compatibility entry point. Authored effects use AddBuff with a saved BuffData.
-            Buffs.Add(data, stacks, potency: damage,duration:duration,maximumStacks:cap);
+            Buffs.Add(data, stacks, root,source,potency: damage,duration:duration,maximumStacks:cap);
             Buffs.UpdateState(0); Buffs.Cast();
         }
         public float DetonatePoison(float multiplier = 2.5f)
@@ -43,7 +43,7 @@ namespace DungeonSlash
             buff.IsEnd = true; return damage;
         }
         public void Slow(float seconds) => ApplyStatus(StatusKind.Slow, seconds);
-        public void AddBurn(float damage, float duration) => ApplyStatus(StatusKind.Burn, duration, damage);
+        public void AddBurn(float damage, float duration,RunState root=null,EquipmentData source=null) => ApplyStatus(StatusKind.Burn, duration, damage,root:root,source:source);
         public void Hasten(float seconds) { NormalAttackTimer = Mathf.Max(.25f, NormalAttackTimer - seconds); ChargeTimer = Mathf.Max(.25f, ChargeTimer - seconds); }
         public void Interrupt(float seconds)
         {

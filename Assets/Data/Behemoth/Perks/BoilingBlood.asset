@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: BoilingBlood
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.boilingblood.displayname
+    lastText: "\uB053\uB294 \uD53C"
+  - propertyPath: description
+    key: data.perkdata.boilingblood.description
+    lastText: "\uC77C\uBC18\uACF5\uACA9\uC73C\uB85C \uC5BB\uB294 \uACA9\uB178 +2"
+  textOwnerGuid: c8ca0771289ade94db75c50da3d5f603
+  id: BoilingBlood
+  displayName: "\uB053\uB294 \uD53C"
+  description: "\uC77C\uBC18\uACF5\uACA9\uC73C\uB85C \uC5BB\uB294 \uACA9\uB178 +2"
+  icon: {fileID: -2157682245520061201, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 2
+  exclusiveCharacter: 2
+  abilitySource: {fileID: 11400000, guid: 38aae4d4aacab1e4a835df75565e47ba, type: 2}
+  maxStacks: 99
+  modifiers: []

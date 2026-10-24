@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: FlowFinish
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.flowfinish.displayname
+    lastText: "\uC5F0\uD658\uC758 \uB05D"
+  - propertyPath: description
+    key: data.perkdata.flowfinish.description
+    lastText: "\uC5F0\uD658\uC73C\uB85C \uAC15\uD654\uB41C \uC77C\uBC18\uACF5\uACA9\uC744
+      \uBAA8\uB450 \uC801\uC911\uC2DC\uD0A4\uBA74 \uB9C8\uC9C0\uB9C9 \uACF5\uACA9\uC5D0
+      \uBB3C\uB9AC \uD53C\uD574 10\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: 1483ea209ab80ca419db376bec523bdd
+  id: FlowFinish
+  displayName: "\uC5F0\uD658\uC758 \uB05D"
+  description: "\uC5F0\uD658\uC73C\uB85C \uAC15\uD654\uB41C \uC77C\uBC18\uACF5\uACA9\uC744
+    \uBAA8\uB450 \uC801\uC911\uC2DC\uD0A4\uBA74 \uB9C8\uC9C0\uB9C9 \uACF5\uACA9\uC5D0
+    \uBB3C\uB9AC \uD53C\uD574 10\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: 3718842862631874603, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 2
+  exclusiveCharacter: 4
+  abilitySource: {fileID: 11400000, guid: 9074132d9765aff44b92e3dd40eb9dbd, type: 2}
+  maxStacks: 99
+  modifiers: []

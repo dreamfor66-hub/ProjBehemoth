@@ -31,7 +31,7 @@ internal static class BehemothAbilityRepair
         var monk = content.characters.Single(item => item.character == CharacterKind.Monk); monk.baseChargeDamage = 13;
         var bolt = content.spells.Single(item => item.id == "EnergyBolt"); bolt.damage = 17;
         var rageCharge = content.equipment.Single(item => item.power == RelicPower.RageCharge);
-        foreach (var ability in rageCharge.abilities.Where(ability => ability.effects.Any(effect => effect.effectType == EffectType.AddResource))) ability.trigger.triggerType = TriggerType.OnAttackResolved;
+        foreach (var ability in rageCharge.abilities.Where(ability => ability.effects.Any(effect => effect.effectType == EffectType.ChangeBuffStack))) ability.trigger.triggerType = TriggerType.OnAttackResolved;
         EditorUtility.SetDirty(rageCharge);
         EditorUtility.SetDirty(wizard); EditorUtility.SetDirty(monk); EditorUtility.SetDirty(bolt);
         content.schemaVersion = 8; EditorUtility.SetDirty(content); AssetDatabase.SaveAssets();

@@ -1,4 +1,4 @@
-# Buff / Form 데이터 편집
+# Buff 데이터 편집
 
 기준 프로젝트는 **Smash-Dungeon**이다. `BuffData`, `BuffUnitData`, `BuffReleaseData`, `BuffDuplicationData`, `BuffManager`, `BuffUnit`, `BuffUnitDataPropertyDrawer`의 구조와 실행 단계를 비교했다. SuperNinjaDaisen의 버프도 비교했으나, 서로 다른 중복·예약 처리에는 Smash-Dungeon을 기준으로 삼았다. 3D 액션·탄환·사운드 등 그 프로젝트 고유 시스템까지 복사한 것은 아니다.
 
@@ -6,8 +6,8 @@
 
 - `Assets/Data/Behemoth/Buffs`: 실제 상태와 동작.
 - `Assets/Data/Behemoth/BuffTags`: 상태 그룹, 신호, 행동 표식.
-- `Assets/Data/Behemoth/Forms`: 입력 연계형 / 지속 상태형 Form. 빈 입력 패턴이면 상태형이다.
-- `Assets/Data/Behemoth/Resources`: 격노 같은 수치 자원. 캐릭터 이름으로 실행 분기하지 않는다.
+- `Fury`, `Rage`, 몽크의 여섯 연계도 모두 `Buffs` 안의 BuffData다. FormData와 CombatResourceData는 삭제했다.
+- `BuffData.attackPattern`: 선택적인 일반공격 연계 조건. 빈 목록은 일반 상태 버프다. 캐릭터의 `attackBuffs` 목록에 연계 버프를 연결한다.
 - 기존 유물의 `Abilities`도 Buff와 같은 Unit 형식을 사용한다.
 
 Unity 6000.0.59f2를 쓰는 `E:/Github/proj_collapse`에서 Odin을 복사했다. 한국어 이름·설명 편집과 CSV 가져오기/내보내기는 그대로 유지된다.
@@ -22,7 +22,7 @@ Unity 6000.0.59f2를 쓰는 `E:/Github/proj_collapse`에서 Odin을 복사했다
 - `OnTimer`: 초 주기만 나타난다. 공격 필터의 이전 값은 실행에서도 무시된다.
 - `OnSignal`: 지정한 신호만 받는다.
 - `OwnerStat`: Buff가 유지되는 동안의 스탯 / 규칙.
-- 유물의 `Passive → OwnerStat`도 같은 계산을 쓴다. 조건을 공유한 여러 스탯, Buff가 유지되는 동안의 동료 동행·Form 사용 허가도 이 방식이다.
+- 유물의 `Passive → OwnerStat`도 같은 계산을 쓴다. 조건을 공유한 여러 스탯, Buff가 유지되는 동안의 동료 동행·연계 버프 사용 허가(`UnlockBuff`)도 이 방식이다.
 - `Action`: 공격 실행 전에 배율·추가 적중·차지 판정·행동 태그를 변경한다.
 - `Hit`: 실제 피해 계산 전에 해당 적중의 보정을 변경한다. 후속 회복 등은 계산된 피해를 참조한다.
 - `ThisBuff`: 현재 Buff 제거, 스택 변경, 내부 값 변경.
@@ -44,8 +44,14 @@ Unity 6000.0.59f2를 쓰는 `E:/Github/proj_collapse`에서 Odin을 복사했다
 - `Sheathed`: 공격 전 발도 태그·배율 부여 → 공격 종료 후 자신 제거.
 - `SheathParryWindow`: 짧은 시간 가드 비용 0 → 준비 Buff 추가 + 패리 신호.
 - `PreparedDraw`: 다음 공격을 차지 판정으로 변경 → 공격 종료 후 자신 제거.
-- `Rage` Form: 시작 시 자원 설정 → 공격·방어 보정 → 주기적 자원 소모 → 자원 고갈로 해제.
+- `Fury`: 일반공격으로 12중첩 획득. 비분노 상태에서 초당 2중첩 감소.
+- `Rage`: Fury 40중첩 이상에서 차지할 때 `AddBuff(Rage)`의 계산기로 `BuffStacks / Fury × 1`을 읽는다. 이어서 `RemoveBuff(Fury)`를 실행한다. 48을 모았다면 48로 시작하며 100으로 채우지 않는다.
+- `Rage` 자체가 분노 상태와 남은 중첩이다. 무기·방어·쿨타임 보정은 버프의 Passive Unit, 초당 25 소모는 ChangeBuffStack Unit, 0중첩이면 종료한다.
+- `Burst`, `Multi`, `Shelter`, `Flow`, `Tiger`, `Dragon`: 입력 패턴이 선택한 BuffData를 공격 준비 전에 적용한다. `ScaleActionDamage`, `ActionExtraHits` 등으로 공격을 만들고, 공격 종료 후 제거한다. 효과·해금·추가 타격도 버프 참조로 편집한다.
+- `FlowAcceleration`(연환 가속), `ShelterWard`(호신 보호): 연계가 남기는 후속 상태 버프다.
 - `Poison`: 적이 Buff를 보유하고, 2초 주기로 스택을 참조해 피해를 준다.
 - `DelayedDamage`: 받은 피해를 Buff의 초기 값으로 저장 → 주기적으로 지불 → 정상 종료 시 잔액 지불. 승리 정리 시 잔액은 사라진다.
 
-새 아이템 ID나 직업 전용 변수를 추가할 필요 없이 기존 Unit과 Buff 참조를 조합한다. 기존 캐릭터·유물·Form GUID, 현재 편집된 입력 패턴과 전투 수치는 유지했다.
+계산기의 `BuffStacks`, `BuffElapsed`, `BuffValue`는 참조 버프를 직접 지정할 수 있다. 비워두면 현재 실행 중인 버프를 참조한다. `BuffStack` 조건도 참조 버프·태그와 비교식을 지원한다. 중첩은 소수값을 보존하므로 0.1씩의 소모나 77.25중첩 전환도 반올림되지 않는다. 0중첩 부여는 버프를 만들지 않는다.
+
+새 아이템 ID나 직업 전용 변수를 추가할 필요 없이 Unit과 Buff 참조를 조합한다. 캐릭터·유물과 기존 버프의 GUID, 편집된 입력 패턴과 기본 전투 수치는 유지했다. 삭제한 Form·Resource 원본은 `Docs/MigrationArchive/FormResource-v14`, 작업 직전 전체 데이터·코드 사본은 `Logs/BuffUnification-v14-Backup`에 보관했다.

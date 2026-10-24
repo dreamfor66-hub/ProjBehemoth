@@ -23,7 +23,7 @@ MonoBehaviour:
   id: QuickCasting
   displayName: "\uCD95\uC57D \uC601\uCC3D"
   description: "\uC8FC\uBB38 \uCE90\uC2A4\uD305 \uC2DC\uAC04 -35%."
-  icon: {fileID: 21300000, guid: 9df05599a234e8a488a6a70be278bee1, type: 3}
+  icon: {fileID: 3434086634727231013, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 45
@@ -62,12 +62,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 9
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -108,12 +107,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

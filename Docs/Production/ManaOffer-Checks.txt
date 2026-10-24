@@ -1,0 +1,20 @@
+Scoped MP reward selection, existing Unity Editor.
+PASS two saved MP perks share one ordinary offer weight
+PASS MP values and stack caps unchanged
+Warrior: MP group 186/1000; members 91/95; starting spells 0
+Rogue: MP group 186/1000; members 91/95; starting spells 0
+Barbarian: MP group 186/1000; members 91/95; starting spells 0
+Samurai: MP group 186/1000; members 91/95; starting spells 0
+Monk: MP group 186/1000; members 91/95; starting spells 0
+Wizard: MP group 186/1000; members 91/95; starting spells 1
+PASS six class reward pools never offer both MP perks together
+PASS normal and class eligibility and three distinct options preserved
+PASS same seed and state produce identical choices
+PASS both MP choices remain available without learning a spell
+PASS MP pair has one bucket's frequency rather than two independent perk weights
+Four equal buckets, 4000 offers: 3011/2998/3000/2991; MP member split 1519/1472
+PASS one capped MP member leaves the other eligible and never fills extra slots
+PASS fully capped group is removed from offers
+PASS reward UI previews grouped MP perk normally
+PASS reward confirm acquires selected perk through ordinary apply path
+COMPLETE

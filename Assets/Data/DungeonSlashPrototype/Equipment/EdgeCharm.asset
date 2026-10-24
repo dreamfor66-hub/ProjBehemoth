@@ -23,7 +23,7 @@ MonoBehaviour:
   id: EdgeCharm
   displayName: "\uB0A0 \uC120 \uBD80\uC801"
   description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +15%"
-  icon: {fileID: 21300000, guid: 97ff1da32de8a8544a2dbb7ac627f7d5, type: 3}
+  icon: {fileID: 4626822261902330006, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -62,12 +62,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -108,12 +107,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

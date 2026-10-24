@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce851a250858b54f83937ffbf20b60f, type: 3}
+  m_Name: FlowPrecision
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.buffdata.flowprecision.displayname
+    lastText: "\uC5F0\uD658 \uC9D1\uC911"
+  - propertyPath: description
+    key: data.buffdata.flowprecision.description
+    lastText: 
+  textOwnerGuid: fce677657bbe2714190a95191d9199ce
+  displayName: "\uC5F0\uD658 \uC9D1\uC911"
+  description: 
+  Tags: []
+  Units: []
+  ReleaseData:
+    Type: 20
+    Time: 0
+    ResetOnStack: 0
+    ResetOnReapplyAtCap: 0
+    Count: 1
+  DuplicationData:
+    Type: 2
+    MaxStackCount: 1
+    ConsiderTagIsDuplicate: {fileID: 0}
+  showInHud: 0
+  harmful: 0
+  presentationColor: {r: 1, g: 1, b: 1, a: 1}
+  tintOwner: 0
+  attackPattern: 
+  requiresUnlock: 0
+  attackRole: 0

@@ -1,0 +1,82 @@
+WarriorIntro
+Selected=0; details=False; intro=True; label=능력 상세
+Name: font=22; preferred=66x25.7; rect=(102.00, 28.00); overflow=False; text=워리어
+PrimaryStats: font=11; preferred=0x0; rect=(140.00, 88.00); overflow=False; text=HP 100   MP 30 | 가드 게이지 35 |  | 일반 공격 피해 14 | 차지 공격 피해 24 | 공격 쿨타임 0.85초
+
+WarriorDetails
+Selected=0; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=66x25.7; rect=(102.00, 28.00); overflow=False; text=워리어
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 100   MP 30 | 가드 게이지 35 |  | 일반 공격 피해 14 | 차지 공격 피해 24 | 공격 쿨타임 0.85초
+
+RogueDetails
+Selected=1; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=44x25.7; rect=(102.00, 28.00); overflow=False; text=로그
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 75   MP 30 | 가드 게이지 18 |  | 일반 공격 피해 5.5 | 차지 공격 피해 17 | 공격 쿨타임 0.48초
+
+BarbarianDetails
+Selected=2; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=88x25.7; rect=(102.00, 28.00); overflow=False; text=바바리안
+PrimaryStats: font=11; preferred=105x86.2; rect=(140.00, 88.00); overflow=False; text=HP 120   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 14.5 | 차지 공격 피해 31 | 공격 쿨타임 1.05초
+
+SamuraiDetails
+Selected=3; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=88x25.7; rect=(102.00, 28.00); overflow=False; text=사무라이
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 80   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 9 | 차지 공격 피해 20 | 공격 쿨타임 0.82초
+
+MonkDetails
+Selected=4; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=44x25.7; rect=(102.00, 28.00); overflow=False; text=몽크
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 95   MP 30 | 가드 게이지 25 |  | 일반 공격 피해 7.5 | 차지 공격 피해 13 | 공격 쿨타임 0.55초
+
+WizardDetails
+Selected=5; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=66x25.7; rect=(102.00, 28.00); overflow=False; text=위자드
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 65   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 8 | 차지 공격 피해 18 | 공격 쿨타임 0.85초
+
+WizardExtra
+Selected=5; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=66x25.7; rect=(102.00, 28.00); overflow=False; text=위자드
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 65   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 8 | 차지 공격 피해 18 | 공격 쿨타임 0.85초
+Tooltip=추가 능력치; font=9; preferredHeight=34.5; rect=(140.00, 37.00); overflow=False
+
+WizardRelic
+Selected=5; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=66x25.7; rect=(102.00, 28.00); overflow=False; text=위자드
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 65   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 8 | 차지 공격 피해 18 | 공격 쿨타임 0.85초
+Tooltip=집중의 수정; font=9; preferredHeight=58.5; rect=(140.00, 61.00); overflow=False
+
+BarbarianRelic
+Selected=2; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=88x25.7; rect=(102.00, 28.00); overflow=False; text=바바리안
+PrimaryStats: font=11; preferred=105x86.2; rect=(140.00, 88.00); overflow=False; text=HP 120   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 14.5 | 차지 공격 피해 31 | 공격 쿨타임 1.05초
+Tooltip=격노의 심장; font=9; preferredHeight=82.5; rect=(140.00, 85.00); overflow=False
+
+EscapeRestoresIntro
+Selected=2; details=False; intro=True; label=능력 상세
+Name: font=22; preferred=88x25.7; rect=(102.00, 28.00); overflow=False; text=바바리안
+PrimaryStats: font=11; preferred=105x86.2; rect=(140.00, 88.00); overflow=False; text=HP 120   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 14.5 | 차지 공격 피해 31 | 공격 쿨타임 1.05초
+
+BackReturnsTitle
+Selected=2; details=False; intro=False; label=능력 상세
+Name: font=22; preferred=88x25.7; rect=(102.00, 28.00); overflow=False; text=바바리안
+PrimaryStats: font=11; preferred=105x86.2; rect=(140.00, 88.00); overflow=False; text=HP 120   MP 30 | 가드 게이지 20 |  | 일반 공격 피해 14.5 | 차지 공격 피해 31 | 공격 쿨타임 1.05초
+
+TopLeftFatigue
+Face: anchor=(0.00, 1.00); pivot=(0.00, 1.00); position=(0.00, 0.00); size=(34.00, 34.00); visible=True
+
+FatigueTooltip
+Tooltip=피로도; font=9; preferredHeight=46.5; rect=(166.00, 49.00); overflow=False
+Face: anchor=(0.00, 1.00); pivot=(0.00, 1.00); position=(0.00, 0.00); size=(34.00, 34.00); visible=True
+
+MapWithCornerPortrait
+Face: anchor=(0.00, 1.00); pivot=(0.00, 1.00); position=(0.00, 0.00); size=(34.00, 34.00); visible=True
+
+PerkTooltip
+Tooltip=활력; font=9; preferredHeight=10.5; rect=(166.00, 17.00); overflow=False
+Face: anchor=(0.00, 1.00); pivot=(0.00, 1.00); position=(0.00, 0.00); size=(34.00, 34.00); visible=True
+
+FinalDetails
+Selected=0; details=True; intro=False; label=소개 보기
+Name: font=22; preferred=66x25.7; rect=(102.00, 28.00); overflow=False; text=워리어
+PrimaryStats: font=11; preferred=101x86.2; rect=(140.00, 88.00); overflow=False; text=HP 100   MP 30 | 가드 게이지 35 |  | 일반 공격 피해 14 | 차지 공격 피해 24 | 공격 쿨타임 0.85초
+

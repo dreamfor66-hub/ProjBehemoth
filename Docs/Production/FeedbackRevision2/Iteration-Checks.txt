@@ -1,0 +1,59 @@
+Focused October24 revision. Real frames, existing Editor; contacts injected into the production controller.
+PASS MP visible before learning a spell
+PASS slanted guard gauge has renderer and is visible
+PASS touch and hold alone does not guard
+PASS downward drag then hold guards
+PASS second guard contact survives first lift
+PASS overlap lift/repress A cycle0
+PASS overlap lift/repress B cycle0
+PASS overlap lift/repress A cycle1
+PASS overlap lift/repress B cycle1
+PASS overlap lift/repress A cycle2
+PASS overlap lift/repress B cycle2
+PASS last release stops guard
+PASS right hold casts without guard
+PASS right upward stroke damages along aimed bolt and spends MP
+PASS right release clears cast state
+PASS bolt aimed away misses while spending MP
+PASS point lightning cast accepted
+PASS point lightning strikes chosen endpoint
+PASS point lightning off target misses
+PASS all four spell slots on screen
+PASS spell slots form D-pad
+PASS monk technique and arrows centered above player
+PASS ordinary draw uses 발도!
+PASS manual charged draw uses 발도!
+PASS prepared parry draw uses 패리 발도
+PASS sheath parry duration is 0.3 seconds
+PASS weak points actually submitted to Canvas renderer
+PASS charge stroke hits visible weakpoint collision
+COMPLETE. Physical Shift-hold and real touchscreen remain manual/device coverage; no balance suite run.
+
+Follow-up: Shift modifier state injected in Editor; real frame timer and production pointer handlers.
+FAIL Shift alone accumulates cast time without guarding
+FAIL Shift + left stroke casts aimed spell
+PASS Shift release resets casting
+PASS early cast rejection spends no MP and deals no damage
+PASS guard begun 0.24 seconds ago performs sheath parry
+PASS 0.36 seconds is ordinary guard rather than sheath parry
+PASS top control on root canvas: MapToggle
+PASS top control on root canvas: InventoryToggle
+PASS top control on root canvas: ReturnToSelection
+PASS four spell labels fit a single line
+PASS monster HP bar restored to 42 native pixels
+FOLLOW-UP COMPLETE
+
+Follow-up: Shift modifier state injected in Editor; real frame timer and production pointer handlers.
+Shift trace: override=True, held=True, casting=True/0.6532956, guard=False, active=True, paused=False, enabled=True, book=4
+PASS Shift alone accumulates cast time without guarding
+PASS Shift + left stroke casts aimed spell
+PASS Shift release resets casting
+PASS early cast rejection spends no MP and deals no damage
+PASS guard begun 0.24 seconds ago performs sheath parry
+PASS 0.36 seconds is ordinary guard rather than sheath parry
+PASS top control on root canvas: MapToggle
+PASS top control on root canvas: InventoryToggle
+PASS top control on root canvas: ReturnToSelection
+PASS four spell labels fit a single line
+PASS monster HP bar restored to 42 native pixels
+FOLLOW-UP COMPLETE

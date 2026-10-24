@@ -17,6 +17,7 @@ namespace DungeonSlash
         private FacingDirection absoluteDirection;
         private Action<FacingDirection?> hoverChanged;
         private bool hovered;
+        public bool arcade;
 
         public void Configure(Button newButton, TextMeshProUGUI newLabel, Image newIcon = null, Sprite newForwardIcon = null, Sprite newSideIcon = null, Sprite newBackIcon = null)
         {
@@ -37,7 +38,8 @@ namespace DungeonSlash
             if (!available) return;
 
             // Buttons stay in screen-relative slots; only their destination is converted from the player's Facing.
-            GetComponent<RectTransform>().anchoredPosition = PositionFor(relative);
+            GetComponent<RectTransform>().anchoredPosition = arcade?relative switch
+            {RelativeDirection.Forward=>new Vector2(0,148),RelativeDirection.Back=>new Vector2(0,-80),RelativeDirection.Left=>new Vector2(-440,-12),_=>new Vector2(440,-12)}:PositionFor(relative);
             BindDirectionIcon(relative);
             button.interactable = true;
             button.onClick.RemoveAllListeners();
@@ -64,7 +66,7 @@ namespace DungeonSlash
 
         private void BindDirectionIcon(RelativeDirection direction)
         {
-            var sprite = direction switch
+            var sprite = arcade?null:direction switch
             {
                 RelativeDirection.Forward => forwardIcon,
                 RelativeDirection.Back => backIcon,
@@ -77,12 +79,14 @@ namespace DungeonSlash
                 if (hasSprite)
                 {
                     icon.sprite = sprite;
+                    icon.color = Color.white;
                     icon.preserveAspect = true;
                     icon.rectTransform.localScale = direction == RelativeDirection.Left ? new Vector3(-1f, 1f, 1f) : Vector3.one;
                 }
             }
             if (label == null) return;
             label.enabled = !hasSprite;
+            if(arcade){label.text=GameText.Get("ui.arcade.direction."+(int)direction);return;}
             label.text = direction switch
             {
                 RelativeDirection.Forward => GameText.Get("ui.roomchoicebutton.9c4b935"),

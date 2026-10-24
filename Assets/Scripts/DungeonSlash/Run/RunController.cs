@@ -29,6 +29,8 @@ namespace DungeonSlash
         public PerkSystem Perks { get; private set; }
         public ShopSystem Shop { get; private set; }
         private EquipmentSystem equipmentSystem;
+        [SerializeField, Range(5, 6)] private int shopStockSize = 6;
+        private readonly Dictionary<(int Seed, int Act, int Room), IReadOnlyList<EquipmentData>> shopInventories = new();
 
         public void Configure(PlayerCombatData player, RunBalanceSettings balance, List<PerkData> availablePerks, List<EquipmentData> availableEquipment)
         {
@@ -45,6 +47,7 @@ namespace DungeonSlash
             Perks = new PerkSystem(perks);
             equipmentSystem = new EquipmentSystem();
             Shop = new ShopSystem(equipmentSystem);
+            shopInventories.Clear();
             if (playerData.startingRelic != null) State.TryEquip(playerData.startingRelic);
         }
 
@@ -91,7 +94,7 @@ namespace DungeonSlash
         public bool TryGrantRelic(EquipmentData relic) => State != null && relic != null && relic.IsRelic && !State.EquippedItems.Contains(relic) && equipmentSystem.Apply(State, relic);
         public bool TryGrantPerk(PerkData perk)
         {
-            if (State == null || Perks == null || !PerkSystem.IsAvailable(perk)) return false;
+            if (State == null || Perks == null || !PerkSystem.IsAvailable(perk, State)) return false;
             var existing = State.ActivePerks.FirstOrDefault(active => active.Data == perk);
             if (existing != null && !existing.CanStack) return false;
             Perks.Apply(State, perk);
@@ -128,23 +131,30 @@ namespace DungeonSlash
 
         public IReadOnlyList<EquipmentData> GetShopInventory(int seed, int roomId)
         {
+            var key = (seed, State.CurrentAct, roomId);
+            if (shopInventories.TryGetValue(key, out var inventory)) return inventory;
             var random = new System.Random(seed + roomId * 4099);
             var result = new List<EquipmentData>();
             var premiumRelics = equipment.Where(CanOfferSharedRelic).OrderBy(item => OfferScore(item, random)).ToList();
-            if (premiumRelics.Count > 0) result.Add(premiumRelics[0]);
+            var capacity = Mathf.Clamp(shopStockSize, 5, 6);
+            result.AddRange(premiumRelics.Take(Mathf.Min(3, capacity)));
             var potionCandidates = equipment.Where(item => item != null && item.IsPotion && !result.Contains(item)).OrderBy(_ => random.Next()).ToList();
             foreach (var candidate in potionCandidates)
             {
-                if (result.Count >= 3) break;
+                if (result.Count >= capacity) break;
                 result.Add(candidate);
             }
             var fallbackCandidates = equipment.Where(item => CanOfferSharedRelic(item) && !result.Contains(item)).OrderBy(item => OfferScore(item, random)).ToList();
             foreach (var candidate in fallbackCandidates)
             {
-                if (result.Count >= 3) break;
+                if (result.Count >= capacity) break;
                 result.Add(candidate);
             }
-            return result;
+            // Eligibility is evaluated only when this merchant's stock is first created.
+            // Purchases or later progression must never refill or reshuffle these slots.
+            inventory = result.AsReadOnly();
+            shopInventories.Add(key, inventory);
+            return inventory;
         }
         private double OfferScore(EquipmentData item, System.Random random) => -System.Math.Log(System.Math.Max(.000001, random.NextDouble())) / (item.grantedSpell != null ? System.Math.Max(.001, State.MagicOfferWeight) : 1);
         private bool CanOfferSharedRelic(EquipmentData item) => item != null && State.CanOffer(item) && item.IsRelic && item.scope == RelicScope.Shared && !State.EquippedItems.Contains(item)

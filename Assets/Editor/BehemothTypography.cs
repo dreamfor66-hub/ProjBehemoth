@@ -19,7 +19,7 @@ internal static class BehemothTypography
         if (content.schemaVersion >= 7 || UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty) return;
         FinalizeScenes(); content.schemaVersion = 7; EditorUtility.SetDirty(content); AssetDatabase.SaveAssets();
     }
-    internal static TMP_FontAsset Font => AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FontPath);
+    internal static TMP_FontAsset Font => AssetDatabase.LoadAssetAtPath<TMP_FontAsset>("Assets/Art/Fonts/Resources/AshenVowPixel.asset") ?? AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FontPath);
     private static void Prepare()
     {
         if (EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode) { EditorApplication.delayCall += Prepare; return; }

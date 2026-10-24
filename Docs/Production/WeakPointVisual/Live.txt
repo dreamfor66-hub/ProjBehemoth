@@ -1,0 +1,15 @@
+Scoped live target/particle matrix. Cloned Bat; real frame timing and production pointer handlers.
+PASS target uses only shared warm crimson/core/ink pixels; no white band
+PASS final quantized framebuffer preserves the authored crimson target color
+PASS normal swipe leaves weak point intact
+PASS charged production swipe destroys one-hit target and removes intact reticle immediately
+PASS break inherits the destroyed target's exact style and diameter
+PASS legacy gold rectangle particles stay inactive
+PASS presentation change preserves the combat hit radius
+PASS break fragments preserve the same crimson in the final quantized framebuffer after the impact flash
+PASS break particles clean up after their impact lifetime
+PASS partial multi-hit charge removes one hit while preserving optional target
+PASS partial hit never emits final shatter
+PASS final multi-hit break inherits an instance style/shape edit without a separate particle rebuild
+PASS breaking a required target does not consume optional target hits
+COMPLETE

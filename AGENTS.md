@@ -7,3 +7,9 @@
 - Use the supplied Slay the Spire event references directly to preserve the choice experience. Do not substitute a universal deferred penalty purchase for distinct event outcomes. Record references in event data.
 - Production folders live directly under Assets: Art, Data, Editor, Prefabs, Scenes, Scripts. Prefer saved, editor-visible assets and idempotent editor preparation. Never require a manual scene-baking menu step.
 - Preserve existing designer edits and staged work. Verify interactive mechanics in the live Unity runtime and record pending real-device or balance limitations honestly.
+
+## Verification workflow
+
+- Ordinary implementation requests authorize local interactive verification using the user's Unity Editor, screen, keyboard, and mouse as needed for the requested work; no separate desktop-use approval is required for that scoped test. Test only the changed behavior and directly affected interactions, then stop. This does not authorize unrelated actions or broader regression suites.
+- Do not automatically run full DPS/balance comparisons or whole-system regression tests after ordinary changes. If broad coverage is warranted by DPS or core-system changes, explain the remaining verification need; run that additional suite in a separate background verification environment only when the user explicitly requests it. Keep unrun coverage clearly marked as pending.
+- Keep heavy background verification serial: at most one suite at a time, without spawning extra Unity instances or duplicate suites to overlap pending runs. Background verification is a separate opt-in workflow, not part of routine local testing.

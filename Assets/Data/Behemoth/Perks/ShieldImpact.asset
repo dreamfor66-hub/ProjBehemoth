@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: ShieldImpact
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.shieldimpact.displayname
+    lastText: "\uBC29\uD328 \uC911\uACA9"
+  - propertyPath: description
+    key: data.perkdata.shieldimpact.description
+    lastText: "\uCC28\uC9C0 \uACF5\uACA9\uC5D0 \uD604\uC7AC \uC2E4\uB4DC\uC758 10%\uB9CC\uD07C
+      \uBB3C\uB9AC \uD53C\uD574\uB97C \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: 36469fd9edbff0d4b9a6b43c8d06f9d8
+  id: ShieldImpact
+  displayName: "\uBC29\uD328 \uC911\uACA9"
+  description: "\uCC28\uC9C0 \uACF5\uACA9\uC5D0 \uD604\uC7AC \uC2E4\uB4DC\uC758 10%\uB9CC\uD07C
+    \uBB3C\uB9AC \uD53C\uD574\uB97C \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: 9151725625850188775, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 2
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 11400000, guid: a3a6d41b330023347be5dcc1f983990e, type: 2}
+  maxStacks: 99
+  modifiers: []

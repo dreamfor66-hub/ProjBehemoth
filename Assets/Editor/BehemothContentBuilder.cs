@@ -36,8 +36,12 @@ internal static partial class BehemothContentBuilder
     }
     internal static void Build()
     {
+        // Modern production content is authored and saved; never reset it to a legacy recipe schema.
+        var authored = AssetDatabase.LoadAssetAtPath<GameContent>(ContentPath);
+        if (authored != null && authored.schemaVersion >= 15)
+        { BehemothBuffPreparation.Prepare(); BehemothTextEditor.PrepareForVerification(); return; }
         Directory.CreateDirectory(Root);
-        foreach (var folder in new[] { "Characters", "Relics", "Spells", "Forms", "Monsters", "Attacks", "Encounters", "Stages", "Events" }) Directory.CreateDirectory(Root + "/" + folder);
+        foreach (var folder in new[] { "Characters", "Relics", "Spells", "Buffs", "Monsters", "Attacks", "Encounters", "Stages", "Events" }) Directory.CreateDirectory(Root + "/" + folder);
         AssetDatabase.Refresh();
         content = Asset<GameContent>(ContentPath);
         font = BehemothTypography.Font;
@@ -55,7 +59,7 @@ internal static partial class BehemothContentBuilder
         content.variables = variables;
         content.equipment = AssetDatabase.FindAssets("t:EquipmentData", new[] { "Assets/Data/DungeonSlashPrototype/Equipment" }).Select(guid => AssetDatabase.LoadAssetAtPath<EquipmentData>(AssetDatabase.GUIDToAssetPath(guid))).ToList();
         content.perks = AssetDatabase.FindAssets("t:PerkData", new[] { "Assets/Data/DungeonSlashPrototype/Perks" }).Select(guid => AssetDatabase.LoadAssetAtPath<PerkData>(AssetDatabase.GUIDToAssetPath(guid))).ToList();
-        BuildSpells(); BuildForms(); BuildCharacters(); BuildExclusiveRelics(); BuildEventRelics();
+        BuildSpells(); BuildAttackBuffs(); BuildCharacters(); BuildExclusiveRelics(); BuildEventRelics();
         BuildStages(); BuildEvents(); BuildScenes();
         content.schemaVersion = 1;
         EditorUtility.SetDirty(content); EditorUtility.SetDirty(variables);
@@ -106,19 +110,23 @@ internal static partial class BehemothContentBuilder
         spell.castingSeconds = cast; spell.cooldownSeconds = cooldown; spell.damage = damage; spell.width = 25f; spell.radius = shape == SpellShape.Burst ? 180f : 145f; spell.icon = Icon(icon);
         content.spells.Add(spell); EditorUtility.SetDirty(spell); return spell;
     }
-    private static void BuildForms()
+    private static void BuildAttackBuffs()
     {
-        Form("Burst", "붕권", new[] { SwipeDirection.Up, SwipeDirection.Down }, FormFinisher.Burst, 2.5f, 1);
-        Form("Multi", "백렬권", new[] { SwipeDirection.Up, SwipeDirection.Up }, FormFinisher.MultiHit, .65f, 3);
-        Form("Shelter", "호신격", new[] { SwipeDirection.Down, SwipeDirection.Right }, FormFinisher.Shelter, 1f, 1);
-        Form("Flow", "연환", new[] { SwipeDirection.Right, SwipeDirection.Up }, FormFinisher.Flow, 1.15f, 1);
-        Form("Tiger", "맹호붕권", new[] { SwipeDirection.Down, SwipeDirection.Up, SwipeDirection.Up }, FormFinisher.Burst, 4f, 1, RelicPower.LongTiger);
-        Form("Dragon", "유룡연타", new[] { SwipeDirection.Up, SwipeDirection.Down, SwipeDirection.Right }, FormFinisher.MultiHit, .75f, 4, RelicPower.LongDragon);
+        AttackBuff("Burst", "붕권", new[] { SwipeDirection.Up, SwipeDirection.Down }, 2.5f, 1);
+        AttackBuff("Multi", "백렬권", new[] { SwipeDirection.Up, SwipeDirection.Up }, .65f, 3);
+        AttackBuff("Shelter", "호신격", new[] { SwipeDirection.Down, SwipeDirection.Right }, 1f, 1);
+        AttackBuff("Flow", "연환", new[] { SwipeDirection.Right, SwipeDirection.Up }, 1.15f, 1);
+        AttackBuff("Tiger", "맹호붕권", new[] { SwipeDirection.Down, SwipeDirection.Up, SwipeDirection.Up }, 4f, 1, true);
+        AttackBuff("Dragon", "유룡연타", new[] { SwipeDirection.Up, SwipeDirection.Down, SwipeDirection.Right }, .75f, 4, true);
     }
-    private static void Form(string id, string title, SwipeDirection[] pattern, FormFinisher finisher, float damage, int hits, RelicPower power = RelicPower.None)
+    private static void AttackBuff(string id, string title, SwipeDirection[] pattern, float damage, int hits, bool requiresUnlock = false)
     {
-        var form = Asset<FormData>(Root + "/Forms/" + id + ".asset");
-        form.displayName = title; form.pattern = pattern; form.finisher = finisher; form.damageMultiplier = damage; form.hits = hits; form.requiredPower = power; EditorUtility.SetDirty(form);
+        var buff = Asset<BuffData>(Root + "/Buffs/" + id + ".asset");
+        buff.displayName = title; buff.attackPattern = pattern; buff.requiresUnlock = requiresUnlock;
+        buff.ReleaseData = new() { Type = BuffReleaseType.Stage, Count = 1 };
+        var extra = E(EffectType.ActionExtraHits, hits - 1); extra.valueVariables = new() { new() { type = EffectScale.Rule, rule = AbilityRule.AttackBuffExtraHits } };
+        buff.Units = new() { Ability(TriggerType.OnActionPreparing, TargetType.Action, new[] { E(EffectType.ScaleActionDamage, damage), extra }), Ability(TriggerType.OnAttackResolved, TargetType.ThisBuff, new[] { E(EffectType.RemoveBuff, 0) }) };
+        EditorUtility.SetDirty(buff);
     }
     private static void BuildCharacters()
     {
@@ -139,7 +147,7 @@ internal static partial class BehemothContentBuilder
         player.normalShieldRegen = kind == CharacterKind.Warrior ? 2.5f : 0; player.brokenShieldRegen = 5f;
         player.baseAttackDamage = normal; player.baseChargeDamage = charge; player.attackCooldown = cooldown; player.chargeDuration = chargeTime;
         player.startingSpells.Clear(); if (kind == CharacterKind.Wizard) player.startingSpells.Add(content.spells.First(spell => spell.id == "EnergyBolt"));
-        player.forms.Clear(); if (kind == CharacterKind.Monk) player.forms.AddRange(AssetDatabase.FindAssets("t:FormData", new[] { Root + "/Forms" }).Select(guid => AssetDatabase.LoadAssetAtPath<FormData>(AssetDatabase.GUIDToAssetPath(guid))));
+        player.attackBuffs.Clear(); if (kind == CharacterKind.Monk) player.attackBuffs.AddRange(AssetDatabase.FindAssets("t:BuffData", new[] { Root + "/Buffs" }).Select(guid => AssetDatabase.LoadAssetAtPath<BuffData>(AssetDatabase.GUIDToAssetPath(guid))).Where(buff => buff.attackPattern.Length > 0));
         content.characters.Add(player); EditorUtility.SetDirty(player);
     }
     private static void BuildExclusiveRelics()

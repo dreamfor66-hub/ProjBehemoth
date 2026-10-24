@@ -1,0 +1,22 @@
+Scoped elemental relic damage and excluded random events, existing live Unity instance.
+PASS StormBottle real relic can be equipped
+PASS StormBottle does not add lightning to normal hits
+PASS StormBottle base charged-hit bonus remains8
+PASS StormBottle lightning perk +10% gives8.8
+PASS StormBottle two lightning perk stacks give9.6
+PASS StormBottle unrelated fire perk does not scale lightning
+PASS StormBottle elemental perks leave physical charge base unchanged
+PASS StormBottle all-damage25% and lightning20% each apply once
+PASS ThunderousCharge real relic can be equipped
+PASS ThunderousCharge does not add lightning to normal hits
+PASS ThunderousCharge base charged-hit bonus remains8
+PASS ThunderousCharge lightning perk +10% gives8.8
+PASS ThunderousCharge two lightning perk stacks give9.6
+PASS ThunderousCharge unrelated fire perk does not scale lightning
+PASS ThunderousCharge elemental perks leave physical charge base unchanged
+PASS ThunderousCharge all-damage25% and lightning20% each apply once
+PASS only the five exchange events are excluded, authored pages retained
+PASS gold conversion and ordinary training stay available
+PASS disabled-only pool yields no event in B1/B2/B3
+PASS 384 real-pool draws keep active events and never choose excluded events
+COMPLETE

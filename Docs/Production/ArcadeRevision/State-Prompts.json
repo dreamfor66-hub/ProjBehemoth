@@ -1,0 +1,101 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "one image per state; no frame animation",
+  "tasks": [
+    {
+      "file": "EnemyStates_00.png",
+      "actors": [
+        "MerchantMutant",
+        "Mimic"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 2 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: MerchantMutant, identity in FIRST reference at bottom row fourth fat mutated merchant with bags. ROW 2: Mimic, identity in FIRST reference at bottom row fifth mimic chest. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_01.png",
+      "actors": [
+        "AshGeneral",
+        "BellKeeper",
+        "BloodExecutioner",
+        "BroodKeeper"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: AshGeneral, identity in SECOND reference at row 1, column 4 in its 6x6 atlas. ROW 2: BellKeeper, identity in SECOND reference at row 1, column 5 in its 6x6 atlas. ROW 3: BloodExecutioner, identity in SECOND reference at row 1, column 6 in its 6x6 atlas. ROW 4: BroodKeeper, identity in SECOND reference at row 2, column 1 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_02.png",
+      "actors": [
+        "ChainBrother",
+        "Chainling",
+        "CinderImp",
+        "CinderPriest"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: ChainBrother, identity in SECOND reference at row 2, column 2 in its 6x6 atlas. ROW 2: Chainling, identity in SECOND reference at row 2, column 3 in its 6x6 atlas. ROW 3: CinderImp, identity in SECOND reference at row 2, column 4 in its 6x6 atlas. ROW 4: CinderPriest, identity in SECOND reference at row 2, column 5 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_03.png",
+      "actors": [
+        "ClockworkJudge",
+        "CrystalSpider",
+        "DeepTrialGuardian",
+        "EclipseBeast"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: ClockworkJudge, identity in SECOND reference at row 2, column 6 in its 6x6 atlas. ROW 2: CrystalSpider, identity in SECOND reference at row 3, column 1 in its 6x6 atlas. ROW 3: DeepTrialGuardian, identity in SECOND reference at row 3, column 2 in its 6x6 atlas. ROW 4: EclipseBeast, identity in SECOND reference at row 3, column 3 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_04.png",
+      "actors": [
+        "ElderLeftHeart",
+        "ElderRightHeart",
+        "FurnaceGuard",
+        "FurnaceMite"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: ElderLeftHeart, identity in SECOND reference at row 3, column 4 in its 6x6 atlas. ROW 2: ElderRightHeart, identity in SECOND reference at row 3, column 5 in its 6x6 atlas. ROW 3: FurnaceGuard, identity in SECOND reference at row 3, column 6 in its 6x6 atlas. ROW 4: FurnaceMite, identity in SECOND reference at row 4, column 1 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_05.png",
+      "actors": [
+        "IceMirror",
+        "IceNeedle",
+        "LampPriest",
+        "LeftHeart"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: IceMirror, identity in SECOND reference at row 4, column 2 in its 6x6 atlas. ROW 2: IceNeedle, identity in SECOND reference at row 4, column 3 in its 6x6 atlas. ROW 3: LampPriest, identity in SECOND reference at row 4, column 4 in its 6x6 atlas. ROW 4: LeftHeart, identity in SECOND reference at row 4, column 5 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_06.png",
+      "actors": [
+        "MirrorKnight",
+        "OrbitBat",
+        "PaleWisp",
+        "RightHeart"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: MirrorKnight, identity in SECOND reference at row 4, column 6 in its 6x6 atlas. ROW 2: OrbitBat, identity in SECOND reference at row 5, column 1 in its 6x6 atlas. ROW 3: PaleWisp, identity in SECOND reference at row 5, column 2 in its 6x6 atlas. ROW 4: RightHeart, identity in SECOND reference at row 5, column 3 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_07.png",
+      "actors": [
+        "SlagTitan",
+        "SnowBell",
+        "SoulLamp",
+        "StormMatriarch"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: SlagTitan, identity in SECOND reference at row 5, column 4 in its 6x6 atlas. ROW 2: SnowBell, identity in SECOND reference at row 5, column 5 in its 6x6 atlas. ROW 3: SoulLamp, identity in SECOND reference at row 5, column 6 in its 6x6 atlas. ROW 4: StormMatriarch, identity in SECOND reference at row 6, column 1 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_08.png",
+      "actors": [
+        "StormOrb",
+        "TrainingLight",
+        "TrialGuardian",
+        "TunnelRat"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 4 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: StormOrb, identity in SECOND reference at row 6, column 2 in its 6x6 atlas. ROW 2: TrainingLight, identity in SECOND reference at row 6, column 3 in its 6x6 atlas. ROW 3: TrialGuardian, identity in SECOND reference at row 6, column 4 in its 6x6 atlas. ROW 4: TunnelRat, identity in SECOND reference at row 6, column 5 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    },
+    {
+      "file": "EnemyStates_09.png",
+      "actors": [
+        "TwinHeart"
+      ],
+      "prompt": "Game production STATE SPRITE SHEET, NOT frame animation. Exactly FOUR columns and 1 equal rows. Each row is a different monster; each monster gets EXACTLY FOUR representative drawings, one per state. ROW 1: TwinHeart, identity in SECOND reference at row 6, column 6 in its 6x6 atlas. FIRST reference gives simple chunky pixel art style and front-facing camera. SECOND reference gives identity only for its selected creatures, do NOT retain that modern illustration finish. Preserve identities, gear and motifs. COLUMN1 Idle: alert combat-ready pose, leaning forward, weapon poised. COLUMN2 Ready: one clearly distinct wound-up anticipation stance preparing a strike or magic. COLUMN3 Attack: one strong action pose lunging/striking directly at camera, foreshortened weapon or claws. COLUMN4 Dead: one final collapsed/lifeless/broken pose, no live glow. ALL living creatures strictly FRONT VIEW toward viewer. Do not add intermediate motion frames, repeated poses, duplicates, or extra rows. Pixel dark fantasy, restrained 16-color midnight navy bone grey moss ochre blood red ice blue, chunky 64x64 logical pixel clusters per cell. Every pose entirely inside own equal cell including weapon and collapsed limbs, generous transparent gutter at least 12% cell width. Same figure scale per row. Fully transparent background, no haze, no text, no labels, no grid lines."
+    }
+  ]
+}

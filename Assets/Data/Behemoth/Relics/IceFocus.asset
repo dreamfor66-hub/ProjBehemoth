@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uACA8\uC6B8\uC758 \uC2DC\uC120"
   description: "\uC11C\uB9AC \uD30C\uB3D9 \uC2B5\uB4DD. \uB0C9\uAE30 \uC8FC\uBB38
     \uD53C\uD574 +20%, \uB454\uD654 \uC9C0\uC18D\uC2DC\uAC04 +0.5\uCD08."
-  icon: {fileID: 21300000, guid: f12cb7aa504a78a478ae9c8757f67f37, type: 3}
+  icon: {fileID: 99085848774988417, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 42
@@ -64,12 +64,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 11400000, guid: 1d07d598250fbd84c901da05d71b43dc, type: 2}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -82,10 +81,8 @@ MonoBehaviour:
       threshold: 0.5
       direction: 0
       element: 1
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       comparator: 3
       rule: 0
     trigger:
@@ -118,12 +115,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 7
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -161,12 +157,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 12
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 3339a97c23ac60241bf0a18b11b000e1, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -207,12 +202,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

@@ -27,7 +27,7 @@ MonoBehaviour:
   description: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8 \uC2B5\uB4DD. \uB0A9\uB3C4 \uC911
     \uCE90\uC2A4\uD305 \uC2DC\uAC04 -25%. \uC8FC\uBB38 \uBC1C\uB3D9 \uD6C4 \uB2E4\uC74C
     \uBC1C\uB3C4 \uD53C\uD574 +40%."
-  icon: {fileID: 21300000, guid: 73da2e96893a2654295e0a5d611ef911, type: 3}
+  icon: {fileID: -6500817091253424190, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 3
   power: 30
@@ -66,12 +66,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 11400000, guid: 0aa4718ef680d8e43a55a7c28993bb15, type: 2}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -84,10 +83,8 @@ MonoBehaviour:
       threshold: 0.5
       direction: 0
       element: 0
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 298cb38002b545c48aae1cf634e7281d, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       comparator: 3
       rule: 0
     trigger:
@@ -120,12 +117,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 9
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -138,10 +134,8 @@ MonoBehaviour:
       threshold: 0.5
       direction: 0
       element: 0
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 298cb38002b545c48aae1cf634e7281d, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       comparator: 3
       rule: 0
     trigger:
@@ -174,18 +168,16 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 94061f209d8fd114185131dec0203bc2, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables:
       - type: 16
         buff: {fileID: 0}
-        resource: {fileID: 0}
         rule: 21
         multiplier: 1
         limit: 0
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -226,12 +218,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

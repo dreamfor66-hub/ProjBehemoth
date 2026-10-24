@@ -27,20 +27,33 @@ MonoBehaviour:
   description: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798,
     \uC2DD\uC744 \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774
     \uBC1C\uC0B0\uD558\uB294 \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
-  characterColor: {r: 0.95, g: 0.4, b: 0.25, a: 1}
-  portrait: {fileID: 21300000, guid: c8a3d8385928cec45913643ae9437b0a, type: 3}
+  selectionStory: "\uACE0\uD5A5\uC744 \uC0BC\uD0A8 \uC800\uC8FC\uB97C \uC887\uC544\r\n\uD640\uB85C
+    \uC131\uBB38\uC744 \uB450\uB4DC\uB9B0 \uC804\uC0AC."
+  selectionAbility: "\uACA9\uB178\uB97C \uBAA8\uC544 \uBD84\uB178\uD558\uACE0\r\n\uAC70\uC13C
+    \uC5F0\uACA9\uC744 \uC3DF\uC544\uB0B8\uB2E4."
+  characterColor: {r: 0.82, g: 0.34, b: 0.28, a: 1}
+  portrait: {fileID: 2556003749722768240, guid: e4760f14decefe24e83ffea09fd980c1, type: 3}
+  selectionIllustration: {fileID: 21300000, guid: 582fe638aa0626c4abc34c64500e79c8, type: 3}
+  selectionMaterial: {fileID: 2100000, guid: 0b9350b14707b4b43b1197cdbb4c38ea, type: 2}
+  selectionBackdrop: {r: 0.19215687, g: 0.039215688, b: 0.07058824, a: 1}
+  combatSprite: {fileID: -991796013123945458, guid: af0455dd13d657d4b9a9955c67ece17a, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e30513608514f3d4f802039dde58d22f, type: 2}
   gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   startingRelic: {fileID: 11400000, guid: 0fe44b539e1a6604aa354582f4b1c385, type: 2}
   startingSpells: []
-  forms:
-  - {fileID: 11400000, guid: 69b9751f83fab454ca38302eb98cb3bc, type: 2}
-  resources:
-  - {fileID: 11400000, guid: 73b1ef608182f0c459d84b90e2777d65, type: 2}
+  startingSupplies:
+  - supply: {fileID: 11400000, guid: 97f4049024e9f274293dffbb2f06bd02, type: 2}
+    count: 1
+  attackBuffs: []
   maxHp: 120
+  maxMp: 30
+  mpRegen: 0.1
   shieldMax: 20
   guardDamageReduction: 1
   normalShieldRegen: 0
   brokenShieldRegen: 5
+  criticalChance: 0
+  criticalDamageMultiplier: 1.5
   baseAttackDamage: 14.5
   baseChargeDamage: 31
   attackCooldown: 1.05

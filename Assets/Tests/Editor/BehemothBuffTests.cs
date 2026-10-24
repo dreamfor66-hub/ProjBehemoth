@@ -63,7 +63,8 @@ namespace DungeonSlash.Tests
         {
             var content=AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/Behemoth/GameContent.asset");Assert.That(content.schemaVersion,Is.GreaterThanOrEqualTo(9));
             Assert.That(typeof(PlayerCombatData).GetField("mechanics"),Is.Null);Assert.That(typeof(EquipmentAbility).GetField("editorLabel"),Is.Null);
-            Assert.That(content.characters.Single(c=>c.character==CharacterKind.Barbarian).forms.Any(f=>f.buff!=null && f.pattern.Length==0),Is.True);
+            Assert.That(AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Rage.asset"),Is.Not.Null);
+            Assert.That(content.characters.Single(c=>c.character==CharacterKind.Monk).attackBuffs.All(b=>b.attackPattern.Length>0),Is.True);
             Assert.That(CombatStatusCatalog.Instance.poison.Units.Any(u=>u.trigger.triggerType==TriggerType.OnTimer && u.effects.Any(e=>e.effectType==EffectType.Damage)),Is.True);
             var wizard=content.characters.Single(c=>c.character==CharacterKind.Wizard);Assert.That(wizard.startingRelic.abilities.Any(u=>u.trigger.triggerType==TriggerType.Passive && u.effects.Any(e=>e.rule==AbilityRule.SpellCooldownReduction)),Is.True);
         }
@@ -78,9 +79,8 @@ namespace DungeonSlash.Tests
         [Test] public void AnyCharacterCanEnterAnAuthoredForm_WithoutCharacterKindDispatch()
         {
             var data=Buff();data.ReleaseData=new(){Type=BuffReleaseType.Time,Time=1};var speed=E(EffectType.RuleModifier,-.5f);speed.rule=AbilityRule.CooldownMultiplier;data.Units.Add(Unit(TriggerType.Passive,TargetType.OwnerStat,speed));
-            var form=New<FormData>();form.pattern=System.Array.Empty<SwipeDirection>();form.buff=data;data.form=form;
-            var item=New<EquipmentData>();var enter=E(EffectType.ApplyForm);enter.form=form;item.abilities.Add(Unit(TriggerType.OnGuardStarted,TargetType.Owner,enter));run.TryEquip(item);var before=run.Player.CurrentCooldown;
-            run.Player.TrySetGuard(true);run.Buffs.Tick(0);Assert.That(run.Player.ActiveForm,Is.SameAs(form));Assert.That(run.Player.CurrentCooldown,Is.EqualTo(before*.5f).Within(.001));run.Buffs.Tick(1.01f);Assert.That(run.Player.ActiveForm,Is.Null);
+            var item=New<EquipmentData>();var enter=E(EffectType.AddBuff,1,data);item.abilities.Add(Unit(TriggerType.OnGuardStarted,TargetType.Owner,enter));run.TryEquip(item);var before=run.Player.CurrentCooldown;
+            run.Player.TrySetGuard(true);run.Buffs.Tick(0);Assert.That(run.Buffs.Has(data),Is.True);Assert.That(run.Player.CurrentCooldown,Is.EqualTo(before*.5f).Within(.001));run.Buffs.Tick(1.01f);Assert.That(run.Buffs.Has(data),Is.False);
         }
         [Test] public void BuffDurationModifiersAreScoped_AndPassiveStatsUseTheSharedLifetime()
         {
@@ -109,10 +109,10 @@ namespace DungeonSlash.Tests
         }
         [Test] public void TimedBuffCanGrantAndRevokeCompanionAndFormAccess_WithoutAnItemIdentity()
         {
-            var companion=New<CompanionData>();var form=New<FormData>();form.requiresUnlock=true;
-            var data=Buff();data.ReleaseData=new(){Type=BuffReleaseType.Time,Time=1};var presence=E(EffectType.SummonCompanion);presence.companion=companion;var access=E(EffectType.UnlockForm);access.form=form;data.Units.Add(Unit(TriggerType.Passive,TargetType.OwnerStat,presence,access));
-            Assert.That(run.HasCompanion(companion),Is.False);Assert.That(run.IsFormUnlocked(form),Is.False);run.Buffs.Add(data);run.Buffs.Tick(0);Assert.That(run.HasCompanion(companion),Is.True);Assert.That(run.IsFormUnlocked(form),Is.True);
-            run.Buffs.Tick(1.01f);Assert.That(run.HasCompanion(companion),Is.False);Assert.That(run.IsFormUnlocked(form),Is.False);
+            var companion=New<CompanionData>();var form=New<BuffData>();form.requiresUnlock=true;
+            var data=Buff();data.ReleaseData=new(){Type=BuffReleaseType.Time,Time=1};var presence=E(EffectType.SummonCompanion);presence.companion=companion;var access=E(EffectType.UnlockBuff);access.buff=form;data.Units.Add(Unit(TriggerType.Passive,TargetType.OwnerStat,presence,access));
+            Assert.That(run.HasCompanion(companion),Is.False);Assert.That(run.IsBuffUnlocked(form),Is.False);run.Buffs.Add(data);run.Buffs.Tick(0);Assert.That(run.HasCompanion(companion),Is.True);Assert.That(run.IsBuffUnlocked(form),Is.True);
+            run.Buffs.Tick(1.01f);Assert.That(run.HasCompanion(companion),Is.False);Assert.That(run.IsBuffUnlocked(form),Is.False);
         }
         [Test] public void EquipmentAndBuffTimersPauseAndCatchUpIdentically()
         {

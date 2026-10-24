@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f51094ff32ef3e47ab65a4835f4aa40, type: 3}
+  m_Name: FatigueFaces
+  m_EditorClassIdentifier: 
+  heroes:
+  - character: 0
+    expressions:
+    - {fileID: -4766277994681319621, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: 3589107396469783085, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -8064333555827584782, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -4033898185180248176, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+  - character: 1
+    expressions:
+    - {fileID: 7732417611282412218, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -3853868802306174060, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -8331199657743370566, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -6751634455192419352, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+  - character: 2
+    expressions:
+    - {fileID: 3441639370412067140, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: 5368068972458656795, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: 8721727954148298435, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -7126134175075535028, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+  - character: 3
+    expressions:
+    - {fileID: 1160356247689490877, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -9094026221783340427, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: 5967004824830462263, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -4595092646120009461, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+  - character: 4
+    expressions:
+    - {fileID: -1718178687832663393, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -503293641505558033, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: 315593971098112027, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -7121938457330466902, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+  - character: 5
+    expressions:
+    - {fileID: -3511028689872584843, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -6421860010457461555, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: 4468066304009872750, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}
+    - {fileID: -3349672950314711357, guid: ec8d6cd0bd0a02d449030d107b302ade, type: 3}

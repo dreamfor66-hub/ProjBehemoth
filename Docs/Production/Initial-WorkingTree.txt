@@ -1,0 +1,237 @@
+ M AGENTS.md
+ M Assets/Data/Behemoth/Buffs/Burn.asset
+ M Assets/Data/Behemoth/Buffs/DelayedDamage.asset
+ D Assets/Data/Behemoth/Buffs/Form_Burst.asset
+ D Assets/Data/Behemoth/Buffs/Form_Burst.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Dragon.asset
+ D Assets/Data/Behemoth/Buffs/Form_Dragon.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Flow.asset
+ D Assets/Data/Behemoth/Buffs/Form_Flow.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Flow_0_flow.asset
+ D Assets/Data/Behemoth/Buffs/Form_Flow_0_flow.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Multi.asset
+ D Assets/Data/Behemoth/Buffs/Form_Multi.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Shelter.asset
+ D Assets/Data/Behemoth/Buffs/Form_Shelter.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Shelter_0_shelter.asset
+ D Assets/Data/Behemoth/Buffs/Form_Shelter_0_shelter.asset.meta
+ D Assets/Data/Behemoth/Buffs/Form_Tiger.asset
+ D Assets/Data/Behemoth/Buffs/Form_Tiger.asset.meta
+ M Assets/Data/Behemoth/Buffs/GuardianBell_0_DamageReduction.asset
+ M Assets/Data/Behemoth/Buffs/HorizontalFlow.asset
+ M Assets/Data/Behemoth/Buffs/LightningRod.asset
+ M Assets/Data/Behemoth/Buffs/PainFrenzy_0_WeaponDamageBonus.asset
+ M Assets/Data/Behemoth/Buffs/PerfectGuardWindow.asset
+ M Assets/Data/Behemoth/Buffs/PerfectMending_0_perfect.asset
+ M Assets/Data/Behemoth/Buffs/Poison.asset
+ M Assets/Data/Behemoth/Buffs/PreparedDraw.asset
+ M Assets/Data/Behemoth/Buffs/Rage.asset
+ M Assets/Data/Behemoth/Buffs/SheathParryWindow.asset
+ M Assets/Data/Behemoth/Buffs/Sheathed.asset
+ M Assets/Data/Behemoth/Buffs/Slow.asset
+ M Assets/Data/Behemoth/Buffs/SpellBlade_0_spell-draw.asset
+ M Assets/Data/Behemoth/Buffs/StaffConduit_0_staff-cast.asset
+ M Assets/Data/Behemoth/Buffs/StaffConduit_1_staff-damage.asset
+ M Assets/Data/Behemoth/Characters/Barbarian.asset
+ M Assets/Data/Behemoth/Characters/Monk.asset
+ M Assets/Data/Behemoth/Characters/Rogue.asset
+ M Assets/Data/Behemoth/Characters/Samurai.asset
+ M Assets/Data/Behemoth/Characters/Warrior.asset
+ M Assets/Data/Behemoth/Characters/Wizard.asset
+ D Assets/Data/Behemoth/Forms.meta
+ D Assets/Data/Behemoth/Forms/Burst.asset
+ D Assets/Data/Behemoth/Forms/Burst.asset.meta
+ D Assets/Data/Behemoth/Forms/Dragon.asset
+ D Assets/Data/Behemoth/Forms/Dragon.asset.meta
+ D Assets/Data/Behemoth/Forms/Flow.asset
+ D Assets/Data/Behemoth/Forms/Flow.asset.meta
+ D Assets/Data/Behemoth/Forms/Multi.asset
+ D Assets/Data/Behemoth/Forms/Multi.asset.meta
+ D Assets/Data/Behemoth/Forms/Rage.asset
+ D Assets/Data/Behemoth/Forms/Rage.asset.meta
+ D Assets/Data/Behemoth/Forms/Shelter.asset
+ D Assets/Data/Behemoth/Forms/Shelter.asset.meta
+ D Assets/Data/Behemoth/Forms/Tiger.asset
+ D Assets/Data/Behemoth/Forms/Tiger.asset.meta
+ M Assets/Data/Behemoth/GameContent.asset
+ M Assets/Data/Behemoth/Relics/AmberSeed.asset
+ M Assets/Data/Behemoth/Relics/ArcaneGuard.asset
+ M Assets/Data/Behemoth/Relics/BloodContract.asset
+ M Assets/Data/Behemoth/Relics/BloodFrenzy.asset
+ M Assets/Data/Behemoth/Relics/BloodlessDraw.asset
+ M Assets/Data/Behemoth/Relics/ChainMaster.asset
+ M Assets/Data/Behemoth/Relics/ComboLeech.asset
+ M Assets/Data/Behemoth/Relics/DeadlyDose.asset
+ M Assets/Data/Behemoth/Relics/DeferredPain.asset
+ M Assets/Data/Behemoth/Relics/DoubleDraw.asset
+ M Assets/Data/Behemoth/Relics/DrawMastery.asset
+ M Assets/Data/Behemoth/Relics/EmberMaster.asset
+ M Assets/Data/Behemoth/Relics/ExecuteRage.asset
+ M Assets/Data/Behemoth/Relics/Executioner.asset
+ M Assets/Data/Behemoth/Relics/FirstStrike.asset
+ M Assets/Data/Behemoth/Relics/FlowMaster.asset
+ M Assets/Data/Behemoth/Relics/GoldenTooth.asset
+ M Assets/Data/Behemoth/Relics/GuardNova.asset
+ M Assets/Data/Behemoth/Relics/GuardianBell.asset
+ M Assets/Data/Behemoth/Relics/GuidingWisp.asset
+ M Assets/Data/Behemoth/Relics/Hammer.asset
+ M Assets/Data/Behemoth/Relics/Hourglass.asset
+ M Assets/Data/Behemoth/Relics/HundredFists.asset
+ M Assets/Data/Behemoth/Relics/IceFocus.asset
+ M Assets/Data/Behemoth/Relics/IronFortress.asset
+ M Assets/Data/Behemoth/Relics/LightningRod.asset
+ M Assets/Data/Behemoth/Relics/LongDragon.asset
+ M Assets/Data/Behemoth/Relics/LongRage.asset
+ M Assets/Data/Behemoth/Relics/LongTiger.asset
+ M Assets/Data/Behemoth/Relics/MindfulGuard.asset
+ M Assets/Data/Behemoth/Relics/MirrorShard.asset
+ M Assets/Data/Behemoth/Relics/Paladin.asset
+ M Assets/Data/Behemoth/Relics/Parasite.asset
+ M Assets/Data/Behemoth/Relics/ParryRecovery.asset
+ M Assets/Data/Behemoth/Relics/PatientSheath.asset
+ M Assets/Data/Behemoth/Relics/PerfectMending.asset
+ M Assets/Data/Behemoth/Relics/PerfectRiposte.asset
+ M Assets/Data/Behemoth/Relics/PilgrimOath.asset
+ M Assets/Data/Behemoth/Relics/PoisonLeech.asset
+ M Assets/Data/Behemoth/Relics/PressurePoint.asset
+ M Assets/Data/Behemoth/Relics/QuickCasting.asset
+ M Assets/Data/Behemoth/Relics/RageCharge.asset
+ M Assets/Data/Behemoth/Relics/RageLeech.asset
+ M Assets/Data/Behemoth/Relics/RaggedBanner.asset
+ M Assets/Data/Behemoth/Relics/ShadowCounter.asset
+ M Assets/Data/Behemoth/Relics/ShadowSheath.asset
+ M Assets/Data/Behemoth/Relics/ShelterMaster.asset
+ M Assets/Data/Behemoth/Relics/ShieldBash.asset
+ M Assets/Data/Behemoth/Relics/ShieldEdge.asset
+ M Assets/Data/Behemoth/Relics/Spear.asset
+ M Assets/Data/Behemoth/Relics/SpellBlade.asset
+ M Assets/Data/Behemoth/Relics/SpellEcho.asset
+ M Assets/Data/Behemoth/Relics/StaffConduit.asset
+ M Assets/Data/Behemoth/Relics/Starter_Barbarian.asset
+ M Assets/Data/Behemoth/Relics/Starter_Monk.asset
+ M Assets/Data/Behemoth/Relics/Starter_Rogue.asset
+ M Assets/Data/Behemoth/Relics/Starter_Samurai.asset
+ M Assets/Data/Behemoth/Relics/Starter_Warrior.asset
+ M Assets/Data/Behemoth/Relics/Starter_Wizard.asset
+ M Assets/Data/Behemoth/Relics/StormBottle.asset
+ M Assets/Data/Behemoth/Relics/StrayDog.asset
+ M Assets/Data/Behemoth/Relics/Technique_CoreHarvest.asset
+ M Assets/Data/Behemoth/Relics/Technique_Harvest.asset
+ M Assets/Data/Behemoth/Relics/Technique_ImpactShield.asset
+ M Assets/Data/Behemoth/Relics/ThunderousCharge.asset
+ M Assets/Data/Behemoth/Relics/Tome_ChainLightning.asset
+ M Assets/Data/Behemoth/Relics/Tome_Ember.asset
+ M Assets/Data/Behemoth/Relics/Tome_EnergyBolt.asset
+ M Assets/Data/Behemoth/Relics/Tome_FireBloom.asset
+ M Assets/Data/Behemoth/Relics/Tome_FrostRing.asset
+ M Assets/Data/Behemoth/Relics/Tome_Spark.asset
+ M Assets/Data/Behemoth/Relics/TwinDaggers.asset
+ M Assets/Data/Behemoth/Relics/Unstoppable.asset
+ M Assets/Data/Behemoth/Relics/VenomSpread.asset
+ M Assets/Data/Behemoth/Relics/ViperFang.asset
+ M Assets/Data/Behemoth/Relics/WellCurse.asset
+ D Assets/Data/Behemoth/Resources/Fury.asset
+ D Assets/Data/Behemoth/Resources/Fury.asset.meta
+ M Assets/Data/DungeonSlashPrototype/Equipment/AegisBattery.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/AzureTalon.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/ChargeCoil.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/ChargeWard.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/CorePrism.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/CrosswindCharm.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/DistanceMomentum.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/DoubleCharge.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/EchoSpur.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/EdgeCharm.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/HealingPotion.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/HunterLantern.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/OpeningRockPotion.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/PainFrenzy.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/RagePotion.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/RevivalPotion.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/StoneSkinPotion.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/ThornBulwark.asset
+ M Assets/Data/DungeonSlashPrototype/Equipment/ThunderWire.asset
+ M Assets/Data/DungeonSlashPrototype/Player/PlayerCombatData.asset
+ M Assets/Data/Localization/Resources/BehemothKr.asset
+ M Assets/Data/Localization/kr.csv
+ M Assets/Editor/BehemothAbilityRepair.cs
+ M Assets/Editor/BehemothAbilityRevision.cs
+ D Assets/Editor/BehemothBuffMigration.cs
+ D Assets/Editor/BehemothBuffMigration.cs.meta
+ D Assets/Editor/BehemothBuffPolish.cs
+ D Assets/Editor/BehemothBuffPolish.cs.meta
+ D Assets/Editor/BehemothBuffRepair.cs
+ D Assets/Editor/BehemothBuffRepair.cs.meta
+ M Assets/Editor/BehemothContentBuilder.cs
+ M Assets/Editor/BehemothVerification.cs
+ M Assets/Editor/EquipmentAbilityDrawers.cs
+ M Assets/Scenes/MainGameScene.unity
+ M Assets/Scenes/OutGameScene.unity
+ M Assets/Scripts/DungeonSlash/Combat/Runtime/BuffManager.cs
+ M Assets/Scripts/DungeonSlash/Combat/Runtime/CharacterCombatRuntime.cs
+ M Assets/Scripts/DungeonSlash/Combat/Runtime/MonsterStatusRuntime.cs
+ M Assets/Scripts/DungeonSlash/Combat/Systems/CombatController.cs
+ M Assets/Scripts/DungeonSlash/Combat/Systems/EquipmentAbilityResolver.cs
+ M Assets/Scripts/DungeonSlash/Data/BuffData.cs
+ D Assets/Scripts/DungeonSlash/Data/CombatResourceData.cs
+ D Assets/Scripts/DungeonSlash/Data/CombatResourceData.cs.meta
+ M Assets/Scripts/DungeonSlash/Data/EquipmentAbility.cs
+ D Assets/Scripts/DungeonSlash/Data/FormData.cs
+ D Assets/Scripts/DungeonSlash/Data/FormData.cs.meta
+ M Assets/Scripts/DungeonSlash/Data/PlayerCombatData.cs
+ M Assets/Scripts/DungeonSlash/Data/PrototypeTypes.cs
+ M Assets/Scripts/DungeonSlash/Data/SpellData.cs
+ M Assets/Scripts/DungeonSlash/Run/EquipmentAbilitiesRuntime.cs
+ M Assets/Scripts/DungeonSlash/Run/RunController.cs
+ M Assets/Scripts/DungeonSlash/Run/RunSystems.cs
+ M Assets/Scripts/DungeonSlash/UI/GameFlowController.cs
+ M Assets/Scripts/DungeonSlash/UI/GameFlowExpansion.cs
+ M Assets/Scripts/DungeonSlash/UI/OutGameView.cs
+ M Assets/Scripts/DungeonSlash/UI/PerkChoiceView.cs
+ M Assets/Scripts/DungeonSlash/UI/RewardPopupView.cs
+ M Assets/Scripts/DungeonSlash/UI/RoomEventView.cs
+ M Assets/Scripts/DungeonSlash/UI/RunExpansionView.cs
+ M Assets/Scripts/DungeonSlash/UI/RunHudView.cs
+ M Assets/Scripts/DungeonSlash/UI/ShopItemView.cs
+ M Assets/Scripts/DungeonSlash/UI/ShopView.cs
+ M Assets/Tests/Editor/BehemothAbilityTests.cs
+ M Assets/Tests/Editor/BehemothBalancePlaytests.cs
+ M Assets/Tests/Editor/BehemothBuffTests.cs
+ M Assets/Tests/Editor/BehemothExpansionTests.cs
+ M Assets/Tests/Editor/BehemothFeedbackTests.cs
+ M Assets/Tests/Editor/BehemothPlaytests.cs
+ M Docs/Behemoth-Buffs.md
+?? Assets/Data/Behemoth/Buffs/Burst.asset
+?? Assets/Data/Behemoth/Buffs/Burst.asset.meta
+?? Assets/Data/Behemoth/Buffs/Dragon.asset
+?? Assets/Data/Behemoth/Buffs/Dragon.asset.meta
+?? Assets/Data/Behemoth/Buffs/Flow.asset
+?? Assets/Data/Behemoth/Buffs/Flow.asset.meta
+?? Assets/Data/Behemoth/Buffs/FlowAcceleration.asset
+?? Assets/Data/Behemoth/Buffs/FlowAcceleration.asset.meta
+?? Assets/Data/Behemoth/Buffs/Fury.asset
+?? Assets/Data/Behemoth/Buffs/Fury.asset.meta
+?? Assets/Data/Behemoth/Buffs/Multi.asset
+?? Assets/Data/Behemoth/Buffs/Multi.asset.meta
+?? Assets/Data/Behemoth/Buffs/Shelter.asset
+?? Assets/Data/Behemoth/Buffs/Shelter.asset.meta
+?? Assets/Data/Behemoth/Buffs/ShelterWard.asset
+?? Assets/Data/Behemoth/Buffs/ShelterWard.asset.meta
+?? Assets/Data/Behemoth/Buffs/Tiger.asset
+?? Assets/Data/Behemoth/Buffs/Tiger.asset.meta
+?? Assets/Editor/BehemothBuffPreparation.cs
+?? Assets/Editor/BehemothBuffPreparation.cs.meta
+?? Assets/Editor/BehemothUiPreparation.cs
+?? Assets/Editor/BehemothUiPreparation.cs.meta
+?? Assets/Tests/Editor/BehemothBuffUnificationPlaytests.cs
+?? Assets/Tests/Editor/BehemothBuffUnificationPlaytests.cs.meta
+?? Assets/Tests/Editor/BehemothBuffUnificationTests.cs
+?? Assets/Tests/Editor/BehemothBuffUnificationTests.cs.meta
+?? Assets/Tests/Editor/BehemothUiPlaytests.cs
+?? Assets/Tests/Editor/BehemothUiPlaytests.cs.meta
+?? Assets/Tests/Editor/BehemothUiTests.cs
+?? Assets/Tests/Editor/BehemothUiTests.cs.meta
+?? Docs/Behemoth-BuffUnification.md
+?? Docs/Behemoth-UI.md
+?? Docs/MigrationArchive/
+?? Docs/Production/

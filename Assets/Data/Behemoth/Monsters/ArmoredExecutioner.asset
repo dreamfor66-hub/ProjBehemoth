@@ -23,6 +23,8 @@ MonoBehaviour:
       \uAE30\uC808\uC774 \uAE38\uC5B4\uC9C4\uB2E4."
   textOwnerGuid: ecf1c349611a99341be2e93e20f059a6
   displayName: "\uCCA0\uAC11 \uC9D1\uD589\uAD00"
+  portrait: {fileID: 4866703374618579406, guid: 7a1a5215d2ce86d4d88a250148ddd518, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 1050847f1f8208b43b9667a4caca7396, type: 2}
   encounterHint: "\uAE30\uBCF8 \uC57D\uC810\uC744 \uAE68\uBA74 \uAC15\uD0C0\uB97C
     \uCDE8\uC18C\uD55C\uB2E4. \uC138 \uACB9\uC758 \uBCF4\uC870 \uC57D\uC810\uC744
     \uBA3C\uC800 \uBD80\uC218\uBA74 \uAE30\uC808\uC774 \uAE38\uC5B4\uC9C4\uB2E4."

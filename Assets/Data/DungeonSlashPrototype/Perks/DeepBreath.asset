@@ -23,7 +23,10 @@ MonoBehaviour:
   id: DeepBreath
   displayName: "\uAE4A\uC740 \uD638\uD761"
   description: "\uCC28\uC9C0 \uC644\uB8CC \uC2DC\uAC04 -15%"
-  icon: {fileID: 21300000, guid: 5edf6d5bb7cac6f46828d5ed649c463f, type: 3}
+  icon: {fileID: -4994717029236986561, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 0}
   maxStacks: 5
   modifiers:
   - kind: 3

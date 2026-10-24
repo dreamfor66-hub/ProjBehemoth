@@ -78,11 +78,11 @@ internal sealed class AbilityConditionOdinDrawer : OdinValueDrawer<AbilityCondit
         if(type!=value.kind){value.kind=type;ValueEntry.SmartValue=value;}
         if(type is AbilityConditionKind.OwnerHasBuff or AbilityConditionKind.TargetHasBuff){BuffInspectorLayout.Draw(Property,"buff");BuffInspectorLayout.Draw(Property,"buffTag");}
         if(type==AbilityConditionKind.ActionHasTag)BuffInspectorLayout.Draw(Property,"buffTag","행동 태그");
-        if(type==AbilityConditionKind.Resource)BuffInspectorLayout.Draw(Property,"resource");
+        if(type==AbilityConditionKind.BuffStack) { BuffInspectorLayout.Draw(Property,"buff","참조 버프 (없으면 현재 버프)"); BuffInspectorLayout.Draw(Property,"buffTag","참조 태그"); }
         if(type==AbilityConditionKind.Rule)BuffInspectorLayout.Draw(Property,"rule");
-        if(type is AbilityConditionKind.Resource or AbilityConditionKind.Rule or AbilityConditionKind.BuffStack or AbilityConditionKind.EncounterActions)BuffInspectorLayout.Draw(Property,"comparator");
-        if(type is AbilityConditionKind.Resource or AbilityConditionKind.Rule or AbilityConditionKind.BuffStack or AbilityConditionKind.EncounterActions or AbilityConditionKind.HpBelowFraction)BuffInspectorLayout.Draw(Property,"threshold","비교 값");
-        if(type==AbilityConditionKind.FormIs)BuffInspectorLayout.Draw(Property,"form");
+        if(type is AbilityConditionKind.Rule or AbilityConditionKind.BuffStack or AbilityConditionKind.EncounterActions)BuffInspectorLayout.Draw(Property,"comparator");
+        if(type is AbilityConditionKind.Rule or AbilityConditionKind.BuffStack or AbilityConditionKind.EncounterActions or AbilityConditionKind.HpBelowFraction)BuffInspectorLayout.Draw(Property,"threshold","비교 값");
+        if(type==AbilityConditionKind.ActionBuffIs)BuffInspectorLayout.Draw(Property,"buff","행동 버프");
         if(type is AbilityConditionKind.DirectionIs or AbilityConditionKind.DirectionIsNot)BuffInspectorLayout.Draw(Property,"direction");
         if(type==AbilityConditionKind.ElementIs)BuffInspectorLayout.Draw(Property,"element");
         BuffInspectorLayout.Draw(Property,"invert","반전");
@@ -97,11 +97,10 @@ internal sealed class EquipmentEffectOdinDrawer : OdinValueDrawer<EquipmentEffec
         var selected=BuffInspectorLayout.Choice(value.effectType,type=>Allowed(type,unit?.target??TargetType.Owner));
         if(selected!=value.effectType){value.effectType=selected;ValueEntry.SmartValue=value;}var type=value.effectType;
         if(type==EffectType.LearnSpell){BuffInspectorLayout.Draw(Property,"spell");return;}
-        if(type is EffectType.UnlockForm or EffectType.ApplyForm){BuffInspectorLayout.Draw(Property,"form");return;}
+        if(type==EffectType.UnlockBuff){BuffInspectorLayout.Draw(Property,"buff");return;}
         if(type==EffectType.SummonCompanion){BuffInspectorLayout.Draw(Property,"companion");return;}
         if(type is EffectType.AddBuff or EffectType.RemoveBuff or EffectType.ChangeBuffStack or EffectType.SetBuffStack)BuffInspectorLayout.Draw(Property,"buff");
         if(type is EffectType.RemoveBuff or EffectType.EmitSignal or EffectType.MarkAction)BuffInspectorLayout.Draw(Property,"buffTag",type==EffectType.EmitSignal?"신호":"태그");
-        if(type is EffectType.AddResource or EffectType.SetResource)BuffInspectorLayout.Draw(Property,"resource");
         if(type is EffectType.ResetAttackCooldown or EffectType.RemoveBuff or EffectType.ActionCharge or EffectType.EmitSignal or EffectType.PayDeferredDamage or EffectType.ClearDeferredDamage or EffectType.MarkAction)return;
         BuffInspectorLayout.Draw(Property,"effectMagnitude","기본 값");BuffInspectorLayout.Draw(Property,"valueVariables","값 변수 (기본 값에 합산)");
         BuffInspectorLayout.Draw(Property,"maximumMagnitude","최종 상한 (0 = 없음)");
@@ -117,20 +116,19 @@ internal sealed class EquipmentEffectOdinDrawer : OdinValueDrawer<EquipmentEffec
     }
     private static bool Allowed(EffectType type,TargetType target)=>target switch{
         TargetType.ThisBuff=>type is EffectType.RemoveBuff or EffectType.ChangeBuffStack or EffectType.SetBuffStack or EffectType.ChangeBuffValue,
-        TargetType.Action=>type is EffectType.ActionDamage or EffectType.ActionExtraHits or EffectType.ActionCharge or EffectType.MarkAction,
+        TargetType.Action=>type is EffectType.ActionDamage or EffectType.ScaleActionDamage or EffectType.ActionExtraHits or EffectType.ActionCharge or EffectType.MarkAction,
         TargetType.Hit=>type is EffectType.ActionDamage or EffectType.GuardCost,
-        TargetType.OwnerStat=>type is EffectType.StatIncrease or EffectType.RuleModifier or EffectType.UnlockForm or EffectType.SummonCompanion,
-        _=>type is not EffectType.ApplyStatus and not EffectType.ActionDamage and not EffectType.ActionCharge and not EffectType.ActionExtraHits and not EffectType.GuardCost and not EffectType.MarkAction and not EffectType.ChangeBuffValue and not EffectType.PayDeferredDamage and not EffectType.ClearDeferredDamage and not EffectType.SummonCompanion and not EffectType.UnlockForm};
+        TargetType.OwnerStat=>type is EffectType.StatIncrease or EffectType.RuleModifier or EffectType.UnlockBuff or EffectType.SummonCompanion,
+        _=>type is not EffectType.ApplyStatus and not EffectType.ActionDamage and not EffectType.ActionCharge and not EffectType.ActionExtraHits and not EffectType.GuardCost and not EffectType.MarkAction and not EffectType.ChangeBuffValue and not EffectType.PayDeferredDamage and not EffectType.ClearDeferredDamage and not EffectType.SummonCompanion and not EffectType.UnlockBuff};
 }
 internal sealed class EffectVariableOdinDrawer:OdinValueDrawer<EffectValueVariable>
 {
     protected override void DrawPropertyLayout(GUIContent label)
     {
         var value=ValueEntry.SmartValue;if(value==null){CallNextDrawer(label);return;}
-        var type=BuffInspectorLayout.Choice(value.type,t=>t is not EffectScale.Rage and not EffectScale.SheathTime and not EffectScale.Flat);
+        var type=BuffInspectorLayout.Choice(value.type,t=>t is not EffectScale.SheathTime and not EffectScale.Flat);
         if(type!=value.type){value.type=type;ValueEntry.SmartValue=value;}
-        if(type is EffectScale.BuffElapsed or EffectScale.BuffStacks)BuffInspectorLayout.Draw(Property,"buff");
-        if(type==EffectScale.Resource)BuffInspectorLayout.Draw(Property,"resource");
+        if(type is EffectScale.BuffElapsed or EffectScale.BuffStacks or EffectScale.BuffValue)BuffInspectorLayout.Draw(Property,"buff","참조 버프 (없으면 현재 버프)");
         if(type==EffectScale.Rule)BuffInspectorLayout.Draw(Property,"rule");
         BuffInspectorLayout.Draw(Property,"multiplier","계수");BuffInspectorLayout.Draw(Property,"limit","변수 상한 (0 = 없음)");
     }

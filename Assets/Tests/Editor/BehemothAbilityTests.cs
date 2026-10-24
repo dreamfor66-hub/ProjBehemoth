@@ -51,6 +51,9 @@ namespace DungeonSlash.Tests
                 controller.Configure(Content.characters.Single(item => item.character == CharacterKind.Warrior), balance, Content.perks, Content.equipment); controller.BeginRun();
                 int CountBooks(int act, int normals)
                 {
+                    // These are new merchants in a new progression scenario, not a restock
+                    // of the same cached merchant after the character's progress changes.
+                    controller.BeginRun();
                     controller.State.CurrentAct = act; controller.State.NormalCombatsInAct = normals; var count = 0;
                     for (var i = 0; i < 250; i++)
                     {
@@ -90,8 +93,8 @@ namespace DungeonSlash.Tests
             foreach (var kind in new[] { CharacterKind.Wizard, CharacterKind.Monk })
             {
                 var run = Run(kind); run.Player.TrySetGuard(true); run.Player.Tick(.3f); new DamageResolver().ApplyToPlayer(run.Player, new DamageRequest(DamageType.MonsterAttack, 8, 8, true)); run.Player.TrySetGuard(false); var shield = run.Player.ShieldCurrent;
-                run.EmitEvent(kind == CharacterKind.Wizard ? TriggerType.OnSpellCast : TriggerType.OnFormFinish, default);
-                var expected=run.Player.Data.startingRelic.abilities.Where(a=>a.trigger.triggerType==(kind==CharacterKind.Wizard?TriggerType.OnSpellCast:TriggerType.OnFormFinish)).SelectMany(a=>a.effects).Where(e=>e.effectType==EffectType.RestoreGuard).Sum(e=>e.effectMagnitude);
+                run.EmitEvent(kind == CharacterKind.Wizard ? TriggerType.OnSpellCast : TriggerType.OnAttackBuffUsed, default);
+                var expected=run.Player.Data.startingRelic.abilities.Where(a=>a.trigger.triggerType==(kind==CharacterKind.Wizard?TriggerType.OnSpellCast:TriggerType.OnAttackBuffUsed)).SelectMany(a=>a.effects).Where(e=>e.effectType==EffectType.RestoreGuard).Sum(e=>e.effectMagnitude);
                 Assert.That(run.Player.ShieldCurrent, Is.EqualTo(shield + expected).Within(.001), kind.ToString());
             }
         }

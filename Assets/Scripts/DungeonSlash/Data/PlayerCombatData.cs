@@ -8,22 +8,35 @@ namespace DungeonSlash
     {
         public CharacterKind character;
         public string displayName = "워리어";
-        [TextArea] public string description;
+        [TextArea(5, 12)] public string description;
+        [Header("Character selection")]
+        [TextArea] public string selectionStory;
+        [TextArea] public string selectionAbility;
         public Color characterColor = new(.22f, .65f, .9f);
         public Sprite portrait;
+        public Sprite selectionIllustration;
+        public Material selectionMaterial;
+        public Color selectionBackdrop = new(.05f,.08f,.12f);
+        public Sprite combatSprite;
+        public CombatSpriteAnimation combatAnimation;
         public GameVariables gameVariables;
         public EquipmentData startingRelic;
         public List<SpellData> startingSpells = new();
-        [UnityEngine.Serialization.FormerlySerializedAs("monkForms")] public List<FormData> forms = new();
-        public List<CombatResourceData> resources = new();
+        public List<StartingSupply> startingSupplies = new();
+        public List<BuffData> attackBuffs = new();
         [Header("Health and Shield")]
         [Min(1f)] public float maxHp = 100f;
+        [Header("Mana")]
+        [Min(0)] public float maxMp = 30;
+        [Min(0)] public float mpRegen = .1f;
         [Min(0f)] public float shieldMax = 100f;
         [Range(0, 1)] public float guardDamageReduction = 1f;
         [Min(0f)] public float normalShieldRegen = 8f;
         [Min(0f)] public float brokenShieldRegen = 22f;
 
         [Header("Attacks")]
+        [Range(0,1)] public float criticalChance;
+        [Min(1)] public float criticalDamageMultiplier = 1.5f;
         [Min(0f)] public float baseAttackDamage = 12f;
         [Min(0f)] public float baseChargeDamage = 28f;
         [Min(.01f)] public float attackCooldown = .5f;

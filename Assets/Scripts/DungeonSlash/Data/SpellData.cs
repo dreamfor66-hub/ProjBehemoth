@@ -2,17 +2,29 @@ using UnityEngine;
 namespace DungeonSlash
 {
     public enum SwipeDirection { Left, Right, Up, Down }
+    public static class SwipeDirectionUtility
+    {
+        public static string Label(SwipeDirection direction) => direction switch { SwipeDirection.Left => "←", SwipeDirection.Right => "→", SwipeDirection.Up => "↑", _ => "↓" };
+    }
     public enum SpellElement { Fire, Ice, Lightning }
-    public enum SpellShape { Pierce, Burst, Chain }
+    public enum SpellTargeting { Automatic, SwipeRay, Point }
+    public enum SpellShape { Pierce, Burst, Chain, Utility, PersistentArea, Rain }
     [CreateAssetMenu(menuName = "Dungeon Slash/Spell")]
     public sealed class SpellData : LocalizedData
     {
         public string id;
         public string displayName;
-        [TextArea] public string description;
+        [TextArea(5, 12)] public string description;
         public Sprite icon;
+        [Min(0)] public float mpCost = 8;
+        [Min(0)] public int tier;
+        public System.Collections.Generic.List<EquipmentAbility> abilities = new();
+        [Min(0)] public float duration;
+        [Min(.05f)] public float pulseInterval = 1;
+        [Min(1)] public int pulses = 1;
         public SpellElement element;
         public SpellShape shape;
+        public SpellTargeting targeting;
         public SwipeDirection defaultSlot;
         [Min(.1f)] public float castingSeconds = .65f;
         [Min(.1f)] public float cooldownSeconds = 5f;

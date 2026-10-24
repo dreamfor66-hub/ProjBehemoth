@@ -20,7 +20,8 @@ namespace DungeonSlash
         NormalShieldRegen, BrokenShieldRegen, ShieldOnHit, ShieldOnWeakPoint, StunDamageMultiplier, AttackReach,
         MonsterKillHeal, Gold,
         AllDamageMultiplier, DamageReduction, ChargeGuardEnabled, DoubleChargeEnabled, DamagePerAttackDistance,
-        RevivalHealthFraction
+        RevivalHealthFraction, FlatNormalDamage, FlatChargeDamage, MaxMp, MpRegen, FireDamage, IceDamage, LightningDamage, PoisonDamage,
+        CriticalChance, CriticalDamageMultiplier
     }
 
     public enum ShopItemKind { Relic, Potion }
@@ -33,9 +34,9 @@ namespace DungeonSlash
         OnAcquire,
         OnConsume,
         OnCombatStartAfterConsume,
-        Passive, OnCombatStart, OnTimer, OnKill, OnPoisonTick, OnSpellCast, OnSheathParry, OnPerfectGuard, OnFormFinish, OnWeakPointBreak, OnCombatWon, OnAttackResolved,
+        Passive, OnCombatStart, OnTimer, OnKill, OnPoisonTick, OnSpellCast, OnSheathParry, OnPerfectGuard, OnAttackBuffUsed, OnWeakPointBreak, OnCombatWon, OnAttackResolved,
         OnBuffStart, OnBuffEnd, OnBuffStack, OnConditionMet, OnGuardStarted, OnGuardEnded, OnBeforeGuard, OnActionPreparing, OnSignal,
-        OnActionCompleted, OnEncounterRevealed
+        OnActionCompleted, OnEncounterRevealed, OnThrow
     }
 
     [Flags]
@@ -44,8 +45,8 @@ namespace DungeonSlash
     public enum TriggerAttackWayFilter { Horizontal = 1, Upward = 2, Downward = 4, All = Horizontal | Upward | Downward }
     public enum ConditionType { None, OwnerCharge, EnemyStun }
     public enum TargetType { Owner, Enemy, OwnerStat, ThisBuff, Action, Hit }
-    public enum EffectType { ExtraAttack, Damage, StatIncrease, Heal, RestoreGuard, ApplyStatus, DetonatePoison, ReduceSpellCooldown, ResetAttackCooldown, AddResource, StoreGuardDamage, RuleModifier, LearnSpell, UnlockForm, SummonCompanion, EchoSpell, SpreadStatus, Interrupt,
-        AddBuff, RemoveBuff, ChangeBuffStack, SetBuffStack, SetResource, ApplyForm, ActionDamage, ActionExtraHits, ActionCharge, GuardCost, EmitSignal, PayDeferredDamage, ClearDeferredDamage, MarkAction, ChangeBuffValue }
+    public enum EffectType { ExtraAttack = 0, Damage = 1, StatIncrease = 2, Heal = 3, RestoreGuard = 4, ApplyStatus = 5, DetonatePoison = 6, ReduceSpellCooldown = 7, ResetAttackCooldown = 8, StoreGuardDamage = 10, RuleModifier = 11, LearnSpell = 12, UnlockBuff = 13, SummonCompanion = 14, EchoSpell = 15, SpreadStatus = 16, Interrupt = 17,
+        AddBuff = 18, RemoveBuff = 19, ChangeBuffStack = 20, SetBuffStack = 21, ActionDamage = 24, ActionExtraHits = 25, ActionCharge = 26, GuardCost = 27, EmitSignal = 28, PayDeferredDamage = 29, ClearDeferredDamage = 30, MarkAction = 31, ChangeBuffValue = 32, ScaleActionDamage = 33, RestoreMp = 34, ElementDamage = 35, Cleanse = 36, RecoverFatigue = 37 }
 
     [Serializable]
     public struct EquipmentTrigger
@@ -75,6 +76,7 @@ namespace DungeonSlash
         [Min(1)] public int effectCount;
         public float effectAngle;
         [Min(0f)] public float effectTime;
+        [Min(0)] public int travelGraceSteps;
         public ModifierKind effectStatType;
         public EffectScale scale;
         [Tooltip("실제 효과량 = (effectMagnitude + 참조값 × scaleRatio) × effectCount")] public float scaleRatio;
@@ -86,12 +88,11 @@ namespace DungeonSlash
         [Min(1)] public int statusCap;
         public AbilityRule rule;
         public SpellData spell;
-        public FormData form;
         public BuffData buff;
         public BuffTagData buffTag;
-        public CombatResourceData resource;
         public List<EffectValueVariable> valueVariables;
         public GuardFeedback guardFeedback;
+        public bool multiplyByBuffStacks;
         public CompanionData companion;
         [Min(0)] public int buffUses;
         public TriggerType consumeOn;
@@ -103,6 +104,6 @@ namespace DungeonSlash
     public struct StatModifier { public ModifierKind kind; public float value; }
 
     // MajorReward is retained only to read older saved/generated data. New runs use Chest for every chest outcome.
-    public enum RoomEncounterType { Start, Combat, Reward, Fountain, PoisonFountain, Chest, Goddess, Shop, Elite, MajorReward, Boss, Empty, Event }
+    public enum RoomEncounterType { Start, Combat, Reward, Fountain, PoisonFountain, Chest, Goddess, Shop, Elite, MajorReward, Boss, Empty, Event, Camp }
     public enum ChestContent { Gold, Relic, Mimic }
 }

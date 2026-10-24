@@ -22,11 +22,11 @@ MonoBehaviour:
       \uC900\uBE44\uD569\uB2C8\uB2E4. \uD328\uD134\uC744 \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0
       \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC \uD560 \uC218
       \uC788\uC2B5\uB2C8\uB2E4. \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC\uD558\uBA74
-      \uC544\uB798\uC640 \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\n\u2193\u2191
-      \uBD95\uAD8C: 1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2190\u2192 \uBC31\uB82C\uAD8C:
-      0.55\uBC30 \uCC28\uC9C0 3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9:
+      \uC544\uB798\uC640 \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\r\n\u2193\u2191
+      \uBD95\uAD8C: 1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\r\n\u2190\u2192 \uBC31\uB82C\uAD8C:
+      0.55\uBC30 \uCC28\uC9C0 3\uD68C \uD53C\uD574\r\n\u2193\u2192 \uD638\uC2E0\uACA9:
       \uAC00\uB4DC +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574
-      -50%.\n\u2192\u2191 \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C
+      -50%.\r\n\u2192\u2191 \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C
       \uCFE8\uD0C0\uC784 -40%."
   textOwnerGuid: b7e632a71dec8d641b22b585670f40bb
   id: Starter_Monk
@@ -35,13 +35,13 @@ MonoBehaviour:
     \uC900\uBE44\uD569\uB2C8\uB2E4. \uD328\uD134\uC744 \uB9CC\uB4E0 \uD6C4, \uCC28\uC9C0
     \uACF5\uACA9\uC73C\uB85C \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC \uD560 \uC218
     \uC788\uC2B5\uB2C8\uB2E4. \uCD08\uC2DD\uC744 \uB9C8\uBB34\uB9AC\uD558\uBA74 \uC544\uB798\uC640
-    \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\n\u2193\u2191 \uBD95\uAD8C:
-    1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\n\u2190\u2192 \uBC31\uB82C\uAD8C: 0.55\uBC30
-    \uCC28\uC9C0 3\uD68C \uD53C\uD574\n\u2193\u2192 \uD638\uC2E0\uACA9: \uAC00\uB4DC
-    +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574 -50%.\n\u2192\u2191
+    \uAC19\uC740 \uD6A8\uACFC\uB97C \uC5BB\uC2B5\uB2C8\uB2E4.\r\n\u2193\u2191 \uBD95\uAD8C:
+    1.7\uBC30 \uCC28\uC9C0 \uD53C\uD574\r\n\u2190\u2192 \uBC31\uB82C\uAD8C: 0.55\uBC30
+    \uCC28\uC9C0 3\uD68C \uD53C\uD574\r\n\u2193\u2192 \uD638\uC2E0\uACA9: \uAC00\uB4DC
+    +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574 -50%.\r\n\u2192\u2191
     \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C \uCFE8\uD0C0\uC784
     -40%."
-  icon: {fileID: 21300000, guid: f701431fffac50e47ac473732848a7a6, type: 3}
+  icon: {fileID: -148319563816140896, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 1
   exclusiveCharacter: 4
   power: 0
@@ -80,12 +80,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -126,12 +125,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

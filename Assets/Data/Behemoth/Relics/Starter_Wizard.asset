@@ -19,13 +19,15 @@ MonoBehaviour:
   - propertyPath: description
     key: data.equipmentdata.starter_wizard.description
     lastText: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8\uB97C \uAC00\uC9C0\uACE0 \uAC8C\uC784\uC744
-      \uC2DC\uC791\uD569\uB2C8\uB2E4.\n\uC8FC\uBB38 \uCFE8\uD0C0\uC784 -25%"
+      \uC2DC\uC791\uD569\uB2C8\uB2E4.\r\n\uC8FC\uBB38 \uCFE8\uD0C0\uC784 -25%\r\n\uAC00\uB4DC
+      \uC911 MP\uAC00 \uCD08\uB2F9 0.9 \uCD94\uAC00 \uD68C\uBCF5\uB41C\uB2E4."
   textOwnerGuid: 2c7c7f81d0a569b4ab96ceed055417f7
   id: Starter_Wizard
   displayName: "\uC9D1\uC911\uC758 \uC218\uC815"
   description: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8\uB97C \uAC00\uC9C0\uACE0 \uAC8C\uC784\uC744
-    \uC2DC\uC791\uD569\uB2C8\uB2E4.\n\uC8FC\uBB38 \uCFE8\uD0C0\uC784 -25%"
-  icon: {fileID: 21300000, guid: a1e84b52c2287994db9e6b5e78a2c76a, type: 3}
+    \uC2DC\uC791\uD569\uB2C8\uB2E4.\r\n\uC8FC\uBB38 \uCFE8\uD0C0\uC784 -25%\r\n\uAC00\uB4DC
+    \uC911 MP\uAC00 \uCD08\uB2F9 0.9 \uCD94\uAC00 \uD68C\uBCF5\uB41C\uB2E4."
+  icon: {fileID: -2592873102402669163, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 1
   exclusiveCharacter: 5
   power: 0
@@ -64,12 +66,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 11400000, guid: 0aa4718ef680d8e43a55a7c28993bb15, type: 2}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -107,12 +108,62 @@ MonoBehaviour:
       statusCap: 0
       rule: 8
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions:
+    - kind: 14
+      invert: 0
+      threshold: 0.5
+      direction: 0
+      element: 0
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      comparator: 3
+      rule: 0
+    trigger:
+      triggerType: 9
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0.1
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 34
+      effectMagnitude: 0.09
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -153,12 +204,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

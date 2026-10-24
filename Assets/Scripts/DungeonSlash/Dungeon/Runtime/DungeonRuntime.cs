@@ -46,6 +46,7 @@ namespace DungeonSlash
     public sealed class DungeonRoom
     {
         public int RoomId { get; }
+        public int EncounterOriginId {get;set;}
         public DungeonPosition Position { get; }
         public RoomEncounterType Type { get; set; }
         public bool IsVisited { get; set; }
@@ -54,7 +55,7 @@ namespace DungeonSlash
         public bool IsMajorRoom { get; set; }
         public ChestContent ChestContent { get; set; } = ChestContent.Relic;
         public HashSet<int> Connections { get; } = new();
-        public DungeonRoom(int id, DungeonPosition position) { RoomId = id; Position = position; }
+        public DungeonRoom(int id, DungeonPosition position) { RoomId = id; EncounterOriginId=id; Position = position; }
     }
 
     public sealed class DungeonGraph

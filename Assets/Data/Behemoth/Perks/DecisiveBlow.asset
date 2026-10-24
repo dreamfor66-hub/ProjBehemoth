@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: DecisiveBlow
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: perk.critical.damage.name
+    lastText: "\uACB0\uC815\uD0C0"
+  - propertyPath: description
+    key: perk.critical.damage.description
+    lastText: "\uCE58\uBA85\uD0C0 \uD53C\uD574 +15%"
+  textOwnerGuid: abfff0d59ecdb93408da9cc31666a83a
+  id: DecisiveBlow
+  displayName: "\uACB0\uC815\uD0C0"
+  description: "\uCE58\uBA85\uD0C0 \uD53C\uD574 +15%"
+  icon: {fileID: 4626822261902330006, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 0}
+  maxStacks: 5
+  modifiers:
+  - kind: 30
+    value: 0.15

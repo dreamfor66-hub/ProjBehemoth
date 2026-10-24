@@ -27,7 +27,7 @@ MonoBehaviour:
   description: "\uC2A4\uD30C\uD06C \uC2B5\uB4DD. \uBB34\uAE30 \uC801\uC911 \uB300\uC0C1\uC5D0\uAC8C
     8\uCD08 \uB3D9\uC548 \uD53C\uB8B0\uCE68\uC744 \uB0A8\uACA8 \uBC88\uAC1C\uAC00
     \uC6B0\uC120\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: e4b323fea958f994ab60fc303f781273, type: 3}
+  icon: {fileID: 4626822261902330006, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 43
@@ -66,12 +66,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 11400000, guid: b5628e2176861b947869198ac7b4693b, type: 2}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -109,12 +108,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: cb1e2eb37f66fc24e98d2b6ba9f96da7, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -155,12 +153,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

@@ -1,6 +1,7 @@
 using TMPro;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,13 @@ namespace DungeonSlash
     {
         [SerializeField] private TextMeshProUGUI roomInfo;
         [SerializeField] private TextMeshProUGUI runInfo;
+        [SerializeField] private Image characterPortrait;
+        [SerializeField] private TextMeshProUGUI characterName;
+        [SerializeField] private TextMeshProUGUI healthText;
+        [SerializeField] private Image healthFill;
+        [SerializeField] private TextMeshProUGUI experienceText;
+        [SerializeField] private Image experienceFill;
+        [SerializeField] private TextMeshProUGUI goldText;
         // Retained solely for compatibility with the minimal HUD test configuration.
         [SerializeField] private TextMeshProUGUI perkInfo;
         [SerializeField] private RectTransform perkGrid;
@@ -21,6 +29,22 @@ namespace DungeonSlash
         private readonly List<RunHudIconView> perkIcons = new();
         private readonly List<RunHudIconView> relicIcons = new();
         private readonly List<RunHudIconView> potionIcons = new();
+        private RunState boundRun;
+
+        // Damage, healing and maximum HP can change between navigation HUD refreshes.
+        private EquipmentData[] shownPotions = Array.Empty<EquipmentData>();
+        private void LateUpdate()
+        {
+            RefreshCharacterSummary();
+            if (boundRun != null && potionGrid != null && !shownPotions.SequenceEqual(boundRun.Potions)) BindPotions(boundRun, null, null);
+        }
+
+        public void ConfigureCharacterSummary(Image portrait, TextMeshProUGUI nameLabel, TextMeshProUGUI hpLabel,
+            Image hpFill, TextMeshProUGUI xpLabel, Image xpFill, TextMeshProUGUI goldLabel)
+        {
+            characterPortrait = portrait; characterName = nameLabel; healthText = hpLabel;
+            healthFill = hpFill; experienceText = xpLabel; experienceFill = xpFill; goldText = goldLabel;
+        }
 
         private void Awake()
         {
@@ -54,8 +78,12 @@ namespace DungeonSlash
                 roomInfo.text = string.Empty;
                 roomInfo.enabled = false;
             }
+            boundRun = run;
             if (runInfo != null)
-                runInfo.text = GameText.Format("ui.runhudview.55f14293", dungeon.Floor, run.Level, run.Experience, run.RequiredExperience, run.Gold);
+            {
+                runInfo.text = string.Empty;
+                runInfo.enabled = false;
+            }
             if (perkInfo != null)
             {
                 perkInfo.text = string.Empty;
@@ -63,9 +91,40 @@ namespace DungeonSlash
             }
             if (run == null) return;
 
+            RefreshCharacterSummary();
+
             BindPerks(run, removePerk);
             BindRelics(run, removeEquipment);
             BindPotions(run, usePotion, removeEquipment);
+        }
+
+        private void RefreshCharacterSummary()
+        {
+            if (boundRun?.Player == null) return;
+            var player = boundRun.Player;
+            if (characterPortrait != null)
+            {
+                characterPortrait.sprite = player.Data.portrait;
+                characterPortrait.color = Color.white;
+                characterPortrait.enabled = player.Data.portrait != null;
+                characterPortrait.preserveAspect = true;
+            }
+            if (characterName != null) { characterName.text = player.Data.displayName; characterName.color = player.Data.characterColor; }
+            if (healthText != null) healthText.text = GameText.Format("ui.combathudview.dfe9f229", player.CurrentHp, player.MaxHp);
+            SetSummaryGauge(healthFill, player.MaxHp <= 0 ? 0 : player.CurrentHp / player.MaxHp);
+            if (experienceText != null) experienceText.text = GameText.Format("ui.hud.experience", boundRun.Level, boundRun.Experience, boundRun.RequiredExperience);
+            SetSummaryGauge(experienceFill, boundRun.RequiredExperience <= 0 ? 0 : (float)boundRun.Experience / boundRun.RequiredExperience);
+            if (goldText != null) goldText.text = GameText.Format("ui.hud.gold", boundRun.Gold);
+        }
+
+        private static void SetSummaryGauge(Image fill, float ratio)
+        {
+            if (fill == null) return;
+            var rect = fill.rectTransform;
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = new Vector2(Mathf.Clamp01(ratio), 1);
+            rect.offsetMin = rect.offsetMax = Vector2.zero;
+            fill.type = Image.Type.Simple;
         }
 
         private void BindPerks(RunState run, Action<PerkData> removePerk)
@@ -100,6 +159,7 @@ namespace DungeonSlash
 
         private void BindPotions(RunState run, Action<EquipmentData> usePotion, Action<EquipmentData> removeEquipment)
         {
+            shownPotions = run.Potions.ToArray();
             EnsureIconCount(potionIcons, potionGrid, run.PotionSlotCapacity);
             for (var index = 0; index < potionIcons.Count; index++)
             {
@@ -110,7 +170,9 @@ namespace DungeonSlash
                     continue;
                 }
                 var potion = run.Potions[index];
-                potionIcons[index].Bind(potion, tooltip, usePotion == null ? null : () => usePotion(potion), removeEquipment == null ? null : () => removeEquipment(potion));
+                var anchor = (RectTransform)potionIcons[index].transform;
+                var actions = GetComponentInParent<Canvas>()?.GetComponentInChildren<PotionActionView>(true);
+                potionIcons[index].Bind(potion, tooltip, actions == null ? null : () => actions.Open(potion, anchor));
             }
         }
 

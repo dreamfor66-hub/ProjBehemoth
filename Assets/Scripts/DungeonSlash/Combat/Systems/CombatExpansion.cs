@@ -8,8 +8,13 @@ namespace DungeonSlash
     {
         [SerializeField] private GameContent content;
         [SerializeField] private RunExpansionView expansionView;
-        public bool InputPaused { get; set; }
+        private bool externalInputPaused;
+        private bool potionInputBlocked;
+        private int potionReleaseFrame = -1;
+        public bool PotionInputBlocked { get => potionInputBlocked; set { if(potionInputBlocked&&!value)potionReleaseFrame=Time.frameCount; potionInputBlocked=value; } }
+        public bool InputPaused { get => externalInputPaused || PotionInputBlocked || Time.frameCount==potionReleaseFrame; set => externalInputPaused = value; }
         public RunState Run => run;
+        public System.Collections.Generic.IReadOnlyList<MonsterRuntime> Enemies => activeMonsters.Select(m => m.Runtime).ToArray();
         public GameContent Content => content;
         public float CastingSeconds => input != null ? input.CastingSeconds : 0;
         public string EncounterHint { get; private set; }
@@ -18,12 +23,13 @@ namespace DungeonSlash
         private float lastStaffDistance;
         private int encounterSerial;
         private System.Random spellRandom = new(7919);
+        private System.Random criticalRandom = new(104729);
         private EncounterPlanner encounterPlanner;
         private int plannerSeed;
         private EncounterData pendingEncounter;
         private readonly System.Collections.Generic.HashSet<MonsterRuntime> reportedKills = new();
         private void ReportKill(MonsterRuntime monster, EquipmentTriggerContext context)
-        { if (monster != null && !monster.IsAlive && reportedKills.Add(monster)) run.EmitEvent(TriggerType.OnKill, context); }
+        { if (monster != null && !monster.IsAlive && reportedKills.Add(monster)){activeMonsters.FirstOrDefault(m=>m.Runtime==monster)?.View?.PlayDead();run.EmitEvent(TriggerType.OnKill, context);} }
         public string StageName(int act) { EnsurePlanner(); return encounterPlanner?.Stage(act)?.displayName ?? GameText.Format("ui.combatexpansion.674bdc24", act); }
         private void EnsurePlanner()
         {
@@ -95,25 +101,26 @@ namespace DungeonSlash
             expansionView?.RefreshCombat(this);
             if (activeMonsters.Count > 0 && activeMonsters.All(monster => !monster.Runtime.IsAlive)) Finish(true);
         }
-        public bool TryCastSpell(SwipeDirection slot, float castingSeconds)
+        public bool TryCastSpell(SwipeDirection slot, float castingSeconds, AttackSegment? aim = null)
         {
-            if (!IsActive || InputPaused || !Player.CanNormalAttack()) return false;
+            if (!IsActive || InputPaused || resolvingAttackSequence || !Player.CanNormalAttack()) return false;
             var spell = run.Slot(slot);
             if (spell == null) { ShowDamage(sceneView.PlayerPosition, GameText.Get("ui.combatexpansion.4520ed9e"), new Color(.7f, .75f, .8f)); return false; }
             var runtime = run.RuntimeFor(spell);
             if (runtime.Cooldown > 0) { ShowDamage(sceneView.PlayerPosition, GameText.Format("ui.combatexpansion.98b418ae", runtime.Cooldown), Color.gray); return false; }
             if (castingSeconds + .015f < spell.castingSeconds * Player.SpellCastingFor(spell)) { ShowDamage(sceneView.PlayerPosition, GameText.Get("ui.combatexpansion.411a9b44"), new Color(1f, .7f, .35f)); return false; }
             if (!activeMonsters.Any(monster => monster.Runtime.IsAlive)) return false;
+            if (!Player.TrySpendMp(spell.mpCost)) { ShowDamage(sceneView.PlayerPosition, GameText.Get("ui.mana.insufficient"), new Color(.5f, .65f, 1)); return false; }
             runtime.Use(Player); run.SpellCasts++;
-            var target = ChooseSpellTarget(spell);
-            var context = new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, target?.Runtime.IsStunned ?? false, target?.Runtime, spell: spell, enemyCount: activeMonsters.Count(item => item.Runtime.IsAlive));
-            run.StartAction(context); Player.StartAttackCooldown(); FireSpell(spell, 1, target);
+            var target = aim.HasValue&&spell.targeting!=SpellTargeting.Automatic?ChooseAimedTarget(spell,aim.Value):ChooseSpellTarget(spell);
+            var context = new EquipmentTriggerContext(aim ?? default, TriggerAttackType.None, TriggerAttackWay.None, false, target?.Runtime.IsStunned ?? false, target?.Runtime, spell: spell, enemyCount: activeMonsters.Count(item => item.Runtime.IsAlive));
+            run.StartAction(context); Player.StartAttackCooldown();playerView?.PlayAttack(); FireSpell(spell, 1, target, aim);
             run.EmitEvent(TriggerType.OnSpellCast, context); ResolveQueuedAbilities(0); run.CompleteAction(TriggerType.OnSpellCast, context);
             input?.ResetCasting();
             if (activeMonsters.All(monster => !monster.Runtime.IsAlive)) Finish(true);
             return true;
         }
-        private IEnumerator EchoSpell(SpellData spell, float ratio, float delay) { yield return new WaitForSeconds(delay); if (IsActive) FireSpell(spell, ratio); }
+        private IEnumerator EchoSpell(SpellData spell, float ratio, float delay, AttackSegment? aim=null) { yield return new WaitForSeconds(delay); if (IsActive) FireSpell(spell, ratio,null,aim); }
         private ActiveMonster ChooseSpellTarget(SpellData spell)
         {
             var living = activeMonsters.Where(monster => monster.Runtime.IsAlive).ToArray();
@@ -127,13 +134,16 @@ namespace DungeonSlash
             else { var rods = living.Where(monster => monster.Runtime.LightningRodUntil > Player.CombatTime).ToArray(); if (rods.Length > 0) living = rods; }
             return living[spellRandom.Next(living.Length)];
         }
-        private void FireSpell(SpellData spell, float multiplier, ActiveMonster primary = null)
+        private void FireSpell(SpellData spell, float multiplier, ActiveMonster primary = null, AttackSegment? aim = null)
         {
+            if(aim.HasValue && spell.targeting!=SpellTargeting.Automatic){FireAimedSpell(spell,multiplier,aim.Value);return;}
             var target = primary ?? ChooseSpellTarget(spell); if (target == null) return;
-            var damage = spell.damage * multiplier * Player.AllDamageMultiplier;
+            var damage = spell.damage * multiplier * Player.AllDamageMultiplier * Player.ElementMultiplier(spell.element);
             damage *= 1 + Player.Rule(AbilityRule.SpellDamageBonus, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, target.Runtime, spell: spell));
             var origin = sceneView.PlayerPosition + Vector2.up * 65f;
             ShowDamage(origin + Vector2.up * 65f, spell.displayName, spell.Color);
+            if (spell.shape == SpellShape.Utility) { ApplySpellAbilities(spell, target); return; }
+            if (spell.shape is SpellShape.PersistentArea or SpellShape.Rain) { StartCoroutine(SustainSpell(spell, target.Position, multiplier)); return; }
             if (spell.shape == SpellShape.Chain)
             {
                 var visited = new System.Collections.Generic.HashSet<ActiveMonster>(); var current = target;
@@ -158,21 +168,57 @@ namespace DungeonSlash
                     if (monster == target || SegmentHitResolver.Intersects(segment, new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale))) HitSpell(monster, spell, damage);
             }
         }
+        private ActiveMonster ChooseAimedTarget(SpellData spell,AttackSegment aim)
+        {
+            var direction=(aim.End-aim.Start).normalized;var ray=new AttackSegment(aim.Start,aim.Start+direction*1800,spell.width);
+            return activeMonsters.Where(m=>m.Runtime.IsAlive&&(spell.targeting==SpellTargeting.SwipeRay?SegmentHitResolver.Intersects(ray,new CircleHitShape(m.Position,m.Runtime.Data.bodyHitRadius*m.VisualScale)):Vector2.Distance(m.Position,aim.End)<=spell.radius+m.Runtime.Data.bodyHitRadius*m.VisualScale)).OrderBy(m=>Vector2.Distance(m.Position,spell.targeting==SpellTargeting.SwipeRay?aim.Start:aim.End)).FirstOrDefault();
+        }
+        private void FireAimedSpell(SpellData spell,float multiplier,AttackSegment aim)
+        {
+            var damage=spell.damage*multiplier*Player.AllDamageMultiplier*Player.ElementMultiplier(spell.element);
+            var target=ChooseAimedTarget(spell,aim);
+            damage*=1+Player.Rule(AbilityRule.SpellDamageBonus,new EquipmentTriggerContext(aim,TriggerAttackType.None,TriggerAttackWay.None,false,target?.Runtime.IsStunned??false,target?.Runtime,spell:spell));
+            ShowDamage(aim.Start,spell.displayName,spell.Color);
+            if(spell.targeting==SpellTargeting.SwipeRay)
+            {
+                var direction=(aim.End-aim.Start).normalized;
+                var ray=new AttackSegment(aim.Start,aim.Start+direction*1800,spell.width);
+                ShowSpellPath(ray.Start,ray.End,spell);
+                foreach(var monster in activeMonsters.Where(m=>m.Runtime.IsAlive).ToArray())
+                    if(SegmentHitResolver.Intersects(ray,new CircleHitShape(monster.Position,monster.Runtime.Data.bodyHitRadius*monster.VisualScale)))HitSpell(monster,spell,damage);
+                return;
+            }
+            var point=aim.End;
+            ShowSpellPath(point+Vector2.up*1200,point,spell);
+            attackLine?.ShowSpellArea(point,spell.radius,spell.Color);
+            var first=activeMonsters.Where(m=>m.Runtime.IsAlive&&Vector2.Distance(m.Position,point)<=spell.radius+m.Runtime.Data.bodyHitRadius*m.VisualScale).OrderBy(m=>Vector2.Distance(m.Position,point)).FirstOrDefault();
+            if(first==null)return;
+            if(spell.shape!=SpellShape.Chain){foreach(var m in activeMonsters.Where(m=>m.Runtime.IsAlive&&Vector2.Distance(m.Position,point)<=spell.radius+m.Runtime.Data.bodyHitRadius*m.VisualScale).ToArray())HitSpell(m,spell,damage);return;}
+            var visited=new System.Collections.Generic.HashSet<ActiveMonster>();var current=first;
+            var count=spell.chainTargets+Mathf.RoundToInt(Player.Rule(AbilityRule.SpellChainTargets));
+            for(var i=0;i<count&&current!=null;i++)
+            {
+                visited.Add(current);HitSpell(current,spell,damage);var origin=current.Position;
+                current=activeMonsters.Where(m=>m.Runtime.IsAlive&&!visited.Contains(m)&&Vector2.Distance(m.Position,origin)<=spell.radius).OrderBy(m=>Vector2.Distance(m.Position,origin)).FirstOrDefault();
+                if(current!=null)ShowSpellPath(origin,current.Position,spell);
+            }
+        }
         private void HitSpell(ActiveMonster target, SpellData spell, float damage)
         {
             if (damage > 0 || spell.slowSeconds > 0) target.Runtime.NotifyAttacked();
             DealMagic(target, damage, spell.Color);
             if (spell.slowSeconds > 0) target.Runtime.Slow(spell.slowSeconds + Player.Rule(AbilityRule.SlowDurationBonus));
+            ApplySpellAbilities(spell, target);
             // No weak-point resolution: spells cannot replace weapon/staff charge attacks.
         }
         private void ShowSpellPath(Vector2 from, Vector2 to, SpellData spell) => attackLine?.ShowSpell(new AttackSegment(from, to, spell.width), spell.Color);
         private void DealMagic(ActiveMonster target, float damage, Color color)
         {
             if (target == null || !target.Runtime.IsAlive) return;
-            if (!InfiniteBattleEnabled) target.Runtime.TakeDamage(damage);
-            target.View.Bind(target.Runtime); ShowDamage(target.Position, $"{damage:0}", color);
+            var result=damageResolver.ApplyToMonster(target.Runtime,damage,Player,criticalRandom,!InfiniteBattleEnabled);
+            target.View.Bind(target.Runtime);if(result.Damage>0)ShowHitDamage(target.Position,result.Damage,result.IsCritical);
             if (!target.Runtime.IsAlive && Player.MonsterKillHeal > 0) Player.Heal(Player.MonsterKillHeal);
-            ReportKill(target.Runtime, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, target.Runtime, spell: run.ActionContext.Spell, damage: damage));
+            ReportKill(target.Runtime, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, target.Runtime, spell: run.ActionContext.Spell, damage: result.Damage));
         }
     }
 }

@@ -26,6 +26,7 @@ namespace DungeonSlash
         private Color baseColor;
         private bool pulse;
         private bool highlighted;
+        public bool compact;
 
         public void Configure(Image newImage, TextMeshProUGUI newLabel) => Configure(newImage, newLabel, null, null, null, null, null);
 
@@ -54,11 +55,11 @@ namespace DungeonSlash
             var current = style == MapRoomIconStyle.Current;
             baseColor = style switch
             {
-                MapRoomIconStyle.Current => new Color(.08f, .42f, .62f, 1f),
-                MapRoomIconStyle.UnknownReachable => new Color(.16f, .32f, .46f, 1f),
-                MapRoomIconStyle.ClearedVisited => new Color(.14f, .29f, .42f, 1f),
-                MapRoomIconStyle.ClearedExit => new Color(.14f, .29f, .42f, 1f),
-                _ => new Color(.16f, .31f, .45f, 1f)
+                MapRoomIconStyle.Current => new Color(.46f, .36f, .20f, 1f),
+                MapRoomIconStyle.UnknownReachable => new Color(.28f, .26f, .23f, 1f),
+                MapRoomIconStyle.ClearedVisited => new Color(.18f, .18f, .18f, 1f),
+                MapRoomIconStyle.ClearedExit => new Color(.25f, .24f, .21f, 1f),
+                _ => new Color(.29f, .29f, .27f, 1f)
             };
             if (image != null)
             {
@@ -72,7 +73,7 @@ namespace DungeonSlash
                 label.text = style switch
                 {
                     MapRoomIconStyle.UnknownReachable => "?",
-                    MapRoomIconStyle.KnownRoom => RoomLabel(room.Type),
+                    MapRoomIconStyle.KnownRoom => compact?room.Type switch {RoomEncounterType.Camp=>GameText.Get("ui.camp.marker"),RoomEncounterType.Boss=>"!",RoomEncounterType.Elite=>"+",RoomEncounterType.Shop=>"$",RoomEncounterType.Chest or RoomEncounterType.MajorReward=>"C",RoomEncounterType.Fountain or RoomEncounterType.PoisonFountain=>"~",_=>"?"}:RoomLabel(room.Type),
                     _ => string.Empty
                 };
             }
@@ -89,7 +90,7 @@ namespace DungeonSlash
                 }
             }
 
-            var routeColor = highlighted ? new Color(.08f, .13f, .2f, 1f) : new Color(.42f, .9f, 1f, 1f);
+            var routeColor = highlighted ? new Color(.17f, .14f, .10f, 1f) : new Color(.73f, .61f, .40f, 1f);
             SetRoute(northRoute, routes?.Contains(FacingDirection.North) == true, routeColor);
             SetRoute(eastRoute, routes?.Contains(FacingDirection.East) == true, routeColor);
             SetRoute(southRoute, routes?.Contains(FacingDirection.South) == true, routeColor);
@@ -116,7 +117,7 @@ namespace DungeonSlash
             }
 
             var phase = (Mathf.Sin(Time.unscaledTime * 6f) + 1f) * .5f;
-            image.color = Color.Lerp(baseColor, new Color(.22f, .48f, .64f, 1f), phase);
+            image.color = Color.Lerp(baseColor, new Color(.44f, .39f, .28f, 1f), phase);
         }
 
         private static void SetRoute(Image route, bool visible, Color color)
@@ -157,6 +158,7 @@ namespace DungeonSlash
             RoomEncounterType.Goddess => GameText.Get("ui.maproomicon.1bca6671"),
             RoomEncounterType.Shop => GameText.Get("ui.maproomicon.db564fd4"),
             RoomEncounterType.Event => "?",
+            RoomEncounterType.Camp => GameText.Get("ui.camp.map"),
             _ => "?"
         };
     }

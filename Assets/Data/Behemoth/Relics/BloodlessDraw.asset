@@ -23,7 +23,7 @@ MonoBehaviour:
   id: BloodlessDraw
   displayName: "\uD53C\uB97C \uAC70\uB450\uB294 \uCE7C\uC9D1"
   description: "\uBC1C\uB3C4 \uC801\uC911 \uC2DC \uCCB4\uB825 2 \uD68C\uBCF5."
-  icon: {fileID: 21300000, guid: f4db918420b9c2a469530c7a1b57baba, type: 3}
+  icon: {fileID: -5427488090958776785, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 3
   power: 28
@@ -37,10 +37,8 @@ MonoBehaviour:
       threshold: 0.5
       direction: 0
       element: 0
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 11400000, guid: 3b3c9ee7c11672342a98e8f0586dcaa3, type: 2}
-      resource: {fileID: 0}
       comparator: 3
       rule: 0
     trigger:
@@ -73,12 +71,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -119,12 +116,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

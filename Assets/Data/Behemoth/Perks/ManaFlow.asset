@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: ManaFlow
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.manaflow.displayname
+    lastText: "\uB9C8\uB825 \uC21C\uD658"
+  - propertyPath: description
+    key: data.perkdata.manaflow.description
+    lastText: "\uCD08\uB2F9 MP \uD68C\uBCF5\uB7C9 +0.05"
+  textOwnerGuid: 0b9480ff13852064891e02a9164fcca0
+  id: ManaFlow
+  displayName: "\uB9C8\uB825 \uC21C\uD658"
+  description: "\uCD08\uB2F9 MP \uD68C\uBCF5\uB7C9 +0.05"
+  icon: {fileID: 3434086634727231013, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  offerGroup: {fileID: 11400000, guid: 630ec376196d442d90c7aa22cd9a1953, type: 2}
+  abilitySource: {fileID: 11400000, guid: 0619a01667be2604e941edc07f17122e, type: 2}
+  maxStacks: 99
+  modifiers:
+  - kind: 24
+    value: 0.05

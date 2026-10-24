@@ -29,12 +29,16 @@ MonoBehaviour:
     Type: 10
     Time: 8
     ResetOnStack: 1
+    ResetOnReapplyAtCap: 0
     Count: 1
   DuplicationData:
     Type: 2
     MaxStackCount: 1
     ConsiderTagIsDuplicate: {fileID: 11400000, guid: 5c80dd0b539b3094b8eda7441d7d7070, type: 2}
   showInHud: 0
+  harmful: 0
   presentationColor: {r: 1, g: 1, b: 1, a: 1}
   tintOwner: 0
-  form: {fileID: 0}
+  attackPattern: 
+  requiresUnlock: 0
+  attackRole: 0

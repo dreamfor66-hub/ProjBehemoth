@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 270, y: 270}
+  m_AnchoredPosition: {x: 0, y: 16}
+  m_SizeDelta: {x: 640, y: 680}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &215079172830271236
 CanvasRenderer:
@@ -61,16 +61,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.17, g: 0.58, b: 0.9, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5099488943606401886, guid: d0278fbdf0fcb194f8e4367711700093, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -95,6 +95,7 @@ MonoBehaviour:
   head: {fileID: 0}
   guardFx: {fileID: 2185994420014058155}
   cooldown: {fileID: 7324421188259148283}
+  presentation: {fileID: 11400000, guid: 1675394ad88198449a913f25d172f20f, type: 2}
 --- !u!1 &3500514658397300651
 GameObject:
   m_ObjectHideFlags: 0

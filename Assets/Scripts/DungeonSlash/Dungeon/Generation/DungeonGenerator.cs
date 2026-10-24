@@ -87,6 +87,7 @@ namespace DungeonSlash
             }
 
             AssignMinimum(unassigned, RoomEncounterType.Reward, settings.minimumRewardRooms, random);
+            AssignMinimum(unassigned, RoomEncounterType.Camp, 1, random);
             AssignMinimum(unassigned, RoomEncounterType.Fountain, settings.minimumFountainRooms, random);
             // Shops are a floor-level resource: B1 has one merchant, B2 two, B3 three, and so on.
             AssignMinimum(unassigned, RoomEncounterType.Shop, floor, random);

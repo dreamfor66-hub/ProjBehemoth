@@ -11,7 +11,7 @@ namespace DungeonSlash
         public BuffManager Manager { get; internal set; }
         public RunState Root { get; internal set; }
         public EquipmentData Source { get; internal set; }
-        public int StackCount { get; internal set; } = 1;
+        public float StackCount { get; internal set; } = 1;
         public float ElapsedTime { get; internal set; }
         public float TimeLastStack { get; internal set; }
         public float Duration { get; internal set; }
@@ -23,7 +23,7 @@ namespace DungeonSlash
         internal bool Started, EndCast;
         internal int StageCount;
         internal readonly List<Unit> Units = new();
-        internal readonly Queue<int> StackEvents = new();
+        internal readonly Queue<float> StackEvents = new();
         internal sealed class Unit
         {
             public AbilityTriggerState State;
@@ -46,12 +46,12 @@ namespace DungeonSlash
         public bool Has(BuffData data, BuffTagData tag = null) => Find(data, tag) != null;
         public static bool SameData(BuffData a,BuffData b)=>a!=null && b!=null && string.Equals(a.name,b.name,StringComparison.Ordinal);
         public BuffInstance Find(BuffData data, BuffTagData tag = null) => buffs.FirstOrDefault(b => !b.IsEnd && (SameData(b.Data,data) || tag != null && b.Data.Tags.Contains(tag)));
-        public void Add(BuffData data, int stacks = 1, RunState root = null, EquipmentData source = null, float potency = 1, EquipmentTriggerContext context = default, float initialValue = 0, float duration = -1, int maximumStacks = 0)
+        public void Add(BuffData data, float stacks = 1, RunState root = null, EquipmentData source = null, float potency = 1, EquipmentTriggerContext context = default, float initialValue = 0, float duration = -1, int maximumStacks = 0)
         {
             if (data == null || stacks <= 0) return;
             commands.Enqueue(() => AddCore(data, stacks, root ?? Run, source, potency, context, initialValue,duration,maximumStacks));
         }
-        private void AddCore(BuffData data, int stacks, RunState root, EquipmentData source, float potency, EquipmentTriggerContext context, float initialValue,float duration,int maximumStacks)
+        private void AddCore(BuffData data, float stacks, RunState root, EquipmentData source, float potency, EquipmentTriggerContext context, float initialValue,float duration,int maximumStacks)
         {
             var previous = Find(data, data.DuplicationData.ConsiderTagIsDuplicate);
             if (previous != null)
@@ -75,19 +75,29 @@ namespace DungeonSlash
             {
                 var unit = data.Units[i];
                 if (host == null || !unit.mergeConditionTrigger)
-                { host = new BuffInstance.Unit { State = new AbilityTriggerState(source, unit, i) }; instance.Units.Add(host); }
+                { host = new BuffInstance.Unit { State = new AbilityTriggerState(source, unit, i, true) }; instance.Units.Add(host); }
                 host.Targets.Add(unit);
             }
             buffs.Add(instance);
-            if (stacks > 1) ChangeStackCore(instance, stacks - 1);
+            if (!Mathf.Approximately(stacks, 1)) ChangeStackCore(instance, stacks - 1);
         }
         public void Remove(BuffData data, BuffTagData tag = null) => commands.Enqueue(() => { foreach (var buff in buffs.Where(b => SameData(b.Data,data) || tag != null && b.Data.Tags.Contains(tag))) buff.IsEnd = true; });
         public void Remove(BuffInstance instance) { if (instance != null) commands.Enqueue(() => instance.IsEnd = true); }
-        public void ChangeStack(BuffInstance instance, int value, bool set = false) { if (instance != null) commands.Enqueue(() => ChangeStackCore(instance, set ? value - instance.StackCount : value)); }
-        private static void ChangeStackCore(BuffInstance buff, int delta)
+        public void ChangeStack(BuffInstance instance, float value, bool set = false) { if (instance != null) commands.Enqueue(() => ChangeStackCore(instance, set ? value - instance.StackCount : value)); }
+        public void ChangeStack(BuffData data, float value, bool set = false, RunState root = null, EquipmentData source = null)
+        {
+            if (data == null) return;
+            commands.Enqueue(() => {
+                var instance = Find(data);
+                if (instance != null) ChangeStackCore(instance, set ? value - instance.StackCount : value);
+                else if (value > 0) AddCore(data, value, root ?? Run, source, 1, default, 0, -1, 0);
+            });
+        }
+        private static void ChangeStackCore(BuffInstance buff, float delta)
         {
             if (buff.IsEnd) return;
             var value = Mathf.Clamp(buff.StackCount + delta, 0, Mathf.Max(1, buff.MaximumStacks));
+            if (value < .00001f) value = 0;
             if (value == buff.StackCount) return;
             if (value > buff.StackCount) buff.TimeLastStack = buff.ElapsedTime;
             buff.StackCount = value; buff.StackEvents.Enqueue(delta);
@@ -107,12 +117,12 @@ namespace DungeonSlash
             var count = commands.Count;
             while (count-- > 0) commands.Dequeue()();
         }
-        private EquipmentTriggerContext Context(BuffInstance buff) => new(default, TriggerAttackType.None, TriggerAttackWay.None, false, Monster?.IsStunned ?? false, target: Monster, form: buff.Data.form, damage: buff.InitialContext.Damage, buff: buff);
+        private EquipmentTriggerContext Context(BuffInstance buff) => new(default, TriggerAttackType.None, TriggerAttackWay.None, false, Monster?.IsStunned ?? false, target: Monster, attackBuff: buff.InitialContext.AttackBuff ?? (buff.Data.attackPattern.Length > 0 ? buff.Data : null), damage: buff.InitialContext.Damage, buff: buff);
         public void Cast()
         {
             foreach (var buff in buffs.ToArray())
             {
-                if (!buff.Started) { buff.Started = true; DispatchOne(buff, TriggerType.OnBuffStart, Context(buff)); }
+                if (!buff.Started) { buff.Started = true; DispatchOne(buff, TriggerType.OnBuffStart, Context(buff)); (buff.Root ?? Run)?.NotifyAbilityLifecycle(TriggerType.OnBuffStart, Context(buff)); }
                 if (!buff.IsEnd)
                 {
                     while (buff.StackEvents.Count > 0) { buff.StackEvents.Dequeue(); DispatchOne(buff, TriggerType.OnBuffStack, Context(buff)); }
@@ -128,7 +138,7 @@ namespace DungeonSlash
                     if (buff.Data.ReleaseData.Type == BuffReleaseType.Instant) buff.IsEnd = true;
                 }
                 CheckRelease(buff);
-                if (buff.IsEnd && !buff.EndCast) { buff.EndCast = true; DispatchOne(buff, TriggerType.OnBuffEnd, Context(buff)); }
+                if (buff.IsEnd && !buff.EndCast) { buff.EndCast = true; DispatchOne(buff, TriggerType.OnBuffEnd, Context(buff)); (buff.Root ?? Run)?.NotifyAbilityLifecycle(TriggerType.OnBuffEnd, Context(buff)); }
             }
             buffs.RemoveAll(b => b.EndCast);
         }
@@ -170,7 +180,7 @@ namespace DungeonSlash
             if (unit.target == TargetType.ThisBuff)
             {
                 if (effect.effectType == EffectType.RemoveBuff) Remove(buff);
-                else if (effect.effectType is EffectType.ChangeBuffStack or EffectType.SetBuffStack) ChangeStack(buff, Mathf.RoundToInt(value), effect.effectType == EffectType.SetBuffStack);
+                else if (effect.effectType is EffectType.ChangeBuffStack or EffectType.SetBuffStack) ChangeStack(buff, value, effect.effectType == EffectType.SetBuffStack);
                 else if (effect.effectType == EffectType.ChangeBuffValue) buff.Value = Mathf.Max(0,buff.Value+value);
                 return;
             }
@@ -180,11 +190,16 @@ namespace DungeonSlash
                 {
                     case EffectType.Heal: Monster.Heal(value); break;
                     case EffectType.Damage:
-                        var damage = value * buff.Potency; Monster.TakeDamage(damage); Monster.RecordStatusDamage(buff.Data, damage); break;
-                    case EffectType.AddBuff: Add(effect.buff, Mathf.Max(1, Mathf.RoundToInt(value)), buff.Root, buff.Source, buff.Potency); break;
+                        var damage = value * buff.Potency * StatusMultiplier(buff) * (buff.Root?.Fatigue.FinalDamageMultiplier??1); Monster.TakeDamage(damage); Monster.RecordStatusDamage(buff.Data, damage); break;
+                    case EffectType.AddBuff: Add(effect.buff, Mathf.Max(0, value), buff.Root, buff.Source, buff.Potency); break;
                     case EffectType.RemoveBuff: Remove(effect.buff, effect.buffTag); break;
-                    case EffectType.ChangeBuffStack: ChangeStack(buff, Mathf.RoundToInt(value)); break;
+                    case EffectType.ChangeBuffStack: ChangeStack(effect.buff ?? buff.Data, value); break;
                 }
+                return;
+            }
+            if (Monster == null && unit.target is TargetType.Owner or TargetType.OwnerStat && effect.effectType == EffectType.Damage)
+            {
+                run?.Player.TakeEnvironmentalDamage(value * buff.Potency);
                 return;
             }
             run?.ExecuteActivation(new EquipmentActivation(buff.Source, unit, effect, context, "buff:" + buff.Data.GetInstanceID()), false);
@@ -233,7 +248,21 @@ namespace DungeonSlash
             buffs.RemoveAll(buff=>buff.Data.ReleaseData.Type is BuffReleaseType.Time or BuffReleaseType.TriggerCount or BuffReleaseType.Instant || buff.Data.ReleaseData.Type==BuffReleaseType.Stage && buff.Data.ReleaseData.Count<=1);
         }
         public void RemoveSource(EquipmentData source) { foreach (var buff in buffs.Where(b => b.Source == source)) buff.IsEnd = true; }
-        public float PeriodicDamage(BuffInstance buff)=>buff.Data.Units.Where(u=>u.trigger.triggerType==TriggerType.OnTimer).SelectMany(u=>u.effects).Where(e=>e.effectType==EffectType.Damage).Sum(effect=>(buff.Root!=null?buff.Root.EffectValue(effect,Context(buff)):effect.effectMagnitude+(effect.valueVariables?.Sum(v=>v.type==EffectScale.BuffStacks?buff.StackCount*v.multiplier:0)??0))*buff.Potency);
+        public float PeriodicDamage(BuffInstance buff)=>buff.Data.Units.Where(u=>u.trigger.triggerType==TriggerType.OnTimer).SelectMany(u=>u.effects).Where(e=>e.effectType==EffectType.Damage).Sum(effect=>(buff.Root!=null?buff.Root.EffectValue(effect,Context(buff)):effect.effectMagnitude+(effect.valueVariables?.Sum(v=>v.type==EffectScale.BuffStacks?buff.StackCount*v.multiplier:0)??0))*buff.Potency*StatusMultiplier(buff));
         public void Clear() { commands.Clear(); buffs.Clear(); }
+        public int RemainingUses(BuffData data)
+        {
+            var buff = Find(data);
+            return buff == null ? 0 : Mathf.Max(0, buff.Data.ReleaseData.Count - buff.Units.Sum(u => u.State.Activations));
+        }
+        public void Cleanse() { foreach (var buff in buffs.Where(b => b.Data.harmful)) buff.IsEnd = true; }
+        private static float StatusMultiplier(BuffInstance buff)
+        {
+            var catalog = CombatStatusCatalog.Instance;
+            if (buff.Root == null || catalog == null) return 1;
+            if (SameData(buff.Data, catalog.poison)) return buff.Root.Player.PoisonMultiplier;
+            if (SameData(buff.Data, catalog.burn)) return buff.Root.Player.ElementMultiplier(SpellElement.Fire);
+            return 1;
+        }
     }
 }

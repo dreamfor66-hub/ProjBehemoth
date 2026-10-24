@@ -10,7 +10,7 @@ namespace DungeonSlash
         {
             var history = PlayerPrefs.GetString(HistoryKey, "").Split('|');
             var random = new System.Random(unchecked(run.Seed + act * 3571 + room * 1013));
-            var candidates = content.events.Where(item => item != null && act >= item.minAct && act <= item.maxAct && !run.SeenEvents.Contains(item.id)
+            var candidates = content.events.Where(item => item != null && !item.excludedFromRandomPool && act >= item.minAct && act <= item.maxAct && !run.SeenEvents.Contains(item.id)
                 && (string.IsNullOrEmpty(item.requiredFlag) || run.EventFlags.Contains(item.requiredFlag))
                 && (act > 1 || run.NormalCombatsInAct >= item.minNormalCombatsInAct)
                 && item.options.Any(option => UnavailableReason(option, run) == null)
@@ -23,6 +23,8 @@ namespace DungeonSlash
         }
         public static string UnavailableReason(EventOption option, RunState run)
         {
+            if (option.supplyCost > run.SupplyCount(option.supply)) return GameText.Get("ui.event.supplymissing");
+            if (option.requirements.Any(r => !r.Matches(run))) return GameText.Get("ui.event.notready");
             if (run.Gold < option.goldCost) return GameText.Get("ui.randomeventsystem.b7b7a578");
             if (run.Player.CurrentHp <= option.hpCost) return GameText.Get("ui.randomeventsystem.d3c41de9");
             if (run.Player.MaxHp - option.maxHpCost < 20f) return GameText.Get("ui.randomeventsystem.470f2a23");
@@ -42,6 +44,7 @@ namespace DungeonSlash
         {
             if (UnavailableReason(option, run) != null) return false;
             if (!run.Pay(option.goldCost, option.hpCost, option.maxHpCost)) return false;
+            if (!run.SpendSupply(option.supply, option.supplyCost)) return false;
             if (option.consumeHealingPotion)
             {
                 var potion = run.Potions.First(RunState.IsHealingPotion);

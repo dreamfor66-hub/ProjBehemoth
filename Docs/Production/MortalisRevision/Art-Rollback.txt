@@ -1,0 +1,7 @@
+Geometry references: True
+Arcade references restored: True
+Gameplay unchanged: True
+Bindings: 370
+Before: 4A-B9-BC-EF-A5-AE-B0-8A-89-49-CE-F4-4E-AA-9E-9A-17-7C-CE-4B-E5-E3-F3-29-F4-38-85-56-CA-BB-4C-4B
+Geometry: 4A-B9-BC-EF-A5-AE-B0-8A-89-49-CE-F4-4E-AA-9E-9A-17-7C-CE-4B-E5-E3-F3-29-F4-38-85-56-CA-BB-4C-4B
+Restored: 4A-B9-BC-EF-A5-AE-B0-8A-89-49-CE-F4-4E-AA-9E-9A-17-7C-CE-4B-E5-E3-F3-29-F4-38-85-56-CA-BB-4C-4B

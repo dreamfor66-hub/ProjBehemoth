@@ -1,0 +1,59 @@
+PASS both shared critical perks are in the playable reward pool
+PASS charged attack is not automatically a critical hit
+PASS clicking a learned spell previews before preparing
+PASS close restores exploration input
+PASS critical chance uses the authored threshold and damage multiplier
+PASS critical damage has !! suffix and orange text
+PASS critical hit produces brief screen flash
+PASS critical number jumps sideways
+PASS critical number performs two floor bounces
+PASS critical perks have saved art references
+PASS critical perks respect their stack caps
+PASS damaging spells use the same critical resolver
+PASS damaging spells use the same critical resolver and stun multiplier
+PASS dedicated spellbook opens and blocks combat input
+PASS default critical stats are 0% / 150%
+PASS direction slot previews readable description: 0
+PASS direction slot previews readable description: 1
+PASS direction slot previews readable description: 2
+PASS direction slot previews readable description: 3
+PASS existing stunned-target damage bonus stacks with critical damage
+PASS expanded illustration selected without portrait crop
+PASS five stacked perks give 25% / 225%
+PASS Hundred Fists causes three actual HP reductions
+PASS live weapon hit applies guaranteed critical and preserves stun bonus
+PASS normal damage is white with black outline
+PASS ordinary attack directions prepare Hundred Fists
+PASS original description fits: Barbarian
+PASS original description fits: Monk
+PASS original description fits: Rogue
+PASS original description fits: Samurai
+PASS original description fits: Warrior
+PASS original description fits: Wizard
+PASS prepare swaps selected direction without closing book
+PASS removing chance perk removes every acquired stack
+PASS removing critical perk leaves old stunned-target bonus intact
+PASS same-direction learned spells remain accessible
+PASS screen flash ends promptly
+PASS six class symbols stay on one page
+PASS spell detail fits: 독안개
+PASS spell detail fits: 메테오
+PASS spell detail fits: 벼락표식
+PASS spell detail fits: 볼텍스 라이트닝
+PASS spell detail fits: 서리 파동
+PASS spell detail fits: 스파크
+PASS spell detail fits: 아이시클 샤워
+PASS spell detail fits: 에너지 볼트
+PASS spell detail fits: 연쇄 번개
+PASS spell detail fits: 인챈트 라이트닝
+PASS spell detail fits: 인챈트 아이스
+PASS spell detail fits: 인챈트 파이어
+PASS spell detail fits: 정화
+PASS spell detail fits: 파이어볼트
+PASS spell detail fits: 홍염
+PASS spell detail fits: 화염폭발
+PASS starter relic side popup remains available
+PASS stunned target guarantees critical without rolling chance
+PASS three HP reductions are separated in time
+PASS visual marker does not modify hit collision
+PASS weakpoint has prominent 24px bullseye

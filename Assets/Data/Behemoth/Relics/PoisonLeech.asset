@@ -23,7 +23,7 @@ MonoBehaviour:
   id: PoisonLeech
   displayName: "\uB9F9\uB3C5\uC758 \uC0DD\uBA85\uC904"
   description: "\uB3C5 \uD53C\uD574\uC758 12%\uB9CC\uD07C \uCCB4\uB825\uC744 \uD68C\uBCF5\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: 9df05599a234e8a488a6a70be278bee1, type: 3}
+  icon: {fileID: 1078536559429060484, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 1
   power: 13
@@ -62,18 +62,16 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables:
       - type: 3
         buff: {fileID: 0}
-        resource: {fileID: 0}
         rule: 0
         multiplier: 0.12
         limit: 0
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -114,12 +112,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: Pressure
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.pressure.displayname
+    lastText: "\uC555\uBC15"
+  - propertyPath: description
+    key: data.perkdata.pressure.description
+    lastText: "\uACF5\uACA9\uC744 \uC900\uBE44 \uC911\uC778 \uC801\uC5D0\uAC8C \uC77C\uBC18\uACF5\uACA9\uC744
+      \uC801\uC911\uC2DC\uD0A4\uBA74 \uBB3C\uB9AC \uD53C\uD574 3\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: aec993b6703c5494e88a254370c0305a
+  id: Pressure
+  displayName: "\uC555\uBC15"
+  description: "\uACF5\uACA9\uC744 \uC900\uBE44 \uC911\uC778 \uC801\uC5D0\uAC8C \uC77C\uBC18\uACF5\uACA9\uC744
+    \uC801\uC911\uC2DC\uD0A4\uBA74 \uBB3C\uB9AC \uD53C\uD574 3\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: -2319476694228375547, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 2
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 11400000, guid: 2d373f48b08321543b632bbe92690e8d, type: 2}
+  maxStacks: 99
+  modifiers: []

@@ -18,7 +18,7 @@ namespace DungeonSlash
         public bool HasAttack => AttackType != TriggerAttackType.None;
         public MonsterRuntime Target { get; }
         public SpellData Spell { get; }
-        public FormData Form { get; }
+        public BuffData AttackBuff { get; }
         public float Damage { get; }
         public float GuardDamage { get; }
         public bool Draw { get; }
@@ -27,22 +27,25 @@ namespace DungeonSlash
         public ActionEffectContext Mutable { get; }
         public BuffTagData Signal { get; }
         public IReadOnlyCollection<BuffTagData> ActionTags { get; }
+        public float Potency { get; }
         public SwipeDirection Direction => CombatController.ResolveDirection(Segment.End - Segment.Start);
 
-        public EquipmentTriggerContext(AttackSegment segment, TriggerAttackType attackType, TriggerAttackWay attackWay, bool ownerCharging, bool enemyStunned, MonsterRuntime target = null, SpellData spell = null, FormData form = null, float damage = 0, float guardDamage = 0, bool draw = false, int enemyCount = 1, BuffInstance buff = null, ActionEffectContext mutable = null, BuffTagData signal = null, IReadOnlyCollection<BuffTagData> actionTags = null)
+        public EquipmentTriggerContext(AttackSegment segment, TriggerAttackType attackType, TriggerAttackWay attackWay, bool ownerCharging, bool enemyStunned, MonsterRuntime target = null, SpellData spell = null, BuffData attackBuff = null, float damage = 0, float guardDamage = 0, bool draw = false, int enemyCount = 1, BuffInstance buff = null, ActionEffectContext mutable = null, BuffTagData signal = null, IReadOnlyCollection<BuffTagData> actionTags = null, float potency = 1)
         {
             Segment = segment;
             AttackType = attackType;
             AttackWay = attackWay;
             OwnerCharging = ownerCharging;
             EnemyStunned = enemyStunned;
-            Target = target; Spell = spell; Form = form; Damage = damage; GuardDamage = guardDamage; Draw = draw; EnemyCount = enemyCount;
+            Target = target; Spell = spell; AttackBuff = attackBuff; Damage = damage; GuardDamage = guardDamage; Draw = draw; EnemyCount = enemyCount;
             Buff = buff; Mutable = mutable; Signal = signal;
             ActionTags=actionTags ?? mutable?.Tags;
+            Potency = potency;
         }
-        public EquipmentTriggerContext WithBuff(BuffInstance buff) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, Form, Damage, GuardDamage, Draw, EnemyCount, buff, Mutable, Signal, ActionTags);
-        public EquipmentTriggerContext WithSignal(BuffTagData signal) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, Form, Damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, signal, ActionTags);
-        public EquipmentTriggerContext WithDamage(float damage) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, Form, damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, Signal, ActionTags);
+        public EquipmentTriggerContext WithBuff(BuffInstance buff) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, AttackBuff, Damage, GuardDamage, Draw, EnemyCount, buff, Mutable, Signal, ActionTags, Potency);
+        public EquipmentTriggerContext WithSignal(BuffTagData signal) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, AttackBuff, Damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, signal, ActionTags, Potency);
+        public EquipmentTriggerContext WithDamage(float damage) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, AttackBuff, damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, Signal, ActionTags, Potency);
+        public EquipmentTriggerContext WithPotency(float potency) => new(Segment, AttackType, AttackWay, OwnerCharging, EnemyStunned, Target, Spell, AttackBuff, Damage, GuardDamage, Draw, EnemyCount, Buff, Mutable, Signal, ActionTags, potency);
 
         public static EquipmentTriggerContext Simple(bool ownerCharging = false, bool enemyStunned = false) =>
             new(default, TriggerAttackType.None, TriggerAttackWay.None, ownerCharging, enemyStunned);
@@ -147,6 +150,9 @@ namespace DungeonSlash
         public int Gold { get; private set; }
         public List<PerkRuntime> ActivePerks { get; } = new();
         public List<EquipmentData> EquippedItems { get; } = new();
+        private readonly Dictionary<SupplyData,int> supplies = new();
+        public int SupplyCount(SupplyData supply) => supply != null && supplies.TryGetValue(supply, out var count) ? count : 0;
+        public bool SpendSupply(SupplyData supply, int count) { if (SupplyCount(supply) < count) return false; if (supply != null) supplies[supply] = SupplyCount(supply) - count; return true; }
         public IReadOnlyList<EquipmentData> Potions => potions.Select(potion => potion.Data).ToArray();
         public int PotionSlotCapacity => 3;
         public bool HasPotionSpace => potions.Count < PotionSlotCapacity;
@@ -160,12 +166,14 @@ namespace DungeonSlash
         private readonly List<AbilityTriggerState> pendingPotionAbilities = new();
         private float revivalHealthFraction;
         private float poisonTravelDamage;
+        private float poisonActionSlowTotal;
 
         public RunState(PlayerCombatData playerData, RunBalanceSettings balance)
         {
             settings = balance;
             Player = new PlayerCombatRuntime(playerData);
             Player.Owner = this;
+            foreach (var supply in playerData.startingSupplies) if (supply.supply != null) supplies[supply.supply] = supply.count;
             foreach (var spell in playerData.startingSpells) LearnSpell(spell);
             RequiredExperience = balance.initialExperienceRequirement;
             Gold = balance.startingGold;
@@ -201,6 +209,7 @@ namespace DungeonSlash
                 ApplyOwnerActivation(activation, permanent: true);
             foreach (var ability in abilityStates.Where(ability => ability.Source == item))
                 foreach (var acquired in ability.Trigger(this, TriggerType.OnAcquire, EquipmentTriggerContext.Simple())) ApplyOwnerActivation(acquired, true);
+            Player.ClampResources();
             return true;
         }
 
@@ -209,6 +218,7 @@ namespace DungeonSlash
             var active = ActivePerks.FirstOrDefault(candidate => candidate.Data == perk);
             if (active == null) return false;
             ActivePerks.Remove(active);
+            RemovePerkAbilities(perk);
             for (var stack = 0; stack < active.StackCount; stack++)
                 Player.RemoveModifiers(perk.modifiers);
             return true;
@@ -257,6 +267,7 @@ namespace DungeonSlash
 
         public bool TryUsePotion(EquipmentData potion)
         {
+            if (!CanUsePotion(potion, false)) return false;
             var state = potions.FirstOrDefault(candidate => candidate.Data == potion);
             if (state == null) return false;
             // A full-health heal is not consumed. The check is based on the generic effect, not a potion subtype.
@@ -284,6 +295,31 @@ namespace DungeonSlash
             }
             if (state.TryActivate(TriggerType.OnConsume, EquipmentTriggerContext.Simple(), out var activation))
                 ApplyOwnerActivation(activation, permanent: false);
+            CompletePotionAction();
+            return true;
+        }
+
+        public bool CanUsePotion(EquipmentData potion, bool thrown)
+        {
+            if (potion == null || !Player.IsAlive || !potions.Any(p => p.Data == potion)) return false;
+            var trigger = thrown ? TriggerType.OnThrow : TriggerType.OnConsume;
+            if (potion.abilities.Count == 0) return !thrown && potion.trigger.triggerType is TriggerType.OnConsume or TriggerType.OnCombatStartAfterConsume;
+            var actions = potion.abilities.Where(a => a.trigger.triggerType == trigger || !thrown && a.trigger.triggerType == TriggerType.OnCombatStartAfterConsume).ToArray();
+            if (actions.Length == 0) return false;
+            if(actions.SelectMany(a=>a.effects).All(e=>e.effectType==EffectType.RecoverFatigue)&&Fatigue.Value>=100)return false;
+            return !actions.SelectMany(a => a.effects).All(e => e.effectType == EffectType.Heal) || Player.CurrentHp < Player.MaxHp;
+        }
+
+        public bool TryThrowPotion(EquipmentData potion, MonsterRuntime target)
+        {
+            if (target == null || !target.IsAlive || !CanUsePotion(potion, true)) return false;
+            var context = new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, target.IsStunned, target);
+            var effects = potion.abilities.SelectMany((a, i) => new AbilityTriggerState(potion, a, i).Trigger(this, TriggerType.OnThrow, context)).ToArray();
+            if (effects.Length == 0) return false;
+            potions.Remove(potions.First(p => p.Data == potion));
+            foreach (var effect in effects)
+                if (effect.Target == TargetType.Owner || effect.Target == TargetType.OwnerStat) ApplyOwnerActivation(effect, false);
+                else PendingAbilityEffects.Enqueue(effect);
             CompletePotionAction();
             return true;
         }
@@ -399,6 +435,14 @@ namespace DungeonSlash
                 new StatModifier { kind = ModifierKind.ChargeDurationMultiplier, value = -Mathf.Abs(actionSlow) }
             });
             poisonTravelDamage += Mathf.Max(0f, travelDamage);
+            poisonActionSlowTotal += Mathf.Abs(actionSlow);
+        }
+
+        public void Cleanse()
+        {
+            Buffs.Cleanse();
+            Player.RemoveModifiers(new[] { new StatModifier { kind = ModifierKind.AttackCooldownMultiplier, value = -poisonActionSlowTotal }, new StatModifier { kind = ModifierKind.ChargeDurationMultiplier, value = -poisonActionSlowTotal } });
+            PoisonStacks = 0; poisonTravelDamage = poisonActionSlowTotal = 0;
         }
 
         public DamageResult ApplyTravelHazard() => poisonTravelDamage <= 0f ? default : Player.TakeEnvironmentalDamage(poisonTravelDamage);
@@ -407,18 +451,29 @@ namespace DungeonSlash
     public sealed class PerkSystem
     {
         private readonly List<PerkData> allPerks;
-        public static bool IsAvailable(PerkData perk) => perk != null && !perk.modifiers.Any(modifier => modifier.kind is ModifierKind.AttackReach or ModifierKind.NormalShieldRegen or ModifierKind.ShieldOnHit or ModifierKind.ShieldOnWeakPoint or ModifierKind.MonsterKillHeal or ModifierKind.ChargeGuardEnabled or ModifierKind.DoubleChargeEnabled or ModifierKind.DamagePerAttackDistance);
+        public static bool IsAvailable(PerkData perk) => perk != null;
+        public static bool IsAvailable(PerkData perk, RunState run) => IsAvailable(perk) && (perk.scope == RelicScope.Shared || perk.exclusiveCharacter == run.Player.Data.character);
         public PerkSystem(IEnumerable<PerkData> perks) => allPerks = perks.Where(IsAvailable).ToList();
         public IReadOnlyList<PerkData> GetChoices(RunState run, int seed)
         {
             var random = new System.Random(seed + run.Level * 1009 + run.ActivePerks.Count * 71);
-            return allPerks.Where(perk => !run.ActivePerks.Any(active => active.Data == perk && !active.CanStack)).OrderBy(_ => random.Next()).Take(3).ToList();
+            var buckets = allPerks.Distinct()
+                .Where(perk => IsAvailable(perk, run) && !run.ActivePerks.Any(active => active.Data == perk && !active.CanStack))
+                .GroupBy(perk => perk.offerGroup != null ? (UnityEngine.Object)perk.offerGroup : perk)
+                .Select(group => new { Members = group.ToArray(), Weight = group.Key is PerkOfferGroup data ? data.weight : 1f })
+                .Where(group => group.Weight > 0);
+            // A weighted permutation of buckets, followed by one uniform member from each chosen bucket.
+            // More members expand a group's variety, never its total chance or number of offer slots.
+            return buckets.OrderBy(group => -Math.Log(1 - random.NextDouble()) / group.Weight).Take(3)
+                .Select(group => group.Members[random.Next(group.Members.Length)]).ToList();
         }
         public void Apply(RunState run, PerkData perk)
         {
-            if (!IsAvailable(perk)) return;
+            if (!IsAvailable(perk, run)) return;
             var existing = run.ActivePerks.FirstOrDefault(active => active.Data == perk);
+            if (existing != null && !existing.CanStack) return;
             if (existing != null) existing.AddStack(); else run.ActivePerks.Add(new PerkRuntime(perk));
+            if (existing == null) run.RegisterPerkAbilities(perk);
             run.Player.ApplyModifiers(perk.modifiers);
             run.ConsumePendingPerkChoice();
         }
@@ -454,9 +509,22 @@ namespace DungeonSlash
             return CanPurchase(run, item, purchased);
         }
 
+        public string UnavailableReason(RunState run, EquipmentData item)
+        {
+            if (run == null || item == null) return string.Empty;
+            purchaseCounts.TryGetValue(item.id, out var purchased);
+            if (purchased >= item.maxPurchaseCount) return GameText.Get("ui.shop.soldout");
+            if (!item.IsPotion && run.EquippedItems.Contains(item)) return GameText.Get("ui.shop.owned");
+            if (item.grantedSpell != null && run.RuntimeFor(item.grantedSpell) != null) return GameText.Get("ui.shop.known");
+            if (item.IsPotion && !run.HasPotionSpace) return GameText.Get("ui.shop.potionfull");
+            if (run.Gold < item.price) return GameText.Get("ui.shop.notenoughgold");
+            return null;
+        }
+
         private static bool CanPurchase(RunState run, EquipmentData item, int purchased)
         {
             if (run == null || item == null || purchased >= item.maxPurchaseCount || run.Gold < item.price) return false;
+            if (item.grantedSpell != null && run.RuntimeFor(item.grantedSpell) != null) return false;
             return item.IsPotion ? run.HasPotionSpace : !run.EquippedItems.Contains(item);
         }
     }

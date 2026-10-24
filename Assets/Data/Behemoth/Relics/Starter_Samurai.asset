@@ -19,17 +19,17 @@ MonoBehaviour:
   - propertyPath: description
     key: data.equipmentdata.starter_samurai.description
     lastText: "\uAC00\uB4DC \uC9C4\uC785 \uC2DC \uB0A9\uB3C4. \uB0A9\uB3C4 \uD328\uB9AC
-      0.1\uCD08. \uB2E4\uC74C \uBC1C\uB3C4 \uD53C\uD574 +50%. \uB0A9\uB3C4 \uD328\uB9AC
+      0.3\uCD08. \uB2E4\uC74C \uBC1C\uB3C4 \uD53C\uD574 +50%. \uB0A9\uB3C4 \uD328\uB9AC
       \uC131\uACF5 \uC2DC \uB2E4\uC74C \uBC1C\uB3C4\uAC00 \uCC28\uC9C0 \uD310\uC815\uC744
       \uC5BB\uB294\uB2E4."
   textOwnerGuid: 468f01cccd9b8a7428005181ebdeb814
   id: Starter_Samurai
   displayName: "\uACE0\uC694\uD55C \uCE7C\uC9D1"
   description: "\uAC00\uB4DC \uC9C4\uC785 \uC2DC \uB0A9\uB3C4. \uB0A9\uB3C4 \uD328\uB9AC
-    0.1\uCD08. \uB2E4\uC74C \uBC1C\uB3C4 \uD53C\uD574 +50%. \uB0A9\uB3C4 \uD328\uB9AC
+    0.3\uCD08. \uB2E4\uC74C \uBC1C\uB3C4 \uD53C\uD574 +50%. \uB0A9\uB3C4 \uD328\uB9AC
     \uC131\uACF5 \uC2DC \uB2E4\uC74C \uBC1C\uB3C4\uAC00 \uCC28\uC9C0 \uD310\uC815\uC744
     \uC5BB\uB294\uB2E4."
-  icon: {fileID: 21300000, guid: 73da2e96893a2654295e0a5d611ef911, type: 3}
+  icon: {fileID: 2486193441875991756, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 1
   exclusiveCharacter: 3
   power: 0
@@ -68,12 +68,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -86,10 +85,8 @@ MonoBehaviour:
       threshold: 0.5
       direction: 0
       element: 0
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 298cb38002b545c48aae1cf634e7281d, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       comparator: 3
       rule: 0
     trigger:
@@ -122,12 +119,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 298cb38002b545c48aae1cf634e7281d, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -149,12 +145,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: 1493b40ec1b1f2f40b38d9b581cd9c62, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -195,12 +190,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

@@ -13,6 +13,7 @@ namespace DungeonSlash
         [SerializeField] private RectTransform walkBackdrop;
         [SerializeField] private List<RectTransform> footfallMarkers = new();
         [SerializeField] private Image fade;
+        [SerializeField] private PixelDitherTransition pixelTransition;
         [SerializeField, Min(.1f)] private float walkDuration = .78f;
         [SerializeField, Min(1)] private int stepCount = 2;
         [SerializeField] private float verticalTravel = 22f;
@@ -26,9 +27,11 @@ namespace DungeonSlash
             ResetVisuals();
         }
 
+        public void RevealScene()=>pixelTransition?.Reveal();
         public IEnumerator Play()
         {
             if (background == null) yield break;
+            pixelTransition?.Reveal();
             if (walkBackdrop != null) walkBackdrop.gameObject.SetActive(true);
             if (fade != null) fade.gameObject.SetActive(false);
             background.anchoredPosition = Vector2.zero;

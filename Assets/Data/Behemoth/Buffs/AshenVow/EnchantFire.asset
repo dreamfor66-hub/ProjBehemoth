@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce851a250858b54f83937ffbf20b60f, type: 3}
+  m_Name: EnchantFire
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.buffdata.enchantfire.displayname
+    lastText: "\uC778\uCC48\uD2B8 \uD30C\uC774\uC5B4"
+  - propertyPath: description
+    key: data.buffdata.enchantfire.description
+    lastText: 
+  textOwnerGuid: 4f837f6f390802845ba2167e97f0103c
+  displayName: "\uC778\uCC48\uD2B8 \uD30C\uC774\uC5B4"
+  description: 
+  Tags:
+  - {fileID: 11400000, guid: 8c838628a7544f048bb9b34dc3f647b5, type: 2}
+  - {fileID: 11400000, guid: c4df8375790c68a4d8ae8586094c92ba, type: 2}
+  Units:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 1
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 1
+    effects:
+    - effectType: 35
+      effectMagnitude: 4
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 1
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 1
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: eec4c7304af3e2a4ca09a4fd82c53275, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  ReleaseData:
+    Type: 10
+    Time: 10
+    ResetOnStack: 0
+    ResetOnReapplyAtCap: 0
+    Count: 1
+  DuplicationData:
+    Type: 2
+    MaxStackCount: 1
+    ConsiderTagIsDuplicate: {fileID: 11400000, guid: 8c838628a7544f048bb9b34dc3f647b5, type: 2}
+  showInHud: 1
+  harmful: 0
+  presentationColor: {r: 1, g: 1, b: 1, a: 1}
+  tintOwner: 0
+  attackPattern: 
+  requiresUnlock: 0
+  attackRole: 0

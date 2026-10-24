@@ -1,0 +1,50 @@
+PASS confirmed title and product name
+PASS new raster logo replaces rejected wordmark
+PASS title has black background
+PASS confirmed title and product name
+PASS new raster logo replaces rejected wordmark
+PASS title has black background
+PASS start still opens illustrated character selection
+TITLE COMPLETE
+FAIL start still opens illustrated character selection
+TITLE COMPLETE
+PASS confirmed title and product name
+PASS new raster logo replaces rejected wordmark
+PASS title has black background
+PASS start still opens illustrated character selection
+TITLE COMPLETE
+
+Scoped potion checks, live frames
+PASS hover only opens side description
+PASS click opens actions without consuming
+PASS full-health healing drink and invalid throw disabled
+PASS potion choice pauses combat
+PASS invalid full-health drink preserves potion
+PASS drink heals 35 once and consumes one potion
+PASS stone potion offers aimed throw rather than drink
+PASS throw enters paused target selection
+PASS empty target does not consume potion
+PASS cancel releases potion input lock and preserves item
+PASS target selection resolves visible enemy
+PASS stone throw deals authored 26 damage to selected enemy
+PASS throw animation completes and resumes combat
+PASS poison throw applies three enemy poison stacks
+PASS thrown poison deals real periodic damage
+PASS drinking poison applies visible harmful owner status
+PASS drunk poison damages player on later tick
+PASS existing cleanse removes self poison
+PASS discard removes item without applying drink or throw effects
+PASS out-of-combat stone cannot be thrown or pre-consumed
+PASS invalid out-of-combat throw preserves item
+POTIONS COMPLETE
+PASS aim brackets and potion cursor remain inside native canvas
+PASS inventory potion icons refresh from current stored items
+PASS inventory potion click opens shared actions without consuming
+PASS inventory throw returns to combat targeting with input still blocked
+FAIL inventory removes consumed or discarded potion without room refresh
+INVENTORY COMPLETE
+PASS inventory potion icons refresh from current stored items
+PASS inventory potion click opens shared actions without consuming
+PASS inventory throw returns to combat targeting with input still blocked
+PASS inventory removes consumed or discarded potion without room refresh
+INVENTORY COMPLETE

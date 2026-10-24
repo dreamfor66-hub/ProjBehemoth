@@ -1,0 +1,11 @@
+Playing: True
+Page: Options / title=False characters=False options=True
+Selected: 0 / visible cards=0
+Volume: 0.4590909 / AudioListener=0.4590909 / scale=3 fullscreen=False shake=True
+Warrior: rect=(x:0.00, y:627.00, width:418.00, height:627.00) texture=1254x1254
+Rogue: rect=(x:418.00, y:627.00, width:418.00, height:627.00) texture=1254x1254
+Barbarian: rect=(x:836.00, y:627.00, width:418.00, height:627.00) texture=1254x1254
+Samurai: rect=(x:0.00, y:0.00, width:418.00, height:627.00) texture=1254x1254
+Monk: rect=(x:418.00, y:0.00, width:418.00, height:627.00) texture=1254x1254
+Wizard: rect=(x:836.00, y:0.00, width:418.00, height:627.00) texture=1254x1254
+Raster: OutGameScene 384x224 quantize=False

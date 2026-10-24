@@ -23,7 +23,10 @@ MonoBehaviour:
   id: Execution
   displayName: "\uCC98\uD615\uC758 \uB0A0"
   description: "\uC2A4\uD134 \uC0C1\uD0DC \uD53C\uD574 +35%"
-  icon: {fileID: 21300000, guid: 73da2e96893a2654295e0a5d611ef911, type: 3}
+  icon: {fileID: -4994717029236986561, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 0}
   maxStacks: 3
   modifiers:
   - kind: 11

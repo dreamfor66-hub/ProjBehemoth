@@ -42,7 +42,7 @@ namespace DungeonSlash
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (hasItem) tooltip?.Show(itemName, itemDescription, eventData.position);
+            if (hasItem) tooltip?.ShowBeside(this, itemName, itemDescription, (RectTransform)transform);
         }
 
         public void OnPointerExit(PointerEventData eventData) => tooltip?.Hide();
@@ -66,6 +66,7 @@ namespace DungeonSlash
             if (iconImage != null)
             {
                 iconImage.sprite = icon;
+                iconImage.color = Color.white;
                 iconImage.enabled = icon != null;
             }
             if (stackLabel != null)

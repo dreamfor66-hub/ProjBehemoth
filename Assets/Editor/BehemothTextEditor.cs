@@ -15,7 +15,7 @@ public static class BehemothTextEditor
 {
     public const string TablePath = "Assets/Data/Localization/Resources/BehemothKr.asset";
     public const string CsvPath = "Assets/Data/Localization/kr.csv";
-    private static readonly HashSet<string> Fields = new() { "displayName", "description", "narrative", "title", "hint", "encounterHint" };
+    private static readonly HashSet<string> Fields = new() { "displayName", "description", "narrative", "title", "hint", "encounterHint", "resultText" };
     private static bool synchronizing;
     static BehemothTextEditor() { EditorApplication.delayCall += Prepare; Undo.undoRedoPerformed += () => EditorApplication.delayCall += SyncAll; }
     public static GameTextDatabase Table

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: Enemy_BloodExecutioner
+  m_EditorClassIdentifier: 
+  idle: {fileID: 3442163988151689177, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
+  attack: {fileID: -2181017378664159231, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 6763129977616344550, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
+  dead: {fileID: -7713167074900589012, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}

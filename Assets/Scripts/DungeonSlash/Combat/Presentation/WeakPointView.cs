@@ -23,9 +23,9 @@ namespace DungeonSlash
             }
         }
 
-        private const float SegmentWidth = 18f;
-        private const float SegmentHeight = 7f;
-        private const float SegmentGap = 3f;
+        private const float SegmentWidth = 20f;
+        private const float SegmentHeight = 12f;
+        private const float SegmentGap = 4f;
         private const float SegmentBreakDuration = .16f;
         private static readonly Color SegmentBackgroundColor = new(.035f, .06f, .09f, .96f);
         private static readonly Color SegmentReadyColor = new(1f, .7f, .08f, 1f);
@@ -34,6 +34,7 @@ namespace DungeonSlash
         [SerializeField] private RectTransform root;
         [SerializeField] private Image body;
         [SerializeField] private TextMeshProUGUI remainingHits;
+        public WeakPointReticle reticle;
         private RectTransform hitSegmentRoot;
         private readonly List<HitSegment> hitSegments = new();
         private int displayedRequiredHits = -1;
@@ -52,12 +53,13 @@ namespace DungeonSlash
             if (root != null)
             {
                 root.anchoredPosition = runtime.HitShape.Center;
-                var diameter = runtime.HitShape.Radius * 2f;
+                var diameter = Mathf.Max(96,runtime.HitShape.Radius * 2f);
                 root.sizeDelta = new Vector2(diameter, diameter);
             }
+            if(reticle!=null){reticle.gameObject.SetActive(runtime.IsActive && !runtime.IsDestroyed);reticle.color=Color.white;reticle.SetAllDirty();}
             if (body != null)
             {
-                body.enabled = runtime.IsActive && !runtime.IsDestroyed;
+                body.enabled = (reticle==null || reticle.presentation!=null&&!reticle.presentation.arcade) && runtime.IsActive && !runtime.IsDestroyed;
                 body.color = runtime.IsOptional ? new Color(.45f, 1f, .72f) : Color.white;
             }
             if (remainingHits != null) remainingHits.enabled = false;
@@ -69,6 +71,11 @@ namespace DungeonSlash
 
         public void PlayChargeHit(int previousRemainingHits, int currentRemainingHits)
         {
+            if(currentRemainingHits<=0)
+            {
+                if(reticle!=null)reticle.gameObject.SetActive(false);
+                if(body!=null)body.enabled=false;
+            }
             EnsureHitSegments(Mathf.Max(displayedRequiredHits, previousRemainingHits));
             if (displayedRequiredHits <= 1 || hitSegments.Count == 0) return;
 
@@ -123,7 +130,7 @@ namespace DungeonSlash
             hitSegmentRoot.anchorMin = new Vector2(.5f, 0f);
             hitSegmentRoot.anchorMax = new Vector2(.5f, 0f);
             hitSegmentRoot.pivot = new Vector2(.5f, 1f);
-            hitSegmentRoot.anchoredPosition = new Vector2(0f, -2f);
+            hitSegmentRoot.anchoredPosition = new Vector2(0f, -4f);
             return hitSegmentRoot;
         }
 
@@ -141,7 +148,7 @@ namespace DungeonSlash
             background.color = SegmentBackgroundColor;
             var outline = segmentObject.GetComponent<Outline>();
             outline.effectColor = new Color(1f, .72f, .12f, .9f);
-            outline.effectDistance = new Vector2(1f, -1f);
+            outline.effectDistance = new Vector2(4f, -4f);
 
             var fillObject = new GameObject("Fill", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
             var fill = fillObject.GetComponent<Image>();
@@ -149,8 +156,8 @@ namespace DungeonSlash
             fillRect.SetParent(segmentRoot, false);
             fillRect.anchorMin = Vector2.zero;
             fillRect.anchorMax = Vector2.one;
-            fillRect.offsetMin = new Vector2(2f, 2f);
-            fillRect.offsetMax = new Vector2(-2f, -2f);
+            fillRect.offsetMin = new Vector2(4f, 4f);
+            fillRect.offsetMax = new Vector2(-4f, -4f);
             fill.color = SegmentReadyColor;
             return new HitSegment(segmentRoot, background, fill);
         }

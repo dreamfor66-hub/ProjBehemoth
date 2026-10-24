@@ -50,8 +50,9 @@ namespace DungeonSlash.Tests
                 previousStun = enemy.IsStunned; previousHp = enemy.CurrentHp;
                 if (enemy.State == MonsterState.Attacking)
                 { Guard(true); chargeStarted = castStarted = -1; yield return null; continue; }
-                var completingForm = kind == CharacterKind.Monk && player.PreparedForm == null && (enemy.State != MonsterState.Charging || enemy.StateTimer > player.CurrentChargeDuration + player.CurrentCooldown * (2 - player.Combo.Count));
-                var needsCharge = enemy.State == MonsterState.Charging && !completingForm || kind == CharacterKind.Barbarian && !(player.ActiveForm != null) && player.Resource(player.Data.resources.FirstOrDefault()) >= 40 || kind == CharacterKind.Monk && player.PreparedForm != null;
+                var completingForm = kind == CharacterKind.Monk && player.PreparedAttackBuff == null && (enemy.State != MonsterState.Charging || enemy.StateTimer > player.CurrentChargeDuration + player.CurrentCooldown * (2 - player.Combo.Count));
+                var fury=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Fury.asset");
+                var needsCharge = enemy.State == MonsterState.Charging && !completingForm || kind == CharacterKind.Barbarian && (player.Buffs.Find(fury)?.StackCount ?? 0) >= 40 || kind == CharacterKind.Monk && player.PreparedAttackBuff != null;
                 if (needsCharge)
                 {
                     Guard(false); castStarted = -1;
@@ -78,8 +79,8 @@ namespace DungeonSlash.Tests
                     var direction = SwipeDirection.Right;
                     if (kind == CharacterKind.Monk)
                     {
-                        var finisher=player.ShieldCurrent<player.ShieldMax*.5f && enemy.State!=MonsterState.Charging?FormFinisher.Shelter:enemy.State==MonsterState.Charging && enemy.WeakPoints.Any(point=>point.RemainingHits>1)?FormFinisher.MultiHit:FormFinisher.Burst;
-                        var pattern=player.Data.forms.First(f=>f.finisher==finisher && !f.requiresUnlock).pattern;
+                        var finisher=player.ShieldCurrent<player.ShieldMax*.5f && enemy.State!=MonsterState.Charging?"Shelter":enemy.State==MonsterState.Charging && enemy.WeakPoints.Any(point=>point.RemainingHits>1)?"Multi":"Burst";
+                        var pattern=player.Data.attackBuffs.First(b=>b.name==finisher && !b.requiresUnlock).attackPattern;
                         var progress=0;for(var i=1;i<pattern.Length && i<=player.Combo.Count;i++)if(player.Combo.Skip(player.Combo.Count-i).SequenceEqual(pattern.Take(i)))progress=i;
                         direction=pattern[progress];
                     }

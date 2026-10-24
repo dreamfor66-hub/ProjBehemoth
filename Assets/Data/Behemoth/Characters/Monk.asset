@@ -27,24 +27,39 @@ MonoBehaviour:
   description: "\uC5EC\uB7EC \uACF5\uACA9\uC744 \uD558\uB098\uC758 \uACF5\uACA9 \uCC98\uB7FC
     \uBB3C \uD750\uB974\uB4EF \uC5F0\uACB0\uD558\uB294 \uB0A0\uB835\uD55C \uBAB8\uB180\uB9BC\uC758
     \uBB34\uC608\uAC00 \uC785\uB2C8\uB2E4."
-  characterColor: {r: 0.95, g: 0.75, b: 0.3, a: 1}
-  portrait: {fileID: 21300000, guid: f701431fffac50e47ac473732848a7a6, type: 3}
+  selectionStory: "\uC0B0\uBB38\uC744 \uB098\uC120 \uAD6C\uB3C4\uC790.\r\n\uB2F5\uC740
+    \uC8FC\uBA39 \uB05D\uC5D0\uC11C \uCC3E\uB294\uB2E4."
+  selectionAbility: "\uCD08\uC2DD\uC744 \uC774\uC5B4 \uBC1C\uB3D9\uD558\uACE0\r\n\uC0C1\uD669\uC5D0
+    \uB9DE\uB294 \uD750\uB984\uC744 \uACE0\uB978\uB2E4."
+  characterColor: {r: 0.8, g: 0.66, b: 0.35, a: 1}
+  portrait: {fileID: 3478416095775863164, guid: e4760f14decefe24e83ffea09fd980c1, type: 3}
+  selectionIllustration: {fileID: 21300000, guid: 6b34a11bb2857024b9ad4028688cba5b, type: 3}
+  selectionMaterial: {fileID: 2100000, guid: 661d7650e9798b943885c9ba004dddcf, type: 2}
+  selectionBackdrop: {r: 0.23137255, g: 0.09019608, b: 0.03137255, a: 1}
+  combatSprite: {fileID: 4187977806934363299, guid: af0455dd13d657d4b9a9955c67ece17a, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 263fdb8392d043842965d9f2141e97ef, type: 2}
   gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   startingRelic: {fileID: 11400000, guid: b7e632a71dec8d641b22b585670f40bb, type: 2}
   startingSpells: []
-  forms:
-  - {fileID: 11400000, guid: 5bbcb162be08ee84e8521e53b9dd5aad, type: 2}
-  - {fileID: 11400000, guid: abcf378eb883e734c8f74eee8a49c155, type: 2}
-  - {fileID: 11400000, guid: 43d43b5b7dfd9114ebb7c48dd40ba06b, type: 2}
-  - {fileID: 11400000, guid: 7564aaf1ee542d34b923d7d467a136d9, type: 2}
-  - {fileID: 11400000, guid: 9eed9111b6b302f46bf577cb55b5149b, type: 2}
-  - {fileID: 11400000, guid: 22162dfe5f46abf4a99a321a2220da67, type: 2}
-  resources: []
+  startingSupplies:
+  - supply: {fileID: 11400000, guid: 97f4049024e9f274293dffbb2f06bd02, type: 2}
+    count: 1
+  attackBuffs:
+  - {fileID: 11400000, guid: 99d5f9a2200b14648af3d6bebbd94b02, type: 2}
+  - {fileID: 11400000, guid: eed833a220849f44883712bf829869b8, type: 2}
+  - {fileID: 11400000, guid: 044c7a53f4cdaa1409c49409538e57da, type: 2}
+  - {fileID: 11400000, guid: ce1b348e1e68c2f4cbcbe1b5e0ea6920, type: 2}
+  - {fileID: 11400000, guid: 09c3cbcb8719f8149b8fb2bc4d0e1a15, type: 2}
+  - {fileID: 11400000, guid: 8c4870222dbd156488481274bc992002, type: 2}
   maxHp: 95
+  maxMp: 30
+  mpRegen: 0.1
   shieldMax: 25
   guardDamageReduction: 1
   normalShieldRegen: 0
   brokenShieldRegen: 5
+  criticalChance: 0
+  criticalDamageMultiplier: 1.5
   baseAttackDamage: 7.5
   baseChargeDamage: 13
   attackCooldown: 0.55

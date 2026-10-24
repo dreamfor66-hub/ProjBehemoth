@@ -5,10 +5,13 @@ namespace DungeonSlash
 {
     public readonly struct CharacterAttack
     {
-        public readonly float Multiplier; public readonly bool Charged; public readonly int Hits; public readonly FormData Form;
+        public readonly float Multiplier; public readonly bool Charged; public readonly int Hits; public readonly BuffData AttackBuff;
         public readonly IReadOnlyCollection<BuffTagData> Tags;
-        public bool Draw => Tags!=null && Tags.Count>0; // Presentation compatibility; mechanics use data tags.
-        public CharacterAttack(float multiplier, bool charged, int hits, IReadOnlyCollection<BuffTagData> tags, FormData form) { Multiplier = multiplier; Charged = charged; Hits = hits; Tags=tags; Form = form; }
+        public readonly string FeedbackKey;
+        public readonly float HitInterval;
+        public bool Draw => Tags != null && Tags.Count > 0;
+        public CharacterAttack(float multiplier, bool charged, int hits, IReadOnlyCollection<BuffTagData> tags, BuffData attackBuff,string feedbackKey=null,float hitInterval=.12f)
+        { FeedbackKey=feedbackKey; HitInterval=Mathf.Max(.04f,hitInterval); Multiplier = multiplier; Charged = charged; Hits = hits; Tags = tags; AttackBuff = attackBuff; }
     }
     public sealed partial class PlayerCombatRuntime
     {
@@ -20,29 +23,22 @@ namespace DungeonSlash
         public bool HoldingGuard { get; private set; }
         public float StoredGuardDamage { get; set; }
         public int GuardHitCount { get; private set; }
-        public float DeferredDamage => Buffs.Active.Where(buff=>buff.Data==Owner?.RuleBuff(AbilityRule.DeferredDamageSeconds,true)).Sum(buff=>buff.Value);
-        public FormData ActiveForm => Buffs?.Active.Select(b => b.Data.form).FirstOrDefault(form => form != null);
+        public float DeferredDamage => Buffs.Active.Where(buff => buff.Data == Owner?.RuleBuff(AbilityRule.DeferredDamageSeconds, true)).Sum(buff => buff.Value);
         public IReadOnlyList<SwipeDirection> Combo => combo;
         private readonly List<SwipeDirection> combo = new();
-        private readonly Dictionary<CombatResourceData, float> resources = new();
         public float Rule(AbilityRule kind, EquipmentTriggerContext? context = null) => Owner?.Rule(kind, context) ?? 0;
-        private float BuffStat(ModifierKind kind)=>Owner?.Stat(kind) ?? Buffs.Stat(kind);
+        private readonly Dictionary<ModifierKind, float> extraPermanentStats = new();
+        private float BuffStat(ModifierKind kind) => (extraPermanentStats.TryGetValue(kind, out var extra) ? extra : 0) + (Owner?.Stat(kind) ?? Buffs.Stat(kind));
         public bool HasPower(RelicPower power) => power != RelicPower.None && Owner != null && Owner.EquippedItems.Any(item => item.power == power);
-        public float Resource(CombatResourceData resource) => resource != null && resources.TryGetValue(resource, out var value) ? value : resource != null ? resource.initialValue : 0;
-        public void SetResource(CombatResourceData resource, float value) { if (resource != null) resources[resource] = Mathf.Clamp(value, 0, resource.maximum); }
-        public void AddResource(CombatResourceData resource, float value) => SetResource(resource, Resource(resource) + value);
         public float EffectiveDamageReduction => Mathf.Clamp01(DamageReduction + Rule(AbilityRule.DamageReduction));
         public float SpellCooldownMultiplier => Mathf.Max(.2f, 1 - Rule(AbilityRule.SpellCooldownReduction));
         public float SpellCastingMultiplier => Mathf.Max(.15f, 1 - Rule(AbilityRule.CastTimeReduction));
         public float SpellCooldownFor(SpellData spell) => Mathf.Max(.2f, 1 - Rule(AbilityRule.SpellCooldownReduction, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, spell: spell)));
         public float SpellCastingFor(SpellData spell) => Mathf.Max(.15f, 1 - Rule(AbilityRule.CastTimeReduction, new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, spell: spell)));
         private void ResetCharacter()
-        {
-            CombatTime = StoredGuardDamage = 0; GuardHitCount = 0; HoldingGuard = false; combo.Clear(); resources.Clear();
-            foreach (var resource in data.resources) SetResource(resource, resource.initialValue);
-        }
-        public void BeginCharacterCombat() { ResetCharacter(); TrySetGuard(false); SetKeyboardGuard(false); SetChargeGuard(false); }
-        public void EndCharacterCombat() { Owner?.Awareness.End(); resources.Clear(); combo.Clear(); TrySetGuard(false); SetKeyboardGuard(false); SetChargeGuard(false); Buffs.EndCombat(); }
+        { CombatTime = StoredGuardDamage = 0; GuardHitCount = 0; HoldingGuard = false; combo.Clear(); }
+        public void BeginCharacterCombat() { ResetCharacter(); RefillMp(); TrySetGuard(false); SetKeyboardGuard(false); SetChargeGuard(false); }
+        public void EndCharacterCombat() { Owner?.Awareness.End(); combo.Clear(); TrySetGuard(false); SetKeyboardGuard(false); SetChargeGuard(false); Buffs.EndCombat(); }
         private void SetGuardIntent(bool enabled)
         {
             if (enabled == HoldingGuard) return; HoldingGuard = enabled;
@@ -50,46 +46,56 @@ namespace DungeonSlash
         }
         private void TickCharacter(float dt)
         {
-            CombatTime += Mathf.Max(0, dt); if(Owner!=null)Owner.TickAbilities(dt);else Buffs.Tick(dt); if (!IsAlive) return;
+            CombatTime += Mathf.Max(0, dt); if (Owner != null) Owner.TickAbilities(dt); else Buffs.Tick(dt); if (!IsAlive) return;
+            RestoreMp((data.mpRegen + BuffStat(ModifierKind.MpRegen)) * dt);
             RestoreShield(Mathf.Max(0, Rule(AbilityRule.GuardRecoveryPerSecond)) * dt);
         }
         private void ApplyCharacterDamage(float damage)
         {
-            if (damage <= 0) return; var definition=Owner?.RuleBuff(AbilityRule.DeferredDamageSeconds);
-            if (definition!=null && Rule(AbilityRule.DeferredDamageSeconds)>0) Buffs.Add(definition,root:Owner,context:new EquipmentTriggerContext(default,TriggerAttackType.None,TriggerAttackWay.None,false,false,damage:damage),initialValue:damage);
+            if (damage <= 0) return; var definition = Owner?.RuleBuff(AbilityRule.DeferredDamageSeconds);
+            if (definition != null && Rule(AbilityRule.DeferredDamageSeconds) > 0) Buffs.Add(definition, root: Owner, context: new EquipmentTriggerContext(default, TriggerAttackType.None, TriggerAttackWay.None, false, false, damage: damage), initialValue: damage);
             else CurrentHp = Mathf.Max(0, CurrentHp - damage);
         }
-        public void PayDeferredDamage() => Buffs.Remove(Owner?.RuleBuff(AbilityRule.DeferredDamageSeconds,true));
+        public void PayDeferredDamage() => Buffs.Remove(Owner?.RuleBuff(AbilityRule.DeferredDamageSeconds, true));
         public void ClearDeferredDamage() => Buffs.EndCombat();
-        public FormData PreparedForm => data.forms.Where(form => form != null && form.pattern.Length > 0 && (Owner == null ? !form.requiresUnlock : Owner.IsFormUnlocked(form)) && form.pattern.Length <= combo.Count)
-            .Where(form => form.pattern.SequenceEqual(combo.Skip(combo.Count - form.pattern.Length))).OrderByDescending(form => form.pattern.Length).FirstOrDefault();
+        public BuffData PreparedAttackBuff => data.attackBuffs
+            .Where(buff => buff != null && buff.attackPattern.Length > 0 && (Owner == null ? !buff.requiresUnlock : Owner.IsBuffUnlocked(buff)) && buff.attackPattern.Length <= combo.Count)
+            .Where(buff => buff.attackPattern.SequenceEqual(combo.Skip(combo.Count - buff.attackPattern.Length)))
+            .OrderByDescending(buff => buff.attackPattern.Length).FirstOrDefault();
         public CharacterAttack PrepareAttack(SwipeDirection direction, bool charged, int chargeLevel = 1)
         {
-            var form = charged ? PreparedForm : null;
+            // Commit the previous action's queued changes before evaluating the next action.
+            Buffs.UpdateState(0);
+            var feedbackKey=Buffs.Active.Where(b=>!string.IsNullOrEmpty(b.Data.attackFeedbackKey)).OrderByDescending(b=>b.Data.attackFeedbackPriority).Select(b=>b.Data.attackFeedbackKey).FirstOrDefault();
+            var attackBuff = charged ? PreparedAttackBuff : null;
             var way = direction is SwipeDirection.Left or SwipeDirection.Right ? TriggerAttackWay.Horizontal : direction == SwipeDirection.Up ? TriggerAttackWay.Upward : TriggerAttackWay.Downward;
             var vector = direction == SwipeDirection.Left ? Vector2.left : direction == SwipeDirection.Right ? Vector2.right : direction == SwipeDirection.Up ? Vector2.up : Vector2.down;
             var mutable = new ActionEffectContext();
-            var context = new EquipmentTriggerContext(new AttackSegment(Vector2.zero, vector, 0), charged ? TriggerAttackType.Charge : TriggerAttackType.Normal, way, charged, false, form: form, mutable: mutable);
-            Owner?.StartAction(context); Owner?.EmitEvent(TriggerType.OnActionPreparing, context);
-            var resolvedCharge=charged||mutable.ForceCharge;
-            context=new EquipmentTriggerContext(context.Segment,resolvedCharge?TriggerAttackType.Charge:TriggerAttackType.Normal,way,resolvedCharge,false,form:form,mutable:mutable);
+            var context = new EquipmentTriggerContext(new AttackSegment(Vector2.zero, vector, 0), charged ? TriggerAttackType.Charge : TriggerAttackType.Normal, way, charged, false, attackBuff: attackBuff, mutable: mutable);
+            Owner?.StartAction(context);
+            if (attackBuff != null) { Buffs.Add(attackBuff, root: Owner, context: context); Buffs.UpdateState(0); }
+            Owner?.EmitEvent(TriggerType.OnActionPreparing, context);
+            // Ordered AddBuff(Rage = Fury stacks), RemoveBuff(Fury) is visible to this very attack.
+            Buffs.UpdateState(0);
+            var resolvedCharge = charged || mutable.ForceCharge;
+            context = new EquipmentTriggerContext(context.Segment, resolvedCharge ? TriggerAttackType.Charge : TriggerAttackType.Normal, way, resolvedCharge, false, attackBuff: attackBuff, mutable: mutable);
             Owner?.SetPreparedAction(context);
             var multiplier = (charged && chargeLevel >= 2 ? 2f : 1) * mutable.DamageMultiplier * (1 + mutable.DamageBonus);
-            var hits = 1 + mutable.ExtraHits;
             if (charged)
             {
-                if (form != null)
+                if (attackBuff != null)
                 {
-                    multiplier *= form.damageMultiplier; hits = Mathf.Max(1, form.hits + mutable.ExtraHits + Mathf.RoundToInt(Rule(AbilityRule.FormExtraHits, context)));
-                    if (form.buff != null) Buffs.Add(form.buff);
-                    foreach (var effect in form.effects) Owner?.ApplyAbilityEffect(effect, context, "form:" + form.name);
-                    Owner?.EmitEvent(TriggerType.OnFormFinish, context);
-                    RestoreShield(ShieldMax * Rule(AbilityRule.FormGuardFraction, context));
+                    Owner?.EmitEvent(TriggerType.OnAttackBuffUsed, context);
+                    RestoreShield(ShieldMax * Rule(AbilityRule.AttackBuffGuardFraction, context));
                 }
                 combo.Clear();
             }
-            else if (data.forms.Any(f => f != null && f.pattern.Length > 0)) { combo.Add(direction); var length = Mathf.Max(2, data.forms.Max(f => f.pattern.Length)); while (combo.Count > length) combo.RemoveAt(0); }
-            return new CharacterAttack(multiplier, resolvedCharge, hits, mutable.Tags.ToArray(), form);
+            else if (data.attackBuffs.Any(buff => buff != null && buff.attackPattern.Length > 0))
+            {
+                combo.Add(direction); var length = Mathf.Max(2, data.attackBuffs.Max(buff => buff.attackPattern.Length));
+                while (combo.Count > length) combo.RemoveAt(0);
+            }
+            return new CharacterAttack(multiplier, resolvedCharge, Mathf.Max(1, 1 + mutable.ExtraHits), mutable.Tags.ToArray(), attackBuff,feedbackKey,mutable.HitInterval);
         }
         public string StatusText
         {
@@ -97,10 +103,11 @@ namespace DungeonSlash
             {
                 var labels = new List<string>();
                 if (Owner?.Awareness.IsConcealed == true) labels.Add(GameText.Format("ui.stealth.status", Owner.Awareness.NextDetectionChance * 100));
-                if (Buffs != null) labels.AddRange(Buffs.Active.Where(b => b.Data.showInHud).Select(b => b.Data.displayName));
-                labels.AddRange(data.resources.Where(r => r.showInHud).Select(r => r.displayName + " " + Resource(r).ToString("0")));
-                if (data.forms.Any(f => f != null && f.pattern.Length > 0)) labels.Add(GameText.Format("ui.charactercombatruntime.57448830", string.Join("", combo.Select(FormData.DirectionLabel)), PreparedForm != null ? PreparedForm.displayName + GameText.Get("ui.charactercombatruntime.c7a3a29b") : GameText.Get("ui.charactercombatruntime.e3f2e38")));
-                if (labels.Count == 0 && HoldingGuard) labels.Add(Owner != null && Owner.Spellbook.Count > 0 ? GameText.Get("ui.charactercombatruntime.b0f8c0f9") : GameText.Get("ui.charactercombatruntime.aabc49f9"));
+                labels.AddRange(Buffs.Active.Where(buff => buff.Data.showInHud || buff.Data.harmful).Select(buff => buff.MaximumStacks > 1
+                    ? GameText.Format("ui.buff.stacks", buff.Data.displayName, buff.StackCount, buff.MaximumStacks) : buff.Data.displayName));
+                if (data.attackBuffs.Any(buff => buff != null && buff.attackPattern.Length > 0))
+                    labels.Add(GameText.Format("ui.charactercombatruntime.57448830", string.Join("", combo.Select(SwipeDirectionUtility.Label)), PreparedAttackBuff != null ? "<color=#7CA7A3>["+PreparedAttackBuff.displayName+"]</color>" : ""));
+                if (labels.Count == 0 && HoldingGuard) labels.Add(GameText.Get("ui.charactercombatruntime.aabc49f9"));
                 return string.Join(" · ", labels);
             }
         }

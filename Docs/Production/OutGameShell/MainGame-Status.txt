@@ -1,0 +1,2 @@
+Playing: True
+Raster: MainGameScene 384x224 quantize=True

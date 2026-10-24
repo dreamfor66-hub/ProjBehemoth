@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: Enemy_AshCrow
+  m_EditorClassIdentifier: 
+  idle: {fileID: -1647327035398937045, guid: 43b2f77c2b2435d478699930b91e7572, type: 3}
+  attack: {fileID: 2535675719882061964, guid: 43b2f77c2b2435d478699930b91e7572, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 4452394215634524958, guid: 43b2f77c2b2435d478699930b91e7572, type: 3}
+  dead: {fileID: 8062717358433281529, guid: 43b2f77c2b2435d478699930b91e7572, type: 3}

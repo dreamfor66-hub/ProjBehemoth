@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: Enemy_MirrorKnight
+  m_EditorClassIdentifier: 
+  idle: {fileID: 3899436816322671894, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  attack: {fileID: 2207354059558713086, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 3802758369309764233, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  dead: {fileID: -7560931217481525557, guid: b0d91f8da8f914746b5300dd58101144, type: 3}

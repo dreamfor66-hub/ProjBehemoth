@@ -23,7 +23,7 @@ MonoBehaviour:
   id: RagePotion
   displayName: "\uACA9\uB178\uC758 \uD3EC\uC158"
   description: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 +35%"
-  icon: {fileID: 21300000, guid: 94bc069e94ecaf3429130599931528bd, type: 3}
+  icon: {fileID: -1772244045117237821, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -62,12 +62,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -108,12 +107,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

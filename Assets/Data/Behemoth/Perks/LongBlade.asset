@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: LongBlade
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.longblade.displayname
+    lastText: "\uAE34 \uCE7C\uB0A0"
+  - propertyPath: description
+    key: data.perkdata.longblade.description
+    lastText: "\uBC1C\uB3C4 \uACF5\uACA9 \uBC94\uC704 +8%"
+  textOwnerGuid: ce46d02b8873dc84f8e22cc187704b1e
+  id: LongBlade
+  displayName: "\uAE34 \uCE7C\uB0A0"
+  description: "\uBC1C\uB3C4 \uACF5\uACA9 \uBC94\uC704 +8%"
+  icon: {fileID: -148319563816140896, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 2
+  exclusiveCharacter: 3
+  abilitySource: {fileID: 11400000, guid: 5df1bb6f192be7e4dbe8bb68ae7c519f, type: 2}
+  maxStacks: 99
+  modifiers: []

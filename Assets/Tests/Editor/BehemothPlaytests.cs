@@ -206,9 +206,10 @@ namespace DungeonSlash.Tests
                 else if (kind == CharacterKind.Barbarian)
                 {
                     for (var i = 0; i < 4; i++) { combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, false); }
-                    Assert.That((combat.Player.ActiveForm != null), Is.False); combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true);yield return null; Assert.That((combat.Player.ActiveForm != null), Is.True);
+                    var rage=AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/Rage.asset");
+                    Assert.That(combat.Run.Buffs.Has(rage), Is.False); combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true);yield return null; Assert.That(combat.Run.Buffs.Has(rage), Is.True);
                     for (var until = Time.time + 5.1f; Time.time < until;) yield return null;
-                    Assert.That((combat.Player.ActiveForm != null), Is.False); Matrix("바바리안 일반공격 격노 → 차지 분노 → 실제 시간 경과로 종료");
+                    Assert.That(combat.Run.Buffs.Has(rage), Is.False); Matrix("바바리안 격노 중첩 → 같은 양의 분노 중첩으로 전환 → 실제 소모 종료");
                 }
                 else if (kind == CharacterKind.Samurai)
                 {
@@ -219,8 +220,8 @@ namespace DungeonSlash.Tests
                 }
                 else
                 {
-                    var form=combat.Player.Data.forms.First(f=>f.finisher==FormFinisher.MultiHit && !f.requiresUnlock);
-                    foreach(var direction in form.pattern){var vector=direction==SwipeDirection.Left?Vector2.left:direction==SwipeDirection.Right?Vector2.right:direction==SwipeDirection.Up?Vector2.up:Vector2.down;combat.Player.ResetAttackCooldown();combat.ExecuteAttack(new AttackSegment(center-vector*140,center+vector*140,18),false);}
+                    var buff=combat.Player.Data.attackBuffs.First(b=>b.name=="Multi" && !b.requiresUnlock);
+                    foreach(var direction in buff.attackPattern){var vector=direction==SwipeDirection.Left?Vector2.left:direction==SwipeDirection.Right?Vector2.right:direction==SwipeDirection.Up?Vector2.up:Vector2.down;combat.Player.ResetAttackCooldown();combat.ExecuteAttack(new AttackSegment(center-vector*140,center+vector*140,18),false);}
                     enemy.StartCharge(center); var points = enemy.WeakPoints.ToArray();
                     combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(horizontal, true);
                     Assert.That(points.All(point => point.RemainingHits == 0), Is.True); Assert.That(combat.Player.Combo.Count, Is.Zero);

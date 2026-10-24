@@ -1,0 +1,28 @@
+Scoped fatigue mechanics and UI in existing Unity instance; runtime practice monsters cloned.
+PASS 96 B1/B2/B3 maps have exactly one reachable fixed camp
+PASS camp shift preserves fixed camp/boss and living ordinary encounter count
+PASS living monster can occupy cleared route without reroll or resurrection
+PASS actual forward/back movement consumes two grace steps, no fatigue yet
+PASS wall input consumes no fatigue or grace
+PASS waiting does not consume movement resource
+PASS attack speed penalty begins before final damage penalty
+PASS later fatigue also reduces final damage
+PASS fatigue increases actual weapon recovery interval
+PASS direct damage final multiplier applies to actual enemy HP
+PASS aimed spell damage also respects fatigue final multiplier
+PASS burn tick respects current fatigue final damage
+PASS poison ticks also respect current fatigue final damage
+PASS fatigue potion offers drink, never throw
+PASS drinking recovers30 and grants10 safe steps
+PASS full fatigue meter preserves potion
+PASS fatigue potion can occur in natural merchant stock
+PASS camp offers both full camp and brief rest at fatigue40
+PASS brief rest restores only fatigue60, preserving one camp and giving no HP or grace
+PASS one full camp restores100, HP10 and walking grace
+PASS full camp stays spent on revisiting fixed location
+PASS brief rest remains available after full camp
+PASS at8 tooltip includes exact death warning
+PASS six heroes each have four distinct expression sprites without changing icon color
+PASS actual final step at fatigue2 ends run at0 with death
+PASS real next-floor flow restores fatigue and one new camp opportunity
+COMPLETE

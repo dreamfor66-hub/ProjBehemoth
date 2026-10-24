@@ -21,6 +21,8 @@ MonoBehaviour:
     lastText: 
   textOwnerGuid: 5803c6e2e3ecb6d45a6edf579959d88c
   displayName: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
+  portrait: {fileID: -7806310591798713253, guid: 7a1a5215d2ce86d4d88a250148ddd518, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 98207263395d01142be280d42890abae, type: 2}
   encounterHint: 
   pattern: 0
   supportId: 

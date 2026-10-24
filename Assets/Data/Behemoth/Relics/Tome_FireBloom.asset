@@ -18,16 +18,16 @@ MonoBehaviour:
     lastText: "\uD654\uC5FC \uAC1C\uD654\uC758 \uB9C8\uB3C4\uC11C"
   - propertyPath: description
     key: data.equipmentdata.tome_firebloom.description
-    lastText: "\uD68D\uB4DD \uC989\uC2DC \uC8FC\uBB38 \uC2B5\uB4DD. \uCCB4\uB825
-      \uBE44\uC728\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801 \uC8FC\uC704\uC5D0 \uD3ED\uBC1C\uD55C\uB2E4.
-      \uBC18\uACBD \uC548\uC758 \uC801\uC744 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4."
+    lastText: "\uCCB4\uB825 \uBE44\uC728\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801 \uC8FC\uC704\uC5D0
+      \uD3ED\uBC1C\uD55C\uB2E4. \uBC18\uACBD \uC548\uC758 \uC801\uC744 \uD568\uAED8
+      \uACF5\uACA9\uD55C\uB2E4."
   textOwnerGuid: c3b4cfaa851b1d341af693c62e38624f
   id: Tome_FireBloom
   displayName: "\uD654\uC5FC \uAC1C\uD654\uC758 \uB9C8\uB3C4\uC11C"
-  description: "\uD68D\uB4DD \uC989\uC2DC \uC8FC\uBB38 \uC2B5\uB4DD. \uCCB4\uB825
-    \uBE44\uC728\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801 \uC8FC\uC704\uC5D0 \uD3ED\uBC1C\uD55C\uB2E4.
-    \uBC18\uACBD \uC548\uC758 \uC801\uC744 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: c8a3d8385928cec45913643ae9437b0a, type: 3}
+  description: "\uCCB4\uB825 \uBE44\uC728\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801
+    \uC8FC\uC704\uC5D0 \uD3ED\uBC1C\uD55C\uB2E4. \uBC18\uACBD \uC548\uC758 \uC801\uC744
+    \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4."
+  icon: {fileID: -7058561907366660472, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -66,12 +66,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -109,12 +108,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 11400000, guid: 4ac44dd5af0d27e48bc766d668de9c77, type: 2}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -155,12 +153,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

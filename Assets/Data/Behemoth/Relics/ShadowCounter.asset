@@ -27,7 +27,7 @@ MonoBehaviour:
   description: "\uC2A4\uD30C\uD06C \uC2B5\uB4DD. \uAC00\uB4DC \uC131\uACF5 \uC2DC
     \uC8FC\uBB38 \uCFE8\uD0C0\uC784 -0.5\uCD08. \uC8FC\uBB38 \uBC1C\uB3D9 \uC2DC
     \uB300\uC0C1\uC5D0\uAC8C \uB3C5 2\uC911\uCCA9."
-  icon: {fileID: 21300000, guid: adb80d2426532b7408a6a5e0805ddfbd, type: 3}
+  icon: {fileID: -8670852054697128491, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 2
   exclusiveCharacter: 1
   power: 16
@@ -66,12 +66,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 11400000, guid: b5628e2176861b947869198ac7b4693b, type: 2}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -109,12 +108,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -152,12 +150,11 @@ MonoBehaviour:
       statusCap: 8
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 11400000, guid: db6f1ff1855ee704da2fe90507ead119, type: 2}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -198,12 +195,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

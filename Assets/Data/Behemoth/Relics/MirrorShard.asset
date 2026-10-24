@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uAE30\uC5B5\uD558\uB294 \uAC70\uC6B8 \uC870\uAC01"
   description: "\uB9E4 4\uBC88\uC9F8 \uBB34\uAE30 \uC801\uC911\uC5D0 \uD574\uB2F9
     \uD53C\uD574\uC758 40%\uB97C \uB354\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: 3cd703f3706db7042ab1c40061644993, type: 3}
+  icon: {fileID: -7539582390867499684, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
   scope: 3
   exclusiveCharacter: 0
   power: 52
@@ -64,18 +64,16 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables:
       - type: 3
         buff: {fileID: 0}
-        resource: {fileID: 0}
         rule: 0
         multiplier: 0.4
         limit: 0
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -116,12 +114,11 @@ MonoBehaviour:
     statusCap: 0
     rule: 0
     spell: {fileID: 0}
-    form: {fileID: 0}
     buff: {fileID: 0}
     buffTag: {fileID: 0}
-    resource: {fileID: 0}
     valueVariables: []
     guardFeedback: 0
+    multiplyByBuffStacks: 0
     companion: {fileID: 0}
     buffUses: 0
     consumeOn: 0

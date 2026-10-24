@@ -23,7 +23,10 @@ MonoBehaviour:
   id: Harvest
   displayName: "\uC0DD\uBA85 \uC218\uD655"
   description: "\uBAAC\uC2A4\uD130 \uCC98\uCE58 \uC2DC HP 4 \uD68C\uBCF5"
-  icon: {fileID: 21300000, guid: 14a34c959b0ced44ba00c9c37f6a9396, type: 3}
+  icon: {fileID: -4994717029236986561, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 0}
   maxStacks: 3
   modifiers:
   - kind: 13

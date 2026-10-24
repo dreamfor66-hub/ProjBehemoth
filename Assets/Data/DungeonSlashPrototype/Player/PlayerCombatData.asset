@@ -23,17 +23,29 @@ MonoBehaviour:
   character: 0
   displayName: "\uC6CC\uB9AC\uC5B4"
   description: 
+  selectionStory: 
+  selectionAbility: 
   characterColor: {r: 0.22, g: 0.65, b: 0.9, a: 1}
-  portrait: {fileID: 0}
+  portrait: {fileID: -3076216366883759415, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+  selectionIllustration: {fileID: 0}
+  selectionMaterial: {fileID: 0}
+  selectionBackdrop: {r: 0.05, g: 0.08, b: 0.12, a: 1}
+  combatSprite: {fileID: 1284947413926479201, guid: af0455dd13d657d4b9a9955c67ece17a, type: 3}
+  combatAnimation: {fileID: 0}
   gameVariables: {fileID: 0}
   startingRelic: {fileID: 0}
   startingSpells: []
-  monkForms: []
+  startingSupplies: []
+  attackBuffs: []
   maxHp: 100
+  maxMp: 30
+  mpRegen: 0.1
   shieldMax: 25
   guardDamageReduction: 1
   normalShieldRegen: 2.5
   brokenShieldRegen: 5
+  criticalChance: 0
+  criticalDamageMultiplier: 1.5
   baseAttackDamage: 14
   baseChargeDamage: 21
   attackCooldown: 1

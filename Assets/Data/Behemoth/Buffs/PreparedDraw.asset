@@ -15,12 +15,12 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.buffdata.prepareddraw.displayname
-    lastText: "\uCC28\uC9C0 \uBC1C\uB3C4 \uC900\uBE44"
+    lastText: "\uD328\uB9AC \uBC1C\uB3C4 \uC900\uBE44"
   - propertyPath: description
     key: data.buffdata.prepareddraw.description
     lastText: 
   textOwnerGuid: 426cf37c1a7e05546bdc0eb0ccd8c424
-  displayName: "\uCC28\uC9C0 \uBC1C\uB3C4 \uC900\uBE44"
+  displayName: "\uD328\uB9AC \uBC1C\uB3C4 \uC900\uBE44"
   description: 
   Tags: []
   Units:
@@ -56,12 +56,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -99,12 +98,11 @@ MonoBehaviour:
       statusCap: 0
       rule: 0
       spell: {fileID: 0}
-      form: {fileID: 0}
       buff: {fileID: 0}
       buffTag: {fileID: 0}
-      resource: {fileID: 0}
       valueVariables: []
       guardFeedback: 0
+      multiplyByBuffStacks: 0
       companion: {fileID: 0}
       buffUses: 0
       consumeOn: 0
@@ -114,12 +112,18 @@ MonoBehaviour:
     Type: 20
     Time: 0
     ResetOnStack: 0
+    ResetOnReapplyAtCap: 0
     Count: 1
   DuplicationData:
     Type: 1
     MaxStackCount: 1
     ConsiderTagIsDuplicate: {fileID: 0}
   showInHud: 1
+  attackFeedbackKey: ui.combatcontroller.deb723db
+  attackFeedbackPriority: 2
+  harmful: 0
   presentationColor: {r: 1, g: 1, b: 1, a: 1}
   tintOwner: 0
-  form: {fileID: 0}
+  attackPattern: 
+  requiresUnlock: 0
+  attackRole: 0

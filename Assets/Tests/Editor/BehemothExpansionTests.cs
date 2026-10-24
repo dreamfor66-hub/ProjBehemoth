@@ -17,6 +17,7 @@ namespace DungeonSlash.Tests
         private RunState Run(CharacterKind kind)
         { var data = content.characters.Single(item => item.character == kind); var run = new RunState(data, balance); run.TryEquip(data.startingRelic); run.BeginCombat(); return run; }
         private EquipmentData Power(RelicPower power) => content.equipment.Single(item => item.power == power);
+        private static BuffData State(string name) => AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Behemoth/Buffs/" + name + ".asset");
         private static DamageResult Hurt(PlayerCombatRuntime player, float damage = 20, bool guardable = true)
             => new DamageResolver().ApplyToPlayer(player, new DamageRequest(DamageType.MonsterAttack, damage, damage, guardable));
 
@@ -91,35 +92,35 @@ namespace DungeonSlash.Tests
         {
             var player = Run(CharacterKind.Barbarian).Player;
             for (var i = 0; i < 4; i++) player.PrepareAttack(SwipeDirection.Right, false);
-            Assert.That((player.ActiveForm != null), Is.False); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(48));
-            player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); Assert.That((player.ActiveForm != null), Is.True); Assert.That(player.Resource(player.Data.resources.FirstOrDefault()), Is.EqualTo(100));
-            var damage = player.NormalAttackDamage; player.Tick(5.01f);player.Buffs.Tick(0); Assert.That((player.ActiveForm != null), Is.False); Assert.That(player.NormalAttackDamage, Is.LessThan(damage));
+            player.Buffs.UpdateState(0); Assert.That(player.Buffs.Has(State("Rage")), Is.False); Assert.That(player.Buffs.Find(State("Fury")).StackCount, Is.EqualTo(48));
+            player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); Assert.That(player.Buffs.Has(State("Rage")), Is.True); Assert.That(player.Buffs.Find(State("Rage")).StackCount, Is.EqualTo(48)); Assert.That(player.Buffs.Has(State("Fury")), Is.False);
+            var damage = player.NormalAttackDamage; player.Tick(1.96f);player.Buffs.Tick(0); Assert.That(player.Buffs.Has(State("Rage")), Is.False); Assert.That(player.NormalAttackDamage, Is.LessThan(damage));
         }
         [Test] public void Barbarian_DeferredDamagePaidOverTime_ClearedOnVictory_AndDumpedOnRageEnd()
         {
             var run = Run(CharacterKind.Barbarian); run.TryEquip(Power(RelicPower.DeferredPain)); var player = run.Player;
-            player.AddResource(player.Data.resources.FirstOrDefault(), 60); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); Hurt(player, 20, false);player.Buffs.Tick(0);
+            player.Buffs.Add(State("Fury"),60); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); Hurt(player, 20, false);player.Buffs.Tick(0);
             Assert.That(player.CurrentHp, Is.EqualTo(player.MaxHp)); Assert.That(player.DeferredDamage, Is.EqualTo(15).Within(.001f));
             player.Tick(1); Assert.That(player.CurrentHp, Is.EqualTo(player.MaxHp - 3f).Within(.001f));
             player.EndCharacterCombat(); Assert.That(player.DeferredDamage, Is.Zero);
-            run.BeginCombat(); player.AddResource(player.Data.resources.FirstOrDefault(), 60); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(3.9f); Hurt(player, 20, false);player.Buffs.Tick(0);
+            run.BeginCombat(); player.Buffs.Add(State("Fury"),60); player.PrepareAttack(SwipeDirection.Up, true);player.Buffs.Tick(0); player.Tick(2.3f);player.Buffs.Tick(0); Hurt(player, 20, false);player.Buffs.Tick(0);
             var before = player.CurrentHp; player.Tick(.2f);player.Buffs.Tick(0);player.Buffs.Tick(0); Assert.That(player.DeferredDamage, Is.Zero); Assert.That(player.CurrentHp, Is.EqualTo(before - 15f).Within(.001f));
         }
-        [TestCase(SwipeDirection.Up, SwipeDirection.Down, FormFinisher.Burst)]
-        [TestCase(SwipeDirection.Up, SwipeDirection.Up, FormFinisher.MultiHit)]
-        [TestCase(SwipeDirection.Down, SwipeDirection.Right, FormFinisher.Shelter)]
-        [TestCase(SwipeDirection.Right, SwipeDirection.Up, FormFinisher.Flow)]
-        public void Monk_LastTwoNormals_ChargeDirectionIndependent_GuardPreservesCombo(SwipeDirection first, SwipeDirection second, FormFinisher finisher)
+        [TestCase(SwipeDirection.Up, SwipeDirection.Down, "Burst")]
+        [TestCase(SwipeDirection.Up, SwipeDirection.Up, "Multi")]
+        [TestCase(SwipeDirection.Down, SwipeDirection.Right, "Shelter")]
+        [TestCase(SwipeDirection.Right, SwipeDirection.Up, "Flow")]
+        public void Monk_LastTwoNormals_ChargeDirectionIndependent_GuardPreservesCombo(SwipeDirection first, SwipeDirection second, string finisher)
         {
-            var player = Run(CharacterKind.Monk).Player;var authored=player.Data.forms.First(f=>f.finisher==finisher && !f.requiresUnlock);first=authored.pattern[0];second=authored.pattern[1]; player.PrepareAttack(SwipeDirection.Left, false); player.PrepareAttack(first, false); player.TrySetGuard(true); player.TrySetGuard(false); player.PrepareAttack(second, false);
-            Assert.That(player.PreparedForm.finisher, Is.EqualTo(finisher));
-            var attack = player.PrepareAttack(SwipeDirection.Left, true); Assert.That(attack.Form.finisher, Is.EqualTo(finisher)); Assert.That(player.Combo.Count, Is.Zero);
+            var player = Run(CharacterKind.Monk).Player;var authored=player.Data.attackBuffs.First(b=>b.name==finisher && !b.requiresUnlock);first=authored.attackPattern[0];second=authored.attackPattern[1]; player.PrepareAttack(SwipeDirection.Left, false); player.PrepareAttack(first, false); player.TrySetGuard(true); player.TrySetGuard(false); player.PrepareAttack(second, false);
+            Assert.That(player.PreparedAttackBuff, Is.SameAs(authored));
+            var attack = player.PrepareAttack(SwipeDirection.Left, true); Assert.That(attack.AttackBuff, Is.SameAs(authored)); Assert.That(player.Combo.Count, Is.Zero);
         }
         [Test] public void Monk_LongUnlockedSuffixWins_WithoutOldInputsMarkingTargets()
         {
             var run = Run(CharacterKind.Monk); run.TryEquip(Power(RelicPower.LongTiger)); var player = run.Player;
             foreach (var direction in new[] { SwipeDirection.Right, SwipeDirection.Down, SwipeDirection.Up, SwipeDirection.Up }) player.PrepareAttack(direction, false);
-            Assert.That(player.PreparedForm.pattern.Length, Is.EqualTo(3)); Assert.That(player.PrepareAttack(SwipeDirection.Down, true).Form.requiredPower, Is.EqualTo(RelicPower.LongTiger));
+            Assert.That(player.PreparedAttackBuff.attackPattern.Length, Is.EqualTo(3)); Assert.That(player.PrepareAttack(SwipeDirection.Down, true).AttackBuff, Is.SameAs(State("Tiger")));
         }
         [Test] public void Wizard_CooldownsFromEditableMechanic_FixedDirections_ReplacementIsExplicit()
         {

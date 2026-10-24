@@ -42,6 +42,8 @@ namespace DungeonSlash
     public sealed class MonsterData : LocalizedData
     {
         public string displayName = "Skeleton";
+        public Sprite portrait;
+        public CombatSpriteAnimation combatAnimation;
         [TextArea] public string encounterHint;
         public MonsterPattern pattern;
         public string supportId;

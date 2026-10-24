@@ -29,18 +29,33 @@ MonoBehaviour:
     \uC783\uC9C0 \uC54A\uACE0, \uC801\uC758 \uBE48\uD2C8\uC744 \uC21C\uC2DD\uAC04\uC5D0
     \uD30C\uACE0 \uB4E4\uC5B4\uAC00 \uB354\uC6B1 \uCE58\uBA85\uC801\uC778 \uD53C\uD574\uB97C
     \uC785\uD788\uB294 \uB3D9\uBC29\uC758 \uBB34\uC0AC\uC785\uB2C8\uB2E4."
-  characterColor: {r: 0.95, g: 0.55, b: 0.7, a: 1}
-  portrait: {fileID: 21300000, guid: 73da2e96893a2654295e0a5d611ef911, type: 3}
+  selectionStory: "\uB3CC\uC544\uAC08 \uC8FC\uAD70\uC744 \uC783\uACE0\uB3C4\r\n\uCE7C\uB9CC\uC740
+    \uB193\uC9C0 \uBABB\uD55C \uBB34\uC0AC."
+  selectionAbility: "\uB0A9\uB3C4\uB85C \uB54C\uB97C \uAE30\uB2E4\uB838\uB2E4\r\n\uBC1C\uB3C4\uB85C
+    \uAE30\uD68C\uB97C \uBCA4\uB2E4."
+  characterColor: {r: 0.62, g: 0.69, b: 0.86, a: 1}
+  portrait: {fileID: 21441719331029806, guid: e4760f14decefe24e83ffea09fd980c1, type: 3}
+  selectionIllustration: {fileID: 21300000, guid: 864eed4945ff4904bb58bbc764629223, type: 3}
+  selectionMaterial: {fileID: 2100000, guid: 4845ba06d51ad054ab8f0e5ac2dc416b, type: 2}
+  selectionBackdrop: {r: 0.14117648, g: 0.06666667, b: 0.13333334, a: 1}
+  combatSprite: {fileID: -1863630888404171133, guid: af0455dd13d657d4b9a9955c67ece17a, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e21ab98fc8e641147b1c2caa301b88a3, type: 2}
   gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   startingRelic: {fileID: 11400000, guid: 468f01cccd9b8a7428005181ebdeb814, type: 2}
   startingSpells: []
-  forms: []
-  resources: []
+  startingSupplies:
+  - supply: {fileID: 11400000, guid: 97f4049024e9f274293dffbb2f06bd02, type: 2}
+    count: 1
+  attackBuffs: []
   maxHp: 80
+  maxMp: 30
+  mpRegen: 0.1
   shieldMax: 20
   guardDamageReduction: 1
   normalShieldRegen: 0
   brokenShieldRegen: 5
+  criticalChance: 0
+  criticalDamageMultiplier: 1.5
   baseAttackDamage: 9
   baseChargeDamage: 20
   attackCooldown: 0.82

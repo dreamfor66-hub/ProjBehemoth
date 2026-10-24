@@ -1,0 +1,17 @@
+FAIL spell detail fits: 파이어볼트
+FAIL spell detail fits: 에너지 볼트
+FAIL spell detail fits: 스파크
+FAIL spell detail fits: 화염폭발
+FAIL spell detail fits: 서리 파동
+FAIL spell detail fits: 연쇄 번개
+FAIL spell detail fits: 독안개
+FAIL spell detail fits: 인챈트 파이어
+FAIL spell detail fits: 인챈트 아이스
+FAIL spell detail fits: 인챈트 라이트닝
+FAIL spell detail fits: 정화
+FAIL spell detail fits: 벼락표식
+FAIL spell detail fits: 메테오
+FAIL spell detail fits: 볼텍스 라이트닝
+FAIL spell detail fits: 아이시클 샤워
+FAIL spell detail fits: 홍염
+FAIL removing chance perk removes every acquired stack

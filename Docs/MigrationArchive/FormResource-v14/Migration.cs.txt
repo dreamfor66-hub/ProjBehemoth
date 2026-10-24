@@ -1,0 +1,125 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using DungeonSlash;
+using UnityEditor;
+using UnityEngine;
+
+// Transitional, ordered migration. Removed after all references have been saved as BuffData.
+internal static class BehemothBuffUnificationMigration
+{
+    private const string Root = "Assets/Data/Behemoth";
+    [InitializeOnLoadMethod] private static void Schedule() => EditorApplication.delayCall += Apply;
+    private static BuffData fury, rage;
+    private static EquipmentAbility Clone(EquipmentAbility unit) => JsonUtility.FromJson<EquipmentAbility>(JsonUtility.ToJson(unit));
+    private static EquipmentEffect E(EffectType type, float amount, BuffData buff = null) => new() { effectType = type, effectMagnitude = amount, effectCount = 1, buff = buff };
+    private static EquipmentAbility Unit(TriggerType trigger, TargetType target, params EquipmentEffect[] effects) => new() {
+        trigger = new() { triggerType = trigger, chancePercent = 100, triggerCount = 1, resetCountEachCombat = true, triggerAttackTypeFilter = TriggerAttackTypeFilter.All, triggerAttackWayFilter = TriggerAttackWayFilter.All }, target = target, effects = effects.ToList() };
+    private static bool IsRaging(EquipmentAbility unit) => unit.conditions.Any(c => c.kind == AbilityConditionKind.OwnerHasBuff && c.buff == rage && !c.invert);
+    private static void Convert(List<EquipmentAbility> units, bool rageOwner = false)
+    {
+        for (var u = 0; u < units.Count; u++)
+        {
+            var unit = units[u];
+            if (unit.effects.Any(e => e.effectType == EffectType.AddResource) && !rageOwner && !unit.conditions.Any(c => c.kind == AbilityConditionKind.OwnerHasBuff && c.buff == rage))
+            {
+                var copy = Clone(unit); unit.conditions.Add(new() { kind = AbilityConditionKind.OwnerHasBuff, buff = rage, invert = true });
+                copy.conditions.Add(new() { kind = AbilityConditionKind.OwnerHasBuff, buff = rage }); units.Insert(u + 1, copy);
+            }
+            var meter = rageOwner || IsRaging(unit) ? rage : fury;
+            foreach (var condition in unit.conditions)
+            {
+                if (condition.kind == AbilityConditionKind.FormIs) { condition.buff = condition.form?.buff; condition.form = null; }
+                if (condition.kind == AbilityConditionKind.Resource) { condition.kind = AbilityConditionKind.BuffStack; condition.buff = meter; condition.resource = null; }
+            }
+            for (var i = 0; i < unit.effects.Count; i++)
+            {
+                var effect = unit.effects[i];
+                if (effect.effectType is EffectType.ApplyForm or EffectType.UnlockForm)
+                {
+                    effect.buff = effect.form?.buff;
+                    if (effect.effectType == EffectType.ApplyForm)
+                    {
+                        effect.effectType = EffectType.AddBuff; effect.effectMagnitude = 1;
+                        if (effect.buff == rage)
+                        {
+                            effect.effectMagnitude = 0;
+                            effect.valueVariables = new() { new() { type = EffectScale.BuffStacks, buff = fury, multiplier = 1 } };
+                            unit.effects.Insert(i + 1, E(EffectType.RemoveBuff, 0, fury));
+                        }
+                    }
+                    effect.form = null;
+                }
+                if (effect.effectType is EffectType.AddResource or EffectType.SetResource)
+                {
+                    effect.effectType = effect.effectType == EffectType.SetResource ? EffectType.SetBuffStack : effect.effectMagnitude >= 0 ? EffectType.AddBuff : EffectType.ChangeBuffStack;
+                    effect.buff = meter; effect.resource = null;
+                }
+                if (effect.valueVariables != null) foreach (var variable in effect.valueVariables)
+                    if (variable.type is EffectScale.Resource or EffectScale.Rage) { variable.type = EffectScale.BuffStacks; variable.buff = meter; variable.resource = null; }
+                unit.effects[i] = effect;
+            }
+        }
+    }
+    private static void Apply()
+    {
+        if (EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)
+        { EditorApplication.delayCall += Apply; return; }
+        var content = AssetDatabase.LoadAssetAtPath<GameContent>(BehemothContentBuilder.ContentPath);
+        if (content == null || content.schemaVersion != 14) return;
+        try
+        {
+            rage = AssetDatabase.LoadAssetAtPath<BuffData>(Root + "/Buffs/Rage.asset");
+            fury = AssetDatabase.LoadAssetAtPath<BuffData>(Root + "/Buffs/Fury.asset");
+            if (fury == null) { fury = ScriptableObject.CreateInstance<BuffData>(); AssetDatabase.CreateAsset(fury, Root + "/Buffs/Fury.asset"); }
+            fury.displayName = "격노"; fury.description = "분노 전 쌓아 두는 격노. 40중첩 이상에서 차지하면 같은 중첩의 분노로 전환한다.";
+            fury.showInHud = true; fury.ReleaseData = new() { Type = BuffReleaseType.Stage, Count = 1 };
+            fury.DuplicationData = new() { Type = BuffDuplicationType.StackCount, MaxStackCount = 100 };
+            rage.DuplicationData = new() { Type = BuffDuplicationType.StackCount, MaxStackCount = 100 };
+            rage.description = "전환 직전 격노만큼의 중첩으로 시작한다. 중첩이 소진되면 분노가 끝난다.";
+            rage.Units.RemoveAll(unit => unit.effects.Any(effect => effect.effectType == EffectType.SetResource));
+
+            var forms = AssetDatabase.FindAssets("t:FormData", new[] { Root }).Select(guid => AssetDatabase.LoadAssetAtPath<FormData>(AssetDatabase.GUIDToAssetPath(guid))).ToArray();
+            foreach (var form in forms.Where(f => f.pattern.Length > 0))
+            {
+                var buff = form.buff; buff.attackPattern = form.pattern.ToArray(); buff.requiresUnlock = form.requiresUnlock;
+                var multiply = E(EffectType.ScaleActionDamage, form.damageMultiplier);
+                var hits = E(EffectType.ActionExtraHits, form.hits - 1);
+                hits.valueVariables = new() { new() { type = EffectScale.Rule, rule = AbilityRule.FormExtraHits } };
+                buff.Units.Insert(0, Unit(TriggerType.OnActionPreparing, TargetType.Action, multiply, hits));
+                var guard = E(EffectType.RestoreGuard, 0); guard.scale = EffectScale.GuardMaximum; guard.scaleRatio = 1;
+                // Rule contribution is applied by the shared attack preparation while resolving this buff.
+                buff.ReleaseData.Type = BuffReleaseType.Stage; buff.ReleaseData.Count = 1;
+                buff.Units.Add(Unit(TriggerType.OnAttackResolved, TargetType.ThisBuff, E(EffectType.RemoveBuff, 0)));
+                buff.form = null; EditorUtility.SetDirty(buff);
+                var error = AssetDatabase.RenameAsset(AssetDatabase.GetAssetPath(buff), form.name);
+                if (!string.IsNullOrEmpty(error)) throw new InvalidOperationException(error);
+            }
+            foreach (var character in content.characters)
+            {
+                character.attackBuffs = character.forms.Where(f => f != null && f.pattern.Length > 0).Select(f => f.buff).ToList();
+                character.forms.Clear(); character.resources.Clear(); EditorUtility.SetDirty(character);
+            }
+            foreach (var item in content.equipment) { Convert(item.abilities); EditorUtility.SetDirty(item); }
+            foreach (var guid in AssetDatabase.FindAssets("t:BuffData", new[] { Root }))
+            {
+                var buff = AssetDatabase.LoadAssetAtPath<BuffData>(AssetDatabase.GUIDToAssetPath(guid));
+                Convert(buff.Units, buff == rage); buff.form = null; EditorUtility.SetDirty(buff);
+            }
+            var barbarian = content.characters.Single(c => c.character == CharacterKind.Barbarian);
+            barbarian.startingRelic.description = "일반공격으로 격노 12중첩 획득. 격노 40 이상에서 차지하면 쌓인 격노만큼 분노를 얻고 격노는 사라진다. 분노 중 무기 피해 +30%, 공격 쿨타임 -20%, 받는 체력 피해 -25%. 분노는 초당 25중첩 소모한다.";
+            EditorUtility.SetDirty(barbarian.startingRelic);
+            content.schemaVersion = 15; EditorUtility.SetDirty(content);
+            BehemothTextEditor.SyncAll(); AssetDatabase.SaveAssets();
+            // Preserve external CSV edits; update only keys that belong to changed state assets.
+            var csv = ScriptableObject.CreateInstance<GameTextDatabase>(); csv.ImportCsv(File.ReadAllText(BehemothTextEditor.CsvPath));
+            foreach (var data in new LocalizedData[] { fury, rage, barbarian.startingRelic })
+                foreach (var binding in data.textKeys) csv.Set(binding.key, BehemothTextEditor.Table.Get(binding.key), AssetDatabase.GetAssetPath(data) + ":" + binding.propertyPath);
+            File.WriteAllText(BehemothTextEditor.CsvPath, csv.ExportCsv(), new UTF8Encoding(true)); UnityEngine.Object.DestroyImmediate(csv);
+            Directory.CreateDirectory("Logs"); File.WriteAllText("Logs/Behemoth-BuffUnificationMigration.txt", "Schema 15 saved. Fury/Rage and attack chains migrated. Legacy asset removal pending.");
+        }
+        catch (Exception error) { Debug.LogException(error); }
+    }
+}
