@@ -23,7 +23,7 @@ MonoBehaviour:
   id: GoldenTooth
   displayName: "\uAE08\uBE5B \uC774\uBE68"
   description: "\uC804\uD22C \uC2B9\uB9AC\uB9C8\uB2E4 \uACE8\uB4DC +10."
-  icon: {fileID: -5330826594950682575, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: ea4ea293418b5cf5a66897db0cabdfb0, type: 3}
   scope: 3
   exclusiveCharacter: 0
   power: 60

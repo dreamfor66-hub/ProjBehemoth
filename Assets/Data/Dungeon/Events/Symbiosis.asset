@@ -116,7 +116,7 @@ MonoBehaviour:
     \uD750\uB9AC\uAC8C \uD558\uACE0, \uAECD\uC9C8\uC740 \uC0C1\uCC98\uC5D0 \uC4F0\uB294
     \uC57D\uC7AC\uB77C\uACE0 \uD55C\uB2E4.\r\n\r\n\uC190\uC744 \uAC00\uAE4C\uC774
     \uB300\uC790 \uBFCC\uB9AC\uAC00 \uB0B4 \uC190\uBAA9\uC744 \uD5A5\uD574 \uC6C0\uC9C1\uC778\uB2E4."
-  illustration: {fileID: 6510515419312912815, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  illustration: {fileID: 21300000, guid: 0986bbb924345ccc9de761168eb9f7be, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   minAct: 1
   maxAct: 3
@@ -219,7 +219,7 @@ MonoBehaviour:
       \uAE30\uC5B5\uC744 \uD750\uB9AC\uAC8C \uD558\uACE0, \uAECD\uC9C8\uC740 \uC0C1\uCC98\uC5D0
       \uC4F0\uB294 \uC57D\uC7AC\uB77C\uACE0 \uD55C\uB2E4.\r\n\r\n\uC190\uC744 \uAC00\uAE4C\uC774
       \uB300\uC790 \uBFCC\uB9AC\uAC00 \uB0B4 \uC190\uBAA9\uC744 \uD5A5\uD574 \uC6C0\uC9C1\uC778\uB2E4."
-    illustration: {fileID: 6510515419312912815, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+    illustration: {fileID: 21300000, guid: 0986bbb924345ccc9de761168eb9f7be, type: 3}
     options:
     - title: "\uBFCC\uB9AC\uB0B4\uB9B4 \uC790\uB9AC\uB97C \uC900\uB2E4"
       description: "\uACF5\uC0DD\uD558\uB294 \uC528\uC557 \uD68D\uB4DD"

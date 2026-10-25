@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.EventSystems;
 
 namespace DungeonSlash
 {
@@ -13,17 +15,40 @@ namespace DungeonSlash
         public CombatController combat;
         public RunExpansionView expansion;
         public RunController run;
-        private float hintUntil;
         private bool drawerWasOpen;
-        private bool sawCombat;
-        private bool showedCombatHint;
-        private int hintAction;
+        public bool CombatTutorialShown {get;private set;}
         private void Awake()
         {
             mapButton.onClick.AddListener(()=>Toggle(mapPanel));inventoryButton.onClick.AddListener(()=>Toggle(inventoryPanel));
             closeMap.onClick.AddListener(Close);closeInventory.onClick.AddListener(Close);Close();
         }
-        public void StartHint(){sawCombat=showedCombatHint=false;hintUntil=Time.unscaledTime+5;hint.text=GameText.Get("ui.arcade.explore.hint");}
+        public void StartHint()
+        {
+            CombatTutorialShown=false;
+            if(hint!=null)hint.gameObject.SetActive(false);
+            if(expansion==null)return;
+            expansion.ShowMessage(GameText.Get("ui.tutorial.exploration.title"),GameText.Get("ui.tutorial.exploration.body"),null);
+            FocusConfirmation();
+        }
+        public IEnumerator ShowCombatTutorial()
+        {
+            if(CombatTutorialShown||expansion==null)yield break;
+            CombatTutorialShown=true;
+            var acknowledged=false;
+            var body=GameText.Get("ui.tutorial.combat.body");
+            if(run?.State!=null&&run.State.Spellbook.Count>0)body+="\n\n"+GameText.Get("ui.tutorial.combat.magic");
+            expansion.ShowMessage(GameText.Get("ui.tutorial.combat.title"),body,()=>acknowledged=true);
+            FocusConfirmation();
+            // GameFlow has prepared the encounter but has not started its clocks or accepted attacks.
+            while(!acknowledged)yield return null;
+            // The confirming click/key must not become the first combat gesture.
+            while(Input.GetMouseButton(0)||Input.touchCount>0||Input.GetKey(KeyCode.Space)||Input.GetKey(KeyCode.Return)||Input.GetKey(KeyCode.KeypadEnter))yield return null;
+        }
+        private void FocusConfirmation()
+        {
+            var rows=expansion.ActiveChoices;
+            if(EventSystem.current!=null&&rows!=null&&rows.Length>0)EventSystem.current.SetSelectedGameObject(rows[0].button.gameObject);
+        }
         private void Toggle(GameObject panel)
         {
             if(expansion.IsDecisionOpen)return;
@@ -34,14 +59,10 @@ namespace DungeonSlash
         private void Update()
         {
             if(expansion.IsDecisionOpen&&drawerWasOpen)Close();
-            if(hint!=null)hint.rectTransform.anchoredPosition=combat.IsActive?combatHintPosition:explorationHintPosition;
             if(Input.GetKeyDown(KeyCode.Tab))Toggle(mapPanel);
             if(Input.GetKeyDown(KeyCode.I))Toggle(inventoryPanel);
             if(Input.GetKeyDown(KeyCode.Escape))Close();
-            if(combat.IsActive&&!sawCombat){sawCombat=true;if(!showedCombatHint){showedCombatHint=true;hintAction=run.State.ActionSerial;hint.text=GameText.Get("ui.arcade.combat.hint");hintUntil=Time.unscaledTime+6;}}
-            if(combat.IsActive&&(run.State.ActionSerial!=hintAction||combat.Player.IsGuarding))hintUntil=0;
-            if(!combat.IsActive)sawCombat=false;
-            hint.gameObject.SetActive(Time.unscaledTime<hintUntil&&!expansion.IsDecisionOpen&&!drawerWasOpen&&!(expansion.encounterHint!=null&&expansion.encounterHint.gameObject.activeSelf));
+            if(hint!=null&&hint.gameObject.activeSelf)hint.gameObject.SetActive(false);
             mapButton.interactable=!combat.IsActive&&!expansion.IsDecisionOpen;
             inventoryButton.interactable=!expansion.IsDecisionOpen;
         }

@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uBD88\uAD74\uC758 \uC131\uCC44"
   description: "\uCD5C\uB300 \uAC00\uB4DC\uAC8C\uC774\uC9C0 +25, \uC804\uD22C \uC911
     \uC790\uC5F0\uD68C\uBCF5 \uCD08\uB2F9 +2."
-  icon: {fileID: -5617832314116960257, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: e2fc12e66c6055fc99a74cae2c69b04b, type: 3}
   scope: 2
   exclusiveCharacter: 0
   power: 8

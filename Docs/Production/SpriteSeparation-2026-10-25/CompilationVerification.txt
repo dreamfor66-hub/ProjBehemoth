@@ -1,0 +1,11 @@
+Runtime C# compile: PASS (Unity 6.0.59f2 Roslyn/current project references)
+Editor C# compile: PASS
+Existing test assembly compile: PASS; no test suite executed
+Existing warning: RewardPopupView.animation hides Component.animation (CS0108)
+Duplicate GUIDs: 0
+Final single PNGs and importer metadata: 313 checked
+Serialized prior edits: 326 files preserved except intended sprite references/canvasScale
+Changed runtime script whitespace: PASS
+Pre-existing Burst.asset blank-value trailing whitespace preserved; not introduced by extraction
+Combat state render cases pending: 188
+Live Unity import/play: PENDING; no Computer Use

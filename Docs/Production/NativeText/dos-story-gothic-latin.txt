@@ -1,0 +1,13 @@
+dos-story-gothic-latin / 1920x1080
+Art: 384x224; palette=True; native UI draws=24
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 32 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 36 vertices / clip=
+Native text: DosStory Material / 120 vertices / clip=(x:498.47, y:569.46, width:1252.03, height:314.23)
+Native text: DosStory Material / 24 vertices / clip=
+Native text: DosStory Material / 64 vertices / clip=
+Native text: DosStory Material / 24 vertices / clip=
+Native text: DosStory Material / 40 vertices / clip=
+Native text: DosStory Material / 32 vertices / clip=

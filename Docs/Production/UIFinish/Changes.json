@@ -1,0 +1,474 @@
+[
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic16",
+    "change": "four-sided 4-unit frame",
+    "id": "9084765"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic14",
+    "change": "four-sided 4-unit frame",
+    "id": "17786472"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic11",
+    "change": "four-sided 4-unit frame",
+    "id": "48251945"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Leave",
+    "change": "four-sided 4-unit frame",
+    "id": "85654917"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic3",
+    "change": "four-sided 4-unit frame",
+    "id": "110988983"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Choice_0",
+    "change": "four-sided 4-unit frame",
+    "id": "112502843"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic2",
+    "change": "four-sided 4-unit frame",
+    "id": "118514430"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopItem_5",
+    "change": "four-sided 4-unit frame",
+    "id": "125462175"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Yes",
+    "change": "four-sided 4-unit frame",
+    "id": "133463058"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Spell_Right",
+    "change": "four-sided 4-unit frame",
+    "id": "143081487"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic15",
+    "change": "four-sided 4-unit frame",
+    "id": "186523329"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CompactChoice_0",
+    "change": "four-sided 4-unit frame",
+    "id": "187649594"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "MapToggle",
+    "change": "four-sided 4-unit frame",
+    "id": "221302071"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CloseMap",
+    "change": "four-sided 4-unit frame",
+    "id": "248347962"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic9",
+    "change": "four-sided 4-unit frame",
+    "id": "305225389"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Spellbook",
+    "change": "four-sided 4-unit frame",
+    "id": "320407445"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Potion1",
+    "change": "four-sided 4-unit frame",
+    "id": "353716399"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic6",
+    "change": "four-sided 4-unit frame",
+    "id": "453796896"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "StoryPanel",
+    "change": "four-sided 4-unit frame",
+    "id": "472801575"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Choice_3",
+    "change": "four-sided 4-unit frame",
+    "id": "552919062"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic1",
+    "change": "four-sided 4-unit frame",
+    "id": "607881324"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic17",
+    "change": "four-sided 4-unit frame",
+    "id": "609637036"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Potion2",
+    "change": "four-sided 4-unit frame",
+    "id": "610139274"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ArcadeStatus",
+    "change": "four-sided 4-unit frame",
+    "id": "637807997"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Spell_Up",
+    "change": "four-sided 4-unit frame",
+    "id": "693651801"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic13",
+    "change": "four-sided 4-unit frame",
+    "id": "897250626"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CombatRewardPanel",
+    "change": "four-sided 4-unit frame",
+    "id": "919265477"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic8",
+    "change": "four-sided 4-unit frame",
+    "id": "939280263"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CompactChoice_2",
+    "change": "four-sided 4-unit frame",
+    "id": "942572580"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic0",
+    "change": "four-sided 4-unit frame",
+    "id": "961837525"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Choice_1",
+    "change": "four-sided 4-unit frame",
+    "id": "1031553283"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Purchase",
+    "change": "four-sided 4-unit frame",
+    "id": "1130283338"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Take",
+    "change": "four-sided 4-unit frame",
+    "id": "1152795567"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "PreviousPage",
+    "change": "four-sided 4-unit frame",
+    "id": "1223068656"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Restart",
+    "change": "four-sided 4-unit frame",
+    "id": "1325562258"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Spell_Left",
+    "change": "four-sided 4-unit frame",
+    "id": "1384072669"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic12",
+    "change": "four-sided 4-unit frame",
+    "id": "1401631143"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CharacterSummary",
+    "change": "four-sided 4-unit frame",
+    "id": "1402675505"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Spell_Down",
+    "change": "four-sided 4-unit frame",
+    "id": "1432505018"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopItem_3",
+    "change": "four-sided 4-unit frame",
+    "id": "1511582173"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Confirm",
+    "change": "four-sided 4-unit frame",
+    "id": "1513530368"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopItem_4",
+    "change": "four-sided 4-unit frame",
+    "id": "1528294221"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "InventoryToggle",
+    "change": "four-sided 4-unit frame",
+    "id": "1568616370"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic5",
+    "change": "four-sided 4-unit frame",
+    "id": "1631266189"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "RoomEventPanel",
+    "change": "four-sided 4-unit frame",
+    "id": "1647711328"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "LeftPanel",
+    "change": "four-sided 4-unit frame",
+    "id": "1722222707"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Choice_2",
+    "change": "four-sided 4-unit frame",
+    "id": "1758358938"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic7",
+    "change": "four-sided 4-unit frame",
+    "id": "1763847584"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "RightPanel",
+    "change": "four-sided 4-unit frame",
+    "id": "1768010862"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "No",
+    "change": "four-sided 4-unit frame",
+    "id": "1778434887"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CloseInventory",
+    "change": "four-sided 4-unit frame",
+    "id": "1818701197"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "NextPage",
+    "change": "four-sided 4-unit frame",
+    "id": "1868392778"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CompactChoice_1",
+    "change": "four-sided 4-unit frame",
+    "id": "1874120243"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic10",
+    "change": "four-sided 4-unit frame",
+    "id": "1895487346"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Potion3",
+    "change": "four-sided 4-unit frame",
+    "id": "1942202475"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "RunResultPanel",
+    "change": "four-sided 4-unit frame",
+    "id": "1969322610"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "EncounterMessagePanel",
+    "change": "four-sided 4-unit frame",
+    "id": "1978697711"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Potion0",
+    "change": "four-sided 4-unit frame",
+    "id": "1989976731"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Relic4",
+    "change": "four-sided 4-unit frame",
+    "id": "1991346436"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ReturnToSelection",
+    "change": "four-sided 4-unit frame",
+    "id": "1995930916"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopItemView",
+    "change": "four-sided 4-unit frame",
+    "id": "4847290414227139430"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopItemView",
+    "change": "four-sided 4-unit frame",
+    "id": "4847290414359056168"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopItemView",
+    "change": "four-sided 4-unit frame",
+    "id": "4847290415430308779"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "StoryPanel",
+    "change": "48-unit inset on all sides"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "ShopPanel",
+    "change": "48-unit inset on all sides"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "RoomEventPanel",
+    "change": "48-unit inset on all sides"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "CombatRewardPanel",
+    "change": "48-unit inset on all sides"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "RunResultPanel",
+    "change": "48-unit inset on all sides"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "RightPanel",
+    "change": "48-unit inset on all sides"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "change": "edge-to-edge status; one-line HP/gold; neutral thin guard; relic lane clear of character"
+  },
+  {
+    "path": "Scenes\\OutGameScene.unity",
+    "element": "Close",
+    "change": "four-sided 4-unit frame",
+    "id": "221302071"
+  },
+  {
+    "path": "Scenes\\OutGameScene.unity",
+    "element": "CharacterDetails",
+    "change": "four-sided 4-unit frame",
+    "id": "480292044"
+  },
+  {
+    "path": "Scenes\\OutGameScene.unity",
+    "element": "CharacterDetailOverlay",
+    "change": "four-sided 4-unit frame",
+    "id": "637807997"
+  },
+  {
+    "path": "Scenes\\OutGameScene.unity",
+    "element": "StartRun",
+    "change": "four-sided 4-unit frame",
+    "id": "1504178781"
+  },
+  {
+    "path": "Scenes\\OutGameScene.unity",
+    "element": "Details",
+    "change": "four-sided 4-unit frame",
+    "id": "1568616370"
+  },
+  {
+    "path": "Prefabs\\UI\\PerkChoiceItem.prefab",
+    "element": "PerkChoiceItem",
+    "change": "four-sided 4-unit frame",
+    "id": "1170872818989160405"
+  },
+  {
+    "path": "Prefabs\\UI\\RoomChoiceButton.prefab",
+    "element": "RoomChoiceButton",
+    "change": "four-sided 4-unit frame",
+    "id": "6084227398400484197"
+  },
+  {
+    "path": "Prefabs\\UI\\RunHudIconView.prefab",
+    "element": "RunHudIconView",
+    "change": "four-sided 4-unit frame",
+    "id": "7333837973016457249"
+  },
+  {
+    "path": "Scenes/MainGameScene.unity",
+    "change": "Complete shop/perk/secondary spellbook frames; opaque StoryPanel and dim event parent; shop description scroll surfaces inactive; bottom buttons inside panel"
+  },
+  {
+    "path": "Scripts/UI/ShopItemView.cs",
+    "change": "Hide unused description ScrollRect in compact shop rows"
+  },
+  {
+    "path": "Art/Shaders/ArcadePalette.shader",
+    "change": "Preserve exact neutral guard fill, track and rim colors"
+  }
+]

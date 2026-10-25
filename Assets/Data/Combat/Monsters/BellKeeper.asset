@@ -23,7 +23,7 @@ MonoBehaviour:
       \uCC3E\uC790."
   textOwnerGuid: 4dc6b9d6f09c1f14594fda8127d02995
   displayName: "\uC885\uC9C0\uAE30"
-  portrait: {fileID: 4866703374618579406, guid: 7a1a5215d2ce86d4d88a250148ddd518, type: 3}
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
   combatAnimation: {fileID: 11400000, guid: fdf640fec678791409d8bdfafa39778a, type: 2}
   encounterHint: "\uC5F0\uC18D \uC885\uC18C\uB9AC \uB4A4 \uAE34 \uAC15\uD0C0. \uC5EC\uB7EC
     \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uD30C\uAD34\uD560 \uAE30\uD68C\uB97C

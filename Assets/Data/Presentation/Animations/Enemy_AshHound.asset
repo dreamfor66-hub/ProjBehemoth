@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_AshHound
   m_EditorClassIdentifier: 
-  idle: {fileID: 1413026796297420166, guid: 650dadcf4d09219458fef1a3718cc524, type: 3}
-  attack: {fileID: 7948146947072417530, guid: 650dadcf4d09219458fef1a3718cc524, type: 3}
+  idle: {fileID: 21300000, guid: dd8c127255c150919152ed4d5c373aac, type: 3}
+  attack: {fileID: 21300000, guid: c40a598f3aef5052bd2d704a345051da, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -4286926599270020668, guid: 650dadcf4d09219458fef1a3718cc524, type: 3}
-  dead: {fileID: -1592211481436931993, guid: 650dadcf4d09219458fef1a3718cc524, type: 3}
+  ready: {fileID: 21300000, guid: 2461f9471c5557ae8e9ff848a380444d, type: 3}
+  dead: {fileID: 21300000, guid: e538df9cc9ee5380851da01d170f1337, type: 3}
+  canvasScale: 1.0441989

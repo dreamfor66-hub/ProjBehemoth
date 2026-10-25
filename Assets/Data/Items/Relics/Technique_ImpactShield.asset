@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Technique_ImpactShield
   displayName: "\uCDA9\uACA9 \uBC29\uD328"
   description: "\uC801\uC911 \uC2DC \uC2E4\uB4DC +2"
-  icon: {fileID: -148319563816140896, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: ea4860e5456b5867a38d867ec56563ca, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

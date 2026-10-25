@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_ElderRightHeart
   m_EditorClassIdentifier: 
-  idle: {fileID: -2656402925161582561, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  attack: {fileID: -4918229078190238005, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  idle: {fileID: 21300000, guid: 0f1cd4ec82305950b7cb8dbbbca3ba64, type: 3}
+  attack: {fileID: 21300000, guid: f4e7030dca48589ab7e86ca9300d27f9, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 2640493595286848339, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  dead: {fileID: -7820199105454927608, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  ready: {fileID: 21300000, guid: eada8fd2fcc95045a72d63897ab3e476, type: 3}
+  dead: {fileID: 21300000, guid: b55411ba27d85a80858b8bf6df736958, type: 3}
+  canvasScale: 1.234375

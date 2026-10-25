@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Technique_Harvest
   displayName: "\uC0DD\uBA85 \uC218\uD655"
   description: "\uBAAC\uC2A4\uD130 \uCC98\uCE58 \uC2DC HP 4 \uD68C\uBCF5"
-  icon: {fileID: 2486193441875991756, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: c72e4a158d8a5a0db48cd43f20c26565, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

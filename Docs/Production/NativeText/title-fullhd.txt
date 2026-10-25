@@ -1,0 +1,6 @@
+title-fullhd / 1920x1080
+Art: 384x224; palette=False; native UI draws=7
+Native text: Galmuri11 - Regular Material / 20 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 12 vertices / clip=
+Native text: Galmuri11 - Regular Material / 20 vertices / clip=

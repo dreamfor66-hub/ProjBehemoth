@@ -1,0 +1,4 @@
+PENDING: live Unity import and state rendering were not run.
+The existing Editor did not auto-import external source changes. No desktop activation, keyboard/mouse automation, UI control, or additional Unity instance was used.
+Planned scoped matrix: 188 combat state images through Image + CombatSpriteAnimator, plus imported Single sprite validation for all 313 PNGs.
+Verifier source is archived here outside Assets; no pending request or auto-run is left behind.

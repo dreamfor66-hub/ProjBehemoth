@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_IceWraith
   m_EditorClassIdentifier: 
-  idle: {fileID: 5603264087629439777, guid: d4e1488fb7320744bb57d542460d101c, type: 3}
-  attack: {fileID: -7928641310515637913, guid: d4e1488fb7320744bb57d542460d101c, type: 3}
+  idle: {fileID: 21300000, guid: 74c4680212625a0ebddceece7be8ebfe, type: 3}
+  attack: {fileID: 21300000, guid: 6a07a3ac6c0357ee856792b199d7c73f, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 7321180574973243252, guid: d4e1488fb7320744bb57d542460d101c, type: 3}
-  dead: {fileID: 6168293736181736398, guid: d4e1488fb7320744bb57d542460d101c, type: 3}
+  ready: {fileID: 21300000, guid: 32505129ebb250eb962a6225a386d251, type: 3}
+  dead: {fileID: 21300000, guid: 59c517d0ed0a51fc8d5983df8bc8c64e, type: 3}
+  canvasScale: 1.09392265

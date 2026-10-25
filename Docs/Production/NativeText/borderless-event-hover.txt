@@ -1,0 +1,14 @@
+borderless-event-hover / 1920x1080
+Art: 384x224; palette=True; native UI draws=27
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 40 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 28 vertices / clip=
+Native text: DosStory Material / 64 vertices / clip=
+Native text: DosStory Material / 72 vertices / clip=
+Native text: Tangba Material / 512 vertices / clip=(x:518.11, y:363.33, width:1237.30, height:520.27)

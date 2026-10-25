@@ -1,0 +1,181 @@
+[
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic16",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic14",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic11",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic3",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/Choice_0",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic2",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/RoomEventPanel/Yes",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic15",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/CompactChoice_0",
+    "style": "borderless color tint"
+  },
+  {
+    "element": "Canvas/MapToggle",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic9",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Potion1",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic6",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/Choice_3",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic1",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic17",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Potion2",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/ArcadeStatus",
+    "style": "solid black, no border"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic13",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic8",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/CompactChoice_2",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic0",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/Choice_1",
+    "style": "borderless color tint"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/PreviousPage",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic12",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/InventoryToggle",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic5",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/Choice_2",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic7",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/RoomEventPanel/No",
+    "style": "borderless color tint"
+  },
+  {
+    "element": "Canvas/RightPanel/CloseInventory",
+    "style": "borderless color tint"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/NextPage",
+    "style": "borderless color tint"
+  },
+  {
+    "element": "Canvas/CenterModalLayer/EventAndChoiceOverlay/StoryPanel/CompactChoice_1",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic10",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Potion3",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Potion0",
+    "style": "item image only"
+  },
+  {
+    "path": "Scenes\\MainGameScene.unity",
+    "element": "Canvas/QuickInventory/Relic4",
+    "style": "item image only"
+  },
+  {
+    "element": "Canvas/ReturnToSelection",
+    "style": "borderless color tint"
+  },
+  {
+    "path": "Prefabs\\UI\\RunHudIconView.prefab",
+    "element": "RunHudIconView",
+    "style": "item image only"
+  }
+]

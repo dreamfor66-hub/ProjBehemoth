@@ -1,0 +1,25 @@
+ui-finish-shop / 1920x1080
+Art: 384x224; palette=True; native UI draws=42
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 40 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=
+Native text: DosStory Material / 24 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 36 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 28 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 28 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 24 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 24 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 84 vertices / clip=
+Native text: Tangba Material / 64 vertices / clip=
+Native text: DosStory Material / 20 vertices / clip=
+Native text: DosStory Material / 24 vertices / clip=

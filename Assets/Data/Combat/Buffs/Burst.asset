@@ -45,6 +45,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -71,6 +72,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -134,6 +136,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -166,6 +169,8 @@ MonoBehaviour:
     MaxStackCount: 1
     ConsiderTagIsDuplicate: {fileID: 0}
   showInHud: 0
+  attackFeedbackKey: 
+  attackFeedbackPriority: 0
   harmful: 0
   presentationColor: {r: 1, g: 1, b: 1, a: 1}
   tintOwner: 0

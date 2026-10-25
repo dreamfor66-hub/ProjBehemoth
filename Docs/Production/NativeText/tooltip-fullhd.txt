@@ -1,0 +1,11 @@
+tooltip-fullhd / 1920x1080
+Art: 384x224; palette=False; native UI draws=27
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 20 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 40 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 256 vertices / clip=
+Native text: Galmuri11 - Regular Material / 40 vertices / clip=
+Native text: Galmuri11 - Regular Material / 24 vertices / clip=
+Native text: Galmuri11 - Regular Material / 184 vertices / clip=

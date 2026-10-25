@@ -22,7 +22,7 @@ MonoBehaviour:
       \uCC98\uCE58\uD558\uBA74 \uAD74\uC950\uC758 \uD569\uB958\uB97C \uB9C9\uB294\uB2E4."
   textOwnerGuid: 86403f7885618c84dbb121a953f0220b
   displayName: "\uACBD\uBCF4 \uC0AC\uB0E5\uAC1C"
-  portrait: {fileID: 4866703374618579406, guid: 7a1a5215d2ce86d4d88a250148ddd518, type: 3}
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
   combatAnimation: {fileID: 11400000, guid: db259234bca3c694da08d60ab402e106, type: 2}
   encounterHint: "\uC6B8\uC74C\uC758 \uC57D\uC810\uC744 \uAE68\uAC70\uB098 \uBA3C\uC800
     \uCC98\uCE58\uD558\uBA74 \uAD74\uC950\uC758 \uD569\uB958\uB97C \uB9C9\uB294\uB2E4."

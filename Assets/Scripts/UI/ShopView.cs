@@ -15,6 +15,7 @@ namespace DungeonSlash
         [SerializeField] private TextMeshProUGUI goldLabel;
         public bool compact;
         public TextMeshProUGUI focusedDescription;
+        public TextMeshProUGUI focusedTitle;
         public Button purchase;
         public TextMeshProUGUI purchaseLabel;
         private EquipmentData focused;
@@ -49,7 +50,11 @@ namespace DungeonSlash
         private void Focus(EquipmentData item,RunState run,ShopSystem shop,Action<EquipmentData> buy)
         {
             foreach(var card in items)card.SetFocused(card.Data==item);
-            focused=item;focusedDescription.text=item.displayName+"\n"+item.description;
+            focused=item;
+            if(focusedTitle!=null)focusedTitle.text=item.displayName;
+            focusedDescription.text=focusedTitle!=null?item.description:item.displayName+"\n"+item.description;
+            focusedTitle?.GetComponent<TypographyRoleBinding>()?.Apply();
+            focusedDescription.GetComponent<TypographyRoleBinding>()?.Apply();
             purchase.interactable=shop.CanPurchase(run,item);purchaseLabel.text=purchase.interactable?GameText.Format("ui.arcade.buy",item.price):shop.UnavailableReason(run,item);
             purchase.onClick.RemoveAllListeners();purchase.onClick.AddListener(()=>buy(item));
         }

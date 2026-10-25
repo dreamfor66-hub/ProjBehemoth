@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Hero_Warrior
   m_EditorClassIdentifier: 
-  idle: {fileID: -5099488943606401886, guid: d0278fbdf0fcb194f8e4367711700093, type: 3}
-  attack: {fileID: -2342069523152317225, guid: d0278fbdf0fcb194f8e4367711700093, type: 3}
-  guard: {fileID: 6707172786130534096, guid: d0278fbdf0fcb194f8e4367711700093, type: 3}
+  idle: {fileID: 21300000, guid: e468a8a624fd51c38edb0d1b00b92b14, type: 3}
+  attack: {fileID: 21300000, guid: 8f0e12cf67325a6bb3928a90d5cbdc88, type: 3}
+  guard: {fileID: 21300000, guid: ba4d4c5737a25d1694ecd8e5990406f2, type: 3}
   ready: {fileID: 0}
   dead: {fileID: 0}
+  canvasScale: 1.12925761

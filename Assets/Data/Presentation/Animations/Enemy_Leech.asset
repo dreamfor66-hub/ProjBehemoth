@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_Leech
   m_EditorClassIdentifier: 
-  idle: {fileID: 989036671874627954, guid: 008d8f60362c17c46aafb3e5de285477, type: 3}
-  attack: {fileID: -4023698037896906381, guid: 008d8f60362c17c46aafb3e5de285477, type: 3}
+  idle: {fileID: 21300000, guid: c7cf74a109fe5847b4c9634b06815d7e, type: 3}
+  attack: {fileID: 21300000, guid: 7239627da171500e81ce78f4d9fb8819, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 8128618311198011883, guid: 008d8f60362c17c46aafb3e5de285477, type: 3}
-  dead: {fileID: -1806368497701444178, guid: 008d8f60362c17c46aafb3e5de285477, type: 3}
+  ready: {fileID: 21300000, guid: 45d85f6d2c2a5b70a664b7866743c49e, type: 3}
+  dead: {fileID: 21300000, guid: 8fa38db05479559aa07e82bb06d9dcff, type: 3}
+  canvasScale: 1

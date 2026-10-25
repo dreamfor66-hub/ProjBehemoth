@@ -1,0 +1,12 @@
+Single PNGs: 313
+Removed sheets: 40
+References updated: 558 in 326 files
+Animation libraries: 49
+Visible RGBA matches source: 313
+Transparent perimeter checks: 254
+Authored portrait crop checks: 59
+Unused extracted PNGs: 0
+Remaining old-sheet references: 0
+Other serialized edits preserved: 326
+Visible boundary repairs: 113
+Errors: 0

@@ -1,4 +1,4 @@
-﻿struct vertex_t
+struct vertex_t
 {
     UNITY_VERTEX_INPUT_INSTANCE_ID
     float4	position		: POSITION;
@@ -99,8 +99,10 @@ pixel_t VertShader(vertex_t input)
     return output;
 }
 
+float _BehemothHideRasterText;
 float4 PixShader(pixel_t input) : SV_Target
 {
+    clip(0.5 - _BehemothHideRasterText);
     UNITY_SETUP_INSTANCE_ID(input);
 
     float d = tex2D(_MainTex, input.texcoord0.xy).a;

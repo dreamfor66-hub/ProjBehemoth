@@ -23,7 +23,7 @@ MonoBehaviour:
   id: LightningMastery
   displayName: "\uBC88\uAC1C \uC219\uB828"
   description: "\uBC88\uAC1C \uD53C\uD574 +10%"
-  icon: {fileID: -1772244045117237821, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 07dd38b0d2bc5e2fa920cdb5e460879d, type: 3}
   scope: 0
   exclusiveCharacter: 0
   abilitySource: {fileID: 11400000, guid: bb4f56081c385d34ba5317ad387b7f1e, type: 2}

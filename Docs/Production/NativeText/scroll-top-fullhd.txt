@@ -1,0 +1,13 @@
+scroll-top-fullhd / 1920x1080
+Art: 384x224; palette=True; native UI draws=28
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 32 vertices / clip=
+Native text: Galmuri11 - Regular Material / 12 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 24 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 1924 vertices / clip=(x:498.47, y:569.46, width:1252.03, height:314.23)

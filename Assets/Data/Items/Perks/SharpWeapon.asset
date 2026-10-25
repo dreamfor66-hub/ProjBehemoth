@@ -23,7 +23,7 @@ MonoBehaviour:
   id: SharpWeapon
   displayName: "\uB0A0 \uC120 \uBB34\uAE30"
   description: "\uC77C\uBC18\uACF5\uACA9 \uD53C\uD574 +2"
-  icon: {fileID: -1034837595346471773, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 5697b3ebbe7255f78549689b447ffcbd, type: 3}
   scope: 0
   exclusiveCharacter: 0
   abilitySource: {fileID: 11400000, guid: 8ec33da6c2fcc884686f5718c9723d46, type: 2}

@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uCD95\uC801 \uC77C\uC12C"
   description: "\uB0A9\uB3C4\uB97C \uC720\uC9C0\uD55C \uC2DC\uAC04 1\uCD08\uB2F9
     \uB2E4\uC74C \uBC1C\uB3C4\uC5D0 \uBB3C\uB9AC \uD53C\uD574 6\uC744 \uCD94\uAC00\uD55C\uB2E4."
-  icon: {fileID: -5330826594950682575, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: ea4ea293418b5cf5a66897db0cabdfb0, type: 3}
   scope: 2
   exclusiveCharacter: 3
   abilitySource: {fileID: 11400000, guid: f297eb9606ba0a844abb03e9e2096283, type: 2}

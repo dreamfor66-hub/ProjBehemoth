@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_Yeti
   m_EditorClassIdentifier: 
-  idle: {fileID: -5059191897798378825, guid: efd3c7a7ff7501d41a05cf328a724481, type: 3}
-  attack: {fileID: 2266987130461381900, guid: efd3c7a7ff7501d41a05cf328a724481, type: 3}
+  idle: {fileID: 21300000, guid: 814803c9790a504ab949c2acaa289d2e, type: 3}
+  attack: {fileID: 21300000, guid: dd959b470c5c582a90557a9920911242, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -6656283667043275547, guid: efd3c7a7ff7501d41a05cf328a724481, type: 3}
-  dead: {fileID: 2363795611342996922, guid: efd3c7a7ff7501d41a05cf328a724481, type: 3}
+  ready: {fileID: 21300000, guid: 7aeed1bfb4b25c2ab51cdfa9e65719e9, type: 3}
+  dead: {fileID: 21300000, guid: 31711b5b4e445291a984056d4abae625, type: 3}
+  canvasScale: 1.12154696

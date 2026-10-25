@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_MirrorKnight
   m_EditorClassIdentifier: 
-  idle: {fileID: 3899436816322671894, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  attack: {fileID: 2207354059558713086, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  idle: {fileID: 21300000, guid: d70951e23ab65965a7d1cd6cf15270b4, type: 3}
+  attack: {fileID: 21300000, guid: 3ce4f7d0d6fd5833af223b9f1e8fdfc3, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 3802758369309764233, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  dead: {fileID: -7560931217481525557, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  ready: {fileID: 21300000, guid: e404c49385935522950000557464600f, type: 3}
+  dead: {fileID: 21300000, guid: 455c262dcfed5ae8b2cc20760f6f5029, type: 3}
+  canvasScale: 1.75

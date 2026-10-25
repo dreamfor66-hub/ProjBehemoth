@@ -1,4 +1,4 @@
-﻿Shader "TextMeshPro/Distance Field SSD" {
+Shader "TextMeshPro/Distance Field SSD" {
 
 Properties {
     _FaceTex            ("Face Texture", 2D) = "white" {}
@@ -231,8 +231,12 @@ SubShader {
         }
 
 
+        float _BehemothHideRasterText;
+
+
         fixed4 PixShader(pixel_t input) : SV_Target
         {
+            clip(0.5 - _BehemothHideRasterText);
             UNITY_SETUP_INSTANCE_ID(input);
 
             float c = tex2D(_MainTex, input.atlas).a;

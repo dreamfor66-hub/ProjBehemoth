@@ -29,6 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
-    m_Colors: []
+    m_Colors:
+    - _WeakPointCore: {r: 0.98039216, g: 0.5921569, b: 0.2901961, a: 1}
+    - _WeakPointShadow: {r: 0.74509805, g: 0.20784314, b: 0.17254902, a: 1}
+    - _WeakPointStroke: {r: 0.9098039, g: 0.32941177, b: 0.21568626, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

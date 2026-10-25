@@ -127,7 +127,7 @@ MonoBehaviour:
   id: MagicTeacherAdvanced
   displayName: "\uC758\uC2DD\uC2E4\uC758 \uC218\uC5C5"
   narrative: 
-  illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+  illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   minAct: 3
   maxAct: 3
@@ -163,7 +163,7 @@ MonoBehaviour:
       \uD3BC\uCE5C\uB2E4.\r\n\r\n\uC774\uC81C\uB294 \uB354 \uD070 \uC8FC\uBB38\uC744
       \uBC84\uD2F8 \uC218 \uC788\uACA0\uB124\uC694. \uC5B4\uB290 \uCABD\uC744 \uBC30\uC6CC
       \uBCFC\uAE4C\uC694?"
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uD55C\uACF3\uC5D0 \uD070 \uBD88\uB369\uC774\uB97C \uB5A8\uC5B4\uB728\uB9AC\uB294
         \uBC95."
@@ -353,7 +353,7 @@ MonoBehaviour:
   - narrative: "\uC74C\u2026 \uADF8 \uC18D\uC131\uAE4C\uC9C0\uB294 \uC544\uC9C1 \uC790\uC9C8\uC774
       \uC548 \uBCF4\uC774\uB294\uB370\uC694. \uC775\uD78C \uB9C8\uBC95\uC5D0\uC11C
       \uB354 \uB098\uC544\uAC00\uB294 \uAC8C \uC88B\uACA0\uC2B5\uB2C8\uB2E4."
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uB2E4\uB978 \uC218\uC5C5\uC744 \uACE0\uB978\uB2E4."
       description: 
@@ -396,7 +396,7 @@ MonoBehaviour:
       \uC54A\uC558\uAD70\uC694. \uC624\uB298\uC740 \uC131\uC758 \uAE30\uB85D\uC744
       \uC880 \uC77D\uACE0 \uAC00\uC138\uC694.\r\n\r\n\uD568\uAED8 \uC624\uB798\uB41C
       \uAE30\uB85D\uC744 \uC77D\uACE0 \uC758\uC2DD\uC2E4\uC744 \uB098\uC654\uB2E4."
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uB5A0\uB09C\uB2E4."
       description: 

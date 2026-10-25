@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Hero_Samurai
   m_EditorClassIdentifier: 
-  idle: {fileID: 5765137119432012666, guid: 649bd992a1b69714aad4052bc2c85cf2, type: 3}
-  attack: {fileID: -2162436201560811453, guid: 649bd992a1b69714aad4052bc2c85cf2, type: 3}
-  guard: {fileID: -4468586423009441048, guid: 649bd992a1b69714aad4052bc2c85cf2, type: 3}
+  idle: {fileID: 21300000, guid: ef3bc190b0285caaaa502ca7fa8598b7, type: 3}
+  attack: {fileID: 21300000, guid: 232fd96c42f15bb781db7a2545f11e61, type: 3}
+  guard: {fileID: 21300000, guid: 634be69be5b45563950ac820c4c6c924, type: 3}
   ready: {fileID: 0}
   dead: {fileID: 0}
+  canvasScale: 1.23144105

@@ -1,0 +1,118 @@
+{
+  "uniqueLocalizedCharacters": 774,
+  "fonts": [
+    {
+      "face": "DosStory",
+      "nativePointSize": 16,
+      "characters": 772,
+      "uniqueGlyphs": 772,
+      "source": "Art/Fonts/DosStory/DOSStoryGothicLatin.ttf",
+      "atlasHeightUsed": 417,
+      "directMissing": 3
+    },
+    {
+      "face": "Galmuri11",
+      "nativePointSize": 12,
+      "characters": 775,
+      "uniqueGlyphs": 775,
+      "source": "Art/Fonts/Galmuri/Galmuri11.ttf",
+      "atlasHeightUsed": 273,
+      "directMissing": 0
+    },
+    {
+      "face": "Galmuri11Condensed",
+      "nativePointSize": 12,
+      "characters": 774,
+      "uniqueGlyphs": 774,
+      "source": "Art/Fonts/Galmuri/Galmuri11-Condensed.ttf",
+      "atlasHeightUsed": 194,
+      "directMissing": 1
+    },
+    {
+      "face": "Galmuri9",
+      "nativePointSize": 10,
+      "characters": 775,
+      "uniqueGlyphs": 775,
+      "source": "Art/Fonts/Galmuri/Galmuri9.ttf",
+      "atlasHeightUsed": 198,
+      "directMissing": 0
+    },
+    {
+      "face": "Galmuri7",
+      "nativePointSize": 8,
+      "characters": 775,
+      "uniqueGlyphs": 775,
+      "source": "Art/Fonts/Galmuri/Galmuri7.ttf",
+      "atlasHeightUsed": 135,
+      "directMissing": 0
+    },
+    {
+      "face": "Tangba",
+      "nativePointSize": 12,
+      "characters": 774,
+      "uniqueGlyphs": 774,
+      "source": "Art/Fonts/Tangba/Tangba12.ttf",
+      "atlasHeightUsed": 273,
+      "directMissing": 1
+    }
+  ],
+  "bindings": {
+    "HudValue": 20,
+    "Button": 126,
+    "MicroValue": 26,
+    "Heading": 25,
+    "Hint": 6,
+    "Base": 32,
+    "Description": 23,
+    "Narrative": 4,
+    "CompactValue": 4,
+    "Title": 7,
+    "CombatNumber": 9
+  },
+  "files": {
+    "Scenes\\MainGameScene.unity": {
+      "HudValue": 16,
+      "Button": 108,
+      "MicroValue": 22,
+      "Heading": 16,
+      "Hint": 4,
+      "Base": 20,
+      "Description": 18,
+      "Narrative": 2,
+      "CompactValue": 4,
+      "Title": 2
+    },
+    "Scenes\\OutGameScene.unity": {
+      "Heading": 8,
+      "Button": 16,
+      "Base": 12,
+      "Description": 5,
+      "Narrative": 2,
+      "HudValue": 3,
+      "Title": 5
+    },
+    "Prefabs\\Combat\\MonsterView.prefab": {
+      "HudValue": 1,
+      "Hint": 2,
+      "Heading": 1
+    },
+    "Prefabs\\Combat\\WeakPointView.prefab": {
+      "MicroValue": 1
+    },
+    "Prefabs\\UI\\DamageNumberView.prefab": {
+      "CombatNumber": 9
+    },
+    "Prefabs\\UI\\MapRoomIcon.prefab": {
+      "MicroValue": 2
+    },
+    "Prefabs\\UI\\PerkChoiceItem.prefab": {
+      "Button": 1
+    },
+    "Prefabs\\UI\\RoomChoiceButton.prefab": {
+      "Button": 1
+    },
+    "Prefabs\\UI\\RunHudIconView.prefab": {
+      "MicroValue": 1
+    }
+  }
+}

@@ -27,7 +27,7 @@ MonoBehaviour:
   description: "\uC7BF\uBD88 \uD654\uC0B4 \uC2B5\uB4DD. \uD654\uC5FC \uC8FC\uBB38
     \uBC1C\uB3D9 \uC2DC \uACA9\uB178/\uBD84\uB178 +15. \uBD84\uB178 \uC911 \uD654\uC5FC
     \uC8FC\uBB38 \uD53C\uD574 +30%."
-  icon: {fileID: 3929133199111790865, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: cb952dfddbcd50bdb0214be6b96f9ea8, type: 3}
   scope: 2
   exclusiveCharacter: 2
   power: 23

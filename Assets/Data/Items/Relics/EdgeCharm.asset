@@ -23,7 +23,7 @@ MonoBehaviour:
   id: EdgeCharm
   displayName: "\uB0A0 \uC120 \uBD80\uC801"
   description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +15%"
-  icon: {fileID: 4626822261902330006, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 2f0d2998932555368a6a15e775073912, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

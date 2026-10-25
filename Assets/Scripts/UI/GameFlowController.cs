@@ -219,6 +219,8 @@ namespace DungeonSlash
                 yield return encounterMessageView.Show(string.IsNullOrWhiteSpace(announcement) ? GameText.Format("ui.gameflowcontroller.a61799fd", monsterName) : announcement);
             }
             State = GameFlowState.Combat;
+            var arcadeHud=UnityEngine.Object.FindFirstObjectByType<ArcadeHudController>();
+            if(arcadeHud!=null)yield return arcadeHud.ShowCombatTutorial();
             combatController.BeginPreparedCombat();
         }
 

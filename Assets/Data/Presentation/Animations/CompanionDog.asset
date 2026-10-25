@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: CompanionDog
   m_EditorClassIdentifier: 
-  idle: {fileID: 4928105396333620491, guid: 9158396ec93704c4896ab2827e59dd17, type: 3}
-  attack: {fileID: 7780133458328005694, guid: 9158396ec93704c4896ab2827e59dd17, type: 3}
+  idle: {fileID: 21300000, guid: 8e971da9be7e562491981def2eb0b882, type: 3}
+  attack: {fileID: 21300000, guid: 5fe4040e33ab508c80cc6254998d7f8c, type: 3}
   guard: {fileID: 0}
   ready: {fileID: 0}
   dead: {fileID: 0}
+  canvasScale: 1

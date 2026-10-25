@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uC77C\uC12C"
   description: "\uBC1C\uB3C4 \uD53C\uD574 \uBCF4\uC815\uC774 +50%\uC5D0\uC11C +85%\uB85C
     \uC99D\uAC00."
-  icon: {fileID: 4321908322816216039, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 34e75dd45f2a5ac294df102a959104f0, type: 3}
   scope: 2
   exclusiveCharacter: 3
   power: 25

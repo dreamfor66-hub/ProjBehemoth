@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uBA54\uD14C\uC624"
   description: "\uAC70\uB300\uD55C \uC6B4\uC11D\uC744 \uB5A8\uC5B4\uB728\uB824 \uB113\uC740
     \uBC94\uC704\uC5D0 \uD654\uC5FC \uD53C\uD574 120\uC744 \uC900\uB2E4."
-  icon: {fileID: -2653506176444920285, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: fe835e51ee815df69773b46363d59cd6, type: 3}
   mpCost: 18
   tier: 2
   abilities: []

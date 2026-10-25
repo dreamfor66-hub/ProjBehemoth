@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_OrbitBat
   m_EditorClassIdentifier: 
-  idle: {fileID: -5114693808067010886, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  attack: {fileID: -2443458817794969321, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  idle: {fileID: 21300000, guid: 66578b39861b5196a1014d669947b30a, type: 3}
+  attack: {fileID: 21300000, guid: d1bcd45b9e9e5d049d8ada942d9937ac, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 2709250590614833240, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  dead: {fileID: -953496613276800936, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  ready: {fileID: 21300000, guid: de00d30938e4562fbf8489fc7f178e4c, type: 3}
+  dead: {fileID: 21300000, guid: 36cbcadd99005059a8aa9ab6f02586de, type: 3}
+  canvasScale: 1.2734375

@@ -10,7 +10,7 @@ namespace DungeonSlash
         private Sprite activeStoryIllustration;
         private void ShowEventConclusion(RandomEventData story,string text,int paragraph=0)
         {
-            var paragraphs=text.Split(new[]{"\n\n"},StringSplitOptions.RemoveEmptyEntries);
+            var paragraphs=SplitEventParagraphs(text);
             expansionView.ShowModal(story.displayName,paragraphs.Length>0?paragraphs[paragraph]:"",new[]{new PresentationChoice
             {
                 Title=GameText.Get("ui.event.continue"),Selected=()=>
@@ -34,7 +34,7 @@ namespace DungeonSlash
                 var route = page.routes.FirstOrDefault(r => r.requirements.All(c => c.Matches(runController.State)));
                 if (route != null && route.page != index) { ShowEventPage(room, story, route.page); return; }
             }
-            var lines = page.narrative.Split(new[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
+            var lines = SplitEventParagraphs(page.narrative);
             var illustration = page.illustration != null ? page.illustration : story.illustration;
             activeStoryIllustration = illustration;
             if (lineIndex < lines.Length - 1)
@@ -70,5 +70,9 @@ namespace DungeonSlash
             if (choices.Length == 0) choices = new[] { new PresentationChoice { Title = GameText.Get("ui.event.leave"), Selected = () => { room.IsCleared = true; AfterRoomResolution(); } } };
             expansionView.ShowModal(story.displayName, lines.LastOrDefault() ?? "", choices, illustration);
         }
+
+        private static string[] SplitEventParagraphs(string text) =>
+            (text ?? "").Replace("\r\n", "\n").Replace('\r', '\n')
+                .Split(new[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
     }
 }

@@ -1,0 +1,10 @@
+ui-finish-combat-tutorial / 1920x1080
+Art: 384x224; palette=True; native UI draws=20
+Native text: DosStory Material / 28 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 40 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 28 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: Tangba Material / 512 vertices / clip=(x:125.32, y:245.50, width:1630.09, height:638.11)

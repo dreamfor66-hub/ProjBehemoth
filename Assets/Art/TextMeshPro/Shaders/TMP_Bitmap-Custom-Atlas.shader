@@ -121,8 +121,11 @@ SubShader{
 			return OUT;
 		}
 
+		float _BehemothHideRasterText;
+
 		fixed4 frag (v2f IN) : SV_Target
 		{
+            clip(0.5 - _BehemothHideRasterText);
 			fixed4 color = tex2D(_MainTex, IN.texcoord0) * tex2D(_FaceTex, IN.texcoord1) * IN.color;
 
 			// Alternative implementation to UnityGet2DClipping with support for softness.

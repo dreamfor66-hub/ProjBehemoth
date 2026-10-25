@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ArcaneGuard
   displayName: "\uBE44\uC804 \uBC29\uBCBD"
   description: "\uC8FC\uBB38 \uBC1C\uB3D9 \uC2DC \uAC00\uB4DC\uAC8C\uC774\uC9C0 +4."
-  icon: {fileID: 3052315535316524931, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 332349e6899450d88487aae206be44d2, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 47

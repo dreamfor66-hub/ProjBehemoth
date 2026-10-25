@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Vitality
   displayName: "\uD65C\uB825"
   description: "\uCD5C\uB300 \uCCB4\uB825 +10"
-  icon: {fileID: -1906809145858569121, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 0d7d0a82c9b3545abb9a3965e7bfdb76, type: 3}
   scope: 0
   exclusiveCharacter: 0
   abilitySource: {fileID: 11400000, guid: a39feb12c3a56a34e90a966f8148473f, type: 2}

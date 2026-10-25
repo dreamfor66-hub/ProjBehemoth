@@ -19,7 +19,13 @@ internal static class BehemothVerification
         try { command = File.ReadAllText(Request).Trim(); File.Delete(Request); }
         catch (IOException) { return; } // A request may still be held by the file writer this frame.
         Directory.CreateDirectory("Logs");
-        if (command == "ashen-tests")
+        if (command == "ui-finish-tests")
+        {
+            runner = ScriptableObject.CreateInstance<TestRunnerApi>(); runner.RegisterCallbacks(new Results());
+            File.WriteAllText("Logs/Behemoth-TestCases.txt", "");
+            runner.Execute(new ExecutionSettings(new Filter { testMode = TestMode.EditMode, testNames = new[] { "DungeonSlash.Tests.UiFinishTests" } }));
+        }
+        else if (command == "ashen-tests")
         {
             runner = ScriptableObject.CreateInstance<TestRunnerApi>(); runner.RegisterCallbacks(new Results());
             File.WriteAllText("Logs/Behemoth-TestCases.txt", "");

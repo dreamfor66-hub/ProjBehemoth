@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_StormOrb
   m_EditorClassIdentifier: 
-  idle: {fileID: -8952162725678757775, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
-  attack: {fileID: 7320342497587903928, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
+  idle: {fileID: 21300000, guid: 7941c49416715be3b2098f17c1871c4c, type: 3}
+  attack: {fileID: 21300000, guid: 707b486916825018ac9c80baffec1f8a, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -6266873662442935162, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
-  dead: {fileID: 6607607738387121650, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
+  ready: {fileID: 21300000, guid: c0098cc37db45b918d139e483b0c3015, type: 3}
+  dead: {fileID: 21300000, guid: 982a27e827825e349916de621d8d03bf, type: 3}
+  canvasScale: 1

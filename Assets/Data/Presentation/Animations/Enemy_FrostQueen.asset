@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_FrostQueen
   m_EditorClassIdentifier: 
-  idle: {fileID: -4637689043693586412, guid: 8df315b6e17e562458ff76a0f468f49f, type: 3}
-  attack: {fileID: 1888736341719068631, guid: 8df315b6e17e562458ff76a0f468f49f, type: 3}
+  idle: {fileID: 21300000, guid: 84b0ce889f915ea6a3c7daa447f2893c, type: 3}
+  attack: {fileID: 21300000, guid: c90b1ad9c79056b287ebbfc5185a6458, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -8661688160603054027, guid: 8df315b6e17e562458ff76a0f468f49f, type: 3}
-  dead: {fileID: -5719456780426656623, guid: 8df315b6e17e562458ff76a0f468f49f, type: 3}
+  ready: {fileID: 21300000, guid: cbc30586efde57acbba2536c6323003a, type: 3}
+  dead: {fileID: 21300000, guid: a32fa458b61b5fb9a13ac9351f347b9e, type: 3}
+  canvasScale: 1.07734807

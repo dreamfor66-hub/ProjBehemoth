@@ -125,7 +125,7 @@ MonoBehaviour:
     \uAD76\uACE0 \uC788\uC9C0\uB9CC \uBAA9\uC904 \uB54C\uBB38\uC5D0 \uC6C0\uC9C1\uC77C
     \uC218 \uC5C6\uC5B4 \uBCF4\uC778\uB2E4.\r\n\r\n\uBAA9\uC904\uC744 \uD480\uC5B4
     \uC904\uAE4C?"
-  illustration: {fileID: -3267465058472869589, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+  illustration: {fileID: 21300000, guid: 39d51381fd8b59a28bb57133d6e5c9d6, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   minAct: 1
   maxAct: 3
@@ -220,7 +220,7 @@ MonoBehaviour:
       \uAD76\uACE0 \uC788\uC9C0\uB9CC \uBAA9\uC904 \uB54C\uBB38\uC5D0 \uC6C0\uC9C1\uC77C
       \uC218 \uC5C6\uC5B4 \uBCF4\uC778\uB2E4.\r\n\r\n\uBAA9\uC904\uC744 \uD480\uC5B4
       \uC904\uAE4C?"
-    illustration: {fileID: -3267465058472869589, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 39d51381fd8b59a28bb57133d6e5c9d6, type: 3}
     options:
     - title: "\uBAA9\uC904\uC744 \uD480\uC5B4 \uC900\uB2E4."
       description: 
@@ -260,7 +260,7 @@ MonoBehaviour:
     routes: []
   - narrative: "\uAC15\uC544\uC9C0\uAC00 \uB07C\uC789\uAC70\uB9AC\uBA70 \uB098\uB97C
       \uC62C\uB824\uB2E4\uBCF8\uB2E4."
-    illustration: {fileID: -3267465058472869589, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 39d51381fd8b59a28bb57133d6e5c9d6, type: 3}
     options:
     - title: "\uBA39\uC744 \uAC83\uC744 \uC900\uB2E4."
       description: "\uC791\uC740 \uBC1C\uC790\uAD6D \uD68D\uB4DD"

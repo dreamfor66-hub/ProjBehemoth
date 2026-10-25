@@ -23,7 +23,7 @@ MonoBehaviour:
   id: StoneSkinPotion
   displayName: "\uB3CC\uAC11\uC637 \uD3EC\uC158"
   description: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 32% \uAC10\uC18C"
-  icon: {fileID: -2319476694228375547, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: f9739c5bf3c5548288fa152276653c1c, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

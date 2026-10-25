@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_AshGeneral
   m_EditorClassIdentifier: 
-  idle: {fileID: 3172302697571147340, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
-  attack: {fileID: -5942536402303573570, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
+  idle: {fileID: 21300000, guid: 1e18cf113a3857c79a310bdb794d3cb1, type: 3}
+  attack: {fileID: 21300000, guid: 3858f49027495138a5e196a6d39fb60d, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -6342211783507355392, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
-  dead: {fileID: -341519728513325859, guid: d4a41b5820a5dcc45bf584a957e1a13f, type: 3}
+  ready: {fileID: 21300000, guid: a6b24efe972b5a4a9a6793ce2df84bf4, type: 3}
+  dead: {fileID: 21300000, guid: d3e98329426f5c35ab55136a332e7261, type: 3}
+  canvasScale: 1.33172303

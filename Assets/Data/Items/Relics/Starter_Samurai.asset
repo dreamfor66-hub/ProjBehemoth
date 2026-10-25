@@ -29,7 +29,7 @@ MonoBehaviour:
     0.3\uCD08. \uB2E4\uC74C \uBC1C\uB3C4 \uD53C\uD574 +50%. \uB0A9\uB3C4 \uD328\uB9AC
     \uC131\uACF5 \uC2DC \uB2E4\uC74C \uBC1C\uB3C4\uAC00 \uCC28\uC9C0 \uD310\uC815\uC744
     \uC5BB\uB294\uB2E4."
-  icon: {fileID: 2486193441875991756, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: c72e4a158d8a5a0db48cd43f20c26565, type: 3}
   scope: 1
   exclusiveCharacter: 3
   power: 0

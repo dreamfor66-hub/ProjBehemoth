@@ -1,0 +1,11 @@
+ui-finish-hud / 1920x1080
+Art: 384x224; palette=True; native UI draws=19
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 8 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 40 vertices / clip=
+Native text: DosStory Material / 32 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=
+Native text: DosStory Material / 16 vertices / clip=
+Native text: DosStory Material / 12 vertices / clip=

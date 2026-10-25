@@ -23,7 +23,7 @@ MonoBehaviour:
   id: RagePotion
   displayName: "\uACA9\uB178\uC758 \uD3EC\uC158"
   description: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 +35%"
-  icon: {fileID: -1772244045117237821, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 07dd38b0d2bc5e2fa920cdb5e460879d, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

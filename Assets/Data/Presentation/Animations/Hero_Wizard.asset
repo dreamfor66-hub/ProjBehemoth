@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Hero_Wizard
   m_EditorClassIdentifier: 
-  idle: {fileID: -5555797244983805462, guid: 8323516a5bbd66345b5a7229455f7b10, type: 3}
-  attack: {fileID: 7984990165043498644, guid: 8323516a5bbd66345b5a7229455f7b10, type: 3}
-  guard: {fileID: -9092532417654542676, guid: 8323516a5bbd66345b5a7229455f7b10, type: 3}
+  idle: {fileID: 21300000, guid: 9db3de4f74535a74ba905d6baa49413c, type: 3}
+  attack: {fileID: 21300000, guid: 6035ef15cc9a540f953346bf2aacc832, type: 3}
+  guard: {fileID: 21300000, guid: f16e90a78fa75201a058f1787212001d, type: 3}
   ready: {fileID: 0}
   dead: {fileID: 0}
+  canvasScale: 1.02270725

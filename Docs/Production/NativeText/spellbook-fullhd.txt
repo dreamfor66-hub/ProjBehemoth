@@ -1,0 +1,22 @@
+spellbook-fullhd / 1920x1080
+Art: 384x224; palette=True; native UI draws=48
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 8 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 32 vertices / clip=
+Native text: Galmuri11 - Regular Material / 12 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 12 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 16 vertices / clip=
+Native text: Galmuri11 - Regular Material / 32 vertices / clip=
+Native text: Galmuri11 - Regular Material / 32 vertices / clip=
+Native text: Galmuri11 - Regular Material / 256 vertices / clip=
+Native text: Galmuri11 - Regular Material / 32 vertices / clip=
+Native text: Galmuri11 - Regular Material / 32 vertices / clip=(x:763.60, y:68.65, width:775.76, height:176.76)
+Native text: Galmuri11 - Regular Material / 20 vertices / clip=

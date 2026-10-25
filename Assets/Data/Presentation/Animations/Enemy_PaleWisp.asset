@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_PaleWisp
   m_EditorClassIdentifier: 
-  idle: {fileID: 6012127185773520973, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  attack: {fileID: -4262300361401677699, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  idle: {fileID: 21300000, guid: 187ae4ac5b315f1f89379c0573a20757, type: 3}
+  attack: {fileID: 21300000, guid: 793f91ceab8b504b9d5410503bbc47dd, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 3465508981988884224, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
-  dead: {fileID: -7447227332036521074, guid: b0d91f8da8f914746b5300dd58101144, type: 3}
+  ready: {fileID: 21300000, guid: 59efd5f5b348572ab86dd76fa3868056, type: 3}
+  dead: {fileID: 21300000, guid: debd7eaf776859049188915a452562ea, type: 3}
+  canvasScale: 1.171875

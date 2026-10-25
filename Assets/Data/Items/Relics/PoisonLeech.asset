@@ -23,7 +23,7 @@ MonoBehaviour:
   id: PoisonLeech
   displayName: "\uB9F9\uB3C5\uC758 \uC0DD\uBA85\uC904"
   description: "\uB3C5 \uD53C\uD574\uC758 12%\uB9CC\uD07C \uCCB4\uB825\uC744 \uD68C\uBCF5\uD55C\uB2E4."
-  icon: {fileID: 1078536559429060484, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 2baed48bf800538d9493505e83d85c54, type: 3}
   scope: 2
   exclusiveCharacter: 1
   power: 13

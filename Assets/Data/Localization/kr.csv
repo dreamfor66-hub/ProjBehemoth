@@ -1825,8 +1825,7 @@ ui.camp.full.result.moved,"몸을 누이고 충분히 쉬었다.
 피로도 100 · 체력 10 회복
 쉬는 사이 통로에서 발소리가 들렸다.",Fatigue
 ui.camp.full.summary,피로도 100까지 · 체력 10 회복,Fatigue
-ui.camp.intro,"모험가들이 남긴 안전한 쉼터다.
-야영은 이 층에서 한 번만 할 수 있다.",Fatigue
+"ui.camp.intro","모험가들이 남긴 안전한 쉼터다.","Fatigue"
 ui.camp.leave,지금은 떠난다,Fatigue
 ui.camp.map,야영지,Fatigue
 ui.camp.marker,야,Fatigue
@@ -2176,3 +2175,23 @@ ui.title.fallback,"Dungeon
 Mortalis",Dungeon Mortalis revision
 ui.title.kr,Dungeon Mortalis,AshenVow
 ui.weakpointview.2d1fe896,HitSegment_{0},Scripts/DungeonSlash/Combat/Presentation/WeakPointView.cs
+ui.tutorial.exploration.title,미궁 탐험 안내,Scripts/UI/ArcadeHudController.cs
+ui.tutorial.exploration.body,"문을 눌러 다음 방으로 이동합니다.
+
+[Tab] 지도
+지나온 방과 갈 수 있는 길을 확인합니다.
+
+[I] 보유품
+유물과 포션의 효과를 확인할 수 있습니다.
+
+안내를 닫으면 탐험을 시작합니다.",Scripts/UI/ArcadeHudController.cs
+ui.tutorial.combat.title,전투 조작 안내,Scripts/UI/ArcadeHudController.cs
+ui.tutorial.combat.body,"공격
+적을 향해 빠르게 그으면 일반 공격입니다. 길게 누른 뒤 그으면 차지 공격입니다.
+
+가드
+캐릭터 쪽으로 아래로 당긴 뒤 누르고 있으면 가드합니다. 키보드에서는 [Space]로 가드할 수 있습니다.
+
+안내를 읽는 동안 전투는 진행되지 않습니다. 준비가 되면 아래 버튼을 눌러 시작하세요.",Scripts/UI/ArcadeHudController.cs
+ui.tutorial.combat.magic,"주문
+[Shift] 또는 마우스 오른쪽 버튼을 누른 채 기다린 뒤 그으면 장착한 주문을 사용합니다. 주문에는 MP가 필요합니다.",Scripts/UI/ArcadeHudController.cs

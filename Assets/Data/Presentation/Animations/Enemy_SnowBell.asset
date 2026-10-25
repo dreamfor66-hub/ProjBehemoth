@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_SnowBell
   m_EditorClassIdentifier: 
-  idle: {fileID: -6537937322533699917, guid: fceead620728d154ba461d5487be34b9, type: 3}
-  attack: {fileID: 529328125742792473, guid: fceead620728d154ba461d5487be34b9, type: 3}
+  idle: {fileID: 21300000, guid: a7be4f6f4a465812bd9714276cf97603, type: 3}
+  attack: {fileID: 21300000, guid: 9d3dd37a26d2594c804d995e1c326cb9, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 1487528475426913525, guid: fceead620728d154ba461d5487be34b9, type: 3}
-  dead: {fileID: -1045891556272413918, guid: fceead620728d154ba461d5487be34b9, type: 3}
+  ready: {fileID: 21300000, guid: c6eebf2cdc9e56baa1142dbe96f35456, type: 3}
+  dead: {fileID: 21300000, guid: 336087defa5d516fb08326a1e4149374, type: 3}
+  canvasScale: 1.40625

@@ -200,8 +200,10 @@ SubShader {
 
 
 		// PIXEL SHADER
+		float _BehemothHideRasterText;
 		fixed4 PixShader(pixel_t input) : SV_Target
 		{
+            clip(0.5 - _BehemothHideRasterText);
 			UNITY_SETUP_INSTANCE_ID(input);
 
 			half d = tex2D(_MainTex, input.texcoord0.xy).a * input.param.x;
@@ -361,8 +363,10 @@ SubShader {
 
 
 		// PIXEL SHADER
+		float _BehemothHideRasterText;
 		fixed4 PixShader(pixel_t input) : SV_Target
 		{
+            clip(0.5 - _BehemothHideRasterText);
 			UNITY_SETUP_INSTANCE_ID(input);
 
 			half d = tex2D(_MainTex, input.texcoord0.xy).a * input.param.x;

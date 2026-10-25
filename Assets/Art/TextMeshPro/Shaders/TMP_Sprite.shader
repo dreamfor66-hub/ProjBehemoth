@@ -110,8 +110,11 @@ Shader "TextMeshPro/Sprite"
 				return OUT;
 			}
 
+			float _BehemothHideRasterText;
+
 			fixed4 frag(v2f IN) : SV_Target
 			{
+            clip(0.5 - _BehemothHideRasterText);
 				half4 color = (tex2D(_MainTex, IN.texcoord) + _TextureSampleAdd) * IN.color;
 
                 #if UNITY_UI_CLIP_RECT

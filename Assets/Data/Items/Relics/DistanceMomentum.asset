@@ -23,7 +23,7 @@ MonoBehaviour:
   id: DistanceMomentum
   displayName: "\uC7A5\uAC70\uB9AC \uC794\uC0C1"
   description: "\uBCA0\uAE30 \uAE38\uC774 100\uB9C8\uB2E4 \uD53C\uD574 +20%"
-  icon: {fileID: -1906809145858569121, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 0d7d0a82c9b3545abb9a3965e7bfdb76, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

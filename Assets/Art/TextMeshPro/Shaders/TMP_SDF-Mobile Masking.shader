@@ -1,4 +1,4 @@
-﻿// Simplified SDF shader:
+// Simplified SDF shader:
 // - No Shading Option (bevel / bump / env map)
 // - No Glow Option
 // - Softness is applied on both side of the outline
@@ -207,8 +207,10 @@ SubShader {
 
 
 		// PIXEL SHADER
+		float _BehemothHideRasterText;
 		fixed4 PixShader(pixel_t input) : SV_Target
 		{
+            clip(0.5 - _BehemothHideRasterText);
 			half d = tex2D(_MainTex, input.texcoord0.xy).a * input.param.x;
 			half4 c = input.faceColor * saturate(d - input.param.w);
 

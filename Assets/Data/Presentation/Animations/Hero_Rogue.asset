@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Hero_Rogue
   m_EditorClassIdentifier: 
-  idle: {fileID: 4000371476709121562, guid: 09b7489e65609454e83273edd57b6dae, type: 3}
-  attack: {fileID: -3188513171873832464, guid: 09b7489e65609454e83273edd57b6dae, type: 3}
-  guard: {fileID: -7540455624274360305, guid: 09b7489e65609454e83273edd57b6dae, type: 3}
+  idle: {fileID: 21300000, guid: 0bb85982b1ee52d6b959544eae65c74f, type: 3}
+  attack: {fileID: 21300000, guid: 658b50f7d19156f9976a1976bd667a27, type: 3}
+  guard: {fileID: 21300000, guid: cf4981bccd735dcd8e0aff305dc792f1, type: 3}
   ready: {fileID: 0}
   dead: {fileID: 0}
+  canvasScale: 1.12227074

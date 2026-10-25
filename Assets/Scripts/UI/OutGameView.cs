@@ -79,7 +79,8 @@ namespace DungeonSlash
             characterDescription.text = data.description;
             stats.text = GameText.Format("ui.selection.stats", data.maxHp, data.baseAttackDamage, data.attackCooldown, data.baseChargeDamage, data.chargeDuration, data.shieldMax, data.normalShieldRegen, data.guardDamageReduction);
             startingRelic.text = GameText.Format("ui.outgameview.c86889d0", data.startingRelic.displayName, data.startingRelic.description);
-            startingRelic.enableAutoSizing = !compact&&startingRelicScroll == null; startingRelic.fontSizeMin = compact?44:18; startingRelic.fontSizeMax = compact?44:20;
+            var relicSize=startingRelic.GetComponent<TypographyRoleBinding>()?.designSize??44;
+            startingRelic.enableAutoSizing = !compact&&startingRelicScroll == null; startingRelic.fontSizeMin = compact?relicSize:18; startingRelic.fontSizeMax = compact?relicSize:20;
             if (startingRelicScroll != null) { Canvas.ForceUpdateCanvases(); startingRelicScroll.verticalNormalizedPosition = 1; }
             portrait.sprite = data.portrait; portrait.color = Color.white; portrait.enabled = data.portrait != null;
             if(selectionSplash!=null)

@@ -1,0 +1,356 @@
+{
+  "result": "PASS",
+  "scope": "saved assets, atlas pixels, original layout/text, compiler checks run separately; not a Unity runtime playtest",
+  "styledFiles": [
+    "Scenes\\MainGameScene.unity",
+    "Scenes\\OutGameScene.unity",
+    "Prefabs\\Combat\\MonsterView.prefab",
+    "Prefabs\\Combat\\WeakPointView.prefab",
+    "Prefabs\\UI\\DamageNumberView.prefab",
+    "Prefabs\\UI\\MapRoomIcon.prefab",
+    "Prefabs\\UI\\PerkChoiceItem.prefab",
+    "Prefabs\\UI\\RoomChoiceButton.prefab",
+    "Prefabs\\UI\\RunHudIconView.prefab"
+  ],
+  "textRoles": {
+    "HudValue": 20,
+    "Button": 126,
+    "MicroValue": 26,
+    "Heading": 26,
+    "Hint": 6,
+    "Base": 32,
+    "Description": 23,
+    "Narrative": 4,
+    "CompactValue": 4,
+    "Title": 7,
+    "CombatNumber": 9
+  },
+  "savedPrimaryFaces": {
+    "DosStory": 230,
+    "Galmuri7": 26,
+    "Tangba": 27
+  },
+  "totalStyledLabels": 283,
+  "unchangedRectTransforms": 642,
+  "unchangedSerializedTextFields": 282,
+  "localizedCodepointsChecked": 755,
+  "localizedCodepointsMissingAfterFallback": 0,
+  "authoredDifferencesFromGitHead": [
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "9084762",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "17786469",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "48251942",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "110988980",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "112502841",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "115085328",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "118514427",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "186523326",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "305225386",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "329797294",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "353716396",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "453796893",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "472801574",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "607881321",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "609637033",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "610139271",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "637807996",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "639127415",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "762989694",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "829285413",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "897250623",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "919265475",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "939280260",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "961837522",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1031553281",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1056695208",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1170522556",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1208806417",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1377857108",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1401631140",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1455534075",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1475877858",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1620988739",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1631266186",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1645145593",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1647711326",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1722222706",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1763847581",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1768010860",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1895487343",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1942202472",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1969322608",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1989976728",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "fileID": "1991346433",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\OutGameScene.unity",
+      "fileID": "637807996",
+      "field": "RectTransform"
+    },
+    {
+      "path": "Scenes\\OutGameScene.unity",
+      "fileID": "1509216916",
+      "field": "RectTransform"
+    }
+  ],
+  "eventPopupLabels": [
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "modalTitle",
+      "label": "2067110735",
+      "role": "Heading",
+      "font": "DosStory"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "modalNarrative",
+      "label": "1589504776",
+      "role": "Narrative",
+      "font": "Tangba"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "choices.title",
+      "label": "1455534076",
+      "role": "Button",
+      "font": "DosStory"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "choices.description",
+      "label": "843457853",
+      "role": "Description",
+      "font": "Tangba"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "choices.title",
+      "label": "639127416",
+      "role": "Button",
+      "font": "DosStory"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "choices.description",
+      "label": "293852884",
+      "role": "Description",
+      "font": "Tangba"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "compactChoices.title",
+      "label": "1535295442",
+      "role": "Button",
+      "font": "DosStory"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "compactChoices.description",
+      "label": "395252188",
+      "role": "Description",
+      "font": "Tangba"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "compactChoices.title",
+      "label": "27901197",
+      "role": "Button",
+      "font": "DosStory"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "compactChoices.description",
+      "label": "659288353",
+      "role": "Description",
+      "font": "Tangba"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "compactChoices.title",
+      "label": "1055069412",
+      "role": "Button",
+      "font": "DosStory"
+    },
+    {
+      "path": "Scenes\\MainGameScene.unity",
+      "field": "compactChoices.description",
+      "label": "1732188341",
+      "role": "Description",
+      "font": "Tangba"
+    }
+  ]
+}

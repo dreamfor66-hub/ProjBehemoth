@@ -30,6 +30,13 @@ Shader "Hidden/Behemoth/ArcadePalette"
                 if(all(abs(c-weakStroke)<.003)||all(abs(c-_WeakPointStroke.rgb)<.003))return float4(weakStroke,1);
                 if(all(abs(c-weakShadow)<.003)||all(abs(c-_WeakPointShadow.rgb)<.003))return float4(weakShadow,1);
                 if(all(abs(c-weakCore)<.003)||all(abs(c-_WeakPointCore.rgb)<.003))return float4(weakCore,1);
+                // Preserve the guard's neutral fill, empty track and thin rim through the art palette.
+                float3 guardFill=SRGBToLinear(float3(176,176,176)/255.);
+                float3 guardTrack=SRGBToLinear(float3(72,72,72)/255.);
+                float3 guardRim=SRGBToLinear(float3(40,40,40)/255.);
+                if(all(abs(c-guardFill)<.003)||all(abs(c-float3(176,176,176)/255.)<.003))return float4(guardFill,1);
+                if(all(abs(c-guardTrack)<.003)||all(abs(c-float3(72,72,72)/255.)<.003))return float4(guardTrack,1);
+                if(all(abs(c-guardRim)<.003)||all(abs(c-float3(40,40,40)/255.)<.003))return float4(guardRim,1);
                 if(all(c>.999)||all(c<.00001))return float4(c,1);
                 [unroll]for(int n=0;n<17;n++){float3 q=SRGBToLinear(p[n]/255.);float d=dot(c-q,c-q);if(d<score){score=d;result=q;}}
                 return float4(result,1);

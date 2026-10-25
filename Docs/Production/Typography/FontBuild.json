@@ -1,0 +1,58 @@
+{
+  "fonts": [
+    {
+      "face": "DosStory",
+      "nativePointSize": 16,
+      "characters": 772,
+      "uniqueGlyphs": 772,
+      "source": "Art/Fonts/DosStory/DOSStoryGothicLatin.ttf",
+      "atlasHeightUsed": 417,
+      "directMissing": 3
+    },
+    {
+      "face": "Galmuri11",
+      "nativePointSize": 12,
+      "characters": 775,
+      "uniqueGlyphs": 775,
+      "source": "Art/Fonts/Galmuri/Galmuri11.ttf",
+      "atlasHeightUsed": 273,
+      "directMissing": 0
+    },
+    {
+      "face": "Galmuri11Condensed",
+      "nativePointSize": 12,
+      "characters": 774,
+      "uniqueGlyphs": 774,
+      "source": "Art/Fonts/Galmuri/Galmuri11-Condensed.ttf",
+      "atlasHeightUsed": 194,
+      "directMissing": 1
+    },
+    {
+      "face": "Galmuri9",
+      "nativePointSize": 10,
+      "characters": 775,
+      "uniqueGlyphs": 775,
+      "source": "Art/Fonts/Galmuri/Galmuri9.ttf",
+      "atlasHeightUsed": 198,
+      "directMissing": 0
+    },
+    {
+      "face": "Galmuri7",
+      "nativePointSize": 8,
+      "characters": 775,
+      "uniqueGlyphs": 775,
+      "source": "Art/Fonts/Galmuri/Galmuri7.ttf",
+      "atlasHeightUsed": 135,
+      "directMissing": 0
+    },
+    {
+      "face": "Tangba",
+      "nativePointSize": 12,
+      "characters": 774,
+      "uniqueGlyphs": 774,
+      "source": "Art/Fonts/Tangba/Tangba12.ttf",
+      "atlasHeightUsed": 273,
+      "directMissing": 1
+    }
+  ]
+}

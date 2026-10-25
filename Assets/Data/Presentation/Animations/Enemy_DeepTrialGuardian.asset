@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_DeepTrialGuardian
   m_EditorClassIdentifier: 
-  idle: {fileID: 4832004729415418753, guid: 5f58d967049112a42bde2872b37d0359, type: 3}
-  attack: {fileID: -6780811375617777119, guid: 5f58d967049112a42bde2872b37d0359, type: 3}
+  idle: {fileID: 21300000, guid: 705194ea598f5556a7e3e02051f0241b, type: 3}
+  attack: {fileID: 21300000, guid: 0707e7aaefda5c68a230058697c462cd, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 1834477419391935764, guid: 5f58d967049112a42bde2872b37d0359, type: 3}
-  dead: {fileID: 5603910456108780313, guid: 5f58d967049112a42bde2872b37d0359, type: 3}
+  ready: {fileID: 21300000, guid: f03e179047a55fc8820afe6bf2365916, type: 3}
+  dead: {fileID: 21300000, guid: 0601166e41b65e35bb6eb4a2c17cc6be, type: 3}
+  canvasScale: 1.40625

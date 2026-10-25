@@ -115,6 +115,7 @@ internal sealed class LocalizedDataInspector : Sirenix.OdinInspector.Editor.Odin
         if (EditorGUI.EndChangeCheck()) { Undo.RecordObject(BehemothTextEditor.Table, "Edit Korean Text"); BehemothTextEditor.SyncAsset(data); EditorApplication.delayCall += () => AssetDatabase.SaveAssets(); }
         showKeys = EditorGUILayout.Foldout(showKeys, "텍스트 키 (자동 생성)");
         if (showKeys) foreach (var binding in data.textKeys) { EditorGUILayout.LabelField(binding.propertyPath); EditorGUILayout.SelectableLabel(binding.key, EditorStyles.textField, GUILayout.Height(19)); }
+        if (GUILayout.Button("로케일 검색·편집 열기")) BehemothLocaleWindow.OpenSearch(data.textKeys.FirstOrDefault()?.key ?? "");
     }
 }
 internal sealed class BehemothTextAssetImport : AssetPostprocessor
@@ -141,6 +142,7 @@ internal sealed class GameTextDatabaseInspector : Editor
     public override void OnInspectorGUI()
     {
         EditorGUILayout.HelpBox("한국어 원문 테이블. 데이터의 이름·설명을 직접 고쳐도 이 테이블에 반영됩니다. CSV의 key 열은 유지하고 kr 열을 편집하세요.", MessageType.Info);
+        if (GUILayout.Button("로케일 검색·편집 열기")) BehemothLocaleWindow.Open();
         if (GUILayout.Button("kr.csv 내보내기")) BehemothTextEditor.ExportDefault();
         if (GUILayout.Button("kr.csv 가져오기")) BehemothTextEditor.ImportDefault();
         EditorGUI.BeginChangeCheck(); DrawDefaultInspector();

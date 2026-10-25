@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_AlarmHound
   m_EditorClassIdentifier: 
-  idle: {fileID: -4440195943702818589, guid: 0ccf0ed3f36ee2d4e9d35ba0eb3e62b4, type: 3}
-  attack: {fileID: -8437726215607318787, guid: 0ccf0ed3f36ee2d4e9d35ba0eb3e62b4, type: 3}
+  idle: {fileID: 21300000, guid: eece0ec5903f58b59f66e129a111404f, type: 3}
+  attack: {fileID: 21300000, guid: ef73a5c7a0705330bd6798346e7f0647, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 1757734945641354, guid: 0ccf0ed3f36ee2d4e9d35ba0eb3e62b4, type: 3}
-  dead: {fileID: 1303714371572157243, guid: 0ccf0ed3f36ee2d4e9d35ba0eb3e62b4, type: 3}
+  ready: {fileID: 21300000, guid: ff1ab63442175d96b650029759452cf2, type: 3}
+  dead: {fileID: 21300000, guid: 14b955e868555d0380277b118f2f0ddb, type: 3}
+  canvasScale: 1.05729167

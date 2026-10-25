@@ -23,7 +23,7 @@ MonoBehaviour:
   id: BloodlessDraw
   displayName: "\uD53C\uB97C \uAC70\uB450\uB294 \uCE7C\uC9D1"
   description: "\uBC1C\uB3C4 \uC801\uC911 \uC2DC \uCCB4\uB825 2 \uD68C\uBCF5."
-  icon: {fileID: -5427488090958776785, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 0cc539c912e95349b6b5bdcbdde933b5, type: 3}
   scope: 2
   exclusiveCharacter: 3
   power: 28

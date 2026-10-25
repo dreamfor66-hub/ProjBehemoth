@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_SoulLamp
   m_EditorClassIdentifier: 
-  idle: {fileID: 464693041383135603, guid: fceead620728d154ba461d5487be34b9, type: 3}
-  attack: {fileID: 1538942240300372278, guid: fceead620728d154ba461d5487be34b9, type: 3}
+  idle: {fileID: 21300000, guid: cf14b264be5f5640b40d9254e80d4f21, type: 3}
+  attack: {fileID: 21300000, guid: ba80a18edda65ea598d9cf46826ff26d, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -7012275996413653413, guid: fceead620728d154ba461d5487be34b9, type: 3}
-  dead: {fileID: 4211532939659619269, guid: fceead620728d154ba461d5487be34b9, type: 3}
+  ready: {fileID: 21300000, guid: bc7bef44637d551d9560e0200c4e9f59, type: 3}
+  dead: {fileID: 21300000, guid: 2b86395dbbe65ba5bbba091fc944dea0, type: 3}
+  canvasScale: 1.140625

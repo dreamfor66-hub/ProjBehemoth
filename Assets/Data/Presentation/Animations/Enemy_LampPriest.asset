@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_LampPriest
   m_EditorClassIdentifier: 
-  idle: {fileID: -765425166613975526, guid: 288a6b61c47203a47b2439182f75500a, type: 3}
-  attack: {fileID: 4645448764562222641, guid: 288a6b61c47203a47b2439182f75500a, type: 3}
+  idle: {fileID: 21300000, guid: ff83245d151c549081837917cf1d4a57, type: 3}
+  attack: {fileID: 21300000, guid: f77d989929315ac589bfa697a312fc51, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 7980845079571100973, guid: 288a6b61c47203a47b2439182f75500a, type: 3}
-  dead: {fileID: 5159441120281256657, guid: 288a6b61c47203a47b2439182f75500a, type: 3}
+  ready: {fileID: 21300000, guid: 04a9f4c9f7be546a80a10bd533e8af9f, type: 3}
+  dead: {fileID: 21300000, guid: 8c8e772c726f5c769f9936290d2388ab, type: 3}
+  canvasScale: 1.1171875

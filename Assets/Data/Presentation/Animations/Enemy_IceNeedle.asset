@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_IceNeedle
   m_EditorClassIdentifier: 
-  idle: {fileID: 2338983608843669798, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
-  attack: {fileID: 4552482796432490632, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
+  idle: {fileID: 21300000, guid: 47803aceeb065b1f9af31e73cd9ddd3d, type: 3}
+  attack: {fileID: 21300000, guid: 4e7f8cdf5f4358e19b8a8e07b97d005e, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 4701514411194130070, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
-  dead: {fileID: 139336870741238196, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
+  ready: {fileID: 21300000, guid: ce81c04f389a5df0a003f689110fdb03, type: 3}
+  dead: {fileID: 21300000, guid: 80ceff70e7bc569e88e1b69313a9c331, type: 3}
+  canvasScale: 1.14917127

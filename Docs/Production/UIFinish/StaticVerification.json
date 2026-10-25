@@ -1,0 +1,48 @@
+{
+  "result": "PASS",
+  "scope": "saved assets and localization, not a live rendering/input pass",
+  "completeFrameComponents": 74,
+  "retainedImageComponentReferences": 74,
+  "unchangedSerializedTextFields": 267,
+  "tutorialLocaleKeys": 5,
+  "guardOutline": 4,
+  "guardColor": "neutral gray",
+  "relicCount": 18,
+  "relicPitch": 68,
+  "actorTransforms": "preserved",
+  "viewportLayoutMath": [
+    {
+      "output": [
+        1920,
+        1080
+      ],
+      "equalPopupMarginsInPixels": 58.918830363717944,
+      "statusWidthInPixels": 1920
+    },
+    {
+      "output": [
+        1280,
+        720
+      ],
+      "equalPopupMarginsInPixels": 39.27922024247863,
+      "statusWidthInPixels": 1280
+    },
+    {
+      "output": [
+        1600,
+        1000
+      ],
+      "equalPopupMarginsInPixels": 51.75491695067657,
+      "statusWidthInPixels": 1600
+    },
+    {
+      "output": [
+        1024,
+        768
+      ],
+      "equalPopupMarginsInPixels": 36.28458940888581,
+      "statusWidthInPixels": 1024
+    }
+  ],
+  "runtimeTests": "PASS: 2 passed, 0 failed in the existing Unity Editor; see TestResults.xml and Verification.md"
+}

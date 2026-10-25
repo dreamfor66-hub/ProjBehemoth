@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_CrystalSpider
   m_EditorClassIdentifier: 
-  idle: {fileID: -3245370399259001173, guid: 9d9d1e55dd7837a4e83e4e89593ce7b0, type: 3}
-  attack: {fileID: 9034721467691798985, guid: 9d9d1e55dd7837a4e83e4e89593ce7b0, type: 3}
+  idle: {fileID: 21300000, guid: 9ba99b377f00547e9b4cfa6b5637938a, type: 3}
+  attack: {fileID: 21300000, guid: 490b710b4a7951158239cc2f75d0663a, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 7291394329486203855, guid: 9d9d1e55dd7837a4e83e4e89593ce7b0, type: 3}
-  dead: {fileID: 3783732974140689594, guid: 9d9d1e55dd7837a4e83e4e89593ce7b0, type: 3}
+  ready: {fileID: 21300000, guid: 8d962f68164f578d9fe94d579ec586c2, type: 3}
+  dead: {fileID: 21300000, guid: cb5119c60ba65d16adf00014ade6262b, type: 3}
+  canvasScale: 1.2109375

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55f1e464ebf5c144bb2ddc643e2856b, type: 3}
   m_Name: WeakPointStyle
   m_EditorClassIdentifier: 
-  stroke: {r: 0.9098039, g: 0.32941177, b: 0.21568628, a: 1}
+  stroke: {r: 0.9098039, g: 0.32941177, b: 0.21568626, a: 1}
   shadow: {r: 0.74509805, g: 0.20784314, b: 0.17254902, a: 1}
   core: {r: 0.98039216, g: 0.5921569, b: 0.2901961, a: 1}
   outline: {r: 0.08235294, g: 0.047058824, b: 0.078431375, a: 1}

@@ -23,7 +23,7 @@ MonoBehaviour:
   id: CorePrism
   displayName: "\uD575\uC2EC \uD504\uB9AC\uC998"
   description: "\uCC28\uC9C0 \uBCA0\uAE30 \uD53C\uD574 +45%"
-  icon: {fileID: 1340295601992476182, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 57a7e55abc7754e2821a13e52994f342, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

@@ -23,7 +23,7 @@ MonoBehaviour:
   id: AegisBattery
   displayName: "\uC774\uC9C0\uC2A4 \uBC30\uD130\uB9AC"
   description: "\uCD5C\uB300 \uBC29\uD328 +25"
-  icon: {fileID: -4874465246284901486, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: cd68459b706a5e13852ab29835b03d71, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

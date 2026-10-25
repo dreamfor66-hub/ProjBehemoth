@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ManaVessel
   displayName: "\uB9C8\uB825 \uADF8\uB987"
   description: "\uCD5C\uB300 MP +3"
-  icon: {fileID: 3220665290143086019, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 1f034102c7be52b391423ee453b817ac, type: 3}
   scope: 0
   exclusiveCharacter: 0
   offerGroup: {fileID: 11400000, guid: 630ec376196d442d90c7aa22cd9a1953, type: 2}

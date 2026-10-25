@@ -19,7 +19,7 @@ MonoBehaviour:
   textOwnerGuid: c6d66f4a1e280544b805c94668f5f3e7
   displayName: "\uAE38\uB3D9\uBB34"
   prefab: {fileID: 6474503742904246444, guid: a5dc20c1e5b3b164d873decb6b8a4fd0, type: 3}
-  combatSprite: {fileID: -7600686969068393801, guid: 7a1a5215d2ce86d4d88a250148ddd518, type: 3}
+  combatSprite: {fileID: 21300000, guid: 44e368589b8a55029ec6febe1fc57f9b, type: 3}
   combatAnimation: {fileID: 11400000, guid: 534d78141288f5e4f97b5871551b1355, type: 2}
   playerOffset: {x: -200, y: 70}
   idleBobHeight: 3

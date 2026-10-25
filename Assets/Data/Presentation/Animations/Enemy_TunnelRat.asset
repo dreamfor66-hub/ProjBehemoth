@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_TunnelRat
   m_EditorClassIdentifier: 
-  idle: {fileID: 5947614043396635880, guid: b1ee4414705c77e44aa614ee1eb037a8, type: 3}
-  attack: {fileID: 6376478576470650584, guid: b1ee4414705c77e44aa614ee1eb037a8, type: 3}
+  idle: {fileID: 21300000, guid: f9f91e6e746057f0a81986549576b083, type: 3}
+  attack: {fileID: 21300000, guid: d172de79e2065e1cb6918976856c0355, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 8196963032942394651, guid: b1ee4414705c77e44aa614ee1eb037a8, type: 3}
-  dead: {fileID: -5325042937569497241, guid: b1ee4414705c77e44aa614ee1eb037a8, type: 3}
+  ready: {fileID: 21300000, guid: 32f684c1fdd35ec289e9f242257d7cac, type: 3}
+  dead: {fileID: 21300000, guid: d9162efa0b4054b49543786557b0f2ce, type: 3}
+  canvasScale: 1.22916667

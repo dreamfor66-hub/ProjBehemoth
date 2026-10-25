@@ -20,6 +20,7 @@ namespace DungeonSlash
 
         public void Bind(EquipmentData item, bool affordable, Action<EquipmentData> buy, string unavailableReason = null)
         {
+            SetDescriptionVisible(true);
             label.text = title == null ? GameText.Format("ui.shopitemview.79a2a3", item.displayName, item.price, item.description) : item.description;
             if (title != null) title.text = item.displayName;
             if (icon != null) { icon.sprite = item.icon; icon.color = Color.white; icon.enabled = item.icon != null; }
@@ -37,7 +38,7 @@ namespace DungeonSlash
         {
             Data=item;
             if(title!=null)title.text=item.displayName;
-            label.gameObject.SetActive(false);
+            SetDescriptionVisible(false);
             if(icon!=null){icon.sprite=item.icon;icon.color=Color.white;icon.enabled=item.icon!=null;}
             if(status!=null)status.text=GameText.Format("ui.arcade.price",item.price);
             button.interactable=true;button.onClick.RemoveAllListeners();button.onClick.AddListener(()=>focus(item));
@@ -46,6 +47,13 @@ namespace DungeonSlash
         {
             button.image.color=focused?new Color32(75,74,96,255):new Color32(25,27,45,255);
             if(title!=null)title.color=focused?new Color32(243,230,191,255):new Color32(164,154,145,255);
+        }
+        private void SetDescriptionVisible(bool visible)
+        {
+            // Compact rows use the shared detail area; hide the old scroll surface as well as its text.
+            var scroll=label.GetComponentInParent<ScrollRect>(true);
+            if(scroll!=null&&scroll.transform.IsChildOf(transform))scroll.gameObject.SetActive(visible);
+            label.gameObject.SetActive(visible);
         }
     }
 }

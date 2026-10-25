@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_Minotaur
   m_EditorClassIdentifier: 
-  idle: {fileID: 5492834308885696695, guid: e019397ba49e1334992e4bfa20f6ab36, type: 3}
-  attack: {fileID: -7988113463078841203, guid: e019397ba49e1334992e4bfa20f6ab36, type: 3}
+  idle: {fileID: 21300000, guid: 39bf825f834954469dc2eb54a0fa4b45, type: 3}
+  attack: {fileID: 21300000, guid: c039d02811df544e80d0570ec0d77bb9, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -1034708125973357069, guid: e019397ba49e1334992e4bfa20f6ab36, type: 3}
-  dead: {fileID: 6242934991624162312, guid: e019397ba49e1334992e4bfa20f6ab36, type: 3}
+  ready: {fileID: 21300000, guid: fd24d0e55443568198325cc8249b9ccf, type: 3}
+  dead: {fileID: 21300000, guid: de729ad48484588eaa3a26f66fd24b6e, type: 3}
+  canvasScale: 1.24861878

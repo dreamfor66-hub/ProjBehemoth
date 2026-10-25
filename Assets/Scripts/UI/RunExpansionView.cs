@@ -46,6 +46,13 @@ namespace DungeonSlash
         public ScrollRect narrativeScroll;
         public PixelDitherTransition transition;
         public float illustratedTextY = 151, illustratedTextHeight = 128, plainTextY = 205, plainTextHeight = 236;
+        [Header("Event reading layout (compact canvas)")]
+        public float narrativeTop = 280;
+        public float choicesBottom = -360;
+        [Min(0)] public float choiceSpacing = 16, narrativeChoiceSpacing = 32;
+        [Min(1)] public float illustratedNarrativeWidth = 1040, plainNarrativeWidth = 1360;
+        [Min(1)] public float narrativeScrollbarWidth = 16;
+        [Min(0)] public float narrativeScrollbarGap = 16;
         public bool compact;
         public ItemTooltipView tooltip;
         public SpellbookView spellbookView;
@@ -134,24 +141,19 @@ namespace DungeonSlash
             if (combat != null) combat.InputPaused = true;
             modal.SetActive(true); modal.transform.parent.SetAsLastSibling(); modal.transform.SetAsLastSibling();
             modalTitle.text = title; modalNarrative.text = narrative;
-            modalNarrative.enableAutoSizing = !compact&&narrativeScroll == null; modalNarrative.fontSizeMin = compact?44:18; modalNarrative.fontSizeMax = compact?44:23;
+            var narrativeSize=modalNarrative.GetComponent<TypographyRoleBinding>()?.designSize??44;
+            modalNarrative.enableAutoSizing = !compact&&narrativeScroll == null; modalNarrative.fontSizeMin = compact?narrativeSize:18; modalNarrative.fontSizeMax = compact?narrativeSize:23;
+            modalTitle.GetComponent<TypographyRoleBinding>()?.Apply();
+            modalNarrative.GetComponent<TypographyRoleBinding>()?.Apply();
             var changedIllustration = modalIllustration.sprite != illustration;
             modalIllustration.sprite = illustration; modalIllustration.color = Color.white; modalIllustration.enabled = illustration != null;
             if (changedIllustration && illustration != null) transition?.Reveal();
+            currentChoices = options.ToArray(); page = 0; DrawChoices();
             if (narrativeScroll != null)
             {
-                // Give text-only events the illustration's space instead of leaving a blank gap.
-                var height = illustration == null ? plainTextHeight : illustratedTextHeight;
-                var rect = (RectTransform)narrativeScroll.transform;
-                rect.anchoredPosition = new Vector2(rect.anchoredPosition.x, illustration == null ? plainTextY : illustratedTextY);
-                rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
-                narrativeScroll.viewport.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
-                if (narrativeScroll.verticalScrollbar != null)
-                    ((RectTransform)narrativeScroll.verticalScrollbar.transform).SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
-                LayoutRebuilder.ForceRebuildLayoutImmediate(narrativeScroll.content);
-                Canvas.ForceUpdateCanvases(); narrativeScroll.verticalNormalizedPosition = 1;
+                narrativeScroll.StopMovement();
+                narrativeScroll.verticalNormalizedPosition = 1;
             }
-            currentChoices = options.ToArray(); page = 0; DrawChoices();
         }
         private void DrawChoices()
         {
@@ -169,11 +171,88 @@ namespace DungeonSlash
                 var option = list[i]; button.title.text = "> "+option.Title; button.description.text = (string.IsNullOrWhiteSpace(option.Requirements)?"":"<color=#A49A91>"+GameText.Format("ui.feedback.condition",option.Requirements)+"</color>\n")+(option.Description ?? "");
                 var preview=button.button.GetComponent<ChoicePreview>()??button.button.gameObject.AddComponent<ChoicePreview>();preview.Bind(tooltip,option.PreviewItem,option.Title,button.description.text);
                 if(option.Summary!=null)button.description.text=option.Summary;
-                button.description.enableAutoSizing = !compact; button.description.fontSizeMin = compact?40:18; button.description.fontSizeMax = compact?40:20; button.description.fontSize=compact?40:20;
+                var descriptionSize=button.description.GetComponent<TypographyRoleBinding>()?.designSize??40;
+                button.description.enableAutoSizing = !compact; button.description.fontSizeMin = compact?descriptionSize:18; button.description.fontSizeMax = compact?descriptionSize:20; button.description.fontSize=compact?descriptionSize:20;
+                button.title.GetComponent<TypographyRoleBinding>()?.Apply();
+                button.description.GetComponent<TypographyRoleBinding>()?.Apply();
                 button.icon.sprite = option.Icon; button.icon.color = Color.white; button.icon.enabled = option.Icon != null;
                 button.button.interactable = option.Enabled;
                 button.button.onClick.RemoveAllListeners(); button.button.onClick.AddListener(() => { HideModal(); option.Selected?.Invoke(); });
             }
+            LayoutNarrative(list.Length);
+        }
+
+        private void LayoutNarrative(int choiceCount)
+        {
+            if (narrativeScroll == null) return;
+            var illustrated = modalIllustration.sprite != null;
+            var height = illustrated ? illustratedTextHeight : plainTextHeight;
+            var centerY = illustrated ? illustratedTextY : plainTextY;
+            var rect = (RectTransform)narrativeScroll.transform;
+            if (compact)
+            {
+                var panel=modalTitle.rectTransform.parent as RectTransform;
+                var plainWidth=panel!=null?Mathf.Min(plainNarrativeWidth,panel.rect.width-80):plainNarrativeWidth;
+                var width = illustrated ? Mathf.Min(illustratedNarrativeWidth,Mathf.Max(160,plainWidth-320)) : plainWidth;
+                modalTitle.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,plainWidth);
+                var contentTop=panel!=null?Mathf.Min(narrativeTop,panel.rect.height*.5f-112):narrativeTop;
+                rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+                rect.anchoredPosition = new Vector2(illustrated ? modalTitle.rectTransform.anchoredPosition.x + (plainWidth - width) * .5f : modalTitle.rectTransform.anchoredPosition.x, rect.anchoredPosition.y);
+                foreach(var row in ActiveChoices)
+                {
+                    var rowWidth=panel!=null?panel.rect.width-64:plainWidth;
+                    ((RectTransform)row.button.transform).SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,rowWidth);
+                    row.title.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,rowWidth-64);
+                    row.description.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,rowWidth-64);
+                }
+                if (!denseOptions)
+                {
+                    // Reserve only the height that visible titles and descriptions actually need.
+                    // A single Continue action should leave most of the panel available for reading.
+                    var bottom = panel!=null?Mathf.Max(choicesBottom,-panel.rect.height*.5f+40):choicesBottom;
+                    for (var i = choiceCount - 1; i >= 0; i--)
+                    {
+                        var row = choices[i];
+                        row.title.GetComponent<TypographyRoleBinding>()?.Apply();
+                        row.description.GetComponent<TypographyRoleBinding>()?.Apply();
+                        var titleHeight = Mathf.Max(56, row.title.GetPreferredValues(row.title.text, row.title.rectTransform.rect.width, Mathf.Infinity).y);
+                        var hasDescription = !string.IsNullOrWhiteSpace(row.description.text);
+                        var descriptionHeight = hasDescription ? row.description.GetPreferredValues(row.description.text, row.description.rectTransform.rect.width, Mathf.Infinity).y : 0;
+                        var rowHeight = Mathf.Max(80, titleHeight + (hasDescription ? 8 + descriptionHeight : 0) + 24);
+                        var rowRect = (RectTransform)row.button.transform;
+                        rowRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, rowHeight);
+                        rowRect.anchoredPosition = new Vector2(rowRect.anchoredPosition.x, bottom + rowHeight * .5f);
+                        row.title.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, titleHeight);
+                        row.title.rectTransform.anchoredPosition = new Vector2(row.title.rectTransform.anchoredPosition.x, rowHeight * .5f - 12 - titleHeight * .5f);
+                        row.description.gameObject.SetActive(hasDescription);
+                        row.description.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, descriptionHeight);
+                        row.description.rectTransform.anchoredPosition = new Vector2(row.description.rectTransform.anchoredPosition.x, rowHeight * .5f - 12 - titleHeight - 8 - descriptionHeight * .5f);
+                        bottom += rowHeight + (i > 0 ? choiceSpacing : 0);
+                    }
+                    height = Mathf.Max(128, contentTop - bottom - narrativeChoiceSpacing);
+                    centerY = contentTop - height * .5f;
+                }
+            }
+            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x, centerY);
+            rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+
+            // Stretch both children with their parent. Fixed center offsets left the scrollbar
+            // over the text when the authored narrative panel was widened.
+            var viewport = narrativeScroll.viewport;
+            viewport.anchorMin = Vector2.zero; viewport.anchorMax = Vector2.one;
+            viewport.offsetMin = Vector2.zero;
+            viewport.offsetMax = new Vector2(-narrativeScrollbarWidth - narrativeScrollbarGap, 0);
+            if (narrativeScroll.verticalScrollbar != null)
+            {
+                var bar = (RectTransform)narrativeScroll.verticalScrollbar.transform;
+                bar.anchorMin = new Vector2(1, 0); bar.anchorMax = Vector2.one;
+                bar.pivot = new Vector2(1, .5f);
+                bar.anchoredPosition = Vector2.zero;
+                bar.sizeDelta = new Vector2(narrativeScrollbarWidth, 0);
+                narrativeScroll.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.AutoHide;
+            }
+            LayoutRebuilder.ForceRebuildLayoutImmediate(narrativeScroll.content);
+            Canvas.ForceUpdateCanvases();
         }
         public void ShowMessage(string title, string body, Action continued) => ShowModal(title, body, new[] { new PresentationChoice { Title = GameText.Get("ui.runexpansionview.781bae3a"), Selected = continued } });
         public void HideModal() { if (modal != null) modal.SetActive(false); if(spellbookView!=null)spellbookView.gameObject.SetActive(false); if (combat != null) combat.InputPaused = false; }

@@ -23,7 +23,7 @@ MonoBehaviour:
   id: HunterLantern
   displayName: "\uC0AC\uB0E5\uAFBC\uC758 \uB4F1\uBD88"
   description: "\uBAAC\uC2A4\uD130 \uCC98\uCE58 \uC2DC HP 7 \uD68C\uBCF5"
-  icon: {fileID: 3434086634727231013, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 99028a0b6c145da6844258a39646beae, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_StormMatriarch
   m_EditorClassIdentifier: 
-  idle: {fileID: -1119816331226347247, guid: fceead620728d154ba461d5487be34b9, type: 3}
-  attack: {fileID: 7335780128116500022, guid: fceead620728d154ba461d5487be34b9, type: 3}
+  idle: {fileID: 21300000, guid: fed242cf817f595aa6459539eb26cc9d, type: 3}
+  attack: {fileID: 21300000, guid: ce966782ec785cfea7a619a8939bc462, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -4668392186365816330, guid: fceead620728d154ba461d5487be34b9, type: 3}
-  dead: {fileID: 390952774436472475, guid: fceead620728d154ba461d5487be34b9, type: 3}
+  ready: {fileID: 21300000, guid: 553b453353a7533a8323612ba819b060, type: 3}
+  dead: {fileID: 21300000, guid: 89ba9b87cf95528cad52977348943362, type: 3}
+  canvasScale: 1.1796875

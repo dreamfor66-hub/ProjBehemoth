@@ -1,0 +1,4 @@
+DungeonSlash.Tests.UiFinishTests.SavedFrames_HaveFourEqualEdges_AndLayoutMargins: Passed
+
+DungeonSlash.Tests.UiFinishTests.Tutorials_HoldFirstBattleClocks_UntilConfirmation_AndShowOncePerRun: Passed
+

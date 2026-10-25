@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_SoulEater
   m_EditorClassIdentifier: 
-  idle: {fileID: 8319984195095779557, guid: 619dbb41872ecd64b8229deb50e760a5, type: 3}
-  attack: {fileID: -8936070005743844493, guid: 619dbb41872ecd64b8229deb50e760a5, type: 3}
+  idle: {fileID: 21300000, guid: bae8c6ffa8805b9b83272c39f481f295, type: 3}
+  attack: {fileID: 21300000, guid: 99bd73866eda5cac94ad8c6e6442080f, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 6143059927410515453, guid: 619dbb41872ecd64b8229deb50e760a5, type: 3}
-  dead: {fileID: 415974115954384075, guid: 619dbb41872ecd64b8229deb50e760a5, type: 3}
+  ready: {fileID: 21300000, guid: 841a4b72a24c57cfa5c02745d4ae23c7, type: 3}
+  dead: {fileID: 21300000, guid: dde262530f7b51f68dbf12da243c389c, type: 3}
+  canvasScale: 1.10937519

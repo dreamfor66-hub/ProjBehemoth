@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Embers
   displayName: "\uC794\uBD88"
   description: "\uBD84\uB178\uAC00 \uB05D\uB098\uBA74 \uACA9\uB178\uB97C 4 \uC5BB\uB294\uB2E4."
-  icon: {fileID: -2653506176444920285, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: fe835e51ee815df69773b46363d59cd6, type: 3}
   scope: 2
   exclusiveCharacter: 2
   abilitySource: {fileID: 11400000, guid: 366675bdf9086854486b9dea07c9228a, type: 2}

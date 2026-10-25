@@ -160,7 +160,7 @@ MonoBehaviour:
   id: MagicTeacherFirst
   displayName: "\uCE60\uD310 \uC55E\uC758 \uB178\uC778"
   narrative: 
-  illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+  illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   minAct: 1
   maxAct: 3
@@ -194,7 +194,7 @@ MonoBehaviour:
       \uBB34\uC5B8\uAC00\uB97C \uC801\uACE0 \uC788\uB2E4.\r\n\r\n\uC606\uBB38 \uB4A4\uC5D0\uC11C
       \uAD34\uBB3C\uC774 \uAE30\uC5B4 \uB098\uC624\uB294\uB370\uB3C4 \uB208\uCE58\uCC44\uC9C0
       \uBABB\uD55C \uBAA8\uC591\uC774\uB2E4."
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uB178\uC778\uC744 \uB36E\uCE58\uB824\uB294 \uAD34\uBB3C\uC744 \uB9C9\uB294\uB2E4."
       description: 
@@ -240,7 +240,7 @@ MonoBehaviour:
       \uC131\uC5D0 \uB0A8\uC740 \uAE30\uB85D\uC744 \uC870\uC0AC\uD558\uACE0 \uC788\uB2E4\uB294
       \uBAA8\uC591\uC774\uB2E4.\r\n\r\n\uB9C8\uBC95\uC5D0\uB294 \uAD00\uC2EC \uC5C6\uC73C\uC138\uC694?
       \uB3C4\uC640\uC8FC\uC2E0 \uBCF4\uB2F5\uC740 \uD558\uACE0 \uC2F6\uC740\uB370."
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uBC30\uC6CC \uBCF4\uACE0 \uC2F6\uB2E4\uACE0 \uD55C\uB2E4."
       description: 
@@ -294,7 +294,7 @@ MonoBehaviour:
       \uBE48 \uD654\uB85C\uC5D0 \uAF42\uD78C\uB2E4.\r\n\r\n\uC88B\uC544\uC694. \uD070
       \uB9C8\uBC95\uB3C4 \uBC30\uC6B0\uACE0 \uC2F6\uB2E4\uBA74 \uB9C8\uB825\uC744
       \uB2F4\uC744 \uADF8\uB987\uBD80\uD130 \uD0A4\uC6CC \uB450\uC138\uC694."
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uD30C\uC774\uC5B4\uBCFC\uD2B8\uB97C \uBC30\uC6B4\uB2E4."
       description: "\uADF8\uC740 \uBC29\uD5A5\uC73C\uB85C \uD654\uC5FC\uD0C4\uC744
@@ -340,7 +340,7 @@ MonoBehaviour:
       \uADF8\uB807\uB2E4\uBA74 \uB2E4\uB978 \uAE30\uCD08\uB97C \uBD05\uC2DC\uB2E4.\r\n\r\n\uB9C8\uB825\uC758
       \uD750\uB984\uC744 \uCC28\uAC11\uAC8C \uB9CC\uB4DC\uB294 \uBC95\uACFC \uBB34\uAE30\uC5D0
       \uBD88\uAF43\uC744 \uC2E3\uB294 \uBC95, \uC5B4\uB290 \uCABD\uC774 \uAD81\uAE08\uD558\uC138\uC694?"
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uC11C\uB9AC \uD30C\uB3D9\uC744 \uBC30\uC6B4\uB2E4."
       description: "\uB9C8\uC9C0\uB9C9 \uBB34\uAE30 \uC801\uC911 \uB300\uC0C1 \uC8FC\uC704\uC5D0
@@ -449,7 +449,7 @@ MonoBehaviour:
         stat: 0
     routes: []
   - narrative: "\uBA3C\uC800 \uC190\uB05D\uC5D0 \uB9C8\uB825\uC744 \uBAA8\uC544 \uBCF4\uC138\uC694."
-    illustration: {fileID: -5216656585403298497, guid: 9555d643e6065d940a32ed65c1cbe396, type: 3}
+    illustration: {fileID: 21300000, guid: 1bd236152eee554fa643cffe2be487c3, type: 3}
     options:
     - title: "\uC601\uCC3D\uC744 \uB530\uB77C \uD55C\uB2E4."
       description: 

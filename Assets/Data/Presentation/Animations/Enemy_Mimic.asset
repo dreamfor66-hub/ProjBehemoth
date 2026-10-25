@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_Mimic
   m_EditorClassIdentifier: 
-  idle: {fileID: 5432574650548217828, guid: f3d04eba50d96ab47969316add5b3a71, type: 3}
-  attack: {fileID: -5027743719188736720, guid: f3d04eba50d96ab47969316add5b3a71, type: 3}
+  idle: {fileID: 21300000, guid: c1a40a0dc52d51edad3cc59465c8743d, type: 3}
+  attack: {fileID: 21300000, guid: 451208f6e98d56ecb8b0a3d909668f1c, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -3211730860122205705, guid: f3d04eba50d96ab47969316add5b3a71, type: 3}
-  dead: {fileID: -5616460784043091376, guid: f3d04eba50d96ab47969316add5b3a71, type: 3}
+  ready: {fileID: 21300000, guid: 9d17ac4fa1855036bccdfc70e6ae239e, type: 3}
+  dead: {fileID: 21300000, guid: 75ae37b8dd215ccfacfb323339e086bf, type: 3}
+  canvasScale: 1

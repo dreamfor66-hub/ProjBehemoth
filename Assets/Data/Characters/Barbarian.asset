@@ -32,11 +32,11 @@ MonoBehaviour:
   selectionAbility: "\uACA9\uB178\uB97C \uBAA8\uC544 \uBD84\uB178\uD558\uACE0\r\n\uAC70\uC13C
     \uC5F0\uACA9\uC744 \uC3DF\uC544\uB0B8\uB2E4."
   characterColor: {r: 0.82, g: 0.34, b: 0.28, a: 1}
-  portrait: {fileID: 2556003749722768240, guid: e4760f14decefe24e83ffea09fd980c1, type: 3}
+  portrait: {fileID: 21300000, guid: e2ce3a9169615f7690f73f239e2ff977, type: 3}
   selectionIllustration: {fileID: 21300000, guid: 582fe638aa0626c4abc34c64500e79c8, type: 3}
   selectionMaterial: {fileID: 2100000, guid: 0b9350b14707b4b43b1197cdbb4c38ea, type: 2}
   selectionBackdrop: {r: 0.19215687, g: 0.039215688, b: 0.07058824, a: 1}
-  combatSprite: {fileID: -991796013123945458, guid: af0455dd13d657d4b9a9955c67ece17a, type: 3}
+  combatSprite: {fileID: 21300000, guid: f52d34898bfc548faa8512d566ee3021, type: 3}
   combatAnimation: {fileID: 11400000, guid: e30513608514f3d4f802039dde58d22f, type: 2}
   gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   startingRelic: {fileID: 11400000, guid: 0fe44b539e1a6604aa354582f4b1c385, type: 2}
@@ -56,5 +56,5 @@ MonoBehaviour:
   criticalDamageMultiplier: 1.5
   baseAttackDamage: 14.5
   baseChargeDamage: 31
-  attackCooldown: 1.05
+  attackCooldown: 1.15
   chargeDuration: 0.95

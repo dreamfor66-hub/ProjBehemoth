@@ -62,6 +62,8 @@ namespace DungeonSlash
             if (description != null) description.text = itemDescription;
             panel.SetActive(true);
             panel.transform.SetAsLastSibling();
+            title?.GetComponent<TypographyRoleBinding>()?.Apply();
+            description?.GetComponent<TypographyRoleBinding>()?.Apply();
             var group=panel.GetComponent<CanvasGroup>();
             if(group!=null){group.blocksRaycasts=false;group.interactable=false;}
             if(title!=null)title.raycastTarget=false;
@@ -71,21 +73,24 @@ namespace DungeonSlash
                 var maxHeight = positionRoot != null ? positionRoot.rect.height - 16f : 700f;
                 if(preferredWidth<=0)preferredWidth=box.rect.width;
                 var width=preferredWidth;
+                float HeadingHeight(float availableWidth)=>title!=null?Mathf.Max(48,title.GetPreferredValues(itemName,availableWidth,Mathf.Infinity).y):0;
                 if(expandToFit)
                 {
                     var limit=Mathf.Min(maximumWidth,positionRoot!=null?positionRoot.rect.width-16:maximumWidth);
-                    while(width<limit&&description.GetPreferredValues(itemDescription,width-56,Mathf.Infinity).y+92>maxHeight)width=Mathf.Min(width+64,limit);
+                    while(width<limit&&description.GetPreferredValues(itemDescription,width-56,Mathf.Infinity).y+HeadingHeight(width-56)+44>maxHeight)width=Mathf.Min(width+64,limit);
                     box.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,width);
                     description.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,width-56);
                     if(title!=null)title.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,width-56);
                 }
                 var contentHeight=description.GetPreferredValues(itemDescription,description.rectTransform.rect.width,Mathf.Infinity).y;
-                var height = Mathf.Clamp(Mathf.Ceil((contentHeight+92)/8)*8,152,Mathf.Max(152,maxHeight));
+                var headingHeight=HeadingHeight(description.rectTransform.rect.width);
+                var bodyTop=12+headingHeight+12;
+                var height = Mathf.Clamp(Mathf.Ceil((contentHeight+bodyTop+20)/8)*8,152,Mathf.Max(152,maxHeight));
                 box.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
                 var body = description.rectTransform;
-                body.anchorMin = body.anchorMax = new Vector2(.5f, 1f); body.pivot = new Vector2(.5f, 1f); body.anchoredPosition = new Vector2(0, -72);
-                body.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height - 84f);
-                if (title != null) { var heading = title.rectTransform; heading.anchorMin = heading.anchorMax = new Vector2(.5f, 1f); heading.pivot = new Vector2(.5f, 1f); heading.anchoredPosition = new Vector2(0, -12);heading.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,48); }
+                body.anchorMin = body.anchorMax = new Vector2(.5f, 1f); body.pivot = new Vector2(.5f, 1f); body.anchoredPosition = new Vector2(0, -bodyTop);
+                body.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height - bodyTop - 12);
+                if (title != null) { var heading = title.rectTransform; heading.anchorMin = heading.anchorMax = new Vector2(.5f, 1f); heading.pivot = new Vector2(.5f, 1f); heading.anchoredPosition = new Vector2(0, -12);heading.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,headingHeight); }
             }
         }
 

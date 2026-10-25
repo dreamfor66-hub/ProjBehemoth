@@ -23,7 +23,7 @@ MonoBehaviour:
   id: AzureTalon
   displayName: "\uCCAD\uC0C9 \uB9E4\uC758 \uBC1C\uD1B1"
   description: "\uBCA0\uAE30 \uACF5\uACA9 \uAC70\uB9AC +100"
-  icon: {fileID: -3490760376169491121, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0

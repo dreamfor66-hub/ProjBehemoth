@@ -1,0 +1,256 @@
+{
+  "result": "PASS",
+  "scope": "saved scenes, baseline preservation, hierarchy ratios; no live render/input pass",
+  "changedLabels": [
+    {
+      "scene": "MainGameScene.unity",
+      "label": "5296139",
+      "from": 32.0,
+      "to": 38,
+      "nativeSizeSnap": false,
+      "reason": "Shop item price"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1724461442",
+      "from": 40.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Tooltip heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "717022782",
+      "from": 36.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Tooltip body"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1087373608",
+      "from": 44.0,
+      "to": 48,
+      "nativeSizeSnap": false,
+      "reason": "Shop wallet"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1208806419",
+      "from": 36.0,
+      "to": 30,
+      "nativeSizeSnap": false,
+      "reason": "Shop detail body"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1600000000100000003",
+      "from": 30.0,
+      "to": 40,
+      "nativeSizeSnap": false,
+      "reason": "Shop detail heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "216338037",
+      "from": 32.0,
+      "to": 38,
+      "nativeSizeSnap": false,
+      "reason": "Shop item price"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "244985876",
+      "from": 32.0,
+      "to": 38,
+      "nativeSizeSnap": false,
+      "reason": "Shop item price"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "2067110735",
+      "from": 44.0,
+      "to": 48,
+      "nativeSizeSnap": false,
+      "reason": "Modal heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1589504776",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Modal body"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1455534076",
+      "from": 44.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Choice heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "639127416",
+      "from": 44.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Choice heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1535295442",
+      "from": 44.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Choice heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "27901197",
+      "from": 44.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Choice heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1055069412",
+      "from": 44.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Choice heading"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "843457853",
+      "from": 40.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Choice explanation"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "293852884",
+      "from": 40.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Choice explanation"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "395252188",
+      "from": 40.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Choice explanation"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "659288353",
+      "from": 40.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Choice explanation"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1732188341",
+      "from": 40.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Choice explanation"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "396539385",
+      "from": 32.0,
+      "to": 38,
+      "nativeSizeSnap": false,
+      "reason": "Shop item price"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1566392112",
+      "from": 32.0,
+      "to": 38,
+      "nativeSizeSnap": false,
+      "reason": "Shop item price"
+    },
+    {
+      "scene": "MainGameScene.unity",
+      "label": "1945805258",
+      "from": 32.0,
+      "to": 38,
+      "nativeSizeSnap": false,
+      "reason": "Shop item price"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "1161462916",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Selection body: characterDescription"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "403975443",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Selection body: selectionStory"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "724465848",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Selection body: compactDescription"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "594120608",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Selection body: startingRelic"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "1729539798",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Selection body: abilityStats"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "885699946",
+      "from": 44.0,
+      "to": 36,
+      "nativeSizeSnap": false,
+      "reason": "Selection body: stats"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "97015331",
+      "from": 40.0,
+      "to": 44,
+      "nativeSizeSnap": false,
+      "reason": "Tooltip heading"
+    },
+    {
+      "scene": "OutGameScene.unity",
+      "label": "377542545",
+      "from": 36.0,
+      "to": 32,
+      "nativeSizeSnap": false,
+      "reason": "Tooltip body"
+    }
+  ],
+  "existingStringsPreserved": 263,
+  "unrelatedSceneObjectsPreserved": 3161
+}

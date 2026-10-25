@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "asciiLettersAndDigitsComparedToGothic": 62,
+  "visuallyChangedAlphanumerics": 62,
+  "originalUnicodeCoverage": 17207,
+  "unchangedOtherCodepoints": 17145,
+  "unchangedOriginalGlyphOutlines": 17145,
+  "nativePointSize": 16,
+  "lineMetricsPreserved": true,
+  "savedAtlasMatchesGothic": true,
+  "dynamicSource": "Assets/Art/Fonts/DosStory/DOSStoryGothicLatin.ttf",
+  "scope": "Source outlines/metrics, independent native pixel comparison and saved TMP atlas; not a live playtest"
+}

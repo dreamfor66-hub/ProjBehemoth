@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uBC1B\uC544\uCE58\uAE30"
   description: "\uAC00\uB4DC\uC5D0 \uC131\uACF5\uD558\uBA74 \uB2E4\uC74C \uBB34\uAE30
     \uACF5\uACA9\uC5D0 \uBB3C\uB9AC \uD53C\uD574 6\uC744 \uCD94\uAC00\uD55C\uB2E4."
-  icon: {fileID: 5681967267464321869, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: 88d6b2297b505571ad8d7608fb9aede2, type: 3}
   scope: 2
   exclusiveCharacter: 0
   abilitySource: {fileID: 11400000, guid: 44b87973b93e4b542a0c8b1835b772b2, type: 2}

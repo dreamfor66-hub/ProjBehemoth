@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "changedElements": 39,
+  "rectTransformsPreserved": 565,
+  "textComponentsPreserved": 214,
+  "buttonClickBindingsPreserved": 140,
+  "runtime": "PASS: existing Unity Editor 1920x1080; solid black borderless HUD; image-only item slots; inventory open/close and relic tooltip; event idle/hover/selected full-surface colors and click",
+  "compilation": "PASS: live Editor compiled the adjusted existing UI test; production C# unchanged"
+}

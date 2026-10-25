@@ -31,7 +31,7 @@ MonoBehaviour:
     \uC788\uC2B5\uB2C8\uB2E4. \uAC01 \uD589\uB3D9 \uB9C8\uB2E4 25% \uD655\uB960\uB85C
     \uBC1C\uAC01\uB429\uB2C8\uB2E4. \uC801\uC774 \uACF5\uACA9\uBC1B\uC73C\uBA74 \uC989\uC2DC
     \uBC1C\uAC01\uB429\uB2C8\uB2E4."
-  icon: {fileID: -5330826594950682575, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  icon: {fileID: 21300000, guid: ea4ea293418b5cf5a66897db0cabdfb0, type: 3}
   scope: 1
   exclusiveCharacter: 1
   power: 0

@@ -158,7 +158,7 @@ MonoBehaviour:
   narrative: "\uCC9C\uC7A5\uC5D0\uC11C \uBB3C\uC774 \uC0C8\uB294 \uC11C\uACE0\uC5D0
     \uCC45 \uD55C \uAD8C\uC774 \uB5A0 \uC788\uB2E4.\r\n\r\n\uB2E4\uB978 \uCC45\uB4E4\uC740
     \uBD88\uC5B4\uC11C \uCC22\uC5B4\uC84C\uB294\uB370, \uC774 \uCC45\uB9CC \uBA40\uCA61\uD558\uB2E4."
-  illustration: {fileID: -7607551139151047526, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+  illustration: {fileID: 21300000, guid: 857280758ed55a13b2ae14564640ee69, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   minAct: 1
   maxAct: 3
@@ -248,7 +248,7 @@ MonoBehaviour:
   - narrative: "\uCC9C\uC7A5\uC5D0\uC11C \uBB3C\uC774 \uC0C8\uB294 \uC11C\uACE0\uC5D0
       \uCC45 \uD55C \uAD8C\uC774 \uB5A0 \uC788\uB2E4.\r\n\r\n\uB2E4\uB978 \uCC45\uB4E4\uC740
       \uBD88\uC5B4\uC11C \uCC22\uC5B4\uC84C\uB294\uB370, \uC774 \uCC45\uB9CC \uBA40\uCA61\uD558\uB2E4."
-    illustration: {fileID: -7607551139151047526, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+    illustration: {fileID: 21300000, guid: 857280758ed55a13b2ae14564640ee69, type: 3}
     options:
     - title: "\uCC45\uC744 \uAC74\uC9C4\uB2E4."
       description: 
@@ -290,7 +290,7 @@ MonoBehaviour:
       \uAC10\uC2FC\uB2E4.\r\n\r\n\uD55C \uC904\uC740 \uC77D\uACE0 \uAC00.\r\n\r\n\uAE30\uC220,
       \uC601\uCC3D, \uC57D\uC81C\uBC95\uC774 \uC801\uD78C \uC7A5\uC774 \uCC28\uB840\uB85C
       \uD3BC\uCCD0\uC9C4\uB2E4."
-    illustration: {fileID: -7607551139151047526, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+    illustration: {fileID: 21300000, guid: 857280758ed55a13b2ae14564640ee69, type: 3}
     options:
     - title: "\uC774\uBBF8 \uC544\uB294 \uAE30\uC220\uC744 \uC77D\uB294\uB2E4."
       description: "\uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
@@ -382,7 +382,7 @@ MonoBehaviour:
       \uC218 \uC5C6\uB2E4.\r\n\r\n\uCC45 \uADC0\uD241\uC774\uC758 \uC124\uBA85\uC5D0\uB294
       \uD53C\uB97C \uB300\uBA74 \uAC10\uCDB0\uC9C4 \uAE00\uC790\uB97C \uC77D\uC744
       \uC218 \uC788\uB2E4\uACE0 \uC801\uD600 \uC788\uB2E4."
-    illustration: {fileID: -7607551139151047526, guid: fa80f3146ecbe0642a87788a91d5ebee, type: 3}
+    illustration: {fileID: 21300000, guid: 857280758ed55a13b2ae14564640ee69, type: 3}
     options:
     - title: "\uD53C\uB97C \uB5A8\uC5B4\uB728\uB824 \uC77D\uB294\uB2E4."
       description: "\uC8FC\uBB38 \uD558\uB098 \uC2B5\uB4DD"

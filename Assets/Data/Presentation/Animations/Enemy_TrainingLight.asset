@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Enemy_TrainingLight
   m_EditorClassIdentifier: 
-  idle: {fileID: -8406505029197095934, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
-  attack: {fileID: 1269711444731777374, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
+  idle: {fileID: 21300000, guid: bd46786fe9675111be96270aa5d39717, type: 3}
+  attack: {fileID: 21300000, guid: 4fc18730081f51bab10c136115ee40db, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: -7879912214633048651, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
-  dead: {fileID: 9017693639004092808, guid: b7efe3ba24253a740ac575705976ad2d, type: 3}
+  ready: {fileID: 21300000, guid: 94eb1b239e9f5678acc7738e052e4c73, type: 3}
+  dead: {fileID: 21300000, guid: a6e2d6b7de1e54b0afabfbcc736a0821, type: 3}
+  canvasScale: 1.17679558
