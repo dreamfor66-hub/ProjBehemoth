@@ -66,7 +66,7 @@ namespace DungeonSlash
             if(selectionStats!=null)selectionStats.text=GameText.Format("ui.feedback.selection.stats",data.maxHp,data.baseAttackDamage);
             if(selectionRelic!=null)selectionRelic.text=GameText.Format("ui.feedback.selection.relic",data.startingRelic.displayName);
             if(selectionRelicIcon!=null){selectionRelicIcon.sprite=data.startingRelic.icon;selectionRelicIcon.color=Color.white;}
-            characterName.text = data.displayName; characterName.color = data.characterColor;
+            characterName.text = data.displayName; characterName.color = presentation!=null&&presentation.darkPalette!=null?presentation.darkPalette.bone:data.characterColor;
             if(selectedClassSymbol!=null)
             {
                 selectedClassSymbol.character=data.character;selectedClassSymbol.SetAllDirty();

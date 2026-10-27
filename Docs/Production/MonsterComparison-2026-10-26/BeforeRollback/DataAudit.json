@@ -1,0 +1,1601 @@
+[
+  {
+    "baseline": "Data_Monster_B1_Minion_Bat",
+    "id": "LanternImp",
+    "name": "등불 도깨비",
+    "floor": 1,
+    "subject": "Small crouching long-eared goblin with one heavy bronze lantern held by a clear hooked handle, ragged olive hood, amber eyes, squat limbs. No wings.",
+    "hint": "등불을 치켜들 때 중심 약점을 끊어 강타를 취소하자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "박쥐",
+    "oldNormalWindup": "0.957",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BatNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BatCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/LanternImp-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/LanternImp-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "TunnelRat",
+    "id": "BoneScorpion",
+    "name": "납골 전갈",
+    "floor": 1,
+    "subject": "Broad low bone-armored scorpion, exactly two front pincers, six small walking legs and one segmented tail raised behind, large pale yellow stinger sac.",
+    "hint": "낮은 자세로 달려든다. 꼬리를 들면 노출된 약점을 부수자.",
+    "normalLabels": [
+      "집게 훑기",
+      "꼬리 찍기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "굴쥐",
+    "oldNormalWindup": "0.75",
+    "newNormals": [
+      {
+        "name": "집게 훑기",
+        "windup": "0.45000002",
+        "damage": "5",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "꼬리 찍기",
+        "windup": "1.05",
+        "damage": "5",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "2.7",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/TunnelRat_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/TunnelRat_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/BoneScorpion-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/BoneScorpion-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B1_Minion_Skeleton",
+    "id": "StringRevenant",
+    "name": "실매듭 망령",
+    "floor": 1,
+    "subject": "Ragged hooded skeleton marionette with two thin strings to a crooked wooden crossbar overhead, one broken cleaver, bent elbows and knotted chest.",
+    "hint": "실이 팽팽해지는 순간 가슴 매듭을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "해골",
+    "oldNormalWindup": "0.957",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SkeletonNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SkeletonCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/StringRevenant-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/StringRevenant-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B1_Minion_Leech",
+    "id": "CoffinSlime",
+    "name": "관먹이",
+    "floor": 1,
+    "subject": "Squat tar creature spilling out of a broken small coffin, one enormous crooked toothy mouth, two thick sludge arms, cracked wooden lid shield on back, small ochre eyes.",
+    "hint": "입을 벌린 채 강타를 준비한다. 몸통 약점이 노출된다.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "흡혈형",
+    "oldNormalWindup": "0.957",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/LeechNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/LeechCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CoffinSlime-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CoffinSlime-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "AlarmHound",
+    "id": "BellHound",
+    "name": "경종 사냥개",
+    "floor": 1,
+    "subject": "Lean gargoyle hound with large bell around neck, four sturdy clawed legs, broad blunt skull, one raised warning ear, dusty grey green hide and brass bell.",
+    "hint": "경종 뒤의 공격에 대비하고 약점을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "경보 사냥개",
+    "oldNormalWindup": "0.9",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.2",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AlarmHound_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AlarmHound_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/BellHound-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/BellHound-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B1_Elite_Minotaur",
+    "id": "EttinGatekeeper",
+    "name": "쌍두 문지기",
+    "floor": 1,
+    "subject": "Massive squat two headed ogre gatekeeper, each distinct blunt head attached clearly to shared broad shoulders, leather wrist cuffs, heavy single stone club resting on shoulder, olive grey hide.",
+    "hint": "두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자.",
+    "normalLabels": [
+      "왼머리 내려찍기",
+      "오른머리 휘두르기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "미노타우루스",
+    "oldNormalWindup": "0.87",
+    "newNormals": [
+      {
+        "name": "왼머리 내려찍기",
+        "windup": "0.522",
+        "damage": "30",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.25\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "오른머리 휘두르기",
+        "windup": "1.2179999",
+        "damage": "30",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.25\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "6.4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "3"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MinotaurNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MinotaurCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "MirrorKnight",
+    "id": "MirrorShell",
+    "name": "거울등 거북",
+    "floor": 1,
+    "subject": "Upright bulky snapping turtle with one broad polished mirror plate shell behind shoulders, short thick limbs, narrowed eyes, small cracked mirror buckler held in hand. No sword.",
+    "hint": "같은 방향으로 연속 베면 반격한다. 베는 방향을 바꾸자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "거울기사",
+    "oldNormalWindup": "1.05",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.8",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MirrorKnight_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MirrorKnight_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/MirrorShell-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/MirrorShell-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "ArmoredExecutioner",
+    "id": "IronMantis",
+    "name": "철갑 사마귀",
+    "floor": 1,
+    "subject": "Tall compressed armored mantis with exactly two heavy sickle forearms, two folded small grasping arms and two sturdy legs, tarnished slate carapace, amber eyes.",
+    "hint": "필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자.",
+    "normalLabels": [
+      "낫 견제",
+      "교차 베기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "철갑 집행관",
+    "oldNormalWindup": "1",
+    "newNormals": [
+      {
+        "name": "낫 견제",
+        "windup": "0.6",
+        "damage": "7",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 3\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "교차 베기",
+        "windup": "1.4",
+        "damage": "7",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 3\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "4.4",
+        "required": 1,
+        "optional": 1,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/ArmoredExecutioner_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/ArmoredExecutioner_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/IronMantis-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/IronMantis-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B1_Boss_MazeGuardian",
+    "id": "StoneSphinx",
+    "name": "미궁 스핑크스",
+    "floor": 1,
+    "subject": "Heavy squat stone sphinx lion, massive forepaws, square calm lion head, short angular ivory mane, two compact folded dark wings, single ochre chest seal, crouching ready stance.",
+    "hint": "필수 약점들을 연결해 베어 강타를 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "미궁의 수호자",
+    "oldNormalWindup": "0.87",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "6",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      },
+      {
+        "window": "7",
+        "required": 4,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossCharge.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossCrossCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/StoneSphinx-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/StoneSphinx-1.asset",
+      "Assets/Data/Presentation/Angular/Attacks/StoneSphinx-2.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "BellKeeper",
+    "id": "OssuaryBell",
+    "name": "납골당의 종",
+    "floor": 1,
+    "subject": "Walking gigantic cracked bronze bell carried by two short stone legs, bony hands protrude at sides, one glaring eye within dark bell opening, chain clapper visible. Simple single silhouette.",
+    "hint": "연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "종지기",
+    "oldNormalWindup": "1.3",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.8",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BellKeeper_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BellKeeper_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/OssuaryBell-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/OssuaryBell-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "BroodKeeper",
+    "id": "WebDuchess",
+    "name": "실짜는 공작부인",
+    "floor": 1,
+    "subject": "Squat spider duchess with hooded stern mask upper torso and broad six legged spider abdomen, two clear pale hands weaving a few thick silk cords, dusty green rags, simple large shapes.",
+    "hint": "주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "회전 둥지의 주인",
+    "oldNormalWindup": "1.1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.5",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BroodKeeper_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BroodKeeper_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/WebDuchess-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/WebDuchess-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "OrbitBat",
+    "id": "Threadling",
+    "name": "실인형",
+    "floor": 1,
+    "subject": "One small suspended wooden skeletal doll, oversized round skull, two arms and two legs dangling from one visible thick red silk knot above, ragged olive scraps, crooked grin.",
+    "hint": "본체 주위를 공전한다. 위치를 따라가며 노리자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "선회 박쥐",
+    "oldNormalWindup": "1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.5",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/OrbitBat_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/OrbitBat_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/Threadling-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/Threadling-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B2_Minion_FrostBat",
+    "id": "QuillSprite",
+    "name": "깃바늘 정령",
+    "floor": 2,
+    "subject": "Small spiky quilled bird spirit with two broad angular wings and two tucked clawed feet, large beak, ivory feather tips and charcoal blue body, one pale cyan eye.",
+    "hint": "날개를 접어 돌진하기 전 약점을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "서리 박쥐",
+    "oldNormalWindup": "0.682",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.6",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/FrostBatNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/FrostBatCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/QuillSprite-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/QuillSprite-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "IceNeedle",
+    "id": "CrystalUrchin",
+    "name": "결정 성게",
+    "floor": 2,
+    "subject": "Floating faceted dark stone urchin with six large blunt ice crystal spines, one single horizontal eye slit and a small dark mouth, no tiny facets.",
+    "hint": "결정 사이에 열린 약점을 노려 찌르기를 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "빙침 정찰병",
+    "oldNormalWindup": "0.8",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/IceNeedle_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/IceNeedle_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CrystalUrchin-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CrystalUrchin-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B2_Minion_IceWraith",
+    "id": "VeilOracle",
+    "name": "장막 예언자",
+    "floor": 2,
+    "subject": "Floating hooded oracle with empty black face and two pale eyes, broad tattered blue grey veil, two simple wrapped hands held apart, hanging single ivory mask at waist.",
+    "hint": "장막이 열릴 때 나타나는 약점을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "얼음 귀신",
+    "oldNormalWindup": "0.847",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.7",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/IceWraithNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/IceWraithCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/VeilOracle-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/VeilOracle-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B2_Minion_Yeti",
+    "id": "TuskPilgrim",
+    "name": "엄니 순례자",
+    "floor": 2,
+    "subject": "Hulking upright walrus pilgrim with thick ivory tusks, heavy dark fur shawl, broad belly, short legs, two large flipperlike hands, small ice cairn backpack.",
+    "hint": "곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "설인",
+    "oldNormalWindup": "1.287",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "8.48",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/YetiNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/YetiCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/TuskPilgrim-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/TuskPilgrim-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "SnowBell",
+    "id": "BellHare",
+    "name": "종토끼",
+    "floor": 2,
+    "subject": "Squat snow hare familiar with long asymmetrical ears, one large bronze bell strapped across chest, broad paws, grey white fur, stern pale eyes.",
+    "hint": "본체 곁에서 박자를 어긋나게 공격한다.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "눈종 정령",
+    "oldNormalWindup": "1.2",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.8",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SnowBell_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SnowBell_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/BellHare-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/BellHare-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B2_Elite_FrostOgre",
+    "id": "TwinAntlerStag",
+    "name": "쌍각 파수꾼",
+    "floor": 2,
+    "subject": "Sturdy short legged mystical stag with two huge simple branching antlers, dark blue ribbonlike mane, pale grey body, ivory wrapped forelegs, two visible antler root seals.",
+    "hint": "좌우 약점 두 개를 모두 끊어 강타를 취소하자.",
+    "normalLabels": [
+      "앞발 견제",
+      "뿔 휘두르기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "서리 거인",
+    "oldNormalWindup": "1.12",
+    "newNormals": [
+      {
+        "name": "앞발 견제",
+        "windup": "0.67200005",
+        "damage": "33.6",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 1\n      breakByAttackWay: 1\n      maxGuard: 40\n      rebuildDelay: 6\n      rebuildPerSecond: 16\n    healOnUnguardedHit: 0\n    hitCount: 2\n    followupDelay: 0.28\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "뿔 휘두르기",
+        "windup": "1.568",
+        "damage": "33.6",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 1\n      breakByAttackWay: 1\n      maxGuard: 40\n      rebuildDelay: 6\n      rebuildPerSecond: 16\n    healOnUnguardedHit: 0\n    hitCount: 2\n    followupDelay: 0.28\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "4.7",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/FrostOgreNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/FrostOgreCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "IceMirror",
+    "id": "MirrorMoth",
+    "name": "거울나방",
+    "floor": 2,
+    "subject": "Large upright moth with two wide symmetrical dark blue wings bearing one large reflective ivory patch each, thick furry abdomen, two short arms, two feet, simple antennae.",
+    "hint": "같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "얼음 거울기사",
+    "oldNormalWindup": "0.9",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/IceMirror_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/IceMirror_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/MirrorMoth-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/MirrorMoth-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "PaleWisp",
+    "id": "MaskedChoir",
+    "name": "가면 성가수",
+    "floor": 2,
+    "subject": "One hovering dark ravenlike spirit draped in a single large ivory theatre mask with narrow eye holes, two folded feather arms and tattered veil tail, compact simple silhouette.",
+    "hint": "세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "창백한 위습",
+    "oldNormalWindup": "0.85",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/PaleWisp_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/PaleWisp_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/MaskedChoir-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/MaskedChoir-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B2_Boss_FrostQueen",
+    "id": "WinterUnicorn",
+    "name": "겨울의 일각수",
+    "floor": 2,
+    "subject": "Powerful compact spectral unicorn with straight single dark horn, flowing angular slate blue mane, muscular four legs with pale wraps, mist green single ribbon hovering above, no scenery.",
+    "hint": "긴 강타 준비 동안 노출된 약점을 모두 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "서리 여왕",
+    "oldNormalWindup": "0.87",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.3",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossTwoNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossTwoCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/WinterUnicorn-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/WinterUnicorn-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "CrystalSpider",
+    "id": "PrismCrab",
+    "name": "수정 등딱지",
+    "floor": 2,
+    "subject": "Massive squat crab with two gigantic crystal tipped pincers, four short supporting legs, one broad cracked slate shell with three large milky prisms, small glowing pale eyes.",
+    "hint": "집게 사이 약점과 보조 약점을 연결해 부수자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "수정 거미",
+    "oldNormalWindup": "1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "5",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/CrystalSpider_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/CrystalSpider_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/PrismCrab-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/PrismCrab-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "StormMatriarch",
+    "id": "TempestRoc",
+    "name": "폭풍의 대붕",
+    "floor": 2,
+    "subject": "Huge heavy eagle roc with two wings arched up, short muscular talon legs, angular pale mane and beak, navy feathers, a few thick pale lightning zigzags confined around wings.",
+    "hint": "공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자.",
+    "normalLabels": [
+      "날개 바람",
+      "발톱 낚기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "폭풍의 모체",
+    "oldNormalWindup": "1.2",
+    "newNormals": [
+      {
+        "name": "날개 바람",
+        "windup": "0.72",
+        "damage": "15",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 2\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "발톱 낚기",
+        "windup": "1.6800001",
+        "damage": "15",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 2\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "4.8",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/StormMatriarch_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/StormMatriarch_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/TempestRoc-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/TempestRoc-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "StormOrb",
+    "id": "StormJelly",
+    "name": "폭풍 해파리",
+    "floor": 2,
+    "subject": "One floating small jellyfish with broad storm grey bell cap, three thick angular tentacles, two pale cyan eyes, one simple lightning mark.",
+    "hint": "본체 주위를 공전하며 공격한다.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "선회 뇌구",
+    "oldNormalWindup": "0.95",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/StormOrb_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/StormOrb_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/StormJelly-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/StormJelly-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B3_Minion_AshHound",
+    "id": "CoalSalamander",
+    "name": "숯불 도롱뇽",
+    "floor": 3,
+    "subject": "Low broad salamander with four thick clawed limbs, square head, ridged charcoal hide, one amber belly patch, chunky segmented tail with tiny flame tip.",
+    "hint": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "재 사냥개",
+    "oldNormalWindup": "0.627",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.3",
+        "required": 1,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshHoundNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshHoundCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CoalSalamander-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CoalSalamander-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B3_Minion_ShadeLancer",
+    "id": "SerpentWarden",
+    "name": "뱀 수문장",
+    "floor": 3,
+    "subject": "Snake humanoid warden with broad coiled tail, two arms, narrow reptile head, bronze collar and bracers, one short heavy spear held with anatomically clear hand and perfectly straight shaft.",
+    "hint": "몸을 세울 때 노출되는 약점을 끊어 돌진을 막자.",
+    "normalLabels": [
+      "창 찌르기",
+      "꼬리 휩쓸기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "영혼 창병",
+    "oldNormalWindup": "1.342",
+    "newNormals": [
+      {
+        "name": "창 찌르기",
+        "windup": "0.80520004",
+        "damage": "38.4",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.25\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "꼬리 휩쓸기",
+        "windup": "1.8788",
+        "damage": "38.4",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.25\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "8.48",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/ShadeLancerNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/ShadeLancerCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/SerpentWarden-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/SerpentWarden-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "AshCrow",
+    "id": "AshGargoyle",
+    "name": "재 가고일",
+    "floor": 3,
+    "subject": "Squat stone gargoyle with broad bulldog face, compact folded bat wings, two muscular arms and two clawed feet, cracked charcoal stone, small amber eyes.",
+    "hint": "짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "재까마귀",
+    "oldNormalWindup": "1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "3.6",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshCrow_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshCrow_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/AshGargoyle-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/AshGargoyle-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B3_Minion_VoidMaw",
+    "id": "HollowEye",
+    "name": "공허의 눈",
+    "floor": 3,
+    "subject": "Floating round beholderlike creature with one huge pale eye and enormous toothy mouth, exactly four thick short eyestalks, slate olive skin and broad dark tongue. No humanoid arms.",
+    "hint": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "공허의 아가리",
+    "oldNormalWindup": "0.847",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "6.4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/VoidMawNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/VoidMawCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/HollowEye-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/HollowEye-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "SoulLamp",
+    "id": "CenserRevenant",
+    "name": "향로 망령",
+    "floor": 3,
+    "subject": "Hunched fish headed robed revenant with one heavy censer hanging from clearly grasped chain, finlike ears, blank ivory eyes, charcoal robe with muted rust sash, no weapon.",
+    "hint": "다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "혼불 등잔",
+    "oldNormalWindup": "1.1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SoulLamp_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SoulLamp_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CenserRevenant-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CenserRevenant-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B3_Elite_SoulKnight",
+    "id": "OathlessCentaur",
+    "name": "파계 기마수",
+    "floor": 3,
+    "subject": "Undead centaur with skeletal horse lowerbody four sturdy legs, broad armored knight upperbody and two arms, ivory skull visor, tattered rust banner attached to back, short heavy glaive straight shaft.",
+    "hint": "넓게 드러난 약점을 차례로 끊어 강타를 취소하자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "영혼 기사",
+    "oldNormalWindup": "1.0699999",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.8",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SoulKnightNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/SoulKnightCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/OathlessCentaur-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/OathlessCentaur-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "BloodExecutioner",
+    "id": "CrimsonCount",
+    "name": "핏빛 백작",
+    "floor": 3,
+    "subject": "Aristocratic vampire with sharp simple face, slick black hair, two fangs, huge angular high collar, charcoal coat and muted wine vest, one oversized claw hand and other holding simple goblet, bent confident stance.",
+    "hint": "무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "피의 집행자",
+    "oldNormalWindup": "1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.2",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BloodExecutioner_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BloodExecutioner_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CrimsonCount-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CrimsonCount-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "LampPriest",
+    "id": "AshHierophant",
+    "name": "재의 대사제",
+    "floor": 3,
+    "subject": "Tall but squat hooded skeletal high priest, large ivory skull mask, charcoal ragged robes, rust cloth stole, one bronze hanging lantern held by clear wrapped hand, other open palm.",
+    "hint": "호위 가고일과 공격이 겹친다. 본체 강타를 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "검은 등불 사제",
+    "oldNormalWindup": "1.1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.2",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/LampPriest_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/LampPriest_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/AshHierophant-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/AshHierophant-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_B3_Boss_SoulEater",
+    "id": "AshDragon",
+    "name": "잿불의 용",
+    "floor": 3,
+    "subject": "Compact broad fire dragon hovering in low crouched flight, two heavy wings with large ochre flame membranes, dark charcoal body, two forearms two hindlegs and single curling tail, amber eyes. Entire wing tips within frame.",
+    "hint": "날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자.",
+    "normalLabels": [
+      "발톱 휘두르기",
+      "불씨 뿜기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "영혼 포식자",
+    "oldNormalWindup": "0.87",
+    "newNormals": [
+      {
+        "name": "발톱 휘두르기",
+        "windup": "0.522",
+        "damage": "31.2",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.25\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "불씨 뿜기",
+        "windup": "1.2179999",
+        "damage": "31.2",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 1\n    followupDelay: 0.25\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "4.4",
+        "required": 4,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossThreeNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/BossThreeCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/AshDragon-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/AshDragon-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "EclipseBeast",
+    "id": "EclipseChimera",
+    "name": "일식의 키메라",
+    "floor": 3,
+    "subject": "Heavy squat chimera with fierce lion head, two ram horns, two compact raised bat wings, two muscular claw arms and two heavy feet, single thick serpentine tail, charcoal hide with muted ochre mane.",
+    "hint": "해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "일식의 짐승",
+    "oldNormalWindup": "1.2",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "4.5",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "5"
+        ],
+        "support": "left_heart"
+      },
+      {
+        "window": "4.8",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": "right_heart"
+      },
+      {
+        "window": "4.5",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/EclipseBeast_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/EclipseBeast_Charge_1.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/EclipseBeast_Charge_2.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/EclipseBeast_Charge_3.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-1.asset",
+      "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-2.asset",
+      "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-3.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "ElderLeftHeart",
+    "id": "SunIdol",
+    "name": "해 우상",
+    "floor": 3,
+    "subject": "One floating cracked bronze sun idol with simple scowling stone face and four broad angular sun rays, dark hollow center, thick ivory wrapping at bottom. No extra objects.",
+    "hint": "연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "일식의 좌심장",
+    "oldNormalWindup": null,
+    "newNormals": [],
+    "charges": [],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [],
+    "currentAttacks": [],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "ElderRightHeart",
+    "id": "MoonIdol",
+    "name": "달 우상",
+    "floor": 3,
+    "subject": "One floating crescent shaped dark stone idol enclosing single narrow ivory eye, two large broken horn tips, muted rust binding and one dangling cloth strip.",
+    "hint": "강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "일식의 우심장",
+    "oldNormalWindup": null,
+    "newNormals": [],
+    "charges": [],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [],
+    "currentAttacks": [],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "AshGeneral",
+    "id": "CinderLich",
+    "name": "잿불 왕",
+    "floor": 3,
+    "subject": "Broad robed crowned lich, low jagged bronze crown, one ivory skull face with narrow amber eyes, heavy offwhite fur collar, charcoal robes and rust central stole, perfectly straight staff with simple three prong head held by visible skeletal hand.",
+    "hint": "소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "재의 군단장",
+    "oldNormalWindup": "1.4",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "5.3",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      },
+      {
+        "window": "4.7",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "3"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshGeneral_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshGeneral_Charge_1.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/AshGeneral_Charge_2.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CinderLich-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CinderLich-1.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CinderLich-2.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_Special_Minion_Mimic",
+    "id": "IronMimic",
+    "name": "철니 미믹",
+    "floor": 0,
+    "subject": "One squat wooden treasure chest mimic with broad crooked iron teeth, two huge clawed hands, two stubby feet and long dark tongue, dark brass corners and amber eye keyhole.",
+    "hint": "뚜껑이 열리는 동안 드러난 약점을 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "미믹",
+    "oldNormalWindup": "0.957",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "6.4",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MimicNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MimicCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/IronMimic-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/IronMimic-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "Data_Monster_Special_MerchantMutant",
+    "id": "GildedToad",
+    "name": "금먹는 두꺼비",
+    "floor": 0,
+    "subject": "Huge squat greedy toad merchant monster with two bulging amber eyes, wide mouth, dark green hide, leather apron and one large coin purse gripped in thick webbed hand, bronze coin necklace.",
+    "hint": "큰 공격을 준비할 때 열린 약점을 노리자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "상인 돌연변이",
+    "oldNormalWindup": "0.87",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "6.4",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MerchantMutantNormal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/MerchantMutantCharge.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/GildedToad-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/GildedToad-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "TrialGuardian",
+    "id": "TarrasqueWhelp",
+    "name": "가시등 시련수",
+    "floor": 0,
+    "subject": "Broad hunched shell backed beast with short triangular shell spikes, huge forearms, short rear legs, narrow toothy jaw, charcoal stone hide and pale ivory claws. No armor ornaments.",
+    "hint": "시련의 강타를 약점 파괴로 막자.",
+    "normalLabels": [
+      "앞발 찍기",
+      "등껍질 들이밀기"
+    ],
+    "windupFactors": [
+      0.6,
+      1.4
+    ],
+    "oldName": "봉인된 시련의 수호자",
+    "oldNormalWindup": "1.1",
+    "newNormals": [
+      {
+        "name": "앞발 찍기",
+        "windup": "0.66",
+        "damage": "9",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 2\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      },
+      {
+        "name": "등껍질 들이밀기",
+        "windup": "1.54",
+        "damage": "9",
+        "mechanics": "  combatMechanics:\n    directionalGuard:\n      enabled: 0\n      breakByAttackWay: 1\n      maxGuard: 72\n      rebuildDelay: 5\n      rebuildPerSecond: 24\n    healOnUnguardedHit: 0\n    hitCount: 2\n    followupDelay: 0.4\n  chargeSummonMechanics:\n    openingSummons: []\n    summonOnFailedCharge: {fileID: 0}\n    healOnFailedChargeWhileSummonAlive: 0\n"
+      }
+    ],
+    "charges": [
+      {
+        "window": "4.5",
+        "required": 2,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/TrialGuardian_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/TrialGuardian_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  },
+  {
+    "baseline": "DeepTrialGuardian",
+    "id": "CrownColossus",
+    "name": "왕관 거신",
+    "floor": 0,
+    "subject": "Squat colossal stone armored sentinel with small closed crowned helmet, massive broad shoulders, two heavy arms and two short thick legs, single bronze chest rune, no weapon, rugged olive slate stone.",
+    "hint": "심층 시련. 여러 약점을 연결해 끊자.",
+    "normalLabels": [],
+    "windupFactors": [],
+    "oldName": "심층 시련의 수호자",
+    "oldNormalWindup": "1.1",
+    "newNormals": [],
+    "charges": [
+      {
+        "window": "5",
+        "required": 3,
+        "optional": 0,
+        "hits": [
+          "1"
+        ],
+        "support": ""
+      }
+    ],
+    "invariant": true,
+    "clonedAttacksUnchanged": true,
+    "oldAttacks": [
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/DeepTrialGuardian_Normal.asset",
+      "Docs/Production/AngularWorld-2026-10-26/Before/Attacks/DeepTrialGuardian_Charge_1.asset"
+    ],
+    "currentAttacks": [
+      "Assets/Data/Presentation/Angular/Attacks/CrownColossus-0.asset",
+      "Assets/Data/Presentation/Angular/Attacks/CrownColossus-1.asset"
+    ],
+    "sequenceChangesOnlyWindup": true
+  }
+]

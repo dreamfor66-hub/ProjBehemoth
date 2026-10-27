@@ -2,6 +2,7 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace DungeonSlash
 {
@@ -14,7 +15,7 @@ namespace DungeonSlash
         ClearedExit
     }
 
-    public sealed class MapRoomIcon : MonoBehaviour
+    public sealed class MapRoomIcon : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField] private Image image;
         [SerializeField] private TextMeshProUGUI label;
@@ -27,6 +28,18 @@ namespace DungeonSlash
         private bool pulse;
         private bool highlighted;
         public bool compact;
+        private System.Action selected;
+        public void SetSelection(System.Action action)
+        {
+            selected = action;
+            if (image != null) image.raycastTarget = action != null;
+        }
+        public void OnPointerClick(PointerEventData data)
+        {
+            if (data.button == PointerEventData.InputButton.Left) selected?.Invoke();
+        }
+        public void OnPointerEnter(PointerEventData data) { if (selected != null) { highlighted = true; ApplyColor(); } }
+        public void OnPointerExit(PointerEventData data) { if (selected != null) { highlighted = false; ApplyColor(); } }
 
         public void Configure(Image newImage, TextMeshProUGUI newLabel) => Configure(newImage, newLabel, null, null, null, null, null);
 

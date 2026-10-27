@@ -1,0 +1,45 @@
+{
+  "note": "확정 설정 신장 수치는 없어 비교용 가정이다. 실제 발바닥 최저점을 지면에 정렬하며 종횡비를 보존한다. 바바리안은 곰가죽 머리 y=82, 위자드는 머리 y=80부터 발바닥까지 계산해 무기를 신장에 넣지 않는다.",
+  "groundY": 590,
+  "warriorSilhouetteHeight": 450,
+  "characters": [
+    {
+      "name": "Warrior",
+      "label": "워리어",
+      "relativeHeight": 1.0,
+      "source": "Assets/Art/World/Angular/Heroes/Warrior-Front.png"
+    },
+    {
+      "name": "Rogue",
+      "label": "로그",
+      "relativeHeight": 1.03,
+      "source": "Assets/Art/World/Angular/Heroes/Rogue-Front.png"
+    },
+    {
+      "name": "Barbarian",
+      "label": "바바리안",
+      "relativeHeight": 1.1,
+      "source": "Assets/Art/World/Angular/Heroes/Barbarian-Front.png",
+      "bodyTopY": 82
+    },
+    {
+      "name": "Samurai",
+      "label": "사무라이",
+      "relativeHeight": 1.02,
+      "source": "Assets/Art/Trials/Angular01/StyleCorrections03/Samurai.png"
+    },
+    {
+      "name": "Monk",
+      "label": "몽크",
+      "relativeHeight": 1.02,
+      "source": "Assets/Art/Trials/Angular01/StyleCorrections03/Monk.png"
+    },
+    {
+      "name": "Wizard",
+      "label": "위자드",
+      "relativeHeight": 0.97,
+      "source": "Assets/Art/World/Angular/Heroes/Wizard-Front.png",
+      "bodyTopY": 80
+    }
+  ]
+}

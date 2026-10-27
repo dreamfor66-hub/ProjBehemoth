@@ -1,0 +1,434 @@
+[
+  {
+    "id": "Hero-Warrior",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Hero-Rogue",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Hero-Barbarian",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Hero-Samurai",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Hero-Monk",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Hero-Wizard",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-LanternImp",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-BoneScorpion",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-StringRevenant",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CoffinSlime",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-BellHound",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-EttinGatekeeper",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-MirrorShell",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-IronMantis",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-StoneSphinx",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-OssuaryBell",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-WebDuchess",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-Threadling",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-QuillSprite",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CrystalUrchin",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-VeilOracle",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-TuskPilgrim",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-BellHare",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-TwinAntlerStag",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-MirrorMoth",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-MaskedChoir",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-WinterUnicorn",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-PrismCrab",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-TempestRoc",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-StormJelly",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CoalSalamander",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-SerpentWarden",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-AshGargoyle",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-HollowEye",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CenserRevenant",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-OathlessCentaur",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CrimsonCount",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-AshHierophant",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-AshDragon",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-EclipseChimera",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-SunIdol",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-MoonIdol",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CinderLich",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-IronMimic",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-GildedToad",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-TarrasqueWhelp",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Monster-CrownColossus",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  },
+  {
+    "id": "Companion-TrailDog",
+    "exactStateContract": true,
+    "idleUnchanged": true,
+    "gameplayDataUnchanged": true,
+    "layoutUnchanged": true,
+    "separatePaintedStates": true,
+    "liveVerified": true
+  }
+]

@@ -8,6 +8,8 @@ namespace DungeonSlash
     {
         public ArcadePresentation presentation;
         public bool quantizeColors=true;
+        [Tooltip("Preserve authored resource colors and smooth ink UI over the illustration framebuffer.")]
+        public bool preserveNativeUiColors;
         public Shader textOcclusionShader;
         public Shader textCompositeShader;
         public ArcadeTextRenderer TextRenderer { get; private set; }
@@ -23,6 +25,8 @@ namespace DungeonSlash
         }
         private void BeginCamera(UnityEngine.Rendering.ScriptableRenderContext context,Camera camera)
         {
+            if(camera==GetComponent<Camera>()&&presentation!=null&&presentation.darkPalette!=null)
+                presentation.darkPalette.Apply();
             if(camera==GetComponent<Camera>()&&presentation!=null&&presentation.arcade&&textOcclusionShader!=null&&textCompositeShader!=null)
             {
                 TextRenderer.Capture(camera);

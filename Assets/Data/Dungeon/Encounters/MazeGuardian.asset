@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.mazeguardian.displayname
-    lastText: "\uBBF8\uAD81\uC758 \uC218\uD638\uC790"
+    lastText: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
   - propertyPath: hint
     key: data.encounterdata.mazeguardian.hint
-    lastText: 
+    lastText: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4
+      \uAC15\uD0C0\uB97C \uB04A\uC790."
   textOwnerGuid: 3e1b854bb1216fc41a6b3695e6f68b42
   id: MazeGuardian
-  displayName: "\uBBF8\uAD81\uC758 \uC218\uD638\uC790"
-  hint: 
+  displayName: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
+  hint: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4 \uAC15\uD0C0\uB97C
+    \uB04A\uC790."
   category: 10
   members:
   - monster: {fileID: 11400000, guid: fb0cdacf025fd12468b40e7cc65b2ae7, type: 2}

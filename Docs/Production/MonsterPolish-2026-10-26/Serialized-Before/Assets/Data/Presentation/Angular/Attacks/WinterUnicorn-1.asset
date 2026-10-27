@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: WinterUnicorn-1
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.winterunicorn-1.displayname
+    lastText: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218\uC758 \uAC15\uD0C0 1"
+  textOwnerGuid: 4544e97468072fe47a3054c7c0831abd
+  type: 1
+  displayName: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218\uC758 \uAC15\uD0C0 1"
+  damage: 45.6
+  shieldDamage: 45.6
+  windupDuration: 0.01
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 4.3
+  chargeWeakPoints:
+  - id: core-1
+    normalizedPosition: {x: -70, y: 26}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  - id: core-2
+    normalizedPosition: {x: 0, y: -48}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  - id: core-3
+    normalizedPosition: {x: 70, y: 26}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons:
+    - {fileID: 11400000, guid: 9a8888d9e5c52744fb1d2f2302d20795, type: 2}
+    - {fileID: 11400000, guid: 9a8888d9e5c52744fb1d2f2302d20795, type: 2}
+    summonOnFailedCharge: {fileID: 11400000, guid: 9a8888d9e5c52744fb1d2f2302d20795, type: 2}
+    healOnFailedChargeWhileSummonAlive: 24

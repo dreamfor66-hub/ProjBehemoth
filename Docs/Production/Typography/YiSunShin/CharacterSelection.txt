@@ -1,0 +1,9 @@
+Scoped live Unity font verification / 1920x1080
+Label | YiSunShin | size=40 | overflow=False | missing= | 능력 상세
+BaseStats | YiSunShin | size=40 | overflow=False | missing= | 체력 100   공격 14
+Label | YiSunShin | size=44 | overflow=False | missing= | 성으로
+Label | YiSunShin | size=44 | overflow=False | missing= | ←  뒤로
+Story | YiSunShin | size=36 | overflow=False | missing= | 방패와 한손검을 주 무기로 각종 전쟁에 참여하며 용병이나 모험가 일을 해 온 전투의 달인입니다.
+Name | YiSunShin | size=88 | overflow=False | missing= | 워리어
+StarterName | YiSunShin | size=40 | overflow=False | missing= | 유물 · 수호자의 방패
+Labels=7; wrong font=0; missing glyphs=0

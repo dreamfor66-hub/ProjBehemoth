@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3057923236df1948b31849bacf683e8, type: 3}
+  m_Name: InkUi
+  m_EditorClassIdentifier: 
+  appliedRevision: 9
+  material: {fileID: 2100000, guid: f7f97c387f4616d4387be3930e86b739, type: 2}
+  paper: {r: 0.03529412, g: 0.03529412, b: 0.03137255, a: 1}
+  recess: {r: 0.011764706, g: 0.011764706, b: 0.011764706, a: 1}
+  iron: {r: 0.23921569, g: 0.23137255, b: 0.20784314, a: 1}
+  edge: {r: 0.39215687, g: 0.3764706, b: 0.3137255, a: 1}
+  brass: {r: 0.6627451, g: 0.56078434, b: 0.30588236, a: 1}
+  bone: {r: 0.8666667, g: 0.8156863, b: 0.6627451, a: 1}
+  header: {r: 0.08627451, g: 0.12156863, b: 0.1254902, a: 1}
+  hp: {r: 0.6313726, g: 0.09411765, b: 0.08627451, a: 1}
+  hpRidge: {r: 0.8862745, g: 0.19215687, b: 0.13333334, a: 1}
+  mana: {r: 0.24313726, g: 0.43529412, b: 0.4745098, a: 1}
+  guard: {r: 0.7490196, g: 0.7058824, b: 0.5803922, a: 1}
+  brokenGuard: {r: 0.4509804, g: 0.16470589, b: 0.12156863, a: 1}
+  railWidth: 2
+  railGap: 7
+  wear: 1
+  guardCells: 12
+  headerHeight: 100

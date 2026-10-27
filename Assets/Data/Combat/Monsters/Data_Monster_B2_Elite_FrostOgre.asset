@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.data_monster_b2_elite_frostogre.displayname
-    lastText: "\uC11C\uB9AC \uAC70\uC778"
+    lastText: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_b2_elite_frostogre.encounterhint
-    lastText: 
+    lastText: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   textOwnerGuid: b07761a94d2640a41ad472aecfdca930
-  displayName: "\uC11C\uB9AC \uAC70\uC778"
-  portrait: {fileID: 21300000, guid: 0485d029379c5be49d578d4771d1032a, type: 3}
-  combatAnimation: {fileID: 11400000, guid: b7ce0ebd6431bfd42af94bb492bd1ebc, type: 2}
-  encounterHint: 
+  displayName: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
+  portrait: {fileID: 21300000, guid: 7fe01781969f4bd46922ab009be3a52d, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 6d13459547948b4478db68f7a1f33edc, type: 2}
+  encounterHint: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+    \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 14
   bodyHitRadius: 108
   attacks:
-  - {fileID: 11400000, guid: 62019fdb93c09c04ab93e187c5fc7966, type: 2}
-  - {fileID: 11400000, guid: b7513afe2ed561847b341b11ae578676, type: 2}
+  - {fileID: 11400000, guid: 80271b5ae42011a4e81af4bcba0aed98, type: 2}
+  - {fileID: 11400000, guid: b9d175529b186324b971c1e66c57bb9a, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.22, g: 0.52, b: 0.76, a: 1}

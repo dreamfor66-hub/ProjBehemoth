@@ -1,0 +1,40 @@
+[
+  {
+    "id": "WarriorFront08",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/Restored/Warrior-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 is ORIGINAL restored Warrior to edit, images2/3 PRIMARY drawing-style authorities only. Make a very small, coherent SHIELD MOUNTING correction on image RIGHT. Preserve the original shield silhouette, SIZE, POSITION, TILT and original muted brown/gray flat simple rendering. Original shield occupies x780..995,y540..1050 on1024x1536 canvas. Do not replace it by a larger flat frontal shield. The shield is OUTBOARD of the original left forearm; its panel remains BEHIND forearm/hand in the pictured view. Reveal its INNER plain wooden surface with two simple dark brown leather enarmes secured by small rivets, wrapping naturally around original forearm. The original forearm slopes from approx x745,y650 to fist x805,y820; original fist hangs downward. Keep EXACT same shoulder, elbow, forearm, wrist, fist pose and coordinates. NO new gripping pose, no bent wrist. Only leather bands may cross original bracer; every other shield part must stay behind arm and behind cloak/torso. Shield upper edge must tuck behind original elbow/cloak, NEVER cover chest/shoulder. Remove front-facing metal boss from inside face. Leather loops need a clear continuous attachment to wood without floating rods or exaggerated rectangular mounting brackets. The shield drawing should remain broad2-3 values of dusty brown wood and matte gray iron, line thickness same as original armor. No extra facets, smooth 3D bevel or fine shiny lines. Preserve ALL other original pixels/design: helmet face, scarf, armor, CLOAK silhouettes, belt, legs, sword and full composition. This is a local equipment correction, not a new Warrior. Complete full image same1024x1536 and true transparent alpha. No glow, background, text."
+  },
+  {
+    "id": "WarriorRear08",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/Restored/Warrior-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 ORIGINAL restored Warrior rear is edit target; images2/3 primary drawing style only. Small local SHIELD mounting correction on IMAGE LEFT, preserving EXACT original Warrior body, original arm/wrist/fist pose and original shield orientation/silhouette. Keep shield at x80..330,y530..1040, same narrow oblique angle seen in original1448x1086. Do NOT rotate it into a broad front view and do NOT extend it over shoulder/cloak/torso. Its INNER face should be simple flat muted brown wood with no exterior center boss. Add two physically attached simple leather enarmes around existing forearm, anchored to the wood. The original elbow/bracer slopes x300,y610 to wristx285,y865 and hanging fistx290,y940. Keep original arm contour and neutral wrist. Only narrow strap fronts wrap over existing bracer; wood, metal edge, strap rear halves and fastenings stay BEHIND original forearm, cloak and body. Top shield edge remains outside torso and BEHIND original upper arm, no shield object floating in front of shoulder. Preserve original oblique perspective and simple broad muted shadows with bold slightly irregular outlines SAME as original armor and cloak. No new bright wood, many small bevels, isolated 3D object rendering, straight synthetic collage. Do NOT redraw helmet, limbs, sword, cloak or waist. Same1448x1086 waist-up framing, no legs. Full coherent illustration true transparent alpha without background/glow/text."
+  },
+  {
+    "id": "BarbarianRear08",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Barbarian-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Concepts/BarbarianBearPelt04.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 waist-up rear bear-pelt Barbarian is edit target; Image2 APPROVED front identity and TWO-HANDED axe design/guard reference; images3/4 PRIMARY flat ink drawing style. Fix the passive one-handed upright axe pose into a convincing TWO-HANDED READY GUARD, as viewed from BEHIND. Keep massive human bear-pelt body, skin, brown cuffs, tribal leather waist, head facing directly away, no visible face, waist-up1448x1086 with NO thighs/legs. Turn torso a very slight15 degrees toward image RIGHT, shoulders braced, elbows bent and arms active. Hold the same long-haft double-bit axe diagonally in FRONT of torso, head raised above IMAGE RIGHT shoulder. Anatomical right hand is higher on shaft beside right chest and left hand lower by waist, separated grips on ONE straight shaft. Since viewed from behind, far forearm/hand and central shaft can be partly naturally HIDDEN by torso/pelt rather than bending behind back; near right elbow and firm grip clearly visible. Hand wraps haft with fingers and thumb, neutral wrist, elbows connect. It must read ready to swing with both hands, NOT displaying a prop vertically at arm's length, not resting axe on ground. Axe head center socket and both exposed lengths of shaft must lie on ONE straight diagonal from upperright to lowerleft even where hidden by grips/body. Match the approved front head: two asymmetrical faceted silver-gray cutting blades and brown wrapped shaft, not a new ornamental symmetric battleaxe. Keep blade fully on canvas above shoulder. Broad simple flat shadow planes/bold dark outlines, no extra triangular skin facets or metal highlights beyond approvedfront. Maintain original rear character size and waistup framing. True transparent alpha, no background/text."
+  },
+  {
+    "id": "WizardRear08",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Rear.png",
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/Restored/Wizard-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 rear elderly Wizard is edit target; Image2 APPROVED front with owl is identity authority; images3/4 primary drawing style. Correct the BOOK AND LEFT ARM physical logic, using natural rear occlusion instead of showing an impossible book backface. Keep right hand HOLDING the same straight upright brown STAFF exactly as now. The left arm bends FORWARD and holds the closed spellbook against the FRONT of his lower chest, under his gaze; from this REAR view the torso/cloak hide the book and left palm COMPLETELY. Remove visible book poking out at image LEFT. Show only natural left sleeve/elbow at side, forearm disappearing forward around ribs: no extra disconnected hand/book on his back, no book painted onto cloak, no added back strap or weapon. No need to reveal book from behind; it is in front of his body. Keep exact same white-haired head location, owl on anatomical left shoulder/imageleft, blue cloak shape, burgundy robe, cream cuffs, waist dagger, rear upperbody1448x1086 frame. Left shoulder-to-elbow contour must be natural and relaxed, not twisted outward to display book. Preserve bold dark ink, broad few muted flat color planes matching approved front; avoid extra shading facets/polish. The FRONT portrait is locked and MUST NOT be redrawn; output ONLY the rear view. True alpha no glow/background/text."
+  }
+]

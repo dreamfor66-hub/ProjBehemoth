@@ -8,6 +8,8 @@ namespace DungeonSlash
     public sealed class NavigationChoiceView : MonoBehaviour
     {
         [SerializeField] private List<RoomChoiceButton> choices = new();
+        [Tooltip("Optional saved illustration slots, ordered Forward / Left / Right / Back. Empty preserves the existing default layout.")]
+        public Vector2[] artworkPositions = Array.Empty<Vector2>();
 
         public void Configure(IEnumerable<RoomChoiceButton> newChoices) => choices = newChoices.ToList();
 
@@ -18,7 +20,9 @@ namespace DungeonSlash
                 var absolute = DirectionUtility.ToAbsolute(state.Player.Facing, relative);
                 var target = state.Graph.At(state.Player.CurrentRoom.Position + DirectionUtility.Offset(absolute));
                 var available = target != null && state.Player.CurrentRoom.Connections.Contains(target.RoomId);
-                choices[(int)relative].Bind(relative, absolute, available, selected, hovered);
+                var index=(int)relative;
+                Vector2? artworkPosition=artworkPositions!=null&&index<artworkPositions.Length?artworkPositions[index]:null;
+                choices[index].Bind(relative, absolute, available, selected, hovered, artworkPosition);
             }
         }
 

@@ -1,0 +1,10 @@
+{
+  "id": "WarriorFront08b",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/Restored/Warrior-Front.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/Sources/WarriorFront08.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is ORIGINAL Warrior edit target. Image2 is rejected edit for reference of the shield mounting ONLY: it wrongly lowered the hand and forearm. Images3/4 primary style only. Redraw ONLY the shield inner face and its two leather mounting loops, as in image2 but FIT THEM TO THE UNCHANGED ORIGINAL ARM in image1. Original glove/fist center is approx800,810 on1024x1536 and must remain there, NOT down at815,870. Do not lengthen, move, rotate or bend any part of image1 arm. Keep original armor plates/forearm and glove silhouettes intact. Shield same original muted wood grayiron, narrow oblique silhouette/size/tilt and position as image1. Wood panel behind arm and cloak, never over shoulder/body. Simple riveted leather loop at upper forearm and another around lower bracer; fit loop ends to same shield wood plane, no floating tangs. No exterior center metal boss on inner face. Everything else in image1 must remain unchanged including helmet/scarf/cloak/sword/legs/body layout. Only output the same full1024x1536 original with shield correction. Same bold slightly rough outlines and few broad flat muted shadows. True transparent alpha no glow/text/background."
+}

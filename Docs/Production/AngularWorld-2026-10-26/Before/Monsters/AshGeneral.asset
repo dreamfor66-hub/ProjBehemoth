@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: AshGeneral
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.ashgeneral.displayname
+    lastText: "\uC7AC\uC758 \uAD70\uB2E8\uC7A5"
+  - propertyPath: encounterHint
+    key: data.monsterdata.ashgeneral.encounterhint
+    lastText: 
+  textOwnerGuid: 0f83843535eecd646a3cd8f4cc8fa6f8
+  displayName: "\uC7AC\uC758 \uAD70\uB2E8\uC7A5"
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 3dce4ebdd4d8e944b8fa05c04c038735, type: 2}
+  encounterHint: 
+  pattern: 5
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 900
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 86
+  goldReward: 40
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: a4b21179cdac7cd45b3a2474027653f0, type: 2}
+  - {fileID: 11400000, guid: b0f908d40faca8d42842a51a5836b227, type: 2}
+  - {fileID: 11400000, guid: a747bfdc70a544243a74b7b729493e2d, type: 2}
+  bodyColor: {r: 0.48, g: 0.4928, b: 0.8, a: 1}

@@ -1,0 +1,42 @@
+{
+  "onlyInstalledAsset": "Assets/Art/World/Angular/Heroes/Barbarian-Rear.png",
+  "matchesReviewed": true,
+  "protected": [
+    {
+      "name": "Warrior-Front",
+      "unchanged": true
+    },
+    {
+      "name": "Warrior-Rear",
+      "unchanged": true
+    },
+    {
+      "name": "Wizard-Front",
+      "unchanged": true
+    },
+    {
+      "name": "Wizard-Rear",
+      "unchanged": true
+    },
+    {
+      "name": "Wizard-Portrait",
+      "unchanged": true
+    },
+    {
+      "name": "Barbarian-Front",
+      "unchanged": true
+    },
+    {
+      "name": "Barbarian-Portrait",
+      "unchanged": true
+    },
+    {
+      "name": "Rogue-Front",
+      "unchanged": true
+    },
+    {
+      "name": "Rogue-Rear",
+      "unchanged": true
+    }
+  ]
+}

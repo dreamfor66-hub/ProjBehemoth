@@ -1,0 +1,6 @@
+Scoped live visual review of monster artwork; no balance suite.
+PASS BoneScorpion: localized name, production sprite and visible combat art.
+PASS StringRevenant: localized name, production sprite and visible combat art.
+PASS CoffinSlime: localized name, production sprite and visible combat art.
+PASS MirrorShell: localized name, production sprite and visible combat art.
+COMPLETE

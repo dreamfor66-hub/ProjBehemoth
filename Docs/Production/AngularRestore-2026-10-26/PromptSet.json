@@ -1,0 +1,55 @@
+{
+  "mode": "built-in image_gen",
+  "tasks": [
+    {
+      "id": "Warrior-Rear-Forward",
+      "refs": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Warrior-Rear.png"
+      ],
+      "alpha": true,
+      "prompt": "Use case: precise-object-edit. Edit target: input1 exact approved Warrior rear cutout. Change ONLY the helmet/head orientation. The wearer must face STRAIGHT AWAY from the viewer toward screen top, a strict centered back-of-head view, head aligned with spine. The back plate of the helmet is seen; NO side profile, NO nose-like visor pointing left or right, NO face slit visible, NO sideways brim. Keep helmet angular grey iron with same simple large shadow planes. Preserve the exact existing framing, body pose, olive ragged scarf/cape, yellow collar, RIGHT shoulder pauldron, arms, shield and sword, all edges outside helmet unchanged. Do not mirror the body. The old helmet occupies approximately x=35%-59%, y=6%-29%; confine edit there. Landscape 4:3 same canvas and subject scale, true transparent alpha. No background, text, glow, extra facets or added equipment.",
+      "generated": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-92e5ac8d-b2a7-48d6-bb56-d2e728f40264.png"
+    },
+    {
+      "id": "Barbarian-BearPelt-Concept",
+      "refs": [
+        "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Warrior.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Monk.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+      ],
+      "alpha": true,
+      "prompt": "Use case: stylized-concept. Generate ONE alternative Barbarian character concept for Behemoth, not an edit of existing lizard. Inputs1/2 establish current cast proportions/linework; inputs3/4 are original style authority. A conventional HUMAN muscular barbarian wearing a rugged dark brown BEAR PELT over his head and shoulders: recognisable bear head hood with small round ears and blunt muzzle above the human brow, shaggy broad pelt shoulder mass, pelt falls down back. Broad bare muscular chest, powerful short neck, large expressive simplified human face with short dark beard, sturdy compact limbs, big hands/feet, leather belt and modest ragged olive/brown trousers, heavy wrapped boots. One substantial TWO-HANDED steel battle axe held in both hands diagonally across lower body; show clear fingers enclosing one continuous absolutely STRAIGHT wooden haft, head and lower end perfectly collinear with grip axes. Readable wide silhouette; no lizard, no horns, no shiny fantasy armour, no excessive straps/tiny details. FULL BODY front three-quarter combat stance in portrait 2:3 canvas, whole axe/boots fit with 6% margin. Match bold somewhat rough dark contour, large flat muted colours, two or three broad shadow masses per form, compressed torso and large head/hands; avoid tall anime model proportions, glossy rendering, dense triangular faceting, gradients, glow, texture noise, pixel art. True transparent alpha, no floor or shadow or background, no text, watermark, signature.",
+      "generated": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-8e2bc74a-c9c0-4e89-a960-fe36ba620ae4.png"
+    },
+    {
+      "id": "Hall-Walls-Edit",
+      "refs": [
+        "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/SourceHall.png"
+      ],
+      "alpha": false,
+      "prompt": "Use case: precise-object-edit. Input1 is the EXACT approved dungeon background and edit target. Retain original composition/camera/framing, every foreground pillar, broken masonry, dark vaulted ceiling, two torch flames and brackets, floor slabs, lighting, silhouette, dark empty side recesses and vanishing point, original restrained flat angular shadow style. Do NOT redesign or zoom out. Only REMOVE two doorway elements: (A) the central far-wall pointed arch opening/frame, inside rectangle x=41%-59%, y=21%-63%, replace with continuous dark flat stone rear wall at same depth, a few large blocks matching existing style. (B) the closed wooden door and small pointed framing in the LEFT side-wall panel x=17%-25%,y=18%-69%, replace with continuous dark stone masonry following that exact receding side wall perspective. Keep original right-side wall unchanged. Everything outside those two local rectangles MUST remain identical. Do not move walls, floor seam, torch or columns. Output full same 1672x941 landscape canvas and no UI, hero, text, frames.",
+      "generated": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-b26c0ca5-8f2d-4a30-af5f-7c60abc05070.png"
+    },
+    {
+      "id": "Hall-Doors-Edit",
+      "refs": [
+        "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/SourceHall.png"
+      ],
+      "alpha": false,
+      "prompt": "Use case: precise-object-edit. Input1 is exact approved dungeon background and edit target. Preserve original camera/composition, enormous foreground columns, smaller far pillars, ceiling vault, floor slab layout, two torch positions/lighting, broad sparse flat shadow planes and sombre grey olive palette. Central pointed arch passage already present: retain it EXACTLY. Replace LEFT closed wooden door at x=18%-24%,y=20%-69% with an OPEN dark doorway at exactly the same position, narrow steep foreshortened shape following original left wall, using the existing lintel and side jambs, NO huge frontal arch. Add a matching narrow OPEN dark doorway in the RIGHT side-wall masonry panel x=77%-82%,y=20%-69%, behind near right column, foreshortened into that original receding wall. No other change, no new corridor layout, no zoom/perspective or colour adjustment. Output same 1672x941 landscape, no characters, UI, text or watermark. New visible door details ONLY within these local side wall panels.",
+      "generated": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-1ddc47f5-eab1-4b95-b800-56327c749b64.png"
+    }
+  ],
+  "alphaReview": {
+    "prompt": "Use case: background-extraction. Edit this exact bear-pelt barbarian cutout. Preserve the entire actual character, axe, face, fingers, proportions, costume, colours and hard linework unchanged. REMOVE ALL soft grey/brown glow, atmospheric haze, vignette and shadow around the figure. Every pixel outside the solid dark contour of character and axe must become completely transparent alpha. Retain antialiasing only at the contour edge, no translucent halo cloud. Do NOT redraw the figure or change pose. True transparent background, no floor or cast shadow. Same framing and canvas.",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-0879b27d-c6d2-44d1-b426-c45c8b1e8a6e.png"
+  },
+  "finalAssets": {
+    "warrior": "Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+    "barbarianConcept": "Assets/Art/Concepts/BarbarianBearPelt01.png",
+    "backgrounds": "Assets/Art/World/Angular/Restoration01/B1-*.png"
+  },
+  "composition": "Door panels and helmet only composited from image_gen results onto original approved PNGs. No image resampling; see Assemble.ps1 and Pixel-Invariants.json.",
+  "scope": "B1 original illustration restored; B2/B3 separate artwork retained. Bear-pelt character is comparison concept, existing Barbarian data and approved six front sources preserved."
+}

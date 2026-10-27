@@ -1,0 +1,10 @@
+Scoped live Unity runtime verification: two original normal actions for each of the eight restored monsters.
+PASS BoneScorpion: original normal action, first/second windup 0.75, reset interval 2.9, original HP/guard damage.
+PASS EttinGatekeeper: original normal action, first/second windup 0.87, reset interval 2.7, original HP/guard damage.
+PASS IronMantis: original normal action, first/second windup 1, reset interval 2.9, original HP/guard damage.
+PASS TwinAntlerStag: original normal action, first/second windup 1.12, reset interval 4.8, original HP/guard damage.
+PASS TempestRoc: original normal action, first/second windup 1.2, reset interval 2.9, original HP/guard damage.
+PASS SerpentWarden: original normal action, first/second windup 1.342, reset interval 5.8, original HP/guard damage.
+PASS AshDragon: original normal action, first/second windup 0.87, reset interval 2.6, original HP/guard damage.
+PASS TarrasqueWhelp: original normal action, first/second windup 1.1, reset interval 2.9, original HP/guard damage.
+COMPLETE

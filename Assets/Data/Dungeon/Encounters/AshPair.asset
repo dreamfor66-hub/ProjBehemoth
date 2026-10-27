@@ -15,14 +15,19 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.ashpair.displayname
-    lastText: "\uC0AC\uB0E5\uAC1C\uC640 \uCC3D\uBCD1"
+    lastText: "\uC22F\uBD88 \uB3C4\uB871\uB1FD \xB7 \uBC40 \uC218\uBB38\uC7A5"
   - propertyPath: hint
     key: data.encounterdata.ashpair.hint
-    lastText: 
+    lastText: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+      \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790.\n\uBAB8\uC744 \uC138\uC6B8 \uB54C
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uB04A\uC5B4 \uB3CC\uC9C4\uC744
+      \uB9C9\uC790."
   textOwnerGuid: 5570aed3c0d364a4989cbc47f695a308
   id: AshPair
-  displayName: "\uC0AC\uB0E5\uAC1C\uC640 \uCC3D\uBCD1"
-  hint: 
+  displayName: "\uC22F\uBD88 \uB3C4\uB871\uB1FD \xB7 \uBC40 \uC218\uBB38\uC7A5"
+  hint: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+    \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790.\n\uBAB8\uC744 \uC138\uC6B8 \uB54C
+    \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uB04A\uC5B4 \uB3CC\uC9C4\uC744 \uB9C9\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: b26dee8bc7d43af4e8bc812b5bf6296e, type: 2}

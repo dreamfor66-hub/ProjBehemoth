@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.data_monster_special_minion_mimic.displayname
-    lastText: "\uBBF8\uBBF9"
+    lastText: "\uCCA0\uB2C8 \uBBF8\uBBF9"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_special_minion_mimic.encounterhint
-    lastText: 
+    lastText: "\uB69C\uAED1\uC774 \uC5F4\uB9AC\uB294 \uB3D9\uC548 \uB4DC\uB7EC\uB09C
+      \uC57D\uC810\uC744 \uB04A\uC790."
   textOwnerGuid: ca172d0cd76023441aebeb5e76e02585
-  displayName: "\uBBF8\uBBF9"
-  portrait: {fileID: 21300000, guid: fac49541b7a65866a58b7bb5cd1c3391, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 64482c73a72c95c499a45d49cd94e51f, type: 2}
-  encounterHint: 
+  displayName: "\uCCA0\uB2C8 \uBBF8\uBBF9"
+  portrait: {fileID: 21300000, guid: d5fe74e9f013a294a9295a603df96f83, type: 3}
+  combatAnimation: {fileID: 11400000, guid: bc6aba7fea04e1441bd2bf08556c0724, type: 2}
+  encounterHint: "\uB69C\uAED1\uC774 \uC5F4\uB9AC\uB294 \uB3D9\uC548 \uB4DC\uB7EC\uB09C
+    \uC57D\uC810\uC744 \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 15
   bodyHitRadius: 108
   attacks:
-  - {fileID: 11400000, guid: 86f9d67ee77363f45828775250d601c2, type: 2}
-  - {fileID: 11400000, guid: 7827019fa6c47584e8df4f26eb533e9b, type: 2}
+  - {fileID: 11400000, guid: 23a70be5a852c07428b16dcaf131fccb, type: 2}
+  - {fileID: 11400000, guid: e59ef47d85a69114abf51302475ac9f6, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.52, g: 0.28, b: 0.12, a: 1}

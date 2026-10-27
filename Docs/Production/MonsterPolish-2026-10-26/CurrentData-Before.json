@@ -1,0 +1,1686 @@
+{
+  "monsters": [
+    {
+      "id": "LanternImp",
+      "baseline": "Data_Monster_B1_Minion_Bat",
+      "sprite": "Assets/Art/World/Angular/Monsters/LanternImp.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b1_minion_bat.displayname\",\"lastText\":\"등불 도깨비\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b1_minion_bat.encounterhint\",\"lastText\":\"등불을 치켜들 때 중심 약점을 끊어 강타를 취소하자.\"}],\"textOwnerGuid\":\"59d88fb5cea09ae409b378a705c6c6e1\",\"displayName\":\"등불 도깨비\",\"portrait\":{\"instanceID\":1215842},\"combatAnimation\":{\"instanceID\":-2675932},\"encounterHint\":\"등불을 치켜들 때 중심 약점을 끊어 강타를 취소하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":96.0,\"normalAttackInterval\":1.25,\"chargeInterval\":2.75,\"stunDuration\":2.5,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":21,\"goldReward\":4,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2675946},{\"instanceID\":-2675960}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.7200000286102295,\"g\":0.30000001192092898,\"b\":0.7599999904632568,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/LanternImp-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.lanternimp-0.displayname\",\"lastText\":\"등불 도깨비의 견제\"}],\"textOwnerGuid\":\"6cfdc9c8f201f69438136c541c845ad2\",\"type\":0,\"displayName\":\"등불 도깨비의 견제\",\"damage\":10.800000190734864,\"shieldDamage\":10.800000190734864,\"windupDuration\":0.9570000171661377,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/LanternImp-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.lanternimp-1.displayname\",\"lastText\":\"등불 도깨비의 강타 1\"}],\"textOwnerGuid\":\"d759dc0c533bacd4dab9301cb4a18381\",\"type\":1,\"displayName\":\"등불 도깨비의 강타 1\",\"damage\":19.440000534057618,\"shieldDamage\":19.440000534057618,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":0.0,\"y\":22.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "BoneScorpion",
+      "baseline": "TunnelRat",
+      "sprite": "Assets/Art/World/Angular/Monsters/BoneScorpion.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.tunnelrat.displayname\",\"lastText\":\"납골 전갈\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.tunnelrat.encounterhint\",\"lastText\":\"낮은 자세로 달려든다. 꼬리를 들면 노출된 약점을 부수자.\"}],\"textOwnerGuid\":\"e38eba67e08948347ab295b6c79c7e34\",\"displayName\":\"납골 전갈\",\"portrait\":{\"instanceID\":1215850},\"combatAnimation\":{\"instanceID\":-2676000},\"encounterHint\":\"낮은 자세로 달려든다. 꼬리를 들면 노출된 약점을 부수자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":36.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":17,\"goldReward\":9,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676014},{\"instanceID\":-2676028}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.5631999969482422,\"g\":0.800000011920929,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/BoneScorpion-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.bonescorpion-0.displayname\",\"lastText\":\"납골 전갈의 견제\"}],\"textOwnerGuid\":\"3f8fd5beba668cf4db53470b0f80c932\",\"type\":0,\"displayName\":\"납골 전갈의 견제\",\"damage\":5.0,\"shieldDamage\":8.0,\"windupDuration\":0.75,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/BoneScorpion-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.bonescorpion-1.displayname\",\"lastText\":\"납골 전갈의 강타 1\"}],\"textOwnerGuid\":\"2c06d14efdd58b5469be04a97c704571\",\"type\":1,\"displayName\":\"납골 전갈의 강타 1\",\"damage\":10.0,\"shieldDamage\":16.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.700000047683716,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":0.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "StringRevenant",
+      "baseline": "Data_Monster_B1_Minion_Skeleton",
+      "sprite": "Assets/Art/World/Angular/Monsters/StringRevenant.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b1_minion_skeleton.displayname\",\"lastText\":\"실매듭 망령\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b1_minion_skeleton.encounterhint\",\"lastText\":\"실이 팽팽해지는 순간 가슴 매듭을 끊자.\"}],\"textOwnerGuid\":\"f71f3849353c3a741b7371d1d3419ed1\",\"displayName\":\"실매듭 망령\",\"portrait\":{\"instanceID\":1215862},\"combatAnimation\":{\"instanceID\":-2676096},\"encounterHint\":\"실이 팽팽해지는 순간 가슴 매듭을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":129.0,\"normalAttackInterval\":2.0,\"chargeInterval\":6.0,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":28,\"goldReward\":7,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2676110},{\"instanceID\":-2676124}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.75,\"g\":0.7599999904632568,\"b\":0.699999988079071,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StringRevenant-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stringrevenant-0.displayname\",\"lastText\":\"실매듭 망령의 견제\"}],\"textOwnerGuid\":\"cb5ed15f41d8b044fa4759d0d686e1f7\",\"type\":0,\"displayName\":\"실매듭 망령의 견제\",\"damage\":16.799999237060548,\"shieldDamage\":16.799999237060548,\"windupDuration\":0.9570000171661377,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StringRevenant-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stringrevenant-1.displayname\",\"lastText\":\"실매듭 망령의 강타 1\"}],\"textOwnerGuid\":\"1d489d50e53e65841a6711b6998ecf4d\",\"type\":1,\"displayName\":\"실매듭 망령의 강타 1\",\"damage\":30.239999771118165,\"shieldDamage\":30.239999771118165,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-62.0,\"y\":20.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":66.0,\"y\":-38.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "CoffinSlime",
+      "baseline": "Data_Monster_B1_Minion_Leech",
+      "sprite": "Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b1_minion_leech.displayname\",\"lastText\":\"관먹이\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b1_minion_leech.encounterhint\",\"lastText\":\"입을 벌린 채 강타를 준비한다. 몸통 약점이 노출된다.\"}],\"textOwnerGuid\":\"d841fd1131349e1438084c0ab5b600d2\",\"displayName\":\"관먹이\",\"portrait\":{\"instanceID\":1215870},\"combatAnimation\":{\"instanceID\":-2676164},\"encounterHint\":\"입을 벌린 채 강타를 준비한다. 몸통 약점이 노출된다.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":142.5,\"normalAttackInterval\":1.7000000476837159,\"chargeInterval\":6.400000095367432,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":31,\"goldReward\":8,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2676178},{\"instanceID\":-2676192}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.6200000047683716,\"g\":0.18000000715255738,\"b\":0.2800000011920929,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CoffinSlime-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.coffinslime-0.displayname\",\"lastText\":\"관먹이의 견제\"}],\"textOwnerGuid\":\"c90b6f105eb5d2542af6f42a2a2bf43b\",\"type\":0,\"displayName\":\"관먹이의 견제\",\"damage\":19.200000762939454,\"shieldDamage\":19.200000762939454,\"windupDuration\":0.9570000171661377,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":18.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CoffinSlime-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.coffinslime-1.displayname\",\"lastText\":\"관먹이의 강타 1\"}],\"textOwnerGuid\":\"2be514dfc66062c4d882ebae844540b9\",\"type\":1,\"displayName\":\"관먹이의 강타 1\",\"damage\":34.560001373291019,\"shieldDamage\":34.560001373291019,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-55.0,\"y\":38.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":62.0,\"y\":28.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "BellHound",
+      "baseline": "AlarmHound",
+      "sprite": "Assets/Art/World/Angular/Monsters/BellHound.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.alarmhound.displayname\",\"lastText\":\"경종 사냥개\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.alarmhound.encounterhint\",\"lastText\":\"경종 뒤의 공격에 대비하고 약점을 끊자.\"}],\"textOwnerGuid\":\"86403f7885618c84dbb121a953f0220b\",\"displayName\":\"경종 사냥개\",\"portrait\":{\"instanceID\":1215878},\"combatAnimation\":{\"instanceID\":-2676232},\"encounterHint\":\"경종 뒤의 공격에 대비하고 약점을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":65.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":19,\"goldReward\":10,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676246},{\"instanceID\":-2676260}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.6912000179290772,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/BellHound-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.bellhound-0.displayname\",\"lastText\":\"경종 사냥개의 견제\"}],\"textOwnerGuid\":\"c431b5aae44000e4aa94904195fd43b4\",\"type\":0,\"displayName\":\"경종 사냥개의 견제\",\"damage\":6.0,\"shieldDamage\":9.600000381469727,\"windupDuration\":0.8999999761581421,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/BellHound-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.bellhound-1.displayname\",\"lastText\":\"경종 사냥개의 강타 1\"}],\"textOwnerGuid\":\"e2463d76a89eec1428406bf5740e99ee\",\"type\":1,\"displayName\":\"경종 사냥개의 강타 1\",\"damage\":8.0,\"shieldDamage\":12.800000190734864,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.200000047683716,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":0.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":45250},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "BoneScorpion",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "EttinGatekeeper",
+      "baseline": "Data_Monster_B1_Elite_Minotaur",
+      "sprite": "Assets/Art/World/Angular/Monsters/EttinGatekeeper.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b1_elite_minotaur.displayname\",\"lastText\":\"쌍두 문지기\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b1_elite_minotaur.encounterhint\",\"lastText\":\"두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자.\"}],\"textOwnerGuid\":\"5803c6e2e3ecb6d45a6edf579959d88c\",\"displayName\":\"쌍두 문지기\",\"portrait\":{\"instanceID\":1215886},\"combatAnimation\":{\"instanceID\":-2676300},\"encounterHint\":\"두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":450.0,\"normalAttackInterval\":2.700000047683716,\"chargeInterval\":5.800000190734863,\"stunDuration\":4.0,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":56,\"goldReward\":12,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2676314},{\"instanceID\":-2676328}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.75,\"g\":0.3799999952316284,\"b\":0.18000000715255738,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ettingatekeeper-0.displayname\",\"lastText\":\"쌍두 문지기의 견제\"}],\"textOwnerGuid\":\"46605fa33cecf6a4ebe3dcd0b8ce86dc\",\"type\":0,\"displayName\":\"쌍두 문지기의 견제\",\"damage\":30.0,\"shieldDamage\":30.0,\"windupDuration\":0.8700000047683716,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ettingatekeeper-1.displayname\",\"lastText\":\"쌍두 문지기의 강타 1\"}],\"textOwnerGuid\":\"f0c7fdb2e14e1784995aadbd0ac5e1b3\",\"type\":1,\"displayName\":\"쌍두 문지기의 강타 1\",\"damage\":27.0,\"shieldDamage\":27.0,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":6.400000095367432,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-60.0,\"y\":35.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":55.0,\"y\":35.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":3,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "MirrorShell",
+      "baseline": "MirrorKnight",
+      "sprite": "Assets/Art/World/Angular/Monsters/MirrorShell.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.mirrorknight.displayname\",\"lastText\":\"거울등 거북\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.mirrorknight.encounterhint\",\"lastText\":\"같은 방향으로 연속 베면 반격한다. 베는 방향을 바꾸자.\"}],\"textOwnerGuid\":\"127cfd7704f940544a6713d4985b0a57\",\"displayName\":\"거울등 거북\",\"portrait\":{\"instanceID\":1215898},\"combatAnimation\":{\"instanceID\":-2676396},\"encounterHint\":\"같은 방향으로 연속 베면 반격한다. 베는 방향을 바꾸자.\",\"pattern\":1,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":185.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":29,\"goldReward\":14,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676410},{\"instanceID\":-2676424}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.7360000014305115,\"g\":0.800000011920929,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/MirrorShell-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.mirrorshell-0.displayname\",\"lastText\":\"거울등 거북의 견제\"}],\"textOwnerGuid\":\"fbe8a2e9c4e9ee945b3d6bd02390b5cc\",\"type\":0,\"displayName\":\"거울등 거북의 견제\",\"damage\":9.0,\"shieldDamage\":14.40000057220459,\"windupDuration\":1.0499999523162842,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/MirrorShell-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.mirrorshell-1.displayname\",\"lastText\":\"거울등 거북의 강타 1\"}],\"textOwnerGuid\":\"4f62504c42e9a9048bbf6003b05571bc\",\"type\":1,\"displayName\":\"거울등 거북의 강타 1\",\"damage\":28.0,\"shieldDamage\":44.79999923706055,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.799999952316284,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "IronMantis",
+      "baseline": "ArmoredExecutioner",
+      "sprite": "Assets/Art/World/Angular/Monsters/IronMantis.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.armoredexecutioner.displayname\",\"lastText\":\"철갑 사마귀\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.armoredexecutioner.encounterhint\",\"lastText\":\"필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자.\"}],\"textOwnerGuid\":\"ecf1c349611a99341be2e93e20f059a6\",\"displayName\":\"철갑 사마귀\",\"portrait\":{\"instanceID\":1215906},\"combatAnimation\":{\"instanceID\":-2676464},\"encounterHint\":\"필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":215.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":31,\"goldReward\":16,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676478},{\"instanceID\":-2676492}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.703999936580658,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/IronMantis-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ironmantis-0.displayname\",\"lastText\":\"철갑 사마귀의 견제\"}],\"textOwnerGuid\":\"c9db2cc12f0f5854e868b2a16c63ffaf\",\"type\":0,\"displayName\":\"철갑 사마귀의 견제\",\"damage\":7.0,\"shieldDamage\":11.199999809265137,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":3,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/IronMantis-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ironmantis-1.displayname\",\"lastText\":\"철갑 사마귀의 강타 1\"}],\"textOwnerGuid\":\"1b4167050ed75994da9fcf3f46f5e7fc\",\"type\":1,\"displayName\":\"철갑 사마귀의 강타 1\",\"damage\":32.0,\"shieldDamage\":51.20000076293945,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.400000095367432,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":3,\"optional\":true}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "StoneSphinx",
+      "baseline": "Data_Monster_B1_Boss_MazeGuardian",
+      "sprite": "Assets/Art/World/Angular/Monsters/StoneSphinx.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b1_boss_mazeguardian.displayname\",\"lastText\":\"미궁 스핑크스\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b1_boss_mazeguardian.encounterhint\",\"lastText\":\"필수 약점들을 연결해 베어 강타를 끊자.\"}],\"textOwnerGuid\":\"fb0cdacf025fd12468b40e7cc65b2ae7\",\"displayName\":\"미궁 스핑크스\",\"portrait\":{\"instanceID\":1215918},\"combatAnimation\":{\"instanceID\":-2676560},\"encounterHint\":\"필수 약점들을 연결해 베어 강타를 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":900.0,\"normalAttackInterval\":2.25,\"chargeInterval\":5.199999809265137,\"stunDuration\":4.5,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":100,\"goldReward\":11,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2676574},{\"instanceID\":-2676588},{\"instanceID\":-2676602}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.8999999761581421,\"g\":0.18000000715255738,\"b\":0.11999999731779099,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StoneSphinx-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stonesphinx-0.displayname\",\"lastText\":\"미궁 스핑크스의 견제\"}],\"textOwnerGuid\":\"7c51db371df73224d901ccddb97f8ee4\",\"type\":0,\"displayName\":\"미궁 스핑크스의 견제\",\"damage\":26.399999618530275,\"shieldDamage\":26.399999618530275,\"windupDuration\":0.8700000047683716,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":true,\"breakByAttackWay\":6,\"maxGuard\":40.0,\"rebuildDelay\":6.0,\"rebuildPerSecond\":16.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StoneSphinx-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stonesphinx-1.displayname\",\"lastText\":\"미궁 스핑크스의 강타 1\"}],\"textOwnerGuid\":\"8bcc1bfd690bf3c43a63d3d6df0cd6ae\",\"type\":1,\"displayName\":\"미궁 스핑크스의 강타 1\",\"damage\":47.52000045776367,\"shieldDamage\":47.52000045776367,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":6.0,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-75.0,\"y\":35.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":0.0,\"y\":-42.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-3\",\"normalizedPosition\":{\"x\":72.0,\"y\":35.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StoneSphinx-2.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stonesphinx-2.displayname\",\"lastText\":\"미궁 스핑크스의 강타 2\"}],\"textOwnerGuid\":\"56bae6f926e578048abb544ca89110e9\",\"type\":1,\"displayName\":\"미궁 스핑크스의 강타 2\",\"damage\":48.0,\"shieldDamage\":48.0,\"windupDuration\":0.5,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":7.0,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-72.0,\"y\":0.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":0.0,\"y\":62.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-3\",\"normalizedPosition\":{\"x\":72.0,\"y\":0.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-4\",\"normalizedPosition\":{\"x\":0.0,\"y\":-62.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "OssuaryBell",
+      "baseline": "BellKeeper",
+      "sprite": "Assets/Art/World/Angular/Monsters/OssuaryBell.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.bellkeeper.displayname\",\"lastText\":\"납골당의 종\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.bellkeeper.encounterhint\",\"lastText\":\"연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자.\"}],\"textOwnerGuid\":\"4dc6b9d6f09c1f14594fda8127d02995\",\"displayName\":\"납골당의 종\",\"portrait\":{\"instanceID\":1215928},\"combatAnimation\":{\"instanceID\":-2676642},\"encounterHint\":\"연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":370.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":44,\"goldReward\":21,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676656},{\"instanceID\":-2676670}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.47999998927116396,\"b\":0.6528000235557556,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/OssuaryBell-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ossuarybell-0.displayname\",\"lastText\":\"납골당의 종의 견제\"}],\"textOwnerGuid\":\"b307c58396569f3438211fd309cb8ce0\",\"type\":0,\"displayName\":\"납골당의 종의 견제\",\"damage\":6.0,\"shieldDamage\":9.600000381469727,\"windupDuration\":1.2999999523162842,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":3,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/OssuaryBell-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ossuarybell-1.displayname\",\"lastText\":\"납골당의 종의 강타 1\"}],\"textOwnerGuid\":\"bda5cb972b200b8469d14906d4fcd131\",\"type\":1,\"displayName\":\"납골당의 종의 강타 1\",\"damage\":30.0,\"shieldDamage\":48.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.800000190734863,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":0.0,\"y\":50.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_2\",\"normalizedPosition\":{\"x\":85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "WebDuchess",
+      "baseline": "BroodKeeper",
+      "sprite": "Assets/Art/World/Angular/Monsters/WebDuchess.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.broodkeeper.displayname\",\"lastText\":\"실짜는 공작부인\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.broodkeeper.encounterhint\",\"lastText\":\"주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자.\"}],\"textOwnerGuid\":\"508c88aa0e5982046bfdaef18729110a\",\"displayName\":\"실짜는 공작부인\",\"portrait\":{\"instanceID\":1215936},\"combatAnimation\":{\"instanceID\":-2676710},\"encounterHint\":\"주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":330.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":40,\"goldReward\":20,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676724},{\"instanceID\":-2676738}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.7488000392913818,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/WebDuchess-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.webduchess-0.displayname\",\"lastText\":\"실짜는 공작부인의 견제\"}],\"textOwnerGuid\":\"b514f027379ad424fbdcf499c2df4e00\",\"type\":0,\"displayName\":\"실짜는 공작부인의 견제\",\"damage\":11.0,\"shieldDamage\":17.600000381469728,\"windupDuration\":1.100000023841858,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/WebDuchess-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.webduchess-1.displayname\",\"lastText\":\"실짜는 공작부인의 강타 1\"}],\"textOwnerGuid\":\"001d5f1ccf5d34f41819e4fb620b2434\",\"type\":1,\"displayName\":\"실짜는 공작부인의 강타 1\",\"damage\":32.0,\"shieldDamage\":51.20000076293945,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.5,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "Threadling",
+      "baseline": "OrbitBat",
+      "sprite": "Assets/Art/World/Angular/Monsters/Threadling.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.orbitbat.displayname\",\"lastText\":\"실인형\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.orbitbat.encounterhint\",\"lastText\":\"본체 주위를 공전한다. 위치를 따라가며 노리자.\"}],\"textOwnerGuid\":\"b71e49b7bfafade4fb74b71c6409e7b8\",\"displayName\":\"실인형\",\"portrait\":{\"instanceID\":1215944},\"combatAnimation\":{\"instanceID\":-2676778},\"encounterHint\":\"본체 주위를 공전한다. 위치를 따라가며 노리자.\",\"pattern\":3,\"supportId\":\"\",\"diesWithLeader\":true,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":65.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":19,\"goldReward\":10,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676792},{\"instanceID\":-2676806}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.703999936580658,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 1,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/Threadling-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.threadling-0.displayname\",\"lastText\":\"실인형의 견제\"}],\"textOwnerGuid\":\"ed4fe39422394454ba6003341496be71\",\"type\":0,\"displayName\":\"실인형의 견제\",\"damage\":5.0,\"shieldDamage\":8.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/Threadling-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.threadling-1.displayname\",\"lastText\":\"실인형의 강타 1\"}],\"textOwnerGuid\":\"d6dae345313f6804191539022db0ac3e\",\"type\":1,\"displayName\":\"실인형의 강타 1\",\"damage\":13.0,\"shieldDamage\":20.80000114440918,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.5,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":0.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "QuillSprite",
+      "baseline": "Data_Monster_B2_Minion_FrostBat",
+      "sprite": "Assets/Art/World/Angular/Monsters/QuillSprite.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b2_minion_frostbat.displayname\",\"lastText\":\"깃바늘 정령\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b2_minion_frostbat.encounterhint\",\"lastText\":\"날개를 접어 돌진하기 전 약점을 끊자.\"}],\"textOwnerGuid\":\"9a8888d9e5c52744fb1d2f2302d20795\",\"displayName\":\"깃바늘 정령\",\"portrait\":{\"instanceID\":1215952},\"combatAnimation\":{\"instanceID\":-2676846},\"encounterHint\":\"날개를 접어 돌진하기 전 약점을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":114.0,\"normalAttackInterval\":2.200000047683716,\"chargeInterval\":8.5,\"stunDuration\":2.4000000953674318,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":25,\"goldReward\":4,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2676860},{\"instanceID\":-2676874}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.41999998688697817,\"g\":0.7599999904632568,\"b\":1.0,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/QuillSprite-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.quillsprite-0.displayname\",\"lastText\":\"깃바늘 정령의 견제\"}],\"textOwnerGuid\":\"c8a31c3ca05382341b69f39fd1cbd4a4\",\"type\":0,\"displayName\":\"깃바늘 정령의 견제\",\"damage\":10.800000190734864,\"shieldDamage\":10.800000190734864,\"windupDuration\":0.6819999814033508,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/QuillSprite-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.quillsprite-1.displayname\",\"lastText\":\"깃바늘 정령의 강타 1\"}],\"textOwnerGuid\":\"fd9437c80b9f1a645a17c73069479b1d\",\"type\":1,\"displayName\":\"깃바늘 정령의 강타 1\",\"damage\":19.200000762939454,\"shieldDamage\":19.200000762939454,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.5999999046325685,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":0.0,\"y\":26.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "CrystalUrchin",
+      "baseline": "IceNeedle",
+      "sprite": "Assets/Art/World/Angular/Monsters/CrystalUrchin.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.iceneedle.displayname\",\"lastText\":\"결정 성게\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.iceneedle.encounterhint\",\"lastText\":\"결정 사이에 열린 약점을 노려 찌르기를 끊자.\"}],\"textOwnerGuid\":\"811d13f58aeee4747b1ee2e42a8f3c3a\",\"displayName\":\"결정 성게\",\"portrait\":{\"instanceID\":1215960},\"combatAnimation\":{\"instanceID\":-2676914},\"encounterHint\":\"결정 사이에 열린 약점을 노려 찌르기를 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":100.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":22,\"goldReward\":12,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2676928},{\"instanceID\":-2676942}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.47999998927116396,\"b\":0.5183999538421631,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CrystalUrchin-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.crystalurchin-0.displayname\",\"lastText\":\"결정 성게의 견제\"}],\"textOwnerGuid\":\"ae5174e5ec06df84790c552cfc909814\",\"type\":0,\"displayName\":\"결정 성게의 견제\",\"damage\":8.0,\"shieldDamage\":12.800000190734864,\"windupDuration\":0.800000011920929,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CrystalUrchin-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.crystalurchin-1.displayname\",\"lastText\":\"결정 성게의 강타 1\"}],\"textOwnerGuid\":\"bddd4aedeb76caf40a1d243d071c3451\",\"type\":1,\"displayName\":\"결정 성게의 강타 1\",\"damage\":24.0,\"shieldDamage\":38.400001525878909,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.4000000953674318,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "VeilOracle",
+      "baseline": "Data_Monster_B2_Minion_IceWraith",
+      "sprite": "Assets/Art/World/Angular/Monsters/VeilOracle.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b2_minion_icewraith.displayname\",\"lastText\":\"장막 예언자\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b2_minion_icewraith.encounterhint\",\"lastText\":\"장막이 열릴 때 나타나는 약점을 끊자.\"}],\"textOwnerGuid\":\"3767fc650961daa46940e81e17116958\",\"displayName\":\"장막 예언자\",\"portrait\":{\"instanceID\":1215968},\"combatAnimation\":{\"instanceID\":-2676982},\"encounterHint\":\"장막이 열릴 때 나타나는 약점을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":198.0,\"normalAttackInterval\":1.5,\"chargeInterval\":7.0,\"stunDuration\":3.200000047683716,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":44,\"goldReward\":8,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2676996},{\"instanceID\":-2677010}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.3199999928474426,\"g\":0.6800000071525574,\"b\":0.949999988079071,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/VeilOracle-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.veiloracle-0.displayname\",\"lastText\":\"장막 예언자의 견제\"}],\"textOwnerGuid\":\"f204897c63667fc43ac56bcf28fdd6bd\",\"type\":0,\"displayName\":\"장막 예언자의 견제\",\"damage\":19.200000762939454,\"shieldDamage\":19.200000762939454,\"windupDuration\":0.847000002861023,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/VeilOracle-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.veiloracle-1.displayname\",\"lastText\":\"장막 예언자의 강타 1\"}],\"textOwnerGuid\":\"a765598eb3f2ecb4887ca8da09a15d54\",\"type\":1,\"displayName\":\"장막 예언자의 강타 1\",\"damage\":36.0,\"shieldDamage\":36.0,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.700000047683716,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-46.0,\"y\":-15.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":48.0,\"y\":34.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "TuskPilgrim",
+      "baseline": "Data_Monster_B2_Minion_Yeti",
+      "sprite": "Assets/Art/World/Angular/Monsters/TuskPilgrim.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b2_minion_yeti.displayname\",\"lastText\":\"엄니 순례자\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b2_minion_yeti.encounterhint\",\"lastText\":\"곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자.\"}],\"textOwnerGuid\":\"756c766eabf90b04192ff6bf4e09c953\",\"displayName\":\"엄니 순례자\",\"portrait\":{\"instanceID\":1215976},\"combatAnimation\":{\"instanceID\":-2677050},\"encounterHint\":\"곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":277.5,\"normalAttackInterval\":5.199999809265137,\"chargeInterval\":11.800000190734864,\"stunDuration\":4.0,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":62,\"goldReward\":16,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2677064},{\"instanceID\":-2677078}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.7799999713897705,\"g\":0.8999999761581421,\"b\":1.0,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TuskPilgrim-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.tuskpilgrim-0.displayname\",\"lastText\":\"엄니 순례자의 견제\"}],\"textOwnerGuid\":\"ea086871338de334db2f7a0194ef149d\",\"type\":0,\"displayName\":\"엄니 순례자의 견제\",\"damage\":38.400001525878909,\"shieldDamage\":38.400001525878909,\"windupDuration\":1.2869999408721924,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TuskPilgrim-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.tuskpilgrim-1.displayname\",\"lastText\":\"엄니 순례자의 강타 1\"}],\"textOwnerGuid\":\"ef742c2632257c64987c986d23754626\",\"type\":1,\"displayName\":\"엄니 순례자의 강타 1\",\"damage\":64.80000305175781,\"shieldDamage\":64.80000305175781,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":8.479999542236329,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-55.0,\"y\":24.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":54.0,\"y\":24.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "BellHare",
+      "baseline": "SnowBell",
+      "sprite": "Assets/Art/World/Angular/Monsters/BellHare.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.snowbell.displayname\",\"lastText\":\"종토끼\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.snowbell.encounterhint\",\"lastText\":\"본체 곁에서 박자를 어긋나게 공격한다.\"}],\"textOwnerGuid\":\"acd4ec70882f8374a82bd485e96f27f1\",\"displayName\":\"종토끼\",\"portrait\":{\"instanceID\":1215984},\"combatAnimation\":{\"instanceID\":-2677118},\"encounterHint\":\"본체 곁에서 박자를 어긋나게 공격한다.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":110.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":23,\"goldReward\":12,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677132},{\"instanceID\":-2677146}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.47999998927116396,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/BellHare-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.bellhare-0.displayname\",\"lastText\":\"종토끼의 견제\"}],\"textOwnerGuid\":\"3b2a7a98ad76ee345aa5b30eb9b0f5eb\",\"type\":0,\"displayName\":\"종토끼의 견제\",\"damage\":11.0,\"shieldDamage\":17.600000381469728,\"windupDuration\":1.2000000476837159,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/BellHare-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.bellhare-1.displayname\",\"lastText\":\"종토끼의 강타 1\"}],\"textOwnerGuid\":\"5f2ab43a2c619714a84b8384dd13d128\",\"type\":1,\"displayName\":\"종토끼의 강타 1\",\"damage\":27.0,\"shieldDamage\":43.20000076293945,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.799999952316284,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "TwinAntlerStag",
+      "baseline": "Data_Monster_B2_Elite_FrostOgre",
+      "sprite": "Assets/Art/World/Angular/Monsters/TwinAntlerStag.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b2_elite_frostogre.displayname\",\"lastText\":\"쌍각 파수꾼\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b2_elite_frostogre.encounterhint\",\"lastText\":\"좌우 약점 두 개를 모두 끊어 강타를 취소하자.\"}],\"textOwnerGuid\":\"b07761a94d2640a41ad472aecfdca930\",\"displayName\":\"쌍각 파수꾼\",\"portrait\":{\"instanceID\":1215992},\"combatAnimation\":{\"instanceID\":-2677186},\"encounterHint\":\"좌우 약점 두 개를 모두 끊어 강타를 취소하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":525.0,\"normalAttackInterval\":4.800000190734863,\"chargeInterval\":11.0,\"stunDuration\":4.5,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":117,\"goldReward\":14,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2677200},{\"instanceID\":-2677214}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.2199999988079071,\"g\":0.5199999809265137,\"b\":0.7599999904632568,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.twinantlerstag-0.displayname\",\"lastText\":\"쌍각 파수꾼의 견제\"}],\"textOwnerGuid\":\"80271b5ae42011a4e81af4bcba0aed98\",\"type\":0,\"displayName\":\"쌍각 파수꾼의 견제\",\"damage\":33.599998474121097,\"shieldDamage\":33.599998474121097,\"windupDuration\":1.1200000047683716,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":true,\"breakByAttackWay\":1,\"maxGuard\":40.0,\"rebuildDelay\":6.0,\"rebuildPerSecond\":16.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.2800000011920929},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.twinantlerstag-1.displayname\",\"lastText\":\"쌍각 파수꾼의 강타 1\"}],\"textOwnerGuid\":\"b9d175529b186324b971c1e66c57bb9a\",\"type\":1,\"displayName\":\"쌍각 파수꾼의 강타 1\",\"damage\":64.80000305175781,\"shieldDamage\":64.80000305175781,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.699999809265137,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-62.0,\"y\":30.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":62.0,\"y\":30.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "MirrorMoth",
+      "baseline": "IceMirror",
+      "sprite": "Assets/Art/World/Angular/Monsters/MirrorMoth.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.icemirror.displayname\",\"lastText\":\"거울나방\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.icemirror.encounterhint\",\"lastText\":\"같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자.\"}],\"textOwnerGuid\":\"c395f3854537eb640a955b83be94c04b\",\"displayName\":\"거울나방\",\"portrait\":{\"instanceID\":1216004},\"combatAnimation\":{\"instanceID\":-2677282},\"encounterHint\":\"같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자.\",\"pattern\":1,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":300.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":38,\"goldReward\":18,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677296},{\"instanceID\":-2677310}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.800000011920929,\"b\":0.4927999973297119,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/MirrorMoth-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.mirrormoth-0.displayname\",\"lastText\":\"거울나방의 견제\"}],\"textOwnerGuid\":\"c99bc991805cb4e41b1e03b1056cdd63\",\"type\":0,\"displayName\":\"거울나방의 견제\",\"damage\":12.0,\"shieldDamage\":19.200000762939454,\"windupDuration\":0.8999999761581421,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":true,\"breakByAttackWay\":4,\"maxGuard\":65.0,\"rebuildDelay\":6.0,\"rebuildPerSecond\":12.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/MirrorMoth-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.mirrormoth-1.displayname\",\"lastText\":\"거울나방의 강타 1\"}],\"textOwnerGuid\":\"0682342d817811841b61a0acae0dd415\",\"type\":1,\"displayName\":\"거울나방의 강타 1\",\"damage\":42.0,\"shieldDamage\":67.20000457763672,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "MaskedChoir",
+      "baseline": "PaleWisp",
+      "sprite": "Assets/Art/World/Angular/Monsters/MaskedChoir.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.palewisp.displayname\",\"lastText\":\"가면 성가수\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.palewisp.encounterhint\",\"lastText\":\"세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자.\"}],\"textOwnerGuid\":\"46b98f00984d8734d9b423a62a889bf8\",\"displayName\":\"가면 성가수\",\"portrait\":{\"instanceID\":1216012},\"combatAnimation\":{\"instanceID\":-2677350},\"encounterHint\":\"세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":145.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":26,\"goldReward\":13,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677364},{\"instanceID\":-2677378}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.6783999800682068,\"g\":0.47999998927116396,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/MaskedChoir-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.maskedchoir-0.displayname\",\"lastText\":\"가면 성가수의 견제\"}],\"textOwnerGuid\":\"7ce859cb071400e4d8bfa949b26169de\",\"type\":0,\"displayName\":\"가면 성가수의 견제\",\"damage\":9.0,\"shieldDamage\":14.40000057220459,\"windupDuration\":0.8500000238418579,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/MaskedChoir-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.maskedchoir-1.displayname\",\"lastText\":\"가면 성가수의 강타 1\"}],\"textOwnerGuid\":\"e13987b1099d2b74f8c6519643b1180b\",\"type\":1,\"displayName\":\"가면 성가수의 강타 1\",\"damage\":28.0,\"shieldDamage\":44.79999923706055,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":0.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "WinterUnicorn",
+      "baseline": "Data_Monster_B2_Boss_FrostQueen",
+      "sprite": "Assets/Art/World/Angular/Monsters/WinterUnicorn.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b2_boss_frostqueen.displayname\",\"lastText\":\"겨울의 일각수\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b2_boss_frostqueen.encounterhint\",\"lastText\":\"긴 강타 준비 동안 노출된 약점을 모두 끊자.\"}],\"textOwnerGuid\":\"54667eccb06d98746b603f33af299ab8\",\"displayName\":\"겨울의 일각수\",\"portrait\":{\"instanceID\":1216020},\"combatAnimation\":{\"instanceID\":-2677418},\"encounterHint\":\"긴 강타 준비 동안 노출된 약점을 모두 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":1080.0,\"normalAttackInterval\":2.700000047683716,\"chargeInterval\":7.0,\"stunDuration\":4.199999809265137,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":240,\"goldReward\":10,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2677432},{\"instanceID\":-2677446}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.18000000715255738,\"g\":0.5199999809265137,\"b\":0.8999999761581421,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/WinterUnicorn-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.winterunicorn-0.displayname\",\"lastText\":\"겨울의 일각수의 견제\"}],\"textOwnerGuid\":\"56ad7c6c150565e4c83f0d39e3b32760\",\"type\":0,\"displayName\":\"겨울의 일각수의 견제\",\"damage\":24.0,\"shieldDamage\":24.0,\"windupDuration\":0.8700000047683716,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/WinterUnicorn-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.winterunicorn-1.displayname\",\"lastText\":\"겨울의 일각수의 강타 1\"}],\"textOwnerGuid\":\"4544e97468072fe47a3054c7c0831abd\",\"type\":1,\"displayName\":\"겨울의 일각수의 강타 1\",\"damage\":45.599998474121097,\"shieldDamage\":45.599998474121097,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.300000190734863,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-70.0,\"y\":26.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":0.0,\"y\":-48.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-3\",\"normalizedPosition\":{\"x\":70.0,\"y\":26.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[{\"instanceID\":45404},{\"instanceID\":45404}],\"summonOnFailedCharge\":{\"instanceID\":45404},\"healOnFailedChargeWhileSummonAlive\":24.0}}",
+          "onFailure": "QuillSprite",
+          "opening": [
+            "QuillSprite",
+            "QuillSprite"
+          ]
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "PrismCrab",
+      "baseline": "CrystalSpider",
+      "sprite": "Assets/Art/World/Angular/Monsters/PrismCrab.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.crystalspider.displayname\",\"lastText\":\"수정 등딱지\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.crystalspider.encounterhint\",\"lastText\":\"집게 사이 약점과 보조 약점을 연결해 부수자.\"}],\"textOwnerGuid\":\"c16969a0aaa6ee74c8c39ea15262fa61\",\"displayName\":\"수정 등딱지\",\"portrait\":{\"instanceID\":1216028},\"combatAnimation\":{\"instanceID\":-2677486},\"encounterHint\":\"집게 사이 약점과 보조 약점을 연결해 부수자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":620.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":64,\"goldReward\":30,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677500},{\"instanceID\":-2677514}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.5631999969482422,\"g\":0.800000011920929,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/PrismCrab-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.prismcrab-0.displayname\",\"lastText\":\"수정 등딱지의 견제\"}],\"textOwnerGuid\":\"4a1c9ec6e684b4e4aba719cf7055d3e6\",\"type\":0,\"displayName\":\"수정 등딱지의 견제\",\"damage\":9.0,\"shieldDamage\":14.40000057220459,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":true,\"breakByAttackWay\":4,\"maxGuard\":85.0,\"rebuildDelay\":6.0,\"rebuildPerSecond\":12.0},\"healOnUnguardedHit\":0.0,\"hitCount\":4,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/PrismCrab-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.prismcrab-1.displayname\",\"lastText\":\"수정 등딱지의 강타 1\"}],\"textOwnerGuid\":\"0ba444b8c60af86488b590d6a2c19b6d\",\"type\":1,\"displayName\":\"수정 등딱지의 강타 1\",\"damage\":50.0,\"shieldDamage\":80.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":5.0,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":0.0,\"y\":50.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_2\",\"normalizedPosition\":{\"x\":85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "TempestRoc",
+      "baseline": "StormMatriarch",
+      "sprite": "Assets/Art/World/Angular/Monsters/TempestRoc.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.stormmatriarch.displayname\",\"lastText\":\"폭풍의 대붕\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.stormmatriarch.encounterhint\",\"lastText\":\"공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자.\"}],\"textOwnerGuid\":\"5946ee0bd997e36448ff353d80ebfdde\",\"displayName\":\"폭풍의 대붕\",\"portrait\":{\"instanceID\":1216036},\"combatAnimation\":{\"instanceID\":-2677554},\"encounterHint\":\"공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":580.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":60,\"goldReward\":28,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677568},{\"instanceID\":-2677582}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.800000011920929,\"b\":0.646399974822998,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TempestRoc-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.tempestroc-0.displayname\",\"lastText\":\"폭풍의 대붕의 견제\"}],\"textOwnerGuid\":\"e43b1b4bd100339469e88021d03615bc\",\"type\":0,\"displayName\":\"폭풍의 대붕의 견제\",\"damage\":15.0,\"shieldDamage\":24.0,\"windupDuration\":1.2000000476837159,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TempestRoc-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.tempestroc-1.displayname\",\"lastText\":\"폭풍의 대붕의 강타 1\"}],\"textOwnerGuid\":\"98b5e69d4ef8c3348b5bf3788949ccc3\",\"type\":1,\"displayName\":\"폭풍의 대붕의 강타 1\",\"damage\":48.0,\"shieldDamage\":76.80000305175781,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.800000190734863,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "StormJelly",
+      "baseline": "StormOrb",
+      "sprite": "Assets/Art/World/Angular/Monsters/StormJelly.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.stormorb.displayname\",\"lastText\":\"폭풍 해파리\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.stormorb.encounterhint\",\"lastText\":\"본체 주위를 공전하며 공격한다.\"}],\"textOwnerGuid\":\"c082165dde8685f4ab9e002c0cb302e1\",\"displayName\":\"폭풍 해파리\",\"portrait\":{\"instanceID\":1216048},\"combatAnimation\":{\"instanceID\":-2677650},\"encounterHint\":\"본체 주위를 공전하며 공격한다.\",\"pattern\":3,\"supportId\":\"\",\"diesWithLeader\":true,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":100.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":22,\"goldReward\":12,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677664},{\"instanceID\":-2677678}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.47999998927116396,\"b\":0.6335999965667725,\"a\":1.0}}",
+      "floor": 2,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StormJelly-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stormjelly-0.displayname\",\"lastText\":\"폭풍 해파리의 견제\"}],\"textOwnerGuid\":\"4a0c200a49fb5b641bdcfa735065957e\",\"type\":0,\"displayName\":\"폭풍 해파리의 견제\",\"damage\":7.0,\"shieldDamage\":11.199999809265137,\"windupDuration\":0.949999988079071,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/StormJelly-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.stormjelly-1.displayname\",\"lastText\":\"폭풍 해파리의 강타 1\"}],\"textOwnerGuid\":\"415bad7bd2c07f646a16c7cbbc3531e2\",\"type\":1,\"displayName\":\"폭풍 해파리의 강타 1\",\"damage\":25.0,\"shieldDamage\":40.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":0.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "CoalSalamander",
+      "baseline": "Data_Monster_B3_Minion_AshHound",
+      "sprite": "Assets/Art/World/Angular/Monsters/CoalSalamander.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b3_minion_ashhound.displayname\",\"lastText\":\"숯불 도롱뇽\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b3_minion_ashhound.encounterhint\",\"lastText\":\"몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자.\"}],\"textOwnerGuid\":\"b26dee8bc7d43af4e8bc812b5bf6296e\",\"displayName\":\"숯불 도롱뇽\",\"portrait\":{\"instanceID\":1216056},\"combatAnimation\":{\"instanceID\":-2677718},\"encounterHint\":\"몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":247.5,\"normalAttackInterval\":1.0499999523162842,\"chargeInterval\":6.199999809265137,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":55,\"goldReward\":6,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2677732},{\"instanceID\":-2677746}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.75,\"g\":0.3199999928474426,\"b\":0.25999999046325686,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CoalSalamander-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.coalsalamander-0.displayname\",\"lastText\":\"숯불 도롱뇽의 견제\"}],\"textOwnerGuid\":\"b1731ad5f26e4a645b0177f6c0d3732b\",\"type\":0,\"displayName\":\"숯불 도롱뇽의 견제\",\"damage\":15.600000381469727,\"shieldDamage\":15.600000381469727,\"windupDuration\":0.6269999742507935,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CoalSalamander-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.coalsalamander-1.displayname\",\"lastText\":\"숯불 도롱뇽의 강타 1\"}],\"textOwnerGuid\":\"065591a495967304d927859fc5dc9bbd\",\"type\":1,\"displayName\":\"숯불 도롱뇽의 강타 1\",\"damage\":31.200000762939454,\"shieldDamage\":31.200000762939454,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.299999952316284,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":0.0,\"y\":32.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "SerpentWarden",
+      "baseline": "Data_Monster_B3_Minion_ShadeLancer",
+      "sprite": "Assets/Art/World/Angular/Monsters/SerpentWarden.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b3_minion_shadelancer.displayname\",\"lastText\":\"뱀 수문장\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b3_minion_shadelancer.encounterhint\",\"lastText\":\"몸을 세울 때 노출되는 약점을 끊어 돌진을 막자.\"}],\"textOwnerGuid\":\"b7ca2b2d5338d534fa09cb132ac0e0d4\",\"displayName\":\"뱀 수문장\",\"portrait\":{\"instanceID\":1216064},\"combatAnimation\":{\"instanceID\":-2677786},\"encounterHint\":\"몸을 세울 때 노출되는 약점을 끊어 돌진을 막자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":330.0,\"normalAttackInterval\":5.800000190734863,\"chargeInterval\":12.5,\"stunDuration\":4.0,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":73,\"goldReward\":16,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2677800},{\"instanceID\":-2677814}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.46000000834465029,\"g\":0.18000000715255738,\"b\":0.699999988079071,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/SerpentWarden-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.serpentwarden-0.displayname\",\"lastText\":\"뱀 수문장의 견제\"}],\"textOwnerGuid\":\"7f52841cd36e958468bb57c70cfce61c\",\"type\":0,\"displayName\":\"뱀 수문장의 견제\",\"damage\":38.400001525878909,\"shieldDamage\":38.400001525878909,\"windupDuration\":1.3420000076293946,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/SerpentWarden-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.serpentwarden-1.displayname\",\"lastText\":\"뱀 수문장의 강타 1\"}],\"textOwnerGuid\":\"76a5aff719ef3624282629c312945526\",\"type\":1,\"displayName\":\"뱀 수문장의 강타 1\",\"damage\":69.5999984741211,\"shieldDamage\":69.5999984741211,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":8.479999542236329,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-54.0,\"y\":32.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":55.0,\"y\":-28.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "AshGargoyle",
+      "baseline": "AshCrow",
+      "sprite": "Assets/Art/World/Angular/Monsters/AshGargoyle.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.ashcrow.displayname\",\"lastText\":\"재 가고일\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.ashcrow.encounterhint\",\"lastText\":\"짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자.\"}],\"textOwnerGuid\":\"bb3b020db885c984995fc41f14641176\",\"displayName\":\"재 가고일\",\"portrait\":{\"instanceID\":1216076},\"combatAnimation\":{\"instanceID\":-2677882},\"encounterHint\":\"짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":125.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":24,\"goldReward\":12,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2677896},{\"instanceID\":-2677910}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.47999998927116396,\"b\":0.7679998874664307,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/AshGargoyle-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ashgargoyle-0.displayname\",\"lastText\":\"재 가고일의 견제\"}],\"textOwnerGuid\":\"b4a39cbbf09ea2d44920e75378f806dd\",\"type\":0,\"displayName\":\"재 가고일의 견제\",\"damage\":8.0,\"shieldDamage\":12.800000190734864,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":3,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/AshGargoyle-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ashgargoyle-1.displayname\",\"lastText\":\"재 가고일의 강타 1\"}],\"textOwnerGuid\":\"8d653e5484023a34093870831fcfa9c1\",\"type\":1,\"displayName\":\"재 가고일의 강타 1\",\"damage\":30.0,\"shieldDamage\":48.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":3.5999999046325685,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "HollowEye",
+      "baseline": "Data_Monster_B3_Minion_VoidMaw",
+      "sprite": "Assets/Art/World/Angular/Monsters/HollowEye.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b3_minion_voidmaw.displayname\",\"lastText\":\"공허의 눈\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b3_minion_voidmaw.encounterhint\",\"lastText\":\"중앙 눈이 드러나면 약점을 끊어 응시를 취소하자.\"}],\"textOwnerGuid\":\"74285b100b3b0f94ba2ebc118d2e4f77\",\"displayName\":\"공허의 눈\",\"portrait\":{\"instanceID\":1216084},\"combatAnimation\":{\"instanceID\":-2677950},\"encounterHint\":\"중앙 눈이 드러나면 약점을 끊어 응시를 취소하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":300.0,\"normalAttackInterval\":1.4500000476837159,\"chargeInterval\":8.5,\"stunDuration\":3.5,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":67,\"goldReward\":10,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2677964},{\"instanceID\":-2677978}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.3499999940395355,\"g\":0.10000000149011612,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/HollowEye-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.holloweye-0.displayname\",\"lastText\":\"공허의 눈의 견제\"}],\"textOwnerGuid\":\"903e24ca22ca3624195845ad618d154f\",\"type\":0,\"displayName\":\"공허의 눈의 견제\",\"damage\":24.0,\"shieldDamage\":24.0,\"windupDuration\":0.847000002861023,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/HollowEye-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.holloweye-1.displayname\",\"lastText\":\"공허의 눈의 강타 1\"}],\"textOwnerGuid\":\"1916aa8cd4a05df41814b94d1a95d72c\",\"type\":1,\"displayName\":\"공허의 눈의 강타 1\",\"damage\":45.599998474121097,\"shieldDamage\":45.599998474121097,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":6.400000095367432,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-42.0,\"y\":20.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":42.0,\"y\":20.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "CenserRevenant",
+      "baseline": "SoulLamp",
+      "sprite": "Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.soullamp.displayname\",\"lastText\":\"향로 망령\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.soullamp.encounterhint\",\"lastText\":\"다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자.\"}],\"textOwnerGuid\":\"97653d32a637160438a293565ee49723\",\"displayName\":\"향로 망령\",\"portrait\":{\"instanceID\":1216092},\"combatAnimation\":{\"instanceID\":-2678018},\"encounterHint\":\"다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":145.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":26,\"goldReward\":13,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678032},{\"instanceID\":-2678046}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.6016000509262085,\"g\":0.47999998927116396,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CenserRevenant-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.censerrevenant-0.displayname\",\"lastText\":\"향로 망령의 견제\"}],\"textOwnerGuid\":\"75f54e4a7d767564ba8ad085f8babedb\",\"type\":0,\"displayName\":\"향로 망령의 견제\",\"damage\":13.0,\"shieldDamage\":20.80000114440918,\"windupDuration\":1.100000023841858,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CenserRevenant-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.censerrevenant-1.displayname\",\"lastText\":\"향로 망령의 강타 1\"}],\"textOwnerGuid\":\"0366c39d47fc1bb4a87330c272952dae\",\"type\":1,\"displayName\":\"향로 망령의 강타 1\",\"damage\":33.0,\"shieldDamage\":52.79999923706055,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.0,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "OathlessCentaur",
+      "baseline": "Data_Monster_B3_Elite_SoulKnight",
+      "sprite": "Assets/Art/World/Angular/Monsters/OathlessCentaur.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b3_elite_soulknight.displayname\",\"lastText\":\"파계 기마수\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b3_elite_soulknight.encounterhint\",\"lastText\":\"넓게 드러난 약점을 차례로 끊어 강타를 취소하자.\"}],\"textOwnerGuid\":\"aa4d74befd776d949b9e6a0902de56ab\",\"displayName\":\"파계 기마수\",\"portrait\":{\"instanceID\":1216100},\"combatAnimation\":{\"instanceID\":-2678086},\"encounterHint\":\"넓게 드러난 약점을 차례로 끊어 강타를 취소하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":645.0,\"normalAttackInterval\":4.5,\"chargeInterval\":10.0,\"stunDuration\":4.800000190734863,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":143,\"goldReward\":9,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2678100},{\"instanceID\":-2678114}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.5199999809265137,\"g\":0.2199999988079071,\"b\":0.699999988079071,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/OathlessCentaur-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.oathlesscentaur-0.displayname\",\"lastText\":\"파계 기마수의 견제\"}],\"textOwnerGuid\":\"8e298519370076e4592387bdde1bf8b0\",\"type\":0,\"displayName\":\"파계 기마수의 견제\",\"damage\":21.600000381469728,\"shieldDamage\":21.600000381469728,\"windupDuration\":1.0699999332427979,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":3,\"followupDelay\":0.2199999988079071},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/OathlessCentaur-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.oathlesscentaur-1.displayname\",\"lastText\":\"파계 기마수의 강타 1\"}],\"textOwnerGuid\":\"28f9bd2278df3424190d5ef2c52c41f8\",\"type\":1,\"displayName\":\"파계 기마수의 강타 1\",\"damage\":55.20000076293945,\"shieldDamage\":55.20000076293945,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.800000190734863,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-62.0,\"y\":28.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":0.0,\"y\":-34.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-3\",\"normalizedPosition\":{\"x\":62.0,\"y\":28.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "CrimsonCount",
+      "baseline": "BloodExecutioner",
+      "sprite": "Assets/Art/World/Angular/Monsters/CrimsonCount.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.bloodexecutioner.displayname\",\"lastText\":\"핏빛 백작\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.bloodexecutioner.encounterhint\",\"lastText\":\"무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자.\"}],\"textOwnerGuid\":\"e839e9abbb14d7f42b4d17932c11d3f7\",\"displayName\":\"핏빛 백작\",\"portrait\":{\"instanceID\":1216108},\"combatAnimation\":{\"instanceID\":-2678154},\"encounterHint\":\"무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자.\",\"pattern\":2,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":420.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":48,\"goldReward\":23,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678168},{\"instanceID\":-2678182}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.5504000186920166,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CrimsonCount-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.crimsoncount-0.displayname\",\"lastText\":\"핏빛 백작의 견제\"}],\"textOwnerGuid\":\"e8a2d749192e37e41929535ec697caa6\",\"type\":0,\"displayName\":\"핏빛 백작의 견제\",\"damage\":16.0,\"shieldDamage\":25.600000381469728,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CrimsonCount-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.crimsoncount-1.displayname\",\"lastText\":\"핏빛 백작의 강타 1\"}],\"textOwnerGuid\":\"8018fc5e5b08b684daf390e2301b57e4\",\"type\":1,\"displayName\":\"핏빛 백작의 강타 1\",\"damage\":50.0,\"shieldDamage\":80.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.199999809265137,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":0.0,\"y\":50.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_2\",\"normalizedPosition\":{\"x\":85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "AshHierophant",
+      "baseline": "LampPriest",
+      "sprite": "Assets/Art/World/Angular/Monsters/AshHierophant.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.lamppriest.displayname\",\"lastText\":\"재의 대사제\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.lamppriest.encounterhint\",\"lastText\":\"호위 가고일과 공격이 겹친다. 본체 강타를 끊자.\"}],\"textOwnerGuid\":\"9177932eaa22ed644a46bfee82533abb\",\"displayName\":\"재의 대사제\",\"portrait\":{\"instanceID\":1216116},\"combatAnimation\":{\"instanceID\":-2678222},\"encounterHint\":\"호위 가고일과 공격이 겹친다. 본체 강타를 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":290.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":37,\"goldReward\":18,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678236},{\"instanceID\":-2678250}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.800000011920929,\"g\":0.5760000348091126,\"b\":0.47999998927116396,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/AshHierophant-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ashhierophant-0.displayname\",\"lastText\":\"재의 대사제의 견제\"}],\"textOwnerGuid\":\"2366d813a73987746959785e74e08966\",\"type\":0,\"displayName\":\"재의 대사제의 견제\",\"damage\":13.0,\"shieldDamage\":20.80000114440918,\"windupDuration\":1.100000023841858,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/AshHierophant-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ashhierophant-1.displayname\",\"lastText\":\"재의 대사제의 강타 1\"}],\"textOwnerGuid\":\"227787eb241a50047934f377d197bde4\",\"type\":1,\"displayName\":\"재의 대사제의 강타 1\",\"damage\":44.0,\"shieldDamage\":70.4000015258789,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.199999809265137,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":46038},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "CenserRevenant",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "AshDragon",
+      "baseline": "Data_Monster_B3_Boss_SoulEater",
+      "sprite": "Assets/Art/World/Angular/Monsters/AshDragon.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_b3_boss_souleater.displayname\",\"lastText\":\"잿불의 용\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_b3_boss_souleater.encounterhint\",\"lastText\":\"날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자.\"}],\"textOwnerGuid\":\"b544a9bd660854044b65489c136cbc78\",\"displayName\":\"잿불의 용\",\"portrait\":{\"instanceID\":1216124},\"combatAnimation\":{\"instanceID\":-2678290},\"encounterHint\":\"날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":1800.0,\"normalAttackInterval\":2.5999999046325685,\"chargeInterval\":7.0,\"stunDuration\":4.800000190734863,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":400,\"goldReward\":13,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2678304},{\"instanceID\":-2678318}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.5799999833106995,\"g\":0.11999999731779099,\"b\":0.7200000286102295,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/AshDragon-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ashdragon-0.displayname\",\"lastText\":\"잿불의 용의 견제\"}],\"textOwnerGuid\":\"1a792c665e2259749b6525ab8f7655bd\",\"type\":0,\"displayName\":\"잿불의 용의 견제\",\"damage\":31.200000762939454,\"shieldDamage\":31.200000762939454,\"windupDuration\":0.8700000047683716,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/AshDragon-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ashdragon-1.displayname\",\"lastText\":\"잿불의 용의 강타 1\"}],\"textOwnerGuid\":\"dccf4fd832dece645a161ca40b1ad15d\",\"type\":1,\"displayName\":\"잿불의 용의 강타 1\",\"damage\":55.20000076293945,\"shieldDamage\":55.20000076293945,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.400000095367432,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-76.0,\"y\":40.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":-30.0,\"y\":-46.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-3\",\"normalizedPosition\":{\"x\":30.0,\"y\":-46.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"core-4\",\"normalizedPosition\":{\"x\":76.0,\"y\":40.0},\"hitRadius\":30.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "EclipseChimera",
+      "baseline": "EclipseBeast",
+      "sprite": "Assets/Art/World/Angular/Monsters/EclipseChimera.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.eclipsebeast.displayname\",\"lastText\":\"일식의 키메라\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.eclipsebeast.encounterhint\",\"lastText\":\"해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다.\"}],\"textOwnerGuid\":\"a20162045cffe5a4b96a5816de5fbd16\",\"displayName\":\"일식의 키메라\",\"portrait\":{\"instanceID\":1216136},\"combatAnimation\":{\"instanceID\":-2678386},\"encounterHint\":\"해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다.\",\"pattern\":4,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":850.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":82,\"goldReward\":38,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678400},{\"instanceID\":-2678414},{\"instanceID\":-2678428},{\"instanceID\":-2678442}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.800000011920929,\"b\":0.569599986076355,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.eclipsechimera-0.displayname\",\"lastText\":\"일식의 키메라의 견제\"}],\"textOwnerGuid\":\"6b0bec5f81a965449bb3ae7537d411d3\",\"type\":0,\"displayName\":\"일식의 키메라의 견제\",\"damage\":18.0,\"shieldDamage\":28.80000114440918,\"windupDuration\":1.2000000476837159,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.eclipsechimera-1.displayname\",\"lastText\":\"일식의 키메라의 강타 1\"}],\"textOwnerGuid\":\"eea3d16d2de02704296395ce546167e6\",\"type\":1,\"displayName\":\"일식의 키메라의 강타 1\",\"damage\":12.0,\"shieldDamage\":19.200000762939454,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"left_heart\",\"chargeTimeLimit\":4.5,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":5,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-2.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.eclipsechimera-2.displayname\",\"lastText\":\"일식의 키메라의 강타 2\"}],\"textOwnerGuid\":\"d143ebfbef622bd49a82d0a3bca7d970\",\"type\":1,\"displayName\":\"일식의 키메라의 강타 2\",\"damage\":55.0,\"shieldDamage\":88.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"right_heart\",\"chargeTimeLimit\":4.800000190734863,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/EclipseChimera-3.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.eclipsechimera-3.displayname\",\"lastText\":\"일식의 키메라의 강타 3\"}],\"textOwnerGuid\":\"f18c043afce121f4a826d76f3916d594\",\"type\":1,\"displayName\":\"일식의 키메라의 강타 3\",\"damage\":35.75,\"shieldDamage\":57.20000076293945,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.5,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "SunIdol",
+      "baseline": "ElderLeftHeart",
+      "sprite": "Assets/Art/World/Angular/Monsters/SunIdol.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.elderleftheart.displayname\",\"lastText\":\"해 우상\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.elderleftheart.encounterhint\",\"lastText\":\"연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다.\"}],\"textOwnerGuid\":\"2c6f1640670ed9d49bff93c009950859\",\"displayName\":\"해 우상\",\"portrait\":{\"instanceID\":1216148},\"combatAnimation\":{\"instanceID\":-2678482},\"encounterHint\":\"연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다.\",\"pattern\":4,\"supportId\":\"left_heart\",\"diesWithLeader\":true,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":150.0,\"normalAttackInterval\":99999.0,\"chargeInterval\":99999.0,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":0,\"goldReward\":0,\"bodyHitRadius\":65.0,\"attacks\":[],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.949999988079071,\"g\":0.30000001192092898,\"b\":0.44999998807907107,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [],
+      "normalSequence": []
+    },
+    {
+      "id": "MoonIdol",
+      "baseline": "ElderRightHeart",
+      "sprite": "Assets/Art/World/Angular/Monsters/MoonIdol.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.elderrightheart.displayname\",\"lastText\":\"달 우상\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.elderrightheart.encounterhint\",\"lastText\":\"강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다.\"}],\"textOwnerGuid\":\"346a3087dc5c96d47a89151261f1e24a\",\"displayName\":\"달 우상\",\"portrait\":{\"instanceID\":1216152},\"combatAnimation\":{\"instanceID\":-2678522},\"encounterHint\":\"강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다.\",\"pattern\":4,\"supportId\":\"right_heart\",\"diesWithLeader\":true,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":150.0,\"normalAttackInterval\":99999.0,\"chargeInterval\":99999.0,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":0,\"goldReward\":0,\"bodyHitRadius\":65.0,\"attacks\":[],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.949999988079071,\"g\":0.30000001192092898,\"b\":0.44999998807907107,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [],
+      "normalSequence": []
+    },
+    {
+      "id": "CinderLich",
+      "baseline": "AshGeneral",
+      "sprite": "Assets/Art/World/Angular/Monsters/CinderLich.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.ashgeneral.displayname\",\"lastText\":\"잿불 왕\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.ashgeneral.encounterhint\",\"lastText\":\"소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자.\"}],\"textOwnerGuid\":\"0f83843535eecd646a3cd8f4cc8fa6f8\",\"displayName\":\"잿불 왕\",\"portrait\":{\"instanceID\":1216156},\"combatAnimation\":{\"instanceID\":-2678562},\"encounterHint\":\"소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자.\",\"pattern\":5,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":900.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":86,\"goldReward\":40,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678576},{\"instanceID\":-2678590},{\"instanceID\":-2678604}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.4927999973297119,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 3,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CinderLich-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.cinderlich-0.displayname\",\"lastText\":\"잿불 왕의 견제\"}],\"textOwnerGuid\":\"28cab95d708821a46948076539b906ce\",\"type\":0,\"displayName\":\"잿불 왕의 견제\",\"damage\":9.0,\"shieldDamage\":14.40000057220459,\"windupDuration\":1.399999976158142,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":5,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CinderLich-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.cinderlich-1.displayname\",\"lastText\":\"잿불 왕의 강타 1\"}],\"textOwnerGuid\":\"735f899aee1341b40afdec5b66d5a558\",\"type\":1,\"displayName\":\"잿불 왕의 강타 1\",\"damage\":62.0,\"shieldDamage\":99.20000457763672,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":5.300000190734863,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":0.0,\"y\":50.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_2\",\"normalizedPosition\":{\"x\":85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":45594},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "AshGargoyle",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CinderLich-2.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.cinderlich-2.displayname\",\"lastText\":\"잿불 왕의 강타 2\"}],\"textOwnerGuid\":\"d18961695ff32ab439f5b2b2c7c86b67\",\"type\":1,\"displayName\":\"잿불 왕의 강타 2\",\"damage\":24.0,\"shieldDamage\":38.400001525878909,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.699999809265137,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":3,\"followupDelay\":0.44999998807907107},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "IronMimic",
+      "baseline": "Data_Monster_Special_Minion_Mimic",
+      "sprite": "Assets/Art/World/Angular/Monsters/IronMimic.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_special_minion_mimic.displayname\",\"lastText\":\"철니 미믹\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_special_minion_mimic.encounterhint\",\"lastText\":\"뚜껑이 열리는 동안 드러난 약점을 끊자.\"}],\"textOwnerGuid\":\"ca172d0cd76023441aebeb5e76e02585\",\"displayName\":\"철니 미믹\",\"portrait\":{\"instanceID\":1216166},\"combatAnimation\":{\"instanceID\":-2678644},\"encounterHint\":\"뚜껑이 열리는 동안 드러난 약점을 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":525.0,\"normalAttackInterval\":1.5499999523162842,\"chargeInterval\":5.0,\"stunDuration\":3.4000000953674318,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":117,\"goldReward\":15,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2678658},{\"instanceID\":-2678672}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.5199999809265137,\"g\":0.2800000011920929,\"b\":0.11999999731779099,\"a\":1.0}}",
+      "floor": 0,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/IronMimic-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ironmimic-0.displayname\",\"lastText\":\"철니 미믹의 견제\"}],\"textOwnerGuid\":\"23a70be5a852c07428b16dcaf131fccb\",\"type\":0,\"displayName\":\"철니 미믹의 견제\",\"damage\":36.0,\"shieldDamage\":36.0,\"windupDuration\":0.9570000171661377,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/IronMimic-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.ironmimic-1.displayname\",\"lastText\":\"철니 미믹의 강타 1\"}],\"textOwnerGuid\":\"e59ef47d85a69114abf51302475ac9f6\",\"type\":1,\"displayName\":\"철니 미믹의 강타 1\",\"damage\":64.80000305175781,\"shieldDamage\":64.80000305175781,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":6.400000095367432,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-42.0,\"y\":26.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":44.0,\"y\":26.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "GildedToad",
+      "baseline": "Data_Monster_Special_MerchantMutant",
+      "sprite": "Assets/Art/World/Angular/Monsters/GildedToad.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.data_monster_special_merchantmutant.displayname\",\"lastText\":\"금먹는 두꺼비\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.data_monster_special_merchantmutant.encounterhint\",\"lastText\":\"큰 공격을 준비할 때 열린 약점을 노리자.\"}],\"textOwnerGuid\":\"47d6d43ce99c4764985d63037cfb301e\",\"displayName\":\"금먹는 두꺼비\",\"portrait\":{\"instanceID\":1216174},\"combatAnimation\":{\"instanceID\":-2678712},\"encounterHint\":\"큰 공격을 준비할 때 열린 약점을 노리자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":960.0,\"normalAttackInterval\":1.149999976158142,\"chargeInterval\":3.450000047683716,\"stunDuration\":4.800000190734863,\"stunDamageMultiplier\":1.649999976158142,\"experienceReward\":213,\"goldReward\":25,\"bodyHitRadius\":108.0,\"attacks\":[{\"instanceID\":-2678726},{\"instanceID\":-2678740}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.10000000149011612,\"b\":0.07999999821186066,\"a\":1.0}}",
+      "floor": 0,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/GildedToad-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.gildedtoad-0.displayname\",\"lastText\":\"금먹는 두꺼비의 견제\"}],\"textOwnerGuid\":\"c65ba8108a2e66340a634e26803d6ec7\",\"type\":0,\"displayName\":\"금먹는 두꺼비의 견제\",\"damage\":60.0,\"shieldDamage\":60.0,\"windupDuration\":0.8700000047683716,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/GildedToad-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.gildedtoad-1.displayname\",\"lastText\":\"금먹는 두꺼비의 강타 1\"}],\"textOwnerGuid\":\"a5d49a9d5f514be4fa14263820a031f7\",\"type\":1,\"displayName\":\"금먹는 두꺼비의 강타 1\",\"damage\":108.0,\"shieldDamage\":108.0,\"windupDuration\":0.009999999776482582,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":6.400000095367432,\"chargeWeakPoints\":[{\"id\":\"core-1\",\"normalizedPosition\":{\"x\":-72.0,\"y\":34.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-2\",\"normalizedPosition\":{\"x\":0.0,\"y\":-38.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false},{\"id\":\"core-3\",\"normalizedPosition\":{\"x\":72.0,\"y\":34.0},\"hitRadius\":30.0,\"requiredChargeHits\":2,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.25},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "TarrasqueWhelp",
+      "baseline": "TrialGuardian",
+      "sprite": "Assets/Art/World/Angular/Monsters/TarrasqueWhelp.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.trialguardian.displayname\",\"lastText\":\"가시등 시련수\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.trialguardian.encounterhint\",\"lastText\":\"시련의 강타를 약점 파괴로 막자.\"}],\"textOwnerGuid\":\"52b7da8d0f282654c919a5530c4a2e8c\",\"displayName\":\"가시등 시련수\",\"portrait\":{\"instanceID\":1216182},\"combatAnimation\":{\"instanceID\":-2678780},\"encounterHint\":\"시련의 강타를 약점 파괴로 막자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":240.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":33,\"goldReward\":16,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678794},{\"instanceID\":-2678808}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.5247999429702759,\"g\":0.47999998927116396,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 0,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.tarrasquewhelp-0.displayname\",\"lastText\":\"가시등 시련수의 견제\"}],\"textOwnerGuid\":\"64e87b5877852e74ea7bece480c6f50b\",\"type\":0,\"displayName\":\"가시등 시련수의 견제\",\"damage\":9.0,\"shieldDamage\":14.40000057220459,\"windupDuration\":1.100000023841858,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.tarrasquewhelp-1.displayname\",\"lastText\":\"가시등 시련수의 강타 1\"}],\"textOwnerGuid\":\"586871847d096854c8fe5c0cd64abb56\",\"type\":1,\"displayName\":\"가시등 시련수의 강타 1\",\"damage\":30.0,\"shieldDamage\":48.0,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":4.5,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":42.5,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    },
+    {
+      "id": "CrownColossus",
+      "baseline": "DeepTrialGuardian",
+      "sprite": "Assets/Art/World/Angular/Monsters/CrownColossus.png",
+      "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterdata.deeptrialguardian.displayname\",\"lastText\":\"왕관 거신\"},{\"propertyPath\":\"encounterHint\",\"key\":\"data.monsterdata.deeptrialguardian.encounterhint\",\"lastText\":\"심층 시련. 여러 약점을 연결해 끊자.\"}],\"textOwnerGuid\":\"197b50c913a700645bf023916181a13f\",\"displayName\":\"왕관 거신\",\"portrait\":{\"instanceID\":1216194},\"combatAnimation\":{\"instanceID\":-2678876},\"encounterHint\":\"심층 시련. 여러 약점을 연결해 끊자.\",\"pattern\":0,\"supportId\":\"\",\"diesWithLeader\":false,\"orbitRadius\":170.0,\"orbitSpeed\":0.550000011920929,\"maxHp\":460.0,\"normalAttackInterval\":2.9000000953674318,\"chargeInterval\":6.800000190734863,\"stunDuration\":3.0,\"stunDamageMultiplier\":1.5,\"experienceReward\":51,\"goldReward\":24,\"bodyHitRadius\":95.0,\"attacks\":[{\"instanceID\":-2678890},{\"instanceID\":-2678904}],\"normalAttackSequence\":[],\"bodyColor\":{\"r\":0.47999998927116396,\"g\":0.7808000445365906,\"b\":0.800000011920929,\"a\":1.0}}",
+      "floor": 0,
+      "attacks": [
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CrownColossus-0.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.crowncolossus-0.displayname\",\"lastText\":\"왕관 거신의 견제\"}],\"textOwnerGuid\":\"ff49583b440b7444b844ee8aa2c3ec03\",\"type\":0,\"displayName\":\"왕관 거신의 견제\",\"damage\":15.0,\"shieldDamage\":24.0,\"windupDuration\":1.100000023841858,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":2.5,\"chargeWeakPoints\":[],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":2,\"followupDelay\":0.4000000059604645},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        },
+        {
+          "path": "Assets/Data/Presentation/Angular/Attacks/CrownColossus-1.asset",
+          "json": "{\"textKeys\":[{\"propertyPath\":\"displayName\",\"key\":\"data.monsterattackdata.crowncolossus-1.displayname\",\"lastText\":\"왕관 거신의 강타 1\"}],\"textOwnerGuid\":\"7259083b0161a06419f4b2313bdcb740\",\"type\":1,\"displayName\":\"왕관 거신의 강타 1\",\"damage\":48.0,\"shieldDamage\":76.80000305175781,\"windupDuration\":1.0,\"recoveryDuration\":0.5,\"guardable\":true,\"requiredSupportId\":\"\",\"chargeTimeLimit\":5.0,\"chargeWeakPoints\":[{\"id\":\"lock_0\",\"normalizedPosition\":{\"x\":-85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_1\",\"normalizedPosition\":{\"x\":0.0,\"y\":50.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false},{\"id\":\"lock_2\",\"normalizedPosition\":{\"x\":85.0,\"y\":0.0},\"hitRadius\":29.0,\"requiredChargeHits\":1,\"optional\":false}],\"combatMechanics\":{\"directionalGuard\":{\"enabled\":false,\"breakByAttackWay\":1,\"maxGuard\":72.0,\"rebuildDelay\":5.0,\"rebuildPerSecond\":24.0},\"healOnUnguardedHit\":0.0,\"hitCount\":1,\"followupDelay\":0.30000001192092898},\"chargeSummonMechanics\":{\"openingSummons\":[],\"summonOnFailedCharge\":{\"instanceID\":0},\"healOnFailedChargeWhileSummonAlive\":0.0}}",
+          "onFailure": "",
+          "opening": []
+        }
+      ],
+      "normalSequence": []
+    }
+  ],
+  "encounters": [
+    {
+      "id": "AshCrow",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "AshGargoyle",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "AshGeneral",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "CinderLich",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "AshHound",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "CoalSalamander",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "AshLamps",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "CenserRevenant",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "CoalSalamander",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        },
+        {
+          "monster": "CoalSalamander",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 3.200000047683716
+        }
+      ]
+    },
+    {
+      "id": "AshMaw",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "HollowEye",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "AshGargoyle",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        }
+      ]
+    },
+    {
+      "id": "AshPair",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "CoalSalamander",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "SerpentWarden",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        }
+      ]
+    },
+    {
+      "id": "AshShade",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "SerpentWarden",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "BellKeeper",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "OssuaryBell",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "BloodExecutioner",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "CrimsonCount",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "BroodKeeper",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "WebDuchess",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.8999999761581421,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "Threadling",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.8500000238418579
+        },
+        {
+          "monster": "Threadling",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.7000000476837158
+        }
+      ]
+    },
+    {
+      "id": "CrystalSpider",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "PrismCrab",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "DeepTrial",
+      "category": "Event",
+      "members": [
+        {
+          "monster": "CrownColossus",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "CrystalUrchin",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "id": "EclipseBeast",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "EclipseChimera",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.8999999761581421,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "SunIdol",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.8500000238418579
+        },
+        {
+          "monster": "MoonIdol",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.7000000476837158
+        }
+      ]
+    },
+    {
+      "id": "Executioner",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "IronMantis",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "FrostBat",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "QuillSprite",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "FrostNeedle",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "CrystalUrchin",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "FrostOgre",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "TwinAntlerStag",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "FrostPair",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "CrystalUrchin",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "QuillSprite",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        }
+      ]
+    },
+    {
+      "id": "FrostQueen",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "WinterUnicorn",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "FrostTrio",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "VeilOracle",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "QuillSprite",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        },
+        {
+          "monster": "QuillSprite",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 3.200000047683716
+        }
+      ]
+    },
+    {
+      "id": "FrostWraith",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "VeilOracle",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "FrostYeti",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "TuskPilgrim",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "BellHare",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        }
+      ]
+    },
+    {
+      "id": "IceMirror",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "MirrorMoth",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "LampPriest",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "AshHierophant",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "AshGargoyle",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.8500000238418579
+        },
+        {
+          "monster": "AshGargoyle",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.7000000476837158
+        }
+      ]
+    },
+    {
+      "id": "MazeAmbush",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "BellHound",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "LanternImp",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        }
+      ]
+    },
+    {
+      "id": "MazeBat",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "LanternImp",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "MazeGuardian",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "StoneSphinx",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "MazeLeeches",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "CoffinSlime",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "CoffinSlime",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        },
+        {
+          "monster": "BoneScorpion",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 3.200000047683716
+        }
+      ]
+    },
+    {
+      "id": "MazePair",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "StringRevenant",
+          "offset": {
+            "x": -135.0,
+            "y": 35.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "LanternImp",
+          "offset": {
+            "x": 135.0,
+            "y": -30.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.600000023841858
+        }
+      ]
+    },
+    {
+      "id": "MazeRat",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "BoneScorpion",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "MazeSkeleton",
+      "category": "Combat",
+      "members": [
+        {
+          "monster": "StringRevenant",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "Minotaur",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "EttinGatekeeper",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "MirrorKnight",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "MirrorShell",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "SoulEater",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "AshDragon",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "SoulKnight",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "OathlessCentaur",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "StormMatriarch",
+      "category": "Boss",
+      "members": [
+        {
+          "monster": "TempestRoc",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.8999999761581421,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "StormJelly",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.8500000238418579
+        },
+        {
+          "monster": "StormJelly",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.7000000476837158
+        }
+      ]
+    },
+    {
+      "id": "Trial",
+      "category": "Event",
+      "members": [
+        {
+          "monster": "TarrasqueWhelp",
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "scale": 1.0,
+          "actionDelay": 0.0
+        }
+      ]
+    },
+    {
+      "id": "WispChoir",
+      "category": "Elite",
+      "members": [
+        {
+          "monster": "MaskedChoir",
+          "offset": {
+            "x": 0.0,
+            "y": 80.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.0
+        },
+        {
+          "monster": "MaskedChoir",
+          "offset": {
+            "x": -190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 0.8500000238418579
+        },
+        {
+          "monster": "MaskedChoir",
+          "offset": {
+            "x": 190.0,
+            "y": -55.0
+          },
+          "scale": 0.6800000071525574,
+          "actionDelay": 1.7000000476837158
+        }
+      ]
+    }
+  ]
+}

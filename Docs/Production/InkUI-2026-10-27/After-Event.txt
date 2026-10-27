@@ -1,0 +1,27 @@
+After-Event / 1920x1080
+ChoiceTitle | (x:-670.09, y:-28.00, width:1340.19, height:56.00) | overflow=False | > 오래된 동작을 버리고 다시 익힌다
+Page | (x:-360.00, y:-28.00, width:720.00, height:56.00) | overflow=False | 1 / 2
+ChoiceTitle | (x:-670.09, y:-28.00, width:1340.19, height:56.00) | overflow=False | > 내일을 조금 잘라 낸다
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ←
+Narrative | (x:-504.00, y:-112.76, width:1008.00, height:112.76) | overflow=False | 기록실 책상 위에서 모래가 거꾸로 흐르고 있다.  옆에 놓인 기록에는 이 모래시계로 시간을 빌릴 수 있다고 적혀 있다.
+ChoiceDescription | (x:-670.09, y:-16.71, width:1340.19, height:33.41) | overflow=False | 보유 능력 하나 제거 후 새 능력을 두 번 선택한다.
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | →
+ChoiceDescription | (x:-670.09, y:-16.71, width:1340.19, height:33.41) | overflow=False | 최대 체력 -8. 깨어진 모래시계: 차지 준비시간과 주문 쿨타임 -12%.
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+Label | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 다음
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+Label | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 이전
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ↓
+Title | (x:-680.00, y:-32.00, width:1360.00, height:64.00) | overflow=False | 내일의 한숨
+Runtime HP=100/100; MP=30/30; guard=35/35
+Skin: Choice_0 | Choice | (x:-702.09, y:-60.71, width:1404.19, height:121.41) | nonblocking=True | hover=False | pressed=False | active=True | vertices=220 | material=UI/Behemoth/Ink Surface
+Skin: NextPage | Button | (x:-72.00, y:-32.00, width:144.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=92 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: PreviousPage | Button | (x:-72.00, y:-32.00, width:144.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=False | vertices=92 | material=UI/Behemoth/Ink Surface
+Skin: Choice_1 | Choice | (x:-702.09, y:-60.71, width:1404.19, height:121.41) | nonblocking=True | hover=False | pressed=False | active=True | vertices=108 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: Relic0 | Slot | (x:-32.00, y:-32.00, width:64.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=68 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: StoryPanel | Panel | (x:-734.09, y:-391.93, width:1468.19, height:783.85) | nonblocking=True | hover=False | pressed=False | active=True | vertices=956 | material=UI/Behemoth/Ink Surface

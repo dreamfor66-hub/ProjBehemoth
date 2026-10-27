@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.mazebat.displayname
-    lastText: "\uAE38\uBAA9\uC758 \uBC15\uC950"
+    lastText: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
   - propertyPath: hint
     key: data.encounterdata.mazebat.hint
-    lastText: 
+    lastText: "\uC791\uC740 \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC.
+      \uAC15\uD0C0 \uC900\uBE44 \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
   textOwnerGuid: 689ffa855b1d4ed4ea98fc25baca25f0
   id: MazeBat
-  displayName: "\uAE38\uBAA9\uC758 \uBC15\uC950"
-  hint: 
+  displayName: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
+  hint: "\uC791\uC740 \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC.
+    \uAC15\uD0C0 \uC900\uBE44 \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: 59d88fb5cea09ae409b378a705c6c6e1, type: 2}

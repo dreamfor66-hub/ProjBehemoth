@@ -1,0 +1,3 @@
+2026-10-28. Latest script compilation and subsequent scoped play:
+No compile errors, shader errors or exceptions.
+Existing CS0108 warning: RewardPopupView.animation hides Component.animation.

@@ -15,14 +15,18 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.stormmatriarch.displayname
-    lastText: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+    lastText: "\uD3ED\uD48D\uC758 \uB300\uBD95 \xB7 \uD3ED\uD48D \uD574\uD30C\uB9AC"
   - propertyPath: hint
     key: data.encounterdata.stormmatriarch.hint
-    lastText: 
+    lastText: "\uACF5\uC804\uD558\uB294 \uD3ED\uD48D \uD574\uD30C\uB9AC\uC640 \uBCF8\uCCB4\uC758
+      \uACF5\uACA9 \uC2DC\uCC28\uC5D0 \uC8FC\uC758\uD558\uC790.\n\uBCF8\uCCB4 \uC8FC\uC704\uB97C
+      \uACF5\uC804\uD558\uBA70 \uACF5\uACA9\uD55C\uB2E4."
   textOwnerGuid: 2ba4fc90d398c2949bd579645b8c5199
   id: StormMatriarch
-  displayName: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
-  hint: 
+  displayName: "\uD3ED\uD48D\uC758 \uB300\uBD95 \xB7 \uD3ED\uD48D \uD574\uD30C\uB9AC"
+  hint: "\uACF5\uC804\uD558\uB294 \uD3ED\uD48D \uD574\uD30C\uB9AC\uC640 \uBCF8\uCCB4\uC758
+    \uACF5\uACA9 \uC2DC\uCC28\uC5D0 \uC8FC\uC758\uD558\uC790.\n\uBCF8\uCCB4 \uC8FC\uC704\uB97C
+    \uACF5\uC804\uD558\uBA70 \uACF5\uACA9\uD55C\uB2E4."
   category: 10
   members:
   - monster: {fileID: 11400000, guid: 5946ee0bd997e36448ff353d80ebfdde, type: 2}

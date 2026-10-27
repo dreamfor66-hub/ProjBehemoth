@@ -1,0 +1,575 @@
+{
+  "mode": "built-in image_gen",
+  "intent": "reference-guided generation; selected corrections use edit",
+  "monsters": [
+    {
+      "baseline": "Data_Monster_B1_Minion_Bat",
+      "id": "LanternImp",
+      "name": "등불 도깨비",
+      "floor": 1,
+      "subject": "Small crouching long-eared goblin with one heavy bronze lantern held by a clear hooked handle, ragged olive hood, amber eyes, squat limbs. No wings.",
+      "hint": "등불을 치켜들 때 중심 약점을 끊어 강타를 취소하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Small crouching long-eared goblin with one heavy bronze lantern held by a clear hooked handle, ragged olive hood, amber eyes, squat limbs. No wings.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "TunnelRat",
+      "id": "BoneScorpion",
+      "name": "납골 전갈",
+      "floor": 1,
+      "subject": "Broad low bone-armored scorpion, exactly two front pincers, six small walking legs and one segmented tail raised behind, large pale yellow stinger sac.",
+      "hint": "낮은 자세로 달려든다. 꼬리를 들면 노출된 약점을 부수자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Broad low bone-armored scorpion, exactly two front pincers, six small walking legs and one segmented tail raised behind, large pale yellow stinger sac.",
+      "normalLabels": [
+        "집게 훑기",
+        "꼬리 찍기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "Data_Monster_B1_Minion_Skeleton",
+      "id": "StringRevenant",
+      "name": "실매듭 망령",
+      "floor": 1,
+      "subject": "Ragged hooded skeleton marionette with two thin strings to a crooked wooden crossbar overhead, one broken cleaver, bent elbows and knotted chest.",
+      "hint": "실이 팽팽해지는 순간 가슴 매듭을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Ragged hooded skeleton marionette with two thin strings to a crooked wooden crossbar overhead, one broken cleaver, bent elbows and knotted chest.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B1_Minion_Leech",
+      "id": "CoffinSlime",
+      "name": "관먹이",
+      "floor": 1,
+      "subject": "Squat tar creature spilling out of a broken small coffin, one enormous crooked toothy mouth, two thick sludge arms, cracked wooden lid shield on back, small ochre eyes.",
+      "hint": "입을 벌린 채 강타를 준비한다. 몸통 약점이 노출된다.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Squat tar creature spilling out of a broken small coffin, one enormous crooked toothy mouth, two thick sludge arms, cracked wooden lid shield on back, small ochre eyes.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "AlarmHound",
+      "id": "BellHound",
+      "name": "경종 사냥개",
+      "floor": 1,
+      "subject": "Lean gargoyle hound with large bell around neck, four sturdy clawed legs, broad blunt skull, one raised warning ear, dusty grey green hide and brass bell.",
+      "hint": "경종 뒤의 공격에 대비하고 약점을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Lean gargoyle hound with large bell around neck, four sturdy clawed legs, broad blunt skull, one raised warning ear, dusty grey green hide and brass bell.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B1_Elite_Minotaur",
+      "id": "EttinGatekeeper",
+      "name": "쌍두 문지기",
+      "floor": 1,
+      "subject": "Massive squat two headed ogre gatekeeper, each distinct blunt head attached clearly to shared broad shoulders, leather wrist cuffs, heavy single stone club resting on shoulder, olive grey hide.",
+      "hint": "두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Massive squat two headed ogre gatekeeper, each distinct blunt head attached clearly to shared broad shoulders, leather wrist cuffs, heavy single stone club resting on shoulder, olive grey hide.",
+      "normalLabels": [
+        "왼머리 내려찍기",
+        "오른머리 휘두르기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "MirrorKnight",
+      "id": "MirrorShell",
+      "name": "거울등 거북",
+      "floor": 1,
+      "subject": "Upright bulky snapping turtle with one broad polished mirror plate shell behind shoulders, short thick limbs, narrowed eyes, small cracked mirror buckler held in hand. No sword.",
+      "hint": "같은 방향으로 연속 베면 반격한다. 베는 방향을 바꾸자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Upright bulky snapping turtle with one broad polished mirror plate shell behind shoulders, short thick limbs, narrowed eyes, small cracked mirror buckler held in hand. No sword.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "ArmoredExecutioner",
+      "id": "IronMantis",
+      "name": "철갑 사마귀",
+      "floor": 1,
+      "subject": "Tall compressed armored mantis with exactly two heavy sickle forearms, two folded small grasping arms and two sturdy legs, tarnished slate carapace, amber eyes.",
+      "hint": "필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Tall compressed armored mantis with exactly two heavy sickle forearms, two folded small grasping arms and two sturdy legs, tarnished slate carapace, amber eyes.",
+      "normalLabels": [
+        "낫 견제",
+        "교차 베기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "Data_Monster_B1_Boss_MazeGuardian",
+      "id": "StoneSphinx",
+      "name": "미궁 스핑크스",
+      "floor": 1,
+      "subject": "Heavy squat stone sphinx lion, massive forepaws, square calm lion head, short angular ivory mane, two compact folded dark wings, single ochre chest seal, crouching ready stance.",
+      "hint": "필수 약점들을 연결해 베어 강타를 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Heavy squat stone sphinx lion, massive forepaws, square calm lion head, short angular ivory mane, two compact folded dark wings, single ochre chest seal, crouching ready stance.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "BellKeeper",
+      "id": "OssuaryBell",
+      "name": "납골당의 종",
+      "floor": 1,
+      "subject": "Walking gigantic cracked bronze bell carried by two short stone legs, bony hands protrude at sides, one glaring eye within dark bell opening, chain clapper visible. Simple single silhouette.",
+      "hint": "연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Walking gigantic cracked bronze bell carried by two short stone legs, bony hands protrude at sides, one glaring eye within dark bell opening, chain clapper visible. Simple single silhouette.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "BroodKeeper",
+      "id": "WebDuchess",
+      "name": "실짜는 공작부인",
+      "floor": 1,
+      "subject": "Squat spider duchess with hooded stern mask upper torso and broad six legged spider abdomen, two clear pale hands weaving a few thick silk cords, dusty green rags, simple large shapes.",
+      "hint": "주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Squat spider duchess with hooded stern mask upper torso and broad six legged spider abdomen, two clear pale hands weaving a few thick silk cords, dusty green rags, simple large shapes.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "OrbitBat",
+      "id": "Threadling",
+      "name": "실인형",
+      "floor": 1,
+      "subject": "One small suspended wooden skeletal doll, oversized round skull, two arms and two legs dangling from one visible thick red silk knot above, ragged olive scraps, crooked grin.",
+      "hint": "본체 주위를 공전한다. 위치를 따라가며 노리자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: One small suspended wooden skeletal doll, oversized round skull, two arms and two legs dangling from one visible thick red silk knot above, ragged olive scraps, crooked grin.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B2_Minion_FrostBat",
+      "id": "QuillSprite",
+      "name": "깃바늘 정령",
+      "floor": 2,
+      "subject": "Small spiky quilled bird spirit with two broad angular wings and two tucked clawed feet, large beak, ivory feather tips and charcoal blue body, one pale cyan eye.",
+      "hint": "날개를 접어 돌진하기 전 약점을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Small spiky quilled bird spirit with two broad angular wings and two tucked clawed feet, large beak, ivory feather tips and charcoal blue body, one pale cyan eye.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "IceNeedle",
+      "id": "CrystalUrchin",
+      "name": "결정 성게",
+      "floor": 2,
+      "subject": "Floating faceted dark stone urchin with six large blunt ice crystal spines, one single horizontal eye slit and a small dark mouth, no tiny facets.",
+      "hint": "결정 사이에 열린 약점을 노려 찌르기를 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Floating faceted dark stone urchin with six large blunt ice crystal spines, one single horizontal eye slit and a small dark mouth, no tiny facets.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B2_Minion_IceWraith",
+      "id": "VeilOracle",
+      "name": "장막 예언자",
+      "floor": 2,
+      "subject": "Floating hooded oracle with empty black face and two pale eyes, broad tattered blue grey veil, two simple wrapped hands held apart, hanging single ivory mask at waist.",
+      "hint": "장막이 열릴 때 나타나는 약점을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Floating hooded oracle with empty black face and two pale eyes, broad tattered blue grey veil, two simple wrapped hands held apart, hanging single ivory mask at waist.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B2_Minion_Yeti",
+      "id": "TuskPilgrim",
+      "name": "엄니 순례자",
+      "floor": 2,
+      "subject": "Hulking upright walrus pilgrim with thick ivory tusks, heavy dark fur shawl, broad belly, short legs, two large flipperlike hands, small ice cairn backpack.",
+      "hint": "곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Hulking upright walrus pilgrim with thick ivory tusks, heavy dark fur shawl, broad belly, short legs, two large flipperlike hands, small ice cairn backpack.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "SnowBell",
+      "id": "BellHare",
+      "name": "종토끼",
+      "floor": 2,
+      "subject": "Squat snow hare familiar with long asymmetrical ears, one large bronze bell strapped across chest, broad paws, grey white fur, stern pale eyes.",
+      "hint": "본체 곁에서 박자를 어긋나게 공격한다.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Squat snow hare familiar with long asymmetrical ears, one large bronze bell strapped across chest, broad paws, grey white fur, stern pale eyes.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B2_Elite_FrostOgre",
+      "id": "TwinAntlerStag",
+      "name": "쌍각 파수꾼",
+      "floor": 2,
+      "subject": "Sturdy short legged mystical stag with two huge simple branching antlers, dark blue ribbonlike mane, pale grey body, ivory wrapped forelegs, two visible antler root seals.",
+      "hint": "좌우 약점 두 개를 모두 끊어 강타를 취소하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Sturdy short legged mystical stag with two huge simple branching antlers, dark blue ribbonlike mane, pale grey body, ivory wrapped forelegs, two visible antler root seals.",
+      "normalLabels": [
+        "앞발 견제",
+        "뿔 휘두르기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "IceMirror",
+      "id": "MirrorMoth",
+      "name": "거울나방",
+      "floor": 2,
+      "subject": "Large upright moth with two wide symmetrical dark blue wings bearing one large reflective ivory patch each, thick furry abdomen, two short arms, two feet, simple antennae.",
+      "hint": "같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Large upright moth with two wide symmetrical dark blue wings bearing one large reflective ivory patch each, thick furry abdomen, two short arms, two feet, simple antennae.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "PaleWisp",
+      "id": "MaskedChoir",
+      "name": "가면 성가수",
+      "floor": 2,
+      "subject": "One hovering dark ravenlike spirit draped in a single large ivory theatre mask with narrow eye holes, two folded feather arms and tattered veil tail, compact simple silhouette.",
+      "hint": "세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: One hovering dark ravenlike spirit draped in a single large ivory theatre mask with narrow eye holes, two folded feather arms and tattered veil tail, compact simple silhouette.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B2_Boss_FrostQueen",
+      "id": "WinterUnicorn",
+      "name": "겨울의 일각수",
+      "floor": 2,
+      "subject": "Powerful compact spectral unicorn with straight single dark horn, flowing angular slate blue mane, muscular four legs with pale wraps, mist green single ribbon hovering above, no scenery.",
+      "hint": "긴 강타 준비 동안 노출된 약점을 모두 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Powerful compact spectral unicorn with straight single dark horn, flowing angular slate blue mane, muscular four legs with pale wraps, mist green single ribbon hovering above, no scenery.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "CrystalSpider",
+      "id": "PrismCrab",
+      "name": "수정 등딱지",
+      "floor": 2,
+      "subject": "Massive squat crab with two gigantic crystal tipped pincers, four short supporting legs, one broad cracked slate shell with three large milky prisms, small glowing pale eyes.",
+      "hint": "집게 사이 약점과 보조 약점을 연결해 부수자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Massive squat crab with two gigantic crystal tipped pincers, four short supporting legs, one broad cracked slate shell with three large milky prisms, small glowing pale eyes.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "StormMatriarch",
+      "id": "TempestRoc",
+      "name": "폭풍의 대붕",
+      "floor": 2,
+      "subject": "Huge heavy eagle roc with two wings arched up, short muscular talon legs, angular pale mane and beak, navy feathers, a few thick pale lightning zigzags confined around wings.",
+      "hint": "공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Huge heavy eagle roc with two wings arched up, short muscular talon legs, angular pale mane and beak, navy feathers, a few thick pale lightning zigzags confined around wings.",
+      "normalLabels": [
+        "날개 바람",
+        "발톱 낚기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "StormOrb",
+      "id": "StormJelly",
+      "name": "폭풍 해파리",
+      "floor": 2,
+      "subject": "One floating small jellyfish with broad storm grey bell cap, three thick angular tentacles, two pale cyan eyes, one simple lightning mark.",
+      "hint": "본체 주위를 공전하며 공격한다.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: One floating small jellyfish with broad storm grey bell cap, three thick angular tentacles, two pale cyan eyes, one simple lightning mark.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B3_Minion_AshHound",
+      "id": "CoalSalamander",
+      "name": "숯불 도롱뇽",
+      "floor": 3,
+      "subject": "Low broad salamander with four thick clawed limbs, square head, ridged charcoal hide, one amber belly patch, chunky segmented tail with tiny flame tip.",
+      "hint": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Low broad salamander with four thick clawed limbs, square head, ridged charcoal hide, one amber belly patch, chunky segmented tail with tiny flame tip.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B3_Minion_ShadeLancer",
+      "id": "SerpentWarden",
+      "name": "뱀 수문장",
+      "floor": 3,
+      "subject": "Snake humanoid warden with broad coiled tail, two arms, narrow reptile head, bronze collar and bracers, one short heavy spear held with anatomically clear hand and perfectly straight shaft.",
+      "hint": "몸을 세울 때 노출되는 약점을 끊어 돌진을 막자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Snake humanoid warden with broad coiled tail, two arms, narrow reptile head, bronze collar and bracers, one short heavy spear held with anatomically clear hand and perfectly straight shaft.",
+      "normalLabels": [
+        "창 찌르기",
+        "꼬리 휩쓸기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "AshCrow",
+      "id": "AshGargoyle",
+      "name": "재 가고일",
+      "floor": 3,
+      "subject": "Squat stone gargoyle with broad bulldog face, compact folded bat wings, two muscular arms and two clawed feet, cracked charcoal stone, small amber eyes.",
+      "hint": "짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Squat stone gargoyle with broad bulldog face, compact folded bat wings, two muscular arms and two clawed feet, cracked charcoal stone, small amber eyes.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B3_Minion_VoidMaw",
+      "id": "HollowEye",
+      "name": "공허의 눈",
+      "floor": 3,
+      "subject": "Floating round beholderlike creature with one huge pale eye and enormous toothy mouth, exactly four thick short eyestalks, slate olive skin and broad dark tongue. No humanoid arms.",
+      "hint": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Floating round beholderlike creature with one huge pale eye and enormous toothy mouth, exactly four thick short eyestalks, slate olive skin and broad dark tongue. No humanoid arms.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "SoulLamp",
+      "id": "CenserRevenant",
+      "name": "향로 망령",
+      "floor": 3,
+      "subject": "Hunched fish headed robed revenant with one heavy censer hanging from clearly grasped chain, finlike ears, blank ivory eyes, charcoal robe with muted rust sash, no weapon.",
+      "hint": "다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Hunched fish headed robed revenant with one heavy censer hanging from clearly grasped chain, finlike ears, blank ivory eyes, charcoal robe with muted rust sash, no weapon.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B3_Elite_SoulKnight",
+      "id": "OathlessCentaur",
+      "name": "파계 기마수",
+      "floor": 3,
+      "subject": "Undead centaur with skeletal horse lowerbody four sturdy legs, broad armored knight upperbody and two arms, ivory skull visor, tattered rust banner attached to back, short heavy glaive straight shaft.",
+      "hint": "넓게 드러난 약점을 차례로 끊어 강타를 취소하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Undead centaur with skeletal horse lowerbody four sturdy legs, broad armored knight upperbody and two arms, ivory skull visor, tattered rust banner attached to back, short heavy glaive straight shaft.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "BloodExecutioner",
+      "id": "CrimsonCount",
+      "name": "핏빛 백작",
+      "floor": 3,
+      "subject": "Aristocratic vampire with sharp simple face, slick black hair, two fangs, huge angular high collar, charcoal coat and muted wine vest, one oversized claw hand and other holding simple goblet, bent confident stance.",
+      "hint": "무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Aristocratic vampire with sharp simple face, slick black hair, two fangs, huge angular high collar, charcoal coat and muted wine vest, one oversized claw hand and other holding simple goblet, bent confident stance.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "LampPriest",
+      "id": "AshHierophant",
+      "name": "재의 대사제",
+      "floor": 3,
+      "subject": "Tall but squat hooded skeletal high priest, large ivory skull mask, charcoal ragged robes, rust cloth stole, one bronze hanging lantern held by clear wrapped hand, other open palm.",
+      "hint": "호위 가고일과 공격이 겹친다. 본체 강타를 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Tall but squat hooded skeletal high priest, large ivory skull mask, charcoal ragged robes, rust cloth stole, one bronze hanging lantern held by clear wrapped hand, other open palm.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_B3_Boss_SoulEater",
+      "id": "AshDragon",
+      "name": "잿불의 용",
+      "floor": 3,
+      "subject": "Compact broad fire dragon hovering in low crouched flight, two heavy wings with large ochre flame membranes, dark charcoal body, two forearms two hindlegs and single curling tail, amber eyes. Entire wing tips within frame.",
+      "hint": "날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Compact broad fire dragon hovering in low crouched flight, two heavy wings with large ochre flame membranes, dark charcoal body, two forearms two hindlegs and single curling tail, amber eyes. Entire wing tips within frame.",
+      "normalLabels": [
+        "발톱 휘두르기",
+        "불씨 뿜기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "EclipseBeast",
+      "id": "EclipseChimera",
+      "name": "일식의 키메라",
+      "floor": 3,
+      "subject": "Heavy squat chimera with fierce lion head, two ram horns, two compact raised bat wings, two muscular claw arms and two heavy feet, single thick serpentine tail, charcoal hide with muted ochre mane.",
+      "hint": "해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Heavy squat chimera with fierce lion head, two ram horns, two compact raised bat wings, two muscular claw arms and two heavy feet, single thick serpentine tail, charcoal hide with muted ochre mane.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "ElderLeftHeart",
+      "id": "SunIdol",
+      "name": "해 우상",
+      "floor": 3,
+      "subject": "One floating cracked bronze sun idol with simple scowling stone face and four broad angular sun rays, dark hollow center, thick ivory wrapping at bottom. No extra objects.",
+      "hint": "연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: One floating cracked bronze sun idol with simple scowling stone face and four broad angular sun rays, dark hollow center, thick ivory wrapping at bottom. No extra objects.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "ElderRightHeart",
+      "id": "MoonIdol",
+      "name": "달 우상",
+      "floor": 3,
+      "subject": "One floating crescent shaped dark stone idol enclosing single narrow ivory eye, two large broken horn tips, muted rust binding and one dangling cloth strip.",
+      "hint": "강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: One floating crescent shaped dark stone idol enclosing single narrow ivory eye, two large broken horn tips, muted rust binding and one dangling cloth strip.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "AshGeneral",
+      "id": "CinderLich",
+      "name": "잿불 왕",
+      "floor": 3,
+      "subject": "Broad robed crowned lich, low jagged bronze crown, one ivory skull face with narrow amber eyes, heavy offwhite fur collar, charcoal robes and rust central stole, perfectly straight staff with simple three prong head held by visible skeletal hand.",
+      "hint": "소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Broad robed crowned lich, low jagged bronze crown, one ivory skull face with narrow amber eyes, heavy offwhite fur collar, charcoal robes and rust central stole, perfectly straight staff with simple three prong head held by visible skeletal hand.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_Special_Minion_Mimic",
+      "id": "IronMimic",
+      "name": "철니 미믹",
+      "floor": 0,
+      "subject": "One squat wooden treasure chest mimic with broad crooked iron teeth, two huge clawed hands, two stubby feet and long dark tongue, dark brass corners and amber eye keyhole.",
+      "hint": "뚜껑이 열리는 동안 드러난 약점을 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: One squat wooden treasure chest mimic with broad crooked iron teeth, two huge clawed hands, two stubby feet and long dark tongue, dark brass corners and amber eye keyhole.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "Data_Monster_Special_MerchantMutant",
+      "id": "GildedToad",
+      "name": "금먹는 두꺼비",
+      "floor": 0,
+      "subject": "Huge squat greedy toad merchant monster with two bulging amber eyes, wide mouth, dark green hide, leather apron and one large coin purse gripped in thick webbed hand, bronze coin necklace.",
+      "hint": "큰 공격을 준비할 때 열린 약점을 노리자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Huge squat greedy toad merchant monster with two bulging amber eyes, wide mouth, dark green hide, leather apron and one large coin purse gripped in thick webbed hand, bronze coin necklace.",
+      "normalLabels": [],
+      "windupFactors": []
+    },
+    {
+      "baseline": "TrialGuardian",
+      "id": "TarrasqueWhelp",
+      "name": "가시등 시련수",
+      "floor": 0,
+      "subject": "Broad hunched shell backed beast with short triangular shell spikes, huge forearms, short rear legs, narrow toothy jaw, charcoal stone hide and pale ivory claws. No armor ornaments.",
+      "hint": "시련의 강타를 약점 파괴로 막자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Broad hunched shell backed beast with short triangular shell spikes, huge forearms, short rear legs, narrow toothy jaw, charcoal stone hide and pale ivory claws. No armor ornaments.",
+      "normalLabels": [
+        "앞발 찍기",
+        "등껍질 들이밀기"
+      ],
+      "windupFactors": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "baseline": "DeepTrialGuardian",
+      "id": "CrownColossus",
+      "name": "왕관 거신",
+      "floor": 0,
+      "subject": "Squat colossal stone armored sentinel with small closed crowned helmet, massive broad shoulders, two heavy arms and two short thick legs, single bronze chest rune, no weapon, rugged olive slate stone.",
+      "hint": "심층 시련. 여러 약점을 연결해 끊자.",
+      "prompt": "Use case: stylized-concept. Production enemy cutout for a Korean dungeon game. Match the supplied reference drawings' bold slightly rough black outlines, compact toy-like heroic proportions, readable oversized heads/hands, broad flat muted color shapes, one broad shadow per form, only a few deliberate internal lines. Restrained charcoal/olive/bone palette with a small muted accent. Do not make polished anime, glossy 3D, dense triangular facets, gradients, noise or tiny armor ornaments. One single creature centered in a square 1024x1024 canvas, whole silhouette fits with 7% margin, facing viewer in a slightly three quarter threatening combat stance. Keep limbs and anatomy coherent and weapons straight. Transparent background, no floor, no scenery, no ground shadow, no text, no signature or watermark. Reference images are style evidence, not copied game assets.\nSubject: Squat colossal stone armored sentinel with small closed crowned helmet, massive broad shoulders, two heavy arms and two short thick legs, single bronze chest rune, no weapon, rugged olive slate stone.",
+      "normalLabels": [],
+      "windupFactors": []
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "B1",
+      "wallsPrompt": "Use case: stylized-concept. Asset: 16:9 landscape dungeon room gameplay background, 1536x864. Use the attached hall ONLY as linework, broad shadow and camera style reference. Draw a NEW view of B1 forgotten burial labyrinth: big heavy olive grey masonry blocks, irregular bold black outlines, flat broad shadow planes, warm ochre two small torches, restrained simple geometry. Camera eye level looking straight at far wall, low large clear floor occupying lower 35%, strong perspective. Left wall and right wall show broad flat masonry panels angled toward camera. Three SOLID UNBROKEN WALL PANELS where later doors could be placed: front panel centered x50% from y30% to y68%, left panel centered x22% from y35% to y77%, right panel centered x78% from y35% to y77%. Each panel has room for a tall portal but currently is ordinary masonry with NO arch outline, no niche, no door, no passage, no opening at all. Pillars outside these panels. Readable middle values, darker edges, no black foreground vignette covering floor. No characters, creatures, text, HUD, loot. No detailed noisy rock texture, photorealism, gradients, tiny facets or excessive rubble. Entire room available for game overlays.",
+      "openingsPrompt": "Edit target: the supplied B1 wall image. Precise game background edit. Preserve its exact canvas dimensions, perspective, pillars, torch shapes, lighting, floor and masonry OUTSIDE three local rectangles. Cut three OPEN DARK PASSAGES into the three wall panels. Forward passage: tall pointed arch entirely within x40%-60%, y22%-66%. Left passage: tall arch on perspective-angled left wall entirely within x12%-28%, y24%-67%. Right passage: matching perspective-angled arch on right wall entirely within x72%-88%, y24%-67%. All three have thick block stone surrounds and open pitch dark interiors, thresholds at existing wall-floor junction. No wooden doors, no closed gate leaves. The left/right arches should follow their side wall perspective. Keep every changed pixel confined to those three rectangles; wall, pillars, torches and floor outside rectangles are pixel-locked. Exactly three openings. Same simple angular bold-outline flat-shadow drawing. No characters, text, HUD or new objects.",
+      "wallSource": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B1-Walls.png"
+    },
+    {
+      "id": "B2",
+      "wallsPrompt": "Use case: stylized-concept. Asset: 16:9 landscape dungeon room gameplay background, 1536x864. Use the attached hall ONLY as linework, broad shadow and camera style reference. Draw a NEW view of B2 abandoned frost sanctuary: massive cold blue-grey hewn pillars, pale ivory stone bands, hanging icicles only on outer upper edges, shallow frozen floor cracks, two tiny muted cyan braziers, quiet severe sacred atmosphere, irregular bold black outlines, flat broad shadow planes,  restrained simple geometry. Camera eye level looking straight at far wall, low large clear floor occupying lower 35%, strong perspective. Left wall and right wall show broad flat masonry panels angled toward camera. Three SOLID UNBROKEN WALL PANELS where later doors could be placed: front panel centered x50% from y30% to y68%, left panel centered x22% from y35% to y77%, right panel centered x78% from y35% to y77%. Each panel has room for a tall portal but currently is ordinary masonry with NO arch outline, no niche, no door, no passage, no opening at all. Pillars outside these panels. Readable middle values, darker edges, no black foreground vignette covering floor. No characters, creatures, text, HUD, loot. No detailed noisy rock texture, photorealism, gradients, tiny facets or excessive rubble. Entire room available for game overlays.",
+      "openingsPrompt": "Edit target: the supplied B2 wall image. Precise game background edit. Preserve its exact canvas dimensions, perspective, pillars, torch shapes, lighting, floor and masonry OUTSIDE three local rectangles. Cut three OPEN DARK PASSAGES into the three wall panels. Forward passage: tall pointed arch entirely within x40%-60%, y22%-66%. Left passage: tall arch on perspective-angled left wall entirely within x12%-28%, y24%-67%. Right passage: matching perspective-angled arch on right wall entirely within x72%-88%, y24%-67%. All three have thick block stone surrounds and open pitch dark interiors, thresholds at existing wall-floor junction. No wooden doors, no closed gate leaves. The left/right arches should follow their side wall perspective. Keep every changed pixel confined to those three rectangles; wall, pillars, torches and floor outside rectangles are pixel-locked. Exactly three openings. Same simple angular bold-outline flat-shadow drawing. No characters, text, HUD or new objects.",
+      "wallSource": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png"
+    },
+    {
+      "id": "B3",
+      "wallsPrompt": "Use case: stylized-concept. Asset: 16:9 landscape dungeon room gameplay background, 1536x864. Use the attached hall ONLY as linework, broad shadow and camera style reference. Draw a NEW view of B3 ash royal sepulcher: massive charcoal basalt pillars, muted rust-red stone bands, burnt bronze reliefs only at upper sides, broad dark grey floor slabs, two tiny amber braziers, severe dead royal court, irregular bold black outlines, flat broad shadow planes,  restrained simple geometry. Camera eye level looking straight at far wall, low large clear floor occupying lower 35%, strong perspective. Left wall and right wall show broad flat masonry panels angled toward camera. Three SOLID UNBROKEN WALL PANELS where later doors could be placed: front panel centered x50% from y30% to y68%, left panel centered x22% from y35% to y77%, right panel centered x78% from y35% to y77%. Each panel has room for a tall portal but currently is ordinary masonry with NO arch outline, no niche, no door, no passage, no opening at all. Pillars outside these panels. Readable middle values, darker edges, no black foreground vignette covering floor. No characters, creatures, text, HUD, loot. No detailed noisy rock texture, photorealism, gradients, tiny facets or excessive rubble. Entire room available for game overlays.",
+      "openingsPrompt": "Edit target: the supplied B3 wall image. Precise game background edit. Preserve its exact canvas dimensions, perspective, pillars, torch shapes, lighting, floor and masonry OUTSIDE three local rectangles. Cut three OPEN DARK PASSAGES into the three wall panels. Forward passage: tall pointed arch entirely within x40%-60%, y22%-66%. Left passage: tall arch on perspective-angled left wall entirely within x12%-28%, y24%-67%. Right passage: matching perspective-angled arch on right wall entirely within x72%-88%, y24%-67%. All three have thick block stone surrounds and open pitch dark interiors, thresholds at existing wall-floor junction. No wooden doors, no closed gate leaves. The left/right arches should follow their side wall perspective. Keep every changed pixel confined to those three rectangles; wall, pillars, torches and floor outside rectangles are pixel-locked. Exactly three openings. Same simple angular bold-outline flat-shadow drawing. No characters, text, HUD or new objects.",
+      "wallSource": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B3-Walls.png"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "WinterUnicorn",
+      "prompt": "Precise object edit of supplied WinterUnicorn enemy cutout. Keep this exact unicorn body, face, one straight horn, legs, silhouette, linework, mane and proportions unchanged. REMOVE the entire green floating magic ribbon, all green glow, hazy bloom and every bright speck above/behind the head; make that region fully transparent. Preserve only the existing actual horse and its horn, with clean solid dark contours. No magical effects at all, no scenery or ground, no soft transparency haze. The result remains a true transparent cutout. No new details or repainting the body."
+    },
+    {
+      "id": "TwinAntlerStag",
+      "prompt": "Style correction of the supplied enemy concept: make this a distinctly stocky ancient ELK guardian rather than a unicorn lookalike. Replace the central forehead horn and all floating green symbols with TWO REAL solid ivory branching elk antlers, clearly rooted on opposite sides of the skull, three big prongs each, both fully within the canvas. NO central horn, NO floating glyphs or magic. Give it a broad square elk muzzle, long dark throat beard instead of horse mane, heavy barrel chest and short sturdy legs, dark earthy grey-brown hide with muted ivory lower forelegs. Four coherent legs, one tail. Maintain the simple original-reference angular bold black outlines, large flat color/shadow planes, few internal lines, no tiny faceted shards, no gradients/noise/soft glow. Center full creature in square canvas with 8% clear margin; actual transparent background, no floor, no text."
+    },
+    {
+      "id": "CrimsonCount",
+      "prompt": "Edit target Image 1: the current vampire count enemy. Style authority Image 2: the original user-supplied vampire drawing. Correct the current character's overly tall fashion-anime proportions. Keep the standing three-quarter pose, large high collar, charcoal coat, wine vest, goblet and reaching claw, but make the BODY BELOW THE NECK substantially more compact: shorten legs and coat tails by about one quarter, widen torso slightly, enlarge the head and both hands so the whole figure reads around six heads tall. Use a caricature villain face with a strong long pointed chin, heavy angular eyebrows, narrow red eyes and only a few flat planes; avoid a delicate handsome anime face. No seated pose or chair, no cigarette or smoke, no copied signature. Broad flat colors and shadows, bold irregular black lines, economical detail as in Image 2. One entire standing creature centered in square 1280 canvas with ample transparent margin all sides. Real transparency, no floor, no scene, no magic, no text."
+    }
+  ],
+  "heroes": [
+    {
+      "id": "Rogue",
+      "prompt": "Create ONE high-resolution game combat PLAYER REAR upper-body cutout for Behemoth. Input1 is approved character identity/costume, input2 is existing approved Warrior rear framing, inputs3/4 are original style authorities. Rotate identity into a STRICT BACK VIEW, facing away toward screen top; do not make a new frontal face. Olive hood and short ragged shoulder cape, dark shirt, red sash, brown wraps. TWO reverse-gripped short straight daggers, fist firmly encloses each hilt, blades point down/out along straight hilt axes. NO face visible, preserve approved face by never redrawing it. Composition: landscape 4:3 canvas, head near upper 8%, back and both arms fully visible, cropped at upper thighs at bottom; figure fills 85% canvas height and 78% width, weapons fully inside with 5% margin. Same compact broad silhouette as Warrior rear. Thick lively dark contour, restrained olive/charcoal/ochre/burgundy, two or three broad flat shadow masses, very few internal facets; no glossy rendering, no dense polygon shading, no pixel art. Clear solid hands gripping physically continuous straight weapon handles. True transparent alpha, no halo, glow, scenery, ground, text, signature or watermark. Do not copy any reference text.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-ab7cff3c-c2c2-4139-a829-8eeb919405ee.png"
+    },
+    {
+      "id": "Barbarian",
+      "prompt": "Create ONE high-resolution game combat PLAYER REAR upper-body cutout for Behemoth. Input1 is approved character identity/costume, input2 is existing approved Warrior rear framing, inputs3/4 are original style authorities. Rotate identity into a STRICT BACK VIEW, facing away toward screen top; do not make a new frontal face. Golden ochre anthropomorphic lizard dragon, black back-of-head horns and dorsal spikes, huge shoulders, black sleeveless vest, white forearm wraps. One heavy simple broad steel axe held in right fist, one clearly straight continuous wooden haft visible on both sides of grip; free left hand. Do not add wings. Composition: landscape 4:3 canvas, head near upper 8%, back and both arms fully visible, cropped at upper thighs at bottom; figure fills 85% canvas height and 78% width, weapons fully inside with 5% margin. Same compact broad silhouette as Warrior rear. Thick lively dark contour, restrained olive/charcoal/ochre/burgundy, two or three broad flat shadow masses, very few internal facets; no glossy rendering, no dense polygon shading, no pixel art. Clear solid hands gripping physically continuous straight weapon handles. True transparent alpha, no halo, glow, scenery, ground, text, signature or watermark. Do not copy any reference text.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-b244240d-2f9d-443f-85c2-7e0677663ae0.png"
+    },
+    {
+      "id": "Samurai",
+      "prompt": "Create ONE high-resolution game combat PLAYER REAR upper-body cutout for Behemoth. Input1 is approved character identity/costume, input2 is existing approved Warrior rear framing, inputs3/4 are original style authorities. Rotate identity into a STRICT BACK VIEW, facing away toward screen top; do not make a new frontal face. Black long hair tied into rough low ponytail, olive kimono, ONE three-layer steel shoulder guard on his LEFT shoulder (viewer LEFT in rear view), red sash, white forearm wraps. A sheathed katana at left hip, right hand near hilt. No exposed sword blade. Preserve approved masculine outfit. Composition: landscape 4:3 canvas, head near upper 8%, back and both arms fully visible, cropped at upper thighs at bottom; figure fills 85% canvas height and 78% width, weapons fully inside with 5% margin. Same compact broad silhouette as Warrior rear. Thick lively dark contour, restrained olive/charcoal/ochre/burgundy, two or three broad flat shadow masses, very few internal facets; no glossy rendering, no dense polygon shading, no pixel art. Clear solid hands gripping physically continuous straight weapon handles. True transparent alpha, no halo, glow, scenery, ground, text, signature or watermark. Do not copy any reference text.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-cfd14610-c4ec-47a2-9c25-881dd1103148.png"
+    },
+    {
+      "id": "Monk",
+      "prompt": "Create ONE high-resolution game combat PLAYER REAR upper-body cutout for Behemoth. Input1 is approved character identity/costume, input2 is existing approved Warrior rear framing, inputs3/4 are original style authorities. Rotate identity into a STRICT BACK VIEW, facing away toward screen top; do not make a new frontal face. Bald human, mustard yellow blindfold tied behind head, olive one-shoulder robe, muscular broad back, red waist sash, white forearm wraps and large brown prayer beads. Two raised open martial arts hands with simple anatomically readable fingers. NO weapons. Composition: landscape 4:3 canvas, head near upper 8%, back and both arms fully visible, cropped at upper thighs at bottom; figure fills 85% canvas height and 78% width, weapons fully inside with 5% margin. Same compact broad silhouette as Warrior rear. Thick lively dark contour, restrained olive/charcoal/ochre/burgundy, two or three broad flat shadow masses, very few internal facets; no glossy rendering, no dense polygon shading, no pixel art. Clear solid hands gripping physically continuous straight weapon handles. True transparent alpha, no halo, glow, scenery, ground, text, signature or watermark. Do not copy any reference text.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-6b42d588-c1f7-4465-8a9c-c9d8c23ad4a1.png"
+    },
+    {
+      "id": "Wizard",
+      "prompt": "Create ONE high-resolution game combat PLAYER REAR upper-body cutout for Behemoth. Input1 is approved character identity/costume, input2 is existing approved Warrior rear framing, inputs3/4 are original style authorities. Rotate identity into a STRICT BACK VIEW, facing away toward screen top; do not make a new frontal face. Friendly old human scholar seen entirely from behind, grey swept-back hair, muted blue shoulder cape over burgundy robe, brown strap across back. ONE plain straight wooden staff securely strapped diagonally on BACK, both ends collinear; small sheathed dagger at belt, NO sword. Holds an open plain book in left hand by his side. No owl, no hat. Composition: landscape 4:3 canvas, head near upper 8%, back and both arms fully visible, cropped at upper thighs at bottom; figure fills 85% canvas height and 78% width, weapons fully inside with 5% margin. Same compact broad silhouette as Warrior rear. Thick lively dark contour, restrained olive/charcoal/ochre/burgundy, two or three broad flat shadow masses, very few internal facets; no glossy rendering, no dense polygon shading, no pixel art. Clear solid hands gripping physically continuous straight weapon handles. True transparent alpha, no halo, glow, scenery, ground, text, signature or watermark. Do not copy any reference text.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-7c865ce1-7ab1-4113-88ce-a32a3d73cce4.png"
+    }
+  ],
+  "warriorRear": {
+    "mode": "reuse existing user-approved cutout",
+    "source": "Assets/Art/Trials/Angular01/Rear.png"
+  },
+  "portraits": {
+    "mode": "deterministic crop of exact approved front source; no face repaint",
+    "script": "BuildHeroes.ps1"
+  },
+  "paletteNotes": "Monster prompt entries preserve base recipes. B2 generation uses cool slate blue, bone and cyan accents; actual final colors are visible in final assets. Background and correction prompts are recorded separately."
+}

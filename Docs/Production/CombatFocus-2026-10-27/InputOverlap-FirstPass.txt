@@ -1,0 +1,18 @@
+Scoped relocated-body two-contact overlap/lift/repress, no all-cancel between cycles.
+PASS 1 guard survives concurrent second-finger swipe
+FAIL 1 second-finger swipe executes attack while guard is held
+PASS 1 second finger lifts without dropping first guard
+PASS 1 guard lifts independently while second contact stays
+PASS 1 guard repress succeeds without clearing second contact
+PASS 2 guard survives concurrent second-finger swipe
+FAIL 2 second-finger swipe executes attack while guard is held
+PASS 2 second finger lifts without dropping first guard
+PASS 2 guard lifts independently while second contact stays
+PASS 2 guard repress succeeds without clearing second contact
+PASS 3 guard survives concurrent second-finger swipe
+FAIL 3 second-finger swipe executes attack while guard is held
+PASS 3 second finger lifts without dropping first guard
+PASS 3 guard lifts independently while second contact stays
+PASS 3 guard repress succeeds without clearing second contact
+PASS final release clears guard and both contacts
+COMPLETE failures=3. Synthetic finger IDs through production Begin/Move/End. Real device pending.

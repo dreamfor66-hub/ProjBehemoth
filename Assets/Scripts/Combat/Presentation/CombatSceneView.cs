@@ -8,7 +8,10 @@ namespace DungeonSlash
         [SerializeField] private RectTransform logicalArea;
         [SerializeField] private RectTransform playerAnchor;
         [SerializeField] private RectTransform monsterAnchor;
-        [SerializeField] private float multiMonsterSpacing = 185f;
+        [Header("Default monster formation (encounter offsets can override)")]
+        [SerializeField] private float multiMonsterSpacing = 370f;
+        [SerializeField] private float multiMonsterDepth = 65f;
+        [SerializeField] private Vector2 twoMonsterOffset = new Vector2(270f, -35f);
         public Image criticalFlash;
         private float flashUntil;
         public bool IsCriticalFlashing => criticalFlash!=null&&criticalFlash.enabled;
@@ -21,6 +24,7 @@ namespace DungeonSlash
         private bool hasLogicalAreaRestPosition;
 
         public RectTransform LogicalArea => logicalArea;
+        public RectTransform PlayerAnchor => playerAnchor;
         public Camera UiCamera => logicalArea.GetComponentInParent<Canvas>().renderMode==RenderMode.ScreenSpaceOverlay?null:logicalArea.GetComponentInParent<Canvas>().worldCamera;
         public Vector2 PlayerPosition => playerAnchor.anchoredPosition;
         public Vector2 MonsterPosition => monsterAnchor.anchoredPosition;
@@ -108,8 +112,9 @@ namespace DungeonSlash
         public Vector2 GetMonsterFormationPosition(int index, int count)
         {
             if (count <= 1) return MonsterPosition;
+            if (count == 2) return MonsterPosition + new Vector2(index == 0 ? -twoMonsterOffset.x : twoMonsterOffset.x, twoMonsterOffset.y);
             var centerOffset = index - (count - 1) * .5f;
-            var depthOffset = Mathf.Abs(centerOffset) * 18f;
+            var depthOffset = Mathf.Abs(centerOffset) * multiMonsterDepth;
             return MonsterPosition + new Vector2(centerOffset * multiMonsterSpacing, -depthOffset);
         }
 

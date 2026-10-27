@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Warrior-Front",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Warrior-Front.png",
+    "sha256": "E51E6B299609C7E8C7695841FA4F20295B1EFEAF9616EACD9FBC220048114BD0"
+  },
+  {
+    "name": "Warrior-Rear",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+    "sha256": "9621418939E80ED389B4E5A2E14C70759697BB86B30EF2CFFAFC5BF82DE9F60F"
+  },
+  {
+    "name": "Wizard-Front",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Front.png",
+    "sha256": "E197B6FF59CA9AE56214A83C387752F6BF1B1E74D2DBCC5E248B22595A5AB326"
+  },
+  {
+    "name": "Wizard-Rear",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Rear.png",
+    "sha256": "C3EB939E55498245BACE3CCD6720C9CD53A48D1B12B1711C2652A57ECAD1372E"
+  },
+  {
+    "name": "Wizard-Portrait",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Portrait.png",
+    "sha256": "584B1045D5CCC8640B26F9B585399B1F03C6D8F4DCEB8762F7182C9C4AAA4DB2"
+  },
+  {
+    "name": "Barbarian-Front",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Barbarian-Front.png",
+    "sha256": "5B8DA7618DD97163E72DB3E5066DE358C848D16186028C26CB580BA67B09DF54"
+  },
+  {
+    "name": "Barbarian-Portrait",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Barbarian-Portrait.png",
+    "sha256": "3F7B0C37CA6963895C99815BD8046D2DD87F9A04C2F716531899BF08554ADBA3"
+  },
+  {
+    "name": "Rogue-Front",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Rogue-Front.png",
+    "sha256": "5A4C5A49967BFEC23850B0377957F234B3A21439DE66311D54B65219238C4DE6"
+  },
+  {
+    "name": "Rogue-Rear",
+    "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Rogue-Rear.png",
+    "sha256": "0EBB3C12DF078CB53F89772D0DAAB4303451F01C5E7889BABBBB2B286B1CCAC9"
+  }
+]

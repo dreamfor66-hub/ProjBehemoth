@@ -1,0 +1,22 @@
+<!doctype html><html lang="ko">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Behemoth · 흰 망토 / 여성 사무라이 / 탑의 학자</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#151715;color:#e4dbc5;font:16px system-ui,sans-serif}header{padding:20px 28px}h1{font-size:22px;margin:0 0 8px}p{margin:0;color:#aaa991;line-height:1.5}nav{display:flex;gap:8px;padding:0 28px 16px;flex-wrap:wrap}button{font:inherit;cursor:pointer;padding:10px 22px;background:#272922;color:#e4dbc5;border:1px solid #5b604b;border-radius:4px}button[aria-pressed=true]{background:#c3a15d;color:#151715}main{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 28px}figure{margin:0;min-width:0;background:#1b1d19;border:1px solid #3c4035}figcaption{padding:10px 16px;color:#aaa991}img{display:block;width:100%;height:calc(100vh - 245px);min-height:340px;object-fit:contain}footer{padding:16px 28px;color:#aaa991;font-size:14px}a{color:#e1bd75}@media(max-width:600px){header,footer{padding:16px}nav{padding:0 16px 12px}main{padding:0 12px;gap:8px}img{min-height:260px;height:55vh}h1{font-size:19px}}</style>
+<header><h1>워리어 / 사무라이 / 위자드 · 수정 시안</h1><p id="note"></p></header>
+<nav><button id="Warrior" aria-pressed="false" onclick="show('Warrior')">워리어 · 흰색 천</button><button id="Samurai" aria-pressed="true" onclick="show('Samurai')">사무라이 · 여성</button><button id="Wizard" aria-pressed="false" onclick="show('Wizard')">위자드 · 탑의 학자</button></nav>
+<main><figure><figcaption>이전 시안</figcaption><a id="oldLink" target="_blank"><img id="old" alt="이전 시안"></a></figure><figure><figcaption>수정 시안</figcaption><a id="newLink" target="_blank"><img id="new" alt="수정 시안"></a></figure></main>
+<footer>캐릭터 디자인 검토용 원본입니다. · <a href="../Gallery.html">Unity 실행 화면</a> · <a href="../Concepts02/Gallery.html">바바리안 수정안</a> · <a href="Prompts.json">Built-in ImageGen 프롬프트</a> · <a href="ReviewNotes.md">디자인 메모 / 추가 여캐 아이디어</a></footer>
+<script>
+const names={Warrior:'워리어',Samurai:'사무라이',Wizard:'위자드'};
+const notes={Warrior:'흰 천은 어깨와 가슴 위주로, 하체는 간결하게 유지했습니다.',Samurai:'가슴 붕대와 한 팔만 걸친 겉옷, 반대쪽 맨어깨와 도드라진 견갑을 조합했습니다.',Wizard:'헤진 여행복을 단정한 학자복으로 바꾸고, 탑에서 나온 노학자의 인상을 살렸습니다.'};
+function show(name){
+const root='/Assets/Art/Trials/Angular01/';
+const old=root+(name==='Warrior'?'Concepts02/Warrior.png':'Source'+name+'.png');
+const next=root+'Concepts03/'+name+'.png';
+document.getElementById('old').src=old;document.getElementById('oldLink').href=old;
+document.getElementById('new').src=next;document.getElementById('newLink').href=next;
+document.getElementById('old').alt=names[name]+' 이전 시안';document.getElementById('new').alt=names[name]+' 수정 시안';
+for(const kind of Object.keys(names))document.getElementById(kind).setAttribute('aria-pressed',String(kind===name));
+document.getElementById('note').textContent=notes[name];
+}show('Samurai');
+</script></html>

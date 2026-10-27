@@ -7,10 +7,10 @@ namespace DungeonSlash
     [CreateAssetMenu(menuName = "Dungeon Slash/Presentation/Weak Point Style")]
     public sealed class WeakPointVisualStyle : ScriptableObject
     {
-        public Color stroke = new Color32(232,84,55,255);
-        public Color shadow = new Color32(190,53,44,255);
-        public Color core = new Color32(250,151,74,255);
-        public Color outline = new Color32(21,12,20,255);
+        public Color stroke = new Color32(239,101,72,255);
+        public Color shadow = new Color32(100,88,107,255);
+        public Color core = new Color32(238,229,213,255);
+        public Color outline = Color.black;
         [Range(.75f,2)] public float ringThickness = 1.5f;
         [Range(.5f,3)] public float diagonalGap = 1.5f;
         [Range(1,4)] public float spokeLength = 2.5f;

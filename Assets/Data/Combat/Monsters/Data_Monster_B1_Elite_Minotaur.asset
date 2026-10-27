@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.data_monster_b1_elite_minotaur.displayname
-    lastText: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
+    lastText: "\uC30D\uB450 \uBB38\uC9C0\uAE30"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_b1_elite_minotaur.encounterhint
-    lastText: 
+    lastText: "\uB450 \uBA38\uB9AC\uAC00 \uAC15\uD0C0\uB97C \uC900\uBE44\uD55C\uB2E4.
+      \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uC21C\uC11C\uB300\uB85C \uB04A\uC790."
   textOwnerGuid: 5803c6e2e3ecb6d45a6edf579959d88c
-  displayName: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
-  portrait: {fileID: 21300000, guid: a2b118b235535687b6b8ef56c20719cf, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 98207263395d01142be280d42890abae, type: 2}
-  encounterHint: 
+  displayName: "\uC30D\uB450 \uBB38\uC9C0\uAE30"
+  portrait: {fileID: 21300000, guid: 96562a6dd4d35f843a81f5807e9f456a, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 6074a04f053b2f64390e12585a36aa23, type: 2}
+  encounterHint: "\uB450 \uBA38\uB9AC\uAC00 \uAC15\uD0C0\uB97C \uC900\uBE44\uD55C\uB2E4.
+    \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uC21C\uC11C\uB300\uB85C \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 12
   bodyHitRadius: 108
   attacks:
-  - {fileID: 11400000, guid: 5f17b4da654a51141bdde0ba15231bf0, type: 2}
-  - {fileID: 11400000, guid: 4bf05108d5347134aa9b519872d865d7, type: 2}
+  - {fileID: 11400000, guid: 46605fa33cecf6a4ebe3dcd0b8ce86dc, type: 2}
+  - {fileID: 11400000, guid: f0c7fdb2e14e1784995aadbd0ac5e1b3, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.75, g: 0.38, b: 0.18, a: 1}

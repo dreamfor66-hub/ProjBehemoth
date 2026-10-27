@@ -1,0 +1,1165 @@
+{
+  "actors": [
+    {
+      "id": "Hero-Warrior",
+      "kind": "Player",
+      "dataPath": "Assets/Data/Characters/Warrior.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset",
+      "idle": "Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Warrior-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Warrior-Attack.png"
+        },
+        {
+          "state": "Guard",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Warrior-Guard.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Warrior-Guard.png"
+        }
+      ],
+      "idleHash": "9621418939E80ED389B4E5A2E14C70759697BB86B30EF2CFFAFC5BF82DE9F60F"
+    },
+    {
+      "id": "Hero-Rogue",
+      "kind": "Player",
+      "dataPath": "Assets/Data/Characters/Rogue.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset",
+      "idle": "Assets/Art/World/Angular/Heroes/Rogue-Rear.png",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Rogue-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Rogue-Attack.png"
+        },
+        {
+          "state": "Guard",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Rogue-Guard.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Rogue-Guard.png"
+        }
+      ],
+      "idleHash": "0EBB3C12DF078CB53F89772D0DAAB4303451F01C5E7889BABBBB2B286B1CCAC9"
+    },
+    {
+      "id": "Hero-Barbarian",
+      "kind": "Player",
+      "dataPath": "Assets/Data/Characters/Barbarian.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset",
+      "idle": "Assets/Art/World/Angular/Heroes/Barbarian-Rear.png",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Barbarian-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Barbarian-Attack.png"
+        },
+        {
+          "state": "Guard",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Barbarian-Guard.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Barbarian-Guard.png"
+        }
+      ],
+      "idleHash": "44B4DC0B47E544520126270425EBE02B66B02420D90928BDC1B68EC1CD43C36B"
+    },
+    {
+      "id": "Hero-Samurai",
+      "kind": "Player",
+      "dataPath": "Assets/Data/Characters/Samurai.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset",
+      "idle": "Assets/Art/World/Angular/Heroes/Samurai-Rear.png",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Samurai-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Samurai-Attack.png"
+        },
+        {
+          "state": "Guard",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Samurai-Guard.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Samurai-Guard.png"
+        }
+      ],
+      "idleHash": "38A70F668F7AF071BC35BBCF3FA7EAE495B6373986C691E20EE242C6E1F39084"
+    },
+    {
+      "id": "Hero-Monk",
+      "kind": "Player",
+      "dataPath": "Assets/Data/Characters/Monk.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset",
+      "idle": "Assets/Art/World/Angular/Heroes/Monk-Rear.png",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Monk-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Monk-Attack.png"
+        },
+        {
+          "state": "Guard",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Monk-Guard.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Monk-Guard.png"
+        }
+      ],
+      "idleHash": "C463BE87756737AA6D1F30DC51C56BCFCA29275FAD211F801B41434BF4C26266"
+    },
+    {
+      "id": "Hero-Wizard",
+      "kind": "Player",
+      "dataPath": "Assets/Data/Characters/Wizard.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset",
+      "idle": "Assets/Art/World/Angular/Heroes/Wizard-Rear.png",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Wizard-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Wizard-Attack.png"
+        },
+        {
+          "state": "Guard",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Wizard-Guard.png",
+          "output": "Assets/Art/World/Angular/States/Heroes/Wizard-Guard.png"
+        }
+      ],
+      "idleHash": "C3EB939E55498245BACE3CCD6720C9CD53A48D1B12B1711C2652A57ECAD1372E"
+    },
+    {
+      "id": "Monster-LanternImp",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/LanternImp.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/LanternImp.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-LanternImp-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/LanternImp-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-LanternImp-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/LanternImp-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-LanternImp-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/LanternImp-Dead.png"
+        }
+      ],
+      "idleHash": "C6588C52485571F2B849541350387EE83B682EF533B6790ABC106190812FD09A"
+    },
+    {
+      "id": "Monster-BoneScorpion",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/TunnelRat.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/BoneScorpion.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/BoneScorpion.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BoneScorpion-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BoneScorpion-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BoneScorpion-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BoneScorpion-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BoneScorpion-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BoneScorpion-Dead.png"
+        }
+      ],
+      "idleHash": "8BDA95B2863FA7E10C0E9CE94BF411F18DD40A31A4F71CCD2D419DBFC5BA35D3"
+    },
+    {
+      "id": "Monster-StringRevenant",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/StringRevenant.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/StringRevenant.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StringRevenant-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StringRevenant-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StringRevenant-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StringRevenant-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StringRevenant-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StringRevenant-Dead.png"
+        }
+      ],
+      "idleHash": "D77B8E3EFF8C6D447EF399989CDBAF06922BA531B1B2DE45B4D6C5C49C0AB6E8"
+    },
+    {
+      "id": "Monster-CoffinSlime",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CoffinSlime.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoffinSlime-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CoffinSlime-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoffinSlime-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CoffinSlime-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoffinSlime-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CoffinSlime-Dead.png"
+        }
+      ],
+      "idleHash": "6E461BA7C1ABB625B1E1B5779A8B575BC3B6EBABAE8FCEB3C83BE20ED2DB2D96"
+    },
+    {
+      "id": "Monster-BellHound",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/AlarmHound.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/BellHound.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/BellHound.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BellHound-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BellHound-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BellHound-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BellHound-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BellHound-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BellHound-Dead.png"
+        }
+      ],
+      "idleHash": "8DA0C654741640D86D42F1EA2438962358B38D440893B798CF49E5D4BD5771E2"
+    },
+    {
+      "id": "Monster-EttinGatekeeper",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/EttinGatekeeper.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/EttinGatekeeper.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-EttinGatekeeper-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/EttinGatekeeper-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-EttinGatekeeper-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/EttinGatekeeper-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-EttinGatekeeper-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/EttinGatekeeper-Dead.png"
+        }
+      ],
+      "idleHash": "1B1370FF75E90242904F2CE1BC14056408EB87AC589AAACEC1C85EFE544A0EFA"
+    },
+    {
+      "id": "Monster-MirrorShell",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/MirrorKnight.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/MirrorShell.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/MirrorShell.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MirrorShell-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MirrorShell-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MirrorShell-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MirrorShell-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MirrorShell-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MirrorShell-Dead.png"
+        }
+      ],
+      "idleHash": "00FD989B38A029437C0F778E059F4E980A0E8230F71B5C89FA3BF7C260DAD722"
+    },
+    {
+      "id": "Monster-IronMantis",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/ArmoredExecutioner.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/IronMantis.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/IronMantis.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-IronMantis-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/IronMantis-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-IronMantis-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/IronMantis-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-IronMantis-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/IronMantis-Dead.png"
+        }
+      ],
+      "idleHash": "318326D752894F3596CB457EEC5228508A1F7BE2492AF53FF942DF8CF59523B9"
+    },
+    {
+      "id": "Monster-StoneSphinx",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/StoneSphinx.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/StoneSphinx.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StoneSphinx-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StoneSphinx-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StoneSphinx-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StoneSphinx-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StoneSphinx-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StoneSphinx-Dead.png"
+        }
+      ],
+      "idleHash": "A59D2B9D3DA842BDC8B747A7C193B8BF4C9475535F4C03DB65A41527B65C0D86"
+    },
+    {
+      "id": "Monster-OssuaryBell",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/BellKeeper.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/OssuaryBell.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/OssuaryBell.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-OssuaryBell-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/OssuaryBell-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-OssuaryBell-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/OssuaryBell-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-OssuaryBell-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/OssuaryBell-Dead.png"
+        }
+      ],
+      "idleHash": "C956329FA472EA09A487A342AC6702F8AEE29E2582BEE0A93357FBD3B3C1F62A"
+    },
+    {
+      "id": "Monster-WebDuchess",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/BroodKeeper.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/WebDuchess.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/WebDuchess.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-WebDuchess-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/WebDuchess-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-WebDuchess-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/WebDuchess-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-WebDuchess-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/WebDuchess-Dead.png"
+        }
+      ],
+      "idleHash": "A4C2013143B1C90E13627866F8FE21E60E1416B7CF2314CF2E92C59505C03648"
+    },
+    {
+      "id": "Monster-Threadling",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/OrbitBat.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/Threadling.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/Threadling.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-Threadling-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/Threadling-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-Threadling-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/Threadling-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-Threadling-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/Threadling-Dead.png"
+        }
+      ],
+      "idleHash": "09B3BDD28F2452AE867085BF574019E1F40D3037BB71DA19B5FFF7347E297F1F"
+    },
+    {
+      "id": "Monster-QuillSprite",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_FrostBat.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/QuillSprite.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/QuillSprite.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-QuillSprite-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/QuillSprite-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-QuillSprite-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/QuillSprite-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-QuillSprite-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/QuillSprite-Dead.png"
+        }
+      ],
+      "idleHash": "BA87B4C10CF11A897CC735F33679061498C75264284F6C44AD41DC43B232DC20"
+    },
+    {
+      "id": "Monster-CrystalUrchin",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/IceNeedle.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CrystalUrchin.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CrystalUrchin.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrystalUrchin-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrystalUrchin-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrystalUrchin-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrystalUrchin-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrystalUrchin-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrystalUrchin-Dead.png"
+        }
+      ],
+      "idleHash": "8A718C5F7E04D2884B89940B90B7DE9D89E8421F417E5D1399CAFC9A23B8F082"
+    },
+    {
+      "id": "Monster-VeilOracle",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_IceWraith.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/VeilOracle.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/VeilOracle.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-VeilOracle-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/VeilOracle-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-VeilOracle-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/VeilOracle-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-VeilOracle-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/VeilOracle-Dead.png"
+        }
+      ],
+      "idleHash": "79DBB2381C47270E9C795B22C45DB157CFB9F2DD7E3ADF0A79164E7C505965F9"
+    },
+    {
+      "id": "Monster-TuskPilgrim",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_Yeti.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/TuskPilgrim.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/TuskPilgrim.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TuskPilgrim-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TuskPilgrim-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TuskPilgrim-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TuskPilgrim-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TuskPilgrim-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TuskPilgrim-Dead.png"
+        }
+      ],
+      "idleHash": "AE3251DD5ED3B18F3D7980BA7F103CC62B7BFA4C330906BD8A61B499750432DC"
+    },
+    {
+      "id": "Monster-BellHare",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/SnowBell.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/BellHare.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/BellHare.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BellHare-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BellHare-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BellHare-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BellHare-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-BellHare-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/BellHare-Dead.png"
+        }
+      ],
+      "idleHash": "4DA1CF2A9B6CC40230BFC7C3276032BCDFB5A0A4B7E5E1AC35E28675CDB73235"
+    },
+    {
+      "id": "Monster-TwinAntlerStag",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_FrostOgre.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/TwinAntlerStag.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/TwinAntlerStag.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TwinAntlerStag-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TwinAntlerStag-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TwinAntlerStag-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TwinAntlerStag-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TwinAntlerStag-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TwinAntlerStag-Dead.png"
+        }
+      ],
+      "idleHash": "9E7AFB12F5CBBEA599CE2994CAC319D25252ECA88DDBC88B56AD844167608991"
+    },
+    {
+      "id": "Monster-MirrorMoth",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/IceMirror.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/MirrorMoth.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/MirrorMoth.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MirrorMoth-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MirrorMoth-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MirrorMoth-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MirrorMoth-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MirrorMoth-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MirrorMoth-Dead.png"
+        }
+      ],
+      "idleHash": "42860FC569816415040FD15A3D97E0984F6B28B1955AC2E2DBCE263DBC71A581"
+    },
+    {
+      "id": "Monster-MaskedChoir",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/PaleWisp.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/MaskedChoir.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/MaskedChoir.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MaskedChoir-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MaskedChoir-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MaskedChoir-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MaskedChoir-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MaskedChoir-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MaskedChoir-Dead.png"
+        }
+      ],
+      "idleHash": "40E7B7484E0DCC95D66851E9F82088F1D65E8624227B1500F1A905D52DBAB170"
+    },
+    {
+      "id": "Monster-WinterUnicorn",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_FrostQueen.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/WinterUnicorn.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/WinterUnicorn.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-WinterUnicorn-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/WinterUnicorn-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-WinterUnicorn-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/WinterUnicorn-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-WinterUnicorn-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/WinterUnicorn-Dead.png"
+        }
+      ],
+      "idleHash": "006B24A7D2F265FC4D733A404290772C64840E9F74D2B15AA46A17E86EE4C5AE"
+    },
+    {
+      "id": "Monster-PrismCrab",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/CrystalSpider.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/PrismCrab.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/PrismCrab.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-PrismCrab-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/PrismCrab-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-PrismCrab-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/PrismCrab-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-PrismCrab-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/PrismCrab-Dead.png"
+        }
+      ],
+      "idleHash": "8E0F0226FF9C14A04802CEACB8AECE3B06BF530AB1D05327B68DCD350F661020"
+    },
+    {
+      "id": "Monster-TempestRoc",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/StormMatriarch.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/TempestRoc.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/TempestRoc.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TempestRoc-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TempestRoc-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TempestRoc-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TempestRoc-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TempestRoc-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TempestRoc-Dead.png"
+        }
+      ],
+      "idleHash": "43F35F564EBC86964359D72F44E9C6480D2C3583DA4C9EA89FC777C6EF9B8D9D"
+    },
+    {
+      "id": "Monster-StormJelly",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/StormOrb.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/StormJelly.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/StormJelly.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StormJelly-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StormJelly-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StormJelly-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StormJelly-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StormJelly-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/StormJelly-Dead.png"
+        }
+      ],
+      "idleHash": "1C2A67346C99EEC24D4100F5A4919B71C8588A7F249AF3993E6494EAA62E579A"
+    },
+    {
+      "id": "Monster-CoalSalamander",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_AshHound.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CoalSalamander.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CoalSalamander.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoalSalamander-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CoalSalamander-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoalSalamander-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CoalSalamander-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoalSalamander-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CoalSalamander-Dead.png"
+        }
+      ],
+      "idleHash": "5BE08CD135B57DF0A97A4A7EE6CA7D2CB978FE1D91A0B38F5748E623DD5CCEDB"
+    },
+    {
+      "id": "Monster-SerpentWarden",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_ShadeLancer.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/SerpentWarden.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/SerpentWarden.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-SerpentWarden-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/SerpentWarden-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-SerpentWarden-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/SerpentWarden-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-SerpentWarden-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/SerpentWarden-Dead.png"
+        }
+      ],
+      "idleHash": "9211A2450B29E56751F0FABB02E8B7E7690CE8F40D8A967B43C01ACE20236B64"
+    },
+    {
+      "id": "Monster-AshGargoyle",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/AshCrow.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/AshGargoyle.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/AshGargoyle.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshGargoyle-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshGargoyle-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshGargoyle-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshGargoyle-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshGargoyle-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshGargoyle-Dead.png"
+        }
+      ],
+      "idleHash": "25B8871F9E9C3F38E0A8667B816CA41192B8FA18BF7CB04101DDF24A76D90CE0"
+    },
+    {
+      "id": "Monster-HollowEye",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_VoidMaw.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/HollowEye.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/HollowEye.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-HollowEye-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/HollowEye-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-HollowEye-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/HollowEye-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-HollowEye-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/HollowEye-Dead.png"
+        }
+      ],
+      "idleHash": "EBE3C2F3E628C708FD15F9B8AA8EAEFE3317FE9BBDAFE7FC15469778591575F2"
+    },
+    {
+      "id": "Monster-CenserRevenant",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/SoulLamp.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CenserRevenant.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CenserRevenant-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CenserRevenant-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CenserRevenant-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CenserRevenant-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CenserRevenant-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CenserRevenant-Dead.png"
+        }
+      ],
+      "idleHash": "AD64C57CD8296712AF1BFA50A7CCD6145A182CED55BAF891E8260428D507B467"
+    },
+    {
+      "id": "Monster-OathlessCentaur",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_SoulKnight.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/OathlessCentaur.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/OathlessCentaur.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-OathlessCentaur-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/OathlessCentaur-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-OathlessCentaur-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/OathlessCentaur-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-OathlessCentaur-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/OathlessCentaur-Dead.png"
+        }
+      ],
+      "idleHash": "96A16C8BA0DBCDDA1CF0B1A569D8D2489B52FBD1ACF9869EC79CEAC405F67850"
+    },
+    {
+      "id": "Monster-CrimsonCount",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/BloodExecutioner.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CrimsonCount.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CrimsonCount.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrimsonCount-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrimsonCount-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrimsonCount-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrimsonCount-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrimsonCount-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrimsonCount-Dead.png"
+        }
+      ],
+      "idleHash": "9BF3EDD90B64C432D61DB32F4A6A695908508380394546A0D469FDBB9A2953D4"
+    },
+    {
+      "id": "Monster-AshHierophant",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/LampPriest.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/AshHierophant.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/AshHierophant.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshHierophant-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshHierophant-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshHierophant-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshHierophant-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshHierophant-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshHierophant-Dead.png"
+        }
+      ],
+      "idleHash": "E8158146C0F311E5BA0E9753E29D3939D436F0A851534BA0C396987F31AB3A01"
+    },
+    {
+      "id": "Monster-AshDragon",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_SoulEater.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/AshDragon.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/AshDragon.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshDragon-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshDragon-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshDragon-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshDragon-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-AshDragon-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/AshDragon-Dead.png"
+        }
+      ],
+      "idleHash": "43BD795192CF56644D7C8A2B6DF1E7ACEF8D5F53D0BF26EC84EE608A3095F986"
+    },
+    {
+      "id": "Monster-EclipseChimera",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/EclipseBeast.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/EclipseChimera.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/EclipseChimera.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-EclipseChimera-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/EclipseChimera-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-EclipseChimera-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/EclipseChimera-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-EclipseChimera-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/EclipseChimera-Dead.png"
+        }
+      ],
+      "idleHash": "8653C3AD08ACB8CEEE16BED6D154E541B538D6FB7E173C829E8D9AF5C52203C4"
+    },
+    {
+      "id": "Monster-SunIdol",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/ElderLeftHeart.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/SunIdol.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/SunIdol.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-SunIdol-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/SunIdol-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-SunIdol-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/SunIdol-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-SunIdol-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/SunIdol-Dead.png"
+        }
+      ],
+      "idleHash": "C370DE10B0C4C3C40A69C71D8E7481B4C193C5A5E401CBBB320227A0380867FB"
+    },
+    {
+      "id": "Monster-MoonIdol",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/ElderRightHeart.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/MoonIdol.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/MoonIdol.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MoonIdol-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MoonIdol-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MoonIdol-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MoonIdol-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-MoonIdol-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/MoonIdol-Dead.png"
+        }
+      ],
+      "idleHash": "E3D35A541BC2318576D5AD49D59EE6A36B08185D4F8A413ACFA043084872EC54"
+    },
+    {
+      "id": "Monster-CinderLich",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/AshGeneral.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CinderLich.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CinderLich.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CinderLich-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CinderLich-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CinderLich-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CinderLich-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CinderLich-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CinderLich-Dead.png"
+        }
+      ],
+      "idleHash": "2FFD808D8DD94266E66E0C5268C9E45311E4598B520571DEF382FA952037B61D"
+    },
+    {
+      "id": "Monster-IronMimic",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_Special_Minion_Mimic.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/IronMimic.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/IronMimic.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-IronMimic-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/IronMimic-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-IronMimic-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/IronMimic-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-IronMimic-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/IronMimic-Dead.png"
+        }
+      ],
+      "idleHash": "07F88BA5D2100493BDB5C50E05FE4933B9570E93856319FDF39654F2C7D53E2D"
+    },
+    {
+      "id": "Monster-GildedToad",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/Data_Monster_Special_MerchantMutant.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/GildedToad.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/GildedToad.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-GildedToad-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/GildedToad-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-GildedToad-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/GildedToad-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-GildedToad-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/GildedToad-Dead.png"
+        }
+      ],
+      "idleHash": "425D13F3AF8E3D85AB3516E0A2D47D2B91FDC376FC84F62FDF75A541C9132D39"
+    },
+    {
+      "id": "Monster-TarrasqueWhelp",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/TrialGuardian.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/TarrasqueWhelp.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/TarrasqueWhelp.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TarrasqueWhelp-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TarrasqueWhelp-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TarrasqueWhelp-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TarrasqueWhelp-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-TarrasqueWhelp-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/TarrasqueWhelp-Dead.png"
+        }
+      ],
+      "idleHash": "4B1166DC7CCCF3480BDCA4B626A5C4DBFA556C65129CD99E3153A3375FA4E0A4"
+    },
+    {
+      "id": "Monster-CrownColossus",
+      "kind": "Monster",
+      "dataPath": "Assets/Data/Combat/Monsters/DeepTrialGuardian.asset",
+      "animationPath": "Assets/Data/Presentation/Angular/Animations/CrownColossus.asset",
+      "idle": "Assets/Art/World/Angular/Monsters/CrownColossus.png",
+      "poses": [
+        {
+          "state": "Ready",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrownColossus-Ready.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrownColossus-Ready.png"
+        },
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrownColossus-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrownColossus-Attack.png"
+        },
+        {
+          "state": "Dead",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CrownColossus-Dead.png",
+          "output": "Assets/Art/World/Angular/States/Monsters/CrownColossus-Dead.png"
+        }
+      ],
+      "idleHash": "84F6D15A3FB197A1465B03AA24247435675339976AFACBFD259544BDE2D710F9"
+    },
+    {
+      "id": "Companion-TrailDog",
+      "kind": "Companion",
+      "dataPath": "Assets/Data/Characters/Companions/TrailDog.asset",
+      "animationPath": "Assets/Data/Presentation/Animations/CompanionDog.asset",
+      "idle": "Assets/Art/World/Angular/States/Companions/TrailDog-Idle.png",
+      "idleSource": "Docs/Production/StateArtwork-2026-10-26/Outputs/Companion-TrailDog-Idle.png",
+      "idleHash": "04473C49068081BD3E10659597165701953E57DCEBABCF72B5D58417971C62B1",
+      "poses": [
+        {
+          "state": "Attack",
+          "source": "Docs/Production/StateArtwork-2026-10-26/Outputs/Companion-TrailDog-Attack.png",
+          "output": "Assets/Art/World/Angular/States/Companions/TrailDog-Attack.png"
+        }
+      ]
+    }
+  ]
+}

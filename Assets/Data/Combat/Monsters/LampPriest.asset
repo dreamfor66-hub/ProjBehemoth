@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.lamppriest.displayname
-    lastText: "\uAC80\uC740 \uB4F1\uBD88 \uC0AC\uC81C"
+    lastText: "\uC7AC\uC758 \uB300\uC0AC\uC81C"
   - propertyPath: encounterHint
     key: data.monsterdata.lamppriest.encounterhint
-    lastText: 
+    lastText: "\uD638\uC704 \uAC00\uACE0\uC77C\uACFC \uACF5\uACA9\uC774 \uACB9\uCE5C\uB2E4.
+      \uBCF8\uCCB4 \uAC15\uD0C0\uB97C \uB04A\uC790."
   textOwnerGuid: 9177932eaa22ed644a46bfee82533abb
-  displayName: "\uAC80\uC740 \uB4F1\uBD88 \uC0AC\uC81C"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 7b6f00e90d0df1b4eb45dba685e950f8, type: 2}
-  encounterHint: 
+  displayName: "\uC7AC\uC758 \uB300\uC0AC\uC81C"
+  portrait: {fileID: 21300000, guid: be5a0c17c90288e42af4568522e5cc54, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 6de9e8a1d6238af45b623ef70c54755d, type: 2}
+  encounterHint: "\uD638\uC704 \uAC00\uACE0\uC77C\uACFC \uACF5\uACA9\uC774 \uACB9\uCE5C\uB2E4.
+    \uBCF8\uCCB4 \uAC15\uD0C0\uB97C \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 18
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: 321e73389075fdc40984317ebe362f44, type: 2}
-  - {fileID: 11400000, guid: aecedb3260170e942aef9034c9e3fa94, type: 2}
+  - {fileID: 11400000, guid: 2366d813a73987746959785e74e08966, type: 2}
+  - {fileID: 11400000, guid: 227787eb241a50047934f377d197bde4, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.8, g: 0.57600003, b: 0.48, a: 1}

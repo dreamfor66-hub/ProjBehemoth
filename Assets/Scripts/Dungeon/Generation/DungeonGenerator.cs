@@ -14,23 +14,31 @@ namespace DungeonSlash
             for (var attempt = 0; attempt < settings.maxGenerationAttempts; attempt++)
             {
                 var random = new Random(seed + attempt * 7919);
-                var graph = CreateGraph(random);
+                var graph = CreateGraph(random, floor);
                 if (TryAssignRooms(graph, random, floor)) return new DungeonRunState(seed, graph, floor);
             }
             throw new InvalidOperationException("Unable to create a dungeon that satisfies the configured distance constraints.");
         }
 
-        private DungeonGraph CreateGraph(Random random)
+        private DungeonGraph CreateGraph(Random random, int floor)
         {
             var graph = new DungeonGraph();
             graph.AddRoom(new DungeonPosition(0, 0));
             var targetCount = random.Next(settings.minRooms, settings.maxRooms + 1);
+            var opening = floor == 1 ? Math.Min(settings.firstActOpeningCombats, targetCount - 2) : 0;
+            var tip = graph.StartRoom;
+            for (var step = 0; step < opening; step++)
+            {
+                var next = graph.AddRoom(new DungeonPosition(0, step + 1));
+                graph.Connect(tip, next); tip = next;
+            }
             while (graph.Rooms.Count < targetCount)
             {
                 var candidates = graph.Rooms.OrderBy(_ => random.Next()).ToList();
                 var placed = false;
                 foreach (var parent in candidates)
                 {
+                    if (floor == 1 && !CanAddExit(graph, parent, opening)) continue;
                     var offsetStart = random.Next(4);
                     for (var i = 0; i < 4; i++)
                     {
@@ -48,11 +56,26 @@ namespace DungeonSlash
             {
                 foreach (var offset in DirectionUtility.Offsets)
                 {
-                    if (random.NextDouble() <= settings.loopChance)
-                        graph.Connect(room, graph.At(room.Position + offset));
+                    if (floor != 1)
+                    {
+                        if (random.NextDouble() <= settings.loopChance) graph.Connect(room, graph.At(room.Position + offset));
+                        continue;
+                    }
+                    var other = graph.At(room.Position + offset);
+                    if (other == null || room.Connections.Contains(other.RoomId)) continue;
+                    if (floor == 1 && (!CanAddExit(graph, room, opening) || !CanAddExit(graph, other, opening)
+                        || graph.Rooms.Count(r => r.Connections.Count >= 3) + (room.Connections.Count == 2 ? 1 : 0) + (other.Connections.Count == 2 ? 1 : 0) > settings.firstActMaximumJunctions)) continue;
+                    if (random.NextDouble() <= (floor == 1 ? settings.firstActLoopChance : settings.loopChance)) graph.Connect(room, other);
                 }
             }
             return graph;
+        }
+
+        private bool CanAddExit(DungeonGraph graph, DungeonRoom room, int opening)
+        {
+            if (opening > 0 && room.Position.X == 0 && room.Position.Y >= 0 && room.Position.Y < opening) return false;
+            return room.Connections.Count < settings.firstActMaximumExits
+                && (room.Connections.Count < 2 || graph.Rooms.Count(r => r.Connections.Count >= 3) < settings.firstActMaximumJunctions);
         }
 
         private bool TryAssignRooms(DungeonGraph graph, Random random, int floor)
@@ -67,6 +90,9 @@ namespace DungeonSlash
             if (boss == null) return false;
             AssignMajor(boss, RoomEncounterType.Boss);
             var unassigned = graph.Rooms.Where(room => room != start && room != boss).ToList();
+            if (floor == 1)
+                foreach (var room in unassigned.Where(r => distances[r.RoomId] <= settings.firstActOpeningCombats).ToList())
+                { room.Type = RoomEncounterType.Combat; unassigned.Remove(room); }
 
             // The former major-gold room is now an ordinary-looking chest at a prominent location.
             // Floor one guarantees one gold chest here, while later floors roll a hidden chest outcome.
@@ -86,18 +112,42 @@ namespace DungeonSlash
                 AssignMajor(candidate, RoomEncounterType.Elite); unassigned.Remove(candidate);
             }
 
-            AssignMinimum(unassigned, RoomEncounterType.Reward, settings.minimumRewardRooms, random);
-            AssignMinimum(unassigned, RoomEncounterType.Camp, 1, random);
-            AssignMinimum(unassigned, RoomEncounterType.Fountain, settings.minimumFountainRooms, random);
-            // Shops are a floor-level resource: B1 has one merchant, B2 two, B3 three, and so on.
-            AssignMinimum(unassigned, RoomEncounterType.Shop, floor, random);
-            AssignMinimum(unassigned, RoomEncounterType.Goddess, settings.minimumGoddessRooms, random);
-            AssignMinimum(unassigned, RoomEncounterType.Event, settings.eventRoomCount, random);
+            if (floor == 1)
+            {
+                if (!AssignDistant(RoomEncounterType.Camp, 1, settings.firstActCampDistance)
+                    || !AssignDistant(RoomEncounterType.Reward, settings.minimumRewardRooms, settings.firstActServiceDistance)
+                    || !AssignDistant(RoomEncounterType.Fountain, settings.minimumFountainRooms, settings.firstActServiceDistance)
+                    || !AssignDistant(RoomEncounterType.Shop, 1, settings.firstActServiceDistance)
+                    || !AssignDistant(RoomEncounterType.Goddess, settings.minimumGoddessRooms, settings.firstActServiceDistance)
+                    || !AssignDistant(RoomEncounterType.Event, settings.eventRoomCount, settings.firstActServiceDistance)) return false;
+            }
+            else
+            {
+                AssignMinimum(unassigned, RoomEncounterType.Reward, settings.minimumRewardRooms, random);
+                AssignMinimum(unassigned, RoomEncounterType.Camp, 1, random);
+                AssignMinimum(unassigned, RoomEncounterType.Fountain, settings.minimumFountainRooms, random);
+                AssignMinimum(unassigned, RoomEncounterType.Shop, floor, random);
+                AssignMinimum(unassigned, RoomEncounterType.Goddess, settings.minimumGoddessRooms, random);
+                AssignMinimum(unassigned, RoomEncounterType.Event, settings.eventRoomCount, random);
+            }
             var combatCount = Math.Max(1, (int)Math.Ceiling(graph.Rooms.Count * (settings.combatRoomRatioMin + settings.combatRoomRatioMax) * .5f));
-            AssignMinimum(unassigned, RoomEncounterType.Combat, Math.Min(combatCount, unassigned.Count), random);
+            AssignMinimum(unassigned, RoomEncounterType.Combat, Math.Min(Math.Max(0, combatCount - graph.Rooms.Count(r => r.Type == RoomEncounterType.Combat)), unassigned.Count), random);
             foreach (var room in unassigned) room.Type = random.NextDouble() < .55 ? RoomEncounterType.Combat : RoomEncounterType.Empty;
             AddFloorEventVariants(graph, random, floor);
             return true;
+
+            bool AssignDistant(RoomEncounterType type, int count, int minimumDistance)
+            {
+                for (var i = 0; i < count; i++)
+                {
+                    var candidate = unassigned.Where(r => distances[r.RoomId] >= minimumDistance
+                        && (type != RoomEncounterType.Event || !graph.Neighbors(r).Any(n => n.Type == RoomEncounterType.Event)))
+                        .OrderBy(_ => random.Next()).FirstOrDefault();
+                    if (candidate == null) return false;
+                    candidate.Type = type; unassigned.Remove(candidate);
+                }
+                return true;
+            }
         }
 
         private static void AddFloorEventVariants(DungeonGraph graph, Random random, int floor)

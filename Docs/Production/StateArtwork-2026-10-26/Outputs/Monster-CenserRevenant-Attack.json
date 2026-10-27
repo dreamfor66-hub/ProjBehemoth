@@ -1,0 +1,11 @@
+{
+  "id": "Monster-CenserRevenant-Attack",
+  "actor": "CenserRevenant",
+  "kind": "Monster",
+  "state": "Attack",
+  "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+  "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Swing the same censer forward with a taut physically connected chain, free hand reaching, robe and hands remain coherent.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-b09fb990-978d-45d3-bf92-9ab5e23f7078.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CenserRevenant-Attack.png",
+  "status": "generated_pending_review"
+}

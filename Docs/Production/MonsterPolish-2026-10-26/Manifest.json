@@ -1,0 +1,252 @@
+{
+  "items": [
+    {
+      "id": "LanternImp",
+      "baseline": "Data_Monster_B1_Minion_Bat",
+      "name": "고블린사냥꾼",
+      "hint": "작은 창을 든 고블린 사냥꾼. 강타 준비 중 중심 약점을 끊자."
+    },
+    {
+      "id": "BoneScorpion",
+      "baseline": "TunnelRat",
+      "name": "거미",
+      "hint": "낮은 자세로 달려드는 거미. 강타를 준비하면 노출된 약점을 부수자."
+    },
+    {
+      "id": "StringRevenant",
+      "baseline": "Data_Monster_B1_Minion_Skeleton",
+      "name": "해골 전사",
+      "hint": "검과 방패로 무장한 해골 전사. 노출되는 약점을 모두 부수자.",
+      "setOffset": true,
+      "offsetY": -67
+    },
+    {
+      "id": "CoffinSlime",
+      "baseline": "Data_Monster_B1_Minion_Leech",
+      "name": "흡혈박쥐",
+      "hint": "체력 피해를 주면 회복한다. 강타 준비 중 노출되는 약점을 부수자."
+    },
+    {
+      "id": "BellHound",
+      "baseline": "AlarmHound",
+      "name": "경종 사냥개",
+      "hint": "경종 뒤의 공격에 대비하고 약점을 끊자."
+    },
+    {
+      "id": "EttinGatekeeper",
+      "baseline": "Data_Monster_B1_Elite_Minotaur",
+      "name": "쌍두 문지기",
+      "hint": "두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자."
+    },
+    {
+      "id": "MirrorShell",
+      "baseline": "MirrorKnight",
+      "name": "움직이는 갑옷",
+      "hint": "같은 방향으로 연속 공격하면 반격한다. 공격 방향을 바꾸자."
+    },
+    {
+      "id": "IronMantis",
+      "baseline": "ArmoredExecutioner",
+      "name": "철갑 사마귀",
+      "hint": "필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자."
+    },
+    {
+      "id": "StoneSphinx",
+      "baseline": "Data_Monster_B1_Boss_MazeGuardian",
+      "name": "미궁 스핑크스",
+      "hint": "필수 약점들을 연결해 베어 강타를 끊자."
+    },
+    {
+      "id": "OssuaryBell",
+      "baseline": "BellKeeper",
+      "name": "납골당의 종",
+      "hint": "연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자."
+    },
+    {
+      "id": "WebDuchess",
+      "baseline": "BroodKeeper",
+      "name": "실짜는 공작부인",
+      "hint": "주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자."
+    },
+    {
+      "id": "Threadling",
+      "baseline": "OrbitBat",
+      "name": "실인형",
+      "hint": "본체 주위를 공전한다. 위치를 따라가며 노리자."
+    },
+    {
+      "id": "QuillSprite",
+      "baseline": "Data_Monster_B2_Minion_FrostBat",
+      "name": "깃바늘 정령",
+      "hint": "날개를 접어 돌진하기 전 약점을 끊자."
+    },
+    {
+      "id": "CrystalUrchin",
+      "baseline": "IceNeedle",
+      "name": "결정 성게",
+      "hint": "결정 사이에 열린 약점을 노려 찌르기를 끊자."
+    },
+    {
+      "id": "VeilOracle",
+      "baseline": "Data_Monster_B2_Minion_IceWraith",
+      "name": "장막 예언자",
+      "hint": "장막이 열릴 때 나타나는 약점을 끊자."
+    },
+    {
+      "id": "TuskPilgrim",
+      "baseline": "Data_Monster_B2_Minion_Yeti",
+      "name": "엄니 순례자",
+      "hint": "곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자."
+    },
+    {
+      "id": "BellHare",
+      "baseline": "SnowBell",
+      "name": "종토끼",
+      "hint": "본체 곁에서 박자를 어긋나게 공격한다."
+    },
+    {
+      "id": "TwinAntlerStag",
+      "baseline": "Data_Monster_B2_Elite_FrostOgre",
+      "name": "쌍각 파수꾼",
+      "hint": "좌우 약점 두 개를 모두 끊어 강타를 취소하자."
+    },
+    {
+      "id": "MirrorMoth",
+      "baseline": "IceMirror",
+      "name": "거울나방",
+      "hint": "같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자."
+    },
+    {
+      "id": "MaskedChoir",
+      "baseline": "PaleWisp",
+      "name": "가면 성가수",
+      "hint": "세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자."
+    },
+    {
+      "id": "WinterUnicorn",
+      "baseline": "Data_Monster_B2_Boss_FrostQueen",
+      "name": "겨울의 일각수",
+      "hint": "긴 강타 준비 동안 노출된 약점을 모두 끊자."
+    },
+    {
+      "id": "PrismCrab",
+      "baseline": "CrystalSpider",
+      "name": "수정 등딱지",
+      "hint": "집게 사이 약점과 보조 약점을 연결해 부수자."
+    },
+    {
+      "id": "TempestRoc",
+      "baseline": "StormMatriarch",
+      "name": "폭풍의 대붕",
+      "hint": "공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자."
+    },
+    {
+      "id": "StormJelly",
+      "baseline": "StormOrb",
+      "name": "폭풍 해파리",
+      "hint": "본체 주위를 공전하며 공격한다."
+    },
+    {
+      "id": "CoalSalamander",
+      "baseline": "Data_Monster_B3_Minion_AshHound",
+      "name": "숯불 도롱뇽",
+      "hint": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자."
+    },
+    {
+      "id": "SerpentWarden",
+      "baseline": "Data_Monster_B3_Minion_ShadeLancer",
+      "name": "뱀 수문장",
+      "hint": "몸을 세울 때 노출되는 약점을 끊어 돌진을 막자."
+    },
+    {
+      "id": "AshGargoyle",
+      "baseline": "AshCrow",
+      "name": "재 가고일",
+      "hint": "짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자."
+    },
+    {
+      "id": "HollowEye",
+      "baseline": "Data_Monster_B3_Minion_VoidMaw",
+      "name": "공허의 눈",
+      "hint": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자."
+    },
+    {
+      "id": "CenserRevenant",
+      "baseline": "SoulLamp",
+      "name": "향로 망령",
+      "hint": "다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자."
+    },
+    {
+      "id": "OathlessCentaur",
+      "baseline": "Data_Monster_B3_Elite_SoulKnight",
+      "name": "파계 기마수",
+      "hint": "넓게 드러난 약점을 차례로 끊어 강타를 취소하자."
+    },
+    {
+      "id": "CrimsonCount",
+      "baseline": "BloodExecutioner",
+      "name": "핏빛 백작",
+      "hint": "무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자."
+    },
+    {
+      "id": "AshHierophant",
+      "baseline": "LampPriest",
+      "name": "재의 대사제",
+      "hint": "호위 가고일과 공격이 겹친다. 본체 강타를 끊자."
+    },
+    {
+      "id": "AshDragon",
+      "baseline": "Data_Monster_B3_Boss_SoulEater",
+      "name": "잿불의 용",
+      "hint": "날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자."
+    },
+    {
+      "id": "EclipseChimera",
+      "baseline": "EclipseBeast",
+      "name": "일식의 키메라",
+      "hint": "해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다."
+    },
+    {
+      "id": "SunIdol",
+      "baseline": "ElderLeftHeart",
+      "name": "해 우상",
+      "hint": "연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다."
+    },
+    {
+      "id": "MoonIdol",
+      "baseline": "ElderRightHeart",
+      "name": "달 우상",
+      "hint": "강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다."
+    },
+    {
+      "id": "CinderLich",
+      "baseline": "AshGeneral",
+      "name": "잿불 왕",
+      "hint": "소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자."
+    },
+    {
+      "id": "IronMimic",
+      "baseline": "Data_Monster_Special_Minion_Mimic",
+      "name": "철니 미믹",
+      "hint": "뚜껑이 열리는 동안 드러난 약점을 끊자."
+    },
+    {
+      "id": "GildedToad",
+      "baseline": "Data_Monster_Special_MerchantMutant",
+      "name": "금먹는 두꺼비",
+      "hint": "큰 공격을 준비할 때 열린 약점을 노리자."
+    },
+    {
+      "id": "TarrasqueWhelp",
+      "baseline": "TrialGuardian",
+      "name": "가시등 시련수",
+      "hint": "시련의 강타를 약점 파괴로 막자."
+    },
+    {
+      "id": "CrownColossus",
+      "baseline": "DeepTrialGuardian",
+      "name": "왕관 거신",
+      "hint": "심층 시련. 여러 약점을 연결해 끊자."
+    }
+  ]
+}

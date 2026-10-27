@@ -95,7 +95,10 @@ MonoBehaviour:
   head: {fileID: 0}
   guardFx: {fileID: 2185994420014058155}
   cooldown: {fileID: 7324421188259148283}
-  presentation: {fileID: 11400000, guid: 1675394ad88198449a913f25d172f20f, type: 2}
+  presentation: {fileID: 11400000, guid: 9ea2c46e0de6eb1489ebd7da3ced61d7, type: 2}
+  combatRootPosition: {x: 0, y: -532}
+  combatImageSizeMultiplier: 1.5
+  framingDuration: 0.4
 --- !u!1 &3500514658397300651
 GameObject:
   m_ObjectHideFlags: 0

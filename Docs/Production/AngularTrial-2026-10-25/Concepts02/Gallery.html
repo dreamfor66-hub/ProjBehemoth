@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Behemoth · 워리어 / 바바리안 추가 시안</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#151715;color:#e4dbc5;font:16px system-ui,sans-serif}
+header{padding:20px 28px}h1{font-size:22px;margin:0 0 8px}p{margin:0;color:#aaa991;line-height:1.5}
+nav{display:flex;gap:8px;padding:0 28px 16px}button{font:inherit;cursor:pointer;padding:10px 22px;background:#272922;color:#e4dbc5;border:1px solid #5b604b;border-radius:4px}button[aria-pressed=true]{background:#c3a15d;color:#151715}
+main{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 28px}figure{margin:0;min-width:0;background:#1b1d19;border:1px solid #3c4035}figcaption{padding:10px 16px;color:#aaa991}
+img{display:block;width:100%;height:calc(100vh - 245px);min-height:340px;object-fit:contain}footer{padding:16px 28px;color:#aaa991;font-size:14px}a{color:#e1bd75}
+@media(max-width:600px){header,footer{padding:16px}nav{padding:0 16px 12px}main{padding:0 12px;gap:8px}img{min-height:260px;height:55vh}h1{font-size:19px}}
+</style>
+<header><h1>워리어 / 바바리안 · 추가 시안</h1><p id="note">어깨 망토를 걷어내고 철갑과 황토색 누비옷을 드러냈습니다.</p></header>
+<nav><button id="Warrior" aria-pressed="true" onclick="show('Warrior')">워리어</button><button id="Barbarian" aria-pressed="false" onclick="show('Barbarian')">바바리안</button></nav>
+<main><figure><figcaption>기존안</figcaption><a id="oldLink" target="_blank"><img id="old" alt="기존 워리어"></a></figure><figure><figcaption>추가 시안</figcaption><a id="newLink" target="_blank"><img id="new" alt="새 워리어 시안"></a></figure></main>
+<footer>검토용 이미지입니다. 기존 캐릭터와 Unity 씬은 교체하지 않았습니다. · <a href="../Gallery.html">승인된 스타일 / 실행 화면</a> · <a href="Prompts.json">Built-in ImageGen 프롬프트</a></footer>
+<script>
+function show(name){
+const root='/Assets/Art/Trials/Angular01/';
+document.getElementById('old').src=root+'Source'+name+'.png';
+document.getElementById('oldLink').href=root+'Source'+name+'.png';
+document.getElementById('new').src=root+'Concepts02/'+name+'.png';
+document.getElementById('newLink').href=root+'Concepts02/'+name+'.png';
+document.getElementById('old').alt=name+' 기존안';
+document.getElementById('new').alt=name+' 추가 시안';
+for(const kind of ['Warrior','Barbarian'])document.getElementById(kind).setAttribute('aria-pressed',String(kind===name));
+document.getElementById('note').textContent=name==='Warrior'?'어깨 망토를 걷어내고 철갑과 황토색 누비옷을 드러냈습니다.':'머리와 상체를 유지하고, 긴 허리천을 벨트와 짧은 바지로 바꿨습니다.';
+}show('Warrior');
+</script></html>

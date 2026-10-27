@@ -1,0 +1,45 @@
+Scoped original 3/4/2 state-image contract; production actions and existing Unity Editor.
+PASS Hero-Warrior exact distinct state images; no mesh-motion substitute
+PASS Hero-Warrior Idle
+PASS Hero-Warrior accepted attack switches Attack
+PASS Hero-Warrior cooldown-rejected attack does not restart pose
+PASS Hero-Warrior attack returns to Idle
+PASS Hero-Warrior production drag-hold switches Guard
+PASS Hero-Warrior guard release restores Idle
+PASS Hero-Rogue exact distinct state images; no mesh-motion substitute
+PASS Hero-Rogue Idle
+PASS Hero-Rogue accepted attack switches Attack
+PASS Hero-Rogue cooldown-rejected attack does not restart pose
+PASS Hero-Rogue attack returns to Idle
+PASS Hero-Rogue production drag-hold switches Guard
+PASS Hero-Rogue guard release restores Idle
+PASS Hero-Barbarian exact distinct state images; no mesh-motion substitute
+PASS Hero-Barbarian Idle
+PASS Hero-Barbarian accepted attack switches Attack
+PASS Hero-Barbarian cooldown-rejected attack does not restart pose
+PASS Hero-Barbarian attack returns to Idle
+PASS Hero-Barbarian production drag-hold switches Guard
+PASS Hero-Barbarian guard release restores Idle
+PASS Hero-Samurai exact distinct state images; no mesh-motion substitute
+PASS Hero-Samurai Idle
+PASS Hero-Samurai accepted attack switches Attack
+PASS Hero-Samurai cooldown-rejected attack does not restart pose
+PASS Hero-Samurai attack returns to Idle
+PASS Hero-Samurai production drag-hold switches Guard
+PASS Hero-Samurai guard release restores Idle
+PASS Hero-Monk exact distinct state images; no mesh-motion substitute
+PASS Hero-Monk Idle
+PASS Hero-Monk accepted attack switches Attack
+PASS Hero-Monk cooldown-rejected attack does not restart pose
+PASS Hero-Monk attack returns to Idle
+PASS Hero-Monk production drag-hold switches Guard
+PASS Hero-Monk guard release restores Idle
+PASS Hero-Wizard exact distinct state images; no mesh-motion substitute
+PASS Hero-Wizard Idle
+PASS Hero-Wizard accepted attack switches Attack
+PASS Hero-Wizard cooldown-rejected attack does not restart pose
+PASS Hero-Wizard attack returns to Idle
+PASS Hero-Wizard production drag-hold switches Guard
+PASS Hero-Wizard guard release restores Idle
+PASS Hero-Wizard accepted spell also switches Attack
+COMPLETE

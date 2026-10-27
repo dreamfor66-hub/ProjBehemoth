@@ -1,0 +1,35 @@
+Angular 01 scoped two-screen visual and UI review in existing Unity Editor.
+Selection-Warrior rendered in Angular01_Characters
+PASS selected art Warrior
+Selection-Rogue rendered in Angular01_Characters
+PASS selected art Rogue
+Selection-Barbarian rendered in Angular01_Characters
+PASS selected art Barbarian
+Selection-Samurai rendered in Angular01_Characters
+PASS selected art Samurai
+Selection-Monk rendered in Angular01_Characters
+PASS selected art Monk
+Selection-Wizard rendered in Angular01_Characters
+PASS selected art Wizard
+SELECTION COMPLETE
+Main-First-Introduction rendered in Angular01_Main
+PASS first-run Continue button
+Main-First-Navigation rendered in Angular01_Main
+PASS isolated trial character data
+Selection-Warrior rendered in Angular01_Characters
+PASS selected art Warrior
+Selection-Rogue rendered in Angular01_Characters
+PASS selected art Rogue
+Selection-Barbarian rendered in Angular01_Characters
+PASS selected art Barbarian
+Selection-Samurai rendered in Angular01_Characters
+PASS selected art Samurai
+Selection-Monk rendered in Angular01_Characters
+PASS selected art Monk
+Selection-Wizard rendered in Angular01_Characters
+PASS selected art Wizard
+SELECTION COMPLETE
+Main-First-Introduction rendered in Angular01_Main
+PASS first-run Continue button
+Main-First-Navigation rendered in Angular01_Main
+PASS isolated trial character data

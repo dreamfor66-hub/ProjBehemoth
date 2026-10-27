@@ -1,0 +1,14 @@
+After-Combat-v1 / 1920x1080
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ↑8
+StateFxRoot | (x:-480.00, y:-36.00, width:960.00, height:72.00) | overflow=False | 고블린사냥꾼
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ↓8
+Value | (x:-208.00, y:-28.00, width:416.00, height:56.00) | overflow=False | MP 30/30
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+Label | (x:-64.00, y:-32.00, width:128.00, height:64.00) | overflow=False | 메뉴
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ←10
+Value | (x:-208.00, y:-28.00, width:416.00, height:56.00) | overflow=False | HP 100 / 100
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | →8
+Runtime HP=100/100; MP=30/30; guard=35/35

@@ -1,0 +1,1 @@
+Saved Idle contact metadata for 42 monster libraries; eight distinct skeleton/spider state images imported. Grounding uses scaled body hitbox radius. No stat values changed.

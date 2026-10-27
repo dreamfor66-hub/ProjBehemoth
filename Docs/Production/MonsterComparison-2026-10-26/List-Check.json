@@ -1,0 +1,24 @@
+{
+  "uniqueMonsters": 41,
+  "visibleRows": 41,
+  "duplicateMonsterRows": 0,
+  "dedicatedCompanionsUnderLeader": [
+    "BellHare",
+    "Threadling",
+    "StormJelly",
+    "SunIdol",
+    "MoonIdol"
+  ],
+  "requestedColumns": [
+    "층",
+    "종류",
+    "이전 컨셉",
+    "현재 컨셉",
+    "주요 효과",
+    "비고"
+  ],
+  "allListed": true,
+  "portraitsPerRow": 2,
+  "allNormalTimingMatchesBefore": true,
+  "arbitraryAlternatingSequencesActive": 0
+}

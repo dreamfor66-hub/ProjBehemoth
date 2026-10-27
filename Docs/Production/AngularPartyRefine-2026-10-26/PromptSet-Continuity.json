@@ -1,0 +1,18 @@
+[
+  {
+    "id": "WarriorFront05",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Before/Warrior-Front.png",
+      "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-19afc5cf-3cb0-4994-b3fb-a5d4217901e6.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 front Warrior is edit target, Image2 is accepted NEW rear shield construction authority. Current front shield is WRONG: its outside boss face has straps painted over it. User allows shield POSITION and ANGLE to change, so rebuild whole shield-side arm and shield coherently. Keep upper shoulder, helmet, cape, torso, sword and legs exactly. Show a real wooden kite shield INNER SURFACE with naturally straight forearm lying close across wood, wrist continuous with forearm. Use shield shape/color/iron rim from original. INNER panel is plain wood, NO round outside metal boss. Two broad curved leather enarmes loops firmly wrap forearm near elbow and near wrist; their riveted ends attach behind arm onto the inner panel (as rear reference). Arm and shield are one connected anatomical assembly, not floating fist outside shield and not straps on external face. Can raise/re-angle/reposition shield beside right of image for best clarity: elbow gently bent90deg, forearm diagonal across shield INSIDE, relaxed closed glove aligned naturally with forearm, no handle or active grip. No twisted wrist, no cuff piercing planks. Shield outer face points away from viewer so inside connections really visible. Preserve original bold broad flat shapes, no ornate decorations, muted brown wood/leather, same battered iron rim. Fullbody1024x1536 transparent canvas. Keep exact face/helmet, clothing, sword shape/straight axis, boots and framing. Only shield-side assembly changes; do not retouch entire character, no glow or text."
+  },
+  {
+    "id": "WizardRear05",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Before/Wizard-Rear.png",
+      "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-d5a6bd13-57c0-4e4e-afbb-d6d28ff2401b.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 exact rear Wizard is edit target. Image2 newest front Wizard and little owl is continuity reference. Add THAT SAME small tawny owl companion to his anatomical LEFT shoulder, which is IMAGE LEFT in rear view. Cream face/tawny brown folded wings, two modest tufts, small amber eyes no glow. Rear camera sees owl's rounded back/wing silhouette and head slightly turned INWARD to wizard so their mutual attention reads. Owl perched stably with two tiny feet gripping actual blue cloak upper left shoulder near neck, never floating. Owl smaller than wizard head. Existing Wizard head subtly angled to image-left already: keep friendly elder identity, grey hair, do not turn whole head sideways or show full face; a small natural glance toward partner is sufficient. Preserve exact rear robe, blue cape, burgundy sleeves, cream cuffs, back staff continuously straight, belt/waist dagger, hands and open book, framing. Edit only owl/nearby shoulder and at most tiny head/neck gaze adjustment, no other body or costume redesign. Same1448x1086 alpha canvas, broad flat hand drawn shapes, sparse interior lines and simple feather masses, no realistic plumage/detail/glow/scenery/text."
+  }
+]

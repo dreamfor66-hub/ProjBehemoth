@@ -1,0 +1,8 @@
+{
+  "id": "Companion-TrailDog-Idle",
+  "kind": "Companion",
+  "state": "Idle",
+  "prompt": "Create one matching 2D ink-and-cel game companion illustration from these references. Image 1 defines the EXACT small brown-and-white dog identity, markings, floppy ears, white neck band, white paws, short white-tipped tail and strict rear camera. Image 2 defines only the drawing style of the current party: confident black ink outlines, broad flat matte muted color shapes, one simple shadow, no pixel texture. Redraw the dog as a calm REAR-VIEW Idle companion facing away toward the unseen enemy, standing on four naturally connected legs; hindquarters toward viewer, face not visible. Whole small dog fits within a square canvas, feet aligned on one implied ground line, ample transparent margin. Same species and brown/white pattern, not a wolf, fox or armored pet. No costume, props, new markings, glossy rendering, cute giant head, ground, cast shadow, lettering or scenery. True alpha transparent background.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-d4781339-f9e5-4130-838c-f432cb56f9cd.png",
+  "status": "generated_pending_review"
+}

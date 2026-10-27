@@ -119,6 +119,7 @@ namespace DungeonSlash
                     if (effect.encounter == null) { messages.Add(GameText.Get("ui.gameflowexpansion.ad4ca858")); break; }
                     eventCombatCompleted = next;
                     combatController.PrepareFixedEncounter(run, effect.encounter, dungeonController.Floor);
+                    combatController.BeginCombatPresentation();
                     State = GameFlowState.Combat;
                     expansionView.ShowMessage(effect.encounter.displayName, effect.encounter.hint, () => { combatController.BeginPreparedCombat(); }); return;
                 case EventEffectKind.SacrificeRelic:

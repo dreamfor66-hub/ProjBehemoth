@@ -1,0 +1,114 @@
+[
+  {
+    "file": "Art\\Trials\\Angular01\\Barbarian.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\BarbarianPortrait.png",
+    "size": [
+      450,
+      490
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Hall.png",
+    "size": [
+      1672,
+      941
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Monk.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\MonkPortrait.png",
+    "size": [
+      450,
+      440
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Rear.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Rogue.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\RoguePortrait.png",
+    "size": [
+      530,
+      520
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Samurai.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\SamuraiPortrait.png",
+    "size": [
+      520,
+      540
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Warrior.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\WarriorPortrait.png",
+    "size": [
+      490,
+      530
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\Wizard.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "binaryAlpha": true
+  },
+  {
+    "file": "Art\\Trials\\Angular01\\WizardPortrait.png",
+    "size": [
+      550,
+      600
+    ],
+    "binaryAlpha": true
+  }
+]

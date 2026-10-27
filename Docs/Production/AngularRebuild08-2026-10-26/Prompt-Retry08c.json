@@ -1,0 +1,10 @@
+{
+  "id": "WarriorFront08c",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/Restored/Warrior-Front.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/AngularRebuild08-2026-10-26/ArmOriginal-Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+  ],
+  "prompt": "Precise local edit. Image1 is the original Warrior, image2 enlarged original LEFT ARM and shield detail to preserve EXACTLY, images3/4 drawing style only. The original short brown forearm bracer and hanging CLOSED FIST must remain exactly as image1/image2, unchanged SHAPE, POSITION, BROWN MATERIAL and knuckle design. Add ONE modest leather forearm mounting belt on that EXISTING brown bracer at its upper middle. Attach belt's outer end to shield's inner wood by ONE small riveted tab. Do not add a second lower belt, do not cover or redraw glove or wrist, do not replace leather bracer with silver plate, do not lengthen arm. Shield panel same original position/angle/silhouette, remains BEHIND original arm/body. Its visible surface is INNER wood so remove external metal center boss and leave simple muted wood there. The mounting belt wraps EXISTING arm instead of creating a new arm to fit shield. Whole rest of image1 unchanged, especially helmet, cloak, sword and body. Same original modest dusty brown wood/matte iron, bold organic outlines, broad flat2-3 tones; no polished rendering. Full1024x1536 transparent PNG, no background/glow/text. Output full Warrior image ONLY, not a reference collage."
+}

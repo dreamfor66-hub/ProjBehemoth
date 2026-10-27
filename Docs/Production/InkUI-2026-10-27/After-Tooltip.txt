@@ -1,0 +1,48 @@
+After-Tooltip / 1920x1080
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ↓8
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ←10
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ↑8
+Value | (x:-208.00, y:-28.00, width:416.00, height:56.00) | overflow=False | HP 100 / 100
+Section0 | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | 능력
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+Title | (x:-332.00, y:-48.00, width:664.00, height:48.00) | overflow=False | 이지스 배터리
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | →8
+Label | (x:-64.00, y:-32.00, width:128.00, height:64.00) | overflow=False | 메뉴
+Section1 | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | 유물
+Section2 | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | 포션
+StateFxRoot | (x:-480.00, y:-36.00, width:960.00, height:72.00) | overflow=False | 고블린사냥꾼
+Label | (x:-72.00, y:-32.00, width:144.00, height:64.00) | overflow=False | X
+Value | (x:-208.00, y:-28.00, width:416.00, height:56.00) | overflow=False | MP 30/30
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+Description | (x:-332.00, y:-68.00, width:664.00, height:68.00) | overflow=False | 최대 방패 +25
+Runtime HP=100/100; MP=30/30; guard=35/35
+Skin: Fill | GaugeFill | (x:-184.00, y:-10.00, width:368.00, height:20.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=40 | material=UI/Behemoth/Ink Surface
+Skin: CloseInventory | Button | (x:-80.00, y:-36.00, width:160.00, height:72.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=92 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:0.00, y:-5.50, width:0.00, height:11.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Down | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:-84.00, y:-6.00, width:168.00, height:12.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=28 | material=UI/Behemoth/Ink Surface
+Skin: ManaGauge | GaugeTrack | (x:-184.00, y:-10.00, width:368.00, height:20.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=76 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Left | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: PotionIconSlot_02 | Slot | (x:-56.00, y:-56.00, width:112.00, height:112.00) | nonblocking=True | hover=False | pressed=False | active=False | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: RightPanel | Panel | (x:-734.09, y:-391.93, width:1468.19, height:783.85) | nonblocking=True | hover=False | pressed=False | active=True | vertices=732 | material=UI/Behemoth/Ink Surface
+Skin: PotionIconSlot_03 | Slot | (x:-56.00, y:-56.00, width:112.00, height:112.00) | nonblocking=True | hover=False | pressed=False | active=False | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: DirectionalGuardBar | GaugeTrack | (x:-84.00, y:-5.50, width:168.00, height:11.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: AttackNamePlate | Button | (x:-280.00, y:-40.00, width:560.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:-184.00, y:-10.00, width:368.00, height:20.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=40 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Right | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: PotionIconSlot_01 | Slot | (x:-56.00, y:-56.00, width:112.00, height:112.00) | nonblocking=True | hover=False | pressed=False | active=False | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: RunItemTooltip | Panel | (x:-360.00, y:-76.00, width:720.00, height:152.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=312 | material=UI/Behemoth/Ink Surface
+Skin: PlayerHpBar | GaugeTrack | (x:-184.00, y:-10.00, width:368.00, height:20.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=76 | material=UI/Behemoth/Ink Surface
+Skin: PlayerShieldBar | GaugeTrack | (x:-24.00, y:-140.00, width:48.00, height:280.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: RelicIconSlot_01 | Slot | (x:-56.00, y:-56.00, width:112.00, height:112.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Up | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: MonsterHpBar | GaugeTrack | (x:-84.00, y:-6.00, width:168.00, height:12.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=52 | material=UI/Behemoth/Ink Surface
+Skin: ChargeTimePlate | Button | (x:-200.00, y:-56.00, width:400.00, height:112.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Relic0 | Slot | (x:-32.00, y:-32.00, width:64.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=68 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:-24.00, y:-140.00, width:48.00, height:280.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface

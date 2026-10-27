@@ -1,0 +1,6 @@
+{
+  "rearVisibleChangesOutsideStraps": 0,
+  "frontVisibleChangesOutsideStraps": 0,
+  "pass": true,
+  "note": "Fully transparent RGB normalized to zero. Original arm/hand poses retained; only two leather-band polygons inserted per view."
+}

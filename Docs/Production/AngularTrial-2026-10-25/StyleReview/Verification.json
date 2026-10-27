@@ -1,0 +1,66 @@
+{
+  "scope": "Character images and local review board only",
+  "samurai": {
+    "selectedAsIs": true,
+    "sourceSha256": "453EFBDCEA32A2F9F60756C521868962CB26E8305295E4887A02A96827ED4390",
+    "nativeWidth": 1024,
+    "nativeHeight": 1536,
+    "byteIdenticalCopies": true,
+    "faceProportionsCostumeAlphaUnchanged": true
+  },
+  "finalBoardCopies": [
+    {
+      "id": "Warrior",
+      "boardMatchesFinal": true,
+      "sha256": "E51E6B299609C7E8C7695841FA4F20295B1EFEAF9616EACD9FBC220048114BD0"
+    },
+    {
+      "id": "Barbarian",
+      "boardMatchesFinal": true,
+      "sha256": "2DC008BF90622F48460EFD46B37F062A8BA56BF2E7C7117F2E9A1D6F7A9418AF"
+    },
+    {
+      "id": "Monk",
+      "boardMatchesFinal": true,
+      "sha256": "6AD6EECA0877DD863F7323E0BF04E5F44A99D55B0AFDC8F50F94399274E35796"
+    },
+    {
+      "id": "Samurai",
+      "boardMatchesFinal": true,
+      "sha256": "453EFBDCEA32A2F9F60756C521868962CB26E8305295E4887A02A96827ED4390"
+    },
+    {
+      "id": "Wizard",
+      "boardMatchesFinal": true,
+      "sha256": "5A62A36987ED4C01963075BE80FC4D233BBBDBC45D52232EB49DB8774BA059DF"
+    },
+    {
+      "id": "Rogue",
+      "boardMatchesFinal": true,
+      "sha256": "6F0E5ECAC1C4EBEB24217EEFFDB8C834B7AFD574763FA68F6CCC5ADDD37AB821"
+    }
+  ],
+  "rogueFace": {
+    "ComparedPixels": 38700,
+    "Mismatches": 0,
+    "Region": [
+      560,
+      125,
+      215,
+      180
+    ],
+    "Mode": "Read-only comparison of actual final PNG against original SourceRogue.png"
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8319/Docs/Production/AngularTrial-2026-10-25/StyleReview/Gallery.html",
+    "lineupGrey": "Visually inspected",
+    "lineupDark": "Visually inspected",
+    "samuraiCompare": "Selected character and final PNG loaded at native 1024x1536",
+    "originalReferences": "All nine complete with nonzero natural dimensions",
+    "screenshots": [
+      "AllSix-Corrected.png",
+      "AllSix-Dark.png"
+    ]
+  },
+  "runtime": "No gameplay or input mechanics changed; Unity runtime verification outside this image-board scope."
+}

@@ -29,7 +29,7 @@ namespace DungeonSlash
             backIcon = newBackIcon;
         }
 
-        public void Bind(RelativeDirection relative, FacingDirection absolute, bool available, Action<RelativeDirection> selected, Action<FacingDirection?> newHoverChanged = null)
+        public void Bind(RelativeDirection relative, FacingDirection absolute, bool available, Action<RelativeDirection> selected, Action<FacingDirection?> newHoverChanged = null, Vector2? artworkPosition = null)
         {
             ClearHover();
             hoverChanged = newHoverChanged;
@@ -38,7 +38,7 @@ namespace DungeonSlash
             if (!available) return;
 
             // Buttons stay in screen-relative slots; only their destination is converted from the player's Facing.
-            GetComponent<RectTransform>().anchoredPosition = arcade?relative switch
+            GetComponent<RectTransform>().anchoredPosition = arcade&&artworkPosition.HasValue?artworkPosition.Value:arcade?relative switch
             {RelativeDirection.Forward=>new Vector2(0,148),RelativeDirection.Back=>new Vector2(0,-80),RelativeDirection.Left=>new Vector2(-440,-12),_=>new Vector2(440,-12)}:PositionFor(relative);
             BindDirectionIcon(relative);
             button.interactable = true;

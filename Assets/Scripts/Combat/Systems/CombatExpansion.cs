@@ -80,15 +80,15 @@ namespace DungeonSlash
                 if (runtime.Data.pattern == MonsterPattern.LinkedHeart && string.IsNullOrEmpty(runtime.Data.supportId))
                 {
                     if (runtime.CurrentChargeAttack != null && !string.IsNullOrEmpty(runtime.CurrentChargeAttack.requiredSupportId) && !runtime.LivingSupports.Contains(runtime.CurrentChargeAttack.requiredSupportId))
-                    { runtime.EndCharge(); ClearWeakPointViews(monster); monster.View.ShowAttackName(GameText.Get("ui.combatexpansion.a17c6ce1"), 1f); }
+                    { runtime.EndCharge(); ClearWeakPointViews(monster); monster.View.ShowAttackName(GameText.Get("ui.combat.support.cancelled"), 1f); }
                     if (!runtime.HeartsBroken && !runtime.LivingSupports.Any())
-                    { runtime.HeartsBroken = true; runtime.EnterStun(); ClearWeakPointViews(monster); monster.View.ShowAttackName(GameText.Get("ui.combatexpansion.32dafe8b"), 1.5f); }
+                    { runtime.HeartsBroken = true; runtime.EnterStun(); ClearWeakPointViews(monster); monster.View.ShowAttackName(GameText.Get("ui.combat.support.broken"), 1.5f); }
                 }
                 if (runtime.Data.diesWithLeader && !activeMonsters.Any(item => item != monster && item.Runtime.IsAlive && !item.Runtime.Data.diesWithLeader)) { runtime.TakeDamage(runtime.CurrentHp); continue; }
                 if (runtime.Data.pattern == MonsterPattern.Orbit)
                 {
                     var angle = Player.CombatTime * runtime.Data.orbitSpeed + activeMonsters.IndexOf(monster) * Mathf.PI;
-                    var next = sceneView.MonsterPosition + new Vector2(Mathf.Cos(angle) * runtime.Data.orbitRadius, Mathf.Sin(angle) * 65f);
+                    var next = monster.BasePosition + new Vector2(Mathf.Cos(angle) * runtime.Data.orbitRadius, Mathf.Sin(angle) * 65f);
                     runtime.MoveWeakPoints(next - monster.Position); monster.Position = next; monster.View.Root.anchoredPosition = next - sceneView.MonsterPosition;
                 }
                 if (runtime.CounterAt > 0 && Player.CombatTime >= runtime.CounterAt)

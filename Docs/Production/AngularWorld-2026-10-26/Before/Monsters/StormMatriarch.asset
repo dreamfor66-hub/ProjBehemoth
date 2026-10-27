@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: StormMatriarch
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.stormmatriarch.displayname
+    lastText: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+  - propertyPath: encounterHint
+    key: data.monsterdata.stormmatriarch.encounterhint
+    lastText: 
+  textOwnerGuid: 5946ee0bd997e36448ff353d80ebfdde
+  displayName: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 3d2152a7ba86c5b40bbaa0927bfcdcda, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 580
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 60
+  goldReward: 28
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 5293973b13d6be14993a561b9d6906a6, type: 2}
+  - {fileID: 11400000, guid: 31551fe35b0ed3947a1a7f037ecd2ff3, type: 2}
+  bodyColor: {r: 0.48, g: 0.8, b: 0.6464, a: 1}

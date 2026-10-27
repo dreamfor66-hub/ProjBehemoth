@@ -1,0 +1,6 @@
+워리어: sourceFootY=1501, renderedFootY=590.000, scale=0.31469
+로그: sourceFootY=1316, renderedFootY=590.000, scale=0.35599
+바바리안: sourceFootY=1525, renderedFootY=590.000, scale=0.34304
+사무라이: sourceFootY=1514, renderedFootY=590.000, scale=0.31743
+몽크: sourceFootY=1494, renderedFootY=590.000, scale=0.32856
+위자드: sourceFootY=1515, renderedFootY=590.000, scale=0.30418

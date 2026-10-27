@@ -1,0 +1,51 @@
+[
+  {
+    "id": "RogueFront05",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Before/Rogue-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit, identity-preserve. Image1 exact Rogue is edit target; Images2/3 original STYLE authorities. ONLY alter the nearer arm on IMAGE LEFT to raise its REVERSE-GRIP dagger so weapon is visible in the upper-body selection crop. Bend that elbow naturally and lift fist beside outer left shoulder at approximate x245,y315, clear of hood/face. Dagger is held ICE-PICK REVERSE GRIP: pommel above thumb/index side of closed fist, short guard and straight blade emerge BELOW little-finger side, blade points diagonally downward and outward to image LEFT near x130,y515. The weapon remains a SHORT DAGGER not sword, straight blade aligns with hilt through grasp, visible4fingers and opposing thumb, wrist neutral along forearm. Do NOT accidentally switch to forward grip or make blade emerge through thumb/index side. Upper arm connects naturally from original sleeve and shoulder, forearm rises with believable elbow, no broken/extra arm. Preserve EXACT original face/eyes/smirking mouth-corner/fringe/hood angle and position; face absolutely cannot be redrawn or beautified, it will be pixel-restored. Keep original crouch/body proportions, red sash, entire other image-right arm and lowered dagger, boots and whole canvas1024x1536. Do not move head or body. Bold dark lines and few broad muted flat shadows as original; no extra detail, glow, text or background. True transparent alpha."
+  },
+  {
+    "id": "ShieldPlain07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Sources/ShieldPlain06.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Warrior.png"
+    ],
+    "prompt": "Use case: style-transfer precise equipment edit. Image1 isolated INNER shield is edit target; Image2 ORIGINAL approved Warrior is the exact STYLE/COLOR authority. Current shield looks like a different illustration pasted on him. Keep EXACT silhouette, rim, rivet positions, wood-plank layout, object location and1024x1536 transparent canvas. NO straps, no boss, no arms. Repaint only surface/line treatment to match original: muted dusty brown wood base approximately RGB124,94,70, shadow99,75,58, small highlight143,113,86. Iron subdued neutral grey base96,94,92 shadow72,70,68 light130,127,120. Big flat masses, at most2-3 tones per material. Remove ALL dense triangular grain, little chip facets, shiny bevel sparkles, gradients/halo. Use only one or two broad wooden shadow patches, sparse plank seams. Steel rim one broad light plane and one broad dark plane; no tiny triangles. Crucially this asset will be reduced to about35% size: bold irregular BLACK outer silhouette must be about18-22 pixels thick in this1024px source so final line weight matches original Warrior, not thin sticker lines. Sparse interior linework. Not clean vector geometric polish, keep confidently hand drawn outlines. True alpha, no backdrop/text/glow. Do not move or resize any outline."
+  },
+  {
+    "id": "ShieldLoops07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Sources/ShieldInner06.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Warrior.png"
+    ],
+    "prompt": "Use case: style-transfer precise equipment edit. Image1 isolated INNER shield WITH TWO LEATHER LOOPS is edit target; Image2 ORIGINAL approved Warrior is exact STYLE/COLOR authority. Keep EXACT1024x1536 canvas, silhouette, panel location, wood seams, both mounting-loop and tab positions/shapes unchanged (loops around x420..720,y447..622 and y768..926). Repaint only to match original restrained cartoon: dusty muted brown wood RGB124,94,70 with only one broad darker tone; leather brown RGB93,72,54 with one flat underside shadow and NO triangular shiny faceting. Neutral iron grey around96,94,92 with broad simple light/shadow. Remove complex wood grain/triangles, tiny rim chips, over-rendered bevels and glossy edges. Bold irregular black outline18-22px source width so at35% scale it matches original Warrior's thick line; straps/source loop edges similarly bold16-18px, sparse interior lines. At most2-3 broad flat tones per material. Keep hardware structurally attached to wood, inner face has NO exterior metal boss, no hands or arms. True alpha, no glow/text/background. Do not change any geometry or shift either loop."
+  },
+  {
+    "id": "WizardRear07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Review07/Before-Wizard-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Front.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 rear combat Wizard with held staff and owl is edit target; Image2 identity/style reference. Fix ONLY LEFT-HAND BOOK and that left forearm. Current open-book hinge/perspective and single-hand support are implausible. For clear physical logic, CLOSE the spellbook in combat: one sturdy CLOSED brown book with two parallel covers and ONE cream page block between them, coherent slight 3/4 perspective, a single straight bound spine joining covers. Hold this closed book securely against left side/lower ribs, cradled from BELOW by left palm, thumb over near cover edge and FOUR fingers curl under bottom edge/onto cover. Hand is touching and supporting the actual book, neutral wrist linked naturally to sleeve, no floating cover, no mismatched open pages. Book can be slightly upright but weight must sit over hand, not balance at a remote corner. Keep exactly original head, owl on left shoulder, blue cloak, burgundy robe, waist dagger and right hand HOLDING the same perfectly straight upright brown staff. DO NOT move staff back onto back. No extra book/page wedges. Keep1448x1086 waistup framing and scale. Bold hand-drawn dark lines and few broad muted flat tones matching original. True alpha no glow/background/text."
+  },
+  {
+    "id": "WizardFront07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Review07/Before-Wizard-Front.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Exact attached front elder Wizard+owl is edit target. Fix ONLY book and hands for clear plausible structure. Use a CLOSED brown spellbook held comfortably against lower chest: two parallel covers, ONE cream page block and one straight binding/spine, coherent slight 3/4 perspective. Left forearm supports book from underneath with palm under lower edge, right hand rests naturally over front cover/outer edge, fingers actually touching the book, thumbs oppose when gripping. No floating hands, separate page stacks, distorted hinges, extra fingertips or twisted wrists. Closed book is a simple solid object, not open or being read. This supports his already correct lifted gaze and warm eye contact with the little owl on image-right shoulder. Preserve EXACT head, eyes, expression, grey hair/beard and owl, blue cloak/burgundy tunic, staff on back, waist dagger, legs/boots,1024x1536 framing and body proportions. Do not redraw face or change eye line. Restrained bold cartoon style, few broad flat shadows, no ornamentation, gradients, text/glow/background. True alpha."
+  },
+  {
+    "id": "BarbarianRear07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Review07/Before-Barbarian-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Concepts/BarbarianBearPelt04.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit. This is a stationary fantasy COSTUME AND EQUIPMENT illustration, no action, no opponent, no violence. Edit Image1's rear upperbody figure only to repair his carried axe's construction; Image2 supplies approved equipment shape and colours. Keep same bear hood/pelt, human arms and waist-up framing. Reposition axe upright beside right shoulder. Its metal central eye, cylindrical collar and entire wooden handle MUST form ONE STRAIGHT VERTICAL LINE at x1150: metal eye centre(1150,330), collar centre(1150,520), wood at(1150,600), hand centre(1150,760) and handle end(1150,1010). Two broad curved steel sides attach to either side of that central eye, no side-mounted or crooked socket. Keep tool completely inside canvas approximately x960..1400,y130..1010. Right hand wraps around handle with four fingers and opposing thumb; wrist neutral, forearm connects naturally from same elbow. No separate handle segment, no angled collar, no bent shaft. Left hand remains naturally hidden in front of torso. Preserve rest exactly, no full-body legs. Broad few flat colour masses and thick hand-drawn outline matching references, no tiny triangular shading. Transparent1448x1086, no floor/background/glow/text."
+  }
+]

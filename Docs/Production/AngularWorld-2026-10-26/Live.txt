@@ -1,0 +1,578 @@
+
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE
+
+WORLD live saved MainGameScene
+PASS door mask=0, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=West; adjacent unconnected rooms stay walls
+PASS LanternImp artwork + localized identity
+PASS LanternImp authored charge weak points
+PASS BoneScorpion artwork + localized identity
+PASS BoneScorpion sequence step 0
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion sequence step 1
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion sequence step 2
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion sequence step 3
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion authored charge weak points
+PASS StringRevenant artwork + localized identity
+PASS StringRevenant authored charge weak points
+PASS CoffinSlime artwork + localized identity
+PASS CoffinSlime authored charge weak points
+PASS BellHound artwork + localized identity
+PASS BellHound authored charge weak points
+PASS EttinGatekeeper artwork + localized identity
+PASS EttinGatekeeper sequence step 0
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper sequence step 1
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper sequence step 2
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper sequence step 3
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper authored charge weak points
+PASS MirrorShell artwork + localized identity
+PASS MirrorShell authored charge weak points
+PASS IronMantis artwork + localized identity
+PASS IronMantis sequence step 0
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis sequence step 1
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis sequence step 2
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis sequence step 3
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis authored charge weak points
+PASS StoneSphinx artwork + localized identity
+PASS StoneSphinx authored charge weak points
+PASS OssuaryBell artwork + localized identity
+PASS OssuaryBell authored charge weak points
+PASS WebDuchess artwork + localized identity
+PASS WebDuchess authored charge weak points
+PASS Threadling artwork + localized identity
+PASS Threadling authored charge weak points
+PASS QuillSprite artwork + localized identity
+PASS QuillSprite authored charge weak points
+PASS CrystalUrchin artwork + localized identity
+PASS CrystalUrchin authored charge weak points
+PASS VeilOracle artwork + localized identity
+PASS VeilOracle authored charge weak points
+PASS TuskPilgrim artwork + localized identity
+PASS TuskPilgrim authored charge weak points
+PASS BellHare artwork + localized identity
+PASS BellHare authored charge weak points
+PASS TwinAntlerStag artwork + localized identity
+PASS TwinAntlerStag sequence step 0
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag sequence step 1
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag sequence step 2
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag sequence step 3
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag authored charge weak points
+PASS MirrorMoth artwork + localized identity
+PASS MirrorMoth authored charge weak points
+PASS MaskedChoir artwork + localized identity
+PASS MaskedChoir authored charge weak points
+PASS WinterUnicorn artwork + localized identity
+PASS WinterUnicorn authored charge weak points
+PASS PrismCrab artwork + localized identity
+PASS PrismCrab authored charge weak points
+PASS TempestRoc artwork + localized identity
+PASS TempestRoc sequence step 0
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc sequence step 1
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc sequence step 2
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc sequence step 3
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc authored charge weak points
+PASS StormJelly artwork + localized identity
+PASS StormJelly authored charge weak points
+PASS CoalSalamander artwork + localized identity
+PASS CoalSalamander authored charge weak points
+PASS SerpentWarden artwork + localized identity
+PASS SerpentWarden sequence step 0
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden sequence step 1
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden sequence step 2
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden sequence step 3
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden authored charge weak points
+PASS AshGargoyle artwork + localized identity
+PASS AshGargoyle authored charge weak points
+PASS HollowEye artwork + localized identity
+PASS HollowEye authored charge weak points
+PASS CenserRevenant artwork + localized identity
+PASS CenserRevenant authored charge weak points
+PASS OathlessCentaur artwork + localized identity
+PASS OathlessCentaur authored charge weak points
+PASS CrimsonCount artwork + localized identity
+PASS CrimsonCount authored charge weak points
+PASS AshHierophant artwork + localized identity
+PASS AshHierophant authored charge weak points
+PASS AshDragon artwork + localized identity
+PASS AshDragon sequence step 0
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon sequence step 1
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon sequence step 2
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon sequence step 3
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon authored charge weak points
+PASS EclipseChimera artwork + localized identity
+PASS EclipseChimera authored charge weak points
+PASS SunIdol artwork + localized identity
+PASS MoonIdol artwork + localized identity
+PASS CinderLich artwork + localized identity
+PASS CinderLich authored charge weak points
+PASS IronMimic artwork + localized identity
+PASS IronMimic authored charge weak points
+PASS GildedToad artwork + localized identity
+PASS GildedToad authored charge weak points
+PASS TarrasqueWhelp artwork + localized identity
+PASS TarrasqueWhelp sequence step 0
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp sequence step 1
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp sequence step 2
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp sequence step 3
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp authored charge weak points
+PASS CrownColossus artwork + localized identity
+PASS CrownColossus authored charge weak points
+WORLD COMPLETE. Full balance/DPS regression and real-device input unrun.
+
+WORLD live saved MainGameScene
+PASS door mask=0, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=West; adjacent unconnected rooms stay walls
+PASS LanternImp artwork + localized identity
+PASS LanternImp authored charge weak points
+PASS BoneScorpion artwork + localized identity
+PASS BoneScorpion sequence step 0
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion sequence step 1
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion sequence step 2
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion sequence step 3
+PASS BoneScorpion normal action resolves
+PASS BoneScorpion original per-action damage budget
+PASS BoneScorpion authored charge weak points
+PASS StringRevenant artwork + localized identity
+PASS StringRevenant authored charge weak points
+PASS CoffinSlime artwork + localized identity
+PASS CoffinSlime authored charge weak points
+PASS BellHound artwork + localized identity
+PASS BellHound authored charge weak points
+PASS EttinGatekeeper artwork + localized identity
+PASS EttinGatekeeper sequence step 0
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper sequence step 1
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper sequence step 2
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper sequence step 3
+PASS EttinGatekeeper normal action resolves
+PASS EttinGatekeeper original per-action damage budget
+PASS EttinGatekeeper authored charge weak points
+PASS MirrorShell artwork + localized identity
+PASS MirrorShell authored charge weak points
+PASS IronMantis artwork + localized identity
+PASS IronMantis sequence step 0
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis sequence step 1
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis sequence step 2
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis sequence step 3
+PASS IronMantis normal action resolves
+PASS IronMantis original per-action damage budget
+PASS IronMantis authored charge weak points
+PASS StoneSphinx artwork + localized identity
+PASS StoneSphinx authored charge weak points
+PASS OssuaryBell artwork + localized identity
+PASS OssuaryBell authored charge weak points
+PASS WebDuchess artwork + localized identity
+PASS WebDuchess authored charge weak points
+PASS Threadling artwork + localized identity
+PASS Threadling authored charge weak points
+PASS QuillSprite artwork + localized identity
+PASS QuillSprite authored charge weak points
+PASS CrystalUrchin artwork + localized identity
+PASS CrystalUrchin authored charge weak points
+PASS VeilOracle artwork + localized identity
+PASS VeilOracle authored charge weak points
+PASS TuskPilgrim artwork + localized identity
+PASS TuskPilgrim authored charge weak points
+PASS BellHare artwork + localized identity
+PASS BellHare authored charge weak points
+PASS TwinAntlerStag artwork + localized identity
+PASS TwinAntlerStag sequence step 0
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag sequence step 1
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag sequence step 2
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag sequence step 3
+PASS TwinAntlerStag normal action resolves
+PASS TwinAntlerStag original per-action damage budget
+PASS TwinAntlerStag authored charge weak points
+PASS MirrorMoth artwork + localized identity
+PASS MirrorMoth authored charge weak points
+PASS MaskedChoir artwork + localized identity
+PASS MaskedChoir authored charge weak points
+PASS WinterUnicorn artwork + localized identity
+PASS WinterUnicorn authored charge weak points
+PASS PrismCrab artwork + localized identity
+PASS PrismCrab authored charge weak points
+PASS TempestRoc artwork + localized identity
+PASS TempestRoc sequence step 0
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc sequence step 1
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc sequence step 2
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc sequence step 3
+PASS TempestRoc normal action resolves
+PASS TempestRoc original per-action damage budget
+PASS TempestRoc authored charge weak points
+PASS StormJelly artwork + localized identity
+PASS StormJelly authored charge weak points
+PASS CoalSalamander artwork + localized identity
+PASS CoalSalamander authored charge weak points
+PASS SerpentWarden artwork + localized identity
+PASS SerpentWarden sequence step 0
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden sequence step 1
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden sequence step 2
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden sequence step 3
+PASS SerpentWarden normal action resolves
+PASS SerpentWarden original per-action damage budget
+PASS SerpentWarden authored charge weak points
+PASS AshGargoyle artwork + localized identity
+PASS AshGargoyle authored charge weak points
+PASS HollowEye artwork + localized identity
+PASS HollowEye authored charge weak points
+PASS CenserRevenant artwork + localized identity
+PASS CenserRevenant authored charge weak points
+PASS OathlessCentaur artwork + localized identity
+PASS OathlessCentaur authored charge weak points
+PASS CrimsonCount artwork + localized identity
+PASS CrimsonCount authored charge weak points
+PASS AshHierophant artwork + localized identity
+PASS AshHierophant authored charge weak points
+PASS AshDragon artwork + localized identity
+PASS AshDragon sequence step 0
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon sequence step 1
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon sequence step 2
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon sequence step 3
+PASS AshDragon normal action resolves
+PASS AshDragon original per-action damage budget
+PASS AshDragon authored charge weak points
+PASS EclipseChimera artwork + localized identity
+PASS EclipseChimera authored charge weak points
+PASS SunIdol artwork + localized identity
+PASS MoonIdol artwork + localized identity
+PASS CinderLich artwork + localized identity
+PASS CinderLich authored charge weak points
+PASS IronMimic artwork + localized identity
+PASS IronMimic authored charge weak points
+PASS GildedToad artwork + localized identity
+PASS GildedToad authored charge weak points
+PASS TarrasqueWhelp artwork + localized identity
+PASS TarrasqueWhelp sequence step 0
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp sequence step 1
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp sequence step 2
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp sequence step 3
+PASS TarrasqueWhelp normal action resolves
+PASS TarrasqueWhelp original per-action damage budget
+PASS TarrasqueWhelp authored charge weak points
+PASS CrownColossus artwork + localized identity
+PASS CrownColossus authored charge weak points
+WORLD COMPLETE. Full balance/DPS regression and real-device input unrun.
+
+VISUAL revised layout + hero pointer-input checks
+PASS Warrior native rear artwork
+PASS Warrior production pointer swipe hits relocated target
+FAIL Warrior guard artwork responds
+PASS Rogue native rear artwork
+PASS Rogue production pointer swipe hits relocated target
+FAIL Rogue guard artwork responds
+PASS Barbarian native rear artwork
+PASS Barbarian production pointer swipe hits relocated target
+FAIL Barbarian guard artwork responds
+PASS Samurai native rear artwork
+PASS Samurai production pointer swipe hits relocated target
+FAIL Samurai guard artwork responds
+PASS Monk native rear artwork
+PASS Monk production pointer swipe hits relocated target
+FAIL Monk guard artwork responds
+PASS Wizard native rear artwork
+PASS Wizard production pointer swipe hits relocated target
+FAIL Wizard guard artwork responds
+PASS controller resolves first sequence action and advances
+PASS controller resolves slower second action and wraps
+PASS charge weak points follow relocated body
+VISUAL COMPLETE
+
+VISUAL revised layout + hero pointer-input checks
+PASS Warrior native rear artwork
+PASS Warrior production pointer swipe hits relocated target
+PASS Warrior guard artwork responds
+PASS Rogue native rear artwork
+PASS Rogue production pointer swipe hits relocated target
+PASS Rogue guard artwork responds
+PASS Barbarian native rear artwork
+PASS Barbarian production pointer swipe hits relocated target
+PASS Barbarian guard artwork responds
+PASS Samurai native rear artwork
+PASS Samurai production pointer swipe hits relocated target
+PASS Samurai guard artwork responds
+PASS Monk native rear artwork
+PASS Monk production pointer swipe hits relocated target
+PASS Monk guard artwork responds
+PASS Wizard native rear artwork
+PASS Wizard production pointer swipe hits relocated target
+PASS Wizard guard artwork responds
+PASS controller resolves first sequence action and advances
+PASS controller resolves slower second action and wraps
+PASS charge weak points follow relocated body
+VISUAL COMPLETE
+
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE
+
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE
+
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE
+
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE
+
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE

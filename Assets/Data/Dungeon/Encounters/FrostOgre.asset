@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.frostogre.displayname
-    lastText: "\uC11C\uB9AC \uAC70\uC778"
+    lastText: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
   - propertyPath: hint
     key: data.encounterdata.frostogre.hint
-    lastText: 
+    lastText: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   textOwnerGuid: e051fb19596681840888b2eb625f86cf
   id: FrostOgre
-  displayName: "\uC11C\uB9AC \uAC70\uC778"
-  hint: 
+  displayName: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
+  hint: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+    \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   category: 8
   members:
   - monster: {fileID: 11400000, guid: b07761a94d2640a41ad472aecfdca930, type: 2}

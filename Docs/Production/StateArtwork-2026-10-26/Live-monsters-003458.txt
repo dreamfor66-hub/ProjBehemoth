@@ -1,0 +1,92 @@
+Scoped original 3/4/2 state-image contract; production actions and existing Unity Editor.
+PASS Monster-LanternImp exact distinct state images; no mesh-motion substitute
+PASS Monster-LanternImp Idle
+PASS Monster-LanternImp real normal windup switches Ready
+PASS Monster-LanternImp real normal hit switches Attack
+PASS Monster-LanternImp lethal damage switches Dead before fade
+PASS Monster-BoneScorpion exact distinct state images; no mesh-motion substitute
+PASS Monster-BoneScorpion Idle
+PASS Monster-BoneScorpion real normal windup switches Ready
+PASS Monster-BoneScorpion real normal hit switches Attack
+PASS Monster-BoneScorpion lethal damage switches Dead before fade
+PASS Monster-StringRevenant exact distinct state images; no mesh-motion substitute
+PASS Monster-StringRevenant Idle
+PASS Monster-StringRevenant real normal windup switches Ready
+PASS Monster-StringRevenant real normal hit switches Attack
+PASS Monster-StringRevenant lethal damage switches Dead before fade
+PASS Monster-CoffinSlime exact distinct state images; no mesh-motion substitute
+PASS Monster-CoffinSlime Idle
+PASS Monster-CoffinSlime real normal windup switches Ready
+PASS Monster-CoffinSlime real normal hit switches Attack
+PASS Monster-CoffinSlime lethal damage switches Dead before fade
+PASS Monster-BellHound exact distinct state images; no mesh-motion substitute
+PASS Monster-BellHound Idle
+PASS Monster-BellHound real normal windup switches Ready
+PASS Monster-BellHound real normal hit switches Attack
+PASS Monster-BellHound lethal damage switches Dead before fade
+PASS Monster-EttinGatekeeper exact distinct state images; no mesh-motion substitute
+PASS Monster-EttinGatekeeper Idle
+PASS Monster-EttinGatekeeper real normal windup switches Ready
+PASS Monster-EttinGatekeeper real normal hit switches Attack
+PASS Monster-EttinGatekeeper lethal damage switches Dead before fade
+PASS Monster-MirrorShell exact distinct state images; no mesh-motion substitute
+PASS Monster-MirrorShell Idle
+PASS Monster-MirrorShell real normal windup switches Ready
+PASS Monster-MirrorShell real normal hit switches Attack
+PASS Monster-MirrorShell lethal damage switches Dead before fade
+PASS Monster-IronMantis exact distinct state images; no mesh-motion substitute
+PASS Monster-IronMantis Idle
+PASS Monster-IronMantis real normal windup switches Ready
+PASS Monster-IronMantis real normal hit switches Attack
+PASS Monster-IronMantis lethal damage switches Dead before fade
+PASS Monster-StoneSphinx exact distinct state images; no mesh-motion substitute
+PASS Monster-StoneSphinx Idle
+PASS Monster-StoneSphinx real normal windup switches Ready
+PASS Monster-StoneSphinx real normal hit switches Attack
+PASS Monster-StoneSphinx lethal damage switches Dead before fade
+PASS Monster-OssuaryBell exact distinct state images; no mesh-motion substitute
+PASS Monster-OssuaryBell Idle
+PASS Monster-OssuaryBell real normal windup switches Ready
+PASS Monster-OssuaryBell real normal hit switches Attack
+PASS Monster-OssuaryBell lethal damage switches Dead before fade
+PASS Monster-WebDuchess exact distinct state images; no mesh-motion substitute
+PASS Monster-WebDuchess Idle
+PASS Monster-WebDuchess real normal windup switches Ready
+PASS Monster-WebDuchess real normal hit switches Attack
+PASS Monster-WebDuchess lethal damage switches Dead before fade
+PASS Monster-Threadling exact distinct state images; no mesh-motion substitute
+PASS Monster-Threadling Idle
+PASS Monster-Threadling real normal windup switches Ready
+FAIL Monster-Threadling real normal hit switches Attack
+FAIL Monster-Threadling lethal damage switches Dead before fade
+PASS Monster-QuillSprite exact distinct state images; no mesh-motion substitute
+PASS Monster-QuillSprite Idle
+PASS Monster-QuillSprite real normal windup switches Ready
+PASS Monster-QuillSprite real normal hit switches Attack
+PASS Monster-QuillSprite lethal damage switches Dead before fade
+PASS Monster-VeilOracle exact distinct state images; no mesh-motion substitute
+PASS Monster-VeilOracle Idle
+PASS Monster-VeilOracle real normal windup switches Ready
+PASS Monster-VeilOracle real normal hit switches Attack
+PASS Monster-VeilOracle lethal damage switches Dead before fade
+PASS Monster-TuskPilgrim exact distinct state images; no mesh-motion substitute
+PASS Monster-TuskPilgrim Idle
+PASS Monster-TuskPilgrim real normal windup switches Ready
+PASS Monster-TuskPilgrim real normal hit switches Attack
+PASS Monster-TuskPilgrim lethal damage switches Dead before fade
+PASS Monster-BellHare exact distinct state images; no mesh-motion substitute
+PASS Monster-BellHare Idle
+PASS Monster-BellHare real normal windup switches Ready
+PASS Monster-BellHare real normal hit switches Attack
+PASS Monster-BellHare lethal damage switches Dead before fade
+PASS Monster-TwinAntlerStag exact distinct state images; no mesh-motion substitute
+PASS Monster-TwinAntlerStag Idle
+PASS Monster-TwinAntlerStag real normal windup switches Ready
+PASS Monster-TwinAntlerStag real normal hit switches Attack
+PASS Monster-TwinAntlerStag lethal damage switches Dead before fade
+PASS Monster-MirrorMoth exact distinct state images; no mesh-motion substitute
+PASS Monster-MirrorMoth Idle
+PASS Monster-MirrorMoth real normal windup switches Ready
+PASS Monster-MirrorMoth real normal hit switches Attack
+PASS Monster-MirrorMoth lethal damage switches Dead before fade
+COMPLETE

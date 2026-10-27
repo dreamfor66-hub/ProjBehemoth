@@ -1,0 +1,2 @@
+playing=False
+scene=Assets/Scenes/MainGameScene.unity

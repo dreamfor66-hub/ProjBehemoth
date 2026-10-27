@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B1_Boss_MazeGuardian
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b1_boss_mazeguardian.displayname
+    lastText: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b1_boss_mazeguardian.encounterhint
+    lastText: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4
+      \uAC15\uD0C0\uB97C \uB04A\uC790."
+  textOwnerGuid: fb0cdacf025fd12468b40e7cc65b2ae7
+  displayName: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
+  portrait: {fileID: 21300000, guid: cf0020e73503ffc4d8c0aa80b5cd319f, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 26de35651a18c334a884f49a67a281b0, type: 2}
+  encounterHint: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4
+    \uAC15\uD0C0\uB97C \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 900
+  normalAttackInterval: 2.25
+  chargeInterval: 5.2
+  stunDuration: 4.5
+  stunDamageMultiplier: 1.65
+  experienceReward: 100
+  goldReward: 11
+  bodyHitRadius: 108
+  attacks:
+  - {fileID: 11400000, guid: 7c51db371df73224d901ccddb97f8ee4, type: 2}
+  - {fileID: 11400000, guid: 8bcc1bfd690bf3c43a63d3d6df0cd6ae, type: 2}
+  - {fileID: 11400000, guid: 56bae6f926e578048abb544ca89110e9, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.9, g: 0.18, b: 0.12, a: 1}

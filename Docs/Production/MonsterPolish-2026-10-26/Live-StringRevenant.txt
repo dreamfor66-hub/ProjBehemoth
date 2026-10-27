@@ -1,0 +1,3 @@
+Scoped live visual review of monster artwork; no balance suite.
+PASS StringRevenant: localized name, production sprite and visible combat art.
+COMPLETE

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: FrostQueen
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.frostqueen.displayname
+    lastText: "\uC11C\uB9AC \uC5EC\uC655"
+  - propertyPath: hint
+    key: data.encounterdata.frostqueen.hint
+    lastText: 
+  textOwnerGuid: 437c56cb53f318245a5de6d944d5f635
+  id: FrostQueen
+  displayName: "\uC11C\uB9AC \uC5EC\uC655"
+  hint: 
+  category: 10
+  members:
+  - monster: {fileID: 11400000, guid: 54667eccb06d98746b603f33af299ab8, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

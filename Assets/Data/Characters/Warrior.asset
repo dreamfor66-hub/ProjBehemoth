@@ -32,12 +32,12 @@ MonoBehaviour:
   selectionAbility: "\uBC29\uD328\uB85C \uACF5\uACA9\uC744 \uB9C9\uACE0\r\n\uBE48\uD2C8\uC5D0
     \uCC28\uC9C0\uB97C \uAF42\uB294\uB2E4."
   characterColor: {r: 0.88, g: 0.7, b: 0.4, a: 1}
-  portrait: {fileID: 21300000, guid: ead3f36d802a529d820d3861003ce080, type: 3}
+  portrait: {fileID: 21300000, guid: 32ca8630756071343a14f31537cf2b44, type: 3}
   selectionIllustration: {fileID: 21300000, guid: f4043736ae85ed54eba4165b5f548781, type: 3}
-  selectionMaterial: {fileID: 2100000, guid: f134d542c9dc68f49a73bd57ee7a5248, type: 2}
+  selectionMaterial: {fileID: 0}
   selectionBackdrop: {r: 0.047058824, g: 0.09803922, b: 0.19607843, a: 1}
-  combatSprite: {fileID: 21300000, guid: 341a8f7765165227857d8ab60bcf3c02, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 105e1c74d5ad8ed48bd0597bc7dfe974, type: 2}
+  combatSprite: {fileID: 21300000, guid: cd6cfa4549bd5734d9a5df413810f43c, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 6044f8620bc2a8d4096cfb2a093487d1, type: 2}
   gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
   startingRelic: {fileID: 11400000, guid: 0681921da450dae449d0b24a76aa81fa, type: 2}
   startingSpells: []

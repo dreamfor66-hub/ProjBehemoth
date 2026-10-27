@@ -1,0 +1,37 @@
+{
+  "mode": "built-in image_gen edit",
+  "edits": [
+    {
+      "id": "WarriorHelmet02",
+      "refs": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Warrior-Portrait.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input1 EDIT TARGET exact Warrior rear upper-body cutout; input2 is authoritative FRONT portrait of the SAME HELMET, not an extra character. Correct ONLY the helmet geometry in input1 to be a physically plausible STRICT REAR VIEW of the front portrait helmet. The portrait shows a tall asymmetric faceted skull bowl, sloping crown with a raised angled ridge, a flared low rim and a separate articulated visor attached at the TEMPLES. Its REAR must therefore show the continuous wraparound skull bowl with broad sloping crown facets, a subtle curved/angled occipital break narrowing toward the nape, and a modest outward-flared lower neck rim above the yellow scarf. Remove the current false paired triangular cheek/visor plates with two rivets that have been copied onto the back: visor plates belong on the FRONT/SIDES and should not appear as two frontal ears on the rear. Only tiny hinge edges at extreme sides if physically visible. Avoid a flat pentagonal sign, shield-like rear plate, vertical symmetric castle helmet, new segmented armour, decorative spikes. Read shape from 3-4 large grey steel planes with bold dark contour, restrained simple illustration, matching input2 crown height/angle and helmet width. Wearer still faces STRAIGHT AHEAD away from camera, no face/eyes/sideways visor. Same exact canvas 1448x1086 and same head center. Every pixel OUTSIDE helmet region x=500..890,y=45..340 must stay unchanged: body, yellow scarf, ragged olive cloak, arms, shield and sword remain exact. True transparent alpha. No scenery/words/glow/extra faceting."
+    },
+    {
+      "id": "BarbarianRage02",
+      "refs": [
+        "E:/Github/Proj_Behemoth/Assets/Art/Concepts/BarbarianBearPelt01.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Barbarian.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+      ],
+      "prompt": "Use case: identity-preserve character concept edit. Input1 EDIT TARGET the existing HUMAN bear-pelt barbarian. Input2 is the original LIZARD character used ONLY for his swaggering, boisterous street-brawler personality, NOT species/costume. Inputs3/4 original drawing-style authority. Keep the recognisable brown bear head pelt over his head and shoulders, dark hair and short full beard, broad muscular human, leather belt, olive ragged trousers, boots and one massive TWO-HANDED battleaxe. Change his calm solemn stoic personality into an exuberant dangerous BERSERKER: a wide tooth-baring laughing battle roar, sharply lowered fierce eyebrows, bright narrowed eyes fully visible below bear hood, raised cheek corners, cocky tilted head, intense joy in fighting; rage and bold hooligan swagger, not a quiet noble warrior. A forceful wide planted stance, torso leaning into the fight with a little twist, hunched powerful shoulders and flexed arms, pelt silhouette reacting with a few big flares. Keep BOTH hands firmly wrapped around one clearly continuous absolutely straight wooden axe haft, axe blade/head collinear with haft; no warped handle, no detached hands, no extra fingers. Prefer a big readable open mouth and simple teeth band over detailed anatomical grimacing. Keep compressed torso, large head/hands/feet in same cast, FULL BODY portrait 2:3 canvas with axe and boots fully inside 5% margin. Simplify rather than add armour/belts/ornaments. Broad flat restrained brown/olive/skin colours with just a few large shadow masses, bold lively dark contours, selective internal lines. No dense small muscle facets, anime handsome slim body, glossy polished rendering or realistic fur strands. Transparent background with clean solid silhouette and ZERO soft glow/halo/haze/vignette, no floor/shadow/text/signature. No magic/red aura: convey rage entirely through expression, posture and gesture."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "WarriorHelmet02",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-0653408a-46f2-4831-966f-334e68366800.png"
+    },
+    {
+      "id": "BarbarianRage02",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-b18c06d4-e9d2-49de-a38d-db73aa6f2b25.png"
+    }
+  ],
+  "warriorApplied": "Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+  "barbarianAlternative": "Assets/Art/Concepts/BarbarianBearPelt02.png",
+  "originalBarbarianConcept": "Assets/Art/Concepts/BarbarianBearPelt01.png",
+  "composition": "Copy generated helmet region only into prior rear. Outside head remains exact. Preserve original approved front six and separate calm concept."
+}

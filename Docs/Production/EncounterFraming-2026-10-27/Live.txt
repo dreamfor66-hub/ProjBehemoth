@@ -1,0 +1,13 @@
+Existing Unity Editor; real GameFlow BeginCombatEvent coroutine with practice clone.
+PASS encounter announcement is visible while framing starts
+PASS combat AI/input remain inactive during announcement
+PASS player position interpolates during announcement
+PASS player size interpolates during announcement
+PASS framing completes before announcement ends
+PASS framing reaches authored combat pose under announcement
+PASS combat starts only after announcement closes
+PASS combat start does not restart or reverse framing
+PASS short announcement waits for unfinished framing, even at timeScale=0
+PASS short announcement starts combat with framing finished
+PASS cancel/reset during announcement restores original framing
+COMPLETE failures=0. No balance suite.

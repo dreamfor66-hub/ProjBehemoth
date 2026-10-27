@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: TuskPilgrim
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 36654e0a57dbc8a48b809bb4a5c79017, type: 3}
+  attack: {fileID: 21300000, guid: 8c91d0a5a3259cd4ea51c6c304123f76, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: c6b727ffd402f034db36207bc35cddb4, type: 3}
+  dead: {fileID: 21300000, guid: af1dd0a558585214fb81420f06e3892b, type: 3}
+  canvasScale: 1
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -66.49999}
+  labelHeight: 208.5
+  readyTilt: -4
+  attackTilt: 7
+  attackOffset: {x: 0, y: -18}

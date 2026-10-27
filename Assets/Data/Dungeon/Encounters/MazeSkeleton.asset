@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.mazeskeleton.displayname
-    lastText: "\uBBF8\uAD81\uC758 \uD574\uACE8"
+    lastText: "\uD574\uACE8 \uC804\uC0AC"
   - propertyPath: hint
     key: data.encounterdata.mazeskeleton.hint
-    lastText: 
+    lastText: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790."
   textOwnerGuid: 5eedea4ca5f6d9047a127080f434d72e
   id: MazeSkeleton
-  displayName: "\uBBF8\uAD81\uC758 \uD574\uACE8"
-  hint: 
+  displayName: "\uD574\uACE8 \uC804\uC0AC"
+  hint: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+    \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: f71f3849353c3a741b7371d1d3419ed1, type: 2}

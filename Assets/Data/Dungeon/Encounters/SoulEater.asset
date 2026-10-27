@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.souleater.displayname
-    lastText: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+    lastText: "\uC7BF\uBD88\uC758 \uC6A9"
   - propertyPath: hint
     key: data.encounterdata.souleater.hint
-    lastText: 
+    lastText: "\uB0A0\uAC1C \uC0AC\uC774\uC640 \uBAB8\uD1B5\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uB4E4\uC744
+      \uB04A\uC5B4 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   textOwnerGuid: a33249ad6319be7439852254d7eb8c92
   id: SoulEater
-  displayName: "\uC601\uD63C \uD3EC\uC2DD\uC790"
-  hint: 
+  displayName: "\uC7BF\uBD88\uC758 \uC6A9"
+  hint: "\uB0A0\uAC1C \uC0AC\uC774\uC640 \uBAB8\uD1B5\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uB4E4\uC744
+    \uB04A\uC5B4 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   category: 10
   members:
   - monster: {fileID: 11400000, guid: b544a9bd660854044b65489c136cbc78, type: 2}

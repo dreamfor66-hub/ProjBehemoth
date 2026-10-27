@@ -1,0 +1,8 @@
+Live serialized OutGame UI.
+Warrior: original description=True, overflow=False, faces=6, square=True, thumb source=(320.00, 320.00), portrait source=(384.00, 576.00)
+Rogue: original description=True, overflow=False, faces=6, square=True, thumb source=(320.00, 320.00), portrait source=(384.00, 576.00)
+Barbarian: original description=True, overflow=False, faces=6, square=True, thumb source=(320.00, 320.00), portrait source=(384.00, 576.00)
+Samurai: original description=True, overflow=False, faces=6, square=True, thumb source=(320.00, 320.00), portrait source=(384.00, 576.00)
+Monk: original description=True, overflow=False, faces=6, square=True, thumb source=(320.00, 320.00), portrait source=(384.00, 576.00)
+Wizard: original description=True, overflow=False, faces=6, square=True, thumb source=(320.00, 320.00), portrait source=(384.00, 576.00)
+COMPLETE

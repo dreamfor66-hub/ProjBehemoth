@@ -1,0 +1,11 @@
+{
+  "id": "Hero-Barbarian-Guard",
+  "actor": "Barbarian",
+  "kind": "Player",
+  "state": "Guard",
+  "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Barbarian-Rear.png",
+  "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. PLAYER FRAMING: strict rear-facing first-person-party view, unchanged waist crop and canvas composition; never draw a full body or front portrait. State Guard: Rear view of the same bear-pelt barbarian bracing with the axe lifted diagonally forward to intercept a blow, right wrist straight and elbow naturally bent; left forearm raised close to body on its own side. Preserve exact two axe blades, solid straight shaft and socket alignment. Full back stays toward camera, no face. Same upper-body waist crop, no legs.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-97e887d5-02fc-44b3-9ba3-05a6542b25e8.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Barbarian-Guard.png",
+  "status": "generated_pending_review"
+}

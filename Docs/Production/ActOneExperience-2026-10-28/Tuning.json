@@ -1,0 +1,161 @@
+{
+  "monsters": [
+    {
+      "id": "LanternImp",
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset",
+      "hp": 120,
+      "normal": 1.25,
+      "charge": 2.75,
+      "damage": 10.8,
+      "guard": 10.8,
+      "names": [
+        "창끝 찌르기",
+        "도약 꿰뚫기"
+      ]
+    },
+    {
+      "id": "BoneScorpion",
+      "monster": "Assets/Data/Combat/Monsters/TunnelRat.asset",
+      "hp": 100,
+      "normal": 1.7,
+      "charge": 3.4,
+      "damage": 11,
+      "guard": 12,
+      "names": [
+        "날선 할퀴기",
+        "도약 급습"
+      ]
+    },
+    {
+      "id": "StringRevenant",
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset",
+      "hp": 190,
+      "normal": 2,
+      "charge": 4,
+      "damage": 16.8,
+      "guard": 16.8,
+      "names": [
+        "방패 강타",
+        "검날 내려치기"
+      ]
+    },
+    {
+      "id": "CoffinSlime",
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset",
+      "hp": 185,
+      "normal": 1.7,
+      "charge": 4.2,
+      "damage": 19.2,
+      "guard": 19.2,
+      "names": [
+        "흡혈 물어뜯기",
+        "피의 급강하"
+      ]
+    },
+    {
+      "id": "BellHound",
+      "monster": "Assets/Data/Combat/Monsters/AlarmHound.asset",
+      "hp": 130,
+      "normal": 1.9,
+      "charge": 3.8,
+      "damage": 13,
+      "guard": 14,
+      "names": [
+        "송곳니 물기",
+        "송곳니 급습"
+      ]
+    },
+    {
+      "id": "EttinGatekeeper",
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset",
+      "hp": 520,
+      "normal": 2.7,
+      "charge": 5.8,
+      "damage": 30,
+      "guard": 30,
+      "names": [
+        "곤봉 휘두르기",
+        "쌍두 삼연격"
+      ]
+    },
+    {
+      "id": "MirrorShell",
+      "monster": "Assets/Data/Combat/Monsters/MirrorKnight.asset",
+      "hp": 230,
+      "normal": 2.4,
+      "charge": 4.4,
+      "damage": 9,
+      "guard": 14.4,
+      "names": [
+        "연속 베기",
+        "강철 내려치기"
+      ]
+    },
+    {
+      "id": "IronMantis",
+      "monster": "Assets/Data/Combat/Monsters/ArmoredExecutioner.asset",
+      "hp": 280,
+      "normal": 2.6,
+      "charge": 4.5,
+      "damage": 9,
+      "guard": 11.2,
+      "names": [
+        "낫날 난무",
+        "교차 참격"
+      ]
+    },
+    {
+      "id": "StoneSphinx",
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset",
+      "hp": 1050,
+      "normal": 2.25,
+      "charge": 5.2,
+      "damage": 26.4,
+      "guard": 26.4,
+      "names": [
+        "발톱 휩쓸기",
+        "거체 내려찍기",
+        "미궁 붕괴"
+      ]
+    },
+    {
+      "id": "OssuaryBell",
+      "monster": "Assets/Data/Combat/Monsters/BellKeeper.asset",
+      "hp": 460,
+      "normal": 2.4,
+      "charge": 4.8,
+      "damage": 9,
+      "guard": 9.6,
+      "names": [
+        "삼연 종격",
+        "진혼의 종울림"
+      ]
+    },
+    {
+      "id": "WebDuchess",
+      "monster": "Assets/Data/Combat/Monsters/BroodKeeper.asset",
+      "hp": 420,
+      "normal": 2.6,
+      "charge": 4.6,
+      "damage": 13,
+      "guard": 17.6,
+      "names": [
+        "실칼날 베기",
+        "처형의 실"
+      ]
+    },
+    {
+      "id": "Threadling",
+      "monster": "Assets/Data/Combat/Monsters/OrbitBat.asset",
+      "hp": 85,
+      "normal": 2.9,
+      "charge": 6.8,
+      "damage": 8,
+      "guard": 9.6,
+      "names": [
+        "실바늘 찌르기",
+        "회전 돌진"
+      ]
+    }
+  ]
+}

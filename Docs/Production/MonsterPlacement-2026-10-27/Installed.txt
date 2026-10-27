@@ -1,0 +1,1 @@
+Saved MonsterSpawnRoot=(0,0); default trio=(-370,-65),(0,0),(370,-65); default pair=(-270,-35),(270,-35). Goblin padding offset -66.5 -> 0. Encounter-authored offsets/scales and other species offsets retained.

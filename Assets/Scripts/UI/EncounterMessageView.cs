@@ -17,12 +17,14 @@ namespace DungeonSlash
             message = newMessage;
         }
 
-        public IEnumerator Show(string text)
+        public IEnumerator Show(string text, System.Func<bool> presentationReady = null)
         {
             if (panel == null) yield break;
             panel.SetActive(true);
             if (message != null) message.text = text;
             yield return new WaitForSecondsRealtime(displaySeconds);
+            // Keep the announcement visible if its configured duration is shorter than entry framing.
+            while (presentationReady != null && !presentationReady()) yield return null;
             panel.SetActive(false);
         }
 

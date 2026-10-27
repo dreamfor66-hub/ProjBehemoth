@@ -8,10 +8,14 @@ namespace DungeonSlash
         [Range(0,1)] public float amount=1;
         public float slant=32, border=4;
         public Color fillColor=new Color32(176,176,176,255);
+        public InkUiStyle inkStyle;
+        int inkRevision=-1;
+        void LateUpdate(){if(inkStyle!=null&&inkRevision!=inkStyle.RenderRevision){inkRevision=inkStyle.RenderRevision;SetVerticesDirty();}}
         public void SetValue(float value){value=Mathf.Clamp01(value);if(Mathf.Approximately(amount,value))return;amount=value;SetVerticesDirty();}
         protected override void OnPopulateMesh(VertexHelper vh)
         {
             vh.Clear();var r=rectTransform.rect;
+            if(inkStyle!=null){InkUiDrawing.Guard(vh,r,inkStyle,amount,color.a);return;}
             void Quad(float y0,float y1,float inset,Color tint)
             {
                 var x0=Mathf.Round((Mathf.InverseLerp(r.yMin,r.yMax,y0)-.5f)*slant/4)*4;

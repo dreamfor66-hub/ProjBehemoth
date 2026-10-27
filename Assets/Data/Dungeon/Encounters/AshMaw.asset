@@ -15,14 +15,20 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.ashmaw.displayname
-    lastText: "\uACF5\uD5C8\uC758 \uC0AC\uB0E5"
+    lastText: "\uACF5\uD5C8\uC758 \uB208 \xB7 \uC7AC \uAC00\uACE0\uC77C"
   - propertyPath: hint
     key: data.encounterdata.ashmaw.hint
-    lastText: 
+    lastText: "\uC911\uC559 \uB208\uC774 \uB4DC\uB7EC\uB098\uBA74 \uC57D\uC810\uC744
+      \uB04A\uC5B4 \uC751\uC2DC\uB97C \uCDE8\uC18C\uD558\uC790.\n\uC9E7\uC740 \uC900\uBE44
+      \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4. \uC2DC\uCC28\uB97C
+      \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
   textOwnerGuid: 843bb3811b5c8e247957bb8aa1c2c9eb
   id: AshMaw
-  displayName: "\uACF5\uD5C8\uC758 \uC0AC\uB0E5"
-  hint: 
+  displayName: "\uACF5\uD5C8\uC758 \uB208 \xB7 \uC7AC \uAC00\uACE0\uC77C"
+  hint: "\uC911\uC559 \uB208\uC774 \uB4DC\uB7EC\uB098\uBA74 \uC57D\uC810\uC744 \uB04A\uC5B4
+    \uC751\uC2DC\uB97C \uCDE8\uC18C\uD558\uC790.\n\uC9E7\uC740 \uC900\uBE44 \uB4A4
+    \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4. \uC2DC\uCC28\uB97C \uBCF4\uACE0
+    \uAC00\uB4DC\uD558\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: 74285b100b3b0f94ba2ebc118d2e4f77, type: 2}

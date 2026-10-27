@@ -1,5 +1,6 @@
 Shader "Hidden/Behemoth/Native Text Composite"
 {
+    Properties { _PreserveNativeUiColors("Preserve native UI colors",Float)=0 }
     SubShader
     {
         Cull Off ZWrite Off ZTest Always
@@ -11,7 +12,17 @@ Shader "Hidden/Behemoth/Native Text Composite"
             #pragma fragment frag
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
-            float4 frag(Varyings i):SV_Target{return SAMPLE_TEXTURE2D_X(_BlitTexture,sampler_PointClamp,i.texcoord);}
+            #include "DarkPalette.hlsl"
+            float _PreserveNativeUiColors;
+            float4 frag(Varyings i):SV_Target
+            {
+                float4 source=SAMPLE_TEXTURE2D_X(_BlitTexture,sampler_PointClamp,i.texcoord);
+                if(_PreserveNativeUiColors>.5)return source;
+                // Keep Korean text at its authored resolution, but remove all soft alpha ramps.
+                if(source.a<.5)return 0;
+                float3 c=source.rgb/max(source.a,.001);
+                return float4(DarkLinear(DarkMap(DarkSRGB(c),0)),1);
+            }
             ENDHLSL
         }
     }

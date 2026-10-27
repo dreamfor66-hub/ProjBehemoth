@@ -1,0 +1,32 @@
+After-Shop / 1920x1080
+Label | (x:-316.00, y:-40.00, width:632.00, height:80.00) | overflow=False | 28<color=#D8BB62>G</color> 구매
+PurchaseState | (x:-72.00, y:-28.00, width:144.00, height:56.00) | overflow=False | 24<color=#D8BB62>G</color>
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ←
+ItemTitle | (x:-220.00, y:-48.00, width:440.00, height:96.00) | overflow=False | 이지스 배터리
+StockHint | (x:-650.00, y:-24.00, width:1300.00, height:48.00) | overflow=False | 상품은 구매 후에도 교체·갱신되지 않습니다.
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | →
+FocusedEffect | (x:-676.00, y:-72.00, width:1352.00, height:144.00) | overflow=False | 최대 방패 +25
+PurchaseState | (x:-72.00, y:-28.00, width:144.00, height:56.00) | overflow=False | 28<color=#D8BB62>G</color>
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+ItemTitle | (x:-220.00, y:-48.00, width:440.00, height:96.00) | overflow=False | 청색 매의 발톱
+Title | (x:-148.00, y:-32.00, width:296.00, height:64.00) | overflow=False | 상점
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+ItemTitle | (x:-220.00, y:-48.00, width:440.00, height:96.00) | overflow=False | 차지 코일
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+PurchaseState | (x:-72.00, y:-28.00, width:144.00, height:56.00) | overflow=False | 62<color=#D8BB62>G</color>
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ↓
+FocusedTitle | (x:-676.00, y:-26.00, width:1352.00, height:52.00) | overflow=False | 이지스 배터리
+Wallet | (x:-320.00, y:-32.00, width:640.00, height:64.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-136.00, y:-40.00, width:272.00, height:80.00) | overflow=False | 나가기
+Runtime HP=100/100; MP=30/30; guard=35/35
+Skin: Leave | Button | (x:-140.00, y:-44.00, width:280.00, height:88.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=148 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: ShopPanel | Panel | (x:-734.09, y:-391.93, width:1468.19, height:783.85) | nonblocking=True | hover=False | pressed=False | active=True | vertices=956 | material=UI/Behemoth/Ink Surface
+Skin: ShopItemView | Button | (x:-336.00, y:-48.00, width:672.00, height:96.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=284 | material=UI/Behemoth/Ink Surface
+Skin: ShopItemView | Button | (x:-336.00, y:-48.00, width:672.00, height:96.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=284 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: Relic0 | Slot | (x:-32.00, y:-32.00, width:64.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=68 | material=UI/Behemoth/Ink Surface
+Skin: ShopItemView | Button | (x:-336.00, y:-48.00, width:672.00, height:96.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=284 | material=UI/Behemoth/Ink Surface
+Skin: Purchase | Button | (x:-324.00, y:-44.00, width:648.00, height:88.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=268 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface

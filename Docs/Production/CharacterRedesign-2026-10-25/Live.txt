@@ -1,0 +1,45 @@
+Scoped character art review in existing Unity Editor. Screenshot readback holds only the editor probe attack-pose window, not production gameplay timing.
+Combat-Warrior-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.5 %
+Combat-Warrior-Attack: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.4 %
+PASS Warrior attack sprite
+Combat-Warrior-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.0 %
+PASS Warrior guard art state
+Combat-Rogue-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.0 %
+Combat-Rogue-Attack: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.1 %
+PASS Rogue attack sprite
+Combat-Rogue-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.3 %
+PASS Rogue guard art state
+Combat-Barbarian-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=91.2 %
+Combat-Barbarian-Attack: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.2 %
+PASS Barbarian attack sprite
+Combat-Barbarian-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=90.8 %
+PASS Barbarian guard art state
+Combat-Samurai-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=94.1 %
+Combat-Samurai-Attack: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.6 %
+PASS Samurai attack sprite
+Combat-Samurai-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.2 %
+PASS Samurai guard art state
+Combat-Monk-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=91.5 %
+Combat-Monk-Attack: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=91.5 %
+PASS Monk attack sprite
+Combat-Monk-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=90.8 %
+PASS Monk guard art state
+Combat-Wizard-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.1 %
+Combat-Wizard-Attack: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.7 %
+PASS Wizard attack sprite
+Combat-Wizard-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.4 %
+PASS Wizard guard art state
+CHARACTERS COMPLETE
+01-Title: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=84.3 %
+02-Options: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=5; outside palette (2-byte tolerance)=0; dark coverage=97.8 %
+03-Selection-Warrior: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=75.9 %
+03-Selection-Rogue: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=80.6 %
+03-Selection-Barbarian: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=72.9 %
+03-Selection-Samurai: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=84.4 %
+03-Selection-Monk: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=68.8 %
+03-Selection-Wizard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=81.0 %
+04-Character-Details: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=82.3 %
+MENU COMPLETE
+Before-MainFirst: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=6; outside palette (2-byte tolerance)=0; dark coverage=97.6 %
+ImageOnly-Warrior: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=88.6 %
+ImageOnly-Native-Warrior: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=12784; outside palette (2-byte tolerance)=510394; dark coverage=84.9 %

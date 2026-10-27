@@ -7,6 +7,7 @@ namespace DungeonSlash
     public sealed class EncounterMember
     {
         public MonsterData monster;
+        [Tooltip("Placement of the body hitbox bottom relative to MonsterSpawnRoot. Raise Y for flying creatures; scale is applied to hitbox height automatically.")]
         public Vector2 offset;
         [Range(.25f, 1f)] public float scale = .75f;
         [Min(0)] public float actionDelay;

@@ -1,0 +1,9 @@
+Scoped live Unity font verification / 1920x1080
+Label | YiSunShin | size=40 | overflow=False | missing= | 소개 보기
+Label | YiSunShin | size=44 | overflow=False | missing= | 성으로
+Label | YiSunShin | size=44 | overflow=False | missing= | ←  뒤로
+PrimaryStats | YiSunShin | size=36 | overflow=False | missing= | HP 100   MP 30 가드 게이지 35  일반 공격 피해 14 차지 공격 피해 24 공격 쿨타임 0.85초
+Name | YiSunShin | size=88 | overflow=False | missing= | 워리어
+ExtraStatsHint | YiSunShin | size=36 | overflow=False | missing= | 추가 수치
+StarterName | YiSunShin | size=40 | overflow=False | missing= | 유물 · 수호자의 방패
+Labels=7; wrong font=0; missing glyphs=0

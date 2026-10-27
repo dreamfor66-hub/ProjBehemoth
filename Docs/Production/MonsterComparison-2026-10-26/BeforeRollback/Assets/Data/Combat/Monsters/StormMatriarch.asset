@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: StormMatriarch
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.stormmatriarch.displayname
+    lastText: "\uD3ED\uD48D\uC758 \uB300\uBD95"
+  - propertyPath: encounterHint
+    key: data.monsterdata.stormmatriarch.encounterhint
+    lastText: "\uACF5\uC804\uD558\uB294 \uD3ED\uD48D \uD574\uD30C\uB9AC\uC640 \uBCF8\uCCB4\uC758
+      \uACF5\uACA9 \uC2DC\uCC28\uC5D0 \uC8FC\uC758\uD558\uC790."
+  textOwnerGuid: 5946ee0bd997e36448ff353d80ebfdde
+  displayName: "\uD3ED\uD48D\uC758 \uB300\uBD95"
+  portrait: {fileID: 21300000, guid: b26bc4ee628af2449a4a84c525bee1b2, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 2c0575370ba886641b4603e289f2af23, type: 2}
+  encounterHint: "\uACF5\uC804\uD558\uB294 \uD3ED\uD48D \uD574\uD30C\uB9AC\uC640
+    \uBCF8\uCCB4\uC758 \uACF5\uACA9 \uC2DC\uCC28\uC5D0 \uC8FC\uC758\uD558\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 580
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 60
+  goldReward: 28
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: e43b1b4bd100339469e88021d03615bc, type: 2}
+  - {fileID: 11400000, guid: 98b5e69d4ef8c3348b5bf3788949ccc3, type: 2}
+  normalAttackSequence:
+  - {fileID: 11400000, guid: fb245ea1709442f46ad6bf82e27a9c5b, type: 2}
+  - {fileID: 11400000, guid: a7c35a0a6125a2f499e8111258afc67f, type: 2}
+  bodyColor: {r: 0.48, g: 0.8, b: 0.6464, a: 1}

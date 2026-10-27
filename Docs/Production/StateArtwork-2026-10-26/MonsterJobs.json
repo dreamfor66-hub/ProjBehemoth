@@ -1,0 +1,986 @@
+[
+  {
+    "id": "Monster-LanternImp-Ready",
+    "actor": "LanternImp",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/LanternImp.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw the hunting spear back beside the shoulder, knees braced and free hand balancing; clear anticipation for a forward thrust."
+  },
+  {
+    "id": "Monster-LanternImp-Attack",
+    "actor": "LanternImp",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/LanternImp.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Thrust the short hunting spear decisively toward the viewer, torso leaning forward, natural connected weapon hand and bent rear leg."
+  },
+  {
+    "id": "Monster-LanternImp-Dead",
+    "actor": "LanternImp",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/LanternImp.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-BoneScorpion-Ready",
+    "actor": "BoneScorpion",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BoneScorpion.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Crouch the eight-legged spider lower, slightly raise its two front legs and tense its fangs; keep four connected legs on each side."
+  },
+  {
+    "id": "Monster-BoneScorpion-Attack",
+    "actor": "BoneScorpion",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BoneScorpion.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: The eight-legged spider springs forward with its front pair reaching out and fangs leading; all eight legs remain connected and readable."
+  },
+  {
+    "id": "Monster-BoneScorpion-Dead",
+    "actor": "BoneScorpion",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BoneScorpion.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-StringRevenant-Ready",
+    "actor": "StringRevenant",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StringRevenant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Brace the skeletal warrior behind its round shield while drawing the sword back above its right shoulder, natural elbows and empty eye sockets."
+  },
+  {
+    "id": "Monster-StringRevenant-Attack",
+    "actor": "StringRevenant",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StringRevenant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Deliver a strong forward diagonal sword cut, shield close to the other forearm, feet braced and bones anatomically connected."
+  },
+  {
+    "id": "Monster-StringRevenant-Dead",
+    "actor": "StringRevenant",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StringRevenant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CoffinSlime-Ready",
+    "actor": "CoffinSlime",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lift both leathery wings high in a tense upstroke, head pulled back, fangs visible; exactly two wings and two small hind feet."
+  },
+  {
+    "id": "Monster-CoffinSlime-Attack",
+    "actor": "CoffinSlime",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Dive toward the viewer with wings driving down and back, head and two fangs leading, exactly two small hind feet trailing."
+  },
+  {
+    "id": "Monster-CoffinSlime-Dead",
+    "actor": "CoffinSlime",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-BellHound-Ready",
+    "actor": "BellHound",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BellHound.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lower the bell hound into a tense four-legged crouch, pull the head back and lift its neck bell slightly."
+  },
+  {
+    "id": "Monster-BellHound-Attack",
+    "actor": "BellHound",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BellHound.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Lunge forward with jaws open and the two front paws reaching toward the viewer, neck bell attached naturally, four legs only."
+  },
+  {
+    "id": "Monster-BellHound-Dead",
+    "actor": "BellHound",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BellHound.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-EttinGatekeeper-Ready",
+    "actor": "EttinGatekeeper",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/EttinGatekeeper.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise the heavy club above and behind the shoulder, both heads tense, two feet planted and the free arm balancing."
+  },
+  {
+    "id": "Monster-EttinGatekeeper-Attack",
+    "actor": "EttinGatekeeper",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/EttinGatekeeper.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Swing the heavy club forcefully down and forward, both heads on the same torso, two arms and two legs with coherent grips."
+  },
+  {
+    "id": "Monster-EttinGatekeeper-Dead",
+    "actor": "EttinGatekeeper",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/EttinGatekeeper.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-MirrorShell-Ready",
+    "actor": "MirrorShell",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MirrorShell.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: The empty upright suit lifts its centered longsword into a clear two-handed overhead preparation, straight natural gauntlets and articulated joints."
+  },
+  {
+    "id": "Monster-MirrorShell-Attack",
+    "actor": "MirrorShell",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MirrorShell.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: The empty armor executes one strong two-handed diagonal sword strike toward the viewer, retaining exact helmet, plates and black empty joints."
+  },
+  {
+    "id": "Monster-MirrorShell-Dead",
+    "actor": "MirrorShell",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MirrorShell.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-IronMantis-Ready",
+    "actor": "IronMantis",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/IronMantis.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lift both broad scythe forelimbs up and back, abdomen and walking legs braced, all limb connections match the source."
+  },
+  {
+    "id": "Monster-IronMantis-Attack",
+    "actor": "IronMantis",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/IronMantis.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Sweep the two scythe forelimbs forward in a decisive strike, same insect limb count and simple smooth blade silhouettes."
+  },
+  {
+    "id": "Monster-IronMantis-Dead",
+    "actor": "IronMantis",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/IronMantis.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-StoneSphinx-Ready",
+    "actor": "StoneSphinx",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StoneSphinx.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Crouch its four lion legs, lift both wings, draw a front paw back, head fixed on the viewer."
+  },
+  {
+    "id": "Monster-StoneSphinx-Attack",
+    "actor": "StoneSphinx",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StoneSphinx.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Pounce forward with one large front paw extended and the other balancing, both wings open; exactly four legs and two wings."
+  },
+  {
+    "id": "Monster-StoneSphinx-Dead",
+    "actor": "StoneSphinx",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StoneSphinx.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-OssuaryBell-Ready",
+    "actor": "OssuaryBell",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/OssuaryBell.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw the bell creature's arms and heavy clapper back as its bell body leans away in a clear windup."
+  },
+  {
+    "id": "Monster-OssuaryBell-Attack",
+    "actor": "OssuaryBell",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/OssuaryBell.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Swing its bell body and clapper forward, two arms reaching, two feet planted; hardware and clapper stay logically attached."
+  },
+  {
+    "id": "Monster-OssuaryBell-Dead",
+    "actor": "OssuaryBell",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/OssuaryBell.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-WebDuchess-Ready",
+    "actor": "WebDuchess",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/WebDuchess.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lift the skeletal upper torso's two arms, hold its threads taut and brace the same spider lower-body legs."
+  },
+  {
+    "id": "Monster-WebDuchess-Attack",
+    "actor": "WebDuchess",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/WebDuchess.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Pull both thread-holding arms forward in a commanding attack gesture while the spider lower body lunges, preserving all leg and thread connections."
+  },
+  {
+    "id": "Monster-WebDuchess-Dead",
+    "actor": "WebDuchess",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/WebDuchess.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-Threadling-Ready",
+    "actor": "Threadling",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/Threadling.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Pull the small puppet's two arms back and lift its bent knees slightly, strings held taut to its crossbar."
+  },
+  {
+    "id": "Monster-Threadling-Attack",
+    "actor": "Threadling",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/Threadling.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: The little puppet lunges forward with both clawed hands extending, strings still connected to its same crossbar, two arms two legs."
+  },
+  {
+    "id": "Monster-Threadling-Dead",
+    "actor": "Threadling",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/Threadling.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-QuillSprite-Ready",
+    "actor": "QuillSprite",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/QuillSprite.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise the two wings into a tense high anticipation, curl the claws and point the pale mask downward."
+  },
+  {
+    "id": "Monster-QuillSprite-Attack",
+    "actor": "QuillSprite",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/QuillSprite.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Sweep its two quill wings forward into a cutting lunge, pale mask and two talons leading, no extra limbs or projectiles."
+  },
+  {
+    "id": "Monster-QuillSprite-Dead",
+    "actor": "QuillSprite",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/QuillSprite.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CrystalUrchin-Ready",
+    "actor": "CrystalUrchin",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrystalUrchin.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: The floating crystal orb tilts its six crystal points backward with its central eye narrowed in a tense preparation."
+  },
+  {
+    "id": "Monster-CrystalUrchin-Attack",
+    "actor": "CrystalUrchin",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrystalUrchin.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: The orb lunges forward with the front crystal points leading, eye open and severe; same six crystals, no arms or legs."
+  },
+  {
+    "id": "Monster-CrystalUrchin-Dead",
+    "actor": "CrystalUrchin",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrystalUrchin.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-VeilOracle-Ready",
+    "actor": "VeilOracle",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/VeilOracle.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw both hands upward beside the hood, fingers curling in a clear spell preparation, robe stays coherent."
+  },
+  {
+    "id": "Monster-VeilOracle-Attack",
+    "actor": "VeilOracle",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/VeilOracle.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Extend both hands decisively toward the viewer in a casting pose, body leaning forward under the same hood; no baked spell effect."
+  },
+  {
+    "id": "Monster-VeilOracle-Dead",
+    "actor": "VeilOracle",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/VeilOracle.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-TuskPilgrim-Ready",
+    "actor": "TuskPilgrim",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TuskPilgrim.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise the same wooden pilgrim staff back over one shoulder and brace both legs, preserve tusks and backpack."
+  },
+  {
+    "id": "Monster-TuskPilgrim-Attack",
+    "actor": "TuskPilgrim",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TuskPilgrim.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Drive the wooden staff forward and down in a heavy blow, torso leaning, tusks and backpack fixed to the same walrus body."
+  },
+  {
+    "id": "Monster-TuskPilgrim-Dead",
+    "actor": "TuskPilgrim",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TuskPilgrim.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-BellHare-Ready",
+    "actor": "BellHare",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BellHare.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Crouch the bell rabbit, pull one fist back and lower its ears, neck bell still attached."
+  },
+  {
+    "id": "Monster-BellHare-Attack",
+    "actor": "BellHare",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BellHare.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Punch or spring forward with one large fist reaching out, rear foot pushing off, same two arms two legs and two long ears."
+  },
+  {
+    "id": "Monster-BellHare-Dead",
+    "actor": "BellHare",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/BellHare.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-TwinAntlerStag-Ready",
+    "actor": "TwinAntlerStag",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TwinAntlerStag.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Brace four hooves and lower the stag's paired antlers toward the viewer in a tense charge preparation."
+  },
+  {
+    "id": "Monster-TwinAntlerStag-Attack",
+    "actor": "TwinAntlerStag",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TwinAntlerStag.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Charge forward head-low with paired antlers leading and four hooves in a coherent gallop, no extra horns or legs."
+  },
+  {
+    "id": "Monster-TwinAntlerStag-Dead",
+    "actor": "TwinAntlerStag",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TwinAntlerStag.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-MirrorMoth-Ready",
+    "actor": "MirrorMoth",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MirrorMoth.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Spread its four patterned wings defensively and draw both claws back, same moth body and antennae."
+  },
+  {
+    "id": "Monster-MirrorMoth-Attack",
+    "actor": "MirrorMoth",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MirrorMoth.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Lunge with both claws extending toward the viewer while its four wings sweep back, preserving each wing pattern and limb count."
+  },
+  {
+    "id": "Monster-MirrorMoth-Dead",
+    "actor": "MirrorMoth",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MirrorMoth.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-MaskedChoir-Ready",
+    "actor": "MaskedChoir",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MaskedChoir.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Spread the dark bird spirit's two wings up and wide, tilt its pale mask down in a tense anticipation."
+  },
+  {
+    "id": "Monster-MaskedChoir-Attack",
+    "actor": "MaskedChoir",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MaskedChoir.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Dive mask-first toward the viewer, two wings swept back and the same tail feathers trailing, no human hands."
+  },
+  {
+    "id": "Monster-MaskedChoir-Dead",
+    "actor": "MaskedChoir",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MaskedChoir.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-WinterUnicorn-Ready",
+    "actor": "WinterUnicorn",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/WinterUnicorn.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lower the unicorn head and brace four wrapped legs so its existing horns point forward in preparation."
+  },
+  {
+    "id": "Monster-WinterUnicorn-Attack",
+    "actor": "WinterUnicorn",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/WinterUnicorn.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Charge toward the viewer with its horns leading and forehooves lifting, four natural legs, same mane and wraps."
+  },
+  {
+    "id": "Monster-WinterUnicorn-Dead",
+    "actor": "WinterUnicorn",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/WinterUnicorn.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-PrismCrab-Ready",
+    "actor": "PrismCrab",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/PrismCrab.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise both crystalline pincers high and draw them slightly back, keep all six walking legs braced."
+  },
+  {
+    "id": "Monster-PrismCrab-Attack",
+    "actor": "PrismCrab",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/PrismCrab.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Strike forward with one large crystalline pincer while the other stays near the body, six walking legs remain connected."
+  },
+  {
+    "id": "Monster-PrismCrab-Dead",
+    "actor": "PrismCrab",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/PrismCrab.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-TempestRoc-Ready",
+    "actor": "TempestRoc",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TempestRoc.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise its two enormous wings and draw its talons back under its body, preserve the existing restrained lightning accents."
+  },
+  {
+    "id": "Monster-TempestRoc-Attack",
+    "actor": "TempestRoc",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TempestRoc.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Drive both wings down and lunge talons-first toward the viewer, exactly two wings and two legs, same pale head."
+  },
+  {
+    "id": "Monster-TempestRoc-Dead",
+    "actor": "TempestRoc",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TempestRoc.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-StormJelly-Ready",
+    "actor": "StormJelly",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StormJelly.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw its same three broad tentacles back below its cap, cap tilting slightly in a tense anticipation."
+  },
+  {
+    "id": "Monster-StormJelly-Attack",
+    "actor": "StormJelly",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StormJelly.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Extend the three broad tentacles forward into a striking lunge, cap and cyan eyes remain coherent, no added limbs."
+  },
+  {
+    "id": "Monster-StormJelly-Dead",
+    "actor": "StormJelly",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StormJelly.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CoalSalamander-Ready",
+    "actor": "CoalSalamander",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoalSalamander.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Crouch low on its four legs, pull its head back and curve its existing small flame-tipped tail behind."
+  },
+  {
+    "id": "Monster-CoalSalamander-Attack",
+    "actor": "CoalSalamander",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoalSalamander.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Drive its head and jaws toward the viewer in a four-legged lunge, same charcoal hide and small tail flame, no new fire breath."
+  },
+  {
+    "id": "Monster-CoalSalamander-Dead",
+    "actor": "CoalSalamander",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoalSalamander.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-SerpentWarden-Ready",
+    "actor": "SerpentWarden",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/SerpentWarden.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Compress its snake coil and draw the spear back alongside its shoulder, two arms connected naturally."
+  },
+  {
+    "id": "Monster-SerpentWarden-Attack",
+    "actor": "SerpentWarden",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/SerpentWarden.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Thrust the spear forward from its braced coil, torso leaning, natural hands and straight spear shaft, no legs added."
+  },
+  {
+    "id": "Monster-SerpentWarden-Dead",
+    "actor": "SerpentWarden",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/SerpentWarden.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-AshGargoyle-Ready",
+    "actor": "AshGargoyle",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshGargoyle.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise both bat wings and pull one stone fist back beside its shoulder, feet planted and face severe."
+  },
+  {
+    "id": "Monster-AshGargoyle-Attack",
+    "actor": "AshGargoyle",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshGargoyle.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Lunge with one heavy stone fist striking forward and wings sweeping back, same two arms two legs and two wings."
+  },
+  {
+    "id": "Monster-AshGargoyle-Dead",
+    "actor": "AshGargoyle",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshGargoyle.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-HollowEye-Ready",
+    "actor": "HollowEye",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/HollowEye.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw the four eye stalks closer, narrow the large central eyelid and tense its mouth in preparation."
+  },
+  {
+    "id": "Monster-HollowEye-Attack",
+    "actor": "HollowEye",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/HollowEye.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Lunge its large open mouth toward the viewer with tongue extending and four eye stalks spread, no added limbs or new spell effects."
+  },
+  {
+    "id": "Monster-HollowEye-Dead",
+    "actor": "HollowEye",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/HollowEye.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CenserRevenant-Ready",
+    "actor": "CenserRevenant",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw the chain-held censer back beside its body, lift the free hand and lean away in a clear windup."
+  },
+  {
+    "id": "Monster-CenserRevenant-Attack",
+    "actor": "CenserRevenant",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Swing the same censer forward with a taut physically connected chain, free hand reaching, robe and hands remain coherent."
+  },
+  {
+    "id": "Monster-CenserRevenant-Dead",
+    "actor": "CenserRevenant",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-OathlessCentaur-Ready",
+    "actor": "OathlessCentaur",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/OathlessCentaur.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise one forehoof and draw the polearm back, human torso upright and banner attached."
+  },
+  {
+    "id": "Monster-OathlessCentaur-Attack",
+    "actor": "OathlessCentaur",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/OathlessCentaur.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Charge on four horse legs while thrusting its polearm forward, same two human arms, horse body and attached banner."
+  },
+  {
+    "id": "Monster-OathlessCentaur-Dead",
+    "actor": "OathlessCentaur",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/OathlessCentaur.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CrimsonCount-Ready",
+    "actor": "CrimsonCount",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrimsonCount.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Hold the goblet close to the torso and draw the free clawed hand back beside the shoulder, severe face."
+  },
+  {
+    "id": "Monster-CrimsonCount-Attack",
+    "actor": "CrimsonCount",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrimsonCount.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Reach the free clawed hand decisively toward the viewer, torso leaning, goblet remains safely in the other hand."
+  },
+  {
+    "id": "Monster-CrimsonCount-Dead",
+    "actor": "CrimsonCount",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrimsonCount.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-AshHierophant-Ready",
+    "actor": "AshHierophant",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshHierophant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lift the same violet lantern and curl the free skeletal hand close to the chest, hood and halo unchanged."
+  },
+  {
+    "id": "Monster-AshHierophant-Attack",
+    "actor": "AshHierophant",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshHierophant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Cast the free hand toward the viewer as the lantern swings forward from its handle, coherent fingers and robe."
+  },
+  {
+    "id": "Monster-AshHierophant-Dead",
+    "actor": "AshHierophant",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshHierophant.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-AshDragon-Ready",
+    "actor": "AshDragon",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshDragon.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise both wings, draw the long neck back and brace its two feet and two forelimbs."
+  },
+  {
+    "id": "Monster-AshDragon-Attack",
+    "actor": "AshDragon",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshDragon.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Lunge forward with jaws wide and one foreclaw extended, two wings sweep back, exactly two arms two legs one tail."
+  },
+  {
+    "id": "Monster-AshDragon-Dead",
+    "actor": "AshDragon",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/AshDragon.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-EclipseChimera-Ready",
+    "actor": "EclipseChimera",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/EclipseChimera.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Brace both legs and pull one fist back, lift its two wings, preserve lion head, ram horns and serpent tail."
+  },
+  {
+    "id": "Monster-EclipseChimera-Attack",
+    "actor": "EclipseChimera",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/EclipseChimera.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Strike forward with one large claw while its lion jaws roar, other arm balancing and two wings swept back, same anatomy."
+  },
+  {
+    "id": "Monster-EclipseChimera-Dead",
+    "actor": "EclipseChimera",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/EclipseChimera.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-SunIdol-Ready",
+    "actor": "SunIdol",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/SunIdol.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Tilt the same four-rayed golden face slightly back, eye/mouth features tensing, wraps tucked coherently."
+  },
+  {
+    "id": "Monster-SunIdol-Attack",
+    "actor": "SunIdol",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/SunIdol.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Thrust the same golden face forward with its mouth open and four rays angled toward the viewer, no new limbs or projectiles."
+  },
+  {
+    "id": "Monster-SunIdol-Dead",
+    "actor": "SunIdol",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/SunIdol.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-MoonIdol-Ready",
+    "actor": "MoonIdol",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MoonIdol.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Tilt its clean crescent back and narrow the central eye, two cloth bindings gathering close."
+  },
+  {
+    "id": "Monster-MoonIdol-Attack",
+    "actor": "MoonIdol",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MoonIdol.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Lunge its crescent forward with the central eye widened and the same cloth wraps trailing, no new limbs."
+  },
+  {
+    "id": "Monster-MoonIdol-Dead",
+    "actor": "MoonIdol",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/MoonIdol.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CinderLich-Ready",
+    "actor": "CinderLich",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CinderLich.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Raise the violet-flame staff and pull its free skeletal hand back beside its crown, robe unchanged."
+  },
+  {
+    "id": "Monster-CinderLich-Attack",
+    "actor": "CinderLich",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CinderLich.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Aim the same staff forward and extend the free skeletal fingers in a decisive casting gesture, no new spell effects."
+  },
+  {
+    "id": "Monster-CinderLich-Dead",
+    "actor": "CinderLich",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CinderLich.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-IronMimic-Ready",
+    "actor": "IronMimic",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/IronMimic.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lift the chest lid halfway and draw both claw arms back, tongue contained and hinges structurally correct."
+  },
+  {
+    "id": "Monster-IronMimic-Attack",
+    "actor": "IronMimic",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/IronMimic.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Snap the lid/mouth wide toward the viewer, tongue and both claws extending, same hinged chest and two legs."
+  },
+  {
+    "id": "Monster-IronMimic-Dead",
+    "actor": "IronMimic",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/IronMimic.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-GildedToad-Ready",
+    "actor": "GildedToad",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/GildedToad.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Hoist its same coin sack back over one shoulder, bend the knees and brace the free hand."
+  },
+  {
+    "id": "Monster-GildedToad-Attack",
+    "actor": "GildedToad",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/GildedToad.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Swing the coin sack forward in one coherent arc, gripping its tied neck, same necklace, two arms two legs."
+  },
+  {
+    "id": "Monster-GildedToad-Dead",
+    "actor": "GildedToad",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/GildedToad.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-TarrasqueWhelp-Ready",
+    "actor": "TarrasqueWhelp",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TarrasqueWhelp.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Lower the armored beast's head, brace its two hind legs and draw one huge foreclaw back."
+  },
+  {
+    "id": "Monster-TarrasqueWhelp-Attack",
+    "actor": "TarrasqueWhelp",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TarrasqueWhelp.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Drive one massive foreclaw toward the viewer with jaws open, other foreleg and two hind legs supporting its same shell."
+  },
+  {
+    "id": "Monster-TarrasqueWhelp-Dead",
+    "actor": "TarrasqueWhelp",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/TarrasqueWhelp.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  },
+  {
+    "id": "Monster-CrownColossus-Ready",
+    "actor": "CrownColossus",
+    "kind": "Monster",
+    "state": "Ready",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrownColossus.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Ready: Draw one massive armored fist back and brace its two feet, shoulders rising in a clear heavy punch preparation."
+  },
+  {
+    "id": "Monster-CrownColossus-Attack",
+    "actor": "CrownColossus",
+    "kind": "Monster",
+    "state": "Attack",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrownColossus.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Attack: Deliver a heavy forward overhand fist strike, other arm back for balance, same crown, armor plates and two legs."
+  },
+  {
+    "id": "Monster-CrownColossus-Dead",
+    "actor": "CrownColossus",
+    "kind": "Monster",
+    "state": "Dead",
+    "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CrownColossus.png",
+    "prompt": "Use case: precise-object-edit. Create ONE representative COMBAT STATE image of the exact character/creature in image 1, not a sprite sheet or frame sequence. Preserve identity, species, costume, all equipment, material colors, hand-ink line character, restrained flat cel shading and the dark fantasy mood of the source. Do not redesign, add spikes, shred fabric, change facial features or add new props. Change the actual drawn body/limb/weapon pose for the specified state; do not simply rotate, translate or duplicate the Idle illustration. Same canvas aspect, camera angle, subject scale and transparent margin as image 1; same implied floor/bottom anchor so images swap without a visual size jump. Complete limbs and weapons must stay inside the canvas. Correct connected anatomy and logical weapon grips. True alpha transparent background, no scenery, no text, no signature, no cast shadow, no hit flashes or baked UI. MONSTER FRAMING: preserve the source's front/three-quarter enemy-facing camera and square canvas. Entire creature and equipment visible. State Dead: The exact creature is defeated and motionless: body collapsed low near its original foot/floor line, limbs and equipment resting naturally with believable joints, head lowered and eyes closed or unlit. Preserve every species-specific limb, wing, shell or item from the source; inorganic parts can settle into a coherent inert heap. No gore, wounds, blood, severed limbs, new debris or environmental floor. Body does NOT remain upright in its Idle pose. Maintain the same physical body size and same canvas, with the defeated body fitting wholly inside the lower area."
+  }
+]

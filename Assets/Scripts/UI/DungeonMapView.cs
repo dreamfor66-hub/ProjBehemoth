@@ -14,6 +14,8 @@ namespace DungeonSlash
         [SerializeField] private float spacing = 42f;
         private readonly List<MapRoomIcon> activeIcons = new();
         private DungeonPosition focusPosition;
+        private System.Action<FacingDirection> selected;
+        public void SetSelectionHandler(System.Action<FacingDirection> handler) => selected = handler;
 
         public void Configure(RectTransform newContent, MapRoomIcon prefab, Image connection)
         {
@@ -104,6 +106,7 @@ namespace DungeonSlash
             // becomes selectable. Only genuinely unknown adjacent rooms display a question mark.
             var style = target.IsVisited && target.IsCleared ? MapRoomIconStyle.ClearedExit : target.IsVisited || target.IsRevealed || target.IsMajorRoom ? MapRoomIconStyle.KnownRoom : MapRoomIconStyle.UnknownReachable;
             icon.Bind(target, style, facing, highlighted, RoutesFor(target, routes));
+            icon.SetSelection(selected == null ? null : () => selected(targetDirection));
             activeIcons.Add(icon);
         }
 

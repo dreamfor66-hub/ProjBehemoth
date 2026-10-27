@@ -12,6 +12,9 @@ namespace DungeonSlash
             public RectTransform CastRect;
             public CapsuleCastGraphic Cast;
             public float HideAt;
+            public float StartedAt;
+            public SlashRibbonEffect Ribbon;
+            public bool Charged;
         }
 
         [SerializeField] private RectTransform line;
@@ -19,6 +22,10 @@ namespace DungeonSlash
         [SerializeField] private CapsuleCastGraphic hitCast;
         [SerializeField] private float visibleSeconds = .55f;
         private float hideAt;
+        [SerializeField] private SlashRibbonEffect ribbon;
+        [SerializeField] private bool showCollisionPreview;
+        private float startedAt;
+        private bool strokeCharged;
         private readonly System.Collections.Generic.List<AuxiliaryLine> auxiliaryLines = new();
 
         public void Configure(RectTransform newLine, Image newImage)
@@ -26,6 +33,7 @@ namespace DungeonSlash
             line = newLine;
             image = newImage;
             EnsureHitCast();
+            EnsureRibbon();
             Hide();
         }
 
@@ -33,10 +41,13 @@ namespace DungeonSlash
         {
             if (line == null || image == null) return;
             EnsureHitCast();
+            EnsureRibbon();
             ConfigureLine(line, image, segment, charged ? new Color(1f, .77f, .16f, .9f) : new Color(.35f, .9f, 1f, .9f));
             ConfigureCast(hitCast.rectTransform, hitCast, segment);
             image.enabled = true;
-            hitCast.enabled = true;
+            hitCast.enabled = showCollisionPreview;
+            strokeCharged = charged; startedAt = Time.unscaledTime;
+            ribbon.enabled = true; ribbon.SetStroke(charged, 0);
             hideAt = Time.unscaledTime + visibleSeconds;
         }
 
@@ -59,10 +70,12 @@ namespace DungeonSlash
             auxiliary.Image.sprite = image.sprite;
             auxiliary.Image.type = image.type;
             auxiliary.Image.raycastTarget = false;
+            auxiliary.Ribbon = root.AddComponent<SlashRibbonEffect>();
+            auxiliary.StartedAt = Time.unscaledTime; auxiliary.Charged = charged;
             var color = charged ? new Color(1f, .77f, .16f, alpha) : new Color(.35f, .9f, 1f, alpha);
             ConfigureCast(auxiliary.CastRect, auxiliary.Cast, segment);
             ConfigureLine(auxiliary.Rect, auxiliary.Image, segment, color);
-            auxiliary.Cast.enabled = true;
+            auxiliary.Cast.enabled = showCollisionPreview;
             auxiliary.Image.enabled = true;
             auxiliaryLines.Add(auxiliary);
         }
@@ -90,6 +103,8 @@ namespace DungeonSlash
 
         private void Update()
         {
+            if (image != null && image.enabled && ribbon != null)
+                ribbon.SetStroke(strokeCharged, Mathf.InverseLerp(startedAt, hideAt, Time.unscaledTime));
             if (image != null && image.enabled && Time.unscaledTime >= hideAt)
             {
                 image.enabled = false;
@@ -98,6 +113,8 @@ namespace DungeonSlash
             for (var index = auxiliaryLines.Count - 1; index >= 0; index--)
             {
                 var auxiliary = auxiliaryLines[index];
+                if (auxiliary?.Ribbon != null && auxiliary.Ribbon.enabled)
+                    auxiliary.Ribbon.SetStroke(auxiliary.Charged, Mathf.InverseLerp(auxiliary.StartedAt, auxiliary.HideAt, Time.unscaledTime));
                 if (auxiliary?.Rect == null || Time.unscaledTime < auxiliary.HideAt) continue;
                 Destroy(auxiliary.Rect.gameObject);
                 if (auxiliary.CastRect != null) Destroy(auxiliary.CastRect.gameObject);
@@ -115,6 +132,10 @@ namespace DungeonSlash
             hitCast.color = new Color(1f, .12f, .12f, .34f);
             hitCast.raycastTarget = false;
         }
+        private void EnsureRibbon()
+        {
+            if (ribbon == null && image != null) ribbon = image.GetComponent<SlashRibbonEffect>() ?? image.gameObject.AddComponent<SlashRibbonEffect>();
+        }
         public void ShowSpellArea(Vector2 center, float radius, Color color)
         {
             if (line == null || line.parent == null) return;
@@ -129,6 +150,7 @@ namespace DungeonSlash
             {
                 var path = auxiliaryLines[auxiliaryLines.Count - 1];
                 path.Image.color = color;
+                path.Ribbon.enabled = false;
                 path.Cast.color = new Color(color.r, color.g, color.b, .16f);
                 path.HideAt = Time.unscaledTime + .35f;
             }

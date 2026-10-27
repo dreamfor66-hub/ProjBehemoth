@@ -1,0 +1,7 @@
+{
+  "id": "Hero-Samurai-Guard",
+  "prompt": "Create ONE sheathed-parry Guard state image of this exact rear-facing samurai. Same tied black hair, olive robe, red sash, LEFT shoulder lamellar armor and ONE sheathed katana. Raise the sheathed sword diagonally ahead of the torso toward shoulder/head height in a defensive interception; one hand grips the hilt, the other supports the scabbard with natural elbows and straight wrists. Crucial spatial logic: weapon and arms are IN FRONT of his body, toward the unseen enemy. From this strict rear view, the back naturally OCCLUDES parts of the arms and central scabbard; only the outer forearms/hands and the raised weapon ends need be visible. Do NOT display a sheathed sword horizontally across his lower back, and do NOT bend hands behind his back. No naked second blade. Keep the same back-facing head, exact identity/style, body scale, 1448x1086 canvas and waist crop. No legs, face, text, ground or background. True alpha transparency.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-4f567c9b-6d81-457a-9941-78a19732f4e0.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Samurai-Guard.png",
+  "status": "generated_pending_review"
+}

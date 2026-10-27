@@ -15,14 +15,15 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.trial.displayname
-    lastText: "\uBD09\uC778\uB41C \uC2DC\uB828"
+    lastText: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
   - propertyPath: hint
     key: data.encounterdata.trial.hint
-    lastText: 
+    lastText: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C
+      \uB9C9\uC790."
   textOwnerGuid: 8e2ac49e164162e4591bcc10fb9e74f4
   id: Trial
-  displayName: "\uBD09\uC778\uB41C \uC2DC\uB828"
-  hint: 
+  displayName: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
+  hint: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C \uB9C9\uC790."
   category: 12
   members:
   - monster: {fileID: 11400000, guid: 52b7da8d0f282654c919a5530c4a2e8c, type: 2}

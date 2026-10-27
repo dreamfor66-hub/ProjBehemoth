@@ -10,6 +10,7 @@ namespace DungeonSlash
         [SerializeField] private NavigationChoiceView navigation;
         [SerializeField] private DungeonGenerationSettings generationSettings;
         private FacingDirection? hoveredDirection;
+        private bool navigationVisible;
         public DungeonRunState State { get; private set; }
         public int Floor { get; private set; } = 1;
         public event Action<DungeonRoom> RoomEntered;
@@ -29,12 +30,16 @@ namespace DungeonSlash
         }
         public void RefreshNavigation()
         {
+            navigationVisible = true;
+            mapView.SetSelectionHandler(MoveAbsolute);
             mapView.Render(State, hoveredDirection, true);
             navigation.SetVisible(true);
             navigation.Bind(State, Move, SetHoveredDirection);
         }
         public void HideNavigation()
         {
+            navigationVisible = false;
+            mapView.SetSelectionHandler(null);
             hoveredDirection = null;
             navigation.SetVisible(false);
             if (State != null) mapView.Render(State, null, false);
@@ -48,6 +53,11 @@ namespace DungeonSlash
         private void Move(RelativeDirection relative)
         {
             var absolute = DirectionUtility.ToAbsolute(State.Player.Facing, relative);
+            MoveAbsolute(absolute);
+        }
+        private void MoveAbsolute(FacingDirection absolute)
+        {
+            if (!navigationVisible || State == null) return;
             var target = State.Graph.At(State.Player.CurrentRoom.Position + DirectionUtility.Offset(absolute));
             if (target == null || !State.Player.CurrentRoom.Connections.Contains(target.RoomId)) return;
             State.RevealConnection(State.Player.CurrentRoom, target);

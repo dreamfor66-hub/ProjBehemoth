@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.broodkeeper.displayname
-    lastText: "\uD68C\uC804 \uB465\uC9C0\uC758 \uC8FC\uC778"
+    lastText: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778"
   - propertyPath: encounterHint
     key: data.monsterdata.broodkeeper.encounterhint
-    lastText: 
+    lastText: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4. \uBCF8\uCCB4\uC758
+      \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790."
   textOwnerGuid: 508c88aa0e5982046bfdaef18729110a
-  displayName: "\uD68C\uC804 \uB465\uC9C0\uC758 \uC8FC\uC778"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 290e3e681106dc64f8e9150f3c7ee71c, type: 2}
-  encounterHint: 
+  displayName: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778"
+  portrait: {fileID: 21300000, guid: 56dcf08bc6069e543bf7f30eca912bcf, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e1e878bd623460b43bc9e388ab6384a5, type: 2}
+  encounterHint: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4.
+    \uBCF8\uCCB4\uC758 \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 20
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: f1ee53ef4c98a3a47a1f6c8bf7a56310, type: 2}
-  - {fileID: 11400000, guid: 5897c95a147127e40aec0a4467ea1003, type: 2}
+  - {fileID: 11400000, guid: b514f027379ad424fbdcf499c2df4e00, type: 2}
+  - {fileID: 11400000, guid: 001d5f1ccf5d34f41819e4fb620b2434, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.8, g: 0.74880004, b: 0.48, a: 1}

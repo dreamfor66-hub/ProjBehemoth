@@ -1,0 +1,32 @@
+Scripts\UI\RewardPopupView.cs(19,27): warning CS0108: 'RewardPopupView.animation'은(는) 상속된 'Component.animation' 멤버를 숨깁니다. 숨기려면 new 키워드를 사용하세요.
+Scripts\UI\RoomTransitionView.cs(16,56): warning CS0649: 'RoomTransitionView.pixelTransition' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Debug\AngularWorldLiveProbe.cs(15,103): warning CS0649: 'AngularWorldLiveProbe.Entry.normalLabels' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\UI\RoomTransitionView.cs(15,40): warning CS0649: 'RoomTransitionView.fade' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Combat\Systems\CombatExpansion.cs(9,46): warning CS0649: 'CombatController.content' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\UI\GameFlowExpansion.cs(10,51): warning CS0649: 'GameFlowController.expansionView' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Debug\AngularWorldLiveProbe.cs(15,81): warning CS0649: 'AngularWorldLiveProbe.Entry.floor' 필드에는 할당되지 않으므로 항상 0 기본값을 사용합니다.
+Scripts\Debug\AngularWorldLiveProbe.cs(15,62): warning CS0649: 'AngularWorldLiveProbe.Entry.id' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Debug\AngularWorldLiveProbe.cs(15,65): warning CS0649: 'AngularWorldLiveProbe.Entry.name' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Debug\AngularWorldLiveProbe.cs(15,53): warning CS0649: 'AngularWorldLiveProbe.Entry.baseline' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Combat\Systems\CombatExpansion.cs(10,51): warning CS0649: 'CombatController.expansionView' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\UI\GameFlowExpansion.cs(9,46): warning CS0649: 'GameFlowController.content' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Scripts\Debug\AngularWorldLiveProbe.cs(16,55): warning CS0649: 'AngularWorldLiveProbe.Roster.items' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\TypographyPreparation.cs(20,64): warning CS0649: 'TypographyPreparation.RoleTable.entries' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\TypographyPreparation.cs(19,65): warning CS0649: 'TypographyPreparation.RoleEntry.field' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\TypographyPreparation.cs(19,59): warning CS0649: 'TypographyPreparation.RoleEntry.owner' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(25,20): warning CS0649: 'AngularWorldPreparation.Entry.floor' 필드에는 할당되지 않으므로 항상 0 기본값을 사용합니다.
+Editor\Presentation\FlatArtImport.cs(18,21): warning CS0649: 'FlatArtImport.Entry.fitOriginal' 필드에는 할당되지 않으므로 항상 false 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(27,24): warning CS0649: 'AngularWorldPreparation.Entry.windupFactors' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(24,23): warning CS0649: 'AngularWorldPreparation.Entry.baseline' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\FlatArtImport.cs(17,27): warning CS0649: 'FlatArtImport.Entry.row' 필드에는 할당되지 않으므로 항상 0 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(24,40): warning CS0649: 'AngularWorldPreparation.Entry.subject' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\FlatArtImport.cs(16,30): warning CS0649: 'FlatArtImport.Entry.target' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\FlatArtImport.cs(17,20): warning CS0649: 'FlatArtImport.Entry.column' 필드에는 할당되지 않으므로 항상 0 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(26,25): warning CS0649: 'AngularWorldPreparation.Entry.normalLabels' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(24,35): warning CS0649: 'AngularWorldPreparation.Entry.name' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(24,32): warning CS0649: 'AngularWorldPreparation.Entry.id' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(24,48): warning CS0649: 'AngularWorldPreparation.Entry.hint' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\FlatArtImport.cs(16,23): warning CS0649: 'FlatArtImport.Entry.source' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\TypographyPreparation.cs(19,88): warning CS0649: 'TypographyPreparation.RoleEntry.role' 필드에는 할당되지 않으므로 항상  기본값을 사용합니다.
+Editor\Presentation\AngularWorldPreparation.cs(29,56): warning CS0649: 'AngularWorldPreparation.Roster.items' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.
+Editor\Presentation\FlatArtImport.cs(19,21): warning CS0649: 'FlatArtImport.Entry.coherentTones' 필드에는 할당되지 않으므로 항상 false 기본값을 사용합니다.

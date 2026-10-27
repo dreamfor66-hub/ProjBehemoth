@@ -1,0 +1,11 @@
+{
+  "id": "Companion-TrailDog-Attack",
+  "actor": "TrailDog",
+  "kind": "Companion",
+  "state": "Attack",
+  "source": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Companion-TrailDog-Idle.png",
+  "prompt": "Create ONE Attack state sprite of this exact brown-and-white dog. Preserve the strict REAR view, floppy ears, white neck band, white paws and short white-tipped tail; match the exact hand-ink flat cel shading and markings. The dog springs FORWARD away from the viewer toward the unseen enemy: front paws extend ahead, hind legs push off with the rear paw pads briefly visible, ears lift naturally, tail balances to one side. All four limbs connect coherently. The dog's face remains hidden, no turn toward camera. Same square canvas and dog body scale as Idle, full dog and paws inside clear transparent margins. No added costume, collar, weapon, effects, lettering, scenery or ground shadow. True alpha transparent background.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-e8e1224d-84ea-4d54-956c-451d07e0db8a.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Companion-TrailDog-Attack.png",
+  "status": "generated_pending_review"
+}

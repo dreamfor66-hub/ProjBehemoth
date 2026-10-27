@@ -1,0 +1,5 @@
+233 production PNGs repainted/indexed at their existing canvas dimensions. Every PNG matches its Git HEAD width and height.
+Original sprite GUIDs, pivots, import settings, animation canvas scales, pose padding and gameplay data retained.
+7 opaque RGB inks plus transparent pixels. Point rendering; no low-resolution intermediate raster, dithering, blur or color-island merging.
+Menu illustrations: 1642x958. Hall:1643x957. Camp:1254x1254. Figure source sheets authored per character at1024+ square and fitted to the original painted bounds.
+Sources: Assets/Art/DarkSeven/Redrawn and Sources/Logo.png. Rejected early atlases archived outside Assets and not referenced.

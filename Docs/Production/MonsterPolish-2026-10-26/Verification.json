@@ -1,0 +1,385 @@
+{
+  "monsters": [
+    {
+      "id": "LanternImp",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "BoneScorpion",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "StringRevenant",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CoffinSlime",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "BellHound",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "EttinGatekeeper",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "MirrorShell",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "IronMantis",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "StoneSphinx",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "OssuaryBell",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "WebDuchess",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "Threadling",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "QuillSprite",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CrystalUrchin",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": false
+    },
+    {
+      "id": "VeilOracle",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "TuskPilgrim",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "BellHare",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "TwinAntlerStag",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "MirrorMoth",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "MaskedChoir",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "WinterUnicorn",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "PrismCrab",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "TempestRoc",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "StormJelly",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CoalSalamander",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "SerpentWarden",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "AshGargoyle",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "HollowEye",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CenserRevenant",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "OathlessCentaur",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CrimsonCount",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "AshHierophant",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "AshDragon",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "EclipseChimera",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "SunIdol",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "MoonIdol",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CinderLich",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "IronMimic",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "GildedToad",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "TarrasqueWhelp",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    },
+    {
+      "id": "CrownColossus",
+      "mechanicsUnchanged": true,
+      "normalSequenceUnchanged": true,
+      "attackLinksUnchanged": true,
+      "attackMechanicsUnchanged": true,
+      "installedImageMatchesReviewed": true,
+      "imageReplaced": true
+    }
+  ],
+  "renamedExactlyFive": [
+    "LanternImp",
+    "BoneScorpion",
+    "StringRevenant",
+    "CoffinSlime",
+    "MirrorShell"
+  ],
+  "encountersUnchanged": true,
+  "replacedImages": 40,
+  "retainedPending": [
+    "CrystalUrchin"
+  ]
+}

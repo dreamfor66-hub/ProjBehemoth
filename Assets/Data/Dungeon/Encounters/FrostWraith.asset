@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.frostwraith.displayname
-    lastText: "\uC5BC\uC74C \uADC0\uC2E0"
+    lastText: "\uC7A5\uB9C9 \uC608\uC5B8\uC790"
   - propertyPath: hint
     key: data.encounterdata.frostwraith.hint
-    lastText: 
+    lastText: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+      \uB04A\uC790."
   textOwnerGuid: 5cb83e26a11297a4d8ecf7ef1703f3d9
   id: FrostWraith
-  displayName: "\uC5BC\uC74C \uADC0\uC2E0"
-  hint: 
+  displayName: "\uC7A5\uB9C9 \uC608\uC5B8\uC790"
+  hint: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+    \uB04A\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: 3767fc650961daa46940e81e17116958, type: 2}

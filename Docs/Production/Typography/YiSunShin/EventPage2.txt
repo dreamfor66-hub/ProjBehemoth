@@ -1,0 +1,16 @@
+Scoped live Unity font verification / 1920x1080
+ChoiceDescription | YiSunShin | size=32 | overflow=False | missing= | 골드 +10. 시간의 힘은 얻지 않는다.
+Label | YiSunShin | size=44 | overflow=False | missing= | 다음
+Label | YiSunShin | size=44 | overflow=False | missing= | 지도
+Label | YiSunShin | size=44 | overflow=False | missing= | →
+Label | YiSunShin | size=44 | overflow=False | missing= | 보유품
+Health | YiSunShin | size=40 | overflow=False | missing= | HP 100 / 100
+ChoiceTitle | YiSunShin | size=44 | overflow=False | missing= | > 금 간 유리를 모은다
+Label | YiSunShin | size=44 | overflow=False | missing= | ↑
+Label | YiSunShin | size=44 | overflow=False | missing= | ↓
+Gold | YiSunShin | size=40 | overflow=False | missing= | 38<color=#D8BB62>G</color>
+Page | YiSunShin | size=44 | overflow=False | missing= | 2 / 2
+Label | YiSunShin | size=44 | overflow=False | missing= | 이전
+Narrative | YiSunShin | size=36 | overflow=False | missing= | 기록실 책상 위에서 모래가 거꾸로 흐르고 있다.  옆에 놓인 기록에는 이 모래시계로 시간을 빌릴 수 있다고 적혀 있다.
+Title | YiSunShin | size=48 | overflow=False | missing= | 내일의 한숨
+Labels=14; wrong font=0; missing glyphs=0

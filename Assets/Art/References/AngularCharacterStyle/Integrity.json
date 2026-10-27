@@ -1,0 +1,65 @@
+[
+  {
+    "Id": "01",
+    "Source": "C:/Users/user/Downloads/1cb2de2e9738cbd10a731069f7029cce.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/01-swordsman-back.jpg",
+    "SHA256": "8381D81D39CD64625D6151AA712C47B8748429C4A20C978D9D87A08BEB881D9A",
+    "Unchanged": true
+  },
+  {
+    "Id": "02",
+    "Source": "C:/Users/user/Downloads/b7e10b59f4c0221b1baf0600e68818ee.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/02-white-hood-swordswoman.jpg",
+    "SHA256": "B76F10FF17D538CB283FC835B385F62492AB6AC44A857370EF131F344B545CCF",
+    "Unchanged": true
+  },
+  {
+    "Id": "03",
+    "Source": "C:/Users/user/Downloads/6744534c6ea1f5964123555df7253f4f.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+    "SHA256": "120F0A8E9B74D1BA9530BDCA561078DEA4361294485C7D16587E9702C2484685",
+    "Unchanged": true
+  },
+  {
+    "Id": "04",
+    "Source": "C:/Users/user/Downloads/e6df522037301a0d55f65eb5419deb29.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+    "SHA256": "920980841CA2FEB6563ABB5DA4CE42A1025B78206020DD49C2DADAFC373458C0",
+    "Unchanged": true
+  },
+  {
+    "Id": "05",
+    "Source": "C:/Users/user/Downloads/cb0a3c195f95d9b5abdf14ac1f4f0aa6.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/05-monkey-staff-fighter.jpg",
+    "SHA256": "44903689D9BB683E9386484E454E8F204EF1EABE54E578B59117616F47C6C0BD",
+    "Unchanged": true
+  },
+  {
+    "Id": "06",
+    "Source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_38_41.png",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png",
+    "SHA256": "0BA849DA41BB5C96701AFD5728632A04D682A0D74ADFFE9DD7C70D66904FE640",
+    "Unchanged": true
+  },
+  {
+    "Id": "07",
+    "Source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_39_22.png",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/07-wrapped-chest-fighter.png",
+    "SHA256": "DB30A93E8301D8870C4DC5DAB542D6D4D243039403D44265974E24174FBC2B5C",
+    "Unchanged": true
+  },
+  {
+    "Id": "08",
+    "Source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_39_25.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/08-blonde-caster.jpg",
+    "SHA256": "4BE8905F8E86F4D86A750647EBA2AFA22E3EDAB213F9F65E31A0F20CA9AE2D4D",
+    "Unchanged": true
+  },
+  {
+    "Id": "09",
+    "Source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_39_28.jpg",
+    "Destination": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/09-dark-haired-fighter.jpg",
+    "SHA256": "8C5610B0C8DC51889BE59CF9E1225A1C313ED765C864A90F8C1C195D73E85DD0",
+    "Unchanged": true
+  }
+]

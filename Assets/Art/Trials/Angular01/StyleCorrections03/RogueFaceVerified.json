@@ -1,0 +1,11 @@
+{
+  "ComparedPixels": 38700,
+  "Mismatches": 0,
+  "Region": [
+    560,
+    125,
+    215,
+    180
+  ],
+  "Mode": "Read-only comparison of actual final PNG against original SourceRogue.png"
+}

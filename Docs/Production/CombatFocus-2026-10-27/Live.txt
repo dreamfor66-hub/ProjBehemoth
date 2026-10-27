@@ -1,0 +1,52 @@
+Existing Unity Editor, scoped runtime matrix. Practice runtime clones only.
+PASS Navigation original Root restored: (0.00, -275.00)
+PASS Navigation original image size restored
+PASS Encounter prepared before start original Root restored: (0.00, -275.00)
+PASS Encounter prepared before start original image size restored
+PASS start interpolates rather than snapping
+PASS image interpolates with Root
+PASS Started Root=(0,-532): (0.00, -532.00)
+PASS Started image=960x1020 (1.5x)
+PASS Started object scale unchanged
+PASS flying monster authored position unchanged
+PASS both guard gesture endpoints are inside the actual screen
+PASS visible relocated body drag-hold enters Guard
+PASS Warrior uses revised frontal defense sprite
+PASS guard release restores Idle
+PASS accepted attack uses Attack pose
+PASS Attacking Root=(0,-532): (0.00, -532.00)
+PASS Attacking image=960x1020 (1.5x)
+PASS Attacking object scale unchanged
+PASS attack cooldown remains on screen after relocation
+PASS Repeated Bind Root=(0,-532): (0.00, -532.00)
+PASS Repeated Bind image=960x1020 (1.5x)
+PASS Repeated Bind object scale unchanged
+PASS lethal encounter enters normal victory finish
+PASS Final hit hold Root=(0,-532): (0.00, -532.00)
+PASS Final hit hold image=960x1020 (1.5x)
+PASS Final hit hold object scale unchanged
+PASS Victory original Root restored: (0.00, -275.00)
+PASS Victory original image size restored
+PASS 2 monsters Root=(0,-532): (0.00, -532.00)
+PASS 2 monsters image=960x1020 (1.5x)
+PASS 2 monsters object scale unchanged
+PASS 2 monsters retain their existing formation
+PASS 3 monsters Root=(0,-532): (0.00, -532.00)
+PASS 3 monsters image=960x1020 (1.5x)
+PASS 3 monsters object scale unchanged
+PASS 3 monsters retain their existing formation
+PASS Defeat original Root restored: (0.00, -275.00)
+PASS Defeat original image size restored
+PASS Reset during entry original Root restored: (0.00, -275.00)
+PASS Reset during entry original image size restored
+PASS Unscaled entry at timeScale=0 Root=(0,-532): (0.00, -532.00)
+PASS Unscaled entry at timeScale=0 image=960x1020 (1.5x)
+PASS Unscaled entry at timeScale=0 object scale unchanged
+PASS Unscaled return at timeScale=0 original Root restored: (0.00, -275.00)
+PASS Unscaled return at timeScale=0 original image size restored
+PASS Other class shared framing Root=(0,-532): (0.00, -532.00)
+PASS Other class shared framing image=960x1020 (1.5x)
+PASS Other class shared framing object scale unchanged
+PASS Other class reset original Root restored: (0.00, -275.00)
+PASS Other class reset original image size restored
+COMPLETE failures=0. No DPS/balance suite. Real-device visual feel remains a manual check.

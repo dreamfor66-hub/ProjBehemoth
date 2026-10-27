@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.frostqueen.displayname
-    lastText: "\uC11C\uB9AC \uC5EC\uC655"
+    lastText: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218"
   - propertyPath: hint
     key: data.encounterdata.frostqueen.hint
-    lastText: 
+    lastText: "\uAE34 \uAC15\uD0C0 \uC900\uBE44 \uB3D9\uC548 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+      \uBAA8\uB450 \uB04A\uC790."
   textOwnerGuid: 437c56cb53f318245a5de6d944d5f635
   id: FrostQueen
-  displayName: "\uC11C\uB9AC \uC5EC\uC655"
-  hint: 
+  displayName: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218"
+  hint: "\uAE34 \uAC15\uD0C0 \uC900\uBE44 \uB3D9\uC548 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+    \uBAA8\uB450 \uB04A\uC790."
   category: 10
   members:
   - monster: {fileID: 11400000, guid: 54667eccb06d98746b603f33af299ab8, type: 2}

@@ -1,0 +1,7 @@
+{
+  "id": "Hero-Wizard-Guard",
+  "prompt": "Create ONE Guard state image of this exact rear-facing elderly wizard, same grey hair, blue cloak, burgundy robe, left-shoulder owl and wooden staff. Correct defensive pose: BOTH hands raise the staff horizontally ABOVE and IN FRONT OF his head to block an incoming strike from the unseen enemy ahead. Viewed from behind, his head/shoulders can occlude the middle of the forearms naturally; the staff is visible ABOVE the hair and owl, not carried across the back of his neck. Elbows bent naturally outward, wrists straight and both hands gripping the one shaft. Keep owl balanced on the left shoulder with no staff passing through it. Strict rear view, no face, same body scale and 1448x1086 waist-cropped canvas as the input. Preserve drawing style, all equipment and color palette. No book, shield, spell effect, legs, text, scenery or new props. True alpha transparent background.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-f166ab33-f998-4c78-b764-43203d83e669.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Wizard-Guard.png",
+  "status": "generated_pending_review"
+}

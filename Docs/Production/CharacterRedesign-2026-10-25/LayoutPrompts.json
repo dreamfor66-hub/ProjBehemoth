@@ -1,0 +1,13 @@
+{
+  "mode": "Built-in image_gen",
+  "prompts": [
+    {
+      "asset": "ColorMonkLayout",
+      "prompt": "Precise composition correction ONLY. Preserve this exact Monk identity, opaque blindfold, beads, mature anatomy, face, hands, costume, colors, quality and 1642x958 canvas. The upper-left game text area must be completely black and unobstructed. Re-route the TWO long BLINDFOLD RIBBONS so they stream to the RIGHT behind the bald head and right shoulder, instead of stretching horizontally left. REMOVE every piece of cloth/ribbon from the rectangle x=0..780,y=0..400. Keep that rectangle pure solid BLACK; no effects or objects there. Keep the lower flowing sash. Do not move the body or change face/pose. Preserve existing FULL COLOR palette and clean flat cel colors. No text."
+    },
+    {
+      "asset": "SelectionMonkLayout",
+      "prompt": "Precise composition correction ONLY. Preserve this exact Monk identity, opaque blindfold, beads, mature anatomy, face, hands, costume, colors, quality and 1642x958 canvas. The upper-left game text area must be completely black and unobstructed. Re-route the TWO long BLINDFOLD RIBBONS so they stream to the RIGHT behind the bald head and right shoulder, instead of stretching horizontally left. REMOVE every piece of cloth/ribbon from the rectangle x=0..780,y=0..400. Keep that rectangle pure solid BLACK; no effects or objects there. Keep the lower flowing sash. Do not move the body or change face/pose. Preserve existing Use ONLY seven opaque flat inks: #000000 black, #19151f shadow, #332c3b dark grey, #64586b mid grey, #a398aa light grey, #eee5d5 bone, #ef6548 vermilion accent. NO other hues. Each surface at most TWO broad solid planes, plus a single sparse hard highlight. Treat anatomy, scales, fabric and metal as clean interlocking graphic shapes. ELIMINATE texture, flecks, spots, mottling, scratches, hatching, dithering, stipple, airbrush, gradients, bloom and transitional shading. Scales must be a few strong structural plates, NEVER a mosaic of many tiny patches. Rich design and adult anatomy must remain sophisticated. Crisp native small-pixel contours and interior lines, no artificially enlarged chunky pixels, no chibi, no reduced-resolution restyling.. No text."
+    }
+  ]
+}

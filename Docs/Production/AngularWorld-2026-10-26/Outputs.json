@@ -1,0 +1,478 @@
+[
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B1-AllOpen.png",
+    "sha256": "DC1CA9E453872C90F17740ECBD1E9B64CF8809550D9DDD94406466D52CEAAB85",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": false
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B1-Forward.png",
+    "sha256": "54326554DBC0AD443116A7B8C8653A2C00C4BAD286306AD7AB6F93E26E6A528C",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B1-Left.png",
+    "sha256": "78D29494F2C6C42EA0B3401538EECD4B0D158214515E47406EFAFCB80E8B619B",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B1-Right.png",
+    "sha256": "456DC82E1AFA7C8328349E713829186058E4D5A395A1EA216C14A3206F04CD50",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B1-Walls.png",
+    "sha256": "8CF2230CBDFDF87F45C1076E35AB9AB504028DF038275310618B79A144F58399",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": false
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-AllOpen.png",
+    "sha256": "7418363568BA9FC855B87B7C23F8F39B505BFB1904E576E5D4507E172894D66D",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": false
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Forward.png",
+    "sha256": "B6AFA4FFF6CF20BF77CE85063B23788AF6C4B0210C38E470EA19D4DE7FD0AECE",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Left.png",
+    "sha256": "87E106271A72F716420FB99E9C320B9BE3D6931F3D9D3594E7B7DB8527CDE0D1",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Right.png",
+    "sha256": "19F9152BB858E418D27D421CBA0C50DA4BE6160096091DC9EB8CA8479972ECE6",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Walls.png",
+    "sha256": "AE5E0CEA3763D4A87540B4548D1F9748353626C5C14876673A1B55D99CAD0160",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": false
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-AllOpen.png",
+    "sha256": "19298213B0F185CCAFC7FD62E16DB237BB8C21548790BC919BBCB1E192523E37",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": false
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Forward.png",
+    "sha256": "44A09270DCD03DF9EB94E4CBF33BDD95C556276B10F7DFFBB313AB81355C69F1",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Left.png",
+    "sha256": "916FA2F247AFA5010441F0754FEF752818AA9ADD16A69FFCB040F1154640E825",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Right.png",
+    "sha256": "BE21645D5F9F1282134302763C97163BB27A5379F100F2DEA3D6575F432922CB",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Walls.png",
+    "sha256": "72CD668A59A81AAD37466212A42E841610C92EC5B2946539F2BDD8EE9C94D58D",
+    "width": 1672,
+    "height": 941,
+    "transparentCorner": false
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Barbarian-Portrait.png",
+    "sha256": "60C5699C4BDAB6AEC32034DD64BE7C236076CF51084CC9DBD9F8D7FDD17A5EA5",
+    "width": 640,
+    "height": 640,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Barbarian-Rear.png",
+    "sha256": "2FDF417AFA0F0E7EAA7A5DD4B897C532816ED575E2CD78825083830319EC862A",
+    "width": 1448,
+    "height": 1086,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Monk-Portrait.png",
+    "sha256": "0896F677B9EF8D96B800BFD745A681A5EDC8C45F616A64F091D562B2CD472581",
+    "width": 640,
+    "height": 640,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Monk-Rear.png",
+    "sha256": "C463BE87756737AA6D1F30DC51C56BCFCA29275FAD211F801B41434BF4C26266",
+    "width": 1448,
+    "height": 1086,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Rogue-Portrait.png",
+    "sha256": "22B12B76CD935FB5D547D1BA581747AC2E07C4A70A1EC2506B083EF12004EA9D",
+    "width": 640,
+    "height": 640,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Rogue-Rear.png",
+    "sha256": "0EBB3C12DF078CB53F89772D0DAAB4303451F01C5E7889BABBBB2B286B1CCAC9",
+    "width": 1448,
+    "height": 1086,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Samurai-Portrait.png",
+    "sha256": "79F2C3176B58750D4DA24ED658900E00A168CF62862E13FD439C73FE4583A274",
+    "width": 640,
+    "height": 640,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Samurai-Rear.png",
+    "sha256": "38A70F668F7AF071BC35BBCF3FA7EAE495B6373986C691E20EE242C6E1F39084",
+    "width": 1448,
+    "height": 1086,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Warrior-Portrait.png",
+    "sha256": "ECABF618D6E0EA8EC95CFE732442D08F413B1FD63D9CB405758737A8A2D537D1",
+    "width": 640,
+    "height": 640,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Warrior-Rear.png",
+    "sha256": "81C467CBFCCCA29F5584BC34E814727B5FD6FC5B338E73983FC747189EC8FE46",
+    "width": 1448,
+    "height": 1086,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Wizard-Portrait.png",
+    "sha256": "6D165070D4A94DB1B924499529F19C47619A522885527E61F61C9213A6F7B905",
+    "width": 640,
+    "height": 640,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Wizard-Rear.png",
+    "sha256": "E77139079B9BC1284833626FB6B874CA96BAA213A7195C581BD829F8DC655B14",
+    "width": 1448,
+    "height": 1086,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\AshDragon.png",
+    "sha256": "0F0C52221150588266A9B004335B889E50023CC1264F46BECCC8026026F6FD92",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\AshGargoyle.png",
+    "sha256": "58B3BBB99B07A458B805C15F53C7D4B8C3B800523F961B26F8696B0B7D3535BF",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\AshHierophant.png",
+    "sha256": "2063B176127F219F833EE5A82AED1B975607B346DF8A6D8152602B75220F2794",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\BellHare.png",
+    "sha256": "D347D2A8F8173C74638E311F63BBA07B31085A20D22695EDFC2B714799710BA7",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\BellHound.png",
+    "sha256": "509C251BC49DCDA9658F912AE9C80091C7C80A133B003BBF55D4E35781A55E37",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\BoneScorpion.png",
+    "sha256": "5E0861EF1C5B786DF51C3A420AF4F250150D42EAF82FF975A4F38280D436948E",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CenserRevenant.png",
+    "sha256": "212AD8136DE28017FAC0BED3656AD11CA0C9B9443E1534309848ADF994B7F6D9",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CinderLich.png",
+    "sha256": "6798E383B4299CB640F96D0CBBBE223C18644B3D026906A783D450D34553BD78",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CoalSalamander.png",
+    "sha256": "631A39C03518DBA2CA0DF4EF6EB17E4A9A23DEB022A542B640BDA8FAD7967A18",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CoffinSlime.png",
+    "sha256": "265E8B7A42358CB0A0D4758EB2FB73921DAF70BFB64F4C0B75F47BF2C1671DC7",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CrimsonCount.png",
+    "sha256": "1C94D6C90A49EE28E287C2A0E858CF2C59B9890B5B14ECFE98CDF2CA969FCC65",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CrownColossus.png",
+    "sha256": "0BB65FDA3054FCE1BBA238714406919B3C7C921164B8A666FEB429FD9DD40F90",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CrystalUrchin.png",
+    "sha256": "8A718C5F7E04D2884B89940B90B7DE9D89E8421F417E5D1399CAFC9A23B8F082",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\EclipseChimera.png",
+    "sha256": "57F13C516CFF3B211EEA54653B0D2E4E41C493AC88B9ECD2F8FDB4926D05620A",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\EttinGatekeeper.png",
+    "sha256": "282808E52FCAFE519F43809CA13F6FB9E80409AB3791742D030D468CEFD6D8E7",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\GildedToad.png",
+    "sha256": "64BA3DCC3609997B1342D37E6447E8A038A9AE3468CB49BBD38C0B40CE4F6825",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\HollowEye.png",
+    "sha256": "535F0B88998C5544DA560F8888B8A519C1212E103B745D50A7E7D88AD942C730",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\IronMantis.png",
+    "sha256": "B12BD81654AB0D9B0009304BD5711EF0C7A1AE346A45932AE897423C4FE7265D",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\IronMimic.png",
+    "sha256": "7A6D5AA92FC8CFF2005933153D7C4E14EA2C6EC041304D00DD192CB9C194C520",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\LanternImp.png",
+    "sha256": "4CB6FDC128395074235A5612112880DA6AF39C7CD908C5E0DE4239D502712378",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MaskedChoir.png",
+    "sha256": "0EDDEF6F55D1A86D1CE18F08401E49F72232B992D812D046BD403DEB9A1D33D9",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MirrorMoth.png",
+    "sha256": "9C79B6EFBB93AB56A62F3271BCE638089BA7A145619A01DD8C42EAE3FEB4C554",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MirrorShell.png",
+    "sha256": "EEA0E731B37F96A3FB0274AC6F121F62C7643EEEB633F76ABB2CC34672A83F11",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MoonIdol.png",
+    "sha256": "EB2EA4F7EBFEC4614607EB88D6F8E07BB6ED82B9E54AFD9B737ABFAAF766C963",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\OathlessCentaur.png",
+    "sha256": "9C7755048A5BC04E3621CE7AEE8131A101082636D9E18FD5B7804EE9003582A7",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\OssuaryBell.png",
+    "sha256": "6C561ACB8A7053359AF180FFF47A2DC0F5A63259AC1351385CB5D2DC187CC219",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\PrismCrab.png",
+    "sha256": "BF8CD271D1F9FCB0A612F941A53C24408CA19D8562C7CBF30F74C0A790C09133",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\QuillSprite.png",
+    "sha256": "FF8B47BD5286F8D2279509D1EB45D92331728FC6CC250CDC060DEF90AF1110FA",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\SerpentWarden.png",
+    "sha256": "CE0443C92D8560464A35E185A8D2DA3DB5DA0E6BE7E62438F425E4ABC1B1CF41",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\StoneSphinx.png",
+    "sha256": "97D84981A870FCBB6886BAAECCDCA270929485AF51505CA29F82ECBCDD373E0E",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\StormJelly.png",
+    "sha256": "4AC48E92FA34643FC481505D2B3BEAC8F1180862404AB2F48E70766F3ED854C0",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\StringRevenant.png",
+    "sha256": "825B02AC945E809BB66C9C1B1957DEA29E1DAC635001285935948CA60A590F05",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\SunIdol.png",
+    "sha256": "7FB3A499EF58A1C60F317AE07B7CF87271EBA118283C9677592B5D66F0493290",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TarrasqueWhelp.png",
+    "sha256": "986801D6681955CF716157C988AE61B8B39134FBB91061333BCBB0E7962E9920",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TempestRoc.png",
+    "sha256": "598E2DDA23E1FDA6293E8E4ED1628340ECB65F06C2710E186BAE1A3E29DD126A",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\Threadling.png",
+    "sha256": "5F26121F7AEBCEC8986E9BE4475E24A0D9B298E9C23B2D5F91C9A7119B03FABC",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TuskPilgrim.png",
+    "sha256": "0C338B7FA21D0B230C44C6F61D59F7F0936E1831649DABBF67F150803395AA16",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TwinAntlerStag.png",
+    "sha256": "8CBEF3185E9C8AFC4D6FF6047A580935C0AC4B53C026FE25BE821121C62E8FA5",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\VeilOracle.png",
+    "sha256": "E99802870A7154736336D2A711FC850E0C50889C5CD9C913A3BE58CCD866B99E",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\WebDuchess.png",
+    "sha256": "0D5C519D35A0DAE51239B7BC00F82D2A05F4B60E8C584208D679FB25889B8D10",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\WinterUnicorn.png",
+    "sha256": "24406AE94941AE35DCE695CD4131DD60E606676F413F8F69F8A154BC3DB43763",
+    "width": 1254,
+    "height": 1254,
+    "transparentCorner": true
+  }
+]

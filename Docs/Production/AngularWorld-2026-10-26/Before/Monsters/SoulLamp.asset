@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: SoulLamp
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.soullamp.displayname
+    lastText: "\uD63C\uBD88 \uB4F1\uC794"
+  - propertyPath: encounterHint
+    key: data.monsterdata.soullamp.encounterhint
+    lastText: 
+  textOwnerGuid: 97653d32a637160438a293565ee49723
+  displayName: "\uD63C\uBD88 \uB4F1\uC794"
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 1e24e9b953b176d4d8ab6ccf283a5d3e, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 145
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 26
+  goldReward: 13
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 4f4f82fd595208f4bb3f710034c8358c, type: 2}
+  - {fileID: 11400000, guid: be8249f806a48e1488f8d5d0cffa3dfe, type: 2}
+  bodyColor: {r: 0.60160005, g: 0.48, b: 0.8, a: 1}

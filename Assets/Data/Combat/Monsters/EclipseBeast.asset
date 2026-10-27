@@ -15,19 +15,19 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.eclipsebeast.displayname
-    lastText: "\uC77C\uC2DD\uC758 \uC9D0\uC2B9"
+    lastText: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C"
   - propertyPath: encounterHint
     key: data.monsterdata.eclipsebeast.encounterhint
-    lastText: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
-      \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
-      \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+    lastText: "\uD574 \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uB2EC
+      \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uAC15\uD0C0\uAC00 \uB9C9\uD78C\uB2E4.
+      \uB458 \uB2E4 \uBD80\uC218\uBA74 \uAE30\uC808\uD55C\uB2E4."
   textOwnerGuid: a20162045cffe5a4b96a5816de5fbd16
-  displayName: "\uC77C\uC2DD\uC758 \uC9D0\uC2B9"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 83d6e7506a4929f4ba8af6bd931b2ebc, type: 2}
-  encounterHint: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
-    \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
-    \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+  displayName: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C"
+  portrait: {fileID: 21300000, guid: 2ddf2e89444baa34a915df46248b0f16, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 97a8608e33424234fb72e178383e61c6, type: 2}
+  encounterHint: "\uD574 \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uB2EC
+    \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uAC15\uD0C0\uAC00 \uB9C9\uD78C\uB2E4.
+    \uB458 \uB2E4 \uBD80\uC218\uBA74 \uAE30\uC808\uD55C\uB2E4."
   pattern: 4
   supportId: 
   diesWithLeader: 0
@@ -42,8 +42,9 @@ MonoBehaviour:
   goldReward: 38
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: fd74f1b6e79f82942a663e41ac990ae0, type: 2}
-  - {fileID: 11400000, guid: b4fb85917bc01d54a80be0f51eda507a, type: 2}
-  - {fileID: 11400000, guid: b53749650b0456f4da67a0681878ee7b, type: 2}
-  - {fileID: 11400000, guid: 8fab23a63cf44c045a4191623508c949, type: 2}
+  - {fileID: 11400000, guid: 6b0bec5f81a965449bb3ae7537d411d3, type: 2}
+  - {fileID: 11400000, guid: eea3d16d2de02704296395ce546167e6, type: 2}
+  - {fileID: 11400000, guid: d143ebfbef622bd49a82d0a3bca7d970, type: 2}
+  - {fileID: 11400000, guid: f18c043afce121f4a826d76f3916d594, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.48, g: 0.8, b: 0.5696, a: 1}

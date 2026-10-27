@@ -1,0 +1,192 @@
+
+Restored composition: scoped existing Editor play session
+PASS hero image expansion exactly matches accepted trial
+PASS original full-width environment canvas
+PASS background lowered 24 logical units, without zoom
+PASS production swipe hits enemy with restored hero framing
+PASS original drag-and-hold guard survives art-size restoration
+PASS doors mask=0 facing=North
+PASS doors mask=1 facing=North
+PASS doors mask=2 facing=North
+PASS doors mask=3 facing=North
+PASS doors mask=4 facing=North
+PASS doors mask=5 facing=North
+PASS doors mask=6 facing=North
+PASS doors mask=7 facing=North
+PASS doors mask=0 facing=East
+PASS doors mask=1 facing=East
+PASS doors mask=2 facing=East
+PASS doors mask=3 facing=East
+PASS doors mask=4 facing=East
+PASS doors mask=5 facing=East
+PASS doors mask=6 facing=East
+PASS doors mask=7 facing=East
+PASS doors mask=0 facing=South
+PASS doors mask=1 facing=South
+PASS doors mask=2 facing=South
+PASS doors mask=3 facing=South
+PASS doors mask=4 facing=South
+PASS doors mask=5 facing=South
+PASS doors mask=6 facing=South
+PASS doors mask=7 facing=South
+PASS doors mask=0 facing=West
+PASS doors mask=1 facing=West
+PASS doors mask=2 facing=West
+PASS doors mask=3 facing=West
+PASS doors mask=4 facing=West
+PASS doors mask=5 facing=West
+PASS doors mask=6 facing=West
+PASS doors mask=7 facing=West
+PASS accepted navigation slot Forward
+PASS navigation click target unobstructed Forward
+PASS accepted navigation slot Left
+PASS navigation click target unobstructed Left
+PASS accepted navigation slot Right
+PASS navigation click target unobstructed Right
+PASS accepted navigation slot Back
+PASS navigation click target unobstructed Back
+COMPLETE. No balance suite or extra Editor instance.
+
+Restored composition: scoped existing Editor play session
+PASS hero image expansion exactly matches accepted trial
+PASS original full-width environment canvas
+PASS background lowered 24 logical units, without zoom
+PASS production swipe hits enemy with restored hero framing
+PASS original drag-and-hold guard survives art-size restoration
+PASS doors mask=0 facing=North
+PASS doors mask=1 facing=North
+PASS doors mask=2 facing=North
+PASS doors mask=3 facing=North
+PASS doors mask=4 facing=North
+PASS doors mask=5 facing=North
+PASS doors mask=6 facing=North
+PASS doors mask=7 facing=North
+PASS doors mask=0 facing=East
+PASS doors mask=1 facing=East
+PASS doors mask=2 facing=East
+PASS doors mask=3 facing=East
+PASS doors mask=4 facing=East
+PASS doors mask=5 facing=East
+PASS doors mask=6 facing=East
+PASS doors mask=7 facing=East
+PASS doors mask=0 facing=South
+PASS doors mask=1 facing=South
+PASS doors mask=2 facing=South
+PASS doors mask=3 facing=South
+PASS doors mask=4 facing=South
+PASS doors mask=5 facing=South
+PASS doors mask=6 facing=South
+PASS doors mask=7 facing=South
+PASS doors mask=0 facing=West
+PASS doors mask=1 facing=West
+PASS doors mask=2 facing=West
+PASS doors mask=3 facing=West
+PASS doors mask=4 facing=West
+PASS doors mask=5 facing=West
+PASS doors mask=6 facing=West
+PASS doors mask=7 facing=West
+PASS accepted navigation slot Forward
+PASS navigation click target unobstructed Forward
+PASS accepted navigation slot Left
+PASS navigation click target unobstructed Left
+PASS accepted navigation slot Right
+PASS navigation click target unobstructed Right
+PASS accepted navigation slot Back
+PASS navigation click target unobstructed Back
+COMPLETE. No balance suite or extra Editor instance.
+
+Restored composition: scoped existing Editor play session
+PASS hero image expansion exactly matches accepted trial
+PASS original full-width environment canvas
+PASS background lowered 24 logical units, without zoom
+PASS production swipe hits enemy with restored hero framing
+PASS original drag-and-hold guard survives art-size restoration
+PASS doors mask=0 facing=North
+PASS doors mask=1 facing=North
+PASS doors mask=2 facing=North
+PASS doors mask=3 facing=North
+PASS doors mask=4 facing=North
+PASS doors mask=5 facing=North
+PASS doors mask=6 facing=North
+PASS doors mask=7 facing=North
+PASS doors mask=0 facing=East
+PASS doors mask=1 facing=East
+PASS doors mask=2 facing=East
+PASS doors mask=3 facing=East
+PASS doors mask=4 facing=East
+PASS doors mask=5 facing=East
+PASS doors mask=6 facing=East
+PASS doors mask=7 facing=East
+PASS doors mask=0 facing=South
+PASS doors mask=1 facing=South
+PASS doors mask=2 facing=South
+PASS doors mask=3 facing=South
+PASS doors mask=4 facing=South
+PASS doors mask=5 facing=South
+PASS doors mask=6 facing=South
+PASS doors mask=7 facing=South
+PASS doors mask=0 facing=West
+PASS doors mask=1 facing=West
+PASS doors mask=2 facing=West
+PASS doors mask=3 facing=West
+PASS doors mask=4 facing=West
+PASS doors mask=5 facing=West
+PASS doors mask=6 facing=West
+PASS doors mask=7 facing=West
+PASS accepted navigation slot Forward
+PASS navigation click target unobstructed Forward
+PASS accepted navigation slot Left
+PASS navigation click target unobstructed Left
+PASS accepted navigation slot Right
+PASS navigation click target unobstructed Right
+PASS accepted navigation slot Back
+PASS navigation click target unobstructed Back
+COMPLETE. No balance suite or extra Editor instance.
+
+Restored composition: scoped existing Editor play session
+PASS hero image expansion exactly matches accepted trial
+PASS original full-width environment canvas
+PASS background lowered 24 logical units, without zoom
+PASS production swipe hits enemy with restored hero framing
+PASS original drag-and-hold guard survives art-size restoration
+PASS doors mask=0 facing=North
+PASS doors mask=1 facing=North
+PASS doors mask=2 facing=North
+PASS doors mask=3 facing=North
+PASS doors mask=4 facing=North
+PASS doors mask=5 facing=North
+PASS doors mask=6 facing=North
+PASS doors mask=7 facing=North
+PASS doors mask=0 facing=East
+PASS doors mask=1 facing=East
+PASS doors mask=2 facing=East
+PASS doors mask=3 facing=East
+PASS doors mask=4 facing=East
+PASS doors mask=5 facing=East
+PASS doors mask=6 facing=East
+PASS doors mask=7 facing=East
+PASS doors mask=0 facing=South
+PASS doors mask=1 facing=South
+PASS doors mask=2 facing=South
+PASS doors mask=3 facing=South
+PASS doors mask=4 facing=South
+PASS doors mask=5 facing=South
+PASS doors mask=6 facing=South
+PASS doors mask=7 facing=South
+PASS doors mask=0 facing=West
+PASS doors mask=1 facing=West
+PASS doors mask=2 facing=West
+PASS doors mask=3 facing=West
+PASS doors mask=4 facing=West
+PASS doors mask=5 facing=West
+PASS doors mask=6 facing=West
+PASS doors mask=7 facing=West
+PASS accepted navigation slot Forward
+PASS navigation click target unobstructed Forward
+PASS accepted navigation slot Left
+PASS navigation click target unobstructed Left
+PASS accepted navigation slot Right
+PASS navigation click target unobstructed Right
+PASS accepted navigation slot Back
+PASS navigation click target unobstructed Back
+COMPLETE. No balance suite or extra Editor instance.

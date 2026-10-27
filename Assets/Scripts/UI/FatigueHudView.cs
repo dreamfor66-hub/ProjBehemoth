@@ -16,6 +16,7 @@ namespace DungeonSlash
             var state=run.State;if(state==null)return;var f=state.Fatigue;
             face.gameObject.SetActive(expansion==null||!expansion.IsDecisionOpen);
             face.sprite=faces.Face(state.Player.Data.character,f.Expression);face.color=Color.white;
+            if(faces.useStageTint)face.color=Color.Lerp(new Color(1f,.53f,.43f),Color.white,Mathf.Clamp01(f.Value/60f));
             if(haze!=null){haze.intensity=f.Settings==null?0:f.Settings.peripheralHaze.Evaluate(f.Value);haze.SetVerticesDirty();}
             var hash=Mathf.CeilToInt(f.Value)*10000+f.GraceRemaining;
             if(previous==state&&last==hash)return;previous=state;last=hash;

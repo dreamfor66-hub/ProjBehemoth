@@ -1,5 +1,28 @@
 # Behemoth typography assets
 
+## Current: 이순신체 (2026-10-27)
+
+All eleven roles in `Assets/Data/Presentation/Typography.asset` now use **Base → YiSunShin**.
+This includes titles, narrative, descriptions, buttons, HUD, small counters and damage numbers.
+Change a specific role's **Face** later to make a deliberate exception. Narrow-face substitution
+and native-pixel size snapping are disabled. Original role bindings, localization keys/CSV,
+layout and autosizing remain editable.
+
+`YiSunShin.asset` is a dynamic 64px SDFAA TMP font with bilinear 2048px multi-atlas textures,
+prewarmed from the Korean CSV. Its unmodified source TTFs and official provenance are in
+`../YiSunShin/`. The sole source-missing CSV character is the em dash (—), which uses the
+smooth Liberation Sans SDF fallback. Regular is the active weight; Bold is retained for later art direction.
+
+Default TMP settings and every existing scene/prefab text reference are saved to the new font.
+`YiSunShinPreparation` performs the initial migration automatically, skips dirty loaded scenes,
+and leaves later designer choices alone. No manual menu/bake step is required.
+
+Scoped live verification and screenshots are recorded in `Docs/Production/Typography/YiSunShin/`.
+The old Python bitmap preview/rebuild utilities below target the retained pixel fonts; they are
+not the rebuild workflow for this SDF font. Unity owns SDF creation and dynamic glyph population.
+
+## Previous pixel-font setup (retained assets, inactive assignments)
+
 The active role mapping is saved in `Assets/Data/Presentation/Typography.asset`.
 
 DOS Story uses a mixed source: Korean/punctuation/symbols retain DOS Story; ASCII English letters

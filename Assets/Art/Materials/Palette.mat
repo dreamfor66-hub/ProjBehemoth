@@ -30,8 +30,8 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _WeakPointCore: {r: 0.98039216, g: 0.5921569, b: 0.2901961, a: 1}
-    - _WeakPointShadow: {r: 0.74509805, g: 0.20784314, b: 0.17254902, a: 1}
-    - _WeakPointStroke: {r: 0.9098039, g: 0.32941177, b: 0.21568626, a: 1}
+    - _WeakPointCore: {r: 0.93333334, g: 0.8980392, b: 0.8352941, a: 1}
+    - _WeakPointShadow: {r: 0.39215687, g: 0.34509805, b: 0.41960785, a: 1}
+    - _WeakPointStroke: {r: 0.9372549, g: 0.39607844, b: 0.28235295, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

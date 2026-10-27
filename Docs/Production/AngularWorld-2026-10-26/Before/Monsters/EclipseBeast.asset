@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: EclipseBeast
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.eclipsebeast.displayname
+    lastText: "\uC77C\uC2DD\uC758 \uC9D0\uC2B9"
+  - propertyPath: encounterHint
+    key: data.monsterdata.eclipsebeast.encounterhint
+    lastText: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
+      \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
+      \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+  textOwnerGuid: a20162045cffe5a4b96a5816de5fbd16
+  displayName: "\uC77C\uC2DD\uC758 \uC9D0\uC2B9"
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 83d6e7506a4929f4ba8af6bd931b2ebc, type: 2}
+  encounterHint: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
+    \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
+    \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+  pattern: 4
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 850
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 82
+  goldReward: 38
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: fd74f1b6e79f82942a663e41ac990ae0, type: 2}
+  - {fileID: 11400000, guid: b4fb85917bc01d54a80be0f51eda507a, type: 2}
+  - {fileID: 11400000, guid: b53749650b0456f4da67a0681878ee7b, type: 2}
+  - {fileID: 11400000, guid: 8fab23a63cf44c045a4191623508c949, type: 2}
+  bodyColor: {r: 0.48, g: 0.8, b: 0.5696, a: 1}

@@ -1,0 +1,3497 @@
+[
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionWarrior.png",
+    "size": [
+      1642,
+      958
+    ],
+    "original": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionRogue.png",
+    "size": [
+      1642,
+      958
+    ],
+    "original": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionBarbarian.png",
+    "size": [
+      1642,
+      958
+    ],
+    "original": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionSamurai.png",
+    "size": [
+      1642,
+      958
+    ],
+    "original": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionMonk.png",
+    "size": [
+      1642,
+      958
+    ],
+    "original": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionWizard.png",
+    "size": [
+      1642,
+      958
+    ],
+    "original": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Environments/FirstPersonHall.png",
+    "size": [
+      1643,
+      957
+    ],
+    "original": [
+      1643,
+      957
+    ],
+    "dimensionsPreserved": true,
+    "colors": 5,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Environments/AdventurerCamp.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "original": [
+      1254,
+      1254
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AlarmHound/Idle.png",
+    "size": [
+      406,
+      361
+    ],
+    "original": [
+      406,
+      361
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AlarmHound/Attack.png",
+    "size": [
+      406,
+      361
+    ],
+    "original": [
+      406,
+      361
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AlarmHound/Ready.png",
+    "size": [
+      406,
+      361
+    ],
+    "original": [
+      406,
+      361
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AlarmHound/Dead.png",
+    "size": [
+      406,
+      361
+    ],
+    "original": [
+      406,
+      361
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ArmoredExecutioner/Idle.png",
+    "size": [
+      414,
+      368
+    ],
+    "original": [
+      414,
+      368
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ArmoredExecutioner/Attack.png",
+    "size": [
+      414,
+      368
+    ],
+    "original": [
+      414,
+      368
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ArmoredExecutioner/Ready.png",
+    "size": [
+      414,
+      368
+    ],
+    "original": [
+      414,
+      368
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ArmoredExecutioner/Dead.png",
+    "size": [
+      414,
+      368
+    ],
+    "original": [
+      414,
+      368
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshCrow/Idle.png",
+    "size": [
+      456,
+      405
+    ],
+    "original": [
+      456,
+      405
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshCrow/Attack.png",
+    "size": [
+      456,
+      405
+    ],
+    "original": [
+      456,
+      405
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshCrow/Ready.png",
+    "size": [
+      456,
+      405
+    ],
+    "original": [
+      456,
+      405
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshCrow/Dead.png",
+    "size": [
+      456,
+      405
+    ],
+    "original": [
+      456,
+      405
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshGeneral/Idle.png",
+    "size": [
+      421,
+      413
+    ],
+    "original": [
+      421,
+      413
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshGeneral/Attack.png",
+    "size": [
+      421,
+      413
+    ],
+    "original": [
+      421,
+      413
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshGeneral/Ready.png",
+    "size": [
+      421,
+      413
+    ],
+    "original": [
+      421,
+      413
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshGeneral/Dead.png",
+    "size": [
+      421,
+      413
+    ],
+    "original": [
+      421,
+      413
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshHound/Idle.png",
+    "size": [
+      379,
+      379
+    ],
+    "original": [
+      379,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshHound/Attack.png",
+    "size": [
+      379,
+      379
+    ],
+    "original": [
+      379,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshHound/Ready.png",
+    "size": [
+      379,
+      379
+    ],
+    "original": [
+      379,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/AshHound/Dead.png",
+    "size": [
+      379,
+      379
+    ],
+    "original": [
+      379,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Bat/Idle.png",
+    "size": [
+      365,
+      365
+    ],
+    "original": [
+      365,
+      365
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Bat/Attack.png",
+    "size": [
+      365,
+      365
+    ],
+    "original": [
+      365,
+      365
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Bat/Ready.png",
+    "size": [
+      365,
+      365
+    ],
+    "original": [
+      365,
+      365
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Bat/Dead.png",
+    "size": [
+      365,
+      365
+    ],
+    "original": [
+      365,
+      365
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BellKeeper/Idle.png",
+    "size": [
+      420,
+      412
+    ],
+    "original": [
+      420,
+      412
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BellKeeper/Attack.png",
+    "size": [
+      420,
+      412
+    ],
+    "original": [
+      420,
+      412
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BellKeeper/Ready.png",
+    "size": [
+      420,
+      412
+    ],
+    "original": [
+      420,
+      412
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BellKeeper/Dead.png",
+    "size": [
+      420,
+      412
+    ],
+    "original": [
+      420,
+      412
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BloodExecutioner/Idle.png",
+    "size": [
+      348,
+      341
+    ],
+    "original": [
+      348,
+      341
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BloodExecutioner/Attack.png",
+    "size": [
+      348,
+      341
+    ],
+    "original": [
+      348,
+      341
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BloodExecutioner/Ready.png",
+    "size": [
+      348,
+      341
+    ],
+    "original": [
+      348,
+      341
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BloodExecutioner/Dead.png",
+    "size": [
+      348,
+      341
+    ],
+    "original": [
+      348,
+      341
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BroodKeeper/Idle.png",
+    "size": [
+      353,
+      347
+    ],
+    "original": [
+      353,
+      347
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BroodKeeper/Attack.png",
+    "size": [
+      353,
+      347
+    ],
+    "original": [
+      353,
+      347
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BroodKeeper/Ready.png",
+    "size": [
+      353,
+      347
+    ],
+    "original": [
+      353,
+      347
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/BroodKeeper/Dead.png",
+    "size": [
+      353,
+      347
+    ],
+    "original": [
+      353,
+      347
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/CrystalSpider/Idle.png",
+    "size": [
+      465,
+      310
+    ],
+    "original": [
+      465,
+      310
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/CrystalSpider/Attack.png",
+    "size": [
+      465,
+      310
+    ],
+    "original": [
+      465,
+      310
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/CrystalSpider/Ready.png",
+    "size": [
+      465,
+      310
+    ],
+    "original": [
+      465,
+      310
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/CrystalSpider/Dead.png",
+    "size": [
+      465,
+      310
+    ],
+    "original": [
+      465,
+      310
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/DeepTrialGuardian/Idle.png",
+    "size": [
+      447,
+      298
+    ],
+    "original": [
+      447,
+      298
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/DeepTrialGuardian/Attack.png",
+    "size": [
+      447,
+      298
+    ],
+    "original": [
+      447,
+      298
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/DeepTrialGuardian/Ready.png",
+    "size": [
+      447,
+      298
+    ],
+    "original": [
+      447,
+      298
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/DeepTrialGuardian/Dead.png",
+    "size": [
+      447,
+      298
+    ],
+    "original": [
+      447,
+      298
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostBat/Idle.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostBat/Attack.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostBat/Ready.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostBat/Dead.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostOgre/Idle.png",
+    "size": [
+      408,
+      408
+    ],
+    "original": [
+      408,
+      408
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostOgre/Attack.png",
+    "size": [
+      408,
+      408
+    ],
+    "original": [
+      408,
+      408
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostOgre/Ready.png",
+    "size": [
+      408,
+      408
+    ],
+    "original": [
+      408,
+      408
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostOgre/Dead.png",
+    "size": [
+      408,
+      408
+    ],
+    "original": [
+      408,
+      408
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostQueen/Idle.png",
+    "size": [
+      390,
+      390
+    ],
+    "original": [
+      390,
+      390
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostQueen/Attack.png",
+    "size": [
+      390,
+      390
+    ],
+    "original": [
+      390,
+      390
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostQueen/Ready.png",
+    "size": [
+      390,
+      390
+    ],
+    "original": [
+      390,
+      390
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/FrostQueen/Dead.png",
+    "size": [
+      390,
+      390
+    ],
+    "original": [
+      390,
+      390
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceMirror/Idle.png",
+    "size": [
+      495,
+      330
+    ],
+    "original": [
+      495,
+      330
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceMirror/Attack.png",
+    "size": [
+      495,
+      330
+    ],
+    "original": [
+      495,
+      330
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceMirror/Ready.png",
+    "size": [
+      495,
+      330
+    ],
+    "original": [
+      495,
+      330
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceMirror/Dead.png",
+    "size": [
+      495,
+      330
+    ],
+    "original": [
+      495,
+      330
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceNeedle/Idle.png",
+    "size": [
+      416,
+      416
+    ],
+    "original": [
+      416,
+      416
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceNeedle/Attack.png",
+    "size": [
+      416,
+      416
+    ],
+    "original": [
+      416,
+      416
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceNeedle/Ready.png",
+    "size": [
+      416,
+      416
+    ],
+    "original": [
+      416,
+      416
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceNeedle/Dead.png",
+    "size": [
+      416,
+      416
+    ],
+    "original": [
+      416,
+      416
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceWraith/Idle.png",
+    "size": [
+      397,
+      397
+    ],
+    "original": [
+      397,
+      397
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceWraith/Attack.png",
+    "size": [
+      397,
+      397
+    ],
+    "original": [
+      397,
+      397
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceWraith/Ready.png",
+    "size": [
+      397,
+      397
+    ],
+    "original": [
+      397,
+      397
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/IceWraith/Dead.png",
+    "size": [
+      397,
+      397
+    ],
+    "original": [
+      397,
+      397
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LampPriest/Idle.png",
+    "size": [
+      429,
+      286
+    ],
+    "original": [
+      429,
+      286
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LampPriest/Attack.png",
+    "size": [
+      429,
+      286
+    ],
+    "original": [
+      429,
+      286
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LampPriest/Ready.png",
+    "size": [
+      429,
+      286
+    ],
+    "original": [
+      429,
+      286
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LampPriest/Dead.png",
+    "size": [
+      429,
+      286
+    ],
+    "original": [
+      429,
+      286
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Leech/Idle.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Leech/Attack.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Leech/Ready.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Leech/Dead.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LeftHeart/Idle.png",
+    "size": [
+      400,
+      267
+    ],
+    "original": [
+      400,
+      267
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LeftHeart/Attack.png",
+    "size": [
+      400,
+      267
+    ],
+    "original": [
+      400,
+      267
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LeftHeart/Ready.png",
+    "size": [
+      400,
+      267
+    ],
+    "original": [
+      400,
+      267
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/LeftHeart/Dead.png",
+    "size": [
+      400,
+      267
+    ],
+    "original": [
+      400,
+      267
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MazeGuardian/Idle.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MazeGuardian/Attack.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MazeGuardian/Ready.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MazeGuardian/Dead.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MerchantMutant/Idle.png",
+    "size": [
+      454,
+      454
+    ],
+    "original": [
+      454,
+      454
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MerchantMutant/Attack.png",
+    "size": [
+      454,
+      454
+    ],
+    "original": [
+      454,
+      454
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MerchantMutant/Ready.png",
+    "size": [
+      454,
+      454
+    ],
+    "original": [
+      454,
+      454
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MerchantMutant/Dead.png",
+    "size": [
+      454,
+      454
+    ],
+    "original": [
+      454,
+      454
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Mimic/Idle.png",
+    "size": [
+      444,
+      444
+    ],
+    "original": [
+      444,
+      444
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Mimic/Attack.png",
+    "size": [
+      444,
+      444
+    ],
+    "original": [
+      444,
+      444
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Mimic/Ready.png",
+    "size": [
+      444,
+      444
+    ],
+    "original": [
+      444,
+      444
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Mimic/Dead.png",
+    "size": [
+      444,
+      444
+    ],
+    "original": [
+      444,
+      444
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Minotaur/Idle.png",
+    "size": [
+      452,
+      452
+    ],
+    "original": [
+      452,
+      452
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Minotaur/Attack.png",
+    "size": [
+      452,
+      452
+    ],
+    "original": [
+      452,
+      452
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Minotaur/Ready.png",
+    "size": [
+      452,
+      452
+    ],
+    "original": [
+      452,
+      452
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Minotaur/Dead.png",
+    "size": [
+      452,
+      452
+    ],
+    "original": [
+      452,
+      452
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MirrorKnight/Idle.png",
+    "size": [
+      672,
+      448
+    ],
+    "original": [
+      672,
+      448
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MirrorKnight/Attack.png",
+    "size": [
+      672,
+      448
+    ],
+    "original": [
+      672,
+      448
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MirrorKnight/Ready.png",
+    "size": [
+      672,
+      448
+    ],
+    "original": [
+      672,
+      448
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/MirrorKnight/Dead.png",
+    "size": [
+      672,
+      448
+    ],
+    "original": [
+      672,
+      448
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/OrbitBat/Idle.png",
+    "size": [
+      489,
+      326
+    ],
+    "original": [
+      489,
+      326
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/OrbitBat/Attack.png",
+    "size": [
+      489,
+      326
+    ],
+    "original": [
+      489,
+      326
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/OrbitBat/Ready.png",
+    "size": [
+      489,
+      326
+    ],
+    "original": [
+      489,
+      326
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/OrbitBat/Dead.png",
+    "size": [
+      489,
+      326
+    ],
+    "original": [
+      489,
+      326
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/PaleWisp/Idle.png",
+    "size": [
+      450,
+      300
+    ],
+    "original": [
+      450,
+      300
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/PaleWisp/Attack.png",
+    "size": [
+      450,
+      300
+    ],
+    "original": [
+      450,
+      300
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/PaleWisp/Ready.png",
+    "size": [
+      450,
+      300
+    ],
+    "original": [
+      450,
+      300
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/PaleWisp/Dead.png",
+    "size": [
+      450,
+      300
+    ],
+    "original": [
+      450,
+      300
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/RightHeart/Idle.png",
+    "size": [
+      474,
+      316
+    ],
+    "original": [
+      474,
+      316
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/RightHeart/Attack.png",
+    "size": [
+      474,
+      316
+    ],
+    "original": [
+      474,
+      316
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/RightHeart/Ready.png",
+    "size": [
+      474,
+      316
+    ],
+    "original": [
+      474,
+      316
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/RightHeart/Dead.png",
+    "size": [
+      474,
+      316
+    ],
+    "original": [
+      474,
+      316
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ShadeLancer/Idle.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ShadeLancer/Attack.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ShadeLancer/Ready.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/ShadeLancer/Dead.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Skeleton/Idle.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Skeleton/Attack.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Skeleton/Ready.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Skeleton/Dead.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SnowBell/Idle.png",
+    "size": [
+      540,
+      360
+    ],
+    "original": [
+      540,
+      360
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SnowBell/Attack.png",
+    "size": [
+      540,
+      360
+    ],
+    "original": [
+      540,
+      360
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SnowBell/Ready.png",
+    "size": [
+      540,
+      360
+    ],
+    "original": [
+      540,
+      360
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SnowBell/Dead.png",
+    "size": [
+      540,
+      360
+    ],
+    "original": [
+      540,
+      360
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulEater/Idle.png",
+    "size": [
+      427,
+      379
+    ],
+    "original": [
+      427,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulEater/Attack.png",
+    "size": [
+      427,
+      379
+    ],
+    "original": [
+      427,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulEater/Ready.png",
+    "size": [
+      427,
+      379
+    ],
+    "original": [
+      427,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulEater/Dead.png",
+    "size": [
+      427,
+      379
+    ],
+    "original": [
+      427,
+      379
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulKnight/Idle.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulKnight/Attack.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulKnight/Ready.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulKnight/Dead.png",
+    "size": [
+      432,
+      432
+    ],
+    "original": [
+      432,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulLamp/Idle.png",
+    "size": [
+      438,
+      292
+    ],
+    "original": [
+      438,
+      292
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulLamp/Attack.png",
+    "size": [
+      438,
+      292
+    ],
+    "original": [
+      438,
+      292
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulLamp/Ready.png",
+    "size": [
+      438,
+      292
+    ],
+    "original": [
+      438,
+      292
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/SoulLamp/Dead.png",
+    "size": [
+      438,
+      292
+    ],
+    "original": [
+      438,
+      292
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormMatriarch/Idle.png",
+    "size": [
+      453,
+      302
+    ],
+    "original": [
+      453,
+      302
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormMatriarch/Attack.png",
+    "size": [
+      453,
+      302
+    ],
+    "original": [
+      453,
+      302
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormMatriarch/Ready.png",
+    "size": [
+      453,
+      302
+    ],
+    "original": [
+      453,
+      302
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormMatriarch/Dead.png",
+    "size": [
+      453,
+      302
+    ],
+    "original": [
+      453,
+      302
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormOrb/Idle.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormOrb/Attack.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormOrb/Ready.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/StormOrb/Dead.png",
+    "size": [
+      362,
+      362
+    ],
+    "original": [
+      362,
+      362
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrainingLight/Attack.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrainingLight/Ready.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrainingLight/Dead.png",
+    "size": [
+      426,
+      426
+    ],
+    "original": [
+      426,
+      426
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrialGuardian/Idle.png",
+    "size": [
+      564,
+      376
+    ],
+    "original": [
+      564,
+      376
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrialGuardian/Attack.png",
+    "size": [
+      564,
+      376
+    ],
+    "original": [
+      564,
+      376
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrialGuardian/Ready.png",
+    "size": [
+      564,
+      376
+    ],
+    "original": [
+      564,
+      376
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TrialGuardian/Dead.png",
+    "size": [
+      564,
+      376
+    ],
+    "original": [
+      564,
+      376
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TunnelRat/Idle.png",
+    "size": [
+      472,
+      315
+    ],
+    "original": [
+      472,
+      315
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TunnelRat/Attack.png",
+    "size": [
+      472,
+      315
+    ],
+    "original": [
+      472,
+      315
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TunnelRat/Ready.png",
+    "size": [
+      472,
+      315
+    ],
+    "original": [
+      472,
+      315
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/TunnelRat/Dead.png",
+    "size": [
+      472,
+      315
+    ],
+    "original": [
+      472,
+      315
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/VoidMaw/Idle.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/VoidMaw/Attack.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/VoidMaw/Ready.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/VoidMaw/Dead.png",
+    "size": [
+      372,
+      372
+    ],
+    "original": [
+      372,
+      372
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Yeti/Idle.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Yeti/Attack.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Yeti/Ready.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Enemies/Combat/Yeti/Dead.png",
+    "size": [
+      406,
+      406
+    ],
+    "original": [
+      406,
+      406
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/UI/Title/DungeonMortalisLogo.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "original": [
+      1536,
+      1024
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Warrior/Idle.png",
+    "size": [
+      518,
+      432
+    ],
+    "original": [
+      518,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Warrior/Attack.png",
+    "size": [
+      518,
+      432
+    ],
+    "original": [
+      518,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Warrior/Guard.png",
+    "size": [
+      518,
+      432
+    ],
+    "original": [
+      518,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "original": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "original": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Rear.png",
+    "size": [
+      299,
+      385
+    ],
+    "original": [
+      299,
+      385
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Rogue/Idle.png",
+    "size": [
+      514,
+      429
+    ],
+    "original": [
+      514,
+      429
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Rogue/Attack.png",
+    "size": [
+      514,
+      429
+    ],
+    "original": [
+      514,
+      429
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Rogue/Guard.png",
+    "size": [
+      514,
+      429
+    ],
+    "original": [
+      514,
+      429
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "original": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "original": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 6,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Rear.png",
+    "size": [
+      278,
+      377
+    ],
+    "original": [
+      278,
+      377
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Barbarian/Idle.png",
+    "size": [
+      470,
+      393
+    ],
+    "original": [
+      470,
+      393
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Barbarian/Attack.png",
+    "size": [
+      470,
+      393
+    ],
+    "original": [
+      470,
+      393
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Barbarian/Guard.png",
+    "size": [
+      470,
+      393
+    ],
+    "original": [
+      470,
+      393
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "original": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "original": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Rear.png",
+    "size": [
+      311,
+      404
+    ],
+    "original": [
+      311,
+      404
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Samurai/Idle.png",
+    "size": [
+      564,
+      471
+    ],
+    "original": [
+      564,
+      471
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Samurai/Attack.png",
+    "size": [
+      564,
+      471
+    ],
+    "original": [
+      564,
+      471
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Samurai/Guard.png",
+    "size": [
+      564,
+      471
+    ],
+    "original": [
+      564,
+      471
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "original": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "original": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Rear.png",
+    "size": [
+      239,
+      405
+    ],
+    "original": [
+      239,
+      405
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Monk/Idle.png",
+    "size": [
+      458,
+      382
+    ],
+    "original": [
+      458,
+      382
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Monk/Attack.png",
+    "size": [
+      458,
+      382
+    ],
+    "original": [
+      458,
+      382
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Monk/Guard.png",
+    "size": [
+      458,
+      382
+    ],
+    "original": [
+      458,
+      382
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "original": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "original": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Rear.png",
+    "size": [
+      215,
+      385
+    ],
+    "original": [
+      215,
+      385
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Wizard/Idle.png",
+    "size": [
+      469,
+      391
+    ],
+    "original": [
+      469,
+      391
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Wizard/Attack.png",
+    "size": [
+      469,
+      391
+    ],
+    "original": [
+      469,
+      391
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Wizard/Guard.png",
+    "size": [
+      469,
+      391
+    ],
+    "original": [
+      469,
+      391
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "original": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "original": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "original": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Rear.png",
+    "size": [
+      248,
+      414
+    ],
+    "original": [
+      248,
+      414
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true
+  }
+]

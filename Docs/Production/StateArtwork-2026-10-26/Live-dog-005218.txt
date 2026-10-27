@@ -1,0 +1,5 @@
+Scoped original 3/4/2 state-image contract; production actions and existing Unity Editor.
+PASS Companion-TrailDog exact distinct state images; no mesh-motion substitute
+PASS Companion-TrailDog rear Idle
+PASS Companion-TrailDog companion attack switches independently while player guards
+COMPLETE

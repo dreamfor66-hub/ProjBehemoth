@@ -1,0 +1,22 @@
+Scoped original 3/4/2 state-image contract; production actions and existing Unity Editor.
+PASS Monster-Threadling exact distinct state images; no mesh-motion substitute
+PASS Monster-Threadling Idle
+PASS Monster-Threadling real normal windup switches Ready
+PASS Monster-Threadling real normal hit switches Attack
+PASS Monster-Threadling lethal damage switches Dead before fade
+PASS Monster-CrystalUrchin exact distinct state images; no mesh-motion substitute
+PASS Monster-CrystalUrchin Idle
+PASS Monster-CrystalUrchin real normal windup switches Ready
+PASS Monster-CrystalUrchin real normal hit switches Attack
+PASS Monster-CrystalUrchin lethal damage switches Dead before fade
+PASS Monster-StormJelly exact distinct state images; no mesh-motion substitute
+PASS Monster-StormJelly Idle
+PASS Monster-StormJelly real normal windup switches Ready
+PASS Monster-StormJelly real normal hit switches Attack
+PASS Monster-StormJelly lethal damage switches Dead before fade
+PASS Monster-CrownColossus exact distinct state images; no mesh-motion substitute
+PASS Monster-CrownColossus Idle
+PASS Monster-CrownColossus real normal windup switches Ready
+PASS Monster-CrownColossus real normal hit switches Attack
+PASS Monster-CrownColossus lethal damage switches Dead before fade
+COMPLETE

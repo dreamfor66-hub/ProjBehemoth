@@ -1,0 +1,59 @@
+{
+  "purpose": "User-supplied style reference originals. Preserve originals and visible source attribution; reference use only.",
+  "references": [
+    {
+      "id": "01",
+      "file": "01-swordsman-back.jpg",
+      "source": "C:/Users/user/Downloads/1cb2de2e9738cbd10a731069f7029cce.jpg",
+      "label": "등을 보인 검사 · 큰 망토 면과 단순한 다리"
+    },
+    {
+      "id": "02",
+      "file": "02-white-hood-swordswoman.jpg",
+      "source": "C:/Users/user/Downloads/b7e10b59f4c0221b1baf0600e68818ee.jpg",
+      "label": "흰 후드 검사 · 큰 밝은 덩어리와 손맛 있는 선"
+    },
+    {
+      "id": "03",
+      "file": "03-armored-hood-fighter.jpg",
+      "source": "C:/Users/user/Downloads/6744534c6ea1f5964123555df7253f4f.jpg",
+      "label": "갑옷 검사 · 무기와 몸의 실루엣"
+    },
+    {
+      "id": "04",
+      "file": "04-brawler-back.jpg",
+      "source": "C:/Users/user/Downloads/e6df522037301a0d55f65eb5419deb29.jpg",
+      "label": "맨등 전사 · 근육 형태와 묘사 절제"
+    },
+    {
+      "id": "05",
+      "file": "05-monkey-staff-fighter.jpg",
+      "source": "C:/Users/user/Downloads/cb0a3c195f95d9b5abdf14ac1f4f0aa6.jpg",
+      "label": "원숭이 봉술가 · 인외 얼굴과 간결한 옷"
+    },
+    {
+      "id": "06",
+      "file": "06-hooded-archer.png",
+      "source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_38_41.png",
+      "label": "궁수 · 큰 후드와 간결한 장비"
+    },
+    {
+      "id": "07",
+      "file": "07-wrapped-chest-fighter.png",
+      "source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_39_22.png",
+      "label": "붕대 여성 전사 · 큰 얼굴과 강한 태도"
+    },
+    {
+      "id": "08",
+      "file": "08-blonde-caster.jpg",
+      "source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_39_25.jpg",
+      "label": "금발 마법사 · 단순한 얼굴과 여유 있는 몸짓"
+    },
+    {
+      "id": "09",
+      "file": "09-dark-haired-fighter.jpg",
+      "source": "C:/Users/user/Downloads/ChatGPT 이미지 2026년 10월 25일 오후 08_39_28.jpg",
+      "label": "흑발 여성 전사 · 간결한 피부와 의상 면"
+    }
+  ]
+}

@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.data_monster_b2_minion_yeti.displayname
-    lastText: "\uC124\uC778"
+    lastText: "\uC5C4\uB2C8 \uC21C\uB840\uC790"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_b2_minion_yeti.encounterhint
-    lastText: 
+    lastText: "\uACC1\uC758 \uC885\uD1A0\uB07C\uC640 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4.
+      \uAC15\uD0C0 \uC900\uBE44\uB97C \uBCF4\uACE0 \uC57D\uC810\uC744 \uB04A\uC790."
   textOwnerGuid: 756c766eabf90b04192ff6bf4e09c953
-  displayName: "\uC124\uC778"
-  portrait: {fileID: 21300000, guid: 3853b620064c596fabce71bb109e9f22, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 29f2f3b213cea7a4694ea0d453195489, type: 2}
-  encounterHint: 
+  displayName: "\uC5C4\uB2C8 \uC21C\uB840\uC790"
+  portrait: {fileID: 21300000, guid: 36654e0a57dbc8a48b809bb4a5c79017, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e24769b18fbdafb4783f8cf8c3845cb8, type: 2}
+  encounterHint: "\uACC1\uC758 \uC885\uD1A0\uB07C\uC640 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4.
+    \uAC15\uD0C0 \uC900\uBE44\uB97C \uBCF4\uACE0 \uC57D\uC810\uC744 \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 16
   bodyHitRadius: 108
   attacks:
-  - {fileID: 11400000, guid: 8dc4737da615aa142a89650bb5b99895, type: 2}
-  - {fileID: 11400000, guid: 578add83884b95148a1606bf32430f34, type: 2}
+  - {fileID: 11400000, guid: ea086871338de334db2f7a0194ef149d, type: 2}
+  - {fileID: 11400000, guid: ef742c2632257c64987c986d23754626, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.78, g: 0.9, b: 1, a: 1}

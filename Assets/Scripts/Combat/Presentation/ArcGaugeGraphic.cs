@@ -10,6 +10,14 @@ namespace DungeonSlash
         [SerializeField, Range(0f, 1f)] private float fillAmount = 1f;
         [SerializeField, Min(1f)] private float thickness = 12f;
         [SerializeField] private float startAngle = 150f;
+        public InkUiStyle inkStyle;
+        public bool inkTrack;
+        int styleRevision = -1;
+
+        void LateUpdate()
+        {
+            if(inkStyle!=null && styleRevision!=inkStyle.RenderRevision){styleRevision=inkStyle.RenderRevision;SetVerticesDirty();}
+        }
 
         public float FillAmount => fillAmount;
 
@@ -33,6 +41,8 @@ namespace DungeonSlash
         {
             vertexHelper.Clear();
             if (fillAmount <= 0f) return;
+
+            if(inkStyle!=null){InkUiDrawing.Arc(vertexHelper,rectTransform.rect,inkStyle,arcDegrees,startAngle,fillAmount,thickness,color,inkTrack);return;}
 
             var rect = rectTransform.rect;
             var outerRadius = Mathf.Min(rect.width * .45f, rect.height * .62f);

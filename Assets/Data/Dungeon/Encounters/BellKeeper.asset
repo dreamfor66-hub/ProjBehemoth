@@ -15,18 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.bellkeeper.displayname
-    lastText: "\uC885\uC9C0\uAE30"
+    lastText: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
   - propertyPath: hint
     key: data.encounterdata.bellkeeper.hint
-    lastText: "\uC5F0\uC18D \uC885\uC18C\uB9AC \uB4A4 \uAE34 \uAC15\uD0C0. \uC5EC\uB7EC
-      \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uD30C\uAD34\uD560 \uAE30\uD68C\uB97C
-      \uCC3E\uC790."
+    lastText: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4.
+      \uC5EC\uB7EC \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
   textOwnerGuid: 2dee0349aa0dc1f4ab9fb9c25ded7d56
   id: BellKeeper
-  displayName: "\uC885\uC9C0\uAE30"
-  hint: "\uC5F0\uC18D \uC885\uC18C\uB9AC \uB4A4 \uAE34 \uAC15\uD0C0. \uC5EC\uB7EC
-    \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uD30C\uAD34\uD560 \uAE30\uD68C\uB97C
-    \uCC3E\uC790."
+  displayName: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
+  hint: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4. \uC5EC\uB7EC
+    \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
   category: 10
   members:
   - monster: {fileID: 11400000, guid: 4dc6b9d6f09c1f14594fda8127d02995, type: 2}

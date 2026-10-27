@@ -1,0 +1,29 @@
+{
+  "mode": "Built-in image_gen",
+  "prompts": {
+    "Warrior": "Use case: precise-object-edit. Asset type: MINIMAL cleanup of original Warrior's front shoulder-mantle cloth.\nImage 1 is the original approved Warrior: the ONLY full-body edit target. Image 2 is a crop marking the exact problem area: too many ragged little strips in the cloth draped in front of the upper chest.\nRESTORE AND PRESERVE IMAGE 1's entire original character. Change ONLY the overly messy front-facing olive-grey cloth over the upper chest. Consolidate its overlapping pointed tatters into one simple broad diagonal cloth fold and a single short end, with just one or two small worn nicks at the hem. Keep the original inexpensive worn cloth material and olive-grey color, same small round fastening clasp and original ochre neck scarf. Keep the drape in the same upper-chest area, leave the same iron armor visible. This is a local hem/shape cleanup, not a costume redesign. It should still be the original ragged-cloth beginner Warrior, just with the excessive little dangling front tatters simplified into readable large planes.\nPreserve helmet silhouette, fully covered face and visor, pose, anatomy/proportions, breastplate, BOTH original shoulder plates, arms, gloves, belt, lower waist fabric, trousers, knees, boots, sword, wooden shield, palette, outlines and original flat shading. DO NOT change anything below the breastplate; do not remove the shoulder mantle, replace it with white fabric, change armor, add a tabard, or make pristine ceremonial clothing. Do not enlarge shoulders or change cloth on the back. Do not borrow previous Warrior variants.\nExact original angular cartoon art quality, broad flat cel shadows, no gradient, glow, fine texture, dithering or downsampling. Full original character including boots and sword/shield, transparent background, no halo, scenery, ground shadow, text, labels or watermark.",
+    "Samurai": "Use case: precise-object-edit. Asset type: return to original MALE Samurai, strengthen shoulder armor only.\nImage 1 is the ORIGINAL MALE SAMURAI and is the authoritative edit target for identity, gender, face, hair, anatomy, proportions, costume, pose and colors. Restore this same adult East Asian handsome long-haired male swordsman, not the female variant.\nImage 2 is a supporting reference ONLY for its strongly visible layered iron shoulder armor. Borrow ONLY the readable shoulder-guard mass and layering, nothing else from Image 2.\nChange only the original small metal shoulder guard on the original male's existing armored shoulder: enlarge it into a prominent practical dark iron sode/pauldron, with a broad angular top plate and two clearly separated descending plates on the upper arm. Enough presence to define the shoulder silhouette, still lightweight practical Samurai armor, no giant spikes, gold ornament, full breastplate or extra armor elsewhere.\nKeep ALL OTHER aspects of Image 1: same male face, hair tied at nape, restrained expression, closed olive kimono chest, cream inner collar, rust-red sash, existing sleeves and wraps, original trousers and footwear, original hand position and sheathed katana. The existing male character's body proportions remain unchanged. No chest bandages, bare midriff, female body, one-bare-shoulder costume, high ponytail, or elongated anatomy from the rejected female concept. Do not redesign or restyle the male face.\nPreserve approved original angular cartoon rendering, thick dark outlines, simple flat shadow planes and restrained colors. No gradient, glow, grain, tiny texture, dithering or coarse pixelation. Full body and complete equipment visible with clear margins on genuine transparent background. No backdrop, ground shadow, text, label, signature or watermark. One single male Samurai only."
+  },
+  "references": {
+    "Warrior": [
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/SourceWarrior.png",
+      "C:/Users/user/AppData/Local/Temp/codex-clipboard-1b6a9fbf-e44c-464b-bae4-30b5875ed458.png"
+    ],
+    "Samurai": [
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/SourceSamurai.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/Concepts04/Samurai.png"
+    ]
+  },
+  "sources": {
+    "Warrior": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-14cee093-8eae-4a23-af51-8d0637d9a926.png",
+    "Samurai": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-7b1f5e51-d2a1-40eb-975f-952afe8602ac.png",
+    "Wizard": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/Concepts04/Wizard.png"
+  },
+  "outputs": {
+    "Warrior": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/Concepts05/Warrior.png",
+    "Samurai": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/Concepts05/Samurai.png",
+    "Wizard": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/Concepts05/Wizard.png"
+  },
+  "Wizard": "Unchanged copy of the new friendly book-reading Wizard from Concepts04; generation prompts recorded there.",
+  "Rogue": "Original approved SourceRogue.png remains unchanged and excluded as a proportion baseline."
+}

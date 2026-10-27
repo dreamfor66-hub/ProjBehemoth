@@ -1,0 +1,8 @@
+{
+  "frontOriginalArmChangedOutsideLeatherLoops": 0,
+  "rearOriginalArmChangedOutsideLeatherLoops": 0,
+  "barbarianRedEdgeNoiseRemoved": 2,
+  "wizardRedEdgeNoiseRemoved": 705,
+  "pass": true,
+  "note": "Arm/hand coordinates and source pixels locked. Only the new shield and leather loop fronts are composited. No generated Warrior anatomy is used."
+}

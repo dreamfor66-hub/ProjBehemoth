@@ -1,0 +1,34 @@
+Focused existing-Editor verification. Practice clones only; no DPS/balance suite.
+PASS 해골 전사 hitbox bottom=(-370.00, -65.00) requested=(-370.00, -65.00) scale=1
+PASS 해골 전사 visible Idle contact matches bottom=-65
+PASS 해골 전사 view and collision centers agree
+PASS 거미 hitbox bottom=(0.00, 0.00) requested=(0.00, 0.00) scale=0.75
+PASS 거미 visible Idle contact matches bottom=3.967434E-07
+PASS 거미 view and collision centers agree
+PASS 해골 전사 hitbox bottom=(370.00, -65.00) requested=(370.00, -65.00) scale=0.5
+PASS 해골 전사 visible Idle contact matches bottom=-65
+PASS 해골 전사 view and collision centers agree
+PASS height 18 at scale .5 places center 4.5 above requested bottom
+PASS normal slash damages relocated body
+PASS relocated body exposes charge weak point
+PASS weak point screen/input mapping follows relocated center
+PASS charged slash hits relocated weak point
+PASS four distinct authored images: 해골 전사
+PASS 해골 전사 displays Idle
+PASS 해골 전사 displays Ready
+PASS 해골 전사 displays Attack
+PASS 해골 전사 displays Dead
+PASS four distinct authored images: 거미
+PASS 거미 displays Idle
+PASS 거미 displays Ready
+PASS 거미 displays Attack
+PASS 거미 displays Dead
+PASS 거미 hitbox bottom=(0.00, 140.00) requested=(0.00, 140.00) scale=0.6
+PASS 거미 visible Idle contact matches bottom=140
+PASS 거미 view and collision centers agree
+PASS orbit moves around authored elevated center
+PASS failed-charge summon uses the real spawn path
+PASS 거미 hitbox bottom=(-176.00, 124.00) requested=(-176.00, 124.00) scale=0.62
+PASS 거미 visible Idle contact matches bottom=124
+PASS 거미 view and collision centers agree
+COMPLETE failures=0. Saved stats unchanged. Touch device and broad balance remain outside this scoped check.

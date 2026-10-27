@@ -1,0 +1,371 @@
+[
+  {
+    "id": "LanternImp",
+    "previous": "박쥐",
+    "current": "고블린사냥꾼",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "BoneScorpion",
+    "previous": "굴쥐",
+    "current": "거미",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "StringRevenant",
+    "previous": "해골",
+    "current": "해골 전사",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "CoffinSlime",
+    "previous": "흡혈형",
+    "current": "흡혈박쥐",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "BellHound",
+    "previous": "경보 사냥개",
+    "current": "경종 사냥개",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "EttinGatekeeper",
+    "previous": "미노타우루스",
+    "current": "쌍두 문지기",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "MirrorShell",
+    "previous": "거울기사",
+    "current": "움직이는 갑옷",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "IronMantis",
+    "previous": "철갑 집행관",
+    "current": "철갑 사마귀",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "StoneSphinx",
+    "previous": "미궁의 수호자",
+    "current": "미궁 스핑크스",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "OssuaryBell",
+    "previous": "종지기",
+    "current": "납골당의 종",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "WebDuchess",
+    "previous": "회전 둥지의 주인",
+    "current": "실짜는 공작부인",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "Threadling",
+    "previous": "선회 박쥐",
+    "current": "실인형",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "QuillSprite",
+    "previous": "서리 박쥐",
+    "current": "깃바늘 정령",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "CrystalUrchin",
+    "previous": "빙침 정찰병",
+    "current": "결정 성게",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "VeilOracle",
+    "previous": "얼음 귀신",
+    "current": "장막 예언자",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "TuskPilgrim",
+    "previous": "설인",
+    "current": "엄니 순례자",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "BellHare",
+    "previous": "눈종 정령",
+    "current": "종토끼",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "TwinAntlerStag",
+    "previous": "서리 거인",
+    "current": "쌍각 파수꾼",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "MirrorMoth",
+    "previous": "얼음 거울기사",
+    "current": "거울나방",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "MaskedChoir",
+    "previous": "창백한 위습",
+    "current": "가면 성가수",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "WinterUnicorn",
+    "previous": "서리 여왕",
+    "current": "겨울의 일각수",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "PrismCrab",
+    "previous": "수정 거미",
+    "current": "수정 등딱지",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "TempestRoc",
+    "previous": "폭풍의 모체",
+    "current": "폭풍의 대붕",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "StormJelly",
+    "previous": "선회 뇌구",
+    "current": "폭풍 해파리",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "CoalSalamander",
+    "previous": "재 사냥개",
+    "current": "숯불 도롱뇽",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "SerpentWarden",
+    "previous": "영혼 창병",
+    "current": "뱀 수문장",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "AshGargoyle",
+    "previous": "재까마귀",
+    "current": "재 가고일",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "HollowEye",
+    "previous": "공허의 아가리",
+    "current": "공허의 눈",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "CenserRevenant",
+    "previous": "혼불 등잔",
+    "current": "향로 망령",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "OathlessCentaur",
+    "previous": "영혼 기사",
+    "current": "파계 기마수",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "CrimsonCount",
+    "previous": "피의 집행자",
+    "current": "핏빛 백작",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "AshHierophant",
+    "previous": "검은 등불 사제",
+    "current": "재의 대사제",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "AshDragon",
+    "previous": "영혼 포식자",
+    "current": "잿불의 용",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "EclipseChimera",
+    "previous": "일식의 짐승",
+    "current": "일식의 키메라",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "SunIdol",
+    "previous": "일식의 좌심장",
+    "current": "해 우상",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "MoonIdol",
+    "previous": "일식의 우심장",
+    "current": "달 우상",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "CinderLich",
+    "previous": "재의 군단장",
+    "current": "잿불 왕",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "IronMimic",
+    "previous": "미믹",
+    "current": "철니 미믹",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "GildedToad",
+    "previous": "상인 돌연변이",
+    "current": "금먹는 두꺼비",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  },
+  {
+    "id": "TarrasqueWhelp",
+    "previous": "봉인된 시련의 수호자",
+    "current": "가시등 시련수",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": true
+  },
+  {
+    "id": "CrownColossus",
+    "previous": "심층 시련의 수호자",
+    "current": "왕관 거신",
+    "unchangedStats": true,
+    "originalAttackMechanics": true,
+    "normalSequence": [],
+    "normalTimingRollback": false
+  }
+]

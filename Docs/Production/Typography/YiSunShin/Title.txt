@@ -1,0 +1,6 @@
+Scoped live Unity font verification / 1920x1080
+Label | YiSunShin | size=44 | overflow=False | missing= | 게임 시작
+Focus | YiSunShin | size=44 | overflow=False | missing= | >
+Label | YiSunShin | size=44 | overflow=False | missing= | 옵션
+Label | YiSunShin | size=44 | overflow=False | missing= | 게임 종료
+Labels=4; wrong font=0; missing glyphs=0

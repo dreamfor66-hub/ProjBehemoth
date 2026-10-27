@@ -1,0 +1,5 @@
+System.InvalidOperationException: This cannot be used during play mode.
+  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty_Injected(UnityEngine.SceneManagement.Scene&)
+  at UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty (UnityEngine.SceneManagement.Scene scene) [0x00000] in <b912dbff05184439afd77d89b5fecd71>:0 
+  at CombatFramingPreparation.Prepare () [0x00527] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\CombatFramingPreparation.cs:81 
+  at CombatFramingPreparation.Poll () [0x00079] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\CombatFramingPreparation.cs:28 

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B3_Boss_SoulEater
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_boss_souleater.displayname
+    lastText: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_boss_souleater.encounterhint
+    lastText: 
+  textOwnerGuid: b544a9bd660854044b65489c136cbc78
+  displayName: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+  portrait: {fileID: 21300000, guid: ea99f4ce13f85d0ea0ae05b259ac8005, type: 3}
+  combatAnimation: {fileID: 11400000, guid: ae38f8022580ecd4ca59d9dcf0cedf1a, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 1800
+  normalAttackInterval: 2.6
+  chargeInterval: 7
+  stunDuration: 4.8
+  stunDamageMultiplier: 1.65
+  experienceReward: 400
+  goldReward: 13
+  bodyHitRadius: 108
+  attacks:
+  - {fileID: 11400000, guid: e4ffb9549f60808409b7a4e02129d7f7, type: 2}
+  - {fileID: 11400000, guid: a7b144dabd51371468be9250fdfaaaff, type: 2}
+  bodyColor: {r: 0.58, g: 0.12, b: 0.72, a: 1}

@@ -15,15 +15,19 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.tunnelrat.displayname
-    lastText: "\uAD74\uC950"
+    lastText: "\uAC70\uBBF8"
   - propertyPath: encounterHint
     key: data.monsterdata.tunnelrat.encounterhint
-    lastText: 
+    lastText: "\uB0AE\uC740 \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8.
+      \uAC15\uD0C0\uB97C \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+      \uBD80\uC218\uC790."
   textOwnerGuid: e38eba67e08948347ab295b6c79c7e34
-  displayName: "\uAD74\uC950"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: c0cebcd2a23c2c540a2ac2e8871d9f1a, type: 2}
-  encounterHint: 
+  displayName: "\uAC70\uBBF8"
+  portrait: {fileID: 21300000, guid: 669dbe8c90b5a264e8bb11f1a8bb7830, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 26bb9db45c877db4c9eab5d7d7174c84, type: 2}
+  encounterHint: "\uB0AE\uC740 \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8.
+    \uAC15\uD0C0\uB97C \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+    \uBD80\uC218\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +42,7 @@ MonoBehaviour:
   goldReward: 9
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: 50779bf07ca5bba48b3c5f6b0b178e5f, type: 2}
-  - {fileID: 11400000, guid: 1b5e2ae0dd52c3445999f2e00b2f2116, type: 2}
+  - {fileID: 11400000, guid: 3f8fd5beba668cf4db53470b0f80c932, type: 2}
+  - {fileID: 11400000, guid: 2c06d14efdd58b5469be04a97c704571, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.5632, g: 0.8, b: 0.48, a: 1}

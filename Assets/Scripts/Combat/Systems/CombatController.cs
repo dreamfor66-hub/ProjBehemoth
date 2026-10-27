@@ -109,6 +109,7 @@ namespace DungeonSlash
             StopAllCoroutines(); resolvingAttackSequence=false; IsActive = false; isFinishing = false; InputPaused = false;
             input?.CancelAll(); run?.Player?.EndCharacterCombat(); ClearMonsterViews(); attackLine?.Hide(); sceneView?.ResetCameraShake();
             pendingEncounter = null; encounterPlanner = null; trackedFloor = -1; normalEncountersOnFloor = 0;
+            playerView?.SetCombatFraming(sceneView.PlayerAnchor, false, true);
         }
 
         public void ShowPlayer(RunState runState)
@@ -116,7 +117,7 @@ namespace DungeonSlash
             if (run != runState) { encounterPlanner = null; trackedFloor = -1; normalEncountersOnFloor = 0; }
             run = runState;
             EnsurePlayerView();
-            playerView.Root.anchoredPosition = Vector2.zero;
+            playerView.SetCombatFraming(sceneView.PlayerAnchor, false);
             playerView.Bind(Player);
             RefreshHud();
         }
@@ -187,7 +188,7 @@ namespace DungeonSlash
             spellRandom = new System.Random(runState.Seed ^ ++encounterSerial);
             criticalRandom = new System.Random(runState.Seed ^ encounterSerial*104729);
             EnsurePlayerView();
-            playerView.Root.anchoredPosition = Vector2.zero;
+            playerView.Bind(Player);
 
             var validMonsters = encounterMonsters?.Where(data => data != null).ToArray() ?? Array.Empty<MonsterData>();
             var encounterLeader = validMonsters.FirstOrDefault();
@@ -208,10 +209,20 @@ namespace DungeonSlash
             RefreshHud();
         }
 
+        // Presentation can run beneath the encounter announcement while input/AI stay stopped.
+        public void BeginCombatPresentation()
+        {
+            if (!HasPreparedMonsters) return;
+            playerView.SetCombatFraming(sceneView.PlayerAnchor, true);
+        }
+
+        public bool IsCombatPresentationReady => playerView != null && playerView.IsCombatFramingReady;
+
         public void BeginPreparedCombat()
         {
             if (!activeMonsters.Any(monster => monster.Runtime.IsAlive)) return;
             IsActive = true;
+            BeginCombatPresentation();
             RefreshHud();
         }
 
@@ -266,7 +277,11 @@ namespace DungeonSlash
         private void Update()
         {
             if (run == null) return;
-            if (playerView != null) playerView.Bind(Player);
+            if (playerView != null)
+            {
+                playerView.PreparingAttack = IsActive && !InputPaused && input != null && input.IsPreparingAttack;
+                playerView.Bind(Player);
+            }
             if (InputPaused) return;
             if (!IsActive)
             {
@@ -651,7 +666,7 @@ namespace DungeonSlash
 
             var existingSummons = activeMonsters.Count(monster => monster.Runtime.IsAlive && monster.Runtime.Data == summon);
             var direction = existingSummons % 2 == 0 ? -1f : 1f;
-            var position = source.Position + new Vector2(direction * 176f, -16f);
+            var position = source.Position - Vector2.up * (source.Runtime.Data.bodyHitRadius * source.VisualScale) + new Vector2(direction * 176f, -16f);
             SpawnMonster(summon, position, SummonedMinionScale, .45f).View?.ShowAttackName(GameText.Get("ui.combatcontroller.bdcc2933"), .7f);
             source.View?.ShowAttackName(GameText.Get("ui.combatcontroller.f6ad320"), .8f);
         }
@@ -722,6 +737,7 @@ namespace DungeonSlash
         {
             // Floor identity and balance now live in each monster asset; never double-scale them here.
             var runtime = new MonsterRuntime(data, visualScale: visualScale);
+            position = data.BodyCenterFromPlacement(position, runtime.VisualScale);
             runtime.Awareness = run.Awareness;
             runtime.Buffs.Run=run;
             runtime.DelayActions(initialActionDelay);
@@ -754,7 +770,13 @@ namespace DungeonSlash
         {
             var root = playerView != null ? playerView.Root : playerPrefab != null ? playerPrefab.Root : null;
             var size = playerView!=null?playerView.GuardBodySize:root != null ? root.rect.size : new Vector2(270f, 270f);
-            return new RectHitShape(sceneView.PlayerPosition+(playerView!=null?playerView.GuardBodyOffset:Vector2.zero), size);
+            var center = sceneView.PlayerPosition + (playerView != null ? playerView.GuardBodyOffset : Vector2.zero);
+            // The foreground character can be cropped by the screen. Guard gestures must
+            // cross the visible body center, rather than an unreachable point below it.
+            var area = sceneView.LogicalArea.rect;
+            var min = Vector2.Max(center - size * .5f, area.min);
+            var max = Vector2.Min(center + size * .5f, area.max);
+            return new RectHitShape((min + max) * .5f, Vector2.Max(Vector2.zero, max - min));
         }
 
         private void RefreshHud()
@@ -918,6 +940,7 @@ namespace DungeonSlash
 
         private void CompleteFinish(CombatResult result)
         {
+            playerView?.SetCombatFraming(sceneView.PlayerAnchor, false);
             ClearMonsterViews();
             RefreshHud();
             isFinishing = false;

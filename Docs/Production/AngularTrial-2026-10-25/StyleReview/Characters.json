@@ -1,0 +1,110 @@
+{
+  "scope": "All-six style corrections, with exact user-selected Samurai attachment retained unchanged.",
+  "characters": [
+    {
+      "id": "Warrior",
+      "label": "워리어",
+      "change": "갑옷·칼·천의 잔반사면을 줄이고 큰 명암으로 통합",
+      "keep": "허름한 올리브 천, 투구, 초반 장비",
+      "reference": "03",
+      "source": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Warrior.png",
+      "before": "Before/Warrior.png",
+      "bounds": [
+        78,
+        71,
+        916,
+        1430
+      ],
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "Barbarian",
+      "label": "바바리안",
+      "change": "근육과 바지의 작은 명암 조각을 정리",
+      "keep": "승인된 리자드 머리·상체 디자인, 꼬리·도끼",
+      "reference": "04",
+      "source": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Barbarian.png",
+      "before": "Before/Barbarian.png",
+      "bounds": [
+        23,
+        45,
+        976,
+        1468
+      ],
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "Monk",
+      "label": "몽크",
+      "change": "팔 근육·바지의 면 분할과 허리 겹침을 줄임",
+      "keep": "눈가리개, 손동작, 큰 염주",
+      "reference": "05",
+      "source": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Monk.png",
+      "before": "Before/Monk.png",
+      "bounds": [
+        118,
+        97,
+        875,
+        1397
+      ],
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "Samurai",
+      "label": "사무라이",
+      "change": "사용자 선택 이미지 그대로 채택 · 얼굴·비율·의상 유지",
+      "keep": "장발 남자 검사, 원래 표정·체형, 3단 견갑",
+      "reference": "02",
+      "source": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Samurai.png",
+      "before": "Before/Samurai.png",
+      "bounds": [
+        167,
+        68,
+        764,
+        1446
+      ],
+      "width": 1024,
+      "height": 1536,
+      "selectedAsIs": true,
+      "selectedSource": "C:/Users/user/AppData/Local/Temp/codex-clipboard-6f73b7d1-8316-4bb9-900f-9059b993beaa.png",
+      "sha256": "453EFBDCEA32A2F9F60756C521868962CB26E8305295E4887A02A96827ED4390"
+    },
+    {
+      "id": "Wizard",
+      "label": "위자드",
+      "change": "반실사 얼굴을 단순한 카툰 얼굴로 다시 그리고 옷 명암 정리",
+      "keep": "온화한 노학자, 책·허리 단검·등 스태프",
+      "reference": "08",
+      "source": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Wizard.png",
+      "before": "Before/Wizard.png",
+      "bounds": [
+        149,
+        33,
+        740,
+        1477
+      ],
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "Rogue",
+      "label": "로그",
+      "change": "짧아진 몸 비율을 유지하고 옷 명암만 정리 · 원본 얼굴 고정",
+      "keep": "원래 눈매·입꼬리·앞머리, 역수 쌍단검",
+      "reference": "06",
+      "source": "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Rogue.png",
+      "before": "Before/Rogue.png",
+      "bounds": [
+        96,
+        14,
+        857,
+        1302
+      ],
+      "width": 1024,
+      "height": 1536
+    }
+  ]
+}

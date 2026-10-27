@@ -1,0 +1,9 @@
+Requested rollback: retain original normal timing/action; no concept-specific timing redesign.
+BoneScorpion: sequence removed; normal windup=0.75 sec; interval=2.9 sec
+EttinGatekeeper: sequence removed; normal windup=0.87 sec; interval=2.7 sec
+IronMantis: sequence removed; normal windup=1 sec; interval=2.9 sec
+TwinAntlerStag: sequence removed; normal windup=1.12 sec; interval=4.8 sec
+TempestRoc: sequence removed; normal windup=1.2 sec; interval=2.9 sec
+SerpentWarden: sequence removed; normal windup=1.342 sec; interval=5.8 sec
+AshDragon: sequence removed; normal windup=0.87 sec; interval=2.6 sec
+TarrasqueWhelp: sequence removed; normal windup=1.1 sec; interval=2.9 sec

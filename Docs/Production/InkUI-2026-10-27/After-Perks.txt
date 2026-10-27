@@ -1,0 +1,42 @@
+After-Perks / 1920x1080
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+Label | (x:-204.00, y:-56.00, width:408.00, height:112.00) | overflow=False | 날 선 무기
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ←10
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ↓8
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | →8
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-232.00, y:-40.00, width:464.00, height:80.00) | overflow=False | 획득
+Value | (x:-208.00, y:-28.00, width:416.00, height:56.00) | overflow=False | HP 100 / 100
+Label | (x:-204.00, y:-56.00, width:408.00, height:112.00) | overflow=False | 묵직한 무기
+Title | (x:-640.00, y:-32.00, width:1280.00, height:64.00) | overflow=False | 능력 선택
+Label | (x:-204.00, y:-56.00, width:408.00, height:112.00) | overflow=False | 활력
+SpellLabel | (x:-56.00, y:-28.00, width:112.00, height:56.00) | overflow=False | ↑8
+StateFxRoot | (x:-480.00, y:-36.00, width:960.00, height:72.00) | overflow=False | 고블린사냥꾼
+FocusedEffect | (x:-676.00, y:-84.00, width:1352.00, height:168.00) | overflow=False | 활력 최대 체력 +10
+Runtime HP=100/100; MP=30/30; guard=35/35
+Skin: PlayerHpBar | GaugeTrack | (x:-184.00, y:-10.00, width:368.00, height:20.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=76 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Left | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Take | Button | (x:-240.00, y:-44.00, width:480.00, height:88.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=212 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:-84.00, y:-6.00, width:168.00, height:12.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=28 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:0.00, y:-5.50, width:0.00, height:11.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Down | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: PlayerShieldBar | GaugeTrack | (x:-24.00, y:-140.00, width:48.00, height:280.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:-184.00, y:-10.00, width:368.00, height:20.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=40 | material=UI/Behemoth/Ink Surface
+Skin: PerkChoiceItem | Button | (x:-216.00, y:-166.00, width:432.00, height:332.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=268 | material=UI/Behemoth/Ink Surface
+Skin: PerkChoicePanel | Panel | (x:-734.09, y:-391.93, width:1468.19, height:783.85) | nonblocking=True | hover=False | pressed=False | active=True | vertices=956 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:-24.00, y:-140.00, width:48.00, height:280.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: CastingProgress | GaugeFill | (x:0.00, y:-4.00, width:0.00, height:8.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Relic0 | Slot | (x:-32.00, y:-32.00, width:64.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=68 | material=UI/Behemoth/Ink Surface
+Skin: AttackNamePlate | Button | (x:-280.00, y:-40.00, width:560.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Up | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: Spell_Right | GaugeTrack | (x:-88.00, y:-40.00, width:176.00, height:80.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=60 | material=UI/Behemoth/Ink Surface
+Skin: PerkChoiceItem | Button | (x:-216.00, y:-166.00, width:432.00, height:332.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=268 | material=UI/Behemoth/Ink Surface
+Skin: ChargeTimePlate | Button | (x:-200.00, y:-56.00, width:400.00, height:112.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: PerkChoiceItem | Button | (x:-216.00, y:-166.00, width:432.00, height:332.00) | nonblocking=True | hover=True | pressed=False | active=True | vertices=268 | material=UI/Behemoth/Ink Surface
+Skin: MonsterHpBar | GaugeTrack | (x:-84.00, y:-6.00, width:168.00, height:12.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=52 | material=UI/Behemoth/Ink Surface
+Skin: DirectionalGuardBar | GaugeTrack | (x:-84.00, y:-5.50, width:168.00, height:11.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface

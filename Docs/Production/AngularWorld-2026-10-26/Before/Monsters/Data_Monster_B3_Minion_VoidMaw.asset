@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B3_Minion_VoidMaw
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_minion_voidmaw.displayname
+    lastText: "\uACF5\uD5C8\uC758 \uC544\uAC00\uB9AC"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_minion_voidmaw.encounterhint
+    lastText: 
+  textOwnerGuid: 74285b100b3b0f94ba2ebc118d2e4f77
+  displayName: "\uACF5\uD5C8\uC758 \uC544\uAC00\uB9AC"
+  portrait: {fileID: 21300000, guid: fa4b01ad21165a218c29585f73397826, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 427d4f3b89d4b214597bdbf1f2e7dc7a, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 300
+  normalAttackInterval: 1.45
+  chargeInterval: 8.5
+  stunDuration: 3.5
+  stunDamageMultiplier: 1.65
+  experienceReward: 67
+  goldReward: 10
+  bodyHitRadius: 108
+  attacks:
+  - {fileID: 11400000, guid: df0e057fede1e224caf8e5c3006b44a1, type: 2}
+  - {fileID: 11400000, guid: d3f3b536c34ae3341b1cb11ad033098c, type: 2}
+  bodyColor: {r: 0.35, g: 0.1, b: 0.48, a: 1}

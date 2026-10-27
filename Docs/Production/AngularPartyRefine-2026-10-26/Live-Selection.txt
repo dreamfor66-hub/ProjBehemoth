@@ -1,0 +1,18 @@
+SELECTION live saved OutGameScene
+PASS page named SelectionPage
+PASS Warrior original six-choice interaction
+PASS Warrior high-resolution approved-art crop
+PASS Rogue original six-choice interaction
+PASS Rogue high-resolution approved-art crop
+PASS Barbarian original six-choice interaction
+PASS Barbarian high-resolution approved-art crop
+PASS Samurai original six-choice interaction
+PASS Samurai high-resolution approved-art crop
+PASS Monk original six-choice interaction
+PASS Monk high-resolution approved-art crop
+PASS Wizard original six-choice interaction
+PASS Wizard high-resolution approved-art crop
+PASS original Back returns to Title
+PASS original New Game opens selection
+SELECTION COMPLETE
+

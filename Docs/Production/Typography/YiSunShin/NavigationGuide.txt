@@ -1,0 +1,10 @@
+Scoped live Unity font verification / 1920x1080
+Label | YiSunShin | size=44 | overflow=False | missing= | 지도
+Title | YiSunShin | size=48 | overflow=False | missing= | 미궁 탐험 안내
+Label | YiSunShin | size=44 | overflow=False | missing= | 보유품
+Health | YiSunShin | size=40 | overflow=False | missing= | HP 100 / 100
+Narrative | YiSunShin | size=36 | overflow=False | missing= | 문을 눌러 다음 방으로 이동합니다.  [Tab] 지도 지나온 방과 갈 수 있는 길을 확인합니다.  [I] 보유품 유물과 포션의 효과를 확인할 수 있습니다.  안내를 닫으면 탐험을 시작합니다.
+ChoiceTitle | YiSunShin | size=44 | overflow=False | missing= | > 계속
+Label | YiSunShin | size=44 | overflow=False | missing= | ↓
+Gold | YiSunShin | size=40 | overflow=False | missing= | 38<color=#D8BB62>G</color>
+Labels=8; wrong font=0; missing glyphs=0

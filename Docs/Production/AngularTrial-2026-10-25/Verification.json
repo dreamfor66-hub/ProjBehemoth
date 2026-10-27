@@ -1,0 +1,14 @@
+{
+  "scope": "Two isolated first-screen Unity art trials",
+  "selectionCharacters": 6,
+  "nativeRuntimeCaptures": 8,
+  "startButtonSceneTransition": "PASS",
+  "firstRunContinue": "PASS",
+  "trialCharacterDataIsolation": "PASS",
+  "newUnityErrors": 0,
+  "pending": [
+    "Combat animation and other class battle views",
+    "Monster art and later rooms",
+    "Balance and real-device suites"
+  ]
+}

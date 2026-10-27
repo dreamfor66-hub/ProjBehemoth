@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B3_Minion_ShadeLancer
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_minion_shadelancer.displayname
+    lastText: "\uC601\uD63C \uCC3D\uBCD1"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_minion_shadelancer.encounterhint
+    lastText: 
+  textOwnerGuid: b7ca2b2d5338d534fa09cb132ac0e0d4
+  displayName: "\uC601\uD63C \uCC3D\uBCD1"
+  portrait: {fileID: 21300000, guid: d8b07bcf07dd58feb3a54113eb69a90e, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 9648cad9f4ede3b40911f1477f9d0813, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 330
+  normalAttackInterval: 5.8
+  chargeInterval: 12.5
+  stunDuration: 4
+  stunDamageMultiplier: 1.65
+  experienceReward: 73
+  goldReward: 16
+  bodyHitRadius: 108
+  attacks:
+  - {fileID: 11400000, guid: df0bf3c056793454f94c7bfd00332650, type: 2}
+  - {fileID: 11400000, guid: 67bc9b192344dcb478c0eede8811074a, type: 2}
+  bodyColor: {r: 0.46, g: 0.18, b: 0.7, a: 1}

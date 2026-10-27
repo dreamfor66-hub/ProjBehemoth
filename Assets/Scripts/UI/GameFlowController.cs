@@ -99,7 +99,7 @@ namespace DungeonSlash
             BindExpansion();
             combatController.ShowPlayer(runController.State);
             dungeonController.BeginRun(seed);
-            runController.State.Fatigue.BeginFloor(content.fatigue,dungeonController.State.Graph);
+            runController.State.Fatigue.BeginFloor(content.fatigue,dungeonController.State.Graph,runController.State.CurrentAct);
             dungeonController.State.Player.CurrentRoom.IsCleared = true;
             cheatOverlay?.Bind(runController, combatController);
             ShowNavigation();
@@ -216,7 +216,9 @@ namespace DungeonSlash
             if (encounterMessageView != null)
             {
                 var monsterName = monster == null || string.IsNullOrWhiteSpace(monster.displayName) ? GameText.Get("ui.gameflowcontroller.9b3dd503") : monster.displayName;
-                yield return encounterMessageView.Show(string.IsNullOrWhiteSpace(announcement) ? GameText.Format("ui.gameflowcontroller.a61799fd", monsterName) : announcement);
+                combatController.BeginCombatPresentation();
+                yield return encounterMessageView.Show(string.IsNullOrWhiteSpace(announcement) ? GameText.Format("ui.gameflowcontroller.a61799fd", monsterName) : announcement,
+                    () => combatController.IsCombatPresentationReady);
             }
             State = GameFlowState.Combat;
             var arcadeHud=UnityEngine.Object.FindFirstObjectByType<ArcadeHudController>();
@@ -508,7 +510,7 @@ namespace DungeonSlash
             yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.dfe4d6f2", nextFloor), null);
             roomEvents.Clear();
             dungeonController.BeginNextFloor();
-            runController.State.Fatigue.BeginFloor(content.fatigue,dungeonController.State.Graph);
+            runController.State.Fatigue.BeginFloor(content.fatigue,dungeonController.State.Graph,runController.State.CurrentAct);
             runController.State.CurrentAct = nextFloor;
             runController.State.NormalCombatsInAct = 0;
             dungeonController.State.Player.CurrentRoom.IsCleared = true;

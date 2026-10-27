@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: MirrorShell
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 841786ef5faf96b4fb3a5c1b2c726bcf, type: 3}
+  attack: {fileID: 21300000, guid: 6e6b12db26754ae4198445eceecf9070, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: 8a305ecec6608464181d676e1ca2684a, type: 3}
+  dead: {fileID: 21300000, guid: 08b99f6a693891c47abe7e6390ded385, type: 3}
+  canvasScale: 1
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -67.49999}
+  groundContactY: 0.015948962
+  artworkTopY: 0.9832536
+  labelHeight: 207
+  readyTilt: -4
+  attackTilt: 7
+  attackOffset: {x: 0, y: -18}

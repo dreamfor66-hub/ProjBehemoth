@@ -788,243 +788,295 @@ MonoBehaviour:
       \uB2E4\uC591\uD55C \uC8FC\uBB38\uC744 \uC27D\uAC8C \uB2E4\uB8F0 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     source: Assets/Data/Characters/Wizard.asset:description
   - key: data.encounterdata.ashcrow.displayname
-    kr: "\uC7AC\uAE4C\uB9C8\uADC0"
+    kr: "\uC7AC \uAC00\uACE0\uC77C"
     source: Assets/Data/Dungeon/Encounters/AshCrow.asset:displayName
   - key: data.encounterdata.ashcrow.hint
-    kr: 
+    kr: "\uC9E7\uC740 \uC900\uBE44 \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4.
+      \uC2DC\uCC28\uB97C \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/AshCrow.asset:hint
   - key: data.encounterdata.ashgeneral.displayname
-    kr: "\uC7AC\uC758 \uAD70\uB2E8\uC7A5"
+    kr: "\uC7BF\uBD88 \uC655"
     source: Assets/Data/Dungeon/Encounters/AshGeneral.asset:displayName
   - key: data.encounterdata.ashgeneral.hint
-    kr: 
+    kr: "\uC18C\uD658 \uAC15\uD0C0\uB97C \uB04A\uC9C0 \uBABB\uD558\uBA74 \uD5A5\uB85C
+      \uB9DD\uB839\uC774 \uD569\uB958\uD55C\uB2E4. \uC18C\uD658\uACFC \uD6C4\uC18D
+      \uAC15\uD0C0\uB97C \uBC88\uAC08\uC544 \uB300\uBE44\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/AshGeneral.asset:hint
   - key: data.encounterdata.ashhound.displayname
-    kr: "\uC7AC \uC0AC\uB0E5\uAC1C"
+    kr: "\uC22F\uBD88 \uB3C4\uB871\uB1FD"
     source: Assets/Data/Dungeon/Encounters/AshHound.asset:displayName
   - key: data.encounterdata.ashhound.hint
-    kr: 
+    kr: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+      \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/AshHound.asset:hint
   - key: data.encounterdata.ashlamps.displayname
-    kr: "\uD63C\uBD88\uC758 \uD589\uB82C"
+    kr: "\uD5A5\uB85C \uB9DD\uB839 \xB7 \uC22F\uBD88 \uB3C4\uB871\uB1FD"
     source: Assets/Data/Dungeon/Encounters/AshLamps.asset:displayName
   - key: data.encounterdata.ashlamps.hint
-    kr: 
+    kr: "\uB2E4\uB978 \uC801 \uB4A4\uC5D0\uC11C \uACF5\uACA9\uD55C\uB2E4. \uC5F4\uB9B0
+      \uD5A5\uB85C\uC758 \uC57D\uC810\uC744 \uB04A\uC790.\n\uBAB8\uC744 \uC6C5\uD06C\uB9B0
+      \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0 \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/AshLamps.asset:hint
   - key: data.encounterdata.ashmaw.displayname
-    kr: "\uACF5\uD5C8\uC758 \uC0AC\uB0E5"
+    kr: "\uACF5\uD5C8\uC758 \uB208 \xB7 \uC7AC \uAC00\uACE0\uC77C"
     source: Assets/Data/Dungeon/Encounters/AshMaw.asset:displayName
   - key: data.encounterdata.ashmaw.hint
-    kr: 
+    kr: "\uC911\uC559 \uB208\uC774 \uB4DC\uB7EC\uB098\uBA74 \uC57D\uC810\uC744 \uB04A\uC5B4
+      \uC751\uC2DC\uB97C \uCDE8\uC18C\uD558\uC790.\n\uC9E7\uC740 \uC900\uBE44 \uB4A4
+      \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4. \uC2DC\uCC28\uB97C \uBCF4\uACE0
+      \uAC00\uB4DC\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/AshMaw.asset:hint
   - key: data.encounterdata.ashpair.displayname
-    kr: "\uC0AC\uB0E5\uAC1C\uC640 \uCC3D\uBCD1"
+    kr: "\uC22F\uBD88 \uB3C4\uB871\uB1FD \xB7 \uBC40 \uC218\uBB38\uC7A5"
     source: Assets/Data/Dungeon/Encounters/AshPair.asset:displayName
   - key: data.encounterdata.ashpair.hint
-    kr: 
+    kr: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+      \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790.\n\uBAB8\uC744 \uC138\uC6B8 \uB54C
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uB04A\uC5B4 \uB3CC\uC9C4\uC744
+      \uB9C9\uC790."
     source: Assets/Data/Dungeon/Encounters/AshPair.asset:hint
   - key: data.encounterdata.ashshade.displayname
-    kr: "\uC601\uD63C \uCC3D\uBCD1"
+    kr: "\uBC40 \uC218\uBB38\uC7A5"
     source: Assets/Data/Dungeon/Encounters/AshShade.asset:displayName
   - key: data.encounterdata.ashshade.hint
-    kr: 
+    kr: "\uBAB8\uC744 \uC138\uC6B8 \uB54C \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744
+      \uB04A\uC5B4 \uB3CC\uC9C4\uC744 \uB9C9\uC790."
     source: Assets/Data/Dungeon/Encounters/AshShade.asset:hint
   - key: data.encounterdata.bellkeeper.displayname
-    kr: "\uC885\uC9C0\uAE30"
+    kr: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
     source: Assets/Data/Dungeon/Encounters/BellKeeper.asset:displayName
   - key: data.encounterdata.bellkeeper.hint
-    kr: "\uC5F0\uC18D \uC885\uC18C\uB9AC \uB4A4 \uAE34 \uAC15\uD0C0. \uC5EC\uB7EC
-      \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uD30C\uAD34\uD560 \uAE30\uD68C\uB97C
-      \uCC3E\uC790."
+    kr: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4. \uC5EC\uB7EC
+      \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
     source: Assets/Data/Dungeon/Encounters/BellKeeper.asset:hint
   - key: data.encounterdata.bloodexecutioner.displayname
-    kr: "\uD53C\uC758 \uC9D1\uD589\uC790"
+    kr: "\uD54F\uBE5B \uBC31\uC791"
     source: Assets/Data/Dungeon/Encounters/BloodExecutioner.asset:displayName
   - key: data.encounterdata.bloodexecutioner.hint
-    kr: "\uBB34\uAE30 \uC801\uC911 5\uD68C\uB9C8\uB2E4 \uB2E4\uC74C \uACF5\uACA9\uC774
-      \uBE68\uB77C\uC9C4\uB2E4. \uC57D\uC810 \uD30C\uAD34\uB85C \uD655\uBCF4\uD55C
-      \uAE30\uC808\uC5D0 \uD53C\uD574\uB97C \uC9D1\uC911\uD558\uC790."
+    kr: "\uBB34\uAE30 \uACF5\uACA9 \uB2E4\uC12F \uBC88\uC744 \uB9DE\uC744 \uB54C\uB9C8\uB2E4
+      \uB2E4\uC74C \uACF5\uACA9\uC774 \uBE68\uB77C\uC9C4\uB2E4. \uC57D\uC810 \uD30C\uAD34\uB85C
+      \uD750\uB984\uC744 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/BloodExecutioner.asset:hint
   - key: data.encounterdata.broodkeeper.displayname
-    kr: "\uD68C\uC804 \uB465\uC9C0\uC758 \uC8FC\uC778"
+    kr: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778 \xB7 \uC2E4\uC778\uD615"
     source: Assets/Data/Dungeon/Encounters/BroodKeeper.asset:displayName
   - key: data.encounterdata.broodkeeper.hint
-    kr: 
+    kr: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4. \uBCF8\uCCB4\uC758
+      \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790.\n\uBCF8\uCCB4
+      \uC8FC\uC704\uB97C \uACF5\uC804\uD55C\uB2E4. \uC704\uCE58\uB97C \uB530\uB77C\uAC00\uBA70
+      \uB178\uB9AC\uC790."
     source: Assets/Data/Dungeon/Encounters/BroodKeeper.asset:hint
   - key: data.encounterdata.crystalspider.displayname
-    kr: "\uC218\uC815 \uAC70\uBBF8"
+    kr: "\uC218\uC815 \uB4F1\uB531\uC9C0"
     source: Assets/Data/Dungeon/Encounters/CrystalSpider.asset:displayName
   - key: data.encounterdata.crystalspider.hint
-    kr: 
+    kr: "\uC9D1\uAC8C \uC0AC\uC774 \uC57D\uC810\uACFC \uBCF4\uC870 \uC57D\uC810\uC744
+      \uC5F0\uACB0\uD574 \uBD80\uC218\uC790."
     source: Assets/Data/Dungeon/Encounters/CrystalSpider.asset:hint
   - key: data.encounterdata.deeptrial.displayname
-    kr: "\uC2EC\uCE35 \uC2DC\uB828"
+    kr: "\uC655\uAD00 \uAC70\uC2E0 \xB7 \uACB0\uC815 \uC131\uAC8C"
     source: Assets/Data/Dungeon/Encounters/DeepTrial.asset:displayName
   - key: data.encounterdata.deeptrial.hint
-    kr: 
+    kr: "\uC2EC\uCE35 \uC2DC\uB828. \uC5EC\uB7EC \uC57D\uC810\uC744 \uC5F0\uACB0\uD574
+      \uB04A\uC790.\n\uACB0\uC815 \uC0AC\uC774\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uC744
+      \uB178\uB824 \uCC0C\uB974\uAE30\uB97C \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/DeepTrial.asset:hint
   - key: data.encounterdata.eclipsebeast.displayname
-    kr: "\uC77C\uC2DD\uC758 \uC9D0\uC2B9"
+    kr: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C \xB7 \uD574 \uC6B0\uC0C1 \xB7 \uB2EC
+      \uC6B0\uC0C1"
     source: Assets/Data/Dungeon/Encounters/EclipseBeast.asset:displayName
   - key: data.encounterdata.eclipsebeast.hint
-    kr: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
-      \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
-      \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+    kr: "\uD574 \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uB2EC \uC6B0\uC0C1\uC744
+      \uBD80\uC218\uBA74 \uAC15\uD0C0\uAC00 \uB9C9\uD78C\uB2E4. \uB458 \uB2E4 \uBD80\uC218\uBA74
+      \uAE30\uC808\uD55C\uB2E4.\n\uC5F0\uD0C0\uB97C \uC720\uC9C0\uD558\uB294 \uBCF4\uC870
+      \uAC1C\uCCB4. \uBA3C\uC800 \uD30C\uAD34\uD558\uBA74 \uC5F0\uD0C0\uAC00 \uCC28\uB2E8\uB41C\uB2E4.\n\uAC15\uD0C0\uB97C
+      \uC720\uC9C0\uD558\uB294 \uBCF4\uC870 \uAC1C\uCCB4. \uBA3C\uC800 \uD30C\uAD34\uD558\uBA74
+      \uAC15\uD0C0\uAC00 \uCC28\uB2E8\uB41C\uB2E4."
     source: Assets/Data/Dungeon/Encounters/EclipseBeast.asset:hint
   - key: data.encounterdata.executioner.displayname
-    kr: "\uCCA0\uAC11 \uC9D1\uD589\uAD00"
+    kr: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
     source: Assets/Data/Dungeon/Encounters/Executioner.asset:displayName
   - key: data.encounterdata.executioner.hint
-    kr: "\uAE30\uBCF8 \uC57D\uC810\uC744 \uAE68\uBA74 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD55C\uB2E4.
-      \uC138 \uACB9\uC758 \uBCF4\uC870 \uC57D\uC810\uC744 \uBA3C\uC800 \uBD80\uC218\uBA74
-      \uAE30\uC808\uC774 \uAE38\uC5B4\uC9C4\uB2E4."
+    kr: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0, \uBCF4\uC870
+      \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
     source: Assets/Data/Dungeon/Encounters/Executioner.asset:hint
   - key: data.encounterdata.frostbat.displayname
-    kr: "\uC11C\uB9AC \uBC15\uC950"
+    kr: "\uAE43\uBC14\uB298 \uC815\uB839"
     source: Assets/Data/Dungeon/Encounters/FrostBat.asset:displayName
   - key: data.encounterdata.frostbat.hint
-    kr: 
+    kr: "\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804 \uC57D\uC810\uC744
+      \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostBat.asset:hint
   - key: data.encounterdata.frostneedle.displayname
-    kr: "\uBE59\uCE68 \uC815\uCC30\uBCD1"
+    kr: "\uACB0\uC815 \uC131\uAC8C"
     source: Assets/Data/Dungeon/Encounters/FrostNeedle.asset:displayName
   - key: data.encounterdata.frostneedle.hint
-    kr: 
+    kr: "\uACB0\uC815 \uC0AC\uC774\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uC744 \uB178\uB824
+      \uCC0C\uB974\uAE30\uB97C \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostNeedle.asset:hint
   - key: data.encounterdata.frostogre.displayname
-    kr: "\uC11C\uB9AC \uAC70\uC778"
+    kr: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
     source: Assets/Data/Dungeon/Encounters/FrostOgre.asset:displayName
   - key: data.encounterdata.frostogre.hint
-    kr: 
+    kr: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostOgre.asset:hint
   - key: data.encounterdata.frostpair.displayname
-    kr: "\uBE59\uCE68\uACFC \uC11C\uB9AC"
+    kr: "\uACB0\uC815 \uC131\uAC8C \xB7 \uAE43\uBC14\uB298 \uC815\uB839"
     source: Assets/Data/Dungeon/Encounters/FrostPair.asset:displayName
   - key: data.encounterdata.frostpair.hint
-    kr: 
+    kr: "\uACB0\uC815 \uC0AC\uC774\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uC744 \uB178\uB824
+      \uCC0C\uB974\uAE30\uB97C \uB04A\uC790.\n\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30
+      \uC804 \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostPair.asset:hint
   - key: data.encounterdata.frostqueen.displayname
-    kr: "\uC11C\uB9AC \uC5EC\uC655"
+    kr: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218"
     source: Assets/Data/Dungeon/Encounters/FrostQueen.asset:displayName
   - key: data.encounterdata.frostqueen.hint
-    kr: 
+    kr: "\uAE34 \uAC15\uD0C0 \uC900\uBE44 \uB3D9\uC548 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+      \uBAA8\uB450 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostQueen.asset:hint
   - key: data.encounterdata.frosttrio.displayname
-    kr: "\uB5A0\uB3C4\uB294 \uC11C\uB9AC"
+    kr: "\uC7A5\uB9C9 \uC608\uC5B8\uC790 \xB7 \uAE43\uBC14\uB298 \uC815\uB839"
     source: Assets/Data/Dungeon/Encounters/FrostTrio.asset:displayName
   - key: data.encounterdata.frosttrio.hint
-    kr: 
+    kr: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+      \uB04A\uC790.\n\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804
+      \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostTrio.asset:hint
   - key: data.encounterdata.frostwraith.displayname
-    kr: "\uC5BC\uC74C \uADC0\uC2E0"
+    kr: "\uC7A5\uB9C9 \uC608\uC5B8\uC790"
     source: Assets/Data/Dungeon/Encounters/FrostWraith.asset:displayName
   - key: data.encounterdata.frostwraith.hint
-    kr: 
+    kr: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+      \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/FrostWraith.asset:hint
   - key: data.encounterdata.frostyeti.displayname
-    kr: "\uC124\uC778\uACFC \uB208\uC885"
+    kr: "\uC5C4\uB2C8 \uC21C\uB840\uC790 \xB7 \uC885\uD1A0\uB07C"
     source: Assets/Data/Dungeon/Encounters/FrostYeti.asset:displayName
   - key: data.encounterdata.frostyeti.hint
-    kr: 
+    kr: "\uACC1\uC758 \uC885\uD1A0\uB07C\uC640 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4.
+      \uAC15\uD0C0 \uC900\uBE44\uB97C \uBCF4\uACE0 \uC57D\uC810\uC744 \uB04A\uC790.\n\uBCF8\uCCB4
+      \uACC1\uC5D0\uC11C \uBC15\uC790\uB97C \uC5B4\uAE0B\uB098\uAC8C \uACF5\uACA9\uD55C\uB2E4."
     source: Assets/Data/Dungeon/Encounters/FrostYeti.asset:hint
   - key: data.encounterdata.icemirror.displayname
-    kr: "\uC5BC\uC74C \uAC70\uC6B8\uAE30\uC0AC"
+    kr: "\uAC70\uC6B8\uB098\uBC29"
     source: Assets/Data/Dungeon/Encounters/IceMirror.asset:displayName
   - key: data.encounterdata.icemirror.hint
-    kr: 
+    kr: "\uAC19\uC740 \uBC29\uD5A5\uC758 \uBCA0\uAE30\uB97C \uBC18\uBCF5\uD558\uBA74
+      \uBC18\uACA9\uD55C\uB2E4. \uBC29\uD5A5\uC744 \uBC88\uAC08\uC544 \uC4F0\uC790."
     source: Assets/Data/Dungeon/Encounters/IceMirror.asset:hint
   - key: data.encounterdata.lamppriest.displayname
-    kr: "\uAC80\uC740 \uB4F1\uBD88\uC758 \uC758\uC2DD"
+    kr: "\uC7AC\uC758 \uB300\uC0AC\uC81C \xB7 \uC7AC \uAC00\uACE0\uC77C"
     source: Assets/Data/Dungeon/Encounters/LampPriest.asset:displayName
   - key: data.encounterdata.lamppriest.hint
-    kr: 
+    kr: "\uD638\uC704 \uAC00\uACE0\uC77C\uACFC \uACF5\uACA9\uC774 \uACB9\uCE5C\uB2E4.
+      \uBCF8\uCCB4 \uAC15\uD0C0\uB97C \uB04A\uC790.\n\uC9E7\uC740 \uC900\uBE44 \uB4A4
+      \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4. \uC2DC\uCC28\uB97C \uBCF4\uACE0
+      \uAC00\uB4DC\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/LampPriest.asset:hint
   - key: data.encounterdata.mazeambush.displayname
-    kr: "\uACBD\uBCF4\uC758 \uB9E4\uBCF5"
+    kr: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C \xB7 \uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
     source: Assets/Data/Dungeon/Encounters/MazeAmbush.asset:displayName
   - key: data.encounterdata.mazeambush.hint
-    kr: "\uC6B8\uC74C\uC758 \uC57D\uC810\uC744 \uAE68\uAC70\uB098 \uBA3C\uC800 \uCC98\uCE58\uD558\uBA74
-      \uAD74\uC950\uC758 \uD569\uB958\uB97C \uB9C9\uB294\uB2E4."
+    kr: "\uACBD\uC885 \uB4A4\uC758 \uACF5\uACA9\uC5D0 \uB300\uBE44\uD558\uACE0 \uC57D\uC810\uC744
+      \uB04A\uC790.\n\uC791\uC740 \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC.
+      \uAC15\uD0C0 \uC900\uBE44 \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/MazeAmbush.asset:hint
   - key: data.encounterdata.mazebat.displayname
-    kr: "\uAE38\uBAA9\uC758 \uBC15\uC950"
+    kr: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
     source: Assets/Data/Dungeon/Encounters/MazeBat.asset:displayName
   - key: data.encounterdata.mazebat.hint
-    kr: 
+    kr: "\uC791\uC740 \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC.
+      \uAC15\uD0C0 \uC900\uBE44 \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/MazeBat.asset:hint
   - key: data.encounterdata.mazeguardian.displayname
-    kr: "\uBBF8\uAD81\uC758 \uC218\uD638\uC790"
+    kr: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
     source: Assets/Data/Dungeon/Encounters/MazeGuardian.asset:displayName
   - key: data.encounterdata.mazeguardian.hint
-    kr: 
+    kr: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4 \uAC15\uD0C0\uB97C
+      \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/MazeGuardian.asset:hint
   - key: data.encounterdata.mazeleeches.displayname
-    kr: "\uD761\uD608 \uBB34\uB9AC"
+    kr: "\uD761\uD608\uBC15\uC950 \xB7 \uAC70\uBBF8"
     source: Assets/Data/Dungeon/Encounters/MazeLeeches.asset:displayName
   - key: data.encounterdata.mazeleeches.hint
-    kr: 
+    kr: "\uCCB4\uB825 \uD53C\uD574\uB97C \uC8FC\uBA74 \uD68C\uBCF5\uD55C\uB2E4. \uAC15\uD0C0
+      \uC900\uBE44 \uC911 \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBD80\uC218\uC790.\n\uB0AE\uC740
+      \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8. \uAC15\uD0C0\uB97C
+      \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744 \uBD80\uC218\uC790."
     source: Assets/Data/Dungeon/Encounters/MazeLeeches.asset:hint
   - key: data.encounterdata.mazepair.displayname
-    kr: "\uD574\uACE8\uACFC \uBC15\uC950"
+    kr: "\uD574\uACE8 \uC804\uC0AC \xB7 \uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
     source: Assets/Data/Dungeon/Encounters/MazePair.asset:displayName
   - key: data.encounterdata.mazepair.hint
-    kr: 
+    kr: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790.\n\uC791\uC740
+      \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC. \uAC15\uD0C0 \uC900\uBE44
+      \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/MazePair.asset:hint
   - key: data.encounterdata.mazerat.displayname
-    kr: "\uAD74\uC950"
+    kr: "\uAC70\uBBF8"
     source: Assets/Data/Dungeon/Encounters/MazeRat.asset:displayName
   - key: data.encounterdata.mazerat.hint
-    kr: 
+    kr: "\uB0AE\uC740 \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8. \uAC15\uD0C0\uB97C
+      \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744 \uBD80\uC218\uC790."
     source: Assets/Data/Dungeon/Encounters/MazeRat.asset:hint
   - key: data.encounterdata.mazeskeleton.displayname
-    kr: "\uBBF8\uAD81\uC758 \uD574\uACE8"
+    kr: "\uD574\uACE8 \uC804\uC0AC"
     source: Assets/Data/Dungeon/Encounters/MazeSkeleton.asset:displayName
   - key: data.encounterdata.mazeskeleton.hint
-    kr: 
+    kr: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790."
     source: Assets/Data/Dungeon/Encounters/MazeSkeleton.asset:hint
   - key: data.encounterdata.minotaur.displayname
-    kr: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
+    kr: "\uC30D\uB450 \uBB38\uC9C0\uAE30"
     source: Assets/Data/Dungeon/Encounters/Minotaur.asset:displayName
   - key: data.encounterdata.minotaur.hint
-    kr: 
+    kr: "\uB450 \uBA38\uB9AC\uAC00 \uAC15\uD0C0\uB97C \uC900\uBE44\uD55C\uB2E4. \uB4DC\uB7EC\uB09C
+      \uC57D\uC810\uC744 \uC21C\uC11C\uB300\uB85C \uB04A\uC790."
     source: Assets/Data/Dungeon/Encounters/Minotaur.asset:hint
   - key: data.encounterdata.mirrorknight.displayname
-    kr: "\uAC70\uC6B8\uAE30\uC0AC"
+    kr: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637"
     source: Assets/Data/Dungeon/Encounters/MirrorKnight.asset:displayName
   - key: data.encounterdata.mirrorknight.hint
-    kr: "\uAC19\uC740 \uBC29\uD5A5\uC758 \uBB34\uAE30 \uACF5\uACA9\uC744 \uC5F0\uC18D\uC73C\uB85C
-      \uB9DE\uC73C\uBA74 \uBC18\uACA9\uD55C\uB2E4. \uBC29\uD5A5\uC744 \uBC14\uAFB8\uAC70\uB098
-      0.7\uCD08 \uBC18\uACA9 \uC900\uBE44\uC5D0 \uAC00\uB4DC\uB85C \uB300\uC751\uD558\uC790."
+    kr: "\uAC19\uC740 \uBC29\uD5A5\uC73C\uB85C \uC5F0\uC18D \uACF5\uACA9\uD558\uBA74
+      \uBC18\uACA9\uD55C\uB2E4. \uACF5\uACA9 \uBC29\uD5A5\uC744 \uBC14\uAFB8\uC790."
     source: Assets/Data/Dungeon/Encounters/MirrorKnight.asset:hint
   - key: data.encounterdata.souleater.displayname
-    kr: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+    kr: "\uC7BF\uBD88\uC758 \uC6A9"
     source: Assets/Data/Dungeon/Encounters/SoulEater.asset:displayName
   - key: data.encounterdata.souleater.hint
-    kr: 
+    kr: "\uB0A0\uAC1C \uC0AC\uC774\uC640 \uBAB8\uD1B5\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uB4E4\uC744
+      \uB04A\uC5B4 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/SoulEater.asset:hint
   - key: data.encounterdata.soulknight.displayname
-    kr: "\uC601\uD63C \uAE30\uC0AC"
+    kr: "\uD30C\uACC4 \uAE30\uB9C8\uC218"
     source: Assets/Data/Dungeon/Encounters/SoulKnight.asset:displayName
   - key: data.encounterdata.soulknight.hint
-    kr: 
+    kr: "\uB113\uAC8C \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uCC28\uB840\uB85C \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Dungeon/Encounters/SoulKnight.asset:hint
   - key: data.encounterdata.stormmatriarch.displayname
-    kr: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+    kr: "\uD3ED\uD48D\uC758 \uB300\uBD95 \xB7 \uD3ED\uD48D \uD574\uD30C\uB9AC"
     source: Assets/Data/Dungeon/Encounters/StormMatriarch.asset:displayName
   - key: data.encounterdata.stormmatriarch.hint
-    kr: 
+    kr: "\uACF5\uC804\uD558\uB294 \uD3ED\uD48D \uD574\uD30C\uB9AC\uC640 \uBCF8\uCCB4\uC758
+      \uACF5\uACA9 \uC2DC\uCC28\uC5D0 \uC8FC\uC758\uD558\uC790.\n\uBCF8\uCCB4 \uC8FC\uC704\uB97C
+      \uACF5\uC804\uD558\uBA70 \uACF5\uACA9\uD55C\uB2E4."
     source: Assets/Data/Dungeon/Encounters/StormMatriarch.asset:hint
   - key: data.encounterdata.trial.displayname
-    kr: "\uBD09\uC778\uB41C \uC2DC\uB828"
+    kr: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
     source: Assets/Data/Dungeon/Encounters/Trial.asset:displayName
   - key: data.encounterdata.trial.hint
-    kr: 
+    kr: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C \uB9C9\uC790."
     source: Assets/Data/Dungeon/Encounters/Trial.asset:hint
   - key: data.encounterdata.wispchoir.displayname
-    kr: "\uCC3D\uBC31\uD55C \uD569\uCC3D"
+    kr: "\uAC00\uBA74 \uC131\uAC00\uC218"
     source: Assets/Data/Dungeon/Encounters/WispChoir.asset:displayName
   - key: data.encounterdata.wispchoir.hint
-    kr: 
+    kr: "\uC138 \uAC1C\uCCB4\uAC00 \uC2DC\uCC28\uB97C \uB450\uACE0 \uACF5\uACA9\uD55C\uB2E4.
+      \uC900\uBE44 \uC911\uC778 \uB300\uC0C1\uC744 \uBA3C\uC800 \uB178\uB9AC\uC790."
     source: Assets/Data/Dungeon/Encounters/WispChoir.asset:hint
   - key: data.randomeventdata.amberseed.displayname
     kr: "\uB531 \uD558\uB098 \uB0A8\uC740 \uC5F4\uB9E4"
@@ -1598,159 +1650,173 @@ MonoBehaviour:
     kr: "\uB9F9\uD638\uBD95\uAD8C"
     source: Assets/Data/Forms/Tiger.asset:displayName
   - key: data.monsterdata.alarmhound.displayname
-    kr: "\uACBD\uBCF4 \uC0AC\uB0E5\uAC1C"
+    kr: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C"
     source: Assets/Data/Combat/Monsters/AlarmHound.asset:displayName
   - key: data.monsterdata.alarmhound.encounterhint
-    kr: "\uC6B8\uC74C\uC758 \uC57D\uC810\uC744 \uAE68\uAC70\uB098 \uBA3C\uC800 \uCC98\uCE58\uD558\uBA74
-      \uAD74\uC950\uC758 \uD569\uB958\uB97C \uB9C9\uB294\uB2E4."
+    kr: "\uACBD\uC885 \uB4A4\uC758 \uACF5\uACA9\uC5D0 \uB300\uBE44\uD558\uACE0 \uC57D\uC810\uC744
+      \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/AlarmHound.asset:encounterHint
   - key: data.monsterdata.armoredexecutioner.displayname
-    kr: "\uCCA0\uAC11 \uC9D1\uD589\uAD00"
+    kr: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
     source: Assets/Data/Combat/Monsters/ArmoredExecutioner.asset:displayName
   - key: data.monsterdata.armoredexecutioner.encounterhint
-    kr: "\uAE30\uBCF8 \uC57D\uC810\uC744 \uAE68\uBA74 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD55C\uB2E4.
-      \uC138 \uACB9\uC758 \uBCF4\uC870 \uC57D\uC810\uC744 \uBA3C\uC800 \uBD80\uC218\uBA74
-      \uAE30\uC808\uC774 \uAE38\uC5B4\uC9C4\uB2E4."
+    kr: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0, \uBCF4\uC870
+      \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
     source: Assets/Data/Combat/Monsters/ArmoredExecutioner.asset:encounterHint
   - key: data.monsterdata.ashcrow.displayname
-    kr: "\uC7AC\uAE4C\uB9C8\uADC0"
+    kr: "\uC7AC \uAC00\uACE0\uC77C"
     source: Assets/Data/Combat/Monsters/AshCrow.asset:displayName
   - key: data.monsterdata.ashcrow.encounterhint
-    kr: 
+    kr: "\uC9E7\uC740 \uC900\uBE44 \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4.
+      \uC2DC\uCC28\uB97C \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
     source: Assets/Data/Combat/Monsters/AshCrow.asset:encounterHint
   - key: data.monsterdata.ashgeneral.displayname
-    kr: "\uC7AC\uC758 \uAD70\uB2E8\uC7A5"
+    kr: "\uC7BF\uBD88 \uC655"
     source: Assets/Data/Combat/Monsters/AshGeneral.asset:displayName
   - key: data.monsterdata.ashgeneral.encounterhint
-    kr: 
+    kr: "\uC18C\uD658 \uAC15\uD0C0\uB97C \uB04A\uC9C0 \uBABB\uD558\uBA74 \uD5A5\uB85C
+      \uB9DD\uB839\uC774 \uD569\uB958\uD55C\uB2E4. \uC18C\uD658\uACFC \uD6C4\uC18D
+      \uAC15\uD0C0\uB97C \uBC88\uAC08\uC544 \uB300\uBE44\uD558\uC790."
     source: Assets/Data/Combat/Monsters/AshGeneral.asset:encounterHint
   - key: data.monsterdata.bellkeeper.displayname
-    kr: "\uC885\uC9C0\uAE30"
+    kr: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
     source: Assets/Data/Combat/Monsters/BellKeeper.asset:displayName
   - key: data.monsterdata.bellkeeper.encounterhint
-    kr: "\uC5F0\uC18D \uC885\uC18C\uB9AC \uB4A4 \uAE34 \uAC15\uD0C0. \uC5EC\uB7EC
-      \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uD30C\uAD34\uD560 \uAE30\uD68C\uB97C
-      \uCC3E\uC790."
+    kr: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4. \uC5EC\uB7EC
+      \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
     source: Assets/Data/Combat/Monsters/BellKeeper.asset:encounterHint
   - key: data.monsterdata.bloodexecutioner.displayname
-    kr: "\uD53C\uC758 \uC9D1\uD589\uC790"
+    kr: "\uD54F\uBE5B \uBC31\uC791"
     source: Assets/Data/Combat/Monsters/BloodExecutioner.asset:displayName
   - key: data.monsterdata.bloodexecutioner.encounterhint
-    kr: "\uBB34\uAE30 \uC801\uC911 5\uD68C\uB9C8\uB2E4 \uB2E4\uC74C \uACF5\uACA9\uC774
-      \uBE68\uB77C\uC9C4\uB2E4. \uC57D\uC810 \uD30C\uAD34\uB85C \uD655\uBCF4\uD55C
-      \uAE30\uC808\uC5D0 \uD53C\uD574\uB97C \uC9D1\uC911\uD558\uC790."
+    kr: "\uBB34\uAE30 \uACF5\uACA9 \uB2E4\uC12F \uBC88\uC744 \uB9DE\uC744 \uB54C\uB9C8\uB2E4
+      \uB2E4\uC74C \uACF5\uACA9\uC774 \uBE68\uB77C\uC9C4\uB2E4. \uC57D\uC810 \uD30C\uAD34\uB85C
+      \uD750\uB984\uC744 \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/BloodExecutioner.asset:encounterHint
   - key: data.monsterdata.broodkeeper.displayname
-    kr: "\uD68C\uC804 \uB465\uC9C0\uC758 \uC8FC\uC778"
+    kr: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778"
     source: Assets/Data/Combat/Monsters/BroodKeeper.asset:displayName
   - key: data.monsterdata.broodkeeper.encounterhint
-    kr: 
+    kr: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4. \uBCF8\uCCB4\uC758
+      \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790."
     source: Assets/Data/Combat/Monsters/BroodKeeper.asset:encounterHint
   - key: data.monsterdata.crystalspider.displayname
-    kr: "\uC218\uC815 \uAC70\uBBF8"
+    kr: "\uC218\uC815 \uB4F1\uB531\uC9C0"
     source: Assets/Data/Combat/Monsters/CrystalSpider.asset:displayName
   - key: data.monsterdata.crystalspider.encounterhint
-    kr: 
+    kr: "\uC9D1\uAC8C \uC0AC\uC774 \uC57D\uC810\uACFC \uBCF4\uC870 \uC57D\uC810\uC744
+      \uC5F0\uACB0\uD574 \uBD80\uC218\uC790."
     source: Assets/Data/Combat/Monsters/CrystalSpider.asset:encounterHint
   - key: data.monsterdata.deeptrialguardian.displayname
-    kr: "\uC2EC\uCE35 \uC2DC\uB828\uC758 \uC218\uD638\uC790"
+    kr: "\uC655\uAD00 \uAC70\uC2E0"
     source: Assets/Data/Combat/Monsters/DeepTrialGuardian.asset:displayName
   - key: data.monsterdata.deeptrialguardian.encounterhint
-    kr: 
+    kr: "\uC2EC\uCE35 \uC2DC\uB828. \uC5EC\uB7EC \uC57D\uC810\uC744 \uC5F0\uACB0\uD574
+      \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/DeepTrialGuardian.asset:encounterHint
   - key: data.monsterdata.eclipsebeast.displayname
-    kr: "\uC77C\uC2DD\uC758 \uC9D0\uC2B9"
+    kr: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C"
     source: Assets/Data/Combat/Monsters/EclipseBeast.asset:displayName
   - key: data.monsterdata.eclipsebeast.encounterhint
-    kr: "\uC67C\uC2EC\uC7A5\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uC624\uB978\uC2EC\uC7A5\uC744
-      \uBD80\uC218\uBA74 \uAC15\uD0C0\uB97C \uCC28\uB2E8\uD55C\uB2E4. \uB450 \uC2EC\uC7A5\uC744
-      \uBAA8\uB450 \uBD80\uC218\uBA74 \uBCF8\uCCB4\uAC00 \uAE30\uC808\uD55C\uB2E4."
+    kr: "\uD574 \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uB2EC \uC6B0\uC0C1\uC744
+      \uBD80\uC218\uBA74 \uAC15\uD0C0\uAC00 \uB9C9\uD78C\uB2E4. \uB458 \uB2E4 \uBD80\uC218\uBA74
+      \uAE30\uC808\uD55C\uB2E4."
     source: Assets/Data/Combat/Monsters/EclipseBeast.asset:encounterHint
   - key: data.monsterdata.elderleftheart.displayname
-    kr: "\uC77C\uC2DD\uC758 \uC88C\uC2EC\uC7A5"
+    kr: "\uD574 \uC6B0\uC0C1"
     source: Assets/Data/Combat/Monsters/ElderLeftHeart.asset:displayName
   - key: data.monsterdata.elderleftheart.encounterhint
-    kr: 
+    kr: "\uC5F0\uD0C0\uB97C \uC720\uC9C0\uD558\uB294 \uBCF4\uC870 \uAC1C\uCCB4. \uBA3C\uC800
+      \uD30C\uAD34\uD558\uBA74 \uC5F0\uD0C0\uAC00 \uCC28\uB2E8\uB41C\uB2E4."
     source: Assets/Data/Combat/Monsters/ElderLeftHeart.asset:encounterHint
   - key: data.monsterdata.elderrightheart.displayname
-    kr: "\uC77C\uC2DD\uC758 \uC6B0\uC2EC\uC7A5"
+    kr: "\uB2EC \uC6B0\uC0C1"
     source: Assets/Data/Combat/Monsters/ElderRightHeart.asset:displayName
   - key: data.monsterdata.elderrightheart.encounterhint
-    kr: 
+    kr: "\uAC15\uD0C0\uB97C \uC720\uC9C0\uD558\uB294 \uBCF4\uC870 \uAC1C\uCCB4. \uBA3C\uC800
+      \uD30C\uAD34\uD558\uBA74 \uAC15\uD0C0\uAC00 \uCC28\uB2E8\uB41C\uB2E4."
     source: Assets/Data/Combat/Monsters/ElderRightHeart.asset:encounterHint
   - key: data.monsterdata.icemirror.displayname
-    kr: "\uC5BC\uC74C \uAC70\uC6B8\uAE30\uC0AC"
+    kr: "\uAC70\uC6B8\uB098\uBC29"
     source: Assets/Data/Combat/Monsters/IceMirror.asset:displayName
   - key: data.monsterdata.icemirror.encounterhint
-    kr: 
+    kr: "\uAC19\uC740 \uBC29\uD5A5\uC758 \uBCA0\uAE30\uB97C \uBC18\uBCF5\uD558\uBA74
+      \uBC18\uACA9\uD55C\uB2E4. \uBC29\uD5A5\uC744 \uBC88\uAC08\uC544 \uC4F0\uC790."
     source: Assets/Data/Combat/Monsters/IceMirror.asset:encounterHint
   - key: data.monsterdata.iceneedle.displayname
-    kr: "\uBE59\uCE68 \uC815\uCC30\uBCD1"
+    kr: "\uACB0\uC815 \uC131\uAC8C"
     source: Assets/Data/Combat/Monsters/IceNeedle.asset:displayName
   - key: data.monsterdata.iceneedle.encounterhint
-    kr: 
+    kr: "\uACB0\uC815 \uC0AC\uC774\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uC744 \uB178\uB824
+      \uCC0C\uB974\uAE30\uB97C \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/IceNeedle.asset:encounterHint
   - key: data.monsterdata.lamppriest.displayname
-    kr: "\uAC80\uC740 \uB4F1\uBD88 \uC0AC\uC81C"
+    kr: "\uC7AC\uC758 \uB300\uC0AC\uC81C"
     source: Assets/Data/Combat/Monsters/LampPriest.asset:displayName
   - key: data.monsterdata.lamppriest.encounterhint
-    kr: 
+    kr: "\uD638\uC704 \uAC00\uACE0\uC77C\uACFC \uACF5\uACA9\uC774 \uACB9\uCE5C\uB2E4.
+      \uBCF8\uCCB4 \uAC15\uD0C0\uB97C \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/LampPriest.asset:encounterHint
   - key: data.monsterdata.mirrorknight.displayname
-    kr: "\uAC70\uC6B8\uAE30\uC0AC"
+    kr: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637"
     source: Assets/Data/Combat/Monsters/MirrorKnight.asset:displayName
   - key: data.monsterdata.mirrorknight.encounterhint
-    kr: "\uAC19\uC740 \uBC29\uD5A5\uC758 \uBB34\uAE30 \uACF5\uACA9\uC744 \uC5F0\uC18D\uC73C\uB85C
-      \uB9DE\uC73C\uBA74 \uBC18\uACA9\uD55C\uB2E4. \uBC29\uD5A5\uC744 \uBC14\uAFB8\uAC70\uB098
-      0.7\uCD08 \uBC18\uACA9 \uC900\uBE44\uC5D0 \uAC00\uB4DC\uB85C \uB300\uC751\uD558\uC790."
+    kr: "\uAC19\uC740 \uBC29\uD5A5\uC73C\uB85C \uC5F0\uC18D \uACF5\uACA9\uD558\uBA74
+      \uBC18\uACA9\uD55C\uB2E4. \uACF5\uACA9 \uBC29\uD5A5\uC744 \uBC14\uAFB8\uC790."
     source: Assets/Data/Combat/Monsters/MirrorKnight.asset:encounterHint
   - key: data.monsterdata.orbitbat.displayname
-    kr: "\uC120\uD68C \uBC15\uC950"
+    kr: "\uC2E4\uC778\uD615"
     source: Assets/Data/Combat/Monsters/OrbitBat.asset:displayName
   - key: data.monsterdata.orbitbat.encounterhint
-    kr: 
+    kr: "\uBCF8\uCCB4 \uC8FC\uC704\uB97C \uACF5\uC804\uD55C\uB2E4. \uC704\uCE58\uB97C
+      \uB530\uB77C\uAC00\uBA70 \uB178\uB9AC\uC790."
     source: Assets/Data/Combat/Monsters/OrbitBat.asset:encounterHint
   - key: data.monsterdata.palewisp.displayname
-    kr: "\uCC3D\uBC31\uD55C \uC704\uC2B5"
+    kr: "\uAC00\uBA74 \uC131\uAC00\uC218"
     source: Assets/Data/Combat/Monsters/PaleWisp.asset:displayName
   - key: data.monsterdata.palewisp.encounterhint
-    kr: 
+    kr: "\uC138 \uAC1C\uCCB4\uAC00 \uC2DC\uCC28\uB97C \uB450\uACE0 \uACF5\uACA9\uD55C\uB2E4.
+      \uC900\uBE44 \uC911\uC778 \uB300\uC0C1\uC744 \uBA3C\uC800 \uB178\uB9AC\uC790."
     source: Assets/Data/Combat/Monsters/PaleWisp.asset:encounterHint
   - key: data.monsterdata.snowbell.displayname
-    kr: "\uB208\uC885 \uC815\uB839"
+    kr: "\uC885\uD1A0\uB07C"
     source: Assets/Data/Combat/Monsters/SnowBell.asset:displayName
   - key: data.monsterdata.snowbell.encounterhint
-    kr: 
+    kr: "\uBCF8\uCCB4 \uACC1\uC5D0\uC11C \uBC15\uC790\uB97C \uC5B4\uAE0B\uB098\uAC8C
+      \uACF5\uACA9\uD55C\uB2E4."
     source: Assets/Data/Combat/Monsters/SnowBell.asset:encounterHint
   - key: data.monsterdata.soullamp.displayname
-    kr: "\uD63C\uBD88 \uB4F1\uC794"
+    kr: "\uD5A5\uB85C \uB9DD\uB839"
     source: Assets/Data/Combat/Monsters/SoulLamp.asset:displayName
   - key: data.monsterdata.soullamp.encounterhint
-    kr: 
+    kr: "\uB2E4\uB978 \uC801 \uB4A4\uC5D0\uC11C \uACF5\uACA9\uD55C\uB2E4. \uC5F4\uB9B0
+      \uD5A5\uB85C\uC758 \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/SoulLamp.asset:encounterHint
   - key: data.monsterdata.stormmatriarch.displayname
-    kr: "\uD3ED\uD48D\uC758 \uBAA8\uCCB4"
+    kr: "\uD3ED\uD48D\uC758 \uB300\uBD95"
     source: Assets/Data/Combat/Monsters/StormMatriarch.asset:displayName
   - key: data.monsterdata.stormmatriarch.encounterhint
-    kr: 
+    kr: "\uACF5\uC804\uD558\uB294 \uD3ED\uD48D \uD574\uD30C\uB9AC\uC640 \uBCF8\uCCB4\uC758
+      \uACF5\uACA9 \uC2DC\uCC28\uC5D0 \uC8FC\uC758\uD558\uC790."
     source: Assets/Data/Combat/Monsters/StormMatriarch.asset:encounterHint
   - key: data.monsterdata.stormorb.displayname
-    kr: "\uC120\uD68C \uB1CC\uAD6C"
+    kr: "\uD3ED\uD48D \uD574\uD30C\uB9AC"
     source: Assets/Data/Combat/Monsters/StormOrb.asset:displayName
   - key: data.monsterdata.stormorb.encounterhint
-    kr: 
+    kr: "\uBCF8\uCCB4 \uC8FC\uC704\uB97C \uACF5\uC804\uD558\uBA70 \uACF5\uACA9\uD55C\uB2E4."
     source: Assets/Data/Combat/Monsters/StormOrb.asset:encounterHint
   - key: data.monsterdata.trialguardian.displayname
-    kr: "\uBD09\uC778\uB41C \uC2DC\uB828\uC758 \uC218\uD638\uC790"
+    kr: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
     source: Assets/Data/Combat/Monsters/TrialGuardian.asset:displayName
   - key: data.monsterdata.trialguardian.encounterhint
-    kr: 
+    kr: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C \uB9C9\uC790."
     source: Assets/Data/Combat/Monsters/TrialGuardian.asset:encounterHint
   - key: data.monsterdata.tunnelrat.displayname
-    kr: "\uAD74\uC950"
+    kr: "\uAC70\uBBF8"
     source: Assets/Data/Combat/Monsters/TunnelRat.asset:displayName
   - key: data.monsterdata.tunnelrat.encounterhint
-    kr: 
+    kr: "\uB0AE\uC740 \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8. \uAC15\uD0C0\uB97C
+      \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744 \uBD80\uC218\uC790."
     source: Assets/Data/Combat/Monsters/TunnelRat.asset:encounterHint
   - key: data.equipmentdata.amberseed.displayname
     kr: "\uD638\uBC15\uBE5B \uC2F9"
@@ -2561,106 +2627,123 @@ MonoBehaviour:
       -12%"
     source: Assets/Data/Items/Relics/ThunderWire.asset:description
   - key: data.monsterdata.data_monster_b1_boss_mazeguardian.displayname
-    kr: "\uBBF8\uAD81\uC758 \uC218\uD638\uC790"
+    kr: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset:displayName
   - key: data.monsterdata.data_monster_b1_boss_mazeguardian.encounterhint
-    kr: 
+    kr: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4 \uAC15\uD0C0\uB97C
+      \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset:encounterHint
   - key: data.monsterdata.data_monster_b1_elite_minotaur.displayname
-    kr: "\uBBF8\uB178\uD0C0\uC6B0\uB8E8\uC2A4"
+    kr: "\uC30D\uB450 \uBB38\uC9C0\uAE30"
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset:displayName
   - key: data.monsterdata.data_monster_b1_elite_minotaur.encounterhint
-    kr: 
+    kr: "\uB450 \uBA38\uB9AC\uAC00 \uAC15\uD0C0\uB97C \uC900\uBE44\uD55C\uB2E4. \uB4DC\uB7EC\uB09C
+      \uC57D\uC810\uC744 \uC21C\uC11C\uB300\uB85C \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset:encounterHint
   - key: data.monsterdata.data_monster_b1_minion_bat.displayname
-    kr: "\uBC15\uC950"
+    kr: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset:displayName
   - key: data.monsterdata.data_monster_b1_minion_bat.encounterhint
-    kr: 
+    kr: "\uC791\uC740 \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC.
+      \uAC15\uD0C0 \uC900\uBE44 \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset:encounterHint
   - key: data.monsterdata.data_monster_b1_minion_leech.displayname
-    kr: "\uD761\uD608\uD615"
+    kr: "\uD761\uD608\uBC15\uC950"
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset:displayName
   - key: data.monsterdata.data_monster_b1_minion_leech.encounterhint
-    kr: 
+    kr: "\uCCB4\uB825 \uD53C\uD574\uB97C \uC8FC\uBA74 \uD68C\uBCF5\uD55C\uB2E4. \uAC15\uD0C0
+      \uC900\uBE44 \uC911 \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBD80\uC218\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset:encounterHint
   - key: data.monsterdata.data_monster_b1_minion_skeleton.displayname
-    kr: "\uD574\uACE8"
+    kr: "\uD574\uACE8 \uC804\uC0AC"
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset:displayName
   - key: data.monsterdata.data_monster_b1_minion_skeleton.encounterhint
-    kr: 
+    kr: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset:encounterHint
   - key: data.monsterdata.data_monster_b2_boss_frostqueen.displayname
-    kr: "\uC11C\uB9AC \uC5EC\uC655"
+    kr: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218"
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_FrostQueen.asset:displayName
   - key: data.monsterdata.data_monster_b2_boss_frostqueen.encounterhint
-    kr: 
+    kr: "\uAE34 \uAC15\uD0C0 \uC900\uBE44 \uB3D9\uC548 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+      \uBAA8\uB450 \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_FrostQueen.asset:encounterHint
   - key: data.monsterdata.data_monster_b2_elite_frostogre.displayname
-    kr: "\uC11C\uB9AC \uAC70\uC778"
+    kr: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_FrostOgre.asset:displayName
   - key: data.monsterdata.data_monster_b2_elite_frostogre.encounterhint
-    kr: 
+    kr: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_FrostOgre.asset:encounterHint
   - key: data.monsterdata.data_monster_b2_minion_frostbat.displayname
-    kr: "\uC11C\uB9AC \uBC15\uC950"
+    kr: "\uAE43\uBC14\uB298 \uC815\uB839"
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_FrostBat.asset:displayName
   - key: data.monsterdata.data_monster_b2_minion_frostbat.encounterhint
-    kr: 
+    kr: "\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804 \uC57D\uC810\uC744
+      \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_FrostBat.asset:encounterHint
   - key: data.monsterdata.data_monster_b2_minion_icewraith.displayname
-    kr: "\uC5BC\uC74C \uADC0\uC2E0"
+    kr: "\uC7A5\uB9C9 \uC608\uC5B8\uC790"
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_IceWraith.asset:displayName
   - key: data.monsterdata.data_monster_b2_minion_icewraith.encounterhint
-    kr: 
+    kr: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+      \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_IceWraith.asset:encounterHint
   - key: data.monsterdata.data_monster_b2_minion_yeti.displayname
-    kr: "\uC124\uC778"
+    kr: "\uC5C4\uB2C8 \uC21C\uB840\uC790"
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_Yeti.asset:displayName
   - key: data.monsterdata.data_monster_b2_minion_yeti.encounterhint
-    kr: 
+    kr: "\uACC1\uC758 \uC885\uD1A0\uB07C\uC640 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4.
+      \uAC15\uD0C0 \uC900\uBE44\uB97C \uBCF4\uACE0 \uC57D\uC810\uC744 \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_Yeti.asset:encounterHint
   - key: data.monsterdata.data_monster_b3_boss_souleater.displayname
-    kr: "\uC601\uD63C \uD3EC\uC2DD\uC790"
+    kr: "\uC7BF\uBD88\uC758 \uC6A9"
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_SoulEater.asset:displayName
   - key: data.monsterdata.data_monster_b3_boss_souleater.encounterhint
-    kr: 
+    kr: "\uB0A0\uAC1C \uC0AC\uC774\uC640 \uBAB8\uD1B5\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uB4E4\uC744
+      \uB04A\uC5B4 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_SoulEater.asset:encounterHint
   - key: data.monsterdata.data_monster_b3_elite_soulknight.displayname
-    kr: "\uC601\uD63C \uAE30\uC0AC"
+    kr: "\uD30C\uACC4 \uAE30\uB9C8\uC218"
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_SoulKnight.asset:displayName
   - key: data.monsterdata.data_monster_b3_elite_soulknight.encounterhint
-    kr: 
+    kr: "\uB113\uAC8C \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uCC28\uB840\uB85C \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_SoulKnight.asset:encounterHint
   - key: data.monsterdata.data_monster_b3_minion_ashhound.displayname
-    kr: "\uC7AC \uC0AC\uB0E5\uAC1C"
+    kr: "\uC22F\uBD88 \uB3C4\uB871\uB1FD"
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_AshHound.asset:displayName
   - key: data.monsterdata.data_monster_b3_minion_ashhound.encounterhint
-    kr: 
+    kr: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+      \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_AshHound.asset:encounterHint
   - key: data.monsterdata.data_monster_b3_minion_shadelancer.displayname
-    kr: "\uC601\uD63C \uCC3D\uBCD1"
+    kr: "\uBC40 \uC218\uBB38\uC7A5"
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_ShadeLancer.asset:displayName
   - key: data.monsterdata.data_monster_b3_minion_shadelancer.encounterhint
-    kr: 
+    kr: "\uBAB8\uC744 \uC138\uC6B8 \uB54C \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744
+      \uB04A\uC5B4 \uB3CC\uC9C4\uC744 \uB9C9\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_ShadeLancer.asset:encounterHint
   - key: data.monsterdata.data_monster_b3_minion_voidmaw.displayname
-    kr: "\uACF5\uD5C8\uC758 \uC544\uAC00\uB9AC"
+    kr: "\uACF5\uD5C8\uC758 \uB208"
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_VoidMaw.asset:displayName
   - key: data.monsterdata.data_monster_b3_minion_voidmaw.encounterhint
-    kr: 
+    kr: "\uC911\uC559 \uB208\uC774 \uB4DC\uB7EC\uB098\uBA74 \uC57D\uC810\uC744 \uB04A\uC5B4
+      \uC751\uC2DC\uB97C \uCDE8\uC18C\uD558\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_B3_Minion_VoidMaw.asset:encounterHint
   - key: data.monsterdata.data_monster_special_merchantmutant.displayname
-    kr: "\uC0C1\uC778 \uB3CC\uC5F0\uBCC0\uC774"
+    kr: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44"
     source: Assets/Data/Combat/Monsters/Data_Monster_Special_MerchantMutant.asset:displayName
   - key: data.monsterdata.data_monster_special_merchantmutant.encounterhint
-    kr: 
+    kr: "\uD070 \uACF5\uACA9\uC744 \uC900\uBE44\uD560 \uB54C \uC5F4\uB9B0 \uC57D\uC810\uC744
+      \uB178\uB9AC\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_Special_MerchantMutant.asset:encounterHint
   - key: data.monsterdata.data_monster_special_minion_mimic.displayname
-    kr: "\uBBF8\uBBF9"
+    kr: "\uCCA0\uB2C8 \uBBF8\uBBF9"
     source: Assets/Data/Combat/Monsters/Data_Monster_Special_Minion_Mimic.asset:displayName
   - key: data.monsterdata.data_monster_special_minion_mimic.encounterhint
-    kr: 
+    kr: "\uB69C\uAED1\uC774 \uC5F4\uB9AC\uB294 \uB3D9\uC548 \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744
+      \uB04A\uC790."
     source: Assets/Data/Combat/Monsters/Data_Monster_Special_Minion_Mimic.asset:encounterHint
   - key: scene.maingamescene.gameprototype.canvas.debugcheatpanel.perkoption.label
     kr: PerkOption
@@ -6270,3 +6353,403 @@ MonoBehaviour:
       \uC7A5\uCC29\uD55C \uC8FC\uBB38\uC744 \uC0AC\uC6A9\uD569\uB2C8\uB2E4. \uC8FC\uBB38\uC5D0\uB294
       MP\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4."
     source: Scripts/UI/ArcadeHudController.cs
+  - key: data.playercombatdata.angular01_barbarian.displayname
+    kr: "\uBC14\uBC14\uB9AC\uC548"
+    source: Assets/Data/Presentation/Trials/Angular01_Barbarian.asset:displayName
+  - key: data.playercombatdata.angular01_barbarian.description
+    kr: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798, \uC2DD\uC744
+      \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774 \uBC1C\uC0B0\uD558\uB294
+      \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Barbarian.asset:description
+  - key: data.playercombatdata.angular01_monk.displayname
+    kr: "\uBABD\uD06C"
+    source: Assets/Data/Presentation/Trials/Angular01_Monk.asset:displayName
+  - key: data.playercombatdata.angular01_monk.description
+    kr: "\uC5EC\uB7EC \uACF5\uACA9\uC744 \uD558\uB098\uC758 \uACF5\uACA9 \uCC98\uB7FC
+      \uBB3C \uD750\uB974\uB4EF \uC5F0\uACB0\uD558\uB294 \uB0A0\uB835\uD55C \uBAB8\uB180\uB9BC\uC758
+      \uBB34\uC608\uAC00 \uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Monk.asset:description
+  - key: data.playercombatdata.angular01_rogue.displayname
+    kr: "\uB85C\uADF8"
+    source: Assets/Data/Presentation/Trials/Angular01_Rogue.asset:displayName
+  - key: data.playercombatdata.angular01_rogue.description
+    kr: "\uC740\uC2E0 \uB2A5\uB825\uACFC \uB3C5, \uB6F0\uC5B4\uB09C \uBC18\uC0AC
+      \uC2E0\uACBD\uC744 \uD65C\uC6A9\uD574 \uB300\uBD80\uBD84\uC758 \uC0C1\uD669\uC5D0\uC11C
+      \uC6B0\uC704\uB97C \uC810\uD560 \uC218 \uC788\uB294 \uB2E4\uC7AC\uB2E4\uB2A5\uD55C
+      \uC874\uC7AC\uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Rogue.asset:description
+  - key: data.playercombatdata.angular01_samurai.displayname
+    kr: "\uC0AC\uBB34\uB77C\uC774"
+    source: Assets/Data/Presentation/Trials/Angular01_Samurai.asset:displayName
+  - key: data.playercombatdata.angular01_samurai.description
+    kr: "\uC804\uD22C \uC18D\uC5D0\uC11C\uB3C4 \uD56D\uC0C1 \uCE68\uCC29\uD568\uC744
+      \uC783\uC9C0 \uC54A\uB294 \uB3D9\uBC29\uC758 \uBB34\uC0AC\uC785\uB2C8\uB2E4.
+      \uACF5\uACA9\uC744 \uD295\uACA8\uB0B4\uACE0 \uCE58\uBA85\uC801\uC778 \uD53C\uD574\uB85C
+      \uC5F0\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Samurai.asset:description
+  - key: data.playercombatdata.angular01_warrior.displayname
+    kr: "\uC6CC\uB9AC\uC5B4"
+    source: Assets/Data/Presentation/Trials/Angular01_Warrior.asset:displayName
+  - key: data.playercombatdata.angular01_warrior.description
+    kr: "\uBC29\uD328\uC640 \uD55C\uC190\uAC80\uC744 \uC8FC \uBB34\uAE30\uB85C \uAC01\uC885
+      \uC804\uC7C1\uC5D0 \uCC38\uC5EC\uD558\uBA70 \uC6A9\uBCD1\uC774\uB098 \uBAA8\uD5D8\uAC00
+      \uC77C\uC744 \uD574 \uC628 \uC804\uD22C\uC758 \uB2EC\uC778\uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Warrior.asset:description
+  - key: data.playercombatdata.angular01_wizard.displayname
+    kr: "\uC704\uC790\uB4DC"
+    source: Assets/Data/Presentation/Trials/Angular01_Wizard.asset:displayName
+  - key: data.playercombatdata.angular01_wizard.description
+    kr: "\uD638\uAE30\uC2EC\uC5D0 \uC758\uD574 \uBBF8\uAD81\uC5D0 \uBC1C\uC744 \uB4E4\uC778
+      \uD0D1\uC758 \uB9C8\uBC95\uC0AC. \uD0C0\uACE0\uB09C \uB9C8\uB825 \uC6B4\uC6A9\uC73C\uB85C
+      \uB2E4\uC591\uD55C \uC8FC\uBB38\uC744 \uC27D\uAC8C \uB2E4\uB8F0 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Wizard.asset:description
+  - key: data.playercombatdata.barbarian_e8e5e81b.displayname
+    kr: "\uBC14\uBC14\uB9AC\uC548"
+    source: Assets/Data/Presentation/Trials/Angular01_Barbarian.asset:displayName
+  - key: data.playercombatdata.barbarian_e8e5e81b.description
+    kr: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798, \uC2DD\uC744
+      \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774 \uBC1C\uC0B0\uD558\uB294
+      \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Barbarian.asset:description
+  - key: data.playercombatdata.monk_b8a6302a.displayname
+    kr: "\uBABD\uD06C"
+    source: Assets/Data/Presentation/Trials/Angular01_Monk.asset:displayName
+  - key: data.playercombatdata.monk_b8a6302a.description
+    kr: "\uC5EC\uB7EC \uACF5\uACA9\uC744 \uD558\uB098\uC758 \uACF5\uACA9 \uCC98\uB7FC
+      \uBB3C \uD750\uB974\uB4EF \uC5F0\uACB0\uD558\uB294 \uB0A0\uB835\uD55C \uBAB8\uB180\uB9BC\uC758
+      \uBB34\uC608\uAC00 \uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Monk.asset:description
+  - key: data.playercombatdata.rogue_39369910.displayname
+    kr: "\uB85C\uADF8"
+    source: Assets/Data/Presentation/Trials/Angular01_Rogue.asset:displayName
+  - key: data.playercombatdata.rogue_39369910.description
+    kr: "\uC740\uC2E0 \uB2A5\uB825\uACFC \uB3C5, \uB6F0\uC5B4\uB09C \uBC18\uC0AC
+      \uC2E0\uACBD\uC744 \uD65C\uC6A9\uD574 \uB300\uBD80\uBD84\uC758 \uC0C1\uD669\uC5D0\uC11C
+      \uC6B0\uC704\uB97C \uC810\uD560 \uC218 \uC788\uB294 \uB2E4\uC7AC\uB2E4\uB2A5\uD55C
+      \uC874\uC7AC\uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Rogue.asset:description
+  - key: data.playercombatdata.samurai_173880c5.displayname
+    kr: "\uC0AC\uBB34\uB77C\uC774"
+    source: Assets/Data/Presentation/Trials/Angular01_Samurai.asset:displayName
+  - key: data.playercombatdata.samurai_173880c5.description
+    kr: "\uC804\uD22C \uC18D\uC5D0\uC11C\uB3C4 \uD56D\uC0C1 \uCE68\uCC29\uD568\uC744
+      \uC783\uC9C0 \uC54A\uB294 \uB3D9\uBC29\uC758 \uBB34\uC0AC\uC785\uB2C8\uB2E4.
+      \uACF5\uACA9\uC744 \uD295\uACA8\uB0B4\uACE0 \uCE58\uBA85\uC801\uC778 \uD53C\uD574\uB85C
+      \uC5F0\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Samurai.asset:description
+  - key: data.playercombatdata.warrior_d906dc03.displayname
+    kr: "\uC6CC\uB9AC\uC5B4"
+    source: Assets/Data/Presentation/Trials/Angular01_Warrior.asset:displayName
+  - key: data.playercombatdata.warrior_d906dc03.description
+    kr: "\uBC29\uD328\uC640 \uD55C\uC190\uAC80\uC744 \uC8FC \uBB34\uAE30\uB85C \uAC01\uC885
+      \uC804\uC7C1\uC5D0 \uCC38\uC5EC\uD558\uBA70 \uC6A9\uBCD1\uC774\uB098 \uBAA8\uD5D8\uAC00
+      \uC77C\uC744 \uD574 \uC628 \uC804\uD22C\uC758 \uB2EC\uC778\uC785\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Warrior.asset:description
+  - key: data.playercombatdata.wizard_3cf30689.displayname
+    kr: "\uC704\uC790\uB4DC"
+    source: Assets/Data/Presentation/Trials/Angular01_Wizard.asset:displayName
+  - key: data.playercombatdata.wizard_3cf30689.description
+    kr: "\uD638\uAE30\uC2EC\uC5D0 \uC758\uD574 \uBBF8\uAD81\uC5D0 \uBC1C\uC744 \uB4E4\uC778
+      \uD0D1\uC758 \uB9C8\uBC95\uC0AC. \uD0C0\uACE0\uB09C \uB9C8\uB825 \uC6B4\uC6A9\uC73C\uB85C
+      \uB2E4\uC591\uD55C \uC8FC\uBB38\uC744 \uC27D\uAC8C \uB2E4\uB8F0 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    source: Assets/Data/Presentation/Trials/Angular01_Wizard.asset:description
+  - key: data.monsterattackdata.lanternimp-0.displayname
+    kr: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/LanternImp-0.asset:displayName
+  - key: data.monsterattackdata.lanternimp-1.displayname
+    kr: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/LanternImp-1.asset:displayName
+  - key: data.monsterattackdata.bonescorpion-0.displayname
+    kr: "\uAC70\uBBF8\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/BoneScorpion-0.asset:displayName
+  - key: data.monsterattackdata.bonescorpion-1.displayname
+    kr: "\uAC70\uBBF8\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/BoneScorpion-1.asset:displayName
+  - key: data.monsterattackdata.bonescorpion-normal0.displayname
+    kr: "\uC9D1\uAC8C \uD6D1\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/BoneScorpion-Normal0.asset:displayName
+  - key: data.monsterattackdata.bonescorpion-normal1.displayname
+    kr: "\uAF2C\uB9AC \uCC0D\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/BoneScorpion-Normal1.asset:displayName
+  - key: data.monsterattackdata.stringrevenant-0.displayname
+    kr: "\uD574\uACE8 \uC804\uC0AC\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/StringRevenant-0.asset:displayName
+  - key: data.monsterattackdata.stringrevenant-1.displayname
+    kr: "\uD574\uACE8 \uC804\uC0AC\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/StringRevenant-1.asset:displayName
+  - key: data.monsterattackdata.coffinslime-0.displayname
+    kr: "\uD761\uD608\uBC15\uC950\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CoffinSlime-0.asset:displayName
+  - key: data.monsterattackdata.coffinslime-1.displayname
+    kr: "\uD761\uD608\uBC15\uC950\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CoffinSlime-1.asset:displayName
+  - key: data.monsterattackdata.bellhound-0.displayname
+    kr: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/BellHound-0.asset:displayName
+  - key: data.monsterattackdata.bellhound-1.displayname
+    kr: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/BellHound-1.asset:displayName
+  - key: data.monsterattackdata.ettingatekeeper-0.displayname
+    kr: "\uC30D\uB450 \uBB38\uC9C0\uAE30\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-0.asset:displayName
+  - key: data.monsterattackdata.ettingatekeeper-1.displayname
+    kr: "\uC30D\uB450 \uBB38\uC9C0\uAE30\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-1.asset:displayName
+  - key: data.monsterattackdata.ettingatekeeper-normal0.displayname
+    kr: "\uC67C\uBA38\uB9AC \uB0B4\uB824\uCC0D\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-Normal0.asset:displayName
+  - key: data.monsterattackdata.ettingatekeeper-normal1.displayname
+    kr: "\uC624\uB978\uBA38\uB9AC \uD718\uB450\uB974\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/EttinGatekeeper-Normal1.asset:displayName
+  - key: data.monsterattackdata.mirrorshell-0.displayname
+    kr: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/MirrorShell-0.asset:displayName
+  - key: data.monsterattackdata.mirrorshell-1.displayname
+    kr: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/MirrorShell-1.asset:displayName
+  - key: data.monsterattackdata.ironmantis-0.displayname
+    kr: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/IronMantis-0.asset:displayName
+  - key: data.monsterattackdata.ironmantis-1.displayname
+    kr: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/IronMantis-1.asset:displayName
+  - key: data.monsterattackdata.ironmantis-normal0.displayname
+    kr: "\uB0AB \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/IronMantis-Normal0.asset:displayName
+  - key: data.monsterattackdata.ironmantis-normal1.displayname
+    kr: "\uAD50\uCC28 \uBCA0\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/IronMantis-Normal1.asset:displayName
+  - key: data.monsterattackdata.stonesphinx-0.displayname
+    kr: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/StoneSphinx-0.asset:displayName
+  - key: data.monsterattackdata.stonesphinx-1.displayname
+    kr: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/StoneSphinx-1.asset:displayName
+  - key: data.monsterattackdata.stonesphinx-2.displayname
+    kr: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uAC15\uD0C0 2"
+    source: Assets/Data/Presentation/Angular/Attacks/StoneSphinx-2.asset:displayName
+  - key: data.monsterattackdata.ossuarybell-0.displayname
+    kr: "\uB0A9\uACE8\uB2F9\uC758 \uC885\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/OssuaryBell-0.asset:displayName
+  - key: data.monsterattackdata.ossuarybell-1.displayname
+    kr: "\uB0A9\uACE8\uB2F9\uC758 \uC885\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/OssuaryBell-1.asset:displayName
+  - key: data.monsterattackdata.webduchess-0.displayname
+    kr: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/WebDuchess-0.asset:displayName
+  - key: data.monsterattackdata.webduchess-1.displayname
+    kr: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/WebDuchess-1.asset:displayName
+  - key: data.monsterattackdata.threadling-0.displayname
+    kr: "\uC2E4\uC778\uD615\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/Threadling-0.asset:displayName
+  - key: data.monsterattackdata.threadling-1.displayname
+    kr: "\uC2E4\uC778\uD615\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/Threadling-1.asset:displayName
+  - key: data.monsterattackdata.quillsprite-0.displayname
+    kr: "\uAE43\uBC14\uB298 \uC815\uB839\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/QuillSprite-0.asset:displayName
+  - key: data.monsterattackdata.quillsprite-1.displayname
+    kr: "\uAE43\uBC14\uB298 \uC815\uB839\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/QuillSprite-1.asset:displayName
+  - key: data.monsterattackdata.crystalurchin-0.displayname
+    kr: "\uACB0\uC815 \uC131\uAC8C\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CrystalUrchin-0.asset:displayName
+  - key: data.monsterattackdata.crystalurchin-1.displayname
+    kr: "\uACB0\uC815 \uC131\uAC8C\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CrystalUrchin-1.asset:displayName
+  - key: data.monsterattackdata.veiloracle-0.displayname
+    kr: "\uC7A5\uB9C9 \uC608\uC5B8\uC790\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/VeilOracle-0.asset:displayName
+  - key: data.monsterattackdata.veiloracle-1.displayname
+    kr: "\uC7A5\uB9C9 \uC608\uC5B8\uC790\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/VeilOracle-1.asset:displayName
+  - key: data.monsterattackdata.tuskpilgrim-0.displayname
+    kr: "\uC5C4\uB2C8 \uC21C\uB840\uC790\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/TuskPilgrim-0.asset:displayName
+  - key: data.monsterattackdata.tuskpilgrim-1.displayname
+    kr: "\uC5C4\uB2C8 \uC21C\uB840\uC790\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/TuskPilgrim-1.asset:displayName
+  - key: data.monsterattackdata.bellhare-0.displayname
+    kr: "\uC885\uD1A0\uB07C\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/BellHare-0.asset:displayName
+  - key: data.monsterattackdata.bellhare-1.displayname
+    kr: "\uC885\uD1A0\uB07C\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/BellHare-1.asset:displayName
+  - key: data.monsterattackdata.twinantlerstag-0.displayname
+    kr: "\uC30D\uAC01 \uD30C\uC218\uAFBC\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-0.asset:displayName
+  - key: data.monsterattackdata.twinantlerstag-1.displayname
+    kr: "\uC30D\uAC01 \uD30C\uC218\uAFBC\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-1.asset:displayName
+  - key: data.monsterattackdata.twinantlerstag-normal0.displayname
+    kr: "\uC55E\uBC1C \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-Normal0.asset:displayName
+  - key: data.monsterattackdata.twinantlerstag-normal1.displayname
+    kr: "\uBFD4 \uD718\uB450\uB974\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/TwinAntlerStag-Normal1.asset:displayName
+  - key: data.monsterattackdata.mirrormoth-0.displayname
+    kr: "\uAC70\uC6B8\uB098\uBC29\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/MirrorMoth-0.asset:displayName
+  - key: data.monsterattackdata.mirrormoth-1.displayname
+    kr: "\uAC70\uC6B8\uB098\uBC29\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/MirrorMoth-1.asset:displayName
+  - key: data.monsterattackdata.maskedchoir-0.displayname
+    kr: "\uAC00\uBA74 \uC131\uAC00\uC218\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/MaskedChoir-0.asset:displayName
+  - key: data.monsterattackdata.maskedchoir-1.displayname
+    kr: "\uAC00\uBA74 \uC131\uAC00\uC218\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/MaskedChoir-1.asset:displayName
+  - key: data.monsterattackdata.winterunicorn-0.displayname
+    kr: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/WinterUnicorn-0.asset:displayName
+  - key: data.monsterattackdata.winterunicorn-1.displayname
+    kr: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/WinterUnicorn-1.asset:displayName
+  - key: data.monsterattackdata.prismcrab-0.displayname
+    kr: "\uC218\uC815 \uB4F1\uB531\uC9C0\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/PrismCrab-0.asset:displayName
+  - key: data.monsterattackdata.prismcrab-1.displayname
+    kr: "\uC218\uC815 \uB4F1\uB531\uC9C0\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/PrismCrab-1.asset:displayName
+  - key: data.monsterattackdata.tempestroc-0.displayname
+    kr: "\uD3ED\uD48D\uC758 \uB300\uBD95\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/TempestRoc-0.asset:displayName
+  - key: data.monsterattackdata.tempestroc-1.displayname
+    kr: "\uD3ED\uD48D\uC758 \uB300\uBD95\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/TempestRoc-1.asset:displayName
+  - key: data.monsterattackdata.tempestroc-normal0.displayname
+    kr: "\uB0A0\uAC1C \uBC14\uB78C"
+    source: Assets/Data/Presentation/Angular/Attacks/TempestRoc-Normal0.asset:displayName
+  - key: data.monsterattackdata.tempestroc-normal1.displayname
+    kr: "\uBC1C\uD1B1 \uB09A\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/TempestRoc-Normal1.asset:displayName
+  - key: data.monsterattackdata.stormjelly-0.displayname
+    kr: "\uD3ED\uD48D \uD574\uD30C\uB9AC\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/StormJelly-0.asset:displayName
+  - key: data.monsterattackdata.stormjelly-1.displayname
+    kr: "\uD3ED\uD48D \uD574\uD30C\uB9AC\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/StormJelly-1.asset:displayName
+  - key: data.monsterattackdata.coalsalamander-0.displayname
+    kr: "\uC22F\uBD88 \uB3C4\uB871\uB1FD\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CoalSalamander-0.asset:displayName
+  - key: data.monsterattackdata.coalsalamander-1.displayname
+    kr: "\uC22F\uBD88 \uB3C4\uB871\uB1FD\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CoalSalamander-1.asset:displayName
+  - key: data.monsterattackdata.serpentwarden-0.displayname
+    kr: "\uBC40 \uC218\uBB38\uC7A5\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/SerpentWarden-0.asset:displayName
+  - key: data.monsterattackdata.serpentwarden-1.displayname
+    kr: "\uBC40 \uC218\uBB38\uC7A5\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/SerpentWarden-1.asset:displayName
+  - key: data.monsterattackdata.serpentwarden-normal0.displayname
+    kr: "\uCC3D \uCC0C\uB974\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/SerpentWarden-Normal0.asset:displayName
+  - key: data.monsterattackdata.serpentwarden-normal1.displayname
+    kr: "\uAF2C\uB9AC \uD729\uC4F8\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/SerpentWarden-Normal1.asset:displayName
+  - key: data.monsterattackdata.ashgargoyle-0.displayname
+    kr: "\uC7AC \uAC00\uACE0\uC77C\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/AshGargoyle-0.asset:displayName
+  - key: data.monsterattackdata.ashgargoyle-1.displayname
+    kr: "\uC7AC \uAC00\uACE0\uC77C\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/AshGargoyle-1.asset:displayName
+  - key: data.monsterattackdata.holloweye-0.displayname
+    kr: "\uACF5\uD5C8\uC758 \uB208\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/HollowEye-0.asset:displayName
+  - key: data.monsterattackdata.holloweye-1.displayname
+    kr: "\uACF5\uD5C8\uC758 \uB208\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/HollowEye-1.asset:displayName
+  - key: data.monsterattackdata.censerrevenant-0.displayname
+    kr: "\uD5A5\uB85C \uB9DD\uB839\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CenserRevenant-0.asset:displayName
+  - key: data.monsterattackdata.censerrevenant-1.displayname
+    kr: "\uD5A5\uB85C \uB9DD\uB839\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CenserRevenant-1.asset:displayName
+  - key: data.monsterattackdata.oathlesscentaur-0.displayname
+    kr: "\uD30C\uACC4 \uAE30\uB9C8\uC218\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/OathlessCentaur-0.asset:displayName
+  - key: data.monsterattackdata.oathlesscentaur-1.displayname
+    kr: "\uD30C\uACC4 \uAE30\uB9C8\uC218\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/OathlessCentaur-1.asset:displayName
+  - key: data.monsterattackdata.crimsoncount-0.displayname
+    kr: "\uD54F\uBE5B \uBC31\uC791\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CrimsonCount-0.asset:displayName
+  - key: data.monsterattackdata.crimsoncount-1.displayname
+    kr: "\uD54F\uBE5B \uBC31\uC791\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CrimsonCount-1.asset:displayName
+  - key: data.monsterattackdata.ashhierophant-0.displayname
+    kr: "\uC7AC\uC758 \uB300\uC0AC\uC81C\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/AshHierophant-0.asset:displayName
+  - key: data.monsterattackdata.ashhierophant-1.displayname
+    kr: "\uC7AC\uC758 \uB300\uC0AC\uC81C\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/AshHierophant-1.asset:displayName
+  - key: data.monsterattackdata.ashdragon-0.displayname
+    kr: "\uC7BF\uBD88\uC758 \uC6A9\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/AshDragon-0.asset:displayName
+  - key: data.monsterattackdata.ashdragon-1.displayname
+    kr: "\uC7BF\uBD88\uC758 \uC6A9\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/AshDragon-1.asset:displayName
+  - key: data.monsterattackdata.ashdragon-normal0.displayname
+    kr: "\uBC1C\uD1B1 \uD718\uB450\uB974\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/AshDragon-Normal0.asset:displayName
+  - key: data.monsterattackdata.ashdragon-normal1.displayname
+    kr: "\uBD88\uC528 \uBFDC\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/AshDragon-Normal1.asset:displayName
+  - key: data.monsterattackdata.eclipsechimera-0.displayname
+    kr: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/EclipseChimera-0.asset:displayName
+  - key: data.monsterattackdata.eclipsechimera-1.displayname
+    kr: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/EclipseChimera-1.asset:displayName
+  - key: data.monsterattackdata.eclipsechimera-2.displayname
+    kr: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C\uC758 \uAC15\uD0C0 2"
+    source: Assets/Data/Presentation/Angular/Attacks/EclipseChimera-2.asset:displayName
+  - key: data.monsterattackdata.eclipsechimera-3.displayname
+    kr: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C\uC758 \uAC15\uD0C0 3"
+    source: Assets/Data/Presentation/Angular/Attacks/EclipseChimera-3.asset:displayName
+  - key: data.monsterattackdata.cinderlich-0.displayname
+    kr: "\uC7BF\uBD88 \uC655\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CinderLich-0.asset:displayName
+  - key: data.monsterattackdata.cinderlich-1.displayname
+    kr: "\uC7BF\uBD88 \uC655\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CinderLich-1.asset:displayName
+  - key: data.monsterattackdata.cinderlich-2.displayname
+    kr: "\uC7BF\uBD88 \uC655\uC758 \uAC15\uD0C0 2"
+    source: Assets/Data/Presentation/Angular/Attacks/CinderLich-2.asset:displayName
+  - key: data.monsterattackdata.ironmimic-0.displayname
+    kr: "\uCCA0\uB2C8 \uBBF8\uBBF9\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/IronMimic-0.asset:displayName
+  - key: data.monsterattackdata.ironmimic-1.displayname
+    kr: "\uCCA0\uB2C8 \uBBF8\uBBF9\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/IronMimic-1.asset:displayName
+  - key: data.monsterattackdata.gildedtoad-0.displayname
+    kr: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/GildedToad-0.asset:displayName
+  - key: data.monsterattackdata.gildedtoad-1.displayname
+    kr: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/GildedToad-1.asset:displayName
+  - key: data.monsterattackdata.tarrasquewhelp-0.displayname
+    kr: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-0.asset:displayName
+  - key: data.monsterattackdata.tarrasquewhelp-1.displayname
+    kr: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-1.asset:displayName
+  - key: data.monsterattackdata.tarrasquewhelp-normal0.displayname
+    kr: "\uC55E\uBC1C \uCC0D\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-Normal0.asset:displayName
+  - key: data.monsterattackdata.tarrasquewhelp-normal1.displayname
+    kr: "\uB4F1\uAECD\uC9C8 \uB4E4\uC774\uBC00\uAE30"
+    source: Assets/Data/Presentation/Angular/Attacks/TarrasqueWhelp-Normal1.asset:displayName
+  - key: data.monsterattackdata.crowncolossus-0.displayname
+    kr: "\uC655\uAD00 \uAC70\uC2E0\uC758 \uACAC\uC81C"
+    source: Assets/Data/Presentation/Angular/Attacks/CrownColossus-0.asset:displayName
+  - key: data.monsterattackdata.crowncolossus-1.displayname
+    kr: "\uC655\uAD00 \uAC70\uC2E0\uC758 \uAC15\uD0C0 1"
+    source: Assets/Data/Presentation/Angular/Attacks/CrownColossus-1.asset:displayName
+  - key: ui.combat.support.cancelled
+    kr: "\uBCF4\uC870 \uAC1C\uCCB4 \uD30C\uAD34 \xB7 \uACF5\uACA9 \uCC28\uB2E8"
+    source: Assets/Scripts/Combat/Systems/CombatExpansion.cs
+  - key: ui.combat.support.broken
+    kr: "\uB450 \uC6B0\uC0C1 \uD30C\uAD34 \xB7 \uBCF8\uCCB4 \uAE30\uC808"
+    source: Assets/Scripts/Combat/Systems/CombatExpansion.cs

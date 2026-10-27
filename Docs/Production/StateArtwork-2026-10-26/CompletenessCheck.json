@@ -1,0 +1,372 @@
+{
+  "actorsInStateMigration": 48,
+  "monstersInCurrentProject": 44,
+  "otherCurrentInventories": {
+    "Player": [
+      "Assets/Data/Characters/Barbarian.asset",
+      "Assets/Data/Characters/Monk.asset",
+      "Assets/Data/Characters/Rogue.asset",
+      "Assets/Data/Characters/Samurai.asset",
+      "Assets/Data/Characters/Warrior.asset",
+      "Assets/Data/Characters/Wizard.asset",
+      "Assets/Data/Presentation/Trials/Angular01_Barbarian.asset",
+      "Assets/Data/Presentation/Trials/Angular01_Monk.asset",
+      "Assets/Data/Presentation/Trials/Angular01_Rogue.asset",
+      "Assets/Data/Presentation/Trials/Angular01_Samurai.asset",
+      "Assets/Data/Presentation/Trials/Angular01_Warrior.asset",
+      "Assets/Data/Presentation/Trials/Angular01_Wizard.asset"
+    ],
+    "Companion": [
+      "Assets/Data/Characters/Companions/TrailDog.asset"
+    ]
+  },
+  "deployedStateSlots": 184,
+  "uniqueDeployedImages": 184,
+  "problems": [],
+  "changedApprovedIdles": [],
+  "missingGalleryImages": [],
+  "actorsOutsideMigration": [
+    {
+      "data": "Assets/Data/Combat/Monsters/TrainingHeavy.asset",
+      "animation": "Assets/Data/Presentation/Animations/Enemy_TrainingLight.asset",
+      "states": {
+        "Idle": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+        "Ready": "Assets/Art/Enemies/Combat/TrainingLight/Ready.png",
+        "Attack": "Assets/Art/Enemies/Combat/TrainingLight/Attack.png",
+        "Dead": "Assets/Art/Enemies/Combat/TrainingLight/Dead.png"
+      },
+      "stateContractValid": true,
+      "encounters": [
+        "Assets/Data/Dungeon/Encounters/TrainingHeavy.asset"
+      ]
+    },
+    {
+      "data": "Assets/Data/Combat/Monsters/TrainingLight.asset",
+      "animation": "Assets/Data/Presentation/Animations/Enemy_TrainingLight.asset",
+      "states": {
+        "Idle": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+        "Ready": "Assets/Art/Enemies/Combat/TrainingLight/Ready.png",
+        "Attack": "Assets/Art/Enemies/Combat/TrainingLight/Attack.png",
+        "Dead": "Assets/Art/Enemies/Combat/TrainingLight/Dead.png"
+      },
+      "stateContractValid": true,
+      "encounters": [
+        "Assets/Data/Dungeon/Encounters/TrainingLight.asset"
+      ]
+    },
+    {
+      "data": "Assets/Data/Combat/Monsters/TrainingMedium.asset",
+      "animation": "Assets/Data/Presentation/Animations/Enemy_TrainingLight.asset",
+      "states": {
+        "Idle": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+        "Ready": "Assets/Art/Enemies/Combat/TrainingLight/Ready.png",
+        "Attack": "Assets/Art/Enemies/Combat/TrainingLight/Attack.png",
+        "Dead": "Assets/Art/Enemies/Combat/TrainingLight/Dead.png"
+      },
+      "stateContractValid": true,
+      "encounters": [
+        "Assets/Data/Dungeon/Encounters/TrainingMedium.asset"
+      ]
+    }
+  ],
+  "historicalGenerationErrors": [
+    {
+      "job": "Monster-CrystalUrchin-Dead",
+      "currentOutputExists": true
+    },
+    {
+      "job": "Monster-TempestRoc-Ready",
+      "currentOutputExists": true
+    }
+  ],
+  "actors": [
+    {
+      "id": "Hero-Warrior",
+      "stateCount": 3,
+      "latestRuntimeChecks": 7,
+      "problems": []
+    },
+    {
+      "id": "Hero-Rogue",
+      "stateCount": 3,
+      "latestRuntimeChecks": 7,
+      "problems": []
+    },
+    {
+      "id": "Hero-Barbarian",
+      "stateCount": 3,
+      "latestRuntimeChecks": 7,
+      "problems": []
+    },
+    {
+      "id": "Hero-Samurai",
+      "stateCount": 3,
+      "latestRuntimeChecks": 7,
+      "problems": []
+    },
+    {
+      "id": "Hero-Monk",
+      "stateCount": 3,
+      "latestRuntimeChecks": 7,
+      "problems": []
+    },
+    {
+      "id": "Hero-Wizard",
+      "stateCount": 3,
+      "latestRuntimeChecks": 8,
+      "problems": []
+    },
+    {
+      "id": "Monster-LanternImp",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-BoneScorpion",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-StringRevenant",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-CoffinSlime",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-BellHound",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-EttinGatekeeper",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-MirrorShell",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-IronMantis",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-StoneSphinx",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-OssuaryBell",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-WebDuchess",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-Threadling",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-QuillSprite",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-CrystalUrchin",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-VeilOracle",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-TuskPilgrim",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-BellHare",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-TwinAntlerStag",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-MirrorMoth",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-MaskedChoir",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-WinterUnicorn",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-PrismCrab",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-TempestRoc",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-StormJelly",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-CoalSalamander",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-SerpentWarden",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-AshGargoyle",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-HollowEye",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-CenserRevenant",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-OathlessCentaur",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-CrimsonCount",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-AshHierophant",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-AshDragon",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-EclipseChimera",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-SunIdol",
+      "stateCount": 4,
+      "latestRuntimeChecks": 4,
+      "problems": []
+    },
+    {
+      "id": "Monster-MoonIdol",
+      "stateCount": 4,
+      "latestRuntimeChecks": 4,
+      "problems": []
+    },
+    {
+      "id": "Monster-CinderLich",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-IronMimic",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-GildedToad",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-TarrasqueWhelp",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Monster-CrownColossus",
+      "stateCount": 4,
+      "latestRuntimeChecks": 5,
+      "problems": []
+    },
+    {
+      "id": "Companion-TrailDog",
+      "stateCount": 2,
+      "latestRuntimeChecks": 3,
+      "problems": []
+    }
+  ]
+}

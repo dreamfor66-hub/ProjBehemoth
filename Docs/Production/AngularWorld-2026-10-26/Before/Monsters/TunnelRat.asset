@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: TunnelRat
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.tunnelrat.displayname
+    lastText: "\uAD74\uC950"
+  - propertyPath: encounterHint
+    key: data.monsterdata.tunnelrat.encounterhint
+    lastText: 
+  textOwnerGuid: e38eba67e08948347ab295b6c79c7e34
+  displayName: "\uAD74\uC950"
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
+  combatAnimation: {fileID: 11400000, guid: c0cebcd2a23c2c540a2ac2e8871d9f1a, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 36
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 17
+  goldReward: 9
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 50779bf07ca5bba48b3c5f6b0b178e5f, type: 2}
+  - {fileID: 11400000, guid: 1b5e2ae0dd52c3445999f2e00b2f2116, type: 2}
+  bodyColor: {r: 0.5632, g: 0.8, b: 0.48, a: 1}

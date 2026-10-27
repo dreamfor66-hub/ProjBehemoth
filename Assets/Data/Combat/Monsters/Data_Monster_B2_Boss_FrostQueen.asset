@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.data_monster_b2_boss_frostqueen.displayname
-    lastText: "\uC11C\uB9AC \uC5EC\uC655"
+    lastText: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_b2_boss_frostqueen.encounterhint
-    lastText: 
+    lastText: "\uAE34 \uAC15\uD0C0 \uC900\uBE44 \uB3D9\uC548 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+      \uBAA8\uB450 \uB04A\uC790."
   textOwnerGuid: 54667eccb06d98746b603f33af299ab8
-  displayName: "\uC11C\uB9AC \uC5EC\uC655"
-  portrait: {fileID: 21300000, guid: 1ebb149a24fb51ba96ba89939b9d891c, type: 3}
-  combatAnimation: {fileID: 11400000, guid: a3e46aeb045012a448bb202352d9426e, type: 2}
-  encounterHint: 
+  displayName: "\uACA8\uC6B8\uC758 \uC77C\uAC01\uC218"
+  portrait: {fileID: 21300000, guid: 65664f1cef25e6948950d9235d562152, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 259e62888ccceb343a411cb35d0d50d9, type: 2}
+  encounterHint: "\uAE34 \uAC15\uD0C0 \uC900\uBE44 \uB3D9\uC548 \uB178\uCD9C\uB41C
+    \uC57D\uC810\uC744 \uBAA8\uB450 \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 10
   bodyHitRadius: 108
   attacks:
-  - {fileID: 11400000, guid: 3366d145ae667fc4093f0836b26cf9ad, type: 2}
-  - {fileID: 11400000, guid: 5adbbc2b83825714a816c2456ea71563, type: 2}
+  - {fileID: 11400000, guid: 56ad7c6c150565e4c83f0d39e3b32760, type: 2}
+  - {fileID: 11400000, guid: 4544e97468072fe47a3054c7c0831abd, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.18, g: 0.52, b: 0.9, a: 1}

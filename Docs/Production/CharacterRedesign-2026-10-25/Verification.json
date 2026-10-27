@@ -1,0 +1,11 @@
+{
+  "characterPNGs": 66,
+  "originalCanvasSizesPreserved": true,
+  "runtimeFrames": 27,
+  "attackSpritesConfirmed": 6,
+  "guardStatesConfirmed": 6,
+  "paletteViolations": 0,
+  "newUnityErrors": 0,
+  "attackCapture": "Editor probe holds art pose through screenshot readback; production timing unchanged.",
+  "scope": "Six character selection screens, idle/attack/guard, existing Unity instance. No balance suite or device regression."
+}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24a8a8ab5455999a22d184fe99d7def, type: 3}
   m_Name: Typography
   m_EditorClassIdentifier: 
-  baseFace: 1
+  baseFace: 7
   dosStory: {fileID: 11400000, guid: 96471bd4f1f651a3a5016f5e569d489f, type: 2}
   galmuri11: {fileID: 11400000, guid: 437f845f5ec55007beb1a56d1e58f8f6, type: 2}
   galmuri11Condensed: {fileID: 11400000, guid: 0054a169bb0657f28db953d1946bdf9b, type: 2}
@@ -20,71 +20,72 @@ MonoBehaviour:
   galmuri7: {fileID: 11400000, guid: 6eed10ccaa435bbbb0a2373d972b7d6e, type: 2}
   useTangbaForCondensed: 1
   tangba: {fileID: 11400000, guid: 0e46adea5cdc54509bc44c1e177f2636, type: 2}
-  snapToNativePixels: 1
+  yiSunShin: {fileID: 11400000, guid: d96da0722f235aa4782eca199b56e6b5, type: 2}
+  snapToNativePixels: 0
   rules:
   - role: 0
     face: 0
-    narrowFace: 3
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 1
     face: 0
-    narrowFace: 3
-    useNarrowFaceWhenNeeded: 1
+    narrowFace: 0
+    useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 2
     face: 0
-    narrowFace: 3
-    useNarrowFaceWhenNeeded: 1
+    narrowFace: 0
+    useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 3
-    face: 3
-    narrowFace: 3
+    face: 0
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 4
-    face: 3
-    narrowFace: 3
+    face: 0
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 5
     face: 0
-    narrowFace: 3
-    useNarrowFaceWhenNeeded: 1
+    narrowFace: 0
+    useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 6
     face: 0
-    narrowFace: 3
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 7
     face: 0
-    narrowFace: 3
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 8
-    face: 5
-    narrowFace: 3
+    face: 0
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
-    numericOnly: 1
+    numericOnly: 0
     sizeMultiplier: 1
   - role: 9
     face: 0
-    narrowFace: 3
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1
   - role: 10
     face: 0
-    narrowFace: 3
+    narrowFace: 0
     useNarrowFaceWhenNeeded: 0
     numericOnly: 0
     sizeMultiplier: 1

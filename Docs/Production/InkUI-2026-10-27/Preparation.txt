@@ -1,0 +1,3 @@
+Ink surfaces visited/serialized: 387
+Skipped dirty scenes: 
+Top black strip and its top controls excluded. Existing input targets and listeners retained.

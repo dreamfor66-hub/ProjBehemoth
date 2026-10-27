@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: StormOrb
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.stormorb.displayname
+    lastText: "\uD3ED\uD48D \uD574\uD30C\uB9AC"
+  - propertyPath: encounterHint
+    key: data.monsterdata.stormorb.encounterhint
+    lastText: "\uBCF8\uCCB4 \uC8FC\uC704\uB97C \uACF5\uC804\uD558\uBA70 \uACF5\uACA9\uD55C\uB2E4."
+  textOwnerGuid: c082165dde8685f4ab9e002c0cb302e1
+  displayName: "\uD3ED\uD48D \uD574\uD30C\uB9AC"
+  portrait: {fileID: 21300000, guid: fc415e8a024dfdd4f8ea2f0d6d701c69, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e0f60b9f2eec7f5469279c326e3cd4a1, type: 2}
+  encounterHint: "\uBCF8\uCCB4 \uC8FC\uC704\uB97C \uACF5\uC804\uD558\uBA70 \uACF5\uACA9\uD55C\uB2E4."
+  pattern: 3
+  supportId: 
+  diesWithLeader: 1
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 100
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 22
+  goldReward: 12
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 4a0c200a49fb5b641bdcfa735065957e, type: 2}
+  - {fileID: 11400000, guid: 415bad7bd2c07f646a16c7cbbc3531e2, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.8, g: 0.48, b: 0.6336, a: 1}

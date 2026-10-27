@@ -65,7 +65,7 @@ namespace DungeonSlash
             var hasText=false;
             foreach(var graphic in graphics)
             {
-                var isText=graphic is TMP_Text||graphic is TMP_SubMeshUI;
+                var isText=graphic is TMP_Text||graphic is TMP_SubMeshUI||graphic is InkUiSurface||graphic is SlantedGuardGauge guard&&guard.inkStyle!=null||graphic is ArcGaugeGraphic arc&&arc.inkStyle!=null;
                 if(!hasText&&!isText)continue;
                 var renderer=graphic.canvasRenderer;
                 var source=renderer.GetMesh();
@@ -91,7 +91,7 @@ namespace DungeonSlash
                 if(drawPool.Count<=draws.Count)drawPool.Add(new Draw());
                 var draw=drawPool[draws.Count];
                 var block=draw.properties;block.Clear();
-                block.SetTexture("_MainTex",isText?material.mainTexture:graphic.mainTexture);
+                block.SetTexture("_MainTex",(isText?material.mainTexture:graphic.mainTexture)??Texture2D.whiteTexture);
                 // RectMask2D clipping is normally injected by CanvasRenderer, not stored in its material.
                 // Scissor the replay against the same intersected ancestor rectangles.
                 Rect? clip=null;

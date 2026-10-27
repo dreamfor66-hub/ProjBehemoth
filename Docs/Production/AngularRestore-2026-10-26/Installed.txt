@@ -1,0 +1,1 @@
+Original SourceHall camera/pixels outside two doorway panels restored. Hero canvas scale read from accepted trial; background Y=-24 logical units. Original Back navigation lower-left. Bear-pelt concept saved separately; existing character identity data retained.

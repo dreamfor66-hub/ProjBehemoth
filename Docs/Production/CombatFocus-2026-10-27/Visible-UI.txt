@@ -1,0 +1,6 @@
+Background/Door artwork Forward rect=(x:-782.09, y:-439.93, width:1564.19, height:879.85) color=RGBA(1.000, 1.000, 1.000, 1.000) sprite=B1-Forward
+Background/Door artwork Right rect=(x:-782.09, y:-439.93, width:1564.19, height:879.85) color=RGBA(1.000, 1.000, 1.000, 1.000) sprite=B1-Right
+Canvas/Background rect=(x:-782.09, y:-439.93, width:1564.19, height:879.85) color=RGBA(1.000, 1.000, 1.000, 1.000) sprite=B1-Walls
+Canvas/CombatRoot rect=(x:-768.00, y:-448.00, width:1536.00, height:896.00) color=RGBA(0.000, 0.000, 0.000, 0.070) sprite=none
+PlayerSpawnRoot/PlayerView(Clone) rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00) color=RGBA(1.000, 1.000, 1.000, 1.000) sprite=Warrior-Rear
+Background/Door artwork Left rect=(x:-782.09, y:-439.93, width:1564.19, height:879.85) color=RGBA(1.000, 1.000, 1.000, 1.000) sprite=B1-Left

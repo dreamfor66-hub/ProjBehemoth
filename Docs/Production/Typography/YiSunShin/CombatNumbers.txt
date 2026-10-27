@@ -1,0 +1,20 @@
+Scoped live Unity font verification / 1920x1080
+Label | YiSunShin | size=44 | overflow=False | missing= | 메뉴
+Outline7 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Outline3 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Label | YiSunShin | size=44 | overflow=False | missing= | 지도
+Label | YiSunShin | size=44 | overflow=False | missing= | →
+StageTitle | YiSunShin | size=36 | overflow=False | missing= | B1 · 잊힌 미궁
+Label | YiSunShin | size=44 | overflow=False | missing= | 보유품
+Health | YiSunShin | size=40 | overflow=False | missing= | HP 100 / 100
+Outline1 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Outline0 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Label | YiSunShin | size=44 | overflow=False | missing= | ↑
+Label | YiSunShin | size=44 | overflow=False | missing= | ↓
+Gold | YiSunShin | size=40 | overflow=False | missing= | 38<color=#D8BB62>G</color>
+Outline4 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Outline5 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Outline2 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Outline6 | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Label | YiSunShin | size=44 | overflow=False | missing= | 123!!
+Labels=18; wrong font=0; missing glyphs=0

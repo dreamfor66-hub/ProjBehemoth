@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: CrystalSpider
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.crystalspider.displayname
+    lastText: "\uC218\uC815 \uAC70\uBBF8"
+  - propertyPath: hint
+    key: data.encounterdata.crystalspider.hint
+    lastText: 
+  textOwnerGuid: 028223c6a4e508b40b90f88eef4ee7c3
+  id: CrystalSpider
+  displayName: "\uC218\uC815 \uAC70\uBBF8"
+  hint: 
+  category: 10
+  members:
+  - monster: {fileID: 11400000, guid: c16969a0aaa6ee74c8c39ea15262fa61, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

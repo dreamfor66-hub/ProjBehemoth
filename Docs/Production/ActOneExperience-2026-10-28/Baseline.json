@@ -1,0 +1,397 @@
+[
+  {
+    "id": "LanternImp",
+    "name": "고블린사냥꾼",
+    "hp": "96",
+    "interval": "1.25",
+    "charge": "2.75",
+    "stun": "2.5",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\LanternImp-0.asset",
+        "name": "\"고블린사냥꾼의 견제\"",
+        "type": "0",
+        "damage": "10.8",
+        "guard": "10.8",
+        "windup": "0.957",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\LanternImp-1.asset",
+        "name": "\"고블린사냥꾼의 강타 1\"",
+        "type": "1",
+        "damage": "19.44",
+        "guard": "19.44",
+        "windup": "0.01",
+        "limit": "4",
+        "hits": "1",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "id": "BoneScorpion",
+    "name": "거미",
+    "hp": "36",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\BoneScorpion-0.asset",
+        "name": "\"거미의 견제\"",
+        "type": "0",
+        "damage": "5",
+        "guard": "8",
+        "windup": "0.75",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\BoneScorpion-1.asset",
+        "name": "\"거미의 강타 1\"",
+        "type": "1",
+        "damage": "10",
+        "guard": "16",
+        "windup": "1",
+        "limit": "2.7",
+        "hits": "1",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "id": "StringRevenant",
+    "name": "해골 전사",
+    "hp": "129",
+    "interval": "2",
+    "charge": "6",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\StringRevenant-0.asset",
+        "name": "\"해골 전사의 견제\"",
+        "type": "0",
+        "damage": "16.8",
+        "guard": "16.8",
+        "windup": "0.957",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\StringRevenant-1.asset",
+        "name": "\"해골 전사의 강타 1\"",
+        "type": "1",
+        "damage": "30.24",
+        "guard": "30.24",
+        "windup": "0.01",
+        "limit": "4",
+        "hits": "1",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "CoffinSlime",
+    "name": "흡혈박쥐",
+    "hp": "142.5",
+    "interval": "1.7",
+    "charge": "6.4",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\CoffinSlime-0.asset",
+        "name": "\"흡혈박쥐의 견제\"",
+        "type": "0",
+        "damage": "19.2",
+        "guard": "19.2",
+        "windup": "0.957",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\CoffinSlime-1.asset",
+        "name": "\"흡혈박쥐의 강타 1\"",
+        "type": "1",
+        "damage": "34.56",
+        "guard": "34.56",
+        "windup": "0.01",
+        "limit": "4",
+        "hits": "1",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "BellHound",
+    "name": "경종 사냥개",
+    "hp": "65",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\BellHound-0.asset",
+        "name": "\"경종 사냥개의 견제\"",
+        "type": "0",
+        "damage": "6",
+        "guard": "9.6",
+        "windup": "0.9",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\BellHound-1.asset",
+        "name": "\"경종 사냥개의 강타 1\"",
+        "type": "1",
+        "damage": "8",
+        "guard": "12.8",
+        "windup": "1",
+        "limit": "3.2",
+        "hits": "1",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "id": "EttinGatekeeper",
+    "name": "쌍두 문지기",
+    "hp": "450",
+    "interval": "2.7",
+    "charge": "5.8",
+    "stun": "4",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\EttinGatekeeper-0.asset",
+        "name": "\"쌍두 문지기의 견제\"",
+        "type": "0",
+        "damage": "30",
+        "guard": "30",
+        "windup": "0.87",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\EttinGatekeeper-1.asset",
+        "name": "\"쌍두 문지기의 강타 1\"",
+        "type": "1",
+        "damage": "27",
+        "guard": "27",
+        "windup": "0.01",
+        "limit": "6.4",
+        "hits": "3",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "MirrorShell",
+    "name": "움직이는 갑옷",
+    "hp": "185",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\MirrorShell-0.asset",
+        "name": "\"움직이는 갑옷의 견제\"",
+        "type": "0",
+        "damage": "9",
+        "guard": "14.400001",
+        "windup": "1.05",
+        "limit": "2.5",
+        "hits": "2",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\MirrorShell-1.asset",
+        "name": "\"움직이는 갑옷의 강타 1\"",
+        "type": "1",
+        "damage": "28",
+        "guard": "44.8",
+        "windup": "1",
+        "limit": "3.8",
+        "hits": "1",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "IronMantis",
+    "name": "철갑 사마귀",
+    "hp": "215",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\IronMantis-0.asset",
+        "name": "\"철갑 사마귀의 견제\"",
+        "type": "0",
+        "damage": "7",
+        "guard": "11.2",
+        "windup": "1",
+        "limit": "2.5",
+        "hits": "3",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\IronMantis-1.asset",
+        "name": "\"철갑 사마귀의 강타 1\"",
+        "type": "1",
+        "damage": "32",
+        "guard": "51.2",
+        "windup": "1",
+        "limit": "4.4",
+        "hits": "1",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "StoneSphinx",
+    "name": "미궁 스핑크스",
+    "hp": "900",
+    "interval": "2.25",
+    "charge": "5.2",
+    "stun": "4.5",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\StoneSphinx-0.asset",
+        "name": "\"미궁 스핑크스의 견제\"",
+        "type": "0",
+        "damage": "26.4",
+        "guard": "26.4",
+        "windup": "0.87",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\StoneSphinx-1.asset",
+        "name": "\"미궁 스핑크스의 강타 1\"",
+        "type": "1",
+        "damage": "47.52",
+        "guard": "47.52",
+        "windup": "0.01",
+        "limit": "6",
+        "hits": "1",
+        "points": 3
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\StoneSphinx-2.asset",
+        "name": "\"미궁 스핑크스의 강타 2\"",
+        "type": "1",
+        "damage": "48",
+        "guard": "48",
+        "windup": "0.5",
+        "limit": "7",
+        "hits": "1",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "OssuaryBell",
+    "name": "납골당의 종",
+    "hp": "370",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\OssuaryBell-0.asset",
+        "name": "\"납골당의 종의 견제\"",
+        "type": "0",
+        "damage": "6",
+        "guard": "9.6",
+        "windup": "1.3",
+        "limit": "2.5",
+        "hits": "3",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\OssuaryBell-1.asset",
+        "name": "\"납골당의 종의 강타 1\"",
+        "type": "1",
+        "damage": "30",
+        "guard": "48",
+        "windup": "1",
+        "limit": "4.8",
+        "hits": "1",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "WebDuchess",
+    "name": "실짜는 공작부인",
+    "hp": "330",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\WebDuchess-0.asset",
+        "name": "\"실짜는 공작부인의 견제\"",
+        "type": "0",
+        "damage": "11",
+        "guard": "17.6",
+        "windup": "1.1",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\WebDuchess-1.asset",
+        "name": "\"실짜는 공작부인의 강타 1\"",
+        "type": "1",
+        "damage": "32",
+        "guard": "51.2",
+        "windup": "1",
+        "limit": "4.5",
+        "hits": "1",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "Threadling",
+    "name": "실인형",
+    "hp": "65",
+    "interval": "2.9",
+    "charge": "6.8",
+    "stun": "3",
+    "attacks": [
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\Threadling-0.asset",
+        "name": "\"실인형의 견제\"",
+        "type": "0",
+        "damage": "5",
+        "guard": "8",
+        "windup": "1",
+        "limit": "2.5",
+        "hits": "1",
+        "points": 0
+      },
+      {
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Data\\Presentation\\Angular\\Attacks\\Threadling-1.asset",
+        "name": "\"실인형의 강타 1\"",
+        "type": "1",
+        "damage": "13",
+        "guard": "20.800001",
+        "windup": "1",
+        "limit": "3.5",
+        "hits": "1",
+        "points": 1
+      }
+    ]
+  }
+]

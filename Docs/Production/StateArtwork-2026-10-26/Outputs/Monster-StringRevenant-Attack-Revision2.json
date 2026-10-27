@@ -1,0 +1,11 @@
+{
+  "id": "Monster-StringRevenant-Attack",
+  "actor": "StringRevenant",
+  "kind": "Monster",
+  "state": "Attack",
+  "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/StringRevenant.png",
+  "prompt": "Create ONE Attack-impact sprite of the exact skeleton warrior in the input. Same helmet, ribcage, round shield, old straight sword, muted ink/cel style, front three-quarter camera, body scale and square transparent canvas. This must be the COMPLETED STRIKE, clearly different from a sword-raised windup. Right arm extends DOWN AND FORWARD toward the viewer, the sword blade sweeps diagonally down toward the lower-left foreground with its TIP BELOW the waist. Do NOT hold the sword over the shoulder, above the head, or pointing upward. Torso leans into the stroke, front knee bent, other leg braced. Left forearm keeps its shield near the ribs naturally. Coherent skeletal fingers, wrists and sword grip. Complete weapon and feet inside frame. No new props, sparks, gore, text, scenery or cast shadow; true alpha transparency.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-23fe6daf-e740-46b5-b9a8-3b9f90732954.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-StringRevenant-Attack.png",
+  "status": "generated_pending_review"
+}

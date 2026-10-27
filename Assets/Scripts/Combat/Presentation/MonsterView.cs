@@ -63,6 +63,25 @@ namespace DungeonSlash
         {
             if (runtime == null || runtime.Data == null) return;
             boundData=runtime.Data;
+            var artScale = presentation != null && presentation.arcade ? arcadeArtScale : 1f;
+            float artOffsetY = 0f;
+            float artHeight = root.rect.height;
+            if (body != null && runtime.Data.combatAnimation is { UsesIllustratedLayout: true } groundLayout)
+            {
+                // Every state uses the same Idle contact line so attacks can lift feet naturally.
+                var sprite = groundLayout.idle;
+                if (sprite != null) artHeight = Mathf.Min(root.rect.height, root.rect.width * sprite.rect.height / sprite.rect.width);
+                artHeight *= artScale * groundLayout.canvasScale;
+                artOffsetY = -runtime.Data.bodyHitRadius + (.5f - groundLayout.groundContactY) * artHeight;
+                body.rectTransform.anchoredPosition = new Vector2(0, artOffsetY);
+            }
+            if (presentation != null && presentation.arcade && runtime.Data.combatAnimation is { UsesIllustratedLayout: true } layout)
+            {
+                var nameHeight = artOffsetY + (layout.artworkTopY - .5f) * artHeight + 65f;
+                if (stateLabel != null) stateLabel.rectTransform.anchoredPosition = new Vector2(0, nameHeight);
+                if (hpFill != null && hpFill.transform.parent is RectTransform bar)
+                    bar.anchoredPosition = new Vector2(0, nameHeight - 43f);
+            }
             if (body != null)
             {
                 body.sprite = runtime.Data.portrait;body.preserveAspect = runtime.Data.portrait != null;
@@ -72,7 +91,8 @@ namespace DungeonSlash
             }
             if (stateLabel != null)
             {
-                stateLabel.text = (runtime.IsUnaware ? GameText.Get("ui.stealth.unaware") + "\n" : "")
+                stateLabel.text = (runtime.IsUnaware ? GameText.Get("ui.stealth.unaware")
+                    + (runtime.Data.combatAnimation is { UsesIllustratedLayout: true } ? " · " : "\n") : "")
                     + runtime.Data.displayName
                     + (runtime.PoisonStacks > 0 ? GameText.Format("ui.monsterview.500afc29", runtime.PoisonStacks) : "")
                     + (runtime.SlowRemaining > 0 ? GameText.Get("ui.monsterview.95434960") : "")

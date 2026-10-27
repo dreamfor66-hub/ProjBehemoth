@@ -1,0 +1,1 @@
+User rejected this entire weapon/grip/shaman iteration. Not selected, not production artwork. Do not resume or reuse without a new user request. Current approved six-character baseline is Assets/Art/Trials/Angular01/StyleCorrections03.

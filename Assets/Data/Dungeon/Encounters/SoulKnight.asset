@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.soulknight.displayname
-    lastText: "\uC601\uD63C \uAE30\uC0AC"
+    lastText: "\uD30C\uACC4 \uAE30\uB9C8\uC218"
   - propertyPath: hint
     key: data.encounterdata.soulknight.hint
-    lastText: 
+    lastText: "\uB113\uAC8C \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uCC28\uB840\uB85C
+      \uB04A\uC5B4 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   textOwnerGuid: 3252c05c6cd29704da9a449f00d9a093
   id: SoulKnight
-  displayName: "\uC601\uD63C \uAE30\uC0AC"
-  hint: 
+  displayName: "\uD30C\uACC4 \uAE30\uB9C8\uC218"
+  hint: "\uB113\uAC8C \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uCC28\uB840\uB85C \uB04A\uC5B4
+    \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
   category: 8
   members:
   - monster: {fileID: 11400000, guid: aa4d74befd776d949b9e6a0902de56ab, type: 2}

@@ -44,14 +44,18 @@ namespace DungeonSlash
         }
         private void RefreshSelection(int index)
         {
+            var palette=selection.presentation!=null?selection.presentation.darkPalette:null;
+            var ink=palette!=null?palette.ink:(Color)new Color32(11,12,22,255);
+            var light=palette!=null?palette.bone:(Color)new Color32(222,211,175,255);
+            var accent=palette!=null?palette.accent:(Color)new Color32(216,187,98,255);
             for(var i=0;i<selection.characterButtons.Length;i++)
             {
                 var button=selection.characterButtons[i];button.gameObject.SetActive(true);
-                button.image.color=i==index?new Color32(216,187,98,255):new Color32(11,12,22,255);
-                selection.characterLabels[i].color=i==index?new Color32(11,12,22,255):new Color32(222,211,175,255);
+                button.image.color=i==index?accent:ink;
+                selection.characterLabels[i].color=i==index?ink:light;
                 selection.selectionMarks[i].gameObject.SetActive(false);
                 var symbol=button.GetComponentInChildren<ClassSymbolGraphic>(true);
-                if(symbol!=null){symbol.color=i==index?new Color32(11,12,22,255):new Color32(222,211,175,255);symbol.SetAllDirty();}
+                if(symbol!=null){symbol.color=i==index?ink:light;symbol.SetAllDirty();}
             }
             detailHeading.text=selection.content.characters[index].displayName;
         }

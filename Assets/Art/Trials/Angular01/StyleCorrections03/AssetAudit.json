@@ -1,0 +1,68 @@
+[
+  {
+    "id": "Warrior",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      78,
+      71,
+      916,
+      1430
+    ]
+  },
+  {
+    "id": "Barbarian",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      23,
+      45,
+      976,
+      1468
+    ]
+  },
+  {
+    "id": "Monk",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      118,
+      97,
+      875,
+      1397
+    ]
+  },
+  {
+    "id": "Samurai",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      167,
+      68,
+      764,
+      1446
+    ]
+  },
+  {
+    "id": "Wizard",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      149,
+      33,
+      740,
+      1477
+    ]
+  },
+  {
+    "id": "Rogue",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      96,
+      14,
+      857,
+      1302
+    ]
+  }
+]

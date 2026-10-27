@@ -51,13 +51,14 @@ namespace DungeonSlash
         }
         private void Toggle(GameObject panel)
         {
-            if(expansion.IsDecisionOpen)return;
+            if(expansion.IsDecisionOpen || panel == mapPanel && combat.IsActive)return;
             var show=!panel.activeSelf;Close();panel.SetActive(show);panel.transform.SetAsLastSibling();
-            combat.InputPaused=show;drawerWasOpen=show;
+            combat.InputPaused=show && panel == inventoryPanel;drawerWasOpen=show;
         }
         public void Close(){mapPanel.SetActive(false);inventoryPanel.SetActive(false);if(combat!=null)combat.InputPaused=expansion!=null&&expansion.IsDecisionOpen;drawerWasOpen=false;}
         private void Update()
         {
+            if (combat.IsActive && mapPanel.activeSelf) Close();
             if(expansion.IsDecisionOpen&&drawerWasOpen)Close();
             if(Input.GetKeyDown(KeyCode.Tab))Toggle(mapPanel);
             if(Input.GetKeyDown(KeyCode.I))Toggle(inventoryPanel);

@@ -1,0 +1,28 @@
+Scoped live seven-ink review; final composited camera output including native TMP.
+01-Title: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=84.3 %
+02-Options: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=5; outside palette (2-byte tolerance)=0; dark coverage=97.8 %
+03-Selection-Warrior: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=79.7 %
+03-Selection-Rogue: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=86.3 %
+03-Selection-Barbarian: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=66.3 %
+03-Selection-Samurai: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=80.6 %
+03-Selection-Monk: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=71.6 %
+03-Selection-Wizard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=80.2 %
+04-Character-Details: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=81.9 %
+MENU COMPLETE
+05-Combat-Idle: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.9 %
+06-Weakpoint-Charge: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.6 %
+07-Player-Charged: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.3 %
+08-Slash-And-Break: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.0 %
+PASS production charged swipe breaks authored practice weak point (remaining=0, state=Stunned)
+09-Break-Followup: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.0 %
+10-Guard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.1 %
+PASS guard pose rendered during production guard state
+11-Combat-Rogue: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=91.3 %
+11-Combat-Barbarian: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.1 %
+11-Combat-Samurai: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.2 %
+11-Combat-Monk: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=91.9 %
+11-Combat-Wizard: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.6 %
+12-Stage-1: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.5 %
+12-Stage-2: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=92.4 %
+12-Stage-3: 1920x1080; viewport=(x:0.00, y:0.00, width:1920.00, height:1080.00); RGB colors=7; outside palette (2-byte tolerance)=0; dark coverage=93.3 %
+COMBAT COMPLETE

@@ -1,0 +1,146 @@
+[
+  {
+    "file": "Skeleton-Attack.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      61,
+      114,
+      1206,
+      1194
+    ],
+    "sha256": "20fc509b3980b2a635b2e4b4e010f724521a56eb424ffa97c2d1de7759cb2c6b"
+  },
+  {
+    "file": "Skeleton-Dead.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      31,
+      724,
+      1222,
+      1191
+    ],
+    "sha256": "4edda37adbc9d11dd738121c5320ea097da5dc41bd67d67a8d94a16c2fb1f0a1"
+  },
+  {
+    "file": "Skeleton-Idle.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      201,
+      34,
+      1155,
+      1221
+    ],
+    "sha256": "d77b8e3eff8c6d447ef399989cdbaf06922ba531b1b2de45b4d6c5c49c0ab6e8"
+  },
+  {
+    "file": "Skeleton-Ready.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      238,
+      34,
+      1116,
+      1216
+    ],
+    "sha256": "d61329fcefaa2408604006a195629b93ac4ca4f1658d3de325eb2772a87acaff"
+  },
+  {
+    "file": "Spider-Attack.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      30,
+      249,
+      1224,
+      1171
+    ],
+    "sha256": "bd54bb1b03fc73d200f6362e1bac444507ca8bf314b08d763528789f4c5e560b"
+  },
+  {
+    "file": "Spider-Dead.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      71,
+      501,
+      1210,
+      1039
+    ],
+    "sha256": "5ea0e54a2b1796c06aaae6335ef13e8d8e8d6bc87d6a3ddc3a4a81519ca347a9"
+  },
+  {
+    "file": "Spider-Idle.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      48,
+      288,
+      1206,
+      1084
+    ],
+    "sha256": "8bda95b2863fa7e10c0e9ce94bf411f18dd40a31a4f71ccd2d419dbfc5ba35d3"
+  },
+  {
+    "file": "Spider-Ready.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "visible_bounds": [
+      74,
+      280,
+      1180,
+      1104
+    ],
+    "sha256": "aa47ccbbb30844441ff86408ea0777595a7079e4f90086410c4ab428a5f0190c"
+  }
+]

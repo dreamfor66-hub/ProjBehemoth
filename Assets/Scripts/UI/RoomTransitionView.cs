@@ -16,8 +16,6 @@ namespace DungeonSlash
         [SerializeField] private PixelDitherTransition pixelTransition;
         [SerializeField, Min(.1f)] private float walkDuration = .78f;
         [SerializeField, Min(1)] private int stepCount = 2;
-        [SerializeField] private float verticalTravel = 22f;
-        [SerializeField] private float zoomAmount = .055f;
 
         public void Configure(RectTransform newBackground, RectTransform newWalkBackdrop, IEnumerable<RectTransform> newFootfallMarkers)
         {
@@ -34,8 +32,6 @@ namespace DungeonSlash
             pixelTransition?.Reveal();
             if (walkBackdrop != null) walkBackdrop.gameObject.SetActive(true);
             if (fade != null) fade.gameObject.SetActive(false);
-            background.anchoredPosition = Vector2.zero;
-            background.localScale = Vector3.one;
 
             var elapsed = 0f;
             while (elapsed < walkDuration)
@@ -51,10 +47,7 @@ namespace DungeonSlash
 
         private void AnimateWalk(float progress)
         {
-            var stride = Mathf.Sin(progress * Mathf.PI * stepCount);
-            background.anchoredPosition = Vector2.up * (stride * verticalTravel);
-            background.localScale = Vector3.one * Mathf.Lerp(1f, 1f + zoomAmount, progress);
-
+            // Background layout belongs to the designer; only the walking markers animate.
             for (var index = 0; index < footfallMarkers.Count; index++)
             {
                 var marker = footfallMarkers[index];
@@ -74,11 +67,6 @@ namespace DungeonSlash
 
         private void ResetVisuals()
         {
-            if (background != null)
-            {
-                background.anchoredPosition = Vector2.zero;
-                background.localScale = Vector3.one;
-            }
             if (walkBackdrop != null) walkBackdrop.gameObject.SetActive(false);
             if (fade != null) fade.gameObject.SetActive(false);
         }

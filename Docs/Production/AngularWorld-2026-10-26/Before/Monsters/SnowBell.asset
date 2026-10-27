@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: SnowBell
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.snowbell.displayname
+    lastText: "\uB208\uC885 \uC815\uB839"
+  - propertyPath: encounterHint
+    key: data.monsterdata.snowbell.encounterhint
+    lastText: 
+  textOwnerGuid: acd4ec70882f8374a82bd485e96f27f1
+  displayName: "\uB208\uC885 \uC815\uB839"
+  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 8148b3624a2ac7042b83405842932a8d, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 110
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 23
+  goldReward: 12
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: 19c1f9885cae54f4fb57abd6eb771935, type: 2}
+  - {fileID: 11400000, guid: a7c217e47a3f600489abc06a7c93ab43, type: 2}
+  bodyColor: {r: 0.8, g: 0.48, b: 0.48, a: 1}

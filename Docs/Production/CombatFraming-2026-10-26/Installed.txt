@@ -1,0 +1,1 @@
+Monster anchor Y 105 -> 170; monsters draw before player. FatigueHUD stretches to canvas edges; six face-only crops preserve original portrait art. No balance, hero scale, background or selection changes.

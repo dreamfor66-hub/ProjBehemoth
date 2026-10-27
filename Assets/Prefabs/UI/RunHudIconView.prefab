@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7333837973016457249}
   - component: {fileID: 5045136818521044433}
   - component: {fileID: 4978836934591642506}
+  - component: {fileID: 3197659896142943673}
   m_Layer: 0
   m_Name: RunHudIconView
   m_TagString: Untagged
@@ -32,6 +33,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6867630084574350945}
   - {fileID: 1732752349669703635}
   - {fileID: 5284935206213126338}
   m_Father: {fileID: 0}
@@ -140,6 +142,19 @@ MonoBehaviour:
   button: {fileID: 5045136818521044433}
   iconImage: {fileID: 3250172919035820763}
   stackLabel: {fileID: 7561632738212006189}
+--- !u!114 &3197659896142943673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2208921653366749653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13568a1cd67a1bf478761ebe55124db3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surface: {fileID: 4509059868442280890}
 --- !u!1 &2532371264098151927
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +298,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6eed10ccaa435bbbb0a2373d972b7d6e, type: 2}
-  m_sharedMaterial: {fileID: -8703805978501734097, guid: 6eed10ccaa435bbbb0a2373d972b7d6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d96da0722f235aa4782eca199b56e6b5, type: 2}
+  m_sharedMaterial: {fileID: -3873402981516070919, guid: d96da0722f235aa4782eca199b56e6b5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -362,9 +377,85 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f233edeeed154f2bec8cc945aaf0470, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 157094ce0e715455b623890150922c13, type: 2}
   role: 8
   designSize: 32
   snapSize: 1
+--- !u!1 &3598892831687943231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6867630084574350945}
+  - component: {fileID: 5203393735328410221}
+  - component: {fileID: 4509059868442280890}
+  m_Layer: 0
+  m_Name: Ink Surface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6867630084574350945
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3598892831687943231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1903126087840665369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5203393735328410221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3598892831687943231}
+  m_CullTransparentMesh: 1
+--- !u!114 &4509059868442280890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3598892831687943231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6beaf0827cdded8408113f27ba2987e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: f7f97c387f4616d4387be3930e86b739, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  style: {fileID: 11400000, guid: 71324c1893484304aa5673f99a26b1cc, type: 2}
+  source: {fileID: 7333837973016457249}
+  control: {fileID: 5045136818521044433}
+  trackAuthoredSelection: 0
+  authoredSelectedTint: {r: 0.29411766, g: 0.2901961, b: 0.3764706, a: 1}
+  role: 3
+  resourceColor: {r: 0.8666667, g: 0.8156863, b: 0.6627451, a: 1}
+  resource: 0
+  titleBand: 0
+  titleLabel: {fileID: 0}
+  titleBandHeight: 0

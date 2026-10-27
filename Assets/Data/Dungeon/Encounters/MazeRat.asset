@@ -15,14 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.mazerat.displayname
-    lastText: "\uAD74\uC950"
+    lastText: "\uAC70\uBBF8"
   - propertyPath: hint
     key: data.encounterdata.mazerat.hint
-    lastText: 
+    lastText: "\uB0AE\uC740 \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8.
+      \uAC15\uD0C0\uB97C \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744
+      \uBD80\uC218\uC790."
   textOwnerGuid: af7650117c33bd34492ad22fe692d766
   id: MazeRat
-  displayName: "\uAD74\uC950"
-  hint: 
+  displayName: "\uAC70\uBBF8"
+  hint: "\uB0AE\uC740 \uC790\uC138\uB85C \uB2EC\uB824\uB4DC\uB294 \uAC70\uBBF8. \uAC15\uD0C0\uB97C
+    \uC900\uBE44\uD558\uBA74 \uB178\uCD9C\uB41C \uC57D\uC810\uC744 \uBD80\uC218\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: e38eba67e08948347ab295b6c79c7e34, type: 2}

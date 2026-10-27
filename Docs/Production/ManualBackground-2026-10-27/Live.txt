@@ -1,0 +1,34 @@
+Existing Unity Editor only. Manual RectTransform through frames, floors, walking and reset.
+PASS 12 LateUpdate frames manual anchors retained
+PASS 12 LateUpdate frames manual width/height retained
+PASS 12 LateUpdate frames manual scale retained
+PASS 12 LateUpdate frames manual position retained
+PASS floor 1 manual anchors retained
+PASS floor 1 manual width/height retained
+PASS floor 1 manual scale retained
+PASS floor 1 manual position retained
+PASS floor 1 artwork swapping still works
+PASS floor 2 manual anchors retained
+PASS floor 2 manual width/height retained
+PASS floor 2 manual scale retained
+PASS floor 2 manual position retained
+PASS floor 2 artwork swapping still works
+PASS floor 3 manual anchors retained
+PASS floor 3 manual width/height retained
+PASS floor 3 manual scale retained
+PASS floor 3 manual position retained
+PASS floor 3 artwork swapping still works
+PASS transition configure/reset manual anchors retained
+PASS transition configure/reset manual width/height retained
+PASS transition configure/reset manual scale retained
+PASS transition configure/reset manual position retained
+PASS during walking transition manual anchors retained
+PASS during walking transition manual width/height retained
+PASS during walking transition manual scale retained
+PASS during walking transition manual position retained
+PASS after walking transition/reset manual anchors retained
+PASS after walking transition/reset manual width/height retained
+PASS after walking transition/reset manual scale retained
+PASS after walking transition/reset manual position retained
+PASS test inspector layout and floor restored without saving assets
+COMPLETE failures=0. No combat/balance suite.

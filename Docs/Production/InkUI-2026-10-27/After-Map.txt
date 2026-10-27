@@ -1,0 +1,28 @@
+After-Map / 1920x1080
+Legend | (x:-448.00, y:-28.00, width:896.00, height:56.00) | overflow=False | ! 보스  + 정예  $ 상점  C 상자  ~ 샘
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ←
+Label | (x:-64.00, y:-32.00, width:128.00, height:64.00) | overflow=False | 메뉴
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | ?
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | C
+StageTitle | (x:-176.00, y:-32.00, width:352.00, height:64.00) | overflow=False | B1 · 잊힌 미궁
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | →
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | C
+Label | (x:-72.00, y:-32.00, width:144.00, height:64.00) | overflow=False | X
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | !
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | ?
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | ?
+FacingArrow | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | ▲
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+Label | (x:-28.00, y:-28.00, width:56.00, height:56.00) | overflow=False | +
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ↓
+Runtime HP=100/100; MP=30/30; guard=35/35
+Skin: DungeonMapView | Field | (x:-448.00, y:-280.00, width:896.00, height:560.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=4 | material=UI/Behemoth/Ink Surface
+Skin: CloseMap | Button | (x:-80.00, y:-36.00, width:160.00, height:72.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=92 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: LeftPanel | Panel | (x:-488.00, y:-352.00, width:976.00, height:704.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=548 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: Relic0 | Slot | (x:-32.00, y:-32.00, width:64.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=68 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface

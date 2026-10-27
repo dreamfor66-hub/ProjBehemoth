@@ -19,6 +19,7 @@ MonoBehaviour:
   mortalisRevision: 1
   readabilityRevision: 1
   weakPointStyle: {fileID: 11400000, guid: e91f2926052dd5f44a81b4dfbbe5eb04, type: 2}
+  darkPalette: {fileID: 11400000, guid: 607ac5223ad44fd2af30293a4f224451, type: 2}
   width: 384
   height: 224
   paletteMaterial: {fileID: 2100000, guid: bcdbabb093a2a364289a034687fab9da, type: 2}

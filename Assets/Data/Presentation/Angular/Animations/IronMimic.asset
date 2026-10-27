@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: IronMimic
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: d5fe74e9f013a294a9295a603df96f83, type: 3}
+  attack: {fileID: 21300000, guid: 54787f7ab4633ac46b032e693245094b, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: 3272f97837cc42b4185e2217a0422ca5, type: 3}
+  dead: {fileID: 21300000, guid: 6e7d3a0dd212ec14fa276b600affa617, type: 3}
+  canvasScale: 1
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -76.75}
+  groundContactY: 0.034290273
+  artworkTopY: 0.92902714
+  labelHeight: 188.5
+  readyTilt: -4
+  attackTilt: 7
+  attackOffset: {x: 0, y: -18}

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f51094ff32ef3e47ab65a4835f4aa40, type: 3}
+  m_Name: HeroFaces
+  m_EditorClassIdentifier: 
+  heroes:
+  - character: 0
+    expressions:
+    - {fileID: 21300000, guid: 424b4f9e81b8a8746b93ae1fe3fd5cba, type: 3}
+    - {fileID: 21300000, guid: 424b4f9e81b8a8746b93ae1fe3fd5cba, type: 3}
+    - {fileID: 21300000, guid: 424b4f9e81b8a8746b93ae1fe3fd5cba, type: 3}
+    - {fileID: 21300000, guid: 424b4f9e81b8a8746b93ae1fe3fd5cba, type: 3}
+  - character: 1
+    expressions:
+    - {fileID: 21300000, guid: 9622667c701b2444683f02edae774fe4, type: 3}
+    - {fileID: 21300000, guid: 9622667c701b2444683f02edae774fe4, type: 3}
+    - {fileID: 21300000, guid: 9622667c701b2444683f02edae774fe4, type: 3}
+    - {fileID: 21300000, guid: 9622667c701b2444683f02edae774fe4, type: 3}
+  - character: 2
+    expressions:
+    - {fileID: 21300000, guid: c54a754ea1aea394a96237742b7e504f, type: 3}
+    - {fileID: 21300000, guid: c54a754ea1aea394a96237742b7e504f, type: 3}
+    - {fileID: 21300000, guid: c54a754ea1aea394a96237742b7e504f, type: 3}
+    - {fileID: 21300000, guid: c54a754ea1aea394a96237742b7e504f, type: 3}
+  - character: 3
+    expressions:
+    - {fileID: 21300000, guid: 22afae91b0d48a14dbf3b8e7d4d2777b, type: 3}
+    - {fileID: 21300000, guid: 22afae91b0d48a14dbf3b8e7d4d2777b, type: 3}
+    - {fileID: 21300000, guid: 22afae91b0d48a14dbf3b8e7d4d2777b, type: 3}
+    - {fileID: 21300000, guid: 22afae91b0d48a14dbf3b8e7d4d2777b, type: 3}
+  - character: 4
+    expressions:
+    - {fileID: 21300000, guid: a7f1b4db4b22a5943a42435229997c80, type: 3}
+    - {fileID: 21300000, guid: a7f1b4db4b22a5943a42435229997c80, type: 3}
+    - {fileID: 21300000, guid: a7f1b4db4b22a5943a42435229997c80, type: 3}
+    - {fileID: 21300000, guid: a7f1b4db4b22a5943a42435229997c80, type: 3}
+  - character: 5
+    expressions:
+    - {fileID: 21300000, guid: 559b9df076bc9fc489bdc918df543923, type: 3}
+    - {fileID: 21300000, guid: 559b9df076bc9fc489bdc918df543923, type: 3}
+    - {fileID: 21300000, guid: 559b9df076bc9fc489bdc918df543923, type: 3}
+    - {fileID: 21300000, guid: 559b9df076bc9fc489bdc918df543923, type: 3}
+  useStageTint: 1

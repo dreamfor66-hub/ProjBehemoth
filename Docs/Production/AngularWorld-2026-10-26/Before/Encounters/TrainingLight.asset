@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: TrainingLight
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.traininglight.displayname
+    lastText: "\uD6C8\uB828 \uC778\uD615 \xB7 75"
+  - propertyPath: hint
+    key: data.encounterdata.traininglight.hint
+    lastText: 
+  textOwnerGuid: 08b146d81293e764fbf2852f603b6af4
+  id: TrainingLight
+  displayName: "\uD6C8\uB828 \uC778\uD615 \xB7 75"
+  hint: 
+  category: 8
+  members:
+  - monster: {fileID: 11400000, guid: 71650604ee7500346bd2d47396f20812, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

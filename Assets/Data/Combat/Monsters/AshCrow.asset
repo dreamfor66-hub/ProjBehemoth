@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.ashcrow.displayname
-    lastText: "\uC7AC\uAE4C\uB9C8\uADC0"
+    lastText: "\uC7AC \uAC00\uACE0\uC77C"
   - propertyPath: encounterHint
     key: data.monsterdata.ashcrow.encounterhint
-    lastText: 
+    lastText: "\uC9E7\uC740 \uC900\uBE44 \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4.
+      \uC2DC\uCC28\uB97C \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
   textOwnerGuid: bb3b020db885c984995fc41f14641176
-  displayName: "\uC7AC\uAE4C\uB9C8\uADC0"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 0d856e0e35542e14184e9c540eb49180, type: 2}
-  encounterHint: 
+  displayName: "\uC7AC \uAC00\uACE0\uC77C"
+  portrait: {fileID: 21300000, guid: 5e77bbec547117940a1ab98c65d6a1c9, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e240cadc136fab544b6bc52328f00e22, type: 2}
+  encounterHint: "\uC9E7\uC740 \uC900\uBE44 \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4.
+    \uC2DC\uCC28\uB97C \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 12
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: 534a34ddf14274144933cf14dac68bd7, type: 2}
-  - {fileID: 11400000, guid: 3a523a8387306714fb7fa10fd5018e75, type: 2}
+  - {fileID: 11400000, guid: b4a39cbbf09ea2d44920e75378f806dd, type: 2}
+  - {fileID: 11400000, guid: 8d653e5484023a34093870831fcfa9c1, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.8, g: 0.48, b: 0.7679999, a: 1}

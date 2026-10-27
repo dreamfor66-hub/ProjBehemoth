@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.trialguardian.displayname
-    lastText: "\uBD09\uC778\uB41C \uC2DC\uB828\uC758 \uC218\uD638\uC790"
+    lastText: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
   - propertyPath: encounterHint
     key: data.monsterdata.trialguardian.encounterhint
-    lastText: 
+    lastText: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C
+      \uB9C9\uC790."
   textOwnerGuid: 52b7da8d0f282654c919a5530c4a2e8c
-  displayName: "\uBD09\uC778\uB41C \uC2DC\uB828\uC758 \uC218\uD638\uC790"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 400085eb7a9eb974fbffcc439f00bbf9, type: 2}
-  encounterHint: 
+  displayName: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
+  portrait: {fileID: 21300000, guid: c6b68c097a9a4974cb8e099ade23b1f1, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 4b176ea466db1354ab3881b93a207339, type: 2}
+  encounterHint: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C
+    \uB9C9\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 16
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: f7679910f4e90ce4fb9bdca3752b81a9, type: 2}
-  - {fileID: 11400000, guid: ecf75ad34038fb64bbb637b1fbc8f2e7, type: 2}
+  - {fileID: 11400000, guid: 64e87b5877852e74ea7bece480c6f50b, type: 2}
+  - {fileID: 11400000, guid: 586871847d096854c8fe5c0cd64abb56, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.52479994, g: 0.48, b: 0.8, a: 1}

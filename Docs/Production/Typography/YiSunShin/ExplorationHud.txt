@@ -1,0 +1,9 @@
+Scoped live Unity font verification / 1920x1080
+Label | YiSunShin | size=44 | overflow=False | missing= | 지도
+Label | YiSunShin | size=44 | overflow=False | missing= | 보유품
+Health | YiSunShin | size=40 | overflow=False | missing= | HP 100 / 100
+Label | YiSunShin | size=44 | overflow=False | missing= | 메뉴
+StageTitle | YiSunShin | size=36 | overflow=False | missing= | B1 · 잊힌 미궁
+Label | YiSunShin | size=44 | overflow=False | missing= | ↓
+Gold | YiSunShin | size=40 | overflow=False | missing= | 38<color=#D8BB62>G</color>
+Labels=7; wrong font=0; missing glyphs=0

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "BarbarianRear09",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/Before-Rear08.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Concepts/BarbarianBearPelt04.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit, anatomy correction. Image1 is current rear Barbarian EDIT TARGET. Image2 approved front identity/axe reference, images3/4 PRIMARY original flat ink style. The LEFT ARM in image1 impossibly reaches across whole torso to the low hand on imageRIGHT. Fix that actual hidden anatomy by CHANGING THE TWO-HANDED GUARD AND AXE ANGLE, not extending any arm. Keep bear-pelt head/back, massive human proportions, brown cuffs and tribal leather waist. Rear waist-up1448x1086 composition, head facing away, NO face/legs. NEW POSE: hold long double-bit axe horizontally/across FRONT of upper chest, slightly diagonal rising toward imageRIGHT (about15 degrees upward). Move LEFT HAND back to its OWN SIDE on IMAGE LEFT beside left ribs/shoulder, gripping the lower end of the SAME haft. RIGHT HAND stays on IMAGE RIGHT beside right shoulder gripping the upper section. Both shoulders->upper arms->ELBOWS->forearms->wrists must be naturally connected and visibly readable on their own respective sides of body, muscular upper arms and forearms of comparable believable lengths. Both elbows below fists, both elbows bent90-110 degrees; an active compact braced guard, not arms stretched straight or hand hidden under opposite armpit. The LEFT elbow/forearm should be visible along LEFT body side, with left fist just beyond LEFT torso edge; no left hand on imageRIGHT waist. The axe's middle wood lies IN FRONT OF chest so is naturally OCCLUDED by body/pelt from this rear view; its visible lower end through LEFT fist and upper end through RIGHT fist, socket and axe head must align on ONE straight shallow diagonal across the torso. Add short exposed shaft butt just beyond left grip. Head raised outboard above/right of right shoulder, same asymmetrical double-bit grayiron shape and brownwrapped wooden shaft as approvedfront. BOTH hands closed around haft with thumb/fingers and neutral wrists. Both hands must be fully in canvas, comfortably away from waist/bottom crop. Keep torso/head scale and existing bear-pelt silhouette as much as new arm pose permits. Keep original bold dark contours and a FEW broad muted flat shadow planes, not dense triangular muscles, shiny3D bevel or new detail. True transparent alpha, no background/glow/text. Output one coherent full rear character illustration only, no diagram or collage."
+  },
+  {
+    "id": "BarbarianRear09c",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/Sources/BarbarianRear09.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ],
+    "prompt": "Static fantasy character illustration, precise local prop geometry repair. Image1 edit target, images2/3 flat ink style references. Preserve all of the character, arms, hands, pose, fur cloak and wooden handle exactly. Adjust only the silver metal prop head in the upper-right corner. The existing brown wooden handle follows a straight shallow diagonal upward to the right, approximately29 degrees. The silver attachment collar and central metal bar must continue the exact same29-degree straight diagonal. Currently this metal bar tilts more steeply than the wood, making the attachment look bent. Redraw the metal head at the corrected inclination, aligned to the wood, preserving its size and twin-lobed silhouette. The head should remain fully within canvas. Keep two hands and all wood in existing coordinates, do not move arms to accommodate prop. Matte silver and broad simple gray shadow planes, bold dark outlines matching existing illustration. One full rear waist-up figure on1448x1086 transparent canvas, no background, glow, text or diagram. Peaceful stationary pose, no action scene."
+  },
+  {
+    "id": "BarbarianRear09d",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/Sources/BarbarianRear09c.png",
+      "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/AlignmentGuide09d.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ],
+    "prompt": "Precise geometry edit of a stationary fantasy prop. Image1 is EDIT TARGET; Image2 is same target with a BLUE STRAIGHT ALIGNMENT GUIDE; images3/4 original flat ink style. Preserve the character anatomy, both arm positions, fists, fur cloak, head and waist exactly as image1. Correct the handheld prop: its lower wood end, upper wood, silver collar and metal central bar all share ONE straight shallow diagonal aligned with the BLUE LINE in image2. Follow that blue line through the middle of both closed grips. Remove existing slight bends at the lower wood end and metal collar. The twin silver-gray lobes of the metal head stay attached to its straight central bar, matching current size/style but tilted consistently with this axis. You may subtly redraw wood and metal around the unchanged fists to enforce a straight continuous assembly; NEVER stretch/move arms or hands. Blue guide is construction only: final output has NO blue line, NO background. Keep same1448x1086 rear waist-up canvas, true transparent alpha, no text, glow or frame. Keep muted flat shading with few broad planes and bold dark contour. No other subject changes."
+  }
+]

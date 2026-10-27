@@ -13,8 +13,8 @@ namespace DungeonSlash
         public int Expression=>Value>=100?0:Value>60?1:Value>10?2:3;
         public float AttackSpeedMultiplier=>Settings==null?1:Mathf.Clamp(Settings.attackSpeed.Evaluate(Value),.1f,1);
         public float FinalDamageMultiplier=>Settings==null?1:Mathf.Clamp01(Settings.finalDamage.Evaluate(Value));
-        public void BeginFloor(FatigueSettings settings,DungeonGraph graph)
-        { Settings=settings;Value=100;Steps=0;CampUsed=false;floorGrace=settings!=null?settings.GraceFor(graph):0;GraceRemaining=floorGrace; }
+        public void BeginFloor(FatigueSettings settings,DungeonGraph graph,int act=0)
+        { Settings=settings;Value=100;Steps=0;CampUsed=false;floorGrace=settings!=null?settings.GraceFor(graph,act):0;GraceRemaining=floorGrace; }
         public void Step()
         {
             if(Settings==null||IsDead)return;Steps++;

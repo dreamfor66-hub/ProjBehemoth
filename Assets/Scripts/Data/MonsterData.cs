@@ -58,8 +58,13 @@ namespace DungeonSlash
         [Min(0)] public int experienceReward = 18;
         [Min(0)] public int goldReward = 10;
         [Min(10f)] public float bodyHitRadius = 115f;
+        /// <summary>Encounter positions specify the lower edge of the circular body hitbox.</summary>
+        public Vector2 BodyCenterFromPlacement(Vector2 placement, float visualScale = 1f) =>
+            placement + Vector2.up * (bodyHitRadius * Mathf.Clamp(visualScale, .25f, 1f));
         [Tooltip("Every action this monster can perform. AttackData owns its timing-specific mechanics.")]
         public List<MonsterAttackData> attacks = new();
+        [Tooltip("Optional ordered normal actions. Empty uses the first Normal in attacks. Each completed action advances the sequence; interrupted actions keep their place.")]
+        public List<MonsterAttackData> normalAttackSequence = new();
         public Color bodyColor = new(.78f, .3f, .3f);
 
         public MonsterAttackData GetAttack(MonsterAttackType type) => attacks?.FirstOrDefault(attack => attack != null && attack.type == type);

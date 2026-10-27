@@ -1,0 +1,28 @@
+{
+  "checkedDate": "2026-10-26",
+  "assets": [
+    {
+      "side": "Front",
+      "asset": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Warrior-Front.png",
+      "sha256": "21F6D09B254C641FCEE01461FDED42C5F1A003C677A9FE650BBCF237AC290CCD",
+      "matchesReviewed07": true
+    },
+    {
+      "side": "Rear",
+      "asset": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Warrior-Rear.png",
+      "sha256": "3CA480927394FE68BE1C9FC1529542E9FC25D77A15415CC00897D0081918B1CA",
+      "matchesReviewed07": true
+    }
+  ],
+  "selectionAsset": "Assets/Art/Characters/Selection/SelectionWarrior.png",
+  "selectionGuid": "f4043736ae85ed54eba4165b5f548781",
+  "combatAsset": "Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+  "combatGuid": "cd6cfa4549bd5734d9a5df413810f43c",
+  "animation": "Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset",
+  "animationGuid": "6044f8620bc2a8d4096cfb2a093487d1",
+  "allAnimationSpritesUseRear": true,
+  "artModifiedDuringCheck": false,
+  "newPlaySession": false,
+  "note": "Prior Unity captures retained; current serialized character and animation GUIDs checked against .meta files.",
+  "selectionMatchesCropOfFront07": true
+}

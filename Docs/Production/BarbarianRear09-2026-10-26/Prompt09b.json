@@ -1,0 +1,9 @@
+{
+  "id": "BarbarianRear09b",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/Sources/BarbarianRear09.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+  ],
+  "prompt": "Precise local EQUIPMENT correction ONLY. Image1 edit target. Images2/3 drawing-style authorities only. The two arms/knuckles/pose/pelt/body in image1 are now CORRECT and must stay exactly unchanged. Fix ONLY the metal axehead and socket at upper RIGHT. Existing wooden shaft is a single straight line running from butt approx(220,844) through grips to socket approx(1190,315). Its direction is about29 degrees upward to RIGHT. Currently the silver socket and long metal central spine incorrectly turn more steeply upward, creating a KINK. Rotate/redraw JUST THE METAL AXEHEAD at the end of the existing wood so the socket cylinder's two edges and metal central spine continue the wooden shaft's SAME straight29-degree direction, WITHOUT any kink. A straight line from butt through wood must pass centrally through socket and metal head spine right to its cap. Keep entire wooden shaft and BOTH HANDS in exactly their current coordinates, do not bend shaft or change hands to match head. Same asymmetrical double-bit axe blade design, size/material, adjust its inclination with the socket. Two cutting blades extend perpendicular to this shallow shaft direction. Keep axehead fully in canvas with small margin. Preserve original bold dark contours, few broad flat gray planes, no extra facets or shine. All outside metal head/socket unchanged. Full1448x1086 same rear waistup framing, transparent alpha no glow/background/text/diagram."
+}

@@ -1,0 +1,3733 @@
+[
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "96",
+    "after": "96",
+    "id": "LanternImp"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.25",
+    "after": "1.25",
+    "id": "LanternImp"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "2.75",
+    "after": "2.75",
+    "id": "LanternImp"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "2.5",
+    "after": "2.5",
+    "id": "LanternImp"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "LanternImp"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "21",
+    "after": "21",
+    "id": "LanternImp"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "LanternImp"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "LanternImp"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "LanternImp"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "LanternImp"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "LanternImp"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "LanternImp"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "LanternImp"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "36",
+    "after": "36",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "17",
+    "after": "17",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "9",
+    "after": "9",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "BoneScorpion"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "129",
+    "after": "129",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2",
+    "after": "2",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6",
+    "after": "6",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "28",
+    "after": "28",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "7",
+    "after": "7",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "StringRevenant"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "142.5",
+    "after": "142.5",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.7",
+    "after": "1.7",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.4",
+    "after": "6.4",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "31",
+    "after": "31",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "8",
+    "after": "8",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CoffinSlime"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "65",
+    "after": "65",
+    "id": "BellHound"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "BellHound"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "BellHound"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "BellHound"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "BellHound"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "19",
+    "after": "19",
+    "id": "BellHound"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "10",
+    "after": "10",
+    "id": "BellHound"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "BellHound"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "BellHound"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "BellHound"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "BellHound"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "BellHound"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "BellHound"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "450",
+    "after": "450",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.7",
+    "after": "2.7",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "5.8",
+    "after": "5.8",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "56",
+    "after": "56",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "12",
+    "after": "12",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "EttinGatekeeper"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "185",
+    "after": "185",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "29",
+    "after": "29",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "14",
+    "after": "14",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "1",
+    "after": "1",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "MirrorShell"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "215",
+    "after": "215",
+    "id": "IronMantis"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "IronMantis"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "IronMantis"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "IronMantis"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "IronMantis"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "31",
+    "after": "31",
+    "id": "IronMantis"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "16",
+    "after": "16",
+    "id": "IronMantis"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "IronMantis"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "IronMantis"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "IronMantis"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "IronMantis"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "IronMantis"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "IronMantis"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "900",
+    "after": "900",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.25",
+    "after": "2.25",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "5.2",
+    "after": "5.2",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4.5",
+    "after": "4.5",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "100",
+    "after": "100",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "11",
+    "after": "11",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "StoneSphinx"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "370",
+    "after": "370",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "44",
+    "after": "44",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "21",
+    "after": "21",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "OssuaryBell"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "330",
+    "after": "330",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "40",
+    "after": "40",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "20",
+    "after": "20",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "WebDuchess"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "65",
+    "after": "65",
+    "id": "Threadling"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "Threadling"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "Threadling"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "Threadling"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "Threadling"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "19",
+    "after": "19",
+    "id": "Threadling"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "10",
+    "after": "10",
+    "id": "Threadling"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "Threadling"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "Threadling"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "Threadling"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "1",
+    "after": "1",
+    "id": "Threadling"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "Threadling"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "Threadling"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "114",
+    "after": "114",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.2",
+    "after": "2.2",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "8.5",
+    "after": "8.5",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "2.4",
+    "after": "2.4",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "25",
+    "after": "25",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "QuillSprite"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "100",
+    "after": "100",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "22",
+    "after": "22",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "12",
+    "after": "12",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CrystalUrchin"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "198",
+    "after": "198",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "7",
+    "after": "7",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3.2",
+    "after": "3.2",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "44",
+    "after": "44",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "8",
+    "after": "8",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "VeilOracle"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "277.5",
+    "after": "277.5",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "5.2",
+    "after": "5.2",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "11.8",
+    "after": "11.8",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "62",
+    "after": "62",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "16",
+    "after": "16",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "TuskPilgrim"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "110",
+    "after": "110",
+    "id": "BellHare"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "BellHare"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "BellHare"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "BellHare"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "BellHare"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "23",
+    "after": "23",
+    "id": "BellHare"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "12",
+    "after": "12",
+    "id": "BellHare"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "BellHare"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "BellHare"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "BellHare"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "BellHare"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "BellHare"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "BellHare"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "525",
+    "after": "525",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "4.8",
+    "after": "4.8",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "11",
+    "after": "11",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4.5",
+    "after": "4.5",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "117",
+    "after": "117",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "14",
+    "after": "14",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "TwinAntlerStag"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "300",
+    "after": "300",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "38",
+    "after": "38",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "18",
+    "after": "18",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "1",
+    "after": "1",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "MirrorMoth"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "145",
+    "after": "145",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "26",
+    "after": "26",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "13",
+    "after": "13",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "MaskedChoir"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "1080",
+    "after": "1080",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.7",
+    "after": "2.7",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "7",
+    "after": "7",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4.2",
+    "after": "4.2",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "240",
+    "after": "240",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "10",
+    "after": "10",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "WinterUnicorn"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "620",
+    "after": "620",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "64",
+    "after": "64",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "30",
+    "after": "30",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "PrismCrab"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "580",
+    "after": "580",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "60",
+    "after": "60",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "28",
+    "after": "28",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "TempestRoc"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "100",
+    "after": "100",
+    "id": "StormJelly"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "StormJelly"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "StormJelly"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "StormJelly"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "StormJelly"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "22",
+    "after": "22",
+    "id": "StormJelly"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "12",
+    "after": "12",
+    "id": "StormJelly"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "StormJelly"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "StormJelly"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "StormJelly"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "1",
+    "after": "1",
+    "id": "StormJelly"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "StormJelly"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "StormJelly"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "247.5",
+    "after": "247.5",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.05",
+    "after": "1.05",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.2",
+    "after": "6.2",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "55",
+    "after": "55",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "6",
+    "after": "6",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CoalSalamander"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "330",
+    "after": "330",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "5.8",
+    "after": "5.8",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "12.5",
+    "after": "12.5",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "73",
+    "after": "73",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "16",
+    "after": "16",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "SerpentWarden"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "125",
+    "after": "125",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "24",
+    "after": "24",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "12",
+    "after": "12",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "AshGargoyle"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "300",
+    "after": "300",
+    "id": "HollowEye"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.45",
+    "after": "1.45",
+    "id": "HollowEye"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "8.5",
+    "after": "8.5",
+    "id": "HollowEye"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3.5",
+    "after": "3.5",
+    "id": "HollowEye"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "HollowEye"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "67",
+    "after": "67",
+    "id": "HollowEye"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "10",
+    "after": "10",
+    "id": "HollowEye"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "HollowEye"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "HollowEye"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "HollowEye"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "HollowEye"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "HollowEye"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "HollowEye"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "145",
+    "after": "145",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "26",
+    "after": "26",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "13",
+    "after": "13",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CenserRevenant"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "645",
+    "after": "645",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "4.5",
+    "after": "4.5",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "10",
+    "after": "10",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4.8",
+    "after": "4.8",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "143",
+    "after": "143",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "9",
+    "after": "9",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "OathlessCentaur"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "420",
+    "after": "420",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "48",
+    "after": "48",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "23",
+    "after": "23",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "2",
+    "after": "2",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CrimsonCount"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "290",
+    "after": "290",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "37",
+    "after": "37",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "18",
+    "after": "18",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "AshHierophant"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "1800",
+    "after": "1800",
+    "id": "AshDragon"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.6",
+    "after": "2.6",
+    "id": "AshDragon"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "7",
+    "after": "7",
+    "id": "AshDragon"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4.8",
+    "after": "4.8",
+    "id": "AshDragon"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "AshDragon"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "400",
+    "after": "400",
+    "id": "AshDragon"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "13",
+    "after": "13",
+    "id": "AshDragon"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "AshDragon"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "AshDragon"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "AshDragon"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "AshDragon"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "AshDragon"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "AshDragon"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "850",
+    "after": "850",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "82",
+    "after": "82",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "38",
+    "after": "38",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "EclipseChimera"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "150",
+    "after": "150",
+    "id": "SunIdol"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "99999",
+    "after": "99999",
+    "id": "SunIdol"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "99999",
+    "after": "99999",
+    "id": "SunIdol"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "SunIdol"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "SunIdol"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "SunIdol"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "SunIdol"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "65",
+    "after": "65",
+    "id": "SunIdol"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "SunIdol"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "left_heart",
+    "after": "left_heart",
+    "id": "SunIdol"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "1",
+    "after": "1",
+    "id": "SunIdol"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "SunIdol"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "SunIdol"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "150",
+    "after": "150",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "99999",
+    "after": "99999",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "99999",
+    "after": "99999",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "65",
+    "after": "65",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "4",
+    "after": "4",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "right_heart",
+    "after": "right_heart",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "1",
+    "after": "1",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "MoonIdol"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "900",
+    "after": "900",
+    "id": "CinderLich"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "CinderLich"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "CinderLich"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CinderLich"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "CinderLich"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "86",
+    "after": "86",
+    "id": "CinderLich"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "40",
+    "after": "40",
+    "id": "CinderLich"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "CinderLich"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "5",
+    "after": "5",
+    "id": "CinderLich"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CinderLich"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CinderLich"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CinderLich"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CinderLich"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "525",
+    "after": "525",
+    "id": "IronMimic"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.55",
+    "after": "1.55",
+    "id": "IronMimic"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "5",
+    "after": "5",
+    "id": "IronMimic"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3.4",
+    "after": "3.4",
+    "id": "IronMimic"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "IronMimic"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "117",
+    "after": "117",
+    "id": "IronMimic"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "15",
+    "after": "15",
+    "id": "IronMimic"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "IronMimic"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "IronMimic"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "IronMimic"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "IronMimic"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "IronMimic"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "IronMimic"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "960",
+    "after": "960",
+    "id": "GildedToad"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "1.15",
+    "after": "1.15",
+    "id": "GildedToad"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "3.45",
+    "after": "3.45",
+    "id": "GildedToad"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "4.8",
+    "after": "4.8",
+    "id": "GildedToad"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.65",
+    "after": "1.65",
+    "id": "GildedToad"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "213",
+    "after": "213",
+    "id": "GildedToad"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "25",
+    "after": "25",
+    "id": "GildedToad"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "108",
+    "after": "108",
+    "id": "GildedToad"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "GildedToad"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "GildedToad"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "GildedToad"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "GildedToad"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "GildedToad"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "240",
+    "after": "240",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "33",
+    "after": "33",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "16",
+    "after": "16",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "TarrasqueWhelp"
+  },
+  {
+    "field": "maxHp",
+    "pass": true,
+    "before": "460",
+    "after": "460",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "normalAttackInterval",
+    "pass": true,
+    "before": "2.9",
+    "after": "2.9",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "chargeInterval",
+    "pass": true,
+    "before": "6.8",
+    "after": "6.8",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "stunDuration",
+    "pass": true,
+    "before": "3",
+    "after": "3",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "stunDamageMultiplier",
+    "pass": true,
+    "before": "1.5",
+    "after": "1.5",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "experienceReward",
+    "pass": true,
+    "before": "51",
+    "after": "51",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "goldReward",
+    "pass": true,
+    "before": "24",
+    "after": "24",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "bodyHitRadius",
+    "pass": true,
+    "before": "95",
+    "after": "95",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "pattern",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "supportId",
+    "pass": true,
+    "before": "",
+    "after": "",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "diesWithLeader",
+    "pass": true,
+    "before": "0",
+    "after": "0",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "orbitRadius",
+    "pass": true,
+    "before": "170",
+    "after": "170",
+    "id": "CrownColossus"
+  },
+  {
+    "field": "orbitSpeed",
+    "pass": true,
+    "before": "0.55",
+    "after": "0.55",
+    "id": "CrownColossus"
+  }
+]

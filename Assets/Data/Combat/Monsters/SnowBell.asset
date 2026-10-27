@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.snowbell.displayname
-    lastText: "\uB208\uC885 \uC815\uB839"
+    lastText: "\uC885\uD1A0\uB07C"
   - propertyPath: encounterHint
     key: data.monsterdata.snowbell.encounterhint
-    lastText: 
+    lastText: "\uBCF8\uCCB4 \uACC1\uC5D0\uC11C \uBC15\uC790\uB97C \uC5B4\uAE0B\uB098\uAC8C
+      \uACF5\uACA9\uD55C\uB2E4."
   textOwnerGuid: acd4ec70882f8374a82bd485e96f27f1
-  displayName: "\uB208\uC885 \uC815\uB839"
-  portrait: {fileID: 21300000, guid: bdbacdaf710f50109d80a6b65095f584, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 8148b3624a2ac7042b83405842932a8d, type: 2}
-  encounterHint: 
+  displayName: "\uC885\uD1A0\uB07C"
+  portrait: {fileID: 21300000, guid: 3d02ea444b9f38e46be14d1a7cfc7407, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 3ebd2701a5c671e48930ac5c8a3fe027, type: 2}
+  encounterHint: "\uBCF8\uCCB4 \uACC1\uC5D0\uC11C \uBC15\uC790\uB97C \uC5B4\uAE0B\uB098\uAC8C
+    \uACF5\uACA9\uD55C\uB2E4."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 12
   bodyHitRadius: 95
   attacks:
-  - {fileID: 11400000, guid: 19c1f9885cae54f4fb57abd6eb771935, type: 2}
-  - {fileID: 11400000, guid: a7c217e47a3f600489abc06a7c93ab43, type: 2}
+  - {fileID: 11400000, guid: 3b2a7a98ad76ee345aa5b30eb9b0f5eb, type: 2}
+  - {fileID: 11400000, guid: 5f2ab43a2c619714a84b8384dd13d128, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.8, g: 0.48, b: 0.48, a: 1}

@@ -1,0 +1,1 @@
+Saved MonsterSpawnRoot=(0,-150). Hitbox-bottom placement and authored formation/member offsets retained. Default trio bottoms=(-370,-215),(0,-150),(370,-215); default pair bottoms=(-270,-185),(270,-185). Existing open-scene designer edits preserved.

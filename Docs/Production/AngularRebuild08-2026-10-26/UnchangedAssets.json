@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Barbarian-Front",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Barbarian-Front.png",
+    "sha256": "5B8DA7618DD97163E72DB3E5066DE358C848D16186028C26CB580BA67B09DF54"
+  },
+  {
+    "name": "Rogue-Front",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Rogue-Front.png",
+    "sha256": "5A4C5A49967BFEC23850B0377957F234B3A21439DE66311D54B65219238C4DE6"
+  },
+  {
+    "name": "Rogue-Rear",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Rogue-Rear.png",
+    "sha256": "0EBB3C12DF078CB53F89772D0DAAB4303451F01C5E7889BABBBB2B286B1CCAC9"
+  },
+  {
+    "name": "Samurai-Rear",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Samurai-Rear.png",
+    "sha256": "38A70F668F7AF071BC35BBCF3FA7EAE495B6373986C691E20EE242C6E1F39084"
+  },
+  {
+    "name": "Monk-Rear",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Monk-Rear.png",
+    "sha256": "C463BE87756737AA6D1F30DC51C56BCFCA29275FAD211F801B41434BF4C26266"
+  }
+]

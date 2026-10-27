@@ -1,0 +1,9 @@
+{
+  "id": "BarbarianRear09c",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/Sources/BarbarianRear09.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+  ],
+  "prompt": "Static fantasy character illustration, precise local prop geometry repair. Image1 edit target, images2/3 flat ink style references. Preserve all of the character, arms, hands, pose, fur cloak and wooden handle exactly. Adjust only the silver metal prop head in the upper-right corner. The existing brown wooden handle follows a straight shallow diagonal upward to the right, approximately29 degrees. The silver attachment collar and central metal bar must continue the exact same29-degree straight diagonal. Currently this metal bar tilts more steeply than the wood, making the attachment look bent. Redraw the metal head at the corrected inclination, aligned to the wood, preserving its size and twin-lobed silhouette. The head should remain fully within canvas. Keep two hands and all wood in existing coordinates, do not move arms to accommodate prop. Matte silver and broad simple gray shadow planes, bold dark outlines matching existing illustration. One full rear waist-up figure on1448x1086 transparent canvas, no background, glow, text or diagram. Peaceful stationary pose, no action scene."
+}

@@ -15,14 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.ashcrow.displayname
-    lastText: "\uC7AC\uAE4C\uB9C8\uADC0"
+    lastText: "\uC7AC \uAC00\uACE0\uC77C"
   - propertyPath: hint
     key: data.encounterdata.ashcrow.hint
-    lastText: 
+    lastText: "\uC9E7\uC740 \uC900\uBE44 \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4.
+      \uC2DC\uCC28\uB97C \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
   textOwnerGuid: 9986605e2d34b7647ae4dc3269dde980
   id: AshCrow
-  displayName: "\uC7AC\uAE4C\uB9C8\uADC0"
-  hint: 
+  displayName: "\uC7AC \uAC00\uACE0\uC77C"
+  hint: "\uC9E7\uC740 \uC900\uBE44 \uB4A4 \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4.
+    \uC2DC\uCC28\uB97C \uBCF4\uACE0 \uAC00\uB4DC\uD558\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: bb3b020db885c984995fc41f14641176, type: 2}

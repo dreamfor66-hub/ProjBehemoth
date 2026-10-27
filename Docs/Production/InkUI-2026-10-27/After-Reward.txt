@@ -1,0 +1,21 @@
+After-Reward / 1920x1080
+Experience | (x:-500.00, y:-36.00, width:1000.00, height:72.00) | overflow=False | LV 1  EXP 0000 / 0100
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ←
+Gold | (x:-64.00, y:-28.00, width:128.00, height:56.00) | overflow=False | 38<color=#D8BB62>G</color>
+Label | (x:-80.00, y:-32.00, width:160.00, height:64.00) | overflow=False | 지도
+Label | (x:-352.00, y:-40.00, width:704.00, height:80.00) | overflow=False | CONFIRM
+Health | (x:-128.00, y:-28.00, width:256.00, height:56.00) | overflow=False | HP 100 / 100
+Title | (x:-500.00, y:-36.00, width:1000.00, height:72.00) | overflow=False | REWARD
+Gold | (x:-500.00, y:-36.00, width:1000.00, height:72.00) | overflow=False | GOLD  +0010
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | ↑
+Label | (x:-47.00, y:-26.00, width:94.00, height:52.00) | overflow=False | →
+Label | (x:-96.00, y:-32.00, width:192.00, height:64.00) | overflow=False | 보유품
+Runtime HP=100/100; MP=30/30; guard=35/35
+Skin: Confirm | Button | (x:-360.00, y:-48.00, width:720.00, height:96.00) | nonblocking=True | hover=False | pressed=False | active=False | vertices=296 | material=UI/Behemoth/Ink Surface
+Skin: ExperienceGauge | GaugeTrack | (x:-460.00, y:-8.00, width:920.00, height:16.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=156 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: CombatRewardPanel | Panel | (x:-734.09, y:-391.93, width:1468.19, height:783.85) | nonblocking=True | hover=False | pressed=False | active=True | vertices=732 | material=UI/Behemoth/Ink Surface
+Skin: Fill | GaugeFill | (x:0.00, y:-8.00, width:0.00, height:16.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=0 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: RoomChoiceButton | Button | (x:-53.00, y:-42.00, width:106.00, height:84.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=84 | material=UI/Behemoth/Ink Surface
+Skin: Relic0 | Slot | (x:-32.00, y:-32.00, width:64.00, height:64.00) | nonblocking=True | hover=False | pressed=False | active=True | vertices=68 | material=UI/Behemoth/Ink Surface

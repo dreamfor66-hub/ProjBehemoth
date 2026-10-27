@@ -1,0 +1,30 @@
+Scoped depth, target relocation and six HUD portrait checks. Existing Editor; runtime practice clones.
+PASS Warrior monster renders behind hero
+PASS Warrior enemy target anchor raised with visual root
+PASS Warrior face crop bound
+PASS Warrior portrait flush at canvas left/top
+PASS Rogue monster renders behind hero
+PASS Rogue enemy target anchor raised with visual root
+PASS Rogue face crop bound
+PASS Rogue portrait flush at canvas left/top
+PASS Barbarian monster renders behind hero
+PASS Barbarian enemy target anchor raised with visual root
+PASS Barbarian face crop bound
+PASS Barbarian portrait flush at canvas left/top
+PASS Samurai monster renders behind hero
+PASS Samurai enemy target anchor raised with visual root
+PASS Samurai face crop bound
+PASS Samurai portrait flush at canvas left/top
+PASS Monk monster renders behind hero
+PASS Monk enemy target anchor raised with visual root
+PASS Monk face crop bound
+PASS Monk portrait flush at canvas left/top
+PASS Wizard monster renders behind hero
+PASS Wizard enemy target anchor raised with visual root
+PASS Wizard face crop bound
+PASS Wizard portrait flush at canvas left/top
+PASS raised enemy exposes charge weak point
+PASS raised weak point screen/logical input mapping
+PASS charge stroke hits raised weak point
+COMPLETE. No balance suite or unrelated interaction tests.
+FOLLOW-UP PASS Rogue unaware status and name visible on one line below top HUD; final screenshot reviewed.

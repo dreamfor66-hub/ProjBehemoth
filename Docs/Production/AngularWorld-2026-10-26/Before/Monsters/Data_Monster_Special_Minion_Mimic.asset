@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_Special_Minion_Mimic
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_special_minion_mimic.displayname
+    lastText: "\uBBF8\uBBF9"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_special_minion_mimic.encounterhint
+    lastText: 
+  textOwnerGuid: ca172d0cd76023441aebeb5e76e02585
+  displayName: "\uBBF8\uBBF9"
+  portrait: {fileID: 21300000, guid: fac49541b7a65866a58b7bb5cd1c3391, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 64482c73a72c95c499a45d49cd94e51f, type: 2}
+  encounterHint: 
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 525
+  normalAttackInterval: 1.55
+  chargeInterval: 5
+  stunDuration: 3.4
+  stunDamageMultiplier: 1.65
+  experienceReward: 117
+  goldReward: 15
+  bodyHitRadius: 108
+  attacks:
+  - {fileID: 11400000, guid: 86f9d67ee77363f45828775250d601c2, type: 2}
+  - {fileID: 11400000, guid: 7827019fa6c47584e8df4f26eb533e9b, type: 2}
+  bodyColor: {r: 0.52, g: 0.28, b: 0.12, a: 1}

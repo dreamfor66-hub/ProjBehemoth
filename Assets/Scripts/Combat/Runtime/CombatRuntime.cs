@@ -371,7 +371,17 @@ namespace DungeonSlash
         public EncounterAwarenessRuntime Awareness { get; set; }
         public bool IsUnaware => Awareness?.IsConcealed == true;
         public void NotifyAttacked() => Awareness?.Reveal();
-        public MonsterAttackData NormalAttack => Data?.GetAttack(MonsterAttackType.Normal);
+        private int normalActionIndex;
+        public MonsterAttackData NormalAttack
+        {
+            get
+            {
+                var sequence = Data?.normalAttackSequence;
+                return sequence != null && sequence.Count > 0
+                    ? sequence[normalActionIndex % sequence.Count] ?? Data.GetAttack(MonsterAttackType.Normal)
+                    : Data?.GetAttack(MonsterAttackType.Normal);
+            }
+        }
         public MonsterAttackData CurrentChargeAttack { get; private set; }
         public bool HasChargeAttack => AllowedChargeAttacks().Any();
         public int ChargeAttackIndex { get; private set; }
@@ -482,6 +492,7 @@ namespace DungeonSlash
         public void CompleteNormalAttack()
         {
             if (!IsAlive) return;
+            normalActionIndex++;
             State = MonsterState.Idle;
             NormalAttackTimer = Data.normalAttackInterval;
         }

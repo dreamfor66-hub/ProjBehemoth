@@ -1,0 +1,1 @@
+40 sprite replacements; CrystalUrchin retained because image generation was blocked. Five concept/name revisions and Korean text synchronized. Skeleton warrior lowered from the former hanging marionette position to the standing enemies' height (-67), keeping its name below the HUD. No attack, timing, stat, encounter composition, global layout or hero changes.

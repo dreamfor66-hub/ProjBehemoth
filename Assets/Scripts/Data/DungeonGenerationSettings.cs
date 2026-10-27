@@ -21,5 +21,13 @@ namespace DungeonSlash
         [Range(0f, 1f)] public float combatRoomRatioMax = .55f;
         [Min(1)] public int maxGenerationAttempts = 60;
         [Range(0, 8)] public int eventRoomCount = 3;
+        [Header("Act one pacing")]
+        [Min(0), Tooltip("Opening corridor of guaranteed normal combats, before the first branching decision.")]
+        public int firstActOpeningCombats = 3;
+        [Min(1)] public int firstActServiceDistance = 4;
+        [Min(1)] public int firstActCampDistance = 7;
+        [Range(2, 4)] public int firstActMaximumExits = 3;
+        [Min(0)] public int firstActMaximumJunctions = 3;
+        [Range(0, 1)] public float firstActLoopChance = .06f;
     }
 }

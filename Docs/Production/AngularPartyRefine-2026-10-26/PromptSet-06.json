@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ShieldInner06",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Sources/WarriorRear05.png",
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/ArmLocked/Warrior-Rear.png",
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/ArmLocked/Warrior-Front.png"
+    ],
+    "prompt": "Use case: precise-object-edit, isolated equipment asset. Image1 contains desired inner shield panel CONSTRUCTION ONLY. Images2/3 contain FIXED original arm poses; they will be composited unchanged on top afterwards, so DO NOT draw arms. Generate ONE ISOLATED wooden KITE SHIELD viewed from INSIDE, on true transparent background. Shield only, no character, no arm, no glove, no armor, no dummy or stand. Plain brown vertical wood planks enclosed by battered grey iron rim and sparse round rivets. NO exterior metal boss on inside. Tall kite silhouette upper roof tip, broad upper shoulders, tapers toward single lower point; not ornate. Inner face almost face-on, slight 3/4 perspective but NOT edge-on. Two simple brown leather forearm mounting loops at 45% and 64% of shield height: each has a broad low arched strap across central vertical forearm channel, both strap ends visibly riveted to wood, spaced enough for an adult forearm. Forearm channel about30% shield width, positioned60% from left edge, so a FIXED vertical forearm can lie against wood with tabs visible on both sides. Natural leather straps not metal handles, no grip handle. Render complete panel including wood behind loops so it can sit BEHIND original arm as one asset. Match original bold irregular outline and few broad flat muted brown/grey shadows, no noise, glow, canvas backdrop, lettering or detailed grain. Shield fills90% of portrait 2:3 canvas with transparent margin. It is an equipment insert, never redesign the Warrior or change arm anatomy."
+  },
+  {
+    "id": "BarbarianRear06",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/Concepts/BarbarianBearPelt04.png",
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/ArmLocked/Warrior-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ],
+    "prompt": "Use case: stylized-concept. Make EXACT HUMAN bear-pelt Barbarian Image1 from rear for COMBAT, matching Image2's WAIST-UP large rear framing. User REJECTED zoomed-out rear showing legs/pants/boots and axe carried crooked behind his back. Framing HIGHEST PRIORITY:1448x1086 landscape cutout; bear hood top near y70, shoulders large at y300..480, belt/waist hits very BOTTOM edge, lower torso is CUT OFF by canvas bottom. NO thighs, knees, calves or boots anywhere. Camera strictly behind, character faces directly away, human with round-eared bear head pelt, broad strong tan human arms and dark brown wrist wraps, no lizard/tail. Same brown thick bear pelt on back, broad few fur masses. Weapon: SAME double-bladed steel axe from Image1, same distinctive head silhouette, steel bevels, straight thick wooden haft. Hold axe READY IN FRONT of torso, not carried behind head/back. Both hands on one perfectly straight shaft, hands and parts of handle may be NATURALLY OCCLUDED by his back in rear camera; do NOT draw hidden shaft or hidden hands through his pelt. Visible axe blade is outside image RIGHT shoulder around x1150,y280..570, fully inside frame, and visible straight handle runs DOWN beside image-right arm toward waist. Neutral wrists, no fingers through shaft, coherent blade socket axis. Raised two-handed ready pose with elbows pointing a little outward, but no diagonal pole crossing the visible back. Axe should look engineered and intact, not distorted unequal floating blades. Match approved front's broad human build and muted leather/brown palette. Original style refs3/4: bold lively dark lines, broad 2-3 tone flat shadows, no dense fur triangles, tiny facets, extra gear. True alpha, no floor/scenery/glow/text/signature."
+  },
+  {
+    "id": "WizardRear06",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Front.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 exact rear Wizard WITH small owl is edit target. Image2 front identity/companion reference. User wants his COMBAT rear pose HOLDING STAFF IN HAND, not staff stored on back. Remove the long diagonal staff from back completely and cleanly restore broad blue cloak/burgundy robe under it, no duplicated staff. Keep same simple straight brown wooden staff with faceted blunt top, now in anatomical RIGHT hand at IMAGE RIGHT, held upright with slight outward lean beside body. Staff top around x1190,y120 and bottom extends to or is cropped at lower canvas y1086; one perfectly straight uninterrupted axis through natural fist near x1200,y870. Right shoulder-elbow-wrist anatomically relaxed; close fingers AROUND shaft with opposing thumb, wrist neutral and aligned along forearm. No staff piercing glove, no extra fingers, no awkward shoulder rotation. Keep LEFT hand holding open book at its existing position, same friendly grey-haired elder back view, cream collar/cuffs, burgundy tunic, blue cape and waist dagger. Keep same small tawny owl securely on LEFT shoulder (image-left) looking inward at wizard, with grey/brown simple feathers and cream face. Same1448x1086 upperbody combat framing and fixed head/body scale. Change right hand/staff and fill old back-staff area only, no other costume redesign. Broad hand-drawn flat shadows and dark outlines matching cast. True alpha, no backdrop/glow/text."
+  }
+]

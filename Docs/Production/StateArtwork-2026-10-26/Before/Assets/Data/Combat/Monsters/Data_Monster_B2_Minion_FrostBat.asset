@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B2_Minion_FrostBat
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b2_minion_frostbat.displayname
+    lastText: "\uAE43\uBC14\uB298 \uC815\uB839"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b2_minion_frostbat.encounterhint
+    lastText: "\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804 \uC57D\uC810\uC744
+      \uB04A\uC790."
+  textOwnerGuid: 9a8888d9e5c52744fb1d2f2302d20795
+  displayName: "\uAE43\uBC14\uB298 \uC815\uB839"
+  portrait: {fileID: 21300000, guid: d7ba3f021cebca94d8f0a14e5fdf6eea, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 87343473aab8c1e46b6cb60128735f40, type: 2}
+  encounterHint: "\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804
+    \uC57D\uC810\uC744 \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 114
+  normalAttackInterval: 2.2
+  chargeInterval: 8.5
+  stunDuration: 2.4
+  stunDamageMultiplier: 1.65
+  experienceReward: 25
+  goldReward: 4
+  bodyHitRadius: 108
+  attacks:
+  - {fileID: 11400000, guid: c8a31c3ca05382341b69f39fd1cbd4a4, type: 2}
+  - {fileID: 11400000, guid: fd9437c80b9f1a645a17c73069479b1d, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.42, g: 0.76, b: 1, a: 1}

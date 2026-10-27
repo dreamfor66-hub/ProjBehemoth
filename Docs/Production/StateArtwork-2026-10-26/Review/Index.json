@@ -1,0 +1,26 @@
+[
+  {
+    "sheet": "Monsters-Initial-1.jpg",
+    "actors": [
+      "Monster-LanternImp",
+      "Monster-BoneScorpion",
+      "Monster-StringRevenant"
+    ]
+  },
+  {
+    "sheet": "Monsters-Initial-2.jpg",
+    "actors": [
+      "Monster-CoffinSlime",
+      "Monster-BellHound",
+      "Monster-EttinGatekeeper"
+    ]
+  },
+  {
+    "sheet": "Monsters-Initial-3.jpg",
+    "actors": [
+      "Monster-MirrorShell",
+      "Monster-IronMantis",
+      "Monster-StoneSphinx"
+    ]
+  }
+]

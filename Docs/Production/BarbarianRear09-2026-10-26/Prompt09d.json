@@ -1,0 +1,10 @@
+{
+  "id": "BarbarianRear09d",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/Sources/BarbarianRear09c.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/BarbarianRear09-2026-10-26/AlignmentGuide09d.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+  ],
+  "prompt": "Precise geometry edit of a stationary fantasy prop. Image1 is EDIT TARGET; Image2 is same target with a BLUE STRAIGHT ALIGNMENT GUIDE; images3/4 original flat ink style. Preserve the character anatomy, both arm positions, fists, fur cloak, head and waist exactly as image1. Correct the handheld prop: its lower wood end, upper wood, silver collar and metal central bar all share ONE straight shallow diagonal aligned with the BLUE LINE in image2. Follow that blue line through the middle of both closed grips. Remove existing slight bends at the lower wood end and metal collar. The twin silver-gray lobes of the metal head stay attached to its straight central bar, matching current size/style but tilted consistently with this axis. You may subtly redraw wood and metal around the unchanged fists to enforce a straight continuous assembly; NEVER stretch/move arms or hands. Blue guide is construction only: final output has NO blue line, NO background. Keep same1448x1086 rear waist-up canvas, true transparent alpha, no text, glow or frame. Keep muted flat shading with few broad planes and bold dark contour. No other subject changes."
+}

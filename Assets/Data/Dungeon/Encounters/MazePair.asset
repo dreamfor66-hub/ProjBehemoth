@@ -15,14 +15,20 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.mazepair.displayname
-    lastText: "\uD574\uACE8\uACFC \uBC15\uC950"
+    lastText: "\uD574\uACE8 \uC804\uC0AC \xB7 \uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
   - propertyPath: hint
     key: data.encounterdata.mazepair.hint
-    lastText: 
+    lastText: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790.\n\uC791\uC740
+      \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC. \uAC15\uD0C0 \uC900\uBE44
+      \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
   textOwnerGuid: 0dcb7942708dbd24c98887144c097880
   id: MazePair
-  displayName: "\uD574\uACE8\uACFC \uBC15\uC950"
-  hint: 
+  displayName: "\uD574\uACE8 \uC804\uC0AC \xB7 \uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC"
+  hint: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+    \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790.\n\uC791\uC740
+    \uCC3D\uC744 \uB4E0 \uACE0\uBE14\uB9B0 \uC0AC\uB0E5\uAFBC. \uAC15\uD0C0 \uC900\uBE44
+    \uC911 \uC911\uC2EC \uC57D\uC810\uC744 \uB04A\uC790."
   category: 1
   members:
   - monster: {fileID: 11400000, guid: f71f3849353c3a741b7371d1d3419ed1, type: 2}

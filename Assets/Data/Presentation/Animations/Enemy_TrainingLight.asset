@@ -17,4 +17,13 @@ MonoBehaviour:
   guard: {fileID: 0}
   ready: {fileID: 21300000, guid: 94eb1b239e9f5678acc7738e052e4c73, type: 3}
   dead: {fileID: 21300000, guid: a6e2d6b7de1e54b0afabfbcc736a0821, type: 3}
-  canvasScale: 1.17679558
+  canvasScale: 1.1767956
+  illustratedMotion: 0
+  illustratedLayout: 0
+  combatPositionOffset: {x: 0, y: 0}
+  groundContactY: 0.19014084
+  artworkTopY: 0.899061
+  labelHeight: 116
+  readyTilt: -4
+  attackTilt: 7
+  attackOffset: {x: 0, y: -18}

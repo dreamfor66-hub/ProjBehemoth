@@ -15,18 +15,16 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.encounterdata.executioner.displayname
-    lastText: "\uCCA0\uAC11 \uC9D1\uD589\uAD00"
+    lastText: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
   - propertyPath: hint
     key: data.encounterdata.executioner.hint
-    lastText: "\uAE30\uBCF8 \uC57D\uC810\uC744 \uAE68\uBA74 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD55C\uB2E4.
-      \uC138 \uACB9\uC758 \uBCF4\uC870 \uC57D\uC810\uC744 \uBA3C\uC800 \uBD80\uC218\uBA74
-      \uAE30\uC808\uC774 \uAE38\uC5B4\uC9C4\uB2E4."
+    lastText: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0,
+      \uBCF4\uC870 \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
   textOwnerGuid: df4d7c09051a13b4e8fbe18adf67e09a
   id: Executioner
-  displayName: "\uCCA0\uAC11 \uC9D1\uD589\uAD00"
-  hint: "\uAE30\uBCF8 \uC57D\uC810\uC744 \uAE68\uBA74 \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD55C\uB2E4.
-    \uC138 \uACB9\uC758 \uBCF4\uC870 \uC57D\uC810\uC744 \uBA3C\uC800 \uBD80\uC218\uBA74
-    \uAE30\uC808\uC774 \uAE38\uC5B4\uC9C4\uB2E4."
+  displayName: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  hint: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0, \uBCF4\uC870
+    \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
   category: 8
   members:
   - monster: {fileID: 11400000, guid: ecf1c349611a99341be2e93e20f059a6, type: 2}

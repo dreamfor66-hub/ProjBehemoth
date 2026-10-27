@@ -1,0 +1,18 @@
+Existing Editor only. Saved anchor/default formation and real target geometry. No balance suite.
+PASS saved MonsterSpawnRoot=(0,0)
+PASS goblin has no extra -66.5 vertical offset
+PASS 1 default spawn uses saved formation: (0.00, 0.00)
+PASS 1 foreground player remains at -532
+PASS 1 enemies remain behind foreground player
+PASS 2 default spawn uses saved formation: (-270.00, -35.00), (270.00, -35.00)
+PASS 2 foreground player remains at -532
+PASS 2 enemies remain behind foreground player
+PASS 3 default spawn uses saved formation: (-370.00, -65.00), (0.00, 0.00), (370.00, -65.00)
+PASS 3 foreground player remains at -532
+PASS 3 enemies remain behind foreground player
+PASS left lowered target exposes its charge weak point
+PASS lowered weak point screen/input mapping follows actual target
+PASS charged slash hits lowered left weak point
+PASS authored two-species encounter offsets remain editable and unchanged
+PASS flying species retains its own artwork/target offset: (0.00, 0.00)
+COMPLETE failures=0. Runtime-only practice clones; no saved combat/balance data changed. Real device pending.

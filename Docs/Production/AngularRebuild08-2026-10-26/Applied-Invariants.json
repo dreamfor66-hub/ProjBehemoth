@@ -1,0 +1,27 @@
+{
+  "unchangedAssets": [
+    {
+      "name": "Barbarian-Front",
+      "unchanged": true
+    },
+    {
+      "name": "Rogue-Front",
+      "unchanged": true
+    },
+    {
+      "name": "Rogue-Rear",
+      "unchanged": true
+    },
+    {
+      "name": "Samurai-Rear",
+      "unchanged": true
+    },
+    {
+      "name": "Monk-Rear",
+      "unchanged": true
+    }
+  ],
+  "wizardFrontExactRestoration": true,
+  "warriorFrontExactRollback": true,
+  "warriorRearExactRollback": true
+}

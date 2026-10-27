@@ -26,6 +26,7 @@ namespace DungeonSlash
         public Vector2 ChargeOrigin { get; private set; }
         public float CastingSeconds { get; private set; }
         public bool IsChargingAction => State is PointerGestureState.Charging or PointerGestureState.Charged or PointerGestureState.SecondCharging or PointerGestureState.SecondCharged;
+        public bool IsPreparingAttack => contacts.Values.Any(contact => !contact.Consumed && !contact.Guard && !contact.Spell);
         public bool IsGuardKeyHeld => Input.GetKey(KeyCode.Space);
 #if UNITY_EDITOR
         internal bool? SpellModifierForVerification { get; set; }

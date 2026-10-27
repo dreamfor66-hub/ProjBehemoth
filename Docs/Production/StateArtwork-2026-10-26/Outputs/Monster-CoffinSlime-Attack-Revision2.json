@@ -1,0 +1,11 @@
+{
+  "id": "Monster-CoffinSlime-Attack",
+  "actor": "CoffinSlime",
+  "kind": "Monster",
+  "state": "Attack",
+  "source": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+  "prompt": "Create ONE Attack-impact sprite of the exact vampire bat in the input. Same narrow face, fangs, ears, charcoal fur and grey-ochre leathery wing membranes; same dark hand-ink/cel style, square canvas and physical body scale. Show a decisive FRONT-FACING DIVE with BOTH WINGS DRIVING DOWN, wing tips BELOW the head and shoulders rather than towering above them. The head and fangs lead the lunge toward the viewer, compact torso follows, two small hind feet trail naturally. This must have a clearly different silhouette from the high upstroke Idle/Ready: do not reuse the tall raised-wing pose. Exactly two anatomical wings with elbow/wrist/fingers and two hind legs, no extra limbs. Whole bat stays inside transparent margins. No dragon body, new props, effects, text, ground or cast shadow. True alpha transparency.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-19e94708-4bce-408a-80b2-33ad1682045f.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Monster-CoffinSlime-Attack.png",
+  "status": "generated_pending_review"
+}

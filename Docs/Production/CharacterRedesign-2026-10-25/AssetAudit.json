@@ -1,0 +1,794 @@
+[
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionWarrior.png",
+    "size": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionRogue.png",
+    "size": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionBarbarian.png",
+    "size": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionSamurai.png",
+    "size": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionMonk.png",
+    "size": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Selection/SelectionWizard.png",
+    "size": [
+      1642,
+      958
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Warrior/Idle.png",
+    "size": [
+      518,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Warrior/Attack.png",
+    "size": [
+      518,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Warrior/Guard.png",
+    "size": [
+      518,
+      432
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Warrior/Rear.png",
+    "size": [
+      299,
+      385
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Rogue/Idle.png",
+    "size": [
+      514,
+      429
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Rogue/Attack.png",
+    "size": [
+      514,
+      429
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Rogue/Guard.png",
+    "size": [
+      514,
+      429
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Rogue/Rear.png",
+    "size": [
+      278,
+      377
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Barbarian/Idle.png",
+    "size": [
+      470,
+      393
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Barbarian/Attack.png",
+    "size": [
+      470,
+      393
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Barbarian/Guard.png",
+    "size": [
+      470,
+      393
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Barbarian/Rear.png",
+    "size": [
+      311,
+      404
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Samurai/Idle.png",
+    "size": [
+      564,
+      471
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Samurai/Attack.png",
+    "size": [
+      564,
+      471
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Samurai/Guard.png",
+    "size": [
+      564,
+      471
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Samurai/Rear.png",
+    "size": [
+      239,
+      405
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Monk/Idle.png",
+    "size": [
+      458,
+      382
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Monk/Attack.png",
+    "size": [
+      458,
+      382
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Monk/Guard.png",
+    "size": [
+      458,
+      382
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Monk/Rear.png",
+    "size": [
+      215,
+      385
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Wizard/Idle.png",
+    "size": [
+      469,
+      391
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Wizard/Attack.png",
+    "size": [
+      469,
+      391
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Combat/Wizard/Guard.png",
+    "size": [
+      469,
+      391
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue0.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue1.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue2.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Fatigue3.png",
+    "size": [
+      224,
+      224
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Portrait.png",
+    "size": [
+      384,
+      576
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Thumbnail.png",
+    "size": [
+      320,
+      320
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  },
+  {
+    "path": "Assets/Art/Characters/Portraits/Wizard/Rear.png",
+    "size": [
+      248,
+      414
+    ],
+    "dimensionsPreserved": true,
+    "colors": 7,
+    "outside": 0,
+    "binaryAlpha": true,
+    "baked": true
+  }
+]

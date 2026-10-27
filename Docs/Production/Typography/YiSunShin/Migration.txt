@@ -1,0 +1,3 @@
+YiSunShin Regular / dynamic SDFAA 64px / smooth sampling / native-pixel snapping disabled
+Saved TMP labels: 627
+Skipped dirty scenes (pending):

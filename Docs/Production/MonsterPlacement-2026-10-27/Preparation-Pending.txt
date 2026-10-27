@@ -1,0 +1,4 @@
+System.InvalidOperationException: This cannot be used during play mode.
+  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty_Injected(UnityEngine.SceneManagement.Scene&)
+  at UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty (UnityEngine.SceneManagement.Scene scene) [0x00000] in <b912dbff05184439afd77d89b5fecd71>:0 
+  at MonsterPlacementPreparation.Poll () [0x0017c] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\MonsterPlacementPreparation.cs:42 

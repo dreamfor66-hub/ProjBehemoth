@@ -1,0 +1,26 @@
+[
+  {
+    "id": "WizardRear07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Review07/Before-Wizard-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Front.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image1 rear combat Wizard with held staff and owl is edit target; Image2 identity/style reference. Fix ONLY LEFT-HAND BOOK and that left forearm. Current open-book hinge/perspective and single-hand support are implausible. For clear physical logic, CLOSE the spellbook in combat: one sturdy CLOSED brown book with two parallel covers and ONE cream page block between them, coherent slight 3/4 perspective, a single straight bound spine joining covers. Hold this closed book securely against left side/lower ribs, cradled from BELOW by left palm, thumb over near cover edge and FOUR fingers curl under bottom edge/onto cover. Hand is touching and supporting the actual book, neutral wrist linked naturally to sleeve, no floating cover, no mismatched open pages. Book can be slightly upright but weight must sit over hand, not balance at a remote corner. Keep exactly original head, owl on left shoulder, blue cloak, burgundy robe, waist dagger and right hand HOLDING the same perfectly straight upright brown staff. DO NOT move staff back onto back. No extra book/page wedges. Keep1448x1086 waistup framing and scale. Bold hand-drawn dark lines and few broad muted flat tones matching original. True alpha no glow/background/text."
+  },
+  {
+    "id": "WizardFront07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Review07/Before-Wizard-Front.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Exact attached front elder Wizard+owl is edit target. Fix ONLY book and hands for clear plausible structure. Use a CLOSED brown spellbook held comfortably against lower chest: two parallel covers, ONE cream page block and one straight binding/spine, coherent slight 3/4 perspective. Left forearm supports book from underneath with palm under lower edge, right hand rests naturally over front cover/outer edge, fingers actually touching the book, thumbs oppose when gripping. No floating hands, separate page stacks, distorted hinges, extra fingertips or twisted wrists. Closed book is a simple solid object, not open or being read. This supports his already correct lifted gaze and warm eye contact with the little owl on image-right shoulder. Preserve EXACT head, eyes, expression, grey hair/beard and owl, blue cloak/burgundy tunic, staff on back, waist dagger, legs/boots,1024x1536 framing and body proportions. Do not redraw face or change eye line. Restrained bold cartoon style, few broad flat shadows, no ornamentation, gradients, text/glow/background. True alpha."
+  },
+  {
+    "id": "BarbarianRear07",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Docs/Production/AngularPartyRefine-2026-10-26/Review07/Before-Barbarian-Rear.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/Concepts/BarbarianBearPelt04.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "prompt": "Use case: precise-object-edit. This is a stationary fantasy COSTUME AND EQUIPMENT illustration, no action, no opponent, no violence. Edit Image1's rear upperbody figure only to repair his carried axe's construction; Image2 supplies approved equipment shape and colours. Keep same bear hood/pelt, human arms and waist-up framing. Reposition axe upright beside right shoulder. Its metal central eye, cylindrical collar and entire wooden handle MUST form ONE STRAIGHT VERTICAL LINE at x1150: metal eye centre(1150,330), collar centre(1150,520), wood at(1150,600), hand centre(1150,760) and handle end(1150,1010). Two broad curved steel sides attach to either side of that central eye, no side-mounted or crooked socket. Keep tool completely inside canvas approximately x960..1400,y130..1010. Right hand wraps around handle with four fingers and opposing thumb; wrist neutral, forearm connects naturally from same elbow. No separate handle segment, no angled collar, no bent shaft. Left hand remains naturally hidden in front of torso. Preserve rest exactly, no full-body legs. Broad few flat colour masses and thick hand-drawn outline matching references, no tiny triangular shading. Transparent1448x1086, no floor/background/glow/text."
+  }
+]

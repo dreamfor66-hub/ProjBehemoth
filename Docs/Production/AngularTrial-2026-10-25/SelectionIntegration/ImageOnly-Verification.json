@@ -1,0 +1,40 @@
+{
+  "scope": "Image replacement only. New layout discarded.",
+  "originalSceneByteIdentical": false,
+  "originalMenuCodeByteIdentical": true,
+  "artwork": [
+    {
+      "character": "Warrior",
+      "originalApprovedSourceRetained": true,
+      "existingSlotCanvas": "1536x896, transparent padding, uniform fit on right; no UI rect/code change"
+    },
+    {
+      "character": "Rogue",
+      "originalApprovedSourceRetained": true,
+      "existingSlotCanvas": "1536x896, transparent padding, uniform fit on right; no UI rect/code change"
+    },
+    {
+      "character": "Barbarian",
+      "originalApprovedSourceRetained": true,
+      "existingSlotCanvas": "1536x896, transparent padding, uniform fit on right; no UI rect/code change"
+    },
+    {
+      "character": "Samurai",
+      "originalApprovedSourceRetained": true,
+      "existingSlotCanvas": "1536x896, transparent padding, uniform fit on right; no UI rect/code change"
+    },
+    {
+      "character": "Monk",
+      "originalApprovedSourceRetained": true,
+      "existingSlotCanvas": "1536x896, transparent padding, uniform fit on right; no UI rect/code change"
+    },
+    {
+      "character": "Wizard",
+      "originalApprovedSourceRetained": true,
+      "existingSlotCanvas": "1536x896, transparent padding, uniform fit on right; no UI rect/code change"
+    }
+  ],
+  "unchangedUX": "All UI objects, RectTransforms, labels, controls and menu code restored exactly. Only the camera artwork profile uses native rendering to preserve approved image resolution/colors.",
+  "uiHierarchyAndLayoutMatchOriginal": true,
+  "liveSixSelections": "Verified in original UI; six choices visible, original descriptions unchanged, no description overflow."
+}

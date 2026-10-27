@@ -1,0 +1,18 @@
+Scoped live Unity font verification / 1920x1080
+ChoiceDescription | YiSunShin | size=32 | overflow=False | missing= | 최대 체력 -8. 깨어진 모래시계: 차지 준비시간과 주문 쿨타임 -12%.
+Label | YiSunShin | size=44 | overflow=False | missing= | 다음
+ChoiceTitle | YiSunShin | size=44 | overflow=False | missing= | > 오래된 동작을 버리고 다시 익힌다
+Label | YiSunShin | size=44 | overflow=False | missing= | 지도
+Label | YiSunShin | size=44 | overflow=False | missing= | →
+Label | YiSunShin | size=44 | overflow=False | missing= | 보유품
+Health | YiSunShin | size=40 | overflow=False | missing= | HP 100 / 100
+ChoiceTitle | YiSunShin | size=44 | overflow=False | missing= | > 내일을 조금 잘라 낸다
+ChoiceDescription | YiSunShin | size=32 | overflow=False | missing= | 보유 능력 하나 제거 후 새 능력을 두 번 선택한다.
+Label | YiSunShin | size=44 | overflow=False | missing= | ↑
+Label | YiSunShin | size=44 | overflow=False | missing= | ↓
+Gold | YiSunShin | size=40 | overflow=False | missing= | 38<color=#D8BB62>G</color>
+Page | YiSunShin | size=44 | overflow=False | missing= | 1 / 2
+Label | YiSunShin | size=44 | overflow=False | missing= | 이전
+Narrative | YiSunShin | size=36 | overflow=False | missing= | 기록실 책상 위에서 모래가 거꾸로 흐르고 있다.  옆에 놓인 기록에는 이 모래시계로 시간을 빌릴 수 있다고 적혀 있다.
+Title | YiSunShin | size=48 | overflow=False | missing= | 내일의 한숨
+Labels=16; wrong font=0; missing glyphs=0

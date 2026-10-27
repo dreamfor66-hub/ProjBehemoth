@@ -37,9 +37,7 @@ public sealed class ArcadeRasterFeature : ScriptableRendererFeature
             if(raster.quantizeColors)
             {
                 var material=raster.presentation.paletteMaterial;
-                var style=raster.presentation.weakPointStyle!=null?raster.presentation.weakPointStyle:WeakPointVisualStyle.Default;
-                material.SetVector("_WeakPointStroke",style.stroke);material.SetVector("_WeakPointShadow",style.shadow);material.SetVector("_WeakPointCore",style.core);
-                graph.AddBlitPass(new RenderGraphUtils.BlitMaterialParameters(source,target,material,0),"224p / 16 colors");
+                graph.AddBlitPass(new RenderGraphUtils.BlitMaterialParameters(source,target,material,0),"224p / seven inks");
             }
             else graph.AddBlitPass(source,target,Vector2.one,Vector2.zero,filterMode:RenderGraphUtils.BlitFilterMode.ClampNearest,passName:"224p / original art colors");
             graph.AddBlitPass(target,source,Vector2.one,Vector2.zero,filterMode:RenderGraphUtils.BlitFilterMode.ClampNearest,passName:"Integer pixel presentation");
@@ -77,6 +75,7 @@ public sealed class ArcadeRasterFeature : ScriptableRendererFeature
                 });
             }
             if(textComposite==null)textComposite=CoreUtils.CreateEngineMaterial(raster.textCompositeShader);
+            textComposite.SetFloat("_PreserveNativeUiColors",raster.preserveNativeUiColors?1:0);
             graph.AddBlitPass(new RenderGraphUtils.BlitMaterialParameters(textTexture,source,textComposite,0),"Native TMP text over pixel artwork");
         }
     }

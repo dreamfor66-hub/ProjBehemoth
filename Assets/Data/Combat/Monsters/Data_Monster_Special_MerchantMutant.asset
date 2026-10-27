@@ -15,15 +15,17 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterdata.data_monster_special_merchantmutant.displayname
-    lastText: "\uC0C1\uC778 \uB3CC\uC5F0\uBCC0\uC774"
+    lastText: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_special_merchantmutant.encounterhint
-    lastText: 
+    lastText: "\uD070 \uACF5\uACA9\uC744 \uC900\uBE44\uD560 \uB54C \uC5F4\uB9B0 \uC57D\uC810\uC744
+      \uB178\uB9AC\uC790."
   textOwnerGuid: 47d6d43ce99c4764985d63037cfb301e
-  displayName: "\uC0C1\uC778 \uB3CC\uC5F0\uBCC0\uC774"
-  portrait: {fileID: 21300000, guid: 90d7a03ef6995edabaafe6631f31dafb, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 63cf5d03a6553244aaba456ef041e4e0, type: 2}
-  encounterHint: 
+  displayName: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44"
+  portrait: {fileID: 21300000, guid: 7da21413f2d5bf84eb52cb9503f5264c, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 6220093cf42765c44ab21ca5a5bd95ce, type: 2}
+  encounterHint: "\uD070 \uACF5\uACA9\uC744 \uC900\uBE44\uD560 \uB54C \uC5F4\uB9B0
+    \uC57D\uC810\uC744 \uB178\uB9AC\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
   goldReward: 25
   bodyHitRadius: 108
   attacks:
-  - {fileID: 11400000, guid: 5c34fe5b955150c44b87219460e438c3, type: 2}
-  - {fileID: 11400000, guid: 5afe0b265fee86b4aa515616ed7b040a, type: 2}
+  - {fileID: 11400000, guid: c65ba8108a2e66340a634e26803d6ec7, type: 2}
+  - {fileID: 11400000, guid: a5d49a9d5f514be4fa14263820a031f7, type: 2}
+  normalAttackSequence: []
   bodyColor: {r: 0.48, g: 0.1, b: 0.08, a: 1}

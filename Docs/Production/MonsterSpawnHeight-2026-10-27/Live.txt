@@ -1,0 +1,12 @@
+Scoped existing Editor test, practice clones; no balance suite.
+PASS saved spawn root=(0,-150)
+PASS single skeleton hitbox bottom=-150
+PASS foreground player remains at -532
+PASS lowered target exposes its weak point
+PASS lowered weak point screen/input mapping
+PASS charged slash hits lowered weak point
+PASS three monsters spawned
+PASS formation bottom=(-370.00, -215.00)
+PASS formation bottom=(0.00, -150.00)
+PASS formation bottom=(370.00, -215.00)
+COMPLETE failures=0. Play stopped after scoped test.

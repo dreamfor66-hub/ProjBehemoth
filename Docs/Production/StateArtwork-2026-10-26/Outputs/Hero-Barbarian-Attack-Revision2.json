@@ -1,0 +1,7 @@
+{
+  "id": "Hero-Barbarian-Attack",
+  "prompt": "Precise correction of image 1 (the overhead axe attack pose). Keep its entire bear-pelt barbarian body, rear camera, arms, hand grip, framing, 1448x1086 canvas and flat ink/cel style unchanged. Image 2 is the weapon design reference. Restore the EXACT DOUBLE-HEADED AXE from image 2: two opposed curved steel blades, one on EACH side of one central metal socket, symmetrically attached to a single straight wooden shaft. Both blade lobes must be visible at the head above the raised right hand. The raised hand grips the shaft BELOW the socket, fingers wrap naturally and never merge with either blade. Do not turn the axe into a single-bladed hatchet, hammer or pick. Keep the same opaque body scale and waist crop; no legs, face, extra arms or background. True transparent background, no text.",
+  "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17187-2859-76e1-a2dc-0390b72989dc\\exec-09a0d40f-f6b9-45ac-ae5a-8057cceb9b68.png",
+  "output": "E:/Github/Proj_Behemoth/Docs/Production/StateArtwork-2026-10-26/Outputs/Hero-Barbarian-Attack.png",
+  "status": "generated_pending_review"
+}
