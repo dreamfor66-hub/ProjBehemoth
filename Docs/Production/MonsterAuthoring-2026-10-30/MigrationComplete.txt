@@ -1,0 +1,1 @@
+Migrated 44 monsters. Original textures unchanged. Circle union and attack coordinates preserved.

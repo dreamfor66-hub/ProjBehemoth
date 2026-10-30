@@ -1,0 +1,859 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1a25789e2400345a2f0d0be4ba3362, type: 3}
+  m_Name: Act1GrowthBudget
+  m_EditorClassIdentifier: 
+  act: 1
+  designIntent: "1\uB9C9 \uBCF4\uC2A4 \uC804 \uAE30\uC900 4.55U: \uC2E4\uC81C 4\uD68C
+    \uB808\uBCA8\uC5C5(\uB0A0 \uC120 \uBB34\uAE30 2/\uBB35\uC9C1\uD55C \uBB34\uAE30
+    1/\uD65C\uB825 1)+\uB0A0 \uC120 \uBD80\uC801. \uCCB4\uB825/\uAC00\uB4DC/\uACF5\uACA9
+    \uAC00\uCE58\uB97C \uB530\uB85C \uAE30\uB85D. \uBBF8\uB2EC \uBE4C\uB4DC\uC640
+    \uD53C\uB85C \uB204\uC801\uC740 \uB354 \uC5B4\uB824\uC6CC\uC57C \uD558\uBA70
+    \uC790\uB3D9 \uBCF4\uB108\uC2A4\uB294 \uC9C0\uAE09\uD558\uC9C0 \uC54A\uC74C."
+  stage: {fileID: 11400000, guid: cd7a4ad76a07d3b419f87c8573b1f981, type: 2}
+  normalCombatOpportunities: 8
+  eliteCombatOpportunities: 1
+  goddessOpportunities: 1
+  inheritedExperience: 0
+  expectedExperience: 373.53333
+  cumulativeLevelUpPerks: 4
+  requiredUnits: 4.55
+  requiredOffenseUnits: 3.55
+  requiredHealthUnits: 1
+  referenceBuilds:
+  - label: "\uC2DC\uC791\xB7\uBB34\uC131\uC7A5"
+    checkpoint: 0
+    scenario: 1
+    acquisitionBasis: "\uCCAB \uC804\uD22C. \uC2DC\uC791 \uC720\uBB3C\uB9CC; \uCD94\uAC00
+      \uB2A5\uB825\uCE58 \uC5C6\uC74C."
+    experience: 0
+    shopGold: 0
+    fatigue: 100
+    perks: []
+    relics: []
+  - label: "\uC911\uBC18\xB7\uC804\uD22C\uD615"
+    checkpoint: 1
+    scenario: 1
+    acquisitionBasis: "\uB204\uC801XP115=2\uD68C \uB808\uBCA8\uC5C5. \uC0C1\uC790\uC5D0\uC11C
+      \uACF5\uC720 \uC720\uBB3C1\uAC1C\uB97C \uC5BB\uC740 \uD45C\uC900 \uD0D0\uC0C9
+      \uAC00\uC815. \uC774\uBCA4\uD2B8\xB7\uC0C1\uC810 \uC131\uC7A5 \uC5C6\uC74C."
+    experience: 115
+    shopGold: 0
+    fatigue: 94
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+      stacks: 1
+      fromEvent: 0
+    relics:
+    - {fileID: 11400000, guid: cecaad1338cd0c945a1e6daf10d27360, type: 2}
+  - label: "\uBCF4\uC2A4 \uC804\xB7\uAE30\uC900"
+    checkpoint: 2
+    scenario: 1
+    acquisitionBasis: "\uB204\uC801XP330=4\uD68C \uB808\uBCA8\uC5C5. \uC0C1\uC790\uC720\uBB3C1\uAC1C.
+      \uACF5\uACA93.55U+\uCCB4\uB8251U=4.55U. \uC774\uBCA4\uD2B8\xB7\uC0C1\uC810
+      \uC5C6\uC774\uB3C4 \uC219\uB828 \uAC00\uB4DC/\uC57D\uC810\uC73C\uB85C \uAC00\uB2A5\uD55C
+      \uAE30\uC900."
+    experience: 330
+    shopGold: 0
+    fatigue: 80
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 2
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+      stacks: 1
+      fromEvent: 0
+    relics:
+    - {fileID: 11400000, guid: cecaad1338cd0c945a1e6daf10d27360, type: 2}
+  - label: "\uBCF4\uC2A4 \uC804\xB7\uBC29\uC5B4 \uC131\uC7A5"
+    checkpoint: 2
+    scenario: 1
+    acquisitionBasis: "\uAC19\uC740 \uB808\uBCA8\uC5C54\uD68C/\uC0C1\uC7901\uD68C.
+      \uACF5\uACA9 \uC57D3.23U+\uAC00\uB4DC1.75U. \uAC00\uB4DC \uD2B9\uD654 \uB300\uCCB4
+      \uBE4C\uB4DC."
+    experience: 330
+    shopGold: 0
+    fatigue: 80
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 2
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 3ca63b0cf9341b548892338a9969c5b3, type: 2}
+      stacks: 1
+      fromEvent: 0
+    relics:
+    - {fileID: 11400000, guid: b2fff78e36118a146a86277c7df9f15c, type: 2}
+  - label: "\uBCF4\uC2A4 \uC804\xB7\uC8FC\uBB38 \uC131\uC7A5"
+    checkpoint: 2
+    scenario: 1
+    acquisitionBasis: "\uAC19\uC740 \uB808\uBCA8\uC5C54\uD68C/\uC0C1\uC7901\uD68C.
+      \uC2E4\uC81C MP\uC640 \uC601\uCC3D\uC2DC\uAC04\uC744 \uC9C0\uBD88\uD558\uBA70
+      \uD30C\uC774\uC5B4\uBCFC\uD2B8 \uC0AC\uC6A9. \uC8FC\uBB38 \uC5C6\uB294 \uC815\uADDC\uD654
+      \uACF5\uACA9\uB825\uC73C\uB85C \uB300\uCCB4\uD558\uC9C0 \uC54A\uC74C."
+    experience: 330
+    shopGold: 0
+    fatigue: 80
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 4e26cba797314324cbf1bfb5ec124de8, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+      stacks: 1
+      fromEvent: 0
+    relics:
+    - {fileID: 11400000, guid: d69a1f5a2b427f84dbb9d8f5e476f49b, type: 2}
+  - label: "\uBCF4\uC2A4 \uC804\xB7\uC131\uC7A5 \uBD80\uC871"
+    checkpoint: 2
+    scenario: 0
+    acquisitionBasis: "XP210=3\uD68C \uB808\uBCA8\uC5C5. \uC0C1\uC790\uD6A8\uACFC\uB294
+      \uC900\uBE44\uC2DC\uAC04 \uAC10\uC18C. \uAE30\uC900\uBCF4\uB2E4 \uACF5\uACA9
+      \uC131\uC7A5 \uBD80\uC871; \uC2DC\uAC04/\uAC00\uB4DC \uBD80\uB2F4\uC774 \uCEE4\uC9C0\uB294\uC9C0
+      \uBE44\uAD50."
+    experience: 210
+    shopGold: 0
+    fatigue: 80
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+      stacks: 1
+      fromEvent: 0
+    relics:
+    - {fileID: 11400000, guid: 3c3cec8d398472e44b428e973ce0531d, type: 2}
+  - label: "\uBCF4\uC2A4 \uC804\xB7\uD53C\uB85C \uB204\uC801"
+    checkpoint: 2
+    scenario: 0
+    acquisitionBasis: "\uAE30\uC900\uACFC \uAC19\uC740 \uC2E4\uC81C \uC131\uC7A5.
+      \uD53C\uB85C\uB3C460\uC758 \uC0DD\uC0B0\uC2DD \uACF5\uACA9\uC18D\uB3C40.7/\uCD5C\uC885\uD53C\uD5740.85\uB97C
+      \uC801\uC6A9\uD574 \uD0D0\uC0C9\xB7\uC57C\uC601 \uB300\uAC00 \uBE44\uAD50."
+    experience: 330
+    shopGold: 0
+    fatigue: 60
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 2
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+      stacks: 1
+      fromEvent: 0
+    relics:
+    - {fileID: 11400000, guid: cecaad1338cd0c945a1e6daf10d27360, type: 2}
+  - label: "\uBCF4\uC2A4 \uC804\xB7\uCD94\uAC00 \uC131\uC7A5"
+    checkpoint: 2
+    scenario: 2
+    acquisitionBasis: "\uB808\uBCA8\uC5C54\uD68C+\uC774\uBCA4\uD2B8\uD37D1\uD68C+\uC0C1\uC7901\uAC1C+\uC0C1\uC81064G.
+      60G \uD68C\uBCF5/\uC774\uBCA4\uD2B8 \uC608\uBE44\uBE44\uAC00 \uB0A8\uB294 \uD0D0\uC0C9\uACBD\uB85C
+      \uAE30\uC900. \uBCF4\uC0C1 \uD69F\uC218\uB97C \uCD08\uACFC\uD55C \uACF5\uC9DC
+      \uAC15\uD654\uB97C \uC8FC\uC9C0 \uC54A\uC74C."
+    experience: 330
+    shopGold: 64
+    fatigue: 80
+    perks:
+    - perk: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+      stacks: 2
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+      stacks: 1
+      fromEvent: 0
+    - perk: {fileID: 11400000, guid: 3ca63b0cf9341b548892338a9969c5b3, type: 2}
+      stacks: 1
+      fromEvent: 1
+    relics:
+    - {fileID: 11400000, guid: cecaad1338cd0c945a1e6daf10d27360, type: 2}
+    - {fileID: 11400000, guid: 28e5f569230b63a4291eed5f5613b62f, type: 2}
+  referenceOffenseAllocation: 0.8
+  damageBonusPerOffenseUnit: 0.1
+  healthPerDefenseUnit: 10
+  underBudgetRatio: 0.65
+  strongRatio: 1.35
+  opportunities:
+  - source: "\uB808\uBCA8\uC5C5: \uC2E4\uC81C \uC6CC\uB9AC\uC5B4 \uD480\uC5D0\uC11C
+      3\uD0DD1"
+    opportunities: 4
+    acquisitionRate: 1
+    unitsPerAcquisition: 0.68407756
+    assumption: "15\uAC1C \uB3D9\uB4F1 \uAC00\uC911\uCE58 \uBC84\uD0B7(MP 2\uC885\uC740
+      \uD55C \uBC84\uD0B7)\uC758 \uBAA8\uB4E0 \uBE44\uBCF5\uC6D0 3\uD0DD \uC870\uD569\uC744
+      \uC5F4\uAC70\uD55C \uD604\uC7AC \uC720\uD6A8 \uAC00\uCE58 \uCD5C\uB300\uAC12.
+      \uC8FC\uBB38 \uC5C6\uB294 \uC6CC\uB9AC\uC5B4 \uAE30\uC900. \uC870\uAC74\uBD80
+      \uAC00\uC815\uC740 \uAC1C\uBCC4 valuation \uCC38\uC870."
+  - source: "\uC0C1\uC790 \uBC29\uBB38: \uBB34\uC791\uC704 \uACF5\uC720 \uC720\uBB3C
+      1\uAC1C"
+    opportunities: 1
+    acquisitionRate: 1
+    unitsPerAcquisition: 0.8927034
+    assumption: "\uC2E4\uC81C 29\uAC1C \uACF5\uC720 \uC720\uBB3C/\uB9C8\uB3C4\uC11C\uC758
+      \uC870\uAC74\uBD80 \uD658\uC0B0 \uD3C9\uADE0. \uC0C1\uC790\uB294 \uBC29\uBB38
+      \uAC00\uC815\uC774\uBA70 \uBCF4\uC7A5 \uACBD\uB85C \uBCF4\uC0C1\uC774 \uC544\uB2D8.
+      \uACE8\uB4DC \uBC29\uC740 \uC720\uBB3C\uB85C \uC911\uBCF5 \uACC4\uC0B0\uD558\uC9C0
+      \uC54A\uC74C."
+  - source: "\uC131\uC7A5 \uC774\uBCA4\uD2B8 \uC120\uD0DD"
+    opportunities: 2
+    acquisitionRate: 0.5
+    unitsPerAcquisition: 0.75
+    assumption: "\uD45C\uC900 \uD0D0\uC0C9\uC5D0\uC11C \uC774\uBCA4\uD2B8 2\uD68C
+      \uC911 \uC131\uC7A5 \uC120\uD0DD 1\uD68C\uB77C\uB294 \uBA85\uC2DC\uC801 \uC2DC\uB098\uB9AC\uC624.
+      \uD655\uB960 \uCE21\uC815\uCE58 \uC544\uB2D8. \uD53C/\uAE08/\uC18C\uBAA8\uD488
+      \uB300\uAC00, \uB2E4\uC74C \uB9C9 \uC774\uC5F0 \uBCF4\uC0C1\uC740 1\uB9C9 \uC989\uC2DC
+      \uC131\uC7A5\uC73C\uB85C \uBBF8\uC0B0\uC785."
+  - source: "\uC0C1\uC810 \uC120\uD0DD \uAD6C\uB9E4"
+    opportunities: 1
+    acquisitionRate: 1
+    unitsPerAcquisition: 1.6673541
+    assumption: "\uD604\uC7AC \uACF5\uC720 \uC720\uBB3C29\uC885\uC758 \uBAA8\uB4E0
+      \uBE44\uBCF5\uC6D0 3\uD0DD \uC870\uD569\uC5D0\uC11C \uC720\uD6A8\uAC00\uCE58
+      \uCD5C\uB300\uAC12 \uC5F4\uAC70. \uAC00\uC7A5 \uBE44\uC2FC \uC7AC\uACE086G+\uD68C\uBCF5/\uC774\uBCA4\uD2B8
+      \uC608\uBE44\uBE4460G\uB97C \uD45C\uC900 \uD0D0\uC0C9 \uC608\uC0C1\uC218\uC785
+      \uC57D224G\uB85C \uCDA9\uB2F9\uD558\uB294 \uC2DC\uB098\uB9AC\uC624. \uBC29\uBB38/\uAD6C\uB9E4\uB97C
+      \uAC15\uC81C\uD558\uAC70\uB098 \uC2E4\uCE21 \uAD6C\uB9E4\uC728\uB85C \uC8FC\uC7A5\uD558\uC9C0
+      \uC54A\uC74C."
+  normalDamageShare: 0.7
+  breakFollowupShare: 0.25
+  referenceFightSeconds: 20
+  valuations:
+  - content: {fileID: 11400000, guid: 1ceea9ca34dc31b4b85a398166259a75, type: 2}
+    estimatedUnits: 1
+    offenseUnits: 0
+    healthUnits: 1
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCD5C\uB300HP +10 / 10HP. \uD68C\uBCF5/\uAC00\uB4DC\uC640 \uAD6C\uBCC4\uB418\uB294
+      \uB7F0 \uCCB4\uB825 \uC5EC\uC720."
+  - content: {fileID: 11400000, guid: 010fdece41f693f4e965e0379e14c7eb, type: 2}
+    estimatedUnits: 1
+    offenseUnits: 1
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "+2/\uAE30\uBCF8\uD3C9\uD0C014 \xD7 \uD3C9\uD0C0\uD53C\uD574\uBE44\uC91170%
+      / 10% = 1U."
+  - content: {fileID: 11400000, guid: 6f0196698d1c936459c6c2d972aa292e, type: 2}
+    estimatedUnits: 0.5
+    offenseUnits: 0.5
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "+4/\uAE30\uBCF8\uCC28\uC9C024 \xD7 \uCC28\uC9C0\uD53C\uD574\uBE44\uC91130%
+      / 10% = 0.5U."
+  - content: {fileID: 11400000, guid: 03d0530dac2262d43b70939f0100a724, type: 2}
+    estimatedUnits: 0.375
+    offenseUnits: 0.375
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uBE0C\uB808\uC774\uD06C \uD6C4 \uD53C\uD574\uBE44\uC91125% \xD7 \uCD94\uAC0015%
+      / 10% = 0.375U."
+  - content: {fileID: 11400000, guid: 4e26cba797314324cbf1bfb5ec124de8, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.3
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC8FC\uBB38 \uC5C6\uB294 \uAE30\uC900\uC740 \uC989\uC2DC \uACF5\uACA90U.
+      MP+3\uC73C\uB85C 8MP \uC8FC\uBB38 4\uBC88\uC9F8 \uBC1C\uB3D9 \uBB38\uD131\uC744
+      \uB118\uAE30\uBA74 \uD30C\uC774\uC5B4\uBCFC\uD2B8 \uAE30\uC900 \uC57D0.9U;
+      \uC790\uB3D9 \uACF5\uACA9 \uC131\uC7A5\uC73C\uB85C \uC138\uC9C0 \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: 0b9480ff13852064891e02a9164fcca0, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.2
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\uC5D0 \uCD94\uAC00MP1. \uC8FC\uBB38 \uC5C6\uB294 \uC6CC\uB9AC\uC5B4\uC758
+      \uC989\uC2DC \uD53C\uD5740U. \uC8FC\uBB38 \uBCF4\uC720 \uC2DC \uCD94\uAC000.125\uD68C\uBD84
+      MP; \uC18C\uC218 MP\uC640 \uBC1C\uB3D9 \uBB38\uD131 \uAD6C\uBCC4."
+  - content: {fileID: 11400000, guid: a3131a75602045a478369b7cd3ec9fbc, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.2
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uD654\uC5FC \uC8FC\uBB38\uC744 \uBCF4\uC720/\uC0AC\uC6A9\uD574\uC57C
+      \uC720\uD6A8. \uC8FC\uBB38 \uD53C\uD574\uBE44\uC91125%\uB77C\uBA74 0.25U; \uBB34\uC8FC\uBB38
+      \uAE30\uC9000."
+  - content: {fileID: 11400000, guid: 7b4c7ec2b46551c4994096e3cb7d65d3, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.2
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uB0C9\uAE30 \uC8FC\uBB38 \uC0AC\uC6A9 \uC2DC \uC8FC\uBB38 \uD53C\uD574\uBE44\uC91125%\uC5D0\uC11C0.25U.
+      \uBB34\uC8FC\uBB38 \uAE30\uC9000."
+  - content: {fileID: 11400000, guid: 9d1b52288b5160649ba7a25f37b1d7c8, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.2
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uBC88\uAC1C \uC8FC\uBB38 \uC0AC\uC6A9 \uC2DC \uC8FC\uBB38 \uD53C\uD574\uBE44\uC91125%\uC5D0\uC11C0.25U.
+      \uBB34\uC8FC\uBB38 \uAE30\uC9000."
+  - content: {fileID: 11400000, guid: 3ca63b0cf9341b548892338a9969c5b3, type: 2}
+    estimatedUnits: 0.7273
+    offenseUnits: 0.7273
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08 \uAE30\uC900 \uAC00\uB4DC4\uD68C \uD6C4 \uB2E4\uC74C \uBB34\uAE30\uACF5\uACA9
+      \uAC01+6, 24\uD53C\uD574 / \uAE30\uC900330\uD53C\uD574 /10%. \uC5F0\uC18D \uAC00\uB4DC\uB85C
+      \uAC31\uC2E0\uB41C \uBC84\uD504 \uC911\uBCF5 \uAC00\uC0B0 \uC548\uD568."
+  - content: {fileID: 11400000, guid: aec993b6703c5494e88a254370c0305a, type: 2}
+    estimatedUnits: 0.525
+    offenseUnits: 0.525
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC900\uBE44 \uC911\uC778 \uC801\uC5D0\uAC8C \uD3C9\uD0C0\uB97C \uB123\uB294
+      \uD53C\uD574\uBE44\uC91135% \xD7 \uD3C9\uD0C070% \xD7 +3/14 /10%."
+  - content: {fileID: 11400000, guid: 36469fd9edbff0d4b9a6b43c8d06f9d8, type: 2}
+    estimatedUnits: 0.3063
+    offenseUnits: 0.3063
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uD3C9\uADE0\uD604\uC7AC\uAC00\uB4DC24.5 \xD710% \uCD94\uAC00\uD53C\uD574
+      /\uCC28\uC9C024 \xD7\uCC28\uC9C0\uBE44\uC91130% /10%. \uC774 \uD6A8\uACFC\uB294
+      \uCC28\uC9C0 \uC804\uC6A9."
+  - content: {fileID: 11400000, guid: 151011646dfbb9b41b37e2d351a01550, type: 2}
+    estimatedUnits: 0.49
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0.49
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD0814\uD68C \uD3C9\uD0C0 \uC801\uC911\xD7\uAC00\uB4DC0.5\xD7\uC720\uD6A8\uC0AC\uC6A970%
+      /\uAC00\uB4DC10. \uACFC\uD68C\uBCF5 \uC81C\uC678."
+  - content: {fileID: 11400000, guid: 2ae3ddd77d934c54e810f3cbd5a2845e, type: 2}
+    estimatedUnits: 0.364
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0.364
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCD08\uB2F9\uAC00\uB4DC0.4\xD720\uCD08\xD7\uBE44\uAC00\uB4DC\uC2DC\uAC0465%\xD7\uC720\uD6A8\uC0AC\uC6A970%
+      /\uAC00\uB4DC10."
+  - content: {fileID: 11400000, guid: 07fa9f6119281564babed0ff4ea7b7ee, type: 2}
+    estimatedUnits: 0.25
+    offenseUnits: 0.25
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCE58\uBA85\uD0C0\uC728+5% \xD7\uAE30\uBCF8 \uCD94\uAC00\uCE58\uBA85\uD53C\uD57450%
+      /10% = 0.25U. \uBB34\uC791\uC704 \uACE0\uC810\uC774 \uC544\uB2C8\uB77C \uAE30\uB300
+      \uD53C\uD574."
+  - content: {fileID: 11400000, guid: abfff0d59ecdb93408da9cc31666a83a, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.1
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uAE30\uBCF8 \uC6CC\uB9AC\uC5B4 \uCE58\uBA85\uD0C0\uC7280: \uC989\uC2DC
+      \uD53C\uD5740. \uC608\uB9AC\uD55C \uAC10\uAC01 1\uC911\uCCA9 \uB3D9\uBC18 \uC2DC
+      5%\xD7\uCD94\uAC0015%/10%=0.075U. \uC120\uD589 \uC870\uAC74\uC744 \uACF5\uAE09
+      \uC131\uC7A5\uC73C\uB85C \uACFC\uC0B0\uC815\uD558\uC9C0 \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: b2fff78e36118a146a86277c7df9f15c, type: 2}
+    estimatedUnits: 1.75
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 1.75
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCD5C\uB300\uAC00\uB4DC25\xD7\uC720\uD6A8\uC0AC\uC6A970% /10. \uB9E4
+      \uC804\uD22C \uCD08\uAE30\uD654\uB418\uB294 \uAC00\uB4DC \uC5EC\uC720; \uCD5C\uB300HP
+      \uC99D\uAC00\uC640 \uBCC4\uB3C4 \uCD95."
+  - content: {fileID: 11400000, guid: f8a52808ea4fe1b499d4d9597a77a39d, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 1
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uBCA0\uAE30 \uB3C4\uB2EC\uAC70\uB9AC100. \uC57D\uC810/\uB2E4\uC911 \uD0C0\uACA9
+      \uC811\uADFC\uC131; \uC2E4\uC81C \uC801\uC911 \uC131\uACF5\uB960 \uAC1C\uC120\uC740
+      \uC720\uD2F8 \uCD95, \uD655\uC815 \uD53C\uD574 \uBCF4\uB108\uC2A4\uB85C \uAC00\uC0B0
+      \uC548\uD568."
+  - content: {fileID: 11400000, guid: 3c3cec8d398472e44b428e973ce0531d, type: 2}
+    estimatedUnits: 0.4091
+    offenseUnits: 0.4091
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.3
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCC28\uC9C0 \uC900\uBE44\uC2DC\uAC0412% \uAC10\uC18C: \uCC28\uC9C0 \uC2DC\uAC04\uBE44\uC91130%\xD7(1/0.88-1)/10%.
+      \uC57D\uC810 \uAE30\uD68C \uC5EC\uC720\uB294 \uBCC4\uB3C4 \uC720\uD2F8."
+  - content: {fileID: 11400000, guid: 1790a073e65483d43b161f308fd1fdc6, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 1
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uB450\uC190\uC73C\uB85C \uAC00\uB4DC+\uCC28\uC9C0\uB97C \uC815\uD655\uD788
+      \uD558\uB294 \uAE30\uC900\uC740 \uCD94\uAC00 \uBC29\uC5B40. \uD55C\uC190 \uC870\uC791
+      \uD3B8\uC758/\uC2E4\uC218 \uBC29\uC9C0; \uB3C5\uB9BD\uC801\uC778 \uCD5C\uB300HP
+      \uC131\uC7A5\uC73C\uB85C \uAC04\uC8FC\uD558\uC9C0 \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: bbb169515e639694f91f95279b7649f1, type: 2}
+    estimatedUnits: 1.35
+    offenseUnits: 1.35
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCC28\uC9C0\uD53C\uD574 +45% \xD7\uCC28\uC9C0\uBE44\uC91130% /10%."
+  - content: {fileID: 11400000, guid: 7146f76c12aeaa8419f7758fdbbd03cc, type: 2}
+    estimatedUnits: 1.75
+    offenseUnits: 1.75
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uAC00\uB85C \uC785\uB82550%\xD7\uCD94\uAC00\uD53C\uD57450%\xD7\uC9C1\uAC01
+      \uCD94\uAC00\uC120 \uC801\uC911\uB96070% /10%. \uD615\uC0C1/\uB2E4\uC911\uC801\uC5D0
+      \uB530\uB77C \uBCC0\uB3D9."
+  - content: {fileID: 11400000, guid: 8b38d71c4c546b8499683289e1a94130, type: 2}
+    estimatedUnits: 2.4
+    offenseUnits: 2.4
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC870\uC815 \uD6C4 \uAE38\uC774100\uB2F96%. \uB300\uD45C \uAE38\uC774400\uC5D0\uC11C
+      +24% /10%=2.4U; \uAE38\uC7741000\uC5D0\uC11C\uB2946U. \uAE34 \uC81C\uC2A4\uCC98
+      \uBE4C\uB4DC\uC758 \uACE0\uC810\uC740 \uBCC4\uB3C4 \uAE30\uB85D."
+  - content: {fileID: 11400000, guid: bb3d9ecf68b44c6478905481218fa5f6, type: 2}
+    estimatedUnits: 0.9
+    offenseUnits: 0.9
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCC28\uC9C0\uBE44\uC91130%\xD72\uB2E8 \uC0AC\uC6A930%\xD7\uCD94\uAC00100%
+      /10%. \uCD94\uAC00 \uC900\uBE440.75\uCD08\uC640 \uACF5\uACA9 \uAE30\uD68C \uC0C1\uC2E4
+      \uB54C\uBB38\uC5D0 \uB9E4 \uCC28\uC9C02\uBC30\uB85C \uAC00\uC0B0 \uC548\uD568."
+  - content: {fileID: 11400000, guid: 85821ab2f3c42cd439b52ec961737605, type: 2}
+    estimatedUnits: 1.2375
+    offenseUnits: 1.2375
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.3
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uB0B4\uB824\uBCA0\uAE3025%\xD7\uCD94\uAC0055%\xD7\uD68C\uC804\uB41C
+      \uC120 \uC801\uC911\uB96090% /10%. \uBC29\uD5A5 \uD544\uD130\uC640 \uCD94\uAC00\uD0C0
+      \uC7AC\uADC0 \uC81C\uC678."
+  - content: {fileID: 11400000, guid: cecaad1338cd0c945a1e6daf10d27360, type: 2}
+    estimatedUnits: 1.05
+    offenseUnits: 1.05
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC77C\uBC18\uD53C\uD57415%\xD7\uD3C9\uD0C0\uBE44\uC91170% /10%."
+  - content: {fileID: 11400000, guid: c7757e7088fc99747a61848609745a55, type: 2}
+    estimatedUnits: 1.12
+    offenseUnits: 0
+    healthUnits: 1.12
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C OnKill \uD68C\uBCF57 \uBCF5\uAD6C. \uAE30\uC9001.6\uB9C8\uB9AC
+      \uCC98\uCE58\uB2F911.2HP/10. \uCD5C\uB300HP \uC81C\uD55C/\uACFC\uD68C\uBCF5\uC73C\uB85C
+      \uC2E4\uD6A8\uB294 \uAC10\uC18C\uD558\uBA70 \uBCF4\uC2A4 \uB2E8\uC77C\uC804\uC7400.7U."
+  - content: {fileID: 11400000, guid: 384add845b082e447b11f3a54782ccec, type: 2}
+    estimatedUnits: 0.625
+    offenseUnits: 0.625
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\uC5D0 HP\uD53C\uACA91\uD68C, 2.5\uCD08 \uCD94\uAC00\uD53C\uD57450%:
+      \uC9C0\uC18D\uBE44\uC91112.5%\xD750% /10%. \uBB34\uD53C\uACA9 \uAE30\uC9000U;
+      \uD53C\uD574\uB97C \uACF5\uC9DC \uC131\uC7A5\uC73C\uB85C \uCDE8\uAE09\uD558\uC9C0
+      \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: ababf9fb9330ee7408112904d492c5a0, type: 2}
+    estimatedUnits: 1.1879
+    offenseUnits: 1.1879
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08 \uAC00\uB4DC4\uD68C\xD7\uAE30\uBCF8\uC77C\uBC18\uD53C\uD57414\uC75870%
+      \uBC18\uACA9 /330\uAE30\uC900\uD53C\uD574 /10%."
+  - content: {fileID: 11400000, guid: 28e5f569230b63a4291eed5f5613b62f, type: 2}
+    estimatedUnits: 2.9545
+    offenseUnits: 2.9545
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uBE44\uC5B4\uC788\uB358 \uB2A5\uB825\uC744 \uC124\uBA85\uB300\uB85C
+      \uBCF5\uAD6C. \uC77C\uBC18\uD53C\uD574+20%\uC758 \uAC00\uC911\uD5691.14, \uCFE8\uD0C0\uC7840.88\uBC30:
+      (1.14/0.88-1)/10%=2.955U."
+  - content: {fileID: 11400000, guid: 9f84148f5c3b03a49be238dd92dd0834, type: 2}
+    estimatedUnits: 1.4
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 1.4
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08 \uC57D\uC810 \uD30C\uAD342\uD68C\xD710\uAC00\uB4DC\xD7\uC720\uD6A8\uC0AC\uC6A970%
+      /10. \uC774\uBBF8 \uAC00\uB4DC\uAC00 \uAC00\uB4DD \uCC28\uBA740."
+  - content: {fileID: 11400000, guid: ecae3d71d1193ae42aa4b08d5e21a85c, type: 2}
+    estimatedUnits: 0.64
+    offenseUnits: 0
+    healthUnits: 0.64
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uAE30\uC9001.6\uB9C8\uB9AC \uCC98\uCE58\xD7HP4 /10. HP \uD68C\uBCF5\uC774\uBA70
+      \uCD5C\uB300HP\uB098 \uAC00\uB4DC\uAC00 \uC544\uB2D8."
+  - content: {fileID: 11400000, guid: 91096724db27cbd46a809ba41a5cd5bd, type: 2}
+    estimatedUnits: 2.8
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 2.8
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uD68C \uBB34\uAE30 \uC801\uC911\xD7\uAC00\uB4DC2\xD7\uC720\uD6A8\uC0AC\uC6A970%
+      /10. \uB2E4\uC911\uC801 \uC99D\uAC00/\uACFC\uD68C\uBCF5\uC5D0 \uBBFC\uAC10."
+  - content: {fileID: 11400000, guid: 11edbdaf110eebe4e89c37f792929e7c, type: 2}
+    estimatedUnits: 1.0303
+    offenseUnits: 1.0303
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08 \uAC00\uB4DC4\uD68C\xD7\uB300\uD45C\uC18C\uBAA817\xD7\uC800\uC7A550%=34\uCD94\uAC00\uD53C\uD574
+      /330 /10%. \uAC00\uB4DC \uC18C\uBAA8 \uC790\uCCB4\uB97C \uCD94\uAC00 \uBC29\uC5B4\uB85C
+      \uC911\uBCF5 \uAC00\uC0B0 \uC548\uD568."
+  - content: {fileID: 11400000, guid: a7e00142310f8114c86ceda0674924c0, type: 2}
+    estimatedUnits: 4.35
+    offenseUnits: 2.25
+    healthUnits: 0
+    guardUnits: 2.1
+    utilityUnits: 1
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "100ms \uD37C\uD399\uD2B8 \uAC00\uB4DC \uC131\uACF5 \uAC00\uC815: \uD53C\uD57430%
+      \uBC84\uD504 \uC720\uD6A875%\u21922.25U; \uC808\uAC10\uAC00\uB4DC30\xD7\uC720\uD6A870%/10\u21922.1U.
+      \uC131\uACF5\uB9600\uC774\uBA74 \uB458\uB2E40. \uACE0\uC219\uB828 \uACE0\uC810."
+  - content: {fileID: 11400000, guid: 5b143bcd15a58ae4ba1b94c554e44884, type: 2}
+    estimatedUnits: 0.8
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0.8
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uB0B4\uB824\uCE58\uAE30 \uC9C0\uC5F00.55\uCD08\uB85C \uAE30\uC90020\uCD08\uC5D0
+      \uC77C\uBC18\uD0C0 \uC57D1\uD68C \uAC10\uC18C, \uD574\uB2F9\uAC00\uB4DC17\xD7\uC2E4\uD6A847%/10.
+      \uC900\uBE44 \uC911\uC778 \uC77C\uBC18\uD0C0\uC5D0\uB9CC \uC720\uD6A8, \uAC15\uD0C0
+      \uCDE8\uC18C\uB85C \uC624\uC0B0 \uC548\uD568."
+  - content: {fileID: 11400000, guid: 96a68a45b0d29d54c948bde029ff2f8d, type: 2}
+    estimatedUnits: 3.61
+    offenseUnits: 3.61
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC62C\uB824\uCE58\uAE30 \uC0AC\uC6A935%: 1.35/0.5\xD7.35 +0.8/1.25\xD7.65=1.361\uBC30\u21923.61U.
+      \uC62C\uB824\uCE58\uAE30\uB9CC \uC131\uB9BD\uD558\uB294 \uB2E8\uC77C\uC801
+      \uACE0\uC81017U\uC640 \uBC29\uD5A5 \uC81C\uC57D \uBCC4\uB3C4."
+  - content: {fileID: 11400000, guid: 97a1b223e4d0496498f2ba6d097f0c8c, type: 2}
+    estimatedUnits: 2.1618
+    offenseUnits: 2.1618
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uD604\uC7AC\uAC00\uB4DC \uD3C9\uADE024.5\xD715%=3.675 \uCD94\uAC00\uD53C\uD574
+      /\uAE30\uC900\uAC00\uC911\uBB34\uAE3017 /10%. \uAC00\uB4DC \uACE0\uAC08 \uC2DC
+      \uAC10\uC18C."
+  - content: {fileID: 11400000, guid: 7458b30418d3cea49b239a7dd0a592b1, type: 2}
+    estimatedUnits: 1.3576
+    offenseUnits: 1.3576
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.2
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "6\uAC00\uB4DC\uB2F92\uD68C\xD7\uCD5C\uB300\uAC00\uB4DC35\uC75840%\xD7\uB300\uC0C11.6
+      /330 /10%. \uB2E8\uC77C \uBCF4\uC2A4\uC5D0\uC11C\uB2941.6 \uB098\uB214; \uB9E4\uD0C0
+      \uBC1C\uB3D9 \uC544\uB2D8."
+  - content: {fileID: 11400000, guid: 225a150cf8a21b744870c151501ada94, type: 2}
+    estimatedUnits: 1.3977
+    offenseUnits: 1.3977
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.3
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uD30C\uC774\uC5B4\uBCFC\uD2B8 \uC2B5\uB4DD+\uAC00\uB4DC \uC2DC \uC8FC\uBB38
+      \uCFE8\uD0C0\uC784 \uAC10\uC18C. MP30/\uC7AC\uC0DD0.1\uC74020\uCD08 \uBBF8\uB9CC\uC5D0\uC11C3\uD68C
+      \uD55C\uACC4\uC774\uBBC0\uB85C \uCFE8\uAC10\uC73C\uB85C \uB124 \uBC88\uC9F8
+      \uBC1C\uB3D9\uC744 \uACF5\uC9DC \uC0B0\uC785\uD558\uC9C0 \uC54A\uC74C. (3\xD736\u22123\xD71.25\uCD08\xD716.5DPS)/330/10%=1.398U.
+      MP \uCD94\uAC00 \uC131\uC7A5/\uBC18\uC751\uD615 \uCFE8\uAC10 \uC120\uD0DD\uAD8C\uC740
+      \uBCC4\uB3C4."
+  - content: {fileID: 11400000, guid: 60b31cc5b4c3fe84e9bdc4710825d3c0, type: 2}
+    estimatedUnits: 3.57
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 3.57
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uCD5C\uB300\uAC00\uB4DC25\xD770%/10=1.75U; \uBE44\uAC00\uB4DC65%\xD7\uCD08\uB2F92\xD720\uCD08\xD770%/10=1.82U.
+      \uC790\uC5F0\uD68C\uBCF5\uC740 \uAC00\uB4DC \uC911 \uC801\uC6A9 \uC548\uB428."
+  - content: {fileID: 11400000, guid: ac76aa0162f15134c972625c8211bb98, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\xB7\uB2E8\uC77C\uB300\uC0C1 \uAE30\uC900: \uC5F0\uC1C4 \uBC88\uAC1C
+      \uD53C\uD57414, MP8, \uCFE8\uD0C0\uC78410\uCD08, \uC601\uCC3D0.4\uCD08. MP30/\uC7AC\uC0DD0.1\uC758
+      20\uCD08 \uBBF8\uB9CC \uBC1C\uB3D9\uC2DC\uAC01 0.4/10.8\uCD08(2\uD68C). 1\uD68C\uB2F9
+      \uC601\uCC3D+\uBB34\uAE30 \uCFE8\uD0C0\uC784 1.25\uCD08\xD716.5DPS \uAE30\uD68C\uBE44\uC6A9
+      \uCC28\uAC10, \uC21C\uC774\uB4DD/330/10%. \uAD11\uC5ED/\uC81C\uC5B4\uB294 \uB2E8\uC77C\uBCF4\uC2A4
+      \uD655\uC815\uACF5\uACA9\uC73C\uB85C \uAC00\uC0B0\uD558\uC9C0 \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: b01d94afd7954b24c967b4ea208e81e5, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.8
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C \uD574\uB85C\uC6B4 \uBC84\uD504 \uC81C\uAC70. \uC0C1\uD0DC\uC774\uC0C1
+      \uC5C6\uB294 \uC804\uD22C\uC758 \uD655\uC815 \uACF5\uACA9\xB7\uD68C\uBCF5 \uC131\uC7A50U.
+      \uC720\uD574 \uD6A8\uACFC \uC885\uB958/\uB0A8\uC740 \uC2DC\uAC04\uC5D0 \uB530\uB77C
+      \uBC29\uC5B4 \uAC00\uCE58\uAC00 \uB2EC\uB77C\uC9C0\uB294 \uC120\uD0DD\uAD8C\uC774\uBA70
+      \uC784\uC758 \uACF5\uACA9 \uD558\uD55C\uC744 \uC8FC\uC9C0 \uC54A\uC74C. MP8/\uC601\uCC3D0.4\uCD08/\uCFE8\uD0C0\uC78410\uCD08."
+  - content: {fileID: 11400000, guid: d69a1f5a2b427f84dbb9d8f5e476f49b, type: 2}
+    estimatedUnits: 1.3977
+    offenseUnits: 1.3977
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\xB7\uB2E8\uC77C\uB300\uC0C1 \uAE30\uC900: \uD30C\uC774\uC5B4\uBCFC\uD2B8
+      \uD53C\uD57436, MP8, \uCFE8\uD0C0\uC7844\uCD08, \uC601\uCC3D0.4\uCD08. MP30/\uC7AC\uC0DD0.1\uC758
+      20\uCD08 \uBBF8\uB9CC \uBC1C\uB3D9\uC2DC\uAC01 0.4/4.8/9.2\uCD08(3\uD68C).
+      1\uD68C\uB2F9 \uC601\uCC3D+\uBB34\uAE30 \uCFE8\uD0C0\uC784 1.25\uCD08\xD716.5DPS
+      \uAE30\uD68C\uBE44\uC6A9 \uCC28\uAC10, \uC21C\uC774\uB4DD/330/10%. \uAD11\uC5ED/\uC81C\uC5B4\uB294
+      \uB2E8\uC77C\uBCF4\uC2A4 \uD655\uC815\uACF5\uACA9\uC73C\uB85C \uAC00\uC0B0\uD558\uC9C0
+      \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: b1481ed9aa8691045a13ee704a14fb3f, type: 2}
+    estimatedUnits: 1.2955
+    offenseUnits: 1.2955
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.2
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C 10\uCD08 \uBC84\uD504\uC758 \uC801\uC911\uB2F9 \uD654\uC5FC4+\uD654\uC0C1(\uCD08\uB2F9
+      \uBC84\uD504\uAC121, 4\uCD08 \uAC31\uC2E0). 20\uCD08 2\uD68C \uC601\uCC3D,
+      \uC2E4\uC81C \uBC84\uD504 \uAC00\uB3D919.2\uCD08. \uC601\uCC3D\uC73C\uB85C
+      \uC904\uC5B4\uB4E0 \uC720\uD6A8 \uBB34\uAE30\uC801\uC91117\uD68C\uC640 \uD654\uC0C116\uD2F1\uC774\uB77C\uB294
+      \uBA85\uC2DC \uAC00\uC815: (17\xD74+16\u22122\xD71.25\xD716.5)/330/10%. \uB2E4\uC911\uC801/\uC0C1\uD0DC
+      \uC911\uCCA9 \uACE0\uC810 \uC81C\uC678."
+  - content: {fileID: 11400000, guid: 8b180d1ec62d65140a1044ac85d42860, type: 2}
+    estimatedUnits: 0.8106
+    offenseUnits: 0.8106
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.7
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C 10\uCD08 \uBC84\uD504\uC758 \uC801\uC911\uB2F9 \uB0C9\uAE304+2\uCD08
+      \uB454\uD654 \uAC31\uC2E0. 20\uCD08 2\uD68C, \uC720\uD6A8 \uBB34\uAE30\uC801\uC91117\uD68C
+      \uAC00\uC815: (17\xD74\u22122\xD71.25\xD716.5)/330/10%. \uB454\uD654\uC758
+      \uACF5\uACA9 \uC9C0\uC5F0/\uC57D\uC810 \uC5EC\uC720\uB294 \uC720\uD2F8\uB85C
+      \uBD84\uB9AC\uD558\uBA70 \uC784\uC758 \uACF5\uACA90.8U \uD558\uD55C \uC5C6\uC74C."
+  - content: {fileID: 11400000, guid: 714b77bc29965674c874de59392b9a73, type: 2}
+    estimatedUnits: 0.8106
+    offenseUnits: 0.8106
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.4
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C 10\uCD08 \uBC84\uD504\uC758 \uC801\uC911\uB2F9 \uBC88\uAC1C4\uC640
+      \uC8FC\uBCC0 \uB2E4\uB978 \uC801\uC5D0\uAC8C2. \uB2E8\uC77C\uBCF4\uC2A4/20\uCD082\uD68C/\uC720\uD6A817\uC801\uC911:
+      (17\xD74\u22122\xD71.25\xD716.5)/330/10%. \uCD94\uAC00 \uC801 0.6\uBA85 \uAC00\uC815
+      \uC2DC 20.4\uD53C\uD574=0.618U\uB97C \uB354\uD560 \uC218 \uC788\uC73C\uB098
+      \uB2E8\uC77C \uAE30\uC900 \uACF5\uAE09\uC5D0\uB294 \uBBF8\uC0B0\uC785."
+  - content: {fileID: 11400000, guid: c279b61c169ff8b42a8819d9aa8df8a8, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\xB7\uB2E8\uC77C\uB300\uC0C1 \uAE30\uC900: \uC5D0\uB108\uC9C0
+      \uBCFC\uD2B8 \uD53C\uD57417, MP8, \uCFE8\uD0C0\uC7846\uCD08, \uC601\uCC3D0.4\uCD08.
+      MP30/\uC7AC\uC0DD0.1\uC758 20\uCD08 \uBBF8\uB9CC \uBC1C\uB3D9\uC2DC\uAC01 0.4/6.8/13.2\uCD08(3\uD68C).
+      1\uD68C\uB2F9 \uC601\uCC3D+\uBB34\uAE30 \uCFE8\uD0C0\uC784 1.25\uCD08\xD716.5DPS
+      \uAE30\uD68C\uBE44\uC6A9 \uCC28\uAC10, \uC21C\uC774\uB4DD/330/10%. \uAD11\uC5ED/\uC81C\uC5B4\uB294
+      \uB2E8\uC77C\uBCF4\uC2A4 \uD655\uC815\uACF5\uACA9\uC73C\uB85C \uAC00\uC0B0\uD558\uC9C0
+      \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: c3b4cfaa851b1d341af693c62e38624f, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\xB7\uB2E8\uC77C\uB300\uC0C1 \uAE30\uC900: \uD654\uC5FC\uD3ED\uBC1C
+      \uD53C\uD57420, MP12, \uCFE8\uD0C0\uC78410\uCD08, \uC601\uCC3D0.4\uCD08. MP30/\uC7AC\uC0DD0.1\uC758
+      20\uCD08 \uBBF8\uB9CC \uBC1C\uB3D9\uC2DC\uAC01 0.4/10.8\uCD08(2\uD68C). 1\uD68C\uB2F9
+      \uC601\uCC3D+\uBB34\uAE30 \uCFE8\uD0C0\uC784 1.25\uCD08\xD716.5DPS \uAE30\uD68C\uBE44\uC6A9
+      \uCC28\uAC10, \uC21C\uC774\uB4DD/330/10%. \uAD11\uC5ED/\uC81C\uC5B4\uB294 \uB2E8\uC77C\uBCF4\uC2A4
+      \uD655\uC815\uACF5\uACA9\uC73C\uB85C \uAC00\uC0B0\uD558\uC9C0 \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: 4a9c065cd4932c949b660f4c92d65e7d, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\xB7\uB2E8\uC77C\uB300\uC0C1 \uAE30\uC900: \uC11C\uB9AC \uD30C\uB3D9
+      \uD53C\uD57412, MP8, \uCFE8\uD0C0\uC7849\uCD08, \uC601\uCC3D0.4\uCD08. MP30/\uC7AC\uC0DD0.1\uC758
+      20\uCD08 \uBBF8\uB9CC \uBC1C\uB3D9\uC2DC\uAC01 0.4/9.8/19.2\uCD08(3\uD68C).
+      1\uD68C\uB2F9 \uC601\uCC3D+\uBB34\uAE30 \uCFE8\uD0C0\uC784 1.25\uCD08\xD716.5DPS
+      \uAE30\uD68C\uBE44\uC6A9 \uCC28\uAC10, \uC21C\uC774\uB4DD/330/10%. \uAD11\uC5ED/\uC81C\uC5B4\uB294
+      \uB2E8\uC77C\uBCF4\uC2A4 \uD655\uC815\uACF5\uACA9\uC73C\uB85C \uAC00\uC0B0\uD558\uC9C0
+      \uC54A\uC74C."
+  - content: {fileID: 11400000, guid: 585284c7ee0dd32499d7e1d51d6d888e, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.5
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C 7\uCD08 \uD45C\uC2DD, \uB2E4\uC74C \uBB34\uAE30\uD53C\uD57430%\uB97C
+      \uC8FC\uBCC0 \uB2E4\uB978 \uC801\uC5D0\uAC8C \uC804\uB2EC\uD558\uACE0 \uC18C\uBA78.
+      \uB2E8\uC77C\uB300\uC0C10\uD53C\uD574. 20\uCD083\uD68C\xB7\uB300\uD45C \uB2E4\uC74C\uBB34\uAE3017\xB7\uCD94\uAC00\uC8010.6\uC774\uC5B4\uB3C49.18\uD53C\uD574\uB85C
+      \uC601\uCC3D+\uACF5\uACA9 \uCFE8\uD0C0\uC784 \uAE30\uD68C\uBE44\uC6A961.875\uBCF4\uB2E4
+      \uC791\uC74C. \uB2E4\uC74C \uCC28\uC9C0/\uAD11\uC5ED \uBE4C\uB4DC \uC120\uD0DD\uAD8C\uC774\uBA70
+      \uD655\uC815 \uACF5\uACA9 \uC131\uC7A50U."
+  - content: {fileID: 11400000, guid: 6d8855c11941c4944a2ad2a78ba14935, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0.6
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "\uC2E4\uC81C 10\uCD08/2\uCD08\uB9C8\uB2E4 \uB3C51\uC911\uCCA9, \uB3C5\uC7402\uCD08\uB9C8\uB2E4
+      \uC911\uCCA9\uB2F9 \uBC84\uD504\uAC121\uD53C\uD574\xB78\uCD08 \uAC31\uC2E0\xB7\uCD5C\uB3008\uC911\uCCA9.
+      MP10\xB7\uCFE8\uD0C0\uC78412\xB7\uC601\uCC3D0.4\uB85C20\uCD082\uD68C. \uCCAB
+      \uC548\uAC1C\uC7585\uC911\uCCA9 \uC9C0\uC18D\uACFC \uB2E4\uC74C \uC548\uAC1C
+      \uC77C\uBD80\uAE4C\uC9C0 \uBCF4\uC218\uC80141\uD53C\uD574\uB97C \uC138\uBA74
+      \uC601\uCC3D+\uCFE8\uD0C0\uC784 \uAE30\uD68C\uBE44\uC6A941.25\uC640 \uBE44\uC2B7\uD574
+      \uD655\uC815\uACF5\uACA90U. \uC624\uB798 \uC0DD\uC874\uD558\uB294 \uC801/\uB454\uD654/\uB3C5
+      \uC2DC\uB108\uC9C0\uB294 \uBCC4\uB3C4 \uC0C1\uD5A5 \uB9E5\uB77D."
+  - content: {fileID: 11400000, guid: 68b3a60fc0acc794b80d7c2764c80b05, type: 2}
+    estimatedUnits: 0
+    offenseUnits: 0
+    healthUnits: 0
+    guardUnits: 0
+    utilityUnits: 0
+    assumedUptime: 1
+    needsDesignerReview: 0
+    basis: "20\uCD08\xB7\uB2E8\uC77C\uB300\uC0C1 \uAE30\uC900: \uC2A4\uD30C\uD06C
+      \uD53C\uD57413, MP8, \uCFE8\uD0C0\uC7845.5\uCD08, \uC601\uCC3D0.4\uCD08. MP30/\uC7AC\uC0DD0.1\uC758
+      20\uCD08 \uBBF8\uB9CC \uBC1C\uB3D9\uC2DC\uAC01 0.4/6.3/12.2\uCD08(3\uD68C).
+      1\uD68C\uB2F9 \uC601\uCC3D+\uBB34\uAE30 \uCFE8\uD0C0\uC784 1.25\uCD08\xD716.5DPS
+      \uAE30\uD68C\uBE44\uC6A9 \uCC28\uAC10, \uC21C\uC774\uB4DD/330/10%. \uAD11\uC5ED/\uC81C\uC5B4\uB294
+      \uB2E8\uC77C\uBCF4\uC2A4 \uD655\uC815\uACF5\uACA9\uC73C\uB85C \uAC00\uC0B0\uD558\uC9C0
+      \uC54A\uC74C."

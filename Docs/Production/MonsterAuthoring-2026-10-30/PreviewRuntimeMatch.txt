@@ -1,0 +1,22 @@
+PASS live:skeleton actual encounter is charging.
+PASS live:skeleton Ready painting/layout match within the game's pixel snapping; max logical-unit difference=0.4328476
+PASS live:skeleton artwork geometry matches before screen pixel snapping; max difference=4.315837E-05
+PASS live:skeleton same number of live weak-point UI elements.
+PASS live:skeleton target 0 collision center/radius match game.
+PASS live:skeleton target 0 visible UI center/size match game.
+PASS live:skeleton target 1 collision center/radius match game.
+PASS live:skeleton target 1 visible UI center/size match game.
+PASS live:skeleton COMPLETE
+PASS live:boss actual encounter is charging.
+PASS live:boss Ready painting/layout match within the game's pixel snapping; max logical-unit difference=0.3677326
+PASS live:boss artwork geometry matches before screen pixel snapping; max difference=0.0001023591
+PASS live:boss same number of live weak-point UI elements.
+PASS live:boss target 0 collision center/radius match game.
+PASS live:boss target 0 visible UI center/size match game.
+PASS live:boss target 1 collision center/radius match game.
+PASS live:boss target 1 visible UI center/size match game.
+PASS live:boss target 2 collision center/radius match game.
+PASS live:boss target 2 visible UI center/size match game.
+PASS live:boss target 3 collision center/radius match game.
+PASS live:boss target 3 visible UI center/size match game.
+PASS live:boss COMPLETE

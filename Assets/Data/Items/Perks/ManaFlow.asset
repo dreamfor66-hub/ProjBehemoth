@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ManaFlow
   displayName: "\uB9C8\uB825 \uC21C\uD658"
   description: "\uCD08\uB2F9 MP \uD68C\uBCF5\uB7C9 +0.05"
-  icon: {fileID: 21300000, guid: 99028a0b6c145da6844258a39646beae, type: 3}
+  icon: {fileID: 21300000, guid: aad312ba3eb28694cbb933638b91b235, type: 3}
   scope: 0
   exclusiveCharacter: 0
   offerGroup: {fileID: 11400000, guid: 630ec376196d442d90c7aa22cd9a1953, type: 2}

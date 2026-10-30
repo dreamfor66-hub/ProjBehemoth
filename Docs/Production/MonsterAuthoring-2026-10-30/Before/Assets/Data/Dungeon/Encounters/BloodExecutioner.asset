@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: BloodExecutioner
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.bloodexecutioner.displayname
+    lastText: "\uD54F\uBE5B \uBC31\uC791"
+  - propertyPath: hint
+    key: data.encounterdata.bloodexecutioner.hint
+    lastText: "\uBB34\uAE30 \uACF5\uACA9 \uB2E4\uC12F \uBC88\uC744 \uB9DE\uC744 \uB54C\uB9C8\uB2E4
+      \uB2E4\uC74C \uACF5\uACA9\uC774 \uBE68\uB77C\uC9C4\uB2E4. \uC57D\uC810 \uD30C\uAD34\uB85C
+      \uD750\uB984\uC744 \uB04A\uC790."
+  textOwnerGuid: 96cb453d191437d4499fd1f332f5b293
+  id: BloodExecutioner
+  displayName: "\uD54F\uBE5B \uBC31\uC791"
+  hint: "\uBB34\uAE30 \uACF5\uACA9 \uB2E4\uC12F \uBC88\uC744 \uB9DE\uC744 \uB54C\uB9C8\uB2E4
+    \uB2E4\uC74C \uACF5\uACA9\uC774 \uBE68\uB77C\uC9C4\uB2E4. \uC57D\uC810 \uD30C\uAD34\uB85C
+    \uD750\uB984\uC744 \uB04A\uC790."
+  category: 8
+  members:
+  - monster: {fileID: 11400000, guid: e839e9abbb14d7f42b4d17932c11d3f7, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

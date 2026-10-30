@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ManaVessel
   displayName: "\uB9C8\uB825 \uADF8\uB987"
   description: "\uCD5C\uB300 MP +3"
-  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
+  icon: {fileID: 21300000, guid: 9a222a94072ea584da47fe03cd8d26c9, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

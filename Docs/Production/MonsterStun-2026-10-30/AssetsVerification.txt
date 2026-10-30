@@ -1,0 +1,24 @@
+PASS AlarmHound-Stunned valid saved native frame
+PASS ArmoredExecutioner-Stunned valid saved native frame
+PASS BellKeeper-Stunned valid saved native frame
+PASS BroodKeeper-Stunned valid saved native frame
+PASS Data_Monster_B1_Boss_MazeGuardian-Stunned valid saved native frame
+PASS Data_Monster_B1_Elite_Minotaur-Stunned valid saved native frame
+PASS Data_Monster_B1_Minion_Bat-Stunned valid saved native frame
+PASS Data_Monster_B1_Minion_Leech-Stunned valid saved native frame
+PASS Data_Monster_B1_Minion_Skeleton-Stunned valid saved native frame
+PASS MirrorKnight-Stunned valid saved native frame
+PASS OrbitBat-Stunned valid saved native frame
+PASS TunnelRat-Stunned valid saved native frame
+PASS Data/Combat/Monsters/AlarmHound.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/ArmoredExecutioner.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/BellKeeper.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/BroodKeeper.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/MirrorKnight.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/OrbitBat.asset MonsterData bytes unchanged during stun installation
+PASS Data/Combat/Monsters/TunnelRat.asset MonsterData bytes unchanged during stun installation

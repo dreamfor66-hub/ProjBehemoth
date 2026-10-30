@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ConcentratedVenom
   displayName: "\uB18D\uCD95 \uB3C5\uC561"
   description: "\uB3C5 \uD53C\uD574 +15%"
-  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
+  icon: {fileID: 21300000, guid: 2ef3e0b8bf080474fb569185a1f29ec6, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

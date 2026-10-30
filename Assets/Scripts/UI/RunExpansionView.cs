@@ -23,7 +23,7 @@ namespace DungeonSlash
         public EquipmentData PreviewItem;
         public string Requirements;
     }
-    public sealed class RunExpansionView : MonoBehaviour
+    public sealed partial class RunExpansionView : MonoBehaviour
     {
         public TextMeshProUGUI characterStatus;
         public TextMeshProUGUI stageTitle;
@@ -38,7 +38,7 @@ namespace DungeonSlash
         public Image modalIllustration;
         public ExpansionChoiceButton[] choices;
         public ExpansionChoiceButton[] compactChoices;
-        public ExpansionChoiceButton[] ActiveChoices => denseOptions ? compactChoices : choices;
+        public ExpansionChoiceButton[] ActiveChoices => portraitEvent && portraitChoices != null && portraitChoices.Length > 0 ? portraitChoices : denseOptions ? compactChoices : choices;
         private bool denseOptions;
         public Button returnButton;
         public Button previousPage, nextPage;
@@ -132,8 +132,11 @@ namespace DungeonSlash
             rect.anchoredPosition=new Vector2(-parent.rect.width*.5f+8,-parent.rect.height*.5f+8);
             rect.sizeDelta=new Vector2(Mathf.Round((parent.rect.width-16)*amount/4)*4,8);
         }
-        public void ShowModal(string title, string narrative, IEnumerable<PresentationChoice> options, Sprite illustration = null, bool compactOptions = false)
+        public void ShowModal(string title, string narrative, IEnumerable<PresentationChoice> options, Sprite illustration = null, bool compactOptions = false, bool illustratedEvent = false)
         {
+            RestoreStandardFraming();
+            portraitEvent = compact && illustratedEvent && illustration != null && portraitChoices != null && portraitChoices.Length > 0;
+            if(portraitChoices!=null)foreach(var choice in portraitChoices)choice.button.gameObject.SetActive(false);
             denseOptions=compact&&compactOptions&&compactChoices!=null&&compactChoices.Length>0;
             foreach(var choice in choices)choice.button.gameObject.SetActive(false);
             if(compactChoices!=null)foreach(var choice in compactChoices)choice.button.gameObject.SetActive(false);
@@ -177,6 +180,11 @@ namespace DungeonSlash
                 button.description.GetComponent<TypographyRoleBinding>()?.Apply();
                 button.icon.sprite = option.Icon; button.icon.color = Color.white; button.icon.enabled = option.Icon != null;
                 button.button.interactable = option.Enabled;
+                if(portraitEvent)
+                {
+                    button.title.color=option.Enabled?new Color32(224,212,182,255):new Color32(125,121,113,255);
+                    button.description.color=option.Enabled?new Color32(201,193,173,255):new Color32(125,121,113,255);
+                }
                 button.button.onClick.RemoveAllListeners(); button.button.onClick.AddListener(() => { HideModal(); option.Selected?.Invoke(); });
             }
             LayoutNarrative(list.Length);
@@ -189,7 +197,11 @@ namespace DungeonSlash
             var height = illustrated ? illustratedTextHeight : plainTextHeight;
             var centerY = illustrated ? illustratedTextY : plainTextY;
             var rect = (RectTransform)narrativeScroll.transform;
-            if (compact)
+            if (portraitEvent)
+            {
+                LayoutPortraitEvent(choiceCount, out height, out centerY);
+            }
+            else if (compact)
             {
                 var panel=modalTitle.rectTransform.parent as RectTransform;
                 var plainWidth=panel!=null?Mathf.Min(plainNarrativeWidth,panel.rect.width-80):plainNarrativeWidth;

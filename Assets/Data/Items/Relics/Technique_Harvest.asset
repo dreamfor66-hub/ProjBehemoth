@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Technique_Harvest
   displayName: "\uC0DD\uBA85 \uC218\uD655"
   description: "\uBAAC\uC2A4\uD130 \uCC98\uCE58 \uC2DC HP 4 \uD68C\uBCF5"
-  icon: {fileID: 21300000, guid: c72e4a158d8a5a0db48cd43f20c26565, type: 3}
+  icon: {fileID: 21300000, guid: 9ca37cc8dc0a9a141b5ac5bcc7d97901, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

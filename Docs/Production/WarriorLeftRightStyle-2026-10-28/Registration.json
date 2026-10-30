@@ -1,0 +1,54 @@
+[
+  {
+    "state": "Ready",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "sourceSize": [
+      1868,
+      842
+    ],
+    "registration": "full-canvas static resampling, no actor transform changes",
+    "preservedBladePixelsIdentical": true,
+    "bladeMask": {
+      "base": [
+        1040,
+        580
+      ],
+      "direction": [
+        -948,
+        180
+      ],
+      "start": 45,
+      "end": 1025,
+      "halfWidth": 75
+    }
+  },
+  {
+    "state": "Attack",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "sourceSize": [
+      1868,
+      842
+    ],
+    "registration": "full-canvas static resampling, no actor transform changes",
+    "preservedBladePixelsIdentical": true,
+    "bladeMask": {
+      "base": [
+        2040,
+        630
+      ],
+      "direction": [
+        760,
+        -270
+      ],
+      "start": 10,
+      "end": 850,
+      "halfWidth": 85
+    }
+  }
+]

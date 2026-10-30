@@ -1,0 +1,1102 @@
+Frozen pre-migration geometry vs current production assets. No balance suite.
+PASS AlarmHound all non-migrated stats / identity / portrait / text unchanged
+PASS AlarmHound exact collision union
+PASS AlarmHound footprint from lowest circle edge
+PASS AlarmHound orbit enabled state
+PASS AlarmHound Idle artwork quad delta=5.117954E-05 expected=(x:-191.54, y:-85.00, width:383.08, height:360.00) actual=(x:-191.54, y:-85.00, width:383.08, height:360.00)
+PASS AlarmHound Idle same pixels / crop
+PASS AlarmHound Idle header / HP unchanged 311 vs 311
+PASS AlarmHound Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS AlarmHound Ready artwork quad delta=7.629395E-06 expected=(x:-191.54, y:-85.00, width:383.08, height:327.08) actual=(x:-191.54, y:-85.00, width:383.08, height:327.08)
+PASS AlarmHound Ready same pixels / crop
+PASS AlarmHound Ready header / HP unchanged 311 vs 311
+PASS AlarmHound Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS AlarmHound Attack artwork quad delta=5.117954E-05 expected=(x:-191.54, y:-85.00, width:383.08, height:348.00) actual=(x:-191.54, y:-85.00, width:383.08, height:348.00)
+PASS AlarmHound Attack same pixels / crop
+PASS AlarmHound Attack header / HP unchanged 311 vs 311
+PASS AlarmHound Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS AlarmHound Dead artwork quad delta=0 expected=(x:-191.54, y:-85.00, width:383.08, height:208.92) actual=(x:-191.54, y:-85.00, width:383.08, height:208.92)
+PASS AlarmHound Dead same pixels / crop
+PASS AlarmHound Dead header / HP unchanged 311 vs 311
+PASS AlarmHound Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS AlarmHound attack 0 exact weak-point positions
+PASS AlarmHound attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AlarmHound attack 1 exact weak-point positions
+PASS AlarmHound attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AlarmHound preview coordinate roundtrip
+PASS ArmoredExecutioner all non-migrated stats / identity / portrait / text unchanged
+PASS ArmoredExecutioner exact collision union
+PASS ArmoredExecutioner footprint from lowest circle edge
+PASS ArmoredExecutioner orbit enabled state
+PASS ArmoredExecutioner Idle artwork quad delta=0 expected=(x:-266.07, y:-135.00, width:532.14, height:530.00) actual=(x:-266.07, y:-135.00, width:532.14, height:530.00)
+PASS ArmoredExecutioner Idle same pixels / crop
+PASS ArmoredExecutioner Idle header / HP unchanged 431 vs 431
+PASS ArmoredExecutioner Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS ArmoredExecutioner Ready artwork quad delta=0 expected=(x:-266.07, y:-135.00, width:532.14, height:527.00) actual=(x:-266.07, y:-135.00, width:532.14, height:527.00)
+PASS ArmoredExecutioner Ready same pixels / crop
+PASS ArmoredExecutioner Ready header / HP unchanged 431 vs 431
+PASS ArmoredExecutioner Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS ArmoredExecutioner Attack artwork quad delta=0 expected=(x:-266.07, y:-135.00, width:532.14, height:521.01) actual=(x:-266.07, y:-135.00, width:532.14, height:521.01)
+PASS ArmoredExecutioner Attack same pixels / crop
+PASS ArmoredExecutioner Attack header / HP unchanged 431 vs 431
+PASS ArmoredExecutioner Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS ArmoredExecutioner Dead artwork quad delta=0 expected=(x:-266.07, y:-135.00, width:532.14, height:297.54) actual=(x:-266.07, y:-135.00, width:532.14, height:297.54)
+PASS ArmoredExecutioner Dead same pixels / crop
+PASS ArmoredExecutioner Dead header / HP unchanged 431 vs 431
+PASS ArmoredExecutioner Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS ArmoredExecutioner attack 0 exact weak-point positions
+PASS ArmoredExecutioner attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS ArmoredExecutioner attack 1 exact weak-point positions
+PASS ArmoredExecutioner attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS ArmoredExecutioner preview coordinate roundtrip
+PASS AshCrow all non-migrated stats / identity / portrait / text unchanged
+PASS AshCrow exact collision union
+PASS AshCrow footprint from lowest circle edge
+PASS AshCrow orbit enabled state
+PASS AshCrow Idle artwork quad delta=0 expected=(x:-156.75, y:-99.50, width:313.50, height:313.50) actual=(x:-156.75, y:-99.50, width:313.50, height:313.50)
+PASS AshCrow Idle same pixels / crop
+PASS AshCrow Idle header / HP unchanged 271.25 vs 271.25
+PASS AshCrow Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshCrow Ready artwork quad delta=0 expected=(x:-156.75, y:-99.50, width:313.50, height:313.50) actual=(x:-156.75, y:-99.50, width:313.50, height:313.50)
+PASS AshCrow Ready same pixels / crop
+PASS AshCrow Ready header / HP unchanged 271.25 vs 271.25
+PASS AshCrow Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshCrow Attack artwork quad delta=0 expected=(x:-156.75, y:-99.50, width:313.50, height:313.50) actual=(x:-156.75, y:-99.50, width:313.50, height:313.50)
+PASS AshCrow Attack same pixels / crop
+PASS AshCrow Attack header / HP unchanged 271.25 vs 271.25
+PASS AshCrow Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshCrow Dead artwork quad delta=0 expected=(x:-156.75, y:-99.50, width:313.50, height:313.50) actual=(x:-156.75, y:-99.50, width:313.50, height:313.50)
+PASS AshCrow Dead same pixels / crop
+PASS AshCrow Dead header / HP unchanged 271.25 vs 271.25
+PASS AshCrow Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshCrow attack 0 exact weak-point positions
+PASS AshCrow attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AshCrow attack 1 exact weak-point positions
+PASS AshCrow attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AshCrow preview coordinate roundtrip
+PASS AshGeneral all non-migrated stats / identity / portrait / text unchanged
+PASS AshGeneral exact collision union
+PASS AshGeneral footprint from lowest circle edge
+PASS AshGeneral orbit enabled state
+PASS AshGeneral Idle artwork quad delta=0 expected=(x:-156.75, y:-96.00, width:313.50, height:313.50) actual=(x:-156.75, y:-96.00, width:313.50, height:313.50)
+PASS AshGeneral Idle same pixels / crop
+PASS AshGeneral Idle header / HP unchanged 281.5 vs 281.5
+PASS AshGeneral Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshGeneral Ready artwork quad delta=0 expected=(x:-156.75, y:-96.00, width:313.50, height:313.50) actual=(x:-156.75, y:-96.00, width:313.50, height:313.50)
+PASS AshGeneral Ready same pixels / crop
+PASS AshGeneral Ready header / HP unchanged 281.5 vs 281.5
+PASS AshGeneral Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshGeneral Attack artwork quad delta=0 expected=(x:-156.75, y:-96.00, width:313.50, height:313.50) actual=(x:-156.75, y:-96.00, width:313.50, height:313.50)
+PASS AshGeneral Attack same pixels / crop
+PASS AshGeneral Attack header / HP unchanged 281.5 vs 281.5
+PASS AshGeneral Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshGeneral Dead artwork quad delta=0 expected=(x:-156.75, y:-96.00, width:313.50, height:313.50) actual=(x:-156.75, y:-96.00, width:313.50, height:313.50)
+PASS AshGeneral Dead same pixels / crop
+PASS AshGeneral Dead header / HP unchanged 281.5 vs 281.5
+PASS AshGeneral Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS AshGeneral attack 0 exact weak-point positions
+PASS AshGeneral attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AshGeneral attack 1 exact weak-point positions
+PASS AshGeneral attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AshGeneral attack 2 exact weak-point positions
+PASS AshGeneral attack 2 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS AshGeneral preview coordinate roundtrip
+PASS BellKeeper all non-migrated stats / identity / portrait / text unchanged
+PASS BellKeeper exact collision union
+PASS BellKeeper footprint from lowest circle edge
+PASS BellKeeper orbit enabled state
+PASS BellKeeper Idle artwork quad delta=0 expected=(x:-270.00, y:-210.00, width:540.00, height:534.77) actual=(x:-270.00, y:-210.00, width:540.00, height:534.77)
+PASS BellKeeper Idle same pixels / crop
+PASS BellKeeper Idle header / HP unchanged 360.7657 vs 360.7657
+PASS BellKeeper Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BellKeeper Ready artwork quad delta=8.631674E-05 expected=(x:-270.00, y:-210.00, width:540.00, height:529.53) actual=(x:-270.00, y:-210.00, width:540.00, height:529.53)
+PASS BellKeeper Ready same pixels / crop
+PASS BellKeeper Ready header / HP unchanged 360.7657 vs 360.7657
+PASS BellKeeper Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BellKeeper Attack artwork quad delta=0 expected=(x:-270.00, y:-210.00, width:540.00, height:531.28) actual=(x:-270.00, y:-210.00, width:540.00, height:531.28)
+PASS BellKeeper Attack same pixels / crop
+PASS BellKeeper Attack header / HP unchanged 360.7657 vs 360.7657
+PASS BellKeeper Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BellKeeper Dead artwork quad delta=0 expected=(x:-270.00, y:-210.00, width:540.00, height:362.47) actual=(x:-270.00, y:-210.00, width:540.00, height:362.47)
+PASS BellKeeper Dead same pixels / crop
+PASS BellKeeper Dead header / HP unchanged 360.7657 vs 360.7657
+PASS BellKeeper Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BellKeeper attack 0 exact weak-point positions
+PASS BellKeeper attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS BellKeeper attack 1 exact weak-point positions
+PASS BellKeeper attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS BellKeeper preview coordinate roundtrip
+PASS BloodExecutioner all non-migrated stats / identity / portrait / text unchanged
+PASS BloodExecutioner exact collision union
+PASS BloodExecutioner footprint from lowest circle edge
+PASS BloodExecutioner orbit enabled state
+PASS BloodExecutioner Idle artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-101.75, width:313.50, height:313.50) actual=(x:-156.75, y:-101.75, width:313.50, height:313.50)
+PASS BloodExecutioner Idle same pixels / crop
+PASS BloodExecutioner Idle header / HP unchanged 271.75 vs 271.75
+PASS BloodExecutioner Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS BloodExecutioner Ready artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-101.75, width:313.50, height:313.50) actual=(x:-156.75, y:-101.75, width:313.50, height:313.50)
+PASS BloodExecutioner Ready same pixels / crop
+PASS BloodExecutioner Ready header / HP unchanged 271.75 vs 271.75
+PASS BloodExecutioner Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS BloodExecutioner Attack artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-101.75, width:313.50, height:313.50) actual=(x:-156.75, y:-101.75, width:313.50, height:313.50)
+PASS BloodExecutioner Attack same pixels / crop
+PASS BloodExecutioner Attack header / HP unchanged 271.75 vs 271.75
+PASS BloodExecutioner Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS BloodExecutioner Dead artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-101.75, width:313.50, height:313.50) actual=(x:-156.75, y:-101.75, width:313.50, height:313.50)
+PASS BloodExecutioner Dead same pixels / crop
+PASS BloodExecutioner Dead header / HP unchanged 271.75 vs 271.75
+PASS BloodExecutioner Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS BloodExecutioner attack 0 exact weak-point positions
+PASS BloodExecutioner attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS BloodExecutioner attack 1 exact weak-point positions
+PASS BloodExecutioner attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS BloodExecutioner preview coordinate roundtrip
+PASS BroodKeeper all non-migrated stats / identity / portrait / text unchanged
+PASS BroodKeeper exact collision union
+PASS BroodKeeper footprint from lowest circle edge
+PASS BroodKeeper orbit enabled state
+PASS BroodKeeper Idle artwork quad delta=1.525879E-05 expected=(x:-299.14, y:-155.00, width:598.28, height:580.74) actual=(x:-299.14, y:-155.00, width:598.28, height:580.74)
+PASS BroodKeeper Idle same pixels / crop
+PASS BroodKeeper Idle header / HP unchanged 471 vs 471
+PASS BroodKeeper Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BroodKeeper Ready artwork quad delta=0 expected=(x:-299.14, y:-155.00, width:598.28, height:581.23) actual=(x:-299.14, y:-155.00, width:598.28, height:581.23)
+PASS BroodKeeper Ready same pixels / crop
+PASS BroodKeeper Ready header / HP unchanged 471 vs 471
+PASS BroodKeeper Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BroodKeeper Attack artwork quad delta=1.525879E-05 expected=(x:-299.14, y:-155.00, width:598.28, height:590.00) actual=(x:-299.14, y:-155.00, width:598.28, height:590.00)
+PASS BroodKeeper Attack same pixels / crop
+PASS BroodKeeper Attack header / HP unchanged 471 vs 471
+PASS BroodKeeper Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BroodKeeper Dead artwork quad delta=0 expected=(x:-299.14, y:-155.00, width:598.28, height:374.17) actual=(x:-299.14, y:-155.00, width:598.28, height:374.17)
+PASS BroodKeeper Dead same pixels / crop
+PASS BroodKeeper Dead header / HP unchanged 471 vs 471
+PASS BroodKeeper Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS BroodKeeper attack 0 exact weak-point positions
+PASS BroodKeeper attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS BroodKeeper attack 1 exact weak-point positions
+PASS BroodKeeper attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS BroodKeeper preview coordinate roundtrip
+PASS CrystalSpider all non-migrated stats / identity / portrait / text unchanged
+PASS CrystalSpider exact collision union
+PASS CrystalSpider footprint from lowest circle edge
+PASS CrystalSpider orbit enabled state
+PASS CrystalSpider Idle artwork quad delta=0 expected=(x:-156.75, y:-114.75, width:313.50, height:313.50) actual=(x:-156.75, y:-114.75, width:313.50, height:313.50)
+PASS CrystalSpider Idle same pixels / crop
+PASS CrystalSpider Idle header / HP unchanged 242.75 vs 242.75
+PASS CrystalSpider Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS CrystalSpider Ready artwork quad delta=0 expected=(x:-156.75, y:-114.75, width:313.50, height:313.50) actual=(x:-156.75, y:-114.75, width:313.50, height:313.50)
+PASS CrystalSpider Ready same pixels / crop
+PASS CrystalSpider Ready header / HP unchanged 242.75 vs 242.75
+PASS CrystalSpider Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS CrystalSpider Attack artwork quad delta=0 expected=(x:-156.75, y:-114.75, width:313.50, height:313.50) actual=(x:-156.75, y:-114.75, width:313.50, height:313.50)
+PASS CrystalSpider Attack same pixels / crop
+PASS CrystalSpider Attack header / HP unchanged 242.75 vs 242.75
+PASS CrystalSpider Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS CrystalSpider Dead artwork quad delta=0 expected=(x:-156.75, y:-114.75, width:313.50, height:313.50) actual=(x:-156.75, y:-114.75, width:313.50, height:313.50)
+PASS CrystalSpider Dead same pixels / crop
+PASS CrystalSpider Dead header / HP unchanged 242.75 vs 242.75
+PASS CrystalSpider Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS CrystalSpider attack 0 exact weak-point positions
+PASS CrystalSpider attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS CrystalSpider attack 1 exact weak-point positions
+PASS CrystalSpider attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS CrystalSpider preview coordinate roundtrip
+PASS Data_Monster_B1_Boss_MazeGuardian all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B1_Boss_MazeGuardian exact collision union
+PASS Data_Monster_B1_Boss_MazeGuardian footprint from lowest circle edge
+PASS Data_Monster_B1_Boss_MazeGuardian orbit enabled state
+PASS Data_Monster_B1_Boss_MazeGuardian Idle artwork quad delta=3.051758E-05 expected=(x:-487.79, y:-250.00, width:975.59, height:491.88) actual=(x:-487.79, y:-250.00, width:975.59, height:491.88)
+PASS Data_Monster_B1_Boss_MazeGuardian Idle same pixels / crop
+PASS Data_Monster_B1_Boss_MazeGuardian Idle header / HP unchanged 286 vs 286
+PASS Data_Monster_B1_Boss_MazeGuardian Idle name size / typography unchanged (448.00, 40.00) vs (448.00, 40.00)
+PASS Data_Monster_B1_Boss_MazeGuardian Ready artwork quad delta=0 expected=(x:-487.79, y:-250.00, width:975.59, height:500.00) actual=(x:-487.79, y:-250.00, width:975.59, height:500.00)
+PASS Data_Monster_B1_Boss_MazeGuardian Ready same pixels / crop
+PASS Data_Monster_B1_Boss_MazeGuardian Ready header / HP unchanged 286 vs 286
+PASS Data_Monster_B1_Boss_MazeGuardian Ready name size / typography unchanged (448.00, 40.00) vs (448.00, 40.00)
+PASS Data_Monster_B1_Boss_MazeGuardian Attack artwork quad delta=3.051758E-05 expected=(x:-487.79, y:-250.00, width:975.59, height:479.65) actual=(x:-487.79, y:-250.00, width:975.59, height:479.65)
+PASS Data_Monster_B1_Boss_MazeGuardian Attack same pixels / crop
+PASS Data_Monster_B1_Boss_MazeGuardian Attack header / HP unchanged 286 vs 286
+PASS Data_Monster_B1_Boss_MazeGuardian Attack name size / typography unchanged (448.00, 40.00) vs (448.00, 40.00)
+PASS Data_Monster_B1_Boss_MazeGuardian Dead artwork quad delta=3.051758E-05 expected=(x:-487.79, y:-250.00, width:975.59, height:491.88) actual=(x:-487.79, y:-250.00, width:975.59, height:491.88)
+PASS Data_Monster_B1_Boss_MazeGuardian Dead same pixels / crop
+PASS Data_Monster_B1_Boss_MazeGuardian Dead header / HP unchanged 286 vs 286
+PASS Data_Monster_B1_Boss_MazeGuardian Dead name size / typography unchanged (448.00, 40.00) vs (448.00, 40.00)
+PASS Data_Monster_B1_Boss_MazeGuardian attack 0 exact weak-point positions
+PASS Data_Monster_B1_Boss_MazeGuardian attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Boss_MazeGuardian attack 1 exact weak-point positions
+PASS Data_Monster_B1_Boss_MazeGuardian attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Boss_MazeGuardian attack 2 exact weak-point positions
+PASS Data_Monster_B1_Boss_MazeGuardian attack 2 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Boss_MazeGuardian preview coordinate roundtrip
+PASS Data_Monster_B1_Elite_Minotaur all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B1_Elite_Minotaur exact collision union
+PASS Data_Monster_B1_Elite_Minotaur footprint from lowest circle edge
+PASS Data_Monster_B1_Elite_Minotaur orbit enabled state
+PASS Data_Monster_B1_Elite_Minotaur Idle artwork quad delta=0 expected=(x:-270.00, y:-200.00, width:540.00, height:539.13) actual=(x:-270.00, y:-200.00, width:540.00, height:539.13)
+PASS Data_Monster_B1_Elite_Minotaur Idle same pixels / crop
+PASS Data_Monster_B1_Elite_Minotaur Idle header / HP unchanged 377.7405 vs 377.7405
+PASS Data_Monster_B1_Elite_Minotaur Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Elite_Minotaur Ready artwork quad delta=0 expected=(x:-270.00, y:-200.00, width:540.00, height:541.74) actual=(x:-270.00, y:-200.00, width:540.00, height:541.74)
+PASS Data_Monster_B1_Elite_Minotaur Ready same pixels / crop
+PASS Data_Monster_B1_Elite_Minotaur Ready header / HP unchanged 377.7405 vs 377.7405
+PASS Data_Monster_B1_Elite_Minotaur Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Elite_Minotaur Attack artwork quad delta=0 expected=(x:-270.00, y:-200.00, width:540.00, height:486.48) actual=(x:-270.00, y:-200.00, width:540.00, height:486.48)
+PASS Data_Monster_B1_Elite_Minotaur Attack same pixels / crop
+PASS Data_Monster_B1_Elite_Minotaur Attack header / HP unchanged 377.7405 vs 377.7405
+PASS Data_Monster_B1_Elite_Minotaur Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Elite_Minotaur Dead artwork quad delta=0 expected=(x:-270.00, y:-200.00, width:540.00, height:311.99) actual=(x:-270.00, y:-200.00, width:540.00, height:311.99)
+PASS Data_Monster_B1_Elite_Minotaur Dead same pixels / crop
+PASS Data_Monster_B1_Elite_Minotaur Dead header / HP unchanged 377.7405 vs 377.7405
+PASS Data_Monster_B1_Elite_Minotaur Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Elite_Minotaur attack 0 exact weak-point positions
+PASS Data_Monster_B1_Elite_Minotaur attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Elite_Minotaur attack 1 exact weak-point positions
+PASS Data_Monster_B1_Elite_Minotaur attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Elite_Minotaur preview coordinate roundtrip
+PASS Data_Monster_B1_Minion_Bat all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B1_Minion_Bat exact collision union
+PASS Data_Monster_B1_Minion_Bat footprint from lowest circle edge
+PASS Data_Monster_B1_Minion_Bat orbit enabled state
+PASS Data_Monster_B1_Minion_Bat Idle artwork quad delta=0 expected=(x:-180.55, y:-113.68, width:361.10, height:358.80) actual=(x:-180.55, y:-113.68, width:361.10, height:358.80)
+PASS Data_Monster_B1_Minion_Bat Idle same pixels / crop
+PASS Data_Monster_B1_Minion_Bat Idle header / HP unchanged 281.116 vs 281.116
+PASS Data_Monster_B1_Minion_Bat Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Bat Ready artwork quad delta=0 expected=(x:-180.55, y:-113.68, width:361.10, height:331.40) actual=(x:-180.55, y:-113.68, width:361.10, height:331.40)
+PASS Data_Monster_B1_Minion_Bat Ready same pixels / crop
+PASS Data_Monster_B1_Minion_Bat Ready header / HP unchanged 281.116 vs 281.116
+PASS Data_Monster_B1_Minion_Bat Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Bat Attack artwork quad delta=0 expected=(x:-180.55, y:-113.68, width:361.10, height:337.45) actual=(x:-180.55, y:-113.68, width:361.10, height:337.45)
+PASS Data_Monster_B1_Minion_Bat Attack same pixels / crop
+PASS Data_Monster_B1_Minion_Bat Attack header / HP unchanged 281.116 vs 281.116
+PASS Data_Monster_B1_Minion_Bat Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Bat Dead artwork quad delta=0 expected=(x:-180.55, y:-113.68, width:361.10, height:229.01) actual=(x:-180.55, y:-113.68, width:361.10, height:229.01)
+PASS Data_Monster_B1_Minion_Bat Dead same pixels / crop
+PASS Data_Monster_B1_Minion_Bat Dead header / HP unchanged 281.116 vs 281.116
+PASS Data_Monster_B1_Minion_Bat Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Bat attack 0 exact weak-point positions
+PASS Data_Monster_B1_Minion_Bat attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Minion_Bat attack 1 exact weak-point positions
+PASS Data_Monster_B1_Minion_Bat attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Minion_Bat preview coordinate roundtrip
+PASS Data_Monster_B1_Minion_Leech all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B1_Minion_Leech exact collision union
+PASS Data_Monster_B1_Minion_Leech footprint from lowest circle edge
+PASS Data_Monster_B1_Minion_Leech orbit enabled state
+PASS Data_Monster_B1_Minion_Leech Idle artwork quad delta=0 expected=(x:-77.55, y:-40.79, width:155.10, height:150.69) actual=(x:-77.55, y:-40.79, width:155.10, height:150.69)
+PASS Data_Monster_B1_Minion_Leech Idle same pixels / crop
+PASS Data_Monster_B1_Minion_Leech Idle header / HP unchanged 148.1726 vs 148.1727
+PASS Data_Monster_B1_Minion_Leech Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Leech Ready artwork quad delta=1.144409E-05 expected=(x:-77.55, y:-40.79, width:155.10, height:152.96) actual=(x:-77.55, y:-40.79, width:155.10, height:152.96)
+PASS Data_Monster_B1_Minion_Leech Ready same pixels / crop
+PASS Data_Monster_B1_Minion_Leech Ready header / HP unchanged 148.1726 vs 148.1727
+PASS Data_Monster_B1_Minion_Leech Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Leech Attack artwork quad delta=3.814697E-06 expected=(x:-77.55, y:-40.79, width:155.10, height:135.57) actual=(x:-77.55, y:-40.79, width:155.10, height:135.57)
+PASS Data_Monster_B1_Minion_Leech Attack same pixels / crop
+PASS Data_Monster_B1_Minion_Leech Attack header / HP unchanged 148.1726 vs 148.1727
+PASS Data_Monster_B1_Minion_Leech Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Leech Dead artwork quad delta=7.629395E-06 expected=(x:-77.55, y:-40.79, width:155.10, height:84.17) actual=(x:-77.55, y:-40.79, width:155.10, height:84.17)
+PASS Data_Monster_B1_Minion_Leech Dead same pixels / crop
+PASS Data_Monster_B1_Minion_Leech Dead header / HP unchanged 148.1726 vs 148.1727
+PASS Data_Monster_B1_Minion_Leech Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Leech attack 0 exact weak-point positions
+PASS Data_Monster_B1_Minion_Leech attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Minion_Leech attack 1 exact weak-point positions
+PASS Data_Monster_B1_Minion_Leech attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Minion_Leech preview coordinate roundtrip
+PASS Data_Monster_B1_Minion_Skeleton all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B1_Minion_Skeleton exact collision union
+PASS Data_Monster_B1_Minion_Skeleton footprint from lowest circle edge
+PASS Data_Monster_B1_Minion_Skeleton orbit enabled state
+PASS Data_Monster_B1_Minion_Skeleton Idle artwork quad delta=0 expected=(x:-180.00, y:-130.00, width:360.00, height:358.80) actual=(x:-180.00, y:-130.00, width:360.00, height:358.80)
+PASS Data_Monster_B1_Minion_Skeleton Idle same pixels / crop
+PASS Data_Monster_B1_Minion_Skeleton Idle header / HP unchanged 264.797 vs 264.797
+PASS Data_Monster_B1_Minion_Skeleton Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Skeleton Ready artwork quad delta=0 expected=(x:-180.00, y:-130.00, width:360.00, height:357.29) actual=(x:-180.00, y:-130.00, width:360.00, height:357.29)
+PASS Data_Monster_B1_Minion_Skeleton Ready same pixels / crop
+PASS Data_Monster_B1_Minion_Skeleton Ready header / HP unchanged 264.797 vs 264.797
+PASS Data_Monster_B1_Minion_Skeleton Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Skeleton Attack artwork quad delta=0 expected=(x:-180.00, y:-130.00, width:360.00, height:326.62) actual=(x:-180.00, y:-130.00, width:360.00, height:326.62)
+PASS Data_Monster_B1_Minion_Skeleton Attack same pixels / crop
+PASS Data_Monster_B1_Minion_Skeleton Attack header / HP unchanged 264.797 vs 264.797
+PASS Data_Monster_B1_Minion_Skeleton Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Skeleton Dead artwork quad delta=0 expected=(x:-180.00, y:-130.00, width:360.00, height:142.26) actual=(x:-180.00, y:-130.00, width:360.00, height:142.26)
+PASS Data_Monster_B1_Minion_Skeleton Dead same pixels / crop
+PASS Data_Monster_B1_Minion_Skeleton Dead header / HP unchanged 264.797 vs 264.797
+PASS Data_Monster_B1_Minion_Skeleton Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS Data_Monster_B1_Minion_Skeleton attack 0 exact weak-point positions
+PASS Data_Monster_B1_Minion_Skeleton attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Minion_Skeleton attack 1 exact weak-point positions
+PASS Data_Monster_B1_Minion_Skeleton attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B1_Minion_Skeleton preview coordinate roundtrip
+PASS Data_Monster_B2_Boss_FrostQueen all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B2_Boss_FrostQueen exact collision union
+PASS Data_Monster_B2_Boss_FrostQueen footprint from lowest circle edge
+PASS Data_Monster_B2_Boss_FrostQueen orbit enabled state
+PASS Data_Monster_B2_Boss_FrostQueen Idle artwork quad delta=0 expected=(x:-156.75, y:-112.50, width:313.50, height:313.50) actual=(x:-156.75, y:-112.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Boss_FrostQueen Idle same pixels / crop
+PASS Data_Monster_B2_Boss_FrostQueen Idle header / HP unchanged 258 vs 258
+PASS Data_Monster_B2_Boss_FrostQueen Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Boss_FrostQueen Ready artwork quad delta=0 expected=(x:-156.75, y:-112.50, width:313.50, height:313.50) actual=(x:-156.75, y:-112.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Boss_FrostQueen Ready same pixels / crop
+PASS Data_Monster_B2_Boss_FrostQueen Ready header / HP unchanged 258 vs 258
+PASS Data_Monster_B2_Boss_FrostQueen Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Boss_FrostQueen Attack artwork quad delta=0 expected=(x:-156.75, y:-112.50, width:313.50, height:313.50) actual=(x:-156.75, y:-112.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Boss_FrostQueen Attack same pixels / crop
+PASS Data_Monster_B2_Boss_FrostQueen Attack header / HP unchanged 258 vs 258
+PASS Data_Monster_B2_Boss_FrostQueen Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Boss_FrostQueen Dead artwork quad delta=0 expected=(x:-156.75, y:-112.50, width:313.50, height:313.50) actual=(x:-156.75, y:-112.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Boss_FrostQueen Dead same pixels / crop
+PASS Data_Monster_B2_Boss_FrostQueen Dead header / HP unchanged 258 vs 258
+PASS Data_Monster_B2_Boss_FrostQueen Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Boss_FrostQueen attack 0 exact weak-point positions
+PASS Data_Monster_B2_Boss_FrostQueen attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Boss_FrostQueen attack 1 exact weak-point positions
+PASS Data_Monster_B2_Boss_FrostQueen attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Boss_FrostQueen preview coordinate roundtrip
+PASS Data_Monster_B2_Elite_FrostOgre all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B2_Elite_FrostOgre exact collision union
+PASS Data_Monster_B2_Elite_FrostOgre footprint from lowest circle edge
+PASS Data_Monster_B2_Elite_FrostOgre orbit enabled state
+PASS Data_Monster_B2_Elite_FrostOgre Idle artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-114.50, width:313.50, height:313.50) actual=(x:-156.75, y:-114.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Elite_FrostOgre Idle same pixels / crop
+PASS Data_Monster_B2_Elite_FrostOgre Idle header / HP unchanged 255 vs 255
+PASS Data_Monster_B2_Elite_FrostOgre Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Elite_FrostOgre Ready artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-114.50, width:313.50, height:313.50) actual=(x:-156.75, y:-114.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Elite_FrostOgre Ready same pixels / crop
+PASS Data_Monster_B2_Elite_FrostOgre Ready header / HP unchanged 255 vs 255
+PASS Data_Monster_B2_Elite_FrostOgre Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Elite_FrostOgre Attack artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-114.50, width:313.50, height:313.50) actual=(x:-156.75, y:-114.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Elite_FrostOgre Attack same pixels / crop
+PASS Data_Monster_B2_Elite_FrostOgre Attack header / HP unchanged 255 vs 255
+PASS Data_Monster_B2_Elite_FrostOgre Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Elite_FrostOgre Dead artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-114.50, width:313.50, height:313.50) actual=(x:-156.75, y:-114.50, width:313.50, height:313.50)
+PASS Data_Monster_B2_Elite_FrostOgre Dead same pixels / crop
+PASS Data_Monster_B2_Elite_FrostOgre Dead header / HP unchanged 255 vs 255
+PASS Data_Monster_B2_Elite_FrostOgre Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Elite_FrostOgre attack 0 exact weak-point positions
+PASS Data_Monster_B2_Elite_FrostOgre attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Elite_FrostOgre attack 1 exact weak-point positions
+PASS Data_Monster_B2_Elite_FrostOgre attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Elite_FrostOgre preview coordinate roundtrip
+PASS Data_Monster_B2_Minion_FrostBat all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B2_Minion_FrostBat exact collision union
+PASS Data_Monster_B2_Minion_FrostBat footprint from lowest circle edge
+PASS Data_Monster_B2_Minion_FrostBat orbit enabled state
+PASS Data_Monster_B2_Minion_FrostBat Idle artwork quad delta=0 expected=(x:-156.75, y:-112.25, width:313.50, height:313.50) actual=(x:-156.75, y:-112.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_FrostBat Idle same pixels / crop
+PASS Data_Monster_B2_Minion_FrostBat Idle header / HP unchanged 263.5 vs 263.5
+PASS Data_Monster_B2_Minion_FrostBat Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_FrostBat Ready artwork quad delta=0 expected=(x:-156.75, y:-112.25, width:313.50, height:313.50) actual=(x:-156.75, y:-112.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_FrostBat Ready same pixels / crop
+PASS Data_Monster_B2_Minion_FrostBat Ready header / HP unchanged 263.5 vs 263.5
+PASS Data_Monster_B2_Minion_FrostBat Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_FrostBat Attack artwork quad delta=0 expected=(x:-156.75, y:-112.25, width:313.50, height:313.50) actual=(x:-156.75, y:-112.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_FrostBat Attack same pixels / crop
+PASS Data_Monster_B2_Minion_FrostBat Attack header / HP unchanged 263.5 vs 263.5
+PASS Data_Monster_B2_Minion_FrostBat Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_FrostBat Dead artwork quad delta=0 expected=(x:-156.75, y:-112.25, width:313.50, height:313.50) actual=(x:-156.75, y:-112.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_FrostBat Dead same pixels / crop
+PASS Data_Monster_B2_Minion_FrostBat Dead header / HP unchanged 263.5 vs 263.5
+PASS Data_Monster_B2_Minion_FrostBat Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_FrostBat attack 0 exact weak-point positions
+PASS Data_Monster_B2_Minion_FrostBat attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Minion_FrostBat attack 1 exact weak-point positions
+PASS Data_Monster_B2_Minion_FrostBat attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Minion_FrostBat preview coordinate roundtrip
+PASS Data_Monster_B2_Minion_IceWraith all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B2_Minion_IceWraith exact collision union
+PASS Data_Monster_B2_Minion_IceWraith footprint from lowest circle edge
+PASS Data_Monster_B2_Minion_IceWraith orbit enabled state
+PASS Data_Monster_B2_Minion_IceWraith Idle artwork quad delta=0 expected=(x:-156.75, y:-112.00, width:313.50, height:313.50) actual=(x:-156.75, y:-112.00, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_IceWraith Idle same pixels / crop
+PASS Data_Monster_B2_Minion_IceWraith Idle header / HP unchanged 261 vs 261
+PASS Data_Monster_B2_Minion_IceWraith Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_IceWraith Ready artwork quad delta=0 expected=(x:-156.75, y:-112.00, width:313.50, height:313.50) actual=(x:-156.75, y:-112.00, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_IceWraith Ready same pixels / crop
+PASS Data_Monster_B2_Minion_IceWraith Ready header / HP unchanged 261 vs 261
+PASS Data_Monster_B2_Minion_IceWraith Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_IceWraith Attack artwork quad delta=0 expected=(x:-156.75, y:-112.00, width:313.50, height:313.50) actual=(x:-156.75, y:-112.00, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_IceWraith Attack same pixels / crop
+PASS Data_Monster_B2_Minion_IceWraith Attack header / HP unchanged 261 vs 261
+PASS Data_Monster_B2_Minion_IceWraith Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_IceWraith Dead artwork quad delta=0 expected=(x:-156.75, y:-112.00, width:313.50, height:313.50) actual=(x:-156.75, y:-112.00, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_IceWraith Dead same pixels / crop
+PASS Data_Monster_B2_Minion_IceWraith Dead header / HP unchanged 261 vs 261
+PASS Data_Monster_B2_Minion_IceWraith Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_IceWraith attack 0 exact weak-point positions
+PASS Data_Monster_B2_Minion_IceWraith attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Minion_IceWraith attack 1 exact weak-point positions
+PASS Data_Monster_B2_Minion_IceWraith attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Minion_IceWraith preview coordinate roundtrip
+PASS Data_Monster_B2_Minion_Yeti all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B2_Minion_Yeti exact collision union
+PASS Data_Monster_B2_Minion_Yeti footprint from lowest circle edge
+PASS Data_Monster_B2_Minion_Yeti orbit enabled state
+PASS Data_Monster_B2_Minion_Yeti Idle artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-111.25, width:313.50, height:313.50) actual=(x:-156.75, y:-111.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_Yeti Idle same pixels / crop
+PASS Data_Monster_B2_Minion_Yeti Idle header / HP unchanged 264.5 vs 264.5
+PASS Data_Monster_B2_Minion_Yeti Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_Yeti Ready artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-111.25, width:313.50, height:313.50) actual=(x:-156.75, y:-111.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_Yeti Ready same pixels / crop
+PASS Data_Monster_B2_Minion_Yeti Ready header / HP unchanged 264.5 vs 264.5
+PASS Data_Monster_B2_Minion_Yeti Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_Yeti Attack artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-111.25, width:313.50, height:313.50) actual=(x:-156.75, y:-111.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_Yeti Attack same pixels / crop
+PASS Data_Monster_B2_Minion_Yeti Attack header / HP unchanged 264.5 vs 264.5
+PASS Data_Monster_B2_Minion_Yeti Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_Yeti Dead artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-111.25, width:313.50, height:313.50) actual=(x:-156.75, y:-111.25, width:313.50, height:313.50)
+PASS Data_Monster_B2_Minion_Yeti Dead same pixels / crop
+PASS Data_Monster_B2_Minion_Yeti Dead header / HP unchanged 264.5 vs 264.5
+PASS Data_Monster_B2_Minion_Yeti Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B2_Minion_Yeti attack 0 exact weak-point positions
+PASS Data_Monster_B2_Minion_Yeti attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Minion_Yeti attack 1 exact weak-point positions
+PASS Data_Monster_B2_Minion_Yeti attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B2_Minion_Yeti preview coordinate roundtrip
+PASS Data_Monster_B3_Boss_SoulEater all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B3_Boss_SoulEater exact collision union
+PASS Data_Monster_B3_Boss_SoulEater footprint from lowest circle edge
+PASS Data_Monster_B3_Boss_SoulEater orbit enabled state
+PASS Data_Monster_B3_Boss_SoulEater Idle artwork quad delta=0 expected=(x:-156.75, y:-109.75, width:313.50, height:313.50) actual=(x:-156.75, y:-109.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Boss_SoulEater Idle same pixels / crop
+PASS Data_Monster_B3_Boss_SoulEater Idle header / HP unchanged 264.75 vs 264.75
+PASS Data_Monster_B3_Boss_SoulEater Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Boss_SoulEater Ready artwork quad delta=0 expected=(x:-156.75, y:-109.75, width:313.50, height:313.50) actual=(x:-156.75, y:-109.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Boss_SoulEater Ready same pixels / crop
+PASS Data_Monster_B3_Boss_SoulEater Ready header / HP unchanged 264.75 vs 264.75
+PASS Data_Monster_B3_Boss_SoulEater Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Boss_SoulEater Attack artwork quad delta=0 expected=(x:-156.75, y:-109.75, width:313.50, height:313.50) actual=(x:-156.75, y:-109.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Boss_SoulEater Attack same pixels / crop
+PASS Data_Monster_B3_Boss_SoulEater Attack header / HP unchanged 264.75 vs 264.75
+PASS Data_Monster_B3_Boss_SoulEater Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Boss_SoulEater Dead artwork quad delta=0 expected=(x:-156.75, y:-109.75, width:313.50, height:313.50) actual=(x:-156.75, y:-109.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Boss_SoulEater Dead same pixels / crop
+PASS Data_Monster_B3_Boss_SoulEater Dead header / HP unchanged 264.75 vs 264.75
+PASS Data_Monster_B3_Boss_SoulEater Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Boss_SoulEater attack 0 exact weak-point positions
+PASS Data_Monster_B3_Boss_SoulEater attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Boss_SoulEater attack 1 exact weak-point positions
+PASS Data_Monster_B3_Boss_SoulEater attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Boss_SoulEater preview coordinate roundtrip
+PASS Data_Monster_B3_Elite_SoulKnight all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B3_Elite_SoulKnight exact collision union
+PASS Data_Monster_B3_Elite_SoulKnight footprint from lowest circle edge
+PASS Data_Monster_B3_Elite_SoulKnight orbit enabled state
+PASS Data_Monster_B3_Elite_SoulKnight Idle artwork quad delta=0 expected=(x:-156.75, y:-110.00, width:313.50, height:313.50) actual=(x:-156.75, y:-110.00, width:313.50, height:313.50)
+PASS Data_Monster_B3_Elite_SoulKnight Idle same pixels / crop
+PASS Data_Monster_B3_Elite_SoulKnight Idle header / HP unchanged 266.5 vs 266.5
+PASS Data_Monster_B3_Elite_SoulKnight Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Elite_SoulKnight Ready artwork quad delta=0 expected=(x:-156.75, y:-110.00, width:313.50, height:313.50) actual=(x:-156.75, y:-110.00, width:313.50, height:313.50)
+PASS Data_Monster_B3_Elite_SoulKnight Ready same pixels / crop
+PASS Data_Monster_B3_Elite_SoulKnight Ready header / HP unchanged 266.5 vs 266.5
+PASS Data_Monster_B3_Elite_SoulKnight Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Elite_SoulKnight Attack artwork quad delta=0 expected=(x:-156.75, y:-110.00, width:313.50, height:313.50) actual=(x:-156.75, y:-110.00, width:313.50, height:313.50)
+PASS Data_Monster_B3_Elite_SoulKnight Attack same pixels / crop
+PASS Data_Monster_B3_Elite_SoulKnight Attack header / HP unchanged 266.5 vs 266.5
+PASS Data_Monster_B3_Elite_SoulKnight Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Elite_SoulKnight Dead artwork quad delta=0 expected=(x:-156.75, y:-110.00, width:313.50, height:313.50) actual=(x:-156.75, y:-110.00, width:313.50, height:313.50)
+PASS Data_Monster_B3_Elite_SoulKnight Dead same pixels / crop
+PASS Data_Monster_B3_Elite_SoulKnight Dead header / HP unchanged 266.5 vs 266.5
+PASS Data_Monster_B3_Elite_SoulKnight Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Elite_SoulKnight attack 0 exact weak-point positions
+PASS Data_Monster_B3_Elite_SoulKnight attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Elite_SoulKnight attack 1 exact weak-point positions
+PASS Data_Monster_B3_Elite_SoulKnight attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Elite_SoulKnight preview coordinate roundtrip
+PASS Data_Monster_B3_Minion_AshHound all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B3_Minion_AshHound exact collision union
+PASS Data_Monster_B3_Minion_AshHound footprint from lowest circle edge
+PASS Data_Monster_B3_Minion_AshHound orbit enabled state
+PASS Data_Monster_B3_Minion_AshHound Idle artwork quad delta=0 expected=(x:-156.75, y:-110.25, width:313.50, height:313.50) actual=(x:-156.75, y:-110.25, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_AshHound Idle same pixels / crop
+PASS Data_Monster_B3_Minion_AshHound Idle header / HP unchanged 265.5 vs 265.5
+PASS Data_Monster_B3_Minion_AshHound Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_AshHound Ready artwork quad delta=0 expected=(x:-156.75, y:-110.25, width:313.50, height:313.50) actual=(x:-156.75, y:-110.25, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_AshHound Ready same pixels / crop
+PASS Data_Monster_B3_Minion_AshHound Ready header / HP unchanged 265.5 vs 265.5
+PASS Data_Monster_B3_Minion_AshHound Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_AshHound Attack artwork quad delta=0 expected=(x:-156.75, y:-110.25, width:313.50, height:313.50) actual=(x:-156.75, y:-110.25, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_AshHound Attack same pixels / crop
+PASS Data_Monster_B3_Minion_AshHound Attack header / HP unchanged 265.5 vs 265.5
+PASS Data_Monster_B3_Minion_AshHound Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_AshHound Dead artwork quad delta=0 expected=(x:-156.75, y:-110.25, width:313.50, height:313.50) actual=(x:-156.75, y:-110.25, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_AshHound Dead same pixels / crop
+PASS Data_Monster_B3_Minion_AshHound Dead header / HP unchanged 265.5 vs 265.5
+PASS Data_Monster_B3_Minion_AshHound Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_AshHound attack 0 exact weak-point positions
+PASS Data_Monster_B3_Minion_AshHound attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Minion_AshHound attack 1 exact weak-point positions
+PASS Data_Monster_B3_Minion_AshHound attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Minion_AshHound preview coordinate roundtrip
+PASS Data_Monster_B3_Minion_ShadeLancer all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B3_Minion_ShadeLancer exact collision union
+PASS Data_Monster_B3_Minion_ShadeLancer footprint from lowest circle edge
+PASS Data_Monster_B3_Minion_ShadeLancer orbit enabled state
+PASS Data_Monster_B3_Minion_ShadeLancer Idle artwork quad delta=0 expected=(x:-156.75, y:-111.75, width:313.50, height:313.50) actual=(x:-156.75, y:-111.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_ShadeLancer Idle same pixels / crop
+PASS Data_Monster_B3_Minion_ShadeLancer Idle header / HP unchanged 260.75 vs 260.75
+PASS Data_Monster_B3_Minion_ShadeLancer Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_ShadeLancer Ready artwork quad delta=0 expected=(x:-156.75, y:-111.75, width:313.50, height:313.50) actual=(x:-156.75, y:-111.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_ShadeLancer Ready same pixels / crop
+PASS Data_Monster_B3_Minion_ShadeLancer Ready header / HP unchanged 260.75 vs 260.75
+PASS Data_Monster_B3_Minion_ShadeLancer Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_ShadeLancer Attack artwork quad delta=0 expected=(x:-156.75, y:-111.75, width:313.50, height:313.50) actual=(x:-156.75, y:-111.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_ShadeLancer Attack same pixels / crop
+PASS Data_Monster_B3_Minion_ShadeLancer Attack header / HP unchanged 260.75 vs 260.75
+PASS Data_Monster_B3_Minion_ShadeLancer Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_ShadeLancer Dead artwork quad delta=0 expected=(x:-156.75, y:-111.75, width:313.50, height:313.50) actual=(x:-156.75, y:-111.75, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_ShadeLancer Dead same pixels / crop
+PASS Data_Monster_B3_Minion_ShadeLancer Dead header / HP unchanged 260.75 vs 260.75
+PASS Data_Monster_B3_Minion_ShadeLancer Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_ShadeLancer attack 0 exact weak-point positions
+PASS Data_Monster_B3_Minion_ShadeLancer attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Minion_ShadeLancer attack 1 exact weak-point positions
+PASS Data_Monster_B3_Minion_ShadeLancer attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Minion_ShadeLancer preview coordinate roundtrip
+PASS Data_Monster_B3_Minion_VoidMaw all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_B3_Minion_VoidMaw exact collision union
+PASS Data_Monster_B3_Minion_VoidMaw footprint from lowest circle edge
+PASS Data_Monster_B3_Minion_VoidMaw orbit enabled state
+PASS Data_Monster_B3_Minion_VoidMaw Idle artwork quad delta=0 expected=(x:-156.75, y:-113.50, width:313.50, height:313.50) actual=(x:-156.75, y:-113.50, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_VoidMaw Idle same pixels / crop
+PASS Data_Monster_B3_Minion_VoidMaw Idle header / HP unchanged 255 vs 255
+PASS Data_Monster_B3_Minion_VoidMaw Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_VoidMaw Ready artwork quad delta=0 expected=(x:-156.75, y:-113.50, width:313.50, height:313.50) actual=(x:-156.75, y:-113.50, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_VoidMaw Ready same pixels / crop
+PASS Data_Monster_B3_Minion_VoidMaw Ready header / HP unchanged 255 vs 255
+PASS Data_Monster_B3_Minion_VoidMaw Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_VoidMaw Attack artwork quad delta=0 expected=(x:-156.75, y:-113.50, width:313.50, height:313.50) actual=(x:-156.75, y:-113.50, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_VoidMaw Attack same pixels / crop
+PASS Data_Monster_B3_Minion_VoidMaw Attack header / HP unchanged 255 vs 255
+PASS Data_Monster_B3_Minion_VoidMaw Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_VoidMaw Dead artwork quad delta=0 expected=(x:-156.75, y:-113.50, width:313.50, height:313.50) actual=(x:-156.75, y:-113.50, width:313.50, height:313.50)
+PASS Data_Monster_B3_Minion_VoidMaw Dead same pixels / crop
+PASS Data_Monster_B3_Minion_VoidMaw Dead header / HP unchanged 255 vs 255
+PASS Data_Monster_B3_Minion_VoidMaw Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_B3_Minion_VoidMaw attack 0 exact weak-point positions
+PASS Data_Monster_B3_Minion_VoidMaw attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Minion_VoidMaw attack 1 exact weak-point positions
+PASS Data_Monster_B3_Minion_VoidMaw attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_B3_Minion_VoidMaw preview coordinate roundtrip
+PASS Data_Monster_Special_MerchantMutant all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_Special_MerchantMutant exact collision union
+PASS Data_Monster_Special_MerchantMutant footprint from lowest circle edge
+PASS Data_Monster_Special_MerchantMutant orbit enabled state
+PASS Data_Monster_Special_MerchantMutant Idle artwork quad delta=0 expected=(x:-156.75, y:-116.75, width:313.50, height:313.50) actual=(x:-156.75, y:-116.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_MerchantMutant Idle same pixels / crop
+PASS Data_Monster_Special_MerchantMutant Idle header / HP unchanged 248 vs 248
+PASS Data_Monster_Special_MerchantMutant Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_MerchantMutant Ready artwork quad delta=0 expected=(x:-156.75, y:-116.75, width:313.50, height:313.50) actual=(x:-156.75, y:-116.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_MerchantMutant Ready same pixels / crop
+PASS Data_Monster_Special_MerchantMutant Ready header / HP unchanged 248 vs 248
+PASS Data_Monster_Special_MerchantMutant Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_MerchantMutant Attack artwork quad delta=0 expected=(x:-156.75, y:-116.75, width:313.50, height:313.50) actual=(x:-156.75, y:-116.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_MerchantMutant Attack same pixels / crop
+PASS Data_Monster_Special_MerchantMutant Attack header / HP unchanged 248 vs 248
+PASS Data_Monster_Special_MerchantMutant Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_MerchantMutant Dead artwork quad delta=0 expected=(x:-156.75, y:-116.75, width:313.50, height:313.50) actual=(x:-156.75, y:-116.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_MerchantMutant Dead same pixels / crop
+PASS Data_Monster_Special_MerchantMutant Dead header / HP unchanged 248 vs 248
+PASS Data_Monster_Special_MerchantMutant Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_MerchantMutant attack 0 exact weak-point positions
+PASS Data_Monster_Special_MerchantMutant attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_Special_MerchantMutant attack 1 exact weak-point positions
+PASS Data_Monster_Special_MerchantMutant attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_Special_MerchantMutant preview coordinate roundtrip
+PASS Data_Monster_Special_Minion_Mimic all non-migrated stats / identity / portrait / text unchanged
+PASS Data_Monster_Special_Minion_Mimic exact collision union
+PASS Data_Monster_Special_Minion_Mimic footprint from lowest circle edge
+PASS Data_Monster_Special_Minion_Mimic orbit enabled state
+PASS Data_Monster_Special_Minion_Mimic Idle artwork quad delta=0 expected=(x:-156.75, y:-118.75, width:313.50, height:313.50) actual=(x:-156.75, y:-118.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_Minion_Mimic Idle same pixels / crop
+PASS Data_Monster_Special_Minion_Mimic Idle header / HP unchanged 237.5 vs 237.5
+PASS Data_Monster_Special_Minion_Mimic Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_Minion_Mimic Ready artwork quad delta=0 expected=(x:-156.75, y:-118.75, width:313.50, height:313.50) actual=(x:-156.75, y:-118.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_Minion_Mimic Ready same pixels / crop
+PASS Data_Monster_Special_Minion_Mimic Ready header / HP unchanged 237.5 vs 237.5
+PASS Data_Monster_Special_Minion_Mimic Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_Minion_Mimic Attack artwork quad delta=0 expected=(x:-156.75, y:-118.75, width:313.50, height:313.50) actual=(x:-156.75, y:-118.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_Minion_Mimic Attack same pixels / crop
+PASS Data_Monster_Special_Minion_Mimic Attack header / HP unchanged 237.5 vs 237.5
+PASS Data_Monster_Special_Minion_Mimic Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_Minion_Mimic Dead artwork quad delta=0 expected=(x:-156.75, y:-118.75, width:313.50, height:313.50) actual=(x:-156.75, y:-118.75, width:313.50, height:313.50)
+PASS Data_Monster_Special_Minion_Mimic Dead same pixels / crop
+PASS Data_Monster_Special_Minion_Mimic Dead header / HP unchanged 237.5 vs 237.5
+PASS Data_Monster_Special_Minion_Mimic Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS Data_Monster_Special_Minion_Mimic attack 0 exact weak-point positions
+PASS Data_Monster_Special_Minion_Mimic attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_Special_Minion_Mimic attack 1 exact weak-point positions
+PASS Data_Monster_Special_Minion_Mimic attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS Data_Monster_Special_Minion_Mimic preview coordinate roundtrip
+PASS DeepTrialGuardian all non-migrated stats / identity / portrait / text unchanged
+PASS DeepTrialGuardian exact collision union
+PASS DeepTrialGuardian footprint from lowest circle edge
+PASS DeepTrialGuardian orbit enabled state
+PASS DeepTrialGuardian Idle artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-99.00, width:313.50, height:313.50) actual=(x:-156.75, y:-99.00, width:313.50, height:313.50)
+PASS DeepTrialGuardian Idle same pixels / crop
+PASS DeepTrialGuardian Idle header / HP unchanged 271 vs 271
+PASS DeepTrialGuardian Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS DeepTrialGuardian Ready artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-99.00, width:313.50, height:313.50) actual=(x:-156.75, y:-99.00, width:313.50, height:313.50)
+PASS DeepTrialGuardian Ready same pixels / crop
+PASS DeepTrialGuardian Ready header / HP unchanged 271 vs 271
+PASS DeepTrialGuardian Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS DeepTrialGuardian Attack artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-99.00, width:313.50, height:313.50) actual=(x:-156.75, y:-99.00, width:313.50, height:313.50)
+PASS DeepTrialGuardian Attack same pixels / crop
+PASS DeepTrialGuardian Attack header / HP unchanged 271 vs 271
+PASS DeepTrialGuardian Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS DeepTrialGuardian Dead artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-99.00, width:313.50, height:313.50) actual=(x:-156.75, y:-99.00, width:313.50, height:313.50)
+PASS DeepTrialGuardian Dead same pixels / crop
+PASS DeepTrialGuardian Dead header / HP unchanged 271 vs 271
+PASS DeepTrialGuardian Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS DeepTrialGuardian attack 0 exact weak-point positions
+PASS DeepTrialGuardian attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS DeepTrialGuardian attack 1 exact weak-point positions
+PASS DeepTrialGuardian attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS DeepTrialGuardian preview coordinate roundtrip
+PASS EclipseBeast all non-migrated stats / identity / portrait / text unchanged
+PASS EclipseBeast exact collision union
+PASS EclipseBeast footprint from lowest circle edge
+PASS EclipseBeast orbit enabled state
+PASS EclipseBeast Idle artwork quad delta=0 expected=(x:-156.75, y:-96.50, width:313.50, height:313.50) actual=(x:-156.75, y:-96.50, width:313.50, height:313.50)
+PASS EclipseBeast Idle same pixels / crop
+PASS EclipseBeast Idle header / HP unchanged 280 vs 280
+PASS EclipseBeast Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS EclipseBeast Ready artwork quad delta=0 expected=(x:-156.75, y:-96.50, width:313.50, height:313.50) actual=(x:-156.75, y:-96.50, width:313.50, height:313.50)
+PASS EclipseBeast Ready same pixels / crop
+PASS EclipseBeast Ready header / HP unchanged 280 vs 280
+PASS EclipseBeast Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS EclipseBeast Attack artwork quad delta=0 expected=(x:-156.75, y:-96.50, width:313.50, height:313.50) actual=(x:-156.75, y:-96.50, width:313.50, height:313.50)
+PASS EclipseBeast Attack same pixels / crop
+PASS EclipseBeast Attack header / HP unchanged 280 vs 280
+PASS EclipseBeast Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS EclipseBeast Dead artwork quad delta=0 expected=(x:-156.75, y:-96.50, width:313.50, height:313.50) actual=(x:-156.75, y:-96.50, width:313.50, height:313.50)
+PASS EclipseBeast Dead same pixels / crop
+PASS EclipseBeast Dead header / HP unchanged 280 vs 280
+PASS EclipseBeast Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS EclipseBeast attack 0 exact weak-point positions
+PASS EclipseBeast attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS EclipseBeast attack 1 exact weak-point positions
+PASS EclipseBeast attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS EclipseBeast attack 2 exact weak-point positions
+PASS EclipseBeast attack 2 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS EclipseBeast attack 3 exact weak-point positions
+PASS EclipseBeast attack 3 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS EclipseBeast preview coordinate roundtrip
+PASS ElderLeftHeart all non-migrated stats / identity / portrait / text unchanged
+PASS ElderLeftHeart exact collision union
+PASS ElderLeftHeart footprint from lowest circle edge
+PASS ElderLeftHeart orbit enabled state
+PASS ElderLeftHeart Idle artwork quad delta=0 expected=(x:-156.75, y:-67.50, width:313.50, height:313.50) actual=(x:-156.75, y:-67.50, width:313.50, height:313.50)
+PASS ElderLeftHeart Idle same pixels / crop
+PASS ElderLeftHeart Idle header / HP unchanged 309.5 vs 309.5
+PASS ElderLeftHeart Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderLeftHeart Ready artwork quad delta=0 expected=(x:-156.75, y:-67.50, width:313.50, height:313.50) actual=(x:-156.75, y:-67.50, width:313.50, height:313.50)
+PASS ElderLeftHeart Ready same pixels / crop
+PASS ElderLeftHeart Ready header / HP unchanged 309.5 vs 309.5
+PASS ElderLeftHeart Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderLeftHeart Attack artwork quad delta=0 expected=(x:-156.75, y:-67.50, width:313.50, height:313.50) actual=(x:-156.75, y:-67.50, width:313.50, height:313.50)
+PASS ElderLeftHeart Attack same pixels / crop
+PASS ElderLeftHeart Attack header / HP unchanged 309.5 vs 309.5
+PASS ElderLeftHeart Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderLeftHeart Dead artwork quad delta=0 expected=(x:-156.75, y:-67.50, width:313.50, height:313.50) actual=(x:-156.75, y:-67.50, width:313.50, height:313.50)
+PASS ElderLeftHeart Dead same pixels / crop
+PASS ElderLeftHeart Dead header / HP unchanged 309.5 vs 309.5
+PASS ElderLeftHeart Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderLeftHeart preview coordinate roundtrip
+PASS ElderRightHeart all non-migrated stats / identity / portrait / text unchanged
+PASS ElderRightHeart exact collision union
+PASS ElderRightHeart footprint from lowest circle edge
+PASS ElderRightHeart orbit enabled state
+PASS ElderRightHeart Idle artwork quad delta=0 expected=(x:-156.75, y:-72.00, width:313.50, height:313.50) actual=(x:-156.75, y:-72.00, width:313.50, height:313.50)
+PASS ElderRightHeart Idle same pixels / crop
+PASS ElderRightHeart Idle header / HP unchanged 300.25 vs 300.25
+PASS ElderRightHeart Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderRightHeart Ready artwork quad delta=0 expected=(x:-156.75, y:-72.00, width:313.50, height:313.50) actual=(x:-156.75, y:-72.00, width:313.50, height:313.50)
+PASS ElderRightHeart Ready same pixels / crop
+PASS ElderRightHeart Ready header / HP unchanged 300.25 vs 300.25
+PASS ElderRightHeart Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderRightHeart Attack artwork quad delta=0 expected=(x:-156.75, y:-72.00, width:313.50, height:313.50) actual=(x:-156.75, y:-72.00, width:313.50, height:313.50)
+PASS ElderRightHeart Attack same pixels / crop
+PASS ElderRightHeart Attack header / HP unchanged 300.25 vs 300.25
+PASS ElderRightHeart Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderRightHeart Dead artwork quad delta=0 expected=(x:-156.75, y:-72.00, width:313.50, height:313.50) actual=(x:-156.75, y:-72.00, width:313.50, height:313.50)
+PASS ElderRightHeart Dead same pixels / crop
+PASS ElderRightHeart Dead header / HP unchanged 300.25 vs 300.25
+PASS ElderRightHeart Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS ElderRightHeart preview coordinate roundtrip
+PASS IceMirror all non-migrated stats / identity / portrait / text unchanged
+PASS IceMirror exact collision union
+PASS IceMirror footprint from lowest circle edge
+PASS IceMirror orbit enabled state
+PASS IceMirror Idle artwork quad delta=0 expected=(x:-156.75, y:-98.00, width:313.50, height:313.50) actual=(x:-156.75, y:-98.00, width:313.50, height:313.50)
+PASS IceMirror Idle same pixels / crop
+PASS IceMirror Idle header / HP unchanged 274.75 vs 274.75
+PASS IceMirror Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceMirror Ready artwork quad delta=0 expected=(x:-156.75, y:-98.00, width:313.50, height:313.50) actual=(x:-156.75, y:-98.00, width:313.50, height:313.50)
+PASS IceMirror Ready same pixels / crop
+PASS IceMirror Ready header / HP unchanged 274.75 vs 274.75
+PASS IceMirror Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceMirror Attack artwork quad delta=0 expected=(x:-156.75, y:-98.00, width:313.50, height:313.50) actual=(x:-156.75, y:-98.00, width:313.50, height:313.50)
+PASS IceMirror Attack same pixels / crop
+PASS IceMirror Attack header / HP unchanged 274.75 vs 274.75
+PASS IceMirror Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceMirror Dead artwork quad delta=0 expected=(x:-156.75, y:-98.00, width:313.50, height:313.50) actual=(x:-156.75, y:-98.00, width:313.50, height:313.50)
+PASS IceMirror Dead same pixels / crop
+PASS IceMirror Dead header / HP unchanged 274.75 vs 274.75
+PASS IceMirror Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceMirror attack 0 exact weak-point positions
+PASS IceMirror attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS IceMirror attack 1 exact weak-point positions
+PASS IceMirror attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS IceMirror preview coordinate roundtrip
+PASS IceNeedle all non-migrated stats / identity / portrait / text unchanged
+PASS IceNeedle exact collision union
+PASS IceNeedle footprint from lowest circle edge
+PASS IceNeedle orbit enabled state
+PASS IceNeedle Idle artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-98.75, width:313.50, height:313.50) actual=(x:-156.75, y:-98.75, width:313.50, height:313.50)
+PASS IceNeedle Idle same pixels / crop
+PASS IceNeedle Idle header / HP unchanged 276 vs 276
+PASS IceNeedle Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceNeedle Ready artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-98.75, width:313.50, height:313.50) actual=(x:-156.75, y:-98.75, width:313.50, height:313.50)
+PASS IceNeedle Ready same pixels / crop
+PASS IceNeedle Ready header / HP unchanged 276 vs 276
+PASS IceNeedle Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceNeedle Attack artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-98.75, width:313.50, height:313.50) actual=(x:-156.75, y:-98.75, width:313.50, height:313.50)
+PASS IceNeedle Attack same pixels / crop
+PASS IceNeedle Attack header / HP unchanged 276 vs 276
+PASS IceNeedle Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceNeedle Dead artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-98.75, width:313.50, height:313.50) actual=(x:-156.75, y:-98.75, width:313.50, height:313.50)
+PASS IceNeedle Dead same pixels / crop
+PASS IceNeedle Dead header / HP unchanged 276 vs 276
+PASS IceNeedle Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS IceNeedle attack 0 exact weak-point positions
+PASS IceNeedle attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS IceNeedle attack 1 exact weak-point positions
+PASS IceNeedle attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS IceNeedle preview coordinate roundtrip
+PASS LampPriest all non-migrated stats / identity / portrait / text unchanged
+PASS LampPriest exact collision union
+PASS LampPriest footprint from lowest circle edge
+PASS LampPriest orbit enabled state
+PASS LampPriest Idle artwork quad delta=0 expected=(x:-156.75, y:-100.00, width:313.50, height:313.50) actual=(x:-156.75, y:-100.00, width:313.50, height:313.50)
+PASS LampPriest Idle same pixels / crop
+PASS LampPriest Idle header / HP unchanged 277 vs 277
+PASS LampPriest Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS LampPriest Ready artwork quad delta=0 expected=(x:-156.75, y:-100.00, width:313.50, height:313.50) actual=(x:-156.75, y:-100.00, width:313.50, height:313.50)
+PASS LampPriest Ready same pixels / crop
+PASS LampPriest Ready header / HP unchanged 277 vs 277
+PASS LampPriest Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS LampPriest Attack artwork quad delta=0 expected=(x:-156.75, y:-100.00, width:313.50, height:313.50) actual=(x:-156.75, y:-100.00, width:313.50, height:313.50)
+PASS LampPriest Attack same pixels / crop
+PASS LampPriest Attack header / HP unchanged 277 vs 277
+PASS LampPriest Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS LampPriest Dead artwork quad delta=0 expected=(x:-156.75, y:-100.00, width:313.50, height:313.50) actual=(x:-156.75, y:-100.00, width:313.50, height:313.50)
+PASS LampPriest Dead same pixels / crop
+PASS LampPriest Dead header / HP unchanged 277 vs 277
+PASS LampPriest Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS LampPriest attack 0 exact weak-point positions
+PASS LampPriest attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS LampPriest attack 1 exact weak-point positions
+PASS LampPriest attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS LampPriest preview coordinate roundtrip
+PASS MirrorKnight all non-migrated stats / identity / portrait / text unchanged
+PASS MirrorKnight exact collision union
+PASS MirrorKnight footprint from lowest circle edge
+PASS MirrorKnight orbit enabled state
+PASS MirrorKnight Idle artwork quad delta=0 expected=(x:-230.00, y:-170.00, width:460.00, height:497.55) actual=(x:-230.00, y:-170.00, width:460.00, height:497.55)
+PASS MirrorKnight Idle same pixels / crop
+PASS MirrorKnight Idle header / HP unchanged 372.1225 vs 372.1225
+PASS MirrorKnight Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS MirrorKnight Ready artwork quad delta=0 expected=(x:-230.00, y:-170.00, width:460.00, height:506.12) actual=(x:-230.00, y:-170.00, width:460.00, height:506.12)
+PASS MirrorKnight Ready same pixels / crop
+PASS MirrorKnight Ready header / HP unchanged 372.1225 vs 372.1225
+PASS MirrorKnight Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS MirrorKnight Attack artwork quad delta=0 expected=(x:-230.00, y:-170.00, width:460.00, height:502.45) actual=(x:-230.00, y:-170.00, width:460.00, height:502.45)
+PASS MirrorKnight Attack same pixels / crop
+PASS MirrorKnight Attack header / HP unchanged 372.1225 vs 372.1225
+PASS MirrorKnight Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS MirrorKnight Dead artwork quad delta=0 expected=(x:-230.00, y:-170.00, width:460.00, height:306.53) actual=(x:-230.00, y:-170.00, width:460.00, height:306.53)
+PASS MirrorKnight Dead same pixels / crop
+PASS MirrorKnight Dead header / HP unchanged 372.1225 vs 372.1225
+PASS MirrorKnight Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS MirrorKnight attack 0 exact weak-point positions
+PASS MirrorKnight attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS MirrorKnight attack 1 exact weak-point positions
+PASS MirrorKnight attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS MirrorKnight preview coordinate roundtrip
+PASS OrbitBat all non-migrated stats / identity / portrait / text unchanged
+PASS OrbitBat exact collision union
+PASS OrbitBat footprint from lowest circle edge
+PASS OrbitBat orbit enabled state
+PASS OrbitBat Idle artwork quad delta=1.234462E-05 expected=(x:-60.90, y:-35.98, width:121.79, height:121.99) actual=(x:-60.90, y:-35.98, width:121.79, height:121.99)
+PASS OrbitBat Idle same pixels / crop
+PASS OrbitBat Idle header / HP unchanged 123.6844 vs 123.6844
+PASS OrbitBat Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS OrbitBat Ready artwork quad delta=0 expected=(x:-60.90, y:-35.98, width:121.79, height:121.60) actual=(x:-60.90, y:-35.98, width:121.79, height:121.60)
+PASS OrbitBat Ready same pixels / crop
+PASS OrbitBat Ready header / HP unchanged 123.6844 vs 123.6844
+PASS OrbitBat Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS OrbitBat Attack artwork quad delta=0 expected=(x:-60.90, y:-35.98, width:121.79, height:123.67) actual=(x:-60.90, y:-35.98, width:121.79, height:123.67)
+PASS OrbitBat Attack same pixels / crop
+PASS OrbitBat Attack header / HP unchanged 123.6844 vs 123.6844
+PASS OrbitBat Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS OrbitBat Dead artwork quad delta=0 expected=(x:-60.90, y:-35.98, width:121.79, height:91.49) actual=(x:-60.90, y:-35.98, width:121.79, height:91.49)
+PASS OrbitBat Dead same pixels / crop
+PASS OrbitBat Dead header / HP unchanged 123.6844 vs 123.6844
+PASS OrbitBat Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS OrbitBat attack 0 exact weak-point positions
+PASS OrbitBat attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS OrbitBat attack 1 exact weak-point positions
+PASS OrbitBat attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS OrbitBat preview coordinate roundtrip
+PASS PaleWisp all non-migrated stats / identity / portrait / text unchanged
+PASS PaleWisp exact collision union
+PASS PaleWisp footprint from lowest circle edge
+PASS PaleWisp orbit enabled state
+PASS PaleWisp Idle artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-102.00, width:313.50, height:313.50) actual=(x:-156.75, y:-102.00, width:313.50, height:313.50)
+PASS PaleWisp Idle same pixels / crop
+PASS PaleWisp Idle header / HP unchanged 268.25 vs 268.25
+PASS PaleWisp Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS PaleWisp Ready artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-102.00, width:313.50, height:313.50) actual=(x:-156.75, y:-102.00, width:313.50, height:313.50)
+PASS PaleWisp Ready same pixels / crop
+PASS PaleWisp Ready header / HP unchanged 268.25 vs 268.25
+PASS PaleWisp Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS PaleWisp Attack artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-102.00, width:313.50, height:313.50) actual=(x:-156.75, y:-102.00, width:313.50, height:313.50)
+PASS PaleWisp Attack same pixels / crop
+PASS PaleWisp Attack header / HP unchanged 268.25 vs 268.25
+PASS PaleWisp Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS PaleWisp Dead artwork quad delta=7.629395E-06 expected=(x:-156.75, y:-102.00, width:313.50, height:313.50) actual=(x:-156.75, y:-102.00, width:313.50, height:313.50)
+PASS PaleWisp Dead same pixels / crop
+PASS PaleWisp Dead header / HP unchanged 268.25 vs 268.25
+PASS PaleWisp Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS PaleWisp attack 0 exact weak-point positions
+PASS PaleWisp attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS PaleWisp attack 1 exact weak-point positions
+PASS PaleWisp attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS PaleWisp preview coordinate roundtrip
+PASS SnowBell all non-migrated stats / identity / portrait / text unchanged
+PASS SnowBell exact collision union
+PASS SnowBell footprint from lowest circle edge
+PASS SnowBell orbit enabled state
+PASS SnowBell Idle artwork quad delta=0 expected=(x:-156.75, y:-97.25, width:313.50, height:313.50) actual=(x:-156.75, y:-97.25, width:313.50, height:313.50)
+PASS SnowBell Idle same pixels / crop
+PASS SnowBell Idle header / HP unchanged 279.75 vs 279.75
+PASS SnowBell Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SnowBell Ready artwork quad delta=0 expected=(x:-156.75, y:-97.25, width:313.50, height:313.50) actual=(x:-156.75, y:-97.25, width:313.50, height:313.50)
+PASS SnowBell Ready same pixels / crop
+PASS SnowBell Ready header / HP unchanged 279.75 vs 279.75
+PASS SnowBell Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SnowBell Attack artwork quad delta=0 expected=(x:-156.75, y:-97.25, width:313.50, height:313.50) actual=(x:-156.75, y:-97.25, width:313.50, height:313.50)
+PASS SnowBell Attack same pixels / crop
+PASS SnowBell Attack header / HP unchanged 279.75 vs 279.75
+PASS SnowBell Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SnowBell Dead artwork quad delta=0 expected=(x:-156.75, y:-97.25, width:313.50, height:313.50) actual=(x:-156.75, y:-97.25, width:313.50, height:313.50)
+PASS SnowBell Dead same pixels / crop
+PASS SnowBell Dead header / HP unchanged 279.75 vs 279.75
+PASS SnowBell Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SnowBell attack 0 exact weak-point positions
+PASS SnowBell attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS SnowBell attack 1 exact weak-point positions
+PASS SnowBell attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS SnowBell preview coordinate roundtrip
+PASS SoulLamp all non-migrated stats / identity / portrait / text unchanged
+PASS SoulLamp exact collision union
+PASS SoulLamp footprint from lowest circle edge
+PASS SoulLamp orbit enabled state
+PASS SoulLamp Idle artwork quad delta=0 expected=(x:-156.75, y:-101.50, width:313.50, height:313.50) actual=(x:-156.75, y:-101.50, width:313.50, height:313.50)
+PASS SoulLamp Idle same pixels / crop
+PASS SoulLamp Idle header / HP unchanged 267.75 vs 267.75
+PASS SoulLamp Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SoulLamp Ready artwork quad delta=0 expected=(x:-156.75, y:-101.50, width:313.50, height:313.50) actual=(x:-156.75, y:-101.50, width:313.50, height:313.50)
+PASS SoulLamp Ready same pixels / crop
+PASS SoulLamp Ready header / HP unchanged 267.75 vs 267.75
+PASS SoulLamp Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SoulLamp Attack artwork quad delta=0 expected=(x:-156.75, y:-101.50, width:313.50, height:313.50) actual=(x:-156.75, y:-101.50, width:313.50, height:313.50)
+PASS SoulLamp Attack same pixels / crop
+PASS SoulLamp Attack header / HP unchanged 267.75 vs 267.75
+PASS SoulLamp Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SoulLamp Dead artwork quad delta=0 expected=(x:-156.75, y:-101.50, width:313.50, height:313.50) actual=(x:-156.75, y:-101.50, width:313.50, height:313.50)
+PASS SoulLamp Dead same pixels / crop
+PASS SoulLamp Dead header / HP unchanged 267.75 vs 267.75
+PASS SoulLamp Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS SoulLamp attack 0 exact weak-point positions
+PASS SoulLamp attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS SoulLamp attack 1 exact weak-point positions
+PASS SoulLamp attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS SoulLamp preview coordinate roundtrip
+PASS StormMatriarch all non-migrated stats / identity / portrait / text unchanged
+PASS StormMatriarch exact collision union
+PASS StormMatriarch footprint from lowest circle edge
+PASS StormMatriarch orbit enabled state
+PASS StormMatriarch Idle artwork quad delta=0 expected=(x:-156.75, y:-97.00, width:313.50, height:313.50) actual=(x:-156.75, y:-97.00, width:313.50, height:313.50)
+PASS StormMatriarch Idle same pixels / crop
+PASS StormMatriarch Idle header / HP unchanged 279 vs 279
+PASS StormMatriarch Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormMatriarch Ready artwork quad delta=0 expected=(x:-156.75, y:-97.00, width:313.50, height:313.50) actual=(x:-156.75, y:-97.00, width:313.50, height:313.50)
+PASS StormMatriarch Ready same pixels / crop
+PASS StormMatriarch Ready header / HP unchanged 279 vs 279
+PASS StormMatriarch Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormMatriarch Attack artwork quad delta=0 expected=(x:-156.75, y:-97.00, width:313.50, height:313.50) actual=(x:-156.75, y:-97.00, width:313.50, height:313.50)
+PASS StormMatriarch Attack same pixels / crop
+PASS StormMatriarch Attack header / HP unchanged 279 vs 279
+PASS StormMatriarch Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormMatriarch Dead artwork quad delta=0 expected=(x:-156.75, y:-97.00, width:313.50, height:313.50) actual=(x:-156.75, y:-97.00, width:313.50, height:313.50)
+PASS StormMatriarch Dead same pixels / crop
+PASS StormMatriarch Dead header / HP unchanged 279 vs 279
+PASS StormMatriarch Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormMatriarch attack 0 exact weak-point positions
+PASS StormMatriarch attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS StormMatriarch attack 1 exact weak-point positions
+PASS StormMatriarch attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS StormMatriarch preview coordinate roundtrip
+PASS StormOrb all non-migrated stats / identity / portrait / text unchanged
+PASS StormOrb exact collision union
+PASS StormOrb footprint from lowest circle edge
+PASS StormOrb orbit enabled state
+PASS StormOrb Idle artwork quad delta=0 expected=(x:-156.75, y:-101.25, width:313.50, height:313.50) actual=(x:-156.75, y:-101.25, width:313.50, height:313.50)
+PASS StormOrb Idle same pixels / crop
+PASS StormOrb Idle header / HP unchanged 269.5 vs 269.5
+PASS StormOrb Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormOrb Ready artwork quad delta=0 expected=(x:-156.75, y:-101.25, width:313.50, height:313.50) actual=(x:-156.75, y:-101.25, width:313.50, height:313.50)
+PASS StormOrb Ready same pixels / crop
+PASS StormOrb Ready header / HP unchanged 269.5 vs 269.5
+PASS StormOrb Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormOrb Attack artwork quad delta=0 expected=(x:-156.75, y:-101.25, width:313.50, height:313.50) actual=(x:-156.75, y:-101.25, width:313.50, height:313.50)
+PASS StormOrb Attack same pixels / crop
+PASS StormOrb Attack header / HP unchanged 269.5 vs 269.5
+PASS StormOrb Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormOrb Dead artwork quad delta=0 expected=(x:-156.75, y:-101.25, width:313.50, height:313.50) actual=(x:-156.75, y:-101.25, width:313.50, height:313.50)
+PASS StormOrb Dead same pixels / crop
+PASS StormOrb Dead header / HP unchanged 269.5 vs 269.5
+PASS StormOrb Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS StormOrb attack 0 exact weak-point positions
+PASS StormOrb attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS StormOrb attack 1 exact weak-point positions
+PASS StormOrb attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS StormOrb preview coordinate roundtrip
+PASS TrainingHeavy all non-migrated stats / identity / portrait / text unchanged
+PASS TrainingHeavy exact collision union
+PASS TrainingHeavy footprint from lowest circle edge
+PASS TrainingHeavy orbit enabled state
+PASS TrainingHeavy Idle artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingHeavy Idle same pixels / crop
+PASS TrainingHeavy Idle header / HP unchanged 116 vs 116
+PASS TrainingHeavy Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingHeavy Ready artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingHeavy Ready same pixels / crop
+PASS TrainingHeavy Ready header / HP unchanged 116 vs 116
+PASS TrainingHeavy Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingHeavy Attack artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingHeavy Attack same pixels / crop
+PASS TrainingHeavy Attack header / HP unchanged 116 vs 116
+PASS TrainingHeavy Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingHeavy Dead artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingHeavy Dead same pixels / crop
+PASS TrainingHeavy Dead header / HP unchanged 116 vs 116
+PASS TrainingHeavy Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingHeavy attack 0 exact weak-point positions
+PASS TrainingHeavy attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrainingHeavy attack 1 exact weak-point positions
+PASS TrainingHeavy attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrainingHeavy preview coordinate roundtrip
+PASS TrainingLight all non-migrated stats / identity / portrait / text unchanged
+PASS TrainingLight exact collision union
+PASS TrainingLight footprint from lowest circle edge
+PASS TrainingLight orbit enabled state
+PASS TrainingLight Idle artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingLight Idle same pixels / crop
+PASS TrainingLight Idle header / HP unchanged 116 vs 116
+PASS TrainingLight Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingLight Ready artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingLight Ready same pixels / crop
+PASS TrainingLight Ready header / HP unchanged 116 vs 116
+PASS TrainingLight Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingLight Attack artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingLight Attack same pixels / crop
+PASS TrainingLight Attack header / HP unchanged 116 vs 116
+PASS TrainingLight Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingLight Dead artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingLight Dead same pixels / crop
+PASS TrainingLight Dead header / HP unchanged 116 vs 116
+PASS TrainingLight Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingLight attack 0 exact weak-point positions
+PASS TrainingLight attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrainingLight attack 1 exact weak-point positions
+PASS TrainingLight attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrainingLight preview coordinate roundtrip
+PASS TrainingMedium all non-migrated stats / identity / portrait / text unchanged
+PASS TrainingMedium exact collision union
+PASS TrainingMedium footprint from lowest circle edge
+PASS TrainingMedium orbit enabled state
+PASS TrainingMedium Idle artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingMedium Idle same pixels / crop
+PASS TrainingMedium Idle header / HP unchanged 116 vs 116
+PASS TrainingMedium Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingMedium Ready artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingMedium Ready same pixels / crop
+PASS TrainingMedium Ready header / HP unchanged 116 vs 116
+PASS TrainingMedium Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingMedium Attack artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingMedium Attack same pixels / crop
+PASS TrainingMedium Attack header / HP unchanged 116 vs 116
+PASS TrainingMedium Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingMedium Dead artwork quad delta=4.315837E-05 expected=(x:-184.46, y:-184.46, width:368.93, height:368.93) actual=(x:-184.46, y:-184.46, width:368.93, height:368.93)
+PASS TrainingMedium Dead same pixels / crop
+PASS TrainingMedium Dead header / HP unchanged 116 vs 116
+PASS TrainingMedium Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrainingMedium attack 0 exact weak-point positions
+PASS TrainingMedium attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrainingMedium attack 1 exact weak-point positions
+PASS TrainingMedium attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrainingMedium preview coordinate roundtrip
+PASS TrialGuardian all non-migrated stats / identity / portrait / text unchanged
+PASS TrialGuardian exact collision union
+PASS TrialGuardian footprint from lowest circle edge
+PASS TrialGuardian orbit enabled state
+PASS TrialGuardian Idle artwork quad delta=0 expected=(x:-156.75, y:-95.25, width:313.50, height:313.50) actual=(x:-156.75, y:-95.25, width:313.50, height:313.50)
+PASS TrialGuardian Idle same pixels / crop
+PASS TrialGuardian Idle header / HP unchanged 282.25 vs 282.25
+PASS TrialGuardian Idle name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrialGuardian Ready artwork quad delta=0 expected=(x:-156.75, y:-95.25, width:313.50, height:313.50) actual=(x:-156.75, y:-95.25, width:313.50, height:313.50)
+PASS TrialGuardian Ready same pixels / crop
+PASS TrialGuardian Ready header / HP unchanged 282.25 vs 282.25
+PASS TrialGuardian Ready name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrialGuardian Attack artwork quad delta=0 expected=(x:-156.75, y:-95.25, width:313.50, height:313.50) actual=(x:-156.75, y:-95.25, width:313.50, height:313.50)
+PASS TrialGuardian Attack same pixels / crop
+PASS TrialGuardian Attack header / HP unchanged 282.25 vs 282.25
+PASS TrialGuardian Attack name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrialGuardian Dead artwork quad delta=0 expected=(x:-156.75, y:-95.25, width:313.50, height:313.50) actual=(x:-156.75, y:-95.25, width:313.50, height:313.50)
+PASS TrialGuardian Dead same pixels / crop
+PASS TrialGuardian Dead header / HP unchanged 282.25 vs 282.25
+PASS TrialGuardian Dead name size / typography unchanged (960.00, 72.00) vs (960.00, 72.00)
+PASS TrialGuardian attack 0 exact weak-point positions
+PASS TrialGuardian attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrialGuardian attack 1 exact weak-point positions
+PASS TrialGuardian attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TrialGuardian preview coordinate roundtrip
+PASS TunnelRat all non-migrated stats / identity / portrait / text unchanged
+PASS TunnelRat exact collision union
+PASS TunnelRat footprint from lowest circle edge
+PASS TunnelRat orbit enabled state
+PASS TunnelRat Idle artwork quad delta=0 expected=(x:-128.84, y:-48.31, width:257.69, height:172.22) actual=(x:-128.84, y:-48.31, width:257.69, height:172.22)
+PASS TunnelRat Idle same pixels / crop
+PASS TunnelRat Idle header / HP unchanged 186.9697 vs 186.9697
+PASS TunnelRat Idle name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS TunnelRat Ready artwork quad delta=3.814697E-06 expected=(x:-128.84, y:-48.31, width:257.69, height:178.24) actual=(x:-128.84, y:-48.31, width:257.69, height:178.24)
+PASS TunnelRat Ready same pixels / crop
+PASS TunnelRat Ready header / HP unchanged 186.9697 vs 186.9697
+PASS TunnelRat Ready name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS TunnelRat Attack artwork quad delta=3.814697E-06 expected=(x:-128.84, y:-48.31, width:257.69, height:199.28) actual=(x:-128.84, y:-48.31, width:257.69, height:199.28)
+PASS TunnelRat Attack same pixels / crop
+PASS TunnelRat Attack header / HP unchanged 186.9697 vs 186.9697
+PASS TunnelRat Attack name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS TunnelRat Dead artwork quad delta=0 expected=(x:-128.84, y:-48.31, width:257.69, height:116.82) actual=(x:-128.84, y:-48.31, width:257.69, height:116.82)
+PASS TunnelRat Dead same pixels / crop
+PASS TunnelRat Dead header / HP unchanged 186.9697 vs 186.9697
+PASS TunnelRat Dead name size / typography unchanged (300.00, 40.00) vs (300.00, 40.00)
+PASS TunnelRat attack 0 exact weak-point positions
+PASS TunnelRat attack 0 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TunnelRat attack 1 exact weak-point positions
+PASS TunnelRat attack 1 damage / timing / mechanics / weak-point radius / hits unchanged
+PASS TunnelRat preview coordinate roundtrip
+RESULT 1100 checks, 0 failures

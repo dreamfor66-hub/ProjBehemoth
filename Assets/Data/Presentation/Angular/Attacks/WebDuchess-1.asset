@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.webduchess-1.displayname
-    lastText: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778\uC758 \uAC15\uD0C0 1"
+    lastText: "\uCC98\uD615\uC758 \uC2E4"
   textOwnerGuid: 001d5f1ccf5d34f41819e4fb620b2434
   type: 1
-  displayName: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778\uC758 \uAC15\uD0C0 1"
+  displayName: "\uCC98\uD615\uC758 \uC2E4"
   damage: 32
   shieldDamage: 51.2
   windupDuration: 1
@@ -28,12 +28,12 @@ MonoBehaviour:
   chargeTimeLimit: 4.5
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: -42.5, y: 0}
+    localPosition: {x: -42.5, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0
   - id: lock_1
-    normalizedPosition: {x: 42.5, y: 0}
+    localPosition: {x: 42.5, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0
@@ -45,8 +45,8 @@ MonoBehaviour:
       rebuildDelay: 5
       rebuildPerSecond: 24
     healOnUnguardedHit: 0
-    hitCount: 1
-    followupDelay: 0.3
+    hitCount: 2
+    followupDelay: 0.45
   chargeSummonMechanics:
     openingSummons: []
     summonOnFailedCharge: {fileID: 0}

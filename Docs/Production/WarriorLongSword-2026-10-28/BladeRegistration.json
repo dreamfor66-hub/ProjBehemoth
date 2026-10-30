@@ -1,0 +1,72 @@
+[
+  {
+    "state": "Idle",
+    "base": [
+      1941,
+      1066
+    ],
+    "oldTip": [
+      2138,
+      722
+    ],
+    "source": "C:/Users/user/.codex/generated_images/01a17e35-6ae4-7512-8bc3-1f02d10ce875/exec-8fba8965-06ec-492a-a323-1ee4e8c26bfd.png",
+    "sourceBase": [
+      1230,
+      678
+    ],
+    "sourceTip": [
+      1793,
+      287
+    ],
+    "length": 800,
+    "widthScale": 1.77,
+    "normalOffset": -7,
+    "oldLength": 396.41518638921997,
+    "tip": [
+      2338.562972890904,
+      371.7783620585235
+    ],
+    "outsideBladePixelsIdentical": true,
+    "changedBounds": [
+      1920,
+      361,
+      2345,
+      1034
+    ]
+  },
+  {
+    "state": "Ready",
+    "base": [
+      1895,
+      510
+    ],
+    "oldTip": [
+      1500,
+      230
+    ],
+    "source": "C:/Users/user/.codex/generated_images/01a17e35-6ae4-7512-8bc3-1f02d10ce875/exec-820b24b9-f6be-47f5-a211-4ef175731539.png",
+    "sourceBase": [
+      1211,
+      342
+    ],
+    "sourceTip": [
+      797,
+      27
+    ],
+    "length": 800,
+    "widthScale": 1.57,
+    "normalOffset": -2,
+    "oldLength": 484.1745553000488,
+    "tip": [
+      1242.3428197725693,
+      47.356935534985894
+    ],
+    "outsideBladePixelsIdentical": true,
+    "changedBounds": [
+      1184,
+      0,
+      1886,
+      534
+    ]
+  }
+]

@@ -22,25 +22,32 @@ MonoBehaviour:
       \uC5EC\uB7EC \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
   textOwnerGuid: 4dc6b9d6f09c1f14594fda8127d02995
   displayName: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
-  portrait: {fileID: 21300000, guid: 9ca2ca946267ce14ca86d2f311becd5b, type: 3}
-  combatAnimation: {fileID: 11400000, guid: ec9ce5a8853a4ca458d17efaaec16b2c, type: 2}
+  portrait: {fileID: 21300000, guid: e7f40c5d1583fae45bc8cda03fb8f6c5, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 43ca2eed7e4af134eb144032f1eba259, type: 2}
   encounterHint: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4.
     \uC5EC\uB7EC \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
+  useOrbit: 0
   orbitRadius: 170
   orbitSpeed: 0.55
-  maxHp: 370
-  normalAttackInterval: 2.9
-  chargeInterval: 6.8
+  maxHp: 820
+  normalAttackInterval: 2.4
+  chargeInterval: 4.8
   stunDuration: 3
   stunDamageMultiplier: 1.5
   experienceReward: 44
   goldReward: 21
-  bodyHitRadius: 95
+  combatScale: 1
+  hitBoxes:
+  - center: {x: 0, y: -45}
+    radius: 165
+  - center: {x: 0, y: 0}
+    radius: 165
+  - center: {x: 0, y: 45}
+    radius: 165
   attacks:
   - {fileID: 11400000, guid: b307c58396569f3438211fd309cb8ce0, type: 2}
-  - {fileID: 11400000, guid: bda5cb972b200b8469d14906d4fcd131, type: 2}
+  - {fileID: 11400000, guid: 6c27259a14ccf25499b08f85f4bb2321, type: 2}
   normalAttackSequence: []
-  bodyColor: {r: 0.8, g: 0.48, b: 0.6528, a: 1}

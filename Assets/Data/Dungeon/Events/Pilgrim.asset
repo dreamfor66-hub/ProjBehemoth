@@ -117,6 +117,7 @@ MonoBehaviour:
   textOwnerGuid: 044a1d8b41194c549b8ddf358bb40c65
   id: Pilgrim
   displayName: "\uC9D0 \uD558\uB098\uB9CC \uBD80\uD0C1\uD558\uB124"
+  excludedFromRandomPool: 0
   narrative: "\uC791\uC740 \uC608\uBC30\uC2E4\uC5D0\uC11C \uB178\uC778\uC774 \uB3CC\uB4E4\uC744
     \uC8FC\uC6CC \uB2F4\uACE0 \uC788\uB2E4.\r\n\r\n\uB0B4\uAC00 \uAD74\uB7EC\uC628
     \uB3CC \uD558\uB098\uB97C \uAC74\uB124\uC790 \uB178\uC778\uC774 \uC790\uB8E8\uB97C
@@ -129,8 +130,9 @@ MonoBehaviour:
     \uC61B \uC6B4\uBC18\uC6A9 \uACC4\uB2E8\uC744 \uCC3E\uC73C\uBA74 \uAE38\uC744
     \uC904\uC77C \uC218 \uC788\uC9C0\uB9CC, \uC785\uAD6C\uB97C \uCC3E\uC9C0 \uBABB\uD588\uB2E4\uB294
     \uBAA8\uC591\uC774\uB2E4."
-  illustration: {fileID: 21300000, guid: 34c40e8cbee45b78afbdc0b3559c616c, type: 3}
+  illustration: {fileID: 21300000, guid: e7272535203f832448964fc03bcbd541, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
   minAct: 1
   maxAct: 3
   weight: 1
@@ -251,7 +253,7 @@ MonoBehaviour:
       \uD55C\uB2E4.\r\n\r\n\uC131\uC758 \uC61B \uC6B4\uBC18\uC6A9 \uACC4\uB2E8\uC744
       \uCC3E\uC73C\uBA74 \uAE38\uC744 \uC904\uC77C \uC218 \uC788\uC9C0\uB9CC, \uC785\uAD6C\uB97C
       \uCC3E\uC9C0 \uBABB\uD588\uB2E4\uB294 \uBAA8\uC591\uC774\uB2E4."
-    illustration: {fileID: 21300000, guid: 34c40e8cbee45b78afbdc0b3559c616c, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
       description: "\uC21C\uB840\uC790\uC758 \uC11C\uC57D \uD68D\uB4DD"

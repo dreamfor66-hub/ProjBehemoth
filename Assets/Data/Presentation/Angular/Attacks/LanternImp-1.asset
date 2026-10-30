@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.lanternimp-1.displayname
-    lastText: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC\uC758 \uAC15\uD0C0 1"
+    lastText: "\uB3C4\uC57D \uAFF0\uB6AB\uAE30"
   textOwnerGuid: d759dc0c533bacd4dab9301cb4a18381
   type: 1
-  displayName: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC\uC758 \uAC15\uD0C0 1"
+  displayName: "\uB3C4\uC57D \uAFF0\uB6AB\uAE30"
   damage: 19.44
   shieldDamage: 19.44
   windupDuration: 0.01
@@ -28,7 +28,7 @@ MonoBehaviour:
   chargeTimeLimit: 4
   chargeWeakPoints:
   - id: core-1
-    normalizedPosition: {x: 0, y: 22}
+    localPosition: {x: 0, y: 22}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0

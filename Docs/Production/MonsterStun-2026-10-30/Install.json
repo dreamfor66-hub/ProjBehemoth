@@ -1,0 +1,128 @@
+{
+  "actors": [
+    {
+      "monster": "Assets/Data/Combat/Monsters/AlarmHound.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/BellHound-Stunned.png",
+      "rect": {
+        "x": 23,
+        "y": 61,
+        "width": 1224,
+        "height": 993
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/ArmoredExecutioner.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/IronMantis-Stunned.png",
+      "rect": {
+        "x": 113,
+        "y": 17,
+        "width": 1187,
+        "height": 1126
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/BellKeeper.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/OssuaryBell-Stunned.png",
+      "rect": {
+        "x": 124,
+        "y": 34,
+        "width": 1036,
+        "height": 1160
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/BroodKeeper.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/WebDuchess-Stunned.png",
+      "rect": {
+        "x": 74,
+        "y": 60,
+        "width": 1126,
+        "height": 1028
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/StoneSphinx-Stunned.png",
+      "rect": {
+        "x": 75,
+        "y": 26,
+        "width": 1656,
+        "height": 758
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/EttinGatekeeper-Stunned.png",
+      "rect": {
+        "x": 14,
+        "y": 43,
+        "width": 1233,
+        "height": 1053
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/LanternImp-Stunned.png",
+      "rect": {
+        "x": 144,
+        "y": 7,
+        "width": 1024,
+        "height": 1239
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/CoffinSlime-Stunned.png",
+      "rect": {
+        "x": 167,
+        "y": 91,
+        "width": 934,
+        "height": 1031
+      },
+      "referenceFeatureFraction": 0.125,
+      "stunnedFeatureFraction": 0.1640625
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/StringRevenant-Stunned.png",
+      "rect": {
+        "x": 216,
+        "y": 99,
+        "width": 961,
+        "height": 861
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/MirrorKnight.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/MirrorShell-Stunned.png",
+      "rect": {
+        "x": 201,
+        "y": 43,
+        "width": 933,
+        "height": 1164
+      },
+      "referenceFeatureFraction": 0.12890625,
+      "stunnedFeatureFraction": 0.1921875
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/OrbitBat.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/Threadling-Stunned.png",
+      "rect": {
+        "x": 210,
+        "y": 40,
+        "width": 846,
+        "height": 1266
+      }
+    },
+    {
+      "monster": "Assets/Data/Combat/Monsters/TunnelRat.asset",
+      "image": "Assets/Art/World/ActOne/Stunned/BoneScorpion-Stunned.png",
+      "rect": {
+        "x": 58,
+        "y": 131,
+        "width": 1416,
+        "height": 754
+      }
+    }
+  ]
+}

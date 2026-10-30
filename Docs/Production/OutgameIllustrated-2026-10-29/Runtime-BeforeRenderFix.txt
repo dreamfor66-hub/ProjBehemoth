@@ -1,0 +1,60 @@
+Existing Unity Editor, saved OutGameScene, actual UI event handlers and rendering. No combat/balance suite.
+PASS title page shown initially
+PASS title opens six-character selection
+PASS illustration covers whole selection canvas
+PASS Warrior button updates full-screen art
+PASS Warrior original-art portrait and label visible
+PASS Warrior portrait hit target not blocked
+PASS Warrior right keyboard navigation linked
+PASS Warrior name fits its text rectangle (64)
+PASS Warrior story fits its text rectangle (23)
+PASS Warrior ability fits its text rectangle (29)
+PASS Warrior starting relic fits its text rectangle (24)
+PASS Rogue button updates full-screen art
+PASS Rogue original-art portrait and label visible
+PASS Rogue portrait hit target not blocked
+PASS Rogue right keyboard navigation linked
+PASS Rogue name fits its text rectangle (64)
+PASS Rogue story fits its text rectangle (23)
+PASS Rogue ability fits its text rectangle (29)
+PASS Rogue starting relic fits its text rectangle (24)
+PASS Barbarian button updates full-screen art
+PASS Barbarian original-art portrait and label visible
+PASS Barbarian portrait hit target not blocked
+PASS Barbarian right keyboard navigation linked
+PASS Barbarian name fits its text rectangle (64)
+PASS Barbarian story fits its text rectangle (23)
+PASS Barbarian ability fits its text rectangle (29)
+PASS Barbarian starting relic fits its text rectangle (24)
+PASS Samurai button updates full-screen art
+PASS Samurai original-art portrait and label visible
+PASS Samurai portrait hit target not blocked
+PASS Samurai right keyboard navigation linked
+PASS Samurai name fits its text rectangle (64)
+PASS Samurai story fits its text rectangle (23)
+PASS Samurai ability fits its text rectangle (29)
+PASS Samurai starting relic fits its text rectangle (24)
+PASS Monk button updates full-screen art
+PASS Monk original-art portrait and label visible
+PASS Monk portrait hit target not blocked
+PASS Monk right keyboard navigation linked
+PASS Monk name fits its text rectangle (64)
+PASS Monk story fits its text rectangle (23)
+PASS Monk ability fits its text rectangle (29)
+PASS Monk starting relic fits its text rectangle (24)
+PASS Wizard button updates full-screen art
+PASS Wizard original-art portrait and label visible
+PASS Wizard portrait hit target not blocked
+PASS Wizard right keyboard navigation linked
+PASS Wizard name fits its text rectangle (64)
+PASS Wizard story fits its text rectangle (23)
+PASS Wizard ability fits its text rectangle (29)
+PASS Wizard starting relic fits its text rectangle (24)
+PASS ability details hide introduction without overlap
+PASS detail statistics fits its text rectangle (23)
+PASS details close restores introduction
+PASS back returns to title
+PASS options opens
+PASS options back returns to title
+PASS start enters main game with selected character
+COMPLETE failures=0

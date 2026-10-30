@@ -45,7 +45,7 @@ public sealed class MonsterPlacementLiveProbe : MonoBehaviour
             combat.BeginPreparedCombat(); yield return new WaitForSecondsRealtime(.55f);
             var views = FindObjectsByType<MonsterView>(FindObjectsSortMode.None).OrderBy(v => v.Root.anchoredPosition.x).ToArray();
             var positions = count == 1 ? new[] { Vector2.zero } : count == 2 ? new[] { new Vector2(-270, -35), new Vector2(270, -35) } : new[] { new Vector2(-370, -65), Vector2.zero, new Vector2(370, -65) };
-            Check(views.Length == count && views.Select(v => v.Root.anchoredPosition - Vector2.up * goblin.bodyHitRadius * v.Root.localScale.x).SequenceEqual(positions), count + " default hitbox bottoms use saved formation: " + string.Join(", ", views.Select(v => v.Root.anchoredPosition)));
+            Check(views.Length == count && views.Select(v => v.Root.anchoredPosition - Vector2.up * (-goblin.FootprintY) * v.Root.localScale.x).SequenceEqual(positions), count + " default hitbox bottoms use saved formation: " + string.Join(", ", views.Select(v => v.Root.anchoredPosition)));
             Check(scene.PlayerPosition == new Vector2(0, -532), count + " foreground player remains at -532");
             var playerImage = Ref<Image>(FindFirstObjectByType<PlayerView>(), "body");
             var enemyImage = views[0].transform.Find("Art").GetComponent<Image>();
@@ -71,7 +71,7 @@ public sealed class MonsterPlacementLiveProbe : MonoBehaviour
         var pair = UnityEditor.AssetDatabase.LoadAssetAtPath<EncounterData>("Assets/Data/Dungeon/Encounters/MazePair.asset");
         combat.PrepareFixedEncounter(combat.Run, pair, 1); yield return null;
         var pairViews = FindObjectsByType<MonsterView>(FindObjectsSortMode.None).OrderBy(v => v.Root.anchoredPosition.x).ToArray();
-        Check(pairViews.Length == 2 && pairViews.Select(v => v.Root.anchoredPosition).SequenceEqual(pair.members.Select(m => m.monster.BodyCenterFromPlacement(m.offset, m.scale)).OrderBy(p => p.x)), "authored two-species encounter offsets place the hitbox bottoms");
+        Check(pairViews.Length == 2 && pairViews.Select(v => v.Root.anchoredPosition).SequenceEqual(pair.members.Select(m => m.monster.BodyCenterFromPlacement(m.offset, m.monster.combatScale)).OrderBy(p => p.x)), "authored two-species encounter offsets place the hitbox bottoms");
         combat.BeginPreparedCombat(); yield return new WaitForSecondsRealtime(.55f); yield return Capture("Authored-Pair");
         combat.ResetEncounter();
         var flying = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_FrostBat.asset");

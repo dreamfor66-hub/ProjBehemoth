@@ -1,0 +1,50 @@
+{
+  "method": "manual approximate cranial/face landmarks at same source resolution; not automatic detection, prompt percentages are not measured results",
+  "sourceCanvas": [
+    1672,
+    941
+  ],
+  "boxes": {
+    "Warrior": [
+      1030,
+      62,
+      1235,
+      233
+    ],
+    "Rogue": [
+      1100,
+      126,
+      1265,
+      315
+    ],
+    "Barbarian": [
+      1097,
+      108,
+      1235,
+      280
+    ],
+    "Samurai": [
+      978,
+      82,
+      1195,
+      283
+    ],
+    "Monk": [
+      954,
+      78,
+      1138,
+      310
+    ],
+    "Wizard": [
+      1042,
+      174,
+      1280,
+      389
+    ]
+  },
+  "monkBeforeHeight": 168,
+  "monkAfterHeight": 232,
+  "wizardBeforeHeight": 229,
+  "wizardAfterHeight": 215,
+  "latestMonkScene": "Entirely new wooden training room / hand-wrapping, water scene superseded"
+}

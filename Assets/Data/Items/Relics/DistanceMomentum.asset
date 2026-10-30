@@ -18,12 +18,12 @@ MonoBehaviour:
     lastText: "\uC7A5\uAC70\uB9AC \uC794\uC0C1"
   - propertyPath: description
     key: data.equipmentdata.distancemomentum.description
-    lastText: "\uBCA0\uAE30 \uAE38\uC774 100\uB9C8\uB2E4 \uD53C\uD574 +20%"
+    lastText: "\uBCA0\uAE30 \uAE38\uC774 100\uB9C8\uB2E4 \uD53C\uD574 +6%"
   textOwnerGuid: 8b38d71c4c546b8499683289e1a94130
   id: DistanceMomentum
   displayName: "\uC7A5\uAC70\uB9AC \uC794\uC0C1"
-  description: "\uBCA0\uAE30 \uAE38\uC774 100\uB9C8\uB2E4 \uD53C\uD574 +20%"
-  icon: {fileID: 21300000, guid: 0d7d0a82c9b3545abb9a3965e7bfdb76, type: 3}
+  description: "\uBCA0\uAE30 \uAE38\uC774 100\uB9C8\uB2E4 \uD53C\uD574 +6%"
+  icon: {fileID: 21300000, guid: 0d07cb31d193d2844a830c6c9ef9d51d, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -47,10 +47,11 @@ MonoBehaviour:
     target: 0
     effects:
     - effectType: 2
-      effectMagnitude: 0.002
+      effectMagnitude: 0.0006
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 19
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 19
     scale: 0
     scaleRatio: 0

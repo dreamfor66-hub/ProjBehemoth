@@ -12,8 +12,9 @@ namespace DungeonSlash
         private sealed class Contact
         {
             public Vector2 Start, Latest, AttackStart;
+            public SwordSwingDirection Swing;
             public float Held;
-            public bool Guard, Eligible, Charged, Capturing, Consumed, PlayerOrigin, Spell;
+            public bool Guard, Eligible, Charged, Capturing, Consumed, PlayerOrigin, Spell, WaitingRecovery;
             public int ChargeLevel = 1, Target = -1;
             public float StillSince = -1f;
             public readonly SwipeGestureAnalyzer Analyzer = new();
@@ -24,9 +25,16 @@ namespace DungeonSlash
         public float ChargeProgress { get; private set; }
         public float SecondChargeProgress { get; private set; }
         public Vector2 ChargeOrigin { get; private set; }
+        public bool TryGetAttackPointer(out Vector2 position)
+        {
+            var contact=contacts.Values.FirstOrDefault(c=>!c.Guard&&!c.Spell&&!c.Consumed);
+            position=contact!=null?contact.Latest:Vector2.zero;return contact!=null;
+        }
         public float CastingSeconds { get; private set; }
         public bool IsChargingAction => State is PointerGestureState.Charging or PointerGestureState.Charged or PointerGestureState.SecondCharging or PointerGestureState.SecondCharged;
-        public bool IsPreparingAttack => contacts.Values.Any(contact => !contact.Consumed && !contact.Guard && !contact.Spell);
+        public bool IsPreparingAttack => combat?.Player != null && combat.Player.CanStartCharge() && contacts.Values.Any(contact => !contact.Consumed && !contact.Guard && !contact.Spell && !contact.WaitingRecovery);
+        // Latch at press, not at the moving pointer: the painted Ready must lead to its own Attack.
+        public SwordSwingDirection PreparingSwing => contacts.Values.FirstOrDefault(contact=>!contact.Consumed&&!contact.Guard&&!contact.Spell)?.Swing??SwordSwingDirection.RightToLeft;
         public bool IsGuardKeyHeld => Input.GetKey(KeyCode.Space);
 #if UNITY_EDITOR
         internal bool? SpellModifierForVerification { get; set; }
@@ -87,6 +95,8 @@ namespace DungeonSlash
             var guard = !spell && IsGuardKeyHeld;
             var onPlayer = combat.IsPointerInsidePlayerBody(position);
             var contact = new Contact { Start = position, Latest = position, Guard = guard, PlayerOrigin=onPlayer, Spell=spell, Eligible = !spell && !guard && combat.Player.CanStartCharge() };
+            contact.WaitingRecovery=!spell&&!guard&&!combat.Player.CanStartCharge();
+            contact.Swing=position.x<sceneView.LogicalArea.rect.center.x?SwordSwingDirection.LeftToRight:SwordSwingDirection.RightToLeft;
             contact.Analyzer.Reset(position, Time.unscaledTime); contacts[id] = contact;
             if (guard) combat.Player.TrySetGuard(true);
         }
@@ -100,6 +110,19 @@ namespace DungeonSlash
             if (contact.PlayerOrigin && combat.IsDownwardGuardGesture(contact.Start,current))
             {contact.Guard=true;contact.Eligible=false;contact.Capturing=false;combat.Player.TrySetGuard(true);return;}
             var player = combat.Player;
+            // A held contact survives recovery, but none of that blocked time counts as charge.
+            // Re-arm from the current pointer position when offense becomes available again.
+            if (!player.CanStartCharge())
+            {
+                contact.WaitingRecovery=true;contact.Held=0;contact.Eligible=contact.Charged=contact.Capturing=false;
+                contact.ChargeLevel=1;contact.Analyzer.Reset(current,Time.unscaledTime);contact.Traversal.Reset();return;
+            }
+            if (contact.WaitingRecovery)
+            {
+                contact.WaitingRecovery=false;contact.Start=contact.Latest=current;contact.Held=0;
+                contact.Eligible=true;contact.Charged=contact.Capturing=false;contact.ChargeLevel=1;
+                contact.Analyzer.Reset(current,Time.unscaledTime);contact.Traversal.Reset();return;
+            }
             if (contact.Capturing) { if (ConfirmTraversal(contact, previous, current)) Commit(contact); return; }
             contact.Analyzer.AddSample(current, Time.unscaledTime, player.SwipeSampleWindowSeconds);
             if (contact.Eligible)
@@ -151,7 +174,7 @@ namespace DungeonSlash
         }
         private void Commit(Contact contact)
         {
-            combat.ExecuteAttack(new AttackSegment(contact.AttackStart, contact.Latest, combat.Player.SegmentWidth), contact.Charged, contact.ChargeLevel);
+            combat.ExecuteAttack(new AttackSegment(contact.AttackStart, contact.Latest, combat.Player.SegmentWidth), contact.Charged, contact.ChargeLevel,contact.Swing);
             contact.Consumed = true;
         }
         private void RefreshState()
@@ -161,6 +184,7 @@ namespace DungeonSlash
             if (contact != null)
             {
                 ChargeOrigin = contact.Latest;
+                if(!combat.Player.CanStartCharge()||contact.WaitingRecovery){State=PointerGestureState.Pressed;return;}
                 ChargeProgress = contact.Eligible || contact.Charged ? Mathf.Clamp01(contact.Held / combat.Player.CurrentChargeDuration) : 0;
                 SecondChargeProgress = combat.Player.DoubleChargeEnabled ? Mathf.Clamp01(contact.Held / combat.Player.CurrentChargeDuration - 1f) : 0;
                 State = contact.Capturing ? PointerGestureState.Attacking : contact.Charged ? PointerGestureState.Charged : contact.Eligible ? PointerGestureState.Charging : PointerGestureState.Pressed;

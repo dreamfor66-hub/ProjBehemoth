@@ -1,0 +1,1 @@
+Long card titles fit within their own title areas.

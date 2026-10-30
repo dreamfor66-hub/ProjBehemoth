@@ -15,12 +15,12 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.bonescorpion-1.displayname
-    lastText: "\uAC70\uBBF8\uC758 \uAC15\uD0C0 1"
+    lastText: "\uB3C4\uC57D \uAE09\uC2B5"
   textOwnerGuid: 2c06d14efdd58b5469be04a97c704571
   type: 1
-  displayName: "\uAC70\uBBF8\uC758 \uAC15\uD0C0 1"
-  damage: 10
-  shieldDamage: 16
+  displayName: "\uB3C4\uC57D \uAE09\uC2B5"
+  damage: 24
+  shieldDamage: 28
   windupDuration: 1
   recoveryDuration: 0.5
   guardable: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
   chargeTimeLimit: 2.7
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: 0, y: 0}
+    localPosition: {x: 0, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0

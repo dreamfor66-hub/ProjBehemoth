@@ -1,0 +1,182 @@
+Scoped editor preview / clipboard checks. Existing assets are read only.
+PASS AlarmHound actual Idle painting
+PASS AlarmHound pose toggle retains authored weak-point coordinates
+PASS AlarmHound preview never changes authored monster data
+PASS AlarmHound no exact duplicate hitboxes
+PASS ArmoredExecutioner actual Idle painting
+PASS ArmoredExecutioner pose toggle retains authored weak-point coordinates
+PASS ArmoredExecutioner preview never changes authored monster data
+PASS ArmoredExecutioner no exact duplicate hitboxes
+PASS AshCrow actual Idle painting
+PASS AshCrow pose toggle retains authored weak-point coordinates
+PASS AshCrow preview never changes authored monster data
+PASS AshCrow no exact duplicate hitboxes
+PASS AshGeneral actual Idle painting
+PASS AshGeneral pose toggle retains authored weak-point coordinates
+PASS AshGeneral preview never changes authored monster data
+PASS AshGeneral no exact duplicate hitboxes
+PASS BellKeeper actual Idle painting
+PASS BellKeeper pose toggle retains authored weak-point coordinates
+PASS BellKeeper preview never changes authored monster data
+PASS BellKeeper no exact duplicate hitboxes
+PASS BloodExecutioner actual Idle painting
+PASS BloodExecutioner pose toggle retains authored weak-point coordinates
+PASS BloodExecutioner preview never changes authored monster data
+PASS BloodExecutioner no exact duplicate hitboxes
+PASS BroodKeeper actual Idle painting
+PASS BroodKeeper pose toggle retains authored weak-point coordinates
+PASS BroodKeeper preview never changes authored monster data
+PASS BroodKeeper no exact duplicate hitboxes
+PASS CrystalSpider actual Idle painting
+PASS CrystalSpider pose toggle retains authored weak-point coordinates
+PASS CrystalSpider preview never changes authored monster data
+PASS CrystalSpider no exact duplicate hitboxes
+PASS Data_Monster_B1_Boss_MazeGuardian actual Idle painting
+PASS Data_Monster_B1_Boss_MazeGuardian pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B1_Boss_MazeGuardian preview never changes authored monster data
+PASS Data_Monster_B1_Boss_MazeGuardian no exact duplicate hitboxes
+PASS Data_Monster_B1_Elite_Minotaur actual Idle painting
+PASS Data_Monster_B1_Elite_Minotaur pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B1_Elite_Minotaur preview never changes authored monster data
+PASS Data_Monster_B1_Elite_Minotaur no exact duplicate hitboxes
+PASS Data_Monster_B1_Minion_Bat actual Idle painting
+PASS Data_Monster_B1_Minion_Bat pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B1_Minion_Bat preview never changes authored monster data
+PASS Data_Monster_B1_Minion_Bat no exact duplicate hitboxes
+PASS Data_Monster_B1_Minion_Leech actual Idle painting
+PASS Data_Monster_B1_Minion_Leech pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B1_Minion_Leech preview never changes authored monster data
+PASS Data_Monster_B1_Minion_Leech no exact duplicate hitboxes
+PASS Data_Monster_B1_Minion_Skeleton actual Idle painting
+PASS Data_Monster_B1_Minion_Skeleton pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B1_Minion_Skeleton preview never changes authored monster data
+PASS Data_Monster_B1_Minion_Skeleton no exact duplicate hitboxes
+PASS Data_Monster_B2_Boss_FrostQueen actual Idle painting
+PASS Data_Monster_B2_Boss_FrostQueen pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B2_Boss_FrostQueen preview never changes authored monster data
+PASS Data_Monster_B2_Boss_FrostQueen no exact duplicate hitboxes
+PASS Data_Monster_B2_Elite_FrostOgre actual Idle painting
+PASS Data_Monster_B2_Elite_FrostOgre pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B2_Elite_FrostOgre preview never changes authored monster data
+PASS Data_Monster_B2_Elite_FrostOgre no exact duplicate hitboxes
+PASS Data_Monster_B2_Minion_FrostBat actual Idle painting
+PASS Data_Monster_B2_Minion_FrostBat pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B2_Minion_FrostBat preview never changes authored monster data
+PASS Data_Monster_B2_Minion_FrostBat no exact duplicate hitboxes
+PASS Data_Monster_B2_Minion_IceWraith actual Idle painting
+PASS Data_Monster_B2_Minion_IceWraith pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B2_Minion_IceWraith preview never changes authored monster data
+PASS Data_Monster_B2_Minion_IceWraith no exact duplicate hitboxes
+PASS Data_Monster_B2_Minion_Yeti actual Idle painting
+PASS Data_Monster_B2_Minion_Yeti pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B2_Minion_Yeti preview never changes authored monster data
+PASS Data_Monster_B2_Minion_Yeti no exact duplicate hitboxes
+PASS Data_Monster_B3_Boss_SoulEater actual Idle painting
+PASS Data_Monster_B3_Boss_SoulEater pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B3_Boss_SoulEater preview never changes authored monster data
+PASS Data_Monster_B3_Boss_SoulEater no exact duplicate hitboxes
+PASS Data_Monster_B3_Elite_SoulKnight actual Idle painting
+PASS Data_Monster_B3_Elite_SoulKnight pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B3_Elite_SoulKnight preview never changes authored monster data
+PASS Data_Monster_B3_Elite_SoulKnight no exact duplicate hitboxes
+PASS Data_Monster_B3_Minion_AshHound actual Idle painting
+PASS Data_Monster_B3_Minion_AshHound pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B3_Minion_AshHound preview never changes authored monster data
+PASS Data_Monster_B3_Minion_AshHound no exact duplicate hitboxes
+PASS Data_Monster_B3_Minion_ShadeLancer actual Idle painting
+PASS Data_Monster_B3_Minion_ShadeLancer pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B3_Minion_ShadeLancer preview never changes authored monster data
+PASS Data_Monster_B3_Minion_ShadeLancer no exact duplicate hitboxes
+PASS Data_Monster_B3_Minion_VoidMaw actual Idle painting
+PASS Data_Monster_B3_Minion_VoidMaw pose toggle retains authored weak-point coordinates
+PASS Data_Monster_B3_Minion_VoidMaw preview never changes authored monster data
+PASS Data_Monster_B3_Minion_VoidMaw no exact duplicate hitboxes
+PASS Data_Monster_Special_MerchantMutant actual Idle painting
+PASS Data_Monster_Special_MerchantMutant pose toggle retains authored weak-point coordinates
+PASS Data_Monster_Special_MerchantMutant preview never changes authored monster data
+PASS Data_Monster_Special_MerchantMutant no exact duplicate hitboxes
+PASS Data_Monster_Special_Minion_Mimic actual Idle painting
+PASS Data_Monster_Special_Minion_Mimic pose toggle retains authored weak-point coordinates
+PASS Data_Monster_Special_Minion_Mimic preview never changes authored monster data
+PASS Data_Monster_Special_Minion_Mimic no exact duplicate hitboxes
+PASS DeepTrialGuardian actual Idle painting
+PASS DeepTrialGuardian pose toggle retains authored weak-point coordinates
+PASS DeepTrialGuardian preview never changes authored monster data
+PASS DeepTrialGuardian no exact duplicate hitboxes
+PASS EclipseBeast actual Idle painting
+PASS EclipseBeast pose toggle retains authored weak-point coordinates
+PASS EclipseBeast preview never changes authored monster data
+PASS EclipseBeast no exact duplicate hitboxes
+PASS ElderLeftHeart actual Idle painting
+PASS ElderLeftHeart pose toggle retains authored weak-point coordinates
+PASS ElderLeftHeart preview never changes authored monster data
+PASS ElderLeftHeart no exact duplicate hitboxes
+PASS ElderRightHeart actual Idle painting
+PASS ElderRightHeart pose toggle retains authored weak-point coordinates
+PASS ElderRightHeart preview never changes authored monster data
+PASS ElderRightHeart no exact duplicate hitboxes
+PASS IceMirror actual Idle painting
+PASS IceMirror pose toggle retains authored weak-point coordinates
+PASS IceMirror preview never changes authored monster data
+PASS IceMirror no exact duplicate hitboxes
+PASS IceNeedle actual Idle painting
+PASS IceNeedle pose toggle retains authored weak-point coordinates
+PASS IceNeedle preview never changes authored monster data
+PASS IceNeedle no exact duplicate hitboxes
+PASS LampPriest actual Idle painting
+PASS LampPriest pose toggle retains authored weak-point coordinates
+PASS LampPriest preview never changes authored monster data
+PASS LampPriest no exact duplicate hitboxes
+PASS MirrorKnight actual Idle painting
+PASS MirrorKnight pose toggle retains authored weak-point coordinates
+PASS MirrorKnight preview never changes authored monster data
+PASS MirrorKnight no exact duplicate hitboxes
+PASS OrbitBat actual Idle painting
+PASS OrbitBat pose toggle retains authored weak-point coordinates
+PASS OrbitBat preview never changes authored monster data
+PASS OrbitBat no exact duplicate hitboxes
+PASS PaleWisp actual Idle painting
+PASS PaleWisp pose toggle retains authored weak-point coordinates
+PASS PaleWisp preview never changes authored monster data
+PASS PaleWisp no exact duplicate hitboxes
+PASS SnowBell actual Idle painting
+PASS SnowBell pose toggle retains authored weak-point coordinates
+PASS SnowBell preview never changes authored monster data
+PASS SnowBell no exact duplicate hitboxes
+PASS SoulLamp actual Idle painting
+PASS SoulLamp pose toggle retains authored weak-point coordinates
+PASS SoulLamp preview never changes authored monster data
+PASS SoulLamp no exact duplicate hitboxes
+PASS StormMatriarch actual Idle painting
+PASS StormMatriarch pose toggle retains authored weak-point coordinates
+PASS StormMatriarch preview never changes authored monster data
+PASS StormMatriarch no exact duplicate hitboxes
+PASS StormOrb actual Idle painting
+PASS StormOrb pose toggle retains authored weak-point coordinates
+PASS StormOrb preview never changes authored monster data
+PASS StormOrb no exact duplicate hitboxes
+PASS TrainingHeavy actual Idle painting
+PASS TrainingHeavy pose toggle retains authored weak-point coordinates
+PASS TrainingHeavy preview never changes authored monster data
+PASS TrainingHeavy no exact duplicate hitboxes
+PASS TrainingLight actual Idle painting
+PASS TrainingLight pose toggle retains authored weak-point coordinates
+PASS TrainingLight preview never changes authored monster data
+PASS TrainingLight no exact duplicate hitboxes
+PASS TrainingMedium actual Idle painting
+PASS TrainingMedium pose toggle retains authored weak-point coordinates
+PASS TrainingMedium preview never changes authored monster data
+PASS TrainingMedium no exact duplicate hitboxes
+PASS TrialGuardian actual Idle painting
+PASS TrialGuardian pose toggle retains authored weak-point coordinates
+PASS TrialGuardian preview never changes authored monster data
+PASS TrialGuardian no exact duplicate hitboxes
+PASS TunnelRat actual Idle painting
+PASS TunnelRat pose toggle retains authored weak-point coordinates
+PASS TunnelRat preview never changes authored monster data
+PASS TunnelRat no exact duplicate hitboxes
+PASS pattern replaces full list and preserves coordinates / radius / hits / optional / IDs
+PASS pasted points are independent copies
+PASS unrelated clipboard content cannot overwrite pattern
+PASS empty pattern copies and pastes consistently
+RESULT 180 checks, 0 failures

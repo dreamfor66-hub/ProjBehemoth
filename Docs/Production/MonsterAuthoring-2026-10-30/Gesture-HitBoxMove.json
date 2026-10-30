@@ -1,0 +1,73 @@
+{
+  "textKeys": [
+    {
+      "propertyPath": "displayName",
+      "key": "data.monsterdata.authoringgesturefixture.displayname",
+      "lastText": "\ud574\uace8 \uc804\uc0ac"
+    },
+    {
+      "propertyPath": "encounterHint",
+      "key": "data.monsterdata.authoringgesturefixture.encounterhint",
+      "lastText": "\uac80\uacfc \ubc29\ud328\ub85c \ubb34\uc7a5\ud55c \ud574\uace8 \uc804\uc0ac. \ub178\ucd9c\ub418\ub294 \uc57d\uc810\uc744 \ubaa8\ub450 \ubd80\uc218\uc790."
+    }
+  ],
+  "textOwnerGuid": "4778300ca81478d4f8407df457186f30",
+  "displayName": "\ud574\uace8 \uc804\uc0ac",
+  "portrait": {
+    "instanceID": -19296060
+  },
+  "combatAnimation": {
+    "instanceID": -20144116
+  },
+  "encounterHint": "\uac80\uacfc \ubc29\ud328\ub85c \ubb34\uc7a5\ud55c \ud574\uace8 \uc804\uc0ac. \ub178\ucd9c\ub418\ub294 \uc57d\uc810\uc744 \ubaa8\ub450 \ubd80\uc218\uc790.",
+  "pattern": 0,
+  "supportId": "",
+  "diesWithLeader": false,
+  "useOrbit": false,
+  "orbitRadius": 170.0,
+  "orbitSpeed": 0.550000011920929,
+  "maxHp": 190.0,
+  "normalAttackInterval": 2.0,
+  "chargeInterval": 4.0,
+  "stunDuration": 3.0,
+  "stunDamageMultiplier": 1.649999976158142,
+  "experienceReward": 28,
+  "goldReward": 7,
+  "combatScale": 1.0,
+  "hitBoxes": [
+    {
+      "center": {
+        "x": 0.0,
+        "y": -30.0
+      },
+      "radius": 100.0
+    },
+    {
+      "center": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "radius": 100.0
+    },
+    {
+      "center": {
+        "x": 0.0,
+        "y": 30.0
+      },
+      "radius": 100.0
+    },
+    {
+      "center": {
+        "x": -205.96484375,
+        "y": 108.90489196777344
+      },
+      "radius": 59.27044677734375
+    }
+  ],
+  "attacks": [
+    {
+      "instanceID": -20561482
+    }
+  ],
+  "normalAttackSequence": []
+}

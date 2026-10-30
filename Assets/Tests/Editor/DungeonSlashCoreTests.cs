@@ -14,8 +14,8 @@ namespace DungeonSlash.Tests
         public void WideSegment_HitsBodyAndEveryCrossedWeakPoint()
         {
             var segment = new AttackSegment(new Vector2(-100f, 0f), new Vector2(100f, 0f), 10f);
-            var left = new WeakPointRuntime(new WeakPointDefinition { id = "left", normalizedPosition = Vector2.zero, hitRadius = 8f }, new Vector2(-42f, 3f));
-            var right = new WeakPointRuntime(new WeakPointDefinition { id = "right", normalizedPosition = Vector2.zero, hitRadius = 8f }, new Vector2(48f, -4f));
+            var left = new WeakPointRuntime(new WeakPointDefinition { id = "left", localPosition = Vector2.zero, hitRadius = 8f }, new Vector2(-42f, 3f));
+            var right = new WeakPointRuntime(new WeakPointDefinition { id = "right", localPosition = Vector2.zero, hitRadius = 8f }, new Vector2(48f, -4f));
 
             Assert.That(SegmentHitResolver.Intersects(segment, new CircleHitShape(Vector2.zero, 25f)), Is.True);
             Assert.That(WeakPointHitResolver.Resolve(segment, new[] { left, right }).Select(point => point.Id), Is.EquivalentTo(new[] { "left", "right" }));
@@ -25,7 +25,7 @@ namespace DungeonSlash.Tests
         public void WeakPointHit_ForgivesASmallNearMissWithoutChangingBodyCollision()
         {
             var segment = new AttackSegment(new Vector2(-100f, 0f), new Vector2(100f, 0f), 18f);
-            var point = new WeakPointRuntime(new WeakPointDefinition { id = "near", normalizedPosition = Vector2.zero, hitRadius = 30f }, new Vector2(0f, 50f));
+            var point = new WeakPointRuntime(new WeakPointDefinition { id = "near", localPosition = Vector2.zero, hitRadius = 30f }, new Vector2(0f, 50f));
             var bodyEquivalent = new CircleHitShape(point.HitShape.Center, point.HitShape.Radius);
 
             Assert.That(SegmentHitResolver.Intersects(segment, bodyEquivalent), Is.False, "The raw circle is deliberately just outside the exact capsule cast.");
@@ -94,7 +94,7 @@ namespace DungeonSlash.Tests
             var root = new GameObject("WeakPoint", typeof(RectTransform), typeof(UnityEngine.UI.Image)).GetComponent<RectTransform>();
             var view = root.gameObject.AddComponent<WeakPointView>();
             view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), null);
-            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 30f }, new Vector2(42f, -18f));
+            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", localPosition = Vector2.zero, hitRadius = 30f }, new Vector2(42f, -18f));
 
             view.Bind(runtime);
 
@@ -106,7 +106,7 @@ namespace DungeonSlash.Tests
         [Test]
         public void WeakPoint_ConsumesOnlyOneHitPerResolvedAttack()
         {
-            var point = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 2 }, Vector2.zero);
+            var point = new WeakPointRuntime(new WeakPointDefinition { id = "core", localPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 2 }, Vector2.zero);
             Assert.That(point.RequiredHits, Is.EqualTo(2));
             Assert.That(point.ApplyChargeHit(), Is.True);
             Assert.That(point.RemainingHits, Is.EqualTo(1));
@@ -123,7 +123,7 @@ namespace DungeonSlash.Tests
             display.transform.SetParent(root, false);
             var view = root.gameObject.AddComponent<WeakPointView>();
             view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), display);
-            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 2 }, Vector2.zero);
+            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", localPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 2 }, Vector2.zero);
 
             view.Bind(runtime);
 
@@ -141,7 +141,7 @@ namespace DungeonSlash.Tests
             display.transform.SetParent(root, false);
             var view = root.gameObject.AddComponent<WeakPointView>();
             view.Configure(root, root.GetComponent<UnityEngine.UI.Image>(), display);
-            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", normalizedPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 1 }, Vector2.zero);
+            var runtime = new WeakPointRuntime(new WeakPointDefinition { id = "core", localPosition = Vector2.zero, hitRadius = 20f, requiredChargeHits = 1 }, Vector2.zero);
 
             view.Bind(runtime);
 
@@ -735,7 +735,7 @@ namespace DungeonSlash.Tests
             chargeAttack.type = MonsterAttackType.Charge;
             chargeAttack.chargeWeakPoints = new List<WeakPointDefinition>
             {
-                new() { id = "core", normalizedPosition = new Vector2(100f, 20f), hitRadius = 30f, requiredChargeHits = 1 }
+                new() { id = "core", localPosition = new Vector2(100f, 20f), hitRadius = 30f, requiredChargeHits = 1 }
             };
             var data = ScriptableObject.CreateInstance<MonsterData>();
             data.normalAttackInterval = 2f;
@@ -831,7 +831,7 @@ namespace DungeonSlash.Tests
             var attack = ScriptableObject.CreateInstance<MonsterAttackData>();
             attack.type = MonsterAttackType.Charge;
             attack.chargeTimeLimit = .1f;
-            attack.chargeWeakPoints = new List<WeakPointDefinition> { new() { id = "core", normalizedPosition = Vector2.zero, hitRadius = 30f } };
+            attack.chargeWeakPoints = new List<WeakPointDefinition> { new() { id = "core", localPosition = Vector2.zero, hitRadius = 30f } };
             attack.combatMechanics.hitCount = 3;
             attack.combatMechanics.followupDelay = .2f;
             data.attacks = new List<MonsterAttackData> { attack };

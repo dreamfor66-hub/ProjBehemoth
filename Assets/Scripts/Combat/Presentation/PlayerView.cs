@@ -26,8 +26,18 @@ namespace DungeonSlash
         public ArcadePresentation presentation;
         private CombatSpriteAnimator animator;
         private float attackUntil;
+        private SwordSwingDirection attackSwing;
         public bool PreparingAttack { get; set; }
-        public void PlayAttack(){attackUntil=Time.time+.3f;if(animator!=null)animator.Play(animator.library,CombatVisualState.Attack,true);}
+        public bool ShowLegacyRecovery { get; set; } = true;
+        public SwordSwingDirection PreparingSwing { get; set; }
+        public void PlayAttack()=>PlayAttack(PreparingSwing);
+        public void PlayAttack(SwordSwingDirection direction)
+        {
+            attackSwing=direction;
+            var duration=animator!=null&&animator.library!=null?animator.library.attackPoseSeconds:.3f;
+            attackUntil=Time.time+Mathf.Max(.01f,duration);
+            if(animator!=null)animator.Play(animator.library,CombatVisualState.Attack,true,attackSwing);
+        }
         public Vector2 GuardBodySize=>animator!=null&&animator.Available?new Vector2(520,360)*ImageSizeMultiplier:root.rect.size;
         public Vector2 GuardBodyOffset=>animator!=null&&animator.Available?new Vector2(0,-20)*ImageSizeMultiplier:Vector2.zero;
 
@@ -93,15 +103,16 @@ namespace DungeonSlash
             if (runtime == null) return;
             if (runtime.Data.combatSprite != null && body != null)
             {
-                body.sprite = runtime.Data.combatSprite; body.preserveAspect = true;
+                body.sprite = runtime.Data.combatSprite; body.enabled = true; body.preserveAspect = true;
                 var animated=presentation!=null&&presentation.arcade&&runtime.Data.combatAnimation!=null;
                 bodyRestSize = animated?new Vector2(640,680):new Vector2(190,225);
-                body.rectTransform.anchoredPosition=animated?new Vector2(0,16):Vector2.zero;
+                // Keep the designer's illustrated-image placement instead of resetting it on every Bind.
+                if(!animated)body.rectTransform.anchoredPosition=Vector2.zero;
                 if(animated)
                 {
                     animator=animator!=null?animator:body.GetComponent<CombatSpriteAnimator>()??body.gameObject.AddComponent<CombatSpriteAnimator>();
                     animator.presentation=presentation;
-                    animator.Play(runtime.Data.combatAnimation,Time.time<attackUntil?CombatVisualState.Attack:runtime.IsGuarding?CombatVisualState.Guard:PreparingAttack?CombatVisualState.Ready:CombatVisualState.Idle);
+                    animator.Play(runtime.Data.combatAnimation,Time.time<attackUntil?CombatVisualState.Attack:runtime.IsGuarding?CombatVisualState.Guard:PreparingAttack&&runtime.CanStartCharge()?CombatVisualState.Ready:CombatVisualState.Idle,false,Time.time<attackUntil?attackSwing:PreparingSwing);
                 }
                 if (head != null) head.enabled = false;
             }
@@ -112,7 +123,7 @@ namespace DungeonSlash
                 var coolingDown = runtime.AttackCooldownRemaining > 0f && runtime.CurrentCooldown > 0f;
                 var progress = coolingDown ? Mathf.Clamp01(1f - runtime.AttackCooldownRemaining / runtime.CurrentCooldown) : 0f;
                 SetCooldownProgress(progress);
-                cooldown.enabled = coolingDown;
+                cooldown.enabled = coolingDown && ShowLegacyRecovery;
             }
 
             var tint = runtime.Buffs?.Active.FirstOrDefault(buff => buff.Data.tintOwner);

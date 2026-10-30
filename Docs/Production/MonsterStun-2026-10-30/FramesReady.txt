@@ -1,0 +1,1 @@
+12 native Sprite rectangles/pivots saved; reviewed bat/knight head scale matched.

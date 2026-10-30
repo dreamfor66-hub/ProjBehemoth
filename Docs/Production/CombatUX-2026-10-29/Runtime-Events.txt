@@ -1,0 +1,77 @@
+Scoped existing Unity Editor: cards, event paintings, footprints and recovery input. No DPS/balance suite.
+PASS StrayDog page 0: inherited placeholder survives authored branch rendering
+PASS StrayDog page 1: inherited placeholder survives authored branch rendering
+PASS StrayDog: outcome retains temporary painting
+PASS Symbiosis page 0: inherited placeholder survives authored branch rendering
+PASS Symbiosis: outcome retains temporary painting
+PASS Mirror page 0: inherited placeholder survives authored branch rendering
+PASS Mirror page 1: inherited placeholder survives authored branch rendering
+PASS Mirror page 2: inherited placeholder survives authored branch rendering
+PASS Mirror page 3: inherited placeholder survives authored branch rendering
+PASS Mirror: outcome retains temporary painting
+PASS Contract page 0: inherited placeholder survives authored branch rendering
+PASS Contract page 1: inherited placeholder survives authored branch rendering
+PASS Contract page 2: inherited placeholder survives authored branch rendering
+PASS Contract page 3: inherited placeholder survives authored branch rendering
+PASS Contract: outcome retains temporary painting
+PASS Pilgrim page 0: inherited placeholder survives authored branch rendering
+PASS Pilgrim: outcome retains temporary painting
+PASS LostBeliever page 0: inherited placeholder survives authored branch rendering
+PASS LostBeliever page 1: inherited placeholder survives authored branch rendering
+PASS LostBeliever page 2: inherited placeholder survives authored branch rendering
+PASS LostBeliever: outcome retains temporary painting
+PASS Hourglass page 0: inherited placeholder survives authored branch rendering
+PASS Hourglass page 1: inherited placeholder survives authored branch rendering
+PASS Hourglass: outcome retains temporary painting
+PASS StormBottle page 0: inherited placeholder survives authored branch rendering
+PASS StormBottle: outcome retains temporary painting
+PASS AmberSeed page 0: inherited placeholder survives authored branch rendering
+PASS AmberSeed: outcome retains temporary painting
+PASS Bell page 0: inherited placeholder survives authored branch rendering
+PASS Bell page 1: inherited placeholder survives authored branch rendering
+PASS Bell page 2: inherited placeholder survives authored branch rendering
+PASS Bell: outcome retains temporary painting
+PASS Banner page 0: inherited placeholder survives authored branch rendering
+PASS Banner: outcome retains temporary painting
+PASS Tooth page 0: inherited placeholder survives authored branch rendering
+PASS Tooth page 1: inherited placeholder survives authored branch rendering
+PASS Tooth: outcome retains temporary painting
+PASS Training page 0: inherited placeholder survives authored branch rendering
+PASS Training: outcome retains temporary painting
+PASS Scholar page 0: inherited placeholder survives authored branch rendering
+PASS Scholar page 1: inherited placeholder survives authored branch rendering
+PASS Scholar page 2: inherited placeholder survives authored branch rendering
+PASS Scholar: outcome retains temporary painting
+PASS Forge page 0: inherited placeholder survives authored branch rendering
+PASS Forge page 1: inherited placeholder survives authored branch rendering
+PASS Forge: outcome retains temporary painting
+PASS Well page 0: inherited placeholder survives authored branch rendering
+PASS Well page 1: inherited placeholder survives authored branch rendering
+PASS Well: outcome retains temporary painting
+PASS Investment page 0: inherited placeholder survives authored branch rendering
+PASS Investment: outcome retains temporary painting
+PASS Delivery page 0: inherited placeholder survives authored branch rendering
+PASS Delivery: outcome retains temporary painting
+PASS MasterTrial page 0: inherited placeholder survives authored branch rendering
+PASS MasterTrial page 1: inherited placeholder survives authored branch rendering
+PASS MasterTrial page 2: inherited placeholder survives authored branch rendering
+PASS MasterTrial: outcome retains temporary painting
+PASS Shelter page 0: inherited placeholder survives authored branch rendering
+PASS Shelter: outcome retains temporary painting
+PASS MagicTeacherFirst page 0: inherited placeholder survives authored branch rendering
+PASS MagicTeacherFirst page 1: inherited placeholder survives authored branch rendering
+PASS MagicTeacherFirst page 2: inherited placeholder survives authored branch rendering
+PASS MagicTeacherFirst page 3: inherited placeholder survives authored branch rendering
+PASS MagicTeacherFirst page 4: inherited placeholder survives authored branch rendering
+PASS MagicTeacherFirst: outcome retains temporary painting
+PASS MagicTeacherReturn page 0: inherited placeholder survives authored branch rendering
+PASS MagicTeacherReturn page 1: inherited placeholder survives authored branch rendering
+PASS MagicTeacherReturn page 2: inherited placeholder survives authored branch rendering
+PASS MagicTeacherReturn page 3: inherited placeholder survives authored branch rendering
+PASS MagicTeacherReturn page 4: inherited placeholder survives authored branch rendering
+PASS MagicTeacherReturn: outcome retains temporary painting
+PASS MagicTeacherAdvanced page 0: inherited placeholder survives authored branch rendering
+PASS MagicTeacherAdvanced page 1: inherited placeholder survives authored branch rendering
+PASS MagicTeacherAdvanced page 2: inherited placeholder survives authored branch rendering
+PASS MagicTeacherAdvanced: outcome retains temporary painting
+COMPLETE event page/outcome follow-up failures=0.

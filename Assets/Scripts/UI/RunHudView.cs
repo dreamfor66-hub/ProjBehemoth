@@ -179,13 +179,12 @@ namespace DungeonSlash
         private void EnsureIconCount(List<RunHudIconView> icons, RectTransform parent, int requiredCount)
         {
             if (parent == null || iconPrefab == null) return;
-            CacheIcons(icons, parent);
-            while (icons.Count < requiredCount)
+            var pool=parent.GetComponent<RunHudIconPool>();
+            if(pool==null)
             {
-                var icon = Instantiate(iconPrefab, parent);
-                icon.gameObject.name = "RunHudIcon";
-                icons.Add(icon);
+                pool=parent.gameObject.AddComponent<RunHudIconPool>();pool.content=parent;pool.prefab=iconPrefab;
             }
+            pool.SetCount(requiredCount);icons.Clear();icons.AddRange(pool.Active);
         }
 
         private static void CacheIcons(List<RunHudIconView> icons, RectTransform parent)

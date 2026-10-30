@@ -1,0 +1,7 @@
+monster	seconds	hpLost	minimumGuard	normalActions	breaks	result
+고블린사냥꾼	95.01	0.00	35.00	0	0	timeout
+거미	5.05	0.00	23.00	1	0	won
+해골 전사	9.33	0.00	18.20	1	1	won
+흡혈박쥐	9.33	0.00	0.00	2	1	won
+경종 사냥개	6.72	0.00	21.00	1	1	won
+움직이는 갑옷	11.86	36.00	0.00	1	1	won

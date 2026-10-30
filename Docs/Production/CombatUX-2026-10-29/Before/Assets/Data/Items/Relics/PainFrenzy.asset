@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: PainFrenzy
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.painfrenzy.displayname
+    lastText: "\uD53C\uC758 \uAC01\uC131"
+  - propertyPath: description
+    key: data.equipmentdata.painfrenzy.description
+    lastText: "\uD53C\uACA9 \uD6C4 2.5\uCD08\uAC04 \uD53C\uD574 +50%"
+  textOwnerGuid: 384add845b082e447b11f3a54782ccec
+  id: PainFrenzy
+  displayName: "\uD53C\uC758 \uAC01\uC131"
+  description: "\uD53C\uACA9 \uD6C4 2.5\uCD08\uAC04 \uD53C\uD574 +50%"
+  icon: {fileID: 21300000, guid: 332349e6899450d88487aae206be44d2, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 2
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: 9742ebedb4f2fba458d7a5e3a056ec03, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 76
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 2
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0.5
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 2.5
+    effectStatType: 15
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

@@ -27,7 +27,7 @@ MonoBehaviour:
   description: "\uCC98\uCE58\uD55C \uC801\uC758 \uB3C5 \uC808\uBC18\uC5D0 2\uC911\uCCA9\uC744
     \uB354\uD574 \uB2E4\uB978 \uC801\uC5D0\uAC8C \uC804\uD30C\uD55C\uB2E4. \uB3C5
     \uD53C\uD574\uB294 \uC911\uCCA9\uB2F9 1, \uCD5C\uB300 8\uC911\uCCA9."
-  icon: {fileID: 21300000, guid: f990c8d299fc541a960973d0c48e92df, type: 3}
+  icon: {fileID: 21300000, guid: 0bc83746c258e6444b2637e05043edc7, type: 3}
   scope: 2
   exclusiveCharacter: 1
   power: 11
@@ -55,6 +55,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 8
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -105,6 +106,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

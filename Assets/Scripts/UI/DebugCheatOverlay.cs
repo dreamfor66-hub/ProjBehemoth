@@ -20,6 +20,19 @@ namespace DungeonSlash
         [SerializeField] private Button addEquipmentButton;
         [SerializeField] private TextMeshProUGUI infiniteBattleLabel;
         [SerializeField] private TextMeshProUGUI statusLabel;
+        [Header("Image catalog (saved editor layout)")]
+        public ScrollRect catalogScroll;
+        public DebugCatalogTile tilePrefab;
+        public Button[] categoryButtons;
+        public Button closeButton;
+        public Button grantButton;
+        public TextMeshProUGUI grantLabel, selectionLabel, catalogLabel;
+        public ItemTooltipView catalogTooltip;
+        public RectTransform tooltipAnchor;
+        public List<MonsterData> monsterCatalog = new();
+        private readonly List<DebugCatalogTile> tiles = new();
+        private readonly List<UnityEngine.Object> visibleEntries = new();
+        private int category;
 
         private readonly List<MonsterData> monsters = new();
         private readonly List<PerkData> perks = new();
@@ -60,6 +73,7 @@ namespace DungeonSlash
             // UnityEvent listeners added there are not serialized into the scene,
             // so wire the actual scene buttons again after deserialization.
             WireButtons();
+            UpdateInfiniteBattleLabel();
         }
 
         private void WireButtons()
@@ -68,6 +82,15 @@ namespace DungeonSlash
             WireButton(infiniteBattleButton, ToggleInfiniteBattle);
             WireButton(addPerkButton, AddSelectedPerk);
             WireButton(addEquipmentButton, AddSelectedEquipment);
+            WireButton(closeButton, () => SetOpen(false));
+            WireButton(grantButton, () => { if (category == 1) AddSelectedPerk(); else AddSelectedEquipment(); });
+            if (categoryButtons != null)
+                for (var i = 0; i < categoryButtons.Length; i++)
+                {
+                    var tab = i;
+                    categoryButtons[i].onClick.RemoveAllListeners();
+                    categoryButtons[i].onClick.AddListener(() => SelectCategory(tab));
+                }
         }
 
         private static void WireButton(Button button, UnityEngine.Events.UnityAction action)
@@ -106,19 +129,22 @@ namespace DungeonSlash
         public void SetOpen(bool open)
         {
             if (panel == null) return;
+            catalogTooltip?.Hide();
             panel.SetActive(open);
+            if (open) panel.transform.SetAsLastSibling();
             VisibilityChanged?.Invoke();
             if (open)
             {
                 PopulateLists();
-                SetStatus(GameText.Get("ui.debugcheatoverlay.f94d1cf7"));
+                SetStatus(GameText.Get(catalogScroll != null ? "ui.debugcatalog.hint" : "ui.debugcheatoverlay.f94d1cf7"));
             }
         }
 
         private void PopulateLists()
         {
             monsters.Clear();
-            if (combat != null) monsters.AddRange(combat.GetDebugMonsterCatalog());
+            if (monsterCatalog.Count > 0) monsters.AddRange(monsterCatalog.FindAll(m => m != null));
+            else if (combat != null) monsters.AddRange(combat.GetDebugMonsterCatalog());
             perks.Clear();
             if (run?.Perks != null)
             {
@@ -131,9 +157,84 @@ namespace DungeonSlash
             if (!monsters.Contains(selectedMonster)) selectedMonster = monsters.Count > 0 ? monsters[0] : null;
             if (!perks.Contains(selectedPerk)) selectedPerk = perks.Count > 0 ? perks[0] : null;
             if (!equipment.Contains(selectedEquipment)) selectedEquipment = equipment.Count > 0 ? equipment[0] : null;
+            if (catalogScroll != null) { RefreshCatalog(); return; }
             BindMonsterButtons();
             BindPerkButtons();
             BindEquipmentButtons();
+        }
+
+        public void SelectCategory(int tab)
+        {
+            if (category == tab) return;
+            category = Mathf.Clamp(tab, 0, 3);
+            catalogTooltip?.Hide();
+            if (UnityEngine.EventSystems.EventSystem.current != null)
+                UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
+            RefreshCatalog();
+            catalogScroll.StopMovement();
+            catalogScroll.verticalNormalizedPosition = 1;
+            SetStatus(GameText.Get("ui.debugcatalog.hint"));
+        }
+
+        private void RefreshCatalog()
+        {
+            if (catalogScroll == null || tilePrefab == null) return;
+            if (tiles.Count == 0) tiles.AddRange(catalogScroll.content.GetComponentsInChildren<DebugCatalogTile>(true));
+            visibleEntries.Clear();
+            if (category == 0) visibleEntries.AddRange(monsters);
+            else if (category == 1) visibleEntries.AddRange(perks);
+            else foreach (var item in equipment) if (item.IsPotion == (category == 3)) visibleEntries.Add(item);
+            if (category >= 2 && (selectedEquipment == null || selectedEquipment.IsPotion != (category == 3)))
+                selectedEquipment = visibleEntries.Count > 0 ? (EquipmentData)visibleEntries[0] : null;
+            while (tiles.Count < visibleEntries.Count) tiles.Add(Instantiate(tilePrefab, catalogScroll.content));
+            for (var i = 0; i < tiles.Count; i++)
+            {
+                tiles[i].gameObject.SetActive(i < visibleEntries.Count);
+                if (i >= visibleEntries.Count) continue;
+                var entry = visibleEntries[i];
+                Sprite icon; string title, description;
+                if (entry is MonsterData monster)
+                {
+                    icon = monster.portrait; title = monster.displayName;
+                    description = GameText.Format("ui.debugcatalog.monsterstats", monster.maxHp, monster.normalAttackInterval, monster.chargeInterval)
+                        + "\n\n" + monster.encounterHint;
+                    foreach (var attack in monster.attacks)
+                        if (attack != null && !string.IsNullOrEmpty(attack.displayName)) description += "\n• " + attack.displayName;
+                }
+                else if (entry is PerkData perk) { icon = perk.icon; title = perk.displayName; description = perk.description; }
+                else { var item = (EquipmentData)entry; icon = item.icon; title = item.displayName; description = item.description; }
+                tiles[i].Bind(icon, title, description, IsSelected(entry), catalogTooltip, tooltipAnchor, () => SelectEntry(entry));
+            }
+            for (var i = 0; i < categoryButtons.Length; i++)
+                categoryButtons[i].image.color = i == category ? new Color32(114, 83, 40, 255) : new Color32(37, 39, 44, 255);
+            catalogLabel.text = GameText.Format("ui.debugcatalog.count", GameText.Get("ui.debugcatalog.tab" + category), visibleEntries.Count);
+            startBattleButton.gameObject.SetActive(category == 0);
+            infiniteBattleButton.gameObject.SetActive(category == 0);
+            grantButton.gameObject.SetActive(category != 0);
+            grantLabel.text = GameText.Get("ui.debugcatalog.grant" + category);
+            UpdateSelection();
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(catalogScroll.content);
+        }
+
+        private bool IsSelected(UnityEngine.Object entry) => entry != null && (entry == selectedMonster || entry == selectedPerk || entry == selectedEquipment);
+
+        private void SelectEntry(UnityEngine.Object entry)
+        {
+            if (entry is MonsterData monster) selectedMonster = monster;
+            else if (entry is PerkData perk) selectedPerk = perk;
+            else selectedEquipment = (EquipmentData)entry;
+            for (var i = 0; i < visibleEntries.Count; i++) tiles[i].SetSelected(IsSelected(visibleEntries[i]));
+            UpdateSelection();
+        }
+
+        private void UpdateSelection()
+        {
+            var title = category == 0 ? selectedMonster?.displayName : category == 1 ? selectedPerk?.displayName : selectedEquipment?.displayName;
+            var valid = category == 0 ? selectedMonster != null : category == 1 ? selectedPerk != null : selectedEquipment != null && selectedEquipment.IsPotion == (category == 3);
+            selectionLabel.text = valid ? GameText.Format("ui.debugcatalog.selected", title) : GameText.Get("ui.debugcatalog.choose");
+            startBattleButton.interactable = category == 0 && valid;
+            grantButton.interactable = category != 0 && valid;
         }
 
         private void BindMonsterButtons()

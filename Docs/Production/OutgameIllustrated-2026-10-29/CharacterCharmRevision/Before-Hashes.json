@@ -1,0 +1,26 @@
+{
+  "Warrior": {
+    "sha256": "456c81b62f74efb5b0d846dea254b2fcb6b910939184114e9b2b12e8bee02148",
+    "metaSha256": "4ac80ddc62a34ac812a8013a35e5e5f7dc382bc65bab3abb807d1300e286a711"
+  },
+  "Rogue": {
+    "sha256": "55a04fd7af58e1f58d648352b2526cbc52bb4f35e5688cd8181d848b663d80f5",
+    "metaSha256": "27398b1f5b993e600806ab298e1aef3d7af704713555822f494715e160dff9b7"
+  },
+  "Barbarian": {
+    "sha256": "731188e6304614d9c2ee557591b02e2ce5b1d85afe9177ad89c25c788cb03f14",
+    "metaSha256": "fe46af8a87d6478a3b1eee7bf0c0d0a870ac0d86018c5651b09eeecce3bc054b"
+  },
+  "Samurai": {
+    "sha256": "93b5f41269418d59d4d3b401ff2efb1df9b07eddd4caea5d05cb818d166ee1f1",
+    "metaSha256": "185acd5a4140905e5bf6e1817fce5a2483d9abb15db2e104fed25e70f3cdc910"
+  },
+  "Monk": {
+    "sha256": "5fd1e9800b4edb4575689c69ebbe9bbbbeef972b34f7fa448fa5d0a87d0e0faa",
+    "metaSha256": "e255d88e40ba8fc97a9d87ac928a0075c6c165aed3b060f20b6f4c7d8db78539"
+  },
+  "Wizard": {
+    "sha256": "1203e97ce6c066058998cdedc79aa5fe7cf814d1a6654dcb47f7fd743fc6d6fd",
+    "metaSha256": "4c6f8515b25bde23e6a016dd4fab70c6ae058b2ba0d74ba36efbcfffaf599f00"
+  }
+}

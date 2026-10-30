@@ -1,0 +1,1 @@
+Image swaps only. Static transparent-canvas compensation retained; no state/time-dependent mesh transforms.

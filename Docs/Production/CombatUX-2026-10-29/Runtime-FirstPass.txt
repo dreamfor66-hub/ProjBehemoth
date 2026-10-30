@@ -1,0 +1,108 @@
+Scoped existing Unity Editor: cards, event paintings, footprints and recovery input. No DPS/balance suite.
+PASS all three perk effects visible inside their own cards
+PASS perk cards use new 2D paintings
+PASS candidate selection highlights without premature grant
+PASS confirm grants the selected candidate
+FAIL actual effect viewport raycast routes scrolling to its own card
+PASS long relic description scrolls within its own card
+PASS StrayDog: actual event opens with temporary portrait painting
+PASS StrayDog: choices together without page controls
+PASS Symbiosis: actual event opens with temporary portrait painting
+PASS Symbiosis: choices together without page controls
+PASS Mirror: actual event opens with temporary portrait painting
+PASS Mirror: choices together without page controls
+PASS Contract: actual event opens with temporary portrait painting
+PASS Contract: choices together without page controls
+PASS Pilgrim: actual event opens with temporary portrait painting
+PASS Pilgrim: choices together without page controls
+PASS LostBeliever: actual event opens with temporary portrait painting
+PASS LostBeliever: choices together without page controls
+PASS Hourglass: actual event opens with temporary portrait painting
+PASS Hourglass: choices together without page controls
+PASS StormBottle: actual event opens with temporary portrait painting
+PASS StormBottle: choices together without page controls
+PASS AmberSeed: actual event opens with temporary portrait painting
+PASS AmberSeed: choices together without page controls
+PASS Bell: actual event opens with temporary portrait painting
+PASS Bell: choices together without page controls
+PASS Banner: actual event opens with temporary portrait painting
+PASS Banner: choices together without page controls
+PASS Tooth: actual event opens with temporary portrait painting
+PASS Tooth: choices together without page controls
+PASS Training: actual event opens with temporary portrait painting
+PASS Training: choices together without page controls
+PASS Scholar: actual event opens with temporary portrait painting
+PASS Scholar: choices together without page controls
+PASS Forge: actual event opens with temporary portrait painting
+PASS Forge: choices together without page controls
+PASS Well: actual event opens with temporary portrait painting
+PASS Well: choices together without page controls
+PASS Investment: actual event opens with temporary portrait painting
+PASS Investment: choices together without page controls
+PASS Delivery: actual event opens with temporary portrait painting
+PASS Delivery: choices together without page controls
+PASS MasterTrial: actual event opens with temporary portrait painting
+PASS MasterTrial: choices together without page controls
+PASS Shelter: actual event opens with temporary portrait painting
+PASS Shelter: choices together without page controls
+PASS MagicTeacherFirst: actual event opens with temporary portrait painting
+PASS MagicTeacherFirst: choices together without page controls
+PASS MagicTeacherReturn: actual event opens with temporary portrait painting
+PASS MagicTeacherReturn: choices together without page controls
+PASS MagicTeacherAdvanced: actual event opens with temporary portrait painting
+PASS MagicTeacherAdvanced: choices together without page controls
+PASS saved fixed sword recovery HUD visible in combat
+PASS recovery HUD shows unavailable state without text
+PASS press and release during cooldown leaves no queued attack or contact
+PASS cycle 910: blocked hold has no Ready or charge during recovery
+PASS cycle 910: sustained hold re-arms with fresh charge time
+PASS cycle 910: authored pose matches available action
+PASS cycle 910: continued hold can finish charge
+PASS cycle 911: blocked hold has no Ready or charge during recovery
+PASS cycle 911: sustained hold re-arms with fresh charge time
+PASS cycle 911: authored pose matches available action
+PASS cycle 911: continued hold can finish charge
+PASS cycle 912: blocked hold has no Ready or charge during recovery
+PASS cycle 912: sustained hold re-arms with fresh charge time
+PASS cycle 912: authored pose matches available action
+PASS cycle 912: continued hold can finish charge
+PASS cycle 960: blocked hold has no Ready or charge during recovery
+PASS cycle 960: sustained hold re-arms with fresh charge time
+PASS cycle 960: authored pose matches available action
+PASS cycle 960: continued hold can finish charge
+PASS guard remains held across recovery/attack lift/repress 0
+PASS cycle 961: blocked hold has no Ready or charge during recovery
+PASS cycle 961: sustained hold re-arms with fresh charge time
+PASS cycle 961: authored pose matches available action
+PASS cycle 961: continued hold can finish charge
+PASS guard remains held across recovery/attack lift/repress 1
+PASS cycle 962: blocked hold has no Ready or charge during recovery
+PASS cycle 962: sustained hold re-arms with fresh charge time
+PASS cycle 962: authored pose matches available action
+PASS cycle 962: continued hold can finish charge
+PASS guard remains held across recovery/attack lift/repress 2
+PASS final independent release restores Idle
+PASS 고블린사냥꾼: same artwork size alone and in a pair
+PASS 고블린사냥꾼: resized species exposes authored weak points
+PASS 고블린사냥꾼: resized species exposes authored weak points
+PASS 고블린사냥꾼: displayed weak points agree with resized runtime hit centers
+PASS 고블린사냥꾼: displayed weak points agree with resized runtime hit centers
+PASS 해골 전사: same artwork size alone and in a pair
+PASS 해골 전사: resized species exposes authored weak points
+PASS 해골 전사: resized species exposes authored weak points
+PASS 해골 전사: displayed weak points agree with resized runtime hit centers
+PASS 해골 전사: displayed weak points agree with resized runtime hit centers
+PASS 흡혈박쥐: same artwork size alone and in a pair
+PASS 흡혈박쥐: resized species exposes authored weak points
+PASS 흡혈박쥐: resized species exposes authored weak points
+PASS 흡혈박쥐: displayed weak points agree with resized runtime hit centers
+PASS 흡혈박쥐: displayed weak points agree with resized runtime hit centers
+PASS 거미: same artwork size alone and in a pair
+PASS 거미: resized species exposes authored weak points
+PASS 거미: resized species exposes authored weak points
+PASS 거미: displayed weak points agree with resized runtime hit centers
+PASS 거미: displayed weak points agree with resized runtime hit centers
+PASS Goblin Hunter matches Skeleton Warrior baseline height
+PASS bat and spider are visibly smaller species than humanoid baseline
+PASS default paired center distance reduced
+COMPLETE failures=1. Physical touch hardware remains untested.

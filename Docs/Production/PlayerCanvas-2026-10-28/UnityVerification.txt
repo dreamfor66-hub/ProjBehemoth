@@ -1,0 +1,29 @@
+Actual Unity Image.OnPopulateMesh + CombatSpriteAnimator.ModifyMesh. No scene changes or Play mode.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset / Ready: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset / Ready: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset / Ready: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset / Ready: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset / Ready: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset / Ready: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Trials/Angular01_WarriorAnimation.asset / Idle: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Trials/Angular01_WarriorAnimation.asset / Attack: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+PASS Assets/Data/Presentation/Trials/Angular01_WarriorAnimation.asset / Guard: original pixels retain screen position/size in rest and combat frames; expanded margins drawable.
+COMPLETE 27 pose references, 2 frame sizes each.

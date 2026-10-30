@@ -97,7 +97,7 @@ public sealed class DarkArtLiveProbe : MonoBehaviour
         foreach(var attack in enemy.Data.attacks)
         {
             attack.chargeTimeLimit=60;
-            attack.chargeWeakPoints=new List<WeakPointDefinition>{new(){id="art-review",hitRadius=30,requiredChargeHits=1,normalizedPosition=Vector2.zero}};
+            attack.chargeWeakPoints=new List<WeakPointDefinition>{new(){id="art-review",hitRadius=30,requiredChargeHits=1,localPosition=Vector2.zero}};
         }
         yield return Frame("05-Combat-Idle");
         enemy.StartCharge(scene.MonsterPosition);yield return Frame("06-Weakpoint-Charge");

@@ -1,0 +1,1 @@
+Weak points serialized under localPosition; unused legacy fields removed.

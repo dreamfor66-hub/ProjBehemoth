@@ -8,7 +8,8 @@ namespace DungeonSlash
     public sealed class WeakPointDefinition
     {
         public string id = "weak-point";
-        public Vector2 normalizedPosition;
+        [UnityEngine.Serialization.FormerlySerializedAs("normalizedPosition")]
+        public Vector2 localPosition;
         [Min(1f)] public float hitRadius = 30f;
         [Min(1)] public int requiredChargeHits = 1;
         public bool optional;

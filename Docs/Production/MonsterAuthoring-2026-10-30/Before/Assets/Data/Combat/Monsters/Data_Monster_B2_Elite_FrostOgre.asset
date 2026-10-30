@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B2_Elite_FrostOgre
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b2_elite_frostogre.displayname
+    lastText: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b2_elite_frostogre.encounterhint
+    lastText: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+      \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
+  textOwnerGuid: b07761a94d2640a41ad472aecfdca930
+  displayName: "\uC30D\uAC01 \uD30C\uC218\uAFBC"
+  portrait: {fileID: 21300000, guid: 0d5d8e4a5db0e1f4eb0254dde8d993ba, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 6d13459547948b4478db68f7a1f33edc, type: 2}
+  encounterHint: "\uC88C\uC6B0 \uC57D\uC810 \uB450 \uAC1C\uB97C \uBAA8\uB450 \uB04A\uC5B4
+    \uAC15\uD0C0\uB97C \uCDE8\uC18C\uD558\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 525
+  normalAttackInterval: 4.8
+  chargeInterval: 11
+  stunDuration: 4.5
+  stunDamageMultiplier: 1.65
+  experienceReward: 117
+  goldReward: 14
+  bodyHitRadius: 108
+  useAuthoredFootprint: 0
+  combatScale: 1
+  bodySize: {x: 220, y: 220}
+  artworkSize: {x: 420, y: 460}
+  weakPointLayoutScale: {x: 1, y: 1}
+  bodyLobes: []
+  attacks:
+  - {fileID: 11400000, guid: 80271b5ae42011a4e81af4bcba0aed98, type: 2}
+  - {fileID: 11400000, guid: b9d175529b186324b971c1e66c57bb9a, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.22, g: 0.52, b: 0.76, a: 1}

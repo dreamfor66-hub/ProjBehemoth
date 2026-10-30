@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DungeonSlash
 {
-    public enum InkSurfaceRole { Panel, Button, Choice, Slot, GaugeTrack, GaugeFill, Header, Divider, Field }
+    public enum InkSurfaceRole { Panel, Button, Choice, Slot, GaugeTrack, GaugeFill, Header, Divider, Field, Brush, Countdown }
     public enum InkResource { Custom, Health, Mana, Guard, Gold }
 
     [CreateAssetMenu(menuName="Dungeon Slash/Presentation/Ink UI Style")]

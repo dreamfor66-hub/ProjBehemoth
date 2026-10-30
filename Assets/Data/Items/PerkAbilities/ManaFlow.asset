@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ManaFlow
   displayName: "\uB9C8\uB825 \uC21C\uD658"
   description: "\uCD08\uB2F9 MP \uD68C\uBCF5\uB7C9 +0.05"
-  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
+  icon: {fileID: 21300000, guid: aad312ba3eb28694cbb933638b91b235, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

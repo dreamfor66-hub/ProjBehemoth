@@ -104,7 +104,7 @@ public static class BehemothTextEditor
     }
 }
 [CustomEditor(typeof(LocalizedData), true)]
-internal sealed class LocalizedDataInspector : Sirenix.OdinInspector.Editor.OdinEditor
+internal class LocalizedDataInspector : Sirenix.OdinInspector.Editor.OdinEditor
 {
     private bool showKeys;
     public override void OnInspectorGUI()
@@ -113,6 +113,10 @@ internal sealed class LocalizedDataInspector : Sirenix.OdinInspector.Editor.Odin
         if (data.textKeys.Count == 0) BehemothTextEditor.SyncAsset(data);
         EditorGUI.BeginChangeCheck(); base.OnInspectorGUI();
         if (EditorGUI.EndChangeCheck()) { Undo.RecordObject(BehemothTextEditor.Table, "Edit Korean Text"); BehemothTextEditor.SyncAsset(data); EditorApplication.delayCall += () => AssetDatabase.SaveAssets(); }
+        DrawLocalizationTools(data);
+    }
+    protected void DrawLocalizationTools(LocalizedData data)
+    {
         showKeys = EditorGUILayout.Foldout(showKeys, "텍스트 키 (자동 생성)");
         if (showKeys) foreach (var binding in data.textKeys) { EditorGUILayout.LabelField(binding.propertyPath); EditorGUILayout.SelectableLabel(binding.key, EditorStyles.textField, GUILayout.Height(19)); }
         if (GUILayout.Button("로케일 검색·편집 열기")) BehemothLocaleWindow.OpenSearch(data.textKeys.FirstOrDefault()?.key ?? "");

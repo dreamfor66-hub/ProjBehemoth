@@ -1,0 +1,2 @@
+PASS Native Inspector: Idle painting differs from Ready while shared hitboxes/weak points remain visible. Weak-point creation tab drag adds a selected third point.
+PASS Native Inspector: context copy three points -> Delete selected third -> context paste restores all three with feedback -> Ctrl+Z returns to two -> Ctrl+Y restores three. JSON snapshots match exactly, including point fields; hitboxes remain unchanged.

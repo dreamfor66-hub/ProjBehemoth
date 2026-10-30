@@ -75,6 +75,12 @@ namespace DungeonSlash
                     if (image.fillOrigin == 0) rect.width = width; else rect.xMin = rect.xMax - width;
                 }
             }
+            if(role is InkSurfaceRole.Brush or InkSurfaceRole.Countdown)
+            {
+                if(role==InkSurfaceRole.Countdown)CombatInkDrawing.CountdownShadow(vh,rect,alpha);
+                else CombatInkDrawing.Brush(vh,rect,new Color(0,0,0,alpha));
+                return;
+            }
             InkUiDrawing.Surface(vh, rect, style, role, fill, titleBand && TitleVisible ? (titleBandHeight > 0 ? titleBandHeight : style.headerHeight) : 0, focus, pressed&&hovered&&active, active, alpha);
         }
     }

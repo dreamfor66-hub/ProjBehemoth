@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: LampPriest
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 16636b93cea45a2439ff5e33a9319554, type: 2}
+  attack: {fileID: 21300000, guid: 18ee61c9b08cdfe45b87cbb0093a1309, type: 2}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: 4beddd52c3243a34cb6a6d30318f32cf, type: 2}
+  dead: {fileID: 21300000, guid: c8edd32a6b09fad4d920d58414092c22, type: 2}
+  attackPoseSeconds: 0.3
+  readyLeftToRight: {fileID: 0}
+  attackLeftToRight: {fileID: 0}
+  canvasScale: 1
+  canvasPaddingPixels: {x: 0, y: 0, z: 0, w: 0}
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -67.49999}
+  groundContactY: 0.015948962
+  artworkTopY: 0.9952153
+  labelHeight: 211.75
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

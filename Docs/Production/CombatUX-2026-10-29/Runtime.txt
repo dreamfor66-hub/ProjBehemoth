@@ -1,0 +1,6 @@
+COMPLETE: scoped existing Unity verification.
+Initial pass: 105 PASS; 1 probe-coordinate FAIL (camera omitted in viewport screen conversion).
+Card follow-up: 6 PASS, 0 FAIL; camera-aware actual raycast + scroll passed. Selection highlight corrected and screenshots inspected.
+Event page/outcome follow-up: 75 PASS, 0 FAIL.
+Details: Runtime-FirstPass.txt, Runtime-Cards.txt, Runtime-Events.txt.
+No DPS/balance suite; no additional Unity Editor instance. Physical touch hardware untested.

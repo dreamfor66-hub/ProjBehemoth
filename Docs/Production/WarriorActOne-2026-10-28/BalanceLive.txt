@@ -1,0 +1,57 @@
+Actual act-one reward builds. 2x simulation, telemetry in game seconds. Tight pilot honors attack cooldown, manual-duration charge/casting, timed guard; no normalized damage/HP injection. Human feel is separate.
+PASS starting guard recovery survives repeated BeginCombat; actual ThunderWire damage/cooldown and HunterLantern kill-heal match data.
+BUILD 시작·무성장: level=1, normal=14.00, charge=24.00, HP=100.0, guard=35.0, fatigue=100, steps=0; 첫 전투. 시작 유물만; 추가 능력치 없음.
+REVIEW 시작·무성장/고블린사냥꾼: won, HP damage=10.80, guard minimum=24.20, seconds=5.93, breaks=0, telegraphs=2
+BUILD 시작·무성장: level=1, normal=14.00, charge=24.00, HP=100.0, guard=35.0, fatigue=100, steps=0; 첫 전투. 시작 유물만; 추가 능력치 없음.
+RESULT 시작·무성장/거미: won, HP damage=0.00, guard minimum=23.00, seconds=5.03, breaks=0, telegraphs=1
+BUILD 시작·무성장: level=1, normal=14.00, charge=24.00, HP=100.0, guard=35.0, fatigue=100, steps=0; 첫 전투. 시작 유물만; 추가 능력치 없음.
+RESULT 시작·무성장/해골 전사: won, HP damage=0.00, guard minimum=18.20, seconds=9.40, breaks=1, telegraphs=1
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/해골 전사 · 고블린사냥꾼: won, HP damage=0.00, guard minimum=2.12, seconds=10.36, breaks=1, telegraphs=3
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/흡혈박쥐 · 거미: won, HP damage=0.00, guard minimum=0.00, seconds=7.88, breaks=1, telegraphs=3
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/경종 사냥개 · 고블린사냥꾼: won, HP damage=0.00, guard minimum=5.93, seconds=7.71, breaks=0, telegraphs=3
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/쌍두 문지기: won, HP damage=0.00, guard minimum=0.00, seconds=25.21, breaks=1, telegraphs=4
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/움직이는 갑옷: won, HP damage=0.00, guard minimum=7.06, seconds=9.62, breaks=1, telegraphs=1
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/철갑 사마귀: won, HP damage=0.00, guard minimum=3.02, seconds=11.46, breaks=1, telegraphs=1
+BUILD 보스 전·기준: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 누적XP330=4회 레벨업. 상자유물1개. 공격3.55U+체력1U=4.55U. 이벤트·상점 없이도 숙련 가드/약점으로 가능한 기준.
+RESULT 보스 전·기준/미궁 스핑크스: won, HP damage=0.00, guard minimum=0.00, seconds=60.20, breaks=4, telegraphs=9
+BUILD 보스 전·기준: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 누적XP330=4회 레벨업. 상자유물1개. 공격3.55U+체력1U=4.55U. 이벤트·상점 없이도 숙련 가드/약점으로 가능한 기준.
+RESULT 보스 전·기준/납골당의 종: won, HP damage=0.00, guard minimum=4.06, seconds=21.95, breaks=1, telegraphs=2
+BUILD 보스 전·기준: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 누적XP330=4회 레벨업. 상자유물1개. 공격3.55U+체력1U=4.55U. 이벤트·상점 없이도 숙련 가드/약점으로 가능한 기준.
+RESULT 보스 전·기준/실짜는 공작부인 · 실인형: won, HP damage=0.00, guard minimum=0.09, seconds=20.53, breaks=2, telegraphs=4
+BUILD 보스 전·방어 성장: level=5, normal=18.00, charge=28.00, HP=100.0, guard=60.0, fatigue=80, steps=24; 같은 레벨업4회/상자1회. 공격 약3.23U+가드1.75U. 가드 특화 대체 빌드.
+RESULT 보스 전·방어 성장/미궁 스핑크스: won, HP damage=0.00, guard minimum=0.00, seconds=69.59, breaks=5, telegraphs=10
+BUILD 보스 전·방어 성장: level=5, normal=18.00, charge=28.00, HP=100.0, guard=60.0, fatigue=80, steps=24; 같은 레벨업4회/상자1회. 공격 약3.23U+가드1.75U. 가드 특화 대체 빌드.
+RESULT 보스 전·방어 성장/납골당의 종: won, HP damage=0.00, guard minimum=28.99, seconds=21.95, breaks=1, telegraphs=2
+BUILD 보스 전·방어 성장: level=5, normal=18.00, charge=28.00, HP=100.0, guard=60.0, fatigue=80, steps=24; 같은 레벨업4회/상자1회. 공격 약3.23U+가드1.75U. 가드 특화 대체 빌드.
+RESULT 보스 전·방어 성장/실짜는 공작부인 · 실인형: won, HP damage=0.00, guard minimum=25.79, seconds=20.89, breaks=2, telegraphs=4
+BUILD 보스 전·주문 성장: level=5, normal=16.00, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 같은 레벨업4회/상자1회. 실제 MP와 영창시간을 지불하며 파이어볼트 사용. 주문 없는 정규화 공격력으로 대체하지 않음.
+RESULT 보스 전·주문 성장/미궁 스핑크스: won, HP damage=0.00, guard minimum=0.00, seconds=71.13, breaks=5, telegraphs=10
+BUILD 보스 전·주문 성장: level=5, normal=16.00, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 같은 레벨업4회/상자1회. 실제 MP와 영창시간을 지불하며 파이어볼트 사용. 주문 없는 정규화 공격력으로 대체하지 않음.
+RESULT 보스 전·주문 성장/납골당의 종: won, HP damage=0.00, guard minimum=5.61, seconds=21.78, breaks=1, telegraphs=2
+BUILD 보스 전·주문 성장: level=5, normal=16.00, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 같은 레벨업4회/상자1회. 실제 MP와 영창시간을 지불하며 파이어볼트 사용. 주문 없는 정규화 공격력으로 대체하지 않음.
+RESULT 보스 전·주문 성장/실짜는 공작부인 · 실인형: won, HP damage=0.00, guard minimum=9.23, seconds=23.37, breaks=2, telegraphs=5
+BUILD 보스 전·성장 부족: level=4, normal=16.00, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; XP210=3회 레벨업. 상자효과는 준비시간 감소. 기준보다 공격 성장 부족; 시간/가드 부담이 커지는지 비교.
+RESULT 보스 전·성장 부족/미궁 스핑크스: won, HP damage=0.00, guard minimum=0.00, seconds=75.35, breaks=5, telegraphs=11
+BUILD 보스 전·성장 부족: level=4, normal=16.00, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; XP210=3회 레벨업. 상자효과는 준비시간 감소. 기준보다 공격 성장 부족; 시간/가드 부담이 커지는지 비교.
+RESULT 보스 전·성장 부족/납골당의 종: won, HP damage=0.00, guard minimum=3.54, seconds=23.56, breaks=2, telegraphs=2
+BUILD 보스 전·성장 부족: level=4, normal=16.00, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; XP210=3회 레벨업. 상자효과는 준비시간 감소. 기준보다 공격 성장 부족; 시간/가드 부담이 커지는지 비교.
+RESULT 보스 전·성장 부족/실짜는 공작부인 · 실인형: won, HP damage=0.00, guard minimum=0.07, seconds=24.34, breaks=2, telegraphs=6
+BUILD 보스 전·피로 누적: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=60, steps=34; 기준과 같은 실제 성장. 피로도60의 생산식 공격속도0.7/최종피해0.85를 적용해 탐색·야영 대가 비교.
+RESULT 보스 전·피로 누적/미궁 스핑크스: won, HP damage=0.00, guard minimum=0.00, seconds=92.09, breaks=6, telegraphs=13
+BUILD 보스 전·피로 누적: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=60, steps=34; 기준과 같은 실제 성장. 피로도60의 생산식 공격속도0.7/최종피해0.85를 적용해 탐색·야영 대가 비교.
+RESULT 보스 전·피로 누적/납골당의 종: won, HP damage=0.00, guard minimum=5.17, seconds=28.71, breaks=2, telegraphs=2
+BUILD 보스 전·피로 누적: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=60, steps=34; 기준과 같은 실제 성장. 피로도60의 생산식 공격속도0.7/최종피해0.85를 적용해 탐색·야영 대가 비교.
+RESULT 보스 전·피로 누적/실짜는 공작부인 · 실인형: won, HP damage=0.00, guard minimum=0.32, seconds=29.14, breaks=3, telegraphs=6
+BUILD 보스 전·추가 성장: level=5, normal=22.90, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 레벨업4회+이벤트퍽1회+상자1개+상점64G. 60G 회복/이벤트 예비비가 남는 탐색경로 기준. 보상 횟수를 초과한 공짜 강화를 주지 않음.
+RESULT 보스 전·추가 성장/미궁 스핑크스: won, HP damage=0.00, guard minimum=0.00, seconds=44.10, breaks=3, telegraphs=6
+BUILD 보스 전·추가 성장: level=5, normal=22.90, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 레벨업4회+이벤트퍽1회+상자1개+상점64G. 60G 회복/이벤트 예비비가 남는 탐색경로 기준. 보상 횟수를 초과한 공짜 강화를 주지 않음.
+RESULT 보스 전·추가 성장/납골당의 종: won, HP damage=0.00, guard minimum=7.85, seconds=16.41, breaks=1, telegraphs=2
+BUILD 보스 전·추가 성장: level=5, normal=22.90, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 레벨업4회+이벤트퍽1회+상자1개+상점64G. 60G 회복/이벤트 예비비가 남는 탐색경로 기준. 보상 횟수를 초과한 공짜 강화를 주지 않음.
+RESULT 보스 전·추가 성장/실짜는 공작부인 · 실인형: won, HP damage=0.00, guard minimum=9.91, seconds=16.45, breaks=1, telegraphs=4
+COMPLETE review=1. Human/mobile feel pending; this is a reproducible mechanical ceiling with actual production rewards, not ten random-run averages.

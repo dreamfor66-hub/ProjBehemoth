@@ -1,0 +1,4 @@
+Same six incoming 흡혈박쥐 normal attacks, every 2.657s. Production guard/recovery and starting relics; no attack/DPS comparison.
+Warrior HP hits=2, HP lost=38.40
+Rogue HP hits=3, HP lost=57.60
+PASS Warrior absorbs more identical pressure before HP loss.

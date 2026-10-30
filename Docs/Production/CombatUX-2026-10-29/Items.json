@@ -1,0 +1,1283 @@
+[
+  {
+    "id": "Assassination",
+    "kind": "Perks",
+    "name": "암살",
+    "asset": "Assets/Data/Items/Perks/Assassination.asset",
+    "description": "전투의 첫 무기 공격에 물리 피해 12를 추가한다."
+  },
+  {
+    "id": "BoilingBlood",
+    "kind": "Perks",
+    "name": "끓는 피",
+    "asset": "Assets/Data/Items/Perks/BoilingBlood.asset",
+    "description": "일반공격으로 얻는 격노 +2"
+  },
+  {
+    "id": "ChangingForms",
+    "kind": "Perks",
+    "name": "변초",
+    "asset": "Assets/Data/Items/Perks/ChangingForms.asset",
+    "description": "서로 다른 초식을 3회 연속 사용하면 다음 공격형 초식에 물리 피해 18을 추가한다."
+  },
+  {
+    "id": "ConcentratedVenom",
+    "kind": "Perks",
+    "name": "농축 독액",
+    "asset": "Assets/Data/Items/Perks/ConcentratedVenom.asset",
+    "description": "독 피해 +15%"
+  },
+  {
+    "id": "ConversionImpact",
+    "kind": "Perks",
+    "name": "전환 충격",
+    "asset": "Assets/Data/Items/Perks/ConversionImpact.asset",
+    "description": "분노에 진입하는 차지 공격에 전환한 격노 10당 물리 피해 1을 추가한다."
+  },
+  {
+    "id": "Counter",
+    "kind": "Perks",
+    "name": "받아치기",
+    "asset": "Assets/Data/Items/Perks/Counter.asset",
+    "description": "가드에 성공하면 다음 무기 공격에 물리 피해 6을 추가한다."
+  },
+  {
+    "id": "DecisiveBlow",
+    "kind": "Perks",
+    "name": "결정타",
+    "asset": "Assets/Data/Items/Perks/DecisiveBlow.asset",
+    "description": "치명타 피해 +15%"
+  },
+  {
+    "id": "DeepInjection",
+    "kind": "Perks",
+    "name": "깊은 주입",
+    "asset": "Assets/Data/Items/Perks/DeepInjection.asset",
+    "description": "차지 공격 적중 시 독을 2중첩 부여한다."
+  },
+  {
+    "id": "ElementFocus",
+    "kind": "Perks",
+    "name": "원소 집중",
+    "asset": "Assets/Data/Items/Perks/ElementFocus.asset",
+    "description": "직전에 시전한 주문과 같은 속성의 공격 주문을 시전하면 피해가 15% 증가한다."
+  },
+  {
+    "id": "Embers",
+    "kind": "Perks",
+    "name": "잔불",
+    "asset": "Assets/Data/Items/Perks/Embers.asset",
+    "description": "분노가 끝나면 격노를 4 얻는다."
+  },
+  {
+    "id": "Exploit",
+    "kind": "Perks",
+    "name": "빈틈 공략",
+    "asset": "Assets/Data/Items/Perks/Exploit.asset",
+    "description": "기절한 적에게 주는 피해 +15%"
+  },
+  {
+    "id": "FireMastery",
+    "kind": "Perks",
+    "name": "화염 숙련",
+    "asset": "Assets/Data/Items/Perks/FireMastery.asset",
+    "description": "화염 피해 +10%"
+  },
+  {
+    "id": "FlowFinish",
+    "kind": "Perks",
+    "name": "연환의 끝",
+    "asset": "Assets/Data/Items/Perks/FlowFinish.asset",
+    "description": "연환으로 강화된 일반공격을 모두 적중시키면 마지막 공격에 물리 피해 10을 추가한다."
+  },
+  {
+    "id": "ForwardGuard",
+    "kind": "Perks",
+    "name": "전진 방어",
+    "asset": "Assets/Data/Items/Perks/ForwardGuard.asset",
+    "description": "일반공격 적중 시 실드를 0.5 회복한다."
+  },
+  {
+    "id": "FrenziedFist",
+    "kind": "Perks",
+    "name": "광폭한 주먹",
+    "asset": "Assets/Data/Items/Perks/FrenziedFist.asset",
+    "description": "분노 중 일반공격에 물리 피해 3을 추가한다."
+  },
+  {
+    "id": "HeavyWeapon",
+    "kind": "Perks",
+    "name": "묵직한 무기",
+    "asset": "Assets/Data/Items/Perks/HeavyWeapon.asset",
+    "description": "차지 공격 피해 +4"
+  },
+  {
+    "id": "IceMastery",
+    "kind": "Perks",
+    "name": "냉기 숙련",
+    "asset": "Assets/Data/Items/Perks/IceMastery.asset",
+    "description": "냉기 피해 +10%"
+  },
+  {
+    "id": "InnerStrength",
+    "kind": "Perks",
+    "name": "내공",
+    "asset": "Assets/Data/Items/Perks/InnerStrength.asset",
+    "description": "공격형 초식 피해 +10%"
+  },
+  {
+    "id": "KeenInstinct",
+    "kind": "Perks",
+    "name": "예리한 감각",
+    "asset": "Assets/Data/Items/Perks/KeenInstinct.asset",
+    "description": "치명타 확률 +5%"
+  },
+  {
+    "id": "LightningMastery",
+    "kind": "Perks",
+    "name": "번개 숙련",
+    "asset": "Assets/Data/Items/Perks/LightningMastery.asset",
+    "description": "번개 피해 +10%"
+  },
+  {
+    "id": "LongBlade",
+    "kind": "Perks",
+    "name": "긴 칼날",
+    "asset": "Assets/Data/Items/Perks/LongBlade.asset",
+    "description": "발도 공격 범위 +8%"
+  },
+  {
+    "id": "ManaBurn",
+    "kind": "Perks",
+    "name": "마력 연소",
+    "asset": "Assets/Data/Items/Perks/ManaBurn.asset",
+    "description": "주문 사용 후 MP가 20% 이하이면 해당 주문의 피해가 25% 증가한다."
+  },
+  {
+    "id": "ManaFlow",
+    "kind": "Perks",
+    "name": "마력 순환",
+    "asset": "Assets/Data/Items/Perks/ManaFlow.asset",
+    "description": "초당 MP 회복량 +0.05"
+  },
+  {
+    "id": "ManaVessel",
+    "kind": "Perks",
+    "name": "마력 그릇",
+    "asset": "Assets/Data/Items/Perks/ManaVessel.asset",
+    "description": "최대 MP +3"
+  },
+  {
+    "id": "OneSchool",
+    "kind": "Perks",
+    "name": "일문전수",
+    "asset": "Assets/Data/Items/Perks/OneSchool.asset",
+    "description": "같은 공격형 초식을 연속 사용하면 두 번째부터 물리 피해 6을 추가한다."
+  },
+  {
+    "id": "ParryEcho",
+    "kind": "Perks",
+    "name": "패리 잔격",
+    "asset": "Assets/Data/Items/Perks/ParryEcho.asset",
+    "description": "납도 패리에 성공하면 다음 발도가 피해의 20%만큼 추가 타격한다."
+  },
+  {
+    "id": "PatientDraw",
+    "kind": "Perks",
+    "name": "축적 일섬",
+    "asset": "Assets/Data/Items/Perks/PatientDraw.asset",
+    "description": "납도를 유지한 시간 1초당 다음 발도에 물리 피해 6을 추가한다."
+  },
+  {
+    "id": "PoisonBlade",
+    "kind": "Perks",
+    "name": "독 바른 칼",
+    "asset": "Assets/Data/Items/Perks/PoisonBlade.asset",
+    "description": "일반공격 적중 시 독을 1중첩 부여한다."
+  },
+  {
+    "id": "Pressure",
+    "kind": "Perks",
+    "name": "압박",
+    "asset": "Assets/Data/Items/Perks/Pressure.asset",
+    "description": "공격을 준비 중인 적에게 일반공격을 적중시키면 물리 피해 3을 추가한다."
+  },
+  {
+    "id": "RageWeight",
+    "kind": "Perks",
+    "name": "분노의 무게",
+    "asset": "Assets/Data/Items/Perks/RageWeight.asset",
+    "description": "분노 중 차지 공격에 남은 분노의 10%만큼 물리 피해를 추가한다."
+  },
+  {
+    "id": "RapidDraw",
+    "kind": "Perks",
+    "name": "연속 발도",
+    "asset": "Assets/Data/Items/Perks/RapidDraw.asset",
+    "description": "발도 후 2초 안에 다시 발도하면 물리 피해 4의 잔격이 발생한다."
+  },
+  {
+    "id": "Reform",
+    "kind": "Perks",
+    "name": "재정비",
+    "asset": "Assets/Data/Items/Perks/Reform.asset",
+    "description": "기본 실드 재생량이 초당 0.4 증가한다."
+  },
+  {
+    "id": "SharpWeapon",
+    "kind": "Perks",
+    "name": "날 선 무기",
+    "asset": "Assets/Data/Items/Perks/SharpWeapon.asset",
+    "description": "일반공격 피해 +2"
+  },
+  {
+    "id": "ShelterCounter",
+    "kind": "Perks",
+    "name": "호신경",
+    "asset": "Assets/Data/Items/Perks/ShelterCounter.asset",
+    "description": "호신격으로 공격을 받아내면 다음 공격형 초식에 물리 피해 10을 추가한다."
+  },
+  {
+    "id": "ShieldImpact",
+    "kind": "Perks",
+    "name": "방패 중격",
+    "asset": "Assets/Data/Items/Perks/ShieldImpact.asset",
+    "description": "차지 공격에 현재 실드의 10%만큼 물리 피해를 추가한다."
+  },
+  {
+    "id": "ShortIncantation",
+    "kind": "Perks",
+    "name": "축약 영창",
+    "asset": "Assets/Data/Items/Perks/ShortIncantation.asset",
+    "description": "주문 시전 시간 -5%"
+  },
+  {
+    "id": "Spellblade",
+    "kind": "Perks",
+    "name": "마검 방출",
+    "asset": "Assets/Data/Items/Perks/Spellblade.asset",
+    "description": "인챈트된 일반공격을 적중시킬 때마다 다음 차지 공격에 해당 속성 피해 4를 추가한다."
+  },
+  {
+    "id": "SwordRecovery",
+    "kind": "Perks",
+    "name": "검세 회수",
+    "asset": "Assets/Data/Items/Perks/SwordRecovery.asset",
+    "description": "발도 후 일반공격을 적중시킬 때마다 다음 발도에 물리 피해 5를 추가한다."
+  },
+  {
+    "id": "ThreeElements",
+    "kind": "Perks",
+    "name": "삼원 공명",
+    "asset": "Assets/Data/Items/Perks/ThreeElements.asset",
+    "description": "서로 다른 세 속성의 주문을 연속 시전하면 MP 4를 회복한다."
+  },
+  {
+    "id": "VenomStrike",
+    "kind": "Perks",
+    "name": "독살자의 일격",
+    "asset": "Assets/Data/Items/Perks/VenomStrike.asset",
+    "description": "중독된 적에게 주는 차지 공격 피해 +12%"
+  },
+  {
+    "id": "Vitality",
+    "kind": "Perks",
+    "name": "활력",
+    "asset": "Assets/Data/Items/Perks/Vitality.asset",
+    "description": "최대 체력 +10"
+  },
+  {
+    "id": "AegisBattery",
+    "kind": "Relics",
+    "name": "이지스 배터리",
+    "asset": "Assets/Data/Items/Relics/AegisBattery.asset",
+    "description": "최대 방패 +25"
+  },
+  {
+    "id": "AmberSeed",
+    "kind": "Relics",
+    "name": "호박빛 싹",
+    "asset": "Assets/Data/Items/Relics/AmberSeed.asset",
+    "description": "전투 3승마다 최대·현재 체력 +4."
+  },
+  {
+    "id": "ArcaneGuard",
+    "kind": "Relics",
+    "name": "비전 방벽",
+    "asset": "Assets/Data/Items/Relics/ArcaneGuard.asset",
+    "description": "주문 발동 시 가드게이지 +4."
+  },
+  {
+    "id": "AzureTalon",
+    "kind": "Relics",
+    "name": "청색 매의 발톱",
+    "asset": "Assets/Data/Items/Relics/AzureTalon.asset",
+    "description": "베기 공격 거리 +100"
+  },
+  {
+    "id": "BloodContract",
+    "kind": "Relics",
+    "name": "붉은 계약서",
+    "asset": "Assets/Data/Items/Relics/BloodContract.asset",
+    "description": "모든 피해 +25%."
+  },
+  {
+    "id": "BloodFrenzy",
+    "kind": "Relics",
+    "name": "피로 지핀 불꽃",
+    "asset": "Assets/Data/Items/Relics/BloodFrenzy.asset",
+    "description": "잿불 화살 습득. 화염 주문 발동 시 격노/분노 +15. 분노 중 화염 주문 피해 +30%."
+  },
+  {
+    "id": "BloodlessDraw",
+    "kind": "Relics",
+    "name": "피를 거두는 칼집",
+    "asset": "Assets/Data/Items/Relics/BloodlessDraw.asset",
+    "description": "발도 적중 시 체력 2 회복."
+  },
+  {
+    "id": "ChainMaster",
+    "kind": "Relics",
+    "name": "뻗어나가는 폭풍",
+    "asset": "Assets/Data/Items/Relics/ChainMaster.asset",
+    "description": "연쇄 번개 습득. 연쇄 대상 수 +2."
+  },
+  {
+    "id": "ChargeCoil",
+    "kind": "Relics",
+    "name": "차지 코일",
+    "asset": "Assets/Data/Items/Relics/ChargeCoil.asset",
+    "description": "차지 시간 -12%"
+  },
+  {
+    "id": "ChargeWard",
+    "kind": "Relics",
+    "name": "검의 방패",
+    "asset": "Assets/Data/Items/Relics/ChargeWard.asset",
+    "description": "차지 중 피격을 가드로 처리"
+  },
+  {
+    "id": "ComboLeech",
+    "kind": "Relics",
+    "name": "생명의 초식",
+    "asset": "Assets/Data/Items/Relics/ComboLeech.asset",
+    "description": "초식 마무리 사용 시 체력 2 회복."
+  },
+  {
+    "id": "CorePrism",
+    "kind": "Relics",
+    "name": "핵심 프리즘",
+    "asset": "Assets/Data/Items/Relics/CorePrism.asset",
+    "description": "차지 베기 피해 +45%"
+  },
+  {
+    "id": "CrosswindCharm",
+    "kind": "Relics",
+    "name": "가로바람 호신부",
+    "asset": "Assets/Data/Items/Relics/CrosswindCharm.asset",
+    "description": "가로 베기 적중 시, 중앙에서 90도 방향으로 같은 길이의 추가 공격"
+  },
+  {
+    "id": "DeadlyDose",
+    "kind": "Relics",
+    "name": "치사량",
+    "asset": "Assets/Data/Items/Relics/DeadlyDose.asset",
+    "description": "일반공격이 독을 1중첩 더 부여한다. 독 피해 1, 8초 지속, 최대 8중첩."
+  },
+  {
+    "id": "DeferredPain",
+    "kind": "Relics",
+    "name": "늦게 찾아오는 고통",
+    "asset": "Assets/Data/Items/Relics/DeferredPain.asset",
+    "description": "분노 중 체력 피해를 5초에 나누어 받는다. 분노 종료 시 남은 피해를 받고, 전투 승리 시 사라진다."
+  },
+  {
+    "id": "DistanceMomentum",
+    "kind": "Relics",
+    "name": "장거리 잔상",
+    "asset": "Assets/Data/Items/Relics/DistanceMomentum.asset",
+    "description": "베기 길이 100마다 피해 +6%"
+  },
+  {
+    "id": "DoubleCharge",
+    "kind": "Relics",
+    "name": "이중 박동기",
+    "asset": "Assets/Data/Items/Relics/DoubleCharge.asset",
+    "description": "2단 차지 가능. 적색 게이지까지 채우면 차지 피해 2배"
+  },
+  {
+    "id": "DoubleDraw",
+    "kind": "Relics",
+    "name": "이중 발도",
+    "asset": "Assets/Data/Items/Relics/DoubleDraw.asset",
+    "description": "발도가 한 번 더 적중한다. 약점에도 추가로 적중한다."
+  },
+  {
+    "id": "DrawMastery",
+    "kind": "Relics",
+    "name": "일섬",
+    "asset": "Assets/Data/Items/Relics/DrawMastery.asset",
+    "description": "발도 피해 보정이 +50%에서 +85%로 증가."
+  },
+  {
+    "id": "EchoSpur",
+    "kind": "Relics",
+    "name": "울림의 발뒤축",
+    "asset": "Assets/Data/Items/Relics/EchoSpur.asset",
+    "description": "내려베기 적중 시, 같은 길이의 추가 공격"
+  },
+  {
+    "id": "EdgeCharm",
+    "kind": "Relics",
+    "name": "날 선 부적",
+    "asset": "Assets/Data/Items/Relics/EdgeCharm.asset",
+    "description": "일반 공격 피해 +15%"
+  },
+  {
+    "id": "EmberMaster",
+    "kind": "Relics",
+    "name": "잿불의 왕관",
+    "asset": "Assets/Data/Items/Relics/EmberMaster.asset",
+    "description": "잿불 화살 습득. 화염 주문 피해 +30%."
+  },
+  {
+    "id": "ExecuteRage",
+    "kind": "Relics",
+    "name": "사냥은 계속된다",
+    "asset": "Assets/Data/Items/Relics/ExecuteRage.asset",
+    "description": "분노 중 처치 시 분노 +30, 체력 +3."
+  },
+  {
+    "id": "Executioner",
+    "kind": "Relics",
+    "name": "숨통 끊기",
+    "asset": "Assets/Data/Items/Relics/Executioner.asset",
+    "description": "기절한 대상에게 무기 피해 +35%."
+  },
+  {
+    "id": "FirstStrike",
+    "kind": "Relics",
+    "name": "단 한 번의 암살",
+    "asset": "Assets/Data/Items/Relics/FirstStrike.asset",
+    "description": "독 부여를 중단한다. 일반 피해 +25%. 각 적에게 첫 무기 적중 피해 +250%."
+  },
+  {
+    "id": "FlowMaster",
+    "kind": "Relics",
+    "name": "끊기지 않는 연환",
+    "asset": "Assets/Data/Items/Relics/FlowMaster.asset",
+    "description": "연환의 가속을 2회 더 사용할 수 있으며 쿨타임 감소가 40%에서 60%가 된다."
+  },
+  {
+    "id": "GoldenTooth",
+    "kind": "Relics",
+    "name": "금빛 이빨",
+    "asset": "Assets/Data/Items/Relics/GoldenTooth.asset",
+    "description": "전투 승리마다 골드 +10."
+  },
+  {
+    "id": "GuardianBell",
+    "kind": "Relics",
+    "name": "수호의 종",
+    "asset": "Assets/Data/Items/Relics/GuardianBell.asset",
+    "description": "최대 가드게이지 +10. 전투 시작 3초간 받는 체력 피해 -20%."
+  },
+  {
+    "id": "GuardNova",
+    "kind": "Relics",
+    "name": "수호의 파동",
+    "asset": "Assets/Data/Items/Relics/GuardNova.asset",
+    "description": "가드 3회마다 모든 적에게 최대 가드게이지의 40% 피해."
+  },
+  {
+    "id": "GuidingWisp",
+    "kind": "Relics",
+    "name": "길잡이의 등불",
+    "asset": "Assets/Data/Items/Relics/GuidingWisp.asset",
+    "description": "차지 적중과 주문 발동에 위습이 피해 6을 더한다."
+  },
+  {
+    "id": "Hammer",
+    "kind": "Relics",
+    "name": "철퇴의 가호",
+    "asset": "Assets/Data/Items/Relics/Hammer.asset",
+    "description": "내려치기 적중 시 일반공격 준비를 0.55초 지연한다."
+  },
+  {
+    "id": "Hourglass",
+    "kind": "Relics",
+    "name": "깨어진 모래시계",
+    "asset": "Assets/Data/Items/Relics/Hourglass.asset",
+    "description": "차지 준비시간과 주문 쿨타임 -12%."
+  },
+  {
+    "id": "HundredFists",
+    "kind": "Relics",
+    "name": "백렬의 극의",
+    "asset": "Assets/Data/Items/Relics/HundredFists.asset",
+    "description": "백렬권이 2회 더 적중한다. 약점도 추가 타격한다."
+  },
+  {
+    "id": "HunterLantern",
+    "kind": "Relics",
+    "name": "사냥꾼의 등불",
+    "asset": "Assets/Data/Items/Relics/HunterLantern.asset",
+    "description": "몬스터 처치 시 HP 7 회복"
+  },
+  {
+    "id": "IceFocus",
+    "kind": "Relics",
+    "name": "겨울의 시선",
+    "asset": "Assets/Data/Items/Relics/IceFocus.asset",
+    "description": "서리 파동 습득. 냉기 주문 피해 +20%, 둔화 지속시간 +0.5초."
+  },
+  {
+    "id": "IronFortress",
+    "kind": "Relics",
+    "name": "불굴의 성채",
+    "asset": "Assets/Data/Items/Relics/IronFortress.asset",
+    "description": "최대 가드게이지 +25, 전투 중 자연회복 초당 +2."
+  },
+  {
+    "id": "LightningRod",
+    "kind": "Relics",
+    "name": "피뢰침 지팡이",
+    "asset": "Assets/Data/Items/Relics/LightningRod.asset",
+    "description": "스파크 습득. 무기 적중 대상에게 8초 동안 피뢰침을 남겨 번개가 우선한다."
+  },
+  {
+    "id": "LongDragon",
+    "kind": "Relics",
+    "name": "유룡의 두루마리",
+    "asset": "Assets/Data/Items/Relics/LongDragon.asset",
+    "description": "↑↓→ 후 차지로 유룡연타 해금. 차지 피해 ×0.6로 4회, 약점도 4회 타격."
+  },
+  {
+    "id": "LongRage",
+    "kind": "Relics",
+    "name": "끝나지 않는 격노",
+    "asset": "Assets/Data/Items/Relics/LongRage.asset",
+    "description": "분노 소모가 초당 8 감소한다. 분노 중 일반공격 시 분노 +6."
+  },
+  {
+    "id": "LongTiger",
+    "kind": "Relics",
+    "name": "맹호의 두루마리",
+    "asset": "Assets/Data/Items/Relics/LongTiger.asset",
+    "description": "↓↑↑ 후 차지로 맹호붕권 해금. 차지 피해 ×2.5. 긴 패턴이 우선한다."
+  },
+  {
+    "id": "MindfulGuard",
+    "kind": "Relics",
+    "name": "주문을 잇는 호흡",
+    "asset": "Assets/Data/Items/Relics/MindfulGuard.asset",
+    "description": "스파크 습득. 초식 사용 시 주문 쿨타임 -1초. 주문 발동 시 가드게이지 +3."
+  },
+  {
+    "id": "MirrorShard",
+    "kind": "Relics",
+    "name": "기억하는 거울 조각",
+    "asset": "Assets/Data/Items/Relics/MirrorShard.asset",
+    "description": "매 4번째 무기 적중에 해당 피해의 40%를 더한다."
+  },
+  {
+    "id": "PainFrenzy",
+    "kind": "Relics",
+    "name": "피의 각성",
+    "asset": "Assets/Data/Items/Relics/PainFrenzy.asset",
+    "description": "피격 후 2.5초간 피해 +50%"
+  },
+  {
+    "id": "Paladin",
+    "kind": "Relics",
+    "name": "성기사의 길",
+    "asset": "Assets/Data/Items/Relics/Paladin.asset",
+    "description": "잿불 화살 습득. 가드 성공 시 주문의 남은 쿨타임 -1초."
+  },
+  {
+    "id": "Parasite",
+    "kind": "Relics",
+    "name": "공생하는 씨앗",
+    "asset": "Assets/Data/Items/Relics/Parasite.asset",
+    "description": "일반 무기 피해 +25%, 차지 피해 +20%."
+  },
+  {
+    "id": "ParryRecovery",
+    "kind": "Relics",
+    "name": "틈을 베다",
+    "asset": "Assets/Data/Items/Relics/ParryRecovery.asset",
+    "description": "납도패리 성공 시 공격 쿨타임 즉시 초기화."
+  },
+  {
+    "id": "PatientSheath",
+    "kind": "Relics",
+    "name": "기다림의 칼",
+    "asset": "Assets/Data/Items/Relics/PatientSheath.asset",
+    "description": "납도 유지 1초당 발도 피해 +30%, 최대 +100%."
+  },
+  {
+    "id": "PerfectMending",
+    "kind": "Relics",
+    "name": "완벽한 수호",
+    "asset": "Assets/Data/Items/Relics/PerfectMending.asset",
+    "description": "가드 시작 0.1초에 퍼펙트가드 가능. 성공 시 게이지를 쓰지 않고 10초 동안 피해 +30%. 갱신되며 중첩되지 않는다."
+  },
+  {
+    "id": "PerfectRiposte",
+    "kind": "Relics",
+    "name": "되비치는 검광",
+    "asset": "Assets/Data/Items/Relics/PerfectRiposte.asset",
+    "description": "납도패리 성공 시 공격한 적에게 차지 공격력의 50% 피해."
+  },
+  {
+    "id": "PilgrimOath",
+    "kind": "Relics",
+    "name": "순례자의 서약",
+    "asset": "Assets/Data/Items/Relics/PilgrimOath.asset",
+    "description": "가드 3회마다 가드게이지 +3. 순례자의 인연을 증명한다."
+  },
+  {
+    "id": "PoisonLeech",
+    "kind": "Relics",
+    "name": "맹독의 생명줄",
+    "asset": "Assets/Data/Items/Relics/PoisonLeech.asset",
+    "description": "독 피해의 12%만큼 체력을 회복한다."
+  },
+  {
+    "id": "PressurePoint",
+    "kind": "Relics",
+    "name": "기혈 파쇄",
+    "asset": "Assets/Data/Items/Relics/PressurePoint.asset",
+    "description": "기절한 대상에게 초식 마무리 피해 +35%."
+  },
+  {
+    "id": "QuickCasting",
+    "kind": "Relics",
+    "name": "축약 영창",
+    "asset": "Assets/Data/Items/Relics/QuickCasting.asset",
+    "description": "주문 캐스팅 시간 -35%."
+  },
+  {
+    "id": "RageCharge",
+    "kind": "Relics",
+    "name": "분노의 일격",
+    "asset": "Assets/Data/Items/Relics/RageCharge.asset",
+    "description": "분노 중 차지 피해가 현재 분노 1당 1% 증가한다. 해당 차지 후 분노 35 소모."
+  },
+  {
+    "id": "RageLeech",
+    "kind": "Relics",
+    "name": "피의 연회",
+    "asset": "Assets/Data/Items/Relics/RageLeech.asset",
+    "description": "분노 중 직접 무기 피해의 10%만큼 체력을 회복한다."
+  },
+  {
+    "id": "RaggedBanner",
+    "kind": "Relics",
+    "name": "이름 없는 깃발",
+    "asset": "Assets/Data/Items/Relics/RaggedBanner.asset",
+    "description": "살아 있는 적 하나당 무기 피해 +8%."
+  },
+  {
+    "id": "ShadowCounter",
+    "kind": "Relics",
+    "name": "독을 읽는 주문서",
+    "asset": "Assets/Data/Items/Relics/ShadowCounter.asset",
+    "description": "스파크 습득. 가드 성공 시 주문 쿨타임 -0.5초. 주문 발동 시 대상에게 독 2중첩."
+  },
+  {
+    "id": "ShadowSheath",
+    "kind": "Relics",
+    "name": "찰나의 잔영",
+    "asset": "Assets/Data/Items/Relics/ShadowSheath.asset",
+    "description": "납도패리 판정 시간이 0.1초 늘어난다."
+  },
+  {
+    "id": "ShelterMaster",
+    "kind": "Relics",
+    "name": "금강 호신",
+    "asset": "Assets/Data/Items/Relics/ShelterMaster.asset",
+    "description": "호신격 사용 시 최대 가드게이지의 30%를 추가 회복."
+  },
+  {
+    "id": "ShieldBash",
+    "kind": "Relics",
+    "name": "신성검의 서약",
+    "asset": "Assets/Data/Items/Relics/ShieldBash.asset",
+    "description": "가드로 소모한 게이지의 50%를 저장하여 다음 무기 적중에 더한다."
+  },
+  {
+    "id": "ShieldEdge",
+    "kind": "Relics",
+    "name": "방패의 칼날",
+    "asset": "Assets/Data/Items/Relics/ShieldEdge.asset",
+    "description": "무기 적중에 현재 가드게이지의 15%를 추가한다."
+  },
+  {
+    "id": "Spear",
+    "kind": "Relics",
+    "name": "천공창",
+    "asset": "Assets/Data/Items/Relics/Spear.asset",
+    "description": "올려치기 피해 +35%, 공격 쿨타임 -50%. 다른 방향 피해 -20%, 공격 쿨타임 +25%."
+  },
+  {
+    "id": "SpellBlade",
+    "kind": "Relics",
+    "name": "주문검",
+    "asset": "Assets/Data/Items/Relics/SpellBlade.asset",
+    "description": "에너지 볼트 습득. 납도 중 캐스팅 시간 -25%. 주문 발동 후 다음 발도 피해 +40%."
+  },
+  {
+    "id": "SpellEcho",
+    "kind": "Relics",
+    "name": "주문의 잔향",
+    "asset": "Assets/Data/Items/Relics/SpellEcho.asset",
+    "description": "세 번째 주문마다 0.22초 후 같은 주문을 50% 피해로 한 번 더 발동한다."
+  },
+  {
+    "id": "StaffConduit",
+    "kind": "Relics",
+    "name": "지팡이와 주문 사이",
+    "asset": "Assets/Data/Items/Relics/StaffConduit.asset",
+    "description": "일반 무기 피해 +15%. 지팡이 차지 적중 후 다음 주문은 캐스팅 시간 -60%, 피해 +20%. 약점 파괴 시 가드게이지 +3."
+  },
+  {
+    "id": "Starter_Barbarian",
+    "kind": "Relics",
+    "name": "격노의 심장",
+    "asset": "Assets/Data/Items/Relics/Starter_Barbarian.asset",
+    "description": "일반 공격 시 격노 12중첩 획득. 격노 24 이상에서 차지 공격 시 쌓인 격노를 분노로 전환합니다.\r\n[분노] 무기 피해 +30%, 공격 쿨타임 -45%, 받는 체력 피해 -25%. 분노는 초당 25중첩 소모한다."
+  },
+  {
+    "id": "Starter_Monk",
+    "kind": "Relics",
+    "name": "초식의 두루마리",
+    "asset": "Assets/Data/Items/Relics/Starter_Monk.asset",
+    "description": "일반 공격 방향에 따라 초식을 준비합니다. 패턴을 만든 후, 차지 공격으로 초식을 마무리 할 수 있습니다. 초식을 마무리하면 아래와 같은 효과를 얻습니다.\r\n↓↑ 붕권: 1.7배 차지 피해\r\n←→ 백렬권: 0.55배 차지 3회 피해\r\n↓→ 호신격: 가드 +5, 다음 1회에 한해 받는 피해 -50%.\r\n→↑ 연환: 다음 일반공격 2회 쿨타임 -40%."
+  },
+  {
+    "id": "Starter_Rogue",
+    "kind": "Relics",
+    "name": "그림자 망토",
+    "asset": "Assets/Data/Items/Relics/Starter_Rogue.asset",
+    "description": "전투 개시 시 은신하며, 적이 눈치채기 전에 먼저 행동할 수 있습니다. 각 행동 마다 25% 확률로 발각됩니다. 적이 공격받으면 즉시 발각됩니다."
+  },
+  {
+    "id": "Starter_Samurai",
+    "kind": "Relics",
+    "name": "고요한 칼집",
+    "asset": "Assets/Data/Items/Relics/Starter_Samurai.asset",
+    "description": "가드 진입 시 납도. 납도 패리 0.3초. 다음 발도 피해 +50%. 납도 패리 성공 시 다음 발도가 차지 판정을 얻는다."
+  },
+  {
+    "id": "Starter_Warrior",
+    "kind": "Relics",
+    "name": "수호자의 방패",
+    "asset": "Assets/Data/Items/Relics/Starter_Warrior.asset",
+    "description": "전투 중 가드게이지가 초당 2 회복됩니다. 가드 붕괴 중 회복 속도가 추가로 3 증가합니다."
+  },
+  {
+    "id": "Starter_Wizard",
+    "kind": "Relics",
+    "name": "집중의 수정",
+    "asset": "Assets/Data/Items/Relics/Starter_Wizard.asset",
+    "description": "에너지 볼트를 가지고 게임을 시작합니다.\r\n주문 쿨타임 -25%\r\n가드 중 MP가 초당 0.9 추가 회복된다."
+  },
+  {
+    "id": "StormBottle",
+    "kind": "Relics",
+    "name": "병 속의 폭풍",
+    "asset": "Assets/Data/Items/Relics/StormBottle.asset",
+    "description": "차지 적중 시 번개 피해 8 추가."
+  },
+  {
+    "id": "StrayDog",
+    "kind": "Relics",
+    "name": "작은 발자국",
+    "asset": "Assets/Data/Items/Relics/StrayDog.asset",
+    "description": "강아지가 곁에서 동행한다. 4초마다 체력이 가장 낮은 적에게 7 + 현재 레벨만큼 피해."
+  },
+  {
+    "id": "Technique_CoreHarvest",
+    "kind": "Relics",
+    "name": "핵심 회수",
+    "asset": "Assets/Data/Items/Relics/Technique_CoreHarvest.asset",
+    "description": "약점 타격 시 실드 +10"
+  },
+  {
+    "id": "Technique_Harvest",
+    "kind": "Relics",
+    "name": "생명 수확",
+    "asset": "Assets/Data/Items/Relics/Technique_Harvest.asset",
+    "description": "몬스터 처치 시 HP 4 회복"
+  },
+  {
+    "id": "Technique_ImpactShield",
+    "kind": "Relics",
+    "name": "충격 방패",
+    "asset": "Assets/Data/Items/Relics/Technique_ImpactShield.asset",
+    "description": "적중 시 실드 +2"
+  },
+  {
+    "id": "ThornBulwark",
+    "kind": "Relics",
+    "name": "가시 성벽",
+    "asset": "Assets/Data/Items/Relics/ThornBulwark.asset",
+    "description": "가드 성공 시 적에게 일반 피해의 70% 반격"
+  },
+  {
+    "id": "ThunderousCharge",
+    "kind": "Relics",
+    "name": "뇌성의 대검",
+    "asset": "Assets/Data/Items/Relics/ThunderousCharge.asset",
+    "description": "스파크 습득. 차지 적중 시 번개 피해 8 추가. 번개 주문 발동 시 가드게이지 +2."
+  },
+  {
+    "id": "ThunderWire",
+    "kind": "Relics",
+    "name": "번개 심줄",
+    "asset": "Assets/Data/Items/Relics/ThunderWire.asset",
+    "description": "일반 베기 피해 +20%, 재사용 대기시간 -12%"
+  },
+  {
+    "id": "Tome_ChainLightning",
+    "kind": "Relics",
+    "name": "연쇄 번개의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_ChainLightning.asset",
+    "description": "긋기를 끝낸 지점에 번개를 떨어뜨리고 가까운 적으로 최대 3회 연결한다."
+  },
+  {
+    "id": "Tome_Cleanse",
+    "kind": "Relics",
+    "name": "정화의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_Cleanse.asset",
+    "description": "해로운 효과를 제거한다."
+  },
+  {
+    "id": "Tome_Ember",
+    "kind": "Relics",
+    "name": "잿불 화살의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_Ember.asset",
+    "description": "체력 비율이 가장 낮은 적을 겨냥한다. 목표 너머의 적도 관통한다."
+  },
+  {
+    "id": "Tome_EnchantFire",
+    "kind": "Relics",
+    "name": "인챈트 파이어의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_EnchantFire.asset",
+    "description": "10초 동안 무기 공격에 화염 피해 4와 화상을 추가한다."
+  },
+  {
+    "id": "Tome_EnchantIce",
+    "kind": "Relics",
+    "name": "인챈트 아이스의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_EnchantIce.asset",
+    "description": "10초 동안 무기 공격에 냉기 피해 4와 둔화를 추가한다."
+  },
+  {
+    "id": "Tome_EnchantLightning",
+    "kind": "Relics",
+    "name": "인챈트 라이트닝의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_EnchantLightning.asset",
+    "description": "10초 동안 무기 공격에 번개 피해 4를 추가하고 주변 적에게 번개 피해 2를 준다."
+  },
+  {
+    "id": "Tome_EnergyBolt",
+    "kind": "Relics",
+    "name": "에너지 볼트의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_EnergyBolt.asset",
+    "description": "그은 방향으로 에너지 볼트를 날려 적을 관통한다."
+  },
+  {
+    "id": "Tome_FireBloom",
+    "kind": "Relics",
+    "name": "화염 개화의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_FireBloom.asset",
+    "description": "체력 비율이 가장 낮은 적 주위에 폭발한다. 반경 안의 적을 함께 공격한다."
+  },
+  {
+    "id": "Tome_FrostRing",
+    "kind": "Relics",
+    "name": "서리 파동의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_FrostRing.asset",
+    "description": "마지막 무기 적중 대상 주위에 서리를 펼친다. 맞은 적의 행동이 3초간 느려진다."
+  },
+  {
+    "id": "Tome_LightningMark",
+    "kind": "Relics",
+    "name": "벼락표식의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_LightningMark.asset",
+    "description": "7초 동안 적에게 표식을 남긴다. 다음 무기 공격 피해의 30%를 주변 적에게 번개로 전달한다."
+  },
+  {
+    "id": "Tome_PoisonMist",
+    "kind": "Relics",
+    "name": "독안개의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_PoisonMist.asset",
+    "description": "10초 동안 독안개를 펼친다. 2초마다 독을 1중첩 부여하고 적의 행동을 늦춘다."
+  },
+  {
+    "id": "Tome_Spark",
+    "kind": "Relics",
+    "name": "스파크의 마도서",
+    "asset": "Assets/Data/Items/Relics/Tome_Spark.asset",
+    "description": "긋기를 끝낸 지점에 번개를 떨어뜨린다."
+  },
+  {
+    "id": "TwinDaggers",
+    "kind": "Relics",
+    "name": "쌍단도",
+    "asset": "Assets/Data/Items/Relics/TwinDaggers.asset",
+    "description": "좌·우 일반공격을 연속하면 공격 쿨타임이 4%씩 감소, 최대 40%. 상·하 공격으로 초기화."
+  },
+  {
+    "id": "Unstoppable",
+    "kind": "Relics",
+    "name": "방어 분쇄",
+    "asset": "Assets/Data/Items/Relics/Unstoppable.asset",
+    "description": "차지는 방향 방벽을 무시한다. 차지 피해 +20%."
+  },
+  {
+    "id": "VenomSpread",
+    "kind": "Relics",
+    "name": "번지는 맹독",
+    "asset": "Assets/Data/Items/Relics/VenomSpread.asset",
+    "description": "처치한 적의 독 절반에 2중첩을 더해 다른 적에게 전파한다. 독 피해는 중첩당 1, 최대 8중첩."
+  },
+  {
+    "id": "ViperFang",
+    "kind": "Relics",
+    "name": "독사의 송곳니",
+    "asset": "Assets/Data/Items/Relics/ViperFang.asset",
+    "description": "차지 적중 시 독을 전부 소모해 남은 중첩당 독 피해의 2배를 즉시 준다."
+  },
+  {
+    "id": "WellCurse",
+    "kind": "Relics",
+    "name": "우물 밑의 무게",
+    "asset": "Assets/Data/Items/Relics/WellCurse.asset",
+    "description": "최대 가드게이지 -8. 검은 우물에서 가져온 금의 무게다."
+  },
+  {
+    "id": "FatiguePotion",
+    "kind": "Potions",
+    "name": "기운 회복 포션",
+    "asset": "Assets/Data/Items/Potions/FatiguePotion.asset",
+    "description": "피로도 30 회복\n지치기까지 10보의 여유를 얻는다."
+  },
+  {
+    "id": "HealingPotion",
+    "kind": "Potions",
+    "name": "생명의 포션",
+    "asset": "Assets/Data/Items/Potions/HealingPotion.asset",
+    "description": "사용 시 HP 35 회복"
+  },
+  {
+    "id": "OpeningRockPotion",
+    "kind": "Potions",
+    "name": "돌팔매 포션",
+    "asset": "Assets/Data/Items/Potions/OpeningRockPotion.asset",
+    "description": "던지기: 적 하나에게 26 피해"
+  },
+  {
+    "id": "PoisonPotion",
+    "kind": "Potions",
+    "name": "독 포션",
+    "asset": "Assets/Data/Items/Potions/PoisonPotion.asset",
+    "description": "던지기: 적에게 독 3 부여 (8초)\n마시기: 자신에게 독 3 부여 (8초)\n독은 2초마다 중첩당 3 피해"
+  },
+  {
+    "id": "RagePotion",
+    "kind": "Potions",
+    "name": "격노의 포션",
+    "asset": "Assets/Data/Items/Potions/RagePotion.asset",
+    "description": "다음 3회 전투에서 피해 +35%"
+  },
+  {
+    "id": "RevivalPotion",
+    "kind": "Potions",
+    "name": "살아남은 불씨",
+    "asset": "Assets/Data/Items/Potions/RevivalPotion.asset",
+    "description": "사망 시 자동으로 HP 35%로 부활"
+  },
+  {
+    "id": "StoneSkinPotion",
+    "kind": "Potions",
+    "name": "돌갑옷 포션",
+    "asset": "Assets/Data/Items/Potions/StoneSkinPotion.asset",
+    "description": "다음 3회 전투에서 피해 32% 감소"
+  },
+  {
+    "id": "Assassination",
+    "kind": "PerkAbilities",
+    "name": "암살",
+    "asset": "Assets/Data/Items/PerkAbilities/Assassination.asset",
+    "description": "전투의 첫 무기 공격에 물리 피해 12를 추가한다."
+  },
+  {
+    "id": "BoilingBlood",
+    "kind": "PerkAbilities",
+    "name": "끓는 피",
+    "asset": "Assets/Data/Items/PerkAbilities/BoilingBlood.asset",
+    "description": "일반공격으로 얻는 격노 +2"
+  },
+  {
+    "id": "ChangingForms",
+    "kind": "PerkAbilities",
+    "name": "변초",
+    "asset": "Assets/Data/Items/PerkAbilities/ChangingForms.asset",
+    "description": "서로 다른 초식을 3회 연속 사용하면 다음 공격형 초식에 물리 피해 18을 추가한다."
+  },
+  {
+    "id": "ConcentratedVenom",
+    "kind": "PerkAbilities",
+    "name": "농축 독액",
+    "asset": "Assets/Data/Items/PerkAbilities/ConcentratedVenom.asset",
+    "description": "독 피해 +15%"
+  },
+  {
+    "id": "ConversionImpact",
+    "kind": "PerkAbilities",
+    "name": "전환 충격",
+    "asset": "Assets/Data/Items/PerkAbilities/ConversionImpact.asset",
+    "description": "분노에 진입하는 차지 공격에 전환한 격노 10당 물리 피해 1을 추가한다."
+  },
+  {
+    "id": "Counter",
+    "kind": "PerkAbilities",
+    "name": "받아치기",
+    "asset": "Assets/Data/Items/PerkAbilities/Counter.asset",
+    "description": "가드에 성공하면 다음 무기 공격에 물리 피해 6을 추가한다."
+  },
+  {
+    "id": "DeepInjection",
+    "kind": "PerkAbilities",
+    "name": "깊은 주입",
+    "asset": "Assets/Data/Items/PerkAbilities/DeepInjection.asset",
+    "description": "차지 공격 적중 시 독을 2중첩 부여한다."
+  },
+  {
+    "id": "ElementFocus",
+    "kind": "PerkAbilities",
+    "name": "원소 집중",
+    "asset": "Assets/Data/Items/PerkAbilities/ElementFocus.asset",
+    "description": "직전에 시전한 주문과 같은 속성의 공격 주문을 시전하면 피해가 15% 증가한다."
+  },
+  {
+    "id": "Embers",
+    "kind": "PerkAbilities",
+    "name": "잔불",
+    "asset": "Assets/Data/Items/PerkAbilities/Embers.asset",
+    "description": "분노가 끝나면 격노를 4 얻는다."
+  },
+  {
+    "id": "Exploit",
+    "kind": "PerkAbilities",
+    "name": "빈틈 공략",
+    "asset": "Assets/Data/Items/PerkAbilities/Exploit.asset",
+    "description": "기절한 적에게 주는 피해 +15%"
+  },
+  {
+    "id": "FireMastery",
+    "kind": "PerkAbilities",
+    "name": "화염 숙련",
+    "asset": "Assets/Data/Items/PerkAbilities/FireMastery.asset",
+    "description": "화염 피해 +10%"
+  },
+  {
+    "id": "FlowFinish",
+    "kind": "PerkAbilities",
+    "name": "연환의 끝",
+    "asset": "Assets/Data/Items/PerkAbilities/FlowFinish.asset",
+    "description": "연환으로 강화된 일반공격을 모두 적중시키면 마지막 공격에 물리 피해 10을 추가한다."
+  },
+  {
+    "id": "ForwardGuard",
+    "kind": "PerkAbilities",
+    "name": "전진 방어",
+    "asset": "Assets/Data/Items/PerkAbilities/ForwardGuard.asset",
+    "description": "일반공격 적중 시 실드를 0.5 회복한다."
+  },
+  {
+    "id": "FrenziedFist",
+    "kind": "PerkAbilities",
+    "name": "광폭한 주먹",
+    "asset": "Assets/Data/Items/PerkAbilities/FrenziedFist.asset",
+    "description": "분노 중 일반공격에 물리 피해 3을 추가한다."
+  },
+  {
+    "id": "HeavyWeapon",
+    "kind": "PerkAbilities",
+    "name": "묵직한 무기",
+    "asset": "Assets/Data/Items/PerkAbilities/HeavyWeapon.asset",
+    "description": "차지 공격 피해 +4"
+  },
+  {
+    "id": "IceMastery",
+    "kind": "PerkAbilities",
+    "name": "냉기 숙련",
+    "asset": "Assets/Data/Items/PerkAbilities/IceMastery.asset",
+    "description": "냉기 피해 +10%"
+  },
+  {
+    "id": "InnerStrength",
+    "kind": "PerkAbilities",
+    "name": "내공",
+    "asset": "Assets/Data/Items/PerkAbilities/InnerStrength.asset",
+    "description": "공격형 초식 피해 +10%"
+  },
+  {
+    "id": "LightningMastery",
+    "kind": "PerkAbilities",
+    "name": "번개 숙련",
+    "asset": "Assets/Data/Items/PerkAbilities/LightningMastery.asset",
+    "description": "번개 피해 +10%"
+  },
+  {
+    "id": "LongBlade",
+    "kind": "PerkAbilities",
+    "name": "긴 칼날",
+    "asset": "Assets/Data/Items/PerkAbilities/LongBlade.asset",
+    "description": "발도 공격 범위 +8%"
+  },
+  {
+    "id": "ManaBurn",
+    "kind": "PerkAbilities",
+    "name": "마력 연소",
+    "asset": "Assets/Data/Items/PerkAbilities/ManaBurn.asset",
+    "description": "주문 사용 후 MP가 20% 이하이면 해당 주문의 피해가 25% 증가한다."
+  },
+  {
+    "id": "ManaFlow",
+    "kind": "PerkAbilities",
+    "name": "마력 순환",
+    "asset": "Assets/Data/Items/PerkAbilities/ManaFlow.asset",
+    "description": "초당 MP 회복량 +0.05"
+  },
+  {
+    "id": "ManaVessel",
+    "kind": "PerkAbilities",
+    "name": "마력 그릇",
+    "asset": "Assets/Data/Items/PerkAbilities/ManaVessel.asset",
+    "description": "최대 MP +3"
+  },
+  {
+    "id": "OneSchool",
+    "kind": "PerkAbilities",
+    "name": "일문전수",
+    "asset": "Assets/Data/Items/PerkAbilities/OneSchool.asset",
+    "description": "같은 공격형 초식을 연속 사용하면 두 번째부터 물리 피해 6을 추가한다."
+  },
+  {
+    "id": "ParryEcho",
+    "kind": "PerkAbilities",
+    "name": "패리 잔격",
+    "asset": "Assets/Data/Items/PerkAbilities/ParryEcho.asset",
+    "description": "납도 패리에 성공하면 다음 발도가 피해의 20%만큼 추가 타격한다."
+  },
+  {
+    "id": "PatientDraw",
+    "kind": "PerkAbilities",
+    "name": "축적 일섬",
+    "asset": "Assets/Data/Items/PerkAbilities/PatientDraw.asset",
+    "description": "납도를 유지한 시간 1초당 다음 발도에 물리 피해 6을 추가한다."
+  },
+  {
+    "id": "PoisonBlade",
+    "kind": "PerkAbilities",
+    "name": "독 바른 칼",
+    "asset": "Assets/Data/Items/PerkAbilities/PoisonBlade.asset",
+    "description": "일반공격 적중 시 독을 1중첩 부여한다."
+  },
+  {
+    "id": "Pressure",
+    "kind": "PerkAbilities",
+    "name": "압박",
+    "asset": "Assets/Data/Items/PerkAbilities/Pressure.asset",
+    "description": "공격을 준비 중인 적에게 일반공격을 적중시키면 물리 피해 3을 추가한다."
+  },
+  {
+    "id": "RageWeight",
+    "kind": "PerkAbilities",
+    "name": "분노의 무게",
+    "asset": "Assets/Data/Items/PerkAbilities/RageWeight.asset",
+    "description": "분노 중 차지 공격에 남은 분노의 10%만큼 물리 피해를 추가한다."
+  },
+  {
+    "id": "RapidDraw",
+    "kind": "PerkAbilities",
+    "name": "연속 발도",
+    "asset": "Assets/Data/Items/PerkAbilities/RapidDraw.asset",
+    "description": "발도 후 2초 안에 다시 발도하면 물리 피해 4의 잔격이 발생한다."
+  },
+  {
+    "id": "Reform",
+    "kind": "PerkAbilities",
+    "name": "재정비",
+    "asset": "Assets/Data/Items/PerkAbilities/Reform.asset",
+    "description": "기본 실드 재생량이 초당 0.4 증가한다."
+  },
+  {
+    "id": "SharpWeapon",
+    "kind": "PerkAbilities",
+    "name": "날 선 무기",
+    "asset": "Assets/Data/Items/PerkAbilities/SharpWeapon.asset",
+    "description": "일반공격 피해 +2"
+  },
+  {
+    "id": "ShelterCounter",
+    "kind": "PerkAbilities",
+    "name": "호신경",
+    "asset": "Assets/Data/Items/PerkAbilities/ShelterCounter.asset",
+    "description": "호신격으로 공격을 받아내면 다음 공격형 초식에 물리 피해 10을 추가한다."
+  },
+  {
+    "id": "ShieldImpact",
+    "kind": "PerkAbilities",
+    "name": "방패 중격",
+    "asset": "Assets/Data/Items/PerkAbilities/ShieldImpact.asset",
+    "description": "차지 공격에 현재 실드의 10%만큼 물리 피해를 추가한다."
+  },
+  {
+    "id": "ShortIncantation",
+    "kind": "PerkAbilities",
+    "name": "축약 영창",
+    "asset": "Assets/Data/Items/PerkAbilities/ShortIncantation.asset",
+    "description": "주문 시전 시간 -5%"
+  },
+  {
+    "id": "Spellblade",
+    "kind": "PerkAbilities",
+    "name": "마검 방출",
+    "asset": "Assets/Data/Items/PerkAbilities/Spellblade.asset",
+    "description": "인챈트된 일반공격을 적중시킬 때마다 다음 차지 공격에 해당 속성 피해 4를 추가한다."
+  },
+  {
+    "id": "SwordRecovery",
+    "kind": "PerkAbilities",
+    "name": "검세 회수",
+    "asset": "Assets/Data/Items/PerkAbilities/SwordRecovery.asset",
+    "description": "발도 후 일반공격을 적중시킬 때마다 다음 발도에 물리 피해 5를 추가한다."
+  },
+  {
+    "id": "ThreeElements",
+    "kind": "PerkAbilities",
+    "name": "삼원 공명",
+    "asset": "Assets/Data/Items/PerkAbilities/ThreeElements.asset",
+    "description": "서로 다른 세 속성의 주문을 연속 시전하면 MP 4를 회복한다."
+  },
+  {
+    "id": "VenomStrike",
+    "kind": "PerkAbilities",
+    "name": "독살자의 일격",
+    "asset": "Assets/Data/Items/PerkAbilities/VenomStrike.asset",
+    "description": "중독된 적에게 주는 차지 공격 피해 +12%"
+  },
+  {
+    "id": "Vitality",
+    "kind": "PerkAbilities",
+    "name": "활력",
+    "asset": "Assets/Data/Items/PerkAbilities/Vitality.asset",
+    "description": "최대 체력 +10"
+  }
+]

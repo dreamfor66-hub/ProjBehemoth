@@ -41,7 +41,7 @@ MonoBehaviour:
     +5, \uB2E4\uC74C 1\uD68C\uC5D0 \uD55C\uD574 \uBC1B\uB294 \uD53C\uD574 -50%.\r\n\u2192\u2191
     \uC5F0\uD658: \uB2E4\uC74C \uC77C\uBC18\uACF5\uACA9 2\uD68C \uCFE8\uD0C0\uC784
     -40%."
-  icon: {fileID: 21300000, guid: ea4860e5456b5867a38d867ec56563ca, type: 3}
+  icon: {fileID: 21300000, guid: b3cf4e64ae4450a41a5b1e1f6597b368, type: 3}
   scope: 1
   exclusiveCharacter: 4
   power: 0
@@ -69,6 +69,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -114,6 +115,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

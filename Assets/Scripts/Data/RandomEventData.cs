@@ -83,6 +83,8 @@ namespace DungeonSlash
         [TextArea(3, 8)] public string narrative;
         public Sprite illustration;
         public Color accent = new(.65f, .8f, .65f);
+        [Tooltip("Portrait illustration on the left; complete page text and choices on the right.")]
+        public bool illustratedPopup;
         [Range(1, 3)] public int minAct = 1;
         [Range(1, 3)] public int maxAct = 3;
         [Min(.01f)] public float weight = 1f;

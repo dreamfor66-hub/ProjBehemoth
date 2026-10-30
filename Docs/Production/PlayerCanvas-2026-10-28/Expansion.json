@@ -1,0 +1,540 @@
+{
+  "paddingOrder": "left,bottom,right,top",
+  "pngCount": 25,
+  "libraries": [
+    "Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset",
+    "Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset",
+    "Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset",
+    "Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset",
+    "Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset",
+    "Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset",
+    "Assets/Data/Presentation/Trials/Angular01_WarriorAnimation.asset"
+  ],
+  "images": [
+    {
+      "path": "Assets/Art/World/Angular/Heroes/Warrior-Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "17f34de053ab57b005cb3600274c14485054ac876d0399f0a93bb61ae42a4204",
+      "restoredRgbaSha256": "17f34de053ab57b005cb3600274c14485054ac876d0399f0a93bb61ae42a4204",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Warrior-Ready.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "6d60e8e375412ff1a682e2cded50d7aff700770183a76ae5910873f43b5481c9",
+      "restoredRgbaSha256": "6d60e8e375412ff1a682e2cded50d7aff700770183a76ae5910873f43b5481c9",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Warrior-Attack.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "166c162bd70a01b2bab340043ebc223dda64906d98cb0f32d73995ec1502c44f",
+      "restoredRgbaSha256": "166c162bd70a01b2bab340043ebc223dda64906d98cb0f32d73995ec1502c44f",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Warrior-Guard.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "7aa465e89c1fa207f2c7f230d48bee8ff426998c69b8999da112a34084b220b8",
+      "restoredRgbaSha256": "7aa465e89c1fa207f2c7f230d48bee8ff426998c69b8999da112a34084b220b8",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/Heroes/Rogue-Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "92c9b73a432799987f5a22e8f207c4eb33ee61f48877ac795ef55bc5fc9729bd",
+      "restoredRgbaSha256": "92c9b73a432799987f5a22e8f207c4eb33ee61f48877ac795ef55bc5fc9729bd",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Rogue-Ready.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "7feab292c7cbb9b8c4376567f4dca822c8e5c685cc52eac0b29411fd9e485254",
+      "restoredRgbaSha256": "7feab292c7cbb9b8c4376567f4dca822c8e5c685cc52eac0b29411fd9e485254",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Rogue-Attack.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "88b39c21a569048fa3a826b31b67a32bf0cf8933167dc97f1d0ddda4ba2e7cf0",
+      "restoredRgbaSha256": "88b39c21a569048fa3a826b31b67a32bf0cf8933167dc97f1d0ddda4ba2e7cf0",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Rogue-Guard.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "6530b13c302a4e68f0868f50b62a07f09f39712cfb5a0a10c77622b714449d99",
+      "restoredRgbaSha256": "6530b13c302a4e68f0868f50b62a07f09f39712cfb5a0a10c77622b714449d99",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/Heroes/Barbarian-Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "579e9dbfaf0e2d25634dd0e9b73b67a170be61ff4cc4d1b7500b018f1a6ad614",
+      "restoredRgbaSha256": "579e9dbfaf0e2d25634dd0e9b73b67a170be61ff4cc4d1b7500b018f1a6ad614",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Barbarian-Ready.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "2c851b5e2c45fb696c879b85f8d039e70f9bf1cd62b52e5a5604172064e7df16",
+      "restoredRgbaSha256": "2c851b5e2c45fb696c879b85f8d039e70f9bf1cd62b52e5a5604172064e7df16",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Barbarian-Attack.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "bd62d5c3906498cb72cff5360c899236cbe6910f0f22912b758855ea5f9f0154",
+      "restoredRgbaSha256": "bd62d5c3906498cb72cff5360c899236cbe6910f0f22912b758855ea5f9f0154",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Barbarian-Guard.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "db952363c380e7c6203bd070a2c853582cd5bf9fad2ba4d8f7dc3872bb3fadd5",
+      "restoredRgbaSha256": "db952363c380e7c6203bd070a2c853582cd5bf9fad2ba4d8f7dc3872bb3fadd5",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/Heroes/Monk-Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "842617c6900d78accfbfcc10133fa52a7c41a7525a642309ef48e210da454737",
+      "restoredRgbaSha256": "842617c6900d78accfbfcc10133fa52a7c41a7525a642309ef48e210da454737",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Monk-Ready.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "80b1444cabb6bf49c3f732e1abd8a252e838821d3f7efe6edd2a7ec5dad76860",
+      "restoredRgbaSha256": "80b1444cabb6bf49c3f732e1abd8a252e838821d3f7efe6edd2a7ec5dad76860",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Monk-Attack.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "38dc7a51b87177b60751906e8f421018b5b1bc0bd8615b5ad7524438f45fa7a4",
+      "restoredRgbaSha256": "38dc7a51b87177b60751906e8f421018b5b1bc0bd8615b5ad7524438f45fa7a4",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Monk-Guard.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "74547d0c0722c39920f9773ca456bc3dcc8d04e67a1a47092367900ddb7af125",
+      "restoredRgbaSha256": "74547d0c0722c39920f9773ca456bc3dcc8d04e67a1a47092367900ddb7af125",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/Heroes/Samurai-Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "d11d8cd4565a2b54b16ea2b34db7b731afdd16f4fbc151d70829e4be9446fae8",
+      "restoredRgbaSha256": "d11d8cd4565a2b54b16ea2b34db7b731afdd16f4fbc151d70829e4be9446fae8",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Samurai-Ready.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "0238af83a43136a9061e6d4a450c49a3bf42ed5649f31856c3eff98aaf50f065",
+      "restoredRgbaSha256": "0238af83a43136a9061e6d4a450c49a3bf42ed5649f31856c3eff98aaf50f065",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Samurai-Attack.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "76e061beb8c72669eb26ae2ae06f91228ab5bd5b4a2c44fed15162e8c19382fd",
+      "restoredRgbaSha256": "76e061beb8c72669eb26ae2ae06f91228ab5bd5b4a2c44fed15162e8c19382fd",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Samurai-Guard.png",
+      "originalSize": [
+        1447,
+        1087
+      ],
+      "expandedSize": [
+        2895,
+        1305
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "614dfeffc2ac8e49cddd064794b28ccbae622cab905d5f5f2143bc3d24e83f7e",
+      "restoredRgbaSha256": "614dfeffc2ac8e49cddd064794b28ccbae622cab905d5f5f2143bc3d24e83f7e",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/Heroes/Wizard-Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "1354025be7bbee177978d4a944db5ad61aaa08c21386639b35a12a10cd128fc3",
+      "restoredRgbaSha256": "1354025be7bbee177978d4a944db5ad61aaa08c21386639b35a12a10cd128fc3",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Wizard-Ready.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "ddf1a4fcd1732a9db353c05ba961d19b4120b3f7b1580a6caf31fa200afea945",
+      "restoredRgbaSha256": "ddf1a4fcd1732a9db353c05ba961d19b4120b3f7b1580a6caf31fa200afea945",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Wizard-Attack.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "5e5af8f6195bd04017bc080256b1f31ec1f9b3be181e7958cba0965effd1a666",
+      "restoredRgbaSha256": "5e5af8f6195bd04017bc080256b1f31ec1f9b3be181e7958cba0965effd1a666",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/World/Angular/States/Heroes/Wizard-Guard.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "bb7e81a2a51dacc09665229e1bb1b10881ad8328c80ad8f9f1318af64a5d46f8",
+      "restoredRgbaSha256": "bb7e81a2a51dacc09665229e1bb1b10881ad8328c80ad8f9f1318af64a5d46f8",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    },
+    {
+      "path": "Assets/Art/Trials/Angular01/Rear.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "expandedSize": [
+        2896,
+        1304
+      ],
+      "padding": [
+        724,
+        0,
+        724,
+        218
+      ],
+      "originalRgbaSha256": "ca942d682857f1834609b42941d7002ce6d43a1e76d6414d70b7ae6db015fd9c",
+      "restoredRgbaSha256": "ca942d682857f1834609b42941d7002ce6d43a1e76d6414d70b7ae6db015fd9c",
+      "pixelIdentical": true,
+      "newPaddingTransparent": true
+    }
+  ]
+}

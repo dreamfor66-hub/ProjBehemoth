@@ -1,0 +1,62 @@
+Scoped image transitions and held-input rendering only. No balance changes or combat suite.
+PASS 고블린사냥꾼: distinct Idle/Ready/Attack paintings
+PASS 고블린사냥꾼: Idle painting
+PASS 고블린사냥꾼: windup uses Ready painting
+PASS 고블린사냥꾼: attack uses Attack painting
+PASS 고블린사냥꾼: fixed framing only; no keyed rotation/translation/squash
+PASS 거미: distinct Idle/Ready/Attack paintings
+PASS 거미: Idle painting
+PASS 거미: windup uses Ready painting
+PASS 거미: attack uses Attack painting
+PASS 거미: fixed framing only; no keyed rotation/translation/squash
+PASS 해골 전사: distinct Idle/Ready/Attack paintings
+PASS 해골 전사: Idle painting
+PASS 해골 전사: windup uses Ready painting
+PASS 해골 전사: attack uses Attack painting
+PASS 해골 전사: fixed framing only; no keyed rotation/translation/squash
+PASS 흡혈박쥐: distinct Idle/Ready/Attack paintings
+PASS 흡혈박쥐: Idle painting
+PASS 흡혈박쥐: windup uses Ready painting
+PASS 흡혈박쥐: attack uses Attack painting
+PASS 흡혈박쥐: fixed framing only; no keyed rotation/translation/squash
+PASS 경종 사냥개: distinct Idle/Ready/Attack paintings
+PASS 경종 사냥개: Idle painting
+PASS 경종 사냥개: windup uses Ready painting
+PASS 경종 사냥개: attack uses Attack painting
+PASS 경종 사냥개: fixed framing only; no keyed rotation/translation/squash
+PASS 움직이는 갑옷: distinct Idle/Ready/Attack paintings
+PASS 움직이는 갑옷: Idle painting
+PASS 움직이는 갑옷: windup uses Ready painting
+PASS 움직이는 갑옷: attack uses Attack painting
+PASS 움직이는 갑옷: fixed framing only; no keyed rotation/translation/squash
+PASS 철갑 사마귀: distinct Idle/Ready/Attack paintings
+PASS 철갑 사마귀: Idle painting
+PASS 철갑 사마귀: windup uses Ready painting
+PASS 철갑 사마귀: attack uses Attack painting
+PASS 철갑 사마귀: fixed framing only; no keyed rotation/translation/squash
+PASS 쌍두 문지기: distinct Idle/Ready/Attack paintings
+PASS 쌍두 문지기: Idle painting
+PASS 쌍두 문지기: windup uses Ready painting
+PASS 쌍두 문지기: attack uses Attack painting
+PASS 쌍두 문지기: fixed framing only; no keyed rotation/translation/squash
+PASS 납골당의 종: distinct Idle/Ready/Attack paintings
+PASS 납골당의 종: Idle painting
+PASS 납골당의 종: windup uses Ready painting
+PASS 납골당의 종: attack uses Attack painting
+PASS 납골당의 종: fixed framing only; no keyed rotation/translation/squash
+PASS 실짜는 공작부인: distinct Idle/Ready/Attack paintings
+PASS 실짜는 공작부인: Idle painting
+PASS 실짜는 공작부인: windup uses Ready painting
+PASS 실짜는 공작부인: attack uses Attack painting
+PASS 실짜는 공작부인: fixed framing only; no keyed rotation/translation/squash
+PASS 실인형: distinct Idle/Ready/Attack paintings
+PASS 실인형: Idle painting
+PASS 실인형: windup uses Ready painting
+PASS 실인형: attack uses Attack painting
+PASS 실인형: fixed framing only; no keyed rotation/translation/squash
+PASS 미궁 스핑크스: distinct Idle/Ready/Attack paintings
+PASS 미궁 스핑크스: Idle painting
+PASS 미궁 스핑크스: windup uses Ready painting
+PASS 미궁 스핑크스: attack uses Attack painting
+PASS 미궁 스핑크스: fixed framing only; no keyed rotation/translation/squash
+COMPLETE

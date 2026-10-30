@@ -85,7 +85,7 @@ namespace DungeonSlash
                     { runtime.HeartsBroken = true; runtime.EnterStun(); ClearWeakPointViews(monster); monster.View.ShowAttackName(GameText.Get("ui.combat.support.broken"), 1.5f); }
                 }
                 if (runtime.Data.diesWithLeader && !activeMonsters.Any(item => item != monster && item.Runtime.IsAlive && !item.Runtime.Data.diesWithLeader)) { runtime.TakeDamage(runtime.CurrentHp); continue; }
-                if (runtime.Data.pattern == MonsterPattern.Orbit)
+                if (runtime.Data.useOrbit)
                 {
                     var angle = Player.CombatTime * runtime.Data.orbitSpeed + activeMonsters.IndexOf(monster) * Mathf.PI;
                     var next = monster.BasePosition + new Vector2(Mathf.Cos(angle) * runtime.Data.orbitRadius, Mathf.Sin(angle) * 65f);
@@ -158,20 +158,20 @@ namespace DungeonSlash
             {
                 ShowSpellPath(origin, target.Position, spell);
                 attackLine?.ShowSpellArea(target.Position, spell.radius, spell.Color);
-                foreach (var monster in activeMonsters.Where(monster => monster.Runtime.IsAlive && Vector2.Distance(monster.Position, target.Position) <= spell.radius + monster.Runtime.Data.bodyHitRadius * monster.VisualScale).ToArray()) HitSpell(monster, spell, damage);
+                foreach (var monster in activeMonsters.Where(monster => monster.Runtime.IsAlive && monster.Runtime.Data.OverlapsArea(target.Position, spell.radius, monster.Position, monster.VisualScale)).ToArray()) HitSpell(monster, spell, damage);
             }
             else
             {
                 var direction = (target.Position - origin).normalized; var end = target.Position + direction * 650f;
                 var segment = new AttackSegment(origin, end, spell.width); ShowSpellPath(origin, end, spell);
                 foreach (var monster in activeMonsters.Where(monster => monster.Runtime.IsAlive).ToArray())
-                    if (monster == target || SegmentHitResolver.Intersects(segment, new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale))) HitSpell(monster, spell, damage);
+                    if (monster == target || monster.Runtime.Data.IntersectsBody(segment, monster.Position, monster.VisualScale)) HitSpell(monster, spell, damage);
             }
         }
         private ActiveMonster ChooseAimedTarget(SpellData spell,AttackSegment aim)
         {
             var direction=(aim.End-aim.Start).normalized;var ray=new AttackSegment(aim.Start,aim.Start+direction*1800,spell.width);
-            return activeMonsters.Where(m=>m.Runtime.IsAlive&&(spell.targeting==SpellTargeting.SwipeRay?SegmentHitResolver.Intersects(ray,new CircleHitShape(m.Position,m.Runtime.Data.bodyHitRadius*m.VisualScale)):Vector2.Distance(m.Position,aim.End)<=spell.radius+m.Runtime.Data.bodyHitRadius*m.VisualScale)).OrderBy(m=>Vector2.Distance(m.Position,spell.targeting==SpellTargeting.SwipeRay?aim.Start:aim.End)).FirstOrDefault();
+            return activeMonsters.Where(m=>m.Runtime.IsAlive&&(spell.targeting==SpellTargeting.SwipeRay?m.Runtime.Data.IntersectsBody(ray,m.Position,m.VisualScale):m.Runtime.Data.OverlapsArea(aim.End,spell.radius,m.Position,m.VisualScale))).OrderBy(m=>Vector2.Distance(m.Position,spell.targeting==SpellTargeting.SwipeRay?aim.Start:aim.End)).FirstOrDefault();
         }
         private void FireAimedSpell(SpellData spell,float multiplier,AttackSegment aim)
         {
@@ -185,15 +185,15 @@ namespace DungeonSlash
                 var ray=new AttackSegment(aim.Start,aim.Start+direction*1800,spell.width);
                 ShowSpellPath(ray.Start,ray.End,spell);
                 foreach(var monster in activeMonsters.Where(m=>m.Runtime.IsAlive).ToArray())
-                    if(SegmentHitResolver.Intersects(ray,new CircleHitShape(monster.Position,monster.Runtime.Data.bodyHitRadius*monster.VisualScale)))HitSpell(monster,spell,damage);
+                    if(monster.Runtime.Data.IntersectsBody(ray,monster.Position,monster.VisualScale))HitSpell(monster,spell,damage);
                 return;
             }
             var point=aim.End;
             ShowSpellPath(point+Vector2.up*1200,point,spell);
             attackLine?.ShowSpellArea(point,spell.radius,spell.Color);
-            var first=activeMonsters.Where(m=>m.Runtime.IsAlive&&Vector2.Distance(m.Position,point)<=spell.radius+m.Runtime.Data.bodyHitRadius*m.VisualScale).OrderBy(m=>Vector2.Distance(m.Position,point)).FirstOrDefault();
+            var first=activeMonsters.Where(m=>m.Runtime.IsAlive&&m.Runtime.Data.OverlapsArea(point,spell.radius,m.Position,m.VisualScale)).OrderBy(m=>Vector2.Distance(m.Position,point)).FirstOrDefault();
             if(first==null)return;
-            if(spell.shape!=SpellShape.Chain){foreach(var m in activeMonsters.Where(m=>m.Runtime.IsAlive&&Vector2.Distance(m.Position,point)<=spell.radius+m.Runtime.Data.bodyHitRadius*m.VisualScale).ToArray())HitSpell(m,spell,damage);return;}
+            if(spell.shape!=SpellShape.Chain){foreach(var m in activeMonsters.Where(m=>m.Runtime.IsAlive&&m.Runtime.Data.OverlapsArea(point,spell.radius,m.Position,m.VisualScale)).ToArray())HitSpell(m,spell,damage);return;}
             var visited=new System.Collections.Generic.HashSet<ActiveMonster>();var current=first;
             var count=spell.chainTargets+Mathf.RoundToInt(Player.Rule(AbilityRule.SpellChainTargets));
             for(var i=0;i<count&&current!=null;i++)

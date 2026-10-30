@@ -1,0 +1,144 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using DungeonSlash;
+using UnityEditor;
+using UnityEngine;
+using Object = UnityEngine.Object;
+
+// One-time, restart-safe conversion from the captured working-tree assets.
+[InitializeOnLoad]
+internal static class MonsterAuthoringMigration
+{
+    const string Folder = MonsterAuthoringBaseline.Folder;
+    const string Sprites = "Assets/Art/Combat/NativeMonsterFrames";
+    const string Animations = "Assets/Data/Presentation/NativeMonsterFrames";
+    static MonsterAuthoringMigration() => EditorApplication.update += Poll;
+    static void Poll()
+    {
+        if (!EditorApplication.isCompiling && !EditorApplication.isUpdating && !EditorApplication.isPlayingOrWillChangePlaymode
+            && File.Exists(Folder + "MigrationComplete.txt") && !File.Exists(Folder + "NativeRectanglesComplete.txt"))
+        {
+            RepairGeometry();
+            return;
+        }
+        if (EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode
+            || !File.Exists(Folder + "Baseline.json") || File.Exists(Folder + "MigrationComplete.txt") || File.Exists(Folder + "MigrationError.txt")) return;
+        try { Migrate(); }
+        catch (Exception e) { File.WriteAllText(Folder + "MigrationError.txt", e.ToString()); Debug.LogException(e); }
+    }
+    static void Backup(string path)
+    {
+        var copy = Folder + "Before/" + path;
+        Directory.CreateDirectory(Path.GetDirectoryName(copy));
+        if (File.Exists(path) && !File.Exists(copy)) File.Copy(path, copy);
+    }
+    static void MakeFolder(string path)
+    {
+        if (AssetDatabase.IsValidFolder(path)) return;
+        var parent = Path.GetDirectoryName(path).Replace('\\', '/'); MakeFolder(parent);
+        AssetDatabase.CreateFolder(parent, Path.GetFileName(path));
+    }
+    static void Migrate()
+    {
+        var baseline = JsonUtility.FromJson<MonsterAuthoringBaseline.Set>(File.ReadAllText(Folder + "Baseline.json"));
+        MakeFolder(Sprites); MakeFolder(Animations);
+        var records = new Dictionary<MonsterData, MonsterAuthoringBaseline.Entry>();
+        foreach (var record in baseline.monsters)
+        {
+            var data = AssetDatabase.LoadAssetAtPath<MonsterData>(record.path);
+            if (data == null) throw new InvalidOperationException("Missing monster: " + record.path);
+            records.Add(data, record);
+            data.hitBoxes = record.hitBoxes.Select(c => new MonsterHitBox { center = c.center, radius = c.radius }).ToList();
+            data.useOrbit = record.orbit;
+            if ((int)data.pattern == 3) data.pattern = MonsterPattern.Standard;
+            var animationPath = Animations + "/" + data.name + ".asset";
+            var animation = AssetDatabase.LoadAssetAtPath<CombatSpriteAnimation>(animationPath);
+            if (animation == null)
+            {
+                animation = data.combatAnimation != null ? Object.Instantiate(data.combatAnimation) : ScriptableObject.CreateInstance<CombatSpriteAnimation>();
+                animation.name = data.name; AssetDatabase.CreateAsset(animation, animationPath);
+            }
+            foreach (var frame in record.frames)
+            {
+                var spritePath = Sprites + "/" + data.name + "-" + frame.state + ".asset";
+                var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
+                if (sprite == null)
+                {
+                    var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(frame.texturePath);
+                    var rendered = frame.renderedRect;
+                    var pixelScale = rendered.width / frame.sourceRect.width;
+                    sprite = Sprite.Create(texture, frame.sourceRect,
+                        new Vector2(-rendered.xMin / rendered.width, -rendered.yMin / rendered.height),
+                        MonsterData.ArtworkUnitsPerWorldUnit / pixelScale, 0, SpriteMeshType.FullRect);
+                    sprite.name = data.name + "-" + frame.state;
+                    // Bake the old ground/header framing into native Sprite geometry. The UI draws
+                    // the unchanged full pixel rectangle; bounds are used only for automatic layout.
+                    var bottom = Mathf.Clamp((-record.oldHalfHeight - rendered.yMin) / pixelScale, 0, frame.sourceRect.height);
+                    var top = Mathf.Clamp((frame.labelY - (record.tight ? 36 : 65) - rendered.yMin) / pixelScale, bottom + .01f, frame.sourceRect.height);
+                    var w = frame.sourceRect.width;
+                    AssetDatabase.CreateAsset(sprite, spritePath);
+                }
+                switch (frame.state) { case "Idle": animation.idle = sprite; break; case "Ready": animation.ready = sprite; break;
+                    case "Attack": animation.attack = sprite; break; case "Dead": animation.dead = sprite; break; }
+            }
+            animation.canvasScale = 1; animation.canvasPaddingPixels = Vector4.zero;
+            EditorUtility.SetDirty(animation); data.combatAnimation = animation;
+            // A point now owns its actual actor-local coordinate. Shared attacks are cloned
+            // only when the former monster-specific multiplier differs.
+            if (record.weakScale != Vector2.one)
+                for (var i = 0; i < data.attacks.Count; i++)
+                {
+                    var attack = data.attacks[i];
+                    if (attack == null || attack.chargeWeakPoints.Count == 0) continue;
+                    var originalPath = record.attacks[i];
+                    var original = AssetDatabase.LoadAssetAtPath<MonsterAttackData>(originalPath);
+                    var path = Animations + "/" + data.name + "-" + original.name + ".asset";
+                    var copy = AssetDatabase.LoadAssetAtPath<MonsterAttackData>(path);
+                    if (copy == null)
+                    {
+                        copy = Object.Instantiate(original); copy.name = data.name + "-" + original.name;
+                        foreach (var point in copy.chargeWeakPoints) point.localPosition = Vector2.Scale(point.localPosition, record.weakScale);
+                        AssetDatabase.CreateAsset(copy, path);
+                    }
+                    for (var n = 0; n < data.normalAttackSequence.Count; n++) if (data.normalAttackSequence[n] == original) data.normalAttackSequence[n] = copy;
+                    data.attacks[i] = copy;
+                }
+            EditorUtility.SetDirty(data); AssetDatabase.SaveAssetIfDirty(data);
+        }
+        foreach (var guid in AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data" }))
+        {
+            var path = AssetDatabase.GUIDToAssetPath(guid); Backup(path);
+            var encounter = AssetDatabase.LoadAssetAtPath<EncounterData>(path);
+            foreach (var member in encounter.members)
+                if (member.monster != null && records.TryGetValue(member.monster, out var record))
+                    member.offset.y += (member.monster.FootprintY + record.oldHalfHeight) * member.monster.combatScale;
+            EditorUtility.SetDirty(encounter); AssetDatabase.SaveAssetIfDirty(encounter);
+        }
+        AssetDatabase.SaveAssets();
+        File.WriteAllText(Folder + "MigrationComplete.txt", $"Migrated {records.Count} monsters. Original textures unchanged. Circle union and attack coordinates preserved.\n");
+    }
+    internal static void RepairGeometry()
+    {
+        var baseline = JsonUtility.FromJson<MonsterAuthoringBaseline.Set>(File.ReadAllText(Folder + "Baseline.json"));
+        foreach (var record in baseline.monsters)
+            foreach (var frame in record.frames)
+            {
+                var name = Path.GetFileNameWithoutExtension(record.path) + "-" + frame.state;
+                var existing = AssetDatabase.LoadAssetAtPath<Sprite>(Sprites + "/" + name + ".asset");
+                var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(frame.texturePath);
+                var r = frame.renderedRect; var pixelScale = r.width / frame.sourceRect.width;
+                var generated = Sprite.Create(texture, frame.sourceRect, new Vector2(-r.xMin / r.width, -r.yMin / r.height),
+                    MonsterData.ArtworkUnitsPerWorldUnit / pixelScale, 0, SpriteMeshType.FullRect);
+                generated.name = name;
+                var bottom = Mathf.Clamp((-record.oldHalfHeight - r.yMin) / pixelScale, 0, frame.sourceRect.height);
+                var top = Mathf.Clamp((frame.labelY - (record.tight ? 36 : 65) - r.yMin) / pixelScale, bottom + .01f, frame.sourceRect.height);
+                var w = frame.sourceRect.width;
+                EditorUtility.CopySerialized(generated, existing); EditorUtility.SetDirty(existing); AssetDatabase.SaveAssetIfDirty(existing);
+                Object.DestroyImmediate(generated);
+            }
+        File.WriteAllText(Folder + "NativeRectanglesComplete.txt", "Native frame rectangles saved.\n");
+    }
+}
+

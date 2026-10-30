@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: IronMantis
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 48a8eb3167ca8554abc678f5de774171, type: 3}
+  attack: {fileID: 21300000, guid: ea1cb7ac18a407b4cb41515032330753, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: b63fb58e27c7a344ea6ba74b6eca7613, type: 3}
+  dead: {fileID: 21300000, guid: 54454a11fe8c8bd4c82ca9c684f77b3b, type: 3}
+  canvasScale: 1
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -66.74999}
+  groundContactY: 0.005582137
+  artworkTopY: 0.9880383
+  labelHeight: 207
+  readyTilt: -10
+  attackTilt: 14
+  attackOffset: {x: 0, y: -38}
+  emphasizePoses: 1
+  readyOffset: {x: 0, y: 16}
+  readyScale: {x: 1.04, y: 0.95}
+  strikeScale: {x: 0.96, y: 1.08}
+  strikeSeconds: 0.3

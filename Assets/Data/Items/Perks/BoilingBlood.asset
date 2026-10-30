@@ -23,9 +23,10 @@ MonoBehaviour:
   id: BoilingBlood
   displayName: "\uB053\uB294 \uD53C"
   description: "\uC77C\uBC18\uACF5\uACA9\uC73C\uB85C \uC5BB\uB294 \uACA9\uB178 +2"
-  icon: {fileID: 21300000, guid: eb0c821400dc576085aad47ed42ccaf6, type: 3}
+  icon: {fileID: 21300000, guid: f2db04d04bb2fa841b481769960d5d25, type: 3}
   scope: 2
   exclusiveCharacter: 2
+  offerGroup: {fileID: 0}
   abilitySource: {fileID: 11400000, guid: 38aae4d4aacab1e4a835df75565e47ba, type: 2}
   maxStacks: 99
   modifiers: []

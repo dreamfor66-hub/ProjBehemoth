@@ -1,0 +1,38 @@
+[
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Idle.png",
+    "before": "3ae9be0d80600e3f8e7f8c052db0d9596d98ba6b6c4131ce360ee6276738df6d",
+    "after": "3ae9be0d80600e3f8e7f8c052db0d9596d98ba6b6c4131ce360ee6276738df6d",
+    "changed": false
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Guard.png",
+    "before": "6b2ee9e0f902d7af4339cf2e9e60c2eeca0a399a4cc8f064b6984f0abdb02155",
+    "after": "dd8f598275835f9d4c749f191831ab8e6c91788fdb502f9f198aedda20dd58fc",
+    "changed": true
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Ready.png",
+    "before": "139f1044291d45b3f4718a5f4e381d5277a8b706b4a3cf8da47bb025c4c6ff54",
+    "after": "139f1044291d45b3f4718a5f4e381d5277a8b706b4a3cf8da47bb025c4c6ff54",
+    "changed": false
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Attack.png",
+    "before": "c0b00d97e8f051dbfec90a6f84bf63ff1592f3f85515f2a3e4ac575ff3749b42",
+    "after": "c0b00d97e8f051dbfec90a6f84bf63ff1592f3f85515f2a3e4ac575ff3749b42",
+    "changed": false
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Ready-LeftToRight.png",
+    "before": "27c66ec2b69fb34335226532a09f727f8a47903fcb575d9e7a5d0720d0418609",
+    "after": "c52e209d05e85626e8ba172d1a4c097c108a917a22b499614b1a820d82188f6f",
+    "changed": true
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Attack-LeftToRight.png",
+    "before": "46fd987a5cd039786f537502a739fb131b03db2b38fce1c714f08cf4424bea1e",
+    "after": "46fd987a5cd039786f537502a739fb131b03db2b38fce1c714f08cf4424bea1e",
+    "changed": false
+  }
+]

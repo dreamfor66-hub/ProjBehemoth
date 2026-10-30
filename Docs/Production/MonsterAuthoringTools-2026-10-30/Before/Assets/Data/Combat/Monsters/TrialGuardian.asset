@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: TrialGuardian
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.trialguardian.displayname
+    lastText: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
+  - propertyPath: encounterHint
+    key: data.monsterdata.trialguardian.encounterhint
+    lastText: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C
+      \uB9C9\uC790."
+  textOwnerGuid: 52b7da8d0f282654c919a5530c4a2e8c
+  displayName: "\uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218"
+  portrait: {fileID: 21300000, guid: 2e4c9c798362e4f4a97c545114bfa03f, type: 2}
+  combatAnimation: {fileID: 11400000, guid: c387a38a621419b47810c417e7f4561f, type: 2}
+  encounterHint: "\uC2DC\uB828\uC758 \uAC15\uD0C0\uB97C \uC57D\uC810 \uD30C\uAD34\uB85C
+    \uB9C9\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  useOrbit: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 240
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 33
+  goldReward: 16
+  combatScale: 1
+  hitBoxes:
+  - center: {x: 0, y: 0}
+    radius: 95
+  - center: {x: 0, y: 0}
+    radius: 95
+  attacks:
+  - {fileID: 11400000, guid: 64e87b5877852e74ea7bece480c6f50b, type: 2}
+  - {fileID: 11400000, guid: 586871847d096854c8fe5c0cd64abb56, type: 2}
+  normalAttackSequence: []

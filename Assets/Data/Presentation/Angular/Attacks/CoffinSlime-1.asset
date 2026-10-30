@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.coffinslime-1.displayname
-    lastText: "\uD761\uD608\uBC15\uC950\uC758 \uAC15\uD0C0 1"
+    lastText: "\uD53C\uC758 \uAE09\uAC15\uD558"
   textOwnerGuid: 2be514dfc66062c4d882ebae844540b9
   type: 1
-  displayName: "\uD761\uD608\uBC15\uC950\uC758 \uAC15\uD0C0 1"
+  displayName: "\uD53C\uC758 \uAE09\uAC15\uD558"
   damage: 34.56
   shieldDamage: 34.56
   windupDuration: 0.01
@@ -28,12 +28,12 @@ MonoBehaviour:
   chargeTimeLimit: 4
   chargeWeakPoints:
   - id: core-1
-    normalizedPosition: {x: -55, y: 38}
+    localPosition: {x: -55, y: 38}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0
   - id: core-2
-    normalizedPosition: {x: 62, y: 28}
+    localPosition: {x: 62, y: 28}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0

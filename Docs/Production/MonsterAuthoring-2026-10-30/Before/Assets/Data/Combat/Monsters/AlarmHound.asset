@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: AlarmHound
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.alarmhound.displayname
+    lastText: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C"
+  - propertyPath: encounterHint
+    key: data.monsterdata.alarmhound.encounterhint
+    lastText: "\uACBD\uC885 \uB4A4\uC758 \uACF5\uACA9\uC5D0 \uB300\uBE44\uD558\uACE0
+      \uC57D\uC810\uC744 \uB04A\uC790."
+  textOwnerGuid: 86403f7885618c84dbb121a953f0220b
+  displayName: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C"
+  portrait: {fileID: 21300000, guid: 9a1760cd11b45d740afbcd1abc3bfe2d, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 84dbc3ad9a0182e4d8f59cc82a162dd2, type: 2}
+  encounterHint: "\uACBD\uC885 \uB4A4\uC758 \uACF5\uACA9\uC5D0 \uB300\uBE44\uD558\uACE0
+    \uC57D\uC810\uC744 \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 130
+  normalAttackInterval: 1.9
+  chargeInterval: 3.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 19
+  goldReward: 10
+  bodyHitRadius: 95
+  useAuthoredFootprint: 1
+  combatScale: 1
+  bodySize: {x: 290, y: 170}
+  artworkSize: {x: 430, y: 360}
+  weakPointLayoutScale: {x: 1.5, y: 1.3}
+  bodyLobes: []
+  attacks:
+  - {fileID: 11400000, guid: c431b5aae44000e4aa94904195fd43b4, type: 2}
+  - {fileID: 11400000, guid: e2463d76a89eec1428406bf5740e99ee, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.8, g: 0.6912, b: 0.48, a: 1}

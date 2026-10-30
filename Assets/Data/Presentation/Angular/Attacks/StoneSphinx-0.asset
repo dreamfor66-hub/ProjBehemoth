@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.stonesphinx-0.displayname
-    lastText: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uACAC\uC81C"
+    lastText: "\uBC1C\uD1B1 \uD729\uC4F8\uAE30"
   textOwnerGuid: 7c51db371df73224d901ccddb97f8ee4
   type: 0
-  displayName: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uACAC\uC81C"
+  displayName: "\uBC1C\uD1B1 \uD729\uC4F8\uAE30"
   damage: 26.4
   shieldDamage: 26.4
   windupDuration: 0.87

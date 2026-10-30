@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.ossuarybell-1.displayname
-    lastText: "\uB0A9\uACE8\uB2F9\uC758 \uC885\uC758 \uAC15\uD0C0 1"
+    lastText: "\uC9C4\uD63C\uC758 \uC885\uC6B8\uB9BC"
   textOwnerGuid: bda5cb972b200b8469d14906d4fcd131
   type: 1
-  displayName: "\uB0A9\uACE8\uB2F9\uC758 \uC885\uC758 \uAC15\uD0C0 1"
+  displayName: "\uC9C4\uD63C\uC758 \uC885\uC6B8\uB9BC"
   damage: 30
   shieldDamage: 48
   windupDuration: 1
@@ -28,17 +28,17 @@ MonoBehaviour:
   chargeTimeLimit: 4.8
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: -85, y: 0}
+    localPosition: {x: -85, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0
   - id: lock_1
-    normalizedPosition: {x: 0, y: 50}
+    localPosition: {x: 0, y: 50}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0
   - id: lock_2
-    normalizedPosition: {x: 85, y: 0}
+    localPosition: {x: 85, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0
@@ -50,8 +50,8 @@ MonoBehaviour:
       rebuildDelay: 5
       rebuildPerSecond: 24
     healOnUnguardedHit: 0
-    hitCount: 1
-    followupDelay: 0.3
+    hitCount: 2
+    followupDelay: 0.45
   chargeSummonMechanics:
     openingSummons: []
     summonOnFailedCharge: {fileID: 0}

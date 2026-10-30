@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: Enemy_SoulKnight
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: ce73623386b454c782cbd9f761339c59, type: 3}
+  attack: {fileID: 21300000, guid: 1b9308920be550ac96b9bbe63a0a49c0, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: 602740f17d475a8fa6647b8974271b45, type: 3}
+  dead: {fileID: 21300000, guid: ac8b486c26db5409a71ee6704035cb32, type: 3}
+  canvasScale: 1.1933702
+  illustratedMotion: 0
+  illustratedLayout: 0
+  combatPositionOffset: {x: 0, y: 0}
+  groundContactY: 0
+  artworkTopY: 1
+  labelHeight: 116
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

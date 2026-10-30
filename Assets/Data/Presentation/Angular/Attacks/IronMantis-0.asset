@@ -15,11 +15,11 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.ironmantis-0.displayname
-    lastText: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0\uC758 \uACAC\uC81C"
+    lastText: "\uB0AB\uB0A0 \uB09C\uBB34"
   textOwnerGuid: c9db2cc12f0f5854e868b2a16c63ffaf
   type: 0
-  displayName: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0\uC758 \uACAC\uC81C"
-  damage: 7
+  displayName: "\uB0AB\uB0A0 \uB09C\uBB34"
+  damage: 9
   shieldDamage: 11.2
   windupDuration: 1
   recoveryDuration: 0.5

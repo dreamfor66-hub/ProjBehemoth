@@ -1,0 +1,45 @@
+{
+  "method": "approximate manually reviewed cranial/face landmarks; exclude hood/crown volume, hanging beard and ponytail; not equal anatomy across stylizations",
+  "sourceCanvas": [
+    1672,
+    941
+  ],
+  "boxes": {
+    "Warrior": [
+      1030,
+      62,
+      1235,
+      233
+    ],
+    "Rogue": [
+      1100,
+      126,
+      1265,
+      315
+    ],
+    "Barbarian": [
+      1097,
+      108,
+      1235,
+      280
+    ],
+    "Samurai": [
+      978,
+      82,
+      1195,
+      283
+    ],
+    "Monk": [
+      1074,
+      30,
+      1238,
+      198
+    ],
+    "Wizard": [
+      1035,
+      112,
+      1303,
+      341
+    ]
+  }
+}

@@ -28,17 +28,17 @@ MonoBehaviour:
   chargeTimeLimit: 4.3
   chargeWeakPoints:
   - id: core-1
-    normalizedPosition: {x: -70, y: 26}
+    localPosition: {x: -70, y: 26}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0
   - id: core-2
-    normalizedPosition: {x: 0, y: -48}
+    localPosition: {x: 0, y: -48}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0
   - id: core-3
-    normalizedPosition: {x: 70, y: 26}
+    localPosition: {x: 70, y: 26}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0

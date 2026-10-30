@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: Enemy_CrystalSpider
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 9ba99b377f00547e9b4cfa6b5637938a, type: 3}
+  attack: {fileID: 21300000, guid: 490b710b4a7951158239cc2f75d0663a, type: 3}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: 8d962f68164f578d9fe94d579ec586c2, type: 3}
+  dead: {fileID: 21300000, guid: cb5119c60ba65d16adf00014ade6262b, type: 3}
+  canvasScale: 1.2109375

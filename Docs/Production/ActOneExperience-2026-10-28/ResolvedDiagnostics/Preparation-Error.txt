@@ -1,0 +1,4 @@
+System.InvalidOperationException: Sequence contains no matching element
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x00011] in <9f5692804bed4122b102b53a993bfd3f>:0 
+  at ActOneExperiencePreparation.PrepareGuardRole () [0x000c9] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ActOneExperiencePreparation.cs:61 
+  at ActOneExperiencePreparation.Poll () [0x000f1] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ActOneExperiencePreparation.cs:43 

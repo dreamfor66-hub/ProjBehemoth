@@ -23,7 +23,7 @@ MonoBehaviour:
   id: GoldenTooth
   displayName: "\uAE08\uBE5B \uC774\uBE68"
   description: "\uC804\uD22C \uC2B9\uB9AC\uB9C8\uB2E4 \uACE8\uB4DC +10."
-  icon: {fileID: 21300000, guid: ea4ea293418b5cf5a66897db0cabdfb0, type: 3}
+  icon: {fileID: 21300000, guid: 0f2b75cac4a634b41827d1e5a8ef8a45, type: 3}
   scope: 3
   exclusiveCharacter: 0
   power: 60
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 14
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

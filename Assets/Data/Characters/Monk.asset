@@ -33,7 +33,7 @@ MonoBehaviour:
     \uB9DE\uB294 \uD750\uB984\uC744 \uACE0\uB978\uB2E4."
   characterColor: {r: 0.8, g: 0.66, b: 0.35, a: 1}
   portrait: {fileID: 21300000, guid: 8e89c2596466d5c419e8da75ccce9336, type: 3}
-  selectionIllustration: {fileID: 21300000, guid: 6b34a11bb2857024b9ad4028688cba5b, type: 3}
+  selectionIllustration: {fileID: 21300000, guid: 901a463a4207b774ea58135757027c74, type: 3}
   selectionMaterial: {fileID: 0}
   selectionBackdrop: {r: 0.23137255, g: 0.09019608, b: 0.03137255, a: 1}
   combatSprite: {fileID: 21300000, guid: d6d4a4a25696a9847becbf1660d3a5bb, type: 3}

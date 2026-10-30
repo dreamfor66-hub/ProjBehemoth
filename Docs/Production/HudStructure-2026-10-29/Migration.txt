@@ -1,0 +1,41 @@
+One-time saved hierarchy migration; existing references retained. World-corner deltas for reparented nodes:
+Background: 0.0000
+FatigueHaze: 0.0000
+LeftPanel: 0.0000
+RightPanel: 0.0000
+EncounterMessagePanel: 0.0000
+RunExpansion: 0.0000
+DebugPanel: 0.0000
+DebugCheatPanel: 0.0000
+RoomPixelTransition: 0.0000
+ArcadeStatus: 0.0000
+QuickInventory: 0.0000
+FatigueHUD: 0.0000
+ContextHint: 0.0000
+Spell_Left: 0.0000
+Spell_Right: 0.0000
+Spell_Up: 0.0000
+Spell_Down: 0.0000
+ManaAndSpellbook: 0.0000
+Spellbook: 0.0000
+RunItemTooltip: 0.0000
+PotionActions: 0.0000
+PlayerHpBar: 0.0000
+ManaGauge: 0.0000
+WalkBackdrop: 0.0000
+NavigationChoiceView: 0.0000
+MonsterSpawnRoot: 0.0000
+PlayerSpawnRoot: 0.0000
+WeakPointRoot: 0.0000
+AttackFxRoot: 0.0000
+TelegraphRoot: 0.0000
+DamageNumberRoot: 0.0000
+SpellAimGuide: 0.0000
+MonsterHpBar: 0.0000
+PlayerStats: 0.0000
+MonsterStateInfo: 0.0000
+CriticalFlash: 0.0000
+PlayerShieldBar: 0.0000
+ChargeGaugeRoot: 0.0000
+Attack Recovery Sword: 0.0000
+Intentional layout changes: pooled quick rows, pointer cooldown, horizontal guard under the player.

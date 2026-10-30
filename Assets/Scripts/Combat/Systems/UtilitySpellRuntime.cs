@@ -27,7 +27,7 @@ namespace DungeonSlash
             for (var i = 0; i < count && IsActive && serial == encounterSerial; i++)
             {
                 attackLine?.ShowSpellArea(center, spell.radius, spell.Color);
-                foreach (var target in activeMonsters.Where(m => m.Runtime.IsAlive && Vector2.Distance(m.Position, center) <= spell.radius + m.Runtime.Data.bodyHitRadius).ToArray())
+                foreach (var target in activeMonsters.Where(m => m.Runtime.IsAlive && m.Runtime.Data.OverlapsArea(center, spell.radius, m.Position, m.VisualScale)).ToArray())
                     HitSpell(target, spell, damage);
                 if (activeMonsters.All(m => !m.Runtime.IsAlive)) { Finish(true); yield break; }
                 yield return new WaitForSeconds(interval);

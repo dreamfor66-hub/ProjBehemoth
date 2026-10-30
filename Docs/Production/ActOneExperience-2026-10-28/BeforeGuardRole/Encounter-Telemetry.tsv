@@ -1,0 +1,7 @@
+encounter	level	perks	seconds	hpLost	minimumGuard	breaks	result
+해골 전사 · 고블린사냥꾼	2	SharpWeapon	13.47	16.80	0.00	1	won
+흡혈박쥐 · 거미	2	SharpWeapon	24.34	76.80	0.00	3	won
+경종 사냥개 · 고블린사냥꾼	2	SharpWeapon	10.04	0.00	0.00	1	won
+쌍두 문지기	3	SharpWeapon+ForwardGuard	25.21	0.00	0.00	2	won
+움직이는 갑옷	3	SharpWeapon+ForwardGuard	10.16	0.00	6.20	1	won
+철갑 사마귀	3	SharpWeapon+ForwardGuard	12.72	0.00	1.90	1	won

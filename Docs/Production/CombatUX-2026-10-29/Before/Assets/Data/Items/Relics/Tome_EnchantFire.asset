@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: Tome_EnchantFire
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.tome_enchantfire.displayname
+    lastText: "\uC778\uCC48\uD2B8 \uD30C\uC774\uC5B4\uC758 \uB9C8\uB3C4\uC11C"
+  - propertyPath: description
+    key: data.equipmentdata.tome_enchantfire.description
+    lastText: "10\uCD08 \uB3D9\uC548 \uBB34\uAE30 \uACF5\uACA9\uC5D0 \uD654\uC5FC
+      \uD53C\uD574 4\uC640 \uD654\uC0C1\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: b1481ed9aa8691045a13ee704a14fb3f
+  id: Tome_EnchantFire
+  displayName: "\uC778\uCC48\uD2B8 \uD30C\uC774\uC5B4\uC758 \uB9C8\uB3C4\uC11C"
+  description: "10\uCD08 \uB3D9\uC548 \uBB34\uAE30 \uACF5\uACA9\uC5D0 \uD654\uC5FC
+    \uD53C\uD574 4\uC640 \uD654\uC0C1\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: 6d0ae3efd0365ad09b6f9452cb06cb1a, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 4
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 12
+      effectMagnitude: 0
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 11400000, guid: 87691c614180065428e9b353c83eee01, type: 2}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 38
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 0
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

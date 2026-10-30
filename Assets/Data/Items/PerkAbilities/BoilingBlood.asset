@@ -23,7 +23,7 @@ MonoBehaviour:
   id: BoilingBlood
   displayName: "\uB053\uB294 \uD53C"
   description: "\uC77C\uBC18\uACF5\uACA9\uC73C\uB85C \uC5BB\uB294 \uACA9\uB178 +2"
-  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
+  icon: {fileID: 21300000, guid: f2db04d04bb2fa841b481769960d5d25, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -60,6 +60,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -105,6 +106,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

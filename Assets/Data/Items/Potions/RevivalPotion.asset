@@ -23,7 +23,7 @@ MonoBehaviour:
   id: RevivalPotion
   displayName: "\uC0B4\uC544\uB0A8\uC740 \uBD88\uC528"
   description: "\uC0AC\uB9DD \uC2DC \uC790\uB3D9\uC73C\uB85C HP 35%\uB85C \uBD80\uD65C"
-  icon: {fileID: 21300000, guid: 88d6b2297b505571ad8d7608fb9aede2, type: 3}
+  icon: {fileID: 21300000, guid: 207a2c7fc0de14747a55e3f3ebef8377, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 20
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 20
     scale: 0
     scaleRatio: 0

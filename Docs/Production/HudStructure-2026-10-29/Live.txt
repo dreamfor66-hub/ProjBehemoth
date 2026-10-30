@@ -1,0 +1,31 @@
+Scoped existing Unity runtime: HUD hierarchy, icon pooling, pointer cooldown and guard feedback. No balance suite.
+PASS saved semantic HUD hierarchy is installed
+PASS HP and mana share PlayerStatusGauges
+PASS guard is a horizontal gauge under PlayerGuard
+PASS attack cooldown and charge feedback share PointerFeedback
+PASS quick relic layout grows past the previous 18-slot limit
+PASS only rented icons exist in active layout
+PASS layout group wraps overflow to another row
+PASS pooled relic hover uses current item description
+PASS removed relics return to inactive pool and dismiss tooltip
+PASS growing again reuses returned instances without new allocation
+PASS pooled potion click opens the existing action menu
+PASS discard returns potion icon and clears the row
+PASS potion reacquisition reuses its pool
+PASS inventory drawer preserves bindings and uses the shared pool
+PASS closing inventory restores combat input
+PASS pointer movement moves cooldown across the combat field
+PASS cooldown remains visible at screen edges
+PASS moving sword displays the actual shared recovery timer
+PASS recovery reaches ready and permits the next attack
+PASS production downward player gesture starts guard
+PASS three overlapping guard/attack lift/repress cycles preserve the other hand and attack pointer ownership
+PASS guarded impact consumes existing guard resource without changing damage rules
+PASS recently lost guard remains visible as a red trail
+PASS guard resource numbers are visible in the Korean text workflow
+PASS guard loss trail settles after its feedback lifetime
+PASS guard break shows the broken state and near-empty resource while normal broken-guard regeneration starts
+PASS UI changes preserve HP, MP and offensive pacing stats
+PASS countdown paints only its ink shadow with no duration gauge
+Countdown mesh: 28 vertices, colors=RGBA(0, 0, 0, 204)
+COMPLETE

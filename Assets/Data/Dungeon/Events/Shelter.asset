@@ -104,6 +104,7 @@ MonoBehaviour:
   textOwnerGuid: 3794989680026e142a819014614c80e8
   id: Shelter
   displayName: "\uBD88\uCE68\uBC88\uC744 \uC815\uD558\uC790"
+  excludedFromRandomPool: 0
   narrative: "\uBCF5\uB3C4 \uD55C\uCABD\uC5D0 \uBC84\uB824\uC9C4 \uACBD\uBE44\uC2E4\uC774
     \uC788\uB2E4.\r\n\r\n\uBB38\uC5D0\uB294 \uC548\uC5D0\uC11C \uAC78 \uC218 \uC788\uB294
     \uD2BC\uD2BC\uD55C \uBE57\uC7A5\uC774 \uB0A8\uC544 \uC788\uB2E4.\r\n\r\n\uB3CC\uB09C\uB85C
@@ -111,8 +112,9 @@ MonoBehaviour:
     \uBCA4\uCE58\uC5D0\uB294 \uB0A1\uC740 \uB2F4\uC694\uAC00 \uB193\uC5EC \uC788\uB2E4.\r\n\r\n\uBB38\uC744
     \uB2EB\uACE0 \uBD88\uC744 \uD53C\uC6B0\uBA74 \uC7A0\uC2DC \uBAB8\uC744 \uC26C\uAC8C
     \uD560 \uC218 \uC788\uACA0\uB2E4."
-  illustration: {fileID: 21300000, guid: 149e377de92d5f598fd8151f3afd1a34, type: 3}
+  illustration: {fileID: 21300000, guid: e7272535203f832448964fc03bcbd541, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
   minAct: 1
   maxAct: 3
   weight: 1
@@ -213,7 +215,7 @@ MonoBehaviour:
       \uBCA4\uCE58\uC5D0\uB294 \uB0A1\uC740 \uB2F4\uC694\uAC00 \uB193\uC5EC \uC788\uB2E4.\r\n\r\n\uBB38\uC744
       \uB2EB\uACE0 \uBD88\uC744 \uD53C\uC6B0\uBA74 \uC7A0\uC2DC \uBAB8\uC744 \uC26C\uAC8C
       \uD560 \uC218 \uC788\uACA0\uB2E4."
-    illustration: {fileID: 21300000, guid: 149e377de92d5f598fd8151f3afd1a34, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uBD88\uC744 \uC9C0\uD0A4\uBA70 \uC270\uB2E4"
       description: "\uCCB4\uB825 +24"

@@ -1,0 +1,47 @@
+{
+  "Ready-LeftToRight": {
+    "region": [
+      1050,
+      570,
+      1450,
+      760
+    ],
+    "pixels": 58371,
+    "medianRGB": [
+      118.0,
+      108.0,
+      81.0
+    ],
+    "medianLuma": 108.1766
+  },
+  "Idle": {
+    "region": [
+      1170,
+      600,
+      1530,
+      790
+    ],
+    "pixels": 45818,
+    "medianRGB": [
+      99.0,
+      91.0,
+      72.0
+    ],
+    "medianLuma": 91.6138
+  },
+  "Guard": {
+    "region": [
+      1220,
+      580,
+      1600,
+      770
+    ],
+    "pixels": 51709,
+    "medianRGB": [
+      115.0,
+      107.0,
+      82.0
+    ],
+    "medianLuma": 106.8958
+  }
+}

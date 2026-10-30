@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: ArmoredExecutioner
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.armoredexecutioner.displayname
+    lastText: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  - propertyPath: encounterHint
+    key: data.monsterdata.armoredexecutioner.encounterhint
+    lastText: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0,
+      \uBCF4\uC870 \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
+  textOwnerGuid: ecf1c349611a99341be2e93e20f059a6
+  displayName: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  portrait: {fileID: 21300000, guid: 48a8eb3167ca8554abc678f5de774171, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 8d18dfceda7821b4197e8da2ed96f965, type: 2}
+  encounterHint: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0,
+    \uBCF4\uC870 \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 280
+  normalAttackInterval: 2.6
+  chargeInterval: 4.5
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 31
+  goldReward: 16
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: c9db2cc12f0f5854e868b2a16c63ffaf, type: 2}
+  - {fileID: 11400000, guid: 1b4167050ed75994da9fcf3f46f5e7fc, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.48, g: 0.70399994, b: 0.8, a: 1}

@@ -1,0 +1,54 @@
+Pilot v3: existing Editor, isolated room-flow callbacks. Changed act-one scope only. No full class/DPS or whole-game suite.
+PASS map stays open without blocking navigation input
+PASS click connected map tile moves while map remains open
+PASS map uses absolute graph direction
+PASS held attack enters ready pose before charge completes
+PASS release clears preparation
+INPUT context: active=True, paused=False, modal=False, shape=(0.00, -370.00)/(780.00, 156.00), contacts=0
+PASS overlap 0: guard and attack contact remain independent
+PASS overlap 0: attack lift preserves guard
+PASS overlap 0: guard lift preserves attack preparation
+PASS overlap 1: guard and attack contact remain independent
+PASS overlap 1: attack lift preserves guard
+PASS overlap 1: guard lift preserves attack preparation
+PASS overlap 2: guard and attack contact remain independent
+PASS overlap 2: attack lift preserves guard
+PASS overlap 2: guard lift preserves attack preparation
+PASS final release restores idle input
+PASS 고블린사냥꾼: pilot starts without a modal pause
+PASS 고블린사냥꾼: has a normal action before defeat
+PASS 고블린사냥꾼: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 거미: pilot starts without a modal pause
+PASS 거미: has a normal action before defeat
+PASS 거미: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 해골 전사: pilot starts without a modal pause
+PASS 해골 전사: has a normal action before defeat
+PASS 해골 전사: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 흡혈박쥐: pilot starts without a modal pause
+PASS 흡혈박쥐: has a normal action before defeat
+PASS 흡혈박쥐: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 경종 사냥개: pilot starts without a modal pause
+PASS 경종 사냥개: has a normal action before defeat
+PASS 경종 사냥개: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 움직이는 갑옷: pilot starts without a modal pause
+PASS 움직이는 갑옷: has a normal action before defeat
+PASS 움직이는 갑옷: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 철갑 사마귀: pilot starts without a modal pause
+PASS 철갑 사마귀: has a normal action before defeat
+PASS 철갑 사마귀: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 쌍두 문지기: pilot starts without a modal pause
+PASS 쌍두 문지기: has a normal action before defeat
+PASS 쌍두 문지기: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 납골당의 종: pilot starts without a modal pause
+PASS 납골당의 종: has a normal action before defeat
+PASS 납골당의 종: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 실짜는 공작부인: pilot starts without a modal pause
+PASS 실짜는 공작부인: has a normal action before defeat
+PASS 실짜는 공작부인: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 실인형: pilot starts without a modal pause
+FAIL 실인형: has a normal action before defeat
+PASS 실인형: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 미궁 스핑크스: pilot starts without a modal pause
+PASS 미궁 스핑크스: has a normal action before defeat
+FAIL 미궁 스핑크스: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+COMPLETE failures=2. Human feel, varied progression/builds, encounter combinations and real device remain pending.

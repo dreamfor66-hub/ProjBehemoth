@@ -14,14 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idle: {fileID: 21300000, guid: cd6cfa4549bd5734d9a5df413810f43c, type: 3}
   attack: {fileID: 21300000, guid: 6f0f58cc16ad43a4085e8c96bbf0dca4, type: 3}
+  attackPoseSeconds: 0.495
   guard: {fileID: 21300000, guid: 4ee80bee3b562d845b0748d95e38734b, type: 3}
-  ready: {fileID: 0}
+  ready: {fileID: 21300000, guid: be3c6443b8f341445bbebf88ca2f6b95, type: 3}
+  readyLeftToRight: {fileID: 21300000, guid: 419b22b5d789475ba790ea4fe02f91c0, type: 3}
+  attackLeftToRight: {fileID: 21300000, guid: a98f1209e5db405d95ba99a6ecb15118, type: 3}
   dead: {fileID: 0}
   canvasScale: 1.1292576
+  canvasPaddingPixels: {x: 724, y: 0, z: 724, w: 218}
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: 0}
-  labelHeight: 116
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

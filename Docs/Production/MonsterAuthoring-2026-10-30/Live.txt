@@ -1,0 +1,13 @@
+Scoped existing-Editor runtime matrix; runtime-only clones, no balance suite.
+PASS 1 actors retain species CombatScale
+PASS 1 formation footprint 0
+PASS 3 actors retain species CombatScale
+PASS 3 formation footprint 0
+PASS 3 formation footprint 1
+PASS 3 formation footprint 2
+PASS actual normal slash damages unified hitboxes
+PASS actual charged slash hits authored weak point
+PASS CombatScale consistently scales artwork, body and weak points
+PASS useOrbit preserves original radius/speed/65-unit vertical orbit
+PASS useOrbit=false stops orbit movement
+COMPLETE failures=0

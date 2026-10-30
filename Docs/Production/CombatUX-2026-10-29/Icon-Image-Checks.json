@@ -1,0 +1,2594 @@
+[
+  {
+    "kind": "Perks",
+    "id": "Assassination",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      57,
+      22,
+      1206,
+      1207
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "BoilingBlood",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      73,
+      46,
+      1123,
+      1208
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ChangingForms",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      53,
+      1234,
+      1254
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ConcentratedVenom",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      65,
+      71,
+      1192,
+      1226
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ConversionImpact",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      20,
+      1232,
+      1230
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Counter",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      25,
+      55,
+      1218,
+      1222
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "DecisiveBlow",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      37,
+      1248,
+      1212
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "DeepInjection",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      60,
+      45,
+      1206,
+      1230
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ElementFocus",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      117,
+      39,
+      1248,
+      1254
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Embers",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      39,
+      1212,
+      1237
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Exploit",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      20,
+      49,
+      1248,
+      1230
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "FireMastery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      39,
+      35,
+      1235,
+      1214
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "FlowFinish",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      53,
+      65,
+      1224,
+      1226
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ForwardGuard",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      162,
+      45,
+      1144,
+      1220
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "FrenziedFist",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      75,
+      73,
+      1234,
+      1188
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "HeavyWeapon",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      21,
+      1229,
+      1226
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "IceMastery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      27,
+      71,
+      1200,
+      1232
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "InnerStrength",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      4,
+      1251,
+      1254
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "KeenInstinct",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      70,
+      142,
+      1186,
+      1156
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "LightningMastery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      37,
+      1220,
+      1218
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "LongBlade",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      19,
+      1240,
+      1220
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ManaBurn",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      33,
+      65,
+      1226,
+      1229
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ManaFlow",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      17,
+      9,
+      1206,
+      1254
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ManaVessel",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      81,
+      37,
+      1208,
+      1254
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "OneSchool",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      21,
+      1238,
+      1236
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ParryEcho",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      39,
+      1226,
+      1223
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "PatientDraw",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      76,
+      23,
+      1200,
+      1238
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "PoisonBlade",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      45,
+      78,
+      1216,
+      1230
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Pressure",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      33,
+      1240,
+      1216
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "RageWeight",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      17,
+      101,
+      1231,
+      1159
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "RapidDraw",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      34,
+      74,
+      1246,
+      1221
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Reform",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      36,
+      39,
+      1222,
+      1190
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "SharpWeapon",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      65,
+      1211,
+      1218
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ShelterCounter",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      75,
+      1182,
+      1222
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ShieldImpact",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      23,
+      51,
+      1214,
+      1182
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ShortIncantation",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      65,
+      47,
+      1182,
+      1182
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Spellblade",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      67,
+      1208,
+      1232
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "SwordRecovery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      0,
+      1231,
+      1254
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "ThreeElements",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      19,
+      1236,
+      1203
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "VenomStrike",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      26,
+      1223,
+      1246
+    ]
+  },
+  {
+    "kind": "Perks",
+    "id": "Vitality",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      97,
+      55,
+      1126,
+      1125
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "AegisBattery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      71,
+      48,
+      1196,
+      1214
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "AmberSeed",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      31,
+      1212,
+      1200
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ArcaneGuard",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      49,
+      1210,
+      1202
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "AzureTalon",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      23,
+      37,
+      1240,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "BloodContract",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      23,
+      1232,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "BloodFrenzy",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      3,
+      1212,
+      1226
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "BloodlessDraw",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      9,
+      0,
+      1244,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ChainMaster",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      33,
+      1236,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ChargeCoil",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      71,
+      23,
+      1244,
+      1184
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ChargeWard",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      41,
+      21,
+      1194,
+      1174
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ComboLeech",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      37,
+      1236,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "CorePrism",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      57,
+      19,
+      1232,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "CrosswindCharm",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      31,
+      14,
+      1236,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "DeadlyDose",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      47,
+      1240,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "DeferredPain",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      57,
+      13,
+      1234,
+      1223
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "DistanceMomentum",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      37,
+      1184,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "DoubleCharge",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      23,
+      1225,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "DoubleDraw",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      121,
+      2,
+      1248,
+      1198
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "DrawMastery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      39,
+      1198,
+      1204
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "EchoSpur",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      25,
+      69,
+      1222,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "EdgeCharm",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      46,
+      1212,
+      1222
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "EmberMaster",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      25,
+      38,
+      1216,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ExecuteRage",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      19,
+      1216,
+      1236
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Executioner",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      28,
+      25,
+      1253,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "FirstStrike",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      27,
+      17,
+      1236,
+      1202
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "FlowMaster",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      61,
+      1234,
+      1220
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "GoldenTooth",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      91,
+      21,
+      1238,
+      1203
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "GuardianBell",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      21,
+      32,
+      1233,
+      1236
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "GuardNova",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      19,
+      1240,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "GuidingWisp",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      56,
+      30,
+      1232,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Hammer",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      23,
+      1238,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Hourglass",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      51,
+      45,
+      1230,
+      1228
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "HundredFists",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      49,
+      1228,
+      1212
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "HunterLantern",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      49,
+      1244,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "IceFocus",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      55,
+      105,
+      1234,
+      1173
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "IronFortress",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      27,
+      1234,
+      1220
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "LightningRod",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      35,
+      19,
+      1242,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "LongDragon",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      27,
+      1238,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "LongRage",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      9,
+      1214,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "LongTiger",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      27,
+      47,
+      1240,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "MindfulGuard",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      49,
+      1224,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "MirrorShard",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      57,
+      33,
+      1170,
+      1226
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PainFrenzy",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      21,
+      1230,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Paladin",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      25,
+      28,
+      1234,
+      1234
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Parasite",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      84,
+      35,
+      1198,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ParryRecovery",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      39,
+      19,
+      1228,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PatientSheath",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      31,
+      1240,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PerfectMending",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      35,
+      1188,
+      1221
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PerfectRiposte",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      53,
+      1241,
+      1220
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PilgrimOath",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      111,
+      1221,
+      1228
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PoisonLeech",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      37,
+      1216,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "PressurePoint",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      9,
+      1234,
+      1226
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "QuickCasting",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      23,
+      1222,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "RageCharge",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      37,
+      18,
+      1234,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "RageLeech",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      19,
+      1236,
+      1236
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "RaggedBanner",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      39,
+      32,
+      1226,
+      1237
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ShadowCounter",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      27,
+      39,
+      1194,
+      1190
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ShadowSheath",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      39,
+      1248,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ShelterMaster",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      41,
+      82,
+      1222,
+      1186
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ShieldBash",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      23,
+      1228,
+      1222
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ShieldEdge",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      47,
+      1206,
+      1216
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Spear",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      63,
+      9,
+      1251,
+      1241
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "SpellBlade",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      33,
+      23,
+      1242,
+      1222
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "SpellEcho",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      17,
+      1224,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "StaffConduit",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      33,
+      17,
+      1223,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Starter_Barbarian",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      113,
+      19,
+      1158,
+      1240
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Starter_Monk",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      41,
+      71,
+      1234,
+      1212
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Starter_Rogue",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      20,
+      1227,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Starter_Samurai",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      71,
+      1226,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Starter_Warrior",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      71,
+      9,
+      1210,
+      1232
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Starter_Wizard",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      47,
+      1234,
+      1244
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "StormBottle",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      78,
+      1218,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "StrayDog",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      21,
+      73,
+      1216,
+      1159
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Technique_CoreHarvest",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      39,
+      92,
+      1226,
+      1188
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Technique_Harvest",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      109,
+      51,
+      1216,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Technique_ImpactShield",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      63,
+      19,
+      1216,
+      1212
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ThornBulwark",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      33,
+      1240,
+      1212
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ThunderousCharge",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      39,
+      32,
+      1225,
+      1222
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ThunderWire",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      19,
+      1248,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_ChainLightning",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      26,
+      1214,
+      1236
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_Cleanse",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      57,
+      69,
+      1187,
+      1218
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_Ember",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      55,
+      1202,
+      1224
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_EnchantFire",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      53,
+      22,
+      1230,
+      1228
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_EnchantIce",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      31,
+      67,
+      1208,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_EnchantLightning",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      39,
+      1234,
+      1207
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_EnergyBolt",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      67,
+      1236,
+      1185
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_FireBloom",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      21,
+      1231,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_FrostRing",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      86,
+      1229,
+      1238
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_LightningMark",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      33,
+      1226,
+      1214
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_PoisonMist",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      23,
+      41,
+      1238,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Tome_Spark",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      33,
+      1228,
+      1230
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "TwinDaggers",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      67,
+      1226,
+      1228
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "Unstoppable",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      38,
+      87,
+      1239,
+      1165
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "VenomSpread",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      49,
+      1230,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "ViperFang",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      45,
+      17,
+      1218,
+      1254
+    ]
+  },
+  {
+    "kind": "Relics",
+    "id": "WellCurse",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      41,
+      33,
+      1202,
+      1254
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "FatiguePotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      41,
+      65,
+      1194,
+      1174
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "HealingPotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      23,
+      1226,
+      1223
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "OpeningRockPotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      91,
+      19,
+      1190,
+      1246
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "PoisonPotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      55,
+      23,
+      1240,
+      1210
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "RagePotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      0,
+      35,
+      1186,
+      1228
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "RevivalPotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      31,
+      8,
+      1210,
+      1231
+    ]
+  },
+  {
+    "kind": "Potions",
+    "id": "StoneSkinPotion",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "bounds": [
+      49,
+      33,
+      1166,
+      1231
+    ]
+  }
+]

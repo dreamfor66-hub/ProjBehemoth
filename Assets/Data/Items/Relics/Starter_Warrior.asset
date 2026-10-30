@@ -19,13 +19,15 @@ MonoBehaviour:
   - propertyPath: description
     key: data.equipmentdata.starter_warrior.description
     lastText: "\uC804\uD22C \uC911 \uAC00\uB4DC\uAC8C\uC774\uC9C0\uAC00 \uCD08\uB2F9
-      2.5 \uD68C\uBCF5\uB429\uB2C8\uB2E4."
+      2 \uD68C\uBCF5\uB429\uB2C8\uB2E4. \uAC00\uB4DC \uBD95\uAD34 \uC911 \uD68C\uBCF5
+      \uC18D\uB3C4\uAC00 \uCD94\uAC00\uB85C 3 \uC99D\uAC00\uD569\uB2C8\uB2E4."
   textOwnerGuid: 0681921da450dae449d0b24a76aa81fa
   id: Starter_Warrior
   displayName: "\uC218\uD638\uC790\uC758 \uBC29\uD328"
   description: "\uC804\uD22C \uC911 \uAC00\uB4DC\uAC8C\uC774\uC9C0\uAC00 \uCD08\uB2F9
-    2.5 \uD68C\uBCF5\uB429\uB2C8\uB2E4."
-  icon: {fileID: 21300000, guid: fdbbce684ca95348b8396d38181a6bd6, type: 3}
+    2 \uD68C\uBCF5\uB429\uB2C8\uB2E4. \uAC00\uB4DC \uBD95\uAD34 \uC911 \uD68C\uBCF5
+    \uC18D\uB3C4\uAC00 \uCD94\uAC00\uB85C 3 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+  icon: {fileID: 21300000, guid: 4b4f3b4e4e01c6f47b39ce5f78acc774, type: 3}
   scope: 1
   exclusiveCharacter: 0
   power: 0
@@ -42,18 +44,62 @@ MonoBehaviour:
       triggerMaxCount: 0
       intervalSeconds: 0
       cooldownSeconds: 0
-      resetCountEachCombat: 1
+      resetCountEachCombat: 0
       includeAdditionalAttacks: 0
       chancePercent: 100
       signal: {fileID: 0}
     target: 0
     effects:
-    - effectType: 11
-      effectMagnitude: 0.25
+    - effectType: 2
+      effectMagnitude: 3
       effectCount: 1
       effectAngle: 0
       effectTime: 0
-      effectStatType: 17
+      travelGraceSteps: 0
+      effectStatType: 8
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 7
+      triggerAttackTypeFilter: 0
+      triggerAttackWayFilter: 0
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 0
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 2
+    effects:
+    - effectType: 11
+      effectMagnitude: 2
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      travelGraceSteps: 0
+      effectStatType: 0
       scale: 0
       scaleRatio: 0
       maximumMagnitude: 0
@@ -98,6 +144,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

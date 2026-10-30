@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e5ae14eff4b254597a2d57fdf40777, type: 3}
+  m_Name: IllustratedOutgame
+  m_EditorClassIdentifier: 
+  arcade: 1
+  preserveIllustrationColors: 1
+  revision: 5
+  feedbackRevision: 4
+  outgameRevision: 3
+  mortalisRevision: 1
+  readabilityRevision: 1
+  weakPointStyle: {fileID: 11400000, guid: e91f2926052dd5f44a81b4dfbbe5eb04, type: 2}
+  darkPalette: {fileID: 11400000, guid: 4da5d13c004e7d74e820603c6e4672ad, type: 2}
+  width: 1920
+  height: 1080
+  paletteMaterial: {fileID: 2100000, guid: bcdbabb093a2a364289a034687fab9da, type: 2}

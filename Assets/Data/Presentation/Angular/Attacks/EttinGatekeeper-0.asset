@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.ettingatekeeper-0.displayname
-    lastText: "\uC30D\uB450 \uBB38\uC9C0\uAE30\uC758 \uACAC\uC81C"
+    lastText: "\uACE4\uBD09 \uD718\uB450\uB974\uAE30"
   textOwnerGuid: 46605fa33cecf6a4ebe3dcd0b8ce86dc
   type: 0
-  displayName: "\uC30D\uB450 \uBB38\uC9C0\uAE30\uC758 \uACAC\uC81C"
+  displayName: "\uACE4\uBD09 \uD718\uB450\uB974\uAE30"
   damage: 30
   shieldDamage: 30
   windupDuration: 0.87

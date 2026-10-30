@@ -27,7 +27,7 @@ MonoBehaviour:
   description: "\uC5F0\uD658\uC73C\uB85C \uAC15\uD654\uB41C \uC77C\uBC18\uACF5\uACA9\uC744
     \uBAA8\uB450 \uC801\uC911\uC2DC\uD0A4\uBA74 \uB9C8\uC9C0\uB9C9 \uACF5\uACA9\uC5D0
     \uBB3C\uB9AC \uD53C\uD574 10\uC744 \uCD94\uAC00\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
+  icon: {fileID: 21300000, guid: 6afc440196659814d8a0c59999f47384, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -64,6 +64,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -115,6 +116,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -157,6 +159,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -217,6 +220,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -262,6 +266,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

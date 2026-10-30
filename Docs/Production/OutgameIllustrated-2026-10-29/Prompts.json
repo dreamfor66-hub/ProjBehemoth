@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Warrior",
+    "prompt": "Create a finished WIDE 16:9 full-screen game character-selection ILLUSTRATION, 1920x1080 composition, not a character concept sheet or cutout. Image 1 is exact character identity/equipment authority. Image 2 is actual MainGameScene background style authority. Images 3-4 are original shape/ink reference authority. Use the project's chunky angular hand-painted 2D style: bold black contour lines, broad flat restrained color planes, large nearly-black shadows, simplified compact anatomy, selective warm highlights, clean edges. Avoid realistic rendering, anime beautification, small triangular facets everywhere, photographic textures, dense hatching, glows, particles, noisy details. Make a complete cinematic scene with depth, foreground/background and strongly staged character action. MAIN character fills the RIGHT 60% of the frame, face/head centered around x70%, y27%, body large and cropped naturally by bottom/right frame; retain recognizable design and physical equipment size. LEFT 35% is quiet dark atmospheric environment with low contrast for live UI text; bottom 20% is quieter dark scenery for live character buttons. Artwork covers the ENTIRE canvas edge to edge. No letters, captions, logos, UI, frames, text or border. No new costume ornaments. An armored veteran pushes through a collapsed Gothic arch, weight forward, wooden round-ended kite shield braced toward the viewer and his restrained straight steel sword at a low diagonal. His sealed angular steel helmet and ochre scarf catch torchlight; short olive shoulder mantle remains above the belt. Strong cinematic near-camera three-quarter torso composition, one dynamic figure integrated into the ruined hall.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Warrior-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "Rogue",
+    "prompt": "Create a finished WIDE 16:9 full-screen game character-selection ILLUSTRATION, 1920x1080 composition, not a character concept sheet or cutout. Image 1 is exact character identity/equipment authority. Image 2 is actual MainGameScene background style authority. Images 3-4 are original shape/ink reference authority. Use the project's chunky angular hand-painted 2D style: bold black contour lines, broad flat restrained color planes, large nearly-black shadows, simplified compact anatomy, selective warm highlights, clean edges. Avoid realistic rendering, anime beautification, small triangular facets everywhere, photographic textures, dense hatching, glows, particles, noisy details. Make a complete cinematic scene with depth, foreground/background and strongly staged character action. MAIN character fills the RIGHT 60% of the frame, face/head centered around x70%, y27%, body large and cropped naturally by bottom/right frame; retain recognizable design and physical equipment size. LEFT 35% is quiet dark atmospheric environment with low contrast for live UI text; bottom 20% is quieter dark scenery for live character buttons. Artwork covers the ENTIRE canvas edge to edge. No letters, captions, logos, UI, frames, text or border. No new costume ornaments. The same sly young hooded thief slips around a ruined pillar with both reverse-grip daggers, low balanced crouch and readable opposing arm silhouettes. Preserve the exact narrow sly eyes, angled mouth-corner smirk, brown fringe and olive hood identity from the reference, never a redesigned face. A diagonal pool of cold moonlight reveals a vault corridor behind him; restrained rust-red sash. Close foreground three-quarter character, tense stealth narrative.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Rogue-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "Monk",
+    "prompt": "Create a finished WIDE 16:9 full-screen game character-selection ILLUSTRATION, 1920x1080 composition, not a character concept sheet or cutout. Image 1 is exact character identity/equipment authority. Image 2 is actual MainGameScene background style authority. Images 3-4 are original shape/ink reference authority. Use the project's chunky angular hand-painted 2D style: bold black contour lines, broad flat restrained color planes, large nearly-black shadows, simplified compact anatomy, selective warm highlights, clean edges. Avoid realistic rendering, anime beautification, small triangular facets everywhere, photographic textures, dense hatching, glows, particles, noisy details. Make a complete cinematic scene with depth, foreground/background and strongly staged character action. MAIN character fills the RIGHT 60% of the frame, face/head centered around x70%, y27%, body large and cropped naturally by bottom/right frame; retain recognizable design and physical equipment size. LEFT 35% is quiet dark atmospheric environment with low contrast for live UI text; bottom 20% is quieter dark scenery for live character buttons. Artwork covers the ENTIRE canvas edge to edge. No letters, captions, logos, UI, frames, text or border. No new costume ornaments. The same bald blindfolded martial artist plants his bare foot on broken temple steps, turns his torso into a forceful open-palm defensive form and draws the opposite hand toward his ribs. Ochre blindfold, large wooden wrist beads, bandaged forearm, single olive cloth, muted red sash. Strong anatomy and flowing action line, angular simplified powerful build, quiet ruined monastery at night.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Monk.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "Wizard",
+    "prompt": "Create a finished WIDE 16:9 full-screen game character-selection ILLUSTRATION, 1920x1080 composition, not a character concept sheet or cutout. Image 1 is exact character identity/equipment authority. Image 2 is actual MainGameScene background style authority. Images 3-4 are original shape/ink reference authority. Use the project's chunky angular hand-painted 2D style: bold black contour lines, broad flat restrained color planes, large nearly-black shadows, simplified compact anatomy, selective warm highlights, clean edges. Avoid realistic rendering, anime beautification, small triangular facets everywhere, photographic textures, dense hatching, glows, particles, noisy details. Make a complete cinematic scene with depth, foreground/background and strongly staged character action. MAIN character fills the RIGHT 60% of the frame, face/head centered around x70%, y27%, body large and cropped naturally by bottom/right frame; retain recognizable design and physical equipment size. LEFT 35% is quiet dark atmospheric environment with low contrast for live UI text; bottom 20% is quieter dark scenery for live character buttons. Artwork covers the ENTIRE canvas edge to edge. No letters, captions, logos, UI, frames, text or border. No new costume ornaments. The same kindly elderly gray-haired wizard and small brown owl in a ruined library, open tome supported clearly by one hand, other hand gripping the same straight plain wooden staff. A small warm fire spell lights the book and their eyes; his familiar blue shoulder cloak and muted burgundy robe remain simple. The owl perches beside him and looks at his face. Intimate, cinematic adventure illustration with purposeful diagonal pose, not a standing character sheet.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Wizard-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "Samurai",
+    "prompt": "Create a finished WIDE 16:9 full-screen game character-selection ILLUSTRATION, 1920x1080 composition, not a character concept sheet or cutout. Image 1 is exact character identity/equipment authority. Image 2 is actual MainGameScene background style authority. Images 3-4 are original shape/ink reference authority. Use the project's chunky angular hand-painted 2D style: bold black contour lines, broad flat restrained color planes, large nearly-black shadows, simplified compact anatomy, selective warm highlights, clean edges. Avoid realistic rendering, anime beautification, small triangular facets everywhere, photographic textures, dense hatching, glows, particles, noisy details. Make a complete cinematic scene with depth, foreground/background and strongly staged character action. MAIN character fills the RIGHT 60% of the frame, face/head centered around x70%, y27%, body large and cropped naturally by bottom/right frame; retain recognizable design and physical equipment size. LEFT 35% is quiet dark atmospheric environment with low contrast for live UI text; bottom 20% is quieter dark scenery for live character buttons. Artwork covers the ENTIRE canvas edge to edge. No letters, captions, logos, UI, frames, text or border. No new costume ornaments. The same male black-haired ponytailed samurai, stern original face and angular fringe preserved, three-plate shoulder guard, olive-gray robe, red sash, bandaged forearms. He turns in a measured low sword draw, one hand on normal-grip katana and the other steadying the sheath at the hip, naturally aligned blade and hilt. Moonlit ruined shrine gate and drifting leaves, a sweeping cinematic diagonal rather than a static front sheet.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/Trials/Angular01/StyleCorrections03/Samurai.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "Barbarian",
+    "prompt": "Create a finished WIDE 16:9 full-screen game character-selection ILLUSTRATION, 1920x1080 composition, not a character concept sheet or cutout. Image 1 is exact character identity/equipment authority. Image 2 is actual MainGameScene background style authority. Images 3-4 are original shape/ink reference authority. Use the project's chunky angular hand-painted 2D style: bold black contour lines, broad flat restrained color planes, large nearly-black shadows, simplified compact anatomy, selective warm highlights, clean edges. Avoid realistic rendering, anime beautification, small triangular facets everywhere, photographic textures, dense hatching, glows, particles, noisy details. Make a complete cinematic scene with depth, foreground/background and strongly staged character action. MAIN character fills the RIGHT 60% of the frame, face/head centered around x70%, y27%, body large and cropped naturally by bottom/right frame; retain recognizable design and physical equipment size. LEFT 35% is quiet dark atmospheric environment with low contrast for live UI text; bottom 20% is quieter dark scenery for live character buttons. Artwork covers the ENTIRE canvas edge to edge. No letters, captions, logos, UI, frames, text or border. No new costume ornaments. The same grinning bearded HUMAN barbarian wearing the brown bear-head hood and heavy fur pelt and stitched leather trousers; no lizard transformation. He steps onto shattered masonry with bent knees and shoulders rotated, BOTH hands naturally gripping the same long straight axe haft; one broad notched steel axe head arcs high to the right. Big forceful silhouette, fierce cocky expression, storm-lit ruined keep, no extra limbs.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/Barbarian-Front.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "TitleBackdrop",
+    "prompt": "Create a cinematic wide 16:9 1920x1080 title-screen background in the exact illustrated style of image1: chunky angular black-ink linework, broad flat muted olive stone planes and deep black shadows, restrained amber torchlight. The enormous broken entrance to the labyrinth opens at RIGHT center, monumental Gothic arches and a descending stair suggest ominous depth; a tiny unidentifiable traveler silhouette at the far stair gives scale, not a close main hero. Strong diagonal foreground masonry and simple silhouettes, clean hand-painted 2D shape design, no noisy texture, no 3D, no pixel art. LEFT 50% and upper left remain deep quiet atmospheric shadow for logo and menu, natural environment across whole canvas, no text/logo/UI/border. Same world and same restrained colors as the supplied playable hall.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "TitleLogo",
+    "prompt": "Redesign the image1 wordmark as a high-quality clean hand-inked 2D dark dungeon game logo, transparent background. Exact readable two-line text: DUNGEON above MORTALIS. Preserve spelling. Strong angular hand-cut medieval serif letters, bone ivory fronts, broad charcoal-black ink edges, small muted antique-brass bevels, restrained deep blood-red small underline/banner accent. An understated broken pointed arch silhouette integrates behind the words, not a detailed skull or heavy ornament. Compact wide balanced silhouette, readable at 650px width, crisp raster edges at high resolution, hand-painted broad planes matching image2's chunky angular dark fantasy environment. No pixel stepping, no glossy 3D chrome, no tiny scratch texture, no modern neon, no extra words, no background rectangle.",
+    "refs": [
+      "E:/Github/Proj_Behemoth/Assets/Art/UI/Title/DungeonMortalisLogo.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-AllOpen.png"
+    ],
+    "transparent": true
+  }
+]

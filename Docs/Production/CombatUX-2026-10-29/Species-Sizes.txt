@@ -1,0 +1,5 @@
+Baseline: 해골 전사 idle height=358.797
+고블린사냥꾼: relative idle height=1, artwork=(361.10, 441.35), body=(187.24, 227.36)
+거미: relative idle height=0.48, artwork=(301.94, 199.28), body=(217.40, 96.62)
+흡혈박쥐: relative idle height=0.42, artwork=(168.26, 152.96), body=(112.17, 81.58)
+실인형: relative idle height=0.34, artwork=(121.79, 127.33), body=(77.51, 71.97)

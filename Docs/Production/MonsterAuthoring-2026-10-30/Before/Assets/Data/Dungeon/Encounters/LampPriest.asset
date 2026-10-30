@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: LampPriest
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.lamppriest.displayname
+    lastText: "\uC7AC\uC758 \uB300\uC0AC\uC81C \xB7 \uC7AC \uAC00\uACE0\uC77C"
+  - propertyPath: hint
+    key: data.encounterdata.lamppriest.hint
+    lastText: "\uD638\uC704 \uAC00\uACE0\uC77C\uACFC \uACF5\uACA9\uC774 \uACB9\uCE5C\uB2E4.
+      \uBCF8\uCCB4 \uAC15\uD0C0\uB97C \uB04A\uC790.\n\uC9E7\uC740 \uC900\uBE44 \uB4A4
+      \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4. \uC2DC\uCC28\uB97C \uBCF4\uACE0
+      \uAC00\uB4DC\uD558\uC790."
+  textOwnerGuid: df4e07263d7598c4e910d7d29e550c91
+  id: LampPriest
+  displayName: "\uC7AC\uC758 \uB300\uC0AC\uC81C \xB7 \uC7AC \uAC00\uACE0\uC77C"
+  hint: "\uD638\uC704 \uAC00\uACE0\uC77C\uACFC \uACF5\uACA9\uC774 \uACB9\uCE5C\uB2E4.
+    \uBCF8\uCCB4 \uAC15\uD0C0\uB97C \uB04A\uC790.\n\uC9E7\uC740 \uC900\uBE44 \uB4A4
+    \uB0A0\uCE74\uB86D\uAC8C \uACF5\uACA9\uD55C\uB2E4. \uC2DC\uCC28\uB97C \uBCF4\uACE0
+    \uAC00\uB4DC\uD558\uC790."
+  category: 8
+  members:
+  - monster: {fileID: 11400000, guid: 9177932eaa22ed644a46bfee82533abb, type: 2}
+    offset: {x: 0, y: 80}
+    scale: 0.68
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: bb3b020db885c984995fc41f14641176, type: 2}
+    offset: {x: -190, y: -55}
+    scale: 0.68
+    actionDelay: 0.85
+  - monster: {fileID: 11400000, guid: bb3b020db885c984995fc41f14641176, type: 2}
+    offset: {x: 190, y: -55}
+    scale: 0.68
+    actionDelay: 1.7

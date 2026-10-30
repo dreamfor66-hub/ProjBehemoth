@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.stringrevenant-1.displayname
-    lastText: "\uD574\uACE8 \uC804\uC0AC\uC758 \uAC15\uD0C0 1"
+    lastText: "\uAC80\uB0A0 \uB0B4\uB824\uCE58\uAE30"
   textOwnerGuid: 1d489d50e53e65841a6711b6998ecf4d
   type: 1
-  displayName: "\uD574\uACE8 \uC804\uC0AC\uC758 \uAC15\uD0C0 1"
+  displayName: "\uAC80\uB0A0 \uB0B4\uB824\uCE58\uAE30"
   damage: 30.24
   shieldDamage: 30.24
   windupDuration: 0.01
@@ -28,12 +28,12 @@ MonoBehaviour:
   chargeTimeLimit: 4
   chargeWeakPoints:
   - id: core-1
-    normalizedPosition: {x: -62, y: 20}
+    localPosition: {x: -62, y: 20}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0
   - id: core-2
-    normalizedPosition: {x: 66, y: -38}
+    localPosition: {x: 66, y: -38}
     hitRadius: 30
     requiredChargeHits: 1
     optional: 0

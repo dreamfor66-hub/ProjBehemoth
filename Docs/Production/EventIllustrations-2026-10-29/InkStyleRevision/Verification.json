@@ -1,0 +1,21 @@
+{
+  "runtime": "existing Unity Editor, 1920x1080, actual Mirror and Pilgrim popup captures",
+  "ui_gameplay_and_event_data_unchanged": {
+    "Assets/Data/Dungeon/Events/Mirror.asset": true,
+    "Assets/Data/Dungeon/Events/Pilgrim.asset": true,
+    "Assets/Scripts/UI/IllustratedEventLayout.cs": true,
+    "Assets/Scripts/UI/RunExpansionView.cs": true,
+    "Assets/Scripts/UI/EventSequencePresentation.cs": true,
+    "Assets/Scripts/Data/RandomEventData.cs": true,
+    "Assets/Scenes/MainGameScene.unity": true
+  },
+  "sprite_metadata_unchanged": {
+    "Mirror": true,
+    "Pilgrim": true
+  },
+  "review": "Style-ContactSheet-Final.jpg and actual two popup captures visually inspected; see Review.md",
+  "installed_assets": {
+    "Mirror": "065a5af1d8906aa6396c6c9b8f854824c31f7e5c9878a50c5a048e0c7dcf2340",
+    "Pilgrim": "0285b03bf72bdf74934182a889b078faa083071de1bf0b077e9386a1e5e77046"
+  }
+}

@@ -1,0 +1,8 @@
+Sphinx-only scoped prototype. Growth=5U. Area=(x:-768.00, y:-448.00, width:1536.00, height:896.00), center=(0.00, 100.00), art=(1120.00, 500.00), body=(1000.00, 500.00).
+Weakpoints=(-385.00, 200.00); (-170.00, -105.00); (170.00, -105.00); (385.00, 200.00)
+PASS targets accessible, wing/paw body hits and outside miss: True/True/True
+PASS short center gesture leaves four separated targets: 4
+After left wing/paw gesture remaining=2
+PASS two long wing/paw gestures interrupt charge: Stunned
+PASS group keeps species size. solo=(1120.00, 500.00)/1, group=(1120.00, 500.00)/1
+COMPLETE. Art composition and input footprint only; full act balance and human gesture feel pending.

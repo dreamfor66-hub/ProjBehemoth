@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Technique_CoreHarvest
   displayName: "\uD575\uC2EC \uD68C\uC218"
   description: "\uC57D\uC810 \uD0C0\uACA9 \uC2DC \uC2E4\uB4DC +10"
-  icon: {fileID: 21300000, guid: cd9ce8cdf8e3538b9816827461e85efc, type: 3}
+  icon: {fileID: 21300000, guid: 3593903cc7469ad4a9a5daa8dab1f13a, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

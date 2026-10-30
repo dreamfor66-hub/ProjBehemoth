@@ -1,0 +1,442 @@
+[
+  {
+    "id": "AlarmHound",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\BellHound.png",
+    "rect": [
+      7.0,
+      36.0,
+      1245.0,
+      1170.0
+    ]
+  },
+  {
+    "id": "ArmoredExecutioner",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\IronMantis.png",
+    "rect": [
+      6.0,
+      4.0,
+      1243.0,
+      1238.0
+    ]
+  },
+  {
+    "id": "AshCrow",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\AshGargoyle.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "AshGeneral",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CinderLich.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "BellKeeper",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\OssuaryBell.png",
+    "rect": [
+      16.0,
+      13.0,
+      1238.0,
+      1226.0
+    ]
+  },
+  {
+    "id": "BloodExecutioner",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CrimsonCount.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "BroodKeeper",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\WebDuchess.png",
+    "rect": [
+      14.0,
+      28.0,
+      1228.0,
+      1192.0
+    ]
+  },
+  {
+    "id": "CrystalSpider",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\PrismCrab.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B1_Boss_MazeGuardian",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\ActOne\\StoneSphinx-Idle.png",
+    "rect": [
+      9.0,
+      0.0,
+      2031.0,
+      1024.0
+    ]
+  },
+  {
+    "id": "Data_Monster_B1_Elite_Minotaur",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\EttinGatekeeper.png",
+    "rect": [
+      9.0,
+      7.0,
+      1241.0,
+      1239.0
+    ]
+  },
+  {
+    "id": "Data_Monster_B1_Minion_Bat",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\LanternImp.png",
+    "rect": [
+      2.0,
+      5.0,
+      1252.0,
+      1244.0
+    ]
+  },
+  {
+    "id": "Data_Monster_B1_Minion_Leech",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CoffinSlime.png",
+    "rect": [
+      15.0,
+      34.0,
+      1231.0,
+      1196.0
+    ]
+  },
+  {
+    "id": "Data_Monster_B1_Minion_Skeleton",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\StringRevenant.png",
+    "rect": [
+      28.0,
+      30.0,
+      1197.0,
+      1193.0
+    ]
+  },
+  {
+    "id": "Data_Monster_B2_Boss_FrostQueen",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\WinterUnicorn.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B2_Elite_FrostOgre",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TwinAntlerStag.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B2_Minion_FrostBat",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\QuillSprite.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B2_Minion_IceWraith",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\VeilOracle.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B2_Minion_Yeti",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TuskPilgrim.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B3_Boss_SoulEater",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\AshDragon.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B3_Elite_SoulKnight",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\OathlessCentaur.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B3_Minion_AshHound",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CoalSalamander.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B3_Minion_ShadeLancer",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\SerpentWarden.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_B3_Minion_VoidMaw",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\HollowEye.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_Special_MerchantMutant",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\GildedToad.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "Data_Monster_Special_Minion_Mimic",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\IronMimic.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "DeepTrialGuardian",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CrownColossus.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "EclipseBeast",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\EclipseChimera.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "ElderLeftHeart",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\SunIdol.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "ElderRightHeart",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MoonIdol.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "IceMirror",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MirrorMoth.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "IceNeedle",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CrystalUrchin.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "LampPriest",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\AshHierophant.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "MirrorKnight",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MirrorShell.png",
+    "rect": [
+      64.0,
+      17.0,
+      1127.0,
+      1219.0
+    ]
+  },
+  {
+    "id": "OrbitBat",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\Threadling.png",
+    "rect": [
+      16.0,
+      12.0,
+      1234.0,
+      1236.0
+    ]
+  },
+  {
+    "id": "PaleWisp",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\MaskedChoir.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "SnowBell",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\BellHare.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "SoulLamp",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\CenserRevenant.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "StormMatriarch",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TempestRoc.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "StormOrb",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\StormJelly.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "TrainingHeavy",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Enemies\\Combat\\TrainingLight\\Idle.png",
+    "rect": [
+      0,
+      0,
+      426,
+      426
+    ]
+  },
+  {
+    "id": "TrainingLight",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Enemies\\Combat\\TrainingLight\\Idle.png",
+    "rect": [
+      0,
+      0,
+      426,
+      426
+    ]
+  },
+  {
+    "id": "TrainingMedium",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Enemies\\Combat\\TrainingLight\\Idle.png",
+    "rect": [
+      0,
+      0,
+      426,
+      426
+    ]
+  },
+  {
+    "id": "TrialGuardian",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\TarrasqueWhelp.png",
+    "rect": [
+      0,
+      0,
+      1254,
+      1254
+    ]
+  },
+  {
+    "id": "TunnelRat",
+    "texture": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Monsters\\BoneScorpion.png",
+    "rect": [
+      27.0,
+      167.0,
+      1200.0,
+      802.0
+    ]
+  }
+]

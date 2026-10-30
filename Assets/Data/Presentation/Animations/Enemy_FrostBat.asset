@@ -17,4 +17,16 @@ MonoBehaviour:
   guard: {fileID: 0}
   ready: {fileID: 21300000, guid: 57bb8d82d5645b7e8f67f35a97f5b5d1, type: 3}
   dead: {fileID: 21300000, guid: 177b0cec85d15cf4a40e1e297bc79759, type: 3}
-  canvasScale: 1.17679558
+  canvasScale: 1.1767956
+  illustratedMotion: 0
+  illustratedLayout: 0
+  combatPositionOffset: {x: 0, y: 0}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

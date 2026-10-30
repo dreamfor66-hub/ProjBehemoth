@@ -25,7 +25,7 @@ MonoBehaviour:
   displayName: "\uC774\uC911 \uBC1C\uB3C4"
   description: "\uBC1C\uB3C4\uAC00 \uD55C \uBC88 \uB354 \uC801\uC911\uD55C\uB2E4.
     \uC57D\uC810\uC5D0\uB3C4 \uCD94\uAC00\uB85C \uC801\uC911\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: 03fb90009aac50f3a809034840fac229, type: 3}
+  icon: {fileID: 21300000, guid: b63b2696eaa720e4da695228a00a8243, type: 3}
   scope: 2
   exclusiveCharacter: 3
   power: 29
@@ -62,6 +62,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -107,6 +108,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

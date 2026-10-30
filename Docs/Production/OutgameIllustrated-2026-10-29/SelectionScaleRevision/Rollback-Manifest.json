@@ -1,0 +1,29 @@
+{
+  "projectRoot": "E:\\Github\\Proj_Behemoth",
+  "entries": [
+    {
+      "character": "Barbarian",
+      "relativePath": "Assets/Art/UI/Outgame/Barbarian-Illustration.png",
+      "backupFile": "Before/Barbarian-Illustration.png",
+      "beforeSha256": "a419238e984024dcadc2bcbddc9dbe0045b7d743aa66b51d12e9483a548f2df8",
+      "installedSha256": "aee0eeecc9a488b4db1ca75194c49c269957f40449bd1799a567abd51a26e9a1",
+      "metaSha256": "fe46af8a87d6478a3b1eee7bf0c0d0a870ac0d86018c5651b09eeecce3bc054b"
+    },
+    {
+      "character": "Monk",
+      "relativePath": "Assets/Art/UI/Outgame/Monk-Illustration.png",
+      "backupFile": "Before/Monk-Illustration.png",
+      "beforeSha256": "46fe4c8499935fa89e8d9cf6ba15ff32b9a378d30e3219c5ec4c0764682fd443",
+      "installedSha256": "e22ebc9106834151995abdc482cb61972122c485ce4e67c13a5e25c6547af417",
+      "metaSha256": "e255d88e40ba8fc97a9d87ac928a0075c6c165aed3b060f20b6f4c7d8db78539"
+    },
+    {
+      "character": "Wizard",
+      "relativePath": "Assets/Art/UI/Outgame/Wizard-Illustration.png",
+      "backupFile": "Before/Wizard-Illustration.png",
+      "beforeSha256": "f73b14ad666c4e6bc73bb1131c8d23b6ed906c196b2dfe0ec91d85778c110797",
+      "installedSha256": "087a69001c79cc15caa3277b81b14413363eff72efc9fb142992e87c7ac18e92",
+      "metaSha256": "4c6f8515b25bde23e6a016dd4fab70c6ae058b2ba0d74ba36efbcfffaf599f00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+Six selection art captures only; existing Editor, no combat/balance/menu regression. Preserve existing Play session when present.
+PASS Warrior installed artwork selected
+PASS Warrior full-resolution sprite
+PASS Warrior name fits its text rectangle (64)
+PASS Warrior story fits its text rectangle (23)
+FAIL Rogue installed artwork selected
+PASS Rogue full-resolution sprite
+PASS Rogue name fits its text rectangle (64)
+PASS Rogue story fits its text rectangle (23)
+FAIL Barbarian installed artwork selected
+PASS Barbarian full-resolution sprite
+PASS Barbarian name fits its text rectangle (64)
+PASS Barbarian story fits its text rectangle (23)
+FAIL Samurai installed artwork selected
+PASS Samurai full-resolution sprite
+PASS Samurai name fits its text rectangle (64)
+PASS Samurai story fits its text rectangle (23)
+FAIL Monk installed artwork selected
+PASS Monk full-resolution sprite
+PASS Monk name fits its text rectangle (64)
+PASS Monk story fits its text rectangle (23)
+FAIL Wizard installed artwork selected
+PASS Wizard full-resolution sprite
+PASS Wizard name fits its text rectangle (64)
+PASS Wizard story fits its text rectangle (23)
+COMPLETE failures=5
+RESTORED page=Title selected=0; original Play session retained.

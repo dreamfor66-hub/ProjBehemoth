@@ -1,0 +1,26 @@
+Scoped image transitions and held-input rendering only. No balance changes or combat suite.
+PASS Warrior: Idle image=Warrior-Rear
+PASS Warrior: dedicated Ready painting
+PASS Warrior: hold shows Ready without null sprite
+Visible sprite-less pale images: MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Warrior: release switches Attack painting
+PASS Warrior: release recovers Idle
+PASS Warrior: legacy keyed transforms ignored for Idle
+PASS Warrior: legacy keyed transforms ignored for Ready
+PASS Warrior: legacy keyed transforms ignored for Attack
+PASS Warrior: legacy keyed transforms ignored for Guard
+PASS Warrior: no pose transform mutation
+PASS Warrior: missing Ready safely falls back to Idle
+PASS Warrior: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Warrior: no images hides graphic rather than drawing white quad
+PASS Warrior: overlap 0 Guard painting wins while attack held
+PASS Warrior: attack cancel preserves guard
+PASS Warrior: guard release preserves Ready painting
+PASS Warrior: overlap 1 Guard painting wins while attack held
+PASS Warrior: attack cancel preserves guard
+PASS Warrior: guard release preserves Ready painting
+PASS Warrior: overlap 2 Guard painting wins while attack held
+PASS Warrior: attack cancel preserves guard
+PASS Warrior: guard release preserves Ready painting
+PASS Warrior: final cancel/release returns Idle
+COMPLETE

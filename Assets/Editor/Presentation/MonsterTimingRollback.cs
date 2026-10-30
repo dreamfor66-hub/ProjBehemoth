@@ -89,7 +89,7 @@ internal static class MonsterTimingRollback
             }).ToArray(),
             encounters = AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data/Dungeon/Encounters" }).Select(g => AssetDatabase.LoadAssetAtPath<EncounterData>(AssetDatabase.GUIDToAssetPath(g)))
                 .Where(e => e.members.Any(m => m.monster != null && ids.ContainsKey(m.monster)))
-                .Select(e => new EncounterRow { id=e.id, category=e.category.ToString(), members=e.members.Where(m=>m.monster!=null&&ids.ContainsKey(m.monster)).Select(m=>new MemberRow{monster=ids[m.monster],offset=m.offset,scale=m.scale,actionDelay=m.actionDelay}).ToArray() }).ToArray()
+                .Select(e => new EncounterRow { id=e.id, category=e.category.ToString(), members=e.members.Where(m=>m.monster!=null&&ids.ContainsKey(m.monster)).Select(m=>new MemberRow{monster=ids[m.monster],offset=m.offset,scale=m.monster.combatScale,actionDelay=m.actionDelay}).ToArray() }).ToArray()
         };
         File.WriteAllText(Folder + "CurrentData.json", JsonUtility.ToJson(report, true));
     }

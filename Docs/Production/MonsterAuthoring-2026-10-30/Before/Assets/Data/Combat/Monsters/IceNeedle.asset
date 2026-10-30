@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: IceNeedle
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.iceneedle.displayname
+    lastText: "\uACB0\uC815 \uC131\uAC8C"
+  - propertyPath: encounterHint
+    key: data.monsterdata.iceneedle.encounterhint
+    lastText: "\uACB0\uC815 \uC0AC\uC774\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uC744 \uB178\uB824
+      \uCC0C\uB974\uAE30\uB97C \uB04A\uC790."
+  textOwnerGuid: 811d13f58aeee4747b1ee2e42a8f3c3a
+  displayName: "\uACB0\uC815 \uC131\uAC8C"
+  portrait: {fileID: 21300000, guid: e3831e6dad1d9e447a3c487e98dfd546, type: 2}
+  combatAnimation: {fileID: 11400000, guid: f12fb90683c077849918bc6f5909b46b, type: 2}
+  encounterHint: "\uACB0\uC815 \uC0AC\uC774\uC5D0 \uC5F4\uB9B0 \uC57D\uC810\uC744
+    \uB178\uB824 \uCC0C\uB974\uAE30\uB97C \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 100
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 22
+  goldReward: 12
+  bodyHitRadius: 95
+  useAuthoredFootprint: 0
+  combatScale: 1
+  bodySize: {x: 220, y: 220}
+  artworkSize: {x: 420, y: 460}
+  weakPointLayoutScale: {x: 1, y: 1}
+  bodyLobes: []
+  attacks:
+  - {fileID: 11400000, guid: ae5174e5ec06df84790c552cfc909814, type: 2}
+  - {fileID: 11400000, guid: bddd4aedeb76caf40a1d243d071c3451, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.8, g: 0.48, b: 0.51839995, a: 1}

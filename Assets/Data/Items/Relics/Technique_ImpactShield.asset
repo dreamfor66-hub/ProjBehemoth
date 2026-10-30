@@ -23,7 +23,7 @@ MonoBehaviour:
   id: Technique_ImpactShield
   displayName: "\uCDA9\uACA9 \uBC29\uD328"
   description: "\uC801\uC911 \uC2DC \uC2E4\uB4DC +2"
-  icon: {fileID: 21300000, guid: ea4860e5456b5867a38d867ec56563ca, type: 3}
+  icon: {fileID: 21300000, guid: ec26e9ce9b10944429f3f87e23e12398, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

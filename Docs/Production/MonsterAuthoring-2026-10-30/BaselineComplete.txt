@@ -1,0 +1,1 @@
+44 monsters, four authored poses, original collision circles, current designer data.

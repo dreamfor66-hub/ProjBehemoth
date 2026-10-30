@@ -23,7 +23,7 @@ MonoBehaviour:
   id: QuickCasting
   displayName: "\uCD95\uC57D \uC601\uCC3D"
   description: "\uC8FC\uBB38 \uCE90\uC2A4\uD305 \uC2DC\uAC04 -35%."
-  icon: {fileID: 21300000, guid: 99028a0b6c145da6844258a39646beae, type: 3}
+  icon: {fileID: 21300000, guid: 33aaa0cb56e57504f884de9682294dbe, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 45
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

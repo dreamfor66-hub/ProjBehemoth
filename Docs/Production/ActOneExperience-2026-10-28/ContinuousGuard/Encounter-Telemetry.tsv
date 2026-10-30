@@ -1,0 +1,10 @@
+encounter	level	growthProfile_U	seconds	hpLost	minimumGuard	breaks	result
+해골 전사 · 고블린사냥꾼	1	UnderBudget:3.25	15.05	0.00	0.00	1	won
+흡혈박쥐 · 거미	1	UnderBudget:3.25	22.50	76.80	0.00	3	won
+경종 사냥개 · 고블린사냥꾼	1	UnderBudget:3.25	11.78	0.00	0.00	1	won
+쌍두 문지기	1	UnderBudget:3.25	22.75	0.00	0.00	1	won
+움직이는 갑옷	1	UnderBudget:3.25	9.31	0.00	6.20	1	won
+철갑 사마귀	1	UnderBudget:3.25	11.01	0.00	1.40	1	won
+미궁 스핑크스	1	Required:5.00	52.94	0.00	0.00	3	won
+납골당의 종	1	Required:5.00	17.76	18.00	0.00	1	won
+실짜는 공작부인 · 실인형	1	Required:5.00	23.72	0.00	0.00	2	won

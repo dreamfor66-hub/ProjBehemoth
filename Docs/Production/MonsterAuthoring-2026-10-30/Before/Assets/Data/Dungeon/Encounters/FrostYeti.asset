@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: FrostYeti
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.frostyeti.displayname
+    lastText: "\uC5C4\uB2C8 \uC21C\uB840\uC790 \xB7 \uC885\uD1A0\uB07C"
+  - propertyPath: hint
+    key: data.encounterdata.frostyeti.hint
+    lastText: "\uACC1\uC758 \uC885\uD1A0\uB07C\uC640 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4.
+      \uAC15\uD0C0 \uC900\uBE44\uB97C \uBCF4\uACE0 \uC57D\uC810\uC744 \uB04A\uC790.\n\uBCF8\uCCB4
+      \uACC1\uC5D0\uC11C \uBC15\uC790\uB97C \uC5B4\uAE0B\uB098\uAC8C \uACF5\uACA9\uD55C\uB2E4."
+  textOwnerGuid: 4225f2542d4b1464f851bd3d98dff98a
+  id: FrostYeti
+  displayName: "\uC5C4\uB2C8 \uC21C\uB840\uC790 \xB7 \uC885\uD1A0\uB07C"
+  hint: "\uACC1\uC758 \uC885\uD1A0\uB07C\uC640 \uD568\uAED8 \uACF5\uACA9\uD55C\uB2E4.
+    \uAC15\uD0C0 \uC900\uBE44\uB97C \uBCF4\uACE0 \uC57D\uC810\uC744 \uB04A\uC790.\n\uBCF8\uCCB4
+    \uACC1\uC5D0\uC11C \uBC15\uC790\uB97C \uC5B4\uAE0B\uB098\uAC8C \uACF5\uACA9\uD55C\uB2E4."
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: 756c766eabf90b04192ff6bf4e09c953, type: 2}
+    offset: {x: -131.5, y: 35}
+    scale: 0.68
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: acd4ec70882f8374a82bd485e96f27f1, type: 2}
+    offset: {x: 131.5, y: -30}
+    scale: 0.68
+    actionDelay: 1.6

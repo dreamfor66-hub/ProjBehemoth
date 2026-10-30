@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: EttinGatekeeper
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 96562a6dd4d35f843a81f5807e9f456a, type: 3}
-  attack: {fileID: 21300000, guid: 2ea104863593c504f9f5154303cf417f, type: 3}
+  idle: {fileID: 21300000, guid: 2aaaedca73d3e71479538053950181c6, type: 2}
+  attack: {fileID: 21300000, guid: 4bc840e1f2f68014c883e9aaf8b0e4b0, type: 2}
   guard: {fileID: 0}
-  ready: {fileID: 21300000, guid: 0342b740e2aad1f46b23d37f00cc2a69, type: 3}
-  dead: {fileID: 21300000, guid: 60d49357c7032744c9d107caa234a230, type: 3}
+  ready: {fileID: 21300000, guid: 3c96f2545d84bb44ebadf1f92cbba270, type: 2}
+  dead: {fileID: 21300000, guid: b1af39ca06b76ed428344bebc5b81419, type: 2}
   canvasScale: 1
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: -67.49999}
-  groundContactY: 0.007974481
-  artworkTopY: 0.99122804
-  labelHeight: 207.5
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

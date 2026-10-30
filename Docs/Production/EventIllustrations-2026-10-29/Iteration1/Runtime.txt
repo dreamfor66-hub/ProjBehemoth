@@ -1,0 +1,43 @@
+Scoped live Unity popup review. 1920x1080
+PASS Mirror complete narrative and choices presented together
+PASS Mirror all 3 choices visible
+PASS Mirror no choice pagination
+PASS Mirror narrative is right of art
+PASS Mirror narrative and choices do not overlap
+PASS Mirror all choices right of art
+PASS Mirror choice text fits
+PASS Mirror choices inside panel
+Mirror panel=(x:-734.09, y:-391.93, width:1468.19, height:783.85) art=(x:-686.09, y:-343.93, width:515.89, height:687.85) body=(x:-122.20, y:-87.93, width:808.29, height:327.85) content=(x:-388.15, y:-112.76, width:776.30, height:112.76)
+PASS Mirror final all 3 choices visible
+PASS Mirror final no choice pagination
+PASS Mirror final narrative is right of art
+PASS Mirror final narrative and choices do not overlap
+PASS Mirror final all choices right of art
+PASS Mirror final choice text fits
+PASS Mirror final choices inside panel
+Mirror final panel=(x:-734.09, y:-391.93, width:1468.19, height:783.85) art=(x:-686.09, y:-343.93, width:515.89, height:687.85) body=(x:-122.20, y:-87.93, width:808.29, height:327.85) content=(x:-388.15, y:-112.76, width:776.30, height:112.76)
+PASS choice hover feedback
+PASS choice pressed feedback
+PASS Mirror actual choice opens next authored page
+PASS Pilgrim complete narrative and choices presented together
+PASS Pilgrim all 4 choices visible
+PASS Pilgrim no choice pagination
+PASS Pilgrim narrative is right of art
+PASS Pilgrim narrative and choices do not overlap
+PASS Pilgrim all choices right of art
+PASS Pilgrim choice text fits
+PASS Pilgrim choices inside panel
+Pilgrim panel=(x:-734.09, y:-391.93, width:1468.19, height:783.85) art=(x:-686.09, y:-343.93, width:515.89, height:687.85) body=(x:-122.20, y:143.93, width:808.29, height:96.00) content=(x:-388.15, y:-526.18, width:776.30, height:526.18)
+PASS Pilgrim final all 4 choices visible
+PASS Pilgrim final no choice pagination
+PASS Pilgrim final narrative is right of art
+PASS Pilgrim final narrative and choices do not overlap
+PASS Pilgrim final all choices right of art
+PASS Pilgrim final choice text fits
+PASS Pilgrim final choices inside panel
+Pilgrim final panel=(x:-734.09, y:-391.93, width:1468.19, height:783.85) art=(x:-686.09, y:-343.93, width:515.89, height:687.85) body=(x:-122.20, y:143.93, width:808.29, height:96.00) content=(x:-388.15, y:-526.18, width:776.30, height:526.18)
+PASS Pilgrim conditionally unavailable choice visible
+PASS long narrative scroll reaches end
+PASS ordinary modal returns to standard rows
+PASS ordinary modal action closes after portrait event
+COMPLETE failures=0

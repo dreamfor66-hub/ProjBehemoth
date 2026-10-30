@@ -18,3 +18,15 @@ MonoBehaviour:
   ready: {fileID: 21300000, guid: 04a9f4c9f7be546a80a10bd533e8af9f, type: 3}
   dead: {fileID: 21300000, guid: 8c8e772c726f5c769f9936290d2388ab, type: 3}
   canvasScale: 1.1171875
+  illustratedMotion: 0
+  illustratedLayout: 0
+  combatPositionOffset: {x: 0, y: 0}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: StoneSkinPotion
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.stoneskinpotion.displayname
+    lastText: "\uB3CC\uAC11\uC637 \uD3EC\uC158"
+  - propertyPath: description
+    key: data.equipmentdata.stoneskinpotion.description
+    lastText: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 32% \uAC10\uC18C"
+  textOwnerGuid: d8ec43165fd94cb41b18ade4e7b41e50
+  id: StoneSkinPotion
+  displayName: "\uB3CC\uAC11\uC637 \uD3EC\uC158"
+  description: "\uB2E4\uC74C 3\uD68C \uC804\uD22C\uC5D0\uC11C \uD53C\uD574 32% \uAC10\uC18C"
+  icon: {fileID: 21300000, guid: f9739c5bf3c5548288fa152276653c1c, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 6
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 3
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 2
+      effectMagnitude: 0.32
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 16
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 1
+  price: 28
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 6
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 3
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0.32
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 16
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

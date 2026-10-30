@@ -153,6 +153,7 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
+  countdown: 1
 --- !u!1 &1150829181615590984
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,12 +259,13 @@ MonoBehaviour:
   control: {fileID: 0}
   trackAuthoredSelection: 0
   authoredSelectedTint: {r: 0.29411766, g: 0.2901961, b: 0.3764706, a: 1}
-  role: 1
+  role: 9
   resourceColor: {r: 0.8666667, g: 0.8156863, b: 0.6627451, a: 1}
   resource: 0
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
+  countdown: 1
 --- !u!1 &1680676938159058826
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +378,6 @@ MonoBehaviour:
   directionalGuardFill: {fileID: 8218525525841152866}
   directionalGuardLabel: {fileID: 4298603070395946008}
   presentation: {fileID: 11400000, guid: 9ea2c46e0de6eb1489ebd7da3ced61d7, type: 2}
-  arcadeArtScale: 1.65
 --- !u!1 &1893743097523667635
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +454,7 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
+  countdown: 1
 --- !u!1 &1974976591597035481
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,12 +678,13 @@ MonoBehaviour:
   control: {fileID: 0}
   trackAuthoredSelection: 0
   authoredSelectedTint: {r: 0.29411766, g: 0.2901961, b: 0.3764706, a: 1}
-  role: 1
+  role: 10
   resourceColor: {r: 0.8666667, g: 0.8156863, b: 0.6627451, a: 1}
   resource: 0
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
+  countdown: 1
 --- !u!1 &2059955195170502434
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 8a8f63032aeaeb5469921de3f64c209a, type: 2}
   m_Color: {r: 0.043137256, g: 0.047058824, b: 0.08627451, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,6 +1248,7 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
+  countdown: 1
 --- !u!1 &3620301267848041460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1402,7 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
+  countdown: 1
 --- !u!1 &5640370594958897115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1744,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 400, y: -112}
-  m_SizeDelta: {x: 400, y: 112}
+  m_SizeDelta: {x: 312, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2137753909479523534
 CanvasRenderer:
@@ -1761,7 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 8a8f63032aeaeb5469921de3f64c209a, type: 2}
   m_Color: {r: 0.043137256, g: 0.047058824, b: 0.08627451, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

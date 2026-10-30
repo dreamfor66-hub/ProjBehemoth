@@ -23,9 +23,10 @@ MonoBehaviour:
   id: KeenInstinct
   displayName: "\uC608\uB9AC\uD55C \uAC10\uAC01"
   description: "\uCE58\uBA85\uD0C0 \uD655\uB960 +5%"
-  icon: {fileID: 21300000, guid: 5697b3ebbe7255f78549689b447ffcbd, type: 3}
+  icon: {fileID: 21300000, guid: f1f20fe054f5e7042a8c2fc934fbd24b, type: 3}
   scope: 0
   exclusiveCharacter: 0
+  offerGroup: {fileID: 0}
   abilitySource: {fileID: 0}
   maxStacks: 5
   modifiers:

@@ -18,7 +18,7 @@
           "output": "Assets/Art/World/Angular/States/Heroes/Warrior-Guard.png"
         }
       ],
-      "idleHash": "9621418939E80ED389B4E5A2E14C70759697BB86B30EF2CFFAFC5BF82DE9F60F"
+      "idleHash": "E80B5AB6ECCE34CED74FC9A99315C118EB15879BE9CCA6F51C83DD46D549FE2A"
     },
     {
       "id": "Hero-Rogue",
@@ -38,7 +38,7 @@
           "output": "Assets/Art/World/Angular/States/Heroes/Rogue-Guard.png"
         }
       ],
-      "idleHash": "0EBB3C12DF078CB53F89772D0DAAB4303451F01C5E7889BABBBB2B286B1CCAC9"
+      "idleHash": "561E968EAE0B21819947AAD00103C1DA9970A8A43D963A27E9E1DAC0B2692C7A"
     },
     {
       "id": "Hero-Barbarian",
@@ -58,7 +58,7 @@
           "output": "Assets/Art/World/Angular/States/Heroes/Barbarian-Guard.png"
         }
       ],
-      "idleHash": "44B4DC0B47E544520126270425EBE02B66B02420D90928BDC1B68EC1CD43C36B"
+      "idleHash": "4044B656C35030BAAF7D35CEA95CF1BB0A29EA61D5A58DF4CECAD1383BBB76F3"
     },
     {
       "id": "Hero-Samurai",
@@ -78,7 +78,7 @@
           "output": "Assets/Art/World/Angular/States/Heroes/Samurai-Guard.png"
         }
       ],
-      "idleHash": "38A70F668F7AF071BC35BBCF3FA7EAE495B6373986C691E20EE242C6E1F39084"
+      "idleHash": "8E68746FE5210DB844BA3E57C8B7FED0E104EB2679E381D7300B6B8B7CDA47D5"
     },
     {
       "id": "Hero-Monk",
@@ -98,7 +98,7 @@
           "output": "Assets/Art/World/Angular/States/Heroes/Monk-Guard.png"
         }
       ],
-      "idleHash": "C463BE87756737AA6D1F30DC51C56BCFCA29275FAD211F801B41434BF4C26266"
+      "idleHash": "5E9E38DD05CE742BDC00194CCADACBE91888FD7EC6D260965DD7ABBF005831AC"
     },
     {
       "id": "Hero-Wizard",
@@ -118,7 +118,7 @@
           "output": "Assets/Art/World/Angular/States/Heroes/Wizard-Guard.png"
         }
       ],
-      "idleHash": "C3EB939E55498245BACE3CCD6720C9CD53A48D1B12B1711C2652A57ECAD1372E"
+      "idleHash": "FAB2DB458096A907C1E2C1520BFC876498261D44FC23EA733D94DD2FE79FDE42"
     },
     {
       "id": "Monster-LanternImp",

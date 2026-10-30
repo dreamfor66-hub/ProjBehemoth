@@ -1,0 +1,10 @@
+PASS — scoped physical-input checks in the user's Unity Editor, 1920x1080 Game view.
+
+F1 opens the saved catalog with Game view focused; F1 closes it.
+Mouse wheel inside the grid reaches lower rows; the item beneath the cursor opens its corresponding side popup.
+Dragging the gold scrollbar thumb from the upper area to the bottom reaches the final two monster entries.
+Final scrollbar revision has zero sizeDelta on its driven handle: thumb stays entirely inside its track, clear of the count and selection rows.
+Panel fits entirely in the Game view. Monster faces, selected border/name, tabs, grant/battle buttons, infinite ON/OFF label and footer are readable.
+
+The live matrix covers 44 monsters, 41 perks, 92 relics and 7 potions; all current descriptions fit.
+No new Unity instance, background suite or balance/DPS comparison was started. Real-device verification remains pending.

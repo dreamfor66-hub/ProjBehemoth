@@ -1,0 +1,7 @@
+Actual act-one encounter formations, offsets, delays and summons. LV2 one perk / LV3 two perks / LV4 three perks. Warrior numeric baseline preserved.
+REVIEW 해골 전사 · 고블린사냥꾼: HP loss=16.80, time=13.47, guard minimum=0.00, breaks=1
+REVIEW 흡혈박쥐 · 거미: HP loss=76.80, time=24.34, guard minimum=0.00, breaks=3
+PASS 경종 사냥개 · 고블린사냥꾼: HP loss=0.00, time=10.04, guard minimum=0.00, breaks=1
+PASS 쌍두 문지기: HP loss=0.00, time=25.21, guard minimum=0.00, breaks=2
+PASS 움직이는 갑옷: HP loss=0.00, time=10.16, guard minimum=6.20, breaks=1
+PASS 철갑 사마귀: HP loss=0.00, time=12.72, guard minimum=1.90, breaks=1

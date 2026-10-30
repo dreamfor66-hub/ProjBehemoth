@@ -23,7 +23,7 @@ MonoBehaviour:
   id: ArcaneGuard
   displayName: "\uBE44\uC804 \uBC29\uBCBD"
   description: "\uC8FC\uBB38 \uBC1C\uB3D9 \uC2DC \uAC00\uB4DC\uAC8C\uC774\uC9C0 +4."
-  icon: {fileID: 21300000, guid: 332349e6899450d88487aae206be44d2, type: 3}
+  icon: {fileID: 21300000, guid: b87143ce1ccaa574cbff997513e95923, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 47
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

@@ -1,0 +1,14 @@
+{
+  "runtimePass": 24,
+  "runtimeFail": 0,
+  "captureSize": [
+    1920,
+    1080
+  ],
+  "sixDistinctCaptures": true,
+  "unchangedOtherIllustrationsAndSpriteMetas": true,
+  "rollbackPreflight": "passed for all3 changed illustrations; actual restore not performed",
+  "generator": "built-in image_gen",
+  "scope": "selection illustrations only, no combat/balance/full menu suite",
+  "inheritedPlayAttempt": "Runtime-InheritedPlay.txt retained:5 failed selection callbacks after script reload. Fresh selection scene verified24PASS0FAIL; prior results not claimed as passed."
+}

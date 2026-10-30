@@ -75,7 +75,6 @@ internal static class AngularWorldPreparation
             animation.idle=sprite;animation.guard=null;
             animation.canvasScale=1;animation.illustratedLayout=true;animation.illustratedMotion=false;EditorUtility.SetDirty(animation);monster.combatAnimation=animation;
             var bounds=OpaqueBounds(path);
-            animation.labelHeight=190f*1.65f*(.5f-bounds.x)+55f;
             var floating=new[]{"StringRevenant","Threadling","QuillSprite","VeilOracle","MirrorMoth","MaskedChoir","TempestRoc","StormJelly","AshGargoyle","HollowEye","AshDragon","SunIdol","MoonIdol"};
             animation.combatPositionOffset=new Vector2(0,floating.Contains(e.id)?0:-220f+190f*1.65f*(bounds.y-.5f));
             var actions=new List<MonsterAttackData>();

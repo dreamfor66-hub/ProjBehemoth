@@ -15,12 +15,12 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.threadling-1.displayname
-    lastText: "\uC2E4\uC778\uD615\uC758 \uAC15\uD0C0 1"
+    lastText: "\uD68C\uC804 \uB3CC\uC9C4"
   textOwnerGuid: d6dae345313f6804191539022db0ac3e
   type: 1
-  displayName: "\uC2E4\uC778\uD615\uC758 \uAC15\uD0C0 1"
-  damage: 13
-  shieldDamage: 20.800001
+  displayName: "\uD68C\uC804 \uB3CC\uC9C4"
+  damage: 16
+  shieldDamage: 22
   windupDuration: 1
   recoveryDuration: 0.5
   guardable: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
   chargeTimeLimit: 3.5
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: 0, y: 0}
+    localPosition: {x: 0, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0

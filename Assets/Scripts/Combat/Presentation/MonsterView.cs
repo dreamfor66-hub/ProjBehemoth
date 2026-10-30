@@ -1,6 +1,7 @@
 using TMPro;
 using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,6 @@ namespace DungeonSlash
         private float attackNameHideAt;
         public ArcadePresentation presentation;
         private CombatSpriteAnimator animator;
-        public float arcadeArtScale=1.65f;
         private float attackUntil;
         private MonsterData boundData;
         public void PlayAttack(){attackUntil=Time.time+.3f;if(animator!=null)animator.Play(animator.library,CombatVisualState.Attack,true);}
@@ -63,31 +63,79 @@ namespace DungeonSlash
         {
             if (runtime == null || runtime.Data == null) return;
             boundData=runtime.Data;
-            var artScale = presentation != null && presentation.arcade ? arcadeArtScale : 1f;
-            float artOffsetY = 0f;
-            float artHeight = root.rect.height;
-            if (body != null && runtime.Data.combatAnimation is { UsesIllustratedLayout: true } groundLayout)
-            {
-                // Every state uses the same Idle contact line so attacks can lift feet naturally.
-                var sprite = groundLayout.idle;
-                if (sprite != null) artHeight = Mathf.Min(root.rect.height, root.rect.width * sprite.rect.height / sprite.rect.width);
-                artHeight *= artScale * groundLayout.canvasScale;
-                artOffsetY = -runtime.Data.bodyHitRadius + (.5f - groundLayout.groundContactY) * artHeight;
-                body.rectTransform.anchoredPosition = new Vector2(0, artOffsetY);
-            }
-            if (presentation != null && presentation.arcade && runtime.Data.combatAnimation is { UsesIllustratedLayout: true } layout)
-            {
-                var nameHeight = artOffsetY + (layout.artworkTopY - .5f) * artHeight + 65f;
-                if (stateLabel != null) stateLabel.rectTransform.anchoredPosition = new Vector2(0, nameHeight);
-                if (hpFill != null && hpFill.transform.parent is RectTransform bar)
-                    bar.anchoredPosition = new Vector2(0, nameHeight - 43f);
-            }
+            var library = runtime.Data.combatAnimation;
+            // A break interrupts even an attack painting that has not timed out yet.
+            if (runtime.IsStunned) attackUntil = 0f;
+            var pose = !runtime.IsAlive ? CombatVisualState.Dead : runtime.IsStunned ? CombatVisualState.Stunned : Time.time < attackUntil ? CombatVisualState.Attack
+                : runtime.State is MonsterState.Charging or MonsterState.Attacking ? CombatVisualState.Ready : CombatVisualState.Idle;
+            var sprite = library != null ? library.For(pose) : runtime.Data.portrait;
+            if (sprite == null && library != null) sprite = library.idle;
+            if (sprite == null) sprite = runtime.Data.portrait;
             if (body != null)
             {
-                body.sprite = runtime.Data.portrait;body.preserveAspect = runtime.Data.portrait != null;
-                body.color = runtime.State == MonsterState.Stunned ? new Color(1f, .89f, .65f) : runtime.Data.portrait != null ? Color.white : runtime.Data.bodyColor;
-                body.rectTransform.localScale=Vector3.one*(presentation!=null&&presentation.arcade?arcadeArtScale:1);
-                Animate(runtime.Data,!runtime.IsAlive?CombatVisualState.Dead:Time.time<attackUntil?CombatVisualState.Attack:runtime.State is MonsterState.Charging or MonsterState.Attacking?CombatVisualState.Ready:CombatVisualState.Idle);
+                body.overrideSprite = null;
+                body.sprite = sprite;
+                body.enabled = sprite != null;
+                body.color = runtime.IsStunned && (library == null || library.stunned == null) ? new Color(1f, .89f, .65f) : Color.white;
+                body.preserveAspect = true;
+                body.useSpriteMesh = false;
+                body.rectTransform.anchorMin = body.rectTransform.anchorMax = new Vector2(.5f, .5f);
+                body.rectTransform.pivot = new Vector2(.5f, .5f);
+                body.rectTransform.localScale = Vector3.one;
+                if (sprite != null)
+                {
+                    var pixelSize = MonsterData.ArtworkUnitsPerWorldUnit / sprite.pixelsPerUnit;
+                    var size = sprite.rect.size * pixelSize;
+                    root.sizeDelta = size;
+                    body.rectTransform.sizeDelta = size;
+                    body.rectTransform.anchoredPosition = (sprite.rect.size * .5f - sprite.pivot) * pixelSize;
+                }
+                Animate(runtime.Data, pose);
+            }
+            var cropped = library != null && library.tightPoseFrames;
+            var bounds = runtime.Data.ArtworkBounds;
+            if (cropped && library != null)
+                foreach (var frame in new[] { library.idle, library.ready, library.attack })
+                    if (frame != null)
+                    {
+                        var b = MonsterData.ArtworkBoundsOf(frame);
+                        bounds.yMax = Mathf.Max(bounds.yMax, b.yMax);
+                        bounds.xMin = Mathf.Min(bounds.xMin, b.xMin);
+                        bounds.xMax = Mathf.Max(bounds.xMax, b.xMax);
+                    }
+            var top = bounds.yMax + (cropped ? 36 : 65);
+            var scene = GetComponentInParent<CombatSceneView>();
+            if (cropped && scene != null)
+                top = Mathf.Min(top, scene.LogicalArea.rect.yMax - 130 - scene.LogicalArea.InverseTransformPoint(root.position).y);
+            if (stateLabel != null)
+            {
+                stateLabel.rectTransform.anchoredPosition = new Vector2(0, top);
+                if (cropped)
+                {
+                    stateLabel.rectTransform.sizeDelta = new Vector2(Mathf.Max(300, bounds.width * .4f), 40);
+                    stateLabel.fontSize = 28;
+                }
+            }
+            if (hpFill != null && hpFill.transform.parent is RectTransform bar)
+                bar.anchoredPosition = new Vector2(0, top - (cropped ? 38 : library != null && library.UsesIllustratedLayout ? 43 : 52));
+            if (cropped && directionalGuardLabel != null)
+            {
+                directionalGuardLabel.rectTransform.anchoredPosition = new Vector2(0, top - 73);
+                directionalGuardLabel.rectTransform.sizeDelta = new Vector2(310, 32);
+                directionalGuardLabel.fontSize = 22;
+                directionalGuardLabel.outlineColor = Color.black;
+                directionalGuardLabel.outlineWidth = .18f;
+            }
+            if (cropped && directionalGuardFill != null && directionalGuardFill.transform.parent is RectTransform guardBar)
+                guardBar.anchoredPosition = new Vector2(0, top - 98);
+            if (cropped && scene != null && bounds.width > scene.LogicalArea.rect.width * .6f)
+            {
+                var actionPosition = new Vector2(400, -12);
+                var timerPosition = new Vector2(400, -74);
+                if (attackNameLabel != null) { attackNameLabel.rectTransform.anchoredPosition = actionPosition; attackNameLabel.rectTransform.sizeDelta = new Vector2(350, 50); attackNameLabel.fontSize = 30; }
+                if (attackNameBackdrop != null) { attackNameBackdrop.rectTransform.anchoredPosition = actionPosition; attackNameBackdrop.rectTransform.sizeDelta = new Vector2(370, 54); }
+                if (chargeTimeLabel != null) { chargeTimeLabel.rectTransform.anchoredPosition = timerPosition; chargeTimeLabel.rectTransform.sizeDelta = new Vector2(240, 56); chargeTimeLabel.fontSize = 40; }
+                if (chargeTimeBackdrop != null) { chargeTimeBackdrop.rectTransform.anchoredPosition = timerPosition; chargeTimeBackdrop.rectTransform.sizeDelta = new Vector2(260, 60); }
             }
             if (stateLabel != null)
             {
@@ -104,7 +152,10 @@ namespace DungeonSlash
             {
                 var charging = (runtime.State is MonsterState.Charging or MonsterState.Attacking) && runtime.StateTimer > 0f;
                 chargeTimeLabel.enabled = charging;
-                if (charging) chargeTimeLabel.text = runtime.StateTimer.ToString("0.0")+GameText.Get("ui.feedback.seconds");
+                if (charging)
+                {
+                    chargeTimeLabel.text = runtime.StateTimer.ToString("0.0")+"<size=60%>"+GameText.Get("ui.feedback.seconds")+"</size>";
+                }
                 if(charging&&attackNameLabel!=null){attackNameLabel.text=(runtime.State==MonsterState.Charging?runtime.CurrentChargeAttack:runtime.NormalAttack)?.displayName;attackNameLabel.enabled=true;attackNameHideAt=Time.unscaledTime+.1f;SetVisible(attackNameBackdrop,true);}
                 SetVisible(chargeTimeBackdrop, charging);
             }

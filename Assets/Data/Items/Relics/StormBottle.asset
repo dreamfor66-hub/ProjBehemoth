@@ -23,7 +23,7 @@ MonoBehaviour:
   id: StormBottle
   displayName: "\uBCD1 \uC18D\uC758 \uD3ED\uD48D"
   description: "\uCC28\uC9C0 \uC801\uC911 \uC2DC \uBC88\uAC1C \uD53C\uD574 8 \uCD94\uAC00."
-  icon: {fileID: 21300000, guid: efab2121c4ec5547980eed0f47c504e2, type: 3}
+  icon: {fileID: 21300000, guid: c6b2547c5bc5851439f3639b91bb6e1e, type: 3}
   scope: 3
   exclusiveCharacter: 0
   power: 56
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

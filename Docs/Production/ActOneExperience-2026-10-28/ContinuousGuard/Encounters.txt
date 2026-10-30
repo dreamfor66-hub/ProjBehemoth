@@ -1,0 +1,11 @@
+Actual act-one formations with declared normalized growth budgets. Required pre-boss growth; under-budget at earlier checkpoints. Not random-run averages.
+PASS 해골 전사 · 고블린사냥꾼: HP loss=0.00, time=15.05, guard minimum=0.00, breaks=1
+REVIEW 흡혈박쥐 · 거미: HP loss=76.80, time=22.50, guard minimum=0.00, breaks=3
+PASS 경종 사냥개 · 고블린사냥꾼: HP loss=0.00, time=11.78, guard minimum=0.00, breaks=1
+PASS 쌍두 문지기: HP loss=0.00, time=22.75, guard minimum=0.00, breaks=1
+PASS 움직이는 갑옷: HP loss=0.00, time=9.31, guard minimum=6.20, breaks=1
+PASS 철갑 사마귀: HP loss=0.00, time=11.01, guard minimum=1.40, breaks=1
+PASS 미궁 스핑크스: HP loss=0.00, time=52.94, guard minimum=0.00, breaks=3
+REVIEW 납골당의 종: HP loss=18.00, time=17.76, guard minimum=0.00, breaks=1
+PASS 실짜는 공작부인 · 실인형: HP loss=0.00, time=23.72, guard minimum=0.00, breaks=2
+COMPLETE review=2. Automated pilot uses production cooldowns, actual placements and manual-length charge preparation. Human encounter feel and varied builds remain pending.

@@ -1,0 +1,3 @@
+# Sword-swing follow-through correction
+
+User rejected previous forward hinge as bowing, not sword swing. New image uses rotation: hips resist, ribcage and shoulders turn to left beyond belt, far sword shoulder follows through and sword extends left at upper-body height, cloth trails right. Sword hand/grip stay occluded; left shield stays attached left. First candidate duplicated the two-rivet pauldron on shield upper arm; corrected to olive cloth/dark sleeve while retaining left forearm iron and bindings. Right pauldron remains one foreshortened plate on far sword shoulder. Original Idle/Ready unchanged. Selected30cf4245 installed retaining existing meta. Built-in image_gen prompts in Prompts.json. No system/runtime/balance verification. User review pending.

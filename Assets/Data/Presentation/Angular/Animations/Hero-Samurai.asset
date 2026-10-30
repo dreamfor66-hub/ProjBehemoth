@@ -15,13 +15,19 @@ MonoBehaviour:
   idle: {fileID: 21300000, guid: 7505e885911cc694fb6ab4bc6e2c7332, type: 3}
   attack: {fileID: 21300000, guid: 96fbe92fcc49dc54e9be2f9d593cc593, type: 3}
   guard: {fileID: 21300000, guid: 7e96fb08b05d10e4aa9e66dbd8a7a176, type: 3}
-  ready: {fileID: 0}
+  ready: {fileID: 21300000, guid: 4a6cecedff396454996f927d17c60c74, type: 3}
   dead: {fileID: 0}
   canvasScale: 1.1292576
+  canvasPaddingPixels: {x: 724, y: 0, z: 724, w: 218}
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: 0}
-  labelHeight: 116
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

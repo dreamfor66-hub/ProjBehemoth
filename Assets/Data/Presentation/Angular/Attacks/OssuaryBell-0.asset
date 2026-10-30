@@ -15,11 +15,11 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.ossuarybell-0.displayname
-    lastText: "\uB0A9\uACE8\uB2F9\uC758 \uC885\uC758 \uACAC\uC81C"
+    lastText: "\uC0BC\uC5F0 \uC885\uACA9"
   textOwnerGuid: b307c58396569f3438211fd309cb8ce0
   type: 0
-  displayName: "\uB0A9\uACE8\uB2F9\uC758 \uC885\uC758 \uACAC\uC81C"
-  damage: 6
+  displayName: "\uC0BC\uC5F0 \uC885\uACA9"
+  damage: 9
   shieldDamage: 9.6
   windupDuration: 1.3
   recoveryDuration: 0.5

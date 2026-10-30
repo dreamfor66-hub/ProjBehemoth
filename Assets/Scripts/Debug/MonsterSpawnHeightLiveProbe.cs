@@ -27,7 +27,7 @@ public sealed class MonsterSpawnHeightLiveProbe : MonoBehaviour
         Check(scene.MonsterPosition==new Vector2(0,-150),"saved spawn root=(0,-150)");
         var skeleton=combat.Enemies[0].Data;var view=FindFirstObjectByType<MonsterView>();
         var center=view.Root.anchoredPosition+scene.MonsterPosition;
-        Check(Mathf.Abs(center.y-skeleton.bodyHitRadius*view.Root.localScale.y+150)<.01f,"single skeleton hitbox bottom=-150");
+        Check(Mathf.Abs(center.y-(-skeleton.FootprintY)*view.Root.localScale.y+150)<.01f,"single skeleton hitbox bottom=-150");
         Check(scene.PlayerPosition==new Vector2(0,-532),"foreground player remains at -532");
         combat.InputPaused=true;yield return Capture("01-Skeleton-Lowered");combat.InputPaused=false;
         combat.Enemies[0].StartCharge(center);yield return null;
@@ -43,7 +43,7 @@ public sealed class MonsterSpawnHeightLiveProbe : MonoBehaviour
         var views=FindObjectsByType<MonsterView>(FindObjectsSortMode.None).OrderBy(v=>v.Root.anchoredPosition.x).ToArray();
         var bottoms=new[]{new Vector2(-370,-215),new Vector2(0,-150),new Vector2(370,-215)};
         Check(views.Length==3,"three monsters spawned");
-        for(var i=0;i<views.Length;i++){var bottom=views[i].Root.anchoredPosition+scene.MonsterPosition-Vector2.up*skeleton.bodyHitRadius*views[i].Root.localScale.y;Check(Vector2.Distance(bottom,bottoms[i])<.01f,"formation bottom="+bottom);}
+        for(var i=0;i<views.Length;i++){var bottom=views[i].Root.anchoredPosition+scene.MonsterPosition-Vector2.up*(-skeleton.FootprintY)*views[i].Root.localScale.y;Check(Vector2.Distance(bottom,bottoms[i])<.01f,"formation bottom="+bottom);}
         yield return Capture("03-Trio-Lowered");combat.ResetEncounter();
         File.AppendAllText(Folder+"Live.txt","COMPLETE failures="+failures+". Play stopped after scoped test.\n");UnityEditor.EditorApplication.isPlaying=false;
     }

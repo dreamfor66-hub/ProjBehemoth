@@ -1,0 +1,17 @@
+Scoped live frame check: production PlayerView and saved Warrior images. No combat/DPS suite.
+PASS Warrior painting duration = .495 seconds (1.65 x .3)
+PASS attack cooldown remains .85 seconds
+PASS Rogue duration remains .3 seconds
+PASS Monk duration remains .3 seconds
+PASS Wizard duration remains .3 seconds
+PASS Samurai duration remains .3 seconds
+PASS Barbarian duration remains .3 seconds
+PASS immediate Attack 0
+PASS still Attack after old .3s deadline 0
+PASS Idle at elapsed 0.4987 direction 0
+PASS valid Idle painting restored
+PASS immediate Attack 1
+PASS still Attack after old .3s deadline 1
+PASS Idle at elapsed 0.5034 direction 1
+PASS valid Idle painting restored
+COMPLETE failures=0

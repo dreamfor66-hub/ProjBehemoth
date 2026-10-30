@@ -18,30 +18,42 @@ MonoBehaviour:
     lastText: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
   - propertyPath: encounterHint
     key: data.monsterdata.data_monster_b1_boss_mazeguardian.encounterhint
-    lastText: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4
-      \uAC15\uD0C0\uB97C \uB04A\uC790."
+    lastText: "\uD3BC\uCE5C \uC591 \uB0A0\uAC1C\uC640 \uB450 \uC55E\uBC1C\uC758 \uC57D\uC810\uC744
+      \uC774\uC5B4 \uBCA0\uC5B4 \uAC70\uCCB4\uC758 \uAC15\uD0C0\uB97C \uB04A\uC790."
   textOwnerGuid: fb0cdacf025fd12468b40e7cc65b2ae7
   displayName: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4"
-  portrait: {fileID: 21300000, guid: cf0020e73503ffc4d8c0aa80b5cd319f, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 26de35651a18c334a884f49a67a281b0, type: 2}
-  encounterHint: "\uD544\uC218 \uC57D\uC810\uB4E4\uC744 \uC5F0\uACB0\uD574 \uBCA0\uC5B4
-    \uAC15\uD0C0\uB97C \uB04A\uC790."
+  portrait: {fileID: 21300000, guid: 24381773f51d23847bfe2cab5f12b4d8, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 811a32153bc41ea4fa09b206cf888d91, type: 2}
+  encounterHint: "\uD3BC\uCE5C \uC591 \uB0A0\uAC1C\uC640 \uB450 \uC55E\uBC1C\uC758
+    \uC57D\uC810\uC744 \uC774\uC5B4 \uBCA0\uC5B4 \uAC70\uCCB4\uC758 \uAC15\uD0C0\uB97C
+    \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
+  useOrbit: 0
   orbitRadius: 170
   orbitSpeed: 0.55
-  maxHp: 900
+  maxHp: 1050
   normalAttackInterval: 2.25
   chargeInterval: 5.2
   stunDuration: 4.5
   stunDamageMultiplier: 1.65
   experienceReward: 100
   goldReward: 11
-  bodyHitRadius: 108
+  combatScale: 1
+  hitBoxes:
+  - center: {x: -7.072998, y: -8.841239}
+    radius: 205
+  - center: {x: -283.945, y: 96.15}
+    radius: 155
+  - center: {x: 291.48502, y: 107.46}
+    radius: 155
+  - center: {x: -188.84999, y: -162.45999}
+    radius: 95
+  - center: {x: 179.42499, y: -170}
+    radius: 95
   attacks:
   - {fileID: 11400000, guid: 7c51db371df73224d901ccddb97f8ee4, type: 2}
   - {fileID: 11400000, guid: 8bcc1bfd690bf3c43a63d3d6df0cd6ae, type: 2}
   - {fileID: 11400000, guid: 56bae6f926e578048abb544ca89110e9, type: 2}
   normalAttackSequence: []
-  bodyColor: {r: 0.9, g: 0.18, b: 0.12, a: 1}

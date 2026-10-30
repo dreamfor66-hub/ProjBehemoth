@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_Special_MerchantMutant
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_special_merchantmutant.displayname
+    lastText: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_special_merchantmutant.encounterhint
+    lastText: "\uD070 \uACF5\uACA9\uC744 \uC900\uBE44\uD560 \uB54C \uC5F4\uB9B0 \uC57D\uC810\uC744
+      \uB178\uB9AC\uC790."
+  textOwnerGuid: 47d6d43ce99c4764985d63037cfb301e
+  displayName: "\uAE08\uBA39\uB294 \uB450\uAEBC\uBE44"
+  portrait: {fileID: 21300000, guid: c44c294ea32bd3f48a82a3ec39de0377, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 6220093cf42765c44ab21ca5a5bd95ce, type: 2}
+  encounterHint: "\uD070 \uACF5\uACA9\uC744 \uC900\uBE44\uD560 \uB54C \uC5F4\uB9B0
+    \uC57D\uC810\uC744 \uB178\uB9AC\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 960
+  normalAttackInterval: 1.15
+  chargeInterval: 3.45
+  stunDuration: 4.8
+  stunDamageMultiplier: 1.65
+  experienceReward: 213
+  goldReward: 25
+  bodyHitRadius: 108
+  useAuthoredFootprint: 0
+  combatScale: 1
+  bodySize: {x: 220, y: 220}
+  artworkSize: {x: 420, y: 460}
+  weakPointLayoutScale: {x: 1, y: 1}
+  bodyLobes: []
+  attacks:
+  - {fileID: 11400000, guid: c65ba8108a2e66340a634e26803d6ec7, type: 2}
+  - {fileID: 11400000, guid: a5d49a9d5f514be4fa14263820a031f7, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.48, g: 0.1, b: 0.08, a: 1}

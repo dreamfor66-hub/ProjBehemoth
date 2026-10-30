@@ -65,7 +65,7 @@ namespace DungeonSlash
             var hasText=false;
             foreach(var graphic in graphics)
             {
-                var isText=graphic is TMP_Text||graphic is TMP_SubMeshUI||graphic is InkUiSurface||graphic is SlantedGuardGauge guard&&guard.inkStyle!=null||graphic is ArcGaugeGraphic arc&&arc.inkStyle!=null;
+                var isText=graphic is TMP_Text||graphic is TMP_SubMeshUI||graphic is InkUiSurface||graphic is WeakPointReticle||graphic is WeakPointShatterGraphic||graphic is WeakPointHitPip||graphic is AttackRecoveryGauge||graphic is SlantedGuardGauge guard&&guard.inkStyle!=null||graphic is ArcGaugeGraphic arc&&arc.inkStyle!=null;
                 if(!hasText&&!isText)continue;
                 var renderer=graphic.canvasRenderer;
                 var source=renderer.GetMesh();

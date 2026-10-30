@@ -33,6 +33,11 @@ namespace DungeonSlash
         public bool DetailsVisible => detailsPanel != null && detailsPanel.activeSelf;
         public UnityEngine.Events.UnityEvent<int> selectionChanged=new();
         public int SelectedIndex=>selected;
+        [Header("Illustrated character selection")]
+        public bool illustratedSelection;
+        public Image[] characterArtwork;
+        public Image[] characterFrames;
+        public GameObject illustratedIntroduction;
         private int selected;
         private void Awake()
         {
@@ -50,6 +55,7 @@ namespace DungeonSlash
         public void SetDetailsVisible(bool visible)
         {
             if(detailsPanel!=null)detailsPanel.SetActive(visible);
+            if(illustratedIntroduction!=null)illustratedIntroduction.SetActive(!visible);
             if(abilityStats==null)return; // Legacy layouts keep their existing popup content.
             if(selectionStory!=null)selectionStory.gameObject.SetActive(!visible);
             if(selectionStats!=null)selectionStats.gameObject.SetActive(!visible);
@@ -67,7 +73,7 @@ namespace DungeonSlash
             if(selectionRelic!=null)selectionRelic.text=GameText.Format("ui.feedback.selection.relic",data.startingRelic.displayName);
             if(selectionRelicIcon!=null){selectionRelicIcon.sprite=data.startingRelic.icon;selectionRelicIcon.color=Color.white;}
             characterName.text = data.displayName; characterName.color = presentation!=null&&presentation.darkPalette!=null?presentation.darkPalette.bone:data.characterColor;
-            if(selectedClassSymbol!=null)
+            if(selectedClassSymbol!=null&&!illustratedSelection)
             {
                 selectedClassSymbol.character=data.character;selectedClassSymbol.SetAllDirty();
                 var nameWidth=Mathf.Min(96,characterName.GetPreferredValues(data.displayName).x/4);
@@ -93,7 +99,7 @@ namespace DungeonSlash
                 for(var i=0;i<characterLabels.Length;i++)
                 {
                     characterLabels[i].text=content.characters[i].displayName;
-                    characterLabels[i].gameObject.SetActive(!useArt);
+                    characterLabels[i].gameObject.SetActive(illustratedSelection||!useArt);
                 }
             }
             for (var i = 0; i < selectionMarks.Length; i++) selectionMarks[i].color = i == selected ? data.characterColor : new Color(.17f, .22f, .3f);

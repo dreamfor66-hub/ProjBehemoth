@@ -22,13 +22,14 @@ MonoBehaviour:
       \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
   textOwnerGuid: b26dee8bc7d43af4e8bc812b5bf6296e
   displayName: "\uC22F\uBD88 \uB3C4\uB871\uB1FD"
-  portrait: {fileID: 21300000, guid: 3c8960af9db3b0343bd7d0e2b92be3ef, type: 3}
-  combatAnimation: {fileID: 11400000, guid: 6be3e436c944bcd46a3de2aa028ba7a5, type: 2}
+  portrait: {fileID: 21300000, guid: 1e9fff35087a6b24c83c4c53e3ebbe92, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 6a30e237e39957648b5e1a7df2b3026b, type: 2}
   encounterHint: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
     \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
   pattern: 0
   supportId: 
   diesWithLeader: 0
+  useOrbit: 0
   orbitRadius: 170
   orbitSpeed: 0.55
   maxHp: 247.5
@@ -38,9 +39,11 @@ MonoBehaviour:
   stunDamageMultiplier: 1.65
   experienceReward: 55
   goldReward: 6
-  bodyHitRadius: 108
+  combatScale: 1
+  hitBoxes:
+  - center: {x: 0, y: 0}
+    radius: 108
   attacks:
   - {fileID: 11400000, guid: b1731ad5f26e4a645b0177f6c0d3732b, type: 2}
   - {fileID: 11400000, guid: 065591a495967304d927859fc5dc9bbd, type: 2}
   normalAttackSequence: []
-  bodyColor: {r: 0.75, g: 0.32, b: 0.26, a: 1}

@@ -1,0 +1,1 @@
+Map typography and compact buttons checked at runtime.

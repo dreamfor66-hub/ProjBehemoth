@@ -1,0 +1,32 @@
+Scoped image transitions and held-input rendering only. No balance changes or combat suite.
+PASS Warrior: Idle image=Warrior-Rear
+FAIL Warrior: hold shows Ready without null sprite
+Visible sprite-less pale images: PlayerView(Clone) parent=PlayerSpawnRoot rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00)
+PASS Warrior: release switches Attack painting
+PASS Warrior: release recovers Idle
+PASS Rogue: Idle image=Rogue-Rear
+FAIL Rogue: hold shows Ready without null sprite
+Visible sprite-less pale images: PlayerView(Clone) parent=PlayerSpawnRoot rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00)
+PASS Rogue: release switches Attack painting
+PASS Rogue: release recovers Idle
+PASS Barbarian: Idle image=Barbarian-Rear
+FAIL Barbarian: hold shows Ready without null sprite
+Visible sprite-less pale images: PlayerView(Clone) parent=PlayerSpawnRoot rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00)
+PASS Barbarian: release switches Attack painting
+PASS Barbarian: release recovers Idle
+PASS Samurai: Idle image=Samurai-Rear
+FAIL Samurai: hold shows Ready without null sprite
+Visible sprite-less pale images: PlayerView(Clone) parent=PlayerSpawnRoot rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00)
+PASS Samurai: release switches Attack painting
+PASS Samurai: release recovers Idle
+PASS Monk: Idle image=Monk-Rear
+FAIL Monk: hold shows Ready without null sprite
+Visible sprite-less pale images: PlayerView(Clone) parent=PlayerSpawnRoot rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00)
+PASS Monk: release switches Attack painting
+PASS Monk: release recovers Idle
+PASS Wizard: Idle image=Wizard-Rear
+FAIL Wizard: hold shows Ready without null sprite
+Visible sprite-less pale images: PlayerView(Clone) parent=PlayerSpawnRoot rect=(x:-480.00, y:-510.00, width:960.00, height:1020.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00)
+PASS Wizard: release switches Attack painting
+PASS Wizard: release recovers Idle
+COMPLETE

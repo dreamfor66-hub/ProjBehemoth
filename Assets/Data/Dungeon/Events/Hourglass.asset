@@ -129,14 +129,15 @@ MonoBehaviour:
       \uB354 \uC2DC\uAC04\uC744 \uBE4C\uB9AC\uC9C0\uB294 \uC54A\uC558\uB2E4."
   textOwnerGuid: 02b0c4da36ea2854a8109ddc7cca55b9
   id: Hourglass
-  excludedFromRandomPool: 1
   displayName: "\uB0B4\uC77C\uC758 \uD55C\uC228"
+  excludedFromRandomPool: 1
   narrative: "\uAE30\uB85D\uC2E4 \uCC45\uC0C1 \uC704\uC5D0\uC11C \uBAA8\uB798\uAC00
     \uAC70\uAFB8\uB85C \uD750\uB974\uACE0 \uC788\uB2E4.\r\n\r\n\uC606\uC5D0 \uB193\uC778
     \uAE30\uB85D\uC5D0\uB294 \uC774 \uBAA8\uB798\uC2DC\uACC4\uB85C \uC2DC\uAC04\uC744
     \uBE4C\uB9B4 \uC218 \uC788\uB2E4\uACE0 \uC801\uD600 \uC788\uB2E4."
-  illustration: {fileID: 21300000, guid: 63d24083560e563895c74da1144abca4, type: 3}
+  illustration: {fileID: 21300000, guid: 246da3c3eed9a9741a32ab73ff16c65d, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
   minAct: 1
   maxAct: 3
   weight: 1
@@ -244,7 +245,7 @@ MonoBehaviour:
       \uAC70\uAFB8\uB85C \uD750\uB974\uACE0 \uC788\uB2E4.\r\n\r\n\uC606\uC5D0 \uB193\uC778
       \uAE30\uB85D\uC5D0\uB294 \uC774 \uBAA8\uB798\uC2DC\uACC4\uB85C \uC2DC\uAC04\uC744
       \uBE4C\uB9B4 \uC218 \uC788\uB2E4\uACE0 \uC801\uD600 \uC788\uB2E4."
-    illustration: {fileID: 21300000, guid: 63d24083560e563895c74da1144abca4, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uBAA8\uB798\uC2DC\uACC4\uB97C \uB4A4\uC9D1\uB294\uB2E4."
       description: 
@@ -312,7 +313,7 @@ MonoBehaviour:
       \uB354 \uC0DD\uACBC\uB2E4.\r\n\r\n\uAE30\uB85D\uC744 \uB354 \uC77D\uC5B4 \uBCF4\uB2C8,
       \uC2DC\uAC04\uC744 \uBE4C\uB9B0 \uB9CC\uD07C \uC218\uBA85\uC774 \uC904\uC5B4\uB4E0\uB2E4\uACE0
       \uD55C\uB2E4."
-    illustration: {fileID: 21300000, guid: 63d24083560e563895c74da1144abca4, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uC218\uBA85\uC744 \uB0B4\uC5B4 \uC8FC\uACE0 \uAC00\uC838\uAC04\uB2E4."
       description: "\uAE68\uC5B4\uC9C4 \uBAA8\uB798\uC2DC\uACC4 \uD68D\uB4DD"

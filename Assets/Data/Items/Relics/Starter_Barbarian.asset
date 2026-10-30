@@ -33,7 +33,7 @@ MonoBehaviour:
     \uBB34\uAE30 \uD53C\uD574 +30%, \uACF5\uACA9 \uCFE8\uD0C0\uC784 -45%, \uBC1B\uB294
     \uCCB4\uB825 \uD53C\uD574 -25%. \uBD84\uB178\uB294 \uCD08\uB2F9 25\uC911\uCCA9
     \uC18C\uBAA8\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: cd9ce8cdf8e3538b9816827461e85efc, type: 3}
+  icon: {fileID: 21300000, guid: af2a35a681f56b242855c6f8cf11975c, type: 3}
   scope: 1
   exclusiveCharacter: 2
   power: 0
@@ -70,6 +70,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -135,6 +136,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -166,6 +168,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -217,6 +220,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -262,6 +266,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

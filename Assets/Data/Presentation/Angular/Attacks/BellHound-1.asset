@@ -15,12 +15,12 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.bellhound-1.displayname
-    lastText: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C\uC758 \uAC15\uD0C0 1"
+    lastText: "\uC1A1\uACF3\uB2C8 \uAE09\uC2B5"
   textOwnerGuid: e2463d76a89eec1428406bf5740e99ee
   type: 1
-  displayName: "\uACBD\uC885 \uC0AC\uB0E5\uAC1C\uC758 \uAC15\uD0C0 1"
-  damage: 8
-  shieldDamage: 12.8
+  displayName: "\uC1A1\uACF3\uB2C8 \uAE09\uC2B5"
+  damage: 28
+  shieldDamage: 30
   windupDuration: 1
   recoveryDuration: 0.5
   guardable: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
   chargeTimeLimit: 3.2
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: 0, y: 0}
+    localPosition: {x: 0, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0

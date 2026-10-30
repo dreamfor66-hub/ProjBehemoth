@@ -32,9 +32,7 @@ MonoBehaviour:
   members:
   - monster: {fileID: 11400000, guid: b26dee8bc7d43af4e8bc812b5bf6296e, type: 2}
     offset: {x: -135, y: 35}
-    scale: 0.68
     actionDelay: 0
   - monster: {fileID: 11400000, guid: b7ca2b2d5338d534fa09cb132ac0e0d4, type: 2}
     offset: {x: 135, y: -30}
-    scale: 0.68
     actionDelay: 1.6

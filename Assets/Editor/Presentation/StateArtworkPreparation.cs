@@ -76,7 +76,8 @@ internal static class StateArtworkPreparation
         // Commit only after the complete imported set has passed validation.
         animation.idle = idle; animation.attack = loaded["Attack"];
         animation.guard = loaded.TryGetValue("Guard", out var guard) ? guard : null;
-        animation.ready = loaded.TryGetValue("Ready", out var ready) ? ready : null;
+        // Later authored player Ready paintings survive re-import of the original Attack/Guard set.
+        animation.ready = loaded.TryGetValue("Ready", out var ready) ? ready : actor.kind == "Player" ? animation.ready : null;
         animation.dead = loaded.TryGetValue("Dead", out var dead) ? dead : null;
         animation.illustratedLayout = true; animation.illustratedMotion = false;
         EditorUtility.SetDirty(animation);

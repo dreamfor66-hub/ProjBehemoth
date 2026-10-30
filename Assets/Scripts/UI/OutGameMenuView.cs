@@ -51,6 +51,17 @@ namespace DungeonSlash
             for(var i=0;i<selection.characterButtons.Length;i++)
             {
                 var button=selection.characterButtons[i];button.gameObject.SetActive(true);
+                if(selection.illustratedSelection)
+                {
+                    button.image.color=i==index?new Color32(83,29,23,255):new Color32(12,13,12,255);
+                    selection.characterLabels[i].color=light;
+                    if(selection.characterArtwork!=null&&i<selection.characterArtwork.Length&&selection.characterArtwork[i]!=null)
+                        selection.characterArtwork[i].color=i==index?Color.white:new Color(.66f,.66f,.66f,1);
+                    if(selection.characterFrames!=null&&i<selection.characterFrames.Length&&selection.characterFrames[i]!=null)
+                        selection.characterFrames[i].color=i==index?accent:new Color32(70,65,52,255);
+                    selection.selectionMarks[i].gameObject.SetActive(i==index);
+                    continue;
+                }
                 button.image.color=i==index?accent:ink;
                 selection.characterLabels[i].color=i==index?ink:light;
                 selection.selectionMarks[i].gameObject.SetActive(false);
@@ -75,8 +86,8 @@ namespace DungeonSlash
             }
             if(Page!=OutGamePage.Characters)return;
             var count=selection.characterButtons.Length;
-            if(Input.GetKeyDown(KeyCode.LeftArrow))selection.Select((selection.SelectedIndex+count-1)%count);
-            if(Input.GetKeyDown(KeyCode.RightArrow))selection.Select((selection.SelectedIndex+1)%count);
+            if(Input.GetKeyDown(KeyCode.LeftArrow)){selection.Select((selection.SelectedIndex+count-1)%count);Focus(selection.characterButtons[selection.SelectedIndex]);}
+            if(Input.GetKeyDown(KeyCode.RightArrow)){selection.Select((selection.SelectedIndex+1)%count);Focus(selection.characterButtons[selection.SelectedIndex]);}
         }
         private static void Focus(Selectable target){if(EventSystem.current!=null)EventSystem.current.SetSelectedGameObject(target.gameObject);}
         public void Quit()

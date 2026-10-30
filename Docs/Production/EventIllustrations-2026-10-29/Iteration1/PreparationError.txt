@@ -1,0 +1,5 @@
+System.InvalidOperationException: This cannot be used during play mode, please use SceneManager.LoadScene()/SceneManager.LoadSceneAsync() instead.
+  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.OpenScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEditor.SceneManagement.OpenSceneMode,UnityEngine.SceneManagement.Scene&)
+  at UnityEditor.SceneManagement.EditorSceneManager.OpenScene (System.String scenePath, UnityEditor.SceneManagement.OpenSceneMode mode) [0x0002a] in <b912dbff05184439afd77d89b5fecd71>:0 
+  at IllustratedEventPreparation.Prepare () [0x0017d] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\IllustratedEventPreparation.cs:45 
+  at IllustratedEventPreparation.Poll () [0x00076] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\IllustratedEventPreparation.cs:23 

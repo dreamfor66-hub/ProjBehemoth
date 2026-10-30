@@ -21,7 +21,12 @@ MonoBehaviour:
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: 0}
-  labelHeight: 116
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

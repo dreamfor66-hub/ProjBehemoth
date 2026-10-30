@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.mirrorshell-1.displayname
-    lastText: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637\uC758 \uAC15\uD0C0 1"
+    lastText: "\uAC15\uCCA0 \uB0B4\uB824\uCE58\uAE30"
   textOwnerGuid: 4f62504c42e9a9048bbf6003b05571bc
   type: 1
-  displayName: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637\uC758 \uAC15\uD0C0 1"
+  displayName: "\uAC15\uCCA0 \uB0B4\uB824\uCE58\uAE30"
   damage: 28
   shieldDamage: 44.8
   windupDuration: 1
@@ -28,12 +28,12 @@ MonoBehaviour:
   chargeTimeLimit: 3.8
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: -42.5, y: 0}
+    localPosition: {x: -42.5, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0
   - id: lock_1
-    normalizedPosition: {x: 42.5, y: 0}
+    localPosition: {x: 42.5, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0

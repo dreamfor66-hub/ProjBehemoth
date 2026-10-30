@@ -25,7 +25,7 @@ public sealed class StateArtworkLiveProbe : MonoBehaviour
     {
         wanted = ids.Split(','); Directory.CreateDirectory(Folder + "Screenshots"); Directory.CreateDirectory(Folder + "Verified");
         log = Folder + "Live-" + mode + "-" + DateTime.Now.ToString("HHmmss") + ".txt";
-        File.WriteAllText(log, "Scoped original 3/4/2 state-image contract; production actions and existing Unity Editor.\n");
+        File.WriteAllText(log, "Scoped 4/4/2 state-image contract (heroes include Ready); production actions and existing Unity Editor.\n");
         StartCoroutine(Review(mode));
     }
     void Check(bool ok, string message) { passed &= ok; File.AppendAllText(log, (ok ? "PASS " : "FAIL ") + message + "\n"); }
@@ -66,7 +66,7 @@ public sealed class StateArtworkLiveProbe : MonoBehaviour
         var combat = FindFirstObjectByType<CombatController>(); var scene = FindFirstObjectByType<CombatSceneView>();
         var input = FindFirstObjectByType<CombatInputController>(); var view = FindFirstObjectByType<PlayerView>(); var pose = Pose(view); var source = combat.Player.Data.combatAnimation;
         input.SpellModifierForVerification = false;
-        Contract(source, 3, row.id); Check(Shows(pose, CombatVisualState.Idle, source), row.id + " Idle");
+        Contract(source, 4, row.id); Check(Shows(pose, CombatVisualState.Idle, source), row.id + " Idle");
         var center = scene.MonsterPosition + combat.Enemies[0].Data.combatAnimation.combatPositionOffset;
         var stroke = new AttackSegment(center + Vector2.left * 120, center + Vector2.right * 120, 40);
         combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(stroke, false);

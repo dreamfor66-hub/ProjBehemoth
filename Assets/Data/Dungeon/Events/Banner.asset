@@ -91,6 +91,7 @@ MonoBehaviour:
   textOwnerGuid: 08bea5284c5daf54293c46921b217cb9
   id: Banner
   displayName: "\uC544\uC9C1 \uAD50\uB300 \uC2DC\uAC04\uC774 \uC544\uB2C8\uB2E4"
+  excludedFromRandomPool: 0
   narrative: "\uAC80\uBB38\uC18C\uC758 \uAC11\uC637\uC774 \uCC3D\uC744 \uB0B4\uB824
     \uAE38\uC744 \uB9C9\uB294\uB2E4.\r\n\r\n\uAD50\uB300\uC790. \uC18C\uC18D\uC744
     \uBC1D\uD600\uB77C.\r\n\r\n\uD22C\uAD6C \uC548\uC740 \uBE44\uC5B4 \uC788\uB2E4.
@@ -100,8 +101,9 @@ MonoBehaviour:
     \uC790\uACA9\uC744 \uC99D\uBA85\uD558\uB77C\uACE0 \uD55C\uB2E4.\r\n\r\n\uC2F8\uC6B8
     \uC0DD\uAC01\uC774 \uC5C6\uB2E4\uBA74 \uAE09\uB8CC\uD568\uB9CC \uBE44\uC6B0\uACE0
     \uAC00\uB77C. \uC544\uC9C1 \uBC1B\uC73C\uB7EC \uC628 \uC0AC\uB78C\uC774 \uC5C6\uB2E4."
-  illustration: {fileID: 21300000, guid: 0cc539c912e95349b6b5bdcbdde933b5, type: 3}
+  illustration: {fileID: 21300000, guid: 246da3c3eed9a9741a32ab73ff16c65d, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
   minAct: 1
   maxAct: 3
   weight: 1
@@ -181,7 +183,7 @@ MonoBehaviour:
       \uAD50\uB300\uD560 \uC790\uACA9\uC744 \uC99D\uBA85\uD558\uB77C\uACE0 \uD55C\uB2E4.\r\n\r\n\uC2F8\uC6B8
       \uC0DD\uAC01\uC774 \uC5C6\uB2E4\uBA74 \uAE09\uB8CC\uD568\uB9CC \uBE44\uC6B0\uACE0
       \uAC00\uB77C. \uC544\uC9C1 \uBC1B\uC73C\uB7EC \uC628 \uC0AC\uB78C\uC774 \uC5C6\uB2E4."
-    illustration: {fileID: 21300000, guid: 0cc539c912e95349b6b5bdcbdde933b5, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uB0B4\uAC00 \uAD50\uB300\uD55C\uB2E4"
       description: "\uC804\uD22C \xB7 \uC774\uB984 \uC5C6\uB294 \uAE43\uBC1C \uD68D\uB4DD"

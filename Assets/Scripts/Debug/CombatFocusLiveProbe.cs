@@ -144,7 +144,7 @@ public sealed class CombatFocusLiveProbe : MonoBehaviour
             practice.Setup(CharacterKind.Warrior, false); BindViews(); combat.ResetEncounter();
             var encounter = ScriptableObject.CreateInstance<EncounterData>();
             for (var index = 0; index < count; index++)
-                encounter.members.Add(new EncounterMember { monster = monster, scale = 1f, offset = new Vector2((index - (count - 1) * .5f) * 370f, count == 3 && index == 1 ? 0 : -65f) });
+                encounter.members.Add(new EncounterMember { monster = monster, offset = new Vector2((index - (count - 1) * .5f) * 370f, count == 3 && index == 1 ? 0 : -65f) });
             combat.PrepareFixedEncounter(combat.Run, encounter, 1);
             yield return null; // Destroyed views from the preceding practice leave at frame end.
             var before = FindObjectsByType<MonsterView>(FindObjectsSortMode.None).OrderBy(v => v.GetInstanceID()).Select(v => v.Root.anchoredPosition).ToArray();

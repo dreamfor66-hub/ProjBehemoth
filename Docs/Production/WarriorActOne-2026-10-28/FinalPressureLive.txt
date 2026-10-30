@@ -1,0 +1,10 @@
+Actual act-one reward builds. 2x simulation, telemetry in game seconds. Tight pilot honors attack cooldown, manual-duration charge/casting, timed guard; no normalized damage/HP injection. Human feel is separate.
+PASS starting guard recovery survives repeated BeginCombat; actual ThunderWire damage/cooldown and HunterLantern kill-heal match data.
+NEGATIVE CONTROL: guard held continuously, weak points ignored. Same actual rewards and production cooldowns.
+BUILD 중반·전투형: level=3, normal=18.10, charge=24.00, HP=110.0, guard=35.0, fatigue=94, steps=17; 누적XP115=2회 레벨업. 상자에서 공유 유물1개를 얻은 표준 탐색 가정. 이벤트·상점 성장 없음.
+RESULT 중반·전투형/철갑 사마귀: won, HP damage=32.00, guard minimum=0.00, seconds=20.52, breaks=0, telegraphs=2
+BUILD 보스 전·기준: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 누적XP330=4회 레벨업. 상자유물1개. 공격3.55U+체력1U=4.55U. 이벤트·상점 없이도 숙련 가드/약점으로 가능한 기준.
+RESULT 보스 전·기준/납골당의 종: won, HP damage=90.00, guard minimum=0.00, seconds=39.99, breaks=0, telegraphs=4
+BUILD 보스 전·기준: level=5, normal=20.10, charge=28.00, HP=110.0, guard=35.0, fatigue=80, steps=24; 누적XP330=4회 레벨업. 상자유물1개. 공격3.55U+체력1U=4.55U. 이벤트·상점 없이도 숙련 가드/약점으로 가능한 기준.
+RESULT 보스 전·기준/실짜는 공작부인 · 실인형: won, HP damage=96.00, guard minimum=0.00, seconds=40.04, breaks=0, telegraphs=6
+COMPLETE review=0. Human/mobile feel pending; this is a reproducible mechanical ceiling with actual production rewards, not ten random-run averages.

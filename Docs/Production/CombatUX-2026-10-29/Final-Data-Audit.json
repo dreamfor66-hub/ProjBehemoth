@@ -1,0 +1,741 @@
+{
+  "icon_paintings": 144,
+  "data_references": 183,
+  "all_new_icon_references": true,
+  "event_assets": 23,
+  "all_events_illustrated": true,
+  "references": [
+    {
+      "asset": "Assets/Data/Items/Perks/Assassination.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/BoilingBlood.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ChangingForms.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ConcentratedVenom.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ConversionImpact.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Counter.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/DecisiveBlow.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/DeepInjection.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ElementFocus.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Embers.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Exploit.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/FireMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/FlowFinish.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ForwardGuard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/FrenziedFist.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/HeavyWeapon.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/IceMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/InnerStrength.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/KeenInstinct.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/LightningMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/LongBlade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ManaBurn.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ManaFlow.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ManaVessel.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/OneSchool.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ParryEcho.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/PatientDraw.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/PoisonBlade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Pressure.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/RageWeight.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/RapidDraw.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Reform.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/SharpWeapon.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ShelterCounter.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ShieldImpact.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ShortIncantation.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Spellblade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/SwordRecovery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/ThreeElements.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/VenomStrike.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Perks/Vitality.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/AegisBattery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/AmberSeed.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ArcaneGuard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/AzureTalon.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/BloodContract.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/BloodFrenzy.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/BloodlessDraw.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ChainMaster.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ChargeCoil.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ChargeWard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ComboLeech.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/CorePrism.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/CrosswindCharm.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/DeadlyDose.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/DeferredPain.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/DistanceMomentum.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/DoubleCharge.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/DoubleDraw.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/DrawMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/EchoSpur.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/EdgeCharm.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/EmberMaster.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ExecuteRage.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Executioner.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/FirstStrike.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/FlowMaster.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/GoldenTooth.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/GuardianBell.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/GuardNova.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/GuidingWisp.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Hammer.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Hourglass.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/HundredFists.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/HunterLantern.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/IceFocus.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/IronFortress.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/LightningRod.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/LongDragon.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/LongRage.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/LongTiger.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/MindfulGuard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/MirrorShard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PainFrenzy.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Paladin.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Parasite.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ParryRecovery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PatientSheath.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PerfectMending.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PerfectRiposte.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PilgrimOath.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PoisonLeech.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/PressurePoint.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/QuickCasting.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/RageCharge.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/RageLeech.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/RaggedBanner.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ShadowCounter.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ShadowSheath.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ShelterMaster.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ShieldBash.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ShieldEdge.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Spear.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/SpellBlade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/SpellEcho.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/StaffConduit.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Starter_Barbarian.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Starter_Monk.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Starter_Rogue.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Starter_Samurai.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Starter_Warrior.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Starter_Wizard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/StormBottle.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/StrayDog.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Technique_CoreHarvest.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Technique_Harvest.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Technique_ImpactShield.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ThornBulwark.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ThunderousCharge.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ThunderWire.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_ChainLightning.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_Cleanse.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_Ember.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_EnchantFire.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_EnchantIce.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_EnchantLightning.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_EnergyBolt.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_FireBloom.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_FrostRing.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_LightningMark.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_PoisonMist.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Tome_Spark.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/TwinDaggers.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/Unstoppable.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/VenomSpread.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/ViperFang.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Relics/WellCurse.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/FatiguePotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/HealingPotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/OpeningRockPotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/PoisonPotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/RagePotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/RevivalPotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/Potions/StoneSkinPotion.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Assassination.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/BoilingBlood.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ChangingForms.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ConcentratedVenom.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ConversionImpact.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Counter.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/DeepInjection.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ElementFocus.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Embers.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Exploit.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/FireMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/FlowFinish.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ForwardGuard.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/FrenziedFist.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/HeavyWeapon.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/IceMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/InnerStrength.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/LightningMastery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/LongBlade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ManaBurn.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ManaFlow.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ManaVessel.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/OneSchool.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ParryEcho.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/PatientDraw.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/PoisonBlade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Pressure.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/RageWeight.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/RapidDraw.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Reform.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/SharpWeapon.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ShelterCounter.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ShieldImpact.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ShortIncantation.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Spellblade.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/SwordRecovery.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/ThreeElements.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/VenomStrike.asset",
+      "new_icon": true
+    },
+    {
+      "asset": "Assets/Data/Items/PerkAbilities/Vitality.asset",
+      "new_icon": true
+    }
+  ]
+}

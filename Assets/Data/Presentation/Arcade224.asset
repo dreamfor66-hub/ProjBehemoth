@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Arcade224
   m_EditorClassIdentifier: 
   arcade: 1
+  preserveIllustrationColors: 0
   revision: 5
   feedbackRevision: 4
   outgameRevision: 3

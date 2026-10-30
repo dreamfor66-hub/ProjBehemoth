@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: IronMantis
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 48a8eb3167ca8554abc678f5de774171, type: 3}
-  attack: {fileID: 21300000, guid: ea1cb7ac18a407b4cb41515032330753, type: 3}
+  idle: {fileID: 21300000, guid: f9c52622e8fdbdb43b1d78592665d472, type: 2}
+  attack: {fileID: 21300000, guid: ec248acd6a638c4428b86b757b3be108, type: 2}
   guard: {fileID: 0}
-  ready: {fileID: 21300000, guid: b63fb58e27c7a344ea6ba74b6eca7613, type: 3}
-  dead: {fileID: 21300000, guid: 54454a11fe8c8bd4c82ca9c684f77b3b, type: 3}
+  ready: {fileID: 21300000, guid: 60a4090b11a00ed4aad99f2da947c538, type: 2}
+  dead: {fileID: 21300000, guid: 9725e3455cf4682489f2a3564eb35ab2, type: 2}
   canvasScale: 1
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: -66.74999}
-  groundContactY: 0.005582137
-  artworkTopY: 0.9880383
-  labelHeight: 207
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

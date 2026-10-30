@@ -15,14 +15,21 @@ MonoBehaviour:
   minRooms: 20
   maxRooms: 26
   minimumBossDistance: 7
-  minimumMajorRewardDistance: 4
+  minimumChestDistance: 4
   minimumRewardRooms: 2
   minimumFountainRooms: 1
   minimumShopRooms: 1
   minimumGoddessRooms: 1
   eliteRoomCount: 1
-  majorRewardRoomCount: 1
+  chestRoomCount: 1
   loopChance: 0.18
   combatRoomRatioMin: 0.35
   combatRoomRatioMax: 0.55
   maxGenerationAttempts: 60
+  eventRoomCount: 3
+  firstActOpeningCombats: 3
+  firstActServiceDistance: 4
+  firstActCampDistance: 7
+  firstActMaximumExits: 3
+  firstActMaximumJunctions: 3
+  firstActLoopChance: 0.06

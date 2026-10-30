@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    1672,
+    941
+  ],
+  "regionMeanAbsoluteChannelDifference0to255": {
+    "face": 4.083,
+    "torso": 2.966,
+    "background": 2.38
+  },
+  "note": "Full-frame model retouch, not a pixel-identical masked composite. Review original composition/identity visually; local hand is intentional edit."
+}

@@ -15,12 +15,12 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.mirrorshell-0.displayname
-    lastText: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637\uC758 \uACAC\uC81C"
+    lastText: "\uC5F0\uC18D \uBCA0\uAE30"
   textOwnerGuid: fbe8a2e9c4e9ee945b3d6bd02390b5cc
   type: 0
-  displayName: "\uC6C0\uC9C1\uC774\uB294 \uAC11\uC637\uC758 \uACAC\uC81C"
+  displayName: "\uC5F0\uC18D \uBCA0\uAE30"
   damage: 9
-  shieldDamage: 14.400001
+  shieldDamage: 14.4
   windupDuration: 1.05
   recoveryDuration: 0.5
   guardable: 1

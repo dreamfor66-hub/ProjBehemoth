@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: BroodKeeper
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.broodkeeper.displayname
+    lastText: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778 \xB7 \uC2E4\uC778\uD615"
+  - propertyPath: hint
+    key: data.encounterdata.broodkeeper.hint
+    lastText: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4. \uBCF8\uCCB4\uC758
+      \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790.\n\uBCF8\uCCB4
+      \uC8FC\uC704\uB97C \uACF5\uC804\uD55C\uB2E4. \uC704\uCE58\uB97C \uB530\uB77C\uAC00\uBA70
+      \uB178\uB9AC\uC790."
+  textOwnerGuid: b86a1a1a70074264b8aa9f12411ab7a1
+  id: BroodKeeper
+  displayName: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778 \xB7 \uC2E4\uC778\uD615"
+  hint: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4. \uBCF8\uCCB4\uC758
+    \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790.\n\uBCF8\uCCB4
+    \uC8FC\uC704\uB97C \uACF5\uC804\uD55C\uB2E4. \uC704\uCE58\uB97C \uB530\uB77C\uAC00\uBA70
+    \uB178\uB9AC\uC790."
+  category: 10
+  members:
+  - monster: {fileID: 11400000, guid: 508c88aa0e5982046bfdaef18729110a, type: 2}
+    offset: {x: 0, y: 80}
+    scale: 0.9
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: b71e49b7bfafade4fb74b71c6409e7b8, type: 2}
+    offset: {x: -190, y: -55}
+    scale: 0.68
+    actionDelay: 0.85
+  - monster: {fileID: 11400000, guid: b71e49b7bfafade4fb74b71c6409e7b8, type: 2}
+    offset: {x: 190, y: -55}
+    scale: 0.68
+    actionDelay: 1.7

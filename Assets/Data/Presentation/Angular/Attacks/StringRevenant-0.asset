@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.stringrevenant-0.displayname
-    lastText: "\uD574\uACE8 \uC804\uC0AC\uC758 \uACAC\uC81C"
+    lastText: "\uBC29\uD328 \uAC15\uD0C0"
   textOwnerGuid: cb5ed15f41d8b044fa4759d0d686e1f7
   type: 0
-  displayName: "\uD574\uACE8 \uC804\uC0AC\uC758 \uACAC\uC81C"
+  displayName: "\uBC29\uD328 \uAC15\uD0C0"
   damage: 16.8
   shieldDamage: 16.8
   windupDuration: 0.957

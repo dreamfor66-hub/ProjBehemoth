@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: BroodKeeper
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.broodkeeper.displayname
+    lastText: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778"
+  - propertyPath: encounterHint
+    key: data.monsterdata.broodkeeper.encounterhint
+    lastText: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4. \uBCF8\uCCB4\uC758
+      \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790."
+  textOwnerGuid: 508c88aa0e5982046bfdaef18729110a
+  displayName: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778"
+  portrait: {fileID: 21300000, guid: 56dcf08bc6069e543bf7f30eca912bcf, type: 3}
+  combatAnimation: {fileID: 11400000, guid: e1e878bd623460b43bc9e388ab6384a5, type: 2}
+  encounterHint: "\uC8FC\uBCC0 \uC2E4\uC778\uD615\uC774 \uACF5\uC804\uD55C\uB2E4.
+    \uBCF8\uCCB4\uC758 \uC57D\uC810\uC744 \uB04A\uC5B4 \uACF5\uACA9\uC744 \uBA48\uCD94\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 420
+  normalAttackInterval: 2.6
+  chargeInterval: 4.6
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 40
+  goldReward: 20
+  bodyHitRadius: 95
+  attacks:
+  - {fileID: 11400000, guid: b514f027379ad424fbdcf499c2df4e00, type: 2}
+  - {fileID: 11400000, guid: 001d5f1ccf5d34f41819e4fb620b2434, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.8, g: 0.74880004, b: 0.48, a: 1}

@@ -1,0 +1,1 @@
+PASS Value-only baseline deserialization: 44 monsters, no referenced-asset loading.

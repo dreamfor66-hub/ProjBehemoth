@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: ChangingForms
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.changingforms.displayname
+    lastText: "\uBCC0\uCD08"
+  - propertyPath: description
+    key: data.perkdata.changingforms.description
+    lastText: "\uC11C\uB85C \uB2E4\uB978 \uCD08\uC2DD\uC744 3\uD68C \uC5F0\uC18D
+      \uC0AC\uC6A9\uD558\uBA74 \uB2E4\uC74C \uACF5\uACA9\uD615 \uCD08\uC2DD\uC5D0
+      \uBB3C\uB9AC \uD53C\uD574 18\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: 10dcc4ffbfc385b48a3d05b877eb5799
+  id: ChangingForms
+  displayName: "\uBCC0\uCD08"
+  description: "\uC11C\uB85C \uB2E4\uB978 \uCD08\uC2DD\uC744 3\uD68C \uC5F0\uC18D
+    \uC0AC\uC6A9\uD558\uBA74 \uB2E4\uC74C \uACF5\uACA9\uD615 \uCD08\uC2DD\uC5D0 \uBB3C\uB9AC
+    \uD53C\uD574 18\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: c853e0de8ce455ea91506025437f7f09, type: 3}
+  scope: 2
+  exclusiveCharacter: 4
+  abilitySource: {fileID: 11400000, guid: f6a34c6a74da6af41a0afad00024d427, type: 2}
+  maxStacks: 99
+  modifiers: []

@@ -25,7 +25,6 @@ namespace DungeonSlash
     {
         private const float FinalImpactHoldSeconds = .5f;
         private const float MonsterFadeSeconds = .45f;
-        private const float SummonedMinionScale = .62f;
 
         private sealed class ActiveMonster
         {
@@ -43,7 +42,7 @@ namespace DungeonSlash
                 View = view;
                 Position = position;
                 BasePosition = position;
-                VisualScale = Mathf.Clamp(visualScale, .25f, 1f);
+                VisualScale = Mathf.Max(.1f, visualScale);
             }
         }
 
@@ -196,10 +195,11 @@ namespace DungeonSlash
             for (var index = 0; index < validMonsters.Length; index++)
             {
                 var isOpeningSummon = index > 0 && encounterLeader != null && GetOpeningSummons(encounterLeader).Contains(validMonsters[index]);
-                var scale = isOpeningSummon ? SummonedMinionScale : 1f;
                 var actionDelay = isOpeningSummon ? .45f + (index - 1) * .75f : 0f;
                 var member = pendingEncounter != null && index < pendingEncounter.members.Count && pendingEncounter.members[index].monster == validMonsters[index] ? pendingEncounter.members[index] : null;
-                SpawnMonster(validMonsters[index], member != null ? sceneView.MonsterPosition + member.offset : sceneView.GetMonsterFormationPosition(index, validMonsters.Length), member != null ? member.scale : scale, member != null ? member.actionDelay : actionDelay);
+                var placement = member != null ? sceneView.MonsterPosition + member.offset
+                    : sceneView.GetMonsterFormationPosition(index, validMonsters.Length) + Vector2.up * validMonsters[index].FormationFootprintOffset;
+                SpawnMonster(validMonsters[index], placement, member != null ? member.actionDelay : actionDelay);
             }
             pendingEncounter = null;
 
@@ -280,6 +280,8 @@ namespace DungeonSlash
             if (playerView != null)
             {
                 playerView.PreparingAttack = IsActive && !InputPaused && input != null && input.IsPreparingAttack;
+                playerView.ShowLegacyRecovery = hud == null || hud.attackRecovery == null;
+                playerView.PreparingSwing = input!=null?input.PreparingSwing:SwordSwingDirection.RightToLeft;
                 playerView.Bind(Player);
             }
             if (InputPaused) return;
@@ -405,8 +407,7 @@ namespace DungeonSlash
             {
                 var monster = activeMonsters[index];
                 if (!monster.Runtime.IsAlive) continue;
-                var target = new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale);
-                if (!TargetTraversalResolver.Touches(movement, target)) continue;
+                if (!monster.Runtime.Data.IntersectsBody(movement, monster.Position, monster.VisualScale)) continue;
                 targetIndex = index;
                 return true;
             }
@@ -440,7 +441,7 @@ namespace DungeonSlash
         }
         private static System.Collections.Generic.IEnumerable<CircleHitShape> TraversalShapes(ActiveMonster monster)
         {
-            yield return new CircleHitShape(monster.Position, monster.Runtime.Data.bodyHitRadius * monster.VisualScale);
+            foreach (var shape in monster.Runtime.Data.BodyShapes(monster.Position, monster.VisualScale)) yield return shape;
             foreach (var point in monster.Runtime.WeakPoints.Where(point => point.IsActive && !point.IsDestroyed))
                 yield return new CircleHitShape(point.HitShape.Center, point.HitShape.Radius + WeakPointHitResolver.HitForgivenessRadius);
         }
@@ -471,7 +472,9 @@ namespace DungeonSlash
 
         public void ExecuteAttack(AttackSegment segment, bool charged) => ExecuteAttack(segment, charged, 1);
 
-        public void ExecuteAttack(AttackSegment segment, bool charged, int chargeLevel)
+        public void ExecuteAttack(AttackSegment segment, bool charged, int chargeLevel) => ExecuteAttack(segment,charged,chargeLevel,null);
+
+        public void ExecuteAttack(AttackSegment segment, bool charged, int chargeLevel,SwordSwingDirection? visualSwing)
         {
             if (!IsActive || InputPaused || resolvingAttackSequence || !Player.IsAlive || !Player.CanNormalAttack()) return;
             // Charge attacks use their own input preparation, but still consume the shared follow-up attack cooldown.
@@ -486,15 +489,16 @@ namespace DungeonSlash
                 segment = new AttackSegment(segment.Start, segment.Start + (segment.End - segment.Start) * range, segment.Width * range);
             }
             Player.StartAttackCooldown();
-            playerView?.PlayAttack();
+            var swing=visualSwing??(segment.Start.x<sceneView.LogicalArea.rect.center.x?SwordSwingDirection.LeftToRight:SwordSwingDirection.RightToLeft);
+            playerView?.PlayAttack(swing);
             if (currentAttack.AttackBuff != null) ShowDamage(sceneView.PlayerPosition + new Vector2(0, 120), currentAttack.AttackBuff.displayName, new Color(.55f, 1f, .7f));
             if (currentAttack.Draw) ShowDamage(sceneView.PlayerPosition + new Vector2(0, 120), GameText.Get(currentAttack.FeedbackKey ?? "ui.combatcontroller.9b76b68d"), new Color(1f, .65f, .8f));
-            if(currentAttack.Hits>1) { StartCoroutine(ExecuteAttackSequence(segment,currentAttack)); return; }
+            if(currentAttack.Hits>1) { StartCoroutine(ExecuteAttackSequence(segment,currentAttack,swing)); return; }
             ExecutePlayerAttack(segment, currentAttack.Charged, currentAttack.Multiplier, TriggerAttackTypeFor(currentAttack.Charged), true, true, 0);
             CompletePlayerAttack();
         }
 
-        private IEnumerator ExecuteAttackSequence(AttackSegment segment, CharacterAttack attack)
+        private IEnumerator ExecuteAttackSequence(AttackSegment segment, CharacterAttack attack,SwordSwingDirection swing)
         {
             resolvingAttackSequence=true;
             try
@@ -514,7 +518,7 @@ namespace DungeonSlash
                     else
                     {
                         attackLine?.Show(segment,attack.Charged);
-                        playerView?.PlayAttack();
+                        playerView?.PlayAttack(swing);
                         ApplyPlayerAttack(segment,attack.Charged,attack.Multiplier,TriggerAttackTypeFor(attack.Charged),true,true,0);
                     }
                     if(activeMonsters.All(m=>!m.Runtime.IsAlive))break;
@@ -567,7 +571,7 @@ namespace DungeonSlash
                         HoldWeakPointViewsForImpact(monster);
                     }
                 }
-                if (SegmentHitResolver.Intersects(segment, new CircleHitShape(monster.Position, runtime.Data.bodyHitRadius * monster.VisualScale)))
+            if (runtime.Data.IntersectsBody(segment, monster.Position, monster.VisualScale))
                 {
                     var baseDamage = (charged ? Player.ChargeAttackDamage : Player.NormalAttackDamage) * damageMultiplier * GetDirectAttackDamageMultiplier(segment, isDirectAttack);
                     if (isDirectAttack) baseDamage = ModifyDirectDamage(monster, segment, charged, baseDamage);
@@ -666,8 +670,8 @@ namespace DungeonSlash
 
             var existingSummons = activeMonsters.Count(monster => monster.Runtime.IsAlive && monster.Runtime.Data == summon);
             var direction = existingSummons % 2 == 0 ? -1f : 1f;
-            var position = source.Position - Vector2.up * (source.Runtime.Data.bodyHitRadius * source.VisualScale) + new Vector2(direction * 176f, -16f);
-            SpawnMonster(summon, position, SummonedMinionScale, .45f).View?.ShowAttackName(GameText.Get("ui.combatcontroller.bdcc2933"), .7f);
+            var position = source.Position + Vector2.up * source.Runtime.Data.FootprintY * source.VisualScale + new Vector2(direction * 300f, -16f);
+            SpawnMonster(summon, position, .45f).View?.ShowAttackName(GameText.Get("ui.combatcontroller.bdcc2933"), .7f);
             source.View?.ShowAttackName(GameText.Get("ui.combatcontroller.f6ad320"), .8f);
         }
 
@@ -733,10 +737,10 @@ namespace DungeonSlash
             monster.WeakPointVisualHoldUntil = 0f;
         }
 
-        private ActiveMonster SpawnMonster(MonsterData data, Vector2 position, float visualScale = 1f, float initialActionDelay = 0f)
+        private ActiveMonster SpawnMonster(MonsterData data, Vector2 position, float initialActionDelay = 0f)
         {
             // Floor identity and balance now live in each monster asset; never double-scale them here.
-            var runtime = new MonsterRuntime(data, visualScale: visualScale);
+            var runtime = new MonsterRuntime(data, visualScale: data.combatScale);
             position = data.BodyCenterFromPlacement(position, runtime.VisualScale);
             runtime.Awareness = run.Awareness;
             runtime.Buffs.Run=run;

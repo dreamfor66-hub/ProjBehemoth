@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: Threadling
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 13edb29419ae7494dab76da913730cc8, type: 3}
-  attack: {fileID: 21300000, guid: e87a414b26a375a43964c79107e2fd4a, type: 3}
+  idle: {fileID: 21300000, guid: 5ffaf67027af5574b8a6e1c785077886, type: 2}
+  attack: {fileID: 21300000, guid: 95d7c5a18ea53a1479c179ae15a170bd, type: 2}
   guard: {fileID: 0}
-  ready: {fileID: 21300000, guid: cd3015355484dce4a8521aa64eecf11a, type: 3}
-  dead: {fileID: 21300000, guid: 79f2905f089c7bd4fa10eba8ec8bc0d9, type: 3}
+  ready: {fileID: 21300000, guid: 8c557b8591646a94a8fece18b7d7be8e, type: 2}
+  dead: {fileID: 21300000, guid: 2d5f90e136c237140b8b2a225c7fb147, type: 2}
   canvasScale: 1
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: 0}
-  groundContactY: 0.011961723
-  artworkTopY: 0.99282295
-  labelHeight: 211.75
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

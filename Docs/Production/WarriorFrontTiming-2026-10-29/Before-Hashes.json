@@ -1,0 +1,13 @@
+{
+  "Assets/Art/World/Angular/Heroes/Warrior-Front.png": "e51e6b299609c7e8c7695841fa4f20295b1efeaf9616eacd9fbc220048114bd0",
+  "Assets/Art/Characters/Selection/SelectionWarrior.png": "4f054fa4b09028188e2104fa3ec5b88bcc333db570c1b39fea03fbdbee2f771f",
+  "Assets/Scripts/Combat/Presentation/PlayerView.cs": "308543a23f6cbb9b0d266f08a3afacea172973ecc657bb47dc23cf37a63c91e6",
+  "Assets/Scripts/Combat/Presentation/CombatSpriteAnimation.cs": "e4cf8492767246b08fc6c297788369b169588a74d82d0d04e3b7bbcf94e80943",
+  "Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset": "dcb09735d9e567275b39f757e65a0acf6daf0e9a9ceac716ddc1a57ffd134dfb",
+  "Assets/Art/World/Angular/States/Heroes/Warrior-Attack-LeftToRight.png": "432ac67e05c0ff38aea3a4a170f838aa64a11397b8e484874e885c79e62bbe40",
+  "Assets/Art/World/Angular/States/Heroes/Warrior-Attack.png": "6a8865e11c287e98de79d75166ad6bbcba3af0ecc0522e4382b71e9a4ad0e0b3",
+  "Assets/Art/World/Angular/States/Heroes/Warrior-Guard.png": "8d32e484d40d70cb8305b18849c1ca38aeb92ea2358a337b9a5ad3c6b72f7502",
+  "Assets/Art/World/Angular/States/Heroes/Warrior-Idle.png": "e5030dc88b3f319ddb2cdf1053186396210258401ecd77be409c981f51fdf7bf",
+  "Assets/Art/World/Angular/States/Heroes/Warrior-Ready-LeftToRight.png": "15831d3a6ccb081be0a87ccae6bae307efff231b76b76f13f930eb1eb7542f51",
+  "Assets/Art/World/Angular/States/Heroes/Warrior-Ready.png": "62a91f1b57b5c5a4e0371f4b8169b48eb770ae1744877a467b75678697f99449"
+}

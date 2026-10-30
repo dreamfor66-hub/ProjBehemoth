@@ -20,9 +20,9 @@ MonoBehaviour:
   id: Maze
   displayName: "\uC78A\uD78C \uBBF8\uAD81"
   act: 1
-  easyCombatCount: 6
+  easyCombatCount: 2
   tripleCombatCount: 9
-  packChance: 0.35
+  packChance: 0.6
   earlyCombats:
   - {fileID: 11400000, guid: 689ffa855b1d4ed4ea98fc25baca25f0, type: 2}
   - {fileID: 11400000, guid: af7650117c33bd34492ad22fe692d766, type: 2}

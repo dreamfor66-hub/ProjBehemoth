@@ -23,7 +23,7 @@ MonoBehaviour:
   id: PainFrenzy
   displayName: "\uD53C\uC758 \uAC01\uC131"
   description: "\uD53C\uACA9 \uD6C4 2.5\uCD08\uAC04 \uD53C\uD574 +50%"
-  icon: {fileID: 21300000, guid: 332349e6899450d88487aae206be44d2, type: 3}
+  icon: {fileID: 21300000, guid: f1b009400fcc9d748853a05efb58fb2a, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 2.5
+    travelGraceSteps: 0
     effectStatType: 15
     scale: 0
     scaleRatio: 0

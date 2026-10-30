@@ -1,0 +1,13 @@
+Authored frame sizes (not normalized to a common square); union sprite crop retains proportions.
+고블린사냥꾼: artwork=(270.00, 330.00), body=(140.00, 170.00), weakPointLayout=(1.50, 1.30)
+거미: artwork=(500.00, 330.00), body=(360.00, 160.00), weakPointLayout=(1.50, 1.30)
+해골 전사: artwork=(360.00, 420.00), body=(200.00, 260.00), weakPointLayout=(1.50, 1.30)
+흡혈박쥐: artwork=(330.00, 300.00), body=(220.00, 160.00), weakPointLayout=(1.50, 1.30)
+경종 사냥개: artwork=(430.00, 360.00), body=(290.00, 170.00), weakPointLayout=(1.50, 1.30)
+쌍두 문지기: artwork=(540.00, 650.00), body=(340.00, 400.00), weakPointLayout=(2.50, 1.80)
+움직이는 갑옷: artwork=(460.00, 560.00), body=(250.00, 340.00), weakPointLayout=(2.50, 1.80)
+철갑 사마귀: artwork=(620.00, 530.00), body=(400.00, 270.00), weakPointLayout=(2.50, 1.80)
+미궁 스핑크스: artwork=(1120.00, 500.00), body=(1000.00, 500.00), body-local torso/wing/paw circles; four authored part weak points
+납골당의 종: artwork=(540.00, 690.00), body=(330.00, 420.00), weakPointLayout=(2.50, 1.80)
+실짜는 공작부인: artwork=(700.00, 590.00), body=(420.00, 310.00), weakPointLayout=(2.50, 1.80)
+실인형: artwork=(220.00, 230.00), body=(140.00, 130.00), weakPointLayout=(1.50, 1.30)

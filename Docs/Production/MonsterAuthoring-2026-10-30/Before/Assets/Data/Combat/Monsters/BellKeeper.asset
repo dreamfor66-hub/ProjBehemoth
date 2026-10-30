@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: BellKeeper
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.bellkeeper.displayname
+    lastText: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
+  - propertyPath: encounterHint
+    key: data.monsterdata.bellkeeper.encounterhint
+    lastText: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4.
+      \uC5EC\uB7EC \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
+  textOwnerGuid: 4dc6b9d6f09c1f14594fda8127d02995
+  displayName: "\uB0A9\uACE8\uB2F9\uC758 \uC885"
+  portrait: {fileID: 21300000, guid: e7f40c5d1583fae45bc8cda03fb8f6c5, type: 2}
+  combatAnimation: {fileID: 11400000, guid: ec9ce5a8853a4ca458d17efaaec16b2c, type: 2}
+  encounterHint: "\uC5F0\uC18D \uD0C0\uACA9 \uB4A4 \uAC15\uD0C0\uAC00 \uC628\uB2E4.
+    \uC5EC\uB7EC \uC57D\uC810\uC744 \uD55C \uADA4\uC801\uC73C\uB85C \uB178\uB9AC\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 820
+  normalAttackInterval: 2.4
+  chargeInterval: 4.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 44
+  goldReward: 21
+  bodyHitRadius: 95
+  useAuthoredFootprint: 1
+  combatScale: 1
+  bodySize: {x: 330, y: 420}
+  artworkSize: {x: 540, y: 690}
+  weakPointLayoutScale: {x: 2.5, y: 1.8}
+  bodyLobes: []
+  attacks:
+  - {fileID: 11400000, guid: b307c58396569f3438211fd309cb8ce0, type: 2}
+  - {fileID: 11400000, guid: bda5cb972b200b8469d14906d4fcd131, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.8, g: 0.48, b: 0.6528, a: 1}

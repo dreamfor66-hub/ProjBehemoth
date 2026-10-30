@@ -1,0 +1,28 @@
+Existing Editor. Changed act-one scope only. No full class/DPS or whole-game suite.
+PASS map stays open without blocking navigation input
+PASS click connected map tile moves while map remains open
+PASS map uses absolute graph direction
+PASS held attack enters ready pose before charge completes
+PASS release clears preparation
+FAIL overlap 0: guard and attack contact remain independent
+FAIL overlap 0: attack lift preserves guard
+FAIL overlap 0: guard lift preserves attack preparation
+FAIL overlap 1: guard and attack contact remain independent
+FAIL overlap 1: attack lift preserves guard
+FAIL overlap 1: guard lift preserves attack preparation
+FAIL overlap 2: guard and attack contact remain independent
+FAIL overlap 2: attack lift preserves guard
+FAIL overlap 2: guard lift preserves attack preparation
+PASS final release restores idle input
+FAIL 고블린사냥꾼: has a normal action before defeat
+FAIL 고블린사냥꾼: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 거미: has a normal action before defeat
+PASS 거미: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 해골 전사: has a normal action before defeat
+PASS 해골 전사: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 흡혈박쥐: has a normal action before defeat
+PASS 흡혈박쥐: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 경종 사냥개: has a normal action before defeat
+PASS 경종 사냥개: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)
+PASS 움직이는 갑옷: has a normal action before defeat
+PASS 움직이는 갑옷: baseline Warrior pilot can finish without stat boosts (HP loss recorded separately)

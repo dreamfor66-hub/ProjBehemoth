@@ -106,12 +106,14 @@ MonoBehaviour:
   textOwnerGuid: 19ed6b76cfbf63140b64f653b48af782
   id: Well
   displayName: "\uBC11\uBC14\uB2E5\uC758 \uAE08\uACE0"
+  excludedFromRandomPool: 0
   narrative: "\uC9C0\uD558 \uC6B0\uBB3C\uBC29\uC5D0 \uB3C8\uC8FC\uBA38\uB2C8\uB97C
     \uB9E4\uB2E8 \uBC27\uC904\uC774 \uAC78\uB824 \uC788\uB2E4.\r\n\r\n\uC6B0\uBB3C
     \uC911\uAC04 \uC120\uBC18\uC5D0 \uC791\uC740 \uC8FC\uBA38\uB2C8\uAC00 \uC788\uACE0,
     \uB354 \uC544\uB798\uC5D0\uB294 \uCEE4\uB2E4\uB780 \uAE08\uACE0\uAC00 \uBCF4\uC778\uB2E4."
-  illustration: {fileID: 21300000, guid: c227b2e302dd5ed186238976dfc6004b, type: 3}
+  illustration: {fileID: 21300000, guid: 246da3c3eed9a9741a32ab73ff16c65d, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
   minAct: 1
   maxAct: 3
   weight: 1
@@ -184,7 +186,7 @@ MonoBehaviour:
       \uB9E4\uB2E8 \uBC27\uC904\uC774 \uAC78\uB824 \uC788\uB2E4.\r\n\r\n\uC6B0\uBB3C
       \uC911\uAC04 \uC120\uBC18\uC5D0 \uC791\uC740 \uC8FC\uBA38\uB2C8\uAC00 \uC788\uACE0,
       \uB354 \uC544\uB798\uC5D0\uB294 \uCEE4\uB2E4\uB780 \uAE08\uACE0\uAC00 \uBCF4\uC778\uB2E4."
-    illustration: {fileID: 21300000, guid: c227b2e302dd5ed186238976dfc6004b, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uC791\uC740 \uC8FC\uBA38\uB2C8\uB9CC \uAC74\uC9C4\uB2E4."
       description: "\uACE8\uB4DC +30"
@@ -252,7 +254,7 @@ MonoBehaviour:
       \uADF8 \uC544\uB798\uC5D0 \uACBD\uACE0\uBB38\uC774 \uC788\uB2E4.\r\n\r\n\uAE08\uACE0\uB97C
       \uAC00\uC838\uAC00\uB294 \uC790\uB294 \uADF8 \uBB34\uAC8C\uB3C4 \uD568\uAED8
       \uC9CA\uC5B4\uC9C4\uB2E4."
-    illustration: {fileID: 21300000, guid: c227b2e302dd5ed186238976dfc6004b, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uC800\uC8FC\uB97C \uAC10\uC218\uD558\uACE0 \uAE08\uACE0\uB97C \uAC00\uC838\uAC04\uB2E4."
       description: "\uACE8\uB4DC +150 \xB7 \uC6B0\uBB3C \uBC11\uC758 \uBB34\uAC8C

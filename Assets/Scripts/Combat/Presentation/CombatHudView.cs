@@ -9,6 +9,7 @@ namespace DungeonSlash
         [SerializeField] private Image playerHp;
         [SerializeField] private Image shield;
         public SlantedGuardGauge guardGauge;
+        public AttackRecoveryGauge attackRecovery;
         public ArcadePresentation presentation;
         [SerializeField] private Image monsterHp;
         [SerializeField] private TextMeshProUGUI playerHpText;
@@ -40,6 +41,7 @@ namespace DungeonSlash
         public void Bind(PlayerCombatRuntime player, MonsterRuntime monster, PointerGestureState gesture, float chargeProgress, Vector2 chargeOrigin, float secondChargeProgress = 0f)
         {
             var hasPlayer = player != null;
+            if(attackRecovery!=null){attackRecovery.gameObject.SetActive(hasPlayer);if(hasPlayer)attackRecovery.Bind(player);}
             var slanted=guardGauge!=null&&(presentation==null||presentation.arcade);
             if(guardGauge!=null)guardGauge.gameObject.SetActive(hasPlayer&&slanted);
             if(shield!=null){shield.enabled=!slanted;var track=shield.transform.parent.GetComponent<Image>();if(track!=null)track.enabled=!slanted;}
@@ -52,7 +54,11 @@ namespace DungeonSlash
                 SetValueText(playerHpText, GameText.Format("ui.combathudview.dfe9f229", player.CurrentHp, player.MaxHp));
                 SetValueText(shieldText, GameText.Format("ui.combathudview.82e84bd4", player.ShieldCurrent, player.ShieldMax));
                 SetShieldAvailability(player);
-                if(slanted){guardGauge.gameObject.SetActive(true);guardGauge.SetValue(player.ShieldMax>0?player.ShieldCurrent/player.ShieldMax:0);}
+                if(slanted)
+                {
+                    guardGauge.gameObject.SetActive(true);guardGauge.SetValue(player.ShieldMax>0?player.ShieldCurrent/player.ShieldMax:0,player.IsGuarding,player.ShieldState==ShieldState.Broken);
+                    if(shieldText!=null){shieldText.gameObject.SetActive(true);shieldText.enabled=true;shieldText.color=player.ShieldState==ShieldState.Broken?new Color32(216,101,77,255):new Color32(221,208,169,255);}
+                }
             }
             else
             {

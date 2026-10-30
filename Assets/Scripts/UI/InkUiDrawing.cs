@@ -113,7 +113,7 @@ namespace DungeonSlash
                     Line(vh,new Vector2(x,r.yMax-4),new Vector2(x+5,r.yMax-8),1,Alpha(s.recess,alpha));
                 }
         }
-        public static void Guard(VertexHelper vh,Rect r,InkUiStyle s,float amount,float alpha)
+        public static void Guard(VertexHelper vh,Rect r,InkUiStyle s,float amount,float alpha,float lossTrail=-1)
         {
             Surface(vh,r,s,InkSurfaceRole.GaugeTrack,Color.white,0,false,false,true,alpha);
             if(amount<.15f)Line(vh,new Vector2(r.xMin+2,r.yMin+2),new Vector2(r.xMin+2,r.yMax-2),2,Alpha(s.brokenGuard,alpha));
@@ -127,6 +127,13 @@ namespace DungeonSlash
                 var w=vertical?r.width-16:cell-gap;
                 var h=vertical?cell-gap:r.height-12;
                 Quad(vh,l,b,l+w,b+h,Alpha(s.iron,alpha*.6f));
+                var trail=Mathf.Clamp01(lossTrail*cells-n);
+                if(trail>part)
+                {
+                    var left=vertical?l+1:l+1+(w-2)*part;
+                    var bottom=vertical?b+1+(h-2)*part:b+1;
+                    Quad(vh,left,bottom,vertical?l+w-1:l+1+(w-2)*trail,vertical?b+1+(h-2)*trail:b+h-1,Alpha(s.brokenGuard,alpha));
+                }
                 if(part>0) Quad(vh,l+1,b+1,l+(vertical?w-1:(w-2)*part+1),b+(vertical?(h-2)*part+1:h-1),Alpha(amount<.15f?s.brokenGuard:s.guard,alpha));
             }
         }

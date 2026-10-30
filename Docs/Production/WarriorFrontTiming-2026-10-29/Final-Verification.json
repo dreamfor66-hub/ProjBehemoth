@@ -1,0 +1,14 @@
+{
+  "Assets/Art/World/Angular/Heroes/Warrior-Front.png": {
+    "outside_blade_mask_pixel_identical": true,
+    "canvas_unchanged": true,
+    "meta_byte_identical": true,
+    "sha256": "f8a8cc97b8d73d68b5bd0fb7bda152fe60334a062b329283b31884c69648e19e"
+  },
+  "Assets/Art/Characters/Selection/SelectionWarrior.png": {
+    "outside_blade_mask_pixel_identical": true,
+    "canvas_unchanged": true,
+    "meta_byte_identical": true,
+    "sha256": "f76ff2ab6c72785584c3e0fa9025a805673cc5afb02310227e58136f09f170a3"
+  }
+}

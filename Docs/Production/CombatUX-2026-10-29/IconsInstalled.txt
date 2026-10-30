@@ -1,0 +1,1 @@
+144 distinct paintings; all perk/relic/potion and legacy ability references replaced.

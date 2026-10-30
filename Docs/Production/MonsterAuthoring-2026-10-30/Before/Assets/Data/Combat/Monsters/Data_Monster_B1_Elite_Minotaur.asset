@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: Data_Monster_B1_Elite_Minotaur
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b1_elite_minotaur.displayname
+    lastText: "\uC30D\uB450 \uBB38\uC9C0\uAE30"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b1_elite_minotaur.encounterhint
+    lastText: "\uB450 \uBA38\uB9AC\uAC00 \uAC15\uD0C0\uB97C \uC900\uBE44\uD55C\uB2E4.
+      \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uC21C\uC11C\uB300\uB85C \uB04A\uC790."
+  textOwnerGuid: 5803c6e2e3ecb6d45a6edf579959d88c
+  displayName: "\uC30D\uB450 \uBB38\uC9C0\uAE30"
+  portrait: {fileID: 21300000, guid: c0a3469769fd0f64eb82dc1e91dec268, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 6074a04f053b2f64390e12585a36aa23, type: 2}
+  encounterHint: "\uB450 \uBA38\uB9AC\uAC00 \uAC15\uD0C0\uB97C \uC900\uBE44\uD55C\uB2E4.
+    \uB4DC\uB7EC\uB09C \uC57D\uC810\uC744 \uC21C\uC11C\uB300\uB85C \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 520
+  normalAttackInterval: 2.7
+  chargeInterval: 5.8
+  stunDuration: 4
+  stunDamageMultiplier: 1.65
+  experienceReward: 56
+  goldReward: 12
+  bodyHitRadius: 108
+  useAuthoredFootprint: 1
+  combatScale: 1
+  bodySize: {x: 340, y: 400}
+  artworkSize: {x: 540, y: 650}
+  weakPointLayoutScale: {x: 2.5, y: 1.8}
+  bodyLobes: []
+  attacks:
+  - {fileID: 11400000, guid: 46605fa33cecf6a4ebe3dcd0b8ce86dc, type: 2}
+  - {fileID: 11400000, guid: f0c7fdb2e14e1784995aadbd0ac5e1b3, type: 2}
+  normalAttackSequence: []
+  bodyColor: {r: 0.75, g: 0.38, b: 0.18, a: 1}

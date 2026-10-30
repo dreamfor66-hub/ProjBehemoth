@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.lanternimp-0.displayname
-    lastText: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC\uC758 \uACAC\uC81C"
+    lastText: "\uCC3D\uB05D \uCC0C\uB974\uAE30"
   textOwnerGuid: 6cfdc9c8f201f69438136c541c845ad2
   type: 0
-  displayName: "\uACE0\uBE14\uB9B0\uC0AC\uB0E5\uAFBC\uC758 \uACAC\uC81C"
+  displayName: "\uCC3D\uB05D \uCC0C\uB974\uAE30"
   damage: 10.8
   shieldDamage: 10.8
   windupDuration: 0.957

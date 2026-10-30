@@ -1,0 +1,20 @@
+{
+  "scope": "six character selection artwork only",
+  "runtimePass": 25,
+  "runtimeFail": 0,
+  "liveCaptureSize": "1920x1080",
+  "sixDistinctLiveCaptures": true,
+  "spriteMetaGuidsPreserved": true,
+  "preservedAssetCount": 18,
+  "originalSixCharacterSourcesPreserved": {
+    "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Warrior-Front.png": true,
+    "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Rogue-Front.png": true,
+    "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Trials\\Angular01\\StyleCorrections03\\Monk.png": true,
+    "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Wizard-Front.png": true,
+    "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Trials\\Angular01\\StyleCorrections03\\Samurai.png": true,
+    "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Barbarian-Front.png": true
+  },
+  "renderer": "existing Unity Editor PID 51492",
+  "tool": "built-in image_gen",
+  "notRun": "combat, growth balance, full menu regression; unrelated to this art-only change"
+}

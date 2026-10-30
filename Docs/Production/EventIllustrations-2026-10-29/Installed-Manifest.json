@@ -1,0 +1,11 @@
+{
+  "Assets/Art/UI/Events/Mirror.png": "065a5af1d8906aa6396c6c9b8f854824c31f7e5c9878a50c5a048e0c7dcf2340",
+  "Assets/Art/UI/Events/Pilgrim.png": "0285b03bf72bdf74934182a889b078faa083071de1bf0b077e9386a1e5e77046",
+  "Assets/Data/Dungeon/Events/Mirror.asset": "a7d6514b62bbb006b3a9f009b28600d5339053788894e8beed42adc40a15d170",
+  "Assets/Data/Dungeon/Events/Pilgrim.asset": "cc99443038a0687399e5096953b4b8f2377a44ee696a5455bc3686e2dc6b077f",
+  "Assets/Scripts/UI/IllustratedEventLayout.cs": "e86095ec19938c2d37e688f3f423e632c923d62b135325033ab9efb025caf274",
+  "Assets/Scripts/UI/RunExpansionView.cs": "8dfee7f62c2d1c9e055b0c06cbe2df452e001c134c99ab63cca4a41a773537f5",
+  "Assets/Scripts/UI/EventSequencePresentation.cs": "d463790a36659497607a6c02f4436d75960a839113c3cb1bf77e2662871fa23d",
+  "Assets/Scripts/Data/RandomEventData.cs": "0281c064d0fe4d4e03d889e3dfb920cfcac160d9bee61df0cc240646691a7636",
+  "Assets/Scenes/MainGameScene.unity": "99beb38332db5b72f8b8569fb83d27ee7e5833d783d40fa557b866aaa4ca7e6e"
+}

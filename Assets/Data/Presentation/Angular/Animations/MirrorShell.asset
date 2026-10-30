@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: MirrorShell
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 841786ef5faf96b4fb3a5c1b2c726bcf, type: 3}
-  attack: {fileID: 21300000, guid: 6e6b12db26754ae4198445eceecf9070, type: 3}
+  idle: {fileID: 21300000, guid: d7ea4ccbf63541d46b9c857937519eda, type: 2}
+  attack: {fileID: 21300000, guid: e3fd9541928abd54d9a5accdd2272996, type: 2}
   guard: {fileID: 0}
-  ready: {fileID: 21300000, guid: 8a305ecec6608464181d676e1ca2684a, type: 3}
-  dead: {fileID: 21300000, guid: 08b99f6a693891c47abe7e6390ded385, type: 3}
+  ready: {fileID: 21300000, guid: 0712099516913ca419aec375168fc8b1, type: 2}
+  dead: {fileID: 21300000, guid: 9872e8801bb1a82409626f47cee2073f, type: 2}
   canvasScale: 1
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: -67.49999}
-  groundContactY: 0.015948962
-  artworkTopY: 0.9832536
-  labelHeight: 207
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

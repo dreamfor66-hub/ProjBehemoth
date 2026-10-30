@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.stonesphinx-1.displayname
-    lastText: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uAC15\uD0C0 1"
+    lastText: "\uAC70\uCCB4 \uB0B4\uB824\uCC0D\uAE30"
   textOwnerGuid: 8bcc1bfd690bf3c43a63d3d6df0cd6ae
   type: 1
-  displayName: "\uBBF8\uAD81 \uC2A4\uD551\uD06C\uC2A4\uC758 \uAC15\uD0C0 1"
+  displayName: "\uAC70\uCCB4 \uB0B4\uB824\uCC0D\uAE30"
   damage: 47.52
   shieldDamage: 47.52
   windupDuration: 0.01
@@ -27,19 +27,24 @@ MonoBehaviour:
   requiredSupportId: 
   chargeTimeLimit: 6
   chargeWeakPoints:
-  - id: core-1
-    normalizedPosition: {x: -75, y: 35}
-    hitRadius: 30
+  - id: left-wing
+    localPosition: {x: -219.12003, y: 154.66501}
+    hitRadius: 36
     requiredChargeHits: 1
     optional: 0
-  - id: core-2
-    normalizedPosition: {x: 0, y: -42}
-    hitRadius: 30
+  - id: left-forepaw
+    localPosition: {x: -198.275, y: -191.80501}
+    hitRadius: 36
     requiredChargeHits: 1
     optional: 0
-  - id: core-3
-    normalizedPosition: {x: 72, y: 35}
-    hitRadius: 30
+  - id: right-forepaw
+    localPosition: {x: 183.19498, y: -203.115}
+    hitRadius: 36
+    requiredChargeHits: 1
+    optional: 0
+  - id: right-wing
+    localPosition: {x: 286.97998, y: 162.205}
+    hitRadius: 36
     requiredChargeHits: 1
     optional: 0
   combatMechanics:

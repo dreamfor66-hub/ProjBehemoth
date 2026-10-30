@@ -24,7 +24,9 @@
       "names": [
         "날선 할퀴기",
         "도약 급습"
-      ]
+      ],
+      "chargeDamage": 24,
+      "chargeGuard": 28
     },
     {
       "id": "StringRevenant",
@@ -63,7 +65,9 @@
       "names": [
         "송곳니 물기",
         "송곳니 급습"
-      ]
+      ],
+      "chargeDamage": 28,
+      "chargeGuard": 30
     },
     {
       "id": "EttinGatekeeper",
@@ -155,7 +159,9 @@
       "names": [
         "실바늘 찌르기",
         "회전 돌진"
-      ]
+      ],
+      "chargeDamage": 16,
+      "chargeGuard": 22
     }
   ]
 }

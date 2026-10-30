@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: Reform
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.reform.displayname
+    lastText: "\uC7AC\uC815\uBE44"
+  - propertyPath: description
+    key: data.perkdata.reform.description
+    lastText: "\uAE30\uBCF8 \uC2E4\uB4DC \uC7AC\uC0DD\uB7C9\uC774 \uCD08\uB2F9 0.4
+      \uC99D\uAC00\uD55C\uB2E4."
+  textOwnerGuid: 2ae3ddd77d934c54e810f3cbd5a2845e
+  id: Reform
+  displayName: "\uC7AC\uC815\uBE44"
+  description: "\uAE30\uBCF8 \uC2E4\uB4DC \uC7AC\uC0DD\uB7C9\uC774 \uCD08\uB2F9 0.4
+    \uC99D\uAC00\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: c2b0aa8201045e7789c6521e89201ecb, type: 3}
+  scope: 2
+  exclusiveCharacter: 0
+  abilitySource: {fileID: 11400000, guid: 6989b21d1abd56d4b81c5f77c169d664, type: 2}
+  maxStacks: 99
+  modifiers:
+  - kind: 7
+    value: 0.4

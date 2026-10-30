@@ -1,0 +1,1 @@
+Large nearby boss, not elongated body. 1120 x 500 authored frame, proportional fit about 990 x 500. Four weak points on two wings and two forepaws. Body-local circles follow torso, wings and paws. Group member count never changes species size.

@@ -1,0 +1,38 @@
+[
+  {
+    "asset": "Warrior-Idle",
+    "restored": false,
+    "original_sha256": "3ae9be0d80600e3f8e7f8c052db0d9596d98ba6b6c4131ce360ee6276738df6d",
+    "meta_unchanged": true
+  },
+  {
+    "asset": "Warrior-Guard",
+    "restored": false,
+    "original_sha256": "dd8f598275835f9d4c749f191831ab8e6c91788fdb502f9f198aedda20dd58fc",
+    "meta_unchanged": true
+  },
+  {
+    "asset": "Warrior-Ready",
+    "restored": false,
+    "original_sha256": "139f1044291d45b3f4718a5f4e381d5277a8b706b4a3cf8da47bb025c4c6ff54",
+    "meta_unchanged": true
+  },
+  {
+    "asset": "Warrior-Attack",
+    "restored": false,
+    "original_sha256": "c0b00d97e8f051dbfec90a6f84bf63ff1592f3f85515f2a3e4ac575ff3749b42",
+    "meta_unchanged": true
+  },
+  {
+    "asset": "Warrior-Ready-LeftToRight",
+    "restored": false,
+    "original_sha256": "c52e209d05e85626e8ba172d1a4c097c108a917a22b499614b1a820d82188f6f",
+    "meta_unchanged": true
+  },
+  {
+    "asset": "Warrior-Attack-LeftToRight",
+    "restored": false,
+    "original_sha256": "46fd987a5cd039786f537502a739fb131b03db2b38fce1c714f08cf4424bea1e",
+    "meta_unchanged": true
+  }
+]

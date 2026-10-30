@@ -25,9 +25,10 @@ MonoBehaviour:
   displayName: "\uBD84\uB178\uC758 \uBB34\uAC8C"
   description: "\uBD84\uB178 \uC911 \uCC28\uC9C0 \uACF5\uACA9\uC5D0 \uB0A8\uC740
     \uBD84\uB178\uC758 10%\uB9CC\uD07C \uBB3C\uB9AC \uD53C\uD574\uB97C \uCD94\uAC00\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: 2baed48bf800538d9493505e83d85c54, type: 3}
+  icon: {fileID: 21300000, guid: 1d41e713ee4f9984fb2a8792cdf4b5bc, type: 3}
   scope: 2
   exclusiveCharacter: 2
+  offerGroup: {fileID: 0}
   abilitySource: {fileID: 11400000, guid: 439431fa1f9a02741bc44b1734638146, type: 2}
   maxStacks: 99
   modifiers: []

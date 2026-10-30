@@ -1,0 +1,36 @@
+{
+  "Ready": {
+    "alphaIdentical": true,
+    "bladePixelsIdentical": true,
+    "scarfPixelsIdentical": true,
+    "inkPixelsIdentical": true,
+    "recoloredPixels": 381951,
+    "actualChangedPixels": 381797
+  },
+  "Guard": {
+    "originalBladeLength": 312.2579062249665,
+    "bladeLength": 800,
+    "base": [
+      1909.0,
+      972.0
+    ],
+    "originalTip": [
+      2118.0,
+      740.0
+    ],
+    "tip": [
+      2444.454816889538,
+      377.6195334049146
+    ],
+    "sourceBase": [
+      1245.0,
+      631.0
+    ],
+    "sourceTip": [
+      1589.0,
+      154.0
+    ],
+    "widthScale": 1.5147058823529411,
+    "outsideBladePixelsIdentical": true
+  }
+}

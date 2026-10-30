@@ -18,6 +18,8 @@ MonoBehaviour:
   shortRestCeiling: 60
   campHeal: 10
   moveNormalMonstersOnCamp: 1
+  firstActMinimumGraceSteps: 10
+  firstActSurveyGraceFraction: 0.22
   attackSpeed:
     serializedVersion: 2
     m_Curve:

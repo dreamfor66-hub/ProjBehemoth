@@ -1,0 +1,13 @@
+{
+  "Assets/Scenes/OutGameScene.unity": "0c16a22115f655ce76fa128013e23896ca330b9fd19419c6ac68d7a747d974f8",
+  "Assets/Scripts/UI/OutGameView.cs": "31eade8677945d0a8bc6dfa1ea630c9a6215c600a1487dd9b53228715343a922",
+  "Assets/Scripts/UI/OutGameMenuView.cs": "4fd56506018512e100fc9f389d0c2fdebd497a8dec5c678d0e6be6c1f1635e9e",
+  "Assets/Data/Localization/kr.csv": "b7a7608c2a499d2e897e3708f50bad203c50a5fd8a957794745a6f92e313766f",
+  "Assets/Data/Localization/Resources/BehemothKr.asset": "b957ed41c6c2b6b933fabea696f6a208e866a4216c053306e9ac94063087d900",
+  "Assets/Data/Characters/Barbarian.asset": "083387a9d5999cb59fcf71ef61434e630133296732793f6e42657c65eec009bb",
+  "Assets/Data/Characters/Monk.asset": "3b3e6060155f50a9dcd45e6929350028392c078eec14092733f3cf297422ef6e",
+  "Assets/Data/Characters/Rogue.asset": "f577be195cfc0db9b370d7cef572a86a5146ebd3804faeee5b7702fe7f0e56ef",
+  "Assets/Data/Characters/Samurai.asset": "aad97deccfe530d0097ca07921974dba3933c6794194baa024189a315a7bf697",
+  "Assets/Data/Characters/Warrior.asset": "6ce0c731b3e8b9dd6e4771fa2eaf044997f9025b7783974c1ac543e34baf5b15",
+  "Assets/Data/Characters/Wizard.asset": "62a8a02e8ffe27ade582abf90786d7b692c43376b6a3591b8a9745f578bdce65"
+}

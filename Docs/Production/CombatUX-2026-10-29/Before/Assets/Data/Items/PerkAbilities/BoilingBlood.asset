@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: BoilingBlood
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.boilingblood.displayname
+    lastText: "\uB053\uB294 \uD53C"
+  - propertyPath: description
+    key: data.equipmentdata.boilingblood.description
+    lastText: "\uC77C\uBC18\uACF5\uACA9\uC73C\uB85C \uC5BB\uB294 \uACA9\uB178 +2"
+  textOwnerGuid: 38aae4d4aacab1e4a835df75565e47ba
+  id: BoilingBlood
+  displayName: "\uB053\uB294 \uD53C"
+  description: "\uC77C\uBC18\uACF5\uACA9\uC73C\uB85C \uC5BB\uB294 \uACA9\uB178 +2"
+  icon: {fileID: 21300000, guid: 51d4f28fcbee5dbc869f8c11ddbea520, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions:
+    - kind: 16
+      invert: 1
+      threshold: 0.5
+      direction: 0
+      element: 0
+      buff: {fileID: 11400000, guid: e0e6262f5fb8b9d4a9b6353f4057bcf4, type: 2}
+      buffTag: {fileID: 0}
+      comparator: 3
+      rule: 0
+    trigger:
+      triggerType: 26
+      triggerAttackTypeFilter: 1
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 18
+      effectMagnitude: 2
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: d0689859897d5004caeb09fea7a36ba4, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 20
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 0
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

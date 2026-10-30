@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Warrior",
+    "selection": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Characters\\Selection\\SelectionWarrior.png",
+    "front": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Warrior-Front.png"
+  },
+  {
+    "name": "Rogue",
+    "selection": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Characters\\Selection\\SelectionRogue.png",
+    "front": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Rogue-Front.png"
+  },
+  {
+    "name": "Monk",
+    "selection": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Characters\\Selection\\SelectionMonk.png",
+    "front": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Trials\\Angular01\\StyleCorrections03\\Monk.png"
+  },
+  {
+    "name": "Wizard",
+    "selection": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Characters\\Selection\\SelectionWizard.png",
+    "front": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Wizard-Front.png"
+  },
+  {
+    "name": "Samurai",
+    "selection": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Characters\\Selection\\SelectionSamurai.png",
+    "front": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Trials\\Angular01\\StyleCorrections03\\Samurai.png"
+  },
+  {
+    "name": "Barbarian",
+    "selection": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Characters\\Selection\\SelectionBarbarian.png",
+    "front": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Heroes\\Barbarian-Front.png"
+  }
+]

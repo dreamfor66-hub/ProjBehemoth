@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: Executioner
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.executioner.displayname
+    lastText: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  - propertyPath: hint
+    key: data.encounterdata.executioner.hint
+    lastText: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0,
+      \uBCF4\uC870 \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
+  textOwnerGuid: df4d7c09051a13b4e8fbe18adf67e09a
+  id: Executioner
+  displayName: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  hint: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0, \uBCF4\uC870
+    \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
+  category: 8
+  members:
+  - monster: {fileID: 11400000, guid: ecf1c349611a99341be2e93e20f059a6, type: 2}
+    offset: {x: 0, y: 0}
+    scale: 1
+    actionDelay: 0

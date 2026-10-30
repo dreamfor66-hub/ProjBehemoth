@@ -1,0 +1,5 @@
+Actual act-one formations with declared normalized growth budgets. Required pre-boss growth; under-budget at earlier checkpoints. Not random-run averages.
+Targeted retry only: guard during final 0.2s of telegraphs, recover between them, and use long in-bounds swipes to connect separated enemies. No stat/data changes.
+REVIEW 흡혈박쥐 · 거미: HP loss=38.40, time=10.03, guard minimum=0.00, breaks=2
+REVIEW 납골당의 종: HP loss=18.00, time=17.75, guard minimum=0.00, breaks=1
+COMPLETE review=2. Automated pilot uses production cooldowns, actual placements and manual-length charge preparation. Human encounter feel and varied builds remain pending.

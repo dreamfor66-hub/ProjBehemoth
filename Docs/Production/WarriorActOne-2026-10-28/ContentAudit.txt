@@ -1,0 +1,303 @@
+Data/Items/Perks/Counter.asset: 받아치기 (scope=2 price=None)
+가드에 성공하면 다음 무기 공격에 물리 피해 6을 추가한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 3, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "8203f2aa22c27e740aa6bb63bc4008b9", "type": 2}}]}
+Data/Items/Perks/DecisiveBlow.asset: 결정타 (scope=0 price=None)
+치명타 피해 +15%
+modifiers=[{'kind': 30, 'value': 0.15}]
+Data/Items/Perks/Exploit.asset: 빈틈 공략 (scope=0 price=None)
+기절한 적에게 주는 피해 +15%
+modifiers=[{'kind': 11, 'value': 0.15}]
+Data/Items/Perks/FireMastery.asset: 화염 숙련 (scope=0 price=None)
+화염 피해 +10%
+modifiers=[{'kind': 25, 'value': 0.1}]
+Data/Items/Perks/ForwardGuard.asset: 전진 방어 (scope=2 price=None)
+일반공격 적중 시 실드를 0.5 회복한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 4, "effectMagnitude": 0.5, "effectCount": 1}]}
+Data/Items/Perks/HeavyWeapon.asset: 묵직한 무기 (scope=0 price=None)
+차지 공격 피해 +4
+modifiers=[{'kind': 22, 'value': 4}]
+Data/Items/Perks/IceMastery.asset: 냉기 숙련 (scope=0 price=None)
+냉기 피해 +10%
+modifiers=[{'kind': 26, 'value': 0.1}]
+Data/Items/Perks/KeenInstinct.asset: 예리한 감각 (scope=0 price=None)
+치명타 확률 +5%
+modifiers=[{'kind': 29, 'value': 0.05}]
+Data/Items/Perks/LightningMastery.asset: 번개 숙련 (scope=0 price=None)
+번개 피해 +10%
+modifiers=[{'kind': 27, 'value': 0.1}]
+Data/Items/Perks/ManaFlow.asset: 마력 순환 (scope=0 price=None)
+초당 MP 회복량 +0.05
+modifiers=[{'kind': 24, 'value': 0.05}]
+Data/Items/Perks/ManaVessel.asset: 마력 그릇 (scope=0 price=None)
+최대 MP +3
+modifiers=[{'kind': 23, 'value': 3}]
+Data/Items/Perks/Pressure.asset: 압박 (scope=2 price=None)
+공격을 준비 중인 적에게 일반공격을 적중시키면 물리 피해 3을 추가한다.
+modifiers=[]
+{"conditions": [{"kind": 24, "invert": 0, "threshold": 0.5, "direction": 0, "element": 0, "buff": {"fileID": 0}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 3, "effectCount": 1, "rule": 30}]}
+Data/Items/Perks/Reform.asset: 재정비 (scope=2 price=None)
+기본 실드 재생량이 초당 0.4 증가한다.
+modifiers=[{'kind': 7, 'value': 0.4}]
+Data/Items/Perks/SharpWeapon.asset: 날 선 무기 (scope=0 price=None)
+일반공격 피해 +2
+modifiers=[{'kind': 21, 'value': 2}]
+Data/Items/Perks/ShieldImpact.asset: 방패 중격 (scope=2 price=None)
+차지 공격에 현재 실드의 10%만큼 물리 피해를 추가한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 1, "effectCount": 1, "scale": 5, "scaleRatio": 0.1}]}
+Data/Items/Perks/Vitality.asset: 활력 (scope=0 price=None)
+최대 체력 +10
+modifiers=[{'kind': 4, 'value': 10}]
+Data/Items/Relics/AegisBattery.asset: 이지스 배터리 (scope=0 price=28)
+최대 방패 +25
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 25, "effectCount": 1, "effectStatType": 6}]}
+Data/Items/Relics/AmberSeed.asset: 호박빛 싹 (scope=3 price=80)
+전투 3승마다 최대·현재 체력 +4.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 17, "triggerCount": 3, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 4, "effectCount": 1, "effectStatType": 4}]}
+Data/Items/Relics/AzureTalon.asset: 청색 매의 발톱 (scope=0 price=62)
+베기 공격 거리 +100
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 100, "effectCount": 1, "effectStatType": 12}]}
+Data/Items/Relics/BloodContract.asset: 붉은 계약서 (scope=3 price=80)
+모든 피해 +25%.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.25, "effectCount": 1, "effectStatType": 15}]}
+Data/Items/Relics/ChargeCoil.asset: 차지 코일 (scope=0 price=24)
+차지 시간 -12%
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.12, "effectCount": 1, "effectStatType": 3}]}
+Data/Items/Relics/ChargeWard.asset: 검의 방패 (scope=0 price=68)
+차지 중 피격을 가드로 처리
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 1, "effectCount": 1, "effectStatType": 17}]}
+Data/Items/Relics/CorePrism.asset: 핵심 프리즘 (scope=0 price=74)
+차지 베기 피해 +45%
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.45, "effectCount": 1, "effectStatType": 1}]}
+Data/Items/Relics/CrosswindCharm.asset: 가로바람 호신부 (scope=0 price=70)
+가로 베기 적중 시, 중앙에서 90도 방향으로 같은 길이의 추가 공격
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectMagnitude": 0.5, "effectCount": 1, "effectAngle": 90}]}
+Data/Items/Relics/DistanceMomentum.asset: 장거리 잔상 (scope=0 price=78)
+베기 길이 100마다 피해 +20%
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.002, "effectCount": 1, "effectStatType": 19}]}
+Data/Items/Relics/DoubleCharge.asset: 이중 박동기 (scope=0 price=86)
+2단 차지 가능. 적색 게이지까지 채우면 차지 피해 2배
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 1, "effectCount": 1, "effectStatType": 18}]}
+Data/Items/Relics/EchoSpur.asset: 울림의 발뒤축 (scope=0 price=74)
+내려베기 적중 시, 같은 길이의 추가 공격
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectMagnitude": 0.55, "effectCount": 1, "effectAngle": 12}]}
+Data/Items/Relics/EdgeCharm.asset: 날 선 부적 (scope=0 price=22)
+일반 공격 피해 +15%
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.15, "effectCount": 1}]}
+Data/Items/Relics/GoldenTooth.asset: 금빛 이빨 (scope=3 price=80)
+전투 승리마다 골드 +10.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 17, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 10, "effectCount": 1, "effectStatType": 14}]}
+Data/Items/Relics/GuardianBell.asset: 수호의 종 (scope=3 price=80)
+최대 가드게이지 +10. 전투 시작 3초간 받는 체력 피해 -20%.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 10, "effectCount": 1, "effectStatType": 6}]}
+{"conditions": [], "trigger": {"triggerType": 8, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "07b13afe5d47fe34595c6fb32c730e37", "type": 2}}]}
+Data/Items/Relics/GuardNova.asset: 수호의 파동 (scope=2 price=80)
+가드 3회마다 모든 적에게 최대 가드게이지의 40% 피해.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 3, "triggerCount": 3, "chancePercent": 100}, "effects": [{"effectType": 1, "effectCount": 1, "targets": 1, "valueVariables": [{"type": 4, "buff": {"fileID": 0}, "rule": 0, "multiplier": 0.4, "limit": 0}]}]}
+Data/Items/Relics/GuidingWisp.asset: 길잡이의 등불 (scope=3 price=80)
+차지 적중과 주문 발동에 위습이 피해 6을 더한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 1, "effectMagnitude": 6, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 12, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 1, "effectMagnitude": 6, "effectCount": 1}]}
+Data/Items/Relics/Hammer.asset: 철퇴의 가호 (scope=2 price=80)
+내려치기 적중 시 일반공격 준비를 0.55초 지연한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 17, "effectMagnitude": 0.55, "effectCount": 1}]}
+Data/Items/Relics/Hourglass.asset: 깨어진 모래시계 (scope=3 price=80)
+차지 준비시간과 주문 쿨타임 -12%.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.12, "effectCount": 1, "effectStatType": 3}]}
+{"conditions": [], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 0.12, "effectCount": 1, "rule": 8}]}
+Data/Items/Relics/HunterLantern.asset: 사냥꾼의 등불 (scope=0 price=68)
+몬스터 처치 시 HP 7 회복
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectCount": 1}]}
+Data/Items/Relics/IronFortress.asset: 불굴의 성채 (scope=2 price=80)
+최대 가드게이지 +25, 전투 중 자연회복 초당 +2.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 25, "effectCount": 1, "effectStatType": 6}, {"effectType": 2, "effectMagnitude": 2, "effectCount": 1, "effectStatType": 7}]}
+Data/Items/Relics/MirrorShard.asset: 기억하는 거울 조각 (scope=3 price=80)
+매 4번째 무기 적중에 해당 피해의 40%를 더한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 4, "chancePercent": 100}, "effects": [{"effectType": 1, "effectCount": 1, "valueVariables": [{"type": 3, "buff": {"fileID": 0}, "rule": 0, "multiplier": 0.4, "limit": 0}]}]}
+Data/Items/Relics/PainFrenzy.asset: 피의 각성 (scope=0 price=76)
+피격 후 2.5초간 피해 +50%
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 2, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "9742ebedb4f2fba458d7a5e3a056ec03", "type": 2}}]}
+Data/Items/Relics/Paladin.asset: 성기사의 길 (scope=2 price=80)
+잿불 화살 습득. 가드 성공 시 주문의 남은 쿨타임 -1초.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "fee773feed6f55743b7a6ebb9bb8e1aa", "type": 2}}]}
+{"conditions": [], "trigger": {"triggerType": 3, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 7, "effectMagnitude": 1, "effectCount": 1}]}
+Data/Items/Relics/Parasite.asset: 공생하는 씨앗 (scope=3 price=80)
+일반 무기 피해 +25%, 차지 피해 +20%.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": 0.25, "effectCount": 1}, {"effectType": 2, "effectMagnitude": 0.2, "effectCount": 1, "effectStatType": 1}]}
+Data/Items/Relics/PerfectMending.asset: 완벽한 수호 (scope=2 price=80)
+가드 시작 0.1초에 퍼펙트가드 가능. 성공 시 게이지를 쓰지 않고 10초 동안 피해 +30%. 갱신되며 중첩되지 않는다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 23, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "d6a594d9c81d29b43b159d242032f73f", "type": 2}}]}
+{"conditions": [], "trigger": {"triggerType": 27, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "649525168c5850843b0ae041a2acabeb", "type": 2}}]}
+Data/Items/Relics/PilgrimOath.asset: 순례자의 서약 (scope=3 price=80)
+가드 3회마다 가드게이지 +3. 순례자의 인연을 증명한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 3, "triggerCount": 3, "chancePercent": 100}, "effects": [{"effectType": 4, "effectMagnitude": 3, "effectCount": 1}]}
+Data/Items/Relics/RaggedBanner.asset: 이름 없는 깃발 (scope=3 price=80)
+살아 있는 적 하나당 무기 피해 +8%.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectCount": 1, "valueVariables": [{"type": 10, "buff": {"fileID": 0}, "rule": 0, "multiplier": 0.08, "limit": 0}]}]}
+Data/Items/Relics/ShieldBash.asset: 신성검의 서약 (scope=2 price=80)
+가드로 소모한 게이지의 50%를 저장하여 다음 무기 적중에 더한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 3, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 10, "effectCount": 1, "valueVariables": [{"type": 11, "buff": {"fileID": 0}, "rule": 0, "multiplier": 0.5, "limit": 0}]}]}
+Data/Items/Relics/ShieldEdge.asset: 방패의 칼날 (scope=2 price=80)
+무기 적중에 현재 가드게이지의 15%를 추가한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectCount": 1, "rule": 30, "valueVariables": [{"type": 5, "buff": {"fileID": 0}, "rule": 0, "multiplier": 0.15, "limit": 0}]}]}
+Data/Items/Relics/Spear.asset: 천공창 (scope=2 price=80)
+올려치기 피해 +35%, 공격 쿨타임 -50%. 다른 방향 피해 -20%, 공격 쿨타임 +25%.
+modifiers=[]
+{"conditions": [{"kind": 8, "invert": 0, "threshold": 0.5, "direction": 2, "element": 0, "buff": {"fileID": 0}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 0.35, "effectCount": 1}]}
+{"conditions": [{"kind": 8, "invert": 0, "threshold": 0.5, "direction": 2, "element": 0, "buff": {"fileID": 0}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 0.5, "effectCount": 1, "rule": 5}]}
+{"conditions": [{"kind": 9, "invert": 0, "threshold": 0.5, "direction": 2, "element": 0, "buff": {"fileID": 0}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": -0.2, "effectCount": 1}]}
+{"conditions": [{"kind": 9, "invert": 0, "threshold": 0.5, "direction": 2, "element": 0, "buff": {"fileID": 0}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": -0.25, "effectCount": 1, "rule": 5}]}
+Data/Items/Relics/Starter_Barbarian.asset: 격노의 심장 (scope=1 price=80)
+일반 공격 시 격노 12중첩 획득. 격노 24 이상에서 차지 공격 시 쌓인 격노를 분노로 전환합니다.
+[분노] 무기 피해 +30%, 공격 쿨타임 -45%, 받는 체력 피해 -25%. 분노는 초당 25중첩 소모한다.
+modifiers=[]
+{"conditions": [{"kind": 16, "invert": 1, "threshold": 0.5, "direction": 0, "element": 0, "buff": {"fileID": 11400000, "guid": "e0e6262f5fb8b9d4a9b6353f4057bcf4", "type": 2}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 26, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 12, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "d0689859897d5004caeb09fea7a36ba4", "type": 2}, "valueVariables": [{"type": 16, "buff": {"fileID": 0}, "rule": 14, "multiplier": 1, "limit": 0}]}]}
+{"conditions": [{"kind": 16, "invert": 1, "threshold": 0.5, "direction": 0, "element": 0, "buff": {"fileID": 11400000, "guid": "e0e6262f5fb8b9d4a9b6353f4057bcf4", "type": 2}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}, {"kind": 19, "invert": 0, "threshold": 24, "direction": 0, "element": 0, "buff": {"fileID": 11400000, "guid": "d0689859897d5004caeb09fea7a36ba4", "type": 2}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 26, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "e0e6262f5fb8b9d4a9b6353f4057bcf4", "type": 2}, "valueVariables": [{"type": 13, "buff": {"fileID": 11400000, "guid": "d0689859897d5004caeb09fea7a36ba4", "type": 2}, "rule": 0, "multiplier": 1, "limit": 0}]}, {"effectType": 19, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "d0689859897d5004caeb09fea7a36ba4", "type": 2}}]}
+{"conditions": [{"kind": 16, "invert": 1, "threshold": 0.5, "direction": 0, "element": 0, "buff": {"fileID": 11400000, "guid": "e0e6262f5fb8b9d4a9b6353f4057bcf4", "type": 2}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 9, "triggerCount": 1, "intervalSeconds": 0.05, "chancePercent": 100}, "effects": [{"effectType": 20, "effectMagnitude": -0.1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "d0689859897d5004caeb09fea7a36ba4", "type": 2}}]}
+Data/Items/Relics/Starter_Monk.asset: 초식의 두루마리 (scope=1 price=80)
+일반 공격 방향에 따라 초식을 준비합니다. 패턴을 만든 후, 차지 공격으로 초식을 마무리 할 수 있습니다. 초식을 마무리하면 아래와 같은 효과를 얻습니다.
+↓↑ 붕권: 1.7배 차지 피해
+←→ 백렬권: 0.55배 차지 3회 피해
+↓→ 호신격: 가드 +5, 다음 1회에 한해 받는 피해 -50%.
+→↑ 연환: 다음 일반공격 2회 쿨타임 -40%.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+Data/Items/Relics/Starter_Rogue.asset: 그림자 망토 (scope=1 price=80)
+전투 개시 시 은신하며, 적이 눈치채기 전에 먼저 행동할 수 있습니다. 각 행동 마다 25% 확률로 발각됩니다. 적이 공격받으면 즉시 발각됩니다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 1, "effectCount": 1, "rule": 36}, {"effectType": 11, "effectMagnitude": 0.25, "effectCount": 1, "rule": 37}]}
+Data/Items/Relics/Starter_Samurai.asset: 고요한 칼집 (scope=1 price=80)
+가드 진입 시 납도. 납도 패리 0.3초. 다음 발도 피해 +50%. 납도 패리 성공 시 다음 발도가 차지 판정을 얻는다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [{"kind": 16, "invert": 1, "threshold": 0.5, "direction": 0, "element": 0, "buff": {"fileID": 11400000, "guid": "298cb38002b545c48aae1cf634e7281d", "type": 2}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 23, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "298cb38002b545c48aae1cf634e7281d", "type": 2}}, {"effectType": 18, "effectMagnitude": 1, "effectCount": 1, "buff": {"fileID": 11400000, "guid": "1493b40ec1b1f2f40b38d9b581cd9c62", "type": 2}}]}
+Data/Items/Relics/Starter_Warrior.asset: 수호자의 방패 (scope=1 price=80)
+전투 중 가드게이지가 초당 2 회복됩니다. 가드 붕괴 중 회복 속도가 추가로 5 증가합니다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 2, "effectCount": 1, "effectStatType": 17, "rule": 32}, {"effectType": 2, "effectMagnitude": 5, "effectCount": 1, "effectStatType": 8}]}
+Data/Items/Relics/Starter_Wizard.asset: 집중의 수정 (scope=1 price=80)
+에너지 볼트를 가지고 게임을 시작합니다.
+주문 쿨타임 -25%
+가드 중 MP가 초당 0.9 추가 회복된다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "0aa4718ef680d8e43a55a7c28993bb15", "type": 2}}]}
+{"conditions": [], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 11, "effectMagnitude": 0.25, "effectCount": 1, "rule": 8}]}
+{"conditions": [{"kind": 14, "invert": 0, "threshold": 0.5, "direction": 0, "element": 0, "buff": {"fileID": 0}, "buffTag": {"fileID": 0}, "comparator": 3, "rule": 0}], "trigger": {"triggerType": 9, "triggerCount": 1, "intervalSeconds": 0.1, "chancePercent": 100}, "effects": [{"effectType": 34, "effectMagnitude": 0.09, "effectCount": 1}]}
+Data/Items/Relics/StormBottle.asset: 병 속의 폭풍 (scope=3 price=80)
+차지 적중 시 번개 피해 8 추가.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 35, "effectMagnitude": 8, "effectCount": 1, "element": 2}]}
+Data/Items/Relics/StrayDog.asset: 작은 발자국 (scope=3 price=80)
+강아지가 곁에서 동행한다. 4초마다 체력이 가장 낮은 적에게 7 + 현재 레벨만큼 피해.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 7, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 14, "effectCount": 1, "companion": {"fileID": 11400000, "guid": "c6d66f4a1e280544b805c94668f5f3e7", "type": 2}}]}
+{"conditions": [], "trigger": {"triggerType": 9, "triggerCount": 1, "intervalSeconds": 4, "chancePercent": 100}, "effects": [{"effectType": 1, "effectMagnitude": 7, "effectCount": 1, "targets": 2, "valueVariables": [{"type": 7, "buff": {"fileID": 0}, "rule": 0, "multiplier": 1, "limit": 0}]}]}
+Data/Items/Relics/Technique_CoreHarvest.asset: 핵심 회수 (scope=0 price=65)
+약점 타격 시 실드 +10
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 16, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 4, "effectMagnitude": 10, "effectCount": 1}]}
+Data/Items/Relics/Technique_Harvest.asset: 생명 수확 (scope=0 price=65)
+몬스터 처치 시 HP 4 회복
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 10, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 3, "effectMagnitude": 4, "effectCount": 1}]}
+Data/Items/Relics/Technique_ImpactShield.asset: 충격 방패 (scope=0 price=65)
+적중 시 실드 +2
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 1, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 4, "effectMagnitude": 2, "effectCount": 1}]}
+Data/Items/Relics/ThornBulwark.asset: 가시 성벽 (scope=0 price=82)
+가드 성공 시 적에게 일반 피해의 70% 반격
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 3, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 1, "effectCount": 1, "valueVariables": [{"type": 1, "buff": {"fileID": 0}, "rule": 0, "multiplier": 0.7, "limit": 0}]}]}
+Data/Items/Relics/ThunderWire.asset: 번개 심줄 (scope=0 price=64)
+일반 베기 피해 +20%, 재사용 대기시간 -12%
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectCount": 1}]}
+Data/Items/Relics/Tome_ChainLightning.asset: 연쇄 번개의 마도서 (scope=0 price=38)
+긋기를 끝낸 지점에 번개를 떨어뜨리고 가까운 적으로 최대 3회 연결한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "060a7c4da674b5442a38b2ac8f7b179e", "type": 2}}]}
+Data/Items/Relics/Tome_Cleanse.asset: 정화의 마도서 (scope=0 price=38)
+해로운 효과를 제거한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "d0814cab2ae3f1a4a848bda2680492cb", "type": 2}}]}
+Data/Items/Relics/Tome_Ember.asset: 잿불 화살의 마도서 (scope=0 price=38)
+체력 비율이 가장 낮은 적을 겨냥한다. 목표 너머의 적도 관통한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "fee773feed6f55743b7a6ebb9bb8e1aa", "type": 2}}]}
+Data/Items/Relics/Tome_EnchantFire.asset: 인챈트 파이어의 마도서 (scope=0 price=38)
+10초 동안 무기 공격에 화염 피해 4와 화상을 추가한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "87691c614180065428e9b353c83eee01", "type": 2}}]}
+Data/Items/Relics/Tome_EnchantIce.asset: 인챈트 아이스의 마도서 (scope=0 price=38)
+10초 동안 무기 공격에 냉기 피해 4와 둔화를 추가한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "370b919bc356f724ea8fd202083d3011", "type": 2}}]}
+Data/Items/Relics/Tome_EnchantLightning.asset: 인챈트 라이트닝의 마도서 (scope=0 price=38)
+10초 동안 무기 공격에 번개 피해 4를 추가하고 주변 적에게 번개 피해 2를 준다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "3dc9d92bf445b3141b8ab94ce6377751", "type": 2}}]}
+Data/Items/Relics/Tome_EnergyBolt.asset: 에너지 볼트의 마도서 (scope=0 price=38)
+그은 방향으로 에너지 볼트를 날려 적을 관통한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "0aa4718ef680d8e43a55a7c28993bb15", "type": 2}}]}
+Data/Items/Relics/Tome_FireBloom.asset: 화염 개화의 마도서 (scope=0 price=38)
+체력 비율이 가장 낮은 적 주위에 폭발한다. 반경 안의 적을 함께 공격한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "4ac44dd5af0d27e48bc766d668de9c77", "type": 2}}]}
+Data/Items/Relics/Tome_FrostRing.asset: 서리 파동의 마도서 (scope=0 price=38)
+마지막 무기 적중 대상 주위에 서리를 펼친다. 맞은 적의 행동이 3초간 느려진다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "1d07d598250fbd84c901da05d71b43dc", "type": 2}}]}
+Data/Items/Relics/Tome_LightningMark.asset: 벼락표식의 마도서 (scope=0 price=38)
+7초 동안 적에게 표식을 남긴다. 다음 무기 공격 피해의 30%를 주변 적에게 번개로 전달한다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "ff9e3bbd8cd3ed04891c8b17b6464ca1", "type": 2}}]}
+Data/Items/Relics/Tome_PoisonMist.asset: 독안개의 마도서 (scope=0 price=38)
+10초 동안 독안개를 펼친다. 2초마다 독을 1중첩 부여하고 적의 행동을 늦춘다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "11066b658199e244ba1d2b81c784a12b", "type": 2}}]}
+Data/Items/Relics/Tome_Spark.asset: 스파크의 마도서 (scope=0 price=38)
+긋기를 끝낸 지점에 번개를 떨어뜨린다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectCount": 1}]}
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 12, "effectCount": 1, "spell": {"fileID": 11400000, "guid": "b5628e2176861b947869198ac7b4693b", "type": 2}}]}
+Data/Items/Relics/WellCurse.asset: 우물 밑의 무게 (scope=3 price=20)
+최대 가드게이지 -8. 검은 우물에서 가져온 금의 무게다.
+modifiers=[]
+{"conditions": [], "trigger": {"triggerType": 4, "triggerCount": 1, "chancePercent": 100}, "effects": [{"effectType": 2, "effectMagnitude": -8, "effectCount": 1, "effectStatType": 6}]}

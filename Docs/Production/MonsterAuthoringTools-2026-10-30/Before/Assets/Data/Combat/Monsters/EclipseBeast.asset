@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: EclipseBeast
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.eclipsebeast.displayname
+    lastText: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C"
+  - propertyPath: encounterHint
+    key: data.monsterdata.eclipsebeast.encounterhint
+    lastText: "\uD574 \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uB2EC
+      \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uAC15\uD0C0\uAC00 \uB9C9\uD78C\uB2E4.
+      \uB458 \uB2E4 \uBD80\uC218\uBA74 \uAE30\uC808\uD55C\uB2E4."
+  textOwnerGuid: a20162045cffe5a4b96a5816de5fbd16
+  displayName: "\uC77C\uC2DD\uC758 \uD0A4\uBA54\uB77C"
+  portrait: {fileID: 21300000, guid: d760c4952a5f60548bf05c42e3aed459, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 4f148b6cac7fd0b4095e6e8bb2e1cf36, type: 2}
+  encounterHint: "\uD574 \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uC5F0\uD0C0, \uB2EC
+    \uC6B0\uC0C1\uC744 \uBD80\uC218\uBA74 \uAC15\uD0C0\uAC00 \uB9C9\uD78C\uB2E4.
+    \uB458 \uB2E4 \uBD80\uC218\uBA74 \uAE30\uC808\uD55C\uB2E4."
+  pattern: 4
+  supportId: 
+  diesWithLeader: 0
+  useOrbit: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 850
+  normalAttackInterval: 2.9
+  chargeInterval: 6.8
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 82
+  goldReward: 38
+  combatScale: 1
+  hitBoxes:
+  - center: {x: 0, y: 0}
+    radius: 95
+  - center: {x: 0, y: 0}
+    radius: 95
+  attacks:
+  - {fileID: 11400000, guid: 6b0bec5f81a965449bb3ae7537d411d3, type: 2}
+  - {fileID: 11400000, guid: eea3d16d2de02704296395ce546167e6, type: 2}
+  - {fileID: 11400000, guid: d143ebfbef622bd49a82d0a3bca7d970, type: 2}
+  - {fileID: 11400000, guid: f18c043afce121f4a826d76f3916d594, type: 2}
+  normalAttackSequence: []

@@ -1,0 +1,74 @@
+[
+  {
+    "monster": "Data/Combat/Monsters/AlarmHound.asset",
+    "name": "경종 사냥개",
+    "animation": "Data/Presentation/NativeMonsterFrames/AlarmHound.asset",
+    "idle": "Art/World/Angular/Monsters/BellHound.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/ArmoredExecutioner.asset",
+    "name": "철갑 사마귀",
+    "animation": "Data/Presentation/NativeMonsterFrames/ArmoredExecutioner.asset",
+    "idle": "Art/World/Angular/Monsters/IronMantis.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/BellKeeper.asset",
+    "name": "납골당의 종",
+    "animation": "Data/Presentation/NativeMonsterFrames/BellKeeper.asset",
+    "idle": "Art/World/Angular/Monsters/OssuaryBell.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/BroodKeeper.asset",
+    "name": "실짜는 공작부인",
+    "animation": "Data/Presentation/NativeMonsterFrames/BroodKeeper.asset",
+    "idle": "Art/World/Angular/Monsters/WebDuchess.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset",
+    "name": "미궁 스핑크스",
+    "animation": "Data/Presentation/NativeMonsterFrames/Data_Monster_B1_Boss_MazeGuardian.asset",
+    "idle": "Art/World/ActOne/StoneSphinx-Idle.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset",
+    "name": "쌍두 문지기",
+    "animation": "Data/Presentation/NativeMonsterFrames/Data_Monster_B1_Elite_Minotaur.asset",
+    "idle": "Art/World/Angular/Monsters/EttinGatekeeper.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset",
+    "name": "고블린사냥꾼",
+    "animation": "Data/Presentation/NativeMonsterFrames/Data_Monster_B1_Minion_Bat.asset",
+    "idle": "Art/World/Angular/Monsters/LanternImp.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset",
+    "name": "흡혈박쥐",
+    "animation": "Data/Presentation/NativeMonsterFrames/Data_Monster_B1_Minion_Leech.asset",
+    "idle": "Art/World/Angular/Monsters/CoffinSlime.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset",
+    "name": "해골 전사",
+    "animation": "Data/Presentation/NativeMonsterFrames/Data_Monster_B1_Minion_Skeleton.asset",
+    "idle": "Art/World/Angular/Monsters/StringRevenant.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/MirrorKnight.asset",
+    "name": "움직이는 갑옷",
+    "animation": "Data/Presentation/NativeMonsterFrames/MirrorKnight.asset",
+    "idle": "Art/World/Angular/Monsters/MirrorShell.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/OrbitBat.asset",
+    "name": "실인형",
+    "animation": "Data/Presentation/NativeMonsterFrames/OrbitBat.asset",
+    "idle": "Art/World/Angular/Monsters/Threadling.png"
+  },
+  {
+    "monster": "Data/Combat/Monsters/TunnelRat.asset",
+    "name": "거미",
+    "animation": "Data/Presentation/NativeMonsterFrames/TunnelRat.asset",
+    "idle": "Art/World/Angular/Monsters/BoneScorpion.png"
+  }
+]

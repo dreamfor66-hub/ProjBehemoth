@@ -1,0 +1,176 @@
+Scoped image transitions and held-input rendering only. No balance changes or combat suite.
+PASS Warrior: Idle image=Warrior-Rear
+PASS Warrior: dedicated Ready painting
+PASS Warrior: hold shows Ready without null sprite
+Visible sprite-less pale images: ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Warrior: release switches Attack painting
+PASS Warrior: release recovers Idle
+PASS Warrior: legacy keyed transforms ignored for Idle
+PASS Warrior: legacy keyed transforms ignored for Ready
+PASS Warrior: legacy keyed transforms ignored for Attack
+PASS Warrior: legacy keyed transforms ignored for Guard
+PASS Warrior: no pose transform mutation
+PASS Warrior: missing Ready safely falls back to Idle
+PASS Warrior: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Warrior: no images hides graphic rather than drawing white quad
+PASS Warrior: overlap 0 Guard painting wins while attack held
+PASS Warrior: attack cancel preserves guard
+PASS Warrior: guard release preserves Ready painting
+PASS Warrior: overlap 1 Guard painting wins while attack held
+PASS Warrior: attack cancel preserves guard
+PASS Warrior: guard release preserves Ready painting
+PASS Warrior: overlap 2 Guard painting wins while attack held
+PASS Warrior: attack cancel preserves guard
+PASS Warrior: guard release preserves Ready painting
+PASS Warrior: final cancel/release returns Idle
+PASS Rogue: Idle image=Rogue-Rear
+PASS Rogue: dedicated Ready painting
+PASS Rogue: hold shows Ready without null sprite
+Visible sprite-less pale images: ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Rogue: release switches Attack painting
+PASS Rogue: release recovers Idle
+PASS Rogue: legacy keyed transforms ignored for Idle
+PASS Rogue: legacy keyed transforms ignored for Ready
+PASS Rogue: legacy keyed transforms ignored for Attack
+PASS Rogue: legacy keyed transforms ignored for Guard
+PASS Rogue: no pose transform mutation
+PASS Rogue: missing Ready safely falls back to Idle
+PASS Rogue: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Rogue: no images hides graphic rather than drawing white quad
+PASS Rogue: overlap 0 Guard painting wins while attack held
+PASS Rogue: attack cancel preserves guard
+PASS Rogue: guard release preserves Ready painting
+PASS Rogue: final cancel/release returns Idle
+PASS Barbarian: Idle image=Barbarian-Rear
+PASS Barbarian: dedicated Ready painting
+PASS Barbarian: hold shows Ready without null sprite
+Visible sprite-less pale images: ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Barbarian: release switches Attack painting
+PASS Barbarian: release recovers Idle
+PASS Barbarian: legacy keyed transforms ignored for Idle
+PASS Barbarian: legacy keyed transforms ignored for Ready
+PASS Barbarian: legacy keyed transforms ignored for Attack
+PASS Barbarian: legacy keyed transforms ignored for Guard
+PASS Barbarian: no pose transform mutation
+PASS Barbarian: missing Ready safely falls back to Idle
+PASS Barbarian: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Barbarian: no images hides graphic rather than drawing white quad
+PASS Barbarian: overlap 0 Guard painting wins while attack held
+PASS Barbarian: attack cancel preserves guard
+PASS Barbarian: guard release preserves Ready painting
+PASS Barbarian: final cancel/release returns Idle
+PASS Samurai: Idle image=Samurai-Rear
+PASS Samurai: dedicated Ready painting
+PASS Samurai: hold shows Ready without null sprite
+Visible sprite-less pale images: ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Samurai: release switches Attack painting
+PASS Samurai: release recovers Idle
+PASS Samurai: legacy keyed transforms ignored for Idle
+PASS Samurai: legacy keyed transforms ignored for Ready
+PASS Samurai: legacy keyed transforms ignored for Attack
+PASS Samurai: legacy keyed transforms ignored for Guard
+PASS Samurai: no pose transform mutation
+PASS Samurai: missing Ready safely falls back to Idle
+PASS Samurai: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Samurai: no images hides graphic rather than drawing white quad
+PASS Samurai: overlap 0 Guard painting wins while attack held
+PASS Samurai: attack cancel preserves guard
+PASS Samurai: guard release preserves Ready painting
+PASS Samurai: final cancel/release returns Idle
+PASS Monk: Idle image=Monk-Rear
+PASS Monk: dedicated Ready painting
+PASS Monk: hold shows Ready without null sprite
+Visible sprite-less pale images: ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Monk: release switches Attack painting
+PASS Monk: release recovers Idle
+PASS Monk: legacy keyed transforms ignored for Idle
+PASS Monk: legacy keyed transforms ignored for Ready
+PASS Monk: legacy keyed transforms ignored for Attack
+PASS Monk: legacy keyed transforms ignored for Guard
+PASS Monk: no pose transform mutation
+PASS Monk: missing Ready safely falls back to Idle
+PASS Monk: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Monk: no images hides graphic rather than drawing white quad
+PASS Monk: overlap 0 Guard painting wins while attack held
+PASS Monk: attack cancel preserves guard
+PASS Monk: guard release preserves Ready painting
+PASS Monk: final cancel/release returns Idle
+PASS Wizard: Idle image=Wizard-Rear
+PASS Wizard: dedicated Ready painting
+PASS Wizard: hold shows Ready without null sprite
+Visible sprite-less pale images: ReturnToSelection parent=ArcadeStatus rect=(x:-68.00, y:-36.00, width:136.00, height:72.00); MapToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00); InventoryToggle parent=ArcadeStatus rect=(x:-84.00, y:-36.00, width:168.00, height:72.00)
+PASS Wizard: release switches Attack painting
+PASS Wizard: release recovers Idle
+PASS Wizard: legacy keyed transforms ignored for Idle
+PASS Wizard: legacy keyed transforms ignored for Ready
+PASS Wizard: legacy keyed transforms ignored for Attack
+PASS Wizard: legacy keyed transforms ignored for Guard
+PASS Wizard: no pose transform mutation
+PASS Wizard: missing Ready safely falls back to Idle
+PASS Wizard: destroyed Unity sprite wrapper safely falls back to Idle
+PASS Wizard: no images hides graphic rather than drawing white quad
+PASS Wizard: overlap 0 Guard painting wins while attack held
+PASS Wizard: attack cancel preserves guard
+PASS Wizard: guard release preserves Ready painting
+PASS Wizard: final cancel/release returns Idle
+PASS 고블린사냥꾼: distinct Idle/Ready/Attack paintings
+PASS 고블린사냥꾼: Idle painting
+PASS 고블린사냥꾼: windup uses Ready painting
+PASS 고블린사냥꾼: attack uses Attack painting
+PASS 고블린사냥꾼: fixed framing only; no keyed rotation/translation/squash
+PASS 거미: distinct Idle/Ready/Attack paintings
+PASS 거미: Idle painting
+PASS 거미: windup uses Ready painting
+PASS 거미: attack uses Attack painting
+PASS 거미: fixed framing only; no keyed rotation/translation/squash
+PASS 해골 전사: distinct Idle/Ready/Attack paintings
+PASS 해골 전사: Idle painting
+PASS 해골 전사: windup uses Ready painting
+PASS 해골 전사: attack uses Attack painting
+PASS 해골 전사: fixed framing only; no keyed rotation/translation/squash
+PASS 흡혈박쥐: distinct Idle/Ready/Attack paintings
+PASS 흡혈박쥐: Idle painting
+PASS 흡혈박쥐: windup uses Ready painting
+PASS 흡혈박쥐: attack uses Attack painting
+PASS 흡혈박쥐: fixed framing only; no keyed rotation/translation/squash
+PASS 경종 사냥개: distinct Idle/Ready/Attack paintings
+PASS 경종 사냥개: Idle painting
+PASS 경종 사냥개: windup uses Ready painting
+PASS 경종 사냥개: attack uses Attack painting
+PASS 경종 사냥개: fixed framing only; no keyed rotation/translation/squash
+PASS 움직이는 갑옷: distinct Idle/Ready/Attack paintings
+PASS 움직이는 갑옷: Idle painting
+PASS 움직이는 갑옷: windup uses Ready painting
+PASS 움직이는 갑옷: attack uses Attack painting
+PASS 움직이는 갑옷: fixed framing only; no keyed rotation/translation/squash
+PASS 철갑 사마귀: distinct Idle/Ready/Attack paintings
+PASS 철갑 사마귀: Idle painting
+PASS 철갑 사마귀: windup uses Ready painting
+PASS 철갑 사마귀: attack uses Attack painting
+PASS 철갑 사마귀: fixed framing only; no keyed rotation/translation/squash
+PASS 쌍두 문지기: distinct Idle/Ready/Attack paintings
+PASS 쌍두 문지기: Idle painting
+PASS 쌍두 문지기: windup uses Ready painting
+PASS 쌍두 문지기: attack uses Attack painting
+PASS 쌍두 문지기: fixed framing only; no keyed rotation/translation/squash
+PASS 납골당의 종: distinct Idle/Ready/Attack paintings
+PASS 납골당의 종: Idle painting
+PASS 납골당의 종: windup uses Ready painting
+PASS 납골당의 종: attack uses Attack painting
+PASS 납골당의 종: fixed framing only; no keyed rotation/translation/squash
+PASS 실짜는 공작부인: distinct Idle/Ready/Attack paintings
+PASS 실짜는 공작부인: Idle painting
+PASS 실짜는 공작부인: windup uses Ready painting
+PASS 실짜는 공작부인: attack uses Attack painting
+PASS 실짜는 공작부인: fixed framing only; no keyed rotation/translation/squash
+PASS 실인형: distinct Idle/Ready/Attack paintings
+PASS 실인형: Idle painting
+PASS 실인형: windup uses Ready painting
+PASS 실인형: attack uses Attack painting
+PASS 실인형: fixed framing only; no keyed rotation/translation/squash
+PASS 미궁 스핑크스: distinct Idle/Ready/Attack paintings
+PASS 미궁 스핑크스: Idle painting
+PASS 미궁 스핑크스: windup uses Ready painting
+PASS 미궁 스핑크스: attack uses Attack painting
+PASS 미궁 스핑크스: fixed framing only; no keyed rotation/translation/squash
+COMPLETE

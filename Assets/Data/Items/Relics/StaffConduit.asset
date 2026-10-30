@@ -29,7 +29,7 @@ MonoBehaviour:
     \uC801\uC911 \uD6C4 \uB2E4\uC74C \uC8FC\uBB38\uC740 \uCE90\uC2A4\uD305 \uC2DC\uAC04
     -60%, \uD53C\uD574 +20%. \uC57D\uC810 \uD30C\uAD34 \uC2DC \uAC00\uB4DC\uAC8C\uC774\uC9C0
     +3."
-  icon: {fileID: 21300000, guid: 07dd38b0d2bc5e2fa920cdb5e460879d, type: 3}
+  icon: {fileID: 21300000, guid: 09d6d59bc6c6c834bb0aa1d07897c928, type: 3}
   scope: 2
   exclusiveCharacter: 5
   power: 48
@@ -57,6 +57,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -99,6 +100,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -130,6 +132,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -177,6 +180,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -222,6 +226,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

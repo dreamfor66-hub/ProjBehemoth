@@ -1,0 +1,1 @@
+Design budgets and deterministic reward-opportunity accounting, not repeated random-run averages.

@@ -44,12 +44,11 @@ public sealed class MonsterGroundingLiveProbe : MonoBehaviour
     void CheckGround(int index, Vector2 bottom)
     {
         var runtime = combat.Enemies[index]; var view = View(index); var data = runtime.Data;
-        var actualBottom = Center(index) - Vector2.up * data.bodyHitRadius * runtime.VisualScale;
+        var actualBottom = Center(index) - Vector2.up * (-data.FootprintY) * runtime.VisualScale;
         Check(Vector2.Distance(actualBottom, bottom) < .01f, data.displayName + " hitbox bottom=" + actualBottom + " requested=" + bottom + " scale=" + runtime.VisualScale);
         var body = Ref<Image>(view, "body"); var layout = data.combatAnimation;
         var sprite = layout.idle;
-        var renderedHeight = Mathf.Min(body.rectTransform.rect.height, body.rectTransform.rect.width * sprite.rect.height / sprite.rect.width) * view.arcadeArtScale * layout.canvasScale;
-        var artBottom = Center(index).y + (body.rectTransform.anchoredPosition.y + (layout.groundContactY - .5f) * renderedHeight) * runtime.VisualScale;
+        var artBottom = Center(index).y + data.ArtworkBounds.yMin * runtime.VisualScale;
         Check(Mathf.Abs(artBottom - bottom.y) < .02f, data.displayName + " visible Idle contact matches bottom=" + artBottom);
         Check(Vector2.Distance(view.Root.anchoredPosition + scene.MonsterPosition, Center(index)) < .01f, data.displayName + " view and collision centers agree");
     }
@@ -63,12 +62,12 @@ public sealed class MonsterGroundingLiveProbe : MonoBehaviour
         combat = FindFirstObjectByType<CombatController>(); scene = FindFirstObjectByType<CombatSceneView>();
         var skeleton = Clone("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
         var spider = Clone("Assets/Data/Combat/Monsters/TunnelRat.asset");
-        var tiny = Instantiate(skeleton); tiny.bodyHitRadius = 9;
+        var tiny = Instantiate(skeleton); tiny.hitBoxes = new() { new MonsterHitBox { radius = 9 } };
         var encounter = ScriptableObject.CreateInstance<EncounterData>();
         encounter.members = new List<EncounterMember> {
-            new() { monster=skeleton, offset=new Vector2(-370,-65), scale=1 },
-            new() { monster=spider, offset=Vector2.zero, scale=.75f },
-            new() { monster=tiny, offset=new Vector2(370,-65), scale=.5f }
+            new() { monster=skeleton, offset=new Vector2(-370,-65) },
+            new() { monster=spider, offset=Vector2.zero },
+            new() { monster=tiny, offset=new Vector2(370,-65) }
         };
         combat.ResetEncounter(); combat.PrepareFixedEncounter(combat.Run, encounter, 1); combat.BeginPreparedCombat(); combat.InputPaused = true;
         yield return new WaitForSecondsRealtime(.6f);
@@ -102,11 +101,11 @@ public sealed class MonsterGroundingLiveProbe : MonoBehaviour
             }
         }
         // A flying placement is the lower hitbox edge at its authored altitude.
-        combat.ResetEncounter(); encounter.members=new List<EncounterMember>{new(){monster=spider,offset=new Vector2(0,140),scale=.6f}};
+        combat.ResetEncounter(); encounter.members=new List<EncounterMember>{new(){monster=spider,offset=new Vector2(0,140)}};
         combat.PrepareFixedEncounter(combat.Run,encounter,1); combat.BeginPreparedCombat();combat.InputPaused=true;yield return null;
         CheckGround(0,scene.MonsterPosition+new Vector2(0,140));yield return Capture("02-Air-Placement");
         // Orbit motion retains the authored spawn center rather than returning to the global origin.
-        var orbit=Instantiate(spider);orbit.pattern=MonsterPattern.Orbit;orbit.orbitRadius=110;
+        var orbit=Instantiate(spider);orbit.useOrbit=true;orbit.orbitRadius=110;
         combat.ResetEncounter();encounter.members[0].monster=orbit;
         combat.PrepareFixedEncounter(combat.Run,encounter,1);combat.BeginPreparedCombat();combat.InputPaused=false;yield return new WaitForSecondsRealtime(.15f);
         var origin=orbit.BodyCenterFromPlacement(scene.MonsterPosition+new Vector2(0,140),.6f);

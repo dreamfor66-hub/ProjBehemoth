@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.coffinslime-0.displayname
-    lastText: "\uD761\uD608\uBC15\uC950\uC758 \uACAC\uC81C"
+    lastText: "\uD761\uD608 \uBB3C\uC5B4\uB72F\uAE30"
   textOwnerGuid: c90b6f105eb5d2542af6f42a2a2bf43b
   type: 0
-  displayName: "\uD761\uD608\uBC15\uC950\uC758 \uACAC\uC81C"
+  displayName: "\uD761\uD608 \uBB3C\uC5B4\uB72F\uAE30"
   damage: 19.2
   shieldDamage: 19.2
   windupDuration: 0.957

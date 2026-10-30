@@ -1,0 +1,20 @@
+{
+  "mode": "Built-in image_gen image edit; transparent background",
+  "prompt": "Use case: precise-object-edit.\nAsset: Behemoth Warrior combat READY pose, one transparent PNG, matching the first image's 1448 x 1086 landscape canvas, waist-up rear-view framing.\nInput 1: EDIT TARGET, existing Warrior ATTACK follow-through. It ends in a right-handed outward backhand slash to screen-right. Keep that Attack file unchanged; make its physically complementary pre-swing READY painting from it.\nInputs 2 and 3: user's ORIGINAL style references, broad shapes and confident ink / restrained flat shadows only. Do not copy their characters, props, text or logos.\n\nPRIMARY CORRECTION: the right-hand sword must be CHARGED ON THE INSIDE, across the FRONT of the chest near the LEFT shoulder, so releasing would sweep the hand and sword OUTWARD TO SCREEN-RIGHT into the target's extended Attack. This is a backhand wind-up. NOT another sword raised outside the right shoulder.\n\nPaint the right upper arm folded inward, elbow compact beside the right ribs and slightly forward; the right forearm crosses in FRONT of the chest (away from our rear camera), and must therefore be naturally OCCLUDED by the torso rather than drawn impossibly over the back. Show the right glove gripping ONE sword just outside the LEFT shoulder / left neck silhouette, on the SCREEN-LEFT side of the helmet. The fist/hilt is at left-shoulder height. The blade projects diagonally UP-LEFT into clear screen-left negative space, entirely on the LEFT side of the helmet. A little inward torso/shoulder coil may support the stored tension, with the head still facing away. In the Ready silhouette the fist and blade occupy screen-left/central INNER space, opposite the Attack hand and blade at the far SCREEN-RIGHT. Do not leave the sword hand, sword, or bent elbow raised in outer screen-right space.\nAnatomy: right shoulder -> upper arm -> elbow -> forearm -> wrist must make a plausible cross-body wind-up. Hide the forearm that lies in front of the torso; do not create extra hands, a disconnected glove, a floating hilt, or a second sword. Blade, guard, grip, fist and pommel form one physically continuous sword axis.\nPRESERVE identity: exact back of peaked helmet, mustard scarf, battered olive cloth, compressed muscular proportions, angular plate armor, leather glove, broad sword shape, original LEFT arm and LEFT wooden shield placement/angle/wrist/fist, belt and waist crop. Shield remains screen-left. No whole-character mirror, no front face or visor on back, no shield-arm redesign. Keep shoulder/head/waist anchor and apparent scale compatible with target.\nStyle: match the existing Warrior with bold dark ink contours, broad olive/gray/brown color blocks, limited flat shadows; avoid adding little triangular facets, straps, detail or gloss. Crisp native resolution; genuine transparent background. NO arrows, trajectory effects, swooshes, text, labels, UI, floor, border, white box or gray background. Exactly one ready pose, no comparison board.",
+  "inputs": [
+    {
+      "path": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/States/Heroes/Warrior-Attack.png",
+      "role": "Edit target and locked outward Attack follow-through"
+    },
+    {
+      "path": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg",
+      "role": "User original style reference"
+    },
+    {
+      "path": "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/04-brawler-back.jpg",
+      "role": "User original style reference"
+    }
+  ],
+  "selected": "C:/Users/user/.codex/generated_images/01a17e35-6ae4-7512-8bc3-1f02d10ce875/exec-69eda3ae-e1a8-4d9c-8dc4-101a31a755b7.png",
+  "saved": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/States/Heroes/Warrior-Ready.png"
+}

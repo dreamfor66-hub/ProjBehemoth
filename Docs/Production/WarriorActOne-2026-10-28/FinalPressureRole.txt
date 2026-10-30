@@ -1,0 +1,4 @@
+Matched middle progression: XP115, two actual perks/shared chest relic, each class's own starter. Six identical 19.2 damage/19.2 shield attacks every 2.657s. Existing runtime guard/regen/damage, not offense or class DPS comparison.
+Warrior HP hits=1, HP lost=19.20
+Rogue HP hits=3, HP lost=57.60
+PASS Warrior has a bounded defense advantage.

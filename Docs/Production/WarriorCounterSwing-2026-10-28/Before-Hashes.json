@@ -1,0 +1,20 @@
+{
+  "Art/World/Angular/States/Heroes/Warrior-Ready.png": "ea3535723aeca7fc1384da8914611f959695c7b1671877b13f0c841fe2a71f62",
+  "Art/World/Angular/States/Heroes/Warrior-Attack.png": "bdbda2f75bcf3c95f737634cad0e0fbcd901f69206843fb5ec49af318a2a3955",
+  "Art/World/Angular/States/Heroes/Warrior-Guard.png": "b21580e728f659382a57447e2636796f1ce3d213183a26455efe645ef4cd009e",
+  "Art/World/Angular/States/Heroes/Rogue-Ready.png": "40e775a6c2e10e06c36306953206b17386480472696c986b2d82318aa9e7e544",
+  "Art/World/Angular/States/Heroes/Rogue-Attack.png": "e392f53732f0921359cce7f48439c00a2348013be309fed2172bea80ba065bbe",
+  "Art/World/Angular/States/Heroes/Rogue-Guard.png": "2882d0fbf2e96c00f2d540ef3ab413269027761cb3d86bb772c5edff57d34e82",
+  "Art/World/Angular/States/Heroes/Barbarian-Ready.png": "86089f1a9edd0688f9349cd74d4530538fadc323574f29c6357d8c1aa3923ed5",
+  "Art/World/Angular/States/Heroes/Barbarian-Attack.png": "0f17cc3b0274e6c112421dea2ed3192535a79b367f6dc53b4b1b0dc66a3a36d0",
+  "Art/World/Angular/States/Heroes/Barbarian-Guard.png": "1163ffc84ab5e8f3b7d51fb9bf6b5fd4f05d5d29a70c82d7918ab31097971dbf",
+  "Art/World/Angular/States/Heroes/Samurai-Ready.png": "42e9bb837d39b3c4c5e9e95b5f8ac6567b291b18071998a5e3a474932c45b96c",
+  "Art/World/Angular/States/Heroes/Samurai-Attack.png": "38b9b12f506c50160f13da7dd8062ab5941b2c129b338be0ba261903826c1815",
+  "Art/World/Angular/States/Heroes/Samurai-Guard.png": "8bb6b8db6cd1b7d379d3ace933a83b3deb811752658136c7abe20577eb13e225",
+  "Art/World/Angular/States/Heroes/Monk-Ready.png": "09d351e76a5180ebfc1fca7007d4a7adfa004a97468e9a17d3bd810328883337",
+  "Art/World/Angular/States/Heroes/Monk-Attack.png": "12cc42c831ae70dbe1f397f6216e51a29f068597d16646983b741a47e24b109d",
+  "Art/World/Angular/States/Heroes/Monk-Guard.png": "f09bd870d1b5188286b6f71ce045bf195601c0546099bc7519200d0ba1f1691e",
+  "Art/World/Angular/States/Heroes/Wizard-Ready.png": "8c4a7cbb941973461147b02230cc3bff90bdae02946aea8af00538336e96e6c9",
+  "Art/World/Angular/States/Heroes/Wizard-Attack.png": "b3f5da59838df4db31bae5d389828df8f162e8e54ab5ccd1fae876e3326bc11f",
+  "Art/World/Angular/States/Heroes/Wizard-Guard.png": "f4ba64999fe12513161c8fd43cabffff84594dc79ef5748df21350b0e0bb0b59"
+}

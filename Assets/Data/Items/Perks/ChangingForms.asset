@@ -27,9 +27,10 @@ MonoBehaviour:
   description: "\uC11C\uB85C \uB2E4\uB978 \uCD08\uC2DD\uC744 3\uD68C \uC5F0\uC18D
     \uC0AC\uC6A9\uD558\uBA74 \uB2E4\uC74C \uACF5\uACA9\uD615 \uCD08\uC2DD\uC5D0 \uBB3C\uB9AC
     \uD53C\uD574 18\uC744 \uCD94\uAC00\uD55C\uB2E4."
-  icon: {fileID: 21300000, guid: c853e0de8ce455ea91506025437f7f09, type: 3}
+  icon: {fileID: 21300000, guid: 21291915aede61a478fae8e849e337c6, type: 3}
   scope: 2
   exclusiveCharacter: 4
+  offerGroup: {fileID: 0}
   abilitySource: {fileID: 11400000, guid: f6a34c6a74da6af41a0afad00024d427, type: 2}
   maxStacks: 99
   modifiers: []

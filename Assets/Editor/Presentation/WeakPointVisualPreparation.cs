@@ -21,7 +21,7 @@ internal static class WeakPointVisualPreparation
         var target=AssetDatabase.LoadAssetAtPath<WeakPointView>("Assets/Prefabs/Combat/WeakPointView.prefab");
         var profile=AssetDatabase.LoadAssetAtPath<ArcadePresentation>("Assets/Data/Presentation/Arcade224.asset");
         if(fx==null||target==null||target.reticle==null)return;
-        if(fx.shatter!=null&&target.reticle.style!=null&&profile!=null&&profile.weakPointStyle==target.reticle.style)return;
+        if(fx.shatter!=null&&target.reticle.style!=null&&target.reticle.style.material!=null&&profile!=null&&profile.weakPointStyle==target.reticle.style)return;
         try{Prepare();}catch(Exception e){next=double.MaxValue;Debug.LogException(e);}
     }
     internal static void Prepare()
@@ -29,6 +29,7 @@ internal static class WeakPointVisualPreparation
         if(EditorApplication.isPlayingOrWillChangePlaymode)return;
         var style=AssetDatabase.LoadAssetAtPath<WeakPointVisualStyle>(StylePath);
         if(style==null){style=ScriptableObject.CreateInstance<WeakPointVisualStyle>();AssetDatabase.CreateAsset(style,StylePath);}
+        style.material=AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Materials/InkUi.mat");EditorUtility.SetDirty(style);
         var presentation=AssetDatabase.LoadAssetAtPath<ArcadePresentation>("Assets/Data/Presentation/Arcade224.asset");
         presentation.weakPointStyle=style;EditorUtility.SetDirty(presentation);
         Edit("Assets/Prefabs/Combat/WeakPointView.prefab",prefab=>

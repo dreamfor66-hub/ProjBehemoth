@@ -1,0 +1,10 @@
+{
+  "automationId": "1",
+  "kind": "heartbeat",
+  "intervalMinutes": 30,
+  "status": "PAUSED",
+  "continuation": "current thread",
+  "completionRule": "both deliverables mechanically accepted",
+  "reason": "Attack installed/reference review saved; final actual-growth matrix27/27 zeroHP, negative controls and guard role passed",
+  "verification": "VerificationSummary.md"
+}

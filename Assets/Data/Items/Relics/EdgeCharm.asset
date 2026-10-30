@@ -23,7 +23,7 @@ MonoBehaviour:
   id: EdgeCharm
   displayName: "\uB0A0 \uC120 \uBD80\uC801"
   description: "\uC77C\uBC18 \uACF5\uACA9 \uD53C\uD574 +15%"
-  icon: {fileID: 21300000, guid: 2f0d2998932555368a6a15e775073912, type: 3}
+  icon: {fileID: 21300000, guid: c9730472167ef32428eb41266f728bb7, type: 3}
   scope: 0
   exclusiveCharacter: 0
   power: 0
@@ -51,6 +51,7 @@ MonoBehaviour:
       effectCount: 1
       effectAngle: 0
       effectTime: 0
+      travelGraceSteps: 0
       effectStatType: 0
       scale: 0
       scaleRatio: 0
@@ -96,6 +97,7 @@ MonoBehaviour:
     effectCount: 1
     effectAngle: 0
     effectTime: 0
+    travelGraceSteps: 0
     effectStatType: 0
     scale: 0
     scaleRatio: 0

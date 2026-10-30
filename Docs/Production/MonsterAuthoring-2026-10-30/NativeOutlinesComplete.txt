@@ -1,0 +1,1 @@
+176 native Sprite vertex streams baked; rect/pivot/PPU/UV/texture bytes preserved.

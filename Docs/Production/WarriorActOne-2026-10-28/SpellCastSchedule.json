@@ -1,0 +1,62 @@
+{
+  "horizon": 20,
+  "mp": 30,
+  "regen": 0.1,
+  "weaponOpportunityDps": 16.5,
+  "weaponCooldown": 0.85,
+  "casts": {
+    "ChainLightning": [
+      0.4,
+      10.8
+    ],
+    "Cleanse": [
+      0.4,
+      10.8
+    ],
+    "Ember": [
+      0.4,
+      4.8,
+      9.2
+    ],
+    "EnchantFire": [
+      0.4,
+      10.8
+    ],
+    "EnchantIce": [
+      0.4,
+      10.8
+    ],
+    "EnchantLightning": [
+      0.4,
+      10.8
+    ],
+    "EnergyBolt": [
+      0.4,
+      6.8,
+      13.2
+    ],
+    "FireBloom": [
+      0.4,
+      10.8
+    ],
+    "FrostRing": [
+      0.4,
+      9.8,
+      19.2
+    ],
+    "LightningMark": [
+      0.4,
+      8.8,
+      17.2
+    ],
+    "PoisonMist": [
+      0.4,
+      12.8
+    ],
+    "Spark": [
+      0.4,
+      6.3,
+      12.2
+    ]
+  }
+}

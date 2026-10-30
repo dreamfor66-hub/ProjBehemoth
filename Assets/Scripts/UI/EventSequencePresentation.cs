@@ -11,14 +11,14 @@ namespace DungeonSlash
         private void ShowEventConclusion(RandomEventData story,string text,int paragraph=0)
         {
             var paragraphs=SplitEventParagraphs(text);
-            expansionView.ShowModal(story.displayName,paragraphs.Length>0?paragraphs[paragraph]:"",new[]{new PresentationChoice
+            expansionView.ShowModal(story.displayName,story.illustratedPopup?text:paragraphs.Length>0?paragraphs[paragraph]:"",new[]{new PresentationChoice
             {
                 Title=GameText.Get("ui.event.continue"),Selected=()=>
                 {
-                    if(paragraph+1<paragraphs.Length)ShowEventConclusion(story,text,paragraph+1);
+                    if(!story.illustratedPopup&&paragraph+1<paragraphs.Length)ShowEventConclusion(story,text,paragraph+1);
                     else {roomTransitionView?.RevealScene();AfterRoomResolution();}
                 }
-            }},activeStoryIllustration!=null?activeStoryIllustration:story.illustration);
+            }},activeStoryIllustration!=null?activeStoryIllustration:story.illustration, illustratedEvent:story.illustratedPopup);
         }
         private void ShowEventSequence(DungeonRoom room, RandomEventData story)
         {
@@ -37,7 +37,7 @@ namespace DungeonSlash
             var lines = SplitEventParagraphs(page.narrative);
             var illustration = page.illustration != null ? page.illustration : story.illustration;
             activeStoryIllustration = illustration;
-            if (lineIndex < lines.Length - 1)
+            if (!story.illustratedPopup && lineIndex < lines.Length - 1)
             {
                 expansionView.ShowModal(story.displayName, lines[lineIndex], new[] { new PresentationChoice { Title = GameText.Get("ui.event.continue"), Selected = () => ShowEventPage(room, story, index, lineIndex + 1) } }, illustration);
                 return;
@@ -68,7 +68,7 @@ namespace DungeonSlash
                 };
             }).ToArray();
             if (choices.Length == 0) choices = new[] { new PresentationChoice { Title = GameText.Get("ui.event.leave"), Selected = () => { room.IsCleared = true; AfterRoomResolution(); } } };
-            expansionView.ShowModal(story.displayName, lines.LastOrDefault() ?? "", choices, illustration);
+            expansionView.ShowModal(story.displayName, story.illustratedPopup ? page.narrative : lines.LastOrDefault() ?? "", choices, illustration, illustratedEvent:story.illustratedPopup);
         }
 
         private static string[] SplitEventParagraphs(string text) =>

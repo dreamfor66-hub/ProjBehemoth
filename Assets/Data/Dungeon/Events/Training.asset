@@ -107,6 +107,7 @@ MonoBehaviour:
   textOwnerGuid: f4744ac83644fda4abb9cf9f29823da9
   id: Training
   displayName: "\uC624\uB298\uC758 \uC0C1\uB300\uB97C \uACE0\uB974\uC2DC\uC624"
+  excludedFromRandomPool: 0
   narrative: "\uD6C8\uB828\uC7A5\uC5D0 \uB4E4\uC5B4\uC11C\uC790 \uB098\uBB34 \uC778\uD615
     \uC138 \uAC1C\uAC00 \uB3D9\uC2DC\uC5D0 \uACE0\uAC1C\uB97C \uB3CC\uB9B0\uB2E4.\r\n\r\n\uCCAB\uC9F8\uB294
     \uB048, \uB458\uC9F8\uB294 \uCCA0\uC0AC, \uC14B\uC9F8\uB294 \uAD75\uC740 \uC0AC\uC2AC\uB85C
@@ -114,8 +115,9 @@ MonoBehaviour:
     \uAC01 \uC778\uD615\uC758 \uC704\uD5D8\uB3C4\uC640 \uBCF4\uC0C1\uC774 \uC801\uD600
     \uC788\uB2E4.\r\n\r\n\uB3C4\uC804\uD560 \uC0C1\uB300\uC758 \uAD6C\uC18D\uC744
     \uD480\uC5B4 \uC8FC\uC2ED\uC2DC\uC624."
-  illustration: {fileID: 21300000, guid: bc994ebfee1256d3bb6ed99bcf28501d, type: 3}
+  illustration: {fileID: 21300000, guid: e7272535203f832448964fc03bcbd541, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
   minAct: 1
   maxAct: 3
   weight: 1
@@ -240,7 +242,7 @@ MonoBehaviour:
       \uAC01 \uC778\uD615\uC758 \uC704\uD5D8\uB3C4\uC640 \uBCF4\uC0C1\uC774 \uC801\uD600
       \uC788\uB2E4.\r\n\r\n\uB3C4\uC804\uD560 \uC0C1\uB300\uC758 \uAD6C\uC18D\uC744
       \uD480\uC5B4 \uC8FC\uC2ED\uC2DC\uC624."
-    illustration: {fileID: 21300000, guid: bc994ebfee1256d3bb6ed99bcf28501d, type: 3}
+    illustration: {fileID: 0}
     options:
     - title: "\uB048\uC744 \uD47C\uB2E4"
       description: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"

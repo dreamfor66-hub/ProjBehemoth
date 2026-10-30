@@ -15,11 +15,11 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.webduchess-0.displayname
-    lastText: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778\uC758 \uACAC\uC81C"
+    lastText: "\uC2E4\uCE7C\uB0A0 \uBCA0\uAE30"
   textOwnerGuid: b514f027379ad424fbdcf499c2df4e00
   type: 0
-  displayName: "\uC2E4\uC9DC\uB294 \uACF5\uC791\uBD80\uC778\uC758 \uACAC\uC81C"
-  damage: 11
+  displayName: "\uC2E4\uCE7C\uB0A0 \uBCA0\uAE30"
+  damage: 13
   shieldDamage: 17.6
   windupDuration: 1.1
   recoveryDuration: 0.5

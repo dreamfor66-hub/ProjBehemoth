@@ -1,0 +1,50 @@
+Existing Unity Editor. Production Begin/Move/End with synthetic independent finger IDs. No balance/DPS tests.
+PASS alternate paintings assigned in saved Warrior library
+PASS press latches LeftToRight
+PASS correct authored Ready LeftToRight
+PASS production swipe accepts LeftToRight
+PASS normal/charged attack semantics retained LeftToRight charged=False
+PASS matching Attack survives crossing screen center LeftToRight
+PASS press latches RightToLeft
+PASS correct authored Ready RightToLeft
+PASS production swipe accepts RightToLeft
+PASS normal/charged attack semantics retained RightToLeft charged=False
+PASS matching Attack survives crossing screen center RightToLeft
+PASS press latches LeftToRight
+PASS correct authored Ready LeftToRight
+PASS charged hold keeps its authored Ready LeftToRight
+PASS production swipe accepts LeftToRight
+PASS normal/charged attack semantics retained LeftToRight charged=True
+PASS matching Attack survives crossing screen center LeftToRight
+PASS press latches RightToLeft
+PASS correct authored Ready RightToLeft
+PASS charged hold keeps its authored Ready RightToLeft
+PASS production swipe accepts RightToLeft
+PASS normal/charged attack semantics retained RightToLeft charged=True
+PASS matching Attack survives crossing screen center RightToLeft
+PASS both directions return to a valid Idle
+PASS second contact does not overwrite held first direction
+PASS independent cancellation exposes remaining contact Ready
+PASS cancel restores Idle without firing
+PASS press latches LeftToRight
+PASS guard painting takes priority while preparing LeftToRight
+PASS production swipe accepts LeftToRight
+PASS normal/charged attack semantics retained LeftToRight charged=False
+PASS matching Attack survives crossing screen center LeftToRight
+PASS guard survives overlap/lift/repress cycle 0
+PASS press latches RightToLeft
+PASS guard painting takes priority while preparing RightToLeft
+PASS production swipe accepts RightToLeft
+PASS normal/charged attack semantics retained RightToLeft charged=False
+PASS matching Attack survives crossing screen center RightToLeft
+PASS guard survives overlap/lift/repress cycle 1
+PASS press latches LeftToRight
+PASS guard painting takes priority while preparing LeftToRight
+PASS production swipe accepts LeftToRight
+PASS normal/charged attack semantics retained LeftToRight charged=False
+PASS matching Attack survives crossing screen center LeftToRight
+PASS guard survives overlap/lift/repress cycle 2
+PASS final guard release clears only its own contact
+PASS poses do not animate actor transforms
+PASS unconfigured classes retain their existing paintings
+COMPLETE failures=0. Real touch-device feel remains untested.

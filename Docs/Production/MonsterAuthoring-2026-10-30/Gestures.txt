@@ -1,0 +1,10 @@
+PASS Native Inspector weak-point drag: (-93,26) -> (-142.392,65.514); marker followed pointer and serialized attack data changed.
+PASS Undo restores original weak-point coordinates.
+PASS Redo restores moved weak-point coordinates.
+PASS Drag creates fourth circular hitbox and saves its center/radius.
+PASS Hitbox drag changes center and preserves radius.
+PASS Radius handle changes radius and preserves center.
+PASS Delete removes selected hitbox without changing the original three.
+PASS Undo restores deleted hitbox and radius.
+PASS Hitbox visibility toggle hides circles while preserving Ready image and weak points. Portrait is shown separately directly below its reference field.
+PASS Use Orbit=false disables Orbit Radius/Speed; enabling it activates both fields. Ready and separate Portrait previews both remain visible.

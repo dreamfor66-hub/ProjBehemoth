@@ -28,7 +28,7 @@ MonoBehaviour:
   chargeTimeLimit: 4
   chargeWeakPoints:
   - id: lock_0
-    normalizedPosition: {x: 0, y: 0}
+    localPosition: {x: 0, y: 0}
     hitRadius: 29
     requiredChargeHits: 1
     optional: 0

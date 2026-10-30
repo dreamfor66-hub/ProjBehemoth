@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: ManaVessel
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.manavessel.displayname
+    lastText: "\uB9C8\uB825 \uADF8\uB987"
+  - propertyPath: description
+    key: data.perkdata.manavessel.description
+    lastText: "\uCD5C\uB300 MP +3"
+  textOwnerGuid: 4e26cba797314324cbf1bfb5ec124de8
+  id: ManaVessel
+  displayName: "\uB9C8\uB825 \uADF8\uB987"
+  description: "\uCD5C\uB300 MP +3"
+  icon: {fileID: 21300000, guid: 1f034102c7be52b391423ee453b817ac, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  offerGroup: {fileID: 11400000, guid: 630ec376196d442d90c7aa22cd9a1953, type: 2}
+  abilitySource: {fileID: 11400000, guid: 81cb0f5ef83df7a45abde82b4232e69c, type: 2}
+  maxStacks: 99
+  modifiers:
+  - kind: 23
+    value: 3

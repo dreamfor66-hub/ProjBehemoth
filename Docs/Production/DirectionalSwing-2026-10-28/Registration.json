@@ -1,0 +1,44 @@
+[
+  {
+    "state": "Ready",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Ready-LeftToRight.png",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a17e35-6ae4-7512-8bc3-1f02d10ce875\\exec-d4c84159-82bb-4160-8045-ca2d3cefe2cc.png",
+    "sourceSize": [
+      1868,
+      842
+    ],
+    "artScale": 1.12,
+    "offset": [
+      62,
+      265
+    ],
+    "canvasSize": [
+      2896,
+      1304
+    ],
+    "guid": "419b22b5d789475ba790ea4fe02f91c0",
+    "sha256": "6f4a328348b7c0a002fe5b4b0f052603d573c8bce9b90141fc6b71b4d5b4fc2d",
+    "registration": "Helmet line registered to existing Ready; slight rightward unwind at Attack. Existing images and transforms unchanged."
+  },
+  {
+    "state": "Attack",
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\States\\Heroes\\Warrior-Attack-LeftToRight.png",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a17e35-6ae4-7512-8bc3-1f02d10ce875\\exec-776c0eed-4d64-4ad8-93cd-4b1879b32d44.png",
+    "sourceSize": [
+      1868,
+      842
+    ],
+    "artScale": 1.12,
+    "offset": [
+      730,
+      260
+    ],
+    "canvasSize": [
+      2896,
+      1304
+    ],
+    "guid": "a98f1209e5db405d95ba99a6ecb15118",
+    "sha256": "1fb05ddcb8bf34072984bc8fb9adbe3886adf522772a028c604225a99b929282",
+    "registration": "Helmet line registered to existing Ready; slight rightward unwind at Attack. Existing images and transforms unchanged."
+  }
+]

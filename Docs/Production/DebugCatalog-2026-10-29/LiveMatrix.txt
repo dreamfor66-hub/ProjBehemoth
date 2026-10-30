@@ -1,0 +1,54 @@
+PASS — live F1 matrix
+PASS F1 surface opens in the live scene
+PASS entire panel including footer stays on screen
+PASS infinite battle button label is visible
+PASS tab 0 all entries accessible: 44/44
+PASS tab 0 every entry has a visible image
+PASS tab 0 scrollbar automatically follows overflow
+PASS tab 0 hover opens named side popup
+PASS tab 0 side popup stays inside panel
+PASS tab 0 popup text fits
+PASS tab 0 hover exit hides popup
+PASS tab 0 all descriptions fit the side popup
+PASS tab 0 wheel moves the actual content
+PASS tab 0 final overflow entry can be selected exclusively
+PASS tab 1 all entries accessible: 41/41
+PASS tab 1 every entry has a visible image
+PASS tab 1 scrollbar automatically follows overflow
+PASS tab 1 hover opens named side popup
+PASS tab 1 side popup stays inside panel
+PASS tab 1 popup text fits
+PASS tab 1 hover exit hides popup
+PASS tab 1 all descriptions fit the side popup
+PASS tab 1 wheel moves the actual content
+PASS tab 1 final overflow entry can be selected exclusively
+PASS tab 2 all entries accessible: 92/92
+PASS tab 2 every entry has a visible image
+PASS tab 2 scrollbar automatically follows overflow
+PASS tab 2 hover opens named side popup
+PASS tab 2 side popup stays inside panel
+PASS tab 2 popup text fits
+PASS tab 2 hover exit hides popup
+PASS tab 2 all descriptions fit the side popup
+PASS tab 2 wheel moves the actual content
+PASS tab 2 final overflow entry can be selected exclusively
+PASS tab 3 all entries accessible: 7/7
+PASS tab 3 every entry has a visible image
+PASS tab 3 scrollbar automatically follows overflow
+PASS tab 3 hover opens named side popup
+PASS tab 3 side popup stays inside panel
+PASS tab 3 popup text fits
+PASS tab 3 hover exit hides popup
+PASS tab 3 all descriptions fit the side popup
+PASS perk grant gives named success feedback
+PASS selected relic is actually granted
+PASS duplicate relic failure is readable
+PASS potion adds or reports full slots
+PASS full potion slots report failure without overflowing inventory
+PASS infinite battle toggle on
+PASS infinite battle toggle off
+PASS close also hides side popup
+PASS reopen preserves a usable catalog
+PASS selected monster battle is prepared and closes overlay
+Runtime: 1920x1080; selected monster=거미
+Scope: F1 only; no DPS/balance suite. Physical input results are recorded separately. Real device pending.

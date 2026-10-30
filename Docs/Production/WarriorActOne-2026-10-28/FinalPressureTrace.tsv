@@ -1,0 +1,35 @@
+build	encounter	seconds	guardBefore	guardAfter	hp	shieldState	enemyState	remainingNormalHits
+중반·전투형	철갑 사마귀	3.71	35.00	23.80	110.00	Guarding	Attacking	2
+중반·전투형	철갑 사마귀	4.12	24.58	13.41	110.00	Guarding	Attacking	1
+중반·전투형	철갑 사마귀	4.53	14.19	3.03	110.00	Guarding	Idle	0
+중반·전투형	철갑 사마귀	10.84	15.60	0.00	110.00	Broken	Charging	0
+중반·전투형	철갑 사마귀	11.30	4.44	4.62	78.00	Broken	Idle	0
+중반·전투형	철갑 사마귀	14.93	35.00	23.80	78.00	Guarding	Attacking	2
+중반·전투형	철갑 사마귀	15.34	24.58	13.43	78.00	Guarding	Attacking	1
+중반·전투형	철갑 사마귀	15.75	14.22	3.05	78.00	Guarding	Idle	0
+보스 전·기준	납골당의 종	3.74	35.00	25.40	110.00	Guarding	Attacking	2
+보스 전·기준	납골당의 종	4.16	26.19	16.63	110.00	Guarding	Attacking	1
+보스 전·기준	납골당의 종	4.57	17.43	7.87	110.00	Guarding	Idle	0
+보스 전·기준	납골당의 종	11.77	22.20	0.00	110.00	Broken	Charging	0
+보스 전·기준	납골당의 종	12.22	4.30	4.52	80.00	Broken	Idle	0
+보스 전·기준	납골당의 종	15.95	35.00	25.40	80.00	Guarding	Attacking	2
+보스 전·기준	납골당의 종	16.36	26.19	16.63	80.00	Guarding	Attacking	1
+보스 전·기준	납골당의 종	16.77	17.38	7.84	80.00	Guarding	Idle	0
+보스 전·기준	납골당의 종	23.97	22.19	0.00	80.00	Broken	Charging	0
+보스 전·기준	납골당의 종	24.43	4.36	4.61	50.00	Broken	Idle	0
+보스 전·기준	납골당의 종	28.15	35.00	25.40	50.00	Guarding	Attacking	2
+보스 전·기준	납골당의 종	28.55	26.17	16.61	50.00	Guarding	Attacking	1
+보스 전·기준	납골당의 종	28.96	17.39	7.82	50.00	Guarding	Idle	0
+보스 전·기준	납골당의 종	36.17	22.17	0.00	50.00	Broken	Charging	0
+보스 전·기준	납골당의 종	36.64	4.46	4.68	20.00	Broken	Idle	0
+보스 전·기준	실짜는 공작부인 · 실인형	3.73	35.00	17.40	110.00	Guarding	Idle/Idle/Idle	0/0/0
+보스 전·기준	실짜는 공작부인 · 실인형	4.78	19.46	9.90	110.00	Guarding	Idle/Idle	0/0
+보스 전·기준	실짜는 공작부인 · 실인형	10.24	20.75	0.00	110.00	Broken	Charging	0
+보스 전·기준	실짜는 공작부인 · 실인형	10.71	4.47	4.66	78.00	Broken	Idle	0
+보스 전·기준	실짜는 공작부인 · 실인형	14.45	35.00	17.40	78.00	Guarding	Idle	0
+보스 전·기준	실짜는 공작부인 · 실인형	20.94	30.33	0.00	78.00	Broken	Charging	0
+보스 전·기준	실짜는 공작부인 · 실인형	21.39	4.31	4.52	46.00	Broken	Idle	0
+보스 전·기준	실짜는 공작부인 · 실인형	25.11	35.00	17.40	46.00	Guarding	Idle	0
+보스 전·기준	실짜는 공작부인 · 실인형	31.63	30.38	0.00	46.00	Broken	Charging	0
+보스 전·기준	실짜는 공작부인 · 실인형	32.10	4.46	4.67	14.00	Broken	Idle	0
+보스 전·기준	실짜는 공작부인 · 실인형	35.83	35.00	17.40	14.00	Guarding	Idle	0

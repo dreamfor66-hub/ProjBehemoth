@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: WebDuchess
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 56dcf08bc6069e543bf7f30eca912bcf, type: 3}
-  attack: {fileID: 21300000, guid: 16e5150849367f04b96bab87cd2d79d8, type: 3}
+  idle: {fileID: 21300000, guid: a057d2ab2c1437f4a9c94a7d4e346046, type: 2}
+  attack: {fileID: 21300000, guid: a62bbc2f0ddfcf341b8304ee5226cfd0, type: 2}
   guard: {fileID: 0}
-  ready: {fileID: 21300000, guid: c4bebd7d4f06b9b4b88b216da5d63574, type: 3}
-  dead: {fileID: 21300000, guid: f91c39826b6b25c489fd3215e863600c, type: 3}
+  ready: {fileID: 21300000, guid: 24aa5961ca470d94fad64b2b2aed1898, type: 2}
+  dead: {fileID: 21300000, guid: b2deed91f4c3344448d95ce4177a7db8, type: 2}
   canvasScale: 1
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: -68.25}
-  groundContactY: 0.024720892
-  artworkTopY: 0.9704944
-  labelHeight: 202.25
-  readyTilt: -4
-  attackTilt: 7
-  attackOffset: {x: 0, y: -18}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

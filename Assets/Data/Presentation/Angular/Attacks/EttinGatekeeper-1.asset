@@ -15,10 +15,10 @@ MonoBehaviour:
   textKeys:
   - propertyPath: displayName
     key: data.monsterattackdata.ettingatekeeper-1.displayname
-    lastText: "\uC30D\uB450 \uBB38\uC9C0\uAE30\uC758 \uAC15\uD0C0 1"
+    lastText: "\uC30D\uB450 \uC0BC\uC5F0\uACA9"
   textOwnerGuid: f0c7fdb2e14e1784995aadbd0ac5e1b3
   type: 1
-  displayName: "\uC30D\uB450 \uBB38\uC9C0\uAE30\uC758 \uAC15\uD0C0 1"
+  displayName: "\uC30D\uB450 \uC0BC\uC5F0\uACA9"
   damage: 27
   shieldDamage: 27
   windupDuration: 0.01
@@ -28,12 +28,12 @@ MonoBehaviour:
   chargeTimeLimit: 6.4
   chargeWeakPoints:
   - id: core-1
-    normalizedPosition: {x: -60, y: 35}
+    localPosition: {x: -60, y: 35}
     hitRadius: 30
     requiredChargeHits: 2
     optional: 0
   - id: core-2
-    normalizedPosition: {x: 55, y: 35}
+    localPosition: {x: 55, y: 35}
     hitRadius: 30
     requiredChargeHits: 2
     optional: 0

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: BellHound
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: fbb61a0cf2e93244999e5eb679bff040, type: 2}
+  attack: {fileID: 21300000, guid: 2cceb68ada4763a43abfa42a1dbf4014, type: 2}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: 140494cb695e5b74d86ca356bd96589f, type: 2}
+  dead: {fileID: 21300000, guid: a49c5b2ed0f8fcd4ba6f287c4a3221f1, type: 2}
+  canvasScale: 1
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -73.99999}
+  groundContactY: 0
+  artworkTopY: 1
+  labelHeight: 199.75
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

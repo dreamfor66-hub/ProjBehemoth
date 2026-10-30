@@ -1,0 +1,10 @@
+{
+  "Mirror": {
+    "gameplay_text_costs_effects_routes_unchanged": true,
+    "serialization_note": "Previously omitted excludedFromRandomPool false now explicitly serialized as 0."
+  },
+  "Pilgrim": {
+    "gameplay_text_costs_effects_routes_unchanged": true,
+    "serialization_note": "Previously omitted excludedFromRandomPool false now explicitly serialized as 0."
+  }
+}

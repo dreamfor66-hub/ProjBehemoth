@@ -1,0 +1,14 @@
+{
+  "Data/Combat/Monsters/AlarmHound.asset": "439e004a992357ed141266f3d1e4fd8b6d44e15bce4997369c946060e5e43338",
+  "Data/Combat/Monsters/ArmoredExecutioner.asset": "99b41f861b3c65ce9ee798ef260b2385beadd5929f2988074a18057174d538f5",
+  "Data/Combat/Monsters/BellKeeper.asset": "cfa2f2551b89ded4c4a2994e94db62f6d55b6848043059c144a762da2dc8634a",
+  "Data/Combat/Monsters/BroodKeeper.asset": "72ac4b85927774c4cb280a0ce667b49166e0be1489dcf2a5eb70552a71c665b8",
+  "Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset": "4f105041c96627e5ddedafacb673631642ec7200020da84d5a2fa69fdb20dfe9",
+  "Data/Combat/Monsters/Data_Monster_B1_Elite_Minotaur.asset": "8e3e13c88e0eafeea6be0c14b15b96ed4fc87920b5c83eef45920fc6ab555440",
+  "Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset": "971db6c18e99d778e86729689eb254d8e02cca9a6a602da71fc983aae7f232ba",
+  "Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset": "2b790456562df17e8a15c8460698e154a11e8395f4a58385e68970124ce66387",
+  "Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset": "935cc6ccd19d18944448a1bb5615c0a602633d1ffb2c848b47e3281d1bc3d48b",
+  "Data/Combat/Monsters/MirrorKnight.asset": "f8cab977e00bd15eab197080318bf90e01a3d57512476c5ede10a5ee5f27d1e1",
+  "Data/Combat/Monsters/OrbitBat.asset": "2b468fe7ec740fa3e33b86c679de85debd19d75bad8bd42d4550d0c92cfc5fb0",
+  "Data/Combat/Monsters/TunnelRat.asset": "eb002afbeb4f9dc3a79b696894a57b5054770e8efd8507ae84be261541238973"
+}

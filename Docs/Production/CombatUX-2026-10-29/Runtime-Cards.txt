@@ -1,0 +1,8 @@
+Scoped existing Unity Editor: cards, event paintings, footprints and recovery input. No DPS/balance suite.
+PASS all three perk effects visible inside their own cards
+PASS perk cards use new 2D paintings
+PASS candidate selection highlights without premature grant
+PASS confirm grants the selected candidate
+PASS actual effect viewport raycast routes scrolling to its own card
+PASS long relic description scrolls within its own card
+COMPLETE card follow-up failures=0. Remaining scoped combat/event/size checks passed in Runtime-FirstPass.txt.

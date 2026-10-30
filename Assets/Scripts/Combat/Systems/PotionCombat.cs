@@ -12,7 +12,7 @@ namespace DungeonSlash
             target = null; position = default;
             if (!CanThrowPotion) return false;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(sceneView.LogicalArea, screen, sceneView.UiCamera, out var local);
-            var monster = activeMonsters.Where(m => m.Runtime.IsAlive && Vector2.Distance(local, m.Position) <= m.Runtime.Data.bodyHitRadius * m.VisualScale * (m.View.presentation != null && m.View.presentation.arcade ? m.View.arcadeArtScale : 1))
+            var monster = activeMonsters.Where(m => m.Runtime.IsAlive && m.Runtime.Data.OverlapsArea(local, 0, m.Position, m.VisualScale))
                 .OrderBy(m => Vector2.Distance(local, m.Position)).FirstOrDefault();
             if (monster == null) return false;
             target = monster.Runtime;

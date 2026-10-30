@@ -50,6 +50,8 @@ namespace DungeonSlash
                     }
                     if (placed) break;
                 }
+                // Degree limits can leave every endpoint spatially blocked. Retry another graph instead of hanging.
+                if (!placed) break;
             }
 
             foreach (var room in graph.Rooms.ToList())
@@ -81,6 +83,7 @@ namespace DungeonSlash
         private bool TryAssignRooms(DungeonGraph graph, Random random, int floor)
         {
             var start = graph.StartRoom;
+            if (graph.Rooms.Count < settings.minRooms) return false;
             var distances = graph.DistancesFrom(start);
             if (distances.Count != graph.Rooms.Count) return false;
             foreach (var room in graph.Rooms) { room.Type = RoomEncounterType.Empty; room.IsMajorRoom = false; room.IsRevealed = false; room.ChestContent = ChestContent.Relic; }

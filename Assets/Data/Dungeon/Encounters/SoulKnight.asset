@@ -29,5 +29,4 @@ MonoBehaviour:
   members:
   - monster: {fileID: 11400000, guid: aa4d74befd776d949b9e6a0902de56ab, type: 2}
     offset: {x: 0, y: 0}
-    scale: 1
     actionDelay: 0

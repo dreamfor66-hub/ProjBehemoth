@@ -1,0 +1,1 @@
+44 current-art portrait crops saved as native Sprite assets. F1 catalog: four image tabs, dynamically growing pool, masked vertical scrolling with auto scrollbar, anchored side tooltip, selected border/name, close and grant/battle feedback.

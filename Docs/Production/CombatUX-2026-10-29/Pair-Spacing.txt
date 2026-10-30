@@ -1,0 +1,9 @@
+Pair distance x0.8 with body separation floor; species sizes and timing untouched.
+AshMaw: 270 -> 263
+AshPair: 270 -> 270
+DeepTrial: 270 -> 250
+FrostPair: 270 -> 263
+FrostYeti: 270 -> 263
+MazeAmbush: 600 -> 480
+MazeLeeches: 560 -> 448
+MazePair: 600 -> 480

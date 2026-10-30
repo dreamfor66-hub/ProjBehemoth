@@ -1,0 +1,4 @@
+FAIL
+System.InvalidOperationException: Artwork moved/scaled: Assets/Art/World/Angular/Heroes/Warrior-Rear.png (-325.89, -260.00) != (-361.36, -271.02)
+  at PlayerCanvasExpansionVerification.Verify () [0x0040f] in E:\Github\Proj_Behemoth\Assets\Editor\Verification\PlayerCanvasExpansionVerification.cs:73 
+  at PlayerCanvasExpansionVerification.Poll () [0x00035] in E:\Github\Proj_Behemoth\Assets\Editor\Verification\PlayerCanvasExpansionVerification.cs:22 

@@ -405,6 +405,8 @@ namespace DungeonSlash
                     TriggerAttackWayFilter.Downward => GameText.Get("ui.combatruntime.668dc945"),
                     _ => GameText.Get("ui.combatruntime.29a11b1")
                 };
+                if (DirectionalGuard.breakByAttackWay == (TriggerAttackWayFilter.Upward | TriggerAttackWayFilter.Downward))
+                    direction = GameText.Get("ui.combat.guard.vertical");
                 return directionalGuardActive
                     ? GameText.Format("ui.combatruntime.96a6a71b", direction, directionalGuardCurrent, DirectionalGuardMax)
                     : GameText.Format("ui.combatruntime.ed3e470e", directionalGuardCurrent, DirectionalGuardMax);
@@ -420,7 +422,7 @@ namespace DungeonSlash
             Data = data;
             MaxHp = data.maxHp * Mathf.Max(.1f, healthMultiplier);
             DamageMultiplier = Mathf.Max(.1f, damageMultiplier);
-            VisualScale = Mathf.Clamp(visualScale, .25f, 1f);
+            VisualScale = Mathf.Max(.1f, visualScale);
             CurrentHp = MaxHp;
             State = MonsterState.Idle;
             NormalAttackTimer = data.normalAttackInterval;
@@ -507,7 +509,7 @@ namespace DungeonSlash
             RemainingChargeHits = Mathf.Max(1, CurrentChargeAttack.combatMechanics?.hitCount ?? 1);
             weakPoints.Clear();
             foreach (var point in CurrentChargeAttack.chargeWeakPoints)
-                weakPoints.Add(new WeakPointRuntime(point, center + point.normalizedPosition * VisualScale, VisualScale));
+                weakPoints.Add(new WeakPointRuntime(point, center + point.localPosition * VisualScale, VisualScale));
         }
 
         public bool ChargeExpired => State == MonsterState.Charging && StateTimer <= 0f;

@@ -1,0 +1,135 @@
+Existing live Unity Editor; 12 act-one state transitions, no balance suite. Runtime-only clones.
+PASS AlarmHound distinct stun asset
+PASS AlarmHound saved frame has valid native geometry and pivot
+PASS AlarmHound initial Idle
+PASS AlarmHound stun immediately interrupts active Attack painting
+PASS AlarmHound stun persists across production update frames
+PASS AlarmHound species scale preserved
+PASS AlarmHound static stun frame shares authored hitbox ground baseline
+PASS AlarmHound authored colors preserved
+PASS AlarmHound recovery restores Idle without stale Attack
+PASS AlarmHound Ready still works after recovery
+PASS AlarmHound Dead takes priority over Stunned
+PASS ArmoredExecutioner distinct stun asset
+PASS ArmoredExecutioner saved frame has valid native geometry and pivot
+PASS ArmoredExecutioner initial Idle
+PASS ArmoredExecutioner stun immediately interrupts active Attack painting
+PASS ArmoredExecutioner stun persists across production update frames
+PASS ArmoredExecutioner species scale preserved
+PASS ArmoredExecutioner static stun frame shares authored hitbox ground baseline
+PASS ArmoredExecutioner authored colors preserved
+PASS ArmoredExecutioner recovery restores Idle without stale Attack
+PASS ArmoredExecutioner Ready still works after recovery
+PASS ArmoredExecutioner Dead takes priority over Stunned
+PASS BellKeeper distinct stun asset
+PASS BellKeeper saved frame has valid native geometry and pivot
+PASS BellKeeper initial Idle
+PASS BellKeeper stun immediately interrupts active Attack painting
+PASS BellKeeper stun persists across production update frames
+PASS BellKeeper species scale preserved
+PASS BellKeeper static stun frame shares authored hitbox ground baseline
+PASS BellKeeper authored colors preserved
+PASS BellKeeper recovery restores Idle without stale Attack
+PASS BellKeeper Ready still works after recovery
+PASS BellKeeper Dead takes priority over Stunned
+PASS BroodKeeper distinct stun asset
+PASS BroodKeeper saved frame has valid native geometry and pivot
+PASS BroodKeeper initial Idle
+PASS BroodKeeper stun immediately interrupts active Attack painting
+PASS BroodKeeper stun persists across production update frames
+PASS BroodKeeper species scale preserved
+PASS BroodKeeper static stun frame shares authored hitbox ground baseline
+PASS BroodKeeper authored colors preserved
+PASS BroodKeeper recovery restores Idle without stale Attack
+PASS BroodKeeper Ready still works after recovery
+PASS BroodKeeper Dead takes priority over Stunned
+PASS Data_Monster_B1_Boss_MazeGuardian distinct stun asset
+PASS Data_Monster_B1_Boss_MazeGuardian saved frame has valid native geometry and pivot
+PASS Data_Monster_B1_Boss_MazeGuardian initial Idle
+PASS Data_Monster_B1_Boss_MazeGuardian stun immediately interrupts active Attack painting
+PASS Data_Monster_B1_Boss_MazeGuardian stun persists across production update frames
+PASS Data_Monster_B1_Boss_MazeGuardian species scale preserved
+PASS Data_Monster_B1_Boss_MazeGuardian static stun frame shares authored hitbox ground baseline
+PASS Data_Monster_B1_Boss_MazeGuardian authored colors preserved
+PASS Data_Monster_B1_Boss_MazeGuardian recovery restores Idle without stale Attack
+PASS Data_Monster_B1_Boss_MazeGuardian Ready still works after recovery
+PASS Data_Monster_B1_Boss_MazeGuardian Dead takes priority over Stunned
+PASS Data_Monster_B1_Elite_Minotaur distinct stun asset
+PASS Data_Monster_B1_Elite_Minotaur saved frame has valid native geometry and pivot
+PASS Data_Monster_B1_Elite_Minotaur initial Idle
+PASS Data_Monster_B1_Elite_Minotaur stun immediately interrupts active Attack painting
+PASS Data_Monster_B1_Elite_Minotaur stun persists across production update frames
+PASS Data_Monster_B1_Elite_Minotaur species scale preserved
+PASS Data_Monster_B1_Elite_Minotaur static stun frame shares authored hitbox ground baseline
+PASS Data_Monster_B1_Elite_Minotaur authored colors preserved
+PASS Data_Monster_B1_Elite_Minotaur recovery restores Idle without stale Attack
+PASS Data_Monster_B1_Elite_Minotaur Ready still works after recovery
+PASS Data_Monster_B1_Elite_Minotaur Dead takes priority over Stunned
+PASS Data_Monster_B1_Minion_Bat distinct stun asset
+PASS Data_Monster_B1_Minion_Bat saved frame has valid native geometry and pivot
+PASS Data_Monster_B1_Minion_Bat initial Idle
+PASS Data_Monster_B1_Minion_Bat stun immediately interrupts active Attack painting
+PASS Data_Monster_B1_Minion_Bat stun persists across production update frames
+PASS Data_Monster_B1_Minion_Bat species scale preserved
+PASS Data_Monster_B1_Minion_Bat static stun frame shares authored hitbox ground baseline
+PASS Data_Monster_B1_Minion_Bat authored colors preserved
+PASS Data_Monster_B1_Minion_Bat recovery restores Idle without stale Attack
+PASS Data_Monster_B1_Minion_Bat Ready still works after recovery
+PASS Data_Monster_B1_Minion_Bat Dead takes priority over Stunned
+PASS Data_Monster_B1_Minion_Leech distinct stun asset
+PASS Data_Monster_B1_Minion_Leech saved frame has valid native geometry and pivot
+PASS Data_Monster_B1_Minion_Leech initial Idle
+PASS Data_Monster_B1_Minion_Leech stun immediately interrupts active Attack painting
+PASS Data_Monster_B1_Minion_Leech stun persists across production update frames
+PASS Data_Monster_B1_Minion_Leech species scale preserved
+PASS Data_Monster_B1_Minion_Leech static stun frame shares authored hitbox ground baseline
+PASS Data_Monster_B1_Minion_Leech authored colors preserved
+PASS Data_Monster_B1_Minion_Leech recovery restores Idle without stale Attack
+PASS Data_Monster_B1_Minion_Leech Ready still works after recovery
+PASS Data_Monster_B1_Minion_Leech Dead takes priority over Stunned
+PASS Data_Monster_B1_Minion_Skeleton distinct stun asset
+PASS Data_Monster_B1_Minion_Skeleton saved frame has valid native geometry and pivot
+PASS Data_Monster_B1_Minion_Skeleton initial Idle
+PASS Data_Monster_B1_Minion_Skeleton stun immediately interrupts active Attack painting
+PASS Data_Monster_B1_Minion_Skeleton stun persists across production update frames
+PASS Data_Monster_B1_Minion_Skeleton species scale preserved
+PASS Data_Monster_B1_Minion_Skeleton static stun frame shares authored hitbox ground baseline
+PASS Data_Monster_B1_Minion_Skeleton authored colors preserved
+PASS Data_Monster_B1_Minion_Skeleton recovery restores Idle without stale Attack
+PASS Data_Monster_B1_Minion_Skeleton Ready still works after recovery
+PASS Data_Monster_B1_Minion_Skeleton Dead takes priority over Stunned
+PASS MirrorKnight distinct stun asset
+PASS MirrorKnight saved frame has valid native geometry and pivot
+PASS MirrorKnight initial Idle
+PASS MirrorKnight stun immediately interrupts active Attack painting
+PASS MirrorKnight stun persists across production update frames
+PASS MirrorKnight species scale preserved
+PASS MirrorKnight static stun frame shares authored hitbox ground baseline
+PASS MirrorKnight authored colors preserved
+PASS MirrorKnight recovery restores Idle without stale Attack
+PASS MirrorKnight Ready still works after recovery
+PASS MirrorKnight Dead takes priority over Stunned
+PASS OrbitBat distinct stun asset
+PASS OrbitBat saved frame has valid native geometry and pivot
+PASS OrbitBat initial Idle
+PASS OrbitBat stun immediately interrupts active Attack painting
+PASS OrbitBat stun persists across production update frames
+PASS OrbitBat species scale preserved
+PASS OrbitBat static stun frame shares authored hitbox ground baseline
+PASS OrbitBat authored colors preserved
+PASS OrbitBat recovery restores Idle without stale Attack
+PASS OrbitBat Ready still works after recovery
+PASS OrbitBat Dead takes priority over Stunned
+PASS TunnelRat distinct stun asset
+PASS TunnelRat saved frame has valid native geometry and pivot
+PASS TunnelRat initial Idle
+PASS TunnelRat stun immediately interrupts active Attack painting
+PASS TunnelRat stun persists across production update frames
+PASS TunnelRat species scale preserved
+PASS TunnelRat static stun frame shares authored hitbox ground baseline
+PASS TunnelRat authored colors preserved
+PASS TunnelRat recovery restores Idle without stale Attack
+PASS TunnelRat Ready still works after recovery
+PASS TunnelRat Dead takes priority over Stunned
+PASS unassigned stun falls back to Idle
+COMPLETE checks=133 failures=0

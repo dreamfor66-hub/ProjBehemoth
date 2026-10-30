@@ -1,0 +1,2 @@
+Scoped details layout and pointer feedback follow-up in the same Unity Editor.
+COMPLETE failures=0; follow-up PASS/FAIL rows appended to Runtime.txt

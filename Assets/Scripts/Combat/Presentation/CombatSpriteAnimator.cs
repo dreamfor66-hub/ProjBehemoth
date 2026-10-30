@@ -9,55 +9,58 @@ namespace DungeonSlash
         public ArcadePresentation presentation;
         public CombatSpriteAnimation library;
         public CombatVisualState State {get;private set;}
+        public SwordSwingDirection SwingDirection {get;private set;}
         private Image target;
-        private float changedAt;
         public bool Available=>presentation!=null&&presentation.arcade&&library!=null;
         protected override void Awake(){base.Awake();target=GetComponent<Image>();}
-        public void Play(CombatSpriteAnimation source,CombatVisualState state,bool restart=false)
+        public void Play(CombatSpriteAnimation source,CombatVisualState state,bool restart=false,SwordSwingDirection direction=SwordSwingDirection.RightToLeft)
         {
-            var previous=library;
             library=source;
             if(!Available)return;
-            if(State!=state||restart)changedAt=Time.time;
             State=state;
+            SwingDirection=direction;
             target=target!=null?target:GetComponent<Image>();
-            target.sprite=library.For(state)??library.idle;
-            if(previous!=library||library.illustratedMotion||library.emphasizePoses)target.SetVerticesDirty();
+            // Unity's destroyed/missing asset wrappers can be CLR-non-null. Use Unity's
+            // null comparison rather than ?? so an unassigned pose never draws a white quad.
+            var sprite=library.For(state,direction);
+            if(sprite==null)sprite=library.idle;
+            target.overrideSprite=null;
+            target.sprite=sprite;
+            target.enabled=sprite!=null;
+            target.SetVerticesDirty();
         }
-        private void LateUpdate(){if(Available&&(library.illustratedMotion||library.emphasizePoses))target?.SetVerticesDirty();}
         public override void ModifyMesh(VertexHelper vertices)
         {
-            if(!IsActive()||!Available||(!library.illustratedMotion&&!library.emphasizePoses&&Mathf.Approximately(library.canvasScale,1f)))return;
-            // Grow only the rendered quad around the authored cell center. Layout,
-            // collision/guard rectangles and the RectTransform remain unchanged.
-            var center=(Vector3)((RectTransform)transform).rect.center;
-            var vertex=new UIVertex();
-            var angle=0f;var offset=Vector3.zero;var scale=library.canvasScale;
-            var poseScale = Vector2.one;
-            if(library.illustratedMotion)
+            if(!IsActive()||!Available)return;
+            // Constant transparent-canvas compensation only. All poses use the same
+            // scale; attack/ready/guard never rotate, move, squash or tween the mesh.
+            var rect=((RectTransform)transform).rect;
+            var center=(Vector3)rect.center;
+            var scale=library.canvasScale;
+            var offset=Vector3.zero;
+            var padding=library.canvasPaddingPixels;
+            target=target!=null?target:GetComponent<Image>();
+            if(target.sprite!=null && padding!=Vector4.zero)
             {
-                var t=Time.time-changedAt;
-                if(State==CombatVisualState.Ready){angle=library.readyTilt;scale*=1.025f;}
-                else if(State==CombatVisualState.Guard){angle=-3f;offset=Vector3.up*12f;scale*=1.025f;}
-                else if(State==CombatVisualState.Attack){var strike=Mathf.Sin(Mathf.Clamp01(t/.3f)*Mathf.PI);angle=library.attackTilt*strike;offset=library.attackOffset*strike;}
-                else if(State==CombatVisualState.Dead){angle=12f;offset=Vector3.down*16;scale*=.93f;}
-            }
-            if (library.emphasizePoses)
-            {
-                // Use the separate state painting and exaggerate its silhouette. No gameplay transform is moved.
-                if (State == CombatVisualState.Ready)
-                { angle = library.readyTilt; offset = library.readyOffset; poseScale = library.readyScale; }
-                else if (State == CombatVisualState.Attack)
+                var expanded=target.sprite.rect.size;
+                var original=expanded-new Vector2(padding.x+padding.z,padding.y+padding.w);
+                if(original.x>0 && original.y>0 && rect.width>0 && rect.height>0)
                 {
-                    var phase = Mathf.Clamp01((Time.time - changedAt) / library.strikeSeconds);
-                    var strike = phase < .18f ? phase / .18f : 1f - Mathf.SmoothStep(0f, 1f, (phase - .18f) / .82f);
-                    angle = library.attackTilt * strike; offset = library.attackOffset * strike;
-                    poseScale = Vector2.Lerp(Vector2.one, library.strikeScale, strike);
+                    // Image.preserveAspect fits the expanded PNG. Restore the old pixel
+                    // scale, then undo the center shift caused by asymmetric top padding.
+                    var oldPixelScale=target.preserveAspect?Mathf.Min(rect.width/original.x,rect.height/original.y):1f;
+                    var newPixelScale=target.preserveAspect?Mathf.Min(rect.width/expanded.x,rect.height/expanded.y):1f;
+                    if(target.preserveAspect)
+                    {
+                        scale*=oldPixelScale/newPixelScale;
+                        offset=new Vector3(padding.z-padding.x,padding.w-padding.y,0)*(.5f*oldPixelScale*library.canvasScale);
+                    }
                 }
             }
-            var rotation=Quaternion.Euler(0,0,angle);
+            if(Mathf.Approximately(scale,1f)&&offset==Vector3.zero)return;
+            var vertex=new UIVertex();
             for(var i=0;i<vertices.currentVertCount;i++)
-            {vertices.PopulateUIVertex(ref vertex,i);var local=(vertex.position-center)*scale;local.x*=poseScale.x;local.y*=poseScale.y;vertex.position=center+rotation*local+offset;vertices.SetUIVertex(vertex,i);}
+            {vertices.PopulateUIVertex(ref vertex,i);vertex.position=center+(vertex.position-center)*scale+offset;vertices.SetUIVertex(vertex,i);}
         }
     }
 }
