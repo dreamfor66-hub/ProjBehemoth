@@ -134,14 +134,14 @@ namespace DungeonSlash
             {
                 if (!AssignDistant(RoomEncounterType.Camp, 1, 1)
                     || !AssignDistant(RoomEncounterType.Fountain, settings.minimumFountainRooms, 1)
-                    || !AssignDistant(RoomEncounterType.Shop, floor, 1)
+                    || !AssignDistant(RoomEncounterType.Shop, settings.minimumShopRooms, 1)
                     || !AssignDistant(RoomEncounterType.Goddess, settings.minimumGoddessRooms, 1)
                     || !AssignDistant(RoomEncounterType.Reward, settings.minimumRewardRooms, 1)
                     || !AssignDistant(RoomEncounterType.Event, settings.eventRoomCount, 1)) return false;
             }
             var combatCount = Math.Max(1, (int)Math.Ceiling(graph.Rooms.Count * (settings.combatRoomRatioMin + settings.combatRoomRatioMax) * .5f));
             AssignMinimum(unassigned, RoomEncounterType.Combat, Math.Min(Math.Max(0, combatCount - graph.Rooms.Count(r => r.Type == RoomEncounterType.Combat)), unassigned.Count), random);
-            foreach (var room in unassigned) room.Type = random.NextDouble() < .55 ? RoomEncounterType.Combat : RoomEncounterType.Empty;
+            foreach (var room in unassigned) room.Type = random.NextDouble() < .70 ? RoomEncounterType.Combat : RoomEncounterType.Empty;
             AddFloorEventVariants(graph, random, floor);
             // A wall-mounted shrine cannot occupy a four-exit junction.
             foreach (var shrine in graph.Rooms.Where(r => r.Connections.Count == 4
@@ -207,7 +207,9 @@ namespace DungeonSlash
             return roll < .5d ? ChestContent.Gold : roll < .825d ? ChestContent.Relic : ChestContent.Mimic;
         }
 
-        private static DungeonRoom SelectAtDistance(DungeonGraph graph, IReadOnlyDictionary<int, int> distances, int minDistance, Random random) => graph.Rooms.Where(room => distances[room.RoomId] >= minDistance).OrderBy(_ => random.Next()).FirstOrDefault();
+        // The boss occupies a dedicated chamber. Its altar/throne wall must not become
+        // a through corridor whose doorway paints over the room's focal architecture.
+        private static DungeonRoom SelectAtDistance(DungeonGraph graph, IReadOnlyDictionary<int, int> distances, int minDistance, Random random) => graph.Rooms.Where(room => distances[room.RoomId] >= minDistance && room.Connections.Count==1).OrderBy(_ => random.Next()).FirstOrDefault();
         private static void AssignMajor(DungeonRoom room, RoomEncounterType type) { room.Type = type; room.IsMajorRoom = true; room.IsRevealed = true; }
         private static void AssignMinimum(List<DungeonRoom> rooms, RoomEncounterType type, int count, Random random)
         {

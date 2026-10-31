@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: "Data_Encounter_\uD68C\uC218\uAFBC\uB3C4\uC801"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: "data.encounterdata.data_encounter_\uD68C\uC218\uAFBC\uB3C4\uC801.displayname"
+    lastText: "\uD68C\uC218\uAFBC\uB3C4\uC801"
+  - propertyPath: hint
+    key: "data.encounterdata.data_encounter_\uD68C\uC218\uAFBC\uB3C4\uC801.hint"
+    lastText: "\uCE7C\uC744 \uB2F9\uAE38 \uB54C \uB4DC\uB7EC\uB098\uB294 \uC57D\uC810\uC744
+      \uB178\uB9AC\uC790."
+  textOwnerGuid: 26abb17044a960d448c44982606abad8
+  id: RecoveryCutpurse
+  displayName: "\uD68C\uC218\uAFBC\uB3C4\uC801"
+  hint: "\uCE7C\uC744 \uB2F9\uAE38 \uB54C \uB4DC\uB7EC\uB098\uB294 \uC57D\uC810\uC744
+    \uB178\uB9AC\uC790."
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: ee38cb01c1c92764abeeb5bec77ec7a7, type: 2}
+    offset: {x: 0, y: 0}
+    actionDelay: 0

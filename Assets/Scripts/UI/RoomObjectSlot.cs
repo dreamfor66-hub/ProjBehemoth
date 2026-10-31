@@ -115,7 +115,9 @@ namespace DungeonSlash
         }
         public void Hide() { gameObject.SetActive(false); if (hitArea != null) hitArea.gameObject.SetActive(false); }
         public void UseInteriorPainting()
-        { painting.enabled = false; if (contact != null) contact.gameObject.SetActive(false); }
+        { painting.enabled = false; if (inlay != null) inlay.gameObject.SetActive(false); if (contact != null) contact.gameObject.SetActive(false); }
+        public void UseHiddenWall()
+        { UseInteriorPainting(); label = ""; }
         private void OnDisable() { hover?.Invoke(null); hover = null; if (hitArea != null) hitArea.gameObject.SetActive(false); }
     }
 }

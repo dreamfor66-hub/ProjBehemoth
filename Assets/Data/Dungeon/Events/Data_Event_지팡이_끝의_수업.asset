@@ -138,11 +138,56 @@ MonoBehaviour:
     lastText: "\uC120\uC0DD\uC740 \uC9C0\uD321\uC774\uC758 \uBE5B\uC744 \uAC70\uB450\uACE0
       \uCC45\uC744 \uCC59\uACBC\uB2E4. \uC11C\uB85C \uC778\uC0AC\uB97C \uB098\uB208
       \uB4A4 \uADF8\uB294 \uB2E4\uB978 \uD1B5\uB85C\uB85C \uAC78\uC5B4\uAC14\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[4].title
+    key: "data.randomeventdata.data_event_\uC9C0\uD321\uC774_\uB05D\uC758_\uC218\uC5C5.pages.0.options.4.title"
+    lastText: "\uC9C0\uD321\uC774\uC758 \uC218\uC815\uC744 \uAC15\uC81C\uB85C \uB5BC\uC5B4
+      \uB0B8\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[4].description
+    key: "data.randomeventdata.data_event_\uC9C0\uD321\uC774_\uB05D\uC758_\uC218\uC5C5.pages.0.options.4.description"
+    lastText: "\uACE8\uB4DC +35 \xB7 \uC774\uD6C4 \uC774 \uC5F0\uAD6C\uC790\uC758
+      \uC218\uC5C5\uC744 \uBC1B\uC9C0 \uBABB\uD568"
+  - propertyPath: pages.Array.data[0].options.Array.data[4].resultText
+    key: "data.randomeventdata.data_event_\uC9C0\uD321\uC774_\uB05D\uC758_\uC218\uC5C5.pages.0.options.4.resulttext"
+    lastText: "\uB178\uC778\uC774 \uB0A8\uC740 \uAE30\uB85D\uC744 \uAC00\uBC29\uC5D0
+      \uB123\uACE0 \uC190\uC744 \uAC70\uB480\uB2E4. \uCC59\uAE34 \uBB3C\uAC74\uC740
+      \uB0B4\uB2E4 \uD314 \uC218 \uC788\uACA0\uC9C0\uB9CC, \uC774 \uC0AC\uB78C\uC5D0\uAC8C
+      \uB2E4\uC74C \uC218\uC5C5\uC744 \uCCAD\uD560 \uC218\uB294 \uC5C6\uC744 \uAC83\uC774\uB2E4.
+      \uADF8\uB294 \uC544\uBB34 \uB9D0 \uC5C6\uC774 \uB2E4\uB978 \uD1B5\uB85C\uB85C
+      \uC0AC\uB77C\uC84C\uB2E4."
+  - propertyPath: pages.Array.data[2].options.Array.data[1].title
+    key: "data.randomeventdata.data_event_\uC9C0\uD321\uC774_\uB05D\uC758_\uC218\uC5C5.pages.2.options.1.title"
+    lastText: "\uC9C0\uD321\uC774\uC758 \uC218\uC815\uC744 \uAC15\uC81C\uB85C \uB5BC\uC5B4
+      \uB0B8\uB2E4."
+  - propertyPath: pages.Array.data[2].options.Array.data[1].description
+    key: "data.randomeventdata.data_event_\uC9C0\uD321\uC774_\uB05D\uC758_\uC218\uC5C5.pages.2.options.1.description"
+    lastText: "\uACE8\uB4DC +35 \xB7 \uC774\uD6C4 \uC774 \uC5F0\uAD6C\uC790\uC758
+      \uC218\uC5C5\uC744 \uBC1B\uC9C0 \uBABB\uD568"
+  - propertyPath: pages.Array.data[2].options.Array.data[1].resultText
+    key: "data.randomeventdata.data_event_\uC9C0\uD321\uC774_\uB05D\uC758_\uC218\uC5C5.pages.2.options.1.resulttext"
+    lastText: "\uB178\uC778\uC774 \uB0A8\uC740 \uAE30\uB85D\uC744 \uAC00\uBC29\uC5D0
+      \uB123\uACE0 \uC190\uC744 \uAC70\uB480\uB2E4. \uCC59\uAE34 \uBB3C\uAC74\uC740
+      \uB0B4\uB2E4 \uD314 \uC218 \uC788\uACA0\uC9C0\uB9CC, \uC774 \uC0AC\uB78C\uC5D0\uAC8C
+      \uB2E4\uC74C \uC218\uC5C5\uC744 \uCCAD\uD560 \uC218\uB294 \uC5C6\uC744 \uAC83\uC774\uB2E4.
+      \uADF8\uB294 \uC544\uBB34 \uB9D0 \uC5C6\uC774 \uB2E4\uB978 \uD1B5\uB85C\uB85C
+      \uC0AC\uB77C\uC84C\uB2E4."
   textOwnerGuid: 439941bfed097b44d8d55e5c147841f5
   id: MagicTeacherAdvanced
   displayName: "\uC9C0\uD321\uC774 \uB05D\uC758 \uC218\uC5C5"
   discovery: 1
   worldObject: {fileID: 11400000, guid: 95a5b5e8471ff7d4793635988e37cba7, type: 2}
+  encounterKind: 1
+  authoringLore: "\uAC19\uC740 \uC5F0\uAD6C\uC790. \uAE4A\uC740 \uCE35\uC5D0\uC11C
+    \uAD00\uCE21\uD55C \uB9C8\uB825\uC744 \uC644\uC131\uD560 \uC2E4\uD5D8\uC774 \uD544\uC694\uD558\uB2E4.
+    \uD50C\uB808\uC774\uC5B4\uAC00 \uC2E4\uC81C \uC775\uD78C \uC18D\uC131\uC744 \uB530\uB77C
+    \uACE0\uAE09 \uC8FC\uBB38\uC744 \uAC00\uB974\uCE5C\uB2E4. \uC900\uBE44\uAC00
+    \uC5C6\uC73C\uBA74 \uC218\uC5C5\uC744 \uAC70\uB450\uBA70, \uC5B4\uB5A4 \uC0C1\uB300\uC5D0\uAC8C\uB098
+    \uB9C8\uC9C0\uB9C9 \uD798\uC744 \uD37C \uC8FC\uB294 \uC808\uB9DD\uD55C \uB178\uC778\uC774
+    \uC544\uB2C8\uB2E4."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uC218\uC815 \uC9C0\uD321\uC774\uB97C \uC9DA\uC740 \uB178\uC778\uC774
     \uAE38\uAC00\uC5D0\uC11C \uB0B4 \uB9C8\uB825\uC744 \uC0B4\uD540\uB2E4.\n\n\uC9C0\uB09C\uBC88\uC758
@@ -156,13 +201,13 @@ MonoBehaviour:
   illustratedPopup: 1
   minAct: 3
   maxAct: 3
-  weight: 1.5
+  weight: 0.8
   minNormalCombatsInAct: 0
   referenceUrl: codex://threads/01a165fb-89c0-7853-894b-62442f48a155
   referenceExperience: "\uC0AC\uC6A9\uC790 \uACE0\uC804\uD559\uD30C \uB9C8\uBC95\uC120\uC0DD
     \uC5F0\uC18D \uC0AC\uAC74. Docs/Production/EventSequences-Castle.md"
   requiredFlag: TeacherLesson2
-  forbiddenFlag: 
+  forbiddenFlag: RobbedFieldScholar
   options:
   - title: "\uB5A0\uB09C\uB2E4."
     description: 
@@ -416,6 +461,52 @@ MonoBehaviour:
         flag: TeacherMastered
         amount: 0
         stat: 0
+    - title: "\uC9C0\uD321\uC774\uC758 \uC218\uC815\uC744 \uAC15\uC81C\uB85C \uB5BC\uC5B4
+        \uB0B8\uB2E4."
+      description: "\uACE8\uB4DC +35 \xB7 \uC774\uD6C4 \uC774 \uC5F0\uAD6C\uC790\uC758
+        \uC218\uC5C5\uC744 \uBC1B\uC9C0 \uBABB\uD568"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uB178\uC778\uC774 \uB0A8\uC740 \uAE30\uB85D\uC744 \uAC00\uBC29\uC5D0
+        \uB123\uACE0 \uC190\uC744 \uAC70\uB480\uB2E4. \uCC59\uAE34 \uBB3C\uAC74\uC740
+        \uB0B4\uB2E4 \uD314 \uC218 \uC788\uACA0\uC9C0\uB9CC, \uC774 \uC0AC\uB78C\uC5D0\uAC8C
+        \uB2E4\uC74C \uC218\uC5C5\uC744 \uCCAD\uD560 \uC218\uB294 \uC5C6\uC744 \uAC83\uC774\uB2E4.
+        \uADF8\uB294 \uC544\uBB34 \uB9D0 \uC5C6\uC774 \uB2E4\uB978 \uD1B5\uB85C\uB85C
+        \uC0AC\uB77C\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.lore.revisit.MagicTeacherAdvanced.0.4
+      requirements: []
+      effects:
+      - kind: 5
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 35
+        stat: 0
+      - kind: 8
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: RobbedFieldScholar
+        amount: 0
+        stat: 0
     routes: []
   - narrative: "\u201C\uC74C\u2026 \uADF8 \uC18D\uC131\uAE4C\uC9C0\uB294 \uC544\uC9C1
       \uC790\uC9C8\uC774 \uC548 \uBCF4\uC774\uB294\uB370\uC694. \uC775\uD78C \uB9C8\uBC95\uC5D0\uC11C
@@ -498,6 +589,52 @@ MonoBehaviour:
       revisitTextKey: ui.eventgrounding.revisit.MagicTeacherAdvanced.2.0
       requirements: []
       effects: []
+    - title: "\uC9C0\uD321\uC774\uC758 \uC218\uC815\uC744 \uAC15\uC81C\uB85C \uB5BC\uC5B4
+        \uB0B8\uB2E4."
+      description: "\uACE8\uB4DC +35 \xB7 \uC774\uD6C4 \uC774 \uC5F0\uAD6C\uC790\uC758
+        \uC218\uC5C5\uC744 \uBC1B\uC9C0 \uBABB\uD568"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uB178\uC778\uC774 \uB0A8\uC740 \uAE30\uB85D\uC744 \uAC00\uBC29\uC5D0
+        \uB123\uACE0 \uC190\uC744 \uAC70\uB480\uB2E4. \uCC59\uAE34 \uBB3C\uAC74\uC740
+        \uB0B4\uB2E4 \uD314 \uC218 \uC788\uACA0\uC9C0\uB9CC, \uC774 \uC0AC\uB78C\uC5D0\uAC8C
+        \uB2E4\uC74C \uC218\uC5C5\uC744 \uCCAD\uD560 \uC218\uB294 \uC5C6\uC744 \uAC83\uC774\uB2E4.
+        \uADF8\uB294 \uC544\uBB34 \uB9D0 \uC5C6\uC774 \uB2E4\uB978 \uD1B5\uB85C\uB85C
+        \uC0AC\uB77C\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.lore.revisit.MagicTeacherAdvanced.2.1
+      requirements: []
+      effects:
+      - kind: 5
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 35
+        stat: 0
+      - kind: 8
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: RobbedFieldScholar
+        amount: 0
+        stat: 0
     routes: []
   entryRoutes:
   - requirements:

@@ -1,0 +1,9 @@
+{
+  "name": "B2기록더미내부",
+  "kind": "eventInterior",
+  "act": 2,
+  "event": "Scholar",
+  "ref": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+  "prompt": "Use case precise-object-edit. Input1 is installed ACT 2 room EDIT TARGET; input2 is approved archive-cache layout ONLY. Add low oversized-book shelves, two broad tied archival crates and a few LARGE leaning parchment boards in corresponding wall-edge locations of input2 to input1. Preserve EXACT input1 framing/canvas/aspect, floor height and ALL floor tile seams, vanishing point, wall/pillar/ceiling positions, actual act 2 architecture, color and torches. Do NOT copy input2's different pillar trims or recolor entire room. This is a portable expedition record cache in a 3-solid-wall alcove, not a new library building. Keep the main floating book slot at normalized bottom-up x=.315,y=.235 and central/foreground player/combat space EMPTY. No main magical book or pedestal. Closed walls, NO doors/windows/people/text/UI. Match installed room's strong drawn contours, LARGE integrated ink-black shadow shapes, broad quiet shading and deliberately few forms. No fine cracks, wood grain, realistic material, tiny book spines, rubble or glow. All added shelves/crates share input1's exact floor perspective.",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9dc6e715-2cb7-4f48-bad5-3e34262ee543.png"
+}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uB2E4\uCE5C\uAC15\uC544\uC9C0"
   m_EditorClassIdentifier: 
-  labelKey: ui.eventgrounding.object.StrayDog
+  labelKey: ui.lore.object.StrayDog
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.StrayDog
   wallMounted: 0

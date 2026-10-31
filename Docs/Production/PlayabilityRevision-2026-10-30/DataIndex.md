@@ -98,6 +98,8 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |MonsterAttackData|혼불 탄환| / SoulLamp_Normal|Assets/Data/Combat/Attacks/Data_Attack_Common_Normal_혼불_탄환.asset|
 |MonsterAttackData|대지 파쇄| / TrialGuardian_Charge_1|Assets/Data/Combat/Attacks/Data_Attack_경량훈련인형_Charge_대지_파쇄.asset|
 |MonsterAttackData|연속 중갑 돌진| / TrialGuardian_Normal|Assets/Data/Combat/Attacks/Data_Attack_경량훈련인형_Normal_연속_중갑_돌진.asset|
+|MonsterAttackData|급소 찌르기| / Data_Attack_회수꾼도적_Charge|Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Charge_급소_찌르기.asset|
+|MonsterAttackData|그늘 베기| / Data_Attack_회수꾼도적_Normal|Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Normal_그늘_베기.asset|
 |BuffData|가속| / HorizontalFlow|Assets/Data/Combat/Buffs/Data_Buff_가속.asset|
 |BuffData|검세 회수| / SwordRecovery|Assets/Data/Combat/Buffs/Data_Buff_검세_회수.asset|
 |BuffData|격노| / Fury|Assets/Data/Combat/Buffs/Data_Buff_격노.asset|
@@ -192,6 +194,7 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |MonsterData|왕관 거신| / DeepTrialGuardian|Assets/Data/Combat/Monsters/Data_Monster_Special_왕관거신.asset|
 |MonsterData|중량 훈련 인형| / TrainingHeavy|Assets/Data/Combat/Monsters/Data_Monster_Special_중량훈련인형.asset|
 |MonsterData|철니 미믹| / Data_Monster_Special_Minion_Mimic|Assets/Data/Combat/Monsters/Data_Monster_Special_철니미믹.asset|
+|MonsterData|회수꾼 도적| / Data_Monster_Special_회수꾼도적|Assets/Data/Combat/Monsters/Data_Monster_Special_회수꾼도적.asset|
 |GameContent|게임 콘텐츠 목록| / GameContent|Assets/Data/Data_GameContent_게임_콘텐츠_목록.asset|
 |EncounterData|가면 성가수|WispChoir / WispChoir|Assets/Data/Dungeon/Encounters/Data_Encounter_가면성가수.asset|
 |EncounterData|가시등 시련수|Trial / Trial|Assets/Data/Dungeon/Encounters/Data_Encounter_가시등_시련수.asset|
@@ -230,6 +233,7 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |EncounterData|해골 전사|MazeSkeleton / MazeSkeleton|Assets/Data/Dungeon/Encounters/Data_Encounter_해골전사.asset|
 |EncounterData|해골 전사 · 고블린사냥꾼|MazePair / MazePair|Assets/Data/Dungeon/Encounters/Data_Encounter_해골전사_고블린사냥꾼.asset|
 |EncounterData|향로 망령 · 숯불 도롱뇽|AshLamps / AshLamps|Assets/Data/Dungeon/Encounters/Data_Encounter_향로망령_숯불도롱뇽.asset|
+|EncounterData|회수꾼도적|RecoveryCutpurse / Data_Encounter_회수꾼도적|Assets/Data/Dungeon/Encounters/Data_Encounter_회수꾼도적.asset|
 |EncounterData|훈련 인형 · 140|TrainingMedium / TrainingMedium|Assets/Data/Dungeon/Encounters/Data_Encounter_훈련_인형_140.asset|
 |EncounterData|훈련 인형 · 240|TrainingHeavy / TrainingHeavy|Assets/Data/Dungeon/Encounters/Data_Encounter_훈련_인형_240.asset|
 |EncounterData|훈련 인형 · 75|TrainingLight / TrainingLight|Assets/Data/Dungeon/Encounters/Data_Encounter_훈련_인형_75.asset|
@@ -240,6 +244,7 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |RandomEventData|길 위의 노마법사|MagicTeacherFirst / MagicTeacherFirst|Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset|
 |RandomEventData|길가의 무거운 금고|Well / Well|Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset|
 |RandomEventData|꺼진 기도|QuietPrayer / Data_Event_꺼진_기도|Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset|
+|RandomEventData|끊어진 호위|Shelter / Shelter|Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset|
 |RandomEventData|끝까지 읽는 법|Scholar / Scholar|Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset|
 |RandomEventData|날이 아니라 버릇을 간다|Forge / Forge|Assets/Data/Dungeon/Events/Data_Event_날이_아니라_버릇을_간다.asset|
 |RandomEventData|내일의 한숨|Hourglass / Hourglass|Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset|
@@ -253,7 +258,7 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |RandomEventData|성장한 제자|MagicTeacherReturn / MagicTeacherReturn|Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset|
 |RandomEventData|소리 나는 쪽을 받쳐라|Bell / Bell|Assets/Data/Dungeon/Events/Data_Event_소리_나는_쪽을_받쳐라.asset|
 |RandomEventData|어디까지 풀 것인가|Training / Training|Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset|
-|RandomEventData|잠깐의 교대|Shelter / Shelter|Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset|
+|RandomEventData|이름 없는 회수표|RecoveryCutpurse / Data_Event_이름_없는_회수표|Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset|
 |RandomEventData|젖은 발자국|StrayDog / StrayDog|Assets/Data/Dungeon/Events/Data_Event_젖은_발자국.asset|
 |RandomEventData|주인 잃은 깃발|Banner / Banner|Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset|
 |RandomEventData|지팡이 끝의 수업|MagicTeacherAdvanced / MagicTeacherAdvanced|Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset|

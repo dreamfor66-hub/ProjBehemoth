@@ -1,0 +1,211 @@
+Scoped runtime: actual Canvas renders, EventSystem raycasts and changed interactions. No DPS or broad regression.
+PASS 10 authored human event identities, weighted less frequently
+PASS B1/Pilgrim first face
+PASS B1/Pilgrim layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/Pilgrim correct event opens
+PASS Pilgrim/여비를 보탠다 aftermath presence
+PASS Pilgrim/허리의 여비를 강제로 거둔다. aftermath presence
+PASS Pilgrim/얘가 지름길을 찾을 거야 aftermath presence
+PASS Pilgrim/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/LostBeliever first face
+PASS B1/LostBeliever layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/LostBeliever correct event opens
+PASS LostBeliever/안전하게 돌아갈 길을 그려 준다. aftermath presence
+PASS LostBeliever/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS LostBeliever/보따리를 붙든 손을 떼어 낸다. aftermath presence
+PASS LostBeliever/순례자가 향한 통로를 알려 준다. aftermath presence
+PASS LostBeliever/집으로 돌아갈 길만 그려 준다. aftermath presence
+PASS LostBeliever/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS LostBeliever/부러진 고리를 맨손으로 꺾는다. aftermath presence
+PASS LostBeliever/안내도를 그려 돌아가게 한다. aftermath presence
+PASS B1/StormBottle first face
+PASS B1/StormBottle layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/StormBottle correct event opens
+PASS StormBottle/폭풍 한 병 aftermath presence
+PASS StormBottle/번개를 읽는 법 aftermath presence
+PASS StormBottle/병 주머니를 낚아챈다. aftermath presence
+PASS StormBottle/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/Tooth first face
+PASS B1/Tooth layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/Tooth correct event opens
+PASS Tooth/내 생환에 돈을 건다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Tooth/장부를 눌러 놓고 돈을 요구한다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Tooth/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Tooth/칼날을 쥐고 버틴다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Tooth/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/Investment first face
+PASS B1/Investment layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/Investment correct event opens
+PASS Investment/도착해서 받는다 aftermath presence
+PASS Investment/약 꾸러미를 빼앗는다. aftermath presence
+PASS Investment/떠난다. aftermath presence
+PASS B1/Shelter first face
+PASS B1/Shelter layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/Shelter correct event opens
+PASS Shelter/붕대를 묶어 주고 잠시 망을 본다. aftermath presence
+PASS Shelter/칼을 뽑기 전에 품삯부터 빼앗는다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Shelter/강아지와 함께 망을 봐 준다. aftermath presence
+PASS Shelter/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/MagicTeacherFirst first face
+PASS B1/MagicTeacherFirst layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherFirst correct event opens
+PASS MagicTeacherFirst/떠난다. aftermath presence
+PASS MagicTeacherFirst/책 한 권을 여비로 내놓으라고 한다. aftermath presence
+PASS MagicTeacherFirst/배울 주문을 고른다. aftermath presence
+PASS MagicTeacherFirst/떠난다. aftermath presence
+PASS MagicTeacherFirst/배울 주문을 고른다. aftermath presence
+PASS MagicTeacherFirst/떠난다. aftermath presence
+PASS B1/MagicTeacherReturn first face
+PASS B1/MagicTeacherReturn layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherReturn correct event opens
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/펼친 기록을 낚아챈다. aftermath presence
+PASS MagicTeacherReturn/배울 주문을 고른다. aftermath presence
+PASS MagicTeacherReturn/불을 한꺼번에 터뜨리는 법을 배운다. aftermath presence
+PASS MagicTeacherReturn/다른 속성의 기초를 배운다. aftermath presence
+PASS MagicTeacherReturn/인챈트 파이어 aftermath presence
+PASS MagicTeacherReturn/인챈트 아이스 aftermath presence
+PASS MagicTeacherReturn/인챈트 라이트닝 aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/펼친 기록을 낚아챈다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS MagicTeacherReturn/떠난다. aftermath presence
+PASS B1/MagicTeacherAdvanced first face
+PASS B1/MagicTeacherAdvanced layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherAdvanced correct event opens
+PASS MagicTeacherAdvanced/한곳에 큰 불덩이를 떨어뜨리는 법. aftermath presence
+PASS MagicTeacherAdvanced/번개를 한곳에 모으는 법. aftermath presence
+PASS MagicTeacherAdvanced/얼음 창을 쏟아붓는 법. aftermath presence
+PASS MagicTeacherAdvanced/꺼지지 않는 홍염을 펼치는 법. aftermath presence
+PASS MagicTeacherAdvanced/지팡이의 수정을 강제로 떼어 낸다. aftermath presence
+PASS MagicTeacherAdvanced/떠난다. aftermath presence
+PASS MagicTeacherAdvanced/떠난다. aftermath presence
+PASS MagicTeacherAdvanced/지팡이의 수정을 강제로 떼어 낸다. aftermath presence
+PASS B1/QuietPrayer first face
+PASS B1/QuietPrayer layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/QuietPrayer correct event opens
+PASS QuietPrayer/상처를 맡긴다 aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS QuietPrayer/남은 약초를 강제로 챙긴다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS QuietPrayer/길을 계속 간다 aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/Training first face
+PASS B1/Training layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/Training correct event opens
+PASS Training/끈을 푼다 aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Training/철사를 끊는다 aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Training/사슬을 푼다 aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Training/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/Scholar first face
+PASS B1/Scholar layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/Scholar correct event opens
+PASS Scholar/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Scholar/이미 아는 기술을 읽는다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Scholar/약제법을 따라 한다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Scholar/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Scholar/피를 떨어뜨려 읽는다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS Scholar/떠난다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS B1/RecoveryCutpurse first face
+PASS B1/RecoveryCutpurse layout valid
+PASS pointer Interaction Area; top=Interaction Area
+PASS B1/RecoveryCutpurse correct event opens
+PASS RecoveryCutpurse/칼을 뽑은 손부터 벤다. aftermath presence
+PASS matching resolved painting
+PASS pointer Interaction Area; top=Interaction Area
+PASS resolved narration without another event
+PASS RecoveryCutpurse/동전을 던지고 거리를 벌린다. aftermath presence
+PASS RecoveryCutpurse/손끝에 마력을 모아 목줄을 겨눈다. aftermath presence
+FAIL System.NullReferenceException: Object reference not set to an instance of an object
+  at DungeonSlash.GameFlowController.DebugCreateInspection (DungeonSlash.RoomObjectData art, System.Int32 view, System.Boolean used) [0x00347] in E:\Github\Proj_Behemoth\Assets\Scripts\UI\GameFlowDebugChapter.cs:79 
+  at DungeonSlash.GameFlowController.DebugPlaceRoomObject (DungeonSlash.RoomObjectData art, System.Int32 view, System.Boolean used) [0x00000] in E:\Github\Proj_Behemoth\Assets\Scripts\UI\GameFlowDebugChapter.cs:40 
+  at ExplorationLoreLiveProbe+<Review>d__27.MoveNext () [0x00a5b] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationLoreLiveProbe.cs:64 
+  at ExplorationLoreLiveProbe+<Guard>d__26.MoveNext () [0x00024] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationLoreLiveProbe.cs:39 

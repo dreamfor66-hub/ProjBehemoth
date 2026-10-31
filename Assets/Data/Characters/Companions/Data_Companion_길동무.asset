@@ -19,8 +19,8 @@ MonoBehaviour:
   textOwnerGuid: c6d66f4a1e280544b805c94668f5f3e7
   displayName: "\uAE38\uB3D9\uBB34"
   prefab: {fileID: 6474503742904246444, guid: a5dc20c1e5b3b164d873decb6b8a4fd0, type: 3}
-  combatSprite: {fileID: 21300000, guid: 51e5eb557be5142488faced496277808, type: 3}
+  combatSprite: {fileID: 21300000, guid: 591a1c416ff59c44ea8c26b1fa843609, type: 3}
   combatAnimation: {fileID: 11400000, guid: 534d78141288f5e4f97b5871551b1355, type: 2}
-  playerOffset: {x: -200, y: 70}
+  playerOffset: {x: -430, y: 240}
   idleBobHeight: 3
   attackLungeDistance: 32

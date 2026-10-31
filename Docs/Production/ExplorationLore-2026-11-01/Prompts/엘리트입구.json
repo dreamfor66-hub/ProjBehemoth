@@ -1,0 +1,9 @@
+{
+  "name": "엘리트입구",
+  "kind": "door",
+  "prompt": "Use case stylized-concept. BEHEMOTH elite chamber DOOR LEAF ONLY, front-on planar rectangular panel for projection into an existing Gothic doorway. One tall reinforced dark iron door with THREE broad iron crossbars, a large dull steel crossed-blades emblem at upper centre, one plain heavy ring handle, a small muted blood-red cloth strip caught at bottom. Door is visibly formidable compared with an ordinary wooden door but has NO lock/padlock, skull pile, spikes or ornate miniature detail. Simple large silhouette. Input1 installed room provides exact ink/flat shadow/lighting language. Solid ink-black negative shapes integrated into panels, few broad iron/brown planes, thick selective drawn contours. Entire leaf fits within image with transparent margin; NO arch, stones, wall, floor, scene, text, labels, frame, glow, realistic rust or grain. Subject must naturally belong in installed architecture and be readable at 180px. Portrait rectangular leaf on true transparent background.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-75a53351-915d-4149-84a3-21984268fc0c.png"
+}

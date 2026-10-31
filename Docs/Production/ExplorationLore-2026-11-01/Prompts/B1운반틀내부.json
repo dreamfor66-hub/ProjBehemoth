@@ -1,0 +1,11 @@
+{
+  "name": "B1운반틀내부",
+  "kind": "eventInterior",
+  "act": 1,
+  "event": "Training",
+  "prompt": "Use case precise-object-edit. EDIT the installed labyrinth room in input1 into an old expedition equipment-storage ALCOVE. Preserve EXACT source canvas/aspect, all floor tile seams, floor height/vanishing point, pillars, walls, ceiling and torches. THREE solid walls, NO exits/windows. Add two simple broad wooden equipment racks against far-side walls, holding ONLY a few large blunt training shields/poles, a low tied canvas roll at RIGHT rear floor, and one broad faded dark-red training banner hanging on back wall. NO dummy, knight, person, monster or main interactable: game draws its bound portable practice dummy at normalized bottom-up LEFT floor x=.315,y=.235, keep that position unobstructed. Main centre and foreground EMPTY for player/combat. It should feel like an abandoned transport staging alcove, not a large gym. Bold original drawn contours, broad SOLID ink-black shadows within racks and cloth, just a few quiet flat planes, simplified intact forms, no tiny weapons, grain, filigree, rubble clutter or realistic materials. No text, numbers or UI.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-a46288b9-b439-4649-acee-85e5dfa0a60f.png"
+}

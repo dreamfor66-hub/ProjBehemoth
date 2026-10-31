@@ -112,10 +112,16 @@ namespace DungeonSlash
             .Concat(bossMonsters)
             .Append(mimicMonster)
             .Append(merchantMutant)
+            .Concat(EventMonsterCatalog())
             .Where(monster => monster != null)
             .Distinct()
             .OrderBy(monster => monster.displayName)
             .ToArray();
+
+        private IEnumerable<MonsterData> EventMonsterCatalog() => content==null?Enumerable.Empty<MonsterData>():content.events
+            .Where(e=>e!=null&&!e.excludedFromRandomPool).SelectMany(e=>e.options.Concat(e.pages.SelectMany(p=>p.options)))
+            .SelectMany(o=>o.effects).Where(e=>e.kind==EventEffectKind.Fight&&e.encounter!=null)
+            .SelectMany(e=>e.encounter.members).Select(m=>m.monster);
 
         public void SetInfiniteBattle(bool enabled) => InfiniteBattleEnabled = enabled;
 

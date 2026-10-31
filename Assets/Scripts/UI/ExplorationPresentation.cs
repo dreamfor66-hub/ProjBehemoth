@@ -16,7 +16,8 @@ namespace DungeonSlash
         {
             if (!ExplorationEnabled || content == null || room.Type != RoomEncounterType.Event || room.StoryPrepared) return;
             room.StoryPrepared = true;
-            room.Story = RandomEventSystem.Draw(content, runController.State, dungeonController.Floor, room.RoomId);
+            room.Story = RandomEventSystem.Draw(content, runController.State, dungeonController.Floor, room.RoomId, room.Connections.Count);
+            if (room.Story == null) room.Type = RoomEncounterType.Combat;
         }
 
         private void RefreshExploration()
@@ -79,17 +80,23 @@ namespace DungeonSlash
                 var direction = DirectionUtility.FromDelta(new DungeonPosition(other.Position.X - room.Position.X, other.Position.Y - room.Position.Y));
                 var relative = DirectionUtility.ToRelative(state.Player.Facing, direction);
                 if (relative == RelativeDirection.Back || passage.Discovered && !passage.Locked) continue;
-                var gateArt = passage.Discovered ? settings.lockedDoor : settings.mechanism;
-                if (!passage.Discovered && settings.concealedEntranceClues.Count > 0)
-                    gateArt = settings.concealedEntranceClues[passage.ClueVariant % settings.concealedEntranceClues.Count];
                 var view = relative == RelativeDirection.Forward ? 0 : relative == RelativeDirection.Left ? 1 : 3;
-                var gateAnchor = gateArt != null && !gateArt.wallMounted
-                    ? explorationView.EntranceClue(relative) : explorationView.Wall(relative);
-                // Wall switches sit at hand height and away from the foreground actor silhouette.
-                if (!passage.Discovered && gateArt != null && gateArt.wallMounted)
-                    gateAnchor = explorationView.Switch(relative);
-                explorationView.Add(gateArt, view, false, gateAnchor, relative == RelativeDirection.Forward ? .80f : .95f,
-                    !passage.Discovered, () => InvestigatePassage(passage));
+                if (!passage.Discovered)
+                    explorationView.AddHiddenWall(settings.hiddenWall ?? settings.lockedDoor, view, explorationView.Wall(relative), () => InvestigatePassage(passage));
+                else
+                    explorationView.Add(settings.lockedDoor, view, false, explorationView.Wall(relative), relative == RelativeDirection.Forward ? .80f : .95f,
+                        false, () => InvestigatePassage(passage));
+            }
+            foreach (var target in state.Graph.Neighbors(room))
+            {
+                if (target.Type is not (RoomEncounterType.Elite or RoomEncounterType.Boss) || !state.CanTravel(room, target)) continue;
+                var absolute = DirectionUtility.FromDelta(new DungeonPosition(target.Position.X-room.Position.X,target.Position.Y-room.Position.Y));
+                var relative = DirectionUtility.ToRelative(state.Player.Facing, absolute);
+                if (relative == RelativeDirection.Back) continue;
+                var doorway = target.Type == RoomEncounterType.Boss ? settings.bossEntrance : settings.eliteEntrance;
+                var facingView = relative == RelativeDirection.Forward ? 0 : relative == RelativeDirection.Left ? 1 : 3;
+                explorationView.Add(doorway, facingView, false, explorationView.Wall(relative), 1, false,
+                    () => { if(State==GameFlowState.DungeonNavigation) dungeonController.TravelThrough(absolute); });
             }
         }
 
@@ -109,7 +116,7 @@ namespace DungeonSlash
                 case RoomEncounterType.Chest: case RoomEncounterType.MajorReward: ShowChestChoice(room); break;
                 case RoomEncounterType.Fountain: ShowFountainChoice(room); break;
                 case RoomEncounterType.PoisonFountain: ShowPoisonFountainChoice(room); break;
-                case RoomEncounterType.Goddess: StartCoroutine(UseGoddess(room)); break;
+                case RoomEncounterType.Goddess: ShowGoddessChoice(room); break;
                 case RoomEncounterType.Shop: HandleMerchantRoom(room); break;
                 case RoomEncounterType.Camp: ShowCamp(room); break;
                 case RoomEncounterType.Event: ShowRandomEvent(room); break;
@@ -117,6 +124,14 @@ namespace DungeonSlash
             }
         }
 
+        private void ShowGoddessChoice(DungeonRoom room)
+        {
+            if (roomEventView == null) { ShowNavigation(); return; }
+            State = GameFlowState.RoomEvent;
+            roomEventView.ShowChoice(GameText.Get("ui.explore.goddess.ask"), goddessEventSprite,
+                GameText.Get("ui.explore.goddess.pray"), GameText.Get("ui.event.leave"),
+                () => StartCoroutine(UseGoddess(room)), ShowNavigation);
+        }
         private IEnumerator UseGoddess(DungeonRoom room)
         {
             yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.79570a59"), goddessEventSprite);
@@ -133,12 +148,17 @@ namespace DungeonSlash
         private void InvestigatePassage(DungeonPassage passage)
         {
             if (State != GameFlowState.DungeonNavigation) return;
-            var discovered = passage.Discovered;
-            passage.Discover();
+            if (!passage.Discovered)
+            {
+                var opened = passage.Search(dungeonController.Exploration.secretWallSearches);
+                ShowNavigation();
+                explorationView.Say(opened ? "ui.explore.wall.opened" : passage.SearchProgress == 1 ? "ui.explore.wall.hollow" : "ui.explore.wall.loose");
+                return;
+            }
             if (passage.Locked)
             {
                 if (!passage.Unlock(dungeonController.State.Keys))
-                { ShowNavigation(); explorationView.Say(discovered ? "ui.explore.door.locked" : "ui.explore.passage.locked"); return; }
+                { ShowNavigation(); explorationView.Say("ui.explore.door.locked"); return; }
                 ShowNavigation(); explorationView.Say("ui.explore.door.opened");
             }
             else { ShowNavigation(); explorationView.Say("ui.explore.passage.opened"); }

@@ -31,10 +31,11 @@ namespace DungeonSlash
                     var free = DirectionUtility.Offsets.Select(o => origin.Position + o).Where(p => !graph.HasRoom(p)
                         && DirectionUtility.Offsets.All(o => { var adjacent = graph.At(p + o); return adjacent == null || adjacent == origin; })).ToArray();
                     if (free.Length == 0) continue;
-                    var hidden = random.NextDouble() < settings.concealedEntranceChance;
-                    var locked = random.NextDouble() < settings.lockedEntranceChance;
-                    if (graph.Passages.Any(p => p.Locked)) locked = false;
-                    if (!hidden && !locked) hidden = true;
+                    // Secret masonry and an openly locked door are different discoveries.
+                    var hidden = random.NextDouble() * (settings.concealedEntranceChance + settings.lockedEntranceChance)
+                        < settings.concealedEntranceChance;
+                    if (graph.Passages.Any(p => p.Locked)) hidden = true;
+                    var locked = !hidden;
                     var nearby = graph.DistancesFrom(origin);
                     var keyRoom = graph.Rooms.Where(r => !r.IsOptionalAnnex && r != origin && r.KeyTokens.Count == 0
                         && accessible.Contains(r.RoomId)

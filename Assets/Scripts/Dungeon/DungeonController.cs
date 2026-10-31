@@ -73,5 +73,6 @@ namespace DungeonSlash
             State.RevealConnection(State.Player.CurrentRoom, target);
             State.Player.MoveTo(target); mapView.Render(State, null, false); RoomEntered?.Invoke(target);
         }
+        public void TravelThrough(FacingDirection absolute) => MoveAbsolute(absolute);
     }
 }

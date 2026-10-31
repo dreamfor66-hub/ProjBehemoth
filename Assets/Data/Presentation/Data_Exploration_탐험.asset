@@ -16,9 +16,10 @@ MonoBehaviour:
   secondAnnexChance: 0.23
   concealedEntranceChance: 0.62
   lockedEntranceChance: 0.48
-  annexEventChance: 0.46
+  annexEventChance: 0.3
   annexCombatChance: 0.025
   maximumKeyDistance: 4
+  secretWallSearches: 5
   roomObjects:
   - encounter: 5
     artwork: {fileID: 11400000, guid: 70bd897543c8ce640bcb879214ffc2a9, type: 2}
@@ -38,6 +39,9 @@ MonoBehaviour:
   mechanism: {fileID: 11400000, guid: df86867bd4141c1448ca57a8748bd963, type: 2}
   lockedDoor: {fileID: 11400000, guid: c26637f094dc8d745a43b163fd0b851d, type: 2}
   fallbackStory: {fileID: 11400000, guid: e9a7042ed43f96c43a2daaa00dc799f3, type: 2}
+  hiddenWall: {fileID: 11400000, guid: b3c9aa5278c2335448cf1ebb494a0019, type: 2}
+  eliteEntrance: {fileID: 11400000, guid: 8c16c0b41ddab5945b961fe7393cfe09, type: 2}
+  bossEntrance: {fileID: 11400000, guid: c76f42b393399ad4e8bcc38198625c8f, type: 2}
   concealedEntranceClues:
   - {fileID: 11400000, guid: df86867bd4141c1448ca57a8748bd963, type: 2}
   - {fileID: 11400000, guid: e9a7042ed43f96c43a2daaa00dc799f3, type: 2}

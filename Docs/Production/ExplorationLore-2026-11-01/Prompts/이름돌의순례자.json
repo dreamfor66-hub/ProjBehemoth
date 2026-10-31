@@ -1,0 +1,7 @@
+{
+  "name": "이름돌의순례자",
+  "prompt": "Use case stylized-concept. Three isolated equal columns FRONT three-quarter facing player, SIDE, REAR of the SAME person, whole body, aligned soles and equal physical scale, wide transparent gutters so no silhouette crosses a third. True transparent background; no floor, chair, text, labels, UI or vignette. Input1 is identity EDIT TARGET; input2 installed dungeon sets camera/contour/lighting; input3 original hooded archer is large-form style only. Substantial solid ink-black INNER shadow shapes, thick selective drawn contours, few broad flat color planes, simplified faces, very few folds and edges, no grain, realistic materials, tiny facets or glossy rendering. NOT a sad squatting beggar. Redraw input1's old soft-capped white-bearded man STANDING, sturdy upright stance, carrying the heavy broad sack of grey name-stones against one hip with both hands. Cream cap and sleeves, broad dark rust-brown short cloak, charcoal trousers and brown boots. A weathered retrieval worker counting the names he will carry to families, tired but determined, looking at player; not despairing. One plain brass retrieval token on chest and coiled sturdy rope over one shoulder. Keep face highly simplified, beard a few LARGE ink/color shapes, no individual hairs. His portable sack is the focal prop.",
+  "target": "T_Sprite_Character_이름돌의순례자_Front.png",
+  "kind": "directions",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-fe5129cd-902d-42e8-aff9-ad5cc5ce1873.png"
+}

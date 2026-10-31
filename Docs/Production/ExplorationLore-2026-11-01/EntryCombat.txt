@@ -1,0 +1,13 @@
+Actual room travel and actual event fight choice: pre-entry furnishing yields correctly to combat input.
+PASS pointer Interaction Area; top=Interaction Area
+PASS destination key visible during walking
+PASS actual elite entry releases world hit areas to combat gestures
+PASS existing combat tutorial safely waits for confirmation
+PASS pointer Choice_0; top=Choice_0
+PASS actual elite combat starts
+PASS automatic hostile encounter begins after actual entry with its world subject
+PASS pointer Choice_0; top=Choice_0
+PASS actual hostile choice prepares the authored bandit encounter
+PASS event fight removes duplicate world figure and world hit areas
+PASS pointer Choice_0; top=Choice_0
+PASS actual bandit combat starts after confirmation

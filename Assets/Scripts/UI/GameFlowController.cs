@@ -147,11 +147,10 @@ namespace DungeonSlash
                 if (travelDamage.TargetDied && !runController.State.TryConsumeRevival()) { ShowResult(false); yield break; }
             }
             BeginEventPhase();
-            if (roomTransitionView != null) yield return roomTransitionView.Play();
             PrepareRoomStory(room);
-            // A speaking encounter already has a visible, authored subject when its first words appear.
-            if (ExplorationEnabled && room.Type == RoomEncounterType.Event && room.Story?.discovery == EventDiscovery.Automatic)
-                RefreshExploration();
+            FindFirstObjectByType<StageBackdropView>()?.Refresh(dungeonController.Floor, dungeonController.State);
+            RefreshExploration(); // The destination is already furnished during the walking beat.
+            if (roomTransitionView != null) yield return roomTransitionView.Play();
             if (IsWorldEncounter(room) || ExplorationEnabled && room.Type == RoomEncounterType.Event
                 && room.Story != null && room.Story.discovery != EventDiscovery.Automatic)
             { ShowNavigation(); yield break; }
@@ -185,9 +184,7 @@ namespace DungeonSlash
                     ShowChestChoice(room);
                     yield break;
                 case RoomEncounterType.Goddess:
-                    yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.79570a59"), goddessEventSprite);
-                    room.IsCleared = true;
-                    GrantAndShowReward(runController.GetGoddessRoomReward());
+                    ShowGoddessChoice(room);
                     yield break;
                 case RoomEncounterType.Shop:
                     HandleMerchantRoom(room);
@@ -211,6 +208,9 @@ namespace DungeonSlash
         private IEnumerator BeginCombatEvent(DungeonRoom room, IReadOnlyList<MonsterData> forcedMonsters = null, string announcement = null)
         {
             State = GameFlowState.RoomEvent;
+            // The destination is furnished during the walk; once combat presentation starts,
+            // its exploration hit areas must yield to the combat gesture surface.
+            explorationView?.SetVisible(false);
             var monster = forcedMonsters == null ? combatController.GetMonsterData(room.Type, room.EncounterOriginId, dungeonController.Floor) : forcedMonsters.Count > 0 ? forcedMonsters[0] : null;
             if (forcedMonsters == null) combatController.PrepareEncounter(runController.State, room.Type, room.EncounterOriginId, dungeonController.Floor);
             else combatController.PrepareEncounter(runController.State, forcedMonsters, dungeonController.Floor);

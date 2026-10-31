@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uB178\uB9C8\uBC95\uC0AC\uC758\uD3BC\uCE5C\uCC45"
   m_EditorClassIdentifier: 
-  labelKey: ui.eventgrounding.object.MagicTeacherReturn
+  labelKey: ui.lore.object.MagicTeacherReturn
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.MagicTeacherReturn
   wallMounted: 0
@@ -27,45 +27,45 @@ MonoBehaviour:
   usedFront: {fileID: 0}
   usedSide: {fileID: 0}
   usedRear: {fileID: 0}
-  displayHeight: 350
+  displayHeight: 400
   hitPadding: 20
   geometry:
   - sprite: {fileID: 21300000, guid: 059666597d8f3a640ab30f9cc7375e7d, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.026462395
-      y: 0.067349926
-      width: 0.93036216
-      height: 0.8770132
+      x: 0.019264448
+      y: 0.010967099
+      width: 0.9614711
+      height: 0.97806585
     footprint:
       serializedVersion: 2
-      x: 0.04317549
-      y: 0.08345535
-      width: 0.8941504
-      height: 0.19262078
+      x: 0.085814364
+      y: 0.017946161
+      width: 0.67950964
+      height: 0.21495512
   - sprite: {fileID: 21300000, guid: 608cfb422253c2c44b54b75fcebb1862, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.032357473
-      y: 0.10078534
-      width: 0.9352851
-      height: 0.76963353
+      x: 0.023012552
+      y: 0.010989011
+      width: 0.95397484
+      height: 0.978022
     footprint:
       serializedVersion: 2
-      x: 0.05392912
-      y: 0.11518325
-      width: 0.853621
-      height: 0.1690314
+      x: 0.12761506
+      y: 0.017982017
+      width: 0.6464435
+      height: 0.21494505
   - sprite: {fileID: 21300000, guid: cd282930912905441b4c4a885643744c, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.050147492
-      y: 0.08145364
-      width: 0.92772865
-      height: 0.7431078
+      x: 0.021276595
+      y: 0.011077543
+      width: 0.95531917
+      height: 0.97784495
     footprint:
       serializedVersion: 2
-      x: 0.073746316
-      y: 0.09398496
-      width: 0.8820059
-      height: 0.16320801
+      x: 0.13829787
+      y: 0.018126888
+      width: 0.74255323
+      height: 0.21490432

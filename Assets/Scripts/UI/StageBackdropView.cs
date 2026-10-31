@@ -26,6 +26,9 @@ namespace DungeonSlash
                 var art=artwork[index];if(art==null)return;
                 var camping = state?.Player?.CurrentRoom?.Type == RoomEncounterType.Camp && art.campInterior != null;
                 var walls = camping ? run?.State?.Fatigue.CampUsed == true && art.campUsedInterior != null ? art.campUsedInterior : art.campInterior : art.walls;
+                if (!camping && state?.Player?.CurrentRoom?.Type == RoomEncounterType.Boss && art.bossInterior != null) walls = art.bossInterior;
+                var eventInteriors = state?.Player?.CurrentRoom?.Story?.roomInteriors;
+                if (!camping && eventInteriors != null && index < eventInteriors.Length && eventInteriors[index] != null) walls = eventInteriors[index];
                 // Swap artwork without overwriting the authored RectTransform layout.
                 if(current!=index||background.sprite!=walls){background.sprite=walls;current=index;}
                 VisibleDoorMask=ConnectionMask(state);

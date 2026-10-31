@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: "Data_MonsterAnimation_\uAE08\uBA39\uB294\uB450\uAEBC\uBE44"
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: a40dad9b6e531aa41baeec243f92e06d, type: 2}
-  attack: {fileID: 21300000, guid: 60a85f2093aca524f9b4b659631d0341, type: 2}
+  idle: {fileID: 21300000, guid: 94394aa0117f093488c246c95bf8a450, type: 3}
+  attack: {fileID: 21300000, guid: db02ccba39d8fee49b13de281946c209, type: 3}
   guard: {fileID: 0}
-  ready: {fileID: 21300000, guid: 7aa7eb9700e825f4ab3805eff4b83245, type: 2}
-  dead: {fileID: 21300000, guid: 9e113bb774215b245947aee2af8d68a5, type: 2}
+  ready: {fileID: 21300000, guid: dda3fb34b0519e241ac728d674f50bd9, type: 3}
+  dead: {fileID: 21300000, guid: 276e113610a166443a386a80bc43ad7a, type: 3}
   stunned: {fileID: 0}
   attackPoseSeconds: 0.3
   readyLeftToRight: {fileID: 0}
@@ -34,4 +34,4 @@ MonoBehaviour:
   readyScale: {x: 1, y: 1}
   strikeScale: {x: 1, y: 1}
   strikeSeconds: 0.3
-  tightPoseFrames: 0
+  tightPoseFrames: 1

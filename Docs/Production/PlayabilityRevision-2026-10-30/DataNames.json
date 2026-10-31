@@ -1175,6 +1175,30 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Charge.asset",
+            "path": "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Charge_급소_찌르기.asset",
+            "guid": "1ce1b45442ce1bc4bb3de35b529bf341",
+            "id": "",
+            "displayName": "급소 찌르기",
+            "type": "MonsterAttackData",
+            "aliases": [
+                "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Charge.asset",
+                "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Charge_급소_찌르기.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Normal.asset",
+            "path": "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Normal_그늘_베기.asset",
+            "guid": "b4d3025334b984749b5c4a37461d825b",
+            "id": "",
+            "displayName": "그늘 베기",
+            "type": "MonsterAttackData",
+            "aliases": [
+                "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Normal.asset",
+                "Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Normal_그늘_베기.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Combat/Buffs/HorizontalFlow.asset",
             "path": "Assets/Data/Combat/Buffs/Data_Buff_가속.asset",
             "guid": "89767f2e074e6ff4ea5317426d43445b",
@@ -2347,6 +2371,17 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Combat/Monsters/Data_Monster_Special_회수꾼도적.asset",
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_회수꾼도적.asset",
+            "guid": "ee38cb01c1c92764abeeb5bec77ec7a7",
+            "id": "",
+            "displayName": "회수꾼 도적",
+            "type": "MonsterData",
+            "aliases": [
+                "Assets/Data/Combat/Monsters/Data_Monster_Special_회수꾼도적.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/GameContent.asset",
             "path": "Assets/Data/Data_GameContent_게임_콘텐츠_목록.asset",
             "guid": "6cc360cc75cddb841ada20179a87fe71",
@@ -2836,6 +2871,17 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Dungeon/Encounters/Data_Encounter_회수꾼도적.asset",
+            "path": "Assets/Data/Dungeon/Encounters/Data_Encounter_회수꾼도적.asset",
+            "guid": "26abb17044a960d448c44982606abad8",
+            "id": "RecoveryCutpurse",
+            "displayName": "회수꾼도적",
+            "type": "EncounterData",
+            "aliases": [
+                "Assets/Data/Dungeon/Encounters/Data_Encounter_회수꾼도적.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Dungeon/Encounters/TrainingMedium.asset",
             "path": "Assets/Data/Dungeon/Encounters/Data_Encounter_훈련_인형_140.asset",
             "guid": "0e9f90aa618dd864dbc691b6d5b32d88",
@@ -2954,6 +3000,20 @@
             "type": "RandomEventData",
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/Shelter.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset",
+            "guid": "3794989680026e142a819014614c80e8",
+            "id": "Shelter",
+            "displayName": "끊어진 호위",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_불침번을_정하자.asset",
+                "Assets/Data/Dungeon/Events/Shelter.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset"
             ]
         },
         {
@@ -3114,16 +3174,14 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/Shelter.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset",
-            "guid": "3794989680026e142a819014614c80e8",
-            "id": "Shelter",
-            "displayName": "잠깐의 교대",
+            "oldPath": "Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset",
+            "guid": "40481cb43d034e94881cdd670ae9be45",
+            "id": "RecoveryCutpurse",
+            "displayName": "이름 없는 회수표",
             "type": "RandomEventData",
             "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_불침번을_정하자.asset",
-                "Assets/Data/Dungeon/Events/Shelter.asset",
-                "Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset"
+                "Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset"
             ]
         },
         {

@@ -1,0 +1,11 @@
+{
+  "name": "보스입구",
+  "kind": "door",
+  "prompt": "Use case stylized-concept. BEHEMOTH boss chamber DOOR LEAF ONLY, front-on planar rectangular panel for projection into existing Gothic doorway. A massive symmetrical DOUBLE iron-and-tarnished-bronze door with a single LARGE blind lion-mask relief straddling the central seam and two simple broad horizontal bands. Two blunt brass ring handles under mask. One wide faded dark crimson painted plane across upper panels. Clear imposing identity utterly different from a plain door and an elite crossed-blades iron door. NO padlock, tiny studs, thin ornament, many spikes, runic text, gems or elaborate filigree. Input1 installed room supplies thick selective drawn contours, LARGE solid ink-black shapes inside metal relief, broad muted flat planes, restrained shading and same almost-eye-level camera. Entire rectangular leaf fits on genuine alpha with clean margins. NO surrounding arch, wall, floor, background, UI, labels, lighting glow, realistic grain or vignette.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-53ccf3c1-2e26-441b-9c2d-99b4825341c6.png",
+  "accepted": false,
+  "rejection": "Fine material grain and numerous relief facets drift from the installed broad ink planes."
+}

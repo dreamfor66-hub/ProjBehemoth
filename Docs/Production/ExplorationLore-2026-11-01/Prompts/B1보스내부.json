@@ -1,0 +1,8 @@
+{
+  "name": "B1보스내부",
+  "kind": "interior",
+  "act": 1,
+  "prompt": "Use case precise-object-edit. This installed room is the EDIT TARGET and strict camera/architecture authority. Make its BOSS CHAMBER interior by changing ONLY back-wall decoration and upper wall dressings. Keep EXACT aspect/framing, floor plane height, vanishing point, floor-tile seam positions, left/right pillar positions, ceiling and all room boundaries. Do not widen/deepen/raise the room. Preserve the entire lower floor and clear central combat space. All walls remain solid; gameplay draws door openings separately. No enemies, people, text or UI. Match original bold selective contours, LARGE solid ink-black shadows built inside architecture, clean LARGE forms and only a few broad shading planes. Absolutely no fine stone grain, evenly dense cracks, rubble scatter, tiny ornament, realistic texture, glow haze or vignette. Landscape same composition as source. Act-one forgotten labyrinth: add an enormous simple dark bronze funerary lion relief centred high on back wall and two broad hanging faded ochre funeral standards at inner pillars. The lion's closed eyes and huge black mouth-shadow suggest an old burial authority. Add one low plain sealed sarcophagus against the far wall UNDER the relief, grounded on the existing far floor, without steps/platforms, only broad planes. Heavy, solemn, dangerous; restrained ochre/grey/ink palette. Original torches stay fixed.",
+  "ref": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-944e85d5-01cb-4aef-9623-064d150f2591.png"
+}

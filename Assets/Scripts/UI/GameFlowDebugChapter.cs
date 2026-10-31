@@ -33,6 +33,7 @@ namespace DungeonSlash
         {
             var settings = dungeonController?.Exploration;
             return art != null && settings != null && (art == settings.lockedDoor || art == settings.mechanism
+                || art == settings.hiddenWall
                 || settings.concealedEntranceClues.Contains(art) && !content.events.Any(e => e != null && e.worldObject == art));
         }
         public bool DebugClearInspectionRoom() => DebugCreateInspection(null, 0, false);
@@ -44,18 +45,20 @@ namespace DungeonSlash
             ResetDebugChapterFlow(); DebugInspectionArt = art;
             var settings = dungeonController.Exploration; view = (view % 4 + 4) % 4;
             var gate = DebugIsPassageArtwork(art);
+            var entrance = art != null && (art == settings.bossEntrance || art == settings.eliteEntrance);
             var camping = art != null && art == settings.For(RoomEncounterType.Camp);
-            if (art != null && (art.wallMounted || gate) && view == 2) view = 0;
+            var story = art == null ? null : content.events.FirstOrDefault(e => e != null && e.worldObject == art);
+            if (art != null && (art.wallMounted || art.fitsDoorway || gate) && view == 2) view = 0;
             var mount = view == 0 ? RelativeDirection.Forward : view == 1 ? RelativeDirection.Left : RelativeDirection.Right;
             var graph = new DungeonGraph(); var center = graph.AddRoom(new DungeonPosition(0, 0));
             DungeonRoom annex = null;
             for (var i = 0; i < 4; i++)
             {
                 var relative = (RelativeDirection)i;
-                if (camping && relative != RelativeDirection.Back) continue;
+                if ((camping || story?.roomLayout == EventRoomLayout.Alcove) && relative != RelativeDirection.Back) continue;
                 var neighbor = graph.AddRoom(DirectionUtility.Offset(DirectionUtility.ToAbsolute(FacingDirection.North, relative)));
                 neighbor.Type = RoomEncounterType.Empty; neighbor.IsCleared = true;
-                if (art != null && art.wallMounted && !gate && relative == mount) continue;
+                if (art != null && art.wallMounted && !gate && !entrance && relative == mount) continue;
                 graph.Connect(center, neighbor);
                 if (relative == mount) annex = neighbor;
             }
@@ -63,7 +66,6 @@ namespace DungeonSlash
             center.ObjectCorner = view; center.ObjectFacing = (FacingDirection)((view + 2) % 4);
             center.ObjectWall = DirectionUtility.ToAbsolute(FacingDirection.North, mount);
             center.ObjectPlacementPrepared = true; // F1 explicitly authors the requested view.
-            var story = art == null ? null : content.events.FirstOrDefault(e => e != null && e.worldObject == art);
             var binding = settings.roomObjects.FirstOrDefault(b => b.artwork == art);
             if (gate)
             {
@@ -71,8 +73,10 @@ namespace DungeonSlash
                 var passage = new DungeonPassage(center, annex, art != settings.lockedDoor, true, Mathf.Max(0, settings.concealedEntranceClues.IndexOf(art)));
                 graph.Passages.Add(passage);
                 if (used) { passage.Discover(); var key = new System.Collections.Generic.HashSet<int> { passage.KeyToken }; passage.Unlock(key); }
-                else center.KeyTokens.Add(passage.KeyToken);
+                else if (passage.Locked) center.KeyTokens.Add(passage.KeyToken);
             }
+            else if (entrance)
+            { annex.Type = art == settings.bossEntrance ? RoomEncounterType.Boss : RoomEncounterType.Elite; annex.IsCleared = false; }
             else if (art == settings.key)
             {
                 center.ObjectCorner = (view + 3) % 4;

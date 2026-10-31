@@ -89,6 +89,16 @@ MonoBehaviour:
   displayName: "\uB531 \uD558\uB098 \uB0A8\uC740 \uC5F4\uB9E4"
   discovery: 1
   worldObject: {fileID: 11400000, guid: e97041d23bb8abd4c8a9bf6500b5c13d, type: 2}
+  encounterKind: 0
+  authoringLore: "\uC0AC\uB78C\uC744 \uC0C8\uB85C \uB4F1\uC7A5\uC2DC\uD0A4\uC9C0
+    \uC54A\uACE0, \uC2E4\uC81C \uBC1C\uACAC\uD55C \uBB3C\uAC74\uC758 \uC131\uC9C8\uACFC
+    \uADF8 \uC120\uD0DD\uC758 \uACB0\uACFC\uB85C \uC9C4\uD589\uD558\uB294 \uC6B0\uC5F0\uD55C
+    \uBC1C\uACAC."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uB204\uAD70\uAC00 \uB450\uACE0 \uAC04 \uC791\uC740 \uD654\uBD84\uC5D0
     \uC5F4\uB9E4 \uD558\uB098\uAC00 \uB0A8\uC544 \uC788\uB2E4.\n\n\uD654\uBD84 \uC190\uC7A1\uC774\uC5D0\uB294

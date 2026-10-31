@@ -1,0 +1,60 @@
+Only final fixes and unresolved art review: prayer, companion, stable interiors, entrance travel and event monster catalog.
+PASS pointer Interaction Area; top=Interaction Area
+PASS boss chamber after real travel B1
+PASS stable authored alcove Training
+PASS stable authored alcove Scholar
+PASS pointer Interaction Area; top=Interaction Area
+PASS boss chamber after real travel B2
+PASS stable authored alcove Training
+PASS stable authored alcove Scholar
+PASS stock paging clear of purchase button
+PASS pointer Next Stock; top=Next Stock
+PASS last stock page boundaries
+PASS pointer Previous Stock; top=Previous Stock
+PASS stock previous button works
+PASS pointer Interaction Area; top=Interaction Area
+PASS boss chamber after real travel B3
+PASS stable authored alcove Training
+PASS stable authored alcove Scholar
+PASS stock paging clear of purchase button
+PASS pointer Next Stock; top=Next Stock
+PASS pointer Next Stock; top=Next Stock
+PASS last stock page boundaries
+PASS pointer Previous Stock; top=Previous Stock
+PASS stock previous button works
+PASS object remains visible during walk after dither clears
+PASS pointer Interaction Area; top=Interaction Area
+PASS prayer question B1
+PASS pointer No; top=No
+PASS decline preserves unused statue
+PASS pointer Interaction Area; top=Interaction Area
+PASS pointer Yes; top=Yes
+PASS pointer Yes; top=Yes
+PASS accepted prayer consumes statue B1
+PASS pointer Interaction Area; top=Interaction Area
+PASS used statue click only narrates
+PASS pointer Interaction Area; top=Interaction Area
+PASS prayer question B2
+PASS pointer No; top=No
+PASS decline preserves unused statue
+PASS pointer Interaction Area; top=Interaction Area
+PASS pointer Yes; top=Yes
+PASS pointer Yes; top=Yes
+PASS accepted prayer consumes statue B2
+PASS pointer Interaction Area; top=Interaction Area
+PASS used statue click only narrates
+PASS pointer Interaction Area; top=Interaction Area
+PASS prayer question B3
+PASS pointer No; top=No
+PASS decline preserves unused statue
+PASS pointer Interaction Area; top=Interaction Area
+PASS pointer Yes; top=Yes
+PASS pointer Yes; top=Yes
+PASS accepted prayer consumes statue B3
+PASS pointer Interaction Area; top=Interaction Area
+PASS used statue click only narrates
+PASS event monster accessible in F1 catalog
+PASS actual dog companion relic granted
+PASS real owned companion renders idle
+PASS companion complete screen bounds (235.79, 138.62)..(628.58, 531.41)
+PASS real owned companion distinct attack painting

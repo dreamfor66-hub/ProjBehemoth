@@ -110,6 +110,16 @@ MonoBehaviour:
   displayName: "\uAE38\uAC00\uC758 \uBB34\uAC70\uC6B4 \uAE08\uACE0"
   discovery: 1
   worldObject: {fileID: 11400000, guid: 9edb47771d177ec48a413ee6f6c008c7, type: 2}
+  encounterKind: 0
+  authoringLore: "\uC0AC\uB78C\uC744 \uC0C8\uB85C \uB4F1\uC7A5\uC2DC\uD0A4\uC9C0
+    \uC54A\uACE0, \uC2E4\uC81C \uBC1C\uACAC\uD55C \uBB3C\uAC74\uC758 \uC131\uC9C8\uACFC
+    \uADF8 \uC120\uD0DD\uC758 \uACB0\uACFC\uB85C \uC9C4\uD589\uD558\uB294 \uC6B0\uC5F0\uD55C
+    \uBC1C\uACAC."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uC791\uC740 \uB3C8\uC8FC\uBA38\uB2C8\uAC00 \uB9E4\uB2EC\uB9B0 \uAE08\uACE0\uAC00
     \uAE38\uAC00\uC5D0 \uB193\uC5EC \uC788\uB2E4.\n\n\uC704\uCABD \uC8FC\uBA38\uB2C8\uB294

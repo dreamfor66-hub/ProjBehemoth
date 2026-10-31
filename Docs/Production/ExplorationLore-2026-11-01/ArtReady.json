@@ -1,0 +1,133 @@
+{
+  "art": [
+    {
+      "name": "길위의노마법사",
+      "height": 400,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Rear.png"
+    },
+    {
+      "name": "노마법사의펼친책",
+      "height": 400,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의펼친책_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의펼친책_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의펼친책_Rear.png"
+    },
+    {
+      "name": "버려진호위용병",
+      "height": 340,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_버려진호위용병_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_버려진호위용병_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_버려진호위용병_Rear.png"
+    },
+    {
+      "name": "번개병장수",
+      "height": 400,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Rear.png"
+    },
+    {
+      "name": "예약받는짐꾼",
+      "height": 400,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Rear.png"
+    },
+    {
+      "name": "이름돌의순례자",
+      "height": 400,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_이름돌의순례자_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_이름돌의순례자_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_이름돌의순례자_Rear.png"
+    },
+    {
+      "name": "회수꾼도적",
+      "height": 400,
+      "usedFront": "Assets/Art/World/Exploration/T_Sprite_Monster_회수꾼도적_Dead.png",
+      "usedSide": "Assets/Art/World/Exploration/T_Sprite_Monster_회수꾼도적_Dead.png",
+      "usedRear": "Assets/Art/World/Exploration/T_Sprite_Monster_회수꾼도적_Dead.png",
+      "front": "Assets/Art/World/Exploration/T_Sprite_Monster_회수꾼도적_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Monster_회수꾼도적_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Monster_회수꾼도적_Rear.png"
+    }
+  ],
+  "interiors": [
+    {
+      "act": 1,
+      "event": "Scholar",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B1기록더미내부.png"
+    },
+    {
+      "act": 1,
+      "event": "",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B1보스내부.png"
+    },
+    {
+      "act": 1,
+      "event": "Training",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B1운반틀내부.png"
+    },
+    {
+      "act": 2,
+      "event": "Scholar",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B2기록더미내부.png"
+    },
+    {
+      "act": 2,
+      "event": "",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B2보스내부.png"
+    },
+    {
+      "act": 2,
+      "event": "Training",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B2운반틀내부.png"
+    },
+    {
+      "act": 3,
+      "event": "Scholar",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B3기록더미내부.png"
+    },
+    {
+      "act": 3,
+      "event": "",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B3보스내부.png"
+    },
+    {
+      "act": 3,
+      "event": "Training",
+      "path": "Assets/Art/World/Exploration/T_UI_Room_B3운반틀내부.png"
+    }
+  ],
+  "doors": [
+    {
+      "name": "보스입구",
+      "path": "Assets/Art/World/Exploration/T_UI_World_보스입구.png"
+    },
+    {
+      "name": "엘리트입구",
+      "path": "Assets/Art/World/Exploration/T_UI_World_엘리트입구.png"
+    }
+  ],
+  "combat": [
+    {
+      "name": "회수꾼도적",
+      "idle": "Assets/Art/Combat/Lore01/T_Sprite_Monster_회수꾼도적_Idle.png",
+      "ready": "Assets/Art/Combat/Lore01/T_Sprite_Monster_회수꾼도적_Ready.png",
+      "attack": "Assets/Art/Combat/Lore01/T_Sprite_Monster_회수꾼도적_Attack.png",
+      "dead": "Assets/Art/Combat/Lore01/T_Sprite_Monster_회수꾼도적_Dead.png"
+    },
+    {
+      "name": "후드행상변이",
+      "idle": "Assets/Art/Combat/Lore01/T_Sprite_Monster_후드행상변이_Idle.png",
+      "ready": "Assets/Art/Combat/Lore01/T_Sprite_Monster_후드행상변이_Ready.png",
+      "attack": "Assets/Art/Combat/Lore01/T_Sprite_Monster_후드행상변이_Attack.png",
+      "dead": "Assets/Art/Combat/Lore01/T_Sprite_Monster_후드행상변이_Dead.png"
+    }
+  ],
+  "companion": {
+    "idle": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Idle.png",
+    "attack": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Attack.png"
+  }
+}

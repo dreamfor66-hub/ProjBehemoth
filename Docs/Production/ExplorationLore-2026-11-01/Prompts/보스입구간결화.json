@@ -1,0 +1,11 @@
+{
+  "name": "보스입구간결화",
+  "installName": "보스입구",
+  "kind": "door",
+  "prompt": "Use case stylized-concept. Redraw input1 door design with ACTUAL SIMPLE FLAT FORMS matching input2 installed game wall. Keep double-door identity and central blind lion-mask with two ring handles, broad crimson upper panel. Remove ALL grain, metal textures, tiny cracks, relief micro-facets, scratched edges and filigree. Lion face consists of ONLY about EIGHT huge bold black/bronze shapes: heavy brow, two closed black eyes, broad triangular nose, two cheek planes, a large BLACK muzzle gap. Mane is just FOUR big dark planes, no hair/teeth details. Main iron panels are FLAT dark-charcoal with one broad solid black shadow each, frame plain bronze bands. Strong substantial black shapes within relief and panels, thick drawn contour, just 4-5 flat muted colors, not realistic metal. Rectangular DOOR LEAF ONLY front-on, no surrounding arch/wall/floor/UI/text. Whole door with transparent margins; true alpha. It will sit inside original masonry and must not resemble a polished button or ornate icon.",
+  "refs": [
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-53ccf3c1-2e26-441b-9c2d-99b4825341c6.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-0d5778d1-e86d-44ee-92ee-93a051579fc4.png"
+}

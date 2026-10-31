@@ -1,0 +1,1 @@
+Event opportunities derive from 2 base rooms; supplier opportunities mean merged stock batches. Previous unvalidated acquisition/value assumptions retained and labeled. Only changed event-opportunity deltas propagate into inherited budgets; calibrated B1 rows are preserved. No balance suite run.

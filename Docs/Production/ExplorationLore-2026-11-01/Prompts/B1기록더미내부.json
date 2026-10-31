@@ -1,0 +1,9 @@
+{
+  "name": "B1기록더미내부",
+  "kind": "eventInterior",
+  "act": 1,
+  "event": "Scholar",
+  "prompt": "Use case precise-object-edit. EDIT this installed full room as an environmental variant. Preserve EXACT canvas/aspect, floor-tile seams, floor height, vanishing point, left/right wall and pillar locations, ceiling framing, and original heavy ink style. Do not enlarge/deepen the room or add perspective steps. Three solid walls, no door/window. Leave foreground and central combat/player silhouette space clear. No people, monsters, main interactable, letters or UI. All additions use clean LARGE forms, substantial SOLID ink-black interior shadows, only a few flat muted color/shade planes. No realistic texture, fine cracks, grain, tiny scattered debris, glows or vignette. An abandoned archive-cache alcove within the same labyrinth room: TWO low broad wooden shelves of oversized closed books against the side/back pillar bases, one plain tied archival crate on each side, a few LARGE leaning parchment boards behind them. These are weathered expedition caches, NOT a new library building. Main floating spellbook will be drawn by game at LEFT floor x=.315,y=.235 (normalized bottom-up); keep that exact spot and its airspace clear. Most extra cache objects sit on RIGHT near the far wall and far-left edge. No isolated magical book or pedestal, no tiny book spines, no text. Original wall torches remain fixed.",
+  "ref": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9e3a528b-c0cf-459c-ab95-8b31dadaf29b.png"
+}

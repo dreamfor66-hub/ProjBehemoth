@@ -11,6 +11,7 @@ namespace DungeonSlash
         public Sprite walls;
         [Tooltip("Complete dead-end camping room, preserving this floor's camera and architecture.")]
         public Sprite campInterior, campUsedInterior;
+        public Sprite bossInterior;
         [HideInInspector, Tooltip("Legacy import offset; no longer applied. Set the Background RectTransform directly.")]
         public Vector2 imageOffset;
         [Tooltip("Transparent full-canvas overlays, ordered Forward / Left / Right. Each image shares the wall canvas and perspective.")]

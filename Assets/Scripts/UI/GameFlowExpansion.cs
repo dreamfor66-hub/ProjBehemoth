@@ -23,7 +23,7 @@ namespace DungeonSlash
         {
             State = GameFlowState.RoomEvent;
             if (content == null || expansionView == null) { room.IsCleared = true; ShowNavigation(); return; }
-            activeEvent = room.StoryPrepared ? room.Story : RandomEventSystem.Draw(content, runController.State, dungeonController.Floor, room.RoomId);
+            activeEvent = room.StoryPrepared ? room.Story : RandomEventSystem.Draw(content, runController.State, dungeonController.Floor, room.RoomId, room.Connections.Count);
             room.Story = activeEvent; room.StoryPrepared = true;
             if (activeEvent == null)
             {
@@ -129,6 +129,7 @@ namespace DungeonSlash
                     ShowSpellChoices(); return;
                 case EventEffectKind.Fight:
                     if (effect.encounter == null) { messages.Add(GameText.Get("ui.gameflowexpansion.ad4ca858")); break; }
+                    explorationView?.SetVisible(false);
                     eventCombatCompleted = next;
                     combatController.PrepareFixedEncounter(run, effect.encounter, dungeonController.Floor);
                     combatController.BeginCombatPresentation();

@@ -1,0 +1,11 @@
+{
+  "name": "회수꾼도적간결화",
+  "installName": "회수꾼도적",
+  "kind": "combatDirections",
+  "prompt": "Use case stylized-concept. Redraw the SAME hooded recovery-cutpurse in input1 but simplify the ACTUAL forms to input2 game background's large bold ink style. NO shredded edges, no layered rags, no seams/stitches/patches/grain or little dark folds. An intact short rust-brown shoulder cape with only TWO broad corners, charcoal plain tunic/trousers, boots with one cuff, plain wrist wraps, one simple thick COILED ROPE over left shoulder and one large blank brass tag. Soft dark hood, sharp simple face, broad short knife in RIGHT hand. Huge BLACK interior areas in hood, underside of cape, arms and legs; 4-5 large muted flat planes. SIX separated cells in 3 columns x 2 rows, transparent background, all limbs/weapons wholly INSIDE their cell with roomy gutters. Top row FRONT-IDLE facing camera, SIDE-IDLE, REAR-IDLE. Bottom row READY knife drawn by right shoulder; ATTACK right hand thrusts/cuts toward player CAMERA with coherent grip and weight; DEAD lying on side knife dropped. Keep same identity, gear and real body scale. Every pose distinctly painted, not transforms. No UI/text/ground/glow. Keep 10% outer transparent margins and no silhouette touching neighboring cells. Reference1 is content and pose ONLY, its ragged texture is specifically rejected. Reference2 is installed art STYLE authority.",
+  "refs": [
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-dcbb47f0-dd99-4042-a10e-c600d2917965.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-cd672ce9-c03f-408d-b0f1-c8733cb418cd.png"
+}

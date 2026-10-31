@@ -94,6 +94,16 @@ MonoBehaviour:
   displayName: "\uC8FC\uC778 \uC783\uC740 \uAE43\uBC1C"
   discovery: 0
   worldObject: {fileID: 11400000, guid: 297f092a5c2f1734a888b6661fb477b3, type: 2}
+  encounterKind: 3
+  authoringLore: "\uC8FC\uC778\uC758 \uAE09\uB8CC \uC8FC\uBA38\uB2C8\uC640 \uAE43\uBC1C\uC744
+    \uBAA9\uC904\uC5D0 \uB9E4\uB2E8 \uC2DC\uB828 \uC9D0\uC2B9. \uC624\uB7AB\uB3D9\uC548
+    \uBC30\uC6B4 \uACBD\uACC4\uB97C \uBC18\uBCF5\uD55C\uB2E4. \uC804\uD22C \uC0C1\uB300\uB294
+    \uC2E4\uC81C \uADF8\uB9BC\uACFC \uAC19\uC740 \uAC00\uC2DC\uB4F1 \uC2DC\uB828\uC218\uB2E4."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uB4F1\uC5D0 \uAC00\uC2DC \uB3CB\uC740 \uC9D0\uC2B9\uC774 \uB0A1\uC740
     \uAE43\uBC1C \uACC1\uC5D0 \uC6C5\uD06C\uB9AC\uACE0 \uC788\uB2E4.\n\n\uBAA9\uC904\uC5D0

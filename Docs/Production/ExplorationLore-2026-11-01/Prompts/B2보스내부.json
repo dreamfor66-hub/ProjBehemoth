@@ -1,0 +1,8 @@
+{
+  "name": "B2보스내부",
+  "kind": "interior",
+  "act": 2,
+  "prompt": "Use case precise-object-edit. This installed room is the EDIT TARGET and strict camera/architecture authority. Make its BOSS CHAMBER interior by changing ONLY back-wall decoration and upper wall dressings. Keep EXACT aspect/framing, floor plane height, vanishing point, floor-tile seam positions, left/right pillar positions, ceiling and all room boundaries. Do not widen/deepen/raise the room. Preserve the entire lower floor and clear central combat space. All walls remain solid; gameplay draws door openings separately. No enemies, people, text or UI. Match original bold selective contours, LARGE solid ink-black shadows built inside architecture, clean LARGE forms and only a few broad shading planes. Absolutely no fine stone grain, evenly dense cracks, rubble scatter, tiny ornament, realistic texture, glow haze or vignette. Landscape same composition as source. Act-two frozen sanctuary: back wall now bears one HUGE simple dark circular broken-halo relief with a broad frost-white crescent set into it, two long broad still blue ritual banners against inner walls. Add one low plain stone offering block against far wall under halo, grounded on the existing far floor WITHOUT stairs or platform. The cyan torches and existing ice stay fixed. Chilling ceremonial authority, large quiet shapes, blue-grey/black/ivory palette; no intricate ice facets or particles.",
+  "ref": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-a76d4eaa-7654-4d61-a1ff-15cbb1ec24f1.png"
+}

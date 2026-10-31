@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace DungeonSlash
 {
+    public enum EventEncounterKind { Object, Person, Creature, Hostile }
+    public enum EventRoomLayout { Any, Alcove }
     public enum EventEffectKind { Relic, SharedRelicChoice, ExclusiveChoice, PerkChoice, SpellChoice, Gold, Heal, Stat, SetFlag, RemoveFlag, Fight, SacrificeRelic, RemovePerk, UpgradePerk, Burden, GoldDebt, Potion, LearnSpell }
     [Serializable]
     public sealed class EventEffect
@@ -89,6 +91,12 @@ namespace DungeonSlash
         public string displayName;
         public EventDiscovery discovery;
         public RoomObjectData worldObject;
+        public EventEncounterKind encounterKind;
+        [TextArea(3, 7), Tooltip("Authoring context: reason for entering, objective and what the player can infer. Not shown as exposition.")]
+        public string authoringLore;
+        public EventRoomLayout roomLayout;
+        [Tooltip("Optional complete room paintings, act 1 / 2 / 3, on each installed floor's camera.")]
+        public Sprite[] roomInteriors = new Sprite[3];
         [Tooltip("Keep authored pages but exclude this event from random encounters.")]
         public bool excludedFromRandomPool;
         [TextArea(3, 8)] public string narrative;

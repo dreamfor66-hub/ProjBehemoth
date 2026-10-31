@@ -105,6 +105,8 @@
 본체 주위를 공전한다. 위치를 따라가며 노리자.","Assets/Data/Dungeon/Encounters/Data_Encounter_실짜는공작부인_실인형.asset:hint"
 "data.encounterdata.crystalspider.displayname","수정 등딱지","Assets/Data/Dungeon/Encounters/Data_Encounter_수정등딱지.asset:displayName"
 "data.encounterdata.crystalspider.hint","집게 사이 약점과 보조 약점을 연결해 부수자.","Assets/Data/Dungeon/Encounters/Data_Encounter_수정등딱지.asset:hint"
+"data.encounterdata.data_encounter_회수꾼도적.displayname","회수꾼도적","Assets/Data/Dungeon/Encounters/Data_Encounter_회수꾼도적.asset:displayName"
+"data.encounterdata.data_encounter_회수꾼도적.hint","칼을 당길 때 드러나는 약점을 노리자.","Assets/Data/Dungeon/Encounters/Data_Encounter_회수꾼도적.asset:hint"
 "data.encounterdata.deeptrial.displayname","왕관 거신 · 결정 성게","Assets/Data/Dungeon/Encounters/Data_Encounter_왕관_거신_결정성게.asset:displayName"
 "data.encounterdata.deeptrial.hint","심층 시련. 여러 약점을 연결해 끊자.
 결정 사이에 열린 약점을 노려 찌르기를 끊자.","Assets/Data/Dungeon/Encounters/Data_Encounter_왕관_거신_결정성게.asset:hint"
@@ -539,6 +541,8 @@
 "data.monsterattackdata.crystalspider_normal.displayname","연속 수정 다리 찌르기","Assets/Data/Combat/Attacks/Data_Attack_Common_Normal_연속_수정_다리_찌르기.asset:displayName"
 "data.monsterattackdata.crystalurchin-0.displayname","연속 서리침","Assets/Data/Presentation/Angular/Attacks/Data_Attack_결정성게_Normal_연속_서리침.asset:displayName"
 "data.monsterattackdata.crystalurchin-1.displayname","빙침 폭풍","Assets/Data/Presentation/Angular/Attacks/Data_Attack_결정성게_Charge_빙침_폭풍.asset:displayName"
+"data.monsterattackdata.data_attack_회수꾼도적_charge.displayname","급소 찌르기","Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Charge_급소_찌르기.asset:displayName"
+"data.monsterattackdata.data_attack_회수꾼도적_normal.displayname","그늘 베기","Assets/Data/Combat/Attacks/Data_Attack_회수꾼도적_Normal_그늘_베기.asset:displayName"
 "data.monsterattackdata.data_monster_b1_elite_minotaur-ettingatekeeper-1.displayname","쌍두 삼연격","Assets/Data/Presentation/NativeMonsterFrames/Data_Attack_쌍두문지기_Charge_쌍두_삼연격.asset:displayName"
 "data.monsterattackdata.data_monster_b1_minion_bat-lanternimp-1.displayname","도약 꿰뚫기","Assets/Data/Presentation/NativeMonsterFrames/Data_Attack_고블린사냥꾼_Charge_도약_꿰뚫기.asset:displayName"
 "data.monsterattackdata.data_monster_b1_minion_leech-coffinslime-1.displayname","피의 급강하","Assets/Data/Presentation/NativeMonsterFrames/Data_Attack_흡혈박쥐_Charge_피의_급강하.asset:displayName"
@@ -717,6 +721,8 @@
 "data.monsterdata.data_monster_special_merchantmutant.encounterhint","큰 공격을 준비할 때 열린 약점을 노리자.","Assets/Data/Combat/Monsters/Data_Monster_Special_금먹는두꺼비.asset:encounterHint"
 "data.monsterdata.data_monster_special_minion_mimic.displayname","철니 미믹","Assets/Data/Combat/Monsters/Data_Monster_Special_철니미믹.asset:displayName"
 "data.monsterdata.data_monster_special_minion_mimic.encounterhint","뚜껑이 열리는 동안 드러난 약점을 끊자.","Assets/Data/Combat/Monsters/Data_Monster_Special_철니미믹.asset:encounterHint"
+"data.monsterdata.data_monster_special_회수꾼도적.displayname","회수꾼 도적","Assets/Data/Combat/Monsters/Data_Monster_Special_회수꾼도적.asset:displayName"
+"data.monsterdata.data_monster_special_회수꾼도적.encounterhint","칼을 당길 때 드러나는 약점을 노리자.","Assets/Data/Combat/Monsters/Data_Monster_Special_회수꾼도적.asset:encounterHint"
 "data.monsterdata.deeptrialguardian.displayname","왕관 거신","Assets/Data/Combat/Monsters/Data_Monster_Special_왕관거신.asset:displayName"
 "data.monsterdata.deeptrialguardian.encounterhint","심층 시련. 여러 약점을 연결해 끊자.","Assets/Data/Combat/Monsters/Data_Monster_Special_왕관거신.asset:encounterHint"
 "data.monsterdata.eclipsebeast.displayname","일식의 키메라","Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_일식의키메라.asset:displayName"
@@ -1044,31 +1050,35 @@
 "data.randomeventdata.contract.pages.3.options.2.description","","Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset:pages.Array.data[3].options.Array.data[2].description"
 "data.randomeventdata.contract.pages.3.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset:pages.Array.data[3].options.Array.data[2].resultText"
 "data.randomeventdata.contract.pages.3.options.2.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset:pages.Array.data[3].options.Array.data[2].title"
+"data.randomeventdata.data_event_그_돌에_적힌_이름.pages.0.options.3.description","등불 유물 획득","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].options.Array.data[3].description"
+"data.randomeventdata.data_event_그_돌에_적힌_이름.pages.0.options.3.resulttext","소년의 손을 떼어 내고 작은 등불을 꺼냈다. 소년은 외투 깃만 끌어안은 채 물러섰다. 나는 빈 보따리를 돌려주고 길을 비켰다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].options.Array.data[3].resultText"
+"data.randomeventdata.data_event_그_돌에_적힌_이름.pages.0.options.3.title","보따리를 붙든 손을 떼어 낸다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].options.Array.data[3].title"
 "data.randomeventdata.data_event_꺼진_기도.displayname","꺼진 기도","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:displayName"
-"data.randomeventdata.data_event_꺼진_기도.narrative","기둥 뒤에 누군가 웅크리고 앉아 있다. 낡은 성표를 쥔 손이 무릎 위에 멈춰 있다.
+"data.randomeventdata.data_event_꺼진_기도.narrative","성직자가 무릎을 끌어안고 있다. 발목의 붕대는 검게 젖었고, 빈 들것의 어깨끈을 아직 쥐고 있다.
 
-""여기서는 기도가 멀리 가지 못하네요.""
+“마지막 둘은 먼저 보냈어요. 여기까지 업고 온 건 헛일이 아니었겠죠.”
 
-그녀가 천천히 고개를 든다.
+손을 펴자 작은 성표가 드러난다.
 
-""그래도 상처는 볼 수 있어요. 약초가 조금 남았거든요.""","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:narrative"
+“제 것은 모르겠지만… 다른 상처는 아직 볼 수 있어요. 약초가 조금 남았거든요.”","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:narrative"
 "data.randomeventdata.data_event_꺼진_기도.options.0.description","금화 14 지불 · 체력 25 회복","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[0].description"
 "data.randomeventdata.data_event_꺼진_기도.options.0.resulttext","그녀는 약초를 갈아 상처를 감싼다.
 
 ""돌아가는 길을 찾으면, 저 바깥에도 아직 아침이 오는지 알려 주세요.""","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[0].resultText"
 "data.randomeventdata.data_event_꺼진_기도.options.0.title","상처를 맡긴다","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[0].title"
-"data.randomeventdata.data_event_꺼진_기도.options.1.description","체력 6 회복","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[1].description"
-"data.randomeventdata.data_event_꺼진_기도.options.1.resulttext","잠시 아무 말도 하지 않는다. 그녀의 짧은 기도가 돌벽 사이로 잦아든다.
-
-다시 일어설 때에는 숨이 조금 고르게 돌아온다.","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[1].resultText"
-"data.randomeventdata.data_event_꺼진_기도.options.1.title","말없이 곁에 앉는다","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[1].title"
+"data.randomeventdata.data_event_꺼진_기도.options.1.description","체력 12 회복","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[1].description"
+"data.randomeventdata.data_event_꺼진_기도.options.1.resulttext","그녀의 손에서 약초를 빼내 내 상처에 눌렀다. 성직자는 빈 손을 천천히 무릎 아래 감췄다. 더는 내 쪽을 보지 않았다.","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[1].resultText"
+"data.randomeventdata.data_event_꺼진_기도.options.1.title","남은 약초를 강제로 챙긴다.","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[1].title"
 "data.randomeventdata.data_event_꺼진_기도.options.2.description","그녀를 방해하지 않는다.","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[2].description"
 "data.randomeventdata.data_event_꺼진_기도.options.2.resulttext","그녀는 작은 고갯짓으로 배웅한다.","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[2].resultText"
 "data.randomeventdata.data_event_꺼진_기도.options.2.title","길을 계속 간다","Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset:options.Array.data[2].title"
+"data.randomeventdata.data_event_성장한_제자.pages.0.options.2.description","골드 +35 · 이후 이 연구자의 수업을 받지 못함","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[0].options.Array.data[2].description"
+"data.randomeventdata.data_event_성장한_제자.pages.0.options.2.resulttext","노인이 남은 기록을 가방에 넣고 손을 거뒀다. 챙긴 물건은 내다 팔 수 있겠지만, 이 사람에게 다음 수업을 청할 수는 없을 것이다. 그는 아무 말 없이 다른 통로로 사라졌다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[0].options.Array.data[2].resultText"
+"data.randomeventdata.data_event_성장한_제자.pages.0.options.2.title","펼친 기록을 낚아챈다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[0].options.Array.data[2].title"
 "data.randomeventdata.data_event_성장한_제자.pages.1.options.4.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[1].options.Array.data[4].description"
 "data.randomeventdata.data_event_성장한_제자.pages.1.options.4.resulttext","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[1].options.Array.data[4].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.1.options.4.title","아주 큰 마법을 배우고 싶다고 한다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[1].options.Array.data[4].title"
-"data.randomeventdata.data_event_성장한_제자.pages.10.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.10.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1079,7 +1089,7 @@
 "data.randomeventdata.data_event_성장한_제자.pages.10.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[10].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.10.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[10].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.10.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[10].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.11.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.11.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1090,7 +1100,7 @@
 "data.randomeventdata.data_event_성장한_제자.pages.11.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[11].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.11.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[11].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.11.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[11].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.12.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.12.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1101,7 +1111,10 @@
 "data.randomeventdata.data_event_성장한_제자.pages.12.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[12].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.12.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[12].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.12.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[12].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.5.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.4.options.1.description","골드 +35 · 이후 이 연구자의 수업을 받지 못함","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[4].options.Array.data[1].description"
+"data.randomeventdata.data_event_성장한_제자.pages.4.options.1.resulttext","노인이 남은 기록을 가방에 넣고 손을 거뒀다. 챙긴 물건은 내다 팔 수 있겠지만, 이 사람에게 다음 수업을 청할 수는 없을 것이다. 그는 아무 말 없이 다른 통로로 사라졌다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[4].options.Array.data[1].resultText"
+"data.randomeventdata.data_event_성장한_제자.pages.4.options.1.title","펼친 기록을 낚아챈다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[4].options.Array.data[1].title"
+"data.randomeventdata.data_event_성장한_제자.pages.5.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1112,7 +1125,7 @@
 "data.randomeventdata.data_event_성장한_제자.pages.5.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[5].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.5.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[5].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.5.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[5].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.6.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.6.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1123,7 +1136,7 @@
 "data.randomeventdata.data_event_성장한_제자.pages.6.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[6].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.6.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[6].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.6.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[6].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.7.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.7.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1134,7 +1147,7 @@
 "data.randomeventdata.data_event_성장한_제자.pages.7.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[7].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.7.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[7].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.7.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[7].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.8.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.8.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1145,7 +1158,7 @@
 "data.randomeventdata.data_event_성장한_제자.pages.8.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[8].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.8.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[8].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.8.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[8].options.Array.data[1].title"
-"data.randomeventdata.data_event_성장한_제자.pages.9.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.data_event_성장한_제자.pages.9.narrative","큰 책을 안고 길가에 선 노인이 나를 알아본다.
 
 노인은 내가 지난번에 골랐던 주문을 떠올리며 손을 살핀다.
 
@@ -1156,6 +1169,29 @@
 "data.randomeventdata.data_event_성장한_제자.pages.9.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[9].options.Array.data[1].description"
 "data.randomeventdata.data_event_성장한_제자.pages.9.options.1.resulttext","이야기를 마친 노인은 펼친 책을 가방에 넣었다. 다음 만남을 기약하고 서로 다른 통로로 향했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[9].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_성장한_제자.pages.9.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:pages.Array.data[9].options.Array.data[1].title"
+"data.randomeventdata.data_event_이름_없는_회수표.displayname","이름 없는 회수표","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:displayName"
+"data.randomeventdata.data_event_이름_없는_회수표.narrative","후드를 쓴 사내가 밧줄을 손바닥에 감는다. 목에 걸린 회수표에는 이름이 하나도 없다.
+
+“돌아가실 때 짐이 무거우면 제가 들어 드리죠.”
+
+말과 달리 사내의 시선은 내 주머니에 머문다. 장갑 아래에서 짧은 칼이 드러난다.
+
+“지금 가볍게 해 드릴 수도 있고.”","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:narrative"
+"data.randomeventdata.data_event_이름_없는_회수표.options.0.description","전투 · 승리 시 골드 +20","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[0].description"
+"data.randomeventdata.data_event_이름_없는_회수표.options.0.resulttext","사내가 쓰러졌다. 이름표 안쪽에는 살아 있는 원정객의 짐값이 적혀 있었다. 주머니의 돈을 거두고 밧줄을 내려놓았다.","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[0].resultText"
+"data.randomeventdata.data_event_이름_없는_회수표.options.0.title","칼을 뽑은 손부터 벤다.","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[0].title"
+"data.randomeventdata.data_event_이름_없는_회수표.options.1.description","골드 15 지불","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[1].description"
+"data.randomeventdata.data_event_이름_없는_회수표.options.1.resulttext","사내가 동전을 줍는 동안 검을 겨눈 채 물러섰다. 그는 빈 이름표를 옷 안에 감추고 다른 길로 빠졌다.","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[1].resultText"
+"data.randomeventdata.data_event_이름_없는_회수표.options.1.title","동전을 던지고 거리를 벌린다.","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[1].title"
+"data.randomeventdata.data_event_이름_없는_회수표.options.2.description","실제로 주문을 사용한 경험 필요","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[2].description"
+"data.randomeventdata.data_event_이름_없는_회수표.options.2.resulttext","사내가 손끝의 마력을 보고 밧줄을 놓았다. “다른 사람인 줄 알았습니다.” 등을 보이지 않으려 옆걸음치던 그가 통로 너머로 사라졌다.","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[2].resultText"
+"data.randomeventdata.data_event_이름_없는_회수표.options.2.title","손끝에 마력을 모아 목줄을 겨눈다.","Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset:options.Array.data[2].title"
+"data.randomeventdata.data_event_지팡이_끝의_수업.pages.0.options.4.description","골드 +35 · 이후 이 연구자의 수업을 받지 못함","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[0].options.Array.data[4].description"
+"data.randomeventdata.data_event_지팡이_끝의_수업.pages.0.options.4.resulttext","노인이 남은 기록을 가방에 넣고 손을 거뒀다. 챙긴 물건은 내다 팔 수 있겠지만, 이 사람에게 다음 수업을 청할 수는 없을 것이다. 그는 아무 말 없이 다른 통로로 사라졌다.","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[0].options.Array.data[4].resultText"
+"data.randomeventdata.data_event_지팡이_끝의_수업.pages.0.options.4.title","지팡이의 수정을 강제로 떼어 낸다.","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[0].options.Array.data[4].title"
+"data.randomeventdata.data_event_지팡이_끝의_수업.pages.2.options.1.description","골드 +35 · 이후 이 연구자의 수업을 받지 못함","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[2].options.Array.data[1].description"
+"data.randomeventdata.data_event_지팡이_끝의_수업.pages.2.options.1.resulttext","노인이 남은 기록을 가방에 넣고 손을 거뒀다. 챙긴 물건은 내다 팔 수 있겠지만, 이 사람에게 다음 수업을 청할 수는 없을 것이다. 그는 아무 말 없이 다른 통로로 사라졌다.","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[2].options.Array.data[1].resultText"
+"data.randomeventdata.data_event_지팡이_끝의_수업.pages.2.options.1.title","지팡이의 수정을 강제로 떼어 낸다.","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[2].options.Array.data[1].title"
 "data.randomeventdata.data_event_칠판_앞의_노인.pages.2.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].options.Array.data[1].description"
 "data.randomeventdata.data_event_칠판_앞의_노인.pages.2.options.1.resulttext","노인은 책을 가방에 넣고 자리에서 일어났다. “다음에 만나면 손이 얼마나 익었는지 봅시다.” 서로 인사를 나누고 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].options.Array.data[1].resultText"
 "data.randomeventdata.data_event_칠판_앞의_노인.pages.2.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].options.Array.data[1].title"
@@ -1268,41 +1304,43 @@
 "data.randomeventdata.hourglass.pages.1.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset:pages.Array.data[1].options.Array.data[2].resultText"
 "data.randomeventdata.hourglass.pages.1.options.2.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset:pages.Array.data[1].options.Array.data[2].title"
 "data.randomeventdata.investment.displayname","배달지는 다음 막","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:displayName"
-"data.randomeventdata.investment.narrative","커다란 운반틀을 멘 짐꾼이 길가에서 꾸러미를 고쳐 묶고 있다.
+"data.randomeventdata.investment.narrative","운반틀을 멘 짐꾼이 어깨끈을 당겨 조인다. 끈에는 서로 다른 상점의 납품표가 겹쳐 달려 있다.
 
-“더 깊이 내려가십니까? 저는 짐을 나르는 길을 압니다.”
+“더 내려가시죠? 지금 맡기시면 제가 먼저 물건을 놔두겠습니다. 표식은 본인이 고르세요.”
 
-예약금을 내면 다음 구역의 통로에 내 표식이 붙은 장비를 남겨 주겠다고 한다.
+운반틀 한쪽에는 붉게 지운 저당 표식이 남아 있다. 짐꾼은 내 시선을 알아채고 웃는다.
 
-“지금 약이 필요하시면 여기서 드릴 수도 있습니다.”","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:narrative"
+“이번 운임까지 받으면 제 것이거든요. 늦게 오는 일은 없을 겁니다.”","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:narrative"
 "data.randomeventdata.investment.options.0.description","25골드 소모. 다음 막의 배달 사건에서 유물과 골드 수령.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:options.Array.data[0].description"
 "data.randomeventdata.investment.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:options.Array.data[0].resultText"
 "data.randomeventdata.investment.options.0.title","도착해서 받는다","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:options.Array.data[0].title"
 "data.randomeventdata.investment.options.1.description","포션 1개. 배달 예약은 하지 않는다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:options.Array.data[1].description"
 "data.randomeventdata.investment.options.1.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:options.Array.data[1].resultText"
 "data.randomeventdata.investment.options.1.title","지금 쓸 약을 받는다","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:options.Array.data[1].title"
-"data.randomeventdata.investment.pages.0.narrative","커다란 운반틀을 멘 짐꾼이 길가에서 꾸러미를 고쳐 묶고 있다.
+"data.randomeventdata.investment.pages.0.narrative","운반틀을 멘 짐꾼이 어깨끈을 당겨 조인다. 끈에는 서로 다른 상점의 납품표가 겹쳐 달려 있다.
 
-“더 깊이 내려가십니까? 저는 짐을 나르는 길을 압니다.”
+“더 내려가시죠? 지금 맡기시면 제가 먼저 물건을 놔두겠습니다. 표식은 본인이 고르세요.”
 
-예약금을 내면 다음 구역의 통로에 내 표식이 붙은 장비를 남겨 주겠다고 한다.
+운반틀 한쪽에는 붉게 지운 저당 표식이 남아 있다. 짐꾼은 내 시선을 알아채고 웃는다.
 
-“지금 약이 필요하시면 여기서 드릴 수도 있습니다.”","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].narrative"
+“이번 운임까지 받으면 제 것이거든요. 늦게 오는 일은 없을 겁니다.”","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.investment.pages.0.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.investment.pages.0.options.0.resulttext","짐꾼은 내 표식을 받아 장부에 붙였다. “다음 구역의 통로에서 찾아보세요.” 운반틀을 고쳐 멘 그가 먼저 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.investment.pages.0.options.0.title","도착해서 받는다","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[0].title"
-"data.randomeventdata.investment.pages.0.options.1.description","포션 1개","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[1].description"
-"data.randomeventdata.investment.pages.0.options.1.resulttext","짐꾼에게 약을 받았다. 그는 꾸러미를 다시 묶고 다른 길로 향했다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[1].resultText"
-"data.randomeventdata.investment.pages.0.options.1.title","지금 쓸 약을 받는다","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[1].title"
+"data.randomeventdata.investment.pages.0.options.1.description","회복 포션 획득","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[1].description"
+"data.randomeventdata.investment.pages.0.options.1.resulttext","어깨끈을 잡아당겨 약 꾸러미를 낚아챘다. 무거운 운반틀에 발이 묶인 짐꾼은 쫓아오지 못했다. 끊어진 끈을 쥔 채 나를 노려보다 다른 통로로 사라졌다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[1].resultText"
+"data.randomeventdata.investment.pages.0.options.1.title","약 꾸러미를 빼앗는다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[1].title"
 "data.randomeventdata.investment.pages.0.options.2.description","","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[2].description"
 "data.randomeventdata.investment.pages.0.options.2.resulttext","인사를 나누고 비켜섰다. 짐꾼은 운반틀을 메고 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[2].resultText"
 "data.randomeventdata.investment.pages.0.options.2.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset:pages.Array.data[0].options.Array.data[2].title"
 "data.randomeventdata.lostbeliever.displayname","그 돌에 적힌 이름","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:displayName"
-"data.randomeventdata.lostbeliever.narrative","작은 보따리를 안은 소년이 길가에 앉아 있다.
+"data.randomeventdata.lostbeliever.narrative","소년이 낡은 외투 깃을 보따리에 밀어 넣는다. 옷깃의 이름과 손에 든 돌의 이름이 같다.
 
-손에 쥔 돌에는 사람의 이름이 새겨져 있다.
+“회수소에서는 여기 도장이 찍혔으니 끝났대요. 그런데 이 돌은 누가 가져왔는지도 몰라요.”
 
-“아버지 이름이에요. 이걸 가져온 순례자를 만나야 하는데, 혼자서는 더 갈 수가 없어요.”","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:narrative"
+심부름꾼의 납품끈이 소년의 손목에 남아 있다. 따라 들어온 일행을 놓친 모양이다.
+
+“그 아저씨한테 딱 한 가지만 물어보고 싶어요.”","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:narrative"
 "data.randomeventdata.lostbeliever.options.0.description","길잡이의 등불 획득: 차지 적중과 주문 발동에 피해 6 추가.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:options.Array.data[0].description"
 "data.randomeventdata.lostbeliever.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:options.Array.data[0].resultText"
 "data.randomeventdata.lostbeliever.options.0.title","서약의 돌을 맞춰 본다","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:options.Array.data[0].title"
@@ -1312,11 +1350,13 @@
 "data.randomeventdata.lostbeliever.options.2.description","답례의 약초로 체력 15 회복. 등불은 소년에게 남는다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:options.Array.data[2].description"
 "data.randomeventdata.lostbeliever.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:options.Array.data[2].resultText"
 "data.randomeventdata.lostbeliever.options.2.title","돌아갈 길을 그려 준다","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:options.Array.data[2].title"
-"data.randomeventdata.lostbeliever.pages.0.narrative","작은 보따리를 안은 소년이 길가에 앉아 있다.
+"data.randomeventdata.lostbeliever.pages.0.narrative","소년이 낡은 외투 깃을 보따리에 밀어 넣는다. 옷깃의 이름과 손에 든 돌의 이름이 같다.
 
-손에 쥔 돌에는 사람의 이름이 새겨져 있다.
+“회수소에서는 여기 도장이 찍혔으니 끝났대요. 그런데 이 돌은 누가 가져왔는지도 몰라요.”
 
-“아버지 이름이에요. 이걸 가져온 순례자를 만나야 하는데, 혼자서는 더 갈 수가 없어요.”","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].narrative"
+심부름꾼의 납품끈이 소년의 손목에 남아 있다. 따라 들어온 일행을 놓친 모양이다.
+
+“그 아저씨한테 딱 한 가지만 물어보고 싶어요.”","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.lostbeliever.pages.0.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.lostbeliever.pages.0.options.0.resulttext","","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.lostbeliever.pages.0.options.0.title","소년의 기록을 살펴본다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[0].options.Array.data[0].title"
@@ -1338,12 +1378,12 @@
 "data.randomeventdata.lostbeliever.pages.1.options.2.description","","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[1].options.Array.data[2].description"
 "data.randomeventdata.lostbeliever.pages.1.options.2.resulttext","도와줄 방법을 찾지 못한 채 비켜섰다. 소년은 보따리를 끌어안고 다시 길을 살폈다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[1].options.Array.data[2].resultText"
 "data.randomeventdata.lostbeliever.pages.1.options.2.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[1].options.Array.data[2].title"
-"data.randomeventdata.lostbeliever.pages.2.narrative","소년이 펼친 종이에 순례자의 이동 경로가 적혀 있다.
+"data.randomeventdata.lostbeliever.pages.2.narrative","소년이 기록을 보여 주려다 움찔한다. 등불의 부러진 쇠고리가 보따리를 쥔 손 안쪽에 파고들어 있다.
 
-그곳까지 데려다줄 수는 있겠다. 다만 날카로운 잔해를 지나는 동안 소년 대신 내가 앞을 막아야 한다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].narrative"
-"data.randomeventdata.lostbeliever.pages.2.options.0.description","길잡이의 등불 획득","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[0].description"
-"data.randomeventdata.lostbeliever.pages.2.options.0.resulttext","소년을 앞세워 잔해를 지났다. 내 팔에는 상처가 남았지만 소년은 무사하다. 소년이 건넨 등불을 들고 서로 다른 길로 향했다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[0].resultText"
-"data.randomeventdata.lostbeliever.pages.2.options.0.title","상처를 감수하고 함께 지난다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[0].title"
+상처가 벌어질까 두려워 손을 펴지 못한 모양이다. 고리를 꺾어 주면 손을 뺄 수 있겠지만, 날카로운 끝은 내가 받아야 한다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].narrative"
+"data.randomeventdata.lostbeliever.pages.2.options.0.description","체력 18 지불 · 등불 유물 획득","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[0].description"
+"data.randomeventdata.lostbeliever.pages.2.options.0.resulttext","날카로운 쇠끝에 내 손이 찢어졌다. 소년은 손을 빼내고 등불을 내게 건넸다. 나는 순례자가 쓰는 표식을 종이에 그려 주었다. 보따리를 다시 묶은 소년이 인사를 하고 돌아갔다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[0].resultText"
+"data.randomeventdata.lostbeliever.pages.2.options.0.title","부러진 고리를 맨손으로 꺾는다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[0].title"
 "data.randomeventdata.lostbeliever.pages.2.options.1.description","체력 +15","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[1].description"
 "data.randomeventdata.lostbeliever.pages.2.options.1.resulttext","안전한 길을 그려 주자 소년이 보따리에서 약초를 꺼내 내 상처에 발라 주었다. 지도를 챙긴 소년은 돌아갈 길로 향했다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[1].resultText"
 "data.randomeventdata.lostbeliever.pages.2.options.1.title","안내도를 그려 돌아가게 한다.","Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset:pages.Array.data[2].options.Array.data[1].title"
@@ -1389,43 +1429,47 @@
 "data.randomeventdata.magicteacheradvanced.pages.2.options.0.resulttext","선생은 지팡이의 빛을 거두고 책을 챙겼다. 서로 인사를 나눈 뒤 그는 다른 통로로 걸어갔다.","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[2].options.Array.data[0].resultText"
 "data.randomeventdata.magicteacheradvanced.pages.2.options.0.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset:pages.Array.data[2].options.Array.data[0].title"
 "data.randomeventdata.magicteacherfirst.displayname","길 위의 노마법사","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:displayName"
-"data.randomeventdata.magicteacherfirst.narrative","잉크 묻은 손의 노인이 길가에서 두루마리를 붙잡고 씨름하고 있다.
+"data.randomeventdata.magicteacherfirst.narrative","노인이 선 채로 두루마리를 들여다본다. 모서리에 옮겨붙은 불씨도 알아채지 못한 채 글줄을 손으로 따라간다.
 
-그의 손에서 흘러나온 작은 불꽃이 옷자락으로 옮겨붙으려 한다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:narrative"
+“여기서 하나만 더 찾으면 판본이 맞는데…”
+
+가방 밖으로 내민 종이에는 팔아 넘긴 기록들의 인수 도장이 빼곡하다. 불씨가 손가락 쪽으로 번진다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:narrative"
 "data.randomeventdata.magicteacherfirst.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:options.Array.data[0].description"
 "data.randomeventdata.magicteacherfirst.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherfirst.options.0.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:options.Array.data[0].title"
-"data.randomeventdata.magicteacherfirst.pages.0.narrative","잉크 묻은 손의 노인이 길가에서 두루마리를 붙잡고 씨름하고 있다.
+"data.randomeventdata.magicteacherfirst.pages.0.narrative","노인이 선 채로 두루마리를 들여다본다. 모서리에 옮겨붙은 불씨도 알아채지 못한 채 글줄을 손으로 따라간다.
 
-그의 손에서 흘러나온 작은 불꽃이 옷자락으로 옮겨붙으려 한다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].narrative"
+“여기서 하나만 더 찾으면 판본이 맞는데…”
+
+가방 밖으로 내민 종이에는 팔아 넘긴 기록들의 인수 도장이 빼곡하다. 불씨가 손가락 쪽으로 번진다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.magicteacherfirst.pages.0.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.magicteacherfirst.pages.0.options.0.resulttext","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherfirst.pages.0.options.0.title","옷자락의 불씨를 털어 준다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].options.Array.data[0].title"
 "data.randomeventdata.magicteacherfirst.pages.0.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].options.Array.data[1].description"
 "data.randomeventdata.magicteacherfirst.pages.0.options.1.resulttext","노인에게 옷자락을 가리켜 보였다. 그는 허둥지둥 불씨를 끄고 고맙다는 손짓을 하더니 짐을 챙겨 떠났다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].options.Array.data[1].resultText"
 "data.randomeventdata.magicteacherfirst.pages.0.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[0].options.Array.data[1].title"
-"data.randomeventdata.magicteacherfirst.pages.1.narrative","불씨를 털어 주자 노인이 허리를 편다.
+"data.randomeventdata.magicteacherfirst.pages.1.narrative","불씨를 털어 주자 노인이 급히 두루마리를 접는다.
 
-“아, 고맙습니다. 기록만 들여다보다 보면 옷 타는 줄도 모른다니까요.”
+“재보다 먼저 회수해야 하는데, 제가 먼저 태울 뻔했군요.”
 
-노인은 한때 고전학파에서 마법을 가르쳤다고 한다. 지금은 성을 떠돌며 남은 기록을 찾는 중이다.
+그는 내 손을 잠깐 살핀다.
 
-“마법에는 관심 없으세요? 도와주신 보답은 하고 싶은데.”","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].narrative"
+“마법을 쓰신다면 기록 하나만 남겨 주세요. 실제로 통했던 주문이 필요합니다. 대신 손에 맞게 가르쳐 드리지요.”","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].narrative"
 "data.randomeventdata.magicteacherfirst.pages.1.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[0].description"
 "data.randomeventdata.magicteacherfirst.pages.1.options.0.resulttext","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherfirst.pages.1.options.0.title","배워 보고 싶다고 한다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[0].title"
-"data.randomeventdata.magicteacherfirst.pages.1.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[1].description"
-"data.randomeventdata.magicteacherfirst.pages.1.options.1.resulttext","노인은 책을 가방에 넣고 자리에서 일어났다. “다음에 만나면 손이 얼마나 익었는지 봅시다.” 서로 인사를 나누고 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[1].resultText"
-"data.randomeventdata.magicteacherfirst.pages.1.options.1.title","마법보다는 여비가 필요하다고 한다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[1].title"
-"data.randomeventdata.magicteacherfirst.pages.2.narrative","노인이 무릎 위에 작은 책을 펼친다.
+"data.randomeventdata.magicteacherfirst.pages.1.options.1.description","골드 +25 · 이후 이 연구자의 수업을 받지 못함","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[1].description"
+"data.randomeventdata.magicteacherfirst.pages.1.options.1.resulttext","가방 끈을 움켜쥐고 책을 빼냈다. 노인은 남은 두루마리를 품에 넣었다. “제 기록에는 당신 이름을 남기지 않겠습니다.” 그는 돌아서 걸어갔다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[1].resultText"
+"data.randomeventdata.magicteacherfirst.pages.1.options.1.title","책 한 권을 여비로 내놓으라고 한다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[1].options.Array.data[1].title"
+"data.randomeventdata.magicteacherfirst.pages.2.narrative","노인이 가방에서 책을 꺼내 선 채로 펼친다.
 
-“불꽃만 다루는 건 아닙니다. 적의 발을 묶거나 해로운 마력을 걷어 내는 주문도 있지요. 마음이 가는 쪽을 골라 보세요.”","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].narrative"
+“불, 얼음, 번개. 종이에 적힌 것과 몸이 기억하는 것은 다릅니다. 써 보고 돌아오면 다음 장을 보죠.”","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].narrative"
 "data.randomeventdata.magicteacherfirst.pages.2.options.0.description","노인이 보여 주는 기초 주문 세 가지 중 하나를 배운다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].options.Array.data[0].description"
 "data.randomeventdata.magicteacherfirst.pages.2.options.0.resulttext","노인은 책을 가방에 넣고 자리에서 일어났다. “다음에 만나면 손이 얼마나 익었는지 봅시다.” 서로 인사를 나누고 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherfirst.pages.2.options.0.title","배울 주문을 고른다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[2].options.Array.data[0].title"
-"data.randomeventdata.magicteacherfirst.pages.3.narrative","노인이 무릎 위에 작은 책을 펼친다.
+"data.randomeventdata.magicteacherfirst.pages.3.narrative","노인이 가방에서 책을 꺼내 선 채로 펼친다.
 
-“불꽃만 다루는 건 아닙니다. 적의 발을 묶거나 해로운 마력을 걷어 내는 주문도 있지요. 마음이 가는 쪽을 골라 보세요.”","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[3].narrative"
+“불, 얼음, 번개. 종이에 적힌 것과 몸이 기억하는 것은 다릅니다. 써 보고 돌아오면 다음 장을 보죠.”","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[3].narrative"
 "data.randomeventdata.magicteacherfirst.pages.3.options.0.description","노인이 보여 주는 기초 주문 세 가지 중 하나를 배운다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[3].options.Array.data[0].description"
 "data.randomeventdata.magicteacherfirst.pages.3.options.0.resulttext","노인은 책을 가방에 넣고 자리에서 일어났다. “다음에 만나면 손이 얼마나 익었는지 봅시다.” 서로 인사를 나누고 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[3].options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherfirst.pages.3.options.0.title","배울 주문을 고른다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[3].options.Array.data[0].title"
@@ -1442,7 +1486,9 @@
 "data.randomeventdata.magicteacherfirst.pages.4.options.0.resulttext","","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[4].options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherfirst.pages.4.options.0.title","영창을 따라 한다.","Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset:pages.Array.data[4].options.Array.data[0].title"
 "data.randomeventdata.magicteacherreturn.displayname","성장한 제자","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:displayName"
-"data.randomeventdata.magicteacherreturn.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.magicteacherreturn.narrative","큰 책을 펼쳐 든 노인이 내 손끝의 흔적을 알아본다.
+
+“찾았습니다. 제가 적은 것과 어디가 달랐는지 말해 주세요.”
 
 지난번에 가르쳐 드린 분이군요. 잠깐, 손을 좀 펴 보시겠어요?
 
@@ -1452,7 +1498,9 @@
 "data.randomeventdata.magicteacherreturn.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:options.Array.data[0].description"
 "data.randomeventdata.magicteacherreturn.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:options.Array.data[0].resultText"
 "data.randomeventdata.magicteacherreturn.options.0.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset:options.Array.data[0].title"
-"data.randomeventdata.magicteacherreturn.pages.0.narrative","큰 책을 안고 길가에 앉은 노인이 나를 알아본다.
+"data.randomeventdata.magicteacherreturn.pages.0.narrative","큰 책을 펼쳐 든 노인이 내 손끝의 흔적을 알아본다.
+
+“찾았습니다. 제가 적은 것과 어디가 달랐는지 말해 주세요.”
 
 지난번에 가르쳐 드린 분이군요. 잠깐, 손을 좀 펴 보시겠어요?
 
@@ -1607,13 +1655,15 @@
 "data.randomeventdata.mirror.pages.3.options.1.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_거울이_먼저_벤다.asset:pages.Array.data[3].options.Array.data[1].resultText"
 "data.randomeventdata.mirror.pages.3.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_거울이_먼저_벤다.asset:pages.Array.data[3].options.Array.data[1].title"
 "data.randomeventdata.pilgrim.displayname","짐 하나만 부탁하네","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:displayName"
-"data.randomeventdata.pilgrim.narrative","이름이 새겨진 돌을 자루에 담은 순례자가 길가에서 쉬고 있다.
+"data.randomeventdata.pilgrim.narrative","노인이 무거운 돌자루를 고쳐 안는다. 돌마다 사람의 이름과 날짜가 짧게 새겨져 있다.
 
-굴러온 돌 하나를 건네자 그가 자루를 벌려 보인다.
+“몸까지 데려올 수 없으면, 이름이라도 있어야 돈을 받지.”
 
-“여기서 죽은 이들이네. 유족들에게 이름만이라도 전해 주려는 참이야.”
+목에 걸린 회수 표식은 오래 닳았고, 자루 안에는 작은 유품들이 천에 싸여 있다.
 
-자루가 무거워 짐꾼을 구했지만 여비가 모자란다고 한다. 아는 지름길도 없어 돌아갈 길이 막막한 모양이다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:narrative"
+노인은 돌아갈 운임을 세다 동전을 다시 넣는다.
+
+“이 이름들을 기다리는 사람들이 있어. 지름길을 알면 알려 주겠나.”","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:narrative"
 "data.randomeventdata.pilgrim.options.0.description","25골드 소모. 순례자의 서약 획득. 가드 3회마다 게이지 +3. 인연을 남긴다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:options.Array.data[0].description"
 "data.randomeventdata.pilgrim.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:options.Array.data[0].resultText"
 "data.randomeventdata.pilgrim.options.0.title","여비를 보탠다","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:options.Array.data[0].title"
@@ -1623,19 +1673,21 @@
 "data.randomeventdata.pilgrim.options.2.description","강아지가 길을 찾는다. 서약 획득, 체력 12 회복, 인연을 남긴다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:options.Array.data[2].description"
 "data.randomeventdata.pilgrim.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:options.Array.data[2].resultText"
 "data.randomeventdata.pilgrim.options.2.title","얘가 지름길을 찾을 거야","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:options.Array.data[2].title"
-"data.randomeventdata.pilgrim.pages.0.narrative","이름이 새겨진 돌을 자루에 담은 순례자가 길가에서 쉬고 있다.
+"data.randomeventdata.pilgrim.pages.0.narrative","노인이 무거운 돌자루를 고쳐 안는다. 돌마다 사람의 이름과 날짜가 짧게 새겨져 있다.
 
-굴러온 돌 하나를 건네자 그가 자루를 벌려 보인다.
+“몸까지 데려올 수 없으면, 이름이라도 있어야 돈을 받지.”
 
-“여기서 죽은 이들이네. 유족들에게 이름만이라도 전해 주려는 참이야.”
+목에 걸린 회수 표식은 오래 닳았고, 자루 안에는 작은 유품들이 천에 싸여 있다.
 
-자루가 무거워 짐꾼을 구했지만 여비가 모자란다고 한다. 아는 지름길도 없어 돌아갈 길이 막막한 모양이다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].narrative"
+노인은 돌아갈 운임을 세다 동전을 다시 넣는다.
+
+“이 이름들을 기다리는 사람들이 있어. 지름길을 알면 알려 주겠나.”","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.pilgrim.pages.0.options.0.description","순례자의 서약 획득","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.pilgrim.pages.0.options.0.resulttext","순례자는 여비를 받아 품에 넣고 작은 표식을 건넸다. 돌자루를 고쳐 멘 그가 돌아갈 길로 향했다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.pilgrim.pages.0.options.0.title","여비를 보탠다","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[0].title"
-"data.randomeventdata.pilgrim.pages.0.options.1.description","체력 +12","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[1].description"
-"data.randomeventdata.pilgrim.pages.0.options.1.resulttext","서로 알고 있는 샘의 위치를 종이에 표시했다. 순례자는 고맙다며 돌자루를 메고 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[1].resultText"
-"data.randomeventdata.pilgrim.pages.0.options.1.title","샘의 위치를 서로 나눈다","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[1].title"
+"data.randomeventdata.pilgrim.pages.0.options.1.description","골드 +18","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[1].description"
+"data.randomeventdata.pilgrim.pages.0.options.1.resulttext","노인이 돌자루를 놓치지 않으려는 틈에 허리 주머니를 빼앗았다. “이건 그 사람들 몫이 아닌데.” 그는 빈 허리를 더듬다 돌자루를 고쳐 안고 걸어갔다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[1].resultText"
+"data.randomeventdata.pilgrim.pages.0.options.1.title","허리의 여비를 강제로 거둔다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[1].title"
 "data.randomeventdata.pilgrim.pages.0.options.2.description","순례자의 서약 획득 · 체력 +12","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[2].description"
 "data.randomeventdata.pilgrim.pages.0.options.2.resulttext","강아지가 냄새를 맡더니 순례자를 다른 통로로 이끌었다. 길을 확인한 순례자는 인사를 남기고 떠났고 강아지는 내게 돌아왔다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[2].resultText"
 "data.randomeventdata.pilgrim.pages.0.options.2.title","얘가 지름길을 찾을 거야","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[2].title"
@@ -1643,9 +1695,9 @@
 "data.randomeventdata.pilgrim.pages.0.options.3.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[3].resultText"
 "data.randomeventdata.pilgrim.pages.0.options.3.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset:pages.Array.data[0].options.Array.data[3].title"
 "data.randomeventdata.scholar.displayname","끝까지 읽는 법","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:displayName"
-"data.randomeventdata.scholar.narrative","길가에 떨어진 책 한 권이 바닥에서 조금 떠 있다.
+"data.randomeventdata.scholar.narrative","쌓아 둔 기록 사이에서 책 한 권이 바닥 위로 떠 있다.
 
-젖은 바닥에 닿지 않은 채 닫힌 표지가 들썩인다. 안쪽에서는 페이지 넘어가는 소리가 난다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:narrative"
+다른 책들은 끈에 묶인 채 잠잠한데, 이 책의 닫힌 표지만 들썩인다. 안쪽에서는 페이지 넘어가는 소리가 난다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:narrative"
 "data.randomeventdata.scholar.options.0.description","체력 -9. 주문 하나 선택.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:options.Array.data[0].description"
 "data.randomeventdata.scholar.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:options.Array.data[0].resultText"
 "data.randomeventdata.scholar.options.0.title","새 영창에 피로 밑줄을 긋는다","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:options.Array.data[0].title"
@@ -1655,9 +1707,9 @@
 "data.randomeventdata.scholar.options.2.description","포션 1개. 포션이 가득하면 체력 8 회복.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:options.Array.data[2].description"
 "data.randomeventdata.scholar.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:options.Array.data[2].resultText"
 "data.randomeventdata.scholar.options.2.title","약제법 한 쪽을 베낀다","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:options.Array.data[2].title"
-"data.randomeventdata.scholar.pages.0.narrative","길가에 떨어진 책 한 권이 바닥에서 조금 떠 있다.
+"data.randomeventdata.scholar.pages.0.narrative","쌓아 둔 기록 사이에서 책 한 권이 바닥 위로 떠 있다.
 
-젖은 바닥에 닿지 않은 채 닫힌 표지가 들썩인다. 안쪽에서는 페이지 넘어가는 소리가 난다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[0].narrative"
+다른 책들은 끈에 묶인 채 잠잠한데, 이 책의 닫힌 표지만 들썩인다. 안쪽에서는 페이지 넘어가는 소리가 난다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.scholar.pages.0.options.0.description","","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.scholar.pages.0.options.0.resulttext","","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.scholar.pages.0.options.0.title","책을 건진다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[0].options.Array.data[0].title"
@@ -1693,46 +1745,54 @@
 "data.randomeventdata.scholar.pages.2.options.2.description","","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[2].options.Array.data[2].description"
 "data.randomeventdata.scholar.pages.2.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[2].options.Array.data[2].resultText"
 "data.randomeventdata.scholar.pages.2.options.2.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset:pages.Array.data[2].options.Array.data[2].title"
-"data.randomeventdata.shelter.displayname","잠깐의 교대","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:displayName"
-"data.randomeventdata.shelter.narrative","낡은 담요를 무릎에 덮은 경비병이 길가에 기대어 있다.
+"data.randomeventdata.shelter.displayname","끊어진 호위","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:displayName"
+"data.randomeventdata.shelter.narrative","젊은 용병이 무릎을 꿇은 채 허벅지의 붕대를 누르고 있다. 부러진 고용 표식과 잘린 밧줄이 목 아래 흔들린다.
 
-나를 보자 졸린 눈을 비비며 한쪽 자리를 내준다.
+“세 번 당기면 같이 뛰기로 했어요. 분명히 세 번을…”
 
-“잠깐 눈 좀 붙이려는데, 번갈아 망을 봐 주겠소? 아무도 안 봐 주면 불안해서 말이오.”","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:narrative"
-"data.randomeventdata.shelter.options.0.description","체력 24 회복.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[0].description"
-"data.randomeventdata.shelter.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[0].resultText"
-"data.randomeventdata.shelter.options.0.title","불을 지키며 쉰다","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[0].title"
-"data.randomeventdata.shelter.options.1.description","최대·현재 체력 +5.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[1].description"
-"data.randomeventdata.shelter.options.1.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[1].resultText"
-"data.randomeventdata.shelter.options.1.title","밤새 몸을 단련한다","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[1].title"
-"data.randomeventdata.shelter.options.2.description","강아지와 번갈아 망을 본다. 체력 28 회복, 골드 +12.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[2].description"
-"data.randomeventdata.shelter.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[2].resultText"
-"data.randomeventdata.shelter.options.2.title","너 먼저 자. 다음은 내 차례야","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:options.Array.data[2].title"
-"data.randomeventdata.shelter.pages.0.narrative","낡은 담요를 무릎에 덮은 경비병이 길가에 기대어 있다.
+그는 밧줄 끝을 내려다보다 이를 악문다.
 
-나를 보자 졸린 눈을 비비며 한쪽 자리를 내준다.
+“나가서 물어봐야죠. 왜 칼로 잘랐는지.”
 
-“잠깐 눈 좀 붙이려는데, 번갈아 망을 봐 주겠소? 아무도 안 봐 주면 불안해서 말이오.”","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].narrative"
-"data.randomeventdata.shelter.pages.0.options.0.description","체력 +24","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[0].description"
-"data.randomeventdata.shelter.pages.0.options.0.resulttext","경비병과 번갈아 망을 보며 잠시 쉬었다. 내 차례가 끝나자 그는 다시 담요를 끌어당겼다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[0].resultText"
-"data.randomeventdata.shelter.pages.0.options.0.title","망을 번갈아 보며 쉰다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[0].title"
-"data.randomeventdata.shelter.pages.0.options.1.description","최대·현재 체력 +5","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[1].description"
-"data.randomeventdata.shelter.pages.0.options.1.resulttext","잠을 자는 대신 몸을 풀며 망을 봤다. 경비병이 일어나 고맙다며 자리를 정돈했다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[1].resultText"
-"data.randomeventdata.shelter.pages.0.options.1.title","몸을 풀며 망을 본다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[1].title"
-"data.randomeventdata.shelter.pages.0.options.2.description","체력 +28 · 골드 +12","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[2].description"
-"data.randomeventdata.shelter.pages.0.options.2.resulttext","강아지가 귀를 세우고 주변을 살폈다. 경비병은 고맙다며 품삯을 건넸다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[2].resultText"
-"data.randomeventdata.shelter.pages.0.options.2.title","너 먼저 자. 다음은 내 차례야","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[2].title"
-"data.randomeventdata.shelter.pages.0.options.3.description","","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[3].description"
-"data.randomeventdata.shelter.pages.0.options.3.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[3].resultText"
-"data.randomeventdata.shelter.pages.0.options.3.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset:pages.Array.data[0].options.Array.data[3].title"
+내가 다가가자 손이 검자루를 찾는다. 붕대만 다시 묶으면 몸을 일으킬 수 있을 것 같다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:narrative"
+"data.randomeventdata.shelter.options.0.description","체력 24 회복.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[0].description"
+"data.randomeventdata.shelter.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[0].resultText"
+"data.randomeventdata.shelter.options.0.title","불을 지키며 쉰다","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[0].title"
+"data.randomeventdata.shelter.options.1.description","최대·현재 체력 +5.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[1].description"
+"data.randomeventdata.shelter.options.1.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[1].resultText"
+"data.randomeventdata.shelter.options.1.title","밤새 몸을 단련한다","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[1].title"
+"data.randomeventdata.shelter.options.2.description","강아지와 번갈아 망을 본다. 체력 28 회복, 골드 +12.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[2].description"
+"data.randomeventdata.shelter.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[2].resultText"
+"data.randomeventdata.shelter.options.2.title","너 먼저 자. 다음은 내 차례야","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:options.Array.data[2].title"
+"data.randomeventdata.shelter.pages.0.narrative","젊은 용병이 무릎을 꿇은 채 허벅지의 붕대를 누르고 있다. 부러진 고용 표식과 잘린 밧줄이 목 아래 흔들린다.
+
+“세 번 당기면 같이 뛰기로 했어요. 분명히 세 번을…”
+
+그는 밧줄 끝을 내려다보다 이를 악문다.
+
+“나가서 물어봐야죠. 왜 칼로 잘랐는지.”
+
+내가 다가가자 손이 검자루를 찾는다. 붕대만 다시 묶으면 몸을 일으킬 수 있을 것 같다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].narrative"
+"data.randomeventdata.shelter.pages.0.options.0.description","체력 +24","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[0].description"
+"data.randomeventdata.shelter.pages.0.options.0.resulttext","용병이 붕대를 당겨 매는 동안 곁을 지켰다. 내 숨도 차츰 고르게 돌아왔다. 그는 검을 지팡이 삼아 일어나 돌아갈 방향을 확인했다. “여기서 끝낼 생각은 없습니다.”","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[0].resultText"
+"data.randomeventdata.shelter.pages.0.options.0.title","붕대를 묶어 주고 잠시 망을 본다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[0].title"
+"data.randomeventdata.shelter.pages.0.options.1.description","골드 +22","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[1].description"
+"data.randomeventdata.shelter.pages.0.options.1.resulttext","검자루를 누르고 남은 품삯을 꺼냈다. 용병은 피 묻은 붕대를 놓지 못한 채 나를 노려봤다. 나는 돈을 챙겨 비켜섰다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[1].resultText"
+"data.randomeventdata.shelter.pages.0.options.1.title","칼을 뽑기 전에 품삯부터 빼앗는다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[1].title"
+"data.randomeventdata.shelter.pages.0.options.2.description","체력 +28 · 골드 +12","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[2].description"
+"data.randomeventdata.shelter.pages.0.options.2.resulttext","강아지가 귀를 세우고 주위를 살피는 동안 붕대를 새로 묶었다. 용병은 남은 품삯을 내밀고 검을 짚어 일어났다. “이번에는 제 발로 나가겠습니다.”","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[2].resultText"
+"data.randomeventdata.shelter.pages.0.options.2.title","강아지와 함께 망을 봐 준다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[2].title"
+"data.randomeventdata.shelter.pages.0.options.3.description","","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[3].description"
+"data.randomeventdata.shelter.pages.0.options.3.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[3].resultText"
+"data.randomeventdata.shelter.pages.0.options.3.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset:pages.Array.data[0].options.Array.data[3].title"
 "data.randomeventdata.stormbottle.displayname","번개를 파는 행상","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:displayName"
-"data.randomeventdata.stormbottle.narrative","뾰족한 모자를 쓴 여인이 길가에서 병 하나를 흔든다. 유리 안에서 작은 천둥이 울린다.
+"data.randomeventdata.stormbottle.narrative","여인이 병을 불빛에 비춰 마개의 밀랍을 살핀다. 안쪽에서 작은 천둥이 울린다.
 
-“무기에 쓸 번개 필요하세요? 영창을 몰라도 됩니다.”
+“이 소리면 아직 샙니다. 빈 병은 버리지 마세요. 공방에 가져가면 이것도 제 몫이거든요.”
 
-병을 기울이자 번개가 유리벽을 따라 움직인다.
+허리의 납품표에는 갚은 금액이 여러 번 고쳐 적혀 있다. 여인은 내 무기를 보고 병 하나를 들어 보인다.
 
-“직접 주문을 쓰고 싶으면 이 두루마리를 보세요. 빈 병을 모아 주셔도 품삯은 드려요.”","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:narrative"
+“검에 묻힐까요, 다루는 법을 익힐까요?”","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:narrative"
 "data.randomeventdata.stormbottle.options.0.description","45골드 소모. 차지 적중에 번개 피해 8을 더하는 유물 획득.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:options.Array.data[0].description"
 "data.randomeventdata.stormbottle.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:options.Array.data[0].resultText"
 "data.randomeventdata.stormbottle.options.0.title","폭풍 한 병","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:options.Array.data[0].title"
@@ -1742,22 +1802,22 @@
 "data.randomeventdata.stormbottle.options.2.description","골드 +12. 유물과 주문은 사지 않는다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:options.Array.data[2].description"
 "data.randomeventdata.stormbottle.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:options.Array.data[2].resultText"
 "data.randomeventdata.stormbottle.options.2.title","빈 병 수거를 돕는다","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:options.Array.data[2].title"
-"data.randomeventdata.stormbottle.pages.0.narrative","뾰족한 모자를 쓴 여인이 길가에서 병 하나를 흔든다. 유리 안에서 작은 천둥이 울린다.
+"data.randomeventdata.stormbottle.pages.0.narrative","여인이 병을 불빛에 비춰 마개의 밀랍을 살핀다. 안쪽에서 작은 천둥이 울린다.
 
-“무기에 쓸 번개 필요하세요? 영창을 몰라도 됩니다.”
+“이 소리면 아직 샙니다. 빈 병은 버리지 마세요. 공방에 가져가면 이것도 제 몫이거든요.”
 
-병을 기울이자 번개가 유리벽을 따라 움직인다.
+허리의 납품표에는 갚은 금액이 여러 번 고쳐 적혀 있다. 여인은 내 무기를 보고 병 하나를 들어 보인다.
 
-“직접 주문을 쓰고 싶으면 이 두루마리를 보세요. 빈 병을 모아 주셔도 품삯은 드려요.”","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].narrative"
+“검에 묻힐까요, 다루는 법을 익힐까요?”","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.stormbottle.pages.0.options.0.description","병 속의 폭풍 획득","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[0].description"
-"data.randomeventdata.stormbottle.pages.0.options.0.resulttext","번개가 갇힌 병을 받았다. 여인은 남은 병의 마개를 점검하기 시작했다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[0].resultText"
+"data.randomeventdata.stormbottle.pages.0.options.0.resulttext","거래를 마친 여인은 납품표에 줄을 하나 더 긋고 병을 다시 묶었다. “다음엔 제 이름으로 만든 병을 가져올게요.” 짐을 챙긴 그녀가 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.stormbottle.pages.0.options.0.title","폭풍 한 병","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[0].title"
 "data.randomeventdata.stormbottle.pages.0.options.1.description","주문 하나 습득","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[1].description"
-"data.randomeventdata.stormbottle.pages.0.options.1.resulttext","여인이 펼친 두루마리를 읽었다. 영창을 되짚는 동안 그녀는 남은 병을 정리했다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[1].resultText"
+"data.randomeventdata.stormbottle.pages.0.options.1.resulttext","거래를 마친 여인은 납품표에 줄을 하나 더 긋고 병을 다시 묶었다. “다음엔 제 이름으로 만든 병을 가져올게요.” 짐을 챙긴 그녀가 길을 떠났다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[1].resultText"
 "data.randomeventdata.stormbottle.pages.0.options.1.title","번개를 읽는 법","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[1].title"
-"data.randomeventdata.stormbottle.pages.0.options.2.description","골드 +12","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[2].description"
-"data.randomeventdata.stormbottle.pages.0.options.2.resulttext","흩어진 빈 병을 모아 건네고 품삯을 받았다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[2].resultText"
-"data.randomeventdata.stormbottle.pages.0.options.2.title","빈 병 수거를 돕는다","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[2].title"
+"data.randomeventdata.stormbottle.pages.0.options.2.description","골드 +20","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[2].description"
+"data.randomeventdata.stormbottle.pages.0.options.2.resulttext","병끼리 부딪치는 소리에 여인이 뒤로 물러났다. 나는 빈 병과 그 안의 잔돈을 챙겼다. 그녀는 봉인된 병을 품에 숨기고 통로를 빠져나갔다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[2].resultText"
+"data.randomeventdata.stormbottle.pages.0.options.2.title","병 주머니를 낚아챈다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[2].title"
 "data.randomeventdata.stormbottle.pages.0.options.3.description","","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[3].description"
 "data.randomeventdata.stormbottle.pages.0.options.3.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[3].resultText"
 "data.randomeventdata.stormbottle.pages.0.options.3.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset:pages.Array.data[0].options.Array.data[3].title"
@@ -1834,11 +1894,13 @@
 "data.randomeventdata.symbiosis.pages.0.options.3.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_두_번째_맥박.asset:pages.Array.data[0].options.Array.data[3].resultText"
 "data.randomeventdata.symbiosis.pages.0.options.3.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_두_번째_맥박.asset:pages.Array.data[0].options.Array.data[3].title"
 "data.randomeventdata.tooth.displayname","금빛 이빨의 내기","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:displayName"
-"data.randomeventdata.tooth.narrative","금니가 번쩍이는 사내가 길가에서 무릎 위의 장부를 넘기고 있다.
+"data.randomeventdata.tooth.narrative","금니가 번쩍이는 사내가 무릎 위의 장부를 넘긴다. 귀환한 원정대의 이름 옆에는 지급액과 검은 빗금이 번갈아 적혀 있다.
 
-“아직 살아 계셨군요. 이번에는 살아 돌아오시는 쪽에 걸겠습니다.”
+“성문에서 기다리면 다른 장부에 이름이 올라가더라고요. 그래서 제가 찾아오는 겁니다.”
 
-사내는 이름을 적고, 돈을 보태면 승리할 때마다 배당을 주겠다고 한다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:narrative"
+사내가 빈 줄을 두드린다.
+
+“당신 이름도 남기시죠. 살아 돌아오는 쪽에 돈을 걸겠습니다.”","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:narrative"
 "data.randomeventdata.tooth.options.0.description","40골드 소모. 금빛 이빨: 전투 승리마다 골드 +10.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:options.Array.data[0].description"
 "data.randomeventdata.tooth.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:options.Array.data[0].resultText"
 "data.randomeventdata.tooth.options.0.title","내 돈도 건다","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:options.Array.data[0].title"
@@ -1848,20 +1910,22 @@
 "data.randomeventdata.tooth.options.2.description","골드 +8.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:options.Array.data[2].description"
 "data.randomeventdata.tooth.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:options.Array.data[2].resultText"
 "data.randomeventdata.tooth.options.2.title","내기는 됐고 품삯이나 주시오","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:options.Array.data[2].title"
-"data.randomeventdata.tooth.pages.0.narrative","금니가 번쩍이는 사내가 길가에서 무릎 위의 장부를 넘기고 있다.
+"data.randomeventdata.tooth.pages.0.narrative","금니가 번쩍이는 사내가 무릎 위의 장부를 넘긴다. 귀환한 원정대의 이름 옆에는 지급액과 검은 빗금이 번갈아 적혀 있다.
 
-“아직 살아 계셨군요. 이번에는 살아 돌아오시는 쪽에 걸겠습니다.”
+“성문에서 기다리면 다른 장부에 이름이 올라가더라고요. 그래서 제가 찾아오는 겁니다.”
 
-사내는 이름을 적고, 돈을 보태면 승리할 때마다 배당을 주겠다고 한다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].narrative"
+사내가 빈 줄을 두드린다.
+
+“당신 이름도 남기시죠. 살아 돌아오는 쪽에 돈을 걸겠습니다.”","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.tooth.pages.0.options.0.description","금빛 이빨 획득","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.tooth.pages.0.options.0.resulttext","사내가 장부에 표시를 남겼다. 앞으로의 승리에 내 몫도 걸렸다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.tooth.pages.0.options.0.title","내 생환에 돈을 건다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[0].title"
 "data.randomeventdata.tooth.pages.0.options.1.description","","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[1].description"
 "data.randomeventdata.tooth.pages.0.options.1.resulttext","","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[1].resultText"
 "data.randomeventdata.tooth.pages.0.options.1.title","당장 돈을 벌 다른 내기가 있는지 묻는다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[1].title"
-"data.randomeventdata.tooth.pages.0.options.2.description","골드 +8","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[2].description"
-"data.randomeventdata.tooth.pages.0.options.2.resulttext","흩어진 영수증을 정리해 주고 품삯을 받았다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[2].resultText"
-"data.randomeventdata.tooth.pages.0.options.2.title","장부 정리만 돕는다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[2].title"
+"data.randomeventdata.tooth.pages.0.options.2.description","골드 +20","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[2].description"
+"data.randomeventdata.tooth.pages.0.options.2.resulttext","칼끝으로 장부를 누르자 사내가 돈을 세어 밀었다. 금니가 잠깐 드러났다. “이름은 기억했습니다.” 나는 동전을 거두고 손을 뗐다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[2].resultText"
+"data.randomeventdata.tooth.pages.0.options.2.title","장부를 눌러 놓고 돈을 요구한다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[2].title"
 "data.randomeventdata.tooth.pages.0.options.3.description","","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[3].description"
 "data.randomeventdata.tooth.pages.0.options.3.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[3].resultText"
 "data.randomeventdata.tooth.pages.0.options.3.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[0].options.Array.data[3].title"
@@ -1875,13 +1939,13 @@
 "data.randomeventdata.tooth.pages.1.options.1.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[1].options.Array.data[1].resultText"
 "data.randomeventdata.tooth.pages.1.options.1.title","떠난다.","Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset:pages.Array.data[1].options.Array.data[1].title"
 "data.randomeventdata.training.displayname","어디까지 풀 것인가","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:displayName"
-"data.randomeventdata.training.narrative","운반틀에 묶인 훈련 인형이 길가에 버려져 있다. 회색 몸체에 주황색 띠가 둘러져 있고, 검과 둥근 방패가 함께 묶여 있다. 가까이 가자 둥근 머리가 움직인다.
+"data.randomeventdata.training.narrative","낡은 운반 장비 사이에 훈련 인형 하나가 묶여 있다. 회색 몸체의 주황색 띠는 여러 번 새로 감은 흔적이 있다.
 
-끈과 철사, 굵은 사슬이 차례로 관절을 붙잡고 있다.
+원정 보급품에 쓰는 수납함이 운반틀 아래 붙어 있다.
 
-운반틀에는 경고가 붙어 있다.
+“구속을 많이 풀수록 강하게 움직임. 도전 보상은 내부 수납함에 보관.”
 
-“구속을 많이 풀수록 강하게 움직임. 도전 보상은 내부 수납함에 보관.”","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:narrative"
+머리가 움직인다. 검과 둥근 방패가 끈을 당기며 덜컥거린다.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:narrative"
 "data.randomeventdata.training.options.0.description","연습 인형 체력 75. 승리 후 포션 1개. 포션이 가득하면 체력 8 회복.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:options.Array.data[0].description"
 "data.randomeventdata.training.options.0.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:options.Array.data[0].resultText"
 "data.randomeventdata.training.options.0.title","끈을 푼다","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:options.Array.data[0].title"
@@ -1891,13 +1955,13 @@
 "data.randomeventdata.training.options.2.description","연습 인형 체력 240. 승리 후 공용 유물 하나 선택.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:options.Array.data[2].description"
 "data.randomeventdata.training.options.2.resulttext","나는 내 길을 계속 가기로 했다.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:options.Array.data[2].resultText"
 "data.randomeventdata.training.options.2.title","사슬을 푼다","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:options.Array.data[2].title"
-"data.randomeventdata.training.pages.0.narrative","운반틀에 묶인 훈련 인형이 길가에 버려져 있다. 회색 몸체에 주황색 띠가 둘러져 있고, 검과 둥근 방패가 함께 묶여 있다. 가까이 가자 둥근 머리가 움직인다.
+"data.randomeventdata.training.pages.0.narrative","낡은 운반 장비 사이에 훈련 인형 하나가 묶여 있다. 회색 몸체의 주황색 띠는 여러 번 새로 감은 흔적이 있다.
 
-끈과 철사, 굵은 사슬이 차례로 관절을 붙잡고 있다.
+원정 보급품에 쓰는 수납함이 운반틀 아래 붙어 있다.
 
-운반틀에는 경고가 붙어 있다.
+“구속을 많이 풀수록 강하게 움직임. 도전 보상은 내부 수납함에 보관.”
 
-“구속을 많이 풀수록 강하게 움직임. 도전 보상은 내부 수납함에 보관.”","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:pages.Array.data[0].narrative"
+머리가 움직인다. 검과 둥근 방패가 끈을 당기며 덜컥거린다.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:pages.Array.data[0].narrative"
 "data.randomeventdata.training.pages.0.options.0.description","전투 · 포션 1개","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:pages.Array.data[0].options.Array.data[0].description"
 "data.randomeventdata.training.pages.0.options.0.resulttext","인형의 움직임이 멎었다. 수납함에서 보상을 챙기자 남은 구속구도 바닥으로 떨어졌다.","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:pages.Array.data[0].options.Array.data[0].resultText"
 "data.randomeventdata.training.pages.0.options.0.title","끈을 푼다","Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset:pages.Array.data[0].options.Array.data[0].title"
@@ -2398,11 +2462,15 @@ Shift / 우클릭 홀드 후 긋기: 주문","Arcade224"
 "ui.eventgrounding.used.Tooth","이야기를 마친 이다. 더 말을 걸지 않기로 했다.","Event grounding revision"
 "ui.eventgrounding.used.Training","이미 한 차례 살펴본 물건이다.","Event grounding revision"
 "ui.eventgrounding.used.Well","이미 한 차례 살펴본 물건이다.","Event grounding revision"
+"ui.explore.bossdoor","사자 문양의 겹문","2026-11-01 exploration lore"
 "ui.explore.cleric.left","그녀는 여전히 기둥 곁에 앉아 있다. ""……""","Exploration"
 "ui.explore.cleric.quiet","그녀가 작은 목소리로 기도를 되뇐다. 이번에는 조금 덜 외롭게 들린다.","Exploration"
 "ui.explore.cleric.treated","그녀는 남은 붕대를 접고 있다. ""다시 다치지 않게 조심하세요.""","Exploration"
 "ui.explore.door.locked","잠겨 있다. 열쇠 구멍 위에 태양 문양이 보인다.","Exploration"
 "ui.explore.door.opened","열쇠가 맞는다. 잠금이 풀렸다.","Exploration"
+"ui.explore.elitedoor","교차한 칼날의 철문","2026-11-01 exploration lore"
+"ui.explore.goddess.ask","여신상 앞에서 기도를 올릴까?","2026-11-01 exploration lore"
+"ui.explore.goddess.pray","기도를 올린다","2026-11-01 exploration lore"
 "ui.explore.inventory.key","태양 문양 열쇠 × {0}","Exploration"
 "ui.explore.key.found","작은 열쇠를 주웠다. 머리에는 태양 문양이 새겨져 있다.","Exploration"
 "ui.explore.map.locked","잠","Exploration"
@@ -2426,6 +2494,7 @@ Shift / 우클릭 홀드 후 긋기: 주문","Arcade224"
 "ui.explore.object.table.remains","남겨진 탁자 살펴보기","Exploration"
 "ui.explore.passage.locked","벽이 밀려나며 문이 드러났다. 태양 문양의 자물쇠가 걸려 있다.","Exploration"
 "ui.explore.passage.opened","돌이 움직인다. 벽 뒤에 통로가 있었다.","Exploration"
+"ui.explore.secretwall","돌벽","2026-11-01 exploration lore"
 "ui.explore.used.book","책에서 더 알아낼 것은 없다.","Exploration"
 "ui.explore.used.camp","쉬었던 자리다. 지금은 다시 출발할 때다.","Exploration"
 "ui.explore.used.chest","이미 열려 있는 상자다. 안에는 아무것도 남지 않았다.","Exploration"
@@ -2441,6 +2510,9 @@ Shift / 우클릭 홀드 후 긋기: 주문","Arcade224"
 "ui.explore.used.mirror","거울 속에는 익숙한 모습만 비친다.","Exploration"
 "ui.explore.used.scholar","노인은 생각에 잠겨 있다. 지금은 말을 아끼는 편이 좋겠다.","Exploration"
 "ui.explore.used.seed","실험대에서 살펴볼 것은 모두 살펴봤다.","Exploration"
+"ui.explore.wall.hollow","안쪽이 빈 듯한 소리가 난다.","2026-11-01 exploration lore"
+"ui.explore.wall.loose","돌 사이의 모르타르가 조금씩 떨어진다.","2026-11-01 exploration lore"
+"ui.explore.wall.opened","벽돌이 밀리며 좁은 입구가 드러났다.","2026-11-01 exploration lore"
 "ui.fatigue.danger","탈진","Fatigue"
 "ui.fatigue.death","끝내 발걸음을 옮기지 못하고 쓰러졌다.
 피로도가 0이 되었다.","Fatigue"
@@ -2469,7 +2541,11 @@ Shift / 우클릭 홀드 후 긋기: 주문","Arcade224"
 "ui.gameflowcontroller.543f0daf","세 막의 보스를 쓰러뜨렸다. 새로운 캐릭터와 빌드로 다시 도전해보자.","Scripts/DungeonSlash/UI/GameFlowController.cs"
 "ui.gameflowcontroller.57fa3b03","테스트 배틀 패배 — HP를 복구했습니다.","Scripts/DungeonSlash/UI/GameFlowController.cs"
 "ui.gameflowcontroller.5ca48218","바닥에 금화가 떨어져 있다.","Scripts/DungeonSlash/UI/GameFlowController.cs"
-"ui.gameflowcontroller.5db06efc","이런 곳에 상인...? 수상하지만 말을 걸어볼까?","Scripts/DungeonSlash/UI/GameFlowController.cs"
+"ui.gameflowcontroller.5db06efc","후드를 쓴 행상이 자루의 매듭을 푼다. 가격표 뒷면에는 오래된 차용증이 겹쳐 붙어 있다.
+
+""동전부터 보시죠. 밖에서는 이 값에 못 구합니다.""
+
+물건을 살펴볼까?","Scripts/DungeonSlash/UI/GameFlowController.cs"
 "ui.gameflowcontroller.74aabc17","가져갈 유물을 고른다.","Scripts/DungeonSlash/UI/GameFlowController.cs"
 "ui.gameflowcontroller.79570a59","여신상이다. 기운이 충만해졌다.","Scripts/DungeonSlash/UI/GameFlowController.cs"
 "ui.gameflowcontroller.803375ba","전용 유물 · 하나를 선택","Scripts/DungeonSlash/UI/GameFlowController.cs"
@@ -2550,6 +2626,46 @@ Shift / 우클릭 홀드 후 긋기: 주문","Arcade224"
 "ui.gameflowexpansion.ffbb9952","회복 포션 1개 사용","Scripts/DungeonSlash/UI/GameFlowExpansion.cs"
 "ui.hud.experience","Lv {0}","Assets/Editor/BehemothUiPreparation.cs"
 "ui.hud.gold","{0}<color=#D8BB62>G</color>","Assets/Editor/BehemothUiPreparation.cs"
+"ui.lore.object.AmberSeed","딱 하나 남은 열매","2026-11-01 exploration lore"
+"ui.lore.object.Banner","주인 잃은 깃발","2026-11-01 exploration lore"
+"ui.lore.object.Contract","붉은 서명","2026-11-01 exploration lore"
+"ui.lore.object.Delivery","상자가 두 개다","2026-11-01 exploration lore"
+"ui.lore.object.Investment","배달지는 다음 막","2026-11-01 exploration lore"
+"ui.lore.object.LostBeliever","그 돌에 적힌 이름","2026-11-01 exploration lore"
+"ui.lore.object.MagicTeacherAdvanced","지팡이 끝의 수업","2026-11-01 exploration lore"
+"ui.lore.object.MagicTeacherFirst","길 위의 노마법사","2026-11-01 exploration lore"
+"ui.lore.object.MagicTeacherReturn","성장한 제자","2026-11-01 exploration lore"
+"ui.lore.object.Mirror","거울이 먼저 벤다","2026-11-01 exploration lore"
+"ui.lore.object.Pilgrim","짐 하나만 부탁하네","2026-11-01 exploration lore"
+"ui.lore.object.QuietPrayer","꺼진 기도","2026-11-01 exploration lore"
+"ui.lore.object.RecoveryCutpurse","이름 없는 회수표","2026-11-01 exploration lore"
+"ui.lore.object.Scholar","끝까지 읽는 법","2026-11-01 exploration lore"
+"ui.lore.object.Shelter","끊어진 호위","2026-11-01 exploration lore"
+"ui.lore.object.StormBottle","번개를 파는 행상","2026-11-01 exploration lore"
+"ui.lore.object.StrayDog","젖은 발자국","2026-11-01 exploration lore"
+"ui.lore.object.Tooth","금빛 이빨의 내기","2026-11-01 exploration lore"
+"ui.lore.object.Training","어디까지 풀 것인가","2026-11-01 exploration lore"
+"ui.lore.object.Well","길가의 무거운 금고","2026-11-01 exploration lore"
+"ui.lore.revisit.Investment.0.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.LostBeliever.0.3","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.LostBeliever.2.0","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.MagicTeacherAdvanced.0.4","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.MagicTeacherAdvanced.2.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.MagicTeacherFirst.1.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.MagicTeacherReturn.0.2","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.MagicTeacherReturn.4.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.Pilgrim.0.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.QuietPrayer.-1.1","성직자는 빈 손을 감춘 채 고개를 숙이고 있다. 약초는 내가 가져갔다.","2026-11-01 exploration lore"
+"ui.lore.revisit.RecoveryCutpurse.-1.0","밧줄을 움켜쥔 도적의 시신이다. 회수할 이름은 남겨 놓지 않았다.","2026-11-01 exploration lore"
+"ui.lore.revisit.RecoveryCutpurse.-1.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.RecoveryCutpurse.-1.2","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.Shelter.0.0","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.Shelter.0.1","용병은 붕대를 누른 채 검을 쥐고 있다. 더 가까이 가는 것은 그만두자.","2026-11-01 exploration lore"
+"ui.lore.revisit.Shelter.0.2","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.StormBottle.0.0","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.StormBottle.0.1","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.StormBottle.0.2","이곳을 떠난 뒤다.","2026-11-01 exploration lore"
+"ui.lore.revisit.Tooth.0.2","사내가 장부를 덮는다. “정산은 끝났습니다.”","2026-11-01 exploration lore"
 "ui.mana.cost"," · MP {0:0}","AshenVow"
 "ui.mana.gauge","MP {0:0}/{1:0}","AshenVow"
 "ui.mana.insufficient","MP 부족","AshenVow"
@@ -2687,9 +2803,12 @@ Gold {4}","Scripts/DungeonSlash/UI/RunHudView.cs"
 "ui.selection.subtitle","돌아올 수 없는 성, 누구의 서약을 잇겠는가","Assets/Editor/BehemothUiPreparation.cs"
 "ui.shop.buy","{0}G · 구매","Assets/Editor/BehemothUiPreparation.cs"
 "ui.shop.known","습득한 주문","Assets/Editor/BehemothUiPreparation.cs"
+"ui.shop.next","뒤 재고","2026-11-01 exploration lore"
 "ui.shop.notenoughgold","골드 부족","Assets/Editor/BehemothUiPreparation.cs"
 "ui.shop.owned","보유 중","Assets/Editor/BehemothUiPreparation.cs"
+"ui.shop.page","재고 {0} / {1}","2026-11-01 exploration lore"
 "ui.shop.potionfull","포션 슬롯 부족","Assets/Editor/BehemothUiPreparation.cs"
+"ui.shop.previous","앞 재고","2026-11-01 exploration lore"
 "ui.shop.soldout","품절","Assets/Editor/BehemothUiPreparation.cs"
 "ui.shop.stockhint","상품은 구매 후에도 교체·갱신되지 않습니다.","Assets/Editor/BehemothUiPreparation.cs"
 "ui.shop.unavailable","{0}G · {1}","Assets/Editor/BehemothUiPreparation.cs"

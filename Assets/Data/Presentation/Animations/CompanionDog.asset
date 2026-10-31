@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
   m_Name: CompanionDog
   m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 51e5eb557be5142488faced496277808, type: 3}
-  attack: {fileID: 21300000, guid: 4d543a988012c284cb989b56d5833f05, type: 3}
+  idle: {fileID: 21300000, guid: 591a1c416ff59c44ea8c26b1fa843609, type: 3}
+  attack: {fileID: 21300000, guid: 1c72c7c32ad869447ac01a8cf3dbc8eb, type: 3}
   guard: {fileID: 0}
   ready: {fileID: 0}
   dead: {fileID: 0}
+  stunned: {fileID: 0}
+  attackPoseSeconds: 0.3
+  readyLeftToRight: {fileID: 0}
+  attackLeftToRight: {fileID: 0}
   canvasScale: 1
+  canvasPaddingPixels: {x: 0, y: 0, z: 0, w: 0}
   illustratedMotion: 0
   illustratedLayout: 1
   combatPositionOffset: {x: 0, y: 0}

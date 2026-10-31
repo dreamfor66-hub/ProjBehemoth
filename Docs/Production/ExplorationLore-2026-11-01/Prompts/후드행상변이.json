@@ -1,0 +1,11 @@
+{
+  "name": "후드행상변이",
+  "kind": "combat4",
+  "prompt": "Use case stylized-concept. BEHEMOTH merchant's revealed MONSTER, FOUR distinct authored poses in 2 columns x 2 rows, equal living body scale, entire figures and bags in cells, generous clear gutters, transparent background. Input1 merchant is COSTUME IDENTITY: charcoal SOFT cloth hood, broad muted olive shoulder mantle, dark cloak and gloves, leather trading pack with two tied merchandise sacks. Input2 existing coin-eating toad is CREATURE ANATOMY and already-approved painted proportions. Combine coherently: a squat bulky green-grey toad-like predator has burst from the same merchant's clothes, the recognizable hood still draped on head/back and olive mantle around shoulders, familiar trade pack used as weapon, one slit golden eye peeking under hood, wide hungry mouth. Retain the merchant's recognizable fabric colors and bag closures in EVERY pose. No bald kindly human, no necklace of dozens of coins, no tiny skin warts. TOP LEFT IDLE: faces CAMERA, grips a heavy leather coin bag low and hunches toward player. TOP RIGHT READY: faces player, draws bag back and gulps air, mouth gaping. BOTTOM LEFT ATTACK: forcefully swings the heavy bag TOWARD PLAYER/camera with a coherent gripping hand, mouth lunging forward. BOTTOM RIGHT DEAD: collapsed on side, hood and bag fallen beside same body, still identifiable. Input3 actual dungeon sets bold contour and broad integrated ink-black shadow language; few large muted color planes, massive black interiors inside mouth/cloak, no glossy realism, fine facets, grain, clutter or glow. No background, text, labels or UI. Every action is separately drawn, not transformed Idle.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_Sprite_Character_행상_SeatedFront.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_금먹는두꺼비_Idle.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-a2efa903-16d4-454b-9adb-38fed81a73b9.png"
+}

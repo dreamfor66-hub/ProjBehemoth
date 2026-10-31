@@ -58,6 +58,12 @@ namespace DungeonSlash
                 if (slots[i].Depth < slots[j].Depth && slots[i].transform.GetSiblingIndex() < slots[j].transform.GetSiblingIndex())
                     slots[j].transform.SetSiblingIndex(slots[i].transform.GetSiblingIndex());
         }
+        public void AddHiddenWall(RoomObjectData wall, int view, Vector2 anchor, Action clicked)
+        {
+            var before = nextSlot;
+            Add(wall, view, false, anchor, 1, false, clicked);
+            if (nextSlot > before) slots[before].UseHiddenWall();
+        }
         public void Say(string key)
         {
             if (narration == null || narrationText == null) return;

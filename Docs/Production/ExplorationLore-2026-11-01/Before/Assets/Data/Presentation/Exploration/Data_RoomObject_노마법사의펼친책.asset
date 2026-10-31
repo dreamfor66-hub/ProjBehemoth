@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uB178\uB9C8\uBC95\uC0AC\uC758\uD3BC\uCE5C\uCC45"
+  m_EditorClassIdentifier: 
+  labelKey: ui.eventgrounding.object.MagicTeacherReturn
+  usedLabelKey: 
+  resolvedTextKey: ui.eventgrounding.used.MagicTeacherReturn
+  wallMounted: 0
+  fitsDoorway: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 1
+  roomInterior: 0
+  usedForm: {fileID: 0}
+  front: {fileID: 21300000, guid: 059666597d8f3a640ab30f9cc7375e7d, type: 3}
+  side: {fileID: 21300000, guid: 608cfb422253c2c44b54b75fcebb1862, type: 3}
+  rear: {fileID: 21300000, guid: cd282930912905441b4c4a885643744c, type: 3}
+  usedFront: {fileID: 0}
+  usedSide: {fileID: 0}
+  usedRear: {fileID: 0}
+  displayHeight: 350
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: 059666597d8f3a640ab30f9cc7375e7d, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.019264448
+      y: 0.010967099
+      width: 0.9614711
+      height: 0.97806585
+    footprint:
+      serializedVersion: 2
+      x: 0.085814364
+      y: 0.017946161
+      width: 0.67950964
+      height: 0.21495512
+  - sprite: {fileID: 21300000, guid: 608cfb422253c2c44b54b75fcebb1862, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.023012552
+      y: 0.010989011
+      width: 0.95397484
+      height: 0.978022
+    footprint:
+      serializedVersion: 2
+      x: 0.12761506
+      y: 0.017982017
+      width: 0.6464435
+      height: 0.21494505
+  - sprite: {fileID: 21300000, guid: cd282930912905441b4c4a885643744c, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.021276595
+      y: 0.011077543
+      width: 0.95531917
+      height: 0.97784495
+    footprint:
+      serializedVersion: 2
+      x: 0.13829787
+      y: 0.018126888
+      width: 0.74255323
+      height: 0.21490432

@@ -1,0 +1,9 @@
+Saved production implementation and art for all three acts.
+Generation/content contracts: 3,508 checks, 0 failures, 128 seeds per act.
+Final fixes/runtime: 59 checks, 0 failures.
+Directional art/corpses: 66 checks, 0 failures; reviewed actual Unity captures/contact sheets.
+Actual entry/event combat and input handoff: 12 checks, 0 failures.
+Earlier findings and probe-timing/tutorial omissions are retained in historical logs and explained in Verification.md.
+No new Unity Error/Exception logs in the final verification interval.
+Natural five-run cadence, resource pressure and new encounter balance remain player-feedback questions, not claimed as validated by these probes.
+No full DPS/balance regression or extra Unity instance was run. No commit/staging was performed.

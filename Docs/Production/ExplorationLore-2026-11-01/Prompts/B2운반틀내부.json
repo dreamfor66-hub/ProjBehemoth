@@ -1,0 +1,9 @@
+{
+  "name": "B2운반틀내부",
+  "kind": "eventInterior",
+  "act": 2,
+  "event": "Training",
+  "ref": "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+  "prompt": "Use case precise-object-edit. Input1 is installed ACT 2 room EDIT TARGET; input2 approved equipment-storage alcove is CONTENT LAYOUT ONLY. Add two low broad wooden training-shield/pole racks at wall edges, a tied canvas roll at RIGHT far floor, and one broad faded dark-red blank banner on back wall, corresponding to input2. Keep EXACT input1 canvas/aspect, wall/pillar/ceiling geometry, floor-tile seam positions, floor height, vanishing point, original act 2 color and torches. Do not copy input2's pillar trim or turn it into a different room scale. THREE closed walls, no doors/windows, no people/dummies/monsters, no text/UI. Game draws its bound dummy at normalized bottom-up LEFT floor x=.315,y=.235; keep that spot and central/foreground player/combat space EMPTY. Strong drawn contours, substantial large SOLID INK-BLACK internal shadows, very few clean big forms and broad flat planes; NO tiny weapon clutter, cracks, shards, grain, glossy materials or glow. Preserve entire foreground floor.",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-2dd6ebbe-4615-49c0-b24e-3bb735101912.png"
+}

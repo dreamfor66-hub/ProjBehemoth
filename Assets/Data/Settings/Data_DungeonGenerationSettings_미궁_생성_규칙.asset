@@ -27,7 +27,7 @@ MonoBehaviour:
   combatRoomRatioMin: 0.35
   combatRoomRatioMax: 0.55
   maxGenerationAttempts: 60
-  eventRoomCount: 3
+  eventRoomCount: 2
   minimumRepeatedFacilityDistance: 4
   firstActOpeningCombats: 3
   firstActServiceDistance: 4

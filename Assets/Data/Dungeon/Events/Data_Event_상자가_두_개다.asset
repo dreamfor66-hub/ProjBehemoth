@@ -95,6 +95,16 @@ MonoBehaviour:
   displayName: "\uC0C1\uC790\uAC00 \uB450 \uAC1C\uB2E4"
   discovery: 1
   worldObject: {fileID: 11400000, guid: 0f8ce9a71a332a24d9981e26a5247b1d, type: 2}
+  encounterKind: 0
+  authoringLore: "\uC0AC\uB78C\uC744 \uC0C8\uB85C \uB4F1\uC7A5\uC2DC\uD0A4\uC9C0
+    \uC54A\uACE0, \uC2E4\uC81C \uBC1C\uACAC\uD55C \uBB3C\uAC74\uC758 \uC131\uC9C8\uACFC
+    \uADF8 \uC120\uD0DD\uC758 \uACB0\uACFC\uB85C \uC9C4\uD589\uD558\uB294 \uC6B0\uC5F0\uD55C
+    \uBC1C\uACAC."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uAE38\uAC00\uC5D0 \uB0B4 \uD45C\uC2DD\uC774 \uBD99\uC740 \uAFB8\uB7EC\uBBF8
     \uB450 \uAC1C\uAC00 \uB193\uC5EC \uC788\uB2E4.\n\n\uC9C0\uB09C\uBC88 \uC9D0\uAFBC\uC758

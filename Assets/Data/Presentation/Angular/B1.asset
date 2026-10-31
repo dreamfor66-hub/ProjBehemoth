@@ -15,6 +15,7 @@ MonoBehaviour:
   walls: {fileID: 21300000, guid: 0fcccf9eeda02e84ca3356b59829b961, type: 3}
   campInterior: {fileID: 21300000, guid: 1e18f085fbfe3c849864663a3df3b08a, type: 3}
   campUsedInterior: {fileID: 21300000, guid: 1e18f085fbfe3c849864663a3df3b08a, type: 3}
+  bossInterior: {fileID: 21300000, guid: c9c88dc59bb36c2418f2534fda4c61e8, type: 3}
   imageOffset: {x: 0, y: -24}
   openings:
   - {fileID: 21300000, guid: 02fed37a14cfcdf46a952712154618d5, type: 3}

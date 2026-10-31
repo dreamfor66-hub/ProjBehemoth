@@ -1,0 +1,7 @@
+{
+  "name": "길위의노마법사",
+  "target": "T_Sprite_Character_길위의노마법사_Front.png",
+  "prompt": "Use case stylized-concept. EDIT input1's exact old travelling mage identity into a NEW STANDING pose: swept short white hair, pointed LARGE white beard shape, broad navy-purple mantle with plain brass clasp, cream sleeves, charcoal travelling trousers, brown boots, small leather satchel. Same person as input1, no redesign or added staff/hat. Three isolated columns FRONT 3/4 toward camera, SIDE, REAR, equal physical scale/aligned soles, generous gutters. Whole body on true alpha, NO background/ground tile, text, chair, rolled blanket or UI. Input2 installed dungeon is camera and substantial ink-black shadow/large-form style reference; input3 original hood archer is simplification style ONLY. Few large drawn contours, strong interior black shapes, 4-6 broad muted planes, simplified face, no individual beard hairs, fine folds, grain, glossy realism or dense shards. He STANDS leaning a little forward over a long research scroll held in both hands at chest height. A tiny angular ember has caught ONE top corner of the scroll, without huge glow. His raised brow and intent gaze show an absent-minded scholar excited to find a missing inscription, not a despairing huddled old man. Both feet on the floor, knees straight but relaxed. Keep the scroll/ember silhouette distinct from any book pose.",
+  "kind": "directions",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-767a390d-2f98-4332-91d1-b6aebb89cde9.png"
+}

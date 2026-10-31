@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uC131\uC9C1\uC790"
   m_EditorClassIdentifier: 
-  labelKey: ui.eventgrounding.object.QuietPrayer
+  labelKey: ui.lore.object.QuietPrayer
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.QuietPrayer
   wallMounted: 0

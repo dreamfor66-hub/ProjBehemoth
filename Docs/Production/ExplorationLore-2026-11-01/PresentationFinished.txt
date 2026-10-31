@@ -1,0 +1,1 @@
+Saved dog prefab/new art and authored offset clear of foreground hero. Companion pose framing uses one reference pixel scale. Event encounter monsters are available through the F1 monster catalog.

@@ -1,0 +1,11 @@
+{
+  "name": "버려진호위용병",
+  "kind": "directions",
+  "prompt": "Use case stylized-concept. BEHEMOTH wounded young hired guard, revise the identity of input1 (short dark hair, plain dark soft cap, cream shirt, worn olive-brown gear) into an actual aftermath of an escort gone wrong. Three equal separate transparent columns FRONT 3/4, SIDE, REAR, whole figure and kit, equal scale, aligned ground, broad gutters. He rests on ONE KNEE with the other boot firmly planted, torso upright, pressing a blood-stained broad bandage on his outer thigh. Other hand grips his worn short sword by the actual handle, sword point rests on ground for support; natural shoulder-elbow-wrist chain, closed fist, blade extends from guard, no impossible crossed arm. One plain dented shoulder plate, broken employer's brass badge on cord, dropped simple satchel. Young face is alert and bitter, following someone who deserted him, not rubbing sleepy eyes or wrapped in a cosy blanket. Small restrained red blood mark, not gore. Input1 face/gear ID, input2 installed dungeon camera/ink weight, input3 user original hooded archer simplification. Bold substantial INK-BLACK inside clothing and limbs, very few broad planes/folds, no texture/grain or tiny facets. No scene, chairs, labels, text, UI or halos.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_Sprite_Character_졸고있는경비병_Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-429e2995-242f-4a7b-bdf5-82bb3c5b83f6.png"
+}

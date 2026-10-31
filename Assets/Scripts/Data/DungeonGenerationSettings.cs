@@ -21,7 +21,7 @@ namespace DungeonSlash
         [Range(0f, 1f)] public float combatRoomRatioMin = .35f;
         [Range(0f, 1f)] public float combatRoomRatioMax = .55f;
         [Min(1)] public int maxGenerationAttempts = 60;
-        [Range(0, 8)] public int eventRoomCount = 3;
+        [Range(0, 8)] public int eventRoomCount = 2;
         [Min(2), Tooltip("Minimum traversable room-to-room steps between repeated shops, goddess shrines, or fountains (including poisoned fountains).")]
         public int minimumRepeatedFacilityDistance = 4;
         [Header("Act one pacing")]

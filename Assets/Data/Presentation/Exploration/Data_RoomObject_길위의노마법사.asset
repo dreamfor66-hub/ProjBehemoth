@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uAE38\uC704\uC758\uB178\uB9C8\uBC95\uC0AC"
   m_EditorClassIdentifier: 
-  labelKey: ui.eventgrounding.object.MagicTeacherFirst
+  labelKey: ui.lore.object.MagicTeacherFirst
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.MagicTeacherFirst
   wallMounted: 0
@@ -27,45 +27,45 @@ MonoBehaviour:
   usedFront: {fileID: 0}
   usedSide: {fileID: 0}
   usedRear: {fileID: 0}
-  displayHeight: 350
+  displayHeight: 400
   hitPadding: 20
   geometry:
   - sprite: {fileID: 21300000, guid: ca3727e3e5cea34439960899dd65dc58, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.026874116
-      y: 0.114754096
-      width: 0.9391796
-      height: 0.8579235
+      x: 0.023404256
+      y: 0.011664899
+      width: 0.95531917
+      height: 0.97667015
     footprint:
       serializedVersion: 2
-      x: 0.04384724
-      y: 0.12568305
-      width: 0.89957565
-      height: 0.18844263
+      x: 0.17872341
+      y: 0.019088017
+      width: 0.6106383
+      height: 0.21463415
   - sprite: {fileID: 21300000, guid: 261b81d309780c64394e2abcca8fd261, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.05783866
-      y: 0.10700637
-      width: 0.91019785
-      height: 0.78853506
+      x: 0.021276595
+      y: 0.010660981
+      width: 0.95531917
+      height: 0.9776119
     footprint:
       serializedVersion: 2
-      x: 0.07153729
-      y: 0.117197454
-      width: 0.8401826
-      height: 0.17319745
+      x: 0.09361702
+      y: 0.018123668
+      width: 0.5851064
+      height: 0.21484008
   - sprite: {fileID: 21300000, guid: 56e3fc94e2ae6fd4b8b50a8bc96b3495, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.030448718
-      y: 0.07223796
-      width: 0.9342949
-      height: 0.8668555
+      x: 0.021868788
+      y: 0.011789925
+      width: 0.95626247
+      height: 0.97642016
     footprint:
       serializedVersion: 2
-      x: 0.048076924
-      y: 0.08215298
-      width: 0.9022436
-      height: 0.19039659
+      x: 0.08349901
+      y: 0.018220793
+      width: 0.7534791
+      height: 0.21457663

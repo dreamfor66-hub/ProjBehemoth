@@ -193,6 +193,16 @@ MonoBehaviour:
   displayName: "\uBD89\uC740 \uC11C\uBA85"
   discovery: 1
   worldObject: {fileID: 11400000, guid: c9a221aba6a89f94e8c5402049c7fef0, type: 2}
+  encounterKind: 0
+  authoringLore: "\uC0AC\uB78C\uC744 \uC0C8\uB85C \uB4F1\uC7A5\uC2DC\uD0A4\uC9C0
+    \uC54A\uACE0, \uC2E4\uC81C \uBC1C\uACAC\uD55C \uBB3C\uAC74\uC758 \uC131\uC9C8\uACFC
+    \uADF8 \uC120\uD0DD\uC758 \uACB0\uACFC\uB85C \uC9C4\uD589\uD558\uB294 \uC6B0\uC5F0\uD55C
+    \uBC1C\uACAC."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uBD89\uC740 \uBC00\uB78D\uC73C\uB85C \uBD09\uD55C \uB450\uB8E8\uB9C8\uB9AC\uAC00
     \uAE38\uAC00\uC5D0 \uB193\uC5EC \uC788\uB2E4.\n\n\uC190\uC744 \uB300\uC790 \uC885\uC774\uC5D0\uC11C

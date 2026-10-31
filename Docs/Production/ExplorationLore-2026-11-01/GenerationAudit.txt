@@ -1,0 +1,24 @@
+EVENT StrayDog: Creature; weight=1; acts=1-3; 젖은 발자국
+EVENT Mirror: Object; weight=1; acts=1-3; 거울이 먼저 벤다
+EVENT Contract: Object; weight=1; acts=1-3; 붉은 서명
+EVENT Pilgrim: Person; weight=0.35; acts=1-3; 짐 하나만 부탁하네
+EVENT LostBeliever: Person; weight=0.35; acts=2-3; 그 돌에 적힌 이름
+EVENT StormBottle: Person; weight=0.35; acts=1-3; 번개를 파는 행상
+EVENT AmberSeed: Object; weight=1; acts=1-2; 딱 하나 남은 열매
+EVENT Banner: Hostile; weight=1; acts=1-3; 주인 잃은 깃발
+EVENT Tooth: Person; weight=0.35; acts=1-2; 금빛 이빨의 내기
+EVENT Training: Hostile; weight=1; acts=1-3; 어디까지 풀 것인가
+EVENT Scholar: Object; weight=1; acts=1-3; 끝까지 읽는 법
+EVENT Well: Object; weight=1; acts=1-3; 길가의 무거운 금고
+EVENT Investment: Person; weight=0.35; acts=1-1; 배달지는 다음 막
+EVENT Delivery: Object; weight=5; acts=2-3; 상자가 두 개다
+EVENT Shelter: Person; weight=0.35; acts=1-3; 끊어진 호위
+EVENT MagicTeacherFirst: Person; weight=0.6; acts=1-3; 길 위의 노마법사
+EVENT MagicTeacherReturn: Person; weight=0.8; acts=2-3; 성장한 제자
+EVENT MagicTeacherAdvanced: Person; weight=0.8; acts=3-3; 지팡이 끝의 수업
+EVENT QuietPrayer: Person; weight=0.35; acts=1-3; 꺼진 기도
+EVENT RecoveryCutpurse: Hostile; weight=1.2; acts=1-1; 이름 없는 회수표
+B1: mean base combats=10.92; event alcoves=45; annexes=119 (secret=78,locked=41,combat=2); human weight share without history/required flags=22.7 %
+B2: mean base combats=10.05; event alcoves=61; annexes=123 (secret=78,locked=45,combat=4); human weight share without history/required flags=22.7 %
+B3: mean base combats=9.13; event alcoves=69; annexes=122 (secret=65,locked=57,combat=1); human weight share without history/required flags=22.2 %
+3508 checks; 0 failures. 128 seeds per act; only changed generation/content contracts. Candidate weight shares are not player-run experience measurements.

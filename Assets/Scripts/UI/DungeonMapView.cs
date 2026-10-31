@@ -46,7 +46,7 @@ namespace DungeonSlash
             var current = state.Player.CurrentRoom;
             if (renderedState != state || !focusPosition.Equals(current.Position)) FocusCurrent();
             renderedState = state; focusPosition = current.Position;
-            var neighbours = state.Graph.Neighbors(current).Where(r => state.CanSeePassage(current, r)).ToHashSet();
+            var neighbours = state.Graph.Neighbors(current).Where(r => state.CanTravel(current, r)).ToHashSet();
             // Visits are permanent exploration memory. Generation-time IsRevealed marks a
             // known encounter identity, not permission to expose a distant, unvisited room.
             var visible = state.Graph.Rooms.Where(r => r.IsVisited || r == current
@@ -56,7 +56,7 @@ namespace DungeonSlash
             foreach (var room in visible.Where(r => r.IsVisited))
                 foreach (var other in state.Graph.Neighbors(room))
                 {
-                    if (!state.CanSeePassage(room, other)) continue;
+                    if (!state.CanTravel(room, other)) continue;
                     var key = room.RoomId < other.RoomId ? $"{room.RoomId}:{other.RoomId}" : $"{other.RoomId}:{room.RoomId}";
                     if (!drawn.Add(key)) continue;
                     var highlighted = room == current && hoveredDirection == DirectionTo(room, other)

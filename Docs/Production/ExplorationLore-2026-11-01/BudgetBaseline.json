@@ -1,0 +1,19 @@
+{
+  "budgets": [
+    {
+      "act": 1,
+      "inherited": 0,
+      "eventUnits": 0
+    },
+    {
+      "act": 2,
+      "inherited": 6.175,
+      "eventUnits": 1.5749999999999997
+    },
+    {
+      "act": 3,
+      "inherited": 12.95,
+      "eventUnits": 1.5749999999999997
+    }
+  ]
+}

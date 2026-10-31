@@ -175,6 +175,16 @@ MonoBehaviour:
   displayName: "\uAC70\uC6B8\uC774 \uBA3C\uC800 \uBCA4\uB2E4"
   discovery: 1
   worldObject: {fileID: 11400000, guid: 785239072a25c4f4cbeebeaf994be1d9, type: 2}
+  encounterKind: 0
+  authoringLore: "\uC0AC\uB78C\uC744 \uC0C8\uB85C \uB4F1\uC7A5\uC2DC\uD0A4\uC9C0
+    \uC54A\uACE0, \uC2E4\uC81C \uBC1C\uACAC\uD55C \uBB3C\uAC74\uC758 \uC131\uC9C8\uACFC
+    \uADF8 \uC120\uD0DD\uC758 \uACB0\uACFC\uB85C \uC9C4\uD589\uD558\uB294 \uC6B0\uC5F0\uD55C
+    \uBC1C\uACAC."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   excludedFromRandomPool: 0
   narrative: "\uD1B5\uB85C \uAC00\uC7A5\uC790\uB9AC\uC5D0 \uCEE4\uB2E4\uB780 \uAC70\uC6B8\uC774
     \uAE30\uB300\uC5B4 \uC788\uB2E4.\n\n\uB098\uB294 \uBA48\uCDB0 \uC130\uB294\uB370

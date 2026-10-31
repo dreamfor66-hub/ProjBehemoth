@@ -10,11 +10,19 @@ namespace DungeonSlash
         public bool Concealed { get; }
         public bool Discovered { get; private set; }
         public bool Locked { get; private set; }
+        public int SearchProgress { get; private set; }
         public int KeyToken => Annex.RoomId;
         public int ClueVariant { get; }
         public DungeonPassage(DungeonRoom origin, DungeonRoom annex, bool concealed, bool locked, int clueVariant = 0)
-        { Origin = origin; Annex = annex; Concealed = concealed; Discovered = !concealed; Locked = locked; ClueVariant = clueVariant; }
+        { Origin = origin; Annex = annex; Concealed = concealed; Discovered = !concealed; Locked = locked && !concealed; ClueVariant = clueVariant; }
         public void Discover() => Discovered = true;
+        public bool Search(int requiredTouches)
+        {
+            if (Discovered) return true;
+            SearchProgress++;
+            if (SearchProgress >= System.Math.Max(1, requiredTouches)) Discovered = true;
+            return Discovered;
+        }
         public bool Unlock(ISet<int> keys)
         {
             if (!Locked) return true;

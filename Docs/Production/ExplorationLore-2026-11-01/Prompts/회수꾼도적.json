@@ -1,0 +1,12 @@
+{
+  "name": "회수꾼도적",
+  "kind": "combatDirections",
+  "prompt": "Use case stylized-concept. Create a NEW BEHEMOTH human enemy: a lean grave-retrieval cutpurse posing as a recovery worker. ONE consistent adult man with narrow sharp face partly shaded by SOFT charcoal hood, dull rust-brown short mantle, leather work tunic, dark trousers, heavy boots, thick coiled recovery rope over left shoulder, one large plain blank brass name-tag and a short broad knife in RIGHT HAND. No bow, no arrows. He is standing ready to rob travellers, cunning purposeful predatory rather than depressed. Reference1 installed dungeon camera/ink, reference2 original hooded archer style only NOT bow identity. SIX SEPARATE CELLS arranged 3 columns x 2 rows, huge empty gutters, no overlapping cells, transparent background. TOP ROW: front three-quarter IDLE facing PLAYER/camera knife held low; SIDE full body same idle; REAR full body same gear. BOTTOM ROW: READY toward player with knife pulled back by right shoulder and left arm guarding; ATTACK stepping forward with right knife hand cutting toward CAMERA, coherent hand grip, clearly distinct authored pose; DEAD lying still on side with knife dropped and rope slack. Whole figure and weapons fit each cell, equal living character physical scale, same boots/shoulders/rope/hood in every cell, no labels. Thick selective contours, LARGE solid ink-black shadow shapes inside cloak/hood, few broad muted flat planes, simple expressive face, no tiny folds, grain, realistic skin, dense facets, glow or vignette. Every combat pose is newly painted; no cloned rotation/stretch.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-dcbb47f0-dd99-4042-a10e-c600d2917965.png",
+  "accepted": false,
+  "rejection": "Too many torn contour teeth, seams and tiny dark detail; simplify actual forms."
+}

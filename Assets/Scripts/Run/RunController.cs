@@ -137,8 +137,10 @@ namespace DungeonSlash
             var random = new System.Random(seed + roomId * 4099);
             var result = new List<EquipmentData>();
             var premiumRelics = equipment.Where(CanOfferSharedRelic).OrderBy(item => OfferScore(item, random)).ToList();
-            var capacity = Mathf.Clamp(shopStockSize, 5, 6);
-            result.AddRange(premiumRelics.Take(Mathf.Min(3, capacity)));
+            // One expedition supplier carries the former separate merchants' stock.
+            var batches = Mathf.Clamp(State.CurrentAct, 1, 3);
+            var capacity = Mathf.Clamp(shopStockSize, 5, 6) * batches;
+            result.AddRange(premiumRelics.Take(Mathf.Min(3 * batches, capacity)));
             var potionCandidates = equipment.Where(item => item != null && item.IsPotion && !result.Contains(item)).OrderBy(_ => random.Next()).ToList();
             foreach (var candidate in potionCandidates)
             {

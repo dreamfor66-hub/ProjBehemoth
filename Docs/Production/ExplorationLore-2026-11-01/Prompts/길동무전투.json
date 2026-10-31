@@ -1,0 +1,11 @@
+{
+  "name": "길동무전투",
+  "kind": "companion",
+  "prompt": "Use case stylized-concept. TWO distinct painted combat poses in two equal separated columns, transparent background, entire same small BEHEMOTH puppy in each with equal real body scale. Input1 is exact IDENTITY: brown floppy ears, warm brown body, broad cream-white blaze down forehead and muzzle, cream chest and paws, brown leather collar, bandage around LEFT FRONT paw. This puppy has joined the adventurer. LEFT IDLE: standing on all four paws, alert and hopeful, three-quarter facing RIGHT toward opponent. RIGHT ATTACK: same puppy springing toward RIGHT with ears back and mouth open, front paws extended naturally, distinct authored action, not rotated idle. A small dog, not an adult wolf, no new costume, no leash tied to scenery. Camera slightly from above matching installed floor. Input2 installed dungeon is contour/shadow style; input3 original hooded archer is simplified large-form ink style only. Thick selective drawn contours, strong SOLID ink-black inside ear/chest shadows, few broad brown/cream planes, clean simple anatomy, no fur texture, glossy realistic eyes, tiny spikes, floor, labels, UI or glow. Generous empty gutter.",
+  "refs": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-7b47940f-d703-4164-bfc5-32fab5e369a2.png"
+}

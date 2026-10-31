@@ -1,0 +1,12 @@
+{
+  "name": "후드행상공격",
+  "installName": "후드행상변이",
+  "kind": "combatSingle",
+  "state": "Attack",
+  "prompt": "Use case stylized-concept. Paint ONE complete ATTACK pose of the EXACT hooded toad merchant monster from input1. Input1 is identity reference: squat bulky green-grey toad, yellow slit eyes under SOFT dark fabric hood, broad muted olive shoulder mantle, charcoal cloak, leather waist straps and trade sacks, same big coin bag used as weapon. Face and body point toward PLAYER/CAMERA. Swing heavy coin bag TOWARD CAMERA with right hand gripping its actual tied neck, left claw reaches forward, wide open mouth lunges but NO tongue whip or projectile. Natural coherent load-bearing arm, weight grounded in TWO VISIBLE hind feet, both hind legs and forward-reaching claw entirely inside canvas. CRITICAL: FULL monster, ALL feet/claws/bag/cape fit with 12% CLEAR transparent outer margin, nothing clipped at bottom or sides. Do not enlarge to fill canvas. Match input1's anatomy/costume and input2 installed scene's large flat ink style: thick selective drawn contours, huge solid BLACK mouth and cloak interiors, few clean broad muted planes, no fine facets, skin grain, warts, ornaments, vignette or glow. True transparent background, no ground, text or UI. This is a newly authored action painting, no keyed rotation or squash.",
+  "refs": [
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-a2efa903-16d4-454b-9adb-38fed81a73b9.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-5a49a725-d5fc-4657-9dee-46b75adc86b6.png"
+}

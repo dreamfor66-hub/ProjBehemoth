@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uBB36\uC778\uD6C8\uB828\uC778\uD615"
   m_EditorClassIdentifier: 
-  labelKey: ui.eventgrounding.object.Training
+  labelKey: ui.lore.object.Training
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.Training
   wallMounted: 0

@@ -1,0 +1,7 @@
+{
+  "name": "예약받는짐꾼",
+  "prompt": "Use case stylized-concept. Three isolated equal columns FRONT three-quarter facing player, SIDE, REAR of the SAME person, whole body, aligned soles and equal physical scale, wide transparent gutters so no silhouette crosses a third. True transparent background; no floor, chair, text, labels, UI or vignette. Input1 is identity EDIT TARGET; input2 installed dungeon sets camera/contour/lighting; input3 original hooded archer is large-form style only. Substantial solid ink-black INNER shadow shapes, thick selective drawn contours, few broad flat color planes, simplified faces, very few folds and edges, no grain, realistic materials, tiny facets or glossy rendering. NOT a sad squatting beggar. Redraw the young female porter from input1 STANDING under her wood packframe, braced naturally in a purposeful walking pause, both shoulder straps gripped; yellow headscarf, short dark hair, cream rolled sleeves, tan work coat, dark travelling trousers, brown boots. Head raised, an easy confident greeting. Broad tied canvas parcels on back, small stamped waybill on belt. A professional expedition courier who knows the supply paths and is hurrying to her next delivery. Keep this identity, outfit and parcel frame. No sitting, stool or slumped head.",
+  "target": "T_Sprite_Character_예약받는짐꾼_Front.png",
+  "kind": "directions",
+  "source": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-386d8e40-f643-412d-8bf8-995d05fc019f.png"
+}
