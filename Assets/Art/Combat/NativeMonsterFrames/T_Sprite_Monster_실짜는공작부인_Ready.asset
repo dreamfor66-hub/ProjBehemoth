@@ -9,8 +9,8 @@ Sprite:
   m_Name: "T_Sprite_Monster_\uC2E4\uC9DC\uB294\uACF5\uC791\uBD80\uC778_Ready"
   m_Rect:
     serializedVersion: 2
-    x: 14
-    y: 27
+    x: 1
+    y: 1
     width: 1228
     height: 1193
   m_Offset: {x: 0, y: -278.35593}
@@ -27,7 +27,7 @@ Sprite:
   m_SpriteAtlas: {fileID: 0}
   m_RD:
     serializedVersion: 3
-    texture: {fileID: 2800000, guid: c4bebd7d4f06b9b4b88b216da5d63574, type: 3}
+    texture: {fileID: 2800000, guid: 76a75cc3749df9645abeb1f9da172779, type: 3}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -107,18 +107,18 @@ Sprite:
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
-      x: 14
-      y: 27
+      x: 1
+      y: 1
       width: 1228
       height: 1193
     textureRectOffset: {x: 0, y: 0}
     atlasRectOffset: {x: -1, y: -1}
     settingsRaw: 0
-    uvTransform: {x: 205.25426, y: 628, z: 205.25426, w: 345.14407}
+    uvTransform: {x: 205.25426, y: 615, z: 205.25426, w: 319.144073}
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 3
-    texture: {fileID: 2800000, guid: c4bebd7d4f06b9b4b88b216da5d63574, type: 3}
+    texture: {fileID: 2800000, guid: 76a75cc3749df9645abeb1f9da172779, type: 3}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -198,14 +198,14 @@ Sprite:
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
-      x: 14
-      y: 27
+      x: 1
+      y: 1
       width: 1228
       height: 1193
     textureRectOffset: {x: 0, y: 0}
     atlasRectOffset: {x: -1, y: -1}
     settingsRaw: 0
-    uvTransform: {x: 205.25426, y: 628, z: 205.25426, w: 345.14407}
+    uvTransform: {x: 205.25426, y: 615, z: 205.25426, w: 319.144073}
     downscaleMultiplier: 1
   m_PhysicsShape: []
   m_Bones: []

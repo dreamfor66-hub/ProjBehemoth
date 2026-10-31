@@ -12,7 +12,7 @@ using Object=UnityEngine.Object;
 // Only the changed target/charge-hit/break presentation, in the existing Editor with cloned practice data.
 public sealed class WeakPointVisualLiveProbe:MonoBehaviour
 {
-    const string Folder="Docs/Production/CombatInk-2026-10-29/";
+    public const string Folder="Docs/Production/WeakPointFx-2026-10-31/";
     CombatController combat;CombatSceneView scene;CombatInputController input;
     bool background;
     void Awake(){background=Application.runInBackground;Application.runInBackground=true;}
@@ -27,10 +27,10 @@ public sealed class WeakPointVisualLiveProbe:MonoBehaviour
         typeof(MonsterRuntime).GetProperty("StateTimer").SetValue(combat.Enemies[0],2.85f);
         yield return Frame("Final-HUD");UnityEditor.EditorApplication.isPaused=true;
     }
-    void Setup(int hits,bool optional=false,bool authored=false)
+    void Setup(int hits,bool optional=false,bool authored=false,string monsterPath="Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골전사.asset")
     {
         var practice=Object.FindFirstObjectByType<OctoberReviewLiveProbe>()??new GameObject("Weak point practice clone").AddComponent<OctoberReviewLiveProbe>();
-        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
+        practice.Setup(CharacterKind.Warrior,false,monsterPath);
         combat=Object.FindFirstObjectByType<CombatController>();scene=Object.FindFirstObjectByType<CombatSceneView>();input=Object.FindFirstObjectByType<CombatInputController>();
         // Keep this visual evidence clear of the unrelated six-second start-controls hint.
         var arcade=Object.FindFirstObjectByType<ArcadeHudController>();
@@ -60,19 +60,18 @@ public sealed class WeakPointVisualLiveProbe:MonoBehaviour
     static void Capture(string name)
     {
         Directory.CreateDirectory(Folder+"Screenshots");ScreenCapture.CaptureScreenshot(Folder+"Screenshots/"+name+".png");
+        File.AppendAllText(Folder+"CaptureTimes.csv",name+","+Time.unscaledTime.ToString("F4",System.Globalization.CultureInfo.InvariantCulture)+"\n");
     }
     IEnumerator Frame(string name){yield return null;yield return new WaitForEndOfFrame();Capture(name);}
     IEnumerator Matrix()
     {
-        Directory.CreateDirectory(Folder);File.WriteAllText(Folder+"Live.txt","Scoped live ink target/telegraph matrix. Cloned Skeleton; production pointer handlers.\n");
+        Directory.CreateDirectory(Folder);File.WriteAllText(Folder+"Live.txt","Scoped painted weak-point/impact matrix. Existing Unity Editor, cloned monsters, production pointer handlers.\n");
+        File.WriteAllText(Folder+"CaptureTimes.csv","frame,unscaledSeconds\n");
         Setup(1);yield return Frame("Skeleton-Target");
         var point=combat.Enemies[0].WeakPoints.Single();var target=Object.FindFirstObjectByType<WeakPointView>().reticle;var radius=point.HitShape.Radius;
         var targetStyle=target.Style;var targetDiameter=target.rectTransform.rect.width;
         Check(target.defaultMaterial==target.Style.material&&target.Style.material!=null,"target uses native ink material, continuous curves and authored colors");
         Check(Object.FindFirstObjectByType<ArcadeRasterCamera>().TextRenderer.Draws.Any(d=>d.mesh.name.Contains(target.name)),"target participates in the native resolution composite");
-        var monster=Object.FindFirstObjectByType<MonsterView>();
-        var timer=typeof(MonsterView).GetField("chargeTimeBackdrop",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(monster) as Image;
-        Check(timer.GetComponentInChildren<InkUiSurface>().role==InkSurfaceRole.Countdown,"countdown uses frameless ink shadow without a duration gauge");
         yield return Swipe(point,false);Check(point.RemainingHits==1&&!point.IsDestroyed,"normal swipe leaves weak point intact");
         yield return Swipe(point,true);yield return new WaitForEndOfFrame();Capture("OneHit-Break-Start");
         Check(point.RemainingHits==0&&(target==null||!target.gameObject.activeSelf),"charged production swipe destroys one-hit target and removes intact reticle immediately");
@@ -80,10 +79,13 @@ public sealed class WeakPointVisualLiveProbe:MonoBehaviour
         Check(burst!=null&&burst.shatter!=null&&burst.shatter.style==targetStyle&&Mathf.Approximately(burst.shatter.diameter,targetDiameter),"break inherits the destroyed target's exact style and diameter");
         Check(burst!=null&&burst.GetComponentsInChildren<Image>(true).All(i=>!i.gameObject.activeInHierarchy),"legacy gold rectangle particles stay inactive");
         Check(Mathf.Approximately(radius,point.HitShape.Radius),"presentation change preserves the combat hit radius");
-        yield return new WaitForSecondsRealtime(.09f);yield return Frame("OneHit-Break-Fragments");
+        yield return new WaitForSecondsRealtime(.06f);yield return Frame("OneHit-Break-Fragments");
         // A random critical hit may tint the entire first impact frame; sample the surviving particles after that flash.
         Check(burst!=null&&burst.shatter.progress>0&&burst.shatter.progress<1,"continuous ink fragments disperse during their lifetime");
-        yield return new WaitForSecondsRealtime(.48f);Check(Object.FindObjectsByType<WeakPointBreakFxView>(FindObjectsSortMode.None).Length==0,"break particles clean up after their impact lifetime");
+        var mesh=burst.shatter.canvasRenderer.GetMesh();
+        Check(mesh.bounds.size.x>targetDiameter*2&&mesh.bounds.size.y>targetDiameter*2,"live fragments burst beyond twice the intact diameter early in the impact");
+        Check(burst.shatter.rectTransform.rect.width>mesh.bounds.size.x,"expanded UI bounds contain the burst for edge culling");
+        yield return new WaitForSecondsRealtime(.65f);Check(Object.FindObjectsByType<WeakPointBreakFxView>(FindObjectsSortMode.None).Length==0,"break particles clean up after their impact lifetime");
         Setup(2,true);yield return Frame("MultiHit-And-Optional");
         point=combat.Enemies[0].WeakPoints.Single(p=>!p.IsOptional);
         var optional=combat.Enemies[0].WeakPoints.Single(p=>p.IsOptional);
@@ -96,14 +98,28 @@ public sealed class WeakPointVisualLiveProbe:MonoBehaviour
         burst=Object.FindFirstObjectByType<WeakPointBreakFxView>();
         Check(point.RemainingHits==0&&burst!=null&&burst.shatter.style==alternate,"final multi-hit break inherits an instance style/shape edit without a separate particle rebuild");
         Check(optional.RemainingHits==1,"breaking a required target does not consume optional target hits");
-        yield return new WaitForSecondsRealtime(.6f);Object.Destroy(alternate);
-        Setup(1);yield return new WaitForSecondsRealtime(.2f);yield return Frame("Final-Target");
-        var enemy=combat.Enemies[0];enemy.EndCharge();enemy.NormalAttack.windupDuration=.5f;enemy.BeginNormalAttack();yield return null;
-        monster=Object.FindFirstObjectByType<MonsterView>();
-        var timeLabel=typeof(MonsterView).GetField("chargeTimeLabel",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(monster) as TMPro.TextMeshProUGUI;
-        Check(timeLabel!=null&&timeLabel.enabled,"normal attack also shows the frameless countdown");
-        yield return new WaitForSeconds(.7f);
-        Check(timeLabel!=null&&!timeLabel.enabled,"timer disappears after normal windup finishes");
+        yield return new WaitForSecondsRealtime(.65f);Object.Destroy(alternate);
+        foreach(var species in new[]{"해골전사","거미","흡혈박쥐","미궁스핑크스"})
+        {
+            var boss=species=="미궁스핑크스";
+            Setup(1,false,true,"Assets/Data/Combat/Monsters/Data_Monster_B1_"+(boss?"Boss_":"Normal_")+species+".asset");
+            yield return Frame("Authored-"+species);
+            var views=Object.FindObjectsByType<WeakPointView>(FindObjectsSortMode.None);
+            Check(views.Length>0&&views.Length==combat.Enemies[0].WeakPoints.Count&&views.All(v=>v.reticle!=null&&v.reticle.gameObject.activeInHierarchy),species+" authored targets display at their real body positions and species scale");
+        }
+        Setup(1);yield return Frame("Final-Target");
+        point=combat.Enemies[0].WeakPoints.Single();yield return Swipe(point,true);
+        // Buffer live frames first; PNG compression/disk writes must not slow down the burst being reviewed.
+        var frames=new List<Texture2D>();var times=new List<float>();var until=Time.unscaledTime+.6f;
+        while(Time.unscaledTime<until)
+        {yield return new WaitForEndOfFrame();frames.Add(ScreenCapture.CaptureScreenshotAsTexture());times.Add(Time.unscaledTime);yield return null;}
+        for(var index=0;index<frames.Count;index++)
+        {
+            var name="BurstSequence-"+index.ToString("D3");
+            File.WriteAllBytes(Folder+"Screenshots/"+name+".png",frames[index].EncodeToPNG());
+            File.AppendAllText(Folder+"CaptureTimes.csv",name+","+times[index].ToString("F4",System.Globalization.CultureInfo.InvariantCulture)+"\n");
+            Object.Destroy(frames[index]);
+        }
         File.AppendAllText(Folder+"Live.txt","COMPLETE\n");
     }
 }

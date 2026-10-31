@@ -1,10 +1,13 @@
 """Independent disk, alias and serialized-reference audit after Unity maintenance."""
 import json
 import re
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
+if '--correction' in sys.argv:
+    HERE = HERE / 'Correction'
 read = lambda p: json.loads(p.read_text(encoding='utf-8-sig'))
 plan = read(HERE / 'Plan.json')
 before = read(HERE / 'Before.json')['rows']

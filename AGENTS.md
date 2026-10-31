@@ -1,6 +1,7 @@
 # Behemoth production conventions
 
 - Art resource names follow `T_Sprite_분류_이름_상태` for character/monster paintings and `T_UI_분류_이름` for UI (`T_UI_Icon_이름`, `T_UI_Common_Rect_이름`). See Assets/Art/AGENTS.md. Preserve GUIDs and sprite geometry when renaming; delete unused art only after dependency and dynamic-load checks.
+- Keep production sprite paintings editable as ordinary PNG textures. Avoid Sprite-only .asset deliveries. Prefer imported PNG sprites; existing native Sprite wrappers must have a same-name PNG beside them and reference that file directly so edits propagate. Portrait crops and sheet frames must be independently editable. This is a persistent Behemoth production rule.
 
 - All project illustration, including event art, must match the actual installed characters and backgrounds: bold drawn contours, substantial solid ink-black shadow shapes, simplified faces/materials and a clear focal object or action. Low exposure, a brown palette or a dark vignette do not establish this style. Reject semi-realistic facial rendering, finely modeled cloth/stone and uniform detail across the whole scene. Supply the actual project images as generation inputs, then compare the output beside them at popup size before installation. See Assets/Art/AGENTS.md for the event-art acceptance criteria.
 

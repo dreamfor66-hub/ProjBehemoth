@@ -1,0 +1,1 @@
+2 obsolete prefab preview sprite references replaced with the current skeleton Idle painting.

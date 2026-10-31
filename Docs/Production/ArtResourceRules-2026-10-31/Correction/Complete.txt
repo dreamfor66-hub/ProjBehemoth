@@ -1,0 +1,2 @@
+Moved 4 active art assets. Deleted 368 unused art/presentation assets.
+All retained asset GUIDs, direct dependencies, sprite file IDs, textures, rects, pivots, borders and PPU preserved.

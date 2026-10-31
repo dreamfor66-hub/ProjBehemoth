@@ -71,6 +71,7 @@ namespace DungeonSlash
 
         public void PlayChargeHit(int previousRemainingHits, int currentRemainingHits)
         {
+            if(currentRemainingHits>0&&reticle!=null)reticle.PlayHit();
             if(currentRemainingHits<=0)
             {
                 if(reticle!=null)reticle.gameObject.SetActive(false);

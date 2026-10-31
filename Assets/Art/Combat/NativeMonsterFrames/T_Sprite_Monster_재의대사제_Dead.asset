@@ -27,7 +27,7 @@ Sprite:
   m_SpriteAtlas: {fileID: 0}
   m_RD:
     serializedVersion: 3
-    texture: {fileID: 2800000, guid: 31d56ef4d7f0036498128c440e7c2d43, type: 3}
+    texture: {fileID: 2800000, guid: 228365591ed2b1d4ba16974434332e51, type: 3}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -118,7 +118,7 @@ Sprite:
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 3
-    texture: {fileID: 2800000, guid: 31d56ef4d7f0036498128c440e7c2d43, type: 3}
+    texture: {fileID: 2800000, guid: 228365591ed2b1d4ba16974434332e51, type: 3}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:

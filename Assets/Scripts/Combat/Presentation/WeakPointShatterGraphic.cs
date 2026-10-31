@@ -14,7 +14,7 @@ namespace DungeonSlash
         protected override void OnPopulateMesh(VertexHelper vh)
         {
             vh.Clear();if(progress>=1)return;
-            CombatInkDrawing.Target(vh,diameter,Style,color,progress);
+            CombatInkDrawing.Shatter(vh,diameter,Style,color,progress);
         }
     }
 }

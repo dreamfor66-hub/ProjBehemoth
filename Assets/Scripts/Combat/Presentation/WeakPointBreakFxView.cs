@@ -33,6 +33,10 @@ namespace DungeonSlash
                     shatter.diameter=Mathf.Min(source.rectTransform.rect.width,source.rectTransform.rect.height);
                 }
                 foreach(var shard in shards)if(shard!=null)shard.gameObject.SetActive(false);
+                // Keep off-centre burst geometry inside its UI culling bounds at screen edges.
+                var style=shatter.style!=null?shatter.style:WeakPointVisualStyle.Default;
+                var extent=shatter.diameter*(1+style.breakDistance/96f*3.5f);
+                shatter.rectTransform.sizeDelta=Vector2.one*extent;
                 shatter.Show(0);
             }
             activeLifetime = Mathf.Max(shatter!=null?(shatter.style!=null?shatter.style:WeakPointVisualStyle.Default).breakLifetime:lifetime, minimumLifetime);

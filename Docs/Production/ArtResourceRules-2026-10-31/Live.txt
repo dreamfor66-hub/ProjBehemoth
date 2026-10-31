@@ -53,3 +53,4 @@ PASS all 160 content UI icon bindings resolve to textures
 PASS visible winter unicorn uses renamed authored Ready sprite
 PASS visible Monk attack uses renamed authored Attack sprite
 PASS live HUD portrait and potion bag remain assigned
+PASS migrated spider Ready frame renders from its directly editable PNG

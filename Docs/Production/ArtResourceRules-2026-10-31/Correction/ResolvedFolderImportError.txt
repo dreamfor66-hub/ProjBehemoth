@@ -1,0 +1,3 @@
+System.IO.IOException: Parent directory is not in asset database
+  at ArtResourceMaintenance.Apply (System.String folder) [0x00324] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ArtResourceMaintenance.cs:141 
+  at ArtResourceMaintenance.Poll () [0x00124] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ArtResourceMaintenance.cs:53 

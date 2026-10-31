@@ -1,0 +1,1 @@
+PASS 220 editable textures; zero Sprite-only paintings.

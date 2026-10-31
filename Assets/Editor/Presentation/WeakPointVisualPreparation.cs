@@ -48,7 +48,7 @@ internal static class WeakPointVisualPreparation
             var rect=graphic.rectTransform;rect.anchorMin=rect.anchorMax=rect.pivot=Vector2.one*.5f;rect.sizeDelta=new Vector2(96,96);rect.anchoredPosition=Vector2.zero;
             prefab.GetComponent<WeakPointBreakFxView>().shatter=graphic;
         });
-        AssetDatabase.SaveAssets();Directory.CreateDirectory("Logs");File.WriteAllText("Logs/WeakPointVisual-Preparation.txt","Shared crimson broken reticle, warm central core, no white band. Break graphic fragments the same silhouette and inherits the actual target style/size.\n");
+        AssetDatabase.SaveAssets();Directory.CreateDirectory("Logs");File.WriteAllText("Logs/WeakPointVisual-Preparation.txt","Painted bone bullseye, vermilion centre and opaque black separation. Local impact star and outward ink fragments inherit the actual target palette/size.\n");
     }
     static void Edit(string path,Action<GameObject> edit)
     {var prefab=PrefabUtility.LoadPrefabContents(path);try{edit(prefab);PrefabUtility.SaveAsPrefabAsset(prefab,path);}finally{PrefabUtility.UnloadPrefabContents(prefab);}}

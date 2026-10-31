@@ -31,6 +31,8 @@ MonoBehaviour:
   pattern: 0
   supportId: 
   diesWithLeader: 0
+  supportRoster: []
+  reinforcementInterval: 0
   useOrbit: 0
   orbitRadius: 170
   orbitSpeed: 0.55
@@ -41,20 +43,14 @@ MonoBehaviour:
   stunDamageMultiplier: 1.5
   experienceReward: 17
   goldReward: 9
-  combatScale: 0.85
+  combatScale: 1
   hitBoxes:
-  - center: {x: -60.387863, y: 0}
-    radius: 48.310295
-  - center: {x: -36.23272, y: 0}
-    radius: 48.310295
-  - center: {x: -12.077572, y: 0}
-    radius: 48.310295
-  - center: {x: 12.077576, y: 0}
-    radius: 48.310295
-  - center: {x: 36.23272, y: 0}
-    radius: 48.310295
-  - center: {x: 60.387863, y: 0}
-    radius: 48.310295
+  - center: {x: 0.59373474, y: 44.705902}
+    radius: 74.49752
+  - center: {x: -53.08824, y: 44.719147}
+    radius: 72.14238
+  - center: {x: 54.205894, y: 44.160313}
+    radius: 69.799286
   attacks:
   - {fileID: 11400000, guid: 3f8fd5beba668cf4db53470b0f80c932, type: 2}
   - {fileID: 11400000, guid: ad8a938afe16b9842be6fd85bed5715b, type: 2}

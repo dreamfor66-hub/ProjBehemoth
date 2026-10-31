@@ -1,9 +1,12 @@
-"""Plan art maintenance from Unity's actual GUID dependency graph."""
+"""Historical first-pass plan. Superseded by Correction/prepare.py: orphan data is not a usage root."""
 import collections
 import json
 import re
 import sys
 from pathlib import Path
+
+if __name__ == '__main__' and sys.argv[-1] != 'inventory':
+    raise SystemExit('Superseded: run Correction/prepare.py. Orphan presentation assets must not be treated as use roots.')
 
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent

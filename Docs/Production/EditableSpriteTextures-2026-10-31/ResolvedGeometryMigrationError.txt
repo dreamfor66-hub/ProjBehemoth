@@ -1,0 +1,4 @@
+System.IO.InvalidDataException: Sprite geometry/reference mismatch: Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_가면성가수_Attack.asset
+  at EditableSpriteTexturePreparation.ValidateGeometry (EditableSpriteTexturePreparation+Plan plan) [0x0010f] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\EditableSpriteTexturePreparation.cs:170 
+  at EditableSpriteTexturePreparation.Install (System.Boolean resume) [0x0060b] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\EditableSpriteTexturePreparation.cs:136 
+  at EditableSpriteTexturePreparation.Poll () [0x00074] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\EditableSpriteTexturePreparation.cs:34 

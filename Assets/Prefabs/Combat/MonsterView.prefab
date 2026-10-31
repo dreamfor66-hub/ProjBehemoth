@@ -153,7 +153,6 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
-  countdown: 1
 --- !u!1 &1150829181615590984
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +264,6 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
-  countdown: 1
 --- !u!1 &1680676938159058826
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,7 +343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 44ffbc9fcd645bf29b48038137d38711, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5925336656225b846b4200bbfe2ebf7d, type: 2}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -454,7 +452,6 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
-  countdown: 1
 --- !u!1 &1974976591597035481
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +681,6 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
-  countdown: 1
 --- !u!1 &2059955195170502434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1244,6 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
-  countdown: 1
 --- !u!1 &3620301267848041460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1397,6 @@ MonoBehaviour:
   titleBand: 0
   titleLabel: {fileID: 0}
   titleBandHeight: 0
-  countdown: 1
 --- !u!1 &5640370594958897115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,7 +1843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 44ffbc9fcd645bf29b48038137d38711, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5925336656225b846b4200bbfe2ebf7d, type: 2}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

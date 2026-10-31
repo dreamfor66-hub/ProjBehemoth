@@ -40,7 +40,7 @@ internal static class CombatInkVerification
     }
     static void Finish()
     {
-        const string log="Docs/Production/CombatInk-2026-10-29/Live.txt";
+        const string log=WeakPointVisualLiveProbe.Folder+"Live.txt";
         if(!File.Exists(log)||!File.ReadAllText(log).Contains("COMPLETE"))return;
         EditorApplication.update-=Finish;
         if(stopAfter){EditorApplication.isPlaying=false;EditorApplication.delayCall+=()=>{if(!EditorApplication.isPlaying&&!string.IsNullOrEmpty(previousScene))EditorSceneManager.OpenScene(previousScene);};}else EditorApplication.isPaused=wasPaused;

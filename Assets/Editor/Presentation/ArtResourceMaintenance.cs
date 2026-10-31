@@ -49,6 +49,8 @@ internal static class ArtResourceMaintenance
         {
             if (command == "inventory") Export("Inventory.json");
             if (command == "apply") Apply();
+            if (command == "canonical-placeholder") ReplaceLegacyPlaceholder();
+            if (command == "cleanup") Apply(Folder + "Correction/");
             if (command == "smoke")
             {
                 if (File.Exists(Folder + "LiveComplete.txt")) File.Delete(Folder + "LiveComplete.txt");
@@ -71,18 +73,55 @@ internal static class ArtResourceMaintenance
         }).ToArray() };
     }
     static void Export(string name) => File.WriteAllText(Folder + name, JsonUtility.ToJson(Snapshot(), true));
-    static void Apply()
+    static void ReplaceLegacyPlaceholder()
+    {
+        const string path = "Assets/Prefabs/Combat/MonsterView.prefab";
+        var sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_해골전사_Idle.asset");
+        if (sprite == null) throw new InvalidDataException("Missing current skeleton Idle sprite.");
+        var root = PrefabUtility.LoadPrefabContents(path);
+        var count = 0;
+        try
+        {
+            foreach (var component in root.GetComponentsInChildren<Component>(true).Where(c => c != null))
+            {
+                var serialized = new SerializedObject(component); var property = serialized.GetIterator();
+                while (property.Next(true))
+                {
+                    if (property.propertyType != SerializedPropertyType.ObjectReference || !(property.objectReferenceValue is Sprite old)) continue;
+                    if (!AssetDatabase.GetAssetPath(old).StartsWith("Assets/Art/Enemies/Combat/")) continue;
+                    property.objectReferenceValue = sprite; count++;
+                }
+                serialized.ApplyModifiedPropertiesWithoutUndo();
+            }
+            PrefabUtility.SaveAsPrefabAsset(root, path);
+        }
+        finally { PrefabUtility.UnloadPrefabContents(root); }
+        Directory.CreateDirectory(Folder + "Correction/");
+        File.WriteAllText(Folder + "Correction/Placeholder.txt", count + " obsolete prefab preview sprite references replaced with the current skeleton Idle painting.\n");
+        Export("Inventory.json");
+    }
+    static void EnsureArtFolder(string path)
+    {
+        if (AssetDatabase.IsValidFolder(path)) return;
+        if (!path.StartsWith("Assets/Art/")) throw new InvalidDataException("Invalid destination folder: " + path);
+        var parent = Path.GetDirectoryName(path).Replace('\\', '/');
+        EnsureArtFolder(parent); AssetDatabase.CreateFolder(parent, Path.GetFileName(path));
+    }
+    static void Apply(string folder = Folder)
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Leave Play mode before asset maintenance.");
-        var plan = JsonUtility.FromJson<Plan>(File.ReadAllText(Folder + "Plan.json"));
+        Directory.CreateDirectory(folder);
+        var plan = JsonUtility.FromJson<Plan>(File.ReadAllText(folder + "Plan.json"));
         var before = Snapshot();
-        File.WriteAllText(Folder + "Before.json", JsonUtility.ToJson(before, true));
+        File.WriteAllText(folder + "Before.json", JsonUtility.ToJson(before, true));
         var deletion = new HashSet<string>(plan.delete, StringComparer.Ordinal);
         var deleteGuids = new HashSet<string>(before.rows.Where(r => deletion.Contains(r.path)).Select(r => r.guid));
         var dangling = before.rows.Where(r => !deletion.Contains(r.path) && r.dependencies.Any(deleteGuids.Contains)).ToArray();
         if (dangling.Length != 0) throw new InvalidDataException("Deletion still referenced: " + string.Join(", ", dangling.Select(r => r.path)));
         foreach (var path in plan.delete)
-            if (!path.StartsWith("Assets/Art/", StringComparison.Ordinal) || AssetDatabase.IsValidFolder(path) || !File.Exists(path))
+            if (!(path.StartsWith("Assets/Art/", StringComparison.Ordinal) ||
+                  folder == Folder + "Correction/" && path.StartsWith("Assets/Data/Presentation/", StringComparison.Ordinal) && path.EndsWith(".asset")) ||
+                AssetDatabase.IsValidFolder(path) || !File.Exists(path))
                 throw new InvalidDataException("Invalid deletion: " + path);
         var targets = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         foreach (var move in plan.moves)
@@ -92,6 +131,9 @@ internal static class ArtResourceMaintenance
                 throw new InvalidDataException("Invalid move: " + move.oldPath + " -> " + move.path);
         }
         var index = File.Exists(DesignerAssetPaths.IndexPath) ? JsonUtility.FromJson<DesignerAssetPaths.Index>(File.ReadAllText(DesignerAssetPaths.IndexPath)) : new DesignerAssetPaths.Index();
+        // Folder imports must finish before pausing imports for the batch move.
+        foreach (var move in plan.moves) EnsureArtFolder(Path.GetDirectoryName(move.path).Replace('\\', '/'));
+        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
         AssetDatabase.StartAssetEditing();
         try
         {
@@ -119,11 +161,12 @@ internal static class ArtResourceMaintenance
         DesignerAssetPaths.SaveIndex(index);
         AssetDatabase.SaveAssets();
         // Delete only verified empty Art directories, deepest first.
-        foreach (var directory in AssetDatabase.GetAllAssetPaths().Where(p => p.StartsWith("Assets/Art/") && AssetDatabase.IsValidFolder(p)).OrderByDescending(p => p.Length).ToArray())
+        foreach (var directory in AssetDatabase.GetAllAssetPaths().Where(p => (p.StartsWith("Assets/Art/") ||
+                     folder == Folder + "Correction/" && p.StartsWith("Assets/Data/Presentation/")) && AssetDatabase.IsValidFolder(p)).OrderByDescending(p => p.Length).ToArray())
             if (!Directory.EnumerateFileSystemEntries(directory).Any()) AssetDatabase.DeleteAsset(directory);
         AssetDatabase.Refresh();
         var after = Snapshot();
-        File.WriteAllText(Folder + "After.json", JsonUtility.ToJson(after, true));
+        File.WriteAllText(folder + "After.json", JsonUtility.ToJson(after, true));
         var current = after.rows.ToDictionary(r => r.guid);
         var errors = new List<string>();
         foreach (var row in before.rows.Where(r => !deleteGuids.Contains(r.guid)))
@@ -135,7 +178,7 @@ internal static class ArtResourceMaintenance
         foreach (var move in plan.moves)
             if (AssetDatabase.AssetPathToGUID(move.path) != move.guid) errors.Add("Moved GUID mismatch: " + move.path);
         if (errors.Count != 0) throw new InvalidDataException(string.Join("\n", errors));
-        File.WriteAllText(Folder + "Complete.txt", $"Renamed {plan.moves.Length} art assets. Deleted {plan.delete.Length} unused art assets.\nAll retained asset GUIDs, direct dependencies, sprite file IDs, textures, rects, pivots, borders and PPU preserved.\n");
+        File.WriteAllText(folder + "Complete.txt", $"Moved {plan.moves.Length} active art assets. Deleted {plan.delete.Length} unused art/presentation assets.\nAll retained asset GUIDs, direct dependencies, sprite file IDs, textures, rects, pivots, borders and PPU preserved.\n");
     }
     [Serializable] sealed class SpriteSet { public SpriteRow[] sprites; }
 }

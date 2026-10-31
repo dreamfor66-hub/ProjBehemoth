@@ -29,6 +29,8 @@ MonoBehaviour:
   pattern: 0
   supportId: 
   diesWithLeader: 0
+  supportRoster: []
+  reinforcementInterval: 0
   useOrbit: 0
   orbitRadius: 170
   orbitSpeed: 0.55
@@ -39,7 +41,7 @@ MonoBehaviour:
   stunDamageMultiplier: 1.65
   experienceReward: 21
   goldReward: 4
-  combatScale: 0.72
+  combatScale: 0.9
   hitBoxes:
   - center: {x: 0, y: -20.061356}
     radius: 93.61966

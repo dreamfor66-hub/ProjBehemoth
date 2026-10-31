@@ -1,0 +1,4 @@
+PASS PNG pixel edit reimports into the existing Sprite: Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_가면성가수_Portrait.png
+PASS original PNG bytes restored exactly
+PASS PNG pixel edit reimports into the existing Sprite: Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_가면성가수_Attack.png
+PASS original PNG bytes restored exactly

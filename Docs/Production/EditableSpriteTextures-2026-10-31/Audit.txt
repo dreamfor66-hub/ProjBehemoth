@@ -1,0 +1,4 @@
+Created 220 directly editable PNG textures.
+Removed 161 unreferenced former source PNGs.
+Standalone native Sprites without their own adjacent PNG: 0.
+All migrated Sprite GUIDs, physical dimensions, pivots, PPU, borders and mesh geometry preserved.

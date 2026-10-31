@@ -1,0 +1,21 @@
+Scoped painted weak-point/impact matrix. Existing Unity Editor, cloned monsters, production pointer handlers.
+PASS target uses native ink material, continuous curves and authored colors
+PASS target participates in the native resolution composite
+PASS normal swipe leaves weak point intact
+PASS charged production swipe destroys one-hit target and removes intact reticle immediately
+PASS break inherits the destroyed target's exact style and diameter
+PASS legacy gold rectangle particles stay inactive
+PASS presentation change preserves the combat hit radius
+PASS continuous ink fragments disperse during their lifetime
+PASS live fragments burst beyond twice the intact diameter early in the impact
+PASS expanded UI bounds contain the burst for edge culling
+PASS break particles clean up after their impact lifetime
+PASS partial multi-hit charge removes one hit while preserving optional target
+PASS partial hit never emits final shatter
+PASS final multi-hit break inherits an instance style/shape edit without a separate particle rebuild
+PASS breaking a required target does not consume optional target hits
+PASS 해골전사 authored targets display at their real body positions and species scale
+PASS 거미 authored targets display at their real body positions and species scale
+PASS 흡혈박쥐 authored targets display at their real body positions and species scale
+PASS 미궁스핑크스 authored targets display at their real body positions and species scale
+COMPLETE

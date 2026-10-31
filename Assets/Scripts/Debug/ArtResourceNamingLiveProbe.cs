@@ -62,6 +62,17 @@ public sealed class ArtResourceNamingLiveProbe : MonoBehaviour
         var hud = Object.FindFirstObjectByType<FatigueHudView>(); var bag = Object.FindFirstObjectByType<PotionBagView>();
         Check(hud != null && Valid(hud.face.sprite) && bag != null && Valid(bag.artwork.sprite), "live HUD portrait and potion bag remain assigned");
         var texture = ScreenCapture.CaptureScreenshotAsTexture(); File.WriteAllBytes(Folder + "RenamedCombat.png", texture.EncodeToPNG()); Object.Destroy(texture);
+        // Exercise a migrated native combat frame as well as the already paired boss artwork.
+        combat.ResetEncounter();
+        var spider = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data" }).Select(g => AssetDatabase.LoadAssetAtPath<MonsterData>(AssetDatabase.GUIDToAssetPath(g))).First(m => m.displayName == "거미");
+        var spiderClone = Object.Instantiate(spider); spiderClone.maxHp = 50000; spiderClone.normalAttackInterval = spiderClone.chargeInterval = 999;
+        combat.PrepareEncounter(run.State, new[] { spiderClone }, 1); combat.BeginPreparedCombat();
+        yield return new WaitForSecondsRealtime(.5f);
+        combat.Enemies[0].StartCharge(Object.FindFirstObjectByType<CombatSceneView>().MonsterPosition);
+        yield return null; Canvas.ForceUpdateCanvases(); yield return new WaitForEndOfFrame();
+        monsterBody = Field<Image>(Object.FindFirstObjectByType<MonsterView>(), "body");
+        Check(monsterBody.sprite == spider.combatAnimation.ready && AssetDatabase.GetAssetPath(monsterBody.sprite.texture) == "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_거미_Ready.png", "migrated spider Ready frame renders from its directly editable PNG");
+        texture = ScreenCapture.CaptureScreenshotAsTexture(); File.WriteAllBytes(Folder + "EditableSpider.png", texture.EncodeToPNG()); Object.Destroy(texture);
         File.WriteAllText(Folder + "LiveComplete.txt", passed + " PASS / " + failed + " FAIL\n");
     }
     static string DesignerDataNamingCompatible(string name) => name.Replace(" ", "");
