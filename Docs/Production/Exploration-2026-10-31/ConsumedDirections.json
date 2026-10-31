@@ -1,0 +1,38 @@
+[
+  {
+    "key": "seed_used_side",
+    "stem": "T_UI_World_Seed_",
+    "state": "UsedSide",
+    "normal": "Side",
+    "desc": "The rooted seed has been removed, leaving only one flat paper and a dark soil/root stain on the tabletop. Empty tabletop, no plant or seed. Keep the exact SIDE camera view of image 1 and the same stone table construction.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8f763628-898b-4700-91eb-078a20eb4aa0.png",
+    "prompt": "Production Unity transparent PNG sprite edit for Behemoth. Image 1 is the edit target with exact camera/geometry; image 2 shows its consumed state from a DIFFERENT angle, use only for state content. Images 3 and 4 are actual installed background and player, image 5 is the user's original simplification authority. The rooted seed has been removed, leaving only one flat paper and a dark soil/root stain on the tabletop. Empty tabletop, no plant or seed. Keep the exact SIDE camera view of image 1 and the same stone table construction. Preserve source silhouette, scale, perspective and identity. Very broad simple stone/wood planes, selective thick drawn outlines, strong solid ink-black structural shadows. No additional cracks, micro-detail, jagged fragments, fine texture, gradient modeling, realism or text. Whole object with small transparent margins, no environment. Glass is transparent, no white or black background painted behind it."
+  },
+  {
+    "key": "seed_used_rear",
+    "stem": "T_UI_World_Seed_",
+    "state": "UsedRear",
+    "normal": "Rear",
+    "desc": "The rooted seed has been removed, leaving only one flat paper and a dark soil/root stain on the tabletop. Empty tabletop, no plant or seed. Keep the exact REAR camera view of image 1 and the same stone table construction.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-386fca99-db85-4e16-9e95-a1518a8ee6ab.png",
+    "prompt": "Production Unity transparent PNG sprite edit for Behemoth. Image 1 is the edit target with exact camera/geometry; image 2 shows its consumed state from a DIFFERENT angle, use only for state content. Images 3 and 4 are actual installed background and player, image 5 is the user's original simplification authority. The rooted seed has been removed, leaving only one flat paper and a dark soil/root stain on the tabletop. Empty tabletop, no plant or seed. Keep the exact REAR camera view of image 1 and the same stone table construction. Preserve source silhouette, scale, perspective and identity. Very broad simple stone/wood planes, selective thick drawn outlines, strong solid ink-black structural shadows. No additional cracks, micro-detail, jagged fragments, fine texture, gradient modeling, realism or text. Whole object with small transparent margins, no environment. Glass is transparent, no white or black background painted behind it."
+  },
+  {
+    "key": "fruit_used_side",
+    "stem": "T_UI_World_Fruit_",
+    "state": "UsedSide",
+    "normal": "Side",
+    "desc": "The orange fruit and living foliage have been removed, leaving the glass dome over its small pot and a short dead stem. No fruit or leaves. Keep the exact SIDE camera view of image 1 and the same dome, pot and stone stand construction.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c0a8ee6e-1079-4a46-a294-ea15827260c8.png",
+    "prompt": "Production Unity transparent PNG sprite edit for Behemoth. Image 1 is the edit target with exact camera/geometry; image 2 shows its consumed state from a DIFFERENT angle, use only for state content. Images 3 and 4 are actual installed background and player, image 5 is the user's original simplification authority. The orange fruit and living foliage have been removed, leaving the glass dome over its small pot and a short dead stem. No fruit or leaves. Keep the exact SIDE camera view of image 1 and the same dome, pot and stone stand construction. Preserve source silhouette, scale, perspective and identity. Very broad simple stone/wood planes, selective thick drawn outlines, strong solid ink-black structural shadows. No additional cracks, micro-detail, jagged fragments, fine texture, gradient modeling, realism or text. Whole object with small transparent margins, no environment. Glass is transparent, no white or black background painted behind it."
+  },
+  {
+    "key": "fruit_used_rear",
+    "stem": "T_UI_World_Fruit_",
+    "state": "UsedRear",
+    "normal": "Rear",
+    "desc": "The orange fruit and living foliage have been removed, leaving the glass dome over its small pot and a short dead stem. No fruit or leaves. Keep the exact REAR camera view of image 1 and the same dome, pot and stone stand construction.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9de43e12-16a8-47c5-a752-f315bdbf617f.png",
+    "prompt": "Production Unity transparent PNG sprite edit for Behemoth. Image 1 is the edit target with exact camera/geometry; image 2 shows its consumed state from a DIFFERENT angle, use only for state content. Images 3 and 4 are actual installed background and player, image 5 is the user's original simplification authority. The orange fruit and living foliage have been removed, leaving the glass dome over its small pot and a short dead stem. No fruit or leaves. Keep the exact REAR camera view of image 1 and the same dome, pot and stone stand construction. Preserve source silhouette, scale, perspective and identity. Very broad simple stone/wood planes, selective thick drawn outlines, strong solid ink-black structural shadows. No additional cracks, micro-detail, jagged fragments, fine texture, gradient modeling, realism or text. Whole object with small transparent margins, no environment. Glass is transparent, no white or black background painted behind it."
+  }
+]

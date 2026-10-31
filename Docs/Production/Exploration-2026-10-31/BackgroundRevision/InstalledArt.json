@@ -1,0 +1,122 @@
+[
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Walls.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "sha256": "7e9a1c16cc76b46ac5fc546d5fd906b61135ec840d272df105e38a954b0ee6a0",
+    "changed": true,
+    "guid": "e0922ff99ec65ae42817833b238322ca",
+    "guidPreserved": true
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Forward.png",
+    "size": [
+      1672,
+      940
+    ],
+    "mode": "RGBA",
+    "sha256": "94987fef188afcc009e820bd0959f3d503f225b38ece69589fe83496c5344a12",
+    "changed": true,
+    "guid": "807f9e587ce6804419286a6ae23e171d",
+    "guidPreserved": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Left.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "sha256": "59e6277d4887340ff8296c7a0f9c4291b5d4653972d28f8cb522577b8909be5c",
+    "changed": true,
+    "guid": "a704fda0f61bc2042a65d4a69d831eac",
+    "guidPreserved": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B2-Right.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "sha256": "f5950c3e02c36c9c21ec2af4683308d9d005d6e27e22a4e4900a4c3eeddfd60a",
+    "changed": true,
+    "guid": "a7540d9552636cf42b9889536fe806e8",
+    "guidPreserved": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Walls.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "sha256": "766e1ce80b6b42f493311f8ee75c39f9b5f8d8beddec0659fa078861f0c5a9f1",
+    "changed": true,
+    "guid": "80cfb8cb330ff7744949d3688e986ebe",
+    "guidPreserved": true
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Forward.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "sha256": "55b6a1575a6fbf168ca9539a5059ebe56350f0c63df9bdf000f1c1b677e1f0a2",
+    "changed": true,
+    "guid": "1fe9d9855285c3a4cb88a2e64daebb35",
+    "guidPreserved": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Left.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "sha256": "79264460670545105f4aa9ce2596eac0042ccb3314a5b82b131e3dab5fa6a5d9",
+    "changed": true,
+    "guid": "6a17d03eb47d2cc4e8ad6c997004ac2a",
+    "guidPreserved": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Backdrops\\B3-Right.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "sha256": "685cabd2706d01be9fffedfb9ff1a3f1dcd7df8062a3473245b1e478940e3e6b",
+    "changed": true,
+    "guid": "621d6582c4231544e993d46006c75f23",
+    "guidPreserved": true,
+    "alphaRange": [
+      0,
+      255
+    ]
+  }
+]

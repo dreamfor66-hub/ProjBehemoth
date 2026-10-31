@@ -1,0 +1,83 @@
+{
+  "placements": {
+    "2": [
+      [
+        0.416,
+        0.382,
+        0.17,
+        0.389
+      ],
+      [
+        0.17,
+        0.305,
+        0.08,
+        0.695
+      ],
+      [
+        0.769,
+        0.3,
+        0.05,
+        0.46
+      ]
+    ],
+    "3": [
+      [
+        0.416,
+        0.38,
+        0.17,
+        0.39
+      ],
+      [
+        0.195,
+        0.305,
+        0.055,
+        0.695
+      ],
+      [
+        0.769,
+        0.3,
+        0.045,
+        0.46
+      ]
+    ]
+  },
+  "jobs": [
+    {
+      "act": 2,
+      "side": "Forward",
+      "prompt": "Use case: compositing. Asset: transparent full-canvas 1672x941 (16:9) doorway OVERLAY for a layered Unity room.\nImage1 is the EDIT TARGET: act1 Forward doorway layer, it establishes exact canvas framing, alpha placement, doorway scale, perspective and entrance location. Image2 is the NEW ACT2 WALL BACKDROP it must be seamlessly laid on top of. Image3 is the installed Warrior ink reference, image4 the original style drawing. Output ONLY the doorway patch on true transparency, all other canvas area fully transparent; same full canvas dimensions and no recentering/cropping. No room-wide wall/floor painting.\nRepaint image1's doorway so its stone color, broad shape language, illumination and border join naturally into image2. Front doorway faces camera straight on, at x42%-58%, tip y23%, threshold y61.5% (coordinates downward from top). Its total opaque bounds must stay x41.7%-58.6%, y19%-62%, exactly image1. Rear wall-floor threshold is level with the new wall image2. Broad plain pointed arch stones, black passage inside.\nThe arch's cavity is a large OPAQUE nearly black negative-space entrance (do NOT make the cavity transparent). Only the surrounding unused canvas is transparent. The outer patch follows the minimal arch/wall contours, no rectangular light wall patch visible, no floating arch icon, no standalone ground shadow. Do not add new pillars/torches/decorations or modify other rooms. Muted blue-gray stones with cool cyan side light from image2; not white/bright ice.\nMatch image2's large connected solid ink blacks and selective bold contours, very few large stone blocks, quiet surfaces. No tiny cracks/chips, no granular faceting, no UI, arrows or text. This is an architectural opening within that room, not an object pasted in front.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-29becfc2-dd4a-4598-a80e-522c84aed06a.png"
+    },
+    {
+      "act": 2,
+      "side": "Left",
+      "prompt": "Use case: compositing. Asset: transparent full-canvas 1672x941 (16:9) doorway OVERLAY for a layered Unity room.\nImage1 is the EDIT TARGET: act1 Left doorway layer, it establishes exact canvas framing, alpha placement, doorway scale, perspective and entrance location. Image2 is the NEW ACT2 WALL BACKDROP it must be seamlessly laid on top of. Image3 is the installed Warrior ink reference, image4 the original style drawing. Output ONLY the doorway patch on true transparency, all other canvas area fully transparent; same full canvas dimensions and no recentering/cropping. No room-wide wall/floor painting.\nRepaint image1's doorway so its stone color, broad shape language, illumination and border join naturally into image2. Left doorway is on the LEFT SIDE WALL, very strongly foreshortened, occupying x17%-25%, with threshold around y68%. Total opaque patch exactly x16.9%-25.1%, y0%-69.5% like image1, but only include architecture needed to fit new wall image2. Preserve the very narrow side-on oblique doorway shape of image1. NOT front-facing, not a large left arch. Top of arch approx x22%,y22%; boards/threshold edges converge toward room center x50%,y55%. Keep foreground pier occlusion consistent with image2.\nThe arch's cavity is a large OPAQUE nearly black negative-space entrance (do NOT make the cavity transparent). Only the surrounding unused canvas is transparent. The outer patch follows the minimal arch/wall contours, no rectangular light wall patch visible, no floating arch icon, no standalone ground shadow. Do not add new pillars/torches/decorations or modify other rooms. Muted blue-gray stones with cool cyan side light from image2; not white/bright ice.\nMatch image2's large connected solid ink blacks and selective bold contours, very few large stone blocks, quiet surfaces. No tiny cracks/chips, no granular faceting, no UI, arrows or text. This is an architectural opening within that room, not an object pasted in front.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a79e87f3-2983-4235-a3b8-a2f400791e6d.png"
+    },
+    {
+      "act": 2,
+      "side": "Right",
+      "prompt": "Use case: compositing. Asset: transparent full-canvas 1672x941 (16:9) doorway OVERLAY for a layered Unity room.\nImage1 is the EDIT TARGET: act1 Right doorway layer, it establishes exact canvas framing, alpha placement, doorway scale, perspective and entrance location. Image2 is the NEW ACT2 WALL BACKDROP it must be seamlessly laid on top of. Image3 is the installed Warrior ink reference, image4 the original style drawing. Output ONLY the doorway patch on true transparency, all other canvas area fully transparent; same full canvas dimensions and no recentering/cropping. No room-wide wall/floor painting.\nRepaint image1's doorway so its stone color, broad shape language, illumination and border join naturally into image2. Right doorway is on the RIGHT SIDE WALL, very strongly foreshortened, occupying x77%-83%, with threshold around y68%. Total opaque patch exactly x76.9%-82.9%, y24%-70% like image1. Preserve the very narrow side-on oblique doorway shape of image1. NOT front-facing, not a large right arch. Top of arch approx x79%,y26%. Threshold/stone horizontals converge toward room center x50%,y55%. Keep foreground pier occlusion consistent with image2.\nThe arch's cavity is a large OPAQUE nearly black negative-space entrance (do NOT make the cavity transparent). Only the surrounding unused canvas is transparent. The outer patch follows the minimal arch/wall contours, no rectangular light wall patch visible, no floating arch icon, no standalone ground shadow. Do not add new pillars/torches/decorations or modify other rooms. Muted blue-gray stones with cool cyan side light from image2; not white/bright ice.\nMatch image2's large connected solid ink blacks and selective bold contours, very few large stone blocks, quiet surfaces. No tiny cracks/chips, no granular faceting, no UI, arrows or text. This is an architectural opening within that room, not an object pasted in front.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-0924fb4c-e5c4-4591-b8d1-abe275b4334e.png"
+    },
+    {
+      "act": 3,
+      "side": "Forward",
+      "prompt": "Use case: compositing. Asset: transparent full-canvas 1672x941 (16:9) doorway OVERLAY for a layered Unity room.\nImage1 is the EDIT TARGET: act1 Forward doorway layer, it establishes exact canvas framing, alpha placement, doorway scale, perspective and entrance location. Image2 is the NEW ACT3 WALL BACKDROP it must be seamlessly laid on top of. Image3 is the installed Warrior ink reference, image4 the original style drawing. Output ONLY the doorway patch on true transparency, all other canvas area fully transparent; same full canvas dimensions and no recentering/cropping. No room-wide wall/floor painting.\nRepaint image1's doorway so its stone color, broad shape language, illumination and border join naturally into image2. Front doorway faces camera straight on, at x42%-58%, tip y23%, threshold y61.5% (coordinates downward from top). Its total opaque bounds must stay x41.7%-58.6%, y19%-62%, exactly image1. Rear wall-floor threshold is level with the new wall image2. Broad plain pointed arch stones, black passage inside.\nThe arch's cavity is a large OPAQUE nearly black negative-space entrance (do NOT make the cavity transparent). Only the surrounding unused canvas is transparent. The outer patch follows the minimal arch/wall contours, no rectangular light wall patch visible, no floating arch icon, no standalone ground shadow. Do not add new pillars/torches/decorations or modify other rooms. Dark umber-gray stones; subdued rust-red band only where it continues the exact wall band of image2.\nMatch image2's large connected solid ink blacks and selective bold contours, very few large stone blocks, quiet surfaces. No tiny cracks/chips, no granular faceting, no UI, arrows or text. This is an architectural opening within that room, not an object pasted in front.",
+      "path": "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-8d391ee9-3876-4758-ab76-54ec4858a652.png",
+      "rejectedPath": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d6487e5f-d1be-4402-ae59-f7e46ecd30fd.png"
+    },
+    {
+      "act": 3,
+      "side": "Left",
+      "prompt": "Use case: compositing. Asset: transparent full-canvas 1672x941 (16:9) doorway OVERLAY for a layered Unity room.\nImage1 is the EDIT TARGET: act1 Left doorway layer, it establishes exact canvas framing, alpha placement, doorway scale, perspective and entrance location. Image2 is the NEW ACT3 WALL BACKDROP it must be seamlessly laid on top of. Image3 is the installed Warrior ink reference, image4 the original style drawing. Output ONLY the doorway patch on true transparency, all other canvas area fully transparent; same full canvas dimensions and no recentering/cropping. No room-wide wall/floor painting.\nRepaint image1's doorway so its stone color, broad shape language, illumination and border join naturally into image2. Left doorway is on the LEFT SIDE WALL, very strongly foreshortened, occupying x17%-25%, with threshold around y68%. Total opaque patch exactly x16.9%-25.1%, y0%-69.5% like image1, but only include architecture needed to fit new wall image2. Preserve the very narrow side-on oblique doorway shape of image1. NOT front-facing, not a large left arch. Top of arch approx x22%,y22%; boards/threshold edges converge toward room center x50%,y55%. Keep foreground pier occlusion consistent with image2.\nThe arch's cavity is a large OPAQUE nearly black negative-space entrance (do NOT make the cavity transparent). Only the surrounding unused canvas is transparent. The outer patch follows the minimal arch/wall contours, no rectangular light wall patch visible, no floating arch icon, no standalone ground shadow. Do not add new pillars/torches/decorations or modify other rooms. Dark umber-gray stones; subdued rust-red band only where it continues the exact wall band of image2.\nMatch image2's large connected solid ink blacks and selective bold contours, very few large stone blocks, quiet surfaces. No tiny cracks/chips, no granular faceting, no UI, arrows or text. This is an architectural opening within that room, not an object pasted in front.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-3c85bd19-ce44-438e-b565-25b12b57d063.png"
+    },
+    {
+      "act": 3,
+      "side": "Right",
+      "prompt": "Use case: compositing. Asset: transparent full-canvas 1672x941 (16:9) doorway OVERLAY for a layered Unity room.\nImage1 is the EDIT TARGET: act1 Right doorway layer, it establishes exact canvas framing, alpha placement, doorway scale, perspective and entrance location. Image2 is the NEW ACT3 WALL BACKDROP it must be seamlessly laid on top of. Image3 is the installed Warrior ink reference, image4 the original style drawing. Output ONLY the doorway patch on true transparency, all other canvas area fully transparent; same full canvas dimensions and no recentering/cropping. No room-wide wall/floor painting.\nRepaint image1's doorway so its stone color, broad shape language, illumination and border join naturally into image2. Right doorway is on the RIGHT SIDE WALL, very strongly foreshortened, occupying x77%-83%, with threshold around y68%. Total opaque patch exactly x76.9%-82.9%, y24%-70% like image1. Preserve the very narrow side-on oblique doorway shape of image1. NOT front-facing, not a large right arch. Top of arch approx x79%,y26%. Threshold/stone horizontals converge toward room center x50%,y55%. Keep foreground pier occlusion consistent with image2.\nThe arch's cavity is a large OPAQUE nearly black negative-space entrance (do NOT make the cavity transparent). Only the surrounding unused canvas is transparent. The outer patch follows the minimal arch/wall contours, no rectangular light wall patch visible, no floating arch icon, no standalone ground shadow. Do not add new pillars/torches/decorations or modify other rooms. Dark umber-gray stones; subdued rust-red band only where it continues the exact wall band of image2.\nMatch image2's large connected solid ink blacks and selective bold contours, very few large stone blocks, quiet surfaces. No tiny cracks/chips, no granular faceting, no UI, arrows or text. This is an architectural opening within that room, not an object pasted in front.",
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-dabf2afc-62b7-42f8-af93-ad765a7cec96.png"
+    }
+  ]
+}

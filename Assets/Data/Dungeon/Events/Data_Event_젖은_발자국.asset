@@ -46,13 +46,13 @@ MonoBehaviour:
       \uB3D9\uB8CC\uB294 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
   - propertyPath: options.Array.data[0].resultText
     key: data.randomeventdata.straydog.options.0.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: options.Array.data[1].resultText
     key: data.randomeventdata.straydog.options.1.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: options.Array.data[2].resultText
     key: data.randomeventdata.straydog.options.2.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: pages.Array.data[0].narrative
     key: data.randomeventdata.straydog.pages.0.narrative
     lastText: "\uAD6C\uC11D\uC5D0 \uB2E4\uCE5C \uAC15\uC544\uC9C0\uAC00 \uBD88\uC30D\uD55C
@@ -77,8 +77,7 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[0].options.Array.data[1].resultText
     key: data.randomeventdata.straydog.pages.0.options.1.resulttext
-    lastText: "\uB09C \uAC08 \uAE38\uC774 \uBC14\uC058\uB2E4. \uBD88\uC30D\uD55C
-      \uAC15\uC544\uC9C0\uB97C \uB4A4\uB85C\uD588\uB2E4."
+    lastText: "\uBAA9\uC904\uC5D0 \uBB36\uC778 \uAC15\uC544\uC9C0\uB97C \uB4A4\uB85C\uD588\uB2E4."
   - propertyPath: pages.Array.data[1].narrative
     key: data.randomeventdata.straydog.pages.1.narrative
     lastText: "\uAC15\uC544\uC9C0\uAC00 \uB07C\uC789\uAC70\uB9AC\uBA70 \uB098\uB97C
@@ -93,8 +92,7 @@ MonoBehaviour:
     key: data.randomeventdata.straydog.pages.1.options.0.resulttext
     lastText: "\uAC15\uC544\uC9C0\uAC00 \uD5C8\uAC81\uC9C0\uAC81 \uBA39\uC774\uB97C
       \uBA39\uC5C8\uB2E4. \uC790\uB9AC\uB97C \uB728\uB824 \uD558\uC790 \uB0B4 \uACC1\uC73C\uB85C
-      \uB2E4\uAC00\uC654\uB2E4.\r\n\r\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
-      \uD569\uB958\uD588\uB2E4!"
+      \uB2E4\uAC00\uC654\uB2E4.\n\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C \uD569\uB958\uD588\uB2E4!"
   - propertyPath: pages.Array.data[1].options.Array.data[1].title
     key: data.randomeventdata.straydog.pages.1.options.1.title
     lastText: "\uB2E4\uCE5C \uBD80\uC704\uB97C \uCE58\uB8CC\uD574 \uC900\uB2E4."
@@ -103,9 +101,9 @@ MonoBehaviour:
     lastText: "\uC791\uC740 \uBC1C\uC790\uAD6D \uD68D\uB4DD"
   - propertyPath: pages.Array.data[1].options.Array.data[1].resultText
     key: data.randomeventdata.straydog.pages.1.options.1.resulttext
-    lastText: "\uC57D\uC744 \uBC14\uB974\uB294 \uB3D9\uC548 \uAC15\uC544\uC9C0\uB294
-      \uC58C\uC804\uD788 \uAE30\uB2E4\uB838\uB2E4. \uCE58\uB8CC\uAC00 \uB05D\uB098\uC790
-      \uB0B4 \uC190\uC744 \uD565\uC558\uB2E4.\r\n\r\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
+    lastText: "\uCE58\uB8CC\uAC00 \uB05D\uB098\uC790 \uAC15\uC544\uC9C0\uAC00 \uB0B4
+      \uC190\uC744 \uD565\uC558\uB2E4. \uC9D0\uC744 \uCC59\uAE30\uB294 \uB098\uB97C
+      \uC878\uC878 \uB530\uB77C\uC654\uB2E4.\n\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
       \uD569\uB958\uD588\uB2E4!"
   - propertyPath: pages.Array.data[1].options.Array.data[2].title
     key: data.randomeventdata.straydog.pages.1.options.2.title
@@ -115,18 +113,21 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[1].options.Array.data[2].resultText
     key: data.randomeventdata.straydog.pages.1.options.2.resulttext
-    lastText: "\uAC15\uC544\uC9C0\uB294 \uC7A0\uC2DC \uB098\uB97C \uBC14\uB77C\uBCF4\uB2E4
-      \uBCF5\uB3C4 \uB108\uBA38\uB85C \uC0AC\uB77C\uC84C\uB2E4."
+    lastText: "\uBAA9\uC904\uC5D0\uC11C \uD480\uB824\uB09C \uAC15\uC544\uC9C0\uB294
+      \uC7A0\uC2DC \uB098\uB97C \uBC14\uB77C\uBCF4\uB2E4 \uD1B5\uB85C \uB108\uBA38\uB85C
+      \uC0AC\uB77C\uC84C\uB2E4."
   textOwnerGuid: fa9f2abe524107b46a325db6b448a909
   id: StrayDog
   displayName: "\uC816\uC740 \uBC1C\uC790\uAD6D"
+  discovery: 1
+  worldObject: {fileID: 11400000, guid: c9d93faa4f0cf8f4586b938836e0f291, type: 2}
   excludedFromRandomPool: 0
   narrative: "\uAD6C\uC11D\uC5D0 \uB2E4\uCE5C \uAC15\uC544\uC9C0\uAC00 \uBD88\uC30D\uD55C
     \uB208\uC73C\uB85C \uB098\uB97C \uCCD0\uB2E4\uBCF4\uACE0 \uC788\uB2E4.\r\n\r\n\uAC15\uC544\uC9C0\uB294
     \uAD76\uACE0 \uC788\uC9C0\uB9CC \uBAA9\uC904 \uB54C\uBB38\uC5D0 \uC6C0\uC9C1\uC77C
     \uC218 \uC5C6\uC5B4 \uBCF4\uC778\uB2E4.\r\n\r\n\uBAA9\uC904\uC744 \uD480\uC5B4
     \uC904\uAE4C?"
-  illustration: {fileID: 21300000, guid: e7272535203f832448964fc03bcbd541, type: 3}
+  illustration: {fileID: 21300000, guid: 79f48b6679a5ee84698394050f282e51, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   illustratedPopup: 1
   minAct: 1
@@ -156,12 +157,19 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.StrayDog.-1.0
     requirements: []
     effects:
     - kind: 0
       relic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 0
@@ -180,12 +188,19 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.StrayDog.-1.1
     requirements: []
     effects:
     - kind: 0
       relic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 0
@@ -206,12 +221,19 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.StrayDog.-1.2
     requirements: []
     effects:
     - kind: 6
       relic: {fileID: 0}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 8
@@ -222,7 +244,7 @@ MonoBehaviour:
       \uAD76\uACE0 \uC788\uC9C0\uB9CC \uBAA9\uC904 \uB54C\uBB38\uC5D0 \uC6C0\uC9C1\uC77C
       \uC218 \uC5C6\uC5B4 \uBCF4\uC778\uB2E4.\r\n\r\n\uBAA9\uC904\uC744 \uD480\uC5B4
       \uC904\uAE4C?"
-    illustration: {fileID: 0}
+    illustration: {fileID: 21300000, guid: 79f48b6679a5ee84698394050f282e51, type: 3}
     options:
     - title: "\uBAA9\uC904\uC744 \uD480\uC5B4 \uC900\uB2E4."
       description: 
@@ -239,6 +261,10 @@ MonoBehaviour:
       nextPage: 1
       failurePage: -1
       resultText: 
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: 
       requirements: []
       effects: []
     - title: "\uB5A0\uB09C\uB2E4."
@@ -255,14 +281,17 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uB09C \uAC08 \uAE38\uC774 \uBC14\uC058\uB2E4. \uBD88\uC30D\uD55C
-        \uAC15\uC544\uC9C0\uB97C \uB4A4\uB85C\uD588\uB2E4."
+      resultText: "\uBAA9\uC904\uC5D0 \uBB36\uC778 \uAC15\uC544\uC9C0\uB97C \uB4A4\uB85C\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.StrayDog.0.1
       requirements: []
       effects: []
     routes: []
   - narrative: "\uAC15\uC544\uC9C0\uAC00 \uB07C\uC789\uAC70\uB9AC\uBA70 \uB098\uB97C
       \uC62C\uB824\uB2E4\uBCF8\uB2E4."
-    illustration: {fileID: 0}
+    illustration: {fileID: 21300000, guid: 79f48b6679a5ee84698394050f282e51, type: 3}
     options:
     - title: "\uBA39\uC744 \uAC83\uC744 \uC900\uB2E4."
       description: "\uC791\uC740 \uBC1C\uC790\uAD6D \uD68D\uB4DD"
@@ -280,13 +309,19 @@ MonoBehaviour:
       failurePage: -1
       resultText: "\uAC15\uC544\uC9C0\uAC00 \uD5C8\uAC81\uC9C0\uAC81 \uBA39\uC774\uB97C
         \uBA39\uC5C8\uB2E4. \uC790\uB9AC\uB97C \uB728\uB824 \uD558\uC790 \uB0B4 \uACC1\uC73C\uB85C
-        \uB2E4\uAC00\uC654\uB2E4.\r\n\r\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
+        \uB2E4\uAC00\uC654\uB2E4.\n\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
         \uD569\uB958\uD588\uB2E4!"
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.StrayDog.1.0
       requirements: []
       effects:
       - kind: 0
         relic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 0
@@ -305,15 +340,21 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC57D\uC744 \uBC14\uB974\uB294 \uB3D9\uC548 \uAC15\uC544\uC9C0\uB294
-        \uC58C\uC804\uD788 \uAE30\uB2E4\uB838\uB2E4. \uCE58\uB8CC\uAC00 \uB05D\uB098\uC790
-        \uB0B4 \uC190\uC744 \uD565\uC558\uB2E4.\r\n\r\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
+      resultText: "\uCE58\uB8CC\uAC00 \uB05D\uB098\uC790 \uAC15\uC544\uC9C0\uAC00
+        \uB0B4 \uC190\uC744 \uD565\uC558\uB2E4. \uC9D0\uC744 \uCC59\uAE30\uB294 \uB098\uB97C
+        \uC878\uC878 \uB530\uB77C\uC654\uB2E4.\n\n\uAC15\uC544\uC9C0\uAC00 \uB3D9\uB8CC\uB85C
         \uD569\uB958\uD588\uB2E4!"
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.StrayDog.1.1
       requirements: []
       effects:
       - kind: 0
         relic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 0
@@ -332,8 +373,13 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uAC15\uC544\uC9C0\uB294 \uC7A0\uC2DC \uB098\uB97C \uBC14\uB77C\uBCF4\uB2E4
-        \uBCF5\uB3C4 \uB108\uBA38\uB85C \uC0AC\uB77C\uC84C\uB2E4."
+      resultText: "\uBAA9\uC904\uC5D0\uC11C \uD480\uB824\uB09C \uAC15\uC544\uC9C0\uB294
+        \uC7A0\uC2DC \uB098\uB97C \uBC14\uB77C\uBCF4\uB2E4 \uD1B5\uB85C \uB108\uBA38\uB85C
+        \uC0AC\uB77C\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.StrayDog.1.2
       requirements: []
       effects: []
     routes: []

@@ -19,7 +19,8 @@ namespace DungeonSlash
             {
                 var absolute = DirectionUtility.ToAbsolute(state.Player.Facing, relative);
                 var target = state.Graph.At(state.Player.CurrentRoom.Position + DirectionUtility.Offset(absolute));
-                var available = target != null && state.Player.CurrentRoom.Connections.Contains(target.RoomId);
+                var available = target != null && state.Player.CurrentRoom.Connections.Contains(target.RoomId)
+                    && state.CanTravel(state.Player.CurrentRoom, target);
                 var index=(int)relative;
                 Vector2? artworkPosition=artworkPositions!=null&&index<artworkPositions.Length?artworkPositions[index]:null;
                 choices[index].Bind(relative, absolute, available, selected, hovered, artworkPosition);

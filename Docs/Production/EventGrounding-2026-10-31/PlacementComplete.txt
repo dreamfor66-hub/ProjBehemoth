@@ -1,0 +1,1 @@
+183 checks; 0 failures. Actual Unity renders and UI raycasts for 19 event subjects in all 3 acts after final placement correction.

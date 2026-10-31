@@ -13,19 +13,28 @@ namespace DungeonSlash
         private bool navigationVisible;
         public DungeonRunState State { get; private set; }
         public int Floor { get; private set; } = 1;
+        public ExplorationSettings Exploration => generationSettings != null ? generationSettings.exploration : null;
         public event Action<DungeonRoom> RoomEntered;
         public void Configure(DungeonMapView map, NavigationChoiceView choices, DungeonGenerationSettings settings) { mapView = map; navigation = choices; generationSettings = settings; }
-        public void BeginRun(int seed)
+        public void BeginRun(int seed) => BeginFloor(seed, 1);
+        public void BeginFloor(int seed, int floor)
         {
-            Floor = 1;
+            Floor = Mathf.Clamp(floor, 1, 3);
+            hoveredDirection = null;
             State = new DungeonGenerator(generationSettings).Generate(seed, Floor);
             RefreshNavigation();
         }
         public void BeginNextFloor()
         {
-            Floor++;
-            var nextSeed = State == null ? Floor * 7919 : State.Seed + Floor * 7919;
-            State = new DungeonGenerator(generationSettings).Generate(nextSeed, Floor);
+            var nextFloor = Floor + 1;
+            var nextSeed = State == null ? nextFloor * 7919 : State.Seed + nextFloor * 7919;
+            BeginFloor(nextSeed, nextFloor);
+        }
+        // Explicit F1 inspection room, separate from ordinary seeded generation.
+        public void BeginDebugInspection(DungeonGraph graph)
+        {
+            hoveredDirection = null;
+            State = new DungeonRunState(State?.Seed ?? 0, graph, Floor);
             RefreshNavigation();
         }
         public void RefreshNavigation()
@@ -59,7 +68,8 @@ namespace DungeonSlash
         {
             if (!navigationVisible || State == null) return;
             var target = State.Graph.At(State.Player.CurrentRoom.Position + DirectionUtility.Offset(absolute));
-            if (target == null || !State.Player.CurrentRoom.Connections.Contains(target.RoomId)) return;
+            if (target == null || !State.Player.CurrentRoom.Connections.Contains(target.RoomId)
+                || !State.CanTravel(State.Player.CurrentRoom, target)) return;
             State.RevealConnection(State.Player.CurrentRoom, target);
             State.Player.MoveTo(target); mapView.Render(State, null, false); RoomEntered?.Invoke(target);
         }

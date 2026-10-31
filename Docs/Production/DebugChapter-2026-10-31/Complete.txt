@@ -1,0 +1,1 @@
+690 checks; 0 failures. Actual Unity UI raycasts/click handlers, chapter resets; all 17 objects in both states across acts 1–3.

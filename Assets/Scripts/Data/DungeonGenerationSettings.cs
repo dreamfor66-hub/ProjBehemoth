@@ -6,6 +6,7 @@ namespace DungeonSlash
     [CreateAssetMenu(menuName = "Dungeon Slash/Dungeon Generation Settings")]
     public sealed class DungeonGenerationSettings : ScriptableObject
     {
+        public ExplorationSettings exploration;
         [Min(5)] public int minRooms = 20;
         [Min(5)] public int maxRooms = 26;
         [Min(1)] public int minimumBossDistance = 7;
@@ -21,6 +22,8 @@ namespace DungeonSlash
         [Range(0f, 1f)] public float combatRoomRatioMax = .55f;
         [Min(1)] public int maxGenerationAttempts = 60;
         [Range(0, 8)] public int eventRoomCount = 3;
+        [Min(2), Tooltip("Minimum traversable room-to-room steps between repeated shops, goddess shrines, or fountains (including poisoned fountains).")]
+        public int minimumRepeatedFacilityDistance = 4;
         [Header("Act one pacing")]
         [Min(0), Tooltip("Opening corridor of guaranteed normal combats, before the first branching decision.")]
         public int firstActOpeningCombats = 3;

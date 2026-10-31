@@ -1,0 +1,721 @@
+Scoped F1 chapter / object placement runtime matrix.
+PASS F1 toggle opens saved panel
+PASS five tabs and all 17 authored objects
+FAIL button reachable: Category0
+PASS existing catalog 0 still usable
+FAIL button reachable: Category1
+PASS existing catalog 1 still usable
+FAIL button reachable: Category2
+PASS existing catalog 2 still usable
+FAIL button reachable: Category3
+PASS existing catalog 3 still usable
+FAIL button reachable: Category4
+FAIL chapter controls replace grant action
+PASS all chapter labels fit at actual Game view size
+FAIL button reachable: JumpToAct3
+FAIL act 3 fresh graph and synchronized chapter
+FAIL act 3 reset visits/clear/keys and starts at entrance
+FAIL act 3 fresh floor counters and fatigue
+PASS act 3 preserves player progression
+FAIL act 3 live navigation, correct background, no battle residue
+FAIL button reachable: JumpToAct1
+FAIL act 1 fresh graph and synchronized chapter
+FAIL act 1 reset visits/clear/keys and starts at entrance
+FAIL act 1 fresh floor counters and fatigue
+PASS act 1 preserves player progression
+FAIL act 1 live navigation, correct background, no battle residue
+FAIL button reachable: JumpToAct2
+FAIL act 2 fresh graph and synchronized chapter
+FAIL act 2 reset visits/clear/keys and starts at entrance
+FAIL act 2 fresh floor counters and fatigue
+PASS act 2 preserves player progression
+FAIL act 2 live navigation, correct background, no battle residue
+FAIL button reachable: JumpToAct2
+FAIL act 2 fresh graph and synchronized chapter
+FAIL act 2 reset visits/clear/keys and starts at entrance
+FAIL act 2 fresh floor counters and fatigue
+PASS act 2 preserves player progression
+FAIL act 2 live navigation, correct background, no battle residue
+FAIL button reachable: JumpToAct1
+FAIL act 1 fresh graph and synchronized chapter
+FAIL act 1 reset visits/clear/keys and starts at entrance
+FAIL act 1 fresh floor counters and fatigue
+PASS act 1 preserves player progression
+FAIL act 1 live navigation, correct background, no battle residue
+FAIL button reachable: JumpToAct1
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_거울 False: actual isolated placement
+FAIL B1 Data_RoomObject_거울 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_거울 True: actual isolated placement
+FAIL B1 Data_RoomObject_거울 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_나무상자 False: actual isolated placement
+FAIL B1 Data_RoomObject_나무상자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_나무상자 True: actual isolated placement
+FAIL B1 Data_RoomObject_나무상자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_남겨진짐 False: actual isolated placement
+FAIL B1 Data_RoomObject_남겨진짐 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_남겨진짐 True: actual isolated placement
+FAIL B1 Data_RoomObject_남겨진짐 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_떠있는책 False: actual isolated placement
+FAIL B1 Data_RoomObject_떠있는책 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_떠있는책 True: actual isolated placement
+FAIL B1 Data_RoomObject_떠있는책 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_모래시계 False: actual isolated placement
+FAIL B1 Data_RoomObject_모래시계 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_모래시계 True: actual isolated placement
+FAIL B1 Data_RoomObject_모래시계 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_벽장치 False: actual isolated placement
+FAIL B1 Data_RoomObject_벽장치 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_벽장치 True: actual isolated placement
+PASS B1 Data_RoomObject_벽장치 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_분수 False: actual isolated placement
+FAIL B1 Data_RoomObject_분수 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_분수 True: actual isolated placement
+FAIL B1 Data_RoomObject_분수 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_상인 False: actual isolated placement
+FAIL B1 Data_RoomObject_상인 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_상인 True: actual isolated placement
+FAIL B1 Data_RoomObject_상인 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_상자 False: actual isolated placement
+FAIL B1 Data_RoomObject_상자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_상자 True: actual isolated placement
+FAIL B1 Data_RoomObject_상자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_성직자 False: actual isolated placement
+FAIL B1 Data_RoomObject_성직자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_성직자 True: actual isolated placement
+FAIL B1 Data_RoomObject_성직자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_씨앗 False: actual isolated placement
+FAIL B1 Data_RoomObject_씨앗 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_씨앗 True: actual isolated placement
+FAIL B1 Data_RoomObject_씨앗 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_야영지 False: actual isolated placement
+FAIL B1 Data_RoomObject_야영지 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_야영지 True: actual isolated placement
+FAIL B1 Data_RoomObject_야영지 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_여신상 False: actual isolated placement
+FAIL B1 Data_RoomObject_여신상 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_여신상 True: actual isolated placement
+FAIL B1 Data_RoomObject_여신상 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_열쇠 False: actual isolated placement
+FAIL B1 Data_RoomObject_열쇠 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_열쇠 True: actual isolated placement
+PASS B1 Data_RoomObject_열쇠 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_유리덮개 False: actual isolated placement
+FAIL B1 Data_RoomObject_유리덮개 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_유리덮개 True: actual isolated placement
+FAIL B1 Data_RoomObject_유리덮개 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_잠긴문 False: actual isolated placement
+FAIL B1 Data_RoomObject_잠긴문 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_잠긴문 True: actual isolated placement
+PASS B1 Data_RoomObject_잠긴문 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_학자 False: actual isolated placement
+FAIL B1 Data_RoomObject_학자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B1 Data_RoomObject_학자 True: actual isolated placement
+FAIL B1 Data_RoomObject_학자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: JumpToAct2
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_거울 False: actual isolated placement
+FAIL B2 Data_RoomObject_거울 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_거울 True: actual isolated placement
+FAIL B2 Data_RoomObject_거울 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_나무상자 False: actual isolated placement
+FAIL B2 Data_RoomObject_나무상자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_나무상자 True: actual isolated placement
+FAIL B2 Data_RoomObject_나무상자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_남겨진짐 False: actual isolated placement
+FAIL B2 Data_RoomObject_남겨진짐 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_남겨진짐 True: actual isolated placement
+FAIL B2 Data_RoomObject_남겨진짐 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_떠있는책 False: actual isolated placement
+FAIL B2 Data_RoomObject_떠있는책 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_떠있는책 True: actual isolated placement
+FAIL B2 Data_RoomObject_떠있는책 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_모래시계 False: actual isolated placement
+FAIL B2 Data_RoomObject_모래시계 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_모래시계 True: actual isolated placement
+FAIL B2 Data_RoomObject_모래시계 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_벽장치 False: actual isolated placement
+FAIL B2 Data_RoomObject_벽장치 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_벽장치 True: actual isolated placement
+PASS B2 Data_RoomObject_벽장치 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_분수 False: actual isolated placement
+FAIL B2 Data_RoomObject_분수 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_분수 True: actual isolated placement
+FAIL B2 Data_RoomObject_분수 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_상인 False: actual isolated placement
+FAIL B2 Data_RoomObject_상인 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_상인 True: actual isolated placement
+FAIL B2 Data_RoomObject_상인 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_상자 False: actual isolated placement
+FAIL B2 Data_RoomObject_상자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_상자 True: actual isolated placement
+FAIL B2 Data_RoomObject_상자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_성직자 False: actual isolated placement
+FAIL B2 Data_RoomObject_성직자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_성직자 True: actual isolated placement
+FAIL B2 Data_RoomObject_성직자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_씨앗 False: actual isolated placement
+FAIL B2 Data_RoomObject_씨앗 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_씨앗 True: actual isolated placement
+FAIL B2 Data_RoomObject_씨앗 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_야영지 False: actual isolated placement
+FAIL B2 Data_RoomObject_야영지 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_야영지 True: actual isolated placement
+FAIL B2 Data_RoomObject_야영지 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_여신상 False: actual isolated placement
+FAIL B2 Data_RoomObject_여신상 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_여신상 True: actual isolated placement
+FAIL B2 Data_RoomObject_여신상 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_열쇠 False: actual isolated placement
+FAIL B2 Data_RoomObject_열쇠 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_열쇠 True: actual isolated placement
+PASS B2 Data_RoomObject_열쇠 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_유리덮개 False: actual isolated placement
+FAIL B2 Data_RoomObject_유리덮개 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_유리덮개 True: actual isolated placement
+FAIL B2 Data_RoomObject_유리덮개 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_잠긴문 False: actual isolated placement
+FAIL B2 Data_RoomObject_잠긴문 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_잠긴문 True: actual isolated placement
+PASS B2 Data_RoomObject_잠긴문 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_학자 False: actual isolated placement
+FAIL B2 Data_RoomObject_학자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B2 Data_RoomObject_학자 True: actual isolated placement
+FAIL B2 Data_RoomObject_학자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: JumpToAct3
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_거울 False: actual isolated placement
+FAIL B3 Data_RoomObject_거울 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_거울 True: actual isolated placement
+FAIL B3 Data_RoomObject_거울 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_나무상자 False: actual isolated placement
+FAIL B3 Data_RoomObject_나무상자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_나무상자 True: actual isolated placement
+FAIL B3 Data_RoomObject_나무상자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_남겨진짐 False: actual isolated placement
+FAIL B3 Data_RoomObject_남겨진짐 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_남겨진짐 True: actual isolated placement
+FAIL B3 Data_RoomObject_남겨진짐 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_떠있는책 False: actual isolated placement
+FAIL B3 Data_RoomObject_떠있는책 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_떠있는책 True: actual isolated placement
+FAIL B3 Data_RoomObject_떠있는책 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_모래시계 False: actual isolated placement
+FAIL B3 Data_RoomObject_모래시계 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_모래시계 True: actual isolated placement
+FAIL B3 Data_RoomObject_모래시계 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_벽장치 False: actual isolated placement
+FAIL B3 Data_RoomObject_벽장치 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_벽장치 True: actual isolated placement
+PASS B3 Data_RoomObject_벽장치 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_분수 False: actual isolated placement
+FAIL B3 Data_RoomObject_분수 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_분수 True: actual isolated placement
+FAIL B3 Data_RoomObject_분수 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_상인 False: actual isolated placement
+FAIL B3 Data_RoomObject_상인 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_상인 True: actual isolated placement
+FAIL B3 Data_RoomObject_상인 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_상자 False: actual isolated placement
+FAIL B3 Data_RoomObject_상자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_상자 True: actual isolated placement
+FAIL B3 Data_RoomObject_상자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_성직자 False: actual isolated placement
+FAIL B3 Data_RoomObject_성직자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_성직자 True: actual isolated placement
+FAIL B3 Data_RoomObject_성직자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_씨앗 False: actual isolated placement
+FAIL B3 Data_RoomObject_씨앗 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_씨앗 True: actual isolated placement
+FAIL B3 Data_RoomObject_씨앗 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_야영지 False: actual isolated placement
+FAIL B3 Data_RoomObject_야영지 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_야영지 True: actual isolated placement
+FAIL B3 Data_RoomObject_야영지 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_여신상 False: actual isolated placement
+FAIL B3 Data_RoomObject_여신상 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_여신상 True: actual isolated placement
+FAIL B3 Data_RoomObject_여신상 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_열쇠 False: actual isolated placement
+FAIL B3 Data_RoomObject_열쇠 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_열쇠 True: actual isolated placement
+PASS B3 Data_RoomObject_열쇠 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_유리덮개 False: actual isolated placement
+FAIL B3 Data_RoomObject_유리덮개 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_유리덮개 True: actual isolated placement
+FAIL B3 Data_RoomObject_유리덮개 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_잠긴문 False: actual isolated placement
+FAIL B3 Data_RoomObject_잠긴문 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_잠긴문 True: actual isolated placement
+PASS B3 Data_RoomObject_잠긴문 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_학자 False: actual isolated placement
+FAIL B3 Data_RoomObject_학자 False: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL button reachable: ObjectState
+FAIL button reachable: ObjectDirection0
+FAIL button reachable: PlaceObject
+FAIL B3 Data_RoomObject_학자 True: actual isolated placement
+FAIL B3 Data_RoomObject_학자 True: actual chosen painting/state
+FAIL gate reflects selected state
+FAIL button reachable: DebugCatalogTile
+FAIL rear wall unavailable because it is the entry
+FAIL button reachable: ObjectDirection1
+FAIL button reachable: PlaceObject
+FAIL wall side painting 1
+FAIL button reachable: ObjectDirection3
+FAIL button reachable: PlaceObject
+FAIL wall side painting 3
+FAIL button reachable: Interaction Area
+FAIL placed fountain opens actual choices
+PASS button reachable: JumpToAct2

@@ -1,0 +1,144 @@
+[
+  {
+    "name": "상인",
+    "npc": true,
+    "height": 340,
+    "prompt": "Use case: stylized-concept. Create a NEW BEHEMOTH MERCHANT, NOT the warrior from any earlier reference. THREE equal separate columns: FRONT, SIDE, REAR views of the SAME seated merchant, transparent background. Input 1 installed dungeon is STYLE AND PERSPECTIVE ONLY; Input 2 hooded cleric is INK SIMPLIFICATION STYLE ONLY, not identity. Subject explicitly: a lean adult human trader with a SOFT FABRIC BLACK HOOD over his head; deep hood shadow hides most of face, one pale sharp eye and narrow nose visible. NO METAL HELMET, NO ARMOR, NO WARRIOR, NO BALD HEAD, NO WHITE BEARD, NO friendly smile, NO purple cleric costume. Big charcoal cloak with a broad faded olive shoulder plane; seated on a leather trading pack, two tied merchandise bags at feet, plain dark gloves. Cunning, still, reserved. Same outfit and pack in all 3 views, entire figure and pack fully within each third, equal scale, aligned feet, clear empty gutter, no captions. Thick selective drawn contours; LARGE pure ink-black shapes WITHIN cloak and hood, 4-6 big muted flat color planes, very few broad folds, no grain/hatching/realistic materials, no broken shards or contour teeth. Camera nearly eye level, slight top view of pack only, matches input room. No scene or floor tile, no UI frame, no glows, no vignette. Readable at 300px world height. Wide 3-column turnaround sprite sheet with true alpha.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-4184629b-b9c5-48f4-adf5-7e1255df005d.png"
+  },
+  {
+    "name": "유품을찾는소년",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 300,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: A short worried adolescent boy, simple cropped brown hair, faded rust tunic and grey scarf, seated on his own small rolled blanket, hugging a cloth bundle with ONE small flat memorial stone in his hand. Bare head, no beard, no merchant pack, no hood. Quiet cautious expression, feet clearly grounded.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-ed77925e-f4ea-473d-9455-5c412427faa4.png"
+  },
+  {
+    "name": "금니의도박꾼",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: A wiry middle-aged gambler with close black hair, one gold tooth, crooked amused smile, dull burgundy waistcoat and dark trousers. Seated cross-legged on a low travelling stool, open small ledger on his knee and a plain coin pouch in hand. No beard/hood, no top hat, no fancy casino setting.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d50786de-3e89-4410-b2d3-a070c1037ea2.png"
+  },
+  {
+    "name": "예약받는짐꾼",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: A stocky female porter, short dark hair tied with ochre headscarf, plain tan workcoat and heavy boots. Sitting to rest with a large wooden packframe STRAPPED to her back, one long rectangular linen parcel visibly tied upright to that frame. Holds a plain tally tag. No hood or merchant cloak, no beard, no floating parcel.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-16d32621-2d37-4df7-aa14-7bede6c9c11f.png"
+  },
+  {
+    "name": "번개병장수",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: A lean middle-aged female travelling bottle seller with a low soft pointed blue-grey cap, short grey hair, plain mustard shawl over charcoal dress. Seated on a compact folded carrier, holds ONE big corked round bottle with a tiny pale blue lightning stroke contained INSIDE it; two small empty bottles attached at hip. No wizard staff or magic aura, no hood, no merchant pack, no excessive bottles.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-ffcdc2ad-9593-4222-8f5e-282ef2c75567.png"
+  },
+  {
+    "name": "졸고있는경비병",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: A tired human guard with short dark hair, simple dull iron open-faced kettle hat, muted brown tunic, no plate armor. Seated on a folded bedroll with an olive blanket over his knees, small closed lantern next to boot, rubbing one eye with his hand. No campfire, no chair or scenery. Face visible and sleepy.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-fb453977-2598-4911-8a25-0c7d07b8220c.png"
+  },
+  {
+    "name": "길위의노마법사",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: An elderly wandering magic teacher, sparse white hair at temples, angular SHORT white beard, plain indigo mantle and brown boots. Seated on a small folded travel blanket, leaning toward a LONG CURLED SCROLL held in BOTH hands; ONE tiny orange ember hovers just at scroll's edge. Folded satchel at hip. No hood, no chair, no desk, no classroom, no giant flame. This is a distinctive scholar, not the merchant.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-dacd189a-523f-4eab-9837-2d094320d951.png"
+  },
+  {
+    "name": "노마법사의펼친책",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: An elderly wandering magic teacher, sparse white hair at temples and angular SHORT white beard, indigo mantle and brown boots. Seated CROSS-LEGGED on his travel blanket, a LARGE OPEN BOOK balanced across knees, one hand pointing at a page, a tied roll of maps beside him. Same travelling teacher identity but NEW book-reading pose; no long scroll, chair, desk or scenery. Input 3 is IDENTITY ONLY: keep the elderly teacher's indigo mantle, short white beard and swept temple hair, but use the NEW cross-legged OPEN BOOK pose specified here, no flame or long scroll.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f88fe6f3-18d7-4b95-b8d0-6993f2b66bfc.png"
+  },
+  {
+    "name": "노마법사의수정지팡이",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject: An elderly wandering magic teacher, sparse white hair at temples and angular SHORT white beard, indigo mantle and brown boots. STANDING with one hand leaning on a PLAIN WOODEN STAFF topped by one large pale crystal, other hand holding a SMALL CLOSED BOOK at his belt. Heavy travelling satchel on shoulder. Clear standing silhouette, no scroll or chair, no aura. Input 3 is IDENTITY ONLY: preserve this elderly teacher's indigo mantle, short white beard, swept temple hair and face. Recompose as STANDING with a single crystal-topped staff and closed belt book, no long scroll, fire or seated pose.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-5b7a7b51-25d3-4440-9229-5e8e9c013df5.png"
+  },
+  {
+    "name": "다친강아지",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 180,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject:  IMPORTANT: each figure uses only 75% of its column width so completely empty transparent gutters remain. A small scruffy BROWN PUPPY sitting low on its haunches. One forepaw tucked slightly up with a simple pale cloth bandage, a loose worn collar and short leash loop lying immediately beside it; hungry worried face, floppy ears, broad plain fur shapes without tiny hairs. Fully visible paws. No person, no kennel, no purple cloth or scenery. No glow or dark haze around the silhouette: all pixels outside the puppy and its leash are TRANSPARENT.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a8e07406-d4d0-4a67-bf27-43f2504f5d2a.png"
+  },
+  {
+    "name": "이름돌의순례자",
+    "npc": true,
+    "rows": 1,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject:  IMPORTANT: each figure uses only 75% of its column width so completely empty transparent gutters remain. A weary elderly pilgrim with white stubble and soft beige cap, muted clay-brown travelling coat. Seated on a small folded mat, hugging a large open cloth sack with THREE FLAT GREY MEMORIAL STONES partly visible at the top; one hand rests gently on a stone. Stooped shoulders and thoughtful kind face, no merchant leather pack, no hood or staff. No glow or soft dark halo; exterior pixels must be transparent. The pale soft cap, stone-filled cloth sack and clay coat must clearly distinguish him from both the hooded shop merchant and blue magic teacher.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-e2c478f8-3bd0-4b81-a1b4-e5eab9bf9f41.png"
+  },
+  {
+    "name": "저주받은금고",
+    "npc": false,
+    "rows": 2,
+    "category": "Character",
+    "height": 260,
+    "prompt": "Use case: stylized-concept. Production Behemoth transparent sprite sheet for ONE portable cursed iron coffer. Input 1 actual dungeon and input 2 installed chest are STYLE AND PROJECTION authorities, not subjects to copy. SIX clearly separated images in a precise 3-column by 2-row grid with wide EMPTY alpha gutters. Top row SAME closed coffer: front, side, rear. Bottom row SAME coffer after looting: OPEN and EMPTY, pouch removed: front, side, rear. Every cell centered, consistent world scale and support baseline, each coffer within 75% cell width. Subject: squat portable dull-grey IRON COFFER, one huge ring handle on top, a small tied coin pouch attached outside, one broad brass warning seal. Open version has same base/body and raised hinged lid, dark empty cavity. NO words, gold coins, room, well, pedestal, chains, horror face, extra chest or ornate details. Match thick selective drawn contours, LARGE solid ink-black interior shadows, 4-6 broad muted flat color planes, intact simple edges, very few facets, no realism/grain/hatching/vignette or halo. Slightly elevated EYE LEVEL matching installed dungeon; not overhead/isometric. True transparent background, no painted ground or shadows beyond small contact.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-df2926ff-7fe5-4a9c-91d2-2645ddd33e26.png"
+  },
+  {
+    "name": "붉은계약서",
+    "npc": false,
+    "rows": 1,
+    "category": "Character",
+    "height": 260,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite TURNAROUND sheet, true transparent background. Input 1 is installed dungeon, STYLE/PERSPECTIVE ONLY. Input 2 is installed hooded cleric, LARGE SIMPLE INK STYLE ONLY, do not copy that character or purple costume. Three equal-width columns, one same subject per column: LEFT front three-quarter, MIDDLE side three-quarter, RIGHT rear three-quarter. Full body and attached belongings entirely inside each third; equal scale and feet baseline; CLEAR GUTTERS, no overlap, no labels. Eye-level dungeon camera with slight view of upper surfaces, not overhead/isometric. Match thick selective black contours, substantial solid ink-black INTERIOR shadows and 4-6 broad muted flat color planes, simple expressive faces, very few large folds, intact clean silhouette. NO grain, realism, gradients, jagged clutter, many tiny facets, vignette, aura, ground plate, background, UI or lettering. Readable at world display height 300px. Subject:  IMPORTANT: each figure uses only 75% of its column width so completely empty transparent gutters remain. One LARGE UNROLLED PARCHMENT resting on a low compact travelling writing case. The upper rolled edge holds the sheet almost upright, a conspicuous RED WAX SEAL and broad GOLD LEAF tab at the lower edge, a simple quill lies on the case. Blank parchment apart from TWO broad decorative black strokes, no readable writing. No figure, desk, floating aura or scene. These are THREE views of one small portable writing-case with a partly upright unrolled contract; no closed book, treasure chest or human. Transparent gutters, no soft haze, exterior glow or backdrop.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-4fa139cd-e2c9-4ec5-821c-c55b4ec5a900.png"
+  },
+  {
+    "name": "표식붙은두꾸러미",
+    "npc": false,
+    "rows": 2,
+    "category": "Character",
+    "height": 260,
+    "prompt": "Use case: stylized-concept. Production Behemoth world sprite sheet, actual transparent alpha. EXACT 3 columns x 2 rows, SIX separated frames, wide transparent gutters. Top row: front, side, rear of TWO SMALL LINEN-WRAPPED EQUIPMENT PARCELS tied together and a low attached coin lockbox with a quill under its strap. One ochre delivery tag with ONE bold diagonal black slash. Bottom row: SAME three views AFTER COLLECTION: cloth wrapping EMPTY, OPEN and slumped in two low folds, tying cord loose, small lockbox OPEN AND EMPTY, tag removed, quill still tucked under strap. No human, no standard wooden treasure chest, no readable writing, no magic glow. Every frame wholly within its own cell, identical base scale. Match input 1 installed dungeon and input 2 installed chest: thick selective contours, substantial solid ink-black shadow shapes, 4-6 big restrained tan/brown/charcoal planes, cloth and iron simplified, no realism, grain, chips, jagged folds, hatching, vignette or halo. Nearly eye-level room perspective, slightly seeing tops, never overhead/isometric. Do not paint any ground or backdrop.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-1e17ad12-a1c5-4fb9-8fcb-445a78fb471c.png"
+  },
+  {
+    "name": "깃발곁의가시등짐승",
+    "npc": true,
+    "rows": 1,
+    "category": "Monster",
+    "height": 350,
+    "prompt": "Use case: identity-preserve stylized-concept. Create a world encounter turnaround sheet for the EXACT spiny trial beast in input 2, shown resting by a fallen ochre military pennant. Input 1 installed dungeon is style/camera. THREE separated equal columns: front three-quarter, side, rear three-quarter. Same grey plated gorilla-like beast, huge knuckles, dark armour-like back, a FEW large pale ivory triangular back spines, skull-like pale face with pointed ears and yellow eyes. Preserve identity from input 2, don't invent another monster. RESTING squat, mouth closed or slightly parted, foreknuckles grounded. One simple worn neck strap is tied to the shaft of a short FALLEN PENNANT beside its forefoot, with a small coin pouch lying at outer edge. Keep banner and pouch attached within same sprite group. No knight, armor mannequin, human, room, floor plate, aura, vignette, text or small detail. Thick selective contours, BIG solid black interior shadows, 4-6 broad grey/olive/ochre planes, no grain or fine cracks. Actual transparent background with wide completely empty gutters, entire creature within 75% each third, no clipping spines or feet. Nearly eye-level camera matching room.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-e6212497-db28-4e3d-998b-d938e0cd24bf.png"
+  },
+  {
+    "name": "묶인훈련인형",
+    "npc": false,
+    "rows": 2,
+    "category": "Character",
+    "height": 350,
+    "prompt": "Use case: stylized-concept. Redraw ONE grey articulated training dummy and its portable binding frame as a clean INK illustration. Input 1 is the actual dungeon background STYLE. Input 2 hooded cleric is the REQUIRED simplification and large-black-shadow style. Input 3 is CONTENT/IDENTITY ONLY, do NOT copy its pixel texture or highlighting. SIX sprite frames, EXACT 3 columns by 2 rows, transparent background. Top row front/side/rear: round featureless closed helmet-head, simple GREY WOODEN segmented torso and limbs, muted OCHRE-ORANGE collar and belt, straight wooden practice sword, round grey wooden shield with ochre edge. Knees folded in a plain carrying frame, bound by ONE broad rope, ONE plain wire and ONE simple chain. Small square base compartment. Bottom row same front/side/rear AFTER fight: same dummy slumped at base of frame, loose rope and chain, compartment open and empty. MATERIALS MUST BE FLAT: one flat grey base plane and one LARGE SOLID BLACK shadow per limb. NO shiny metal, reflective highlights, mottling, grain, little bevels, tiny cracks, thin hatching or smooth modeled cylinders. Broad decisive drawn black contours; 4-6 total quiet colors. Match the cleric's extremely simple cloth/face language in this wooden prop. Whole figures within cells with wide empty transparent gutters, no scenery, ground plate, halo, vignette, text or extra actors. Nearly eye-level room perspective.",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-60d587f3-c615-4bc7-b5c0-9511386aba0a.png"
+  }
+]

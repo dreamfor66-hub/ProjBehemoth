@@ -1,0 +1,1 @@
+Saved authored opening bounds and room composition sockets in FloorArtwork assets.

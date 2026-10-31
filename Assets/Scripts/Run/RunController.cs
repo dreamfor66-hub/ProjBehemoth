@@ -31,6 +31,7 @@ namespace DungeonSlash
         private EquipmentSystem equipmentSystem;
         [SerializeField, Range(5, 6)] private int shopStockSize = 6;
         private readonly Dictionary<(int Seed, int Act, int Room), IReadOnlyList<EquipmentData>> shopInventories = new();
+        public void ClearChapterShopCache() => shopInventories.Clear();
 
         public void Configure(PlayerCombatData player, RunBalanceSettings balance, List<PerkData> availablePerks, List<EquipmentData> availableEquipment)
         {

@@ -1,0 +1,1 @@
+Combat gesture surface yields actual pointer raycasts during exploration; restored for combat/modal state.

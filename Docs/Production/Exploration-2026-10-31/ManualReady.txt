@@ -1,0 +1,1 @@
+Live fixture ready for ordinary mouse interaction. Stop Play after scoped interaction check.

@@ -36,6 +36,11 @@ namespace DungeonSlash
         public int nextPage = -1;
         public int failurePage = -1;
         [TextArea] public string resultText;
+        [Header("Persistent room aftermath (terminal choices)")]
+        public RoomObjectData resultingWorldObject;
+        public bool removeWorldObject;
+        public bool useWorldObject;
+        public string revisitTextKey;
         public List<EventRequirement> requirements = new();
         public List<EventEffect> effects = new();
     }
@@ -82,6 +87,8 @@ namespace DungeonSlash
     {
         public string id;
         public string displayName;
+        public EventDiscovery discovery;
+        public RoomObjectData worldObject;
         [Tooltip("Keep authored pages but exclude this event from random encounters.")]
         public bool excludedFromRandomPool;
         [TextArea(3, 8)] public string narrative;

@@ -19,7 +19,7 @@ internal static class HudStructurePreparation
     static HudStructurePreparation()=>EditorApplication.update+=Poll;
     static void Poll()
     {
-        if(done||busy||EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlayingOrWillChangePlaymode)return;
+        if(done||busy||EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode)return;
         const string path="Assets/Scenes/MainGameScene.unity";
         var scene=SceneManager.GetSceneByPath(path);var loaded=scene.isLoaded;
         if(loaded&&scene.isDirty)return; // Never overwrite unsaved designer edits.

@@ -1,0 +1,141 @@
+{
+  "art": [
+    {
+      "name": "상인",
+      "npc": true,
+      "height": 340,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_행상_SeatedFront.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_행상_SeatedSide.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_행상_SeatedRear.png"
+    },
+    {
+      "name": "유품을찾는소년",
+      "npc": true,
+      "height": 300,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_유품을찾는소년_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_유품을찾는소년_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_유품을찾는소년_Rear.png"
+    },
+    {
+      "name": "금니의도박꾼",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_금니의도박꾼_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_금니의도박꾼_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_금니의도박꾼_Rear.png"
+    },
+    {
+      "name": "예약받는짐꾼",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Rear.png"
+    },
+    {
+      "name": "번개병장수",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Rear.png"
+    },
+    {
+      "name": "졸고있는경비병",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_졸고있는경비병_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_졸고있는경비병_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_졸고있는경비병_Rear.png"
+    },
+    {
+      "name": "길위의노마법사",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Rear.png"
+    },
+    {
+      "name": "노마법사의펼친책",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의펼친책_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의펼친책_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의펼친책_Rear.png"
+    },
+    {
+      "name": "노마법사의수정지팡이",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의수정지팡이_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의수정지팡이_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_노마법사의수정지팡이_Rear.png"
+    },
+    {
+      "name": "다친강아지",
+      "npc": true,
+      "height": 180,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Rear.png"
+    },
+    {
+      "name": "이름돌의순례자",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_이름돌의순례자_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_이름돌의순례자_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_이름돌의순례자_Rear.png"
+    },
+    {
+      "name": "저주받은금고",
+      "npc": false,
+      "height": 260,
+      "front": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_UsedRear.png"
+    },
+    {
+      "name": "붉은계약서",
+      "npc": false,
+      "height": 260,
+      "front": "Assets/Art/World/Exploration/T_UI_World_붉은계약서_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_붉은계약서_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_붉은계약서_Rear.png"
+    },
+    {
+      "name": "표식붙은두꾸러미",
+      "npc": false,
+      "height": 260,
+      "front": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedRear.png"
+    },
+    {
+      "name": "깃발곁의가시등짐승",
+      "npc": true,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Monster_깃발곁의가시등짐승_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Monster_깃발곁의가시등짐승_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Monster_깃발곁의가시등짐승_Rear.png"
+    },
+    {
+      "name": "묶인훈련인형",
+      "npc": false,
+      "height": 350,
+      "front": "Assets/Art/World/Exploration/T_UI_World_묶인훈련인형_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_묶인훈련인형_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_묶인훈련인형_Rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_묶인훈련인형_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_묶인훈련인형_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_묶인훈련인형_UsedRear.png"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "tool": "built-in image_gen",
+  "references": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+  ],
+  "art": [
+    {
+      "key": "chest_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: one CLOSED sturdy wooden treasure chest with plain flat hinged lid, three broad planks and two dull iron bands, prominent keyhole. Front three-quarter view with right side receding. Compact proportions, sparse bold strokes; no treasure visible, lid shut.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c199e40a-d1c5-4c29-8451-c7ec3b83b258.png",
+      "destination": "T_UI_World_Chest_Front.png"
+    },
+    {
+      "key": "goddess_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A tall plain stone goddess shrine, hooded serene simplified face with CLOSED eyes, arms folded holding a small bowl, long intact robe, simple narrow pedestal. FRONT view, perfectly symmetrical. A single broad black robe shadow. Muted olive limestone. Wall-mounted statue detached from wall; no backing wall.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-4ca795e6-c85c-4f01-bc65-13d1ffa22345.png",
+      "destination": "T_UI_World_Goddess_Front.png"
+    },
+    {
+      "key": "fountain_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A small wall fountain: plain polygonal upright stone slab with one broad carved face-shaped spout and attached low wide stone basin containing STILL PALE WATER. FRONT view. One subtle pale turquoise water plane in bowl, a short stream. Few stone planes, no rubble.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9aa8f59e-46d2-4358-8884-fb8f2bdf19cb.png",
+      "destination": "T_UI_World_Fountain_Front.png"
+    },
+    {
+      "key": "merchant_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A seated elderly traveling merchant, bald broad head, broad simple beard shape, worn dull olive cloak, large brown traveling pack beside him and one small rolled cloth bundle; kind shrewd expression made from few strokes, broad black under-cloak. Whole seated figure with feet visible. FRONT three-quarter view, no weapons, no text, no ornate jewelry.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-19d1e3d4-63dd-4caf-85f2-9fe0154d678b.png",
+      "destination": "T_Sprite_Character_행상_SeatedFront.png"
+    },
+    {
+      "key": "cleric_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A small seated discouraged young woman cleric in a plain charcoal-purple hooded robe with muted pale ivory collar, hands clasped loosely over knees, head bowed, readable simple sad face. Entire seated figure including feet. FRONT three-quarter view. Quiet appealing face with closed eyes in few ink marks, substantial solid black under hood and robe, no jewelry or weapon.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c3e36d41-aa2b-4235-b922-fddfe98dfca8.png",
+      "destination": "T_Sprite_Character_절망한성직자_SeatedFront.png"
+    },
+    {
+      "key": "camp_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A small campsite object: simple ring of FIVE large flat stones around TWO logs and a small warm amber flame, a folded plain olive bedroll alongside. FRONT three-quarter view. Large clean forms only, no embers, sparks, smoke, particles or scenery.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-5808fb1b-d582-4571-8bba-f75a20617d98.png",
+      "destination": "T_UI_World_Camp_Front.png"
+    },
+    {
+      "key": "crate_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A single small humble wooden supply CRATE, almost square, three broad planks, two braces, a plain lid with one plank slightly displaced leaving a dark slim gap. FRONT three-quarter view, left front corner nearest viewer. No metal treasure-chest fittings. Bold simple wooden form.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-0e89240c-b343-4c2c-b978-2b228cda4c19.png",
+      "destination": "T_UI_World_Crate_Front.png"
+    },
+    {
+      "key": "mechanism_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A wall-mounted broad plain stone relief panel bearing a large sun-disc with a SINGLE small iron lever underneath, sun disc is slightly tilted compared to its square frame. FRONT view. Very simple clean olive stone, black underside and broad ochre edge, no background wall, no small symbols.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-1fee8613-eaf5-484f-8592-14e612a33a04.png",
+      "destination": "T_UI_World_Mechanism_Front.png"
+    },
+    {
+      "key": "door_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A closed narrow wooden dungeon side-room DOOR with round top, two plain thick dull iron horizontal straps and a SINGLE large brass sun-disc keyhole lock at chest height. FRONT view, only the door leaf and thin stone frame, no background wall, no floor scenery. Strong simple silhouette.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-5c462b76-2225-48bb-bc2d-cd2799c85988.png",
+      "destination": "T_UI_World_Door_Front.png"
+    },
+    {
+      "key": "chest_side",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw the exact same CLOSED chest from a SIDE three-quarter view: its narrow right end dominates, front keyhole plane recedes to left. Preserve exact wood/iron design and material colors. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-60390971-8fd2-43ca-8482-90eda3469ea6.png",
+      "destination": "T_UI_World_Chest_Side.png"
+    },
+    {
+      "key": "chest_rear",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw the exact same CLOSED chest from BEHIND: rear broad wooden plane with simple two hinges, no keyhole visible. Three-quarter rear view, preserving same design and proportions. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-b8288e07-5c8f-47e2-be79-3000840208e2.png",
+      "destination": "T_UI_World_Chest_Rear.png"
+    },
+    {
+      "key": "chest_usedfront",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Change ONLY the lid state of this exact chest: hinged lid is fully OPEN, interior clearly empty and ink-black. Match front three-quarter view, same base footprint, wood/metal design and colors. No loot. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-71cfcdf8-307a-471e-abea-a36529e47dc5.png",
+      "destination": "T_UI_World_Chest_UsedFront.png"
+    },
+    {
+      "key": "goddess_side",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw this exact same statue from a strong SIDE three-quarter view, face looking toward SCREEN RIGHT. It will mount to a left-side dungeon wall. Preserve hood, bowl in folded arms, pedestal and calm face. Reduce robe to three broad cloth planes, no added folds. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-942be195-f959-406e-8c16-160bfd323b4f.png",
+      "destination": "T_UI_World_Goddess_Side.png"
+    },
+    {
+      "key": "fountain_side",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw this exact same WALL FOUNTAIN from strong SIDE three-quarter view, the wall slab and spout FACE SCREEN RIGHT, attached basin extends to right. Preserve same basin/slab/face/stream design. It attaches to a left dungeon wall. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8249512f-54e8-4164-aa44-8c498580f73d.png",
+      "destination": "T_UI_World_Fountain_Side.png"
+    },
+    {
+      "key": "fountain_usedfront",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Change ONLY the water state of this exact fountain in FRONT view: NO water stream and completely EMPTY DRY basin, ink-black bottom visible. Preserve stone design/proportions, whole slab and basin silhouette. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d06cf40d-b759-4038-be25-936d696397ef.png",
+      "destination": "T_UI_World_Fountain_UsedFront.png"
+    },
+    {
+      "key": "merchant_side",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw this exact seated merchant and his pack from a SIDE profile facing SCREEN RIGHT. Preserve bald head, broad beard, green cloak, brown boots, pack identity. Keep whole seated figure. Simplify outer cloak into 3 broad forms; remove tiny jagged folds. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-64232023-ac18-45d0-a91d-2987fa1a153a.png",
+      "destination": "T_Sprite_Character_행상_SeatedSide.png"
+    },
+    {
+      "key": "merchant_rear",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw this exact seated merchant and pack from BEHIND. We see his bald back-of-head, green cloak's back and broad shoulders, pack next to him. Face is hidden. Whole seated figure; 3 broad cloak planes and clean hem. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-3c4ce735-3f34-46b6-b66d-d39ed0460a50.png",
+      "destination": "T_Sprite_Character_행상_SeatedRear.png"
+    },
+    {
+      "key": "cleric_side",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw this exact discouraged seated woman cleric in SIDE profile facing SCREEN RIGHT. Same dark purple hood, ivory cuffs/collar, bowed head, arms over knees, brown boots, identity. Whole seated body. Keep hand anatomy clean and simplify robe folds to broad masses. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-359ce7fb-fe65-43d9-b8d8-2ac2e36c76ff.png",
+      "destination": "T_Sprite_Character_절망한성직자_SeatedSide.png"
+    },
+    {
+      "key": "cleric_rear",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw this exact seated hooded cleric from BEHIND. Her bowed purple hood and hunched shoulders, broad robe back, seated legs mostly hidden. Face and hands occluded by body. Entire seated figure. Same costume/color/proportions, three broad cloth planes. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9d2c9b09-9410-45e9-b5af-a9f6ccbc8d26.png",
+      "destination": "T_Sprite_Character_절망한성직자_SeatedRear.png"
+    },
+    {
+      "key": "camp_side",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw exact same stone fire ring, TWO logs, small flame, rolled olive bedroll from a SIDE view rotated ninety degrees around the camp. Bedroll now recedes toward background instead of extending sideways. Same simple forms, no extra props. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c6644c56-b659-4012-b76f-7c53a23aa14d.png",
+      "destination": "T_UI_World_Camp_Side.png"
+    },
+    {
+      "key": "camp_rear",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Redraw same fire ring, two logs and small flame with rolled olive bedroll from opposite REAR view, so bedroll is now to SCREEN LEFT. Preserve camera height and same simple materials. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-1ccd2947-6cb2-424e-86ad-765d0640f274.png",
+      "destination": "T_UI_World_Camp_Rear.png"
+    },
+    {
+      "key": "camp_usedfront",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Input image 1 is the exact object identity/view to change; remaining inputs are the installed style authority. Change only camp state: fire burned down to two short black charred logs with a tiny dull amber coal, NO standing flame, same five-stone ring and same rolled bedroll in same FRONT viewpoint. Keep footprint and broad simple forms. Transparent alpha; no ambient haze or glow.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-907a46fa-8436-4ef5-952d-47bd9ea1f825.png",
+      "destination": "T_UI_World_Camp_UsedFront.png"
+    },
+    {
+      "key": "scholar_side",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw same seated elderly scholarly teacher in full SIDE profile facing SCREEN RIGHT. Bald crown, broad side hair and short beard, olive shawl over charcoal-brown robe, closed book on lap and both hands touching cover, same stool. No backpack. Whole seated body and feet. Broad simple cloak/face planes. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8c11602f-a654-4a98-aa3d-575642ee7708.png",
+      "destination": "T_Sprite_Character_노학자_SeatedSide.png"
+    },
+    {
+      "key": "scholar_rear",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw same seated teacher from directly BEHIND, bald crown with white side hair, olive shawl and charcoal brown robe, stool legs, book and hands hidden on far side of body. Whole seated figure and stool; few big black cloth shadows. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-511dbb80-6b52-4c3d-91bd-80386eab5478.png",
+      "destination": "T_Sprite_Character_노학자_SeatedRear.png"
+    },
+    {
+      "key": "mirror_side",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw same narrow tall mirror from strong SIDE three-quarter view facing SCREEN RIGHT. It is mounted on a left dungeon wall. Glass clearly foreshortened, iron frame same arch and two feet, flat gray-blue glass plane without figure or scene. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-6ab9da1e-bfcd-4d9f-928a-c89b3224f65f.png",
+      "destination": "T_UI_World_Mirror_Side.png"
+    },
+    {
+      "key": "mechanism_side",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw same wall-mounted stone sun disc and single iron lever panel from strong SIDE three-quarter view FACING SCREEN RIGHT. Same 8-ray sun disc and square plain stone frame; the panel fits a left dungeon wall. No backing wall or surrounding scenery. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-bc80bbbe-1b03-4d91-9ed2-332b031ff778.png",
+      "destination": "T_UI_World_Mechanism_Side.png"
+    },
+    {
+      "key": "door_side",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw same closed round-top door and thin frame from strong SIDE three-quarter view FACING SCREEN RIGHT, for placement on LEFT dungeon wall. Preserve two iron straps. Lock is a large brass SUN DISC with six broad rays engraved around keyhole, clearly recognizable sun emblem. No extra scenery. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-5c223e09-f182-40f6-8db9-2f4ab30b7417.png",
+      "destination": "T_UI_World_Door_Side.png"
+    },
+    {
+      "key": "chest_usedside",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw exact same OPEN and EMPTY chest from SIDE three-quarter view. Narrow right end dominates and front keyhole plane recedes toward left. Lid stays fully raised, interior ink-black and empty. Same wood/iron design and proportions. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-ae69c177-57c6-48ac-99be-b76056e3748c.png",
+      "destination": "T_UI_World_Chest_UsedSide.png"
+    },
+    {
+      "key": "chest_usedrear",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw exact same OPEN EMPTY chest from BEHIND in three-quarter rear view. The OUTSIDE of raised lid and two hinges visible, no front keyhole. Same chest material and body proportions, lid up, no loot. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-4e268765-119a-4949-a995-683b876c4a48.png",
+      "destination": "T_UI_World_Chest_UsedRear.png"
+    },
+    {
+      "key": "fountain_usedside",
+      "prompt": "Use case: stylized-concept. Production transparent Unity object sprite. Image 1 is exact object identity; images 2/3 are actual installed background/character; image 4 original drawing authority. Preserve identity, simplified chunky forms, selective thick drawn ink contours, substantial solid BLACK internal shadows, very few muted broad color planes. No realism, gradient modeling, tiny facets, jagged clutter, added folds, text, haze, ambient glow or scenery. Draw exact same DRY EMPTY wall fountain from strong SIDE three-quarter view FACING SCREEN RIGHT, mounted to a left wall. No water stream, completely empty ink-black basin. Same slab face and basin design. No background wall or extra objects. One whole centered unclipped object on transparent alpha.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-00c663e3-9ee9-4156-bf1d-e9605db7e2e3.png",
+      "destination": "T_UI_World_Fountain_UsedSide.png"
+    },
+    {
+      "key": "key_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: One small old brass KEY, plain long stem, two square teeth and a large round SUN-DISC bow with six broad triangular rays, clearly recognizable key. Lying diagonally on the floor but no ground scene. Few large yellow-ochre planes and ink black underedge. No extra keys, jewelry or ornament.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-10cff3ce-9927-448b-9ffe-9600bcf16417.png",
+      "destination": "T_UI_World_Key_Front.png"
+    },
+    {
+      "key": "mirror_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: One tall narrow standing wall MIRROR in a plain dark iron frame, slight angular pointed arch, two thick support feet. FRONT view. Reflection is a quiet flat pale desaturated gray-blue glass plane with ONE broad diagonal highlight, no reflected character or scenery. Thick black frame, very simple.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-dcea9077-e4df-4513-ad90-d935fc1e8749.png",
+      "destination": "T_UI_World_Mirror_Front.png"
+    },
+    {
+      "key": "scholar_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: One elderly scholarly teacher, compact appealing proportions, bald crown with short broad white side hair and one broad short white beard, wearing plain charcoal-brown robe and dull olive shoulder shawl, seated on a low stool with a CLOSED broad book on his lap, both hands resting naturally on its cover. FRONT three-quarter view; expressive eyes in few strokes, broad black robe undersides; no staff or pack. Whole seated figure visible including plain shoes.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-ca528b94-78a1-4771-bb57-2d7dcaec03ec.png",
+      "destination": "T_Sprite_Character_노학자_SeatedFront.png"
+    },
+    {
+      "key": "merchant_usedfront",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: Only an abandoned empty folded brown packing cloth on a small plain wooden crate with a short loosened rope lying on top. No person, no pack or contents. FRONT three-quarter view. This remains after a traveling merchant departs. Clean large forms, few planes, no ornate detail.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-552d4bdb-96ae-4a1f-8412-3d8391030c9a.png",
+      "destination": "T_Sprite_Character_행상_SeatedUsedFront.png"
+    },
+    {
+      "key": "hourglass_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: A SMALL plain wooden writing stand with a large HOURGLASS standing on top and one small closed ledger beside it. Two plain posts hold two broad glass bulbs, pale sand visibly collected in upper bulb. Front three-quarter view. No magic glow or particles, no room. Single coherent world prop with broad simple shapes.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-7cd415c6-b68f-4c48-b089-9857c888dec8.png",
+      "destination": "T_UI_World_Hourglass_Front.png"
+    },
+    {
+      "key": "seed_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: One small squat stone laboratory plinth with a single LARGE ROOTED SEED resting on its flat top. Seed walnut-size relative to plinth, pale ochre shell with THREE thick dark red root tendrils spreading across tabletop. One simple folded note beside it. Frontal three-quarter view. No facial features, no monster, no eye, no gore, no surrounding scenery.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-aa1858a5-0b5a-43e5-a2ee-804675aca705.png",
+      "destination": "T_UI_World_Seed_Front.png"
+    },
+    {
+      "key": "fruit_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: One squat old clay plant pot under a plain clear GLASS BELL COVER resting on a low square stone stand. Inside is one simple wilting stem with TWO broad leaves and ONE large muted amber fruit. Front three-quarter view. Glass described by a single broad pale outline/highlight, transparent interior, no sparkles. No environment or extra plants.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d1359b97-2f3a-431f-acfb-ab1fb3dc2e08.png",
+      "destination": "T_UI_World_Fruit_Front.png"
+    },
+    {
+      "key": "book_front",
+      "prompt": "Use case: stylized-concept. Production Unity dungeon world-object sprite for Behemoth, transparent background. Input image 1 is actual installed background; image 2 actual installed character; image 3 original drawn simplification authority. Match their selective thick drawn outlines, substantial SOLID INK BLACK shapes inside the object, extremely few large muted olive stone/brown wood/iron color planes. Clear broad silhouettes, broad restrained shadows. NO realism, gradient modeling, realistic texture, grain, tiny chips, jagged clutter, intricate ornament or text. No ground scenery, no background, no lettering; small simple contact shadow only, whole subject unclipped. Slightly elevated eye-level dungeon camera, never overhead/isometric. Single centered object, fills canvas with transparent margin. Subject: One CLOSED thick old dark-brown book FLOATING just above a low small plain stone pedestal. Book has two simple dull brass corners and one broad pale inset diamond on cover, only a few visible page-block lines. Front three-quarter view, main cover visible, small separate oval shadow directly beneath it. No magic glow, particles, text, scenery or runes.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-09232de9-a3a7-4197-aa18-21b60a898ef7.png",
+      "destination": "T_UI_World_Book_Front.png"
+    },
+    {
+      "key": "merchant_usedside",
+      "prompt": "Use case: precise-object-edit. Image 1 exact production object to edit; remaining images installed background/character/original style authorities. Transparent background. Preserve chunky large shapes, thick selective ink outlines, SOLID BLACK internal shadows, few broad muted planes, NO extra facets, fine texture or realistic modeling. Draw the exact same abandoned empty cloth-covered crate and short rope from a strong SIDE three-quarter view. No person or belongings. Same low crate and plain folded brown cloth. No new props.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-2edc760e-77c0-4ad5-bcb7-6566725bddb9.png",
+      "destination": "T_Sprite_Character_행상_SeatedUsedSide.png"
+    },
+    {
+      "key": "merchant_usedrear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact production object to edit; remaining images installed background/character/original style authorities. Transparent background. Preserve chunky large shapes, thick selective ink outlines, SOLID BLACK internal shadows, few broad muted planes, NO extra facets, fine texture or realistic modeling. Draw the exact same abandoned cloth-covered crate from BEHIND. Plain back wooden boards, folded brown cloth on top and short rope. No person or belongings, no new props.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-70ebc8d2-66f7-4076-a7b4-ade567203215.png",
+      "destination": "T_Sprite_Character_행상_SeatedUsedRear.png"
+    },
+    {
+      "key": "camp_usedside",
+      "prompt": "Use case: precise-object-edit. Image 1 exact production object to edit; remaining images installed background/character/original style authorities. Transparent background. Preserve chunky large shapes, thick selective ink outlines, SOLID BLACK internal shadows, few broad muted planes, NO extra facets, fine texture or realistic modeling. Draw the exact same USED campsite from SIDE view rotated ninety degrees: stone ring, charred short logs and tiny coal, rolled bedroll receding toward background. NO standing flame. Same materials and forms.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-0c9e10cc-4e80-4097-9a76-3f04714480da.png",
+      "destination": "T_UI_World_Camp_UsedSide.png"
+    },
+    {
+      "key": "camp_usedrear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact production object to edit; remaining images installed background/character/original style authorities. Transparent background. Preserve chunky large shapes, thick selective ink outlines, SOLID BLACK internal shadows, few broad muted planes, NO extra facets, fine texture or realistic modeling. Draw the exact same USED campsite from opposite REAR view: rolled bedroll on SCREEN LEFT of stone ring, short black charred logs with tiny coal, NO standing flame. Same materials and simple forms.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-021f0b7a-60df-4d8a-a948-50e8dffdcca5.png",
+      "destination": "T_UI_World_Camp_UsedRear.png"
+    },
+    {
+      "key": "door_front_corrected",
+      "prompt": "Use case: precise-object-edit. Image 1 exact production object to edit; remaining images installed background/character/original style authorities. Transparent background. Preserve chunky large shapes, thick selective ink outlines, SOLID BLACK internal shadows, few broad muted planes, NO extra facets, fine texture or realistic modeling. Change ONLY the small brass lock design on this front-view door: add six very broad engraved sun rays around the keyhole, so this is unmistakably a SUN emblem lock, matching a sun-headed key. Keep all door wood/iron/frame geometry, proportions, viewpoint and colors unchanged. Do not add ornament anywhere else.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-665d00f8-8735-4312-a34d-97145a85a2a4.png",
+      "destination": "T_UI_World_Door_Front.png"
+    },
+    {
+      "key": "book_side",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same floating CLOSED book and low pedestal from SIDE view. Spine dominates, front cover recedes toward screen right. Keep two brass corners, cover diamond, float height and pedestal proportions.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d32f2b61-246a-4ed2-afb8-1ead619de15a.png",
+      "destination": "T_UI_World_Book_Side.png"
+    },
+    {
+      "key": "book_rear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same floating CLOSED book and low pedestal from BEHIND, plain back cover visible, NO pale diamond on back, same binding and brass corners. Preserve small floating gap above pedestal.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-21b6ea2f-79c7-4b0a-9dea-a11338747d06.png",
+      "destination": "T_UI_World_Book_Rear.png"
+    },
+    {
+      "key": "mirror_rear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same freestanding narrow arched mirror from BEHIND. We see an entirely opaque plain brown wooden BACK PANEL in same dark iron arch frame with two support feet. No visible glass reflection. Same proportions.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8e2fb174-7a8a-4f97-99f2-38e91025b6e8.png",
+      "destination": "T_UI_World_Mirror_Rear.png"
+    },
+    {
+      "key": "crate_side",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same loose-lidded wooden supply crate from SIDE three-quarter view. Previously right-hand plane dominates. Same broad planks, braces and lid with narrow dark gap. No treasure fittings.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-967fc5db-6300-4da5-99d8-19fe756d02a1.png",
+      "destination": "T_UI_World_Crate_Side.png"
+    },
+    {
+      "key": "crate_rear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same loose-lidded wooden supply crate from opposite REAR three-quarter view. Plain wooden back boards and broad braces, same loose lid gap. No treasure fittings.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c2fd35ee-be15-4413-8fda-284e1cd1620d.png",
+      "destination": "T_UI_World_Crate_Rear.png"
+    },
+    {
+      "key": "hourglass_side",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same wooden writing stand with hourglass and closed ledger from SIDE view rotated ninety degrees. Exact same table legs, hourglass with sand in upper bulb and ledger. No additional objects.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-2482f497-24a7-4f14-9b6f-d4ee4e610c88.png",
+      "destination": "T_UI_World_Hourglass_Side.png"
+    },
+    {
+      "key": "hourglass_rear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same small hourglass writing stand and closed ledger from opposite REAR view. Ledger now appears to LEFT of hourglass. Same legs, sand in upper bulb, materials, proportions.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-eb24c276-acde-4d7e-8307-72e23f4285c5.png",
+      "destination": "T_UI_World_Hourglass_Rear.png"
+    },
+    {
+      "key": "seed_side",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same simple small stone laboratory plinth with walnut-like rooted seed and folded note from SIDE view ninety degrees around object. Same THREE thick red roots, same note and shell. No new elements.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-59a2482b-0aee-4f23-98ef-f87b93dbc1a6.png",
+      "destination": "T_UI_World_Seed_Side.png"
+    },
+    {
+      "key": "seed_rear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same rooted seed laboratory plinth from opposite REAR view: folded note now to LEFT, same seed shell and THREE broad red roots. Same stone shape.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-5b0fb5d3-00a1-4783-a20f-a7c89f9d1837.png",
+      "destination": "T_UI_World_Seed_Rear.png"
+    },
+    {
+      "key": "fruit_side",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same glass-covered potted amber fruit on low stone stand from SIDE view ninety degrees around plant, fruit remains ONE and TWO broad wilted leaves. Same pot, bell cover and stand. Describe glass with ONE flat pale highlight band, no cloudy gradient or grain.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9d4ac7bf-2b24-4151-bed8-098cdd61ef04.png",
+      "destination": "T_UI_World_Fruit_Side.png"
+    },
+    {
+      "key": "fruit_rear",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Draw same glass-covered potted amber fruit from opposite REAR view, fruit now to SCREEN LEFT, same plant pot, stem, two broad leaves and stone stand. Glass has ONE flat pale highlight band, no soft gradients or grain.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8db1bb02-4b08-4213-a59a-62e526e0eed6.png",
+      "destination": "T_UI_World_Fruit_Rear.png"
+    },
+    {
+      "key": "seed_usedfront",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Change ONLY seed state: seed and all roots have been taken away; small EMPTY stone plinth and folded note remain. Same front view, same silhouette footprint, stone materials and note. A few dark remnants on tabletop allowed, no seed or roots.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-554a3427-cd80-4479-ba87-1c0b65caeaa5.png",
+      "destination": "T_UI_World_Seed_UsedFront.png"
+    },
+    {
+      "key": "fruit_usedfront",
+      "prompt": "Use case: precise-object-edit. Image 1 exact object identity; images 2/3 actual installed Behemoth backdrop/character; image 4 original style reference. Transparent alpha. Keep broad simple forms, thick selective drawn ink contours, SOLID BLACK internal shadows, few broad muted color planes; no realism, fine texture, many tiny facets, haze, glow or surrounding scenery. Change ONLY plant state: fruit has been picked and stem is cut down, leaving plain clay pot with soil and tiny stem stump under same empty glass bell on same stone stand. NO FRUIT, no leaves. Glass one flat pale highlight band, no cloudy gradients or grain. Same front viewpoint and footprint.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-dc3920ad-51b9-45de-9089-3779a8741561.png",
+      "destination": "T_UI_World_Fruit_UsedFront.png"
+    },
+    {
+      "key": "cleric_front_simplified",
+      "prompt": "Use case: precise-object-edit. Image 1 is target sprite. Images 2,3 are actual project background/character and image 4 original style authority. Correct ONLY the purple CLOAK AND ROBE: current triangular fold fragments, serrated hem and stacked thin pointed cloth strips are too busy. Remove most internal fold lines and triangular facets. Group cloak into ONLY THREE broad cloth masses, TWO substantial solid-black shadow shapes, and at most two large restrained purple highlight planes. Hem has only TWO broad rounded/angular bends, no small teeth, no thin points. Keep face/head/hair/hands/boots/cuffs identity, seated posture, exact view direction, silhouette proportions, purple colors and canvas framing unchanged. Do NOT simplify by lowering image resolution or blurring; redraw actual cloth forms as clean broad ink-painted shapes. Transparent background, no haze or scenery.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-e03619c4-b114-4233-825c-833f7e1dd589.png",
+      "destination": "T_Sprite_Character_절망한성직자_SeatedFront.png"
+    },
+    {
+      "key": "cleric_side_simplified",
+      "prompt": "Use case: precise-object-edit. Image 1 is target sprite. Images 2,3 are actual project background/character and image 4 original style authority. Correct ONLY the purple CLOAK AND ROBE: current triangular fold fragments, serrated hem and stacked thin pointed cloth strips are too busy. Remove most internal fold lines and triangular facets. Group cloak into ONLY THREE broad cloth masses, TWO substantial solid-black shadow shapes, and at most two large restrained purple highlight planes. Hem has only TWO broad rounded/angular bends, no small teeth, no thin points. Keep face/head/hair/hands/boots/cuffs identity, seated posture, exact view direction, silhouette proportions, purple colors and canvas framing unchanged. Do NOT simplify by lowering image resolution or blurring; redraw actual cloth forms as clean broad ink-painted shapes. Transparent background, no haze or scenery.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-0e1d7627-2e37-4088-be4b-aa464c407f26.png",
+      "destination": "T_Sprite_Character_절망한성직자_SeatedSide.png"
+    },
+    {
+      "key": "cleric_rear_simplified",
+      "prompt": "Use case: precise-object-edit. Image 1 is target sprite. Images 2,3 are actual project background/character and image 4 original style authority. Correct ONLY the purple CLOAK AND ROBE: current triangular fold fragments, serrated hem and stacked thin pointed cloth strips are too busy. Remove most internal fold lines and triangular facets. Group cloak into ONLY THREE broad cloth masses, TWO substantial solid-black shadow shapes, and at most two large restrained purple highlight planes. Hem has only TWO broad rounded/angular bends, no small teeth, no thin points. Keep face/head/hair/hands/boots/cuffs identity, seated posture, exact view direction, silhouette proportions, purple colors and canvas framing unchanged. Do NOT simplify by lowering image resolution or blurring; redraw actual cloth forms as clean broad ink-painted shapes. Transparent background, no haze or scenery.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-afe12385-a1b6-425b-a59f-10274a47c8ec.png",
+      "destination": "T_Sprite_Character_절망한성직자_SeatedRear.png"
+    }
+  ]
+}

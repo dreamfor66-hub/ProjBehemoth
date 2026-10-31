@@ -86,6 +86,7 @@ namespace DungeonSlash
 
         public void StartNewRun()
         {
+            DebugInspectionArt = null;
             StopAllCoroutines();
             combatController.ResetEncounter();
             seed = CreateRandomSeed();
@@ -147,6 +148,13 @@ namespace DungeonSlash
             }
             BeginEventPhase();
             if (roomTransitionView != null) yield return roomTransitionView.Play();
+            PrepareRoomStory(room);
+            // A speaking encounter already has a visible, authored subject when its first words appear.
+            if (ExplorationEnabled && room.Type == RoomEncounterType.Event && room.Story?.discovery == EventDiscovery.Automatic)
+                RefreshExploration();
+            if (IsWorldEncounter(room) || ExplorationEnabled && room.Type == RoomEncounterType.Event
+                && room.Story != null && room.Story.discovery != EventDiscovery.Automatic)
+            { ShowNavigation(); yield break; }
             if(room.Type==RoomEncounterType.Camp){ShowCamp(room);yield break;}
             if (room.IsCleared) { ShowNavigation(); yield break; }
 
@@ -185,6 +193,7 @@ namespace DungeonSlash
                     HandleMerchantRoom(room);
                     yield break;
                 case RoomEncounterType.Empty:
+                    if (ExplorationEnabled) { room.IsCleared = true; ShowNavigation(); yield break; }
                     yield return ShowEventMessage(GameText.Get("ui.gameflowcontroller.b2f5746"), null);
                     room.IsCleared = true;
                     ShowNavigation();
@@ -250,6 +259,7 @@ namespace DungeonSlash
             runController.State.Player.Heal(runController.FountainHealAmount);
             var healed = runController.State.Player.CurrentHp - before;
             memory.DrinkFromFountain();
+            dungeonController.State.Player.CurrentRoom.IsCleared = true;
             RefreshHud();
             yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.93765ef1", healed), fountainEventSprite);
             ShowNavigation();
@@ -268,12 +278,14 @@ namespace DungeonSlash
             State = GameFlowState.RoomEvent;
             if (roomEventView == null) { room.IsCleared = true; ShowNavigation(); return; }
             // Poison is intentionally a gamble: it must present exactly like an ordinary fountain.
-            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.543192e4"), fountainEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(DrinkPoisonFountain(room)), () => { room.IsCleared = true; ShowNavigation(); });
+            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.543192e4"), fountainEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(DrinkPoisonFountain(room)), ShowNavigation);
         }
 
         private IEnumerator DrinkPoisonFountain(DungeonRoom room)
         {
             var healed = runController.DrinkToxicFountain();
+            GetRoomMemory(room).DrinkFromFountain();
+            room.IsCleared = true;
             RefreshHud();
             yield return ShowEventMessage(GameText.Format("ui.gameflowcontroller.1fd680ca", healed), fountainEventSprite);
             room.IsCleared = true;
@@ -284,7 +296,7 @@ namespace DungeonSlash
         {
             State = GameFlowState.RoomEvent;
             if (roomEventView == null) { room.IsCleared = true; ShowNavigation(); return; }
-            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.f792ceab"), goldEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(OpenChest(room)), () => { room.IsCleared = true; ShowNavigation(); });
+            roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.f792ceab"), goldEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () => StartCoroutine(OpenChest(room)), ShowNavigation);
         }
 
         private IEnumerator OpenChest(DungeonRoom room)
@@ -336,9 +348,9 @@ namespace DungeonSlash
             if (roomEventView == null) { ShowNavigation(); return; }
             roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.5db06efc"), merchantEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () =>
             {
-                memory.MarkMerchantDeparted();
                 if (RollsMerchantMutantAmbush(dungeonController.State.Seed, room.RoomId, dungeonController.Floor) && combatController.MerchantMutant != null)
                 {
+                    memory.MarkMerchantDeparted();
                     StartCoroutine(BeginMerchantMutantAmbush(room));
                     return;
                 }
@@ -346,7 +358,6 @@ namespace DungeonSlash
                 ShowShop(room);
             }, () =>
             {
-                memory.MarkMerchantDeparted();
                 ShowNavigation();
             });
         }
@@ -532,6 +543,8 @@ namespace DungeonSlash
             }, () =>
             {
                 shopView.Hide();
+                GetRoomMemory(room).MarkMerchantDeparted();
+                room.IsCleared = true;
                 ShowNavigation();
             });
         }
@@ -571,11 +584,13 @@ namespace DungeonSlash
             runController?.State?.Player?.RestoreShieldForNavigation();
             State = GameFlowState.DungeonNavigation;
             dungeonController.RefreshNavigation();
+            RefreshExploration();
             RefreshHud();
         }
 
         private void HideTransientViews()
         {
+            explorationView?.SetVisible(false);
             encounterMessageView?.Hide();
             roomEventView?.Hide();
             rewardPopupView?.Hide();

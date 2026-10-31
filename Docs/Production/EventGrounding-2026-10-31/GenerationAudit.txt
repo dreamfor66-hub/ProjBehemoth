@@ -1,0 +1,1 @@
+4992 checks; 0 failures; 384 seeds per act, one serial relevant generation audit. Minimum facility distance=4.

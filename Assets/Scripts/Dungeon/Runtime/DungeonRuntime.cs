@@ -54,6 +54,19 @@ namespace DungeonSlash
         public bool IsRevealed { get; set; }
         public bool IsMajorRoom { get; set; }
         public ChestContent ChestContent { get; set; } = ChestContent.Relic;
+        public bool IsOptionalAnnex { get; set; }
+        public int ObjectCorner { get; set; }
+        public FacingDirection ObjectFacing { get; set; }
+        public FacingDirection ObjectWall { get; set; }
+        public bool ObjectPlacementPrepared { get; set; }
+        public RandomEventData Story { get; set; }
+        public bool StoryPrepared { get; set; }
+        public bool StoryInvestigated { get; set; }
+        public bool ObjectRemoved { get; set; }
+        public bool ObjectUsed { get; set; }
+        public RoomObjectData ObjectAftermath { get; set; }
+        public string RevisitTextKey { get; set; }
+        public List<int> KeyTokens { get; } = new();
         public HashSet<int> Connections { get; } = new();
         public DungeonRoom(int id, DungeonPosition position) { RoomId = id; EncounterOriginId=id; Position = position; }
     }
@@ -63,6 +76,8 @@ namespace DungeonSlash
         private readonly Dictionary<int, DungeonRoom> byId = new();
         private readonly Dictionary<DungeonPosition, DungeonRoom> byPosition = new();
         public IReadOnlyCollection<DungeonRoom> Rooms => byId.Values;
+        public List<DungeonPassage> Passages { get; } = new();
+        public DungeonPassage Passage(DungeonRoom a, DungeonRoom b) => Passages.FirstOrDefault(p => p.Connects(a, b));
         public DungeonRoom StartRoom { get; private set; }
 
         public DungeonRoom AddRoom(DungeonPosition position)
@@ -115,6 +130,9 @@ namespace DungeonSlash
         public int Floor { get; }
         public DungeonGraph Graph { get; }
         public PlayerDungeonState Player { get; }
+        public HashSet<int> Keys { get; } = new();
+        public bool CanSeePassage(DungeonRoom from, DungeonRoom to) => Graph.Passage(from, to) is not { Discovered: false };
+        public bool CanTravel(DungeonRoom from, DungeonRoom to) => CanSeePassage(from, to) && Graph.Passage(from, to) is not { Locked: true };
         private readonly HashSet<string> revealedConnections = new();
         public DungeonRunState(int seed, DungeonGraph graph, int floor = 1) { Seed = seed; Floor = Math.Max(1, floor); Graph = graph; Player = new PlayerDungeonState(graph.StartRoom); }
         public void RevealConnection(DungeonRoom from, DungeonRoom to) => revealedConnections.Add(ConnectionKey(from, to));

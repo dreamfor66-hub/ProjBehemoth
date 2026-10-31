@@ -1,0 +1,2 @@
+chapter-object-tools-1
+Saved chapter tab, 3 travel buttons, all world-object paintings, direction/state/place/clear controls in MainGameScene and Angular01_Main. No manual menu step.

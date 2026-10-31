@@ -1,0 +1,76 @@
+Scoped live Unity exploration matrix. Synthetic interaction fixtures are isolated to this probe; production generation has no test routes or forced encounters. No DPS/balance suite.
+PASS B1: saved exploration settings and object slots loaded
+PASS B1: fountain is a world interaction before a popup
+PASS B1: world hit area receives the top UI click (hits: Interaction Area,Background)
+PASS B1: world fountain opens its actual choice
+PASS B1: leaving the fountain preserves unused state
+PASS B1: only drinking consumes fountain
+PASS B1: dry painting survives return to navigation
+PASS B1: spent fountain gives narration without modal or repeated healing
+PASS B1: declined chest stays closed and reusable
+PASS B1: accepting chest consumes it once
+PASS B1: reopened chest gives narration without duplicating rewards
+PASS B1: declining merchant conversation does not make him leave
+PASS B1: shrine intact wall visible from entry (0, 4)
+PASS B1: shrine uses authored painting for Forward
+PASS B1: shrine intact wall visible from entry (1, 5)
+PASS B1: shrine uses authored painting for Left
+PASS B1: camp is present without forced popup
+PASS B1: resting persists camp's used state
+PASS B1: authored story opens from its scene object without reroll
+PASS B1: actual dialogue choice persists its specific aftermath
+PASS B1: resolved story answers in-world without reopening choices
+PASS B2: saved exploration settings and object slots loaded
+PASS B2: fountain is a world interaction before a popup
+PASS B2: world hit area receives the top UI click (hits: Interaction Area,Background)
+PASS B2: world fountain opens its actual choice
+PASS B2: leaving the fountain preserves unused state
+PASS B2: only drinking consumes fountain
+PASS B2: dry painting survives return to navigation
+PASS B2: spent fountain gives narration without modal or repeated healing
+PASS B2: declined chest stays closed and reusable
+PASS B2: accepting chest consumes it once
+PASS B2: reopened chest gives narration without duplicating rewards
+PASS B2: declining merchant conversation does not make him leave
+PASS B2: shrine intact wall visible from entry (-2, 2)
+PASS B2: shrine uses authored painting for Right
+PASS B2: shrine intact wall visible from entry (-2, 0)
+PASS B2: shrine uses authored painting for Left
+PASS B2: camp is present without forced popup
+PASS B2: resting persists camp's used state
+PASS B2: authored story opens from its scene object without reroll
+PASS B2: actual dialogue choice persists its specific aftermath
+PASS B2: resolved story answers in-world without reopening choices
+PASS B3: saved exploration settings and object slots loaded
+PASS B3: fountain is a world interaction before a popup
+PASS B3: world hit area receives the top UI click (hits: Interaction Area,Background)
+PASS B3: world fountain opens its actual choice
+PASS B3: leaving the fountain preserves unused state
+PASS B3: only drinking consumes fountain
+PASS B3: dry painting survives return to navigation
+PASS B3: spent fountain gives narration without modal or repeated healing
+PASS B3: declined chest stays closed and reusable
+PASS B3: accepting chest consumes it once
+PASS B3: reopened chest gives narration without duplicating rewards
+PASS B3: declining merchant conversation does not make him leave
+PASS B3: shrine intact wall visible from entry (2, 0)
+PASS B3: shrine uses authored painting for Left
+PASS B3: camp is present without forced popup
+PASS B3: resting persists camp's used state
+PASS B3: authored story opens from its scene object without reroll
+PASS B3: actual dialogue choice persists its specific aftermath
+PASS B3: resolved story answers in-world without reopening choices
+PASS natural generation produces a concealed locked passage
+PASS undiscovered entrance cannot be traversed
+PASS hidden room and connecting route absent from map
+PASS finding mechanism reveals locked door without granting access
+PASS key pickup is persistent and cannot be duplicated
+PASS matching key consumed exactly once and enables navigation
+PASS actual saved navigation button enters newly opened annex
+PASS collecting actual hourglass persists an empty-table aftermath
+PASS collected hourglass has three authored aftermath directions
+PASS retained story NPCs never claim that the seated person has departed
+PASS toxic fountain shares ordinary fountain's exact pre-use artwork
+PASS declining toxic fountain preserves unused state
+PASS toxic fountain actual drink applies poison and consumes the object
+PASS B3 mimic opens actual combat after chest interaction

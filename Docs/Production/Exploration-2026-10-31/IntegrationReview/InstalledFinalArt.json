@@ -1,0 +1,1007 @@
+[
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_노학자_SeatedFront.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "b7633cb7b31f647f01970e19d68e1b39023aa39fbc262d8470155b1adccd9d69",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_노학자_SeatedRear.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "76c939eb63c1413a431b967ee1f9ec43eeeb23b47605304ac768478bd4f72c30",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_노학자_SeatedSide.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "5dfdece6aa01be37f286e7f256e4e17882ade053e1cda873a25c3df02f5940bb",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_절망한성직자_SeatedFront.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "c6f7387ce2889455c878b2cb036ca0e832d0036d876e6dcd6b2f5d754b5d96bf",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_절망한성직자_SeatedRear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "3c4898d4a57ad7531970d51122f365f8f1457f371baeb69af4b467236c2c369b",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_절망한성직자_SeatedSide.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "aace721defb7f3213fef1bf2df93f170058ee2731261aeb730591cb6bf8968ad",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_행상_SeatedFront.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "363db0abb40d650ff330e17a847c6d05566ea660424dc87d3f0cf671a3a28063",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_행상_SeatedRear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "6e91c1d463559ce86bf4592ac7bf1752a88b8f45d58220691e47b2915c62b80d",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_행상_SeatedSide.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "dad40e4e76a6d2c468af8e44c1ad594d1bdbfbc993a14b821dcb834dccf37e3a",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_행상_SeatedUsedFront.png",
+    "size": [
+      1378,
+      1141
+    ],
+    "mode": "RGBA",
+    "sha256": "04df9e85fae7f759bf54b27ffdfb870bb635b74c5e8e534cb5a599f5f42b5c29",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_행상_SeatedUsedRear.png",
+    "size": [
+      1378,
+      1142
+    ],
+    "mode": "RGBA",
+    "sha256": "3e9c3eb3bc3e294cca3ca72828862637e3bb186c39f8ac6c2fae0edda9d195fc",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_Sprite_Character_행상_SeatedUsedSide.png",
+    "size": [
+      1378,
+      1142
+    ],
+    "mode": "RGBA",
+    "sha256": "04353b20b7fd7c92b3b9a3c022a8474638a84844eca20a3ad57d5a17168c3ccc",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Book_Front.png",
+    "size": [
+      1358,
+      1159
+    ],
+    "mode": "RGBA",
+    "sha256": "cac9ce45aa60bb9bc3f4fd52f35b33c033c6d202859e1eb6c763db8a1a367253",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Book_Rear.png",
+    "size": [
+      1358,
+      1159
+    ],
+    "mode": "RGBA",
+    "sha256": "12479e441f03ea0a2be93224df6bf47683eb873e1a040018fd9f31dea6073537",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Book_Side.png",
+    "size": [
+      1358,
+      1159
+    ],
+    "mode": "RGBA",
+    "sha256": "f0d5f2eef7efbc6957aaf4e3025d5e9ceb335afb599a70d01ab3386f221e1bfe",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Camp_Front.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "65607e331110d61fa5b8317079180c7852051b1077764e50305f06dc54266cba",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Camp_Rear.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "535ea821a200b3db157aa9d52879bc8b14307b56fd55a138394c509b0e30afc0",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Camp_Side.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "5947076d205d89ca0b6c0ce39b13af0702111a05b09fc569c44029c1c186ccef",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Camp_UsedFront.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "9fec44cab8f3992778b4f790327b99e28c527954f628bcf66266c214efda4d13",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Camp_UsedRear.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "ebc912173aa4de7d83d17fb5b77f040ea8483c9fa992164e47f46cfa9e2ecf8e",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Camp_UsedSide.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "e8284a4af64420212b6a10f5f19f83b25bfaa0da241e1f354cb37c1a6dfdd71e",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_Front.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "9990454e4f10e2914dc6c8e2e36c7681c41d5fb8a10b618bacfd987c56f6ae82",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_Rear.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "8c092ad464c9e59340be4d2c4a72a604812f33b05a0e304caf0e618c32daaa98",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_Side.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "af143236950c9b872a36172cbf632de303c73ccd332dcef27415617126c1ff5b",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_UsedFront.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "1e6eb02bcc4c3a4e8bf66ae91c638841d13fde9e2f86bdbf42d9e22e103d37be",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_UsedRear.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "b338a1aa5f3e257db9c6bd77c7d5913dcd8f2c03e9c4b6b5a90797a3ef4478e6",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_UsedSide.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "sha256": "4c96bc0c56167b03a05e79cdf0e23f474f7ca03fb74845a2ffefd7d4125457a4",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Crate_Front.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "bee736ef510900843a1e99b2341b3067db8d6eced620c8a138f4f348135d4004",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Crate_Rear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "4a12e8c6b2117576dac21ab306f70cf040fb566e6f7ed2532e1aafe85e6e2cfb",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Crate_Side.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "2c5a44b2304b988d1b7e8d0b0532613e1e9f97a925c379e86a5d5063e4afe18b",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Door_Front.png",
+    "size": [
+      926,
+      1699
+    ],
+    "mode": "RGBA",
+    "sha256": "fe1879a0ada829474c09c2d8472df9277f4a58f1109dbef2f3b92fb0880bd824",
+    "replaced": true,
+    "generation": {
+      "key": "Door_Front",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-89ab3ece-7014-44e3-9f6c-3b2f0ac6280e.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_Front.png",
+    "size": [
+      1214,
+      1295
+    ],
+    "mode": "RGBA",
+    "sha256": "2adefb0b215e045b611c18f9b17e54bfc97542162478d0749b35d3bc0b1ed1f3",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_Side.png",
+    "size": [
+      1312,
+      1199
+    ],
+    "mode": "RGBA",
+    "sha256": "233dcab675050a5f05103d7bbd025e4a1f5e03d31264a1602eccdfaea142e037",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_UsedFront.png",
+    "size": [
+      1215,
+      1295
+    ],
+    "mode": "RGBA",
+    "sha256": "743fc07730eff3499ea50dd8b3f9abd3f0b41ab505cfc71fbcc96bddfd405386",
+    "replaced": true,
+    "generation": {
+      "key": "Fountain_UsedFront",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d560a6df-eb63-4e2b-9f94-52ad41005907.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_UsedSide.png",
+    "size": [
+      1312,
+      1199
+    ],
+    "mode": "RGBA",
+    "sha256": "a1c350a60c55097eb427aa6d204ead777d285de6e51010ac3cfbbb11409f20bd",
+    "replaced": true,
+    "generation": {
+      "key": "Fountain_UsedSide",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-07567d00-3d5f-425b-a729-eb51a6a5e58c.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fruit_Front.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "51787bca8e0c50449e05d0ee052b5ecde7971c55f54325a167bcf3c5fa3c29ff",
+    "replaced": true,
+    "generation": {
+      "key": "Fruit_Front",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a13d68e3-2a3d-4643-ba54-764901f9f950.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fruit_Rear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "f36f17eb0c865d4c36e47df4399d63b602dace2208fcac0a4c7ec2baf1940430",
+    "replaced": true,
+    "generation": {
+      "key": "Fruit_Rear",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-4a5b2fc9-5a01-4938-a3b5-caf79844c0b4.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fruit_Side.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "6a48f04da397623a3214edd353c7005998f568b9814e6bfd4882463ad458b64c",
+    "replaced": true,
+    "generation": {
+      "key": "Fruit_Side",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-885bdd29-27f7-4bc2-b428-7f0d6d186191.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fruit_UsedFront.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "d9523747cf22a54b9502182eea313d2b708a9fcb158944037f8c507e32b23399",
+    "replaced": true,
+    "generation": {
+      "key": "Fruit_UsedFront",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-366bb850-ff9c-4a49-8d07-9283456dcf41.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fruit_UsedRear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "3d0a9733de3048a511a056164db10b3f0f07ee897ff46797e5cbe0343e4d4658",
+    "replaced": true,
+    "generation": {
+      "key": "Fruit_UsedRear",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-fc2fe7e9-df0d-4ef8-820e-69fad67cffba.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Fruit_UsedSide.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "c79c474221f2e4ddf1a6f2d356197bce7252b00e4b976ab8ed356a5ce5139619",
+    "replaced": true,
+    "generation": {
+      "key": "Fruit_UsedSide",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f15aaa7b-3e91-414f-8269-f1e458297766.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Goddess_Front.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "94020cdf25fcafff5051caa5106f93ad98b6c438654530d04f3b983545bc9e03",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Goddess_Side.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "6bd2ea251741ad0d4a0885fffd9bdc1d3252c36cffb00846d6fb60c621bf43d7",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Hourglass_Front.png",
+    "size": [
+      1246,
+      1263
+    ],
+    "mode": "RGBA",
+    "sha256": "de1322056323471dd34a9babb07ec81b518861091da2ef4292873a70a43751a2",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Hourglass_Rear.png",
+    "size": [
+      1246,
+      1263
+    ],
+    "mode": "RGBA",
+    "sha256": "7f35ee62f894b1a2c235fadec95a7030dca25a6a4cbc1bd81e8f4ec3f6bcfcca",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Hourglass_Side.png",
+    "size": [
+      1246,
+      1263
+    ],
+    "mode": "RGBA",
+    "sha256": "6afba42bd1f21175001c6aac41fc1a2d54dea647b7284a003a61c86fab3cf8f1",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Hourglass_UsedFront.png",
+    "size": [
+      1246,
+      1263
+    ],
+    "mode": "RGBA",
+    "sha256": "76e5bd0e99a6977f1f13f578a4721d5ad677b40c4dce6b01a5f86ef748a996c8",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Hourglass_UsedRear.png",
+    "size": [
+      1246,
+      1263
+    ],
+    "mode": "RGBA",
+    "sha256": "465d26f11f8133b8df8a7da92891a589a625d345b4af05c4f17f6c67baa76a41",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Hourglass_UsedSide.png",
+    "size": [
+      1246,
+      1263
+    ],
+    "mode": "RGBA",
+    "sha256": "66870d20469e8c31f1e1fc2d587b642e626508d525c3e456034b6d07d9227254",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Key_Front.png",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "sha256": "8b7a8d12f1d2b7ee8e678c34ec1fccb27aff7d17b2d23b16d5e8c5774b430759",
+    "replaced": true,
+    "generation": {
+      "key": "Key_Front",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f3414250-37cd-4595-a212-3089f1ae24e9.png",
+      "references": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+      ]
+    },
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Mechanism_Front.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "5e63852418e3389a952a0dbf83e25d05f55483aa66c1a471e2e8619568225f24",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Mechanism_Side.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "343f50005fa7cffb856d99d501b9af7dd3e19fbd78c8e853d6e5fd389cf9db86",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Mirror_Front.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "6c0a6b047de9a44139cfd957016cb14951705d6de316c8c886d73eed3c74cafa",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Mirror_Rear.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "a8e72ca9d2543b74772a9627f8097be88c4d28f7150ead62a709241868e01380",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Mirror_Side.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "sha256": "f433dc8b10306ed4e72f7d0537d23d62bef028d42b9d2305920fe2b16562e80d",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      254
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Seed_Front.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "fda60e22f3861a9d56500bbebe952403057d96935c7bfe122b97bde6aea93f95",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Seed_Rear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "092540ad1d5f5743b58ec71d99ba48bead4a967db8190eb5368cbe751a86424a",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Seed_Side.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "675889e9be26a0de758d228fe32fa0d9085abdd6dfc381ed94e145ce2d5097d7",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Seed_UsedFront.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "24420a3e5907f566b768170d339e6028c3839070db4702937562fd58818ca81f",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Seed_UsedRear.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "056f9d81b75f4b6032f565ddad905d2f846e5cff479d8619178614864893383a",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  },
+  {
+    "file": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Seed_UsedSide.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "41712e36b248cbdb8d84ddec61c1eee49a3771da10ba9a30af305fe777bb25f2",
+    "replaced": false,
+    "generation": null,
+    "alphaRange": [
+      0,
+      255
+    ]
+  }
+]

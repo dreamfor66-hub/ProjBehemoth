@@ -18,12 +18,12 @@ MonoBehaviour:
     lastText: "\uADF8 \uB3CC\uC5D0 \uC801\uD78C \uC774\uB984"
   - propertyPath: narrative
     key: data.randomeventdata.lostbeliever.narrative
-    lastText: "\uC18C\uB144 \uD558\uB098\uAC00 \uBB34\uB108\uC9C4 \uD68C\uB791 \uC55E\uC5D0\uC11C
-      \uC11C\uC131\uC774\uACE0 \uC788\uB2E4.\r\n\r\n\uC190\uC5D0 \uC954 \uB3CC\uC5D0\uB294
-      \uC804\uC5D0 \uB9CC\uB09C \uC21C\uB840\uC790\uC758 \uC9D0\uC5D0\uC11C \uBCF8
-      \uC774\uB984\uC774 \uC0C8\uACA8\uC838 \uC788\uB2E4.\r\n\r\n\uADF8 \uD45C\uC2DD,
-      \uC544\uBC84\uC9C0\uC758 \uC720\uD488\uC744 \uAC00\uC838\uC624\uC2E0 \uBD84\uAED8
-      \uBC1B\uC73C\uC168\uB098\uC694?"
+    lastText: "\uC791\uC740 \uBCF4\uB530\uB9AC\uB97C \uC548\uC740 \uC18C\uB144\uC774
+      \uAE38\uAC00\uC5D0 \uC549\uC544 \uC788\uB2E4.\n\n\uC190\uC5D0 \uC954 \uB3CC\uC5D0\uB294
+      \uC0AC\uB78C\uC758 \uC774\uB984\uC774 \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uC544\uBC84\uC9C0
+      \uC774\uB984\uC774\uC5D0\uC694. \uC774\uAC78 \uAC00\uC838\uC628 \uC21C\uB840\uC790\uB97C
+      \uB9CC\uB098\uC57C \uD558\uB294\uB370, \uD63C\uC790\uC11C\uB294 \uB354 \uAC08
+      \uC218\uAC00 \uC5C6\uC5B4\uC694.\u201D"
   - propertyPath: options.Array.data[0].title
     key: data.randomeventdata.lostbeliever.options.0.title
     lastText: "\uC11C\uC57D\uC758 \uB3CC\uC744 \uB9DE\uCDB0 \uBCF8\uB2E4"
@@ -46,22 +46,24 @@ MonoBehaviour:
       \uB4F1\uBD88\uC740 \uC18C\uB144\uC5D0\uAC8C \uB0A8\uB294\uB2E4."
   - propertyPath: options.Array.data[0].resultText
     key: data.randomeventdata.lostbeliever.options.0.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: options.Array.data[1].resultText
     key: data.randomeventdata.lostbeliever.options.1.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: options.Array.data[2].resultText
     key: data.randomeventdata.lostbeliever.options.2.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: pages.Array.data[0].narrative
     key: data.randomeventdata.lostbeliever.pages.0.narrative
-    lastText: "\uC18C\uB144 \uD558\uB098\uAC00 \uBB34\uB108\uC9C4 \uD68C\uB791 \uC55E\uC5D0\uC11C
-      \uC11C\uC131\uC774\uACE0 \uC788\uB2E4.\r\n\r\n\uC544\uBC84\uC9C0\uC758 \uC720\uD488\uC744
-      \uC804\uD574 \uC8FC\uB7EC \uC628 \uBD84\uC744 \uB9CC\uB098\uC57C \uD574\uC694.
-      \uADF8\uB7F0\uB370 \uAE38\uC774 \uB9C9\uD614\uC5B4\uC694."
+    lastText: "\uC791\uC740 \uBCF4\uB530\uB9AC\uB97C \uC548\uC740 \uC18C\uB144\uC774
+      \uAE38\uAC00\uC5D0 \uC549\uC544 \uC788\uB2E4.\n\n\uC190\uC5D0 \uC954 \uB3CC\uC5D0\uB294
+      \uC0AC\uB78C\uC758 \uC774\uB984\uC774 \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uC544\uBC84\uC9C0
+      \uC774\uB984\uC774\uC5D0\uC694. \uC774\uAC78 \uAC00\uC838\uC628 \uC21C\uB840\uC790\uB97C
+      \uB9CC\uB098\uC57C \uD558\uB294\uB370, \uD63C\uC790\uC11C\uB294 \uB354 \uAC08
+      \uC218\uAC00 \uC5C6\uC5B4\uC694.\u201D"
   - propertyPath: pages.Array.data[0].options.Array.data[0].title
     key: data.randomeventdata.lostbeliever.pages.0.options.0.title
-    lastText: "\uB2E4\uB978 \uAE38\uC744 \uCC3E\uC544\uBCF8\uB2E4."
+    lastText: "\uC18C\uB144\uC758 \uAE30\uB85D\uC744 \uC0B4\uD3B4\uBCF8\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[0].description
     key: data.randomeventdata.lostbeliever.pages.0.options.0.description
     lastText: 
@@ -77,8 +79,10 @@ MonoBehaviour:
     lastText: "\uCCB4\uB825 +15"
   - propertyPath: pages.Array.data[0].options.Array.data[1].resultText
     key: data.randomeventdata.lostbeliever.pages.0.options.1.resulttext
-    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-      \uB098\uC130\uB2E4."
+    lastText: "\uC548\uC804\uD55C \uAE38\uC744 \uADF8\uB824 \uC8FC\uC790 \uC18C\uB144\uC774
+      \uBCF4\uB530\uB9AC\uC5D0\uC11C \uC57D\uCD08\uB97C \uAEBC\uB0B4 \uB0B4 \uC0C1\uCC98\uC5D0
+      \uBC1C\uB77C \uC8FC\uC5C8\uB2E4. \uC9C0\uB3C4\uB97C \uCC59\uAE34 \uC18C\uB144\uC740
+      \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[2].title
     key: data.randomeventdata.lostbeliever.pages.0.options.2.title
     lastText: "\uB5A0\uB09C\uB2E4."
@@ -87,12 +91,15 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[0].options.Array.data[2].resultText
     key: data.randomeventdata.lostbeliever.pages.0.options.2.resulttext
-    lastText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+    lastText: "\uB3C4\uC640\uC904 \uBC29\uBC95\uC744 \uCC3E\uC9C0 \uBABB\uD55C \uCC44
+      \uBE44\uCF1C\uC130\uB2E4. \uC18C\uB144\uC740 \uBCF4\uB530\uB9AC\uB97C \uB04C\uC5B4\uC548\uACE0
+      \uB2E4\uC2DC \uAE38\uC744 \uC0B4\uD3C8\uB2E4."
   - propertyPath: pages.Array.data[1].narrative
     key: data.randomeventdata.lostbeliever.pages.1.narrative
     lastText: "\uC18C\uB144\uC774 \uB0B4\uAC00 \uC9C0\uB2CC \uD45C\uC2DD\uC744 \uC54C\uC544\uBCF4\uACE0
-      \uB2E4\uAC00\uC628\uB2E4.\r\n\r\n\uADF8 \uD45C\uC2DD, \uC544\uBC84\uC9C0\uC758
-      \uC720\uD488\uC744 \uAC00\uC838\uC624\uC2E0 \uBD84\uAED8 \uBC1B\uC73C\uC168\uB098\uC694?"
+      \uC77C\uC5B4\uC120\uB2E4.\n\n\u201C\uADF8 \uD45C\uC2DD, \uC774\uB984\uC774
+      \uC0C8\uACA8\uC9C4 \uB3CC\uC744 \uB4E4\uACE0 \uB2E4\uB2C8\uB294 \uBD84\uAED8
+      \uBC1B\uC73C\uC168\uB098\uC694?\u201D"
   - propertyPath: pages.Array.data[1].options.Array.data[0].title
     key: data.randomeventdata.lostbeliever.pages.1.options.0.title
     lastText: "\uC21C\uB840\uC790\uAC00 \uD5A5\uD55C \uD1B5\uB85C\uB97C \uC54C\uB824
@@ -102,8 +109,11 @@ MonoBehaviour:
     lastText: "\uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD"
   - propertyPath: pages.Array.data[1].options.Array.data[0].resultText
     key: data.randomeventdata.lostbeliever.pages.1.options.0.resulttext
-    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-      \uB098\uC130\uB2E4."
+    lastText: "\uD45C\uC2DD\uC744 \uBCF4\uC5EC \uC8FC\uACE0 \uC21C\uB840\uC790\uAC00
+      \uD5A5\uD55C \uD1B5\uB85C\uB97C \uC9DA\uC5B4 \uC8FC\uC5C8\uB2E4. \uC18C\uB144\uC740
+      \uBCF4\uB2F5\uC774\uB77C\uBA70 \uC791\uC740 \uB4F1\uBD88\uC744 \uAC74\uB124\uACE0
+      \uBCF4\uB530\uB9AC\uB97C \uC548\uC544 \uB4E4\uC5C8\uB2E4. \uC6B0\uB9AC\uB294
+      \uC11C\uB85C \uB2E4\uB978 \uAE38\uB85C \uD5A5\uD588\uB2E4."
   - propertyPath: pages.Array.data[1].options.Array.data[1].title
     key: data.randomeventdata.lostbeliever.pages.1.options.1.title
     lastText: "\uC9D1\uC73C\uB85C \uB3CC\uC544\uAC08 \uAE38\uB9CC \uADF8\uB824 \uC900\uB2E4."
@@ -112,8 +122,10 @@ MonoBehaviour:
     lastText: "\uCCB4\uB825 +15"
   - propertyPath: pages.Array.data[1].options.Array.data[1].resultText
     key: data.randomeventdata.lostbeliever.pages.1.options.1.resulttext
-    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-      \uB098\uC130\uB2E4."
+    lastText: "\uC548\uC804\uD55C \uAE38\uC744 \uADF8\uB824 \uC8FC\uC790 \uC18C\uB144\uC774
+      \uBCF4\uB530\uB9AC\uC5D0\uC11C \uC57D\uCD08\uB97C \uAEBC\uB0B4 \uB0B4 \uC0C1\uCC98\uC5D0
+      \uBC1C\uB77C \uC8FC\uC5C8\uB2E4. \uC9C0\uB3C4\uB97C \uCC59\uAE34 \uC18C\uB144\uC740
+      \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
   - propertyPath: pages.Array.data[1].options.Array.data[2].title
     key: data.randomeventdata.lostbeliever.pages.1.options.2.title
     lastText: "\uB5A0\uB09C\uB2E4."
@@ -122,12 +134,16 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[1].options.Array.data[2].resultText
     key: data.randomeventdata.lostbeliever.pages.1.options.2.resulttext
-    lastText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+    lastText: "\uB3C4\uC640\uC904 \uBC29\uBC95\uC744 \uCC3E\uC9C0 \uBABB\uD55C \uCC44
+      \uBE44\uCF1C\uC130\uB2E4. \uC18C\uB144\uC740 \uBCF4\uB530\uB9AC\uB97C \uB04C\uC5B4\uC548\uACE0
+      \uB2E4\uC2DC \uAE38\uC744 \uC0B4\uD3C8\uB2E4."
   - propertyPath: pages.Array.data[2].narrative
     key: data.randomeventdata.lostbeliever.pages.2.narrative
-    lastText: "\uBCBD\uC758 \uC810\uAC80\uAD6C \uB108\uBA38\uB85C \uC6B0\uD68C\uD560
-      \uC218 \uC788\uACA0\uB2E4. \uC881\uC740 \uD1B5\uB85C\uC5D0\uB294 \uB0A0\uCE74\uB85C\uC6B4
-      \uCCA0\uC81C \uC794\uD574\uAC00 \uAC00\uB4DD\uD558\uB2E4."
+    lastText: "\uC18C\uB144\uC774 \uD3BC\uCE5C \uC885\uC774\uC5D0 \uC21C\uB840\uC790\uC758
+      \uC774\uB3D9 \uACBD\uB85C\uAC00 \uC801\uD600 \uC788\uB2E4.\n\n\uADF8\uACF3\uAE4C\uC9C0
+      \uB370\uB824\uB2E4\uC904 \uC218\uB294 \uC788\uACA0\uB2E4. \uB2E4\uB9CC \uB0A0\uCE74\uB85C\uC6B4
+      \uC794\uD574\uB97C \uC9C0\uB098\uB294 \uB3D9\uC548 \uC18C\uB144 \uB300\uC2E0
+      \uB0B4\uAC00 \uC55E\uC744 \uB9C9\uC544\uC57C \uD55C\uB2E4."
   - propertyPath: pages.Array.data[2].options.Array.data[0].title
     key: data.randomeventdata.lostbeliever.pages.2.options.0.title
     lastText: "\uC0C1\uCC98\uB97C \uAC10\uC218\uD558\uACE0 \uD568\uAED8 \uC9C0\uB09C\uB2E4."
@@ -136,8 +152,10 @@ MonoBehaviour:
     lastText: "\uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD"
   - propertyPath: pages.Array.data[2].options.Array.data[0].resultText
     key: data.randomeventdata.lostbeliever.pages.2.options.0.resulttext
-    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-      \uB098\uC130\uB2E4."
+    lastText: "\uC18C\uB144\uC744 \uC55E\uC138\uC6CC \uC794\uD574\uB97C \uC9C0\uB0AC\uB2E4.
+      \uB0B4 \uD314\uC5D0\uB294 \uC0C1\uCC98\uAC00 \uB0A8\uC558\uC9C0\uB9CC \uC18C\uB144\uC740
+      \uBB34\uC0AC\uD558\uB2E4. \uC18C\uB144\uC774 \uAC74\uB128 \uB4F1\uBD88\uC744
+      \uB4E4\uACE0 \uC11C\uB85C \uB2E4\uB978 \uAE38\uB85C \uD5A5\uD588\uB2E4."
   - propertyPath: pages.Array.data[2].options.Array.data[1].title
     key: data.randomeventdata.lostbeliever.pages.2.options.1.title
     lastText: "\uC548\uB0B4\uB3C4\uB97C \uADF8\uB824 \uB3CC\uC544\uAC00\uAC8C \uD55C\uB2E4."
@@ -146,19 +164,23 @@ MonoBehaviour:
     lastText: "\uCCB4\uB825 +15"
   - propertyPath: pages.Array.data[2].options.Array.data[1].resultText
     key: data.randomeventdata.lostbeliever.pages.2.options.1.resulttext
-    lastText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-      \uB098\uC130\uB2E4."
+    lastText: "\uC548\uC804\uD55C \uAE38\uC744 \uADF8\uB824 \uC8FC\uC790 \uC18C\uB144\uC774
+      \uBCF4\uB530\uB9AC\uC5D0\uC11C \uC57D\uCD08\uB97C \uAEBC\uB0B4 \uB0B4 \uC0C1\uCC98\uC5D0
+      \uBC1C\uB77C \uC8FC\uC5C8\uB2E4. \uC9C0\uB3C4\uB97C \uCC59\uAE34 \uC18C\uB144\uC740
+      \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
   textOwnerGuid: be7331d68afcaaa4bbb16cc5d097b544
   id: LostBeliever
   displayName: "\uADF8 \uB3CC\uC5D0 \uC801\uD78C \uC774\uB984"
+  discovery: 1
+  worldObject: {fileID: 11400000, guid: d36f85516c50509478c22de12d7ae539, type: 2}
   excludedFromRandomPool: 0
-  narrative: "\uC18C\uB144 \uD558\uB098\uAC00 \uBB34\uB108\uC9C4 \uD68C\uB791 \uC55E\uC5D0\uC11C
-    \uC11C\uC131\uC774\uACE0 \uC788\uB2E4.\r\n\r\n\uC190\uC5D0 \uC954 \uB3CC\uC5D0\uB294
-    \uC804\uC5D0 \uB9CC\uB09C \uC21C\uB840\uC790\uC758 \uC9D0\uC5D0\uC11C \uBCF8
-    \uC774\uB984\uC774 \uC0C8\uACA8\uC838 \uC788\uB2E4.\r\n\r\n\uADF8 \uD45C\uC2DD,
-    \uC544\uBC84\uC9C0\uC758 \uC720\uD488\uC744 \uAC00\uC838\uC624\uC2E0 \uBD84\uAED8
-    \uBC1B\uC73C\uC168\uB098\uC694?"
-  illustration: {fileID: 21300000, guid: e7272535203f832448964fc03bcbd541, type: 3}
+  narrative: "\uC791\uC740 \uBCF4\uB530\uB9AC\uB97C \uC548\uC740 \uC18C\uB144\uC774
+    \uAE38\uAC00\uC5D0 \uC549\uC544 \uC788\uB2E4.\n\n\uC190\uC5D0 \uC954 \uB3CC\uC5D0\uB294
+    \uC0AC\uB78C\uC758 \uC774\uB984\uC774 \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uC544\uBC84\uC9C0
+    \uC774\uB984\uC774\uC5D0\uC694. \uC774\uAC78 \uAC00\uC838\uC628 \uC21C\uB840\uC790\uB97C
+    \uB9CC\uB098\uC57C \uD558\uB294\uB370, \uD63C\uC790\uC11C\uB294 \uB354 \uAC08
+    \uC218\uAC00 \uC5C6\uC5B4\uC694.\u201D"
+  illustration: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   illustratedPopup: 1
   minAct: 2
@@ -188,12 +210,19 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.LostBeliever.-1.0
     requirements: []
     effects:
     - kind: 0
       relic: {fileID: 11400000, guid: 18be5b53cf7152041bc7a008f62a3aad, type: 2}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 0
@@ -212,12 +241,19 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.LostBeliever.-1.1
     requirements: []
     effects:
     - kind: 0
       relic: {fileID: 11400000, guid: 18be5b53cf7152041bc7a008f62a3aad, type: 2}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 0
@@ -237,24 +273,33 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.LostBeliever.-1.2
     requirements: []
     effects:
     - kind: 6
       relic: {fileID: 0}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 15
       stat: 4
   pages:
-  - narrative: "\uC18C\uB144 \uD558\uB098\uAC00 \uBB34\uB108\uC9C4 \uD68C\uB791 \uC55E\uC5D0\uC11C
-      \uC11C\uC131\uC774\uACE0 \uC788\uB2E4.\r\n\r\n\uC544\uBC84\uC9C0\uC758 \uC720\uD488\uC744
-      \uC804\uD574 \uC8FC\uB7EC \uC628 \uBD84\uC744 \uB9CC\uB098\uC57C \uD574\uC694.
-      \uADF8\uB7F0\uB370 \uAE38\uC774 \uB9C9\uD614\uC5B4\uC694."
-    illustration: {fileID: 0}
+  - narrative: "\uC791\uC740 \uBCF4\uB530\uB9AC\uB97C \uC548\uC740 \uC18C\uB144\uC774
+      \uAE38\uAC00\uC5D0 \uC549\uC544 \uC788\uB2E4.\n\n\uC190\uC5D0 \uC954 \uB3CC\uC5D0\uB294
+      \uC0AC\uB78C\uC758 \uC774\uB984\uC774 \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uC544\uBC84\uC9C0
+      \uC774\uB984\uC774\uC5D0\uC694. \uC774\uAC78 \uAC00\uC838\uC628 \uC21C\uB840\uC790\uB97C
+      \uB9CC\uB098\uC57C \uD558\uB294\uB370, \uD63C\uC790\uC11C\uB294 \uB354 \uAC08
+      \uC218\uAC00 \uC5C6\uC5B4\uC694.\u201D"
+    illustration: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}
     options:
-    - title: "\uB2E4\uB978 \uAE38\uC744 \uCC3E\uC544\uBCF8\uB2E4."
+    - title: "\uC18C\uB144\uC758 \uAE30\uB85D\uC744 \uC0B4\uD3B4\uBCF8\uB2E4."
       description: 
       goldCost: 0
       hpCost: 0
@@ -269,6 +314,10 @@ MonoBehaviour:
       nextPage: 2
       failurePage: -1
       resultText: 
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: 
       requirements: []
       effects: []
     - title: "\uC548\uC804\uD558\uAC8C \uB3CC\uC544\uAC08 \uAE38\uC744 \uADF8\uB824
@@ -286,13 +335,21 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-        \uB098\uC130\uB2E4."
+      resultText: "\uC548\uC804\uD55C \uAE38\uC744 \uADF8\uB824 \uC8FC\uC790 \uC18C\uB144\uC774
+        \uBCF4\uB530\uB9AC\uC5D0\uC11C \uC57D\uCD08\uB97C \uAEBC\uB0B4 \uB0B4 \uC0C1\uCC98\uC5D0
+        \uBC1C\uB77C \uC8FC\uC5C8\uB2E4. \uC9C0\uB3C4\uB97C \uCC59\uAE34 \uC18C\uB144\uC740
+        \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.0.1
       requirements: []
       effects:
       - kind: 6
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 15
@@ -311,14 +368,21 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+      resultText: "\uB3C4\uC640\uC904 \uBC29\uBC95\uC744 \uCC3E\uC9C0 \uBABB\uD55C
+        \uCC44 \uBE44\uCF1C\uC130\uB2E4. \uC18C\uB144\uC740 \uBCF4\uB530\uB9AC\uB97C
+        \uB04C\uC5B4\uC548\uACE0 \uB2E4\uC2DC \uAE38\uC744 \uC0B4\uD3C8\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.0.2
       requirements: []
       effects: []
     routes: []
   - narrative: "\uC18C\uB144\uC774 \uB0B4\uAC00 \uC9C0\uB2CC \uD45C\uC2DD\uC744 \uC54C\uC544\uBCF4\uACE0
-      \uB2E4\uAC00\uC628\uB2E4.\r\n\r\n\uADF8 \uD45C\uC2DD, \uC544\uBC84\uC9C0\uC758
-      \uC720\uD488\uC744 \uAC00\uC838\uC624\uC2E0 \uBD84\uAED8 \uBC1B\uC73C\uC168\uB098\uC694?"
-    illustration: {fileID: 0}
+      \uC77C\uC5B4\uC120\uB2E4.\n\n\u201C\uADF8 \uD45C\uC2DD, \uC774\uB984\uC774
+      \uC0C8\uACA8\uC9C4 \uB3CC\uC744 \uB4E4\uACE0 \uB2E4\uB2C8\uB294 \uBD84\uAED8
+      \uBC1B\uC73C\uC168\uB098\uC694?\u201D"
+    illustration: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}
     options:
     - title: "\uC21C\uB840\uC790\uAC00 \uD5A5\uD55C \uD1B5\uB85C\uB97C \uC54C\uB824
         \uC900\uB2E4."
@@ -335,13 +399,22 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-        \uB098\uC130\uB2E4."
+      resultText: "\uD45C\uC2DD\uC744 \uBCF4\uC5EC \uC8FC\uACE0 \uC21C\uB840\uC790\uAC00
+        \uD5A5\uD55C \uD1B5\uB85C\uB97C \uC9DA\uC5B4 \uC8FC\uC5C8\uB2E4. \uC18C\uB144\uC740
+        \uBCF4\uB2F5\uC774\uB77C\uBA70 \uC791\uC740 \uB4F1\uBD88\uC744 \uAC74\uB124\uACE0
+        \uBCF4\uB530\uB9AC\uB97C \uC548\uC544 \uB4E4\uC5C8\uB2E4. \uC6B0\uB9AC\uB294
+        \uC11C\uB85C \uB2E4\uB978 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.1.0
       requirements: []
       effects:
       - kind: 0
         relic: {fileID: 11400000, guid: 18be5b53cf7152041bc7a008f62a3aad, type: 2}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 0
@@ -360,13 +433,21 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-        \uB098\uC130\uB2E4."
+      resultText: "\uC548\uC804\uD55C \uAE38\uC744 \uADF8\uB824 \uC8FC\uC790 \uC18C\uB144\uC774
+        \uBCF4\uB530\uB9AC\uC5D0\uC11C \uC57D\uCD08\uB97C \uAEBC\uB0B4 \uB0B4 \uC0C1\uCC98\uC5D0
+        \uBC1C\uB77C \uC8FC\uC5C8\uB2E4. \uC9C0\uB3C4\uB97C \uCC59\uAE34 \uC18C\uB144\uC740
+        \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.1.1
       requirements: []
       effects:
       - kind: 6
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 15
@@ -385,14 +466,22 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+      resultText: "\uB3C4\uC640\uC904 \uBC29\uBC95\uC744 \uCC3E\uC9C0 \uBABB\uD55C
+        \uCC44 \uBE44\uCF1C\uC130\uB2E4. \uC18C\uB144\uC740 \uBCF4\uB530\uB9AC\uB97C
+        \uB04C\uC5B4\uC548\uACE0 \uB2E4\uC2DC \uAE38\uC744 \uC0B4\uD3C8\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.1.2
       requirements: []
       effects: []
     routes: []
-  - narrative: "\uBCBD\uC758 \uC810\uAC80\uAD6C \uB108\uBA38\uB85C \uC6B0\uD68C\uD560
-      \uC218 \uC788\uACA0\uB2E4. \uC881\uC740 \uD1B5\uB85C\uC5D0\uB294 \uB0A0\uCE74\uB85C\uC6B4
-      \uCCA0\uC81C \uC794\uD574\uAC00 \uAC00\uB4DD\uD558\uB2E4."
-    illustration: {fileID: 0}
+  - narrative: "\uC18C\uB144\uC774 \uD3BC\uCE5C \uC885\uC774\uC5D0 \uC21C\uB840\uC790\uC758
+      \uC774\uB3D9 \uACBD\uB85C\uAC00 \uC801\uD600 \uC788\uB2E4.\n\n\uADF8\uACF3\uAE4C\uC9C0
+      \uB370\uB824\uB2E4\uC904 \uC218\uB294 \uC788\uACA0\uB2E4. \uB2E4\uB9CC \uB0A0\uCE74\uB85C\uC6B4
+      \uC794\uD574\uB97C \uC9C0\uB098\uB294 \uB3D9\uC548 \uC18C\uB144 \uB300\uC2E0
+      \uB0B4\uAC00 \uC55E\uC744 \uB9C9\uC544\uC57C \uD55C\uB2E4."
+    illustration: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}
     options:
     - title: "\uC0C1\uCC98\uB97C \uAC10\uC218\uD558\uACE0 \uD568\uAED8 \uC9C0\uB09C\uB2E4."
       description: "\uAE38\uC7A1\uC774\uC758 \uB4F1\uBD88 \uD68D\uB4DD"
@@ -408,13 +497,21 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-        \uB098\uC130\uB2E4."
+      resultText: "\uC18C\uB144\uC744 \uC55E\uC138\uC6CC \uC794\uD574\uB97C \uC9C0\uB0AC\uB2E4.
+        \uB0B4 \uD314\uC5D0\uB294 \uC0C1\uCC98\uAC00 \uB0A8\uC558\uC9C0\uB9CC \uC18C\uB144\uC740
+        \uBB34\uC0AC\uD558\uB2E4. \uC18C\uB144\uC774 \uAC74\uB128 \uB4F1\uBD88\uC744
+        \uB4E4\uACE0 \uC11C\uB85C \uB2E4\uB978 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.2.0
       requirements: []
       effects:
       - kind: 0
         relic: {fileID: 11400000, guid: 18be5b53cf7152041bc7a008f62a3aad, type: 2}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 0
@@ -433,13 +530,21 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC7A5\uBE44\uB97C \uCC59\uAE30\uACE0 \uB2E4\uC2DC \uBCF5\uB3C4\uB85C
-        \uB098\uC130\uB2E4."
+      resultText: "\uC548\uC804\uD55C \uAE38\uC744 \uADF8\uB824 \uC8FC\uC790 \uC18C\uB144\uC774
+        \uBCF4\uB530\uB9AC\uC5D0\uC11C \uC57D\uCD08\uB97C \uAEBC\uB0B4 \uB0B4 \uC0C1\uCC98\uC5D0
+        \uBC1C\uB77C \uC8FC\uC5C8\uB2E4. \uC9C0\uB3C4\uB97C \uCC59\uAE34 \uC18C\uB144\uC740
+        \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.LostBeliever.2.1
       requirements: []
       effects:
       - kind: 6
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 15

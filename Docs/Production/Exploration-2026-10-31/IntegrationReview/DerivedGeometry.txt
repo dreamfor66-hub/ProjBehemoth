@@ -1,0 +1,12 @@
+B1 illumination=RGBA(0.754, 0.699, 0.564, 1.000)
+  aperture: (x:0.45, y:0.39, width:0.10, height:0.32); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
+  aperture: (x:0.17, y:0.35, width:0.06, height:0.36); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
+  aperture: (x:0.77, y:0.33, width:0.06, height:0.42); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
+B2 illumination=RGBA(0.601, 0.730, 0.857, 1.000)
+  aperture: (x:0.45, y:0.39, width:0.09, height:0.29); canvas=(0.56, 0.60)/(0.22, 0.25); exposure=0.7362638
+  aperture: (x:0.18, y:0.36, width:0.03, height:0.35); canvas=(0.76, 0.86)/(0.04, 0.14); exposure=0.490566
+  aperture: (x:0.79, y:0.34, width:0.03, height:0.31); canvas=(0.70, 0.87)/(0.24, 0.07); exposure=0.4606742
+B3 illumination=RGBA(0.702, 0.604, 0.496, 1.000)
+  aperture: (x:0.45, y:0.39, width:0.10, height:0.30); canvas=(0.58, 0.56)/(0.21, 0.31); exposure=0.45
+  aperture: (x:0.20, y:0.31, width:0.03, height:0.45); canvas=(0.44, 0.74)/(0.12, 0.26); exposure=0.7704918
+  aperture: (x:0.77, y:0.34, width:0.03, height:0.32); canvas=(0.53, 0.73)/(0.37, 0.18); exposure=0.7692307

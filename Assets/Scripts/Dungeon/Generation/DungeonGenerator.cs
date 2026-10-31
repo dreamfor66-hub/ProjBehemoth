@@ -15,7 +15,8 @@ namespace DungeonSlash
             {
                 var random = new Random(seed + attempt * 7919);
                 var graph = CreateGraph(random, floor);
-                if (TryAssignRooms(graph, random, floor)) return new DungeonRunState(seed, graph, floor);
+                if (TryAssignRooms(graph, random, floor))
+                { ExplorationGeneration.Populate(graph, settings.exploration, seed, floor); return new DungeonRunState(seed, graph, floor); }
             }
             throw new InvalidOperationException("Unable to create a dungeon that satisfies the configured distance constraints.");
         }
@@ -131,24 +132,36 @@ namespace DungeonSlash
             }
             else
             {
-                AssignMinimum(unassigned, RoomEncounterType.Reward, settings.minimumRewardRooms, random);
-                AssignMinimum(unassigned, RoomEncounterType.Camp, 1, random);
-                AssignMinimum(unassigned, RoomEncounterType.Fountain, settings.minimumFountainRooms, random);
-                AssignMinimum(unassigned, RoomEncounterType.Shop, floor, random);
-                AssignMinimum(unassigned, RoomEncounterType.Goddess, settings.minimumGoddessRooms, random);
-                AssignMinimum(unassigned, RoomEncounterType.Event, settings.eventRoomCount, random);
+                if (!AssignDistant(RoomEncounterType.Camp, 1, 1)
+                    || !AssignDistant(RoomEncounterType.Fountain, settings.minimumFountainRooms, 1)
+                    || !AssignDistant(RoomEncounterType.Shop, floor, 1)
+                    || !AssignDistant(RoomEncounterType.Goddess, settings.minimumGoddessRooms, 1)
+                    || !AssignDistant(RoomEncounterType.Reward, settings.minimumRewardRooms, 1)
+                    || !AssignDistant(RoomEncounterType.Event, settings.eventRoomCount, 1)) return false;
             }
             var combatCount = Math.Max(1, (int)Math.Ceiling(graph.Rooms.Count * (settings.combatRoomRatioMin + settings.combatRoomRatioMax) * .5f));
             AssignMinimum(unassigned, RoomEncounterType.Combat, Math.Min(Math.Max(0, combatCount - graph.Rooms.Count(r => r.Type == RoomEncounterType.Combat)), unassigned.Count), random);
             foreach (var room in unassigned) room.Type = random.NextDouble() < .55 ? RoomEncounterType.Combat : RoomEncounterType.Empty;
             AddFloorEventVariants(graph, random, floor);
-            return true;
+            // A wall-mounted shrine cannot occupy a four-exit junction.
+            foreach (var shrine in graph.Rooms.Where(r => r.Connections.Count == 4
+                && r.Type is RoomEncounterType.Goddess or RoomEncounterType.Fountain or RoomEncounterType.PoisonFountain).ToArray())
+            {
+                var substitute = graph.Rooms.Where(r => !r.IsMajorRoom && r.Connections.Count < 4
+                    && (r.Type == RoomEncounterType.Empty || r.Type == RoomEncounterType.Event)
+                    && (floor != 1 || distances[r.RoomId] >= settings.firstActServiceDistance)).OrderBy(_ => random.Next()).FirstOrDefault();
+                if (substitute == null) return false;
+                var serviceType = shrine.Type; shrine.Type = substitute.Type; substitute.Type = serviceType;
+            }
+            return FacilitiesSeparated(graph) && graph.Rooms.Where(r => r.Type == RoomEncounterType.Camp).All(r => r.Connections.Count == 1);
 
             bool AssignDistant(RoomEncounterType type, int count, int minimumDistance)
             {
                 for (var i = 0; i < count; i++)
                 {
                     var candidate = unassigned.Where(r => distances[r.RoomId] >= minimumDistance
+                        && (type != RoomEncounterType.Camp || r.Connections.Count == 1)
+                        && CanPlaceFacility(graph, r, type)
                         && (type != RoomEncounterType.Event || !graph.Neighbors(r).Any(n => n.Type == RoomEncounterType.Event)))
                         .OrderBy(_ => random.Next()).FirstOrDefault();
                     if (candidate == null) return false;
@@ -158,7 +171,18 @@ namespace DungeonSlash
             }
         }
 
-        private static void AddFloorEventVariants(DungeonGraph graph, Random random, int floor)
+        public static RoomEncounterType FacilityFamily(RoomEncounterType type) => type == RoomEncounterType.PoisonFountain ? RoomEncounterType.Fountain : type;
+        private bool CanPlaceFacility(DungeonGraph graph, DungeonRoom room, RoomEncounterType type)
+        {
+            var family = FacilityFamily(type);
+            if (family is not (RoomEncounterType.Shop or RoomEncounterType.Goddess or RoomEncounterType.Fountain)) return true;
+            var distances = graph.DistancesFrom(room);
+            return graph.Rooms.Where(r => r != room && FacilityFamily(r.Type) == family)
+                .All(r => distances[r.RoomId] >= settings.minimumRepeatedFacilityDistance);
+        }
+        private bool FacilitiesSeparated(DungeonGraph graph) => graph.Rooms.All(r => CanPlaceFacility(graph, r, r.Type));
+
+        private void AddFloorEventVariants(DungeonGraph graph, Random random, int floor)
         {
             // Every floor receives a second visible chest. Floor one therefore has exactly two: gold and relic.
             var candidates = graph.Rooms.Where(room => !room.IsMajorRoom && (room.Type is RoomEncounterType.Reward or RoomEncounterType.Empty)).OrderBy(_ => random.Next()).ToList();
@@ -170,7 +194,8 @@ namespace DungeonSlash
             }
             if (floor < 2) return;
             if (random.NextDouble() > .65) return;
-            var toxicCandidate = graph.Rooms.Where(room => !room.IsMajorRoom && room.Type == RoomEncounterType.Empty).OrderBy(_ => random.Next()).FirstOrDefault();
+            var toxicCandidate = graph.Rooms.Where(room => !room.IsMajorRoom && room.Type == RoomEncounterType.Empty
+                && CanPlaceFacility(graph, room, RoomEncounterType.PoisonFountain)).OrderBy(_ => random.Next()).FirstOrDefault();
             if (toxicCandidate != null) toxicCandidate.Type = RoomEncounterType.PoisonFountain;
         }
 
@@ -199,7 +224,8 @@ namespace DungeonSlash
         {
             var graph = state.Graph;
             var distances = graph.DistancesFrom(graph.StartRoom);
-            return graph.Rooms.Count >= settings.minRooms && graph.Rooms.Count <= settings.maxRooms &&
+            var baseCount = graph.Rooms.Count(r => !r.IsOptionalAnnex);
+            return baseCount >= settings.minRooms && baseCount <= settings.maxRooms &&
                    distances.Count == graph.Rooms.Count &&
                    graph.Rooms.Any(room => room.Type == RoomEncounterType.Boss && distances[room.RoomId] >= settings.minimumBossDistance) &&
                    graph.Rooms.Count(room => room.Type == RoomEncounterType.Chest) >= settings.chestRoomCount + 1;

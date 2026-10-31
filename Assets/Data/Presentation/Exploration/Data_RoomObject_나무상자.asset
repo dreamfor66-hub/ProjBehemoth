@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uB098\uBB34\uC0C1\uC790"
+  m_EditorClassIdentifier: 
+  labelKey: ui.explore.object.crate
+  usedLabelKey: 
+  resolvedTextKey: ui.explore.used.crate
+  wallMounted: 0
+  fitsDoorway: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 0
+  roomInterior: 0
+  usedForm: {fileID: 0}
+  front: {fileID: 21300000, guid: 25996a83bb14827439e4bca8da0f2065, type: 3}
+  side: {fileID: 21300000, guid: 65748904a44874d4d9b936d3bf80581d, type: 3}
+  rear: {fileID: 21300000, guid: 7038f8cd20013ea4ab25f3095fd85d0d, type: 3}
+  usedFront: {fileID: 0}
+  usedSide: {fileID: 0}
+  usedRear: {fileID: 0}
+  displayHeight: 185
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: 25996a83bb14827439e4bca8da0f2065, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.06299841
+      y: 0.049441785
+      width: 0.8907496
+      height: 0.8197768
+    footprint:
+      serializedVersion: 2
+      x: 0.14354067
+      y: 0.060606062
+      width: 0.71132374
+      height: 0.18017544
+  - sprite: {fileID: 21300000, guid: 65748904a44874d4d9b936d3bf80581d, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.018341308
+      y: 0.04704944
+      width: 0.9617225
+      height: 0.88436997
+    footprint:
+      serializedVersion: 2
+      x: 0.115629986
+      y: 0.058213715
+      width: 0.7982456
+      height: 0.19438598
+  - sprite: {fileID: 21300000, guid: 7038f8cd20013ea4ab25f3095fd85d0d, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.040669855
+      y: 0.029505583
+      width: 0.91945773
+      height: 0.8923445
+    footprint:
+      serializedVersion: 2
+      x: 0.18899521
+      y: 0.039872408
+      width: 0.70813394
+      height: 0.19614035

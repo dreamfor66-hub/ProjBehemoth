@@ -1,0 +1,19 @@
+Scoped F1 chapter / object placement runtime matrix.
+PASS F1 toggle opens saved panel
+PASS five tabs and all 17 authored objects
+PASS button reachable: Category0; top=Category0
+PASS existing catalog 0 still usable
+PASS button reachable: Category1; top=Category1
+PASS existing catalog 1 still usable
+PASS button reachable: Category2; top=Category2
+PASS existing catalog 2 still usable
+PASS button reachable: Category3; top=Category3
+PASS existing catalog 3 still usable
+PASS button reachable: Category4; top=Category4
+PASS chapter controls replace grant action
+PASS all chapter labels fit at actual Game view size
+PASS button reachable: JumpToAct3; top=JumpToAct3
+PASS act 3 fresh graph and synchronized chapter
+PASS act 3 reset visits/clear/keys and starts at entrance
+PASS act 3 fresh floor counters and fatigue
+PASS act 3 preserves player progression

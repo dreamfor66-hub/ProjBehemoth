@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uC720\uD488\uC744\uCC3E\uB294\uC18C\uB144"
+  m_EditorClassIdentifier: 
+  labelKey: ui.eventgrounding.object.LostBeliever
+  usedLabelKey: 
+  resolvedTextKey: ui.eventgrounding.used.LostBeliever
+  wallMounted: 0
+  fitsDoorway: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 1
+  roomInterior: 0
+  usedForm: {fileID: 0}
+  front: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}
+  side: {fileID: 21300000, guid: 34ed916304fb8a6419909279a02d0463, type: 3}
+  rear: {fileID: 21300000, guid: 7d05969ec0ee2d04387fce0077948239, type: 3}
+  usedFront: {fileID: 0}
+  usedSide: {fileID: 0}
+  usedRear: {fileID: 0}
+  displayHeight: 300
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.031456955
+      y: 0.11466942
+      width: 0.8129139
+      height: 0.78925616
+    footprint:
+      serializedVersion: 2
+      x: 0.049668875
+      y: 0.12293389
+      width: 0.77814573
+      height: 0.17340907
+  - sprite: {fileID: 21300000, guid: 34ed916304fb8a6419909279a02d0463, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.03626943
+      y: 0.115956396
+      width: 0.88255614
+      height: 0.7383548
+    footprint:
+      serializedVersion: 2
+      x: 0.055267703
+      y: 0.12487611
+      width: 0.8480138
+      height: 0.16222003
+  - sprite: {fileID: 21300000, guid: 7d05969ec0ee2d04387fce0077948239, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.038539555
+      y: 0.12462612
+      width: 0.92089254
+      height: 0.7407777
+    footprint:
+      serializedVersion: 2
+      x: 0.060851928
+      y: 0.13459621
+      width: 0.88235295
+      height: 0.16275175

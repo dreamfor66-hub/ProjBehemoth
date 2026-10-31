@@ -26,6 +26,7 @@ namespace DungeonSlash
         }
 
         public void RevealScene()=>pixelTransition?.Reveal();
+        public void Cancel() => ResetVisuals();
         public IEnumerator Play()
         {
             if (background == null) yield break;

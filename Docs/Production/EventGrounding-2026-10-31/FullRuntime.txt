@@ -1,0 +1,1561 @@
+Scoped event subjects, first facing, choice aftermath and camps.
+PASS all 19 active event opportunities retained
+PASS one unique object data per active event
+PASS one unique front painting per active event
+PASS no event uses a shop, shrine, fountain, chest, camp or hidden-door subject
+PASS B1/StrayDog visible authored front
+PASS B1/StrayDog first entry from (0, 1) faces player
+PASS B1/StrayDog revisit preserves world transform
+PASS B1/StrayDog first entry from (-1, 0) faces player
+PASS B1/StrayDog revisit preserves world transform
+PASS B1/StrayDog first entry from (1, 0) faces player
+PASS B1/StrayDog revisit preserves world transform
+PASS B1/StrayDog first entry from (0, -1) faces player
+PASS B1/StrayDog revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/StrayDog opens actual event choices
+PASS B1/StrayDog/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/StrayDog/먹을 것을 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/StrayDog/다친 부위를 치료해 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/StrayDog/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Mirror visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Mirror opens actual event choices
+PASS B1/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Mirror/거리를 두고 동작을 따라 한다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Mirror/상처를 감수하고 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Mirror/은을 긁어 챙긴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Contract visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Contract opens actual event choices
+PASS B1/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Contract/서명한다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Contract/서명한다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Pilgrim visible authored front
+PASS B1/Pilgrim first entry from (0, 1) faces player
+PASS B1/Pilgrim revisit preserves world transform
+PASS B1/Pilgrim first entry from (-1, 0) faces player
+PASS B1/Pilgrim revisit preserves world transform
+PASS B1/Pilgrim first entry from (1, 0) faces player
+PASS B1/Pilgrim revisit preserves world transform
+PASS B1/Pilgrim first entry from (0, -1) faces player
+PASS B1/Pilgrim revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Pilgrim opens actual event choices
+PASS B1/Pilgrim/여비를 보탠다 matching presence after choice
+PASS authored localized revisit text
+PASS B1/Pilgrim/샘의 위치를 서로 나눈다 matching presence after choice
+PASS authored localized revisit text
+PASS B1/Pilgrim/얘가 지름길을 찾을 거야 matching presence after choice
+PASS authored localized revisit text
+PASS B1/Pilgrim/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/LostBeliever visible authored front
+PASS B1/LostBeliever first entry from (0, 1) faces player
+PASS B1/LostBeliever revisit preserves world transform
+PASS B1/LostBeliever first entry from (-1, 0) faces player
+PASS B1/LostBeliever revisit preserves world transform
+PASS B1/LostBeliever first entry from (1, 0) faces player
+PASS B1/LostBeliever revisit preserves world transform
+PASS B1/LostBeliever first entry from (0, -1) faces player
+PASS B1/LostBeliever revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/LostBeliever opens actual event choices
+PASS B1/LostBeliever/안전하게 돌아갈 길을 그려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/LostBeliever/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/LostBeliever/순례자가 향한 통로를 알려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/LostBeliever/집으로 돌아갈 길만 그려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/LostBeliever/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/LostBeliever/상처를 감수하고 함께 지난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/LostBeliever/안내도를 그려 돌아가게 한다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/StormBottle visible authored front
+PASS B1/StormBottle first entry from (0, 1) faces player
+PASS B1/StormBottle revisit preserves world transform
+PASS B1/StormBottle first entry from (-1, 0) faces player
+PASS B1/StormBottle revisit preserves world transform
+PASS B1/StormBottle first entry from (1, 0) faces player
+PASS B1/StormBottle revisit preserves world transform
+PASS B1/StormBottle first entry from (0, -1) faces player
+PASS B1/StormBottle revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/StormBottle opens actual event choices
+PASS B1/StormBottle/폭풍 한 병 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/StormBottle/번개를 읽는 법 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/StormBottle/빈 병 수거를 돕는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/StormBottle/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/AmberSeed visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/AmberSeed opens actual event choices
+PASS B1/AmberSeed/내 피로 싹을 틔운다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/AmberSeed/씨앗째 씹어 삼킨다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/AmberSeed/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Banner visible authored front
+PASS B1/Banner first entry from (0, 1) faces player
+PASS B1/Banner revisit preserves world transform
+PASS B1/Banner first entry from (-1, 0) faces player
+PASS B1/Banner revisit preserves world transform
+PASS B1/Banner first entry from (1, 0) faces player
+PASS B1/Banner revisit preserves world transform
+PASS B1/Banner first entry from (0, -1) faces player
+PASS B1/Banner revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Banner opens actual event choices
+PASS B1/Banner/짐승을 물리치고 깃발을 챙긴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Banner/남겨진 급료를 챙긴다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Banner/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Tooth visible authored front
+PASS B1/Tooth first entry from (0, 1) faces player
+PASS B1/Tooth revisit preserves world transform
+PASS B1/Tooth first entry from (-1, 0) faces player
+PASS B1/Tooth revisit preserves world transform
+PASS B1/Tooth first entry from (1, 0) faces player
+PASS B1/Tooth revisit preserves world transform
+PASS B1/Tooth first entry from (0, -1) faces player
+PASS B1/Tooth revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Tooth opens actual event choices
+PASS B1/Tooth/내 생환에 돈을 건다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Tooth/장부 정리만 돕는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Tooth/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Tooth/칼날을 쥐고 버틴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Tooth/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Training visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Training opens actual event choices
+PASS B1/Training/끈을 푼다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Training/철사를 끊는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Training/사슬을 푼다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Training/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Scholar visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Scholar opens actual event choices
+PASS B1/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Scholar/이미 아는 기술을 읽는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Scholar/약제법을 따라 한다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Scholar/피를 떨어뜨려 읽는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Well visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Well opens actual event choices
+PASS B1/Well/작은 주머니만 건진다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Well/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Well/저주를 감수하고 금고를 가져간다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Well/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Investment visible authored front
+PASS B1/Investment first entry from (0, 1) faces player
+PASS B1/Investment revisit preserves world transform
+PASS B1/Investment first entry from (-1, 0) faces player
+PASS B1/Investment revisit preserves world transform
+PASS B1/Investment first entry from (1, 0) faces player
+PASS B1/Investment revisit preserves world transform
+PASS B1/Investment first entry from (0, -1) faces player
+PASS B1/Investment revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Investment opens actual event choices
+PASS B1/Investment/도착해서 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS B1/Investment/지금 쓸 약을 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS B1/Investment/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/Delivery visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Delivery opens actual event choices
+PASS B1/Delivery/맡겨 둔 물건을 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Delivery/장비 대신 여비를 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Delivery/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Shelter visible authored front
+PASS B1/Shelter first entry from (0, 1) faces player
+PASS B1/Shelter revisit preserves world transform
+PASS B1/Shelter first entry from (-1, 0) faces player
+PASS B1/Shelter revisit preserves world transform
+PASS B1/Shelter first entry from (1, 0) faces player
+PASS B1/Shelter revisit preserves world transform
+PASS B1/Shelter first entry from (0, -1) faces player
+PASS B1/Shelter revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Shelter opens actual event choices
+PASS B1/Shelter/망을 번갈아 보며 쉰다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Shelter/몸을 풀며 망을 본다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Shelter/너 먼저 자. 다음은 내 차례야 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/Shelter/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/MagicTeacherFirst visible authored front
+PASS B1/MagicTeacherFirst first entry from (0, 1) faces player
+PASS B1/MagicTeacherFirst revisit preserves world transform
+PASS B1/MagicTeacherFirst first entry from (-1, 0) faces player
+PASS B1/MagicTeacherFirst revisit preserves world transform
+PASS B1/MagicTeacherFirst first entry from (1, 0) faces player
+PASS B1/MagicTeacherFirst revisit preserves world transform
+PASS B1/MagicTeacherFirst first entry from (0, -1) faces player
+PASS B1/MagicTeacherFirst revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherFirst opens actual event choices
+PASS B1/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherFirst/마법보다는 여비가 필요하다고 한다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherFirst/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherFirst/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn visible authored front
+PASS B1/MagicTeacherReturn first entry from (0, 1) faces player
+PASS B1/MagicTeacherReturn revisit preserves world transform
+PASS B1/MagicTeacherReturn first entry from (-1, 0) faces player
+PASS B1/MagicTeacherReturn revisit preserves world transform
+PASS B1/MagicTeacherReturn first entry from (1, 0) faces player
+PASS B1/MagicTeacherReturn revisit preserves world transform
+PASS B1/MagicTeacherReturn first entry from (0, -1) faces player
+PASS B1/MagicTeacherReturn revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherReturn opens actual event choices
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/불을 한꺼번에 터뜨리는 법을 배운다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/다른 속성의 기초를 배운다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/인챈트 파이어 matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/인챈트 아이스 matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/인챈트 라이트닝 matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherAdvanced visible authored front
+PASS B1/MagicTeacherAdvanced first entry from (0, 1) faces player
+PASS B1/MagicTeacherAdvanced revisit preserves world transform
+PASS B1/MagicTeacherAdvanced first entry from (-1, 0) faces player
+PASS B1/MagicTeacherAdvanced revisit preserves world transform
+PASS B1/MagicTeacherAdvanced first entry from (1, 0) faces player
+PASS B1/MagicTeacherAdvanced revisit preserves world transform
+PASS B1/MagicTeacherAdvanced first entry from (0, -1) faces player
+PASS B1/MagicTeacherAdvanced revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherAdvanced opens actual event choices
+PASS B1/MagicTeacherAdvanced/한곳에 큰 불덩이를 떨어뜨리는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherAdvanced/번개를 한곳에 모으는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherAdvanced/얼음 창을 쏟아붓는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherAdvanced/꺼지지 않는 홍염을 펼치는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherAdvanced/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/MagicTeacherAdvanced/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B1/QuietPrayer visible authored front
+PASS B1/QuietPrayer first entry from (0, 1) faces player
+PASS B1/QuietPrayer revisit preserves world transform
+PASS B1/QuietPrayer first entry from (-1, 0) faces player
+PASS B1/QuietPrayer revisit preserves world transform
+PASS B1/QuietPrayer first entry from (1, 0) faces player
+PASS B1/QuietPrayer revisit preserves world transform
+PASS B1/QuietPrayer first entry from (0, -1) faces player
+PASS B1/QuietPrayer revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/QuietPrayer opens actual event choices
+PASS B1/QuietPrayer/상처를 맡긴다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/QuietPrayer/말없이 곁에 앉는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B1/QuietPrayer/길을 계속 간다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS camp only has entry behind player
+PASS complete camping room replaces isolated fire painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS camp remains interactive
+PASS shop uses dedicated hooded merchant
+PASS B2/StrayDog visible authored front
+PASS B2/StrayDog first entry from (0, 1) faces player
+PASS B2/StrayDog revisit preserves world transform
+PASS B2/StrayDog first entry from (-1, 0) faces player
+PASS B2/StrayDog revisit preserves world transform
+PASS B2/StrayDog first entry from (1, 0) faces player
+PASS B2/StrayDog revisit preserves world transform
+PASS B2/StrayDog first entry from (0, -1) faces player
+PASS B2/StrayDog revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/StrayDog opens actual event choices
+PASS B2/StrayDog/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/StrayDog/먹을 것을 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/StrayDog/다친 부위를 치료해 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/StrayDog/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Mirror visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Mirror opens actual event choices
+PASS B2/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Mirror/거리를 두고 동작을 따라 한다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Mirror/상처를 감수하고 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Mirror/은을 긁어 챙긴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Contract visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Contract opens actual event choices
+PASS B2/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Contract/서명한다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Contract/서명한다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Pilgrim visible authored front
+PASS B2/Pilgrim first entry from (0, 1) faces player
+PASS B2/Pilgrim revisit preserves world transform
+PASS B2/Pilgrim first entry from (-1, 0) faces player
+PASS B2/Pilgrim revisit preserves world transform
+PASS B2/Pilgrim first entry from (1, 0) faces player
+PASS B2/Pilgrim revisit preserves world transform
+PASS B2/Pilgrim first entry from (0, -1) faces player
+PASS B2/Pilgrim revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Pilgrim opens actual event choices
+PASS B2/Pilgrim/여비를 보탠다 matching presence after choice
+PASS authored localized revisit text
+PASS B2/Pilgrim/샘의 위치를 서로 나눈다 matching presence after choice
+PASS authored localized revisit text
+PASS B2/Pilgrim/얘가 지름길을 찾을 거야 matching presence after choice
+PASS authored localized revisit text
+PASS B2/Pilgrim/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/LostBeliever visible authored front
+PASS B2/LostBeliever first entry from (0, 1) faces player
+PASS B2/LostBeliever revisit preserves world transform
+PASS B2/LostBeliever first entry from (-1, 0) faces player
+PASS B2/LostBeliever revisit preserves world transform
+PASS B2/LostBeliever first entry from (1, 0) faces player
+PASS B2/LostBeliever revisit preserves world transform
+PASS B2/LostBeliever first entry from (0, -1) faces player
+PASS B2/LostBeliever revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/LostBeliever opens actual event choices
+PASS B2/LostBeliever/안전하게 돌아갈 길을 그려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/LostBeliever/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/LostBeliever/순례자가 향한 통로를 알려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/LostBeliever/집으로 돌아갈 길만 그려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/LostBeliever/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/LostBeliever/상처를 감수하고 함께 지난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/LostBeliever/안내도를 그려 돌아가게 한다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/StormBottle visible authored front
+PASS B2/StormBottle first entry from (0, 1) faces player
+PASS B2/StormBottle revisit preserves world transform
+PASS B2/StormBottle first entry from (-1, 0) faces player
+PASS B2/StormBottle revisit preserves world transform
+PASS B2/StormBottle first entry from (1, 0) faces player
+PASS B2/StormBottle revisit preserves world transform
+PASS B2/StormBottle first entry from (0, -1) faces player
+PASS B2/StormBottle revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/StormBottle opens actual event choices
+PASS B2/StormBottle/폭풍 한 병 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/StormBottle/번개를 읽는 법 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/StormBottle/빈 병 수거를 돕는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/StormBottle/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/AmberSeed visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/AmberSeed opens actual event choices
+PASS B2/AmberSeed/내 피로 싹을 틔운다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/AmberSeed/씨앗째 씹어 삼킨다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/AmberSeed/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Banner visible authored front
+PASS B2/Banner first entry from (0, 1) faces player
+PASS B2/Banner revisit preserves world transform
+PASS B2/Banner first entry from (-1, 0) faces player
+PASS B2/Banner revisit preserves world transform
+PASS B2/Banner first entry from (1, 0) faces player
+PASS B2/Banner revisit preserves world transform
+PASS B2/Banner first entry from (0, -1) faces player
+PASS B2/Banner revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Banner opens actual event choices
+PASS B2/Banner/짐승을 물리치고 깃발을 챙긴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Banner/남겨진 급료를 챙긴다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Banner/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Tooth visible authored front
+PASS B2/Tooth first entry from (0, 1) faces player
+PASS B2/Tooth revisit preserves world transform
+PASS B2/Tooth first entry from (-1, 0) faces player
+PASS B2/Tooth revisit preserves world transform
+PASS B2/Tooth first entry from (1, 0) faces player
+PASS B2/Tooth revisit preserves world transform
+PASS B2/Tooth first entry from (0, -1) faces player
+PASS B2/Tooth revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Tooth opens actual event choices
+PASS B2/Tooth/내 생환에 돈을 건다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Tooth/장부 정리만 돕는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Tooth/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Tooth/칼날을 쥐고 버틴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Tooth/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Training visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Training opens actual event choices
+PASS B2/Training/끈을 푼다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Training/철사를 끊는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Training/사슬을 푼다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Training/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Scholar visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Scholar opens actual event choices
+PASS B2/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Scholar/이미 아는 기술을 읽는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Scholar/약제법을 따라 한다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Scholar/피를 떨어뜨려 읽는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Well visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Well opens actual event choices
+PASS B2/Well/작은 주머니만 건진다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Well/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Well/저주를 감수하고 금고를 가져간다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Well/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Investment visible authored front
+PASS B2/Investment first entry from (0, 1) faces player
+PASS B2/Investment revisit preserves world transform
+PASS B2/Investment first entry from (-1, 0) faces player
+PASS B2/Investment revisit preserves world transform
+PASS B2/Investment first entry from (1, 0) faces player
+PASS B2/Investment revisit preserves world transform
+PASS B2/Investment first entry from (0, -1) faces player
+PASS B2/Investment revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Investment opens actual event choices
+PASS B2/Investment/도착해서 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS B2/Investment/지금 쓸 약을 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS B2/Investment/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/Delivery visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Delivery opens actual event choices
+PASS B2/Delivery/맡겨 둔 물건을 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Delivery/장비 대신 여비를 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Delivery/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Shelter visible authored front
+PASS B2/Shelter first entry from (0, 1) faces player
+PASS B2/Shelter revisit preserves world transform
+PASS B2/Shelter first entry from (-1, 0) faces player
+PASS B2/Shelter revisit preserves world transform
+PASS B2/Shelter first entry from (1, 0) faces player
+PASS B2/Shelter revisit preserves world transform
+PASS B2/Shelter first entry from (0, -1) faces player
+PASS B2/Shelter revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Shelter opens actual event choices
+PASS B2/Shelter/망을 번갈아 보며 쉰다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Shelter/몸을 풀며 망을 본다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Shelter/너 먼저 자. 다음은 내 차례야 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/Shelter/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/MagicTeacherFirst visible authored front
+PASS B2/MagicTeacherFirst first entry from (0, 1) faces player
+PASS B2/MagicTeacherFirst revisit preserves world transform
+PASS B2/MagicTeacherFirst first entry from (-1, 0) faces player
+PASS B2/MagicTeacherFirst revisit preserves world transform
+PASS B2/MagicTeacherFirst first entry from (1, 0) faces player
+PASS B2/MagicTeacherFirst revisit preserves world transform
+PASS B2/MagicTeacherFirst first entry from (0, -1) faces player
+PASS B2/MagicTeacherFirst revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/MagicTeacherFirst opens actual event choices
+PASS B2/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherFirst/마법보다는 여비가 필요하다고 한다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherFirst/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherFirst/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn visible authored front
+PASS B2/MagicTeacherReturn first entry from (0, 1) faces player
+PASS B2/MagicTeacherReturn revisit preserves world transform
+PASS B2/MagicTeacherReturn first entry from (-1, 0) faces player
+PASS B2/MagicTeacherReturn revisit preserves world transform
+PASS B2/MagicTeacherReturn first entry from (1, 0) faces player
+PASS B2/MagicTeacherReturn revisit preserves world transform
+PASS B2/MagicTeacherReturn first entry from (0, -1) faces player
+PASS B2/MagicTeacherReturn revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/MagicTeacherReturn opens actual event choices
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/불을 한꺼번에 터뜨리는 법을 배운다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/다른 속성의 기초를 배운다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/인챈트 파이어 matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/인챈트 아이스 matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/인챈트 라이트닝 matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherAdvanced visible authored front
+PASS B2/MagicTeacherAdvanced first entry from (0, 1) faces player
+PASS B2/MagicTeacherAdvanced revisit preserves world transform
+PASS B2/MagicTeacherAdvanced first entry from (-1, 0) faces player
+PASS B2/MagicTeacherAdvanced revisit preserves world transform
+PASS B2/MagicTeacherAdvanced first entry from (1, 0) faces player
+PASS B2/MagicTeacherAdvanced revisit preserves world transform
+PASS B2/MagicTeacherAdvanced first entry from (0, -1) faces player
+PASS B2/MagicTeacherAdvanced revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/MagicTeacherAdvanced opens actual event choices
+PASS B2/MagicTeacherAdvanced/한곳에 큰 불덩이를 떨어뜨리는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherAdvanced/번개를 한곳에 모으는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherAdvanced/얼음 창을 쏟아붓는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherAdvanced/꺼지지 않는 홍염을 펼치는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherAdvanced/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/MagicTeacherAdvanced/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B2/QuietPrayer visible authored front
+PASS B2/QuietPrayer first entry from (0, 1) faces player
+PASS B2/QuietPrayer revisit preserves world transform
+PASS B2/QuietPrayer first entry from (-1, 0) faces player
+PASS B2/QuietPrayer revisit preserves world transform
+PASS B2/QuietPrayer first entry from (1, 0) faces player
+PASS B2/QuietPrayer revisit preserves world transform
+PASS B2/QuietPrayer first entry from (0, -1) faces player
+PASS B2/QuietPrayer revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/QuietPrayer opens actual event choices
+PASS B2/QuietPrayer/상처를 맡긴다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/QuietPrayer/말없이 곁에 앉는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B2/QuietPrayer/길을 계속 간다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS camp only has entry behind player
+PASS complete camping room replaces isolated fire painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS camp remains interactive
+PASS shop uses dedicated hooded merchant
+PASS B3/StrayDog visible authored front
+PASS B3/StrayDog first entry from (0, 1) faces player
+PASS B3/StrayDog revisit preserves world transform
+PASS B3/StrayDog first entry from (-1, 0) faces player
+PASS B3/StrayDog revisit preserves world transform
+PASS B3/StrayDog first entry from (1, 0) faces player
+PASS B3/StrayDog revisit preserves world transform
+PASS B3/StrayDog first entry from (0, -1) faces player
+PASS B3/StrayDog revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/StrayDog opens actual event choices
+PASS B3/StrayDog/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/StrayDog/먹을 것을 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/StrayDog/다친 부위를 치료해 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/StrayDog/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Mirror visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Mirror opens actual event choices
+PASS B3/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Mirror/거리를 두고 동작을 따라 한다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Mirror/상처를 감수하고 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Mirror/은을 긁어 챙긴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Mirror/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Contract visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Contract opens actual event choices
+PASS B3/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Contract/서명한다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Contract/서명한다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Contract/금박 봉인만 떼어 낸다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Contract/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Pilgrim visible authored front
+PASS B3/Pilgrim first entry from (0, 1) faces player
+PASS B3/Pilgrim revisit preserves world transform
+PASS B3/Pilgrim first entry from (-1, 0) faces player
+PASS B3/Pilgrim revisit preserves world transform
+PASS B3/Pilgrim first entry from (1, 0) faces player
+PASS B3/Pilgrim revisit preserves world transform
+PASS B3/Pilgrim first entry from (0, -1) faces player
+PASS B3/Pilgrim revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Pilgrim opens actual event choices
+PASS B3/Pilgrim/여비를 보탠다 matching presence after choice
+PASS authored localized revisit text
+PASS B3/Pilgrim/샘의 위치를 서로 나눈다 matching presence after choice
+PASS authored localized revisit text
+PASS B3/Pilgrim/얘가 지름길을 찾을 거야 matching presence after choice
+PASS authored localized revisit text
+PASS B3/Pilgrim/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/LostBeliever visible authored front
+PASS B3/LostBeliever first entry from (0, 1) faces player
+PASS B3/LostBeliever revisit preserves world transform
+PASS B3/LostBeliever first entry from (-1, 0) faces player
+PASS B3/LostBeliever revisit preserves world transform
+PASS B3/LostBeliever first entry from (1, 0) faces player
+PASS B3/LostBeliever revisit preserves world transform
+PASS B3/LostBeliever first entry from (0, -1) faces player
+PASS B3/LostBeliever revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/LostBeliever opens actual event choices
+PASS B3/LostBeliever/안전하게 돌아갈 길을 그려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/LostBeliever/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/LostBeliever/순례자가 향한 통로를 알려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/LostBeliever/집으로 돌아갈 길만 그려 준다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/LostBeliever/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/LostBeliever/상처를 감수하고 함께 지난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/LostBeliever/안내도를 그려 돌아가게 한다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/StormBottle visible authored front
+PASS B3/StormBottle first entry from (0, 1) faces player
+PASS B3/StormBottle revisit preserves world transform
+PASS B3/StormBottle first entry from (-1, 0) faces player
+PASS B3/StormBottle revisit preserves world transform
+PASS B3/StormBottle first entry from (1, 0) faces player
+PASS B3/StormBottle revisit preserves world transform
+PASS B3/StormBottle first entry from (0, -1) faces player
+PASS B3/StormBottle revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/StormBottle opens actual event choices
+PASS B3/StormBottle/폭풍 한 병 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/StormBottle/번개를 읽는 법 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/StormBottle/빈 병 수거를 돕는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/StormBottle/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/AmberSeed visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/AmberSeed opens actual event choices
+PASS B3/AmberSeed/내 피로 싹을 틔운다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/AmberSeed/씨앗째 씹어 삼킨다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/AmberSeed/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Banner visible authored front
+PASS B3/Banner first entry from (0, 1) faces player
+PASS B3/Banner revisit preserves world transform
+PASS B3/Banner first entry from (-1, 0) faces player
+PASS B3/Banner revisit preserves world transform
+PASS B3/Banner first entry from (1, 0) faces player
+PASS B3/Banner revisit preserves world transform
+PASS B3/Banner first entry from (0, -1) faces player
+PASS B3/Banner revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Banner opens actual event choices
+PASS B3/Banner/짐승을 물리치고 깃발을 챙긴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Banner/남겨진 급료를 챙긴다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Banner/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Tooth visible authored front
+PASS B3/Tooth first entry from (0, 1) faces player
+PASS B3/Tooth revisit preserves world transform
+PASS B3/Tooth first entry from (-1, 0) faces player
+PASS B3/Tooth revisit preserves world transform
+PASS B3/Tooth first entry from (1, 0) faces player
+PASS B3/Tooth revisit preserves world transform
+PASS B3/Tooth first entry from (0, -1) faces player
+PASS B3/Tooth revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Tooth opens actual event choices
+PASS B3/Tooth/내 생환에 돈을 건다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Tooth/장부 정리만 돕는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Tooth/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Tooth/칼날을 쥐고 버틴다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Tooth/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Training visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Training opens actual event choices
+PASS B3/Training/끈을 푼다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Training/철사를 끊는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Training/사슬을 푼다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Training/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Scholar visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Scholar opens actual event choices
+PASS B3/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Scholar/이미 아는 기술을 읽는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Scholar/약제법을 따라 한다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Scholar/피를 떨어뜨려 읽는다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Scholar/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Well visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Well opens actual event choices
+PASS B3/Well/작은 주머니만 건진다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Well/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Well/저주를 감수하고 금고를 가져간다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Well/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Investment visible authored front
+PASS B3/Investment first entry from (0, 1) faces player
+PASS B3/Investment revisit preserves world transform
+PASS B3/Investment first entry from (-1, 0) faces player
+PASS B3/Investment revisit preserves world transform
+PASS B3/Investment first entry from (1, 0) faces player
+PASS B3/Investment revisit preserves world transform
+PASS B3/Investment first entry from (0, -1) faces player
+PASS B3/Investment revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Investment opens actual event choices
+PASS B3/Investment/도착해서 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS B3/Investment/지금 쓸 약을 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS B3/Investment/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/Delivery visible authored front
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Delivery opens actual event choices
+PASS B3/Delivery/맡겨 둔 물건을 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Delivery/장비 대신 여비를 받는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Delivery/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Shelter visible authored front
+PASS B3/Shelter first entry from (0, 1) faces player
+PASS B3/Shelter revisit preserves world transform
+PASS B3/Shelter first entry from (-1, 0) faces player
+PASS B3/Shelter revisit preserves world transform
+PASS B3/Shelter first entry from (1, 0) faces player
+PASS B3/Shelter revisit preserves world transform
+PASS B3/Shelter first entry from (0, -1) faces player
+PASS B3/Shelter revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Shelter opens actual event choices
+PASS B3/Shelter/망을 번갈아 보며 쉰다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Shelter/몸을 풀며 망을 본다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Shelter/너 먼저 자. 다음은 내 차례야 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/Shelter/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/MagicTeacherFirst visible authored front
+PASS B3/MagicTeacherFirst first entry from (0, 1) faces player
+PASS B3/MagicTeacherFirst revisit preserves world transform
+PASS B3/MagicTeacherFirst first entry from (-1, 0) faces player
+PASS B3/MagicTeacherFirst revisit preserves world transform
+PASS B3/MagicTeacherFirst first entry from (1, 0) faces player
+PASS B3/MagicTeacherFirst revisit preserves world transform
+PASS B3/MagicTeacherFirst first entry from (0, -1) faces player
+PASS B3/MagicTeacherFirst revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/MagicTeacherFirst opens actual event choices
+PASS B3/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherFirst/마법보다는 여비가 필요하다고 한다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherFirst/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherFirst/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherFirst/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn visible authored front
+PASS B3/MagicTeacherReturn first entry from (0, 1) faces player
+PASS B3/MagicTeacherReturn revisit preserves world transform
+PASS B3/MagicTeacherReturn first entry from (-1, 0) faces player
+PASS B3/MagicTeacherReturn revisit preserves world transform
+PASS B3/MagicTeacherReturn first entry from (1, 0) faces player
+PASS B3/MagicTeacherReturn revisit preserves world transform
+PASS B3/MagicTeacherReturn first entry from (0, -1) faces player
+PASS B3/MagicTeacherReturn revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/MagicTeacherReturn opens actual event choices
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/배울 주문을 고른다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/불을 한꺼번에 터뜨리는 법을 배운다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/다른 속성의 기초를 배운다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/인챈트 파이어 matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/인챈트 아이스 matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/인챈트 라이트닝 matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherReturn/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherAdvanced visible authored front
+PASS B3/MagicTeacherAdvanced first entry from (0, 1) faces player
+PASS B3/MagicTeacherAdvanced revisit preserves world transform
+PASS B3/MagicTeacherAdvanced first entry from (-1, 0) faces player
+PASS B3/MagicTeacherAdvanced revisit preserves world transform
+PASS B3/MagicTeacherAdvanced first entry from (1, 0) faces player
+PASS B3/MagicTeacherAdvanced revisit preserves world transform
+PASS B3/MagicTeacherAdvanced first entry from (0, -1) faces player
+PASS B3/MagicTeacherAdvanced revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/MagicTeacherAdvanced opens actual event choices
+PASS B3/MagicTeacherAdvanced/한곳에 큰 불덩이를 떨어뜨리는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherAdvanced/번개를 한곳에 모으는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherAdvanced/얼음 창을 쏟아붓는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherAdvanced/꺼지지 않는 홍염을 펼치는 법. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherAdvanced/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/MagicTeacherAdvanced/떠난다. matching presence after choice
+PASS authored localized revisit text
+PASS B3/QuietPrayer visible authored front
+PASS B3/QuietPrayer first entry from (0, 1) faces player
+PASS B3/QuietPrayer revisit preserves world transform
+PASS B3/QuietPrayer first entry from (-1, 0) faces player
+PASS B3/QuietPrayer revisit preserves world transform
+PASS B3/QuietPrayer first entry from (1, 0) faces player
+PASS B3/QuietPrayer revisit preserves world transform
+PASS B3/QuietPrayer first entry from (0, -1) faces player
+PASS B3/QuietPrayer revisit preserves world transform
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/QuietPrayer opens actual event choices
+PASS B3/QuietPrayer/상처를 맡긴다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/QuietPrayer/말없이 곁에 앉는다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS B3/QuietPrayer/길을 계속 간다 matching presence after choice
+PASS authored localized revisit text
+PASS resolved choice uses the corresponding authored painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS resolved click narrates without reopening choices
+PASS camp only has entry behind player
+PASS complete camping room replaces isolated fire painting
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS camp remains interactive
+PASS shop uses dedicated hooded merchant
+PASS actual pointer target Category4; top=Category4
+PASS F1 includes all 19 live unique event subjects
+PASS actual pointer target DebugCatalogTile; top=DebugCatalogTile
+PASS actual pointer target PlaceObject; top=PlaceObject
+PASS F1 scroll reaches final subject and actual place button
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS actual pointer target Illustrated Event Choice 1; top=Illustrated Event Choice 1
+PASS actual pointer target Illustrated Event Choice 0; top=Illustrated Event Choice 0
+PASS full actual choice flow finishes: AmberSeed
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS actual pointer target Illustrated Event Choice 0; top=Illustrated Event Choice 0
+PASS actual pointer target Illustrated Event Choice 0; top=Illustrated Event Choice 0
+PASS full actual choice flow finishes: Contract
+PASS full choice removes departed/consumed subject: Contract
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS actual pointer target Illustrated Event Choice 0; top=Illustrated Event Choice 0
+PASS actual pointer target Illustrated Event Choice 1; top=Illustrated Event Choice 1
+PASS actual pointer target Illustrated Event Choice 0; top=Illustrated Event Choice 0
+PASS full actual choice flow finishes: MagicTeacherFirst
+PASS full choice removes departed/consumed subject: MagicTeacherFirst

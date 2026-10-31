@@ -1,0 +1,545 @@
+PASS Mirror authored display name installed
+PASS Mirror page 0 authored narrative installed
+PASS Mirror page 1 authored narrative installed
+PASS Mirror page 2 authored narrative installed
+PASS Mirror page 3 authored narrative installed
+PASS Mirror terminal 1/0 matches actual authored aftermath
+PASS Mirror terminal 2/0 matches actual authored aftermath
+PASS Mirror terminal 3/0 matches actual authored aftermath
+PASS Mirror terminal -1/0 matches actual authored aftermath
+PASS Mirror terminal -1/1 matches actual authored aftermath
+PASS Mirror terminal -1/2 matches actual authored aftermath
+PASS Mirror terminal 0/2 matches actual authored aftermath
+PASS Mirror terminal 1/2 matches actual authored aftermath
+PASS Mirror terminal 2/1 matches actual authored aftermath
+PASS Mirror terminal 3/1 matches actual authored aftermath
+PASS Mirror authored costs, conditions, effects, branching unchanged
+PASS Mirror weight preserved
+PASS Mirror minAct preserved
+PASS Mirror maxAct preserved
+PASS Mirror minNormalCombatsInAct preserved
+PASS Mirror requiredFlag preserved
+PASS Mirror forbiddenFlag preserved
+PASS Mirror excludedFromRandomPool preserved
+PASS Mirror entryRoutes preserved
+PASS Mirror first-facing policy
+PASS Mirror no unrepresented special-room premise
+PASS Mirror every terminal has revisit response
+PASS LostBeliever authored display name installed
+PASS LostBeliever page 0 authored narrative installed
+PASS LostBeliever page 1 authored narrative installed
+PASS LostBeliever page 2 authored narrative installed
+PASS LostBeliever terminal 2/0 matches actual authored aftermath
+PASS LostBeliever terminal 0/1 matches actual authored aftermath
+PASS LostBeliever terminal 1/1 matches actual authored aftermath
+PASS LostBeliever terminal 2/1 matches actual authored aftermath
+PASS LostBeliever terminal 1/0 matches actual authored aftermath
+PASS LostBeliever terminal 0/2 matches actual authored aftermath
+PASS LostBeliever terminal 1/2 matches actual authored aftermath
+PASS LostBeliever terminal -1/0 matches actual authored aftermath
+PASS LostBeliever terminal -1/1 matches actual authored aftermath
+PASS LostBeliever terminal -1/2 matches actual authored aftermath
+PASS LostBeliever authored costs, conditions, effects, branching unchanged
+PASS LostBeliever weight preserved
+PASS LostBeliever minAct preserved
+PASS LostBeliever maxAct preserved
+PASS LostBeliever minNormalCombatsInAct preserved
+PASS LostBeliever requiredFlag preserved
+PASS LostBeliever forbiddenFlag preserved
+PASS LostBeliever excludedFromRandomPool preserved
+PASS LostBeliever entryRoutes preserved
+PASS LostBeliever first-facing policy
+PASS LostBeliever no unrepresented special-room premise
+PASS LostBeliever every terminal has revisit response
+PASS Tooth authored display name installed
+PASS Tooth page 0 authored narrative installed
+PASS Tooth page 1 authored narrative installed
+PASS Tooth terminal 0/0 matches actual authored aftermath
+PASS Tooth terminal 0/2 matches actual authored aftermath
+PASS Tooth terminal 1/0 matches actual authored aftermath
+PASS Tooth terminal -1/0 matches actual authored aftermath
+PASS Tooth terminal -1/1 matches actual authored aftermath
+PASS Tooth terminal -1/2 matches actual authored aftermath
+PASS Tooth terminal 0/3 matches actual authored aftermath
+PASS Tooth terminal 1/1 matches actual authored aftermath
+PASS Tooth authored costs, conditions, effects, branching unchanged
+PASS Tooth weight preserved
+PASS Tooth minAct preserved
+PASS Tooth maxAct preserved
+PASS Tooth minNormalCombatsInAct preserved
+PASS Tooth requiredFlag preserved
+PASS Tooth forbiddenFlag preserved
+PASS Tooth excludedFromRandomPool preserved
+PASS Tooth entryRoutes preserved
+PASS Tooth first-facing policy
+PASS Tooth no unrepresented special-room premise
+PASS Tooth every terminal has revisit response
+PASS QuietPrayer authored display name installed
+PASS QuietPrayer terminal -1/0 matches actual authored aftermath
+PASS QuietPrayer terminal -1/1 matches actual authored aftermath
+PASS QuietPrayer terminal -1/2 matches actual authored aftermath
+PASS QuietPrayer authored costs, conditions, effects, branching unchanged
+PASS QuietPrayer weight preserved
+PASS QuietPrayer minAct preserved
+PASS QuietPrayer maxAct preserved
+PASS QuietPrayer minNormalCombatsInAct preserved
+PASS QuietPrayer requiredFlag preserved
+PASS QuietPrayer forbiddenFlag preserved
+PASS QuietPrayer excludedFromRandomPool preserved
+PASS QuietPrayer entryRoutes preserved
+PASS QuietPrayer first-facing policy
+PASS QuietPrayer no unrepresented special-room premise
+PASS QuietPrayer every terminal has revisit response
+PASS Scholar authored display name installed
+PASS Scholar page 0 authored narrative installed
+PASS Scholar page 1 authored narrative installed
+PASS Scholar page 2 authored narrative installed
+PASS Scholar terminal 0/1 matches actual authored aftermath
+PASS Scholar terminal 1/0 matches actual authored aftermath
+PASS Scholar terminal 1/2 matches actual authored aftermath
+PASS Scholar terminal 2/0 matches actual authored aftermath
+PASS Scholar terminal -1/0 matches actual authored aftermath
+PASS Scholar terminal -1/1 matches actual authored aftermath
+PASS Scholar terminal -1/2 matches actual authored aftermath
+PASS Scholar terminal 1/3 matches actual authored aftermath
+PASS Scholar terminal 2/2 matches actual authored aftermath
+PASS Scholar authored costs, conditions, effects, branching unchanged
+PASS Scholar weight preserved
+PASS Scholar minAct preserved
+PASS Scholar maxAct preserved
+PASS Scholar minNormalCombatsInAct preserved
+PASS Scholar requiredFlag preserved
+PASS Scholar forbiddenFlag preserved
+PASS Scholar excludedFromRandomPool preserved
+PASS Scholar entryRoutes preserved
+PASS Scholar first-facing policy
+PASS Scholar no unrepresented special-room premise
+PASS Scholar every terminal has revisit response
+PASS Forge authored display name installed
+PASS Forge page 0 authored narrative installed
+PASS Forge page 1 authored narrative installed
+PASS Forge terminal 0/0 matches actual authored aftermath
+PASS Forge terminal 1/0 matches actual authored aftermath
+PASS Forge terminal 1/1 matches actual authored aftermath
+PASS Forge terminal -1/0 matches actual authored aftermath
+PASS Forge terminal -1/1 matches actual authored aftermath
+PASS Forge terminal -1/2 matches actual authored aftermath
+PASS Forge terminal 0/2 matches actual authored aftermath
+PASS Forge terminal 1/2 matches actual authored aftermath
+PASS Forge authored costs, conditions, effects, branching unchanged
+PASS Forge weight preserved
+PASS Forge minAct preserved
+PASS Forge maxAct preserved
+PASS Forge minNormalCombatsInAct preserved
+PASS Forge requiredFlag preserved
+PASS Forge forbiddenFlag preserved
+PASS Forge excludedFromRandomPool preserved
+PASS Forge entryRoutes preserved
+PASS Hourglass authored display name installed
+PASS Hourglass page 0 authored narrative installed
+PASS Hourglass page 1 authored narrative installed
+PASS Hourglass terminal 0/1 matches actual authored aftermath
+PASS Hourglass terminal 1/0 matches actual authored aftermath
+PASS Hourglass terminal 1/1 matches actual authored aftermath
+PASS Hourglass terminal -1/0 matches actual authored aftermath
+PASS Hourglass terminal -1/1 matches actual authored aftermath
+PASS Hourglass terminal -1/2 matches actual authored aftermath
+PASS Hourglass terminal 0/2 matches actual authored aftermath
+PASS Hourglass terminal 1/2 matches actual authored aftermath
+PASS Hourglass authored costs, conditions, effects, branching unchanged
+PASS Hourglass weight preserved
+PASS Hourglass minAct preserved
+PASS Hourglass maxAct preserved
+PASS Hourglass minNormalCombatsInAct preserved
+PASS Hourglass requiredFlag preserved
+PASS Hourglass forbiddenFlag preserved
+PASS Hourglass excludedFromRandomPool preserved
+PASS Hourglass entryRoutes preserved
+PASS Symbiosis authored display name installed
+PASS Symbiosis page 0 authored narrative installed
+PASS Symbiosis terminal 0/0 matches actual authored aftermath
+PASS Symbiosis terminal 0/1 matches actual authored aftermath
+PASS Symbiosis terminal 0/2 matches actual authored aftermath
+PASS Symbiosis terminal -1/0 matches actual authored aftermath
+PASS Symbiosis terminal -1/1 matches actual authored aftermath
+PASS Symbiosis terminal -1/2 matches actual authored aftermath
+PASS Symbiosis terminal 0/3 matches actual authored aftermath
+PASS Symbiosis authored costs, conditions, effects, branching unchanged
+PASS Symbiosis weight preserved
+PASS Symbiosis minAct preserved
+PASS Symbiosis maxAct preserved
+PASS Symbiosis minNormalCombatsInAct preserved
+PASS Symbiosis requiredFlag preserved
+PASS Symbiosis forbiddenFlag preserved
+PASS Symbiosis excludedFromRandomPool preserved
+PASS Symbiosis entryRoutes preserved
+PASS AmberSeed authored display name installed
+PASS AmberSeed page 0 authored narrative installed
+PASS AmberSeed terminal 0/0 matches actual authored aftermath
+PASS AmberSeed terminal 0/1 matches actual authored aftermath
+PASS AmberSeed terminal -1/0 matches actual authored aftermath
+PASS AmberSeed terminal -1/1 matches actual authored aftermath
+PASS AmberSeed terminal 0/2 matches actual authored aftermath
+PASS AmberSeed authored costs, conditions, effects, branching unchanged
+PASS AmberSeed weight preserved
+PASS AmberSeed minAct preserved
+PASS AmberSeed maxAct preserved
+PASS AmberSeed minNormalCombatsInAct preserved
+PASS AmberSeed requiredFlag preserved
+PASS AmberSeed forbiddenFlag preserved
+PASS AmberSeed excludedFromRandomPool preserved
+PASS AmberSeed entryRoutes preserved
+PASS AmberSeed first-facing policy
+PASS AmberSeed no unrepresented special-room premise
+PASS AmberSeed every terminal has revisit response
+PASS MasterTrial authored display name installed
+PASS MasterTrial page 0 authored narrative installed
+PASS MasterTrial page 1 authored narrative installed
+PASS MasterTrial page 2 authored narrative installed
+PASS MasterTrial terminal 1/0 matches actual authored aftermath
+PASS MasterTrial terminal 2/0 matches actual authored aftermath
+PASS MasterTrial terminal 2/1 matches actual authored aftermath
+PASS MasterTrial terminal -1/0 matches actual authored aftermath
+PASS MasterTrial terminal -1/1 matches actual authored aftermath
+PASS MasterTrial terminal -1/2 matches actual authored aftermath
+PASS MasterTrial terminal 0/2 matches actual authored aftermath
+PASS MasterTrial terminal 1/2 matches actual authored aftermath
+PASS MasterTrial terminal 2/2 matches actual authored aftermath
+PASS MasterTrial authored costs, conditions, effects, branching unchanged
+PASS MasterTrial weight preserved
+PASS MasterTrial minAct preserved
+PASS MasterTrial maxAct preserved
+PASS MasterTrial minNormalCombatsInAct preserved
+PASS MasterTrial requiredFlag preserved
+PASS MasterTrial forbiddenFlag preserved
+PASS MasterTrial excludedFromRandomPool preserved
+PASS MasterTrial entryRoutes preserved
+PASS Well authored display name installed
+PASS Well page 0 authored narrative installed
+PASS Well page 1 authored narrative installed
+PASS Well terminal 0/0 matches actual authored aftermath
+PASS Well terminal 1/0 matches actual authored aftermath
+PASS Well terminal 1/1 matches actual authored aftermath
+PASS Well terminal -1/0 matches actual authored aftermath
+PASS Well terminal -1/1 matches actual authored aftermath
+PASS Well terminal 0/2 matches actual authored aftermath
+PASS Well authored costs, conditions, effects, branching unchanged
+PASS Well weight preserved
+PASS Well minAct preserved
+PASS Well maxAct preserved
+PASS Well minNormalCombatsInAct preserved
+PASS Well requiredFlag preserved
+PASS Well forbiddenFlag preserved
+PASS Well excludedFromRandomPool preserved
+PASS Well entryRoutes preserved
+PASS Well first-facing policy
+PASS Well no unrepresented special-room premise
+PASS Well every terminal has revisit response
+PASS Investment authored display name installed
+PASS Investment page 0 authored narrative installed
+PASS Investment terminal 0/0 matches actual authored aftermath
+PASS Investment terminal 0/1 matches actual authored aftermath
+PASS Investment terminal 0/2 matches actual authored aftermath
+PASS Investment terminal -1/0 matches actual authored aftermath
+PASS Investment terminal -1/1 matches actual authored aftermath
+PASS Investment authored costs, conditions, effects, branching unchanged
+PASS Investment weight preserved
+PASS Investment minAct preserved
+PASS Investment maxAct preserved
+PASS Investment minNormalCombatsInAct preserved
+PASS Investment requiredFlag preserved
+PASS Investment forbiddenFlag preserved
+PASS Investment excludedFromRandomPool preserved
+PASS Investment entryRoutes preserved
+PASS Investment first-facing policy
+PASS Investment no unrepresented special-room premise
+PASS Investment every terminal has revisit response
+PASS StormBottle authored display name installed
+PASS StormBottle page 0 authored narrative installed
+PASS StormBottle terminal 0/0 matches actual authored aftermath
+PASS StormBottle terminal 0/1 matches actual authored aftermath
+PASS StormBottle terminal 0/2 matches actual authored aftermath
+PASS StormBottle terminal -1/0 matches actual authored aftermath
+PASS StormBottle terminal -1/1 matches actual authored aftermath
+PASS StormBottle terminal -1/2 matches actual authored aftermath
+PASS StormBottle terminal 0/3 matches actual authored aftermath
+PASS StormBottle authored costs, conditions, effects, branching unchanged
+PASS StormBottle weight preserved
+PASS StormBottle minAct preserved
+PASS StormBottle maxAct preserved
+PASS StormBottle minNormalCombatsInAct preserved
+PASS StormBottle requiredFlag preserved
+PASS StormBottle forbiddenFlag preserved
+PASS StormBottle excludedFromRandomPool preserved
+PASS StormBottle entryRoutes preserved
+PASS StormBottle first-facing policy
+PASS StormBottle no unrepresented special-room premise
+PASS StormBottle every terminal has revisit response
+PASS Shelter authored display name installed
+PASS Shelter page 0 authored narrative installed
+PASS Shelter terminal 0/0 matches actual authored aftermath
+PASS Shelter terminal 0/1 matches actual authored aftermath
+PASS Shelter terminal 0/2 matches actual authored aftermath
+PASS Shelter terminal -1/0 matches actual authored aftermath
+PASS Shelter terminal -1/1 matches actual authored aftermath
+PASS Shelter terminal -1/2 matches actual authored aftermath
+PASS Shelter terminal 0/3 matches actual authored aftermath
+PASS Shelter authored costs, conditions, effects, branching unchanged
+PASS Shelter weight preserved
+PASS Shelter minAct preserved
+PASS Shelter maxAct preserved
+PASS Shelter minNormalCombatsInAct preserved
+PASS Shelter requiredFlag preserved
+PASS Shelter forbiddenFlag preserved
+PASS Shelter excludedFromRandomPool preserved
+PASS Shelter entryRoutes preserved
+PASS Shelter first-facing policy
+PASS Shelter no unrepresented special-room premise
+PASS Shelter every terminal has revisit response
+PASS Contract authored display name installed
+PASS Contract page 0 authored narrative installed
+PASS Contract page 1 authored narrative installed
+PASS Contract page 2 authored narrative installed
+PASS Contract page 3 authored narrative installed
+PASS Contract terminal 0/0 matches actual authored aftermath
+PASS Contract terminal 1/1 matches actual authored aftermath
+PASS Contract terminal 2/1 matches actual authored aftermath
+PASS Contract terminal 2/2 matches actual authored aftermath
+PASS Contract terminal 3/0 matches actual authored aftermath
+PASS Contract terminal 3/1 matches actual authored aftermath
+PASS Contract terminal -1/0 matches actual authored aftermath
+PASS Contract terminal -1/1 matches actual authored aftermath
+PASS Contract terminal 0/2 matches actual authored aftermath
+PASS Contract terminal 1/2 matches actual authored aftermath
+PASS Contract terminal 3/2 matches actual authored aftermath
+PASS Contract authored costs, conditions, effects, branching unchanged
+PASS Contract weight preserved
+PASS Contract minAct preserved
+PASS Contract maxAct preserved
+PASS Contract minNormalCombatsInAct preserved
+PASS Contract requiredFlag preserved
+PASS Contract forbiddenFlag preserved
+PASS Contract excludedFromRandomPool preserved
+PASS Contract entryRoutes preserved
+PASS Contract first-facing policy
+PASS Contract no unrepresented special-room premise
+PASS Contract every terminal has revisit response
+PASS Delivery authored display name installed
+PASS Delivery page 0 authored narrative installed
+PASS Delivery terminal 0/0 matches actual authored aftermath
+PASS Delivery terminal 0/1 matches actual authored aftermath
+PASS Delivery terminal -1/0 matches actual authored aftermath
+PASS Delivery terminal -1/1 matches actual authored aftermath
+PASS Delivery terminal 0/2 matches actual authored aftermath
+PASS Delivery authored costs, conditions, effects, branching unchanged
+PASS Delivery weight preserved
+PASS Delivery minAct preserved
+PASS Delivery maxAct preserved
+PASS Delivery minNormalCombatsInAct preserved
+PASS Delivery requiredFlag preserved
+PASS Delivery forbiddenFlag preserved
+PASS Delivery excludedFromRandomPool preserved
+PASS Delivery entryRoutes preserved
+PASS Delivery first-facing policy
+PASS Delivery no unrepresented special-room premise
+PASS Delivery every terminal has revisit response
+PASS MagicTeacherReturn authored display name installed
+PASS MagicTeacherReturn page 0 authored narrative installed
+PASS MagicTeacherReturn page 1 authored narrative installed
+PASS MagicTeacherReturn page 2 authored narrative installed
+PASS MagicTeacherReturn page 3 authored narrative installed
+PASS MagicTeacherReturn page 4 authored narrative installed
+PASS MagicTeacherReturn page 5 authored narrative installed
+PASS MagicTeacherReturn page 6 authored narrative installed
+PASS MagicTeacherReturn page 7 authored narrative installed
+PASS MagicTeacherReturn page 8 authored narrative installed
+PASS MagicTeacherReturn page 9 authored narrative installed
+PASS MagicTeacherReturn page 10 authored narrative installed
+PASS MagicTeacherReturn page 11 authored narrative installed
+PASS MagicTeacherReturn page 12 authored narrative installed
+PASS MagicTeacherReturn terminal 0/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 1/0 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 1/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 1/2 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 2/0 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 2/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 2/2 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 3/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 4/0 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 5/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 6/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 7/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 8/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 9/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 10/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 11/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal 12/1 matches actual authored aftermath
+PASS MagicTeacherReturn terminal -1/0 matches actual authored aftermath
+PASS MagicTeacherReturn authored costs, conditions, effects, branching unchanged
+PASS MagicTeacherReturn weight preserved
+PASS MagicTeacherReturn minAct preserved
+PASS MagicTeacherReturn maxAct preserved
+PASS MagicTeacherReturn minNormalCombatsInAct preserved
+PASS MagicTeacherReturn requiredFlag preserved
+PASS MagicTeacherReturn forbiddenFlag preserved
+PASS MagicTeacherReturn excludedFromRandomPool preserved
+PASS MagicTeacherReturn entryRoutes preserved
+PASS MagicTeacherReturn first-facing policy
+PASS MagicTeacherReturn no unrepresented special-room premise
+PASS MagicTeacherReturn every terminal has revisit response
+PASS Bell authored display name installed
+PASS Bell page 0 authored narrative installed
+PASS Bell page 1 authored narrative installed
+PASS Bell page 2 authored narrative installed
+PASS Bell terminal 0/1 matches actual authored aftermath
+PASS Bell terminal 2/1 matches actual authored aftermath
+PASS Bell terminal 1/0 matches actual authored aftermath
+PASS Bell terminal 2/0 matches actual authored aftermath
+PASS Bell terminal -1/0 matches actual authored aftermath
+PASS Bell terminal -1/1 matches actual authored aftermath
+PASS Bell terminal -1/2 matches actual authored aftermath
+PASS Bell terminal 0/2 matches actual authored aftermath
+PASS Bell terminal 1/2 matches actual authored aftermath
+PASS Bell terminal 2/2 matches actual authored aftermath
+PASS Bell authored costs, conditions, effects, branching unchanged
+PASS Bell weight preserved
+PASS Bell minAct preserved
+PASS Bell maxAct preserved
+PASS Bell minNormalCombatsInAct preserved
+PASS Bell requiredFlag preserved
+PASS Bell forbiddenFlag preserved
+PASS Bell excludedFromRandomPool preserved
+PASS Bell entryRoutes preserved
+PASS Banner authored display name installed
+PASS Banner page 0 authored narrative installed
+PASS Banner terminal 0/0 matches actual authored aftermath
+PASS Banner terminal 0/1 matches actual authored aftermath
+PASS Banner terminal -1/0 matches actual authored aftermath
+PASS Banner terminal -1/1 matches actual authored aftermath
+PASS Banner terminal 0/2 matches actual authored aftermath
+PASS Banner authored costs, conditions, effects, branching unchanged
+PASS Banner weight preserved
+PASS Banner minAct preserved
+PASS Banner maxAct preserved
+PASS Banner minNormalCombatsInAct preserved
+PASS Banner requiredFlag preserved
+PASS Banner forbiddenFlag preserved
+PASS Banner excludedFromRandomPool preserved
+PASS Banner entryRoutes preserved
+PASS Banner first-facing policy
+PASS Banner no unrepresented special-room premise
+PASS Banner every terminal has revisit response
+PASS Training authored display name installed
+PASS Training page 0 authored narrative installed
+PASS Training terminal 0/0 matches actual authored aftermath
+PASS Training terminal 0/1 matches actual authored aftermath
+PASS Training terminal 0/2 matches actual authored aftermath
+PASS Training terminal -1/0 matches actual authored aftermath
+PASS Training terminal -1/1 matches actual authored aftermath
+PASS Training terminal -1/2 matches actual authored aftermath
+PASS Training terminal 0/3 matches actual authored aftermath
+PASS Training authored costs, conditions, effects, branching unchanged
+PASS Training weight preserved
+PASS Training minAct preserved
+PASS Training maxAct preserved
+PASS Training minNormalCombatsInAct preserved
+PASS Training requiredFlag preserved
+PASS Training forbiddenFlag preserved
+PASS Training excludedFromRandomPool preserved
+PASS Training entryRoutes preserved
+PASS Training first-facing policy
+PASS Training no unrepresented special-room premise
+PASS Training every terminal has revisit response
+PASS MagicTeacherAdvanced authored display name installed
+PASS MagicTeacherAdvanced page 0 authored narrative installed
+PASS MagicTeacherAdvanced page 1 authored narrative installed
+PASS MagicTeacherAdvanced page 2 authored narrative installed
+PASS MagicTeacherAdvanced terminal 0/0 matches actual authored aftermath
+PASS MagicTeacherAdvanced terminal 0/1 matches actual authored aftermath
+PASS MagicTeacherAdvanced terminal 0/2 matches actual authored aftermath
+PASS MagicTeacherAdvanced terminal 0/3 matches actual authored aftermath
+PASS MagicTeacherAdvanced terminal 1/1 matches actual authored aftermath
+PASS MagicTeacherAdvanced terminal 2/0 matches actual authored aftermath
+PASS MagicTeacherAdvanced terminal -1/0 matches actual authored aftermath
+PASS MagicTeacherAdvanced authored costs, conditions, effects, branching unchanged
+PASS MagicTeacherAdvanced weight preserved
+PASS MagicTeacherAdvanced minAct preserved
+PASS MagicTeacherAdvanced maxAct preserved
+PASS MagicTeacherAdvanced minNormalCombatsInAct preserved
+PASS MagicTeacherAdvanced requiredFlag preserved
+PASS MagicTeacherAdvanced forbiddenFlag preserved
+PASS MagicTeacherAdvanced excludedFromRandomPool preserved
+PASS MagicTeacherAdvanced entryRoutes preserved
+PASS MagicTeacherAdvanced first-facing policy
+PASS MagicTeacherAdvanced no unrepresented special-room premise
+PASS MagicTeacherAdvanced every terminal has revisit response
+PASS StrayDog authored display name installed
+PASS StrayDog terminal 0/1 matches actual authored aftermath
+PASS StrayDog terminal 1/0 matches actual authored aftermath
+PASS StrayDog terminal 1/1 matches actual authored aftermath
+PASS StrayDog terminal 1/2 matches actual authored aftermath
+PASS StrayDog terminal -1/0 matches actual authored aftermath
+PASS StrayDog terminal -1/1 matches actual authored aftermath
+PASS StrayDog terminal -1/2 matches actual authored aftermath
+PASS StrayDog authored costs, conditions, effects, branching unchanged
+PASS StrayDog weight preserved
+PASS StrayDog minAct preserved
+PASS StrayDog maxAct preserved
+PASS StrayDog minNormalCombatsInAct preserved
+PASS StrayDog requiredFlag preserved
+PASS StrayDog forbiddenFlag preserved
+PASS StrayDog excludedFromRandomPool preserved
+PASS StrayDog entryRoutes preserved
+PASS StrayDog first-facing policy
+PASS StrayDog no unrepresented special-room premise
+PASS StrayDog every terminal has revisit response
+PASS Pilgrim authored display name installed
+PASS Pilgrim page 0 authored narrative installed
+PASS Pilgrim terminal 0/0 matches actual authored aftermath
+PASS Pilgrim terminal 0/1 matches actual authored aftermath
+PASS Pilgrim terminal 0/2 matches actual authored aftermath
+PASS Pilgrim terminal -1/0 matches actual authored aftermath
+PASS Pilgrim terminal -1/1 matches actual authored aftermath
+PASS Pilgrim terminal -1/2 matches actual authored aftermath
+PASS Pilgrim terminal 0/3 matches actual authored aftermath
+PASS Pilgrim authored costs, conditions, effects, branching unchanged
+PASS Pilgrim weight preserved
+PASS Pilgrim minAct preserved
+PASS Pilgrim maxAct preserved
+PASS Pilgrim minNormalCombatsInAct preserved
+PASS Pilgrim requiredFlag preserved
+PASS Pilgrim forbiddenFlag preserved
+PASS Pilgrim excludedFromRandomPool preserved
+PASS Pilgrim entryRoutes preserved
+PASS Pilgrim first-facing policy
+PASS Pilgrim no unrepresented special-room premise
+PASS Pilgrim every terminal has revisit response
+PASS MagicTeacherFirst authored display name installed
+PASS MagicTeacherFirst page 0 authored narrative installed
+PASS MagicTeacherFirst page 1 authored narrative installed
+PASS MagicTeacherFirst page 2 authored narrative installed
+PASS MagicTeacherFirst page 3 authored narrative installed
+PASS MagicTeacherFirst page 4 authored narrative installed
+PASS MagicTeacherFirst terminal 0/1 matches actual authored aftermath
+PASS MagicTeacherFirst terminal 1/1 matches actual authored aftermath
+PASS MagicTeacherFirst terminal 2/0 matches actual authored aftermath
+PASS MagicTeacherFirst terminal 2/1 matches actual authored aftermath
+PASS MagicTeacherFirst terminal 3/0 matches actual authored aftermath
+PASS MagicTeacherFirst terminal 3/1 matches actual authored aftermath
+PASS MagicTeacherFirst terminal -1/0 matches actual authored aftermath
+PASS MagicTeacherFirst authored costs, conditions, effects, branching unchanged
+PASS MagicTeacherFirst weight preserved
+PASS MagicTeacherFirst minAct preserved
+PASS MagicTeacherFirst maxAct preserved
+PASS MagicTeacherFirst minNormalCombatsInAct preserved
+PASS MagicTeacherFirst requiredFlag preserved
+PASS MagicTeacherFirst forbiddenFlag preserved
+PASS MagicTeacherFirst excludedFromRandomPool preserved
+PASS MagicTeacherFirst entryRoutes preserved
+PASS MagicTeacherFirst first-facing policy
+PASS MagicTeacherFirst no unrepresented special-room premise
+PASS MagicTeacherFirst every terminal has revisit response
+PASS 19 unique active subject data
+PASS 19 unique active front paintings
+PASS rewritten Korean CSV installed
+544 checks; 0 failures.

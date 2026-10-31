@@ -1,0 +1,1 @@
+1402 checks; 0 failures. Actual Unity world render/UI raycasts, 19 events across 3 acts, first-facing/revisit transforms, all terminal-presence/narration states, 3 full dialogue choices, complete camping rooms.

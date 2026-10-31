@@ -71,7 +71,7 @@ namespace DungeonSlash
             Bind(room, current ? MapRoomIconStyle.Current : MapRoomIconStyle.KnownRoom, facing, false, null);
         }
 
-        public void Bind(DungeonRoom room, MapRoomIconStyle style, FacingDirection facing, bool isHighlighted, ISet<FacingDirection> routes = null)
+        public void Bind(DungeonRoom room, MapRoomIconStyle style, FacingDirection facing, bool isHighlighted, ISet<FacingDirection> routes = null, bool locked = false)
         {
             Room = room;
             highlighted = isHighlighted;
@@ -108,6 +108,8 @@ namespace DungeonSlash
                 label.rectTransform.anchoredPosition = Vector2.zero; label.rectTransform.sizeDelta = new Vector2(-4, -4);
                 label.text = style switch
                 {
+                    _ when locked => GameText.Get("ui.explore.map.locked"),
+                    _ when room.Type == RoomEncounterType.Event && room.Story != null && room.Story.discovery == EventDiscovery.Concealed && !room.StoryInvestigated => string.Empty,
                     MapRoomIconStyle.UnknownReachable => "?",
                     _ when large || !compact => RoomLabel(room.Type),
                     MapRoomIconStyle.KnownRoom => room.Type switch

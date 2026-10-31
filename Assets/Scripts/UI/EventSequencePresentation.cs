@@ -62,6 +62,7 @@ namespace DungeonSlash
                         if (!RandomEventSystem.Pay(option, runController.State)) { ShowEventPage(room, story, index, lineIndex); return; }
                         if (option.nextPage >= 0) { ShowEventPage(room, story, option.nextPage); return; }
                         room.IsCleared = true;
+                        ApplyRoomObjectOutcome(room, option);
                         var messages = new List<string>(); if (!string.IsNullOrWhiteSpace(option.resultText)) messages.Add(option.resultText);
                         ApplyEventEffects(story, option.effects, 0, messages);
                     }

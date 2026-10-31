@@ -1,0 +1,23 @@
+[
+  {
+    "key": "hourglass_used_front",
+    "view": "Front",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-07738ffa-9f0e-4d43-9e0a-7d734654ea48.png",
+    "destination": "T_UI_World_Hourglass_UsedFront.png",
+    "prompt": "Use case: image-edit. Production transparent PNG Unity sprite for Behemoth. Image 1 is the edit target: keep its EXACT table, book, camera angle, base placement and scale. Remove ONLY the hourglass completely, leaving the plain broad wooden tabletop exposed where it stood; a faint single dust silhouette is okay. No hourglass, no sand, no detached glass or debris. Image 2 is actual installed backdrop, image 3 actual installed character, image 4 original drawing authority. Keep broad muted wood planes, restrained large shading and solid ink-black under-table shadows. Few thick selective outlines; no grain, modeled materials, tiny wood scratches, fine folds or extra cracks. Do not change the table's Front view, perspective, book location, leg design or proportions. Transparent background, no surrounding scene, whole object unclipped."
+  },
+  {
+    "key": "hourglass_used_side",
+    "view": "Side",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-7cc64806-ceb2-4068-b8d4-97798121358d.png",
+    "destination": "T_UI_World_Hourglass_UsedSide.png",
+    "prompt": "Use case: image-edit. Production transparent PNG Unity sprite for Behemoth. Image 1 is the edit target: keep its EXACT table, book, camera angle, base placement and scale. Remove ONLY the hourglass completely, leaving the plain broad wooden tabletop exposed where it stood; a faint single dust silhouette is okay. No hourglass, no sand, no detached glass or debris. Image 2 is actual installed backdrop, image 3 actual installed character, image 4 original drawing authority. Keep broad muted wood planes, restrained large shading and solid ink-black under-table shadows. Few thick selective outlines; no grain, modeled materials, tiny wood scratches, fine folds or extra cracks. Do not change the table's Side view, perspective, book location, leg design or proportions. Transparent background, no surrounding scene, whole object unclipped."
+  },
+  {
+    "key": "hourglass_used_rear",
+    "view": "Rear",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-10134fea-0d97-494b-8416-cc17feaa3e2d.png",
+    "destination": "T_UI_World_Hourglass_UsedRear.png",
+    "prompt": "Use case: image-edit. Production transparent PNG Unity sprite for Behemoth. Image 1 is the edit target: keep its EXACT table, book, camera angle, base placement and scale. Remove ONLY the hourglass completely, leaving the plain broad wooden tabletop exposed where it stood; a faint single dust silhouette is okay. No hourglass, no sand, no detached glass or debris. Image 2 is actual installed backdrop, image 3 actual installed character, image 4 original drawing authority. Keep broad muted wood planes, restrained large shading and solid ink-black under-table shadows. Few thick selective outlines; no grain, modeled materials, tiny wood scratches, fine folds or extra cracks. Do not change the table's Rear view, perspective, book location, leg design or proportions. Transparent background, no surrounding scene, whole object unclipped."
+  }
+]

@@ -18,11 +18,11 @@ MonoBehaviour:
     lastText: "\uBD89\uC740 \uC11C\uBA85"
   - propertyPath: narrative
     key: data.randomeventdata.contract.narrative
-    lastText: "\uBB34\uB108\uC9C4 \uC9D1\uBB34\uC2E4\uC5D0\uC11C \uD589\uC0C1\uC774
-      \uBB38\uC11C\uB4E4\uC744 \uACE8\uB77C \uB2F4\uACE0 \uC788\uB2E4.\r\n\r\n\uBC1C\uBC11\uC5D0
-      \uB5A8\uC5B4\uC9C4 \uBD89\uC740 \uACC4\uC57D\uC11C\uB97C \uC8FC\uC6B0\uB2C8
-      \uD589\uC0C1\uC774 \uC190\uC744 \uB0B4\uBBFC\uB2E4.\r\n\r\n\uC11C\uBA85 \uC548
-      \uB41C \uAC70\uAD70\uC694. \uADF8\uAC74 \uC81C\uAC00 \uC0AC\uACA0\uC2B5\uB2C8\uB2E4."
+    lastText: "\uBD89\uC740 \uBC00\uB78D\uC73C\uB85C \uBD09\uD55C \uB450\uB8E8\uB9C8\uB9AC\uAC00
+      \uAE38\uAC00\uC5D0 \uB193\uC5EC \uC788\uB2E4.\n\n\uC190\uC744 \uB300\uC790
+      \uC885\uC774\uC5D0\uC11C \uBAA9\uC18C\uB9AC\uAC00 \uD758\uB7EC\uB098\uC628\uB2E4.\n\n\u201C\uC11C\uBA85\uD558\uBA74
+      \uD798\uC744 \uC5BB\uB294\uB2E4. \uC6D0\uCE58 \uC54A\uC73C\uBA74 \uAE08\uBC15
+      \uBD09\uC778\uB9CC \uAC00\uC838\uAC00\uB3C4 \uC88B\uB2E4.\u201D"
   - propertyPath: options.Array.data[0].title
     key: data.randomeventdata.contract.options.0.title
     lastText: "\uC9E7\uACE0 \uAD75\uAC8C"
@@ -38,27 +38,28 @@ MonoBehaviour:
     lastText: "\uACE8\uB4DC +25. \uACC4\uC57D\uC758 \uD798\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
   - propertyPath: options.Array.data[0].resultText
     key: data.randomeventdata.contract.options.0.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: options.Array.data[1].resultText
     key: data.randomeventdata.contract.options.1.resulttext
-    lastText: 
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: pages.Array.data[0].narrative
     key: data.randomeventdata.contract.pages.0.narrative
-    lastText: "\uBB34\uB108\uC9C4 \uC9D1\uBB34\uC2E4\uC5D0\uC11C \uD589\uC0C1\uC774
-      \uBB38\uC11C\uB4E4\uC744 \uACE8\uB77C \uB2F4\uACE0 \uC788\uB2E4.\r\n\r\n\uBC1C\uBC11\uC5D0
-      \uB5A8\uC5B4\uC9C4 \uBD89\uC740 \uACC4\uC57D\uC11C\uB97C \uC8FC\uC6B0\uB2C8
-      \uD589\uC0C1\uC774 \uC190\uC744 \uB0B4\uBBFC\uB2E4.\r\n\r\n\uC11C\uBA85 \uC548
-      \uB41C \uAC70\uAD70\uC694. \uADF8\uAC74 \uC81C\uAC00 \uC0AC\uACA0\uC2B5\uB2C8\uB2E4."
+    lastText: "\uBD89\uC740 \uBC00\uB78D\uC73C\uB85C \uBD09\uD55C \uB450\uB8E8\uB9C8\uB9AC\uAC00
+      \uAE38\uAC00\uC5D0 \uB193\uC5EC \uC788\uB2E4.\n\n\uC190\uC744 \uB300\uC790
+      \uC885\uC774\uC5D0\uC11C \uBAA9\uC18C\uB9AC\uAC00 \uD758\uB7EC\uB098\uC628\uB2E4.\n\n\u201C\uC11C\uBA85\uD558\uBA74
+      \uD798\uC744 \uC5BB\uB294\uB2E4. \uC6D0\uCE58 \uC54A\uC73C\uBA74 \uAE08\uBC15
+      \uBD09\uC778\uB9CC \uAC00\uC838\uAC00\uB3C4 \uC88B\uB2E4.\u201D"
   - propertyPath: pages.Array.data[0].options.Array.data[0].title
     key: data.randomeventdata.contract.pages.0.options.0.title
-    lastText: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    lastText: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[0].description
     key: data.randomeventdata.contract.pages.0.options.0.description
     lastText: "\uACE8\uB4DC +25"
   - propertyPath: pages.Array.data[0].options.Array.data[0].resultText
     key: data.randomeventdata.contract.pages.0.options.0.resulttext
-    lastText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-      \uB3C8\uC744 \uAC74\uB138\uB2E4."
+    lastText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+      \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+      \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[1].title
     key: data.randomeventdata.contract.pages.0.options.1.title
     lastText: "\uBB34\uC2A8 \uACC4\uC57D\uC778\uC9C0 \uBB3B\uB294\uB2E4."
@@ -76,12 +77,12 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[0].options.Array.data[2].resultText
     key: data.randomeventdata.contract.pages.0.options.2.resulttext
-    lastText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: pages.Array.data[1].narrative
     key: data.randomeventdata.contract.pages.1.narrative
-    lastText: "\uC11C\uBA85\uD558\uBA74 \uD798\uC744 \uC5BB\uC2B5\uB2C8\uB2E4. \uC774
-      \uC131\uC5D0\uC11C \uC624\uB798 \uBC84\uD2F0\uACE0 \uC2F6\uC73C\uBA74 \uC4F8
-      \uB9CC\uD558\uC8E0."
+    lastText: "\u201C\uC11C\uBA85\uC790\uC758 \uC0DD\uBA85\uC744 \uD798\uC73C\uB85C
+      \uBC14\uAFBC\uB2E4. \uC774 \uC131\uC5D0\uC11C \uC624\uB798 \uBC84\uD2F0\uACE0
+      \uC2F6\uB2E4\uBA74 \uC4F8 \uB9CC\uD55C \uAC70\uB798\uB2E4.\u201D"
   - propertyPath: pages.Array.data[1].options.Array.data[0].title
     key: data.randomeventdata.contract.pages.1.options.0.title
     lastText: "\uB300\uAC00\uB97C \uBB3B\uB294\uB2E4."
@@ -93,14 +94,15 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[1].options.Array.data[1].title
     key: data.randomeventdata.contract.pages.1.options.1.title
-    lastText: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    lastText: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
   - propertyPath: pages.Array.data[1].options.Array.data[1].description
     key: data.randomeventdata.contract.pages.1.options.1.description
     lastText: "\uACE8\uB4DC +25"
   - propertyPath: pages.Array.data[1].options.Array.data[1].resultText
     key: data.randomeventdata.contract.pages.1.options.1.resulttext
-    lastText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-      \uB3C8\uC744 \uAC74\uB138\uB2E4."
+    lastText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+      \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+      \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
   - propertyPath: pages.Array.data[1].options.Array.data[2].title
     key: data.randomeventdata.contract.pages.1.options.2.title
     lastText: "\uB5A0\uB09C\uB2E4."
@@ -109,12 +111,12 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[1].options.Array.data[2].resultText
     key: data.randomeventdata.contract.pages.1.options.2.resulttext
-    lastText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   - propertyPath: pages.Array.data[2].narrative
     key: data.randomeventdata.contract.pages.2.narrative
-    lastText: "\uB0A8\uC740 \uC218\uBA85\uC758 \uC77C\uBD80\uC785\uB2C8\uB2E4. \uB2E4\uCE5C
-      \uC0C1\uCC98\uCC98\uB7FC \uB2E4\uC2DC \uCC44\uC6B8 \uC218 \uC788\uB294 \uAC74
-      \uC544\uB2C8\uACE0\uC694."
+    lastText: "\u201C\uB0A8\uC740 \uC218\uBA85\uC758 \uC77C\uBD80\uB2E4. \uB2E4\uCE5C
+      \uC0C1\uCC98\uCC98\uB7FC \uB2E4\uC2DC \uCC44\uC6B8 \uC218 \uC788\uB294 \uAC83\uC740
+      \uC544\uB2C8\uB2E4.\u201D"
   - propertyPath: pages.Array.data[2].options.Array.data[0].title
     key: data.randomeventdata.contract.pages.2.options.0.title
     lastText: "\uD6A8\uACFC\uB97C \uD655\uC778\uD560 \uC218 \uC788\uB294\uC9C0 \uBB3B\uB294\uB2E4."
@@ -134,24 +136,26 @@ MonoBehaviour:
     key: data.randomeventdata.contract.pages.2.options.1.resulttext
     lastText: "\uC11C\uBA85\uC744 \uB9C8\uCE58\uC790 \uC228\uC774 \uC7A0\uC2DC \uB9C9\uD614\uB2E4.
       \uBAB8\uC744 \uC77C\uC73C\uD0A4\uB2C8 \uC774\uC804\uBCF4\uB2E4 \uBB34\uAE30\uAC00
-      \uAC00\uBCCD\uAC8C \uB290\uAEF4\uC9C4\uB2E4."
+      \uAC00\uBCCD\uB2E4. \uACC4\uC57D\uC11C\uC640 \uBC1B\uCE68\uD568\uC774 \uD568\uAED8
+      \uBD89\uC740 \uC7AC\uAC00 \uB418\uC5B4 \uD769\uC5B4\uC84C\uB2E4."
   - propertyPath: pages.Array.data[2].options.Array.data[2].title
     key: data.randomeventdata.contract.pages.2.options.2.title
-    lastText: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    lastText: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
   - propertyPath: pages.Array.data[2].options.Array.data[2].description
     key: data.randomeventdata.contract.pages.2.options.2.description
     lastText: "\uACE8\uB4DC +25"
   - propertyPath: pages.Array.data[2].options.Array.data[2].resultText
     key: data.randomeventdata.contract.pages.2.options.2.resulttext
-    lastText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-      \uB3C8\uC744 \uAC74\uB138\uB2E4."
+    lastText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+      \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+      \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
   - propertyPath: pages.Array.data[3].narrative
     key: data.randomeventdata.contract.pages.3.narrative
-    lastText: "\uD589\uC0C1\uC774 \uC791\uC740 \uCD94\uB97C \uACC4\uC57D\uC11C \uC704\uC5D0
-      \uC62C\uB9B0\uB2E4.\r\n\r\n\uBD09\uC778\uC5D0\uC11C \uBED7\uC740 \uBD89\uC740
-      \uBE5B\uC774 \uCD94\uB97C \uAC10\uC2F8\uC790, \uBB34\uAC70\uC6B4 \uC1F3\uB369\uC774\uAC00
-      \uC190\uC27D\uAC8C \uB4E4\uC5B4 \uC62C\uB824\uC9C4\uB2E4.\r\n\r\n\uC0AC\uB78C\uC5D0\uAC8C
-      \uC4F0\uBA74 \uC218\uBA85\uC774 \uBE60\uC838\uB098\uAC11\uB2C8\uB2E4. \uACB0\uC815\uD558\uC2DC\uC8E0."
+    lastText: "\uC885\uC774\uC5D0\uC11C \uBED7\uC740 \uBD89\uC740 \uBE5B\uC774 \uB0B4
+      \uBB34\uAE30\uB97C \uAC10\uC2FC\uB2E4. \uC7A0\uAE50\uC774\uB098\uB9C8 \uBB34\uAC70\uC6B4
+      \uBB34\uAE30\uAC00 \uAC00\uBCCD\uAC8C \uB4E4\uB9B0\uB2E4.\n\n\u201C\uC11C\uBA85\uD558\uBA74
+      \uC774 \uD798\uC774 \uB0A8\uB294\uB2E4. \uC0DD\uBA85\uC774 \uC904\uC5B4\uB4DC\uB294
+      \uC77C\uB3C4 \uB418\uB3CC\uB9B4 \uC218 \uC5C6\uB2E4.\u201D"
   - propertyPath: pages.Array.data[3].options.Array.data[0].title
     key: data.randomeventdata.contract.pages.3.options.0.title
     lastText: "\uC11C\uBA85\uD55C\uB2E4."
@@ -162,17 +166,19 @@ MonoBehaviour:
     key: data.randomeventdata.contract.pages.3.options.0.resulttext
     lastText: "\uC11C\uBA85\uC744 \uB9C8\uCE58\uC790 \uC228\uC774 \uC7A0\uC2DC \uB9C9\uD614\uB2E4.
       \uBAB8\uC744 \uC77C\uC73C\uD0A4\uB2C8 \uC774\uC804\uBCF4\uB2E4 \uBB34\uAE30\uAC00
-      \uAC00\uBCCD\uAC8C \uB290\uAEF4\uC9C4\uB2E4."
+      \uAC00\uBCCD\uB2E4. \uACC4\uC57D\uC11C\uC640 \uBC1B\uCE68\uD568\uC774 \uD568\uAED8
+      \uBD89\uC740 \uC7AC\uAC00 \uB418\uC5B4 \uD769\uC5B4\uC84C\uB2E4."
   - propertyPath: pages.Array.data[3].options.Array.data[1].title
     key: data.randomeventdata.contract.pages.3.options.1.title
-    lastText: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    lastText: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
   - propertyPath: pages.Array.data[3].options.Array.data[1].description
     key: data.randomeventdata.contract.pages.3.options.1.description
     lastText: "\uACE8\uB4DC +25"
   - propertyPath: pages.Array.data[3].options.Array.data[1].resultText
     key: data.randomeventdata.contract.pages.3.options.1.resulttext
-    lastText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-      \uB3C8\uC744 \uAC74\uB138\uB2E4."
+    lastText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+      \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+      \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
   - propertyPath: pages.Array.data[3].options.Array.data[2].title
     key: data.randomeventdata.contract.pages.3.options.2.title
     lastText: "\uB5A0\uB09C\uB2E4."
@@ -181,17 +187,19 @@ MonoBehaviour:
     lastText: 
   - propertyPath: pages.Array.data[3].options.Array.data[2].resultText
     key: data.randomeventdata.contract.pages.3.options.2.resulttext
-    lastText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
   textOwnerGuid: e8161cf9482d6114b94fca9cda9cfa9e
   id: Contract
   displayName: "\uBD89\uC740 \uC11C\uBA85"
+  discovery: 1
+  worldObject: {fileID: 11400000, guid: c9a221aba6a89f94e8c5402049c7fef0, type: 2}
   excludedFromRandomPool: 0
-  narrative: "\uBB34\uB108\uC9C4 \uC9D1\uBB34\uC2E4\uC5D0\uC11C \uD589\uC0C1\uC774
-    \uBB38\uC11C\uB4E4\uC744 \uACE8\uB77C \uB2F4\uACE0 \uC788\uB2E4.\r\n\r\n\uBC1C\uBC11\uC5D0
-    \uB5A8\uC5B4\uC9C4 \uBD89\uC740 \uACC4\uC57D\uC11C\uB97C \uC8FC\uC6B0\uB2C8 \uD589\uC0C1\uC774
-    \uC190\uC744 \uB0B4\uBBFC\uB2E4.\r\n\r\n\uC11C\uBA85 \uC548 \uB41C \uAC70\uAD70\uC694.
-    \uADF8\uAC74 \uC81C\uAC00 \uC0AC\uACA0\uC2B5\uB2C8\uB2E4."
-  illustration: {fileID: 21300000, guid: 246da3c3eed9a9741a32ab73ff16c65d, type: 3}
+  narrative: "\uBD89\uC740 \uBC00\uB78D\uC73C\uB85C \uBD09\uD55C \uB450\uB8E8\uB9C8\uB9AC\uAC00
+    \uAE38\uAC00\uC5D0 \uB193\uC5EC \uC788\uB2E4.\n\n\uC190\uC744 \uB300\uC790 \uC885\uC774\uC5D0\uC11C
+    \uBAA9\uC18C\uB9AC\uAC00 \uD758\uB7EC\uB098\uC628\uB2E4.\n\n\u201C\uC11C\uBA85\uD558\uBA74
+    \uD798\uC744 \uC5BB\uB294\uB2E4. \uC6D0\uCE58 \uC54A\uC73C\uBA74 \uAE08\uBC15
+    \uBD09\uC778\uB9CC \uAC00\uC838\uAC00\uB3C4 \uC88B\uB2E4.\u201D"
+  illustration: {fileID: 21300000, guid: 90d18c80fb3d9784a9d3e21d286654a6, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   illustratedPopup: 1
   minAct: 1
@@ -221,12 +229,19 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.Contract.-1.0
     requirements: []
     effects:
     - kind: 0
       relic: {fileID: 11400000, guid: 79f116f127bf73f4db9a2a581e0bce84, type: 2}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 0
@@ -246,25 +261,32 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: 
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.Contract.-1.1
     requirements: []
     effects:
     - kind: 5
       relic: {fileID: 0}
       spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
       encounter: {fileID: 0}
       flag: 
       amount: 25
       stat: 4
   pages:
-  - narrative: "\uBB34\uB108\uC9C4 \uC9D1\uBB34\uC2E4\uC5D0\uC11C \uD589\uC0C1\uC774
-      \uBB38\uC11C\uB4E4\uC744 \uACE8\uB77C \uB2F4\uACE0 \uC788\uB2E4.\r\n\r\n\uBC1C\uBC11\uC5D0
-      \uB5A8\uC5B4\uC9C4 \uBD89\uC740 \uACC4\uC57D\uC11C\uB97C \uC8FC\uC6B0\uB2C8
-      \uD589\uC0C1\uC774 \uC190\uC744 \uB0B4\uBBFC\uB2E4.\r\n\r\n\uC11C\uBA85 \uC548
-      \uB41C \uAC70\uAD70\uC694. \uADF8\uAC74 \uC81C\uAC00 \uC0AC\uACA0\uC2B5\uB2C8\uB2E4."
-    illustration: {fileID: 0}
+  - narrative: "\uBD89\uC740 \uBC00\uB78D\uC73C\uB85C \uBD09\uD55C \uB450\uB8E8\uB9C8\uB9AC\uAC00
+      \uAE38\uAC00\uC5D0 \uB193\uC5EC \uC788\uB2E4.\n\n\uC190\uC744 \uB300\uC790
+      \uC885\uC774\uC5D0\uC11C \uBAA9\uC18C\uB9AC\uAC00 \uD758\uB7EC\uB098\uC628\uB2E4.\n\n\u201C\uC11C\uBA85\uD558\uBA74
+      \uD798\uC744 \uC5BB\uB294\uB2E4. \uC6D0\uCE58 \uC54A\uC73C\uBA74 \uAE08\uBC15
+      \uBD09\uC778\uB9CC \uAC00\uC838\uAC00\uB3C4 \uC88B\uB2E4.\u201D"
+    illustration: {fileID: 21300000, guid: 90d18c80fb3d9784a9d3e21d286654a6, type: 3}
     options:
-    - title: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    - title: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
       description: "\uACE8\uB4DC +25"
       goldCost: 0
       hpCost: 0
@@ -278,13 +300,20 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-        \uB3C8\uC744 \uAC74\uB138\uB2E4."
+      resultText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+        \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+        \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.0.0
       requirements: []
       effects:
       - kind: 5
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 25
@@ -304,6 +333,10 @@ MonoBehaviour:
       nextPage: 1
       failurePage: -1
       resultText: 
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: 
       requirements: []
       effects: []
     - title: "\uB5A0\uB09C\uB2E4."
@@ -320,14 +353,19 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+      resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+        \uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.0.2
       requirements: []
       effects: []
     routes: []
-  - narrative: "\uC11C\uBA85\uD558\uBA74 \uD798\uC744 \uC5BB\uC2B5\uB2C8\uB2E4. \uC774
-      \uC131\uC5D0\uC11C \uC624\uB798 \uBC84\uD2F0\uACE0 \uC2F6\uC73C\uBA74 \uC4F8
-      \uB9CC\uD558\uC8E0."
-    illustration: {fileID: 0}
+  - narrative: "\u201C\uC11C\uBA85\uC790\uC758 \uC0DD\uBA85\uC744 \uD798\uC73C\uB85C
+      \uBC14\uAFBC\uB2E4. \uC774 \uC131\uC5D0\uC11C \uC624\uB798 \uBC84\uD2F0\uACE0
+      \uC2F6\uB2E4\uBA74 \uC4F8 \uB9CC\uD55C \uAC70\uB798\uB2E4.\u201D"
+    illustration: {fileID: 21300000, guid: 90d18c80fb3d9784a9d3e21d286654a6, type: 3}
     options:
     - title: "\uB300\uAC00\uB97C \uBB3B\uB294\uB2E4."
       description: 
@@ -344,9 +382,13 @@ MonoBehaviour:
       nextPage: 2
       failurePage: -1
       resultText: 
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: 
       requirements: []
       effects: []
-    - title: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    - title: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
       description: "\uACE8\uB4DC +25"
       goldCost: 0
       hpCost: 0
@@ -360,13 +402,20 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-        \uB3C8\uC744 \uAC74\uB138\uB2E4."
+      resultText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+        \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+        \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.1.1
       requirements: []
       effects:
       - kind: 5
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 25
@@ -385,14 +434,19 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+      resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+        \uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.1.2
       requirements: []
       effects: []
     routes: []
-  - narrative: "\uB0A8\uC740 \uC218\uBA85\uC758 \uC77C\uBD80\uC785\uB2C8\uB2E4. \uB2E4\uCE5C
-      \uC0C1\uCC98\uCC98\uB7FC \uB2E4\uC2DC \uCC44\uC6B8 \uC218 \uC788\uB294 \uAC74
-      \uC544\uB2C8\uACE0\uC694."
-    illustration: {fileID: 0}
+  - narrative: "\u201C\uB0A8\uC740 \uC218\uBA85\uC758 \uC77C\uBD80\uB2E4. \uB2E4\uCE5C
+      \uC0C1\uCC98\uCC98\uB7FC \uB2E4\uC2DC \uCC44\uC6B8 \uC218 \uC788\uB294 \uAC83\uC740
+      \uC544\uB2C8\uB2E4.\u201D"
+    illustration: {fileID: 21300000, guid: 90d18c80fb3d9784a9d3e21d286654a6, type: 3}
     options:
     - title: "\uD6A8\uACFC\uB97C \uD655\uC778\uD560 \uC218 \uC788\uB294\uC9C0 \uBB3B\uB294\uB2E4."
       description: 
@@ -409,6 +463,10 @@ MonoBehaviour:
       nextPage: 3
       failurePage: -1
       resultText: 
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: 
       requirements: []
       effects: []
     - title: "\uC11C\uBA85\uD55C\uB2E4."
@@ -427,17 +485,24 @@ MonoBehaviour:
       failurePage: -1
       resultText: "\uC11C\uBA85\uC744 \uB9C8\uCE58\uC790 \uC228\uC774 \uC7A0\uC2DC
         \uB9C9\uD614\uB2E4. \uBAB8\uC744 \uC77C\uC73C\uD0A4\uB2C8 \uC774\uC804\uBCF4\uB2E4
-        \uBB34\uAE30\uAC00 \uAC00\uBCCD\uAC8C \uB290\uAEF4\uC9C4\uB2E4."
+        \uBB34\uAE30\uAC00 \uAC00\uBCCD\uB2E4. \uACC4\uC57D\uC11C\uC640 \uBC1B\uCE68\uD568\uC774
+        \uD568\uAED8 \uBD89\uC740 \uC7AC\uAC00 \uB418\uC5B4 \uD769\uC5B4\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.2.1
       requirements: []
       effects:
       - kind: 0
         relic: {fileID: 11400000, guid: 79f116f127bf73f4db9a2a581e0bce84, type: 2}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 0
         stat: 4
-    - title: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    - title: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
       description: "\uACE8\uB4DC +25"
       goldCost: 0
       hpCost: 0
@@ -451,24 +516,31 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-        \uB3C8\uC744 \uAC74\uB138\uB2E4."
+      resultText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+        \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+        \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.2.2
       requirements: []
       effects:
       - kind: 5
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 25
         stat: 4
     routes: []
-  - narrative: "\uD589\uC0C1\uC774 \uC791\uC740 \uCD94\uB97C \uACC4\uC57D\uC11C \uC704\uC5D0
-      \uC62C\uB9B0\uB2E4.\r\n\r\n\uBD09\uC778\uC5D0\uC11C \uBED7\uC740 \uBD89\uC740
-      \uBE5B\uC774 \uCD94\uB97C \uAC10\uC2F8\uC790, \uBB34\uAC70\uC6B4 \uC1F3\uB369\uC774\uAC00
-      \uC190\uC27D\uAC8C \uB4E4\uC5B4 \uC62C\uB824\uC9C4\uB2E4.\r\n\r\n\uC0AC\uB78C\uC5D0\uAC8C
-      \uC4F0\uBA74 \uC218\uBA85\uC774 \uBE60\uC838\uB098\uAC11\uB2C8\uB2E4. \uACB0\uC815\uD558\uC2DC\uC8E0."
-    illustration: {fileID: 0}
+  - narrative: "\uC885\uC774\uC5D0\uC11C \uBED7\uC740 \uBD89\uC740 \uBE5B\uC774 \uB0B4
+      \uBB34\uAE30\uB97C \uAC10\uC2FC\uB2E4. \uC7A0\uAE50\uC774\uB098\uB9C8 \uBB34\uAC70\uC6B4
+      \uBB34\uAE30\uAC00 \uAC00\uBCCD\uAC8C \uB4E4\uB9B0\uB2E4.\n\n\u201C\uC11C\uBA85\uD558\uBA74
+      \uC774 \uD798\uC774 \uB0A8\uB294\uB2E4. \uC0DD\uBA85\uC774 \uC904\uC5B4\uB4DC\uB294
+      \uC77C\uB3C4 \uB418\uB3CC\uB9B4 \uC218 \uC5C6\uB2E4.\u201D"
+    illustration: {fileID: 21300000, guid: 90d18c80fb3d9784a9d3e21d286654a6, type: 3}
     options:
     - title: "\uC11C\uBA85\uD55C\uB2E4."
       description: "\uBD89\uC740 \uACC4\uC57D\uC11C \uD68D\uB4DD"
@@ -486,17 +558,24 @@ MonoBehaviour:
       failurePage: -1
       resultText: "\uC11C\uBA85\uC744 \uB9C8\uCE58\uC790 \uC228\uC774 \uC7A0\uC2DC
         \uB9C9\uD614\uB2E4. \uBAB8\uC744 \uC77C\uC73C\uD0A4\uB2C8 \uC774\uC804\uBCF4\uB2E4
-        \uBB34\uAE30\uAC00 \uAC00\uBCCD\uAC8C \uB290\uAEF4\uC9C4\uB2E4."
+        \uBB34\uAE30\uAC00 \uAC00\uBCCD\uB2E4. \uACC4\uC57D\uC11C\uC640 \uBC1B\uCE68\uD568\uC774
+        \uD568\uAED8 \uBD89\uC740 \uC7AC\uAC00 \uB418\uC5B4 \uD769\uC5B4\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.3.0
       requirements: []
       effects:
       - kind: 0
         relic: {fileID: 11400000, guid: 79f116f127bf73f4db9a2a581e0bce84, type: 2}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 0
         stat: 4
-    - title: "\uACC4\uC57D\uC11C\uB97C \uD310\uB2E4."
+    - title: "\uAE08\uBC15 \uBD09\uC778\uB9CC \uB5BC\uC5B4 \uB0B8\uB2E4."
       description: "\uACE8\uB4DC +25"
       goldCost: 0
       hpCost: 0
@@ -510,13 +589,20 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uD589\uC0C1\uC740 \uBE48 \uC11C\uBA85\uB780\uC744 \uD655\uC778\uD558\uACE0
-        \uB3C8\uC744 \uAC74\uB138\uB2E4."
+      resultText: "\uAE08\uBC15\uC744 \uB5BC\uC5B4 \uB0B4\uC790 \uACC4\uC57D\uC11C\uC640
+        \uBC1B\uCE68\uD568\uC774 \uD568\uAED8 \uC7AC\uB85C \uBB34\uB108\uC84C\uB2E4.
+        \uCC59\uAE34 \uAE08\uBC15\uC740 \uB3C8\uC73C\uB85C \uC4F8 \uC218 \uC788\uACA0\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.3.1
       requirements: []
       effects:
       - kind: 5
         relic: {fileID: 0}
         spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
         encounter: {fileID: 0}
         flag: 
         amount: 25
@@ -535,7 +621,12 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uADF8\uB300\uB85C \uC790\uB9AC\uB97C \uB5A0\uB0AC\uB2E4."
+      resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+        \uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Contract.3.2
       requirements: []
       effects: []
     routes: []

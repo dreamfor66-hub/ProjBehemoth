@@ -237,26 +237,27 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |RandomEventData|거울이 먼저 벤다|Mirror / Mirror|Assets/Data/Dungeon/Events/Data_Event_거울이_먼저_벤다.asset|
 |RandomEventData|그 돌에 적힌 이름|LostBeliever / LostBeliever|Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset|
 |RandomEventData|금빛 이빨의 내기|Tooth / Tooth|Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset|
+|RandomEventData|길 위의 노마법사|MagicTeacherFirst / MagicTeacherFirst|Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset|
+|RandomEventData|길가의 무거운 금고|Well / Well|Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset|
+|RandomEventData|꺼진 기도|QuietPrayer / Data_Event_꺼진_기도|Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset|
 |RandomEventData|끝까지 읽는 법|Scholar / Scholar|Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset|
 |RandomEventData|날이 아니라 버릇을 간다|Forge / Forge|Assets/Data/Dungeon/Events/Data_Event_날이_아니라_버릇을_간다.asset|
 |RandomEventData|내일의 한숨|Hourglass / Hourglass|Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset|
 |RandomEventData|두 번째 맥박|Symbiosis / Symbiosis|Assets/Data/Dungeon/Events/Data_Event_두_번째_맥박.asset|
 |RandomEventData|딱 하나 남은 열매|AmberSeed / AmberSeed|Assets/Data/Dungeon/Events/Data_Event_딱_하나_남은_열매.asset|
 |RandomEventData|문이 이름을 틀리게 부른다|MasterTrial / MasterTrial|Assets/Data/Dungeon/Events/Data_Event_문이_이름을_틀리게_부른다.asset|
-|RandomEventData|밑바닥의 금고|Well / Well|Assets/Data/Dungeon/Events/Data_Event_밑바닥의_금고.asset|
 |RandomEventData|배달지는 다음 막|Investment / Investment|Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset|
 |RandomEventData|번개를 파는 행상|StormBottle / StormBottle|Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset|
-|RandomEventData|불침번을 정하자|Shelter / Shelter|Assets/Data/Dungeon/Events/Data_Event_불침번을_정하자.asset|
 |RandomEventData|붉은 서명|Contract / Contract|Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset|
 |RandomEventData|상자가 두 개다|Delivery / Delivery|Assets/Data/Dungeon/Events/Data_Event_상자가_두_개다.asset|
 |RandomEventData|성장한 제자|MagicTeacherReturn / MagicTeacherReturn|Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset|
 |RandomEventData|소리 나는 쪽을 받쳐라|Bell / Bell|Assets/Data/Dungeon/Events/Data_Event_소리_나는_쪽을_받쳐라.asset|
-|RandomEventData|아직 교대 시간이 아니다|Banner / Banner|Assets/Data/Dungeon/Events/Data_Event_아직_교대_시간이_아니다.asset|
-|RandomEventData|오늘의 상대를 고르시오|Training / Training|Assets/Data/Dungeon/Events/Data_Event_오늘의_상대를_고르시오.asset|
-|RandomEventData|의식실의 수업|MagicTeacherAdvanced / MagicTeacherAdvanced|Assets/Data/Dungeon/Events/Data_Event_의식실의_수업.asset|
+|RandomEventData|어디까지 풀 것인가|Training / Training|Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset|
+|RandomEventData|잠깐의 교대|Shelter / Shelter|Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset|
 |RandomEventData|젖은 발자국|StrayDog / StrayDog|Assets/Data/Dungeon/Events/Data_Event_젖은_발자국.asset|
+|RandomEventData|주인 잃은 깃발|Banner / Banner|Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset|
+|RandomEventData|지팡이 끝의 수업|MagicTeacherAdvanced / MagicTeacherAdvanced|Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset|
 |RandomEventData|짐 하나만 부탁하네|Pilgrim / Pilgrim|Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset|
-|RandomEventData|칠판 앞의 노인|MagicTeacherFirst / MagicTeacherFirst|Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset|
 |StageSetData|서리의 성소|Frost / Frost|Assets/Data/Dungeon/Stages/Data_Stage_서리의_성소.asset|
 |StageSetData|영혼의 잿더미|Ash / Ash|Assets/Data/Dungeon/Stages/Data_Stage_영혼의_잿더미.asset|
 |StageSetData|잊힌 미궁|Maze / Maze|Assets/Data/Dungeon/Stages/Data_Stage_잊힌_미궁.asset|

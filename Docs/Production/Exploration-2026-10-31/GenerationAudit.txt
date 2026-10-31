@@ -1,0 +1,4 @@
+B1: 64 normal seeds, 68 optional annexes, 59 concealed entrances, 27 locks. No production settings altered.
+B2: 64 normal seeds, 69 optional annexes, 59 concealed entrances, 31 locks. No production settings altered.
+B3: 64 normal seeds, 58 optional annexes, 48 concealed entrances, 24 locks. No production settings altered.
+Distinct annex arrangements across acts: 155; failures=0.

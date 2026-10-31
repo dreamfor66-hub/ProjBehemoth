@@ -1,0 +1,184 @@
+Scoped final placement/click review after navigation-occlusion correction.
+PASS B1/StrayDog visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/StrayDog first click opens owned event
+PASS B1/Mirror visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Mirror first click opens owned event
+PASS B1/Contract visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Contract first click opens owned event
+PASS B1/Pilgrim visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Pilgrim first click opens owned event
+PASS B1/LostBeliever visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/LostBeliever first click opens owned event
+PASS B1/StormBottle visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/StormBottle first click opens owned event
+PASS B1/AmberSeed visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/AmberSeed first click opens owned event
+PASS B1/Banner visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Banner first click opens owned event
+PASS B1/Tooth visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Tooth first click opens owned event
+PASS B1/Training visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Training first click opens owned event
+PASS B1/Scholar visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Scholar first click opens owned event
+PASS B1/Well visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Well first click opens owned event
+PASS B1/Investment visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Investment first click opens owned event
+PASS B1/Delivery visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Delivery first click opens owned event
+PASS B1/Shelter visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/Shelter first click opens owned event
+PASS B1/MagicTeacherFirst visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherFirst first click opens owned event
+PASS B1/MagicTeacherReturn visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherReturn first click opens owned event
+PASS B1/MagicTeacherAdvanced visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/MagicTeacherAdvanced first click opens owned event
+PASS B1/QuietPrayer visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B1/QuietPrayer first click opens owned event
+PASS B1/Training final choice presence
+PASS B1/Scholar final choice presence
+PASS B1/LostBeliever final choice presence
+PASS B1/Mirror final choice presence
+PASS B2/StrayDog visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/StrayDog first click opens owned event
+PASS B2/Mirror visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Mirror first click opens owned event
+PASS B2/Contract visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Contract first click opens owned event
+PASS B2/Pilgrim visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Pilgrim first click opens owned event
+PASS B2/LostBeliever visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/LostBeliever first click opens owned event
+PASS B2/StormBottle visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/StormBottle first click opens owned event
+PASS B2/AmberSeed visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/AmberSeed first click opens owned event
+PASS B2/Banner visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Banner first click opens owned event
+PASS B2/Tooth visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Tooth first click opens owned event
+PASS B2/Training visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Training first click opens owned event
+PASS B2/Scholar visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Scholar first click opens owned event
+PASS B2/Well visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Well first click opens owned event
+PASS B2/Investment visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Investment first click opens owned event
+PASS B2/Delivery visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Delivery first click opens owned event
+PASS B2/Shelter visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/Shelter first click opens owned event
+PASS B2/MagicTeacherFirst visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/MagicTeacherFirst first click opens owned event
+PASS B2/MagicTeacherReturn visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/MagicTeacherReturn first click opens owned event
+PASS B2/MagicTeacherAdvanced visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/MagicTeacherAdvanced first click opens owned event
+PASS B2/QuietPrayer visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B2/QuietPrayer first click opens owned event
+PASS B2/Training final choice presence
+PASS B2/Scholar final choice presence
+PASS B2/LostBeliever final choice presence
+PASS B2/Mirror final choice presence
+PASS B3/StrayDog visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/StrayDog first click opens owned event
+PASS B3/Mirror visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Mirror first click opens owned event
+PASS B3/Contract visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Contract first click opens owned event
+PASS B3/Pilgrim visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Pilgrim first click opens owned event
+PASS B3/LostBeliever visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/LostBeliever first click opens owned event
+PASS B3/StormBottle visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/StormBottle first click opens owned event
+PASS B3/AmberSeed visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/AmberSeed first click opens owned event
+PASS B3/Banner visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Banner first click opens owned event
+PASS B3/Tooth visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Tooth first click opens owned event
+PASS B3/Training visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Training first click opens owned event
+PASS B3/Scholar visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Scholar first click opens owned event
+PASS B3/Well visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Well first click opens owned event
+PASS B3/Investment visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Investment first click opens owned event
+PASS B3/Delivery visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Delivery first click opens owned event
+PASS B3/Shelter visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/Shelter first click opens owned event
+PASS B3/MagicTeacherFirst visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/MagicTeacherFirst first click opens owned event
+PASS B3/MagicTeacherReturn visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/MagicTeacherReturn first click opens owned event
+PASS B3/MagicTeacherAdvanced visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/MagicTeacherAdvanced first click opens owned event
+PASS B3/QuietPrayer visible first-facing painting after occlusion correction
+PASS actual pointer target Interaction Area; top=Interaction Area
+PASS B3/QuietPrayer first click opens owned event
+PASS B3/Training final choice presence
+PASS B3/Scholar final choice presence
+PASS B3/LostBeliever final choice presence
+PASS B3/Mirror final choice presence

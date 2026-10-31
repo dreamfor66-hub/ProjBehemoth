@@ -23,13 +23,16 @@ namespace DungeonSlash
         {
             State = GameFlowState.RoomEvent;
             if (content == null || expansionView == null) { room.IsCleared = true; ShowNavigation(); return; }
-            activeEvent = RandomEventSystem.Draw(content, runController.State, dungeonController.Floor, room.RoomId);
+            activeEvent = room.StoryPrepared ? room.Story : RandomEventSystem.Draw(content, runController.State, dungeonController.Floor, room.RoomId);
+            room.Story = activeEvent; room.StoryPrepared = true;
             if (activeEvent == null)
             {
                 room.IsCleared = true;
                 expansionView.ShowMessage(GameText.Get("ui.gameflowexpansion.44d9a674"), GameText.Get("ui.gameflowexpansion.2d68940e"), AfterRoomResolution); return;
             }
             var current = activeEvent;
+            activeStoryIllustration = current.illustration;
+            room.StoryInvestigated = true;
             if (current.pages.Count > 0) { ShowEventSequence(room, current); return; }
             var options = current.options.Select(option =>
             {
@@ -50,7 +53,9 @@ namespace DungeonSlash
                         if (!RandomEventSystem.Pay(option, runController.State)) { ShowRandomEvent(room); return; }
                         // Resolve once, including when this choice opens a reward selector or a battle.
                         room.IsCleared = true;
+                        ApplyRoomObjectOutcome(room, option);
                         var messages = new List<string> { GameText.Get("ui.gameflowexpansion.5cf1ad0d") + option.title };
+                        if (!string.IsNullOrWhiteSpace(option.resultText)) messages.Add(option.resultText);
                         if (costs.Count > 0) messages.Add(string.Join(" · ", costs));
                         ApplyEventEffects(current, option.effects, 0, messages);
                     }

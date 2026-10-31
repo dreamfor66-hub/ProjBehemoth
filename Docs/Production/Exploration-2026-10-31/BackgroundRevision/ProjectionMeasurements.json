@@ -1,0 +1,53 @@
+[
+  {
+    "act": 1,
+    "imageSize": [
+      1672,
+      941
+    ],
+    "measuredFloorLineIntersection": [
+      0.5080651119725479,
+      0.5632985788061753
+    ],
+    "linePairCount": 2,
+    "rearFloorJoinApprox": [
+      0.5,
+      0.618
+    ],
+    "method": "Canny/Hough long floor edges below y=.64. Median intersections from opposite-slope pairs near center; QA estimate, not editable gameplay data."
+  },
+  {
+    "act": 2,
+    "imageSize": [
+      1672,
+      941
+    ],
+    "measuredFloorLineIntersection": [
+      0.5020420603527197,
+      0.5702884633829133
+    ],
+    "linePairCount": 15,
+    "rearFloorJoinApprox": [
+      0.5,
+      0.618
+    ],
+    "method": "Canny/Hough long floor edges below y=.64. Median intersections from opposite-slope pairs near center; QA estimate, not editable gameplay data."
+  },
+  {
+    "act": 3,
+    "imageSize": [
+      1672,
+      941
+    ],
+    "measuredFloorLineIntersection": [
+      0.5119054915085681,
+      0.569228709321599
+    ],
+    "linePairCount": 8,
+    "rearFloorJoinApprox": [
+      0.5,
+      0.618
+    ],
+    "method": "Canny/Hough long floor edges below y=.64. Median intersections from opposite-slope pairs near center; QA estimate, not editable gameplay data."
+  }
+]

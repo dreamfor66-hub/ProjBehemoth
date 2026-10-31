@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62ca3349b0c70124799a84d1abd2bb2e, type: 3}
   m_Name: "Data_DungeonGenerationSettings_\uBBF8\uAD81_\uC0DD\uC131_\uADDC\uCE59"
   m_EditorClassIdentifier: 
+  exploration: {fileID: 11400000, guid: e7c9efeae993b194896e1c8cde82b038, type: 2}
   minRooms: 20
   maxRooms: 26
   minimumBossDistance: 7
@@ -27,6 +28,7 @@ MonoBehaviour:
   combatRoomRatioMax: 0.55
   maxGenerationAttempts: 60
   eventRoomCount: 3
+  minimumRepeatedFacilityDistance: 4
   firstActOpeningCombats: 3
   firstActServiceDistance: 4
   firstActCampDistance: 7

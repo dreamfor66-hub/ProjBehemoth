@@ -1,0 +1,5 @@
+System.InvalidOperationException: CSV의 같은 문구가 외부에서 변경되었습니다. CSV 가져오기 후 다시 편집하세요.
+  at BehemothLocaleEditing.PatchCsv (System.String csv, System.String key, System.String previous, System.String next, System.String source) [0x0003e] in E:\Github\Proj_Behemoth\Assets\Editor\Localization\BehemothLocaleWindow.cs:228 
+  at ExplorationPreparation.InstallText () [0x002de] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ExplorationPreparation.cs:220 
+  at ExplorationPreparation.Install () [0x000bd] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ExplorationPreparation.cs:74 
+  at ExplorationPreparation.Poll () [0x00058] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\ExplorationPreparation.cs:30 

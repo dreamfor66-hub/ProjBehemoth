@@ -46,7 +46,7 @@ namespace DungeonSlash
             var current = state.Player.CurrentRoom;
             if (renderedState != state || !focusPosition.Equals(current.Position)) FocusCurrent();
             renderedState = state; focusPosition = current.Position;
-            var neighbours = state.Graph.Neighbors(current).ToHashSet();
+            var neighbours = state.Graph.Neighbors(current).Where(r => state.CanSeePassage(current, r)).ToHashSet();
             // Visits are permanent exploration memory. Generation-time IsRevealed marks a
             // known encounter identity, not permission to expose a distant, unvisited room.
             var visible = state.Graph.Rooms.Where(r => r.IsVisited || r == current
@@ -56,6 +56,7 @@ namespace DungeonSlash
             foreach (var room in visible.Where(r => r.IsVisited))
                 foreach (var other in state.Graph.Neighbors(room))
                 {
+                    if (!state.CanSeePassage(room, other)) continue;
                     var key = room.RoomId < other.RoomId ? $"{room.RoomId}:{other.RoomId}" : $"{other.RoomId}:{room.RoomId}";
                     if (!drawn.Add(key)) continue;
                     var highlighted = room == current && hoveredDirection == DirectionTo(room, other)
@@ -80,8 +81,9 @@ namespace DungeonSlash
                     : room.IsVisited || room.IsRevealed || room.IsMajorRoom ? MapRoomIconStyle.KnownRoom
                     : MapRoomIconStyle.UnknownReachable;
                 var direction = DirectionTo(current, room);
-                icon.Bind(room, style, state.Player.Facing, reachable && hoveredDirection == direction);
-                icon.SetSelection(reachable && selected != null ? () => selected(direction) : null);
+                icon.Bind(room, style, state.Player.Facing, reachable && hoveredDirection == direction, null,
+                    state.Graph.Passages.Any(p => p.Annex == room && p.Discovered && p.Locked));
+                icon.SetSelection(reachable && state.CanTravel(current, room) && selected != null ? () => selected(direction) : null);
             }
             ClampPan();
         }

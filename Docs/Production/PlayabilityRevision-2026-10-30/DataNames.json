@@ -2920,6 +2920,43 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset",
+            "guid": "d44d100bc787aa84bbd8a0283197535e",
+            "id": "MagicTeacherFirst",
+            "displayName": "길 위의 노마법사",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset",
+                "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/Well.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset",
+            "guid": "19ed6b76cfbf63140b64f653b48af782",
+            "id": "Well",
+            "displayName": "길가의 무거운 금고",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_밑바닥의_금고.asset",
+                "Assets/Data/Dungeon/Events/Well.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset",
+            "guid": "9f0dd1967e15c2241909c4434a93eb5e",
+            "id": "QuietPrayer",
+            "displayName": "꺼진 기도",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Dungeon/Events/Scholar.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset",
             "guid": "9b653ceabb7d64a4a85d37c5bbef24fb",
@@ -2992,18 +3029,6 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/Well.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_밑바닥의_금고.asset",
-            "guid": "19ed6b76cfbf63140b64f653b48af782",
-            "id": "Well",
-            "displayName": "밑바닥의 금고",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_밑바닥의_금고.asset",
-                "Assets/Data/Dungeon/Events/Well.asset"
-            ]
-        },
-        {
             "oldPath": "Assets/Data/Dungeon/Events/Investment.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset",
             "guid": "069415c2c79b5f4449a6eae4ccbe75f3",
@@ -3025,18 +3050,6 @@
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset",
                 "Assets/Data/Dungeon/Events/StormBottle.asset"
-            ]
-        },
-        {
-            "oldPath": "Assets/Data/Dungeon/Events/Shelter.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_불침번을_정하자.asset",
-            "guid": "3794989680026e142a819014614c80e8",
-            "id": "Shelter",
-            "displayName": "불침번을 정하자",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_불침번을_정하자.asset",
-                "Assets/Data/Dungeon/Events/Shelter.asset"
             ]
         },
         {
@@ -3088,39 +3101,29 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/Banner.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_아직_교대_시간이_아니다.asset",
-            "guid": "08bea5284c5daf54293c46921b217cb9",
-            "id": "Banner",
-            "displayName": "아직 교대 시간이 아니다",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_아직_교대_시간이_아니다.asset",
-                "Assets/Data/Dungeon/Events/Banner.asset"
-            ]
-        },
-        {
             "oldPath": "Assets/Data/Dungeon/Events/Training.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_오늘의_상대를_고르시오.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset",
             "guid": "f4744ac83644fda4abb9cf9f29823da9",
             "id": "Training",
-            "displayName": "오늘의 상대를 고르시오",
+            "displayName": "어디까지 풀 것인가",
             "type": "RandomEventData",
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_오늘의_상대를_고르시오.asset",
-                "Assets/Data/Dungeon/Events/Training.asset"
+                "Assets/Data/Dungeon/Events/Training.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset"
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/MagicTeacherAdvanced.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_의식실의_수업.asset",
-            "guid": "439941bfed097b44d8d55e5c147841f5",
-            "id": "MagicTeacherAdvanced",
-            "displayName": "의식실의 수업",
+            "oldPath": "Assets/Data/Dungeon/Events/Shelter.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset",
+            "guid": "3794989680026e142a819014614c80e8",
+            "id": "Shelter",
+            "displayName": "잠깐의 교대",
             "type": "RandomEventData",
             "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_의식실의_수업.asset",
-                "Assets/Data/Dungeon/Events/MagicTeacherAdvanced.asset"
+                "Assets/Data/Dungeon/Events/Data_Event_불침번을_정하자.asset",
+                "Assets/Data/Dungeon/Events/Shelter.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_잠깐의_교대.asset"
             ]
         },
         {
@@ -3136,6 +3139,32 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Dungeon/Events/Banner.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset",
+            "guid": "08bea5284c5daf54293c46921b217cb9",
+            "id": "Banner",
+            "displayName": "주인 잃은 깃발",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_아직_교대_시간이_아니다.asset",
+                "Assets/Data/Dungeon/Events/Banner.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/MagicTeacherAdvanced.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset",
+            "guid": "439941bfed097b44d8d55e5c147841f5",
+            "id": "MagicTeacherAdvanced",
+            "displayName": "지팡이 끝의 수업",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_의식실의_수업.asset",
+                "Assets/Data/Dungeon/Events/MagicTeacherAdvanced.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Dungeon/Events/Pilgrim.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset",
             "guid": "044a1d8b41194c549b8ddf358bb40c65",
@@ -3145,18 +3174,6 @@
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset",
                 "Assets/Data/Dungeon/Events/Pilgrim.asset"
-            ]
-        },
-        {
-            "oldPath": "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset",
-            "guid": "d44d100bc787aa84bbd8a0283197535e",
-            "id": "MagicTeacherFirst",
-            "displayName": "칠판 앞의 노인",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset",
-                "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset"
             ]
         },
         {

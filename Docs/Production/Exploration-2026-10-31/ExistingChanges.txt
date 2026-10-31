@@ -1,0 +1,6 @@
+M  Assets/Editor/Presentation/ArtResourceMaintenance.cs
+A  Assets/Editor/Presentation/EditableSpriteTexturePreparation.cs
+A  Assets/Editor/Presentation/EditableSpriteTexturePreparation.cs.meta
+M  Assets/Editor/Presentation/WeakPointVisualPreparation.cs
+M  Assets/Scripts/UI/CombatInkDrawing.cs
+M  Assets/Scripts/UI/WeakPointVisualStyle.cs

@@ -1,0 +1,1 @@
+World pointer targets are above actor graphics, below navigation; coordinate frame derived from painted rectangles.

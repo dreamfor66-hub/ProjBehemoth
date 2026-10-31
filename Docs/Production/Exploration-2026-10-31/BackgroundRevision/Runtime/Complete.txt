@@ -1,0 +1,1 @@
+273 actual Unity frames; all room objects, visible directions and available/used states, B1–B3. Input/color failures=0.

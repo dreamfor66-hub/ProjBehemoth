@@ -1,0 +1,1 @@
+Authored terminal choice aftermath for retained NPCs and collected hourglass; localized consumed-object hover labels.

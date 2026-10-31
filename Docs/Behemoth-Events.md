@@ -1,6 +1,8 @@
 # 이벤트 목록 · 2026-10-22 개정
 
-실제 편집 데이터: `Assets/Data/Behemoth/Events/`. 이름·본문·선택지는 Inspector 또는 `Assets/Data/Localization/kr.csv`에서 수정한다. 각 이벤트의 `referenceUrl`과 `referenceExperience`에 참고한 원작의 **선택 구조**를 기록했다. 서사와 보상 수치는 Behemoth용이다.
+실제 편집 데이터: `Assets/Data/Dungeon/Events/`. 이름·본문·선택지는 Inspector 또는 `Assets/Data/Localization/kr.csv`에서 수정한다. 각 이벤트의 `referenceUrl`과 `referenceExperience`에 참고한 원작의 **선택 구조**를 기록했다. 서사와 보상 수치는 Behemoth용이다.
+
+2026-10-31: 공간·발견·고유 대상·재방문 규칙을 전체 개정했다. 최신 서술과 배치는 실제 데이터 및 `Docs/Production/EventGrounding-2026-10-31/`의 Plan.json/Verification.md를 기준으로 한다. 아래 표는 보상 구조의 과거 개요이며, 현재 무작위 풀은 19종이고 기존 비활성 5종은 유지한다. 기존 비용·보상·조건·가중치는 이번 서술 개정에서 바꾸지 않았다.
 
 공통 외상·3전투 패널티는 제거했다. 비용을 낼 수 없는 선택지는 잠기며 다른 결과를 고른다. 모든 선택지가 불가능한 이벤트는 추첨에서 제외한다. 주문 사건은 1막 일반 전투 4회 이후부터 등장한다.
 

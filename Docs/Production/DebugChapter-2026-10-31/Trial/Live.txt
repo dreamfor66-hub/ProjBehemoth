@@ -1,0 +1,103 @@
+Scoped F1 chapter / object placement runtime matrix.
+PASS F1 toggle opens saved panel
+PASS five tabs and all 17 authored objects
+PASS button reachable: Category0; top=Category0
+PASS existing catalog 0 still usable
+PASS button reachable: Category1; top=Category1
+PASS existing catalog 1 still usable
+PASS button reachable: Category2; top=Category2
+PASS existing catalog 2 still usable
+PASS button reachable: Category3; top=Category3
+PASS existing catalog 3 still usable
+PASS button reachable: Category4; top=Category4
+PASS chapter controls replace grant action
+PASS all chapter labels fit at actual Game view size
+PASS button reachable: JumpToAct3; top=JumpToAct3
+PASS act 3 fresh graph and synchronized chapter
+PASS act 3 reset visits/clear/keys and starts at entrance
+PASS act 3 fresh floor counters and fatigue
+PASS act 3 preserves player progression
+PASS act 3 live navigation, configured background, no battle residue
+PASS button reachable: JumpToAct1; top=JumpToAct1
+PASS act 1 fresh graph and synchronized chapter
+PASS act 1 reset visits/clear/keys and starts at entrance
+PASS act 1 fresh floor counters and fatigue
+PASS act 1 preserves player progression
+PASS act 1 live navigation, configured background, no battle residue
+PASS button reachable: JumpToAct2; top=JumpToAct2
+PASS act 2 fresh graph and synchronized chapter
+PASS act 2 reset visits/clear/keys and starts at entrance
+PASS act 2 fresh floor counters and fatigue
+PASS act 2 preserves player progression
+PASS act 2 live navigation, configured background, no battle residue
+PASS button reachable: JumpToAct2; top=JumpToAct2
+PASS act 2 fresh graph and synchronized chapter
+PASS act 2 reset visits/clear/keys and starts at entrance
+PASS act 2 fresh floor counters and fatigue
+PASS act 2 preserves player progression
+PASS act 2 live navigation, configured background, no battle residue
+PASS button reachable: JumpToAct1; top=JumpToAct1
+PASS act 1 fresh graph and synchronized chapter
+PASS act 1 reset visits/clear/keys and starts at entrance
+PASS act 1 fresh floor counters and fatigue
+PASS act 1 preserves player progression
+PASS act 1 live navigation, configured background, no battle residue
+PASS button reachable: JumpToAct1; top=JumpToAct1
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS button reachable: ObjectDirection0; top=ObjectDirection0
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS B1 Data_RoomObject_거울 False: actual isolated placement
+PASS B1 Data_RoomObject_거울 False: actual chosen painting/state
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS button reachable: ObjectState; top=ObjectState
+PASS button reachable: ObjectDirection0; top=ObjectDirection0
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS B1 Data_RoomObject_거울 True: actual isolated placement
+PASS B1 Data_RoomObject_거울 True: actual chosen painting/state
+PASS button reachable: JumpToAct2; top=JumpToAct2
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS button reachable: ObjectDirection0; top=ObjectDirection0
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS B2 Data_RoomObject_거울 False: actual isolated placement
+PASS B2 Data_RoomObject_거울 False: actual chosen painting/state
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS button reachable: ObjectState; top=ObjectState
+PASS button reachable: ObjectDirection0; top=ObjectDirection0
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS B2 Data_RoomObject_거울 True: actual isolated placement
+PASS B2 Data_RoomObject_거울 True: actual chosen painting/state
+PASS button reachable: JumpToAct3; top=JumpToAct3
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS button reachable: ObjectDirection0; top=ObjectDirection0
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS B3 Data_RoomObject_거울 False: actual isolated placement
+PASS B3 Data_RoomObject_거울 False: actual chosen painting/state
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS button reachable: ObjectState; top=ObjectState
+PASS button reachable: ObjectDirection0; top=ObjectDirection0
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS B3 Data_RoomObject_거울 True: actual isolated placement
+PASS B3 Data_RoomObject_거울 True: actual chosen painting/state
+PASS button reachable: DebugCatalogTile; top=DebugCatalogTile
+PASS rear wall unavailable because it is the entry
+PASS button reachable: ObjectState; top=ObjectState
+PASS button reachable: ObjectDirection1; top=ObjectDirection1
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS wall side painting 1
+PASS button reachable: ObjectDirection3; top=ObjectDirection3
+PASS button reachable: PlaceObject; top=PlaceObject
+PASS wall side painting 3
+PASS button reachable: Interaction Area; top=Interaction Area
+PASS placed fountain opens actual choices
+PASS button reachable: JumpToAct2; top=JumpToAct2
+PASS chapter jump cancels service popup
+PASS button reachable: JumpToAct3; top=JumpToAct3
+PASS chapter jump cancels pending battle
+PASS button reachable: JumpToAct1; top=JumpToAct1
+PASS jump restores health even from dead player
+PASS chapter jump clears previous damage wash
+PASS button reachable: ClearInspection; top=ClearInspection
+PASS clear inspection removes objects
+PASS button reachable: JumpToAct1; top=JumpToAct1
+PASS chapter jump closes map/inventory drawers
+PASS chapter jump leaves inspection and regenerates ordinary map

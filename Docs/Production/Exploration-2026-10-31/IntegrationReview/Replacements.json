@@ -1,0 +1,102 @@
+[
+  {
+    "key": "Key_Front",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f3414250-37cd-4595-a212-3089f1ae24e9.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Door_Front",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-89ab3ece-7014-44e3-9f6c-3b2f0ac6280e.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fountain_UsedFront",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-d560a6df-eb63-4e2b-9f94-52ad41005907.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fountain_UsedSide",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-07567d00-3d5f-425b-a729-eb51a6a5e58c.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fruit_Front",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a13d68e3-2a3d-4643-ba54-764901f9f950.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fruit_Side",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-885bdd29-27f7-4bc2-b428-7f0d6d186191.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fruit_Rear",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-4a5b2fc9-5a01-4938-a3b5-caf79844c0b4.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fruit_UsedFront",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-366bb850-ff9c-4a49-8d07-9283456dcf41.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fruit_UsedSide",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f15aaa7b-3e91-414f-8269-f1e458297766.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  },
+  {
+    "key": "Fruit_UsedRear",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-fc2fe7e9-df0d-4ef8-820e-69fad67cffba.png",
+    "references": [
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+      "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/03-armored-hood-fighter.jpg"
+    ]
+  }
+]

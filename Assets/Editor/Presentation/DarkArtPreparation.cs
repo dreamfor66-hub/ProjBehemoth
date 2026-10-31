@@ -18,7 +18,7 @@ internal static class DarkArtPreparation
     static DarkArtPreparation(){EditorApplication.delayCall+=Prepare;EditorApplication.update+=Poll;}
     static void Prepare()
     {
-        if(EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlayingOrWillChangePlaymode)
+        if(EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode)
         {EditorApplication.delayCall+=Prepare;return;}
         var profile=AssetDatabase.LoadAssetAtPath<ArcadePresentation>(Profile);
         if(profile==null||profile.darkPalette==null)return;
@@ -49,6 +49,8 @@ internal static class DarkArtPreparation
         var background=AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Environments/LowColorBackground.mat");
         foreach(var path in new[]{"Assets/Scenes/OutGameScene.unity","Assets/Scenes/MainGameScene.unity"})
         {
+            // Asset/prefab preparation can process a queued Play transition after the entry guard.
+            if(EditorApplication.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode){EditorApplication.delayCall+=Prepare;return;}
             var scene=SceneManager.GetSceneByPath(path);var loaded=scene.isLoaded;
             if(loaded&&scene.isDirty)continue;
             if(!loaded)scene=EditorSceneManager.OpenScene(path,OpenSceneMode.Additive);
