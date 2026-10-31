@@ -31,6 +31,7 @@ namespace DungeonSlash
         public bool ShowLegacyRecovery { get; set; } = true;
         public SwordSwingDirection PreparingSwing { get; set; }
         public void PlayAttack()=>PlayAttack(PreparingSwing);
+        public void InterruptAttack() { attackUntil=0; PreparingAttack=false; }
         public void PlayAttack(SwordSwingDirection direction)
         {
             attackSwing=direction;
@@ -101,6 +102,7 @@ namespace DungeonSlash
         public void Bind(PlayerCombatRuntime runtime)
         {
             if (runtime == null) return;
+            if (runtime.HoldingGuard) InterruptAttack();
             if (runtime.Data.combatSprite != null && body != null)
             {
                 body.sprite = runtime.Data.combatSprite; body.enabled = true; body.preserveAspect = true;
@@ -117,7 +119,7 @@ namespace DungeonSlash
                 if (head != null) head.enabled = false;
             }
             else if(body!=null){body.sprite=null;bodyRestSize=new Vector2(108,146);body.rectTransform.anchoredPosition=Vector2.zero;if(head!=null)head.enabled=true;}
-            if (guardFx != null) guardFx.enabled = runtime.IsGuarding && !(presentation!=null&&presentation.arcade&&runtime.Data.combatAnimation!=null);
+            if (guardFx != null) guardFx.enabled = false;
             if (cooldown != null)
             {
                 var coolingDown = runtime.AttackCooldownRemaining > 0f && runtime.CurrentCooldown > 0f;

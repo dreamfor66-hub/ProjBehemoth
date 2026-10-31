@@ -35,9 +35,19 @@ namespace DungeonSlash
         public bool IsPreparingAttack => combat?.Player != null && combat.Player.CanStartCharge() && contacts.Values.Any(contact => !contact.Consumed && !contact.Guard && !contact.Spell && !contact.WaitingRecovery);
         // Latch at press, not at the moving pointer: the painted Ready must lead to its own Attack.
         public SwordSwingDirection PreparingSwing => contacts.Values.FirstOrDefault(contact=>!contact.Consumed&&!contact.Guard&&!contact.Spell)?.Swing??SwordSwingDirection.RightToLeft;
-        public bool IsGuardKeyHeld => Input.GetKey(KeyCode.Space);
+        public bool IsGuardKeyHeld
+        {
+            get
+            {
+#if UNITY_EDITOR
+                if(GuardModifierForVerification.HasValue)return GuardModifierForVerification.Value;
+#endif
+                return Input.GetKey(KeyCode.Space);
+            }
+        }
 #if UNITY_EDITOR
         internal bool? SpellModifierForVerification { get; set; }
+        public bool? GuardModifierForVerification { get; set; }
 #endif
         public bool IsSpellKeyHeld
         {
@@ -58,6 +68,8 @@ namespace DungeonSlash
         private void Update()
         {
             if (combat == null || combat.Player == null || !combat.IsActive || combat.InputPaused) { CancelAll(); return; }
+            // Apply keyboard defense before processing this frame's offensive samples.
+            if (IsGuardKeyHeld) ApplyGuard(true);
             if (Input.touchCount > 0)
             {
                 foreach (var touch in Input.touches)
@@ -77,7 +89,7 @@ namespace DungeonSlash
                 if (Input.GetMouseButtonUp(1)) End(-2,Input.mousePosition,false);
             }
             var held = IsGuardHeld;
-            combat.Player.TrySetGuard(held);
+            ApplyGuard(held);
             if (IsCastingHeld && combat.Run.Spellbook.Count > 0) CastingSeconds += Time.deltaTime; else CastingSeconds = 0;
             RefreshState();
         }
@@ -98,7 +110,8 @@ namespace DungeonSlash
             contact.WaitingRecovery=!spell&&!guard&&!combat.Player.CanStartCharge();
             contact.Swing=position.x<sceneView.LogicalArea.rect.center.x?SwordSwingDirection.LeftToRight:SwordSwingDirection.RightToLeft;
             contact.Analyzer.Reset(position, Time.unscaledTime); contacts[id] = contact;
-            if (guard) combat.Player.TrySetGuard(true);
+            if (guard) ApplyGuard(true);
+            else if (!spell && IsGuardHeld) contact.Consumed = true;
         }
         private void Move(int id, Vector2 screen)
         {
@@ -108,7 +121,8 @@ namespace DungeonSlash
             if (contact.Spell) return;
             if (contact.Guard) return;
             if (contact.PlayerOrigin && combat.IsDownwardGuardGesture(contact.Start,current))
-            {contact.Guard=true;contact.Eligible=false;contact.Capturing=false;combat.Player.TrySetGuard(true);return;}
+            {contact.Guard=true;contact.Eligible=false;contact.Capturing=false;ApplyGuard(true);return;}
+            if (IsGuardHeld) { contact.Consumed=true; return; }
             var player = combat.Player;
             // A held contact survives recovery, but none of that blocked time counts as charge.
             // Re-arm from the current pointer position when offense becomes available again.
@@ -153,7 +167,7 @@ namespace DungeonSlash
                 else if (contact.Capturing) Commit(contact);
             }
             contacts.Remove(id);
-            combat.Player.TrySetGuard(IsGuardHeld);
+            ApplyGuard(IsGuardHeld);
             if (!IsCastingHeld) CastingSeconds = 0;
         }
         private bool ConfirmTraversal(Contact contact, Vector2 from, Vector2 to)
@@ -174,6 +188,7 @@ namespace DungeonSlash
         }
         private void Commit(Contact contact)
         {
+            if (IsGuardHeld || contact.Consumed) return;
             combat.ExecuteAttack(new AttackSegment(contact.AttackStart, contact.Latest, combat.Player.SegmentWidth), contact.Charged, contact.ChargeLevel,contact.Swing);
             contact.Consumed = true;
         }
@@ -195,6 +210,16 @@ namespace DungeonSlash
         {
             contacts.Clear(); State = PointerGestureState.None; CastingSeconds = ChargeProgress = SecondChargeProgress = 0;
             combat?.Player?.TrySetGuard(false);
+        }
+        private void ApplyGuard(bool held)
+        {
+            if (held)
+            {
+                foreach (var c in contacts.Values.Where(c => !c.Guard && !c.Spell))
+                { c.Consumed=true; c.Eligible=c.Charged=c.Capturing=false; c.Held=0; c.Traversal.Reset(); }
+                ChargeProgress=SecondChargeProgress=0;
+            }
+            combat.SetManualGuard(held);
         }
         public AttackSegment? SpellAim {get{var c=contacts.Values.FirstOrDefault(c=>c.Spell&&!c.Consumed);return c==null?null:new AttackSegment(c.Start,c.Latest,0);}}
         public void ResetCasting() => CastingSeconds = 0;

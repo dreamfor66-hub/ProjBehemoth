@@ -24,7 +24,11 @@ namespace DungeonSlash
         private CombatSpriteAnimator animator;
         private float attackUntil;
         private MonsterData boundData;
-        public void PlayAttack(){attackUntil=Time.time+.3f;if(animator!=null)animator.Play(animator.library,CombatVisualState.Attack,true);}
+        private float authoredNameWidth,authoredTimeWidth;
+        private RectTransform captionOverlay;
+        private void OnDisable(){if(captionOverlay!=null)captionOverlay.gameObject.SetActive(false);}
+        private void OnDestroy(){if(captionOverlay!=null)Destroy(captionOverlay.gameObject);}
+        public void PlayAttack(float seconds=.4f){attackUntil=Time.time+seconds;if(animator!=null)animator.Play(animator.library,CombatVisualState.Attack,true);}
         public void PlayDead(){if(boundData!=null)Animate(boundData,CombatVisualState.Dead);}
         private void Animate(MonsterData data,CombatVisualState state)
         {
@@ -63,6 +67,14 @@ namespace DungeonSlash
         {
             if (runtime == null || runtime.Data == null) return;
             boundData=runtime.Data;
+            // Species size affects the body and hitboxes; captions keep a readable shared screen size.
+            var uiScale=1f/Mathf.Max(.1f,runtime.VisualScale);
+            foreach(var label in new[]{stateLabel,attackNameLabel,chargeTimeLabel,directionalGuardLabel})
+                if(label!=null)label.rectTransform.localScale=Vector3.one*uiScale;
+            foreach(var graphic in new[]{attackNameBackdrop,chargeTimeBackdrop})
+                if(graphic!=null)graphic.rectTransform.localScale=Vector3.one*uiScale;
+            if(hpFill!=null&&hpFill.transform.parent is RectTransform hpRoot)hpRoot.localScale=Vector3.one*uiScale;
+            if(directionalGuardFill!=null&&directionalGuardFill.transform.parent is RectTransform guardRoot)guardRoot.localScale=Vector3.one*uiScale;
             var library = runtime.Data.combatAnimation;
             // A break interrupts even an attack painting that has not timed out yet.
             if (runtime.IsStunned) attackUntil = 0f;
@@ -105,11 +117,27 @@ namespace DungeonSlash
                     }
             var top = bounds.yMax + (cropped ? 36 : 65);
             var scene = GetComponentInParent<CombatSceneView>();
+            if(scene!=null&&scene.monsterCaptionRoot!=null)
+            {
+                if(captionOverlay==null)
+                {
+                    captionOverlay=(RectTransform)new GameObject(name+" Attack Captions",typeof(RectTransform)).transform;
+                    captionOverlay.gameObject.layer=gameObject.layer;captionOverlay.SetParent(scene.monsterCaptionRoot,false);
+                    captionOverlay.anchorMin=captionOverlay.anchorMax=captionOverlay.pivot=Vector2.one*.5f;
+                    foreach(var graphic in new Graphic[]{attackNameBackdrop,chargeTimeBackdrop,attackNameLabel,chargeTimeLabel})
+                        if(graphic!=null){graphic.rectTransform.SetParent(captionOverlay,false);graphic.raycastTarget=false;}
+                }
+                captionOverlay.gameObject.SetActive(gameObject.activeInHierarchy);
+                captionOverlay.anchoredPosition=(Vector2)scene.LogicalArea.InverseTransformPoint(root.position);
+                captionOverlay.localScale=Vector3.one*runtime.VisualScale;captionOverlay.sizeDelta=root.sizeDelta;
+            }
             if (cropped && scene != null)
-                top = Mathf.Min(top, scene.LogicalArea.rect.yMax - 130 - scene.LogicalArea.InverseTransformPoint(root.position).y);
+                top = Mathf.Min(top, (scene.MonsterSafeBounds.yMax - 24 - scene.LogicalArea.InverseTransformPoint(root.position).y)/runtime.VisualScale);
             if (stateLabel != null)
             {
                 stateLabel.rectTransform.anchoredPosition = new Vector2(0, top);
+                stateLabel.fontSize=28;
+                stateLabel.rectTransform.sizeDelta=new Vector2(Mathf.Clamp(bounds.width*.4f,300,500),40);
                 if (cropped)
                 {
                     stateLabel.rectTransform.sizeDelta = new Vector2(Mathf.Max(300, bounds.width * .4f), 40);
@@ -130,8 +158,9 @@ namespace DungeonSlash
                 guardBar.anchoredPosition = new Vector2(0, top - 98);
             if (cropped && scene != null && bounds.width > scene.LogicalArea.rect.width * .6f)
             {
-                var actionPosition = new Vector2(400, -12);
-                var timerPosition = new Vector2(400, -74);
+                var origin=(Vector2)scene.LogicalArea.InverseTransformPoint(root.position);
+                var actionPosition = (new Vector2(500,190)-origin)/runtime.VisualScale;
+                var timerPosition = (new Vector2(500,125)-origin)/runtime.VisualScale;
                 if (attackNameLabel != null) { attackNameLabel.rectTransform.anchoredPosition = actionPosition; attackNameLabel.rectTransform.sizeDelta = new Vector2(350, 50); attackNameLabel.fontSize = 30; }
                 if (attackNameBackdrop != null) { attackNameBackdrop.rectTransform.anchoredPosition = actionPosition; attackNameBackdrop.rectTransform.sizeDelta = new Vector2(370, 54); }
                 if (chargeTimeLabel != null) { chargeTimeLabel.rectTransform.anchoredPosition = timerPosition; chargeTimeLabel.rectTransform.sizeDelta = new Vector2(240, 56); chargeTimeLabel.fontSize = 40; }
@@ -178,6 +207,32 @@ namespace DungeonSlash
                 attackNameLabel.enabled = false;
                 SetVisible(attackNameBackdrop, false);
             }
+            FitAttackCaption();
+            if(scene!=null)
+            {
+                var origin=(Vector2)scene.LogicalArea.InverseTransformPoint(root.position);var scale=Mathf.Max(.1f,runtime.VisualScale);
+                var safe=scene.MonsterSafeBounds;
+                void ClampCaption(RectTransform caption)
+                {if(caption==null)return;var p=caption.anchoredPosition;var x=origin.x+p.x*scale;var half=caption.rect.width*.5f;x=Mathf.Clamp(x,safe.xMin+half+4,safe.xMax-half-4);p.x=(x-origin.x)/scale;var y=origin.y+p.y*scale;y=Mathf.Clamp(y,safe.yMin+4+caption.rect.height*.5f,safe.yMax-4-caption.rect.height*.5f);p.y=(y-origin.y)/scale;caption.anchoredPosition=p;}
+                ClampCaption(stateLabel?.rectTransform);ClampCaption(hpFill!=null?hpFill.transform.parent as RectTransform:null);
+                ClampCaption(attackNameLabel?.rectTransform);ClampCaption(attackNameBackdrop?.rectTransform);ClampCaption(chargeTimeLabel?.rectTransform);ClampCaption(chargeTimeBackdrop?.rectTransform);
+                if(chargeTimeLabel!=null&&chargeTimeLabel.enabled&&attackNameLabel!=null)
+                {
+                    // Clamp the two-row announcement as one block, rather than collapsing both rows onto the lower edge.
+                    var nameHeight=Mathf.Max(54,attackNameLabel.GetPreferredValues(attackNameLabel.text).y+16);
+                    var timeHeight=Mathf.Max(60,chargeTimeLabel.GetPreferredValues(chargeTimeLabel.text).y+16);
+                    var halfWidth=Mathf.Max(attackNameBackdrop!=null?attackNameBackdrop.rectTransform.rect.width:attackNameLabel.rectTransform.rect.width,
+                        chargeTimeBackdrop!=null?chargeTimeBackdrop.rectTransform.rect.width:chargeTimeLabel.rectTransform.rect.width)*.5f;
+                    var x=Mathf.Clamp(origin.x+chargeTimeLabel.rectTransform.anchoredPosition.x*scale,safe.xMin+halfWidth+6,safe.xMax-halfWidth-6);
+                    var y=Mathf.Clamp(origin.y+chargeTimeLabel.rectTransform.anchoredPosition.y*scale,safe.yMin+timeHeight*.5f+6,
+                        safe.yMax-timeHeight*.5f-nameHeight-18);
+                    void Place(RectTransform rect,float center,float height)
+                    {if(rect==null)return;rect.anchoredPosition=(new Vector2(x,center)-origin)/scale;rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,height);}
+                    Place(chargeTimeLabel.rectTransform,y,timeHeight);Place(chargeTimeBackdrop?.rectTransform,y,timeHeight);
+                    var nameY=y+(timeHeight+nameHeight)*.5f+12;
+                    Place(attackNameLabel.rectTransform,nameY,nameHeight);Place(attackNameBackdrop?.rectTransform,nameY,nameHeight);
+                }
+            }
         }
 
         public void ShowAttackName(string attackName, float seconds = 1.05f)
@@ -187,6 +242,25 @@ namespace DungeonSlash
             attackNameLabel.enabled = !string.IsNullOrWhiteSpace(attackName);
             SetVisible(attackNameBackdrop, attackNameLabel.enabled);
             attackNameHideAt = Time.unscaledTime + seconds;
+            FitAttackCaption();
+        }
+
+        private void FitAttackCaption()
+        {
+            if(authoredNameWidth<=0&&attackNameBackdrop!=null)authoredNameWidth=attackNameBackdrop.rectTransform.rect.width;
+            if(authoredTimeWidth<=0&&chargeTimeBackdrop!=null)authoredTimeWidth=chargeTimeBackdrop.rectTransform.rect.width;
+            // Short names retain a generous brush border. Shared rules derive the size from the text.
+            void Fit(TextMeshProUGUI label,Image backdrop,float original,float minimum,float padding)
+            {
+                if(label==null||backdrop==null||!label.enabled)return;
+                if(original<=0)original=backdrop.rectTransform.rect.width;
+                var natural=label.GetPreferredValues(label.text).x;
+                var width=Mathf.Max(natural+padding,Mathf.Min(original,Mathf.Max(original*.76f,minimum)));
+                var labelSize=label.rectTransform.sizeDelta;labelSize.x=width-28;label.rectTransform.sizeDelta=labelSize;
+                var size=backdrop.rectTransform.sizeDelta;size.x=width;backdrop.rectTransform.sizeDelta=size;
+            }
+            Fit(attackNameLabel,attackNameBackdrop,authoredNameWidth,220,84);
+            Fit(chargeTimeLabel,chargeTimeBackdrop,authoredTimeWidth,142,56);
         }
 
         public void ResetOpacity() => SetOpacity(1f);

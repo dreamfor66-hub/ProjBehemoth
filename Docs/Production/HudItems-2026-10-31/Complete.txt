@@ -1,0 +1,1 @@
+Scoped matrix finished; inspect Live.txt and screenshots. Desktop Unity only; no balance suite or physical-device test.

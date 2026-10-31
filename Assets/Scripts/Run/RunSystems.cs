@@ -154,7 +154,8 @@ namespace DungeonSlash
         public int SupplyCount(SupplyData supply) => supply != null && supplies.TryGetValue(supply, out var count) ? count : 0;
         public bool SpendSupply(SupplyData supply, int count) { if (SupplyCount(supply) < count) return false; if (supply != null) supplies[supply] = SupplyCount(supply) - count; return true; }
         public IReadOnlyList<EquipmentData> Potions => potions.Select(potion => potion.Data).ToArray();
-        public int PotionSlotCapacity => 3;
+        public const int DefaultPotionSlotCapacity = 3;
+        public int PotionSlotCapacity => DefaultPotionSlotCapacity;
         public bool HasPotionSpace => potions.Count < PotionSlotCapacity;
         public int PoisonStacks { get; private set; }
         public int PendingPerkChoices { get; private set; }
@@ -417,7 +418,20 @@ namespace DungeonSlash
 
         public bool TryConsumeRevival()
         {
-            if (revivalHealthFraction <= 0f || Player.IsAlive) return false;
+            if (Player.IsAlive) return false;
+            // Carried consumables react to death without ever being drunk or equipped.
+            foreach (var potion in potions.ToArray())
+            {
+                foreach (var ability in potion.Data.abilities.Where(a => a.trigger.triggerType == TriggerType.OnDeath && a.target == TargetType.Owner))
+                {
+                    var effects = ability.effects.Where(e => e.effectType == EffectType.StatIncrease && e.effectStatType == ModifierKind.RevivalHealthFraction).ToArray();
+                    if (!ability.Matches(this, default) || effects.Length == 0) continue;
+                    var fraction = effects.Max(e => EffectValue(e, default));
+                    if (fraction <= 0) continue;
+                    potions.Remove(potion); Player.Revive(fraction); return true;
+                }
+            }
+            if (revivalHealthFraction <= 0f) return false;
             Player.Revive(revivalHealthFraction);
             revivalHealthFraction = 0f;
             return true;

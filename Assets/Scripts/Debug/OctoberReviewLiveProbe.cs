@@ -25,12 +25,12 @@ public sealed class OctoberReviewLiveProbe:MonoBehaviour
         var frame=Object.FindFirstObjectByType<ArcadeRasterCamera>()?.Frame;if(frame==null)return;
         var prev=RenderTexture.active;RenderTexture.active=frame;var t=new Texture2D(frame.width,frame.height,TextureFormat.RGB24,false);t.ReadPixels(new Rect(0,0,t.width,t.height),0,0);t.Apply();Directory.CreateDirectory(Screens);File.WriteAllBytes(Screens+name+".png",t.EncodeToPNG());Object.Destroy(t);RenderTexture.active=prev;
     }
-    public void Setup(CharacterKind kind,bool spells=true,string monsterPath="Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset")
+    public void Setup(CharacterKind kind,bool spells=true,string monsterPath="Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_고블린사냥꾼.asset")
     {
         combat=Object.FindFirstObjectByType<CombatController>();input=Object.FindFirstObjectByType<CombatInputController>();scene=Object.FindFirstObjectByType<CombatSceneView>();run=Object.FindFirstObjectByType<RunController>();
         RunSession.SelectedCharacter=combat.Content.characters.First(c=>c.character==kind);Object.FindFirstObjectByType<GameFlowController>().StartNewRun();
         Object.FindFirstObjectByType<DungeonController>().HideNavigation();Object.FindFirstObjectByType<RunExpansionView>().HideModal();
-        var source=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>(monsterPath);
+        var source=DungeonSlash.DesignerAssetPaths.Load<MonsterData>(monsterPath);
         var practice=Object.Instantiate(source);practice.name="Review practice clone";practice.maxHp=50000;practice.normalAttackInterval=999;practice.chargeInterval=999;practice.encounterHint="";
         practice.attacks=source.attacks.Select(a=>{var clone=Object.Instantiate(a);clone.chargeTimeLimit=120;return clone;}).ToList();
         if(spells)foreach(var id in new[]{"EnergyBolt","Ember","Spark","PoisonMist"})run.State.LearnSpell(combat.Content.spells.First(s=>s.id==id),true);
@@ -108,7 +108,7 @@ public sealed class OctoberReviewLiveProbe:MonoBehaviour
         var expansion=Object.FindFirstObjectByType<RunExpansionView>();Check(expansion.spellButtons.All(b=>b.gameObject.activeInHierarchy),"all four spell slots on screen");
         var rects=expansion.spellButtons.Select(b=>(RectTransform)b.transform).ToArray();Check(rects[2].anchoredPosition.y>rects[0].anchoredPosition.y&&rects[3].anchoredPosition.y<rects[0].anchoredPosition.y&&rects[0].anchoredPosition.x<rects[2].anchoredPosition.x&&rects[1].anchoredPosition.x>rects[2].anchoredPosition.x,"spell slots form D-pad");
         Setup(CharacterKind.Monk,false);yield return null;var technique=combat.Player.Data.attackBuffs.First(b=>!b.requiresUnlock&&b.attackPattern.Length>0);foreach(var direction in technique.attackPattern)combat.Player.PrepareAttack(direction,false);yield return null;yield return new WaitForEndOfFrame();Capture("Monk-Status");Check(combat.Player.StatusText.Contains(technique.displayName)&&expansion.characterStatus.rectTransform.anchoredPosition.x==0,"monk technique and arrows centered above player");
-        Setup(CharacterKind.Samurai,false);yield return null;var sheath=UnityEditor.AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Sheathed.asset");var prepared=UnityEditor.AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/PreparedDraw.asset");var window=UnityEditor.AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/SheathParryWindow.asset");
+        Setup(CharacterKind.Samurai,false);yield return null;var sheath=DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/Data_Buff_납도.asset");var prepared=DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/Data_Buff_패리_발도_준비.asset");var window=DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/Data_Buff_납도_패리.asset");
         combat.Player.Buffs.Add(sheath,root:run.State);combat.Player.Buffs.UpdateState(0);var normal=combat.Player.PrepareAttack(SwipeDirection.Right,false);Check(normal.FeedbackKey=="ui.combatcontroller.9b76b68d","ordinary draw uses 발도!");
         combat.Player.Buffs.Add(sheath,root:run.State);combat.Player.Buffs.UpdateState(0);var charged=combat.Player.PrepareAttack(SwipeDirection.Right,true);Check(charged.FeedbackKey=="ui.combatcontroller.9b76b68d","manual charged draw uses 발도!");
         combat.Player.Buffs.Add(sheath,root:run.State);combat.Player.Buffs.Add(prepared,root:run.State);combat.Player.Buffs.UpdateState(0);var parry=combat.Player.PrepareAttack(SwipeDirection.Right,false);Check(parry.FeedbackKey=="ui.combatcontroller.deb723db","prepared parry draw uses 패리 발도");Check(Mathf.Approximately(window.ReleaseData.Time,.3f),"sheath parry duration is 0.3 seconds");

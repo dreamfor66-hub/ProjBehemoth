@@ -18,7 +18,7 @@ public sealed class MonsterAuthoringLiveProbe : MonoBehaviour
     void Check(bool ok, string name) { if (!ok) failures++; File.AppendAllText(Folder + "Live.txt", (ok ? "PASS " : "FAIL ") + name + "\n"); }
     MonsterData Copy(string name)
     {
-        var source = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/" + name + ".asset");
+        var source = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/" + name + ".asset");
         var copy = Instantiate(source); copy.maxHp = 10000; copy.normalAttackInterval = copy.chargeInterval = 999; copies.Add(copy); return copy;
     }
     public void Run() => StartCoroutine(Review());

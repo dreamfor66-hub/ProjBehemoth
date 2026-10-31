@@ -39,7 +39,7 @@ public sealed class IllustratedEventLiveProbe:MonoBehaviour
         if(view==null||flow==null){Check(false,"MainGameScene loaded");yield break;}
         foreach(var id in new[]{"Mirror","Pilgrim"})
         {
-            var story=UnityEditor.AssetDatabase.LoadAssetAtPath<RandomEventData>("Assets/Data/Dungeon/Events/"+id+".asset");
+            var story=DungeonSlash.DesignerAssetPaths.Load<RandomEventData>("Assets/Data/Dungeon/Events/"+id+".asset");
             typeof(GameFlowController).GetMethod("ShowEventPage",Private).Invoke(flow,new object[]{dungeon.State.Player.CurrentRoom,story,0,0});
             yield return null;yield return null;
             Check(view.modalNarrative.text==story.pages[0].narrative,id+" complete narrative and choices presented together");

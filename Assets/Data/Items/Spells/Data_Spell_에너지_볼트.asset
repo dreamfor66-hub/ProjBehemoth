@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f8821b35880c4995327257ee3bced, type: 3}
+  m_Name: "Data_Spell_\uC5D0\uB108\uC9C0_\uBCFC\uD2B8"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.spelldata.energybolt.displayname
+    lastText: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8"
+  - propertyPath: description
+    key: data.spelldata.energybolt.description
+    lastText: "\uADF8\uC740 \uBC29\uD5A5\uC73C\uB85C \uC5D0\uB108\uC9C0 \uBCFC\uD2B8\uB97C
+      \uB0A0\uB824 \uC801\uC744 \uAD00\uD1B5\uD55C\uB2E4."
+  textOwnerGuid: 0aa4718ef680d8e43a55a7c28993bb15
+  id: EnergyBolt
+  displayName: "\uC5D0\uB108\uC9C0 \uBCFC\uD2B8"
+  description: "\uADF8\uC740 \uBC29\uD5A5\uC73C\uB85C \uC5D0\uB108\uC9C0 \uBCFC\uD2B8\uB97C
+    \uB0A0\uB824 \uC801\uC744 \uAD00\uD1B5\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: 8c5ba2c8189b50b3977e91970470febc, type: 3}
+  mpCost: 8
+  tier: 0
+  abilities: []
+  duration: 0
+  pulseInterval: 1
+  pulses: 1
+  element: 1
+  shape: 0
+  targeting: 1
+  defaultSlot: 2
+  castingSeconds: 0.4
+  cooldownSeconds: 6
+  openingCooldownSeconds: 0
+  damage: 17
+  width: 25
+  radius: 145
+  chainTargets: 3
+  slowSeconds: 0

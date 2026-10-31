@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f8821b35880c4995327257ee3bced, type: 3}
+  m_Name: "Data_Spell_\uBCFC\uD14D\uC2A4_\uB77C\uC774\uD2B8\uB2DD"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.spelldata.vortexlightning.displayname
+    lastText: "\uBCFC\uD14D\uC2A4 \uB77C\uC774\uD2B8\uB2DD"
+  - propertyPath: description
+    key: data.spelldata.vortexlightning.description
+    lastText: "6\uCD08 \uB3D9\uC548 \uBC88\uAC1C\uC758 \uC18C\uC6A9\uB3CC\uC774\uB97C
+      \uD3BC\uCE5C\uB2E4. 0.75\uCD08\uB9C8\uB2E4 \uBC88\uAC1C \uD53C\uD574 14\uB97C
+      \uC900\uB2E4."
+  textOwnerGuid: 61d828d623244f14db543868094d9bc8
+  id: VortexLightning
+  displayName: "\uBCFC\uD14D\uC2A4 \uB77C\uC774\uD2B8\uB2DD"
+  description: "6\uCD08 \uB3D9\uC548 \uBC88\uAC1C\uC758 \uC18C\uC6A9\uB3CC\uC774\uB97C
+    \uD3BC\uCE5C\uB2E4. 0.75\uCD08\uB9C8\uB2E4 \uBC88\uAC1C \uD53C\uD574 14\uB97C
+    \uC900\uB2E4."
+  icon: {fileID: 21300000, guid: 291a4118da78562cb25c1120bc5ce212, type: 3}
+  mpCost: 18
+  tier: 2
+  abilities: []
+  duration: 6
+  pulseInterval: 0.75
+  pulses: 1
+  element: 2
+  shape: 4
+  targeting: 0
+  defaultSlot: 0
+  castingSeconds: 0.6
+  cooldownSeconds: 20
+  openingCooldownSeconds: 0
+  damage: 14
+  width: 24
+  radius: 230
+  chainTargets: 3
+  slowSeconds: 0

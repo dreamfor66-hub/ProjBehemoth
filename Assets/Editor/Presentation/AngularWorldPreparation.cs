@@ -44,7 +44,7 @@ internal static class AngularWorldPreparation
         catch(Exception e){File.WriteAllText(Report+"Preparation-Error.txt",e.ToString());Debug.LogException(e);next=EditorApplication.timeSinceStartup+60;}
         finally{busy=false;}
     }
-    static T Asset<T>(string path)where T:Object=>AssetDatabase.LoadAssetAtPath<T>(path);
+    static T Asset<T>(string path)where T:Object=>DungeonSlash.DesignerAssetPaths.Load<T>(path);
     static void Import(string path)
     {
         AssetDatabase.ImportAsset(path,ImportAssetOptions.ForceSynchronousImport);

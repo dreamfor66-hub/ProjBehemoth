@@ -35,8 +35,8 @@ internal static class MonsterWeakPointPreviewVerification
                 else if (command.StartsWith("live:"))
                 {
                     if (!EditorApplication.isPlaying) { Check(false, "Live check requires existing Play mode."); return; }
-                    var path = command.EndsWith("boss") ? "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset"
-                        : "Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset";
+                    var path = command.EndsWith("boss") ? "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_미궁_스핑크스.asset"
+                        : "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset";
                     var practice = Object.FindFirstObjectByType<OctoberReviewLiveProbe>()
                         ?? new GameObject("Scoped weak-point Inspector verification").AddComponent<OctoberReviewLiveProbe>();
                     practice.Setup(CharacterKind.Warrior, false, path);
@@ -48,7 +48,7 @@ internal static class MonsterWeakPointPreviewVerification
                     pending = command; readyAt = EditorApplication.timeSinceStartup + .7;
                 }
                 else if (command == "select")
-                    Selection.activeObject = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+                    Selection.activeObject = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
             }
             if (pending != null && EditorApplication.timeSinceStartup > readyAt)
             {
@@ -61,7 +61,7 @@ internal static class MonsterWeakPointPreviewVerification
     {
         Directory.CreateDirectory(Folder);
         File.WriteAllText(Folder + "Verification.txt", "Scoped Ready/weak-point Inspector matrix, existing Unity Editor.\n");
-        var source = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+        var source = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
         var data = Object.Instantiate(source);
         var attack = Object.Instantiate(source.GetAttack(MonsterAttackType.Charge));
         var animation = Object.Instantiate(data.combatAnimation);

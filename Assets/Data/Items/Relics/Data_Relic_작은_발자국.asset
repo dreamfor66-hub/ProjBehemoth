@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: "Data_Relic_\uC791\uC740_\uBC1C\uC790\uAD6D"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.straydog.displayname
+    lastText: "\uC791\uC740 \uBC1C\uC790\uAD6D"
+  - propertyPath: description
+    key: data.equipmentdata.straydog.description
+    lastText: "\uAC15\uC544\uC9C0\uAC00 \uACC1\uC5D0\uC11C \uB3D9\uD589\uD55C\uB2E4.
+      4\uCD08\uB9C8\uB2E4 \uCCB4\uB825\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801\uC5D0\uAC8C
+      7 + \uD604\uC7AC \uB808\uBCA8\uB9CC\uD07C \uD53C\uD574."
+  textOwnerGuid: 9c0582da6d2611148855c1129d34d491
+  id: StrayDog
+  displayName: "\uC791\uC740 \uBC1C\uC790\uAD6D"
+  description: "\uAC15\uC544\uC9C0\uAC00 \uACC1\uC5D0\uC11C \uB3D9\uD589\uD55C\uB2E4.
+    4\uCD08\uB9C8\uB2E4 \uCCB4\uB825\uC774 \uAC00\uC7A5 \uB0AE\uC740 \uC801\uC5D0\uAC8C
+    7 + \uD604\uC7AC \uB808\uBCA8\uB9CC\uD07C \uD53C\uD574."
+  icon: {fileID: 21300000, guid: 3358d0ab2478c6745acc64de3dc9dcde, type: 3}
+  scope: 3
+  exclusiveCharacter: 0
+  power: 49
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 7
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 2
+    effects:
+    - effectType: 14
+      effectMagnitude: 0
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 11400000, guid: c6d66f4a1e280544b805c94668f5f3e7, type: 2}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 9
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 4
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 1
+    effects:
+    - effectType: 1
+      effectMagnitude: 7
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 2
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables:
+      - type: 7
+        buff: {fileID: 0}
+        rule: 0
+        multiplier: 1
+        limit: 0
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 0
+  price: 80
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

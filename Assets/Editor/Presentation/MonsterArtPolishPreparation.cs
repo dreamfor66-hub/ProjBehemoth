@@ -69,7 +69,7 @@ internal static class MonsterArtPolishPreparation
             var output = "Assets/Art/World/Angular/Monsters/" + row.id + ".png";
             File.Copy(Folder + "Generated/" + row.id + ".png", output, true);
             AssetDatabase.ImportAsset(output, ImportAssetOptions.ForceSynchronousImport);
-            var monster = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/" + row.baseline + ".asset");
+            var monster = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/" + row.baseline + ".asset");
             if (monster == null) throw new InvalidDataException(row.baseline);
             if (row.setOffset)
             {
@@ -85,7 +85,7 @@ internal static class MonsterArtPolishPreparation
         }
         foreach (var guid in AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data/Dungeon/Encounters" }))
         {
-            var encounter = AssetDatabase.LoadAssetAtPath<EncounterData>(AssetDatabase.GUIDToAssetPath(guid));
+            var encounter = DungeonSlash.DesignerAssetPaths.Load<EncounterData>(AssetDatabase.GUIDToAssetPath(guid));
             var occupants = encounter.members.Where(m => m.monster != null).Select(m => m.monster).Distinct().ToArray();
             if (!occupants.Any(m => touched.Contains(m))) continue;
             encounter.displayName = string.Join(" · ", occupants.Select(m => m.displayName));

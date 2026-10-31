@@ -1,0 +1,7 @@
+Focused victory-spacing preservation and final death-to-title flow.
+PASS victory retains its existing explanation
+PASS victory explanation and return button retain separate space
+PASS real death preserves the delayed action reveal
+PASS final death view contains one Title action and no paragraph
+PASS final production button reaches the actual Title page
+COMPLETE 5 PASS / 0 FAIL

@@ -68,13 +68,13 @@ internal static class AngularTrialPreparation
         var boxes=new[]{new RectInt(300,20,490,530),new RectInt(340,0,530,520),new RectInt(300,20,450,490),new RectInt(250,0,520,540),new RectInt(330,0,450,440),new RectInt(240,0,550,600)};
         for(var i=0;i<6;i++)
         {
-            var n=Names[i];selections[(CharacterKind)i]=AssetDatabase.LoadAssetAtPath<Sprite>(Art+n+".png");
-            CropPortrait(n,boxes[i]);Import(Art+n+"Portrait.png");portraits[(CharacterKind)i]=AssetDatabase.LoadAssetAtPath<Sprite>(Art+n+"Portrait.png");
+            var n=Names[i];selections[(CharacterKind)i]=DungeonSlash.DesignerAssetPaths.Load<Sprite>(Art+n+".png");
+            CropPortrait(n,boxes[i]);Import(Art+n+"Portrait.png");portraits[(CharacterKind)i]=DungeonSlash.DesignerAssetPaths.Load<Sprite>(Art+n+"Portrait.png");
         }
-        var originalContent=AssetDatabase.FindAssets("t:GameContent").Select(AssetDatabase.GUIDToAssetPath).Where(p=>!p.Contains("/Trials/")).Select(AssetDatabase.LoadAssetAtPath<GameContent>).First();
+        var originalContent=AssetDatabase.FindAssets("t:GameContent").Select(AssetDatabase.GUIDToAssetPath).Where(p=>!p.Contains("/Trials/")).Select(DungeonSlash.DesignerAssetPaths.Load<GameContent>).First();
         var content=Clone(originalContent,Data+"Angular01_Content.asset");
         content.characters=new List<PlayerCombatData>();
-        var rear=AssetDatabase.LoadAssetAtPath<Sprite>(Art+"Rear.png");
+        var rear=DungeonSlash.DesignerAssetPaths.Load<Sprite>(Art+"Rear.png");
         foreach(var original in originalContent.characters)
         {
             var hero=Clone(original,Data+"Angular01_"+original.character+".asset");
@@ -182,7 +182,7 @@ internal static class AngularTrialPreparation
             var colors=button.colors;colors.normalColor=C("272922");colors.highlightedColor=C("5b604b");colors.pressedColor=C("82846b");colors.selectedColor=C("3c4035");button.colors=colors;
         }
         foreach(var body in roots.SelectMany(r=>r.GetComponentsInChildren<StageBackdropView>(true)))
-        {body.stages=new[]{AssetDatabase.LoadAssetAtPath<Sprite>(Art+"Hall.png")};body.background.sprite=body.stages[0];body.background.color=Color.white;}
+        {body.stages=new[]{DungeonSlash.DesignerAssetPaths.Load<Sprite>(Art+"Hall.png")};body.background.sprite=body.stages[0];body.background.color=Color.white;}
         var trial=roots.SelectMany(r=>r.GetComponentsInChildren<AngularArtTrial>(true)).FirstOrDefault();
         if(trial==null){var go=new GameObject("Angular art direction — first-screen trial");SceneManager.MoveGameObjectToScene(go,scene);trial=go.AddComponent<AngularArtTrial>();}
         trial.content=content;trial.characterPage=selection;

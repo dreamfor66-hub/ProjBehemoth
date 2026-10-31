@@ -61,9 +61,9 @@ namespace DungeonSlash.Tests
         }
         [Test] public void CoreAssetsHaveNoClassSettings_PoisonAndRageAreInspectableBuffs()
         {
-            var content=AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");Assert.That(content.schemaVersion,Is.GreaterThanOrEqualTo(9));
+            var content=DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");Assert.That(content.schemaVersion,Is.GreaterThanOrEqualTo(9));
             Assert.That(typeof(PlayerCombatData).GetField("mechanics"),Is.Null);Assert.That(typeof(EquipmentAbility).GetField("editorLabel"),Is.Null);
-            Assert.That(AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Rage.asset"),Is.Not.Null);
+            Assert.That(DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/Data_Buff_분노.asset"),Is.Not.Null);
             Assert.That(content.characters.Single(c=>c.character==CharacterKind.Monk).attackBuffs.All(b=>b.attackPattern.Length>0),Is.True);
             Assert.That(CombatStatusCatalog.Instance.poison.Units.Any(u=>u.trigger.triggerType==TriggerType.OnTimer && u.effects.Any(e=>e.effectType==EffectType.Damage)),Is.True);
             var wizard=content.characters.Single(c=>c.character==CharacterKind.Wizard);Assert.That(wizard.startingRelic.abilities.Any(u=>u.trigger.triggerType==TriggerType.Passive && u.effects.Any(e=>e.rule==AbilityRule.SpellCooldownReduction)),Is.True);

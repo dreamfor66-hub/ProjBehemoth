@@ -48,7 +48,7 @@ internal static class ActOneExperiencePreparation
     }
     static void PrepareGuardRole()
     {
-        var item = Asset<EquipmentData>("Assets/Data/Items/Relics/Starter_Warrior.asset");
+        var item = Asset<EquipmentData>("Assets/Data/Items/Relics/Data_Relic_수호자의_방패.asset");
         Backup(AssetDatabase.GetAssetPath(item));
         var old = item.description;
         foreach (var ability in item.abilities)
@@ -129,7 +129,7 @@ internal static class ActOneExperiencePreparation
         EditorSceneManager.MarkSceneDirty(scene); EditorSceneManager.SaveScene(scene);
         if (opened) EditorSceneManager.CloseScene(scene, true);
     }
-    static T Asset<T>(string path) where T : Object => AssetDatabase.LoadAssetAtPath<T>(path);
+    static T Asset<T>(string path) where T : Object => DungeonSlash.DesignerAssetPaths.Load<T>(path);
     static void Save(Object asset) { EditorUtility.SetDirty(asset); AssetDatabase.SaveAssetIfDirty(asset); }
     static void Backup(string path)
     {

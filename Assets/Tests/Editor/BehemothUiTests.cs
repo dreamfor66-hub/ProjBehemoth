@@ -13,7 +13,7 @@ namespace DungeonSlash.Tests
 {
     public sealed class BehemothUiTests
     {
-        private static GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
+        private static GameContent Content => DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");
         private static T Field<T>(object target, string name) => (T)target.GetType().GetField(name, BindingFlags.Instance | BindingFlags.NonPublic).GetValue(target);
         internal static void Inside(RectTransform child, RectTransform container)
         {
@@ -33,8 +33,8 @@ namespace DungeonSlash.Tests
             try
             {
                 var run = root.AddComponent<RunController>();
-                var balance = AssetDatabase.LoadAssetAtPath<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
-                if (balance == null) balance = AssetDatabase.LoadAssetAtPath<RunBalanceSettings>(AssetDatabase.GUIDToAssetPath(AssetDatabase.FindAssets("t:RunBalanceSettings")[0]));
+                var balance = DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
+                if (balance == null) balance = DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>(AssetDatabase.GUIDToAssetPath(AssetDatabase.FindAssets("t:RunBalanceSettings")[0]));
                 run.Configure(Content.characters[0], balance, Content.perks, Content.equipment); run.BeginRun(); run.State.GainGold(1000);
                 var inventory = run.GetShopInventory(31, 7); var before = inventory.ToArray();
                 Assert.That(inventory.Count, Is.EqualTo(6)); Assert.That(inventory.Distinct().Count(), Is.EqualTo(6));

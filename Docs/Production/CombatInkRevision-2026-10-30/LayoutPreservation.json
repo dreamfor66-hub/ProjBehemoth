@@ -1,0 +1,41 @@
+{
+  "baseline": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\CombatInkRevision-2026-10-30\\Before\\UnsavedMainGameScene.unity",
+  "HP_unchanged": true,
+  "MP_unchanged": true,
+  "before": {
+    "HP": {
+      "m_AnchorMin": "{x: 0.5, y: 0.5}",
+      "m_AnchorMax": "{x: 0.5, y: 0.5}",
+      "m_Pivot": "{x: 0.5, y: 0.5}",
+      "m_AnchoredPosition": "{x: -528, y: -340}",
+      "m_SizeDelta": "{x: 368, y: 20}",
+      "m_LocalScale": "{x: 0.99999994, y: 0.99999994, z: 0.99999994}"
+    },
+    "MP": {
+      "m_AnchorMin": "{x: 0.5, y: 0.5}",
+      "m_AnchorMax": "{x: 0.5, y: 0.5}",
+      "m_Pivot": "{x: 0.5, y: 0.5}",
+      "m_AnchoredPosition": "{x: -528, y: -412}",
+      "m_SizeDelta": "{x: 368, y: 20}",
+      "m_LocalScale": "{x: 0.99999994, y: 0.99999994, z: 0.99999994}"
+    }
+  },
+  "after": {
+    "HP": {
+      "m_AnchorMin": "{x: 0.5, y: 0.5}",
+      "m_AnchorMax": "{x: 0.5, y: 0.5}",
+      "m_Pivot": "{x: 0.5, y: 0.5}",
+      "m_AnchoredPosition": "{x: -528, y: -340}",
+      "m_SizeDelta": "{x: 368, y: 20}",
+      "m_LocalScale": "{x: 0.99999994, y: 0.99999994, z: 0.99999994}"
+    },
+    "MP": {
+      "m_AnchorMin": "{x: 0.5, y: 0.5}",
+      "m_AnchorMax": "{x: 0.5, y: 0.5}",
+      "m_Pivot": "{x: 0.5, y: 0.5}",
+      "m_AnchoredPosition": "{x: -528, y: -412}",
+      "m_SizeDelta": "{x: 368, y: 20}",
+      "m_LocalScale": "{x: 0.99999994, y: 0.99999994, z: 0.99999994}"
+    }
+  }
+}

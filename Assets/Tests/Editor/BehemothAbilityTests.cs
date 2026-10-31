@@ -8,7 +8,7 @@ namespace DungeonSlash.Tests
 {
     public sealed class BehemothAbilityTests
     {
-        private GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
+        private GameContent Content => DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");
         private RunBalanceSettings balance;
         [SetUp] public void Setup() => balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
         [TearDown] public void Cleanup() => Object.DestroyImmediate(balance);
@@ -102,7 +102,7 @@ namespace DungeonSlash.Tests
         {
             var wizard = Run(CharacterKind.Wizard); var spell = wizard.Spellbook.Single();
             Assert.That(spell.Cooldown, Is.GreaterThan(0));
-            var rat = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/TunnelRat.asset");
+            var rat = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");
             Assert.That(spell.Data.damage * 2, Is.LessThan(rat.maxHp));
         }
         [Test] public void ElementConditionsApplyToTheSpellBeingPrepared_NotThePreviousAction()

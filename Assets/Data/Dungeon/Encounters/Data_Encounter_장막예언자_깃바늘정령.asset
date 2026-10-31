@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: "Data_Encounter_\uC7A5\uB9C9\uC608\uC5B8\uC790_\uAE43\uBC14\uB298\uC815\uB839"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.frosttrio.displayname
+    lastText: "\uC7A5\uB9C9 \uC608\uC5B8\uC790 \xB7 \uAE43\uBC14\uB298 \uC815\uB839"
+  - propertyPath: hint
+    key: data.encounterdata.frosttrio.hint
+    lastText: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+      \uB04A\uC790.\n\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804
+      \uC57D\uC810\uC744 \uB04A\uC790."
+  textOwnerGuid: 0669f54c132a61548924f1c8c9d88dee
+  id: FrostTrio
+  displayName: "\uC7A5\uB9C9 \uC608\uC5B8\uC790 \xB7 \uAE43\uBC14\uB298 \uC815\uB839"
+  hint: "\uC7A5\uB9C9\uC774 \uC5F4\uB9B4 \uB54C \uB098\uD0C0\uB098\uB294 \uC57D\uC810\uC744
+    \uB04A\uC790.\n\uB0A0\uAC1C\uB97C \uC811\uC5B4 \uB3CC\uC9C4\uD558\uAE30 \uC804
+    \uC57D\uC810\uC744 \uB04A\uC790."
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: 3767fc650961daa46940e81e17116958, type: 2}
+    offset: {x: 0, y: 80}
+    actionDelay: 0
+  - monster: {fileID: 11400000, guid: 9a8888d9e5c52744fb1d2f2302d20795, type: 2}
+    offset: {x: -190, y: -55}
+    actionDelay: 1.6
+  - monster: {fileID: 11400000, guid: 9a8888d9e5c52744fb1d2f2302d20795, type: 2}
+    offset: {x: 190, y: -55}
+    actionDelay: 3.2

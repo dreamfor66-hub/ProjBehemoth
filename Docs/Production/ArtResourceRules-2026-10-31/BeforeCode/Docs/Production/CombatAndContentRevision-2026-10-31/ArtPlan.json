@@ -1,0 +1,262 @@
+{
+  "monsters": [
+    {
+      "oldName": "Data_Monster_B2_Boss_FrostQueen",
+      "name": "겨울의일각수",
+      "frames": [
+        {
+          "state": "Idle",
+          "image": "Assets/Art/Monsters/겨울의일각수/겨울의일각수-Idle.png",
+          "ppu": 119.48275862068965,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.011461318051575931
+          }
+        },
+        {
+          "state": "Ready",
+          "image": "Assets/Art/Monsters/겨울의일각수/겨울의일각수-Ready.png",
+          "ppu": 119.48275862068965,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.013816925734024179
+          }
+        },
+        {
+          "state": "Attack",
+          "image": "Assets/Art/Monsters/겨울의일각수/겨울의일각수-Attack.png",
+          "ppu": 119.48275862068965,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.01444043321299639
+          }
+        },
+        {
+          "state": "Stunned",
+          "image": "Assets/Art/Monsters/겨울의일각수/겨울의일각수-Stunned.png",
+          "ppu": 119.48275862068965,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.01616161616161616
+          }
+        }
+      ],
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -55,
+            "y": 285
+          },
+          "radius": 90
+        },
+        {
+          "center": {
+            "x": 35,
+            "y": 200
+          },
+          "radius": 130
+        },
+        {
+          "center": {
+            "x": -140,
+            "y": 75
+          },
+          "radius": 70
+        },
+        {
+          "center": {
+            "x": 75,
+            "y": 75
+          },
+          "radius": 70
+        }
+      ],
+      "weakPoints": [
+        {
+          "x": -70,
+          "y": 340
+        },
+        {
+          "x": 0,
+          "y": 220
+        },
+        {
+          "x": 75,
+          "y": 90
+        }
+      ]
+    },
+    {
+      "oldName": "StormMatriarch",
+      "name": "폭풍의대붕",
+      "frames": [
+        {
+          "state": "Idle",
+          "image": "Assets/Art/Monsters/폭풍의대붕/폭풍의대붕-Idle.png",
+          "ppu": 110.70175438596492,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.012598425196850394
+          }
+        },
+        {
+          "state": "Ready",
+          "image": "Assets/Art/Monsters/폭풍의대붕/폭풍의대붕-Ready.png",
+          "ppu": 110.70175438596492,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.01309328968903437
+          }
+        },
+        {
+          "state": "Attack",
+          "image": "Assets/Art/Monsters/폭풍의대붕/폭풍의대붕-Attack.png",
+          "ppu": 110.70175438596492,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.013245033112582781
+          }
+        },
+        {
+          "state": "Stunned",
+          "image": "Assets/Art/Monsters/폭풍의대붕/폭풍의대붕-Stunned.png",
+          "ppu": 110.70175438596492,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.014925373134328358
+          }
+        }
+      ],
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 20,
+            "y": 270
+          },
+          "radius": 145
+        },
+        {
+          "center": {
+            "x": 165,
+            "y": 285
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": -130,
+            "y": 70
+          },
+          "radius": 70
+        },
+        {
+          "center": {
+            "x": 180,
+            "y": 70
+          },
+          "radius": 70
+        }
+      ],
+      "weakPoints": [
+        {
+          "x": 165,
+          "y": 285
+        },
+        {
+          "x": 45,
+          "y": 200
+        }
+      ]
+    },
+    {
+      "oldName": "Data_Monster_B3_Boss_SoulEater",
+      "name": "잿불의용",
+      "frames": [
+        {
+          "state": "Idle",
+          "image": "Assets/Art/Monsters/잿불의용/잿불의용-Idle.png",
+          "ppu": 106.89655172413794,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.01282051282051282
+          }
+        },
+        {
+          "state": "Ready",
+          "image": "Assets/Art/Monsters/잿불의용/잿불의용-Ready.png",
+          "ppu": 106.89655172413794,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.014625228519195612
+          }
+        },
+        {
+          "state": "Attack",
+          "image": "Assets/Art/Monsters/잿불의용/잿불의용-Attack.png",
+          "ppu": 214.48275862068965,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.006430868167202572
+          }
+        },
+        {
+          "state": "Stunned",
+          "image": "Assets/Art/Monsters/잿불의용/잿불의용-Stunned.png",
+          "ppu": 106.89655172413794,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.014678899082568808
+          }
+        }
+      ],
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 30,
+            "y": 255
+          },
+          "radius": 145
+        },
+        {
+          "center": {
+            "x": 140,
+            "y": 280
+          },
+          "radius": 90
+        },
+        {
+          "center": {
+            "x": -140,
+            "y": 80
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": 155,
+            "y": 80
+          },
+          "radius": 80
+        }
+      ],
+      "weakPoints": [
+        {
+          "x": 145,
+          "y": 310
+        },
+        {
+          "x": 60,
+          "y": 210
+        },
+        {
+          "x": -100,
+          "y": 90
+        },
+        {
+          "x": 155,
+          "y": 90
+        }
+      ]
+    }
+  ]
+}

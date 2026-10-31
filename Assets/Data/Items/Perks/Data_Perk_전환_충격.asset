@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: "Data_Perk_\uC804\uD658_\uCDA9\uACA9"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.conversionimpact.displayname
+    lastText: "\uC804\uD658 \uCDA9\uACA9"
+  - propertyPath: description
+    key: data.perkdata.conversionimpact.description
+    lastText: "\uBD84\uB178\uC5D0 \uC9C4\uC785\uD558\uB294 \uCC28\uC9C0 \uACF5\uACA9\uC5D0
+      \uC804\uD658\uD55C \uACA9\uB178 10\uB2F9 \uBB3C\uB9AC \uD53C\uD574 1\uC744
+      \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: abe017d83e85c314e9263bb83a7be0ec
+  id: ConversionImpact
+  displayName: "\uC804\uD658 \uCDA9\uACA9"
+  description: "\uBD84\uB178\uC5D0 \uC9C4\uC785\uD558\uB294 \uCC28\uC9C0 \uACF5\uACA9\uC5D0
+    \uC804\uD658\uD55C \uACA9\uB178 10\uB2F9 \uBB3C\uB9AC \uD53C\uD574 1\uC744 \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: 2e08cb14fd7c47c409ba4502c055571f, type: 3}
+  scope: 2
+  exclusiveCharacter: 2
+  offerGroup: {fileID: 0}
+  abilitySource: {fileID: 11400000, guid: 0a9cd9cdaf5e0b34098c809cd5d6fcab, type: 2}
+  maxStacks: 99
+  modifiers: []

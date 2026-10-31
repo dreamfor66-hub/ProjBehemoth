@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: "Data_Potion_\uB3C5_\uD3EC\uC158"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.poisonpotion.displayname
+    lastText: "\uB3C5 \uD3EC\uC158"
+  - propertyPath: description
+    key: data.equipmentdata.poisonpotion.description
+    lastText: "\uB358\uC9C0\uAE30: \uC801\uC5D0\uAC8C \uB3C5 3 \uBD80\uC5EC (8\uCD08)\n\uB9C8\uC2DC\uAE30:
+      \uC790\uC2E0\uC5D0\uAC8C \uB3C5 3 \uBD80\uC5EC (8\uCD08)\n\uB3C5\uC740 2\uCD08\uB9C8\uB2E4
+      \uC911\uCCA9\uB2F9 3 \uD53C\uD574"
+  textOwnerGuid: a0347135ee351254eb6901333c42baab
+  id: PoisonPotion
+  displayName: "\uB3C5 \uD3EC\uC158"
+  description: "\uB358\uC9C0\uAE30: \uC801\uC5D0\uAC8C \uB3C5 3 \uBD80\uC5EC (8\uCD08)\n\uB9C8\uC2DC\uAE30:
+    \uC790\uC2E0\uC5D0\uAC8C \uB3C5 3 \uBD80\uC5EC (8\uCD08)\n\uB3C5\uC740 2\uCD08\uB9C8\uB2E4
+    \uC911\uCCA9\uB2F9 3 \uD53C\uD574"
+  icon: {fileID: 21300000, guid: 3605656a4ad607d439eb2bd432da6325, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 5
+      triggerAttackTypeFilter: 0
+      triggerAttackWayFilter: 0
+      triggerCount: 1
+      triggerMaxCount: 1
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 0
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 5
+      effectMagnitude: 3
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 8
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 3
+      statusCap: 60
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 30
+      triggerAttackTypeFilter: 0
+      triggerAttackWayFilter: 0
+      triggerCount: 1
+      triggerMaxCount: 1
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 0
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 1
+    effects:
+    - effectType: 5
+      effectMagnitude: 3
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 8
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 3
+      statusCap: 60
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 1
+  price: 20
+  maxPurchaseCount: 2
+  trigger:
+    triggerType: 4
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 0
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 0
+    effectMagnitude: 0
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 0
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

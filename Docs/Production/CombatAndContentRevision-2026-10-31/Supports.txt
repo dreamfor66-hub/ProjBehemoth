@@ -1,0 +1,5 @@
+Support recovery is independent of charge resolution; one missing slot per interval. Stun pauses recovery.
+겨울의 일각수: 깃바늘 정령, 깃바늘 정령; restore one every 12s while a slot is empty, charge damage/timing/hits preserved.
+폭풍의 대붕: 폭풍 해파리, 폭풍 해파리; restore one every 12s while a slot is empty, charge damage/timing/hits preserved.
+일식의 키메라: 해 우상, 달 우상; restore one every 12s while a slot is empty, charge damage/timing/hits preserved.
+실짜는 공작부인: 실인형, 실인형; restore one every 12s while a slot is empty, charge damage/timing/hits preserved.

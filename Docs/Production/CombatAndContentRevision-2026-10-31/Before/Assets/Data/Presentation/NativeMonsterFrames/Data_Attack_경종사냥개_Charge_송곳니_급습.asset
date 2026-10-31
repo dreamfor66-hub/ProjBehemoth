@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: "Data_Attack_\uACBD\uC885\uC0AC\uB0E5\uAC1C_Charge_\uC1A1\uACF3\uB2C8_\uAE09\uC2B5"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.alarmhound-bellhound-1.displayname
+    lastText: "\uC1A1\uACF3\uB2C8 \uAE09\uC2B5"
+  textOwnerGuid: 0b06cd7071b080d40b597049c5fc49ae
+  type: 1
+  displayName: "\uC1A1\uACF3\uB2C8 \uAE09\uC2B5"
+  damage: 28
+  shieldDamage: 30
+  windupDuration: 1
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 3.2
+  chargeWeakPoints:
+  - id: lock_0
+    localPosition: {x: 0, y: 0}
+    hitRadius: 29
+    requiredChargeHits: 1
+    optional: 0
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.3
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 11400000, guid: e38eba67e08948347ab295b6c79c7e34, type: 2}
+    healOnFailedChargeWhileSummonAlive: 0

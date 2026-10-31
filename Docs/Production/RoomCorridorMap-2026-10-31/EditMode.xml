@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-31 01:15:35Z" end-time="2026-10-31 01:15:36Z" duration="1.0876796">
+  <test-suite type="TestSuite" id="1000" name="Dungeon Mortalis" fullname="Dungeon Mortalis" runstate="Runnable" testcasecount="189" result="Passed" start-time="2026-10-31 01:15:35Z" end-time="2026-10-31 01:15:36Z" duration="1.087680" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1209" name="DungeonSlash.Tests.Editor.dll" fullname="E:/Github/Proj_Behemoth/Library/ScriptAssemblies/DungeonSlash.Tests.Editor.dll" runstate="Runnable" testcasecount="189" result="Passed" start-time="2026-10-31 01:15:35Z" end-time="2026-10-31 01:15:36Z" duration="0.676760" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="51492" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1210" name="DungeonSlash" fullname="DungeonSlash" runstate="Runnable" testcasecount="189" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.672844" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1211" name="Tests" fullname="DungeonSlash.Tests" runstate="Runnable" testcasecount="189" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.572209" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1133" name="DungeonMapLayoutTests" fullname="DungeonSlash.Tests.DungeonMapLayoutTests" classname="DungeonSlash.Tests.DungeonMapLayoutTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.473081" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1137" name="CorridorsRemainConnectedWithoutPackedBlocks" fullname="DungeonSlash.Tests.DungeonMapLayoutTests.CorridorsRemainConnectedWithoutPackedBlocks" classname="DungeonSlash.Tests.DungeonMapLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.350477" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1134" name="CorridorsRemainConnectedWithoutPackedBlocks(1)" fullname="DungeonSlash.Tests.DungeonMapLayoutTests.CorridorsRemainConnectedWithoutPackedBlocks(1)" methodname="CorridorsRemainConnectedWithoutPackedBlocks" classname="DungeonSlash.Tests.DungeonMapLayoutTests" runstate="Runnable" seed="283346539" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.251327" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1135" name="CorridorsRemainConnectedWithoutPackedBlocks(2)" fullname="DungeonSlash.Tests.DungeonMapLayoutTests.CorridorsRemainConnectedWithoutPackedBlocks(2)" methodname="CorridorsRemainConnectedWithoutPackedBlocks" classname="DungeonSlash.Tests.DungeonMapLayoutTests" runstate="Runnable" seed="1800252309" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.003203" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1136" name="CorridorsRemainConnectedWithoutPackedBlocks(3)" fullname="DungeonSlash.Tests.DungeonMapLayoutTests.CorridorsRemainConnectedWithoutPackedBlocks(3)" methodname="CorridorsRemainConnectedWithoutPackedBlocks" classname="DungeonSlash.Tests.DungeonMapLayoutTests" runstate="Runnable" seed="1893943071" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.003094" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1138" name="RoomHierarchyIsAuthoredWithoutChangingEncounterState" fullname="DungeonSlash.Tests.DungeonMapLayoutTests.RoomHierarchyIsAuthoredWithoutChangingEncounterState" methodname="RoomHierarchyIsAuthoredWithoutChangingEncounterState" classname="DungeonSlash.Tests.DungeonMapLayoutTests" runstate="Runnable" seed="539977247" result="Passed" start-time="2026-10-31 01:15:36Z" end-time="2026-10-31 01:15:36Z" duration="0.002237" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/user/AppData/LocalLow/DefaultCompany/Dungeon Mortalis\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

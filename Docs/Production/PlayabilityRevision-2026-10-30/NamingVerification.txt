@@ -1,0 +1,7 @@
+PASS new gameplay data receives a consistent readable filename
+PASS historical source path resolves through stable GUID alias
+PASS editing displayName renames the file while retaining its GUID
+PASS serialized effect reference and intermediate filename alias both survive rename
+PASS localization keys remain stable through repeated name edits
+PASS temporary fixtures are cleaned and production index count is preserved
+COMPLETE 6 PASS / 0 FAIL

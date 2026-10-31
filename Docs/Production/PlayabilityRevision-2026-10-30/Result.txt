@@ -1,0 +1,7 @@
+Focused death-flow repair verification in existing Editor.
+PASS real player death reaches the production result flow and stops combat
+PASS saved fade groups survive entering Play mode
+PASS death title fades in before controls become actionable
+PASS result controls become usable after the atmosphere beat
+PASS death title and Korean return control use the intended text
+COMPLETE 5 PASS / 0 FAIL

@@ -1,0 +1,2 @@
+room=4, position=(0, 4), facing=North
+pan=(0.00, 0.00), zoom=1, mapOpen=True

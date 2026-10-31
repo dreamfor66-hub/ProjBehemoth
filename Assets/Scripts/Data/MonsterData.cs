@@ -54,6 +54,10 @@ namespace DungeonSlash
         public MonsterPattern pattern;
         public string supportId;
         public bool diesWithLeader;
+        [Tooltip("Support slots, also used for opening summons. Repeat entries to author multiple copies.")]
+        public List<MonsterData> supportRoster = new();
+        [Min(0), Tooltip("Seconds to restore one missing support independently of charges. Zero disables; stun pauses the timer.")]
+        public float reinforcementInterval;
         public bool useOrbit;
         public float orbitRadius = 170f;
         public float orbitSpeed = .55f;

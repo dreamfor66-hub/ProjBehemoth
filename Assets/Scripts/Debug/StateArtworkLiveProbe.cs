@@ -91,7 +91,7 @@ public sealed class StateArtworkLiveProbe : MonoBehaviour
     }
     IEnumerator Monster(Row row, OctoberReviewLiveProbe practice)
     {
-        var definition = AssetDatabase.LoadAssetAtPath<MonsterData>(row.dataPath);
+        var definition = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(row.dataPath);
         practice.Setup(CharacterKind.Warrior, false, row.dataPath); yield return null;
         var combat = FindFirstObjectByType<CombatController>(); var scene = FindFirstObjectByType<CombatSceneView>();
         if (definition.diesWithLeader)
@@ -99,7 +99,7 @@ public sealed class StateArtworkLiveProbe : MonoBehaviour
             // The single-enemy practice setup can already have queued its victory coroutine.
             // Cancel that fixture before replacing it with the authored leader group.
             combat.ResetEncounter();
-            var encounter = AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data/Dungeon/Encounters" }).Select(g => AssetDatabase.LoadAssetAtPath<EncounterData>(AssetDatabase.GUIDToAssetPath(g)))
+            var encounter = AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data/Dungeon/Encounters" }).Select(g => DungeonSlash.DesignerAssetPaths.Load<EncounterData>(AssetDatabase.GUIDToAssetPath(g)))
                 .FirstOrDefault(e => e.members.Any(m => m.monster == definition) && e.members.Any(m => m.monster != null && !m.monster.diesWithLeader));
             if (encounter == null) { Check(false, row.id + " requires authored leader encounter"); yield break; }
             combat.PrepareFixedEncounter(combat.Run, encounter, 1); combat.BeginPreparedCombat(); yield return null;

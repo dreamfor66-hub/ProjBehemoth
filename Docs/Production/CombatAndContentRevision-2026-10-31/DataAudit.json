@@ -1,0 +1,8 @@
+{
+  "monsters": 44,
+  "preservedNumericMonsterTuning": true,
+  "preservedNumericAttackTuning": true,
+  "stagedPathsWithPreservedAliases": 1005,
+  "missingStagedAliases": [],
+  "compactMonsterNames": true
+}

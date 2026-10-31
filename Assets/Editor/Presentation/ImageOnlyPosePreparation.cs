@@ -48,7 +48,7 @@ internal static class ImageOnlyPosePreparation
                     importer.filterMode = FilterMode.Bilinear; importer.textureCompression = TextureImporterCompression.Uncompressed;
                     importer.maxTextureSize = 4096; importer.npotScale = TextureImporterNPOTScale.None;
                     var settings = new TextureImporterSettings(); importer.ReadTextureSettings(settings); settings.spriteMeshType = SpriteMeshType.FullRect; importer.SetTextureSettings(settings); importer.SaveAndReimport();
-                    var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+                    var sprite = DungeonSlash.DesignerAssetPaths.Load<Sprite>(path);
                     if (sprite == null) throw new InvalidDataException("Missing Ready sprite: " + id);
                     var animation = AssetDatabase.LoadAssetAtPath<CombatSpriteAnimation>("Assets/Data/Presentation/Angular/Animations/Hero-" + id + ".asset");
                     animation.ready = sprite; Save(animation);

@@ -82,7 +82,7 @@ public sealed class FeedbackRevision3LiveProbe:MonoBehaviour
         Setup(CharacterKind.Wizard,true);yield return new WaitForSeconds(6.2f);practice.Charge();yield return null;yield return new WaitForEndOfFrame();Capture("WeakPoint-Bat");
         var point=battle.Enemies[0].WeakPoints[0];var collision=point.HitShape.Radius;var reticle=Object.FindFirstObjectByType<WeakPointReticle>();Check(reticle!=null&&reticle.rectTransform.rect.width>=96,"weakpoint has prominent 24px bullseye");
         Check(Mathf.Approximately(collision,point.HitShape.Radius),"visual marker does not modify hit collision");
-        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");yield return new WaitForSeconds(6.2f);practice.Charge();yield return null;yield return new WaitForEndOfFrame();Capture("WeakPoint-Skeleton");
+        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");yield return new WaitForSeconds(6.2f);practice.Charge();yield return null;yield return new WaitForEndOfFrame();Capture("WeakPoint-Skeleton");
         File.AppendAllText(Log,"COMBAT COMPLETE\n");
     }
     sealed class FixedRandom:System.Random

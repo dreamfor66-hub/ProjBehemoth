@@ -50,9 +50,9 @@ internal static class MonsterStunPreparation
         var plan = JsonUtility.FromJson<Plan>(File.ReadAllText(Folder + "Install.json"));
         foreach (var entry in plan.actors)
         {
-            var data = AssetDatabase.LoadAssetAtPath<MonsterData>(entry.monster);
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(entry.monster);
             var library = data.combatAnimation; var existing = library.stunned;
-            var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(entry.image);
+            var texture = DungeonSlash.DesignerAssetPaths.Load<Texture2D>(entry.image);
             var ppu = library.idle.pixelsPerUnit * texture.width / library.idle.texture.width;
             if (entry.referenceFeatureFraction > 0 && entry.stunnedFeatureFraction > 0)
                 ppu *= entry.stunnedFeatureFraction / entry.referenceFeatureFraction;
@@ -77,16 +77,16 @@ internal static class MonsterStunPreparation
         var plan = JsonUtility.FromJson<Plan>(File.ReadAllText(Folder + "Install.json"));
         foreach (var entry in plan.actors)
         {
-            var data = AssetDatabase.LoadAssetAtPath<MonsterData>(entry.monster);
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(entry.monster);
             if (data == null || data.combatAnimation == null || !File.Exists(entry.image)) throw new InvalidOperationException(entry.monster);
         }
         foreach (var entry in plan.actors)
         {
-            var data = AssetDatabase.LoadAssetAtPath<MonsterData>(entry.monster);
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(entry.monster);
             var library = data.combatAnimation;
             if (library.stunned != null) continue;
-            var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(entry.image);
-            if (texture == null) { AssetDatabase.ImportAsset(entry.image, ImportAssetOptions.ForceSynchronousImport); texture = AssetDatabase.LoadAssetAtPath<Texture2D>(entry.image); }
+            var texture = DungeonSlash.DesignerAssetPaths.Load<Texture2D>(entry.image);
+            if (texture == null) { AssetDatabase.ImportAsset(entry.image, ImportAssetOptions.ForceSynchronousImport); texture = DungeonSlash.DesignerAssetPaths.Load<Texture2D>(entry.image); }
             var importer = (TextureImporter)AssetImporter.GetAtPath(entry.image);
             importer.textureType = TextureImporterType.Sprite;
             importer.alphaIsTransparency = true;
@@ -94,7 +94,7 @@ internal static class MonsterStunPreparation
             importer.textureCompression = TextureImporterCompression.Uncompressed;
             importer.maxTextureSize = 4096;
             importer.SaveAndReimport();
-            texture = AssetDatabase.LoadAssetAtPath<Texture2D>(entry.image);
+            texture = DungeonSlash.DesignerAssetPaths.Load<Texture2D>(entry.image);
             var idle = library.idle;
             // Same source-canvas pixel scale, with a fixed ground anchor from authored hitboxes.
             // No pose-dependent runtime movement or duplicated footprint setting.
@@ -107,7 +107,7 @@ internal static class MonsterStunPreparation
             var sprite = Sprite.Create(texture, entry.rect.Value, pivot, ppu, 0, SpriteMeshType.FullRect);
             sprite.name = data.name + "-Stunned";
             var path = "Assets/Art/Combat/NativeMonsterFrames/" + sprite.name + ".asset";
-            var existing = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            var existing = DungeonSlash.DesignerAssetPaths.Load<Sprite>(path);
             if (existing != null) { UnityEngine.Object.DestroyImmediate(sprite); sprite = existing; }
             else AssetDatabase.CreateAsset(sprite, path);
             library.stunned = sprite;

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: "Data_Encounter_\uC7BF\uBD88\uC655"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.ashgeneral.displayname
+    lastText: "\uC7BF\uBD88 \uC655"
+  - propertyPath: hint
+    key: data.encounterdata.ashgeneral.hint
+    lastText: "\uC18C\uD658 \uAC15\uD0C0\uB97C \uB04A\uC9C0 \uBABB\uD558\uBA74 \uD5A5\uB85C
+      \uB9DD\uB839\uC774 \uD569\uB958\uD55C\uB2E4. \uC18C\uD658\uACFC \uD6C4\uC18D
+      \uAC15\uD0C0\uB97C \uBC88\uAC08\uC544 \uB300\uBE44\uD558\uC790."
+  textOwnerGuid: 329af7b73977405418dd037d8d3e0a37
+  id: AshGeneral
+  displayName: "\uC7BF\uBD88 \uC655"
+  hint: "\uC18C\uD658 \uAC15\uD0C0\uB97C \uB04A\uC9C0 \uBABB\uD558\uBA74 \uD5A5\uB85C
+    \uB9DD\uB839\uC774 \uD569\uB958\uD55C\uB2E4. \uC18C\uD658\uACFC \uD6C4\uC18D
+    \uAC15\uD0C0\uB97C \uBC88\uAC08\uC544 \uB300\uBE44\uD558\uC790."
+  category: 10
+  members:
+  - monster: {fileID: 11400000, guid: 0f83843535eecd646a3cd8f4cc8fa6f8, type: 2}
+    offset: {x: 0, y: 0}
+    actionDelay: 0

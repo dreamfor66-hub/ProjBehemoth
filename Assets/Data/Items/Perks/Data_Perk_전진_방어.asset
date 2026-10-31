@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: "Data_Perk_\uC804\uC9C4_\uBC29\uC5B4"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.forwardguard.displayname
+    lastText: "\uC804\uC9C4 \uBC29\uC5B4"
+  - propertyPath: description
+    key: data.perkdata.forwardguard.description
+    lastText: "\uC77C\uBC18\uACF5\uACA9 \uC801\uC911 \uC2DC \uC2E4\uB4DC\uB97C 0.5
+      \uD68C\uBCF5\uD55C\uB2E4."
+  textOwnerGuid: 151011646dfbb9b41b37e2d351a01550
+  id: ForwardGuard
+  displayName: "\uC804\uC9C4 \uBC29\uC5B4"
+  description: "\uC77C\uBC18\uACF5\uACA9 \uC801\uC911 \uC2DC \uC2E4\uB4DC\uB97C 0.5
+    \uD68C\uBCF5\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: ebd8b32313100df4d8edeae2ba864963, type: 3}
+  scope: 2
+  exclusiveCharacter: 0
+  offerGroup: {fileID: 0}
+  abilitySource: {fileID: 11400000, guid: 3683ee890684c064fb0c6a983ad746fe, type: 2}
+  maxStacks: 99
+  modifiers: []

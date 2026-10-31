@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: "Data_Attack_\uACF5\uD5C8\uC758\uB208_Charge_\uC2EC\uC5F0\uC758_\uC751\uC2DC"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.holloweye-1.displayname
+    lastText: "\uC2EC\uC5F0\uC758 \uC751\uC2DC"
+  textOwnerGuid: 1916aa8cd4a05df41814b94d1a95d72c
+  type: 1
+  displayName: "\uC2EC\uC5F0\uC758 \uC751\uC2DC"
+  damage: 45.6
+  shieldDamage: 45.6
+  windupDuration: 0.01
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 6.4
+  chargeWeakPoints:
+  - id: core-1
+    localPosition: {x: -42, y: 20}
+    hitRadius: 30
+    requiredChargeHits: 2
+    optional: 0
+  - id: core-2
+    localPosition: {x: 42, y: 20}
+    hitRadius: 30
+    requiredChargeHits: 2
+    optional: 0
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

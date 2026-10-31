@@ -31,7 +31,7 @@ internal static class HudStructureVerification
         pending=false;
         if(mode=="manual")
         {
-            new GameObject("Scoped pointer presentation practice").AddComponent<OctoberReviewLiveProbe>().Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");return;
+            new GameObject("Scoped pointer presentation practice").AddComponent<OctoberReviewLiveProbe>().Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");return;
         }
         new GameObject("Scoped HUD structure verification").AddComponent<HudStructureLiveProbe>().Run();EditorApplication.update+=Finish;
     }

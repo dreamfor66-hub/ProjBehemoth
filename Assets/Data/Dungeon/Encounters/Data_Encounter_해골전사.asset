@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be94d06916ccda047b7f2043f1c68751, type: 3}
+  m_Name: "Data_Encounter_\uD574\uACE8\uC804\uC0AC"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.encounterdata.mazeskeleton.displayname
+    lastText: "\uD574\uACE8 \uC804\uC0AC"
+  - propertyPath: hint
+    key: data.encounterdata.mazeskeleton.hint
+    lastText: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+      \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790."
+  textOwnerGuid: 5eedea4ca5f6d9047a127080f434d72e
+  id: MazeSkeleton
+  displayName: "\uD574\uACE8 \uC804\uC0AC"
+  hint: "\uAC80\uACFC \uBC29\uD328\uB85C \uBB34\uC7A5\uD55C \uD574\uACE8 \uC804\uC0AC.
+    \uB178\uCD9C\uB418\uB294 \uC57D\uC810\uC744 \uBAA8\uB450 \uBD80\uC218\uC790."
+  category: 1
+  members:
+  - monster: {fileID: 11400000, guid: f71f3849353c3a741b7371d1d3419ed1, type: 2}
+    offset: {x: 0, y: 0}
+    actionDelay: 0

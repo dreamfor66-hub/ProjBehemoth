@@ -29,7 +29,7 @@ internal static class MonsterAuthoringToolsVerification
         catch (Exception e) { File.WriteAllText(Folder + "Error.txt", e.ToString()); Debug.LogException(e); }
     }
     static IEnumerable<MonsterData> Monsters() => AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/Combat/Monsters" })
-        .Select(g => AssetDatabase.LoadAssetAtPath<MonsterData>(AssetDatabase.GUIDToAssetPath(g)));
+        .Select(g => DungeonSlash.DesignerAssetPaths.Load<MonsterData>(AssetDatabase.GUIDToAssetPath(g)));
     static bool Same(MonsterHitBox a, MonsterHitBox b) => a != null && b != null && a.center.Equals(b.center) && a.radius.Equals(b.radius);
     static void Deduplicate()
     {

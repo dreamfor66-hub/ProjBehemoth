@@ -35,7 +35,7 @@ public sealed class AngularRestorationLiveProbe:MonoBehaviour
     {
         File.AppendAllText(Folder+"Live.txt","\nRestored composition: scoped existing Editor play session\n");
         var practice=Object.FindFirstObjectByType<OctoberReviewLiveProbe>()??new GameObject("Restored art scoped practice").AddComponent<OctoberReviewLiveProbe>();
-        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/TunnelRat.asset");yield return null;
+        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");yield return null;
         var battle=Object.FindFirstObjectByType<CombatController>();var scene=Object.FindFirstObjectByType<CombatSceneView>();
         var backdrop=Object.FindFirstObjectByType<StageBackdropView>();var navigation=Object.FindFirstObjectByType<NavigationChoiceView>(FindObjectsInactive.Include);
         var original=UnityEditor.AssetDatabase.LoadAssetAtPath<CombatSpriteAnimation>("Assets/Data/Presentation/Trials/Angular01_WarriorAnimation.asset");

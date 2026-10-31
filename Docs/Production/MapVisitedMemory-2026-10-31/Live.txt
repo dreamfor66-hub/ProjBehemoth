@@ -1,0 +1,11 @@
+Scoped live Unity map fog/memory verification. Actual saved map prefab; no generation or combat suite.
+PASS initial fog hides distant unvisited chest/elite/boss despite generation reveal flags; visible=0:Start,1:Chest
+PASS visited and completed chest remains visible after leaving discovery range
+PASS visited but unfinished elite remains visible independently of completion/reveal flag
+PASS distant visited entrance remains in exploration memory
+PASS adjacent unknown destination visible; distant unvisited boss/chest still hidden
+PASS hiding navigation preserves every visited room while suppressing unvisited destinations; visible=0:Start,1:Chest,2:Elite,3:Shop
+PASS closing and reopening map preserves visited rooms
+PASS nearby but unvisited event becomes hidden again after moving away
+PASS boss appears on approach and remains after actual visit
+PASS distant visited boss persists, next unvisited chest stays hidden

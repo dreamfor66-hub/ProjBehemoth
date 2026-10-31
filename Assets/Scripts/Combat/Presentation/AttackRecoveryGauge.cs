@@ -35,8 +35,8 @@ namespace DungeonSlash
             }
             void Rect(float left,float bottom,float width,float height,Color c)=>Polygon(c,new(left,bottom),new(left,bottom+height),new(left+width,bottom+height),new(left+width,bottom));
             // Broad black rim, a quiet empty blade and a progressing ivory/amber inner face.
-            Polygon(black,new(x+w*.25f,y-h*.29f),new(x+w*.86f,y-h*.29f),new(x+w,y),new(x+w*.86f,y+h*.29f),new(x+w*.25f,y+h*.29f));
-            Polygon(emptyColor,new(x+w*.28f,y-h*.17f),new(x+w*.86f,y-h*.17f),new(x+w*.96f,y),new(x+w*.86f,y+h*.17f),new(x+w*.28f,y+h*.17f));
+            Polygon(black,new(x+w*.25f,y-h*.24f),new(x+w*.85f,y-h*.29f),new(x+w,y+h*.07f),new(x+w*.85f,y+h*.31f),new(x+w*.25f,y+h*.26f));
+            Polygon(emptyColor,new(x+w*.28f,y-h*.12f),new(x+w*.85f,y-h*.18f),new(x+w*.96f,y+h*.05f),new(x+w*.85f,y+h*.18f),new(x+w*.28f,y+h*.14f));
             var end=x+w*(.28f+.68f*Progress);
             if(Progress>0)Polygon(ink,new(x+w*.28f,y-h*.13f),new(Mathf.Max(x+w*.28f,end-w*.06f),y-h*.13f),new(end,y),new(Mathf.Max(x+w*.28f,end-w*.06f),y+h*.13f),new(x+w*.28f,y+h*.13f));
             Rect(x+w*.04f,y-h*.14f,w*.20f,h*.28f,black);

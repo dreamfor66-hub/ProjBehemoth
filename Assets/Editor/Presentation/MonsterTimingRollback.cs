@@ -38,7 +38,7 @@ internal static class MonsterTimingRollback
         catch (Exception e) { File.WriteAllText(Folder + "Preparation-Error.txt", e.ToString()); }
         finally { busy = false; }
     }
-    static MonsterData Monster(string baseline) => AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/" + baseline + ".asset");
+    static MonsterData Monster(string baseline) => DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/" + baseline + ".asset");
     static float Before(string baseline, string field)
     {
         var text = File.ReadAllText("Docs/Production/AngularWorld-2026-10-26/Before/Monsters/" + baseline + ".asset");
@@ -87,7 +87,7 @@ internal static class MonsterTimingRollback
                         onFailure=a.chargeSummonMechanics.summonOnFailedCharge!=null&&ids.TryGetValue(a.chargeSummonMechanics.summonOnFailedCharge,out var summon)?summon:"",
                         opening=a.chargeSummonMechanics.openingSummons.Where(s=>s!=null&&ids.ContainsKey(s)).Select(s=>ids[s]).ToArray()}).ToArray(), normalSequence=m.normalAttackSequence.Select(a=>AssetDatabase.GetAssetPath(a)).ToArray() };
             }).ToArray(),
-            encounters = AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data/Dungeon/Encounters" }).Select(g => AssetDatabase.LoadAssetAtPath<EncounterData>(AssetDatabase.GUIDToAssetPath(g)))
+            encounters = AssetDatabase.FindAssets("t:EncounterData", new[] { "Assets/Data/Dungeon/Encounters" }).Select(g => DungeonSlash.DesignerAssetPaths.Load<EncounterData>(AssetDatabase.GUIDToAssetPath(g)))
                 .Where(e => e.members.Any(m => m.monster != null && ids.ContainsKey(m.monster)))
                 .Select(e => new EncounterRow { id=e.id, category=e.category.ToString(), members=e.members.Where(m=>m.monster!=null&&ids.ContainsKey(m.monster)).Select(m=>new MemberRow{monster=ids[m.monster],offset=m.offset,scale=m.monster.combatScale,actionDelay=m.actionDelay}).ToArray() }).ToArray()
         };

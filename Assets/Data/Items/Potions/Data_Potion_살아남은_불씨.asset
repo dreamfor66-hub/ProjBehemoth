@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712ff626d2b05654998c4db4d3365c86, type: 3}
+  m_Name: "Data_Potion_\uC0B4\uC544\uB0A8\uC740_\uBD88\uC528"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.equipmentdata.revivalpotion.displayname
+    lastText: "\uC0B4\uC544\uB0A8\uC740 \uBD88\uC528"
+  - propertyPath: description
+    key: data.equipmentdata.revivalpotion.description
+    lastText: "\uC18C\uC9C0 \uC911 \uC0AC\uB9DD\uD558\uBA74 \uC790\uB3D9\uC73C\uB85C
+      \uC18C\uBAA8\uB418\uC5B4 \uCD5C\uB300 \uCCB4\uB825\uC758 35%\uB85C \uBD80\uD65C\uD55C\uB2E4.
+      \uB9C8\uC2DC\uAC70\uB098 \uB358\uC9C8 \uC218 \uC5C6\uC73C\uBA70 \uBC84\uB9B4
+      \uC218 \uC788\uB2E4."
+  textOwnerGuid: 547227ef8c8092945a40c3809541c6e6
+  id: RevivalPotion
+  displayName: "\uC0B4\uC544\uB0A8\uC740 \uBD88\uC528"
+  description: "\uC18C\uC9C0 \uC911 \uC0AC\uB9DD\uD558\uBA74 \uC790\uB3D9\uC73C\uB85C
+    \uC18C\uBAA8\uB418\uC5B4 \uCD5C\uB300 \uCCB4\uB825\uC758 35%\uB85C \uBD80\uD65C\uD55C\uB2E4.
+    \uB9C8\uC2DC\uAC70\uB098 \uB358\uC9C8 \uC218 \uC5C6\uC73C\uBA70 \uBC84\uB9B4
+    \uC218 \uC788\uB2E4."
+  icon: {fileID: 21300000, guid: 207a2c7fc0de14747a55e3f3ebef8377, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  power: 0
+  legacyGrantedSpell: {fileID: 0}
+  additionalModifiers: []
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 31
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 1
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 0
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 2
+      effectMagnitude: 0.35
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 20
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 0}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  itemKind: 1
+  price: 58
+  maxPurchaseCount: 1
+  trigger:
+    triggerType: 5
+    triggerAttackTypeFilter: 7
+    triggerAttackWayFilter: 7
+    triggerCount: 1
+    triggerMaxCount: 1
+    intervalSeconds: 0
+    cooldownSeconds: 0
+    resetCountEachCombat: 0
+    includeAdditionalAttacks: 0
+    chancePercent: 0
+    signal: {fileID: 0}
+  condition:
+    conditionType: 0
+  targetType: 0
+  effect:
+    effectType: 2
+    effectMagnitude: 0.35
+    effectCount: 1
+    effectAngle: 0
+    effectTime: 0
+    effectStatType: 20
+    scale: 0
+    scaleRatio: 0
+    maximumMagnitude: 0
+    element: 0
+    targets: 0
+    status: 0
+    statusDamage: 0
+    statusCap: 0
+    rule: 0
+    spell: {fileID: 0}
+    buff: {fileID: 0}
+    buffTag: {fileID: 0}
+    valueVariables: []
+    guardFeedback: 0
+    multiplyByBuffStacks: 0
+    companion: {fileID: 0}
+    buffUses: 0
+    consumeOn: 0
+    consumeAttackTypes: 0
+    buffGroup: 

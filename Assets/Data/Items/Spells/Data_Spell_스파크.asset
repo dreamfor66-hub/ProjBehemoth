@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f8821b35880c4995327257ee3bced, type: 3}
+  m_Name: "Data_Spell_\uC2A4\uD30C\uD06C"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.spelldata.spark.displayname
+    lastText: "\uC2A4\uD30C\uD06C"
+  - propertyPath: description
+    key: data.spelldata.spark.description
+    lastText: "\uAE0B\uAE30\uB97C \uB05D\uB0B8 \uC9C0\uC810\uC5D0 \uBC88\uAC1C\uB97C
+      \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+  textOwnerGuid: b5628e2176861b947869198ac7b4693b
+  id: Spark
+  displayName: "\uC2A4\uD30C\uD06C"
+  description: "\uAE0B\uAE30\uB97C \uB05D\uB0B8 \uC9C0\uC810\uC5D0 \uBC88\uAC1C\uB97C
+    \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+  icon: {fileID: 21300000, guid: 95415e0a92995a8398202a473f3c0cd0, type: 3}
+  mpCost: 8
+  tier: 0
+  abilities: []
+  duration: 0
+  pulseInterval: 1
+  pulses: 1
+  element: 2
+  shape: 0
+  targeting: 2
+  defaultSlot: 3
+  castingSeconds: 0.4
+  cooldownSeconds: 5.5
+  openingCooldownSeconds: 0
+  damage: 13
+  width: 25
+  radius: 145
+  chainTargets: 3
+  slowSeconds: 0

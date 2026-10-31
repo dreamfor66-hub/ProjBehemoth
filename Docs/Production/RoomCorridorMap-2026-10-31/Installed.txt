@@ -1,0 +1,1 @@
+Saved mixed-size map, corridor tiles, navigation hit areas, drag/zoom/recenter.

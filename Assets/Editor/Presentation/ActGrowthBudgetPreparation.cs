@@ -18,7 +18,7 @@ internal static class ActGrowthBudgetPreparation
         if (busy || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.timeSinceStartup < next
             || File.Exists(Folder + "GrowthBudgetsInstalled.txt") || !File.Exists(Folder + "FootprintsInstalled.txt")) return;
         // Saved, calibrated production data supersedes this legacy draft, even if a Docs stamp is removed.
-        var calibrated=AssetDatabase.LoadAssetAtPath<ActGrowthBudget>(Root+"Act1GrowthBudget.asset");
+        var calibrated=DungeonSlash.DesignerAssetPaths.Load<ActGrowthBudget>(Root+"Act1GrowthBudget.asset");
         if(calibrated!=null && calibrated.referenceBuilds.Count>0)return;
         next = EditorApplication.timeSinceStartup + 5; busy = true;
         try { Prepare(); File.WriteAllText(Folder + "GrowthBudgetsInstalled.txt", "Design budgets and deterministic reward-opportunity accounting, not repeated random-run averages.\n"); }
@@ -28,14 +28,14 @@ internal static class ActGrowthBudgetPreparation
     static void Prepare()
     {
         Directory.CreateDirectory(Root); AssetDatabase.Refresh();
-        var balance = AssetDatabase.LoadAssetAtPath<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
-        var stages = AssetDatabase.FindAssets("t:StageSetData", new[] { "Assets/Data/Dungeon/Stages" }).Select(g => AssetDatabase.LoadAssetAtPath<StageSetData>(AssetDatabase.GUIDToAssetPath(g))).OrderBy(s => s.act).ToArray();
+        var balance = DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
+        var stages = AssetDatabase.FindAssets("t:StageSetData", new[] { "Assets/Data/Dungeon/Stages" }).Select(g => DungeonSlash.DesignerAssetPaths.Load<StageSetData>(AssetDatabase.GUIDToAssetPath(g))).OrderBy(s => s.act).ToArray();
         var report = new StringBuilder("# 막별 성장 요구량과 획득 기회\n\n이 수치는 첫 설계 가정이다. 랜덤 런 평균이나 검증된 최적 밸런스가 아니다. 막 보스 **진입 전**의 누적 예산을 사용하며 해당 보스 처치 보상은 다음 막에만 더한다.\n\n1 성장 단위(U)는 기준 빌드의 실효 공격 기여 약 10% 또는 방어 기여 최대 체력 10에 해당하는 설계 교환 단위다. 조건부 효과의 발동률·소모 자원·방어 및 유틸 가치는 분리 검토해야 한다.\n\n|막|보스 전 누적 XP|레벨업 퍽 누적|공급 기대 U|요구 U|부족 / 기준 / 상향 U|\n|---|---:|---:|---:|---:|---|\n");
         float inheritedXp = 0, inheritedNonLevelUnits = 0;
         foreach (var stage in stages)
         {
             var path = Root + "Act" + stage.act + "GrowthBudget.asset";
-            var data = AssetDatabase.LoadAssetAtPath<ActGrowthBudget>(path);
+            var data = DungeonSlash.DesignerAssetPaths.Load<ActGrowthBudget>(path);
             if (data == null) { data = ScriptableObject.CreateInstance<ActGrowthBudget>(); AssetDatabase.CreateAsset(data, path); }
             data.act = stage.act; data.stage = stage; data.normalCombatOpportunities = 8; data.eliteCombatOpportunities = stage.act;
             data.requiredUnits = stage.act == 1 ? 5 : stage.act == 2 ? 12 : 20;
@@ -57,7 +57,7 @@ internal static class ActGrowthBudgetPreparation
             data.valuations.Clear();
             foreach (var guid in AssetDatabase.FindAssets("t:PerkData", new[] { "Assets/Data/Items/Perks" }))
             {
-                var perk = AssetDatabase.LoadAssetAtPath<PerkData>(AssetDatabase.GUIDToAssetPath(guid));
+                var perk = DungeonSlash.DesignerAssetPaths.Load<PerkData>(AssetDatabase.GUIDToAssetPath(guid));
                 var value = new GrowthValuation { content = perk, basis = "기본 워리어 평타 14 / 차지 24, 평타 비중 70%, 브레이크 후 비중 25% 가정. ", estimatedUnits = 0 };
                 foreach (var modifier in perk.modifiers)
                 {
@@ -79,7 +79,7 @@ internal static class ActGrowthBudgetPreparation
             }
             foreach (var guid in AssetDatabase.FindAssets("t:EquipmentData", new[] { "Assets/Data/Items/Relics" }))
             {
-                var relic = AssetDatabase.LoadAssetAtPath<EquipmentData>(AssetDatabase.GUIDToAssetPath(guid));
+                var relic = DungeonSlash.DesignerAssetPaths.Load<EquipmentData>(AssetDatabase.GUIDToAssetPath(guid));
                 if (relic.scope == RelicScope.Starting) continue;
                 data.valuations.Add(new GrowthValuation { content = relic, estimatedUnits = 2, needsDesignerReview = true, basis = "공통 유물 목표 예산 2U. 개별 유물 확정 가치가 아님. 발동당 효과 × 예상 발동 횟수 / 전투 시간, 조건 충족률, 소모 자원과 빌드 시너지를 검토하여 덮어쓸 것." });
             }
@@ -90,7 +90,7 @@ internal static class ActGrowthBudgetPreparation
         }
         foreach (var stage in stages)
         {
-            var data = AssetDatabase.LoadAssetAtPath<ActGrowthBudget>(Root + "Act" + stage.act + "GrowthBudget.asset");
+            var data = DungeonSlash.DesignerAssetPaths.Load<ActGrowthBudget>(Root + "Act" + stage.act + "GrowthBudget.asset");
             report.AppendLine($"\n## {stage.act}막 기회 계산\n");
             foreach (var row in data.opportunities) report.AppendLine($"- {row.source}: {row.opportunities:F2}회 × 수락/구매율 {row.acquisitionRate:P0} × {row.unitsPerAcquisition:F2}U = {row.ExpectedUnits:F2}U. {row.assumption}");
             report.AppendLine("\n### 개별 퍽의 첫 환산\n");

@@ -113,7 +113,7 @@ internal static class NativeTextVerification
             Check(bindings[1]!=null&&bindings[1].role==TextRole.Narrative,"Narrative uses Narrative role");
             foreach(var row in rows)Check(row.title.GetComponent<TypographyRoleBinding>()?.role==TextRole.Button&&row.description.GetComponent<TypographyRoleBinding>()?.role==TextRole.Description,"Choice title/description roles: "+row.button.name);
             foreach(var binding in bindings)if(binding!=null)binding.profile=trial;
-            var story=AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset").events.First(item=>item.options.Count>=2);
+            var story=DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset").events.First(item=>item.options.Count>=2);
             foreach(var enabled in new[]{true,false,true})
             {
                 trial.useTangbaForCondensed=enabled;

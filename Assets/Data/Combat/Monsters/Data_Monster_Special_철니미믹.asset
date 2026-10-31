@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: "Data_Monster_Special_\uCCA0\uB2C8\uBBF8\uBBF9"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_special_minion_mimic.displayname
+    lastText: "\uCCA0\uB2C8 \uBBF8\uBBF9"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_special_minion_mimic.encounterhint
+    lastText: "\uB69C\uAED1\uC774 \uC5F4\uB9AC\uB294 \uB3D9\uC548 \uB4DC\uB7EC\uB09C
+      \uC57D\uC810\uC744 \uB04A\uC790."
+  textOwnerGuid: ca172d0cd76023441aebeb5e76e02585
+  displayName: "\uCCA0\uB2C8 \uBBF8\uBBF9"
+  portrait: {fileID: 21300000, guid: 7151398b7e32d5f4881f47f6a8904ffd, type: 2}
+  combatAnimation: {fileID: 11400000, guid: b7a5b9f6e13c5ae4cb24689cf36ec141, type: 2}
+  encounterHint: "\uB69C\uAED1\uC774 \uC5F4\uB9AC\uB294 \uB3D9\uC548 \uB4DC\uB7EC\uB09C
+    \uC57D\uC810\uC744 \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  supportRoster: []
+  reinforcementInterval: 0
+  useOrbit: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 525
+  normalAttackInterval: 1.55
+  chargeInterval: 5
+  stunDuration: 3.4
+  stunDamageMultiplier: 1.65
+  experienceReward: 117
+  goldReward: 15
+  combatScale: 1
+  hitBoxes:
+  - center: {x: 0, y: 0}
+    radius: 108
+  attacks:
+  - {fileID: 11400000, guid: 23a70be5a852c07428b16dcaf131fccb, type: 2}
+  - {fileID: 11400000, guid: e59ef47d85a69114abf51302475ac9f6, type: 2}
+  normalAttackSequence: []

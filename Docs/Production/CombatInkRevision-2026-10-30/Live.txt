@@ -1,0 +1,33 @@
+Scoped ink presentation verification in existing Unity; runtime-only clones.
+PASS guard and recovery share a separated row above unchanged HP/MP
+PASS action row fits the HP column and leaves player artwork clear
+PASS cooldown stays in the authored action row rather than floating over the head
+PASS guard uses visible warm iron/bone mesh without cyan rails
+PASS blade fill visibly progresses during actual attack recovery
+PASS blade returns to ready after cooldown
+PASS guard-held state reaches warm shield treatment
+PASS guard damage retains the readable rust loss trail
+PASS broken guard has its own dark red state
+PASS four spell controls remain readable beside the consolidated action HUD
+PASS Data_Monster_B1_Minion_Bat name plaque shrinks conservatively while keeping brush padding
+PASS Data_Monster_B1_Minion_Bat name and countdown remain unclipped on one line
+PASS Data_Monster_B1_Minion_Bat countdown stays inside the usable combat view
+PASS painted target still resolves the real charged weak-point hit
+PASS Data_Monster_B1_Minion_Skeleton name plaque shrinks conservatively while keeping brush padding
+PASS Data_Monster_B1_Minion_Skeleton name and countdown remain unclipped on one line
+PASS Data_Monster_B1_Minion_Skeleton countdown stays inside the usable combat view
+PASS LampPriest name plaque shrinks conservatively while keeping brush padding
+PASS LampPriest name and countdown remain unclipped on one line
+PASS LampPriest countdown stays inside the usable combat view
+PASS longer captions derive enough width instead of clipping or squeezing text
+PASS Data_Monster_B3_Boss_SoulEater name plaque shrinks conservatively while keeping brush padding
+PASS Data_Monster_B3_Boss_SoulEater name and countdown remain unclipped on one line
+PASS Data_Monster_B3_Boss_SoulEater countdown stays inside the usable combat view
+PASS group composition and species sizes remain unchanged
+PASS real normal-attack AI drives the broad ink impact
+PASS failed real weak-point window produces the heavier ink strike
+PASS YOU DIED keeps its quiet reveal before the single action
+PASS death result has no explanation paragraph
+PASS death result exposes exactly one usable Title button
+PASS production result button returns to the actual Title page
+COMPLETE 31 PASS / 0 FAIL

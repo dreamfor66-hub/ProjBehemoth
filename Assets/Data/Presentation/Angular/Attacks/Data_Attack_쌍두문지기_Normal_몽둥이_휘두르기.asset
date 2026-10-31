@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: "Data_Attack_\uC30D\uB450\uBB38\uC9C0\uAE30_Normal_\uBABD\uB465\uC774_\uD718\uB450\uB974\uAE30"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.ettingatekeeper-0.displayname
+    lastText: "\uBABD\uB465\uC774 \uD718\uB450\uB974\uAE30"
+  textOwnerGuid: 46605fa33cecf6a4ebe3dcd0b8ce86dc
+  type: 0
+  displayName: "\uBABD\uB465\uC774 \uD718\uB450\uB974\uAE30"
+  damage: 30
+  shieldDamage: 30
+  windupDuration: 0.87
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 2.5
+  chargeWeakPoints: []
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

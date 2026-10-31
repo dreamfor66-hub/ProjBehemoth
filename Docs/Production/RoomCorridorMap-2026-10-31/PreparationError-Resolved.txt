@@ -1,0 +1,3 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at RoomCorridorMapPreparation.PreparePanel (DungeonSlash.ArcadeHudController hud, DungeonSlash.DungeonMapView map, DungeonSlash.DungeonMapStyle style) [0x0012f] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\RoomCorridorMapPreparation.cs:123 
+  at RoomCorridorMapPreparation.Poll () [0x0013e] in E:\Github\Proj_Behemoth\Assets\Editor\Presentation\RoomCorridorMapPreparation.cs:44 

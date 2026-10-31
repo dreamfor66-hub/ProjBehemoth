@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: ArmoredExecutioner
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: e7812f1ff1f3e184babe0a88f1f17856, type: 2}
+  attack: {fileID: 21300000, guid: 6f1db50cb5ce68c42b26b530f275d73f, type: 2}
+  guard: {fileID: 0}
+  ready: {fileID: 21300000, guid: c06087eff58402b4b98f7b261c466180, type: 2}
+  dead: {fileID: 21300000, guid: da71dcc5bdbe0c649bec3e531acdd6d1, type: 2}
+  stunned: {fileID: 21300000, guid: 28ff630dbfb0d0c498026b252348ee30, type: 2}
+  attackPoseSeconds: 0.3
+  readyLeftToRight: {fileID: 0}
+  attackLeftToRight: {fileID: 0}
+  canvasScale: 1
+  canvasPaddingPixels: {x: 0, y: 0, z: 0, w: 0}
+  illustratedMotion: 0
+  illustratedLayout: 1
+  combatPositionOffset: {x: 0, y: -66.74999}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 1

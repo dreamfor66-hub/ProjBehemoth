@@ -102,7 +102,7 @@ public sealed class CombatFocusLiveProbe : MonoBehaviour
         yield return null;
         restPosition = scene.PlayerPosition; restScale = player.Root.localScale; CheckRest("Navigation");
         yield return Capture("01-Navigation");
-        var monster = Instantiate(UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset"));
+        var monster = Instantiate(DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_고블린사냥꾼.asset"));
         monster.maxHp = 50000; monster.normalAttackInterval = monster.chargeInterval = 999;
         combat.PrepareEncounter(combat.Run, new[] { monster }, 1); yield return null;
         CheckRest("Encounter prepared before start");
@@ -123,7 +123,7 @@ public sealed class CombatFocusLiveProbe : MonoBehaviour
         Check(start.y >= 0 && end.y >= 0 && start.y <= Screen.height && end.y <= Screen.height, "both guard gesture endpoints are inside the actual screen");
         Contact("Begin", 861, start); Contact("Move", 861, end); yield return null; yield return null;
         Check(combat.Player.IsGuarding && pose.State == CombatVisualState.Guard, "visible relocated body drag-hold enters Guard");
-        Check(UnityEditor.AssetDatabase.GetAssetPath(body.sprite) == "Assets/Art/World/Angular/States/Heroes/Warrior-Guard.png", "Warrior uses revised frontal defense sprite");
+        Check(UnityEditor.AssetDatabase.GetAssetPath(body.sprite) == "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Guard.png", "Warrior uses revised frontal defense sprite");
         yield return Capture("04-Warrior-Guard"); Contact("End", 861, end, false); yield return null;
         Check(!combat.Player.IsGuarding && pose.State == CombatVisualState.Idle, "guard release restores Idle");
         var center = scene.MonsterPosition; combat.Player.ResetAttackCooldown();

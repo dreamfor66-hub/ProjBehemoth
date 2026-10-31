@@ -10,6 +10,9 @@ namespace DungeonSlash
         public EventEffectKind kind;
         public EquipmentData relic;
         public SpellData spell;
+        [Tooltip("Optional authored candidates for SpellChoice; empty uses the shared low-tier spell pool.")]
+        public List<SpellData> spellPool = new();
+        [Min(1)] public int spellChoiceCount = 3;
         public EncounterData encounter;
         public string flag;
         public float amount;
@@ -36,7 +39,7 @@ namespace DungeonSlash
         public List<EventRequirement> requirements = new();
         public List<EventEffect> effects = new();
     }
-    public enum EventRequirementKind { MaxMp, SpellCasts, LearnedSpells, KnowsSpell, Flag, WonCombats, OwnsRelic }
+    public enum EventRequirementKind { MaxMp, SpellCasts, LearnedSpells, KnowsSpell, Flag, WonCombats, OwnsRelic, ChosenSpell }
     [Serializable] public sealed class EventRequirement
     {
         public EventRequirementKind kind;
@@ -56,6 +59,7 @@ namespace DungeonSlash
                 EventRequirementKind.Flag => run.EventFlags.Contains(flag),
                 EventRequirementKind.WonCombats => run.WonCombats >= amount,
                 EventRequirementKind.OwnsRelic => relic != null && run.EquippedItems.Contains(relic),
+                EventRequirementKind.ChosenSpell => spell != null && !string.IsNullOrEmpty(flag) && run.EventSpellChoices.TryGetValue(flag, out var chosen) && chosen == spell,
                 _ => false
             };
             return invert ? !result : result;

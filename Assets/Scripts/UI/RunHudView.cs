@@ -98,7 +98,7 @@ namespace DungeonSlash
             BindPotions(run, usePotion, removeEquipment);
         }
 
-        private void RefreshCharacterSummary()
+        public void RefreshCharacterSummary()
         {
             if (boundRun?.Player == null) return;
             var player = boundRun.Player;

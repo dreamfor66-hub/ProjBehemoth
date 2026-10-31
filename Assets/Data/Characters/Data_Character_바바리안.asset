@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5268a9354c4f1c4090b31c19da88ddf, type: 3}
+  m_Name: "Data_Character_\uBC14\uBC14\uB9AC\uC548"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.playercombatdata.barbarian.displayname
+    lastText: "\uBC14\uBC14\uB9AC\uC548"
+  - propertyPath: description
+    key: data.playercombatdata.barbarian.description
+    lastText: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798,
+      \uC2DD\uC744 \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774
+      \uBC1C\uC0B0\uD558\uB294 \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
+  textOwnerGuid: 4c52b075e3e670648bffbe142abba8ee
+  character: 2
+  displayName: "\uBC14\uBC14\uB9AC\uC548"
+  description: "\uB3D9\uBB3C\uC801 \uBCF8\uB2A5\uACFC \uC6D0\uCD08\uC801\uC778 \uD798,
+    \uC2DD\uC744 \uC904 \uBAA8\uB974\uB294 \uBD84\uB178\uB97C \uAC70\uCE68\uC5C6\uC774
+    \uBC1C\uC0B0\uD558\uB294 \uC57C\uC131\uC801\uC778 \uC804\uC0AC\uC785\uB2C8\uB2E4."
+  selectionStory: "\uACE0\uD5A5\uC744 \uC0BC\uD0A8 \uC800\uC8FC\uB97C \uC887\uC544\r\n\uD640\uB85C
+    \uC131\uBB38\uC744 \uB450\uB4DC\uB9B0 \uC804\uC0AC."
+  selectionAbility: "\uACA9\uB178\uB97C \uBAA8\uC544 \uBD84\uB178\uD558\uACE0\r\n\uAC70\uC13C
+    \uC5F0\uACA9\uC744 \uC3DF\uC544\uB0B8\uB2E4."
+  characterColor: {r: 0.82, g: 0.34, b: 0.28, a: 1}
+  portrait: {fileID: 21300000, guid: 72103d78759c8ee4ebbac7a50936d7ed, type: 3}
+  selectionIllustration: {fileID: 21300000, guid: d08b962c0a5ee1a4db818cb4d7046b6d, type: 3}
+  selectionMaterial: {fileID: 0}
+  selectionBackdrop: {r: 0.19215687, g: 0.039215688, b: 0.07058824, a: 1}
+  combatSprite: {fileID: 21300000, guid: 0677fde4ee6fe5540a1117369f49b7e7, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 8d1a00d02fbf1a543a6376cbf02ee21a, type: 2}
+  gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
+  startingRelic: {fileID: 11400000, guid: 0fe44b539e1a6604aa354582f4b1c385, type: 2}
+  startingSpells: []
+  startingSupplies:
+  - supply: {fileID: 11400000, guid: 97f4049024e9f274293dffbb2f06bd02, type: 2}
+    count: 1
+  attackBuffs: []
+  maxHp: 120
+  maxMp: 30
+  mpRegen: 0.1
+  shieldMax: 20
+  guardDamageReduction: 1
+  normalShieldRegen: 0
+  brokenShieldRegen: 5
+  criticalChance: 0
+  criticalDamageMultiplier: 1.5
+  baseAttackDamage: 14.5
+  baseChargeDamage: 31
+  attackCooldown: 1.15
+  chargeDuration: 0.95

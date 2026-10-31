@@ -57,7 +57,7 @@ internal static class CombatFramingPreparation
             importer.textureCompression = TextureImporterCompression.Uncompressed; importer.npotScale = TextureImporterNPOTScale.None;
             var settings = new TextureImporterSettings(); importer.ReadTextureSettings(settings); settings.spriteMeshType = SpriteMeshType.FullRect; importer.SetTextureSettings(settings); importer.SaveAndReimport();
             var kind = (CharacterKind)Enum.Parse(typeof(CharacterKind), names[i]);
-            faces.heroes.Single(h => h.character == kind).expressions = Enumerable.Repeat(AssetDatabase.LoadAssetAtPath<Sprite>(output), 4).ToArray();
+            faces.heroes.Single(h => h.character == kind).expressions = Enumerable.Repeat(DungeonSlash.DesignerAssetPaths.Load<Sprite>(output), 4).ToArray();
         }
         EditorUtility.SetDirty(faces);
         // Imports can take several seconds; defer if Play was requested meanwhile.

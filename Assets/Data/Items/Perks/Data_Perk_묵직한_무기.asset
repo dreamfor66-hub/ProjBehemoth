@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb8d9a1a9bc077498b368a090c4b69b, type: 3}
+  m_Name: "Data_Perk_\uBB35\uC9C1\uD55C_\uBB34\uAE30"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.perkdata.heavyweapon.displayname
+    lastText: "\uBB35\uC9C1\uD55C \uBB34\uAE30"
+  - propertyPath: description
+    key: data.perkdata.heavyweapon.description
+    lastText: "\uCC28\uC9C0 \uACF5\uACA9 \uD53C\uD574 +4"
+  textOwnerGuid: 6f0196698d1c936459c6c2d972aa292e
+  id: HeavyWeapon
+  displayName: "\uBB35\uC9C1\uD55C \uBB34\uAE30"
+  description: "\uCC28\uC9C0 \uACF5\uACA9 \uD53C\uD574 +4"
+  icon: {fileID: 21300000, guid: ff378e4a3c12a154baa59677f223e980, type: 3}
+  scope: 0
+  exclusiveCharacter: 0
+  offerGroup: {fileID: 0}
+  abilitySource: {fileID: 11400000, guid: 636bb41b88c75934b9061758f396e0d6, type: 2}
+  maxStacks: 99
+  modifiers:
+  - kind: 22
+    value: 4

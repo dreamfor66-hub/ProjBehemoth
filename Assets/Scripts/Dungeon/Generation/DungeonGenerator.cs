@@ -32,9 +32,13 @@ namespace DungeonSlash
                 var next = graph.AddRoom(new DungeonPosition(0, step + 1));
                 graph.Connect(tip, next); tip = next;
             }
+            var corridorStepsRemaining = 2;
             while (graph.Rooms.Count < targetCount)
             {
-                var candidates = graph.Rooms.OrderBy(_ => random.Next()).ToList();
+                // Extend short runs before choosing another branch. Unconnected corridors never
+                // touch side by side: an adjacent occupied cell must be a deliberate, valid loop.
+                var candidates = graph.Rooms.OrderBy(room => corridorStepsRemaining > 0 && room == tip ? 0 : 1)
+                    .ThenBy(_ => random.Next()).ToList();
                 var placed = false;
                 foreach (var parent in candidates)
                 {
@@ -44,7 +48,24 @@ namespace DungeonSlash
                     {
                         var position = parent.Position + DirectionUtility.Offsets[(offsetStart + i) % 4];
                         if (graph.HasRoom(position)) continue;
-                        graph.Connect(parent, graph.AddRoom(position));
+                        var touching = DirectionUtility.Offsets.Select(offset => graph.At(position + offset)).Where(room => room != null).ToList();
+                        if (touching.Count > 2) continue;
+                        var other = touching.FirstOrDefault(room => room != parent);
+                        if (other != null)
+                        {
+                            // Reject tight 2x2 blocks and reserve loops for genuinely separated routes.
+                            if (graph.DistancesFrom(parent)[other.RoomId] < 4) continue;
+                            if (floor == 1 && (!CanAddExit(graph, other, opening)
+                                || graph.Rooms.Count(r => r.Connections.Count >= 3)
+                                + (parent.Connections.Count == 2 ? 1 : 0)
+                                + (other.Connections.Count == 2 ? 1 : 0) > settings.firstActMaximumJunctions)) continue;
+                            if (random.NextDouble() > (floor == 1 ? settings.firstActLoopChance : settings.loopChance)) continue;
+                        }
+                        var next = graph.AddRoom(position);
+                        graph.Connect(parent, next);
+                        if (other != null) graph.Connect(next, other);
+                        if (parent != tip || corridorStepsRemaining <= 0) corridorStepsRemaining = random.Next(2, 4);
+                        corridorStepsRemaining--; tip = next;
                         placed = true;
                         break;
                     }
@@ -54,22 +75,6 @@ namespace DungeonSlash
                 if (!placed) break;
             }
 
-            foreach (var room in graph.Rooms.ToList())
-            {
-                foreach (var offset in DirectionUtility.Offsets)
-                {
-                    if (floor != 1)
-                    {
-                        if (random.NextDouble() <= settings.loopChance) graph.Connect(room, graph.At(room.Position + offset));
-                        continue;
-                    }
-                    var other = graph.At(room.Position + offset);
-                    if (other == null || room.Connections.Contains(other.RoomId)) continue;
-                    if (floor == 1 && (!CanAddExit(graph, room, opening) || !CanAddExit(graph, other, opening)
-                        || graph.Rooms.Count(r => r.Connections.Count >= 3) + (room.Connections.Count == 2 ? 1 : 0) + (other.Connections.Count == 2 ? 1 : 0) > settings.firstActMaximumJunctions)) continue;
-                    if (random.NextDouble() <= (floor == 1 ? settings.firstActLoopChance : settings.loopChance)) graph.Connect(room, other);
-                }
-            }
             return graph;
         }
 

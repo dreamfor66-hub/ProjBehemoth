@@ -49,7 +49,7 @@ internal static class BehemothLocaleVerification
             Check(BehemothLocaleEditing.FindUsages("ui.camp.intro").Any(u => u.path.EndsWith("CampPresentation.cs")), "실제 코드 사용처 찾기");
             VerifySave("ui.camp.intro", null, Check);
             var owner = AssetDatabase.FindAssets("t:LocalizedData", new[] { "Assets/Data" })
-                .Select(guid => AssetDatabase.LoadAssetAtPath<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)))
+                .Select(guid => DungeonSlash.DesignerAssetPaths.Load<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)))
                 .First(data => data != null && data.textKeys.Any(binding => binding.propertyPath == "displayName"));
             VerifySave(owner.textKeys.First(binding => binding.propertyPath == "displayName").key, owner, Check);
             report.AppendLine("완료: 검증용 문구를 모두 원래 값으로 복구함.");

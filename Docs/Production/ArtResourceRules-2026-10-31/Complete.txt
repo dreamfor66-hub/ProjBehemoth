@@ -1,0 +1,2 @@
+Renamed 896 art assets. Deleted 267 unused art assets.
+All retained asset GUIDs, direct dependencies, sprite file IDs, textures, rects, pivots, borders and PPU preserved.

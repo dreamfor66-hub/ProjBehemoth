@@ -53,7 +53,7 @@ internal static class CombatUxPreparation
         var target=Folder+"Before/"+path;if(File.Exists(target))return;
         Directory.CreateDirectory(Path.GetDirectoryName(target));File.Copy(path,target);
     }
-    static T Asset<T>(string path)where T:Object=>AssetDatabase.LoadAssetAtPath<T>(path);
+    static T Asset<T>(string path)where T:Object=>DungeonSlash.DesignerAssetPaths.Load<T>(path);
     static T Ref<T>(Object owner,string key)where T:Object=>new SerializedObject(owner).FindProperty(key).objectReferenceValue as T;
     static GameObject Node(string name,Transform parent,params Type[] components)
     {

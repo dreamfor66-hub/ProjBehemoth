@@ -131,10 +131,10 @@ public sealed class CombatUxLiveProbe:MonoBehaviour
         }
         Contact("End",950,guardEnd,false);Contact("RefreshState");yield return null;
         Check(!combat.Player.IsGuarding&&!input.IsPreparingAttack,"final independent release restores Idle");
-        var skeleton=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
-        var goblin=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset");
-        var bat=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset");
-        var spider=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/TunnelRat.asset");
+        var skeleton=DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
+        var goblin=DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_고블린사냥꾼.asset");
+        var bat=DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_흡혈박쥐.asset");
+        var spider=DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");
         var heights=new Dictionary<MonsterData,float>();
         foreach(var m in new[]{goblin,skeleton,bat,spider})
         {

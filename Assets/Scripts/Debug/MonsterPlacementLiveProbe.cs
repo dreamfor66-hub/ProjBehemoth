@@ -68,13 +68,13 @@ public sealed class MonsterPlacementLiveProbe : MonoBehaviour
         yield return Capture("WeakPoint");
         // Existing encounter data is deliberately not normalized to the three-goblin example.
         combat.ResetEncounter();
-        var pair = UnityEditor.AssetDatabase.LoadAssetAtPath<EncounterData>("Assets/Data/Dungeon/Encounters/MazePair.asset");
+        var pair = DungeonSlash.DesignerAssetPaths.Load<EncounterData>("Assets/Data/Dungeon/Encounters/Data_Encounter_해골_전사_고블린사냥꾼.asset");
         combat.PrepareFixedEncounter(combat.Run, pair, 1); yield return null;
         var pairViews = FindObjectsByType<MonsterView>(FindObjectsSortMode.None).OrderBy(v => v.Root.anchoredPosition.x).ToArray();
         Check(pairViews.Length == 2 && pairViews.Select(v => v.Root.anchoredPosition).SequenceEqual(pair.members.Select(m => m.monster.BodyCenterFromPlacement(m.offset, m.monster.combatScale)).OrderBy(p => p.x)), "authored two-species encounter offsets place the hitbox bottoms");
         combat.BeginPreparedCombat(); yield return new WaitForSecondsRealtime(.55f); yield return Capture("Authored-Pair");
         combat.ResetEncounter();
-        var flying = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Minion_FrostBat.asset");
+        var flying = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B2_Normal_깃바늘_정령.asset");
         combat.PrepareEncounter(combat.Run, new[] { flying }, 2); combat.BeginPreparedCombat(); yield return new WaitForSecondsRealtime(.55f);
         var flyingView = FindFirstObjectByType<MonsterView>();
         Check(flyingView.Root.anchoredPosition == flying.BodyCenterFromPlacement(Vector2.zero, flyingView.Root.localScale.x), "flying species uses authored hitbox-bottom placement: " + flyingView.Root.anchoredPosition);

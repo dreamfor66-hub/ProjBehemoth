@@ -183,9 +183,9 @@ namespace DungeonSlash
             }
         }
 
-        public bool CanNormalAttack() => IsAlive && AttackCooldownRemaining <= 0f;
+        public bool CanNormalAttack() => IsAlive && !HoldingGuard && AttackCooldownRemaining <= 0f;
         // Charge preparation shares the same recovery window as a normal attack.
-        public bool CanStartCharge() => IsAlive && AttackCooldownRemaining <= 0f;
+        public bool CanStartCharge() => IsAlive && !HoldingGuard && AttackCooldownRemaining <= 0f;
         public void StartAttackCooldown() => AttackCooldownRemaining = CurrentCooldown;
         public void ResetAttackCooldown() => AttackCooldownRemaining = 0f;
         public bool TrySetGuard(bool enabled)
@@ -219,7 +219,8 @@ namespace DungeonSlash
             ShieldCurrent = ShieldMax;
             ShieldState = ShieldState.Ready;
         }
-        public void Heal(float amount) => CurrentHp = Mathf.Min(MaxHp, CurrentHp + amount);
+        public float HealingMultiplier => Mathf.Max(0, 1 + BuffStat(ModifierKind.HealingReceived));
+        public void Heal(float amount) => CurrentHp = Mathf.Min(MaxHp, CurrentHp + Mathf.Max(0, amount) * HealingMultiplier);
         public void ClampResources()
         {
             CurrentHp=Mathf.Min(CurrentHp,MaxHp);ShieldCurrent=Mathf.Min(ShieldCurrent,ShieldMax);RestoreMp(0);

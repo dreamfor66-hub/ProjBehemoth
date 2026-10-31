@@ -1,0 +1,80 @@
+Scoped production scene verification. Existing Unity instance; runtime clones, real frames, UI EventSystem clicks. No DPS/regression suite.
+PASS first step immediately consumes2; at98 no penalty and ease portrait
+PASS 15 steps reach70 with no penalty; shared curves determine ease stage
+PASS 16th step at68 affects actual weapon cooldown; damage remains intact
+PASS at46 final damage remains100%
+PASS 28th step at44 starts final damage penalty and exhausted stage
+PASS at44 actual enemy HP damage uses the fatigue multiplier
+PASS exact45 threshold recovers full damage
+PASS at45 actual enemy HP receives full final damage
+PASS brief rest60 restores damage, retains small speed penalty
+PASS camp restores ease at100
+PASS BroodKeeper actual enemy body lies in requested safe area
+PASS BroodKeeper uses uniform aspect-preserving scale
+PASS BroodKeeper actual enemy body lies in requested safe area
+PASS BroodKeeper uses uniform aspect-preserving scale
+PASS BroodKeeper actual enemy body lies in requested safe area
+PASS BroodKeeper uses uniform aspect-preserving scale
+PASS BroodKeeper species scale independent of support population
+PASS Data_Monster_B2_Boss_FrostQueen actual enemy body lies in requested safe area
+PASS Data_Monster_B2_Boss_FrostQueen uses uniform aspect-preserving scale
+PASS Data_Monster_B2_Boss_FrostQueen actual enemy body lies in requested safe area
+PASS Data_Monster_B2_Boss_FrostQueen uses uniform aspect-preserving scale
+PASS Data_Monster_B2_Boss_FrostQueen actual enemy body lies in requested safe area
+PASS Data_Monster_B2_Boss_FrostQueen uses uniform aspect-preserving scale
+PASS Data_Monster_B2_Boss_FrostQueen species scale independent of support population
+PASS Data_Monster_B2_Boss_FrostQueen Ready painting and actual charge weak points
+PASS Data_Monster_B2_Boss_FrostQueen attack name and countdown have separate readable rows
+PASS Data_Monster_B2_Boss_FrostQueen attack captions draw above all monster bodies
+PASS Data_Monster_B2_Boss_FrostQueen caption lettering draws above its brush backdrops
+PASS Data_Monster_B2_Boss_FrostQueen anatomical weak points lie on authored body hitboxes
+PASS Data_Monster_B2_Boss_FrostQueen distinct authored stun painting
+PASS StormMatriarch actual enemy body lies in requested safe area
+PASS StormMatriarch uses uniform aspect-preserving scale
+PASS StormMatriarch actual enemy body lies in requested safe area
+PASS StormMatriarch uses uniform aspect-preserving scale
+PASS StormMatriarch actual enemy body lies in requested safe area
+PASS StormMatriarch uses uniform aspect-preserving scale
+PASS StormMatriarch species scale independent of support population
+PASS StormMatriarch Ready painting and actual charge weak points
+PASS StormMatriarch attack name and countdown have separate readable rows
+PASS StormMatriarch attack captions draw above all monster bodies
+PASS StormMatriarch caption lettering draws above its brush backdrops
+PASS StormMatriarch anatomical weak points lie on authored body hitboxes
+PASS StormMatriarch distinct authored stun painting
+PASS Data_Monster_B3_Boss_SoulEater actual enemy body lies in requested safe area
+PASS Data_Monster_B3_Boss_SoulEater uses uniform aspect-preserving scale
+PASS Data_Monster_B3_Boss_SoulEater species scale independent of support population
+PASS Data_Monster_B3_Boss_SoulEater Ready painting and actual charge weak points
+PASS Data_Monster_B3_Boss_SoulEater attack name and countdown have separate readable rows
+PASS Data_Monster_B3_Boss_SoulEater attack captions draw above all monster bodies
+PASS Data_Monster_B3_Boss_SoulEater caption lettering draws above its brush backdrops
+PASS Data_Monster_B3_Boss_SoulEater anatomical weak points lie on authored body hitboxes
+PASS Data_Monster_B3_Boss_SoulEater distinct authored stun painting
+PASS EclipseBeast actual enemy body lies in requested safe area
+PASS EclipseBeast uses uniform aspect-preserving scale
+PASS EclipseBeast actual enemy body lies in requested safe area
+PASS EclipseBeast uses uniform aspect-preserving scale
+PASS EclipseBeast actual enemy body lies in requested safe area
+PASS EclipseBeast uses uniform aspect-preserving scale
+PASS EclipseBeast species scale independent of support population
+PASS boss retains charge after both supports die
+PASS boss can expose meaningful charge weak points with zero supports
+PASS no support restored before interval
+PASS stun pauses independent reinforcement timer
+PASS first interval restores exactly one support
+PASS second support does not reappear with first
+PASS next interval restores the second support without a charge
+PASS actual death reaches YOU DIED and stops battle
+PASS all final enemy sprites, positions and scales survive death unchanged
+PASS only foreground player hidden at death
+PASS new run restores visible player after death
+PASS visible selectable UI button: Illustrated Event Choice 0
+PASS teacher offers three distinct random low-tier choices plus leave
+PASS visible selectable UI button: Choice_0
+PASS accepted lesson remembers exact chosen spell and grants it
+PASS return encounter routes on remembered selection rather than current spell ownership
+PASS random pool varies across seeds, includes utility and does not require FireBolt
+PASS unresolved visited event retains question marker
+PASS consumed one-shot event becomes an empty visited cell
+COMPLETE 78 PASS / 0 FAIL

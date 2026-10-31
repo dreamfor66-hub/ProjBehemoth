@@ -50,8 +50,8 @@ internal static class AngularRestorationPreparation
             animation.canvasScale=baseline.canvasScale;EditorUtility.SetDirty(animation);
         }
         var floor=AssetDatabase.LoadAssetAtPath<FloorArtwork>("Assets/Data/Presentation/Angular/B1.asset");
-        floor.walls=AssetDatabase.LoadAssetAtPath<Sprite>(Root+"B1-Walls.png");
-        floor.openings=new[]{"Forward","Left","Right"}.Select(n=>AssetDatabase.LoadAssetAtPath<Sprite>(Root+"B1-"+n+".png")).ToArray();
+        floor.walls=DungeonSlash.DesignerAssetPaths.Load<Sprite>(Root+"B1-Walls.png");
+        floor.openings=new[]{"Forward","Left","Right"}.Select(n=>DungeonSlash.DesignerAssetPaths.Load<Sprite>(Root+"B1-"+n+".png")).ToArray();
         floor.imageOffset=new Vector2(0,-24);EditorUtility.SetDirty(floor);
         var accepted=AssetDatabase.LoadAssetAtPath<ArcadePresentation>("Assets/Data/Presentation/Trials/Angular01_Profile.asset");
         const string palettePath="Assets/Data/Presentation/Angular/RestoredPalette.asset";

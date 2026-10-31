@@ -143,7 +143,7 @@ namespace DungeonSlash
             if (travelDamage.HpDamage > 0f)
             {
                 RefreshHud();
-                if (travelDamage.TargetDied) { ShowResult(false); yield break; }
+                if (travelDamage.TargetDied && !runController.State.TryConsumeRevival()) { ShowResult(false); yield break; }
             }
             BeginEventPhase();
             if (roomTransitionView != null) yield return roomTransitionView.Play();
@@ -294,7 +294,7 @@ namespace DungeonSlash
             {
                 var trapDamage = runController.State.Player.TakeEnvironmentalDamage(8f);
                 RefreshHud();
-                if (trapDamage.TargetDied) { ShowResult(false); yield break; }
+                if (trapDamage.TargetDied && !runController.State.TryConsumeRevival()) { ShowResult(false); yield break; }
                 yield return BeginCombatEvent(room, new[] { combatController.MimicMonster }, GameText.Get("ui.gameflowcontroller.f8df763f"));
                 yield break;
             }
@@ -605,9 +605,10 @@ namespace DungeonSlash
         private void ShowResult(bool victory)
         {
             State = victory ? GameFlowState.RunVictory : GameFlowState.RunDefeat;
+            if (!victory) combatController.PresentDefeat();
             dungeonController.HideNavigation();
             HideTransientViews();
-            resultView.Show(victory ? GameText.Get("ui.gameflowcontroller.91119a7") : GameText.Get("ui.gameflowcontroller.4f664436"), victory ? GameText.Get("ui.gameflowcontroller.543f0daf") : GameText.Get(runController.State.Fatigue.IsDead?"ui.fatigue.death":"ui.gameflowcontroller.c34162cb"), RunSession.ReturnToSelection);
+            resultView.Show(victory ? GameText.Get("ui.result.victory") : GameText.Get("ui.result.defeat"), victory ? GameText.Get("ui.gameflowcontroller.543f0daf") : GameText.Get(runController.State.Fatigue.IsDead?"ui.fatigue.death":"ui.gameflowcontroller.c34162cb"), RunSession.ReturnToTitle,victory);
         }
     }
 }

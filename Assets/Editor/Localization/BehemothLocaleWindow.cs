@@ -198,7 +198,7 @@ internal static class BehemothLocaleEditing
         var csv = File.Exists(BehemothTextEditor.CsvPath) ? File.ReadAllText(BehemothTextEditor.CsvPath) : table.ExportCsv();
         var patched = PatchCsv(csv, key, previous, next, entry.source);
         var owners = AssetDatabase.FindAssets("t:LocalizedData", new[] { "Assets/Data" })
-            .Select(guid => AssetDatabase.LoadAssetAtPath<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)))
+            .Select(guid => DungeonSlash.DesignerAssetPaths.Load<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)))
             .Where(data => data != null && data.textKeys.Any(binding => binding.key == key)).ToArray();
         foreach (var data in owners)
         {

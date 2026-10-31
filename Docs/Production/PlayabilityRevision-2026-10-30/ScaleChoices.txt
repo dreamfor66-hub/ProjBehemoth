@@ -1,0 +1,27 @@
+Species scale choices: current authored values before -> after. Changes are never tied to group size.
+고블린사냥꾼: 1 -> 0.72; Goblin: clearly smaller than skeleton, including body rather than spear.
+경종 사냥개: 1 -> 0.78; Hound: lower quadruped silhouette beneath the skeleton.
+거미: 1 -> 0.85; Spider: small low body with a readable leg span.
+움직이는 갑옷: 1 -> 0.78; Animated armor: human-sized precise guard concept, not a giant.
+쌍두 문지기: 1 -> 1.05; Ettin: substantial broad close body volume without clipping heads.
+철갑 사마귀: 1 -> 1.04; Mantis: imposing scythe reach and thorax without clipping.
+납골당의 종: 1 -> 1.03; Bell: massive upright bell, preserve vertical concept.
+깃바늘 정령: 1 -> 0.6; Quill spirit: small airborne creature.
+결정 성게: 1 -> 0.62; Urchin: compact ground hazard.
+종토끼: 1 -> 0.64; Hare: small creature, not humanoid-sized.
+폭풍 해파리: 1 -> 0.62; Jelly support: small companion to roc.
+쌍각 파수꾼: 1 -> 1.65; Stag: large antlered quadruped, retain graceful body.
+거울나방: 1 -> 1.25; Moth: fragile winged elite; moderate span, not a hulking boss.
+수정 등딱지: 1 -> 1.85; Prism crab boss: thick armored body and huge pincers.
+파계 기마수: 1 -> 1.55; Mounted centaur elite: horse body and weapon reach.
+핏빛 백작: 1 -> 1.1; Count: elegant human-scale duelist, deliberately compact.
+잿불 왕: 1 -> 1.5; Lich king boss: imposing tall caster without turning robe into a wide beast.
+일식의 키메라: 1 -> 1.4; Chimera: central body with two flanking supports, no forced panorama.
+해 우상: 1 -> 0.74; Small sun support.
+달 우상: 1 -> 0.74; Small moon support.
+재의 대사제: 1 -> 1.1; Priest paired with gargoyle; reserve side space.
+가시등 시련수: 1 -> 1.6; Armored trial beast: heavy close body.
+왕관 거신: 1 -> 1.85; Colossus: broad large torso rather than a tiny square token.
+잿불의 용: recomposed wide body; authored hitbox union and anatomical weak-point placement. HP/damage/timings/rewards/hit requirements unchanged.
+겨울의 일각수: recomposed wide body; authored hitbox union and anatomical weak-point placement. HP/damage/timings/rewards/hit requirements unchanged.
+폭풍의 대붕: recomposed wide body; authored hitbox union and anatomical weak-point placement. HP/damage/timings/rewards/hit requirements unchanged.

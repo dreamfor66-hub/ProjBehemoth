@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f8821b35880c4995327257ee3bced, type: 3}
+  m_Name: "Data_Spell_\uC778\uCC48\uD2B8_\uC544\uC774\uC2A4"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.spelldata.enchantice.displayname
+    lastText: "\uC778\uCC48\uD2B8 \uC544\uC774\uC2A4"
+  - propertyPath: description
+    key: data.spelldata.enchantice.description
+    lastText: "10\uCD08 \uB3D9\uC548 \uBB34\uAE30 \uACF5\uACA9\uC5D0 \uB0C9\uAE30
+      \uD53C\uD574 4\uC640 \uB454\uD654\uB97C \uCD94\uAC00\uD55C\uB2E4."
+  textOwnerGuid: 370b919bc356f724ea8fd202083d3011
+  id: EnchantIce
+  displayName: "\uC778\uCC48\uD2B8 \uC544\uC774\uC2A4"
+  description: "10\uCD08 \uB3D9\uC548 \uBB34\uAE30 \uACF5\uACA9\uC5D0 \uB0C9\uAE30
+    \uD53C\uD574 4\uC640 \uB454\uD654\uB97C \uCD94\uAC00\uD55C\uB2E4."
+  icon: {fileID: 21300000, guid: eb0c821400dc576085aad47ed42ccaf6, type: 3}
+  mpCost: 8
+  tier: 0
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 12
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 0
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: 4e342cd8a9be3024989affde179af059, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  duration: 10
+  pulseInterval: 1
+  pulses: 1
+  element: 1
+  shape: 3
+  targeting: 0
+  defaultSlot: 3
+  castingSeconds: 0.4
+  cooldownSeconds: 10
+  openingCooldownSeconds: 0
+  damage: 0
+  width: 24
+  radius: 130
+  chainTargets: 3
+  slowSeconds: 0

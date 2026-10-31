@@ -1,0 +1,22 @@
+using UnityEngine;
+namespace DungeonSlash
+{
+    /// <summary>Shared continuous ink shapes for the target and its breaking strokes.</summary>
+    [CreateAssetMenu(menuName = "Dungeon Slash/Presentation/Weak Point Style")]
+    public sealed class WeakPointVisualStyle : ScriptableObject
+    {
+        public Material material;
+        public Color stroke = new Color32(199,77,51,255);
+        public Color core = new Color32(238,229,213,255);
+        public Color outline = Color.black;
+        [Range(.75f,2)] public float ringThickness = 1.5f;
+        [Range(6,24)] public float arcGap = 14;
+        [Range(.5f,2)] public float coreRadius = 1.25f;
+        [Min(.1f)] public float breakLifetime = .38f;
+        [Min(1)] public float breakDistance = 17;
+        static WeakPointVisualStyle fallback;
+        public static WeakPointVisualStyle Default => fallback != null ? fallback : fallback = CreateFallback();
+        static WeakPointVisualStyle CreateFallback()
+        { var style=CreateInstance<WeakPointVisualStyle>();style.hideFlags=HideFlags.HideAndDontSave;return style; }
+    }
+}

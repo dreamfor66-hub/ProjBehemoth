@@ -1,0 +1,1 @@
+Always-active HUD refresh keeps closed-inventory health summary current.

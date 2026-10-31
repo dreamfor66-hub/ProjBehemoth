@@ -24,8 +24,8 @@ public sealed class ManaOfferLiveProbe:MonoBehaviour
     {
         File.WriteAllText(Log,"Scoped MP reward selection, existing Unity Editor.\n");
         var controller=Object.FindFirstObjectByType<RunController>();var content=Object.FindFirstObjectByType<CombatController>().Content;
-        var balance=AssetDatabase.LoadAssetAtPath<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
-        var group=AssetDatabase.LoadAssetAtPath<PerkOfferGroup>("Assets/Data/Items/PerkOfferGroups/MP.asset");
+        var balance=DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
+        var group=DungeonSlash.DesignerAssetPaths.Load<PerkOfferGroup>("Assets/Data/Items/PerkOfferGroups/MP.asset");
         var members=controller.AvailablePerks.Where(p=>p.offerGroup==group).ToArray();
         Check(members.Length==2&&group.weight==1,"two saved MP perks share one ordinary offer weight");
         Check(members.Any(p=>p.modifiers.Any(m=>m.kind==ModifierKind.MaxMp&&m.value==3))&&members.Any(p=>p.modifiers.Any(m=>m.kind==ModifierKind.MpRegen&&m.value==.05f))&&members.All(p=>p.maxStacks==99),"MP values and stack caps unchanged");

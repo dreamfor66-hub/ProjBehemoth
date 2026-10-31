@@ -20,9 +20,8 @@ namespace DungeonSlash
             if(haze!=null){haze.intensity=f.Settings==null?0:f.Settings.peripheralHaze.Evaluate(f.Value);haze.SetVerticesDirty();}
             var hash=Mathf.CeilToInt(f.Value)*10000+f.GraceRemaining;
             if(previous==state&&last==hash)return;previous=state;last=hash;
-            var stage=GameText.Get(f.Value>=100?"ui.fatigue.normal":f.Value>60?"ui.fatigue.tired":f.Value>10?"ui.fatigue.exhausted":"ui.fatigue.danger");
-            var body=GameText.Format("ui.fatigue.detail",Mathf.CeilToInt(f.Value),stage,Mathf.RoundToInt((1-f.AttackSpeedMultiplier)*100),Mathf.RoundToInt((1-f.FinalDamageMultiplier)*100));
-            if(f.GraceRemaining>0)body+="\n"+GameText.Format("ui.fatigue.grace",f.GraceRemaining);
+            var stage=GameText.Get(f.Expression==0?"ui.fatigue.normal":f.Expression==1?"ui.fatigue.tired":f.Expression==2?"ui.fatigue.exhausted":"ui.fatigue.danger");
+            var body=GameText.Format("ui.fatigue.detail",Mathf.CeilToInt(f.Value),stage,((1-f.AttackSpeedMultiplier)*100).ToString("0.#"),((1-f.FinalDamageMultiplier)*100).ToString("0.#"));
             if(f.Value<=10)body+="\n\n"+GameText.Get("ui.fatigue.warning");
             hover.Bind(GameText.Get("ui.fatigue.title"),body);
         }

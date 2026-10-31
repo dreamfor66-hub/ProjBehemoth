@@ -28,7 +28,7 @@ public sealed class HudStructureLiveProbe : MonoBehaviour
     {
         Directory.CreateDirectory(Folder);File.WriteAllText(Folder+"Live.txt","Scoped existing Unity runtime: HUD hierarchy, icon pooling, pointer cooldown and guard feedback. No balance suite.\n");
         var practice=new GameObject("HUD practice clone").AddComponent<OctoberReviewLiveProbe>();
-        practice.Setup(CharacterKind.Warrior,true,"Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+        practice.Setup(CharacterKind.Warrior,true,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
         combat=Object.FindFirstObjectByType<CombatController>();scene=Object.FindFirstObjectByType<CombatSceneView>();input=Object.FindFirstObjectByType<CombatInputController>();run=Object.FindFirstObjectByType<RunController>();
         yield return new WaitForSeconds(.6f);
         var hud=Object.FindFirstObjectByType<CombatHudView>();var structure=Object.FindFirstObjectByType<HudSceneStructure>();var mana=Object.FindFirstObjectByType<ManaHudView>();

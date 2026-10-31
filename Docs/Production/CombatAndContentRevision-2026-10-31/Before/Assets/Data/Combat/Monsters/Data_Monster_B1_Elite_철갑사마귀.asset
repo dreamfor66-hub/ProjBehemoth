@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: "Data_Monster_B1_Elite_\uCCA0\uAC11\uC0AC\uB9C8\uADC0"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.armoredexecutioner.displayname
+    lastText: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  - propertyPath: encounterHint
+    key: data.monsterdata.armoredexecutioner.encounterhint
+    lastText: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0,
+      \uBCF4\uC870 \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
+  textOwnerGuid: ecf1c349611a99341be2e93e20f059a6
+  displayName: "\uCCA0\uAC11 \uC0AC\uB9C8\uADC0"
+  portrait: {fileID: 21300000, guid: 91ac1c595177ea24e8085aa0728e6eca, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 1b607f1c6cef49c4984ef473340fbc95, type: 2}
+  encounterHint: "\uD544\uC218 \uC57D\uC810\uC73C\uB85C \uAC15\uD0C0\uB97C \uB04A\uACE0,
+    \uBCF4\uC870 \uC57D\uC810 \uC138 \uAC1C\uB85C \uAE30\uC808\uC744 \uB298\uB9AC\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  useOrbit: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 420
+  normalAttackInterval: 2.6
+  chargeInterval: 4.5
+  stunDuration: 3
+  stunDamageMultiplier: 1.5
+  experienceReward: 31
+  goldReward: 16
+  combatScale: 1.04
+  hitBoxes:
+  - center: {x: -65, y: 0}
+    radius: 135
+  - center: {x: 0, y: 0}
+    radius: 135
+  - center: {x: 65, y: 0}
+    radius: 135
+  attacks:
+  - {fileID: 11400000, guid: c9db2cc12f0f5854e868b2a16c63ffaf, type: 2}
+  - {fileID: 11400000, guid: 7c87c2a36b027654d85b5a34941f15be, type: 2}
+  normalAttackSequence: []

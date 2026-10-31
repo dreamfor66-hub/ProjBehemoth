@@ -71,7 +71,7 @@ internal static class AshenVowDiagnostics
         if (command == "selection" && !EditorApplication.isPlaying) EditorSceneManager.OpenScene("Assets/Scenes/OutGameScene.unity");
         if (command == "main" && !EditorApplication.isPlaying) EditorSceneManager.OpenScene("Assets/Scenes/MainGameScene.unity");
         if (command == "play") EditorApplication.isPlaying = true;
-        if (command == "select-wizard") RunSession.SelectedCharacter = AssetDatabase.LoadAssetAtPath<PlayerCombatData>("Assets/Data/Characters/Wizard.asset");
+        if (command == "select-wizard") RunSession.SelectedCharacter = DungeonSlash.DesignerAssetPaths.Load<PlayerCombatData>("Assets/Data/Characters/Data_Character_위자드.asset");
         if(command=="qa-feedback"&&EditorApplication.isPlaying){var probe=Object.FindFirstObjectByType<FeedbackLiveProbe>()??new GameObject("Feedback scoped QA").AddComponent<FeedbackLiveProbe>();probe.Run();}
         if (command == "qa-spells" && EditorApplication.isPlaying)
         { var probe = Object.FindFirstObjectByType<AshenVowLiveProbe>() ?? new GameObject("AshenVow Scoped Live QA").AddComponent<AshenVowLiveProbe>(); probe.RunSpells(); }
@@ -94,7 +94,7 @@ internal static class AshenVowDiagnostics
             var flow=Object.FindFirstObjectByType<GameFlowController>();var dungeon=Object.FindFirstObjectByType<DungeonController>();Object.FindFirstObjectByType<CombatController>().ResetEncounter();Object.FindFirstObjectByType<RunExpansionView>().HideModal();dungeon.HideNavigation();
             typeof(GameFlowController).GetMethod("ShowShop",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance).Invoke(flow,new object[]{dungeon.State.Player.CurrentRoom});
         }
-        if(command=="qa-wizard"&&EditorApplication.isPlaying){RunSession.SelectedCharacter=AssetDatabase.LoadAssetAtPath<PlayerCombatData>("Assets/Data/Characters/Wizard.asset");Object.FindFirstObjectByType<GameFlowController>().StartNewRun();}
+        if(command=="qa-wizard"&&EditorApplication.isPlaying){RunSession.SelectedCharacter=DungeonSlash.DesignerAssetPaths.Load<PlayerCombatData>("Assets/Data/Characters/Data_Character_위자드.asset");Object.FindFirstObjectByType<GameFlowController>().StartNewRun();}
         if(command=="qa-result"&&EditorApplication.isPlaying)
         {
             Object.FindFirstObjectByType<CombatController>().ResetEncounter();Object.FindFirstObjectByType<DungeonController>().HideNavigation();
@@ -106,7 +106,7 @@ internal static class AshenVowDiagnostics
         {
             var text = new StringBuilder(); text.AppendLine("Playing: " + EditorApplication.isPlaying);
             for (var i = 0; i < UnityEngine.SceneManagement.SceneManager.sceneCount; i++) { var s = UnityEngine.SceneManagement.SceneManager.GetSceneAt(i); text.AppendLine($"Scene {s.path} dirty={s.isDirty}"); }
-            var content = AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
+            var content = DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");
             if (content != null) text.AppendLine($"Perks {content.perks.Count}, spells {content.spells.Count}, events {content.events.Count}, revisions {content.gameplayRevision}/{content.artRevision}/{content.narrativeRevision}");
             var controller=Object.FindFirstObjectByType<RunController>();if(controller?.State!=null){var player=controller.State.Player;text.AppendLine($"Runtime HP {player.CurrentHp}/{player.MaxHp}; shield {player.ShieldCurrent}/{player.ShieldMax}; MP {player.CurrentMp}/{player.MaxMp}; actions {controller.State.ActionSerial}");}
             foreach (var rect in Object.FindObjectsByType<RectTransform>(FindObjectsInactive.Include, FindObjectsSortMode.None))

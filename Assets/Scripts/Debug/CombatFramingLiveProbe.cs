@@ -46,7 +46,7 @@ public sealed class CombatFramingLiveProbe : MonoBehaviour
             Check(frame.anchorMin == Vector2.zero && frame.anchorMax == Vector2.one && frame.offsetMin == Vector2.zero && frame.offsetMax == Vector2.zero && hud.face.rectTransform.anchoredPosition == Vector2.zero, kind + " portrait flush at canvas left/top");
             Capture("Combat-" + kind);
         }
-        practice.Setup(CharacterKind.Barbarian, false, "Assets/Data/Combat/Monsters/TunnelRat.asset");
+        practice.Setup(CharacterKind.Barbarian, false, "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");
         yield return null; yield return new WaitForEndOfFrame(); Capture("Combat-Scorpion");
         // Charge/hit geometry must follow the relocated target, without changing tuning.
         practice.Setup(CharacterKind.Barbarian, false); yield return null;

@@ -59,7 +59,7 @@ internal static class MonsterAuthoringBaseline
             foreach (var guid in AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/Combat/Monsters" }))
             {
                 var path = AssetDatabase.GUIDToAssetPath(guid);
-                var data = AssetDatabase.LoadAssetAtPath<MonsterData>(path);
+                var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(path);
                 using var serialized = new SerializedObject(data);
                 var record = new Entry { path = path, json = EditorJsonUtility.ToJson(data),
                     oldBodySize = serialized.FindProperty("bodySize").vector2Value,

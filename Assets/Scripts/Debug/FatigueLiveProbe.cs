@@ -46,7 +46,7 @@ public sealed class FatigueLiveProbe:MonoBehaviour
     IEnumerator Matrix()
     {
         Bind();File.WriteAllText(Log,"Scoped fatigue mechanics and UI in existing Unity instance; runtime practice monsters cloned.\n");Fresh();yield return null;
-        var settings=combat.Content.fatigue;var config=UnityEditor.AssetDatabase.LoadAssetAtPath<DungeonGenerationSettings>("Assets/Data/Settings/DungeonGenerationSettings.asset");
+        var settings=combat.Content.fatigue;var config=DungeonSlash.DesignerAssetPaths.Load<DungeonGenerationSettings>("Assets/Data/Settings/DungeonGenerationSettings.asset");
         var maps=true;for(var floor=1;floor<=3;floor++)for(var seed=0;seed<32;seed++)
         {var state=new DungeonGenerator(config).Generate(seed,floor);maps&=state.Graph.Rooms.Count(r=>r.Type==RoomEncounterType.Camp)==1;maps&=state.Graph.DistancesFrom(state.Graph.StartRoom).Count==state.Graph.Rooms.Count;}
         Check(maps,"96 B1/B2/B3 maps have exactly one reachable fixed camp");

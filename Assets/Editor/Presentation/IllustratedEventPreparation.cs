@@ -24,7 +24,7 @@ internal static class IllustratedEventPreparation
         if(EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode||EditorApplication.timeSinceStartup<next)return;
         next=EditorApplication.timeSinceStartup+4;
         if(File.Exists(Folder+"Installed.txt"))return;
-        if(!File.Exists("Assets/Art/UI/Events/Mirror.png")||!File.Exists("Assets/Art/UI/Events/Pilgrim.png"))return;
+        if(!File.Exists("Assets/Art/UI/Events/T_UI_Event_Mirror.png")||!File.Exists("Assets/Art/UI/Events/T_UI_Event_Pilgrim.png"))return;
         try { Prepare();File.WriteAllText(Folder+"Installed.txt","portrait-events-1\n"); }
         catch(Exception e){File.WriteAllText(Folder+"PreparationError.txt",e.ToString());next=EditorApplication.timeSinceStartup+60;Debug.LogException(e);}
     }
@@ -42,8 +42,8 @@ internal static class IllustratedEventPreparation
             importer.filterMode=FilterMode.Bilinear;importer.mipmapEnabled=false;importer.npotScale=TextureImporterNPOTScale.None;
             importer.maxTextureSize=2048;importer.textureCompression=TextureImporterCompression.Uncompressed;
             var settings=new TextureImporterSettings();importer.ReadTextureSettings(settings);settings.spriteMeshType=SpriteMeshType.FullRect;importer.SetTextureSettings(settings);importer.SaveAndReimport();
-            var story=AssetDatabase.LoadAssetAtPath<RandomEventData>("Assets/Data/Dungeon/Events/"+id+".asset");
-            story.illustration=AssetDatabase.LoadAssetAtPath<Sprite>(art);story.illustratedPopup=true;
+            var story=DungeonSlash.DesignerAssetPaths.Load<RandomEventData>("Assets/Data/Dungeon/Events/"+id+".asset");
+            story.illustration=DungeonSlash.DesignerAssetPaths.Load<Sprite>(art);story.illustratedPopup=true;
             foreach(var page in story.pages)page.illustration=null;
             EditorUtility.SetDirty(story);
         }

@@ -1,0 +1,5 @@
+Production charge windows preserved in visual samples.
+고블린사냥꾼: 도약 꿰뚫기, name=425.6, preferred=195.9; timer=237.1
+해골 전사: 검날 내려치기, name=425.6, preferred=227.6; timer=237.1
+재의 대사제: 혼불 의식, name=425.6, preferred=157.2; timer=237.1
+잿불의 용: 잿불 숨결, name=281.2, preferred=107.5; timer=197.6

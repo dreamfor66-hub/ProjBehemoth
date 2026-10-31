@@ -17,7 +17,7 @@ namespace DungeonSlash.Tests
             var combat = Object.FindFirstObjectByType<CombatController>(); var input = Object.FindFirstObjectByType<CombatInputController>(); var scene = Object.FindFirstObjectByType<CombatSceneView>();
             combat.PrepareFixedEncounter(combat.Run, Encounter("Trial"), 1); combat.BeginPreparedCombat();
             var actor = Actors(combat)[0]; Runtime(actor).DelayActions(20);
-            var fury = AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Fury.asset"); var rage = AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/Rage.asset");
+            var fury = DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/Data_Buff_격노.asset"); var rage = DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/Data_Buff_분노.asset");
             var center = Position(actor); var start = center + Vector2.left * 180; var end = center + Vector2.right * 180;
             for (var i = 0; i < 3; i++) { combat.Player.ResetAttackCooldown(); combat.ExecuteAttack(new AttackSegment(start, end, 18), false); }
             combat.Run.Buffs.UpdateState(0); Assert.That(combat.Run.Buffs.Find(fury).StackCount, Is.EqualTo(36));

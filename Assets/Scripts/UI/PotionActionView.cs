@@ -24,11 +24,13 @@ namespace DungeonSlash
         public EquipmentData Selected => potion;
         EquipmentData potion;
         bool flying;
+        Vector2 discardPosition;
         Camera Camera { get { var canvas=GetComponentInParent<Canvas>(); return canvas.renderMode==RenderMode.ScreenSpaceOverlay?null:canvas.worldCamera; } }
         RectTransform Root => (RectTransform)transform;
 
         void Awake()
         {
+            discardPosition=((RectTransform)discard.transform).anchoredPosition;
             drink.onClick.AddListener(Drink);
             throwButton.onClick.AddListener(BeginThrow);
             discard.onClick.AddListener(Discard);
@@ -43,6 +45,8 @@ namespace DungeonSlash
             tooltip.Hide(); menu.gameObject.SetActive(true); cancel.gameObject.SetActive(false);
             bottle.enabled = targetRing.enabled = false; prompt.gameObject.SetActive(false);
             heading.text = item.displayName;
+            drink.gameObject.SetActive(item.HasPotionAction(false));throwButton.gameObject.SetActive(item.HasPotionAction(true));
+            ((RectTransform)discard.transform).anchoredPosition=!item.HasPotionAction(false)&&!item.HasPotionAction(true)?((RectTransform)drink.transform).anchoredPosition:discardPosition;
             drink.interactable = run.State.CanUsePotion(item, false);
             throwButton.interactable = combat.CanThrowPotion && run.State.CanUsePotion(item, true);
             var corners = new Vector3[4]; anchor.GetWorldCorners(corners);

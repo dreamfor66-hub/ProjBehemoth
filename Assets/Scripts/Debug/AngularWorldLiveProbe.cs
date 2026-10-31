@@ -31,7 +31,7 @@ public sealed class AngularWorldLiveProbe : MonoBehaviour
         var practice=Object.FindFirstObjectByType<OctoberReviewLiveProbe>()??new GameObject("Angular practice").AddComponent<OctoberReviewLiveProbe>();
         foreach(CharacterKind kind in Enum.GetValues(typeof(CharacterKind)))
         {
-            practice.Setup(kind,false,"Assets/Data/Combat/Monsters/TunnelRat.asset");yield return null;
+            practice.Setup(kind,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");yield return null;
             var combat=Object.FindFirstObjectByType<CombatController>();var enemy=combat.Enemies[0];
             var scene=Object.FindFirstObjectByType<CombatSceneView>();var input=Object.FindFirstObjectByType<CombatInputController>();
             var player=Object.FindFirstObjectByType<PlayerView>();
@@ -50,7 +50,7 @@ public sealed class AngularWorldLiveProbe : MonoBehaviour
             Check(combat.Player.IsGuarding&&player.GetComponent<CombatSpriteAnimator>().State==CombatVisualState.Guard,kind+" guard artwork responds");
             yield return Capture("Hero-"+kind+"-Guard");Contact("End",340,guardTo,false);
         }
-        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/TunnelRat.asset");yield return null;
+        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");yield return null;
         var battle=Object.FindFirstObjectByType<CombatController>();var target=battle.Enemies[0];
         var first=target.NormalAttack;target.BeginNormalAttack();yield return new WaitForSeconds(first.windupDuration+.35f);
         Check(target.State==MonsterState.Idle&&target.NormalAttack!=first,"controller resolves first sequence action and advances");

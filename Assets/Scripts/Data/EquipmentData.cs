@@ -34,6 +34,12 @@ namespace DungeonSlash
 
         public bool IsPotion => itemKind == ShopItemKind.Potion;
         public bool IsRelic => itemKind == ShopItemKind.Relic;
+        public bool HasPotionAction(bool thrown)
+        {
+            var action=thrown?TriggerType.OnThrow:TriggerType.OnConsume;
+            if(abilities.Count==0)return !thrown&&(trigger.triggerType==action||trigger.triggerType==TriggerType.OnCombatStartAfterConsume);
+            return abilities.Exists(a=>a.trigger.triggerType==action||!thrown&&a.trigger.triggerType==TriggerType.OnCombatStartAfterConsume);
+        }
         private void OnValidate()=>BuffUnitData.ValidateGroups(abilities);
     }
 }

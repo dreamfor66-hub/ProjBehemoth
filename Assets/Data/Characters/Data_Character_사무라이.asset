@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5268a9354c4f1c4090b31c19da88ddf, type: 3}
+  m_Name: "Data_Character_\uC0AC\uBB34\uB77C\uC774"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.playercombatdata.samurai.displayname
+    lastText: "\uC0AC\uBB34\uB77C\uC774"
+  - propertyPath: description
+    key: data.playercombatdata.samurai.description
+    lastText: "\uC804\uD22C \uC18D\uC5D0\uC11C\uB3C4 \uD56D\uC0C1 \uCE68\uCC29\uD568\uC744
+      \uC783\uC9C0 \uC54A\uB294 \uB3D9\uBC29\uC758 \uBB34\uC0AC\uC785\uB2C8\uB2E4.
+      \uACF5\uACA9\uC744 \uD295\uACA8\uB0B4\uACE0 \uCE58\uBA85\uC801\uC778 \uD53C\uD574\uB85C
+      \uC5F0\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  textOwnerGuid: e3c7bf600b926294691121a699157b28
+  character: 3
+  displayName: "\uC0AC\uBB34\uB77C\uC774"
+  description: "\uC804\uD22C \uC18D\uC5D0\uC11C\uB3C4 \uD56D\uC0C1 \uCE68\uCC29\uD568\uC744
+    \uC783\uC9C0 \uC54A\uB294 \uB3D9\uBC29\uC758 \uBB34\uC0AC\uC785\uB2C8\uB2E4.
+    \uACF5\uACA9\uC744 \uD295\uACA8\uB0B4\uACE0 \uCE58\uBA85\uC801\uC778 \uD53C\uD574\uB85C
+    \uC5F0\uACB0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  selectionStory: "\uB3CC\uC544\uAC08 \uC8FC\uAD70\uC744 \uC783\uACE0\uB3C4\r\n\uCE7C\uB9CC\uC740
+    \uB193\uC9C0 \uBABB\uD55C \uBB34\uC0AC."
+  selectionAbility: "\uB0A9\uB3C4\uB85C \uB54C\uB97C \uAE30\uB2E4\uB838\uB2E4\r\n\uBC1C\uB3C4\uB85C
+    \uAE30\uD68C\uB97C \uBCA4\uB2E4."
+  characterColor: {r: 0.62, g: 0.69, b: 0.86, a: 1}
+  portrait: {fileID: 21300000, guid: f6fcdb6174ac1be4db7bd82ccbcdbdd1, type: 3}
+  selectionIllustration: {fileID: 21300000, guid: 8f0b8ae3501179e4f803001e2ade7be2, type: 3}
+  selectionMaterial: {fileID: 0}
+  selectionBackdrop: {r: 0.14117648, g: 0.06666667, b: 0.13333334, a: 1}
+  combatSprite: {fileID: 21300000, guid: 7505e885911cc694fb6ab4bc6e2c7332, type: 3}
+  combatAnimation: {fileID: 11400000, guid: d63b530325652d74198dda86450aef29, type: 2}
+  gameVariables: {fileID: 11400000, guid: 2fe27ee98c8752542a22371a023b3043, type: 2}
+  startingRelic: {fileID: 11400000, guid: 468f01cccd9b8a7428005181ebdeb814, type: 2}
+  startingSpells: []
+  startingSupplies:
+  - supply: {fileID: 11400000, guid: 97f4049024e9f274293dffbb2f06bd02, type: 2}
+    count: 1
+  attackBuffs: []
+  maxHp: 80
+  maxMp: 30
+  mpRegen: 0.1
+  shieldMax: 20
+  guardDamageReduction: 1
+  normalShieldRegen: 0
+  brokenShieldRegen: 5
+  criticalChance: 0
+  criticalDamageMultiplier: 1.5
+  baseAttackDamage: 9
+  baseChargeDamage: 20
+  attackCooldown: 0.82
+  chargeDuration: 0.75

@@ -27,6 +27,7 @@ namespace DungeonSlash
         private readonly SpellData[] spellSlots = new SpellData[4];
         public Queue<SpellData> PendingSpellOffers { get; } = new();
         public HashSet<string> EventFlags { get; } = new();
+        public Dictionary<string, SpellData> EventSpellChoices { get; } = new();
         public HashSet<string> SeenEvents { get; } = new();
         public int WonCombats { get; set; }
         public int CurrentAct { get; set; } = 1;

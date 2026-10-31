@@ -61,7 +61,7 @@ internal static class InkUiPreparation
         }
         catch(Exception e) { Debug.LogException(e); Directory.CreateDirectory(Folder); File.WriteAllText(Folder+"PreparationError.txt",e.ToString()); }
     }
-    static bool Plain(Image image) => image != null && (image is CrispPanelImage || image.sprite == null || image.sprite.texture.width <= 16 || AssetDatabase.GetAssetPath(image.sprite).Contains("PanelFrame") || AssetDatabase.GetAssetPath(image.sprite)=="Assets/Art/UI/Frame.png");
+    static bool Plain(Image image) => image != null && (image is CrispPanelImage || image.sprite == null || image.sprite.texture.width <= 16 || AssetDatabase.GetAssetPath(image.sprite).Contains("PanelFrame") || AssetDatabase.GetAssetPath(image.sprite)=="Assets/Art/UI/T_UI_Common_Rect_Frame.png");
     static bool TopStrip(Graphic image)
     {
         if(image==null)return false;

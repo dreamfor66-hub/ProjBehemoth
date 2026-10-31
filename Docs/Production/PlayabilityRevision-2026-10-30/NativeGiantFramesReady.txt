@@ -1,0 +1,1 @@
+9 native Sprite regions and vertex/UV streams calibrated; GUIDs preserved.

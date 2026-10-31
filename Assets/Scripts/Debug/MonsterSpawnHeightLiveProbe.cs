@@ -21,7 +21,7 @@ public sealed class MonsterSpawnHeightLiveProbe : MonoBehaviour
         Directory.CreateDirectory(Folder);File.WriteAllText(Folder+"Live.txt","Scoped existing Editor test, practice clones; no balance suite.\n");
         yield return null;yield return null;
         var practice=FindFirstObjectByType<OctoberReviewLiveProbe>()??new GameObject("Spawn height practice").AddComponent<OctoberReviewLiveProbe>();
-        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
         var combat=FindFirstObjectByType<CombatController>();var scene=FindFirstObjectByType<CombatSceneView>();
         yield return new WaitForSecondsRealtime(.6f);
         Check(scene.MonsterPosition==new Vector2(0,-150),"saved spawn root=(0,-150)");

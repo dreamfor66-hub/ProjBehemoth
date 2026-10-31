@@ -8,7 +8,7 @@ namespace DungeonSlash.Tests
 {
     public sealed class BehemothStealthTests
     {
-        private GameContent Content => AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
+        private GameContent Content => DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");
         private RunBalanceSettings balance;
         [SetUp] public void Setup() => balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
         [TearDown] public void Cleanup() => Object.DestroyImmediate(balance);
@@ -39,7 +39,7 @@ namespace DungeonSlash.Tests
         [Test] public void AnyMemberHit_RevealsPack_EvenLethalOrGuarded_AndPreservesTimers()
         {
             var run = Run(CharacterKind.Rogue);
-            var data = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
             var a = new MonsterRuntime(data) { Awareness = run.Awareness };
             var b = new MonsterRuntime(data) { Awareness = run.Awareness }; b.DelayActions(.75f);
             var normal = b.NormalAttackTimer; var charge = b.ChargeTimer;
@@ -58,7 +58,7 @@ namespace DungeonSlash.Tests
         public void OtherClasses_KeepIdenticalTimersAndStatus_NoDetectionRandomConsumption(CharacterKind kind)
         {
             var run = Run(kind); Assert.That(run.Awareness.IsConcealed, Is.False);
-            var data = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
             var connected = new MonsterRuntime(data) { Awareness = run.Awareness }; var baseline = new MonsterRuntime(data);
             for (var frame = 0; frame < 500; frame++) { connected.Tick(.016f, Vector2.zero); baseline.Tick(.016f, Vector2.zero); }
             Assert.That(connected.NormalAttackTimer, Is.EqualTo(baseline.NormalAttackTimer));

@@ -36,7 +36,7 @@ public sealed class MonsterGroundingLiveProbe : MonoBehaviour
     }
     MonsterData Clone(string path)
     {
-        var data = Instantiate(UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>(path));
+        var data = Instantiate(DungeonSlash.DesignerAssetPaths.Load<MonsterData>(path));
         data.maxHp = 50000; data.normalAttackInterval = data.chargeInterval = 999;
         data.attacks = data.attacks.Select(a => { var copy = Instantiate(a); copy.chargeTimeLimit = 120; return copy; }).ToList();
         return data;
@@ -60,8 +60,8 @@ public sealed class MonsterGroundingLiveProbe : MonoBehaviour
         var practice = FindFirstObjectByType<OctoberReviewLiveProbe>() ?? new GameObject("Grounding practice").AddComponent<OctoberReviewLiveProbe>();
         practice.Setup(CharacterKind.Warrior, false);
         combat = FindFirstObjectByType<CombatController>(); scene = FindFirstObjectByType<CombatSceneView>();
-        var skeleton = Clone("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
-        var spider = Clone("Assets/Data/Combat/Monsters/TunnelRat.asset");
+        var skeleton = Clone("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
+        var spider = Clone("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset");
         var tiny = Instantiate(skeleton); tiny.hitBoxes = new() { new MonsterHitBox { radius = 9 } };
         var encounter = ScriptableObject.CreateInstance<EncounterData>();
         encounter.members = new List<EncounterMember> {

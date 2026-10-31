@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: "Data_Attack_\uB0A9\uACE8\uB2F9\uC758\uC885_Charge_\uC9C4\uD63C\uC758_\uC885\uC6B8\uB9BC"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.bellkeeper-ossuarybell-1.displayname
+    lastText: "\uC9C4\uD63C\uC758 \uC885\uC6B8\uB9BC"
+  textOwnerGuid: 6c27259a14ccf25499b08f85f4bb2321
+  type: 1
+  displayName: "\uC9C4\uD63C\uC758 \uC885\uC6B8\uB9BC"
+  damage: 30
+  shieldDamage: 48
+  windupDuration: 1
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 4.8
+  chargeWeakPoints:
+  - id: lock_0
+    localPosition: {x: -212.5, y: 0}
+    hitRadius: 29
+    requiredChargeHits: 1
+    optional: 0
+  - id: lock_1
+    localPosition: {x: 0, y: 90}
+    hitRadius: 29
+    requiredChargeHits: 1
+    optional: 0
+  - id: lock_2
+    localPosition: {x: 212.5, y: 0}
+    hitRadius: 29
+    requiredChargeHits: 1
+    optional: 0
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 2
+    followupDelay: 0.45
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b86659d035ba6443a5868527acbfe03, type: 3}
+  m_Name: Hero_Wizard
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 9db3de4f74535a74ba905d6baa49413c, type: 3}
+  attack: {fileID: 21300000, guid: 6035ef15cc9a540f953346bf2aacc832, type: 3}
+  guard: {fileID: 21300000, guid: f16e90a78fa75201a058f1787212001d, type: 3}
+  ready: {fileID: 0}
+  dead: {fileID: 0}
+  canvasScale: 1.0227072
+  illustratedMotion: 0
+  illustratedLayout: 0
+  combatPositionOffset: {x: 0, y: 0}
+  readyTilt: 0
+  attackTilt: 0
+  attackOffset: {x: 0, y: 0}
+  emphasizePoses: 0
+  readyOffset: {x: 0, y: 0}
+  readyScale: {x: 1, y: 1}
+  strikeScale: {x: 1, y: 1}
+  strikeSeconds: 0.3
+  tightPoseFrames: 0

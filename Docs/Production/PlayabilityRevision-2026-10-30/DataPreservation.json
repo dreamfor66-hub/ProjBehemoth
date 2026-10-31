@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "guids": 575,
+    "ids": 575,
+    "monsterCombatFields": 528,
+    "attackCombatFields": 1337,
+    "weakPointRequirements": 573
+  },
+  "failures": [],
+  "assetCount": 575
+}

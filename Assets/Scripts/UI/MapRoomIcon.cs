@@ -20,6 +20,8 @@ namespace DungeonSlash
         [SerializeField] private Image image;
         [SerializeField] private TextMeshProUGUI label;
         [SerializeField] private TextMeshProUGUI facingArrow;
+        [SerializeField] private Image interior;
+        [SerializeField] private Image hitTarget;
         [SerializeField] private Image northRoute;
         [SerializeField] private Image eastRoute;
         [SerializeField] private Image southRoute;
@@ -27,16 +29,24 @@ namespace DungeonSlash
         private Color baseColor;
         private bool pulse;
         private bool highlighted;
+        private bool current;
+        private bool cleared;
+        public DungeonRoom Room { get; private set; }
         public bool compact;
         private System.Action selected;
         public void SetSelection(System.Action action)
         {
             selected = action;
-            if (image != null) image.raycastTarget = action != null;
+            if (image != null) image.raycastTarget = hitTarget == null && action != null;
+            if (hitTarget != null)
+            {
+                hitTarget.raycastTarget = action != null;
+                hitTarget.rectTransform.sizeDelta = Vector2.one * Mathf.Max(44, ((RectTransform)transform).rect.width);
+            }
         }
         public void OnPointerClick(PointerEventData data)
         {
-            if (data.button == PointerEventData.InputButton.Left) selected?.Invoke();
+            if (data.button == PointerEventData.InputButton.Left && !data.dragging) selected?.Invoke();
         }
         public void OnPointerEnter(PointerEventData data) { if (selected != null) { highlighted = true; ApplyColor(); } }
         public void OnPointerExit(PointerEventData data) { if (selected != null) { highlighted = false; ApplyColor(); } }
@@ -63,16 +73,21 @@ namespace DungeonSlash
 
         public void Bind(DungeonRoom room, MapRoomIconStyle style, FacingDirection facing, bool isHighlighted, ISet<FacingDirection> routes = null)
         {
+            Room = room;
             highlighted = isHighlighted;
             pulse = style is MapRoomIconStyle.UnknownReachable or MapRoomIconStyle.ClearedExit;
-            var current = style == MapRoomIconStyle.Current;
+            current = style == MapRoomIconStyle.Current;
+            cleared = style is MapRoomIconStyle.ClearedVisited or MapRoomIconStyle.ClearedExit;
+            var large = ((RectTransform)transform).rect.width >= 40;
             baseColor = style switch
             {
-                MapRoomIconStyle.Current => new Color(.46f, .36f, .20f, 1f),
-                MapRoomIconStyle.UnknownReachable => new Color(.28f, .26f, .23f, 1f),
-                MapRoomIconStyle.ClearedVisited => new Color(.18f, .18f, .18f, 1f),
-                MapRoomIconStyle.ClearedExit => new Color(.25f, .24f, .21f, 1f),
-                _ => new Color(.29f, .29f, .27f, 1f)
+                MapRoomIconStyle.Current => new Color(.86f, .70f, .40f, 1f),
+                MapRoomIconStyle.UnknownReachable => new Color(.62f, .59f, .50f, 1f),
+                MapRoomIconStyle.ClearedVisited => new Color(.30f, .30f, .28f, 1f),
+                MapRoomIconStyle.ClearedExit => new Color(.48f, .45f, .37f, 1f),
+                _ => room.Type == RoomEncounterType.Boss ? new Color(.70f, .31f, .23f)
+                    : room.Type == RoomEncounterType.Elite ? new Color(.70f, .53f, .27f)
+                    : new Color(.56f, .54f, .46f)
             };
             if (image != null)
             {
@@ -82,11 +97,27 @@ namespace DungeonSlash
 
             if (label != null)
             {
-                label.enabled = style is not MapRoomIconStyle.Current and not MapRoomIconStyle.ClearedVisited and not MapRoomIconStyle.ClearedExit;
+                // Resolved one-shot events have nothing left to discover on return visits.
+                var consumedEvent = room.Type == RoomEncounterType.Event && room.IsCleared;
+                label.enabled = !current && !consumedEvent && (!cleared || large);
+                label.raycastTarget = false;
+                label.enableAutoSizing = false;
+                label.fontSize = large ? 20 : 17;
+                label.color = cleared ? new Color(.49f, .48f, .43f) : new Color(.92f, .87f, .73f);
+                label.rectTransform.anchorMin = Vector2.zero; label.rectTransform.anchorMax = Vector2.one;
+                label.rectTransform.anchoredPosition = Vector2.zero; label.rectTransform.sizeDelta = new Vector2(-4, -4);
                 label.text = style switch
                 {
                     MapRoomIconStyle.UnknownReachable => "?",
-                    MapRoomIconStyle.KnownRoom => compact?room.Type switch {RoomEncounterType.Camp=>GameText.Get("ui.camp.marker"),RoomEncounterType.Boss=>"!",RoomEncounterType.Elite=>"+",RoomEncounterType.Shop=>"$",RoomEncounterType.Chest or RoomEncounterType.MajorReward=>"C",RoomEncounterType.Fountain or RoomEncounterType.PoisonFountain=>"~",_=>"?"}:RoomLabel(room.Type),
+                    _ when large || !compact => RoomLabel(room.Type),
+                    MapRoomIconStyle.KnownRoom => room.Type switch
+                    {
+                        RoomEncounterType.Combat => GameText.Get("ui.map.marker.combat"),
+                        RoomEncounterType.Fountain or RoomEncounterType.PoisonFountain => "~",
+                        RoomEncounterType.Reward => "+",
+                        RoomEncounterType.Empty => string.Empty,
+                        _ => "?"
+                    },
                     _ => string.Empty
                 };
             }
@@ -97,8 +128,11 @@ namespace DungeonSlash
                 if (current)
                 {
                     facingArrow.text = "\u25B2";
-                    var arrowDistance = image == null ? 12f : Mathf.Max(9f, image.rectTransform.rect.width * .3f);
-                    facingArrow.rectTransform.anchoredPosition = ArrowOffset(facing, arrowDistance);
+                    facingArrow.raycastTarget = false;
+                    facingArrow.fontSize = large ? 27 : 20;
+                    facingArrow.color = new Color(1f, .88f, .55f);
+                    facingArrow.rectTransform.sizeDelta = Vector2.one * (large ? 38 : 26);
+                    facingArrow.rectTransform.anchoredPosition = Vector2.zero;
                     facingArrow.rectTransform.localRotation = Quaternion.Euler(0f, 0f, ArrowRotation(facing));
                 }
             }
@@ -118,9 +152,12 @@ namespace DungeonSlash
         private void ApplyColor()
         {
             if (image == null) return;
+            if (interior != null)
+                interior.color = highlighted ? new Color(.30f, .25f, .14f) : current ? new Color(.28f, .23f, .13f)
+                    : cleared ? new Color(.065f, .065f, .06f) : new Color(.11f, .115f, .11f);
             if (highlighted)
             {
-                image.color = new Color(1f, .76f, .18f, 1f);
+                image.color = new Color(1f, .82f, .40f, 1f);
                 return;
             }
             if (!pulse)
@@ -130,7 +167,7 @@ namespace DungeonSlash
             }
 
             var phase = (Mathf.Sin(Time.unscaledTime * 6f) + 1f) * .5f;
-            image.color = Color.Lerp(baseColor, new Color(.44f, .39f, .28f, 1f), phase);
+            image.color = Color.Lerp(baseColor, new Color(.78f, .67f, .43f, 1f), phase * .55f);
         }
 
         private static void SetRoute(Image route, bool visible, Color color)
@@ -171,7 +208,7 @@ namespace DungeonSlash
             RoomEncounterType.Goddess => GameText.Get("ui.maproomicon.1bca6671"),
             RoomEncounterType.Shop => GameText.Get("ui.maproomicon.db564fd4"),
             RoomEncounterType.Event => "?",
-            RoomEncounterType.Camp => GameText.Get("ui.camp.map"),
+            RoomEncounterType.Camp => GameText.Get("ui.map.marker.camp"),
             _ => "?"
         };
     }

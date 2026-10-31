@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f8821b35880c4995327257ee3bced, type: 3}
+  m_Name: "Data_Spell_\uD64D\uC5FC"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.spelldata.crimsoninferno.displayname
+    lastText: "\uD64D\uC5FC"
+  - propertyPath: description
+    key: data.spelldata.crimsoninferno.description
+    lastText: "8\uCD08 \uB3D9\uC548 \uD64D\uC5FC\uC744 \uD3BC\uCE5C\uB2E4. \uB9E4\uCD08
+      \uD654\uC5FC \uD53C\uD574 12\uB97C \uC8FC\uACE0 \uD654\uC0C1\uC744 \uB0A8\uAE34\uB2E4."
+  textOwnerGuid: 66877fbce89f85a4e9fec3840874bbf1
+  id: CrimsonInferno
+  displayName: "\uD64D\uC5FC"
+  description: "8\uCD08 \uB3D9\uC548 \uD64D\uC5FC\uC744 \uD3BC\uCE5C\uB2E4. \uB9E4\uCD08
+    \uD654\uC5FC \uD53C\uD574 12\uB97C \uC8FC\uACE0 \uD654\uC0C1\uC744 \uB0A8\uAE34\uB2E4."
+  icon: {fileID: 21300000, guid: e5991cca41345bc1a0adb246490a7b8c, type: 3}
+  mpCost: 18
+  tier: 2
+  abilities:
+  - mergeConditionTrigger: 0
+    conditions: []
+    trigger:
+      triggerType: 12
+      triggerAttackTypeFilter: 7
+      triggerAttackWayFilter: 7
+      triggerCount: 1
+      triggerMaxCount: 0
+      intervalSeconds: 0
+      cooldownSeconds: 0
+      resetCountEachCombat: 1
+      includeAdditionalAttacks: 0
+      chancePercent: 100
+      signal: {fileID: 0}
+    target: 1
+    effects:
+    - effectType: 18
+      effectMagnitude: 1
+      effectCount: 1
+      effectAngle: 0
+      effectTime: 0
+      effectStatType: 0
+      scale: 0
+      scaleRatio: 0
+      maximumMagnitude: 0
+      element: 0
+      targets: 0
+      status: 0
+      statusDamage: 0
+      statusCap: 0
+      rule: 0
+      spell: {fileID: 0}
+      buff: {fileID: 11400000, guid: eec4c7304af3e2a4ca09a4fd82c53275, type: 2}
+      buffTag: {fileID: 0}
+      valueVariables: []
+      guardFeedback: 0
+      multiplyByBuffStacks: 0
+      companion: {fileID: 0}
+      buffUses: 0
+      consumeOn: 0
+      consumeAttackTypes: 0
+      buffGroup: 
+  duration: 8
+  pulseInterval: 1
+  pulses: 1
+  element: 0
+  shape: 4
+  targeting: 0
+  defaultSlot: 0
+  castingSeconds: 0.6
+  cooldownSeconds: 20
+  openingCooldownSeconds: 0
+  damage: 12
+  width: 24
+  radius: 240
+  chainTargets: 3
+  slowSeconds: 0

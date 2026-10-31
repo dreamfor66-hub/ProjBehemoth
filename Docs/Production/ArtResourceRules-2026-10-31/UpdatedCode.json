@@ -1,0 +1,18 @@
+[
+  "Assets/Editor/Presentation/AngularRestorationPreparation.cs",
+  "Assets/Editor/Presentation/AngularTrialPreparation.cs",
+  "Assets/Editor/Presentation/CombatContentRevisionPreparation.cs",
+  "Assets/Editor/Presentation/CombatFramingPreparation.cs",
+  "Assets/Editor/Presentation/DebugCatalogPreparation.cs",
+  "Assets/Editor/Presentation/HudItemLayoutPreparation.cs",
+  "Assets/Editor/Presentation/IllustratedEventPreparation.cs",
+  "Assets/Editor/Presentation/ImageOnlyPosePreparation.cs",
+  "Assets/Editor/Presentation/InkUiPreparation.cs",
+  "Assets/Editor/Presentation/MonsterScaleRevisionPreparation.cs",
+  "Assets/Editor/Presentation/MonsterStunPreparation.cs",
+  "Assets/Editor/Presentation/StateArtworkPreparation.cs",
+  "Assets/Scripts/Debug/CombatFocusLiveProbe.cs",
+  "Assets/Art/AGENTS.md",
+  "Docs/Production/CombatAndContentRevision-2026-10-31/ArtGuide.md",
+  "Docs/Production/CombatAndContentRevision-2026-10-31/ArtPlan.json"
+]

@@ -1,158 +1,165 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace DungeonSlash
 {
-    /// <summary>Visited rooms retain every exit they offered; only navigation displays unvisited destination tiles.</summary>
-    public sealed class DungeonMapView : MonoBehaviour
+    /// <summary>Large destination rooms and small corridor encounters share the actual navigation graph.</summary>
+    public sealed class DungeonMapView : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IScrollHandler
     {
         [SerializeField] private RectTransform content;
         [SerializeField] private MapRoomIcon iconPrefab;
         [SerializeField] private Image connectionPrefab;
-        [SerializeField] private float spacing = 42f;
-        private readonly List<MapRoomIcon> activeIcons = new();
+        [SerializeField] private float spacing = 84f;
+        [SerializeField] private DungeonMapStyle layout;
+        [HideInInspector] public int layoutRevision;
+        private readonly List<GameObject> activeViews = new();
+        private DungeonRunState renderedState;
         private DungeonPosition focusPosition;
         private System.Action<FacingDirection> selected;
-        public void SetSelectionHandler(System.Action<FacingDirection> handler) => selected = handler;
+        private Vector2 minimum, maximum;
+        private bool dragging;
+        private int dragPointer;
+        private float zoom = 1f;
 
+        public DungeonMapStyle Layout => layout;
+        public void SetSelectionHandler(System.Action<FacingDirection> handler) => selected = handler;
         public void Configure(RectTransform newContent, MapRoomIcon prefab, Image connection)
+        { content = newContent; iconPrefab = prefab; connectionPrefab = connection; }
+
+        private void OnEnable() => FocusCurrent();
+        private void OnDisable() => dragging = false;
+        public void FocusCurrent()
         {
-            content = newContent;
-            iconPrefab = prefab;
-            connectionPrefab = connection;
+            dragging = false;
+            if (content == null) return;
+            content.anchoredPosition = Vector2.zero;
+            zoom = 1f; content.localScale = Vector3.one;
         }
 
         public void Render(DungeonRunState state, FacingDirection? hoveredDirection = null, bool showSelectionTargets = true)
         {
             if (state == null || content == null || iconPrefab == null) return;
             ClearActiveViews();
-
             var current = state.Player.CurrentRoom;
-            focusPosition = current.Position;
-            var currentNeighbours = state.Graph.Neighbors(current).ToList();
-            var routes = CollectRoutes(state, current, currentNeighbours, showSelectionTargets);
-            var visibleRooms = CollectVisibleRooms(state, currentNeighbours, showSelectionTargets);
-            var mapSpacing = GetFittedSpacing(visibleRooms);
-
-            CreateCurrentIcon(current, state.Player.Facing, mapSpacing, routes);
-            if (showSelectionTargets)
-            {
-                foreach (var neighbour in currentNeighbours)
-                    CreateReachableIcon(current, neighbour, state.Player.Facing, hoveredDirection, mapSpacing, routes);
-            }
-
-            foreach (var room in state.Graph.Rooms.Where(room => (room.IsVisited || room.IsRevealed) && room != current && (!showSelectionTargets || !currentNeighbours.Contains(room))))
-                CreateKnownIcon(room, state.Player.Facing, mapSpacing, routes);
-        }
-
-        private static Dictionary<int, HashSet<FacingDirection>> CollectRoutes(DungeonRunState state, DungeonRoom current, IEnumerable<DungeonRoom> currentNeighbours, bool showSelectionTargets)
-        {
-            var routes = new Dictionary<int, HashSet<FacingDirection>>();
-            foreach (var room in state.Graph.Rooms.Where(room => room.IsVisited))
-            {
-                foreach (var neighbour in state.Graph.Neighbors(room))
-                    Add(room.RoomId, DirectionTo(room, neighbour));
-            }
-
-            if (showSelectionTargets)
-            {
-                foreach (var neighbour in currentNeighbours.Where(room => !room.IsVisited))
-                    Add(neighbour.RoomId, Opposite(DirectionTo(current, neighbour)));
-            }
-            return routes;
-
-            void Add(int roomId, FacingDirection direction)
-            {
-                if (!routes.TryGetValue(roomId, out var directions))
+            if (renderedState != state || !focusPosition.Equals(current.Position)) FocusCurrent();
+            renderedState = state; focusPosition = current.Position;
+            var neighbours = state.Graph.Neighbors(current).ToHashSet();
+            // Visits are permanent exploration memory. Generation-time IsRevealed marks a
+            // known encounter identity, not permission to expose a distant, unvisited room.
+            var visible = state.Graph.Rooms.Where(r => r.IsVisited || r == current
+                || showSelectionTargets && neighbours.Contains(r)).ToList();
+            var visibleIds = visible.Select(r => r.RoomId).ToHashSet();
+            var drawn = new HashSet<string>();
+            foreach (var room in visible.Where(r => r.IsVisited))
+                foreach (var other in state.Graph.Neighbors(room))
                 {
-                    directions = new HashSet<FacingDirection>();
-                    routes.Add(roomId, directions);
+                    var key = room.RoomId < other.RoomId ? $"{room.RoomId}:{other.RoomId}" : $"{other.RoomId}:{room.RoomId}";
+                    if (!drawn.Add(key)) continue;
+                    var highlighted = room == current && hoveredDirection == DirectionTo(room, other)
+                        || other == current && hoveredDirection == DirectionTo(other, room);
+                    DrawCorridor(room, other, !visibleIds.Contains(other.RoomId), highlighted);
                 }
-                directions.Add(direction);
+
+            minimum = Vector2.zero; maximum = Vector2.zero;
+            foreach (var room in visible)
+            {
+                var icon = Instantiate(iconPrefab, content);
+                icon.name = "Map " + room.RoomId + " " + room.Type;
+                activeViews.Add(icon.gameObject);
+                var rect = (RectTransform)icon.transform;
+                rect.anchoredPosition = ToMapPosition(room.Position);
+                var size = SizeFor(room); rect.sizeDelta = Vector2.one * size;
+                minimum = Vector2.Min(minimum, rect.anchoredPosition - Vector2.one * size * .5f);
+                maximum = Vector2.Max(maximum, rect.anchoredPosition + Vector2.one * size * .5f);
+                var reachable = showSelectionTargets && neighbours.Contains(room);
+                var style = room == current ? MapRoomIconStyle.Current
+                    : room.IsCleared ? reachable ? MapRoomIconStyle.ClearedExit : MapRoomIconStyle.ClearedVisited
+                    : room.IsVisited || room.IsRevealed || room.IsMajorRoom ? MapRoomIconStyle.KnownRoom
+                    : MapRoomIconStyle.UnknownReachable;
+                var direction = DirectionTo(current, room);
+                icon.Bind(room, style, state.Player.Facing, reachable && hoveredDirection == direction);
+                icon.SetSelection(reachable && selected != null ? () => selected(direction) : null);
+            }
+            ClampPan();
+        }
+
+        private float SizeFor(DungeonRoom room) => layout != null ? layout.SizeFor(room) : room.IsMajorRoom || room.Type == RoomEncounterType.Start ? 50 : 24;
+        private float CellSpacing => Mathf.Max(layout != null ? layout.cellSpacing : spacing, (layout != null ? layout.roomSize : 50) + 24);
+        private Vector2 ToMapPosition(DungeonPosition position) => new((position.X - focusPosition.X) * CellSpacing, (position.Y - focusPosition.Y) * CellSpacing);
+
+        private void DrawCorridor(DungeonRoom from, DungeonRoom to, bool unexploredExit, bool highlighted)
+        {
+            if (connectionPrefab == null) return;
+            var a = ToMapPosition(from.Position); var b = ToMapPosition(to.Position);
+            var direction = (b - a).normalized;
+            var tileSize = layout != null ? layout.corridorTileSize : 10;
+            var gap = layout != null ? layout.corridorTileGap : 4;
+            var start = a + direction * (SizeFor(from) * .5f + gap + tileSize * .5f);
+            var end = unexploredExit ? (a + b) * .5f : b - direction * (SizeFor(to) * .5f + gap + tileSize * .5f);
+            var distance = Vector2.Dot(end - start, direction);
+            if (distance < 0) return;
+            var count = Mathf.Max(1, Mathf.FloorToInt(distance / (tileSize + gap)) + 1);
+            for (var index = 0; index < count; index++)
+            {
+                var tile = Instantiate(connectionPrefab, content);
+                tile.name = unexploredExit ? "Unexplored exit" : "Corridor";
+                tile.raycastTarget = false;
+                tile.rectTransform.anchoredPosition = count == 1 ? (start + end) * .5f : Vector2.Lerp(start, end, index / (float)(count - 1));
+                tile.rectTransform.sizeDelta = Vector2.one * tileSize;
+                tile.color = highlighted ? new Color(.85f, .69f, .38f) : unexploredExit
+                    ? new Color(.25f, .25f, .24f, 1f - .6f * index / Mathf.Max(1, count - 1)) : new Color(.37f, .36f, .32f);
+                activeViews.Add(tile.gameObject);
             }
         }
 
-        private static List<DungeonRoom> CollectVisibleRooms(DungeonRunState state, IEnumerable<DungeonRoom> currentNeighbours, bool showSelectionTargets)
+        private static FacingDirection DirectionTo(DungeonRoom from, DungeonRoom to) =>
+            DirectionUtility.FromDelta(new DungeonPosition(to.Position.X - from.Position.X, to.Position.Y - from.Position.Y));
+
+        public void OnBeginDrag(PointerEventData data)
         {
-            var rooms = state.Graph.Rooms.Where(room => room.IsVisited || room.IsRevealed).ToList();
-            if (showSelectionTargets)
-                rooms.AddRange(currentNeighbours.Where(room => !room.IsVisited));
-            return rooms;
+            if (dragging || data.button != PointerEventData.InputButton.Left) return;
+            dragging = true; dragPointer = data.pointerId;
         }
-
-        private float GetFittedSpacing(IEnumerable<DungeonRoom> rooms)
+        public void OnDrag(PointerEventData data)
         {
-            // The viewport clips a long route. It must never shrink the room grid to fit it.
-            return spacing;
+            if (!dragging || data.pointerId != dragPointer || content == null) return;
+            var viewport = (RectTransform)transform;
+            if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(viewport, data.position, data.pressEventCamera, out var now)
+                || !RectTransformUtility.ScreenPointToLocalPointInRectangle(viewport, data.position - data.delta, data.pressEventCamera, out var before)) return;
+            content.anchoredPosition += now - before; ClampPan();
         }
-
-        private void CreateCurrentIcon(DungeonRoom current, FacingDirection facing, float mapSpacing, Dictionary<int, HashSet<FacingDirection>> routes)
+        public void OnEndDrag(PointerEventData data) { if (data.pointerId == dragPointer) dragging = false; }
+        public void OnScroll(PointerEventData data)
         {
-            var icon = Instantiate(iconPrefab, content);
-            PlaceIcon(icon, current.Position, mapSpacing);
-            icon.Bind(current, MapRoomIconStyle.Current, facing, false, RoutesFor(current, routes));
-            activeIcons.Add(icon);
+            if (content == null) return;
+            var next = Mathf.Clamp(zoom + data.scrollDelta.y * .1f, .65f, 1.5f);
+            if (Mathf.Approximately(next, zoom)) return;
+            var viewport = (RectTransform)transform;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(viewport, data.position, data.enterEventCamera, out var point);
+            content.anchoredPosition = point - (point - content.anchoredPosition) * (next / zoom);
+            zoom = next; content.localScale = Vector3.one * zoom; ClampPan();
         }
-
-        private void CreateReachableIcon(DungeonRoom current, DungeonRoom target, FacingDirection facing, FacingDirection? hoveredDirection, float mapSpacing, Dictionary<int, HashSet<FacingDirection>> routes)
+        private void ClampPan()
         {
-            var icon = Instantiate(iconPrefab, content);
-            PlaceIcon(icon, target.Position, mapSpacing);
-            var targetDirection = DirectionTo(current, target);
-            var highlighted = hoveredDirection == targetDirection;
-            // A room revealed by map generation (boss, elite, chest) must retain its identity while it
-            // becomes selectable. Only genuinely unknown adjacent rooms display a question mark.
-            var style = target.IsVisited && target.IsCleared ? MapRoomIconStyle.ClearedExit : target.IsVisited || target.IsRevealed || target.IsMajorRoom ? MapRoomIconStyle.KnownRoom : MapRoomIconStyle.UnknownReachable;
-            icon.Bind(target, style, facing, highlighted, RoutesFor(target, routes));
-            icon.SetSelection(selected == null ? null : () => selected(targetDirection));
-            activeIcons.Add(icon);
+            if (content == null) return;
+            var half = ((RectTransform)transform).rect.size * .5f;
+            var position = content.anchoredPosition;
+            position.x = Mathf.Clamp(position.x, -maximum.x * zoom - half.x * .25f, -minimum.x * zoom + half.x * .25f);
+            position.y = Mathf.Clamp(position.y, -maximum.y * zoom - half.y * .25f, -minimum.y * zoom + half.y * .25f);
+            content.anchoredPosition = position;
         }
-
-        private void CreateKnownIcon(DungeonRoom room, FacingDirection facing, float mapSpacing, Dictionary<int, HashSet<FacingDirection>> routes)
-        {
-            var icon = Instantiate(iconPrefab, content);
-            PlaceIcon(icon, room.Position, mapSpacing);
-            icon.Bind(room, room.IsCleared ? MapRoomIconStyle.ClearedVisited : MapRoomIconStyle.KnownRoom, facing, false, RoutesFor(room, routes));
-            activeIcons.Add(icon);
-        }
-
-        private static FacingDirection DirectionTo(DungeonRoom from, DungeonRoom to)
-        {
-            return DirectionUtility.FromDelta(new DungeonPosition(to.Position.X - from.Position.X, to.Position.Y - from.Position.Y));
-        }
-
-        private static FacingDirection Opposite(FacingDirection direction) => (FacingDirection)(((int)direction + 2) % 4);
-
-        private static ISet<FacingDirection> RoutesFor(DungeonRoom room, IReadOnlyDictionary<int, HashSet<FacingDirection>> routes)
-        {
-            return routes.TryGetValue(room.RoomId, out var directions) ? directions : null;
-        }
-
-        private Vector2 ToMapPosition(DungeonPosition position, float mapSpacing)
-        {
-            return new Vector2((position.X - focusPosition.X) * mapSpacing, (position.Y - focusPosition.Y) * mapSpacing);
-        }
-
-        private void PlaceIcon(MapRoomIcon icon, DungeonPosition position, float mapSpacing)
-        {
-            var rect = icon.GetComponent<RectTransform>();
-            rect.anchoredPosition = ToMapPosition(position, mapSpacing);
-            rect.sizeDelta = Vector2.one * TileSizeFor(mapSpacing);
-        }
-
-        private static float TileSizeFor(float mapSpacing) => Mathf.Clamp(mapSpacing * .95f, 24f, 40f);
-
         private void ClearActiveViews()
         {
-            foreach (var icon in activeIcons)
+            foreach (var view in activeViews)
             {
-                if (icon == null) continue;
-                if (Application.isPlaying) Destroy(icon.gameObject);
-                else DestroyImmediate(icon.gameObject);
+                if (view == null) continue;
+                view.SetActive(false);
+                if (Application.isPlaying) Destroy(view); else DestroyImmediate(view);
             }
-            activeIcons.Clear();
+            activeViews.Clear();
         }
     }
 }

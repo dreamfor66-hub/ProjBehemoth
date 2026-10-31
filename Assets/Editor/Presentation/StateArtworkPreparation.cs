@@ -58,7 +58,7 @@ internal static class StateArtworkPreparation
             Directory.CreateDirectory(Path.GetDirectoryName(actor.animationPath));
             animation = ScriptableObject.CreateInstance<CombatSpriteAnimation>(); AssetDatabase.CreateAsset(animation, actor.animationPath);
         }
-        var idle = string.IsNullOrEmpty(actor.idleSource) ? AssetDatabase.LoadAssetAtPath<Sprite>(actor.idle) : Import(actor.idleSource, actor.idle);
+        var idle = string.IsNullOrEmpty(actor.idleSource) ? DungeonSlash.DesignerAssetPaths.Load<Sprite>(actor.idle) : Import(actor.idleSource, actor.idle);
         if (idle == null) throw new InvalidDataException("Missing authored Idle: " + actor.id);
         var loaded = new Dictionary<string, Sprite>();
         foreach (var pose in actor.poses)
@@ -83,17 +83,17 @@ internal static class StateArtworkPreparation
         EditorUtility.SetDirty(animation);
         if (actor.kind == "Player")
         {
-            var data = AssetDatabase.LoadAssetAtPath<PlayerCombatData>(actor.dataPath);
+            var data = DungeonSlash.DesignerAssetPaths.Load<PlayerCombatData>(actor.dataPath);
             data.combatAnimation = animation; EditorUtility.SetDirty(data);
         }
         else if (actor.kind == "Monster")
         {
-            var data = AssetDatabase.LoadAssetAtPath<MonsterData>(actor.dataPath);
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(actor.dataPath);
             data.combatAnimation = animation; EditorUtility.SetDirty(data);
         }
         else
         {
-            var data = AssetDatabase.LoadAssetAtPath<CompanionData>(actor.dataPath);
+            var data = DungeonSlash.DesignerAssetPaths.Load<CompanionData>(actor.dataPath);
             data.combatAnimation = animation; data.combatSprite = idle; EditorUtility.SetDirty(data);
         }
         AssetDatabase.SaveAssets();
@@ -109,6 +109,6 @@ internal static class StateArtworkPreparation
         importer.filterMode = FilterMode.Bilinear; importer.textureCompression = TextureImporterCompression.Uncompressed;
         importer.maxTextureSize = 4096; importer.npotScale = TextureImporterNPOTScale.None;
         var settings = new TextureImporterSettings(); importer.ReadTextureSettings(settings); settings.spriteMeshType = SpriteMeshType.FullRect; importer.SetTextureSettings(settings); importer.SaveAndReimport();
-        return AssetDatabase.LoadAssetAtPath<Sprite>(output);
+        return DungeonSlash.DesignerAssetPaths.Load<Sprite>(output);
     }
 }

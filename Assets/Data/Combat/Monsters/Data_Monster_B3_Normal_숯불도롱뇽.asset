@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f0f94ec7d31d445aac87fc5f063460, type: 3}
+  m_Name: "Data_Monster_B3_Normal_\uC22F\uBD88\uB3C4\uB871\uB1FD"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterdata.data_monster_b3_minion_ashhound.displayname
+    lastText: "\uC22F\uBD88 \uB3C4\uB871\uB1FD"
+  - propertyPath: encounterHint
+    key: data.monsterdata.data_monster_b3_minion_ashhound.encounterhint
+    lastText: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+      \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
+  textOwnerGuid: b26dee8bc7d43af4e8bc812b5bf6296e
+  displayName: "\uC22F\uBD88 \uB3C4\uB871\uB1FD"
+  portrait: {fileID: 21300000, guid: 1e9fff35087a6b24c83c4c53e3ebbe92, type: 2}
+  combatAnimation: {fileID: 11400000, guid: 6a30e237e39957648b5e1a7df2b3026b, type: 2}
+  encounterHint: "\uBAB8\uC744 \uC6C5\uD06C\uB9B0 \uB4A4 \uB36E\uCE5C\uB2E4. \uAC15\uD0C0
+    \uC57D\uC810\uC744 \uBA3C\uC800 \uB04A\uC790."
+  pattern: 0
+  supportId: 
+  diesWithLeader: 0
+  supportRoster: []
+  reinforcementInterval: 0
+  useOrbit: 0
+  orbitRadius: 170
+  orbitSpeed: 0.55
+  maxHp: 247.5
+  normalAttackInterval: 1.05
+  chargeInterval: 6.2
+  stunDuration: 3
+  stunDamageMultiplier: 1.65
+  experienceReward: 55
+  goldReward: 6
+  combatScale: 1
+  hitBoxes:
+  - center: {x: 0, y: 0}
+    radius: 108
+  attacks:
+  - {fileID: 11400000, guid: b1731ad5f26e4a645b0177f6c0d3732b, type: 2}
+  - {fileID: 11400000, guid: 065591a495967304d927859fc5dc9bbd, type: 2}
+  normalAttackSequence: []

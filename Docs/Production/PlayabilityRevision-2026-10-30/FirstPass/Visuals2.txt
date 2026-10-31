@@ -1,0 +1,71 @@
+Focused changed species sizes, authored giant poses and real AI feedback.
+PASS Data_Monster_B1_Minion_Skeleton full painted bounds fit combat viewport
+PASS Data_Monster_B1_Minion_Skeleton uses its authored species scale
+PASS Data_Monster_B1_Minion_Bat full painted bounds fit combat viewport
+PASS Data_Monster_B1_Minion_Bat uses its authored species scale
+PASS TunnelRat full painted bounds fit combat viewport
+PASS TunnelRat uses its authored species scale
+PASS Data_Monster_B1_Minion_Leech full painted bounds fit combat viewport
+PASS Data_Monster_B1_Minion_Leech uses its authored species scale
+PASS OrbitBat full painted bounds fit combat viewport
+PASS OrbitBat uses its authored species scale
+PASS AlarmHound full painted bounds fit combat viewport
+PASS AlarmHound uses its authored species scale
+PASS MirrorKnight full painted bounds fit combat viewport
+PASS MirrorKnight uses its authored species scale
+FAIL Data_Monster_B1_Elite_Minotaur full painted bounds fit combat viewport
+PASS Data_Monster_B1_Elite_Minotaur uses its authored species scale
+FAIL ArmoredExecutioner full painted bounds fit combat viewport
+PASS ArmoredExecutioner uses its authored species scale
+FAIL BellKeeper full painted bounds fit combat viewport
+PASS BellKeeper uses its authored species scale
+PASS Data_Monster_B2_Minion_FrostBat full painted bounds fit combat viewport
+PASS Data_Monster_B2_Minion_FrostBat uses its authored species scale
+PASS IceNeedle full painted bounds fit combat viewport
+PASS IceNeedle uses its authored species scale
+PASS SnowBell full painted bounds fit combat viewport
+PASS SnowBell uses its authored species scale
+PASS StormOrb full painted bounds fit combat viewport
+PASS StormOrb uses its authored species scale
+PASS Data_Monster_B2_Elite_FrostOgre full painted bounds fit combat viewport
+PASS Data_Monster_B2_Elite_FrostOgre uses its authored species scale
+PASS IceMirror full painted bounds fit combat viewport
+PASS IceMirror uses its authored species scale
+FAIL CrystalSpider full painted bounds fit combat viewport
+PASS CrystalSpider uses its authored species scale
+PASS Data_Monster_B3_Elite_SoulKnight full painted bounds fit combat viewport
+PASS Data_Monster_B3_Elite_SoulKnight uses its authored species scale
+PASS BloodExecutioner full painted bounds fit combat viewport
+PASS BloodExecutioner uses its authored species scale
+PASS AshGeneral full painted bounds fit combat viewport
+PASS AshGeneral uses its authored species scale
+PASS EclipseBeast full painted bounds fit combat viewport
+PASS EclipseBeast uses its authored species scale
+PASS LampPriest full painted bounds fit combat viewport
+PASS LampPriest uses its authored species scale
+PASS TrialGuardian full painted bounds fit combat viewport
+PASS TrialGuardian uses its authored species scale
+FAIL DeepTrialGuardian full painted bounds fit combat viewport
+PASS DeepTrialGuardian uses its authored species scale
+PASS Data_Monster_B2_Boss_FrostQueen full painted bounds fit combat viewport
+PASS Data_Monster_B2_Boss_FrostQueen uses its authored species scale
+PASS Data_Monster_B2_Boss_FrostQueen authored Ready and anatomical weak points match shared body hitboxes
+PASS Data_Monster_B2_Boss_FrostQueen stun fallback remains a valid painted image
+PASS Data_Monster_B3_Boss_SoulEater full painted bounds fit combat viewport
+PASS Data_Monster_B3_Boss_SoulEater uses its authored species scale
+PASS Data_Monster_B3_Boss_SoulEater authored Ready and anatomical weak points match shared body hitboxes
+PASS Data_Monster_B3_Boss_SoulEater stun fallback remains a valid painted image
+PASS StormMatriarch full painted bounds fit combat viewport
+PASS StormMatriarch uses its authored species scale
+PASS StormMatriarch authored Ready and anatomical weak points match shared body hitboxes
+PASS StormMatriarch stun fallback remains a valid painted image
+PASS Data_Monster_B1_Minion_Bat retains identical scale when grouped
+PASS TunnelRat retains identical scale when grouped
+PASS Data_Monster_B1_Minion_Leech retains identical scale when grouped
+PASS OrbitBat retains identical scale when grouped
+FAIL wide roc preserves the separate small support in the authored encounter
+PASS real normal-attack AI produces guard impact feedback at resolution
+PASS real unguarded monster attack drives the HP-loss screen warning
+PASS top health summary stays current while inventory drawer is closed
+FAIL real failed weak-point window produces the heavier charge impact
+COMPLETE 62 PASS / 7 FAIL

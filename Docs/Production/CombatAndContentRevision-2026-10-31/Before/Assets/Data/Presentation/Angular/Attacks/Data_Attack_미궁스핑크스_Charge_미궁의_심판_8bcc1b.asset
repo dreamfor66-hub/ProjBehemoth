@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: "Data_Attack_\uBBF8\uAD81\uC2A4\uD551\uD06C\uC2A4_Charge_\uBBF8\uAD81\uC758_\uC2EC\uD310_8bcc1b"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.stonesphinx-1.displayname
+    lastText: "\uBBF8\uAD81\uC758 \uC2EC\uD310"
+  textOwnerGuid: 8bcc1bfd690bf3c43a63d3d6df0cd6ae
+  type: 1
+  displayName: "\uBBF8\uAD81\uC758 \uC2EC\uD310"
+  damage: 47.52
+  shieldDamage: 47.52
+  windupDuration: 0.01
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 6
+  chargeWeakPoints:
+  - id: left-wing
+    localPosition: {x: -219.12003, y: 154.66501}
+    hitRadius: 36
+    requiredChargeHits: 1
+    optional: 0
+  - id: left-forepaw
+    localPosition: {x: -198.275, y: -191.80501}
+    hitRadius: 36
+    requiredChargeHits: 1
+    optional: 0
+  - id: right-forepaw
+    localPosition: {x: 183.19498, y: -203.115}
+    hitRadius: 36
+    requiredChargeHits: 1
+    optional: 0
+  - id: right-wing
+    localPosition: {x: 286.97998, y: 162.205}
+    hitRadius: 36
+    requiredChargeHits: 1
+    optional: 0
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

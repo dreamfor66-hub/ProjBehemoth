@@ -39,7 +39,7 @@ internal static class EventReadingVerification
             if (command == "play") { EditorApplication.isPlaying = true; return; }
             if (!EditorApplication.isPlaying) return;
             var view = Object.FindFirstObjectByType<RunExpansionView>();
-            var story = AssetDatabase.LoadAssetAtPath<RandomEventData>("Assets/Data/Dungeon/Events/MagicTeacherFirst.asset");
+            var story = DungeonSlash.DesignerAssetPaths.Load<RandomEventData>("Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset");
             if (command.StartsWith("capture:"))
             {
                 captureLabel = command.Substring(8); captureFrames = 8; return;

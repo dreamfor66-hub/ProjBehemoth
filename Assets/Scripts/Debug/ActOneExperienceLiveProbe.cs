@@ -35,7 +35,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
         foreach(var controller in FindObjectsByType<GameFlowController>(FindObjectsSortMode.None)) {controller.StopAllCoroutines();controller.enabled=false;}
         typeof(CombatController).GetField("Completed",BindingFlags.NonPublic|BindingFlags.Instance).SetValue(combat,null);
         FindFirstObjectByType<DungeonController>().HideNavigation();
-        var fixture=Instantiate(UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset"));
+        var fixture=Instantiate(DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset"));
         fixture.maxHp=50000; fixture.normalAttackInterval=999; fixture.chargeInterval=999;
         if(monstersOnly){RunSession.SelectedCharacter=combat.Content.characters.First(c=>c.character==CharacterKind.Warrior);FreshRun();yield return new WaitForSecondsRealtime(.6f);}
         foreach(var data in combat.Content.characters.Where(c=>!monstersOnly&&(!warriorOnly||c.character==CharacterKind.Warrior)))
@@ -108,7 +108,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
             var monsterIds=new[]{"Data_Monster_B1_Minion_Bat","TunnelRat","Data_Monster_B1_Minion_Skeleton","Data_Monster_B1_Minion_Leech","AlarmHound","MirrorKnight","ArmoredExecutioner","Data_Monster_B1_Elite_Minotaur","BellKeeper","BroodKeeper","OrbitBat","Data_Monster_B1_Boss_MazeGuardian"};
             foreach(var id in monsterIds)
             {
-                var data=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/"+id+".asset");
+                var data=DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/"+id+".asset");
                 var runtime=new MonsterRuntime(data);var library=data.combatAnimation;
                 var view=Instantiate(Ref<MonsterView>(combat,"monsterPrefab"),scene.LogicalArea);view.Root.anchoredPosition=Vector2.zero;
                 var body=Ref<Image>(view,"body");
@@ -147,9 +147,9 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
         typeof(CombatController).GetField("Completed", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(combat, null);
         RunSession.SelectedCharacter = combat.Content.characters.First(c => c.character == CharacterKind.Warrior);
         FreshRun();
-        var budget = UnityEditor.AssetDatabase.LoadAssetAtPath<ActGrowthBudget>("Assets/Data/Balance/Act1GrowthBudget.asset");
+        var budget = DungeonSlash.DesignerAssetPaths.Load<ActGrowthBudget>("Assets/Data/Balance/Act1GrowthBudget.asset");
         if (budget != null) budget.ApplyReferenceBuild(run.State, GrowthScenario.Required);
-        var data = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_MazeGuardian.asset");
+        var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_미궁_스핑크스.asset");
         combat.PrepareEncounter(run.State, new[] { data }, 1); combat.BeginPreparedCombat();
         FindFirstObjectByType<DungeonController>().HideNavigation();
         yield return null; yield return null;
@@ -184,7 +184,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
         yield return Capture("Sphinx-Break");
         combat.enabled=true;
         FreshRun();
-        var small = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Bat.asset");
+        var small = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_고블린사냥꾼.asset");
         combat.PrepareEncounter(run.State,new[]{data,small},1); combat.BeginPreparedCombat(); yield return null;
         var group = combat.Enemies.First(e=>e.Data==data);
         var groupView=FindObjectsByType<MonsterView>(FindObjectsSortMode.None).First(v=>ReferenceEquals(Ref<MonsterData>(v,"boundData"),data));
@@ -256,7 +256,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
 
         // Preparation and sustained overlapping contacts use production Begin/Move/End, without all-cancel between cycles.
         FreshRun();
-        var monster = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+        var monster = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
         combat.PrepareEncounter(run.State, new[] { monster }, 1); combat.BeginPreparedCombat(); yield return new WaitForSecondsRealtime(.5f);
         var player = FindFirstObjectByType<PlayerView>();
         var inputCenter = Position(combat.Enemies[0]);
@@ -294,7 +294,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
         foreach (var path in paths)
         {
             FreshRun(); input.enabled = false;
-            var data = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/" + path + ".asset");
+            var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/" + path + ".asset");
             combat.PrepareEncounter(run.State, new[] { data }, 1); combat.BeginPreparedCombat();
             var enemy = combat.Enemies[0]; float elapsed = 0, preparation = 0, minGuard = combat.Player.ShieldCurrent;
             Check(!combat.InputPaused && !expansion.IsDecisionOpen, data.displayName + ": pilot starts without a modal pause");
@@ -367,7 +367,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
             encounters = encounters.Where(e => review.Contains(e.displayName)).ToArray();
             File.AppendAllText(Folder + "Encounters.txt", "Targeted retry only: guard during final 0.2s of telegraphs, recover between them, and use long in-bounds swipes to connect separated enemies. No stat/data changes.\n");
         }
-        var budget = UnityEditor.AssetDatabase.LoadAssetAtPath<ActGrowthBudget>("Assets/Data/Balance/Act1GrowthBudget.asset");
+        var budget = DungeonSlash.DesignerAssetPaths.Load<ActGrowthBudget>("Assets/Data/Balance/Act1GrowthBudget.asset");
         File.WriteAllText(Folder + "Encounter-Telemetry.tsv", "encounter\tlevel\tgrowthProfile_U\tseconds\thpLost\tminimumGuard\tbreaks\tresult\n");
         foreach (var encounter in encounters)
         {
@@ -447,7 +447,7 @@ public sealed class ActOneExperienceLiveProbe : MonoBehaviour
     {
         combat.ResetEncounter();
         var balance = Ref<RunBalanceSettings>(run, "balanceSettings");
-        var source = UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset");
+        var source = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_흡혈박쥐.asset");
         var attack = source.GetAttack(MonsterAttackType.Normal);
         var interval = source.normalAttackInterval + attack.windupDuration;
         var roles = new[] { CharacterKind.Warrior, CharacterKind.Rogue }.Select(kind =>

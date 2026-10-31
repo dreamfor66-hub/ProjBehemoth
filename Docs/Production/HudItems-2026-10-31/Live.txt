@@ -1,0 +1,17 @@
+Focused live Unity HUD/feedback matrix; runtime-only practice data. No balance suite.
+PASS empty bag retains the three actual capacity slots
+PASS two potions leave the third slot visible
+PASS relic and potion artwork use the same enlarged icon prefab and size
+PASS relic row begins beside the portrait at the requested yellow-line position
+PASS bag art and empty-slot backings do not intercept occupied-slot pointer hits
+PASS enlarged potion hover shows the correct description
+PASS clicking the bag potion opens its existing action menu
+PASS throw action still enters targeting from the new bag
+PASS discard returns the icon while preserving empty bag slots
+PASS reacquisition reuses pooled icon with current bindings
+PASS full bag matches the actual three-potion capacity
+PASS enlarged relic overflow wraps into another row
+PASS held charge reaches full and uses a saved overlay above the HUD
+PASS charge overlay is later than the top-bar HUD in canvas draw order
+PASS real unguarded attack damages HP, keeps red edges and emits no hit shape
+PASS real guarded attack emits no guard-impact shape

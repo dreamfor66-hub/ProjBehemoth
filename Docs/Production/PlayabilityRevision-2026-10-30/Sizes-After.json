@@ -1,0 +1,1889 @@
+{
+    "monsters": [
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_납골당의_종.asset",
+            "guid": "4dc6b9d6f09c1f14594fda8127d02995",
+            "name": "납골당의 종",
+            "texture": "Assets/Art/World/Angular/Monsters/OssuaryBell.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/BellKeeper-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -270.0,
+                "y": -209.99998474121095,
+                "width": 540.0,
+                "height": 534.7657470703125
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 16.0,
+                "y": 13.0,
+                "width": 1238.0,
+                "height": 1226.0
+            },
+            "ppu": 229.25926208496095,
+            "scale": 1.0299999713897706,
+            "pivot": {
+                "x": 619.0,
+                "y": 481.4444580078125
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": -45.0
+                    },
+                    "radius": 165.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 165.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 45.0
+                    },
+                    "radius": 165.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_미궁_스핑크스.asset",
+            "guid": "fb0cdacf025fd12468b40e7cc65b2ae7",
+            "name": "미궁 스핑크스",
+            "texture": "Assets/Art/World/ActOne/StoneSphinx-Idle.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B1_Boss_MazeGuardian-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -560.0,
+                "y": -250.0,
+                "width": 1120.0,
+                "height": 491.87591552734377
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 9.0,
+                "y": 0.0,
+                "width": 2031.0,
+                "height": 1024.0
+            },
+            "ppu": 208.18258666992188,
+            "scale": 1.0,
+            "pivot": {
+                "x": 1015.5,
+                "y": 520.4564819335938
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -7.072998046875,
+                        "y": -8.841238975524903
+                    },
+                    "radius": 205.0
+                },
+                {
+                    "center": {
+                        "x": -283.94500732421877,
+                        "y": 96.1500015258789
+                    },
+                    "radius": 155.0
+                },
+                {
+                    "center": {
+                        "x": 291.4850158691406,
+                        "y": 107.45999908447266
+                    },
+                    "radius": 155.0
+                },
+                {
+                    "center": {
+                        "x": -188.84999084472657,
+                        "y": -162.45999145507813
+                    },
+                    "radius": 95.0
+                },
+                {
+                    "center": {
+                        "x": 179.42498779296876,
+                        "y": -170.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_실인형.asset",
+            "guid": "b71e49b7bfafade4fb74b71c6409e7b8",
+            "name": "실인형",
+            "texture": "Assets/Art/World/Angular/Monsters/Threadling.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/OrbitBat-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -60.89678955078125,
+                "y": -35.984466552734378,
+                "width": 121.7935791015625,
+                "height": 121.99097442626953
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 16.0,
+                "y": 12.0,
+                "width": 1234.0,
+                "height": 1236.0
+            },
+            "ppu": 1013.1898193359375,
+            "scale": 1.0,
+            "pivot": {
+                "x": 617.0,
+                "y": 364.5909118652344
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -2.768035888671875,
+                        "y": 0.0
+                    },
+                    "radius": 35.984466552734378
+                },
+                {
+                    "center": {
+                        "x": 2.768035888671875,
+                        "y": 0.0
+                    },
+                    "radius": 35.984466552734378
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Boss_실짜는_공작부인.asset",
+            "guid": "508c88aa0e5982046bfdaef18729110a",
+            "name": "실짜는 공작부인",
+            "texture": "Assets/Art/World/Angular/Monsters/WebDuchess.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/BroodKeeper-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -350.0,
+                "y": -155.0,
+                "width": 700.0,
+                "height": 580.7431640625
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 14.0,
+                "y": 28.0,
+                "width": 1228.0,
+                "height": 1192.0
+            },
+            "ppu": 205.25425720214845,
+            "scale": 1.0,
+            "pivot": {
+                "x": 614.0,
+                "y": 318.14410400390627
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -55.0,
+                        "y": 0.0
+                    },
+                    "radius": 155.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 155.0
+                },
+                {
+                    "center": {
+                        "x": 55.0,
+                        "y": 0.0
+                    },
+                    "radius": 155.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_쌍두_문지기.asset",
+            "guid": "5803c6e2e3ecb6d45a6edf579959d88c",
+            "name": "쌍두 문지기",
+            "texture": "Assets/Art/World/Angular/Monsters/EttinGatekeeper.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B1_Elite_Minotaur-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -270.0,
+                "y": -200.0,
+                "width": 540.0,
+                "height": 539.1296997070313
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 9.0,
+                "y": 7.0,
+                "width": 1241.0,
+                "height": 1239.0
+            },
+            "ppu": 229.8148193359375,
+            "scale": 1.0499999523162842,
+            "pivot": {
+                "x": 620.5,
+                "y": 459.6296691894531
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": -30.0
+                    },
+                    "radius": 170.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 30.0
+                    },
+                    "radius": 170.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_움직이는_갑옷.asset",
+            "guid": "127cfd7704f940544a6713d4985b0a57",
+            "name": "움직이는 갑옷",
+            "texture": "Assets/Art/World/Angular/Monsters/MirrorShell.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/MirrorKnight-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -230.0,
+                "y": -170.0,
+                "width": 460.0,
+                "height": 497.551025390625
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 64.0,
+                "y": 17.0,
+                "width": 1127.0,
+                "height": 1219.0
+            },
+            "ppu": 244.99998474121095,
+            "scale": 0.7799999713897705,
+            "pivot": {
+                "x": 563.5,
+                "y": 416.5
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": -45.0
+                    },
+                    "radius": 125.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 125.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 45.0
+                    },
+                    "radius": 125.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Elite_철갑_사마귀.asset",
+            "guid": "ecf1c349611a99341be2e93e20f059a6",
+            "name": "철갑 사마귀",
+            "texture": "Assets/Art/World/Angular/Monsters/IronMantis.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/ArmoredExecutioner-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -310.0,
+                "y": -135.0,
+                "width": 620.0,
+                "height": 530.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 6.0,
+                "y": 4.0,
+                "width": 1243.0,
+                "height": 1238.0
+            },
+            "ppu": 233.58489990234376,
+            "scale": 1.0399999618530274,
+            "pivot": {
+                "x": 621.5,
+                "y": 315.3396301269531
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -65.0,
+                        "y": 0.0
+                    },
+                    "radius": 135.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 135.0
+                },
+                {
+                    "center": {
+                        "x": 65.0,
+                        "y": 0.0
+                    },
+                    "radius": 135.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_거미.asset",
+            "guid": "e38eba67e08948347ab295b6c79c7e34",
+            "name": "거미",
+            "texture": "Assets/Art/World/Angular/Monsters/BoneScorpion.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/TunnelRat-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -150.96966552734376,
+                "y": -48.31029510498047,
+                "width": 301.9393310546875,
+                "height": 172.2225799560547
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 27.0,
+                "y": 167.0,
+                "width": 1200.0,
+                "height": 802.0
+            },
+            "ppu": 465.6764831542969,
+            "scale": 0.8500000238418579,
+            "pivot": {
+                "x": 600.0,
+                "y": 224.96966552734376
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -60.38786315917969,
+                        "y": 0.0
+                    },
+                    "radius": 48.31029510498047
+                },
+                {
+                    "center": {
+                        "x": -36.23271942138672,
+                        "y": 0.0
+                    },
+                    "radius": 48.31029510498047
+                },
+                {
+                    "center": {
+                        "x": -12.077571868896485,
+                        "y": 0.0
+                    },
+                    "radius": 48.31029510498047
+                },
+                {
+                    "center": {
+                        "x": 12.07757568359375,
+                        "y": 0.0
+                    },
+                    "radius": 48.31029510498047
+                },
+                {
+                    "center": {
+                        "x": 36.23271942138672,
+                        "y": 0.0
+                    },
+                    "radius": 48.31029510498047
+                },
+                {
+                    "center": {
+                        "x": 60.38786315917969,
+                        "y": 0.0
+                    },
+                    "radius": 48.31029510498047
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_경종_사냥개.asset",
+            "guid": "86403f7885618c84dbb121a953f0220b",
+            "name": "경종 사냥개",
+            "texture": "Assets/Art/World/Angular/Monsters/BellHound.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/AlarmHound-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -215.00001525878907,
+                "y": -85.0,
+                "width": 430.0000305175781,
+                "height": 360.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 7.0,
+                "y": 36.0,
+                "width": 1245.0,
+                "height": 1170.0
+            },
+            "ppu": 325.0000305175781,
+            "scale": 0.7799999713897705,
+            "pivot": {
+                "x": 622.5,
+                "y": 276.25
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -60.0,
+                        "y": 0.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": -19.999998092651368,
+                        "y": 0.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": 20.000001907348634,
+                        "y": 0.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": 60.0,
+                        "y": 0.0
+                    },
+                    "radius": 85.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_고블린사냥꾼.asset",
+            "guid": "59d88fb5cea09ae409b378a705c6c6e1",
+            "name": "고블린사냥꾼",
+            "texture": "Assets/Art/World/Angular/Monsters/LanternImp.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B1_Minion_Bat-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -180.5522003173828,
+                "y": -113.68101501464844,
+                "width": 361.1044006347656,
+                "height": 358.7970275878906
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 2.0,
+                "y": 5.0,
+                "width": 1252.0,
+                "height": 1244.0
+            },
+            "ppu": 346.7141418457031,
+            "scale": 0.7200000286102295,
+            "pivot": {
+                "x": 626.0,
+                "y": 394.14813232421877
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": -20.061355590820314
+                    },
+                    "radius": 93.61965942382813
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 20.061355590820314
+                    },
+                    "radius": 93.61965942382813
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset",
+            "guid": "f71f3849353c3a741b7371d1d3419ed1",
+            "name": "해골 전사",
+            "texture": "Assets/Art/World/Angular/Monsters/StringRevenant.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B1_Minion_Skeleton-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -180.0,
+                "y": -130.0,
+                "width": 360.0,
+                "height": 358.7969665527344
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 28.0,
+                "y": 30.0,
+                "width": 1197.0,
+                "height": 1193.0
+            },
+            "ppu": 332.5000305175781,
+            "scale": 1.0,
+            "pivot": {
+                "x": 598.5,
+                "y": 432.2500305175781
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": -30.0
+                    },
+                    "radius": 87.98143005371094
+                },
+                {
+                    "center": {
+                        "x": -0.9878387451171875,
+                        "y": 19.756820678710939
+                    },
+                    "radius": 100.0
+                },
+                {
+                    "center": {
+                        "x": 0.00000762939453125,
+                        "y": 71.48930358886719
+                    },
+                    "radius": 94.96770477294922
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_흡혈박쥐.asset",
+            "guid": "d841fd1131349e1438084c0ab5b600d2",
+            "name": "흡혈박쥐",
+            "texture": "Assets/Art/World/Angular/Monsters/CoffinSlime.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B1_Minion_Leech-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -84.1294937133789,
+                "y": -40.79005813598633,
+                "width": 168.2589874267578,
+                "height": 150.69471740722657
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 15.0,
+                "y": 34.0,
+                "width": 1231.0,
+                "height": 1196.0
+            },
+            "ppu": 793.6575317382813,
+            "scale": 1.0,
+            "pivot": {
+                "x": 615.5,
+                "y": 323.7333679199219
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -15.296272277832032,
+                        "y": 0.0
+                    },
+                    "radius": 40.79005813598633
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 40.79005813598633
+                },
+                {
+                    "center": {
+                        "x": 15.296272277832032,
+                        "y": 0.0
+                    },
+                    "radius": 40.79005813598633
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_겨울의_일각수.asset",
+            "guid": "54667eccb06d98746b603f33af299ab8",
+            "name": "겨울의 일각수",
+            "texture": "Assets/Art/World/GiantPoses/WinterUnicorn-Idle.png",
+            "sprite": "Assets/Art/Combat/GiantMonsterFrames/WinterUnicorn-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.0,
+                "height": 0.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.0,
+                "height": 0.0
+            },
+            "ppu": 139.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": -190.0,
+                        "y": 250.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": 30.0,
+                        "y": 230.0
+                    },
+                    "radius": 145.0
+                },
+                {
+                    "center": {
+                        "x": 200.0,
+                        "y": 205.0
+                    },
+                    "radius": 95.0
+                },
+                {
+                    "center": {
+                        "x": -230.0,
+                        "y": 65.0
+                    },
+                    "radius": 65.0
+                },
+                {
+                    "center": {
+                        "x": -90.0,
+                        "y": 75.0
+                    },
+                    "radius": 70.0
+                },
+                {
+                    "center": {
+                        "x": 210.0,
+                        "y": 65.0
+                    },
+                    "radius": 65.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_수정_등딱지.asset",
+            "guid": "c16969a0aaa6ee74c8c39ea15262fa61",
+            "name": "수정 등딱지",
+            "texture": "Assets/Art/World/Angular/Monsters/PrismCrab.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/CrystalSpider-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 272.75
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.850000023841858,
+            "pivot": {
+                "x": 627.0,
+                "y": 459.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_폭풍_해파리.asset",
+            "guid": "c082165dde8685f4ab9e002c0cb302e1",
+            "name": "폭풍 해파리",
+            "texture": "Assets/Art/World/Angular/Monsters/StormJelly.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/StormOrb-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 299.5
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 0.6200000047683716,
+            "pivot": {
+                "x": 627.0,
+                "y": 405.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Boss_폭풍의_대붕.asset",
+            "guid": "5946ee0bd997e36448ff353d80ebfdde",
+            "name": "폭풍의 대붕",
+            "texture": "Assets/Art/World/GiantPoses/TempestRoc-Idle.png",
+            "sprite": "Assets/Art/Combat/GiantMonsterFrames/TempestRoc-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.0,
+                "height": 0.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.0,
+                "height": 0.0
+            },
+            "ppu": 172.4509735107422,
+            "scale": 1.0,
+            "pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 210.0
+                    },
+                    "radius": 145.0
+                },
+                {
+                    "center": {
+                        "x": -150.0,
+                        "y": 285.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": 150.0,
+                        "y": 285.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": -165.0,
+                        "y": 65.0
+                    },
+                    "radius": 65.0
+                },
+                {
+                    "center": {
+                        "x": 165.0,
+                        "y": 65.0
+                    },
+                    "radius": 65.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_가면_성가수.asset",
+            "guid": "46b98f00984d8734d9b423a62a889bf8",
+            "name": "가면 성가수",
+            "texture": "Assets/Art/World/Angular/Monsters/MaskedChoir.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/PaleWisp-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 298.25
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 407.9999694824219
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_거울나방.asset",
+            "guid": "c395f3854537eb640a955b83be94c04b",
+            "name": "거울나방",
+            "texture": "Assets/Art/World/Angular/Monsters/MirrorMoth.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/IceMirror-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 304.75
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.25,
+            "pivot": {
+                "x": 627.0,
+                "y": 392.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Elite_쌍각_파수꾼.asset",
+            "guid": "b07761a94d2640a41ad472aecfdca930",
+            "name": "쌍각 파수꾼",
+            "texture": "Assets/Art/World/Angular/Monsters/TwinAntlerStag.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B2_Elite_FrostOgre-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 298.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.649999976158142,
+            "pivot": {
+                "x": 627.0,
+                "y": 457.9999694824219
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Normal_결정_성게.asset",
+            "guid": "811d13f58aeee4747b1ee2e42a8f3c3a",
+            "name": "결정 성게",
+            "texture": "Assets/Art/World/Angular/Monsters/CrystalUrchin.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/IceNeedle-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 306.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 0.6200000047683716,
+            "pivot": {
+                "x": 627.0,
+                "y": 395.0000305175781
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Normal_깃바늘_정령.asset",
+            "guid": "9a8888d9e5c52744fb1d2f2302d20795",
+            "name": "깃바늘 정령",
+            "texture": "Assets/Art/World/Angular/Monsters/QuillSprite.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B2_Minion_FrostBat-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 306.5
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 0.6000000238418579,
+            "pivot": {
+                "x": 627.0,
+                "y": 449.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Normal_엄니_순례자.asset",
+            "guid": "756c766eabf90b04192ff6bf4e09c953",
+            "name": "엄니 순례자",
+            "texture": "Assets/Art/World/Angular/Monsters/TuskPilgrim.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B2_Minion_Yeti-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 307.5
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 445.0000305175781
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Normal_장막_예언자.asset",
+            "guid": "3767fc650961daa46940e81e17116958",
+            "name": "장막 예언자",
+            "texture": "Assets/Art/World/Angular/Monsters/VeilOracle.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B2_Minion_IceWraith-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 304.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 448.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B2_Normal_종토끼.asset",
+            "guid": "acd4ec70882f8374a82bd485e96f27f1",
+            "name": "종토끼",
+            "texture": "Assets/Art/World/Angular/Monsters/BellHare.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/SnowBell-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 309.75
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 0.6399999856948853,
+            "pivot": {
+                "x": 627.0,
+                "y": 389.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_달_우상.asset",
+            "guid": "346a3087dc5c96d47a89151261f1e24a",
+            "name": "달 우상",
+            "texture": "Assets/Art/World/Angular/Monsters/MoonIdol.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/ElderRightHeart-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -65.0,
+                "width": 313.5,
+                "height": 300.25
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 0.7400000095367432,
+            "pivot": {
+                "x": 627.0,
+                "y": 288.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 65.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_일식의_키메라.asset",
+            "guid": "a20162045cffe5a4b96a5816de5fbd16",
+            "name": "일식의 키메라",
+            "texture": "Assets/Art/World/Angular/Monsters/EclipseChimera.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/EclipseBeast-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 310.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.399999976158142,
+            "pivot": {
+                "x": 627.0,
+                "y": 386.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_잿불_왕.asset",
+            "guid": "0f83843535eecd646a3cd8f4cc8fa6f8",
+            "name": "잿불 왕",
+            "texture": "Assets/Art/World/Angular/Monsters/CinderLich.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/AshGeneral-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 311.5
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.5,
+            "pivot": {
+                "x": 627.0,
+                "y": 384.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_잿불의_용.asset",
+            "guid": "b544a9bd660854044b65489c136cbc78",
+            "name": "잿불의 용",
+            "texture": "Assets/Art/World/GiantPoses/AshDragon-Idle.png",
+            "sprite": "Assets/Art/Combat/GiantMonsterFrames/AshDragon-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.0,
+                "height": 0.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 0.0,
+                "height": 0.0
+            },
+            "ppu": 162.87037658691407,
+            "scale": 1.0,
+            "pivot": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 210.0
+                    },
+                    "radius": 155.0
+                },
+                {
+                    "center": {
+                        "x": -260.0,
+                        "y": 65.0
+                    },
+                    "radius": 65.0
+                },
+                {
+                    "center": {
+                        "x": 260.0,
+                        "y": 65.0
+                    },
+                    "radius": 65.0
+                },
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 330.0
+                    },
+                    "radius": 85.0
+                },
+                {
+                    "center": {
+                        "x": -335.0,
+                        "y": 320.0
+                    },
+                    "radius": 105.0
+                },
+                {
+                    "center": {
+                        "x": 335.0,
+                        "y": 320.0
+                    },
+                    "radius": 105.0
+                },
+                {
+                    "center": {
+                        "x": -450.0,
+                        "y": 260.0
+                    },
+                    "radius": 55.0
+                },
+                {
+                    "center": {
+                        "x": 450.0,
+                        "y": 260.0
+                    },
+                    "radius": 55.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Boss_해_우상.asset",
+            "guid": "2c6f1640670ed9d49bff93c009950859",
+            "name": "해 우상",
+            "texture": "Assets/Art/World/Angular/Monsters/SunIdol.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/ElderLeftHeart-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -65.0,
+                "width": 313.5,
+                "height": 309.5
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 0.7400000095367432,
+            "pivot": {
+                "x": 627.0,
+                "y": 270.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 65.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_재의_대사제.asset",
+            "guid": "9177932eaa22ed644a46bfee82533abb",
+            "name": "재의 대사제",
+            "texture": "Assets/Art/World/Angular/Monsters/AshHierophant.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/LampPriest-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 307.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.100000023841858,
+            "pivot": {
+                "x": 627.0,
+                "y": 400.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_파계_기마수.asset",
+            "guid": "aa4d74befd776d949b9e6a0902de56ab",
+            "name": "파계 기마수",
+            "texture": "Assets/Art/World/Angular/Monsters/OathlessCentaur.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B3_Elite_SoulKnight-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 309.5000305175781
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.5499999523162842,
+            "pivot": {
+                "x": 627.0,
+                "y": 440.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Elite_핏빛_백작.asset",
+            "guid": "e839e9abbb14d7f42b4d17932c11d3f7",
+            "name": "핏빛 백작",
+            "texture": "Assets/Art/World/Angular/Monsters/CrimsonCount.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/BloodExecutioner-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 301.75
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.100000023841858,
+            "pivot": {
+                "x": 627.0,
+                "y": 407.0000305175781
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Normal_공허의_눈.asset",
+            "guid": "74285b100b3b0f94ba2ebc118d2e4f77",
+            "name": "공허의 눈",
+            "texture": "Assets/Art/World/Angular/Monsters/HollowEye.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B3_Minion_VoidMaw-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 298.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 454.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Normal_뱀_수문장.asset",
+            "guid": "b7ca2b2d5338d534fa09cb132ac0e0d4",
+            "name": "뱀 수문장",
+            "texture": "Assets/Art/World/Angular/Monsters/SerpentWarden.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B3_Minion_ShadeLancer-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 303.75
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 447.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Normal_숯불_도롱뇽.asset",
+            "guid": "b26dee8bc7d43af4e8bc812b5bf6296e",
+            "name": "숯불 도롱뇽",
+            "texture": "Assets/Art/World/Angular/Monsters/CoalSalamander.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_B3_Minion_AshHound-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 308.5000305175781
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 441.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Normal_재_가고일.asset",
+            "guid": "bb3b020db885c984995fc41f14641176",
+            "name": "재 가고일",
+            "texture": "Assets/Art/World/Angular/Monsters/AshGargoyle.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/AshCrow-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 301.25
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 398.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_B3_Normal_향로_망령.asset",
+            "guid": "97653d32a637160438a293565ee49723",
+            "name": "향로 망령",
+            "texture": "Assets/Art/World/Angular/Monsters/CenserRevenant.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/SoulLamp-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 297.75
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 406.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_가시등_시련수.asset",
+            "guid": "52b7da8d0f282654c919a5530c4a2e8c",
+            "name": "가시등 시련수",
+            "texture": "Assets/Art/World/Angular/Monsters/TarrasqueWhelp.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/TrialGuardian-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 312.25
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.600000023841858,
+            "pivot": {
+                "x": 627.0,
+                "y": 381.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_금먹는_두꺼비.asset",
+            "guid": "47d6d43ce99c4764985d63037cfb301e",
+            "name": "금먹는 두꺼비",
+            "texture": "Assets/Art/World/Angular/Monsters/GildedToad.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_Special_MerchantMutant-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 291.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 467.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_왕관_거신.asset",
+            "guid": "197b50c913a700645bf023916181a13f",
+            "name": "왕관 거신",
+            "texture": "Assets/Art/World/Angular/Monsters/CrownColossus.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/DeepTrialGuardian-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -95.0,
+                "width": 313.5,
+                "height": 301.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.850000023841858,
+            "pivot": {
+                "x": 627.0,
+                "y": 395.9999694824219
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_철니_미믹.asset",
+            "guid": "ca172d0cd76023441aebeb5e76e02585",
+            "name": "철니 미믹",
+            "texture": "Assets/Art/World/Angular/Monsters/IronMimic.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/Data_Monster_Special_Minion_Mimic-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -156.75,
+                "y": -108.00000762939453,
+                "width": 313.5,
+                "height": 280.5000305175781
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1254.0,
+                "height": 1254.0
+            },
+            "ppu": 400.0,
+            "scale": 1.0,
+            "pivot": {
+                "x": 627.0,
+                "y": 475.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 108.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_훈련_인형_716506.asset",
+            "guid": "71650604ee7500346bd2d47396f20812",
+            "name": "훈련 인형",
+            "texture": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/TrainingLight-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -184.46270751953126,
+                "y": -95.0,
+                "width": 368.9254150390625,
+                "height": 146.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 256.0,
+                "height": 256.0
+            },
+            "ppu": 69.39071655273438,
+            "scale": 1.0,
+            "pivot": {
+                "x": 128.0,
+                "y": 128.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_훈련_인형_787679.asset",
+            "guid": "787679510883c7c4883af0dbb6f93640",
+            "name": "훈련 인형",
+            "texture": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/TrainingHeavy-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -184.46270751953126,
+                "y": -95.0,
+                "width": 368.9254150390625,
+                "height": 146.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 256.0,
+                "height": 256.0
+            },
+            "ppu": 69.39071655273438,
+            "scale": 1.0,
+            "pivot": {
+                "x": 128.0,
+                "y": 128.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        },
+        {
+            "path": "Assets/Data/Combat/Monsters/Data_Monster_Special_훈련_인형_b15a31.asset",
+            "guid": "b15a3143d4e410844a0609af2f5744f4",
+            "name": "훈련 인형",
+            "texture": "Assets/Art/Enemies/Combat/TrainingLight/Idle.png",
+            "sprite": "Assets/Art/Combat/NativeMonsterFrames/TrainingMedium-Idle.asset",
+            "artwork": {
+                "serializedVersion": "2",
+                "x": -184.46270751953126,
+                "y": -95.0,
+                "width": 368.9254150390625,
+                "height": 146.0
+            },
+            "rect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 256.0,
+                "height": 256.0
+            },
+            "ppu": 69.39071655273438,
+            "scale": 1.0,
+            "pivot": {
+                "x": 128.0,
+                "y": 128.0
+            },
+            "hitBoxes": [
+                {
+                    "center": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "radius": 95.0
+                }
+            ]
+        }
+    ]
+}

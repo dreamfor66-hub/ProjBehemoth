@@ -8,6 +8,10 @@ namespace DungeonSlash
         [SerializeField] private RectTransform logicalArea;
         [SerializeField] private RectTransform playerAnchor;
         [SerializeField] private RectTransform monsterAnchor;
+        [Tooltip("Editor-visible enemy framing area; excludes the top bar and foreground player HUD.")]
+        public RectTransform monsterSafeArea;
+        [Tooltip("Shared caption layer above every actor painting, below the gameplay HUD and modal panels.")]
+        public RectTransform monsterCaptionRoot;
         [Header("Default monster formation (encounter offsets can override)")]
         [SerializeField] private float multiMonsterSpacing = 370f;
         [SerializeField] private float multiMonsterDepth = 65f;
@@ -116,6 +120,68 @@ namespace DungeonSlash
             var centerOffset = index - (count - 1) * .5f;
             var depthOffset = Mathf.Abs(centerOffset) * multiMonsterDepth;
             return MonsterPosition + new Vector2(centerOffset * multiMonsterSpacing, -depthOffset);
+        }
+
+        public Vector2 FitMonsterPlacement(MonsterData data,Vector2 placement)
+        {
+            // Static framing derived from authored paintings, shared by all poses. Never resize a species in a group.
+            var scale=GetMonsterScale(data);
+            var library=data.combatAnimation;var frames=library!=null?new[]{library.idle,library.ready,library.attack,library.stunned}:new[]{data.portrait};
+            var minX=float.PositiveInfinity;var maxX=float.NegativeInfinity;var minY=float.PositiveInfinity;var maxY=float.NegativeInfinity;
+            foreach(var sprite in frames)
+            {
+                if(sprite==null||sprite.rect.width<=0)continue;
+                var units=MonsterData.ArtworkUnitsPerWorldUnit/sprite.pixelsPerUnit*(library!=null?library.canvasScale:1)*scale;
+                minX=Mathf.Min(minX,-sprite.pivot.x*units);maxX=Mathf.Max(maxX,(sprite.rect.width-sprite.pivot.x)*units);
+                minY=Mathf.Min(minY,-sprite.pivot.y*units);maxY=Mathf.Max(maxY,(sprite.rect.height-sprite.pivot.y)*units);
+            }
+            if(float.IsInfinity(maxY))return placement;
+            var origin=data.BodyCenterFromPlacement(placement,scale);
+            var safe = MonsterSafeBounds;
+            var orbit=data.useOrbit?data.orbitRadius:0;
+            var left=safe.xMin-minX+orbit;var right=safe.xMax-maxX-orbit;
+            origin.x=left<=right?Mathf.Clamp(origin.x,left,right):(left+right)*.5f;
+            var bottom=safe.yMin-minY+(data.useOrbit?65:0);
+            var top=safe.yMax-maxY-56-(data.useOrbit?65:0);
+            origin.y=bottom<=top?Mathf.Clamp(origin.y,bottom,top):(bottom+top)*.5f;
+            return origin + Vector2.up * data.FootprintY * scale;
+        }
+
+        // One uniform factor for the species' entire pose set, independent of encounter population.
+        public float GetMonsterScale(MonsterData data)
+        {
+            var library=data.combatAnimation;
+            var frames=library!=null?new[]{library.idle,library.ready,library.attack,library.stunned}:new[]{data.portrait};
+            var min=Vector2.one*float.PositiveInfinity;var max=Vector2.one*float.NegativeInfinity;
+            foreach(var sprite in frames)
+            {
+                if(sprite==null)continue;
+                var units=MonsterData.ArtworkUnitsPerWorldUnit/sprite.pixelsPerUnit*(library!=null?library.canvasScale:1);
+                min=Vector2.Min(min,-sprite.pivot*units);max=Vector2.Max(max,(sprite.rect.size-sprite.pivot)*units);
+            }
+            if(float.IsInfinity(min.x))return data.combatScale;
+            var safe=MonsterSafeBounds;
+            var width=safe.width-(data.useOrbit?data.orbitRadius*2:0);
+            var height=safe.height-80-(data.useOrbit?130:0);
+            var size=max-min;
+            return Mathf.Max(.1f,Mathf.Min(data.combatScale,width/Mathf.Max(1,size.x),height/Mathf.Max(1,size.y)));
+        }
+
+        public Rect MonsterSafeBounds
+        {
+            get
+            {
+                if (monsterSafeArea == null)
+                {
+                    var area = logicalArea.rect;
+                    return Rect.MinMaxRect(area.xMin + area.width * .105f, area.yMin + area.height * .255f,
+                        area.xMin + area.width * .865f, area.yMin + area.height * .892f);
+                }
+                var corners = new Vector3[4]; monsterSafeArea.GetWorldCorners(corners);
+                var min = (Vector2)logicalArea.InverseTransformPoint(corners[0]);
+                var max = (Vector2)logicalArea.InverseTransformPoint(corners[2]);
+                return Rect.MinMaxRect(min.x, min.y, max.x, max.y);
+            }
         }
 
         public bool TryScreenToLogical(Vector2 screenPoint, Camera uiCamera, out Vector2 position)

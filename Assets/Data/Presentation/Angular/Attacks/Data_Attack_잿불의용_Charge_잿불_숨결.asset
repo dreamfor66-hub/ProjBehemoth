@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ec4614746190240b97bdb3797cc6f2, type: 3}
+  m_Name: "Data_Attack_\uC7BF\uBD88\uC758\uC6A9_Charge_\uC7BF\uBD88_\uC228\uACB0"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.monsterattackdata.ashdragon-1.displayname
+    lastText: "\uC7BF\uBD88 \uC228\uACB0"
+  textOwnerGuid: dccf4fd832dece645a161ca40b1ad15d
+  type: 1
+  displayName: "\uC7BF\uBD88 \uC228\uACB0"
+  damage: 55.2
+  shieldDamage: 55.2
+  windupDuration: 0.01
+  recoveryDuration: 0.5
+  guardable: 1
+  requiredSupportId: 
+  chargeTimeLimit: 4.4
+  chargeWeakPoints:
+  - id: core-1
+    localPosition: {x: 145, y: 310}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  - id: core-2
+    localPosition: {x: 60, y: 210}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  - id: core-3
+    localPosition: {x: -100, y: 90}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  - id: core-4
+    localPosition: {x: 155, y: 90}
+    hitRadius: 30
+    requiredChargeHits: 1
+    optional: 0
+  combatMechanics:
+    directionalGuard:
+      enabled: 0
+      breakByAttackWay: 1
+      maxGuard: 72
+      rebuildDelay: 5
+      rebuildPerSecond: 24
+    healOnUnguardedHit: 0
+    hitCount: 1
+    followupDelay: 0.25
+  chargeSummonMechanics:
+    openingSummons: []
+    summonOnFailedCharge: {fileID: 0}
+    healOnFailedChargeWhileSummonAlive: 0

@@ -61,14 +61,14 @@ internal static class DebugCatalogPreparation
     {
         Directory.CreateDirectory(PortraitRoot); AssetDatabase.Refresh();
         var monsters = AssetDatabase.FindAssets("t:MonsterData", new[] { "Assets/Data/Combat/Monsters" })
-            .Select(g => AssetDatabase.LoadAssetAtPath<MonsterData>(AssetDatabase.GUIDToAssetPath(g))).OrderBy(m => m.name, StringComparer.Ordinal).ToArray();
+            .Select(g => DungeonSlash.DesignerAssetPaths.Load<MonsterData>(AssetDatabase.GUIDToAssetPath(g))).OrderBy(m => m.name, StringComparer.Ordinal).ToArray();
         if (monsters.Length != FaceCrops.Length) throw new InvalidDataException("Portrait source roster changed; review new face framing before installing.");
         for (var i = 0; i < monsters.Length; i++)
         {
             var monster = monsters[i]; var source = monster.combatAnimation != null ? monster.combatAnimation.idle : monster.portrait;
             if (source == null) throw new InvalidDataException("Missing portrait source: " + monster.name);
             var path = PortraitRoot + monster.name + ".asset";
-            var portrait = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            var portrait = DungeonSlash.DesignerAssetPaths.Load<Sprite>(path);
             if (portrait == null)
             {
                 var r = source.rect; var crop = FaceCrops[i];
@@ -168,7 +168,7 @@ internal static class DebugCatalogPreparation
             scroll.verticalScrollbar=scrollbar;scroll.verticalScrollbarVisibility=ScrollRect.ScrollbarVisibility.AutoHide;
             overlay.catalogScroll=scroll;
             var template=CreateTile(root);overlay.tilePrefab=PrefabUtility.SaveAsPrefabAsset(template.gameObject,PrefabPath).GetComponent<DebugCatalogTile>();Object.DestroyImmediate(template.gameObject);
-            var monsters=AssetDatabase.FindAssets("t:MonsterData",new[]{"Assets/Data/Combat/Monsters"}).Select(g=>AssetDatabase.LoadAssetAtPath<MonsterData>(AssetDatabase.GUIDToAssetPath(g))).OrderBy(m=>m.name,StringComparer.Ordinal).ToArray();
+            var monsters=AssetDatabase.FindAssets("t:MonsterData",new[]{"Assets/Data/Combat/Monsters"}).Select(g=>DungeonSlash.DesignerAssetPaths.Load<MonsterData>(AssetDatabase.GUIDToAssetPath(g))).OrderBy(m=>m.name,StringComparer.Ordinal).ToArray();
             overlay.monsterCatalog=monsters.ToList();
             foreach(var monster in monsters){var tile=(GameObject)PrefabUtility.InstantiatePrefab(overlay.tilePrefab.gameObject,content);var view=tile.GetComponent<DebugCatalogTile>();view.icon.sprite=monster.portrait;view.previewIcon=monster.portrait;}
             overlay.selectionLabel=Label("SelectedName",root,new Vector2(-212,-282),new Vector2(900,44),"ui.debugcatalog.choose",28);

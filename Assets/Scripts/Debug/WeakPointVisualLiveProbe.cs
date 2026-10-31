@@ -30,7 +30,7 @@ public sealed class WeakPointVisualLiveProbe:MonoBehaviour
     void Setup(int hits,bool optional=false,bool authored=false)
     {
         var practice=Object.FindFirstObjectByType<OctoberReviewLiveProbe>()??new GameObject("Weak point practice clone").AddComponent<OctoberReviewLiveProbe>();
-        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+        practice.Setup(CharacterKind.Warrior,false,"Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
         combat=Object.FindFirstObjectByType<CombatController>();scene=Object.FindFirstObjectByType<CombatSceneView>();input=Object.FindFirstObjectByType<CombatInputController>();
         // Keep this visual evidence clear of the unrelated six-second start-controls hint.
         var arcade=Object.FindFirstObjectByType<ArcadeHudController>();

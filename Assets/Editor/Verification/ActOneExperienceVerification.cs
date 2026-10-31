@@ -42,8 +42,8 @@ internal static class ActOneExperienceVerification
     }
     static void VerifyGeneration()
     {
-        var settings = AssetDatabase.LoadAssetAtPath<DungeonGenerationSettings>("Assets/Data/Settings/DungeonGenerationSettings.asset");
-        var fatigue = AssetDatabase.LoadAssetAtPath<FatigueSettings>("Assets/Data/Settings/Fatigue.asset");
+        var settings = DungeonSlash.DesignerAssetPaths.Load<DungeonGenerationSettings>("Assets/Data/Settings/DungeonGenerationSettings.asset");
+        var fatigue = DungeonSlash.DesignerAssetPaths.Load<FatigueSettings>("Assets/Data/Settings/Fatigue.asset");
         var log = new StringBuilder("64 deterministic seeds: changed act-one generator and fatigue only.\n");
         for (var seed = 0; seed < 64; seed++)
         {

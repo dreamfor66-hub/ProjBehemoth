@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: WeakPointStyle
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: f7f97c387f4616d4387be3930e86b739, type: 2}
-  stroke: {r: 0.78039217, g: 0.3019608, b: 0.2, a: 1}
-  core: {r: 0.93333334, g: 0.8980392, b: 0.8352941, a: 1}
+  stroke: {r: 0.7607843, g: 0.21568628, b: 0.12941177, a: 1}
+  core: {r: 0.9411765, g: 0.88235295, b: 0.7176471, a: 1}
   outline: {r: 0, g: 0, b: 0, a: 1}
-  ringThickness: 1.5
+  ringThickness: 1.75
   arcGap: 14
   coreRadius: 1.25
   breakLifetime: 0.38

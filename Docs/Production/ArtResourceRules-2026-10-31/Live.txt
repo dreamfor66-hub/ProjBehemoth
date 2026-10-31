@@ -1,0 +1,55 @@
+Existing Unity Editor. Renamed sprite bindings, UI icons and a live combat frame; no balance suite or input changes.
+PASS 납골당의 종 portrait and five combat state bindings
+PASS 미궁 스핑크스 portrait and five combat state bindings
+PASS 실인형 portrait and five combat state bindings
+PASS 실짜는 공작부인 portrait and five combat state bindings
+PASS 쌍두 문지기 portrait and five combat state bindings
+PASS 움직이는 갑옷 portrait and five combat state bindings
+PASS 철갑 사마귀 portrait and five combat state bindings
+PASS 거미 portrait and five combat state bindings
+PASS 경종 사냥개 portrait and five combat state bindings
+PASS 고블린사냥꾼 portrait and five combat state bindings
+PASS 해골 전사 portrait and five combat state bindings
+PASS 흡혈박쥐 portrait and five combat state bindings
+PASS 겨울의 일각수 portrait and five combat state bindings
+PASS 수정 등딱지 portrait and five combat state bindings
+PASS 폭풍의 대붕 portrait and five combat state bindings
+PASS 폭풍 해파리 portrait and five combat state bindings
+PASS 가면 성가수 portrait and five combat state bindings
+PASS 거울나방 portrait and five combat state bindings
+PASS 쌍각 파수꾼 portrait and five combat state bindings
+PASS 결정 성게 portrait and five combat state bindings
+PASS 깃바늘 정령 portrait and five combat state bindings
+PASS 엄니 순례자 portrait and five combat state bindings
+PASS 장막 예언자 portrait and five combat state bindings
+PASS 종토끼 portrait and five combat state bindings
+PASS 달 우상 portrait and five combat state bindings
+PASS 일식의 키메라 portrait and five combat state bindings
+PASS 잿불 왕 portrait and five combat state bindings
+PASS 잿불의 용 portrait and five combat state bindings
+PASS 해 우상 portrait and five combat state bindings
+PASS 재의 대사제 portrait and five combat state bindings
+PASS 파계 기마수 portrait and five combat state bindings
+PASS 핏빛 백작 portrait and five combat state bindings
+PASS 공허의 눈 portrait and five combat state bindings
+PASS 뱀 수문장 portrait and five combat state bindings
+PASS 숯불 도롱뇽 portrait and five combat state bindings
+PASS 재 가고일 portrait and five combat state bindings
+PASS 향로 망령 portrait and five combat state bindings
+PASS 가시등 시련수 portrait and five combat state bindings
+PASS 경량 훈련 인형 portrait and five combat state bindings
+PASS 균형 훈련 인형 portrait and five combat state bindings
+PASS 금먹는 두꺼비 portrait and five combat state bindings
+PASS 왕관 거신 portrait and five combat state bindings
+PASS 중량 훈련 인형 portrait and five combat state bindings
+PASS 철니 미믹 portrait and five combat state bindings
+PASS Warrior selection, portrait and four combat states
+PASS Rogue selection, portrait and four combat states
+PASS Barbarian selection, portrait and four combat states
+PASS Samurai selection, portrait and four combat states
+PASS Monk selection, portrait and four combat states
+PASS Wizard selection, portrait and four combat states
+PASS all 160 content UI icon bindings resolve to textures
+PASS visible winter unicorn uses renamed authored Ready sprite
+PASS visible Monk attack uses renamed authored Attack sprite
+PASS live HUD portrait and potion bag remain assigned

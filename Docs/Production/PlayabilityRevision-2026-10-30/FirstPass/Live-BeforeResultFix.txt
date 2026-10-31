@@ -1,0 +1,29 @@
+Focused existing Unity Editor runtime; production input handlers, no DPS/balance suite.
+PASS held offense reaches charged Ready before guard
+PASS downward guard immediately cancels charge and Ready
+PASS canceled charge cannot commit a hit on move/release
+PASS three sustained overlap/lift/repress cycles never resume canceled offense or lose defense contact
+PASS Space guard wins before offensive processing and blocks new attacks
+PASS guard interrupts the remaining hits of a committed three-hit action
+PASS attack painting immediately yields to authored Guard painting
+PASS Azure Talon grants immediate attack damage as well as reach
+PASS Distance Momentum grants immediate recovery reduction
+PASS Ragged Banner has a meaningful solo damage floor
+PASS Blood Contract reduces a20HP heal to12HP through the shared healing rule
+PASS carried Ember menu offers discard without drink/throw buttons
+PASS Ember cannot be consumed/thrown early and remains carried
+PASS carried Ember auto-revives at35percent and consumes exactly one bottle
+PASS living player cannot consume another revival
+PASS first floor step immediately reduces fatigue from100
+PASS camp restores100 without hidden grace
+PASS recovering fatigue never creates extra safe steps
+PASS fatigue reaches exactly0 and exhaustion
+PASS normal packs require both six victories and level4; eligible grown encounters still include packs
+PASS cooldown stays above player head between combatants
+PASS guard uses a thick bright shield silhouette
+PASS guarded monster strike shows a distinct cyan impact
+PASS recent HP damage produces a red peripheral wash
+PASS low HP warning persists after recent-hit flash fades
+PASS healing above danger threshold clears the low-health wash
+PASS production weak points show bright circular crosshair targets
+FAIL death title fades in before the result controls become actionable

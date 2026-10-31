@@ -1,0 +1,22 @@
+Existing Unity Editor. Scoped map layout, generation and navigation checks only. No combat/balance suite.
+PASS saved map style assigned
+PASS floor 1: 5 deterministic maps preserve room/event budgets, connectivity and opening; no packed blocks or touching unconnected routes
+PASS floor 2: 5 deterministic maps preserve room/event budgets, connectivity and opening; no packed blocks or touching unconnected routes
+PASS floor 3: 5 deterministic maps preserve room/event budgets, connectivity and opening; no packed blocks or touching unconnected routes
+PASS fog exposes only known landmarks and adjacent destinations
+PASS revealed major destinations use large rooms
+PASS small selectable cell has enlarged hit area
+PASS real EventSystem raycast reaches small cell through its transparent hit area
+PASS cell selection uses actual connected-room navigation and facing
+PASS distant known destination cannot teleport
+PASS drag pans without moving player
+PASS unrelated contact cannot move or end the owned drag
+PASS original contact continues after second contact lift
+PASS zoom-out is bounded and never auto-fits the map into tiny cells
+PASS zoom-in is bounded
+PASS saved recenter button restores current room and default size
+PASS hidden navigation disables all cell selection
+PASS large rooms and small corridor events coexist at authored sizes
+PASS decorative corridor tiles never intercept navigation input
+PASS saved close button closes map
+PASS HUD map button reopens map

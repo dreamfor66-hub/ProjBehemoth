@@ -52,7 +52,7 @@ public sealed class MonsterStunLiveProbe : MonoBehaviour
         var plan = JsonUtility.FromJson<Plan>(File.ReadAllText(Folder + "Install.json"));
         foreach (var entry in plan.actors)
         {
-            var original = AssetDatabase.LoadAssetAtPath<MonsterData>(entry.monster);
+            var original = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(entry.monster);
             var data = Instantiate(original);
             data.maxHp = 50000; data.normalAttackInterval = data.chargeInterval = 999;
             // The linked minion is checked alone without triggering leader-death cleanup.
@@ -87,7 +87,7 @@ public sealed class MonsterStunLiveProbe : MonoBehaviour
         }
         // Null-safe compatibility for monsters outside the authored act-one scope.
         var fallback = ScriptableObject.CreateInstance<CombatSpriteAnimation>();
-        var sample = AssetDatabase.LoadAssetAtPath<MonsterData>(plan.actors[0].monster);
+        var sample = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(plan.actors[0].monster);
         fallback.idle = sample.combatAnimation.idle;
         Check(fallback.For(CombatVisualState.Stunned) == fallback.idle, "unassigned stun falls back to Idle");
         Destroy(fallback);

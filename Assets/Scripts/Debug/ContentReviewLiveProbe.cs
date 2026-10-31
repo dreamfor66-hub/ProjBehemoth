@@ -54,7 +54,7 @@ public sealed class ContentReviewLiveProbe:MonoBehaviour
             var controller=Object.FindFirstObjectByType<RunController>();
             for(var act=1;act<=3;act++)for(var seed=0;seed<128;seed++)
             {
-                var run=new RunState(controller.State.Player.Data,UnityEditor.AssetDatabase.LoadAssetAtPath<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset")){Seed=seed,NormalCombatsInAct=99};
+                var run=new RunState(controller.State.Player.Data,DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset")){Seed=seed,NormalCombatsInAct=99};
                 none&=RandomEventSystem.Draw(clone,run,act,7)==null;
                 var draw=RandomEventSystem.Draw(content,run,act,7);active&=draw!=null&&!draw.excludedFromRandomPool;
             }

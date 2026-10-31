@@ -15,14 +15,14 @@ namespace DungeonSlash
             var candidates = content.stages.Where(stage => stage != null && stage.act == act).ToArray();
             return candidates.Length == 0 ? null : candidates[new Random(unchecked(seed + act * 7919)).Next(candidates.Length)];
         }
-        public EncounterData Get(int act, RoomEncounterType type, int roomId, int normalCount)
+        public EncounterData Get(int act, RoomEncounterType type, int roomId, int normalCount, int playerLevel = 1)
         {
             var key = $"{act}:{type}:{roomId}";
             if (assigned.TryGetValue(key, out var existing)) return existing;
             var stage = Stage(act); if (stage == null) return null;
             var random = new Random(unchecked(seed + act * 1619 + roomId * 577 + (int)type * 919));
             var normal = type != RoomEncounterType.Elite && type != RoomEncounterType.Boss;
-            var packsEnabled = normalCount >= stage.easyCombatCount && random.NextDouble() < stage.packChance;
+            var packsEnabled = normalCount >= stage.easyCombatCount && playerLevel >= stage.minimumPackLevel && random.NextDouble() < stage.packChance;
             var pool = type == RoomEncounterType.Elite ? stage.elites : type == RoomEncounterType.Boss ? stage.bosses : packsEnabled ? stage.hardCombats : stage.earlyCombats;
             if (!elitesSeen.TryGetValue(act, out var used)) elitesSeen[act] = used = new HashSet<string>();
             var maxCount = !packsEnabled ? 1 : act == 1 || normalCount < stage.tripleCombatCount ? 2 : 3;

@@ -22,7 +22,7 @@ namespace DungeonSlash
         MonsterKillHeal, Gold,
         AllDamageMultiplier, DamageReduction, ChargeGuardEnabled, DoubleChargeEnabled, DamagePerAttackDistance,
         RevivalHealthFraction, FlatNormalDamage, FlatChargeDamage, MaxMp, MpRegen, FireDamage, IceDamage, LightningDamage, PoisonDamage,
-        CriticalChance, CriticalDamageMultiplier
+        CriticalChance, CriticalDamageMultiplier, HealingReceived
     }
 
     public enum ShopItemKind { Relic, Potion }
@@ -37,7 +37,7 @@ namespace DungeonSlash
         OnCombatStartAfterConsume,
         Passive, OnCombatStart, OnTimer, OnKill, OnPoisonTick, OnSpellCast, OnSheathParry, OnPerfectGuard, OnAttackBuffUsed, OnWeakPointBreak, OnCombatWon, OnAttackResolved,
         OnBuffStart, OnBuffEnd, OnBuffStack, OnConditionMet, OnGuardStarted, OnGuardEnded, OnBeforeGuard, OnActionPreparing, OnSignal,
-        OnActionCompleted, OnEncounterRevealed, OnThrow
+        OnActionCompleted, OnEncounterRevealed, OnThrow, OnDeath
     }
 
     [Flags]
@@ -77,7 +77,6 @@ namespace DungeonSlash
         [Min(1)] public int effectCount;
         public float effectAngle;
         [Min(0f)] public float effectTime;
-        [Min(0)] public int travelGraceSteps;
         public ModifierKind effectStatType;
         public EffectScale scale;
         [Tooltip("실제 효과량 = (effectMagnitude + 참조값 × scaleRatio) × effectCount")] public float scaleRatio;

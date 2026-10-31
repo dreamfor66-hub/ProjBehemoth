@@ -47,7 +47,7 @@ internal static class MonsterAuthoringVerification
                 {
                     var path = AssetDatabase.GUIDToAssetPath(guid); var backup = Folder + "Before/" + path;
                     Directory.CreateDirectory(Path.GetDirectoryName(backup)); if (!File.Exists(backup)) File.Copy(path, backup);
-                    var attack = AssetDatabase.LoadAssetAtPath<MonsterAttackData>(path); EditorUtility.SetDirty(attack); AssetDatabase.SaveAssetIfDirty(attack);
+                    var attack = DungeonSlash.DesignerAssetPaths.Load<MonsterAttackData>(path); EditorUtility.SetDirty(attack); AssetDatabase.SaveAssetIfDirty(attack);
                 }
                 AssetDatabase.DeleteAsset("Assets/Data/Presentation/NativeMonsterFrames/OutlineBake.txt");
                 File.WriteAllText(Folder + "SerializationComplete.txt", "Weak points serialized under localPosition; unused legacy fields removed.\n");
@@ -60,7 +60,7 @@ internal static class MonsterAuthoringVerification
             }
             if (command == "cleanup")
             {
-                Selection.activeObject = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+                Selection.activeObject = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
                 AssetDatabase.DeleteAsset("Assets/Data/Combat/AuthoringGestureFixture.asset");
                 AssetDatabase.DeleteAsset("Assets/Data/Combat/AuthoringGestureAttack.asset");
                 var table = BehemothTextEditor.Table;
@@ -74,7 +74,7 @@ internal static class MonsterAuthoringVerification
     {
         const string p = "Assets/Data/Combat/AuthoringGestureFixture.asset", a = "Assets/Data/Combat/AuthoringGestureAttack.asset";
         AssetDatabase.DeleteAsset(p); AssetDatabase.DeleteAsset(a);
-        var source = AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Skeleton.asset");
+        var source = DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_해골_전사.asset");
         var copy = Object.Instantiate(source); var attack = Object.Instantiate(source.GetAttack(MonsterAttackType.Charge));
         attack.name = "AuthoringGestureAttack"; copy.name = "AuthoringGestureFixture";
         AssetDatabase.CreateAsset(attack, a); copy.attacks = new() { attack }; AssetDatabase.CreateAsset(copy, p);
@@ -94,7 +94,7 @@ internal static class MonsterAuthoringVerification
         {
             foreach (var record in baseline.monsters)
             {
-                var data = AssetDatabase.LoadAssetAtPath<MonsterData>(record.path); var name = data.name;
+                var data = DungeonSlash.DesignerAssetPaths.Load<MonsterData>(record.path); var name = data.name;
                 if (name.Contains("MazeGuardian")) File.WriteAllText(Folder + "NativeBounds.json", JsonUtility.ToJson(data.ArtworkBounds) + "\n" + string.Join("\n", data.combatAnimation.idle.vertices.Select(v => v.ToString("F4"))));
                 var expected = ScriptableObject.CreateInstance<MonsterData>();
                 // Deserialize value fields only. Unity may load referenced ScriptableObjects on a
@@ -141,7 +141,7 @@ internal static class MonsterAuthoringVerification
                 }
                 for (var i = 0; i < record.attacks.Count; i++)
                 {
-                    var before = AssetDatabase.LoadAssetAtPath<MonsterAttackData>(record.attacks[i]); var after = data.attacks[i];
+                    var before = DungeonSlash.DesignerAssetPaths.Load<MonsterAttackData>(record.attacks[i]); var after = data.attacks[i];
                     Check(before.chargeWeakPoints.Count == after.chargeWeakPoints.Count && before.chargeWeakPoints.Select((p, n) => Vector2.Distance(Vector2.Scale(p.localPosition, record.weakScale), after.chargeWeakPoints[n].localPosition) < .001f).All(v => v), name + " attack " + i + " exact weak-point positions");
                     var expectedAttack = Object.Instantiate(before);
                     foreach (var pointDefinition in expectedAttack.chargeWeakPoints) pointDefinition.localPosition = Vector2.Scale(pointDefinition.localPosition, record.weakScale);

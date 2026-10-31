@@ -196,7 +196,7 @@ namespace DungeonSlash
             {
                 case EffectType.RestoreGuard: Player.RestoreShield(value); return true;
                 case EffectType.RestoreMp: Player.RestoreMp(value); return true;
-                case EffectType.RecoverFatigue: Fatigue.Recover(value,effect.travelGraceSteps);return true;
+                case EffectType.RecoverFatigue: Fatigue.Recover(value);return true;
                 case EffectType.Cleanse: Cleanse(); return true;
                 case EffectType.Damage: Player.TakeEnvironmentalDamage(value); return true;
                 case EffectType.ApplyStatus:

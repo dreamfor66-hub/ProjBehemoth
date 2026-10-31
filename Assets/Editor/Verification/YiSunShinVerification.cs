@@ -56,7 +56,7 @@ internal static class YiSunShinVerification
         }
         if (command == "event")
         {
-            var story = AssetDatabase.LoadAssetAtPath<RandomEventData>("Assets/Data/Dungeon/Events/Hourglass.asset");
+            var story = DungeonSlash.DesignerAssetPaths.Load<RandomEventData>("Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset");
             Object.FindFirstObjectByType<RunExpansionView>().ShowModal(story.displayName, story.narrative,
                 story.options.Select(o => new PresentationChoice { Title = o.title, Description = o.description }), story.illustration);
         }

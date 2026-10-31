@@ -11,11 +11,11 @@ namespace DungeonSlash.Tests
     {
         private RunBalanceSettings balance;
         private RunState run;
-        private static BuffData State(string id) => AssetDatabase.LoadAssetAtPath<BuffData>("Assets/Data/Combat/Buffs/" + id + ".asset");
+        private static BuffData State(string id) => DungeonSlash.DesignerAssetPaths.Load<BuffData>("Assets/Data/Combat/Buffs/" + id + ".asset");
         [SetUp] public void Setup()
         {
             balance = ScriptableObject.CreateInstance<RunBalanceSettings>();
-            var content = AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
+            var content = DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");
             var player = content.characters.Single(character => character.character == CharacterKind.Barbarian);
             run = new RunState(player, balance); run.TryEquip(player.startingRelic); run.BeginCombat();
         }

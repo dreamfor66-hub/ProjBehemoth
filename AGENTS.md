@@ -1,5 +1,7 @@
 # Behemoth production conventions
 
+- Art resource names follow `T_Sprite_분류_이름_상태` for character/monster paintings and `T_UI_분류_이름` for UI (`T_UI_Icon_이름`, `T_UI_Common_Rect_이름`). See Assets/Art/AGENTS.md. Preserve GUIDs and sprite geometry when renaming; delete unused art only after dependency and dynamic-load checks.
+
 - All project illustration, including event art, must match the actual installed characters and backgrounds: bold drawn contours, substantial solid ink-black shadow shapes, simplified faces/materials and a clear focal object or action. Low exposure, a brown palette or a dark vignette do not establish this style. Reject semi-realistic facial rendering, finely modeled cloth/stone and uniform detail across the whole scene. Supply the actual project images as generation inputs, then compare the output beside them at popup size before installation. See Assets/Art/AGENTS.md for the event-art acceptance criteria.
 
 - Project-wide art direction: characters AND backgrounds use clean large forms, restrained broad shading and deliberately few contour teeth, cracks, shards, rubble, tiny folds or facets. Do not turn angular ink art into jagged clutter, downsample to fake simplicity, or force every character scene into a dungeon. Selection illustrations express character appeal through newly composed scenes; concept art preserves identity, not pose. Apply this consistently to all future art; read Assets/Art/AGENTS.md and its style guide.

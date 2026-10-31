@@ -56,7 +56,7 @@ internal static class ContentReviewExport
     };
     internal static void Export()
     {
-        var content=AssetDatabase.LoadAssetAtPath<GameContent>("Assets/Data/GameContent.asset");
+        var content=DungeonSlash.DesignerAssetPaths.Load<GameContent>("Assets/Data/GameContent.asset");
         var run=Object.FindFirstObjectByType<RunController>();
         if(run==null)throw new InvalidOperationException("Open MainGameScene before exporting its playable pools.");
         var snapshot=new Snapshot{generated=DateTime.Now.ToString("s"),playablePerks=run.AvailablePerks.Select(Path).ToArray(),playableEquipment=run.Equipment.Select(Path).ToArray()};

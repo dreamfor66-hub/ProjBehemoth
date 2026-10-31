@@ -84,7 +84,7 @@ public static class BehemothTextEditor
     public static void SyncAll()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode) return;
-        foreach (var guid in AssetDatabase.FindAssets("t:LocalizedData", new[] { "Assets/Data" })) SyncAsset(AssetDatabase.LoadAssetAtPath<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)));
+        foreach (var guid in AssetDatabase.FindAssets("t:LocalizedData", new[] { "Assets/Data" })) SyncAsset(DungeonSlash.DesignerAssetPaths.Load<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)));
     }
     [MenuItem("Behemoth/텍스트/한국어 CSV 내보내기")]
     public static void ExportDefault()
@@ -98,7 +98,7 @@ public static class BehemothTextEditor
     {
         var table = Table; Undo.RecordObject(table, "Import Korean CSV"); table.ImportCsv(File.ReadAllText(path)); EditorUtility.SetDirty(table);
         foreach (var guid in AssetDatabase.FindAssets("t:LocalizedData", new[] { "Assets/Data" }))
-        { var data = AssetDatabase.LoadAssetAtPath<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)); Undo.RecordObject(data, "Import Korean Text"); SyncAsset(data, true); }
+        { var data = DungeonSlash.DesignerAssetPaths.Load<LocalizedData>(AssetDatabase.GUIDToAssetPath(guid)); Undo.RecordObject(data, "Import Korean Text"); SyncAsset(data, true); }
         AssetDatabase.SaveAssets();
         foreach (var binding in UnityEngine.Object.FindObjectsByType<GameTextBinding>(FindObjectsInactive.Include, FindObjectsSortMode.None)) binding.Refresh();
     }
@@ -137,7 +137,7 @@ internal sealed class BehemothTextAssetImport : AssetPostprocessor
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling || EditorApplication.isUpdating) { EditorApplication.delayCall += Flush; return; }
         scheduled = false; var paths = Pending.ToArray(); Pending.Clear();
-        foreach (var path in paths) BehemothTextEditor.SyncAsset(AssetDatabase.LoadAssetAtPath<LocalizedData>(path));
+        foreach (var path in paths) BehemothTextEditor.SyncAsset(DungeonSlash.DesignerAssetPaths.Load<LocalizedData>(path));
     }
 }
 [CustomEditor(typeof(GameTextDatabase))]

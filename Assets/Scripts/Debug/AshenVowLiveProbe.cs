@@ -36,7 +36,7 @@ public sealed class AshenVowLiveProbe : MonoBehaviour
     {
         const string log="Logs/Arcade224-Live-Poses.txt";File.WriteAllText(log,"Scoped live representative-image state transitions. One sprite per state; no frame playback.\n");
         combat=Object.FindFirstObjectByType<CombatController>();var flow=Object.FindFirstObjectByType<GameFlowController>();var content=combat.Content;
-        var source=UnityEditor.AssetDatabase.FindAssets("t:MonsterData",new[]{"Assets/Data/Combat/Monsters"}).Select(g=>UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>(UnityEditor.AssetDatabase.GUIDToAssetPath(g))).First(m=>m.name.Contains("Skeleton"));
+        var source=UnityEditor.AssetDatabase.FindAssets("t:MonsterData",new[]{"Assets/Data/Combat/Monsters"}).Select(g=>DungeonSlash.DesignerAssetPaths.Load<MonsterData>(UnityEditor.AssetDatabase.GUIDToAssetPath(g))).First(m=>m.name.Contains("Skeleton"));
         void Check(bool ok,string text){File.AppendAllText(log,(ok?"PASS ":"FAIL ")+text+"\n");if(!ok)Debug.LogError("Pose QA: "+text);}
         var scene=Object.FindFirstObjectByType<CombatSceneView>();var input=Object.FindFirstObjectByType<CombatInputController>();
         void Contact(string method,params object[] args)=>typeof(CombatInputController).GetMethod(method,BindingFlags.NonPublic|BindingFlags.Instance).Invoke(input,args);

@@ -20,7 +20,7 @@ namespace DungeonSlash
         [SerializeField] private ArcGaugeGraphic chargeGaugeTrack;
         [SerializeField] private ArcGaugeGraphic chargeGaugeFill;
         [SerializeField] private ArcGaugeGraphic chargeGaugeSecondFill;
-        [SerializeField] private Vector2 chargePointerOffset = new(0f, 90f);
+        [SerializeField] private Vector2 chargePointerOffset = Vector2.zero;
 
         public void Configure(Image newPlayerHp, Image newShield, Image newMonsterHp, TextMeshProUGUI newPlayerStats, TextMeshProUGUI newMonsterStats, RectTransform newChargeGaugeRoot, ArcGaugeGraphic newChargeGaugeTrack, ArcGaugeGraphic newChargeGaugeFill, TextMeshProUGUI newPlayerHpText = null, TextMeshProUGUI newShieldText = null, ArcGaugeGraphic newChargeGaugeSecondFill = null)
         {
@@ -35,7 +35,7 @@ namespace DungeonSlash
             chargeGaugeTrack = newChargeGaugeTrack;
             chargeGaugeFill = newChargeGaugeFill;
             chargeGaugeSecondFill = newChargeGaugeSecondFill;
-            chargePointerOffset = new Vector2(0f, 90f);
+            chargePointerOffset = Vector2.zero;
         }
 
         public void Bind(PlayerCombatRuntime player, MonsterRuntime monster, PointerGestureState gesture, float chargeProgress, Vector2 chargeOrigin, float secondChargeProgress = 0f)

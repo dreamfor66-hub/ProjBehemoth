@@ -10,8 +10,11 @@ namespace DungeonSlash
     {
         public RunController run;
         public RunHudIconPool relicPool,potionPool;
+        public PotionBagView potionBag;
+        [HideInInspector] public int layoutRevision;
         public ItemTooltipView tooltip;
         public PotionActionView potionActions;
+        public RunHudView characterSummary;
         [FormerlySerializedAs("relics"),SerializeField,HideInInspector] RunHudIconView[] legacyRelics=Array.Empty<RunHudIconView>();
         [FormerlySerializedAs("potions"),SerializeField,HideInInspector] RunHudIconView[] legacyPotions=Array.Empty<RunHudIconView>();
         public IReadOnlyList<RunHudIconView> relics=>relicPool!=null?relicPool.Active:legacyRelics;
@@ -23,10 +26,11 @@ namespace DungeonSlash
             relicPool=newRelics;potionPool=newPotions;
             legacyRelics=legacyPotions=Array.Empty<RunHudIconView>();bound=null;
         }
-        void LateUpdate()=>Refresh();
+        void LateUpdate(){characterSummary?.RefreshCharacterSummary();Refresh();}
         public void Refresh()
         {
             var state=run!=null?run.State:null;
+            if(potionBag!=null)potionBag.Bind(state);
             if(state==null){relicPool?.SetCount(0);potionPool?.SetCount(0);bound=null;return;}
             var equipment=state.EquippedItems.Where(e=>!e.IsPotion);
             if(bound==state&&shownRelics.SequenceEqual(equipment)&&shownPotions.SequenceEqual(state.Potions))return;

@@ -51,7 +51,7 @@ internal static class InkUiVerification
         }
         if (command == "event")
         {
-            var data = AssetDatabase.LoadAssetAtPath<RandomEventData>("Assets/Data/Dungeon/Events/Hourglass.asset");
+            var data = DungeonSlash.DesignerAssetPaths.Load<RandomEventData>("Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset");
             view.ShowModal(data.displayName, data.narrative, data.options.Select(o => new PresentationChoice { Title = o.title, Description = o.description }), data.illustration);
         }
         if (command == "close")

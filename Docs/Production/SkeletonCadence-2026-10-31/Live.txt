@@ -1,0 +1,13 @@
+Existing Unity Editor, production CombatController and saved Skeleton data. Player healed between hits; attack timing/data unchanged.
+PASS imported asset: normal=2, charge=5; initial state=Idle
+PASS normal-repeat action 1: Attacking at 2.004s
+PASS normal-repeat action 2: Attacking at 4.984s
+PASS normal-repeat action 3: Charging at 6.947s
+PASS normal-repeat action 4: Attacking at 12.968s
+PASS normal-repeat action 5: Attacking at 15.935s
+PASS normal-repeat action 6: Charging at 17.894s
+PASS two consecutive weak/weak/strong cycles; charge interrupted with stun to verify recovery cadence
+PASS post-stun action 1: Attacking at 22.906s
+PASS post-stun action 2: Attacking at 25.878s
+PASS post-stun action 3: Charging at 27.836s
+PASS complete: opening, repeat, and post-stun weak/weak/strong

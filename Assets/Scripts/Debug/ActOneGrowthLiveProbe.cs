@@ -47,10 +47,10 @@ public sealed class ActOneGrowthLiveProbe : MonoBehaviour
         FindFirstObjectByType<DungeonController>().HideNavigation();
         RunSession.SelectedCharacter=combat.Content.characters.First(c=>c.character==CharacterKind.Warrior);
         CheckRewardDefinitions();
-        var budget=UnityEditor.AssetDatabase.LoadAssetAtPath<ActGrowthBudget>("Assets/Data/Balance/Act1GrowthBudget.asset");
+        var budget=DungeonSlash.DesignerAssetPaths.Load<ActGrowthBudget>("Assets/Data/Balance/Act1GrowthBudget.asset");
         var stage=budget.stage;
         if(pressureOnly)File.AppendAllText(Live,"NEGATIVE CONTROL: guard held continuously, weak points ignored. Same actual rewards and production cooldowns.\n");
-        var settings=UnityEditor.AssetDatabase.LoadAssetAtPath<DungeonGenerationSettings>("Assets/Data/Settings/DungeonGenerationSettings.asset");
+        var settings=DungeonSlash.DesignerAssetPaths.Load<DungeonGenerationSettings>("Assets/Data/Settings/DungeonGenerationSettings.asset");
         var graph=new DungeonGenerator(settings).Generate(281028,1).Graph;
         var builds=pressureOnly?new[]{budget.referenceBuilds.First(b=>b.checkpoint==GrowthCheckpoint.Opening),budget.referenceBuilds.First(b=>b.checkpoint==GrowthCheckpoint.Middle),budget.referenceBuilds.First(b=>b.checkpoint==GrowthCheckpoint.PreBoss&&b.scenario==GrowthScenario.Required)}:budget.referenceBuilds.ToArray();
         if(scope.buildIndices?.Length>0)builds=scope.buildIndices.Select(i=>budget.referenceBuilds[i]).ToArray();
@@ -130,13 +130,13 @@ public sealed class ActOneGrowthLiveProbe : MonoBehaviour
     IEnumerator CompareGuardRoles(ActGrowthBudget budget)
     {
         combat.ResetEncounter();
-        var balance=UnityEditor.AssetDatabase.LoadAssetAtPath<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
+        var balance=DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
         var build=budget.referenceBuilds.First(b=>b.checkpoint==GrowthCheckpoint.Middle);
         var roles=new[]{CharacterKind.Warrior,CharacterKind.Rogue}.Select(kind=>{
             var character=combat.Content.characters.First(c=>c.character==kind);
             var state=new RunState(character,balance);state.TryEquip(character.startingRelic);build.Apply(state);state.BeginCombat();return state;
         }).ToArray();
-        var source=UnityEditor.AssetDatabase.LoadAssetAtPath<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Minion_Leech.asset");
+        var source=DungeonSlash.DesignerAssetPaths.Load<MonsterData>("Assets/Data/Combat/Monsters/Data_Monster_B1_Normal_흡혈박쥐.asset");
         var attack=source.GetAttack(MonsterAttackType.Normal);var interval=source.normalAttackInterval+attack.windupDuration;
         var resolver=new DamageResolver();var hits=new int[2];float elapsed=0,next=interval;int incoming=0;
         while(incoming<6){
@@ -154,13 +154,13 @@ public sealed class ActOneGrowthLiveProbe : MonoBehaviour
     }
     void CheckRewardDefinitions()
     {
-        var balance=UnityEditor.AssetDatabase.LoadAssetAtPath<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
+        var balance=DungeonSlash.DesignerAssetPaths.Load<RunBalanceSettings>("Assets/Data/Settings/RunBalanceSettings.asset");
         var sample=new RunState(RunSession.SelectedCharacter,balance);
         sample.TryEquip(RunSession.SelectedCharacter.startingRelic);sample.BeginCombat();sample.BeginCombat();
         if(!Mathf.Approximately(sample.Rule(AbilityRule.GuardRecoveryPerSecond),2))throw new InvalidOperationException("Starting guard recovery lost at BeginCombat");
-        var wire=UnityEditor.AssetDatabase.LoadAssetAtPath<EquipmentData>("Assets/Data/Items/Relics/ThunderWire.asset");sample.TryEquip(wire);
+        var wire=DungeonSlash.DesignerAssetPaths.Load<EquipmentData>("Assets/Data/Items/Relics/Data_Relic_번개_심줄.asset");sample.TryEquip(wire);
         if(Mathf.Abs(sample.Player.NormalAttackDamage-16.8f)>.01f||Mathf.Abs(sample.Player.CurrentCooldown-.748f)>.01f)throw new InvalidOperationException("ThunderWire real acquisition stats mismatch");
-        var hunter=UnityEditor.AssetDatabase.LoadAssetAtPath<EquipmentData>("Assets/Data/Items/Relics/HunterLantern.asset");sample.TryEquip(hunter);
+        var hunter=DungeonSlash.DesignerAssetPaths.Load<EquipmentData>("Assets/Data/Items/Relics/Data_Relic_사냥꾼의_등불.asset");sample.TryEquip(hunter);
         sample.Player.TakeEnvironmentalDamage(30);var before=sample.Player.CurrentHp;sample.EmitEvent(TriggerType.OnKill,default);
         if(Mathf.Abs(sample.Player.CurrentHp-before-7)>.01f)throw new InvalidOperationException("HunterLantern real kill healing mismatch");
         File.AppendAllText(Live,"PASS starting guard recovery survives repeated BeginCombat; actual ThunderWire damage/cooldown and HunterLantern kill-heal match data.\n");

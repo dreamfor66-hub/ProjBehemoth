@@ -109,12 +109,19 @@ namespace DungeonSlash
                         Selected = () => { runController.TryGrantPerk(perk); messages.Add(GameText.Get("ui.gameflowexpansion.ef9eaadd") + perk.displayName); next(); }
                     })); return;
                 case EventEffectKind.SpellChoice:
-                    var spells = content.spells.Where(spell => run.MagicIntroduced && spell != null && spell.tier < 2 && run.RuntimeFor(spell) == null).OrderBy(spell => StableHash(spell.id, run.Seed + run.SeenEvents.Count)).Take(3).ToArray();
+                    var pool = effect.spellPool != null && effect.spellPool.Count > 0 ? effect.spellPool : content.spells;
+                    var spellRandom = new System.Random(StableHash(story.id, run.Seed + run.SeenEvents.Count * 7919));
+                    var spells = pool.Where(spell => run.MagicIntroduced && spell != null && spell.tier < 2 && run.RuntimeFor(spell) == null).Distinct().OrderBy(_ => spellRandom.Next()).Take(Mathf.Max(1,effect.spellChoiceCount)).ToArray();
                     if (spells.Length == 0) { run.GainGold(20); messages.Add(GameText.Get("ui.gameflowexpansion.7b666ce8")); break; }
-                    expansionView.ShowModal(GameText.Get("ui.gameflowexpansion.805b2755"), GameText.Get("ui.gameflowexpansion.7c97cdb8"), spells.Select(spell => new PresentationChoice {
+                    void ShowSpellChoices() => expansionView.ShowModal(GameText.Get("ui.gameflowexpansion.805b2755"), GameText.Get("ui.gameflowexpansion.7c97cdb8"), spells.Select(spell => new PresentationChoice {
                         Title = SwipeDirectionUtility.Label(spell.defaultSlot) + " " + spell.displayName, Description = RunExpansionView.SpellDetails(spell, run.Player), Icon = spell.icon,
-                        Selected = () => expansionView.OfferSpell(spell, accepted => { messages.Add(accepted ? GameText.Get("ui.gameflowexpansion.d76dc5b8") + spell.displayName : GameText.Get("ui.gameflowexpansion.ef14f1f9")); next(); })
-                    })); return;
+                        Selected = () => expansionView.OfferSpell(spell, accepted => {
+                            if (!accepted) { ShowSpellChoices(); return; }
+                            if (!string.IsNullOrEmpty(effect.flag)) run.EventSpellChoices[effect.flag] = spell;
+                            messages.Add(GameText.Format("ui.event.learnedspell", spell.displayName)); next();
+                        })
+                    }).Concat(new[]{new PresentationChoice{Title=GameText.Get("ui.event.leave"),Selected=AfterRoomResolution}}));
+                    ShowSpellChoices(); return;
                 case EventEffectKind.Fight:
                     if (effect.encounter == null) { messages.Add(GameText.Get("ui.gameflowexpansion.ad4ca858")); break; }
                     eventCombatCompleted = next;
