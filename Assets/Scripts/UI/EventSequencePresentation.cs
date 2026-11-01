@@ -61,14 +61,14 @@ namespace DungeonSlash
                         if (unavailable != null && option.failurePage >= 0) { ShowEventPage(room, story, option.failurePage); return; }
                         if (!RandomEventSystem.Pay(option, runController.State)) { ShowEventPage(room, story, index, lineIndex); return; }
                         if (option.nextPage >= 0) { ShowEventPage(room, story, option.nextPage); return; }
-                        room.IsCleared = true;
+                        room.IsCleared = !option.KeepsEncounterAvailable;
                         ApplyRoomObjectOutcome(room, option);
                         var messages = new List<string>(); if (!string.IsNullOrWhiteSpace(option.resultText)) messages.Add(option.resultText);
                         ApplyEventEffects(story, option.effects, 0, messages);
                     }
                 };
             }).ToArray();
-            if (choices.Length == 0) choices = new[] { new PresentationChoice { Title = GameText.Get("ui.event.leave"), Selected = () => { room.IsCleared = true; AfterRoomResolution(); } } };
+            if (choices.Length == 0) choices = new[] { new PresentationChoice { Title = GameText.Get("ui.event.leave"), Selected = () => { AfterRoomResolution(); } } };
             expansionView.ShowModal(story.displayName, story.illustratedPopup ? page.narrative : lines.LastOrDefault() ?? "", choices, illustration, illustratedEvent:story.illustratedPopup);
         }
 

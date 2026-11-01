@@ -1,0 +1,1164 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS 18 active authored encounters, retired contract/mirror/trap excluded
+PASS actual chapter travel B1
+PASS actual floor receives map-derived fatigue capacity 110
+PASS capacity route includes every actual room, including optional branches
+PASS live floor has a valid remaining fatigue amount
+PASS one complete finite exploration retains at least one movement cost without camp/potion
+PASS actual Unity fatigue curves use remaining percentage on this floor
+PASS one full camp restores the actual maximum and cannot repeat
+PASS brief rest restores the authored percentage rather than a fixed60
+PASS recovery clamps at the actual floor maximum
+PASS first movement after recovery immediately spends the authored cost
+PASS exhaustion still reaches exactly0 and ends survival
+PASS localized fatigue tooltip shows the actual denominator
+PASS B1 saved ordinary room variants
+Variant fixture not present in this natural floor: Data_RoomTheme_옛경비실
+PASS B1 fixed room 24 / North retains architecture
+SCREEN B1-Data_RoomTheme_잊힌서약실-North
+PASS B1 fixed room 24 / East retains architecture
+SCREEN B1-Data_RoomTheme_잊힌서약실-East
+PASS B1 fixed room 24 / South retains architecture
+SCREEN B1-Data_RoomTheme_잊힌서약실-South
+PASS B1 fixed room 24 / West retains architecture
+SCREEN B1-Data_RoomTheme_잊힌서약실-West
+PASS place Chest B1/0 used=False
+PASS actual sprite bound Chest B1/0 used=False
+PASS derived physical support T_UI_World_Chest_Front
+SCREEN B1-Chest-0-Ready
+PASS place Chest B1/1 used=False
+PASS actual sprite bound Chest B1/1 used=False
+PASS derived physical support T_UI_World_Chest_Side
+SCREEN B1-Chest-1-Ready
+PASS place Chest B1/2 used=False
+PASS actual sprite bound Chest B1/2 used=False
+PASS derived physical support T_UI_World_Chest_Rear
+SCREEN B1-Chest-2-Ready
+PASS place Chest B1/0 used=True
+PASS actual sprite bound Chest B1/0 used=True
+PASS derived physical support T_UI_World_Chest_UsedFront
+PASS aligned state preserves exact support/pixel scale Chest/0 B1
+SCREEN B1-Chest-0-Used
+PASS place Chest B1/1 used=True
+PASS actual sprite bound Chest B1/1 used=True
+PASS derived physical support T_UI_World_Chest_UsedSide
+PASS aligned state preserves exact support/pixel scale Chest/1 B1
+SCREEN B1-Chest-1-Used
+PASS place Chest B1/2 used=True
+PASS actual sprite bound Chest B1/2 used=True
+PASS derived physical support T_UI_World_Chest_UsedRear
+PASS aligned state preserves exact support/pixel scale Chest/2 B1
+SCREEN B1-Chest-2-Used
+PASS place Fountain B1/0 used=False
+PASS actual sprite bound Fountain B1/0 used=False
+PASS derived physical support T_UI_World_Fountain_Front
+SCREEN B1-Fountain-0-Ready
+PASS place Fountain B1/1 used=False
+PASS actual sprite bound Fountain B1/1 used=False
+PASS derived physical support T_UI_World_Fountain_Side
+SCREEN B1-Fountain-1-Ready
+PASS place Fountain B1/2 used=False
+PASS actual sprite bound Fountain B1/2 used=False
+PASS derived physical support T_UI_World_분수_rear
+SCREEN B1-Fountain-2-Ready
+PASS place Fountain B1/0 used=True
+PASS actual sprite bound Fountain B1/0 used=True
+PASS derived physical support T_UI_World_Fountain_UsedFront
+PASS aligned state preserves exact support/pixel scale Fountain/0 B1
+SCREEN B1-Fountain-0-Used
+PASS place Fountain B1/1 used=True
+PASS actual sprite bound Fountain B1/1 used=True
+PASS derived physical support T_UI_World_Fountain_UsedSide
+PASS aligned state preserves exact support/pixel scale Fountain/1 B1
+SCREEN B1-Fountain-1-Used
+PASS place Fountain B1/2 used=True
+PASS actual sprite bound Fountain B1/2 used=True
+PASS derived physical support T_UI_World_분수_usedRear
+PASS aligned state preserves exact support/pixel scale Fountain/2 B1
+SCREEN B1-Fountain-2-Used
+PASS saved purpose-built theme Well
+PASS B1 Well keeps event environment when facing North
+SCREEN B1-Room-Well-North
+PASS B1 Well keeps event environment when facing East
+SCREEN B1-Room-Well-East
+PASS B1 Well keeps event environment when facing South
+PASS B1 Well keeps event environment when facing West
+PASS saved purpose-built theme AmberSeed
+PASS B1 AmberSeed keeps event environment when facing North
+SCREEN B1-Room-AmberSeed-North
+PASS B1 AmberSeed keeps event environment when facing East
+SCREEN B1-Room-AmberSeed-East
+PASS B1 AmberSeed keeps event environment when facing South
+PASS B1 AmberSeed keeps event environment when facing West
+PASS saved purpose-built theme Scholar
+PASS B1 Scholar keeps event environment when facing North
+SCREEN B1-Room-Scholar-North
+PASS B1 Scholar keeps event environment when facing East
+SCREEN B1-Room-Scholar-East
+PASS B1 Scholar keeps event environment when facing South
+PASS B1 Scholar keeps event environment when facing West
+PASS saved purpose-built theme Delivery
+PASS B1 Delivery keeps event environment when facing North
+SCREEN B1-Room-Delivery-North
+PASS B1 Delivery keeps event environment when facing East
+SCREEN B1-Room-Delivery-East
+PASS B1 Delivery keeps event environment when facing South
+PASS B1 Delivery keeps event environment when facing West
+PASS saved purpose-built theme Training
+PASS B1 Training keeps event environment when facing North
+SCREEN B1-Room-Training-North
+PASS B1 Training keeps event environment when facing East
+SCREEN B1-Room-Training-East
+PASS B1 Training keeps event environment when facing South
+PASS B1 Training keeps event environment when facing West
+PASS play code records visible authored theme B1
+PASS current art/theme record can be copied B1
+PASS actual chapter travel B2
+PASS actual floor receives map-derived fatigue capacity 110
+PASS capacity route includes every actual room, including optional branches
+PASS live floor has a valid remaining fatigue amount
+PASS one complete finite exploration retains at least one movement cost without camp/potion
+PASS actual Unity fatigue curves use remaining percentage on this floor
+PASS one full camp restores the actual maximum and cannot repeat
+PASS brief rest restores the authored percentage rather than a fixed60
+PASS recovery clamps at the actual floor maximum
+PASS first movement after recovery immediately spends the authored cost
+PASS exhaustion still reaches exactly0 and ends survival
+PASS localized fatigue tooltip shows the actual denominator
+PASS B2 saved ordinary room variants
+PASS B2 fixed room 25 / North retains architecture
+SCREEN B2-Data_RoomTheme_옛경비실-North
+PASS B2 fixed room 25 / East retains architecture
+PASS B2 fixed room 25 / South retains architecture
+PASS B2 fixed room 25 / West retains architecture
+PASS B2 fixed room 26 / North retains architecture
+SCREEN B2-Data_RoomTheme_잊힌서약실-North
+PASS B2 fixed room 26 / East retains architecture
+PASS B2 fixed room 26 / South retains architecture
+PASS B2 fixed room 26 / West retains architecture
+PASS place Chest B2/0 used=False
+PASS actual sprite bound Chest B2/0 used=False
+PASS derived physical support T_UI_World_Chest_Front
+SCREEN B2-Chest-0-Ready
+PASS place Chest B2/1 used=False
+PASS actual sprite bound Chest B2/1 used=False
+PASS derived physical support T_UI_World_Chest_Side
+PASS place Chest B2/2 used=False
+PASS actual sprite bound Chest B2/2 used=False
+PASS derived physical support T_UI_World_Chest_Rear
+PASS place Chest B2/0 used=True
+PASS actual sprite bound Chest B2/0 used=True
+PASS derived physical support T_UI_World_Chest_UsedFront
+PASS aligned state preserves exact support/pixel scale Chest/0 B2
+SCREEN B2-Chest-0-Used
+PASS place Chest B2/1 used=True
+PASS actual sprite bound Chest B2/1 used=True
+PASS derived physical support T_UI_World_Chest_UsedSide
+PASS aligned state preserves exact support/pixel scale Chest/1 B2
+PASS place Chest B2/2 used=True
+PASS actual sprite bound Chest B2/2 used=True
+PASS derived physical support T_UI_World_Chest_UsedRear
+PASS aligned state preserves exact support/pixel scale Chest/2 B2
+PASS place Fountain B2/0 used=False
+PASS actual sprite bound Fountain B2/0 used=False
+PASS derived physical support T_UI_World_Fountain_Front
+SCREEN B2-Fountain-0-Ready
+PASS place Fountain B2/1 used=False
+PASS actual sprite bound Fountain B2/1 used=False
+PASS derived physical support T_UI_World_Fountain_Side
+PASS place Fountain B2/2 used=False
+PASS actual sprite bound Fountain B2/2 used=False
+PASS derived physical support T_UI_World_분수_rear
+PASS place Fountain B2/0 used=True
+PASS actual sprite bound Fountain B2/0 used=True
+PASS derived physical support T_UI_World_Fountain_UsedFront
+PASS aligned state preserves exact support/pixel scale Fountain/0 B2
+SCREEN B2-Fountain-0-Used
+PASS place Fountain B2/1 used=True
+PASS actual sprite bound Fountain B2/1 used=True
+PASS derived physical support T_UI_World_Fountain_UsedSide
+PASS aligned state preserves exact support/pixel scale Fountain/1 B2
+PASS place Fountain B2/2 used=True
+PASS actual sprite bound Fountain B2/2 used=True
+PASS derived physical support T_UI_World_분수_usedRear
+PASS aligned state preserves exact support/pixel scale Fountain/2 B2
+PASS saved purpose-built theme Well
+PASS B2 Well keeps event environment when facing North
+SCREEN B2-Room-Well-North
+PASS B2 Well keeps event environment when facing East
+PASS B2 Well keeps event environment when facing South
+PASS B2 Well keeps event environment when facing West
+PASS saved purpose-built theme AmberSeed
+PASS B2 AmberSeed keeps event environment when facing North
+SCREEN B2-Room-AmberSeed-North
+PASS B2 AmberSeed keeps event environment when facing East
+PASS B2 AmberSeed keeps event environment when facing South
+PASS B2 AmberSeed keeps event environment when facing West
+PASS saved purpose-built theme Scholar
+PASS B2 Scholar keeps event environment when facing North
+SCREEN B2-Room-Scholar-North
+PASS B2 Scholar keeps event environment when facing East
+PASS B2 Scholar keeps event environment when facing South
+PASS B2 Scholar keeps event environment when facing West
+PASS saved purpose-built theme Delivery
+PASS B2 Delivery keeps event environment when facing North
+SCREEN B2-Room-Delivery-North
+PASS B2 Delivery keeps event environment when facing East
+PASS B2 Delivery keeps event environment when facing South
+PASS B2 Delivery keeps event environment when facing West
+PASS saved purpose-built theme Training
+PASS B2 Training keeps event environment when facing North
+SCREEN B2-Room-Training-North
+PASS B2 Training keeps event environment when facing East
+PASS B2 Training keeps event environment when facing South
+PASS B2 Training keeps event environment when facing West
+PASS play code records visible authored theme B2
+PASS current art/theme record can be copied B2
+PASS actual chapter travel B3
+PASS actual floor receives map-derived fatigue capacity 110
+PASS capacity route includes every actual room, including optional branches
+PASS live floor has a valid remaining fatigue amount
+PASS one complete finite exploration retains at least one movement cost without camp/potion
+PASS actual Unity fatigue curves use remaining percentage on this floor
+PASS one full camp restores the actual maximum and cannot repeat
+PASS brief rest restores the authored percentage rather than a fixed60
+PASS recovery clamps at the actual floor maximum
+PASS first movement after recovery immediately spends the authored cost
+PASS exhaustion still reaches exactly0 and ends survival
+PASS localized fatigue tooltip shows the actual denominator
+PASS B3 saved ordinary room variants
+PASS B3 fixed room 27 / North retains architecture
+SCREEN B3-Data_RoomTheme_옛경비실-North
+PASS B3 fixed room 27 / East retains architecture
+PASS B3 fixed room 27 / South retains architecture
+PASS B3 fixed room 27 / West retains architecture
+Variant fixture not present in this natural floor: Data_RoomTheme_잊힌서약실
+PASS place Chest B3/0 used=False
+PASS actual sprite bound Chest B3/0 used=False
+PASS derived physical support T_UI_World_Chest_Front
+SCREEN B3-Chest-0-Ready
+PASS place Chest B3/1 used=False
+PASS actual sprite bound Chest B3/1 used=False
+PASS derived physical support T_UI_World_Chest_Side
+PASS place Chest B3/2 used=False
+PASS actual sprite bound Chest B3/2 used=False
+PASS derived physical support T_UI_World_Chest_Rear
+PASS place Chest B3/0 used=True
+PASS actual sprite bound Chest B3/0 used=True
+PASS derived physical support T_UI_World_Chest_UsedFront
+PASS aligned state preserves exact support/pixel scale Chest/0 B3
+SCREEN B3-Chest-0-Used
+PASS place Chest B3/1 used=True
+PASS actual sprite bound Chest B3/1 used=True
+PASS derived physical support T_UI_World_Chest_UsedSide
+PASS aligned state preserves exact support/pixel scale Chest/1 B3
+PASS place Chest B3/2 used=True
+PASS actual sprite bound Chest B3/2 used=True
+PASS derived physical support T_UI_World_Chest_UsedRear
+PASS aligned state preserves exact support/pixel scale Chest/2 B3
+PASS place Fountain B3/0 used=False
+PASS actual sprite bound Fountain B3/0 used=False
+PASS derived physical support T_UI_World_Fountain_Front
+SCREEN B3-Fountain-0-Ready
+PASS place Fountain B3/1 used=False
+PASS actual sprite bound Fountain B3/1 used=False
+PASS derived physical support T_UI_World_Fountain_Side
+PASS place Fountain B3/2 used=False
+PASS actual sprite bound Fountain B3/2 used=False
+PASS derived physical support T_UI_World_분수_rear
+PASS place Fountain B3/0 used=True
+PASS actual sprite bound Fountain B3/0 used=True
+PASS derived physical support T_UI_World_Fountain_UsedFront
+PASS aligned state preserves exact support/pixel scale Fountain/0 B3
+SCREEN B3-Fountain-0-Used
+PASS place Fountain B3/1 used=True
+PASS actual sprite bound Fountain B3/1 used=True
+PASS derived physical support T_UI_World_Fountain_UsedSide
+PASS aligned state preserves exact support/pixel scale Fountain/1 B3
+PASS place Fountain B3/2 used=True
+PASS actual sprite bound Fountain B3/2 used=True
+PASS derived physical support T_UI_World_분수_usedRear
+PASS aligned state preserves exact support/pixel scale Fountain/2 B3
+PASS saved purpose-built theme Well
+PASS B3 Well keeps event environment when facing North
+SCREEN B3-Room-Well-North
+PASS B3 Well keeps event environment when facing East
+PASS B3 Well keeps event environment when facing South
+PASS B3 Well keeps event environment when facing West
+PASS saved purpose-built theme AmberSeed
+PASS B3 AmberSeed keeps event environment when facing North
+SCREEN B3-Room-AmberSeed-North
+PASS B3 AmberSeed keeps event environment when facing East
+PASS B3 AmberSeed keeps event environment when facing South
+PASS B3 AmberSeed keeps event environment when facing West
+PASS saved purpose-built theme Scholar
+PASS B3 Scholar keeps event environment when facing North
+SCREEN B3-Room-Scholar-North
+PASS B3 Scholar keeps event environment when facing East
+PASS B3 Scholar keeps event environment when facing South
+PASS B3 Scholar keeps event environment when facing West
+PASS saved purpose-built theme Delivery
+PASS B3 Delivery keeps event environment when facing North
+SCREEN B3-Room-Delivery-North
+PASS B3 Delivery keeps event environment when facing East
+PASS B3 Delivery keeps event environment when facing South
+PASS B3 Delivery keeps event environment when facing West
+PASS saved purpose-built theme Training
+PASS B3 Training keeps event environment when facing North
+SCREEN B3-Room-Training-North
+PASS B3 Training keeps event environment when facing East
+PASS B3 Training keeps event environment when facing South
+PASS B3 Training keeps event environment when facing West
+PASS play code records visible authored theme B3
+PASS current art/theme record can be copied B3
+PASS event review sees exactly18 active encounters
+PASS all18 encounters own a unique visible subject
+PASS event fixture starts without unrelated pending level-up choices
+PASS event fixture chapter AmberSeed
+PASS F1 authors the actual event subject AmberSeed
+PASS AmberSeed actual room starts unresolved with its own subject
+SCREEN Event-AmberSeed-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS AmberSeed world-object pointer opens the actual encounter
+SCREEN Event-AmberSeed-FirstPage
+PASS AmberSeed first page has localized visible narrative
+PASS AmberSeed choices have no blank titles or unresolved text keys
+PASS AmberSeed every unavailable choice explains its authored requirement
+PASS AmberSeed visible cost is displayed: 살아 있는 뿌리를 손목에 붙인다.
+PASS AmberSeed visible cost is displayed: 살아 있는 뿌리를 손목에 붙인다.
+PASS event fixture chapter Banner
+PASS F1 authors the actual event subject Banner
+PASS Banner actual room starts unresolved with its own subject
+SCREEN Event-Banner-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Banner world-object pointer opens the actual encounter
+SCREEN Event-Banner-FirstPage
+PASS Banner first page has localized visible narrative
+PASS Banner choices have no blank titles or unresolved text keys
+PASS Banner every unavailable choice explains its authored requirement
+PASS Banner has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Banner declining preserves the actual person/creature and unresolved encounter
+PASS Banner postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Banner can naturally be approached again after a real room revisit
+PASS Banner first page has localized visible narrative
+PASS Banner choices have no blank titles or unresolved text keys
+PASS Banner every unavailable choice explains its authored requirement
+PASS event fixture chapter Delivery
+PASS F1 authors the actual event subject Delivery
+PASS Delivery actual room starts unresolved with its own subject
+SCREEN Event-Delivery-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Delivery world-object pointer opens the actual encounter
+SCREEN Event-Delivery-FirstPage
+PASS Delivery first page has localized visible narrative
+PASS Delivery choices have no blank titles or unresolved text keys
+PASS Delivery every unavailable choice explains its authored requirement
+PASS event fixture chapter Investment
+PASS F1 authors the actual event subject Investment
+PASS Investment actual room starts unresolved with its own subject
+SCREEN Event-Investment-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Investment world-object pointer opens the actual encounter
+SCREEN Event-Investment-FirstPage
+PASS Investment first page has localized visible narrative
+PASS Investment choices have no blank titles or unresolved text keys
+PASS Investment every unavailable choice explains its authored requirement
+PASS Investment visible cost is displayed: 운임을 내고 장비를 예약한다.
+PASS Investment visible cost is displayed: 운임을 내고 장비를 예약한다.
+PASS Investment has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 2
+PASS pointer reaches Illustrated Event Choice 2; actual Illustrated Event Choice 2
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Investment declining preserves the actual person/creature and unresolved encounter
+PASS Investment postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Investment real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS Investment can naturally be approached again after a real room revisit
+PASS Investment first page has localized visible narrative
+PASS Investment choices have no blank titles or unresolved text keys
+PASS Investment every unavailable choice explains its authored requirement
+PASS Investment visible cost is displayed: 운임을 내고 장비를 예약한다.
+PASS Investment visible cost is displayed: 운임을 내고 장비를 예약한다.
+PASS event fixture chapter LostBeliever
+PASS F1 authors the actual event subject LostBeliever
+PASS LostBeliever actual room starts unresolved with its own subject
+SCREEN Event-LostBeliever-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS LostBeliever world-object pointer opens the actual encounter
+SCREEN Event-LostBeliever-FirstPage
+PASS LostBeliever first page has localized visible narrative
+PASS LostBeliever choices have no blank titles or unresolved text keys
+PASS LostBeliever every unavailable choice explains its authored requirement
+PASS LostBeliever has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 2
+PASS pointer reaches Illustrated Event Choice 2; actual Illustrated Event Choice 2
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS LostBeliever declining preserves the actual person/creature and unresolved encounter
+PASS LostBeliever postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS LostBeliever real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS LostBeliever can naturally be approached again after a real room revisit
+PASS LostBeliever first page has localized visible narrative
+PASS LostBeliever choices have no blank titles or unresolved text keys
+PASS LostBeliever every unavailable choice explains its authored requirement
+PASS event fixture chapter MagicTeacherAdvanced
+PASS F1 authors the actual event subject MagicTeacherAdvanced
+PASS MagicTeacherAdvanced actual room starts unresolved with its own subject
+SCREEN Event-MagicTeacherAdvanced-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS MagicTeacherAdvanced world-object pointer opens the actual encounter
+SCREEN Event-MagicTeacherAdvanced-FirstPage
+PASS MagicTeacherAdvanced first page has localized visible narrative
+PASS MagicTeacherAdvanced choices have no blank titles or unresolved text keys
+PASS MagicTeacherAdvanced every unavailable choice explains its authored requirement
+PASS MagicTeacherAdvanced has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS MagicTeacherAdvanced declining preserves the actual person/creature and unresolved encounter
+PASS MagicTeacherAdvanced postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS MagicTeacherAdvanced real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS MagicTeacherAdvanced can naturally be approached again after a real room revisit
+PASS MagicTeacherAdvanced first page has localized visible narrative
+PASS MagicTeacherAdvanced choices have no blank titles or unresolved text keys
+PASS MagicTeacherAdvanced every unavailable choice explains its authored requirement
+PASS event fixture chapter MagicTeacherFirst
+PASS F1 authors the actual event subject MagicTeacherFirst
+PASS MagicTeacherFirst actual room starts unresolved with its own subject
+SCREEN Event-MagicTeacherFirst-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS MagicTeacherFirst world-object pointer opens the actual encounter
+SCREEN Event-MagicTeacherFirst-FirstPage
+PASS MagicTeacherFirst first page has localized visible narrative
+PASS MagicTeacherFirst choices have no blank titles or unresolved text keys
+PASS MagicTeacherFirst every unavailable choice explains its authored requirement
+PASS MagicTeacherFirst has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS MagicTeacherFirst declining preserves the actual person/creature and unresolved encounter
+PASS MagicTeacherFirst postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS MagicTeacherFirst real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS MagicTeacherFirst can naturally be approached again after a real room revisit
+PASS MagicTeacherFirst first page has localized visible narrative
+PASS MagicTeacherFirst choices have no blank titles or unresolved text keys
+PASS MagicTeacherFirst every unavailable choice explains its authored requirement
+PASS event fixture chapter MagicTeacherReturn
+PASS F1 authors the actual event subject MagicTeacherReturn
+PASS MagicTeacherReturn actual room starts unresolved with its own subject
+SCREEN Event-MagicTeacherReturn-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS MagicTeacherReturn world-object pointer opens the actual encounter
+SCREEN Event-MagicTeacherReturn-FirstPage
+PASS MagicTeacherReturn first page has localized visible narrative
+PASS MagicTeacherReturn choices have no blank titles or unresolved text keys
+PASS MagicTeacherReturn every unavailable choice explains its authored requirement
+PASS MagicTeacherReturn has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS MagicTeacherReturn declining preserves the actual person/creature and unresolved encounter
+PASS MagicTeacherReturn postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS MagicTeacherReturn real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS MagicTeacherReturn can naturally be approached again after a real room revisit
+PASS MagicTeacherReturn first page has localized visible narrative
+PASS MagicTeacherReturn choices have no blank titles or unresolved text keys
+PASS MagicTeacherReturn every unavailable choice explains its authored requirement
+PASS event fixture chapter Pilgrim
+PASS F1 authors the actual event subject Pilgrim
+PASS Pilgrim actual room starts unresolved with its own subject
+SCREEN Event-Pilgrim-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Pilgrim world-object pointer opens the actual encounter
+SCREEN Event-Pilgrim-FirstPage
+PASS Pilgrim first page has localized visible narrative
+PASS Pilgrim choices have no blank titles or unresolved text keys
+PASS Pilgrim every unavailable choice explains its authored requirement
+PASS Pilgrim visible cost is displayed: 여비를 보탠다
+PASS Pilgrim visible cost is displayed: 여비를 보탠다
+PASS Pilgrim has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 3
+PASS pointer reaches Illustrated Event Choice 3; actual Illustrated Event Choice 3
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Pilgrim declining preserves the actual person/creature and unresolved encounter
+PASS Pilgrim postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Pilgrim real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS Pilgrim can naturally be approached again after a real room revisit
+PASS Pilgrim first page has localized visible narrative
+PASS Pilgrim choices have no blank titles or unresolved text keys
+PASS Pilgrim every unavailable choice explains its authored requirement
+PASS Pilgrim visible cost is displayed: 여비를 보탠다
+PASS Pilgrim visible cost is displayed: 여비를 보탠다
+PASS event fixture chapter QuietPrayer
+PASS F1 authors the actual event subject QuietPrayer
+PASS QuietPrayer actual room starts unresolved with its own subject
+SCREEN Event-QuietPrayer-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS QuietPrayer world-object pointer opens the actual encounter
+SCREEN Event-QuietPrayer-FirstPage
+PASS QuietPrayer paragraph continuation belongs to the same event
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS QuietPrayer paragraph continuation belongs to the same event
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS QuietPrayer paragraph continuation belongs to the same event
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+SCREEN Event-QuietPrayer-Choices
+PASS QuietPrayer first page has localized visible narrative
+PASS QuietPrayer choices have no blank titles or unresolved text keys
+PASS QuietPrayer every unavailable choice explains its authored requirement
+PASS QuietPrayer visible cost is displayed: 상처를 맡긴다
+PASS QuietPrayer visible cost is displayed: 상처를 맡긴다
+PASS QuietPrayer has an available, free authored postponement on this entry page
+PASS reachable event choice: 길을 계속 간다
+PASS reachable button NextPage
+PASS pointer reaches NextPage; actual NextPage
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS QuietPrayer declining preserves the actual person/creature and unresolved encounter
+PASS QuietPrayer postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS QuietPrayer real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS QuietPrayer can naturally be approached again after a real room revisit
+PASS QuietPrayer paragraph continuation belongs to the same event
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS QuietPrayer paragraph continuation belongs to the same event
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS QuietPrayer paragraph continuation belongs to the same event
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+SCREEN Event-QuietPrayer-Choices
+PASS QuietPrayer first page has localized visible narrative
+PASS QuietPrayer choices have no blank titles or unresolved text keys
+PASS QuietPrayer every unavailable choice explains its authored requirement
+PASS QuietPrayer visible cost is displayed: 상처를 맡긴다
+PASS QuietPrayer visible cost is displayed: 상처를 맡긴다
+PASS event fixture chapter RecoveryCutpurse
+PASS F1 authors the actual event subject RecoveryCutpurse
+PASS RecoveryCutpurse actual room starts unresolved with its own subject
+SCREEN Event-RecoveryCutpurse-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS RecoveryCutpurse world-object pointer opens the actual encounter
+SCREEN Event-RecoveryCutpurse-FirstPage
+PASS RecoveryCutpurse first page has localized visible narrative
+PASS RecoveryCutpurse choices have no blank titles or unresolved text keys
+PASS RecoveryCutpurse every unavailable choice explains its authored requirement
+PASS RecoveryCutpurse visible cost is displayed: 동전을 던지고 거리를 벌린다.
+PASS RecoveryCutpurse visible cost is displayed: 동전을 던지고 거리를 벌린다.
+PASS event fixture chapter Scholar
+PASS F1 authors the actual event subject Scholar
+PASS Scholar actual room starts unresolved with its own subject
+SCREEN Event-Scholar-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Scholar world-object pointer opens the actual encounter
+SCREEN Event-Scholar-FirstPage
+PASS Scholar first page has localized visible narrative
+PASS Scholar choices have no blank titles or unresolved text keys
+PASS Scholar every unavailable choice explains its authored requirement
+PASS Scholar visible cost is displayed: 피를 떨어뜨려 영창을 읽는다.
+PASS Scholar visible cost is displayed: 피를 떨어뜨려 영창을 읽는다.
+PASS event fixture chapter Shelter
+PASS F1 authors the actual event subject Shelter
+PASS Shelter actual room starts unresolved with its own subject
+SCREEN Event-Shelter-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Shelter world-object pointer opens the actual encounter
+SCREEN Event-Shelter-FirstPage
+PASS Shelter first page has localized visible narrative
+PASS Shelter choices have no blank titles or unresolved text keys
+PASS Shelter every unavailable choice explains its authored requirement
+PASS Shelter has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 3
+PASS pointer reaches Illustrated Event Choice 3; actual Illustrated Event Choice 3
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Shelter declining preserves the actual person/creature and unresolved encounter
+PASS Shelter postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Shelter real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS Shelter can naturally be approached again after a real room revisit
+PASS Shelter first page has localized visible narrative
+PASS Shelter choices have no blank titles or unresolved text keys
+PASS Shelter every unavailable choice explains its authored requirement
+PASS event fixture chapter StormBottle
+PASS F1 authors the actual event subject StormBottle
+PASS StormBottle actual room starts unresolved with its own subject
+SCREEN Event-StormBottle-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS StormBottle world-object pointer opens the actual encounter
+SCREEN Event-StormBottle-FirstPage
+PASS StormBottle first page has localized visible narrative
+PASS StormBottle choices have no blank titles or unresolved text keys
+PASS StormBottle every unavailable choice explains its authored requirement
+PASS StormBottle visible cost is displayed: 폭풍 한 병
+PASS StormBottle visible cost is displayed: 번개를 읽는 법
+PASS StormBottle visible cost is displayed: 폭풍 한 병
+PASS StormBottle visible cost is displayed: 번개를 읽는 법
+PASS StormBottle has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 3
+PASS pointer reaches Illustrated Event Choice 3; actual Illustrated Event Choice 3
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS StormBottle declining preserves the actual person/creature and unresolved encounter
+PASS StormBottle postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS StormBottle real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS StormBottle can naturally be approached again after a real room revisit
+PASS StormBottle first page has localized visible narrative
+PASS StormBottle choices have no blank titles or unresolved text keys
+PASS StormBottle every unavailable choice explains its authored requirement
+PASS StormBottle visible cost is displayed: 폭풍 한 병
+PASS StormBottle visible cost is displayed: 번개를 읽는 법
+PASS StormBottle visible cost is displayed: 폭풍 한 병
+PASS StormBottle visible cost is displayed: 번개를 읽는 법
+PASS event fixture chapter StrayDog
+PASS F1 authors the actual event subject StrayDog
+PASS StrayDog actual room starts unresolved with its own subject
+SCREEN Event-StrayDog-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS StrayDog world-object pointer opens the actual encounter
+SCREEN Event-StrayDog-FirstPage
+PASS StrayDog first page has localized visible narrative
+PASS StrayDog choices have no blank titles or unresolved text keys
+PASS StrayDog every unavailable choice explains its authored requirement
+PASS StrayDog has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS StrayDog declining preserves the actual person/creature and unresolved encounter
+PASS StrayDog postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS StrayDog can naturally be approached again after a real room revisit
+PASS StrayDog first page has localized visible narrative
+PASS StrayDog choices have no blank titles or unresolved text keys
+PASS StrayDog every unavailable choice explains its authored requirement
+PASS event fixture chapter Tooth
+PASS F1 authors the actual event subject Tooth
+PASS Tooth actual room starts unresolved with its own subject
+SCREEN Event-Tooth-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Tooth world-object pointer opens the actual encounter
+SCREEN Event-Tooth-FirstPage
+PASS Tooth first page has localized visible narrative
+PASS Tooth choices have no blank titles or unresolved text keys
+PASS Tooth every unavailable choice explains its authored requirement
+PASS Tooth visible cost is displayed: 금니 모양의 부적을 산다.
+PASS Tooth visible cost is displayed: 회복 포션 한 병을 판다.
+PASS Tooth visible cost is displayed: 금니 모양의 부적을 산다.
+PASS Tooth visible cost is displayed: 회복 포션 한 병을 판다.
+PASS Tooth has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 3
+PASS pointer reaches Illustrated Event Choice 3; actual Illustrated Event Choice 3
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Tooth declining preserves the actual person/creature and unresolved encounter
+PASS Tooth postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Tooth real rear revisit offers both speak and ambush
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS Tooth can naturally be approached again after a real room revisit
+PASS Tooth first page has localized visible narrative
+PASS Tooth choices have no blank titles or unresolved text keys
+PASS Tooth every unavailable choice explains its authored requirement
+PASS Tooth visible cost is displayed: 금니 모양의 부적을 산다.
+PASS Tooth visible cost is displayed: 회복 포션 한 병을 판다.
+PASS Tooth visible cost is displayed: 금니 모양의 부적을 산다.
+PASS Tooth visible cost is displayed: 회복 포션 한 병을 판다.
+PASS event fixture chapter Training
+PASS F1 authors the actual event subject Training
+PASS Training actual room starts unresolved with its own subject
+SCREEN Event-Training-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Training world-object pointer opens the actual encounter
+SCREEN Event-Training-FirstPage
+PASS Training first page has localized visible narrative
+PASS Training choices have no blank titles or unresolved text keys
+PASS Training every unavailable choice explains its authored requirement
+PASS event fixture chapter Well
+PASS F1 authors the actual event subject Well
+PASS Well actual room starts unresolved with its own subject
+SCREEN Event-Well-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Well world-object pointer opens the actual encounter
+SCREEN Event-Well-FirstPage
+PASS Well first page has localized visible narrative
+PASS Well choices have no blank titles or unresolved text keys
+PASS Well every unavailable choice explains its authored requirement
+PASS Well visible cost is displayed: 받침판을 버티며 금화를 꺼낸다.
+PASS Well visible cost is displayed: 받침판을 버티며 금화를 꺼낸다.
+PASS event fixture chapter Well
+PASS F1 authors the actual event subject Well
+PASS Well has authored environment paintings in all3 acts and all4 views
+PASS Well actual event room uses its purpose-built theme
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Well real choice applies the authored terminal physical state
+PASS Well refusal/emergency stop gives no hidden reward
+SCREEN Event-Well-Terminal
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS Well physical ending persists after leaving and returning
+PASS Well actual painting matches its used/aftermath state
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Well used subject speaks a short revisit line instead of reopening the choice popup
+PASS Well actual toast describes this particular physical ending
+PASS Well revisit cannot duplicate a reward
+SCREEN Event-Well-Revisited
+PASS event fixture chapter AmberSeed
+PASS F1 authors the actual event subject AmberSeed
+PASS AmberSeed has authored environment paintings in all3 acts and all4 views
+PASS AmberSeed actual event room uses its purpose-built theme
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Illustrated Event Choice 2
+PASS pointer reaches Illustrated Event Choice 2; actual Illustrated Event Choice 2
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS AmberSeed real choice applies the authored terminal physical state
+PASS AmberSeed refusal/emergency stop gives no hidden reward
+SCREEN Event-AmberSeed-Terminal
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS AmberSeed physical ending persists after leaving and returning
+PASS AmberSeed actual painting matches its used/aftermath state
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS AmberSeed used subject speaks a short revisit line instead of reopening the choice popup
+PASS AmberSeed actual toast describes this particular physical ending
+PASS AmberSeed revisit cannot duplicate a reward
+SCREEN Event-AmberSeed-Revisited
+PASS event fixture chapter Scholar
+PASS F1 authors the actual event subject Scholar
+PASS Scholar has authored environment paintings in all3 acts and all4 views
+PASS Scholar actual event room uses its purpose-built theme
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Illustrated Event Choice 2
+PASS pointer reaches Illustrated Event Choice 2; actual Illustrated Event Choice 2
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Scholar real choice applies the authored terminal physical state
+PASS Scholar refusal/emergency stop gives no hidden reward
+SCREEN Event-Scholar-Terminal
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS Scholar physical ending persists after leaving and returning
+PASS Scholar actual painting matches its used/aftermath state
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Scholar used subject speaks a short revisit line instead of reopening the choice popup
+PASS Scholar actual toast describes this particular physical ending
+PASS Scholar revisit cannot duplicate a reward
+SCREEN Event-Scholar-Revisited
+PASS event fixture chapter Delivery
+PASS F1 authors the actual event subject Delivery
+PASS Delivery has authored environment paintings in all3 acts and all4 views
+PASS Delivery actual event room uses its purpose-built theme
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Delivery real choice applies the authored terminal physical state
+PASS Delivery receives one real relic without an invented cash payment or selection of unclaimed goods
+PASS Delivery consumes the actual reservation flag
+SCREEN Event-Delivery-Terminal
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS Delivery physical ending persists after leaving and returning
+PASS Delivery actual painting matches its used/aftermath state
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Delivery used subject speaks a short revisit line instead of reopening the choice popup
+PASS Delivery actual toast describes this particular physical ending
+PASS Delivery revisit cannot duplicate a reward
+SCREEN Event-Delivery-Revisited
+PASS event fixture chapter Training
+PASS F1 authors the actual event subject Training
+PASS Training has authored environment paintings in all3 acts and all4 views
+PASS Training actual event room uses its purpose-built theme
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Illustrated Event Choice 3
+PASS pointer reaches Illustrated Event Choice 3; actual Illustrated Event Choice 3
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Training real choice applies the authored terminal physical state
+PASS Training refusal/emergency stop gives no hidden reward
+SCREEN Event-Training-Terminal
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS actual navigation returns to event room 0
+PASS Training physical ending persists after leaving and returning
+PASS Training actual painting matches its used/aftermath state
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Training used subject speaks a short revisit line instead of reopening the choice popup
+PASS Training actual toast describes this particular physical ending
+PASS Training revisit cannot duplicate a reward
+SCREEN Event-Training-Revisited
+Event scope: all18 first-page pointer/modal reviews; authored person/creature postponements; one actual terminal path in each of five object events. No combat/DPS or whole-run replay suite.
+PASS active combat catalog contains 고블린사냥꾼
+PASS authored leader is available for 고블린사냥꾼
+PASS actual combat art fixture 고블린사냥꾼
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 고블린사냥꾼
+PASS actual separate pose 고블린사냥꾼/Idle
+PASS editable PNG bound 고블린사냥꾼/Idle
+SCREEN Combat-고블린사냥꾼-Idle
+PASS actual separate pose 고블린사냥꾼/Ready
+PASS editable PNG bound 고블린사냥꾼/Ready
+SCREEN Combat-고블린사냥꾼-Ready
+PASS actual separate pose 고블린사냥꾼/Attack
+PASS editable PNG bound 고블린사냥꾼/Attack
+SCREEN Combat-고블린사냥꾼-Attack
+PASS actual separate pose 고블린사냥꾼/Dead
+PASS editable PNG bound 고블린사냥꾼/Dead
+SCREEN Combat-고블린사냥꾼-Dead
+PASS actual separate pose 고블린사냥꾼/Stunned
+PASS editable PNG bound 고블린사냥꾼/Stunned
+SCREEN Combat-고블린사냥꾼-Stunned
+PASS active combat catalog contains 납골당의종
+PASS authored leader is available for 납골당의종
+PASS actual combat art fixture 납골당의종
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 납골당의종
+PASS actual separate pose 납골당의종/Idle
+PASS editable PNG bound 납골당의종/Idle
+SCREEN Combat-납골당의종-Idle
+PASS actual separate pose 납골당의종/Ready
+PASS editable PNG bound 납골당의종/Ready
+SCREEN Combat-납골당의종-Ready
+PASS actual separate pose 납골당의종/Attack
+PASS editable PNG bound 납골당의종/Attack
+SCREEN Combat-납골당의종-Attack
+PASS actual separate pose 납골당의종/Dead
+PASS editable PNG bound 납골당의종/Dead
+SCREEN Combat-납골당의종-Dead
+PASS actual separate pose 납골당의종/Stunned
+PASS editable PNG bound 납골당의종/Stunned
+SCREEN Combat-납골당의종-Stunned
+PASS active combat catalog contains 철니미믹
+PASS authored leader is available for 철니미믹
+PASS actual combat art fixture 철니미믹
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 철니미믹
+PASS actual separate pose 철니미믹/Idle
+PASS editable PNG bound 철니미믹/Idle
+SCREEN Combat-철니미믹-Idle
+PASS actual separate pose 철니미믹/Ready
+PASS editable PNG bound 철니미믹/Ready
+SCREEN Combat-철니미믹-Ready
+PASS actual separate pose 철니미믹/Attack
+PASS editable PNG bound 철니미믹/Attack
+SCREEN Combat-철니미믹-Attack
+PASS actual separate pose 철니미믹/Dead
+PASS editable PNG bound 철니미믹/Dead
+SCREEN Combat-철니미믹-Dead
+PASS active combat catalog contains 실인형
+PASS authored leader is available for 실인형
+PASS actual combat art fixture 실인형
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 실인형
+PASS actual separate pose 실인형/Idle
+PASS editable PNG bound 실인형/Idle
+SCREEN Combat-실인형-Idle
+PASS actual separate pose 실인형/Ready
+PASS editable PNG bound 실인형/Ready
+SCREEN Combat-실인형-Ready
+PASS actual separate pose 실인형/Attack
+PASS editable PNG bound 실인형/Attack
+SCREEN Combat-실인형-Attack
+PASS actual separate pose 실인형/Dead
+PASS editable PNG bound 실인형/Dead
+SCREEN Combat-실인형-Dead
+PASS actual separate pose 실인형/Stunned
+PASS editable PNG bound 실인형/Stunned
+SCREEN Combat-실인형-Stunned
+PASS active combat catalog contains 종토끼
+PASS authored leader is available for 종토끼
+PASS actual combat art fixture 종토끼
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 종토끼
+PASS actual separate pose 종토끼/Idle
+PASS editable PNG bound 종토끼/Idle
+SCREEN Combat-종토끼-Idle
+PASS actual separate pose 종토끼/Ready
+PASS editable PNG bound 종토끼/Ready
+SCREEN Combat-종토끼-Ready
+PASS actual separate pose 종토끼/Attack
+PASS editable PNG bound 종토끼/Attack
+SCREEN Combat-종토끼-Attack
+PASS actual separate pose 종토끼/Dead
+PASS editable PNG bound 종토끼/Dead
+SCREEN Combat-종토끼-Dead
+PASS active combat catalog contains 공허의눈
+PASS authored leader is available for 공허의눈
+PASS actual combat art fixture 공허의눈
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 공허의눈
+PASS actual separate pose 공허의눈/Idle
+PASS editable PNG bound 공허의눈/Idle
+SCREEN Combat-공허의눈-Idle
+PASS actual separate pose 공허의눈/Ready
+PASS editable PNG bound 공허의눈/Ready
+SCREEN Combat-공허의눈-Ready
+PASS actual separate pose 공허의눈/Attack
+PASS editable PNG bound 공허의눈/Attack
+SCREEN Combat-공허의눈-Attack
+PASS actual separate pose 공허의눈/Dead
+PASS editable PNG bound 공허의눈/Dead
+SCREEN Combat-공허의눈-Dead
+PASS active combat catalog contains 숯불도롱뇽
+PASS authored leader is available for 숯불도롱뇽
+PASS actual combat art fixture 숯불도롱뇽
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 숯불도롱뇽
+PASS actual separate pose 숯불도롱뇽/Idle
+PASS editable PNG bound 숯불도롱뇽/Idle
+SCREEN Combat-숯불도롱뇽-Idle
+PASS actual separate pose 숯불도롱뇽/Ready
+PASS editable PNG bound 숯불도롱뇽/Ready
+SCREEN Combat-숯불도롱뇽-Ready
+PASS actual separate pose 숯불도롱뇽/Attack
+PASS editable PNG bound 숯불도롱뇽/Attack
+SCREEN Combat-숯불도롱뇽-Attack
+PASS actual separate pose 숯불도롱뇽/Dead
+PASS editable PNG bound 숯불도롱뇽/Dead
+SCREEN Combat-숯불도롱뇽-Dead
+SCREEN Player-Wizard-Navigation
+PASS actual wizard combat presentation
+PASS combat begins after actual confirmation/tutorial input
+PASS actual wizard PNG pose Idle
+SCREEN Player-Wizard-Idle
+PASS actual wizard PNG pose Ready
+SCREEN Player-Wizard-Ready
+PASS actual wizard PNG pose Attack
+SCREEN Player-Wizard-Attack
+PASS actual wizard PNG pose Guard
+SCREEN Player-Wizard-Guard
+PASS review returns to chapter start
+Art review uses real saved canvases and authored combat poses; no DPS comparison, whole-system regression or substitute for user five-run feel feedback.
+1028 checks; 0 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: background-extraction. Edit IMAGE1 existing open chest by removing ONLY the faint brown/gray ambient haze surrounding the object. Everything beyond the actual inked wooden/iron silhouette must have alpha0, including the haze beside the left edge and above the lid. Preserve every pixel inside the object and the full1536x1024 canvas exactly: camera, lower box shape, rivets, colors, wood/iron drawing, lid angle, dark interior, shadows. Do not redraw, relight, resize, recenter or change the chest. No colored cloud or soft ambient matte outside. Image2 is original closed chest, identity reference only; image3 actual background. One truly transparent PNG; keep the chest OPEN.",
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-2c411820-698f-4c60-af22-663bda85114e.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-267c953f-4a96-4024-87c6-2323ee77db3d.png"
+}

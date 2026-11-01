@@ -1,0 +1,243 @@
+PASS reachable Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS merchant has an authored approach response
+PASS ordinary merchant fixture B1
+PASS B1 authored stock is 3 potions, 3 perks, 4 relics
+PASS stock is stable before any purchase
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable No
+PASS pointer reaches No; actual No
+PASS canceling conversation does not dismiss the merchant
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS front approach opens the real shop
+SCREEN B1-Shop-Page1
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS closing without purchase keeps merchant
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Forward
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS unbought merchant remains on actual rear re-entry
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS rear re-entry presents actual ambush and talk choices
+SCREEN B1-Rear-Approach
+PASS reachable Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS reachable ShopItem_3
+PASS pointer reaches ShopItem_3; actual ShopItem_3
+PASS reachable Purchase
+PASS pointer reaches Purchase; actual Purchase
+PASS real purchase marks the original offer sold out: 화염 숙련
+PASS perk purchase applies exactly one stack for its authored price
+PASS buying a perk preserves pending level-up choices
+PASS buying preserves all ten slots without reroll/refill
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS purchase plus close keeps merchant for the current visit
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS merchant can reopen during purchased visit
+PASS reachable Next Stock
+PASS pointer reaches Next Stock; actual Next Stock
+SCREEN B1-Shop-Page2
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS only purchased room departure removes merchant on re-entry
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS departed merchant is narration, never a reopened shop
+SCREEN B1-Merchant-Departed
+PASS ordinary merchant fixture B2
+PASS B2 authored stock is 3 potions, 3 perks, 4 relics
+PASS stock is stable before any purchase
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable No
+PASS pointer reaches No; actual No
+PASS canceling conversation does not dismiss the merchant
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS front approach opens the real shop
+SCREEN B2-Shop-Page1
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS closing without purchase keeps merchant
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Forward
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS unbought merchant remains on actual rear re-entry
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS rear re-entry presents actual ambush and talk choices
+SCREEN B2-Rear-Approach
+PASS reachable Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS reachable ShopItem_3
+PASS pointer reaches ShopItem_3; actual ShopItem_3
+PASS reachable Purchase
+PASS pointer reaches Purchase; actual Purchase
+PASS real purchase marks the original offer sold out: 마력 순환
+PASS perk purchase applies exactly one stack for its authored price
+PASS buying a perk preserves pending level-up choices
+PASS buying preserves all ten slots without reroll/refill
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS purchase plus close keeps merchant for the current visit
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS merchant can reopen during purchased visit
+PASS reachable Next Stock
+PASS pointer reaches Next Stock; actual Next Stock
+SCREEN B2-Shop-Page2
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS only purchased room departure removes merchant on re-entry
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS departed merchant is narration, never a reopened shop
+SCREEN B2-Merchant-Departed
+PASS ordinary merchant fixture B3
+PASS B3 authored stock is 3 potions, 3 perks, 4 relics
+PASS stock is stable before any purchase
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable No
+PASS pointer reaches No; actual No
+PASS canceling conversation does not dismiss the merchant
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS front approach opens the real shop
+SCREEN B3-Shop-Page1
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS closing without purchase keeps merchant
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Forward
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS unbought merchant remains on actual rear re-entry
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS rear re-entry presents actual ambush and talk choices
+SCREEN B3-Rear-Approach
+PASS reachable Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS reachable ShopItem_3
+PASS pointer reaches ShopItem_3; actual ShopItem_3
+PASS reachable Purchase
+PASS pointer reaches Purchase; actual Purchase
+PASS real purchase marks the original offer sold out: 받아치기
+PASS perk purchase applies exactly one stack for its authored price
+PASS buying a perk preserves pending level-up choices
+PASS buying preserves all ten slots without reroll/refill
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS purchase plus close keeps merchant for the current visit
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Yes
+PASS pointer reaches Yes; actual Yes
+PASS merchant can reopen during purchased visit
+PASS reachable Next Stock
+PASS pointer reaches Next Stock; actual Next Stock
+SCREEN B3-Shop-Page2
+PASS reachable Leave
+PASS pointer reaches Leave; actual Leave
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS only purchased room departure removes merchant on re-entry
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS departed merchant is narration, never a reopened shop
+SCREEN B3-Merchant-Departed
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Forward
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS ordinary merchant counterstroke pays exact authored cost/reward
+PASS reachable Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS counterstroke conclusion returns to exploration
+PASS merchant escape is persistent and cannot be farmed
+SCREEN Merchant-Ambush-Aftermath
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Forward
+PASS reachable RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS room walking beat returns to navigation
+PASS actual room movement Back
+PASS reachable Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Pilgrim rear response routes to its own terminal hostile choice
+FAIL System.InvalidOperationException: Sequence contains no matching element
+  at System.Linq.Enumerable.Single[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x00070] in <9f5692804bed4122b102b53a993bfd3f>:0 
+  at DungeonSlash.MerchantApproachLiveProbe.Choice (System.String key) [0x0000d] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\MerchantApproachLiveProbe.cs:76 
+  at DungeonSlash.MerchantApproachLiveProbe+<Review>d__37.MoveNext () [0x013ea] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\MerchantApproachLiveProbe.cs:179 
+  at DungeonSlash.MerchantApproachLiveProbe+<Guarded>d__23.MoveNext () [0x0005c] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\MerchantApproachLiveProbe.cs:48 
+SCREEN Failure
+224 checks; 1 failures. Scoped merchant/rear-approach runtime only; no balance or full regression suite.

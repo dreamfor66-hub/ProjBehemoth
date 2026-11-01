@@ -1,0 +1,38 @@
+[
+  {
+    "key": "cofferSideLock",
+    "args": {
+      "prompt": "Tiny local design correction to FIRST image. Keep this chest's exact CLOSED shut lid state (do NOT open it), every outer edge, camera angle, material, color, position, straps, small bolts, wood panels and empty transparent background. ONLY change the central front keyhole plate from pointed shield to a small simple RECTANGLE with square corners as on SECOND image. Preserve the plate's size and keyhole. This is a subtle local edit; do not redesign, re-light or reframe anything. Transparent exterior must be completely clean: NO halo, NO brown glow, NO vignette, NO dark backdrop, NO cast drop shadow. The object is opaque, background transparent, as in original. No other edits.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-39f5fea9-0a1b-4abd-bed5-99a969a25c89.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c3e0e074-991e-4739-99ae-11c6238413b8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "key": "cofferOpenFrontLock",
+    "args": {
+      "prompt": "Tiny local design correction to FIRST image. Keep this chest's exact OPEN lid state, every outer edge, camera angle, material, color, position, straps, small bolts, wood panels and empty transparent background. ONLY change the central front keyhole plate from pointed shield to a small simple RECTANGLE with square corners as on SECOND image. Preserve the plate's size and keyhole. This is a subtle local edit; do not redesign, re-light or reframe anything. Transparent exterior must be completely clean: NO halo, NO brown glow, NO vignette, NO dark backdrop, NO cast drop shadow. The object is opaque, background transparent, as in original. No other edits.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-65190e6f-3746-4395-b913-be0e5cfc057d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "key": "cofferOpenSideLock",
+    "args": {
+      "prompt": "Tiny local design correction to FIRST image. Keep this chest's exact OPEN lid state, every outer edge, camera angle, material, color, position, straps, small bolts, wood panels and empty transparent background. ONLY change the central front keyhole plate from pointed shield to a small simple RECTANGLE with square corners as on SECOND image. Preserve the plate's size and keyhole. This is a subtle local edit; do not redesign, re-light or reframe anything. Transparent exterior must be completely clean: NO halo, NO brown glow, NO vignette, NO dark backdrop, NO cast drop shadow. The object is opaque, background transparent, as in original. No other edits.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-b49c52b8-994c-4018-9b82-7d81c8f254bb.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-858f0d12-4e9d-40da-9473-6bcec087c67f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Input1 edit target and geometry authority. Input2 room palette/perspective. Input3 actual original drawn style. Input4 DD pooled black reference. Preserve static framing and leave only stated physical aftermath. Actual transparent-background cutout, never opaque black background. Quiet broad shadow/color forms, selective ink/lost edges, no icon border or small texture. Edit ONLY to aftermath of this EXACT BACK composition. Remove all iron safe, hinges, strap, latch, metal and contents. Retain the precise bottom/front-left broken grey stone drain RIM in its exact pixel position and size; reveal an ink-black empty opening behind the rim where safe was, few simple big flat stone planes. The upper majority of canvas is now TRANSPARENT, not painted dark. No new safe, money, rubble pile, pedestal, scenery, glow or vignette. Do not enlarge/recenter the remaining rim. Preserve1536x1024 canvas and its bottom support line.",
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-a9b1b133-ea62-4026-9a61-aaee8a4508ab.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-2948331f-a2fb-46d8-8594-361525fb02c1.png"
+}

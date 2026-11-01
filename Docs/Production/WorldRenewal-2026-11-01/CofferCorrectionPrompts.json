@@ -1,0 +1,41 @@
+[
+  {
+    "key": "cofferSideFix",
+    "args": {
+      "prompt": "Correct FIRST target chest painting using SECOND image as the EXACT same physical coffer identity. Keep target's camera, pose, lid opening, silhouette, frame placement and canvas unchanged. The front central keyhole plate MUST be the same SMALL plain RECTANGLE with squared corners as second image, not a shield/diamond/pointed bottom. Same two thick simple matte dark iron lid/body straps and dull olive timber, no gold. Remove redundant frame-edge bands and little rows of round bolts that are not present in the second coffer; retain only the few strap fasteners physically necessary. Keep opening hinge mechanism plausible. Reduce uniform outside outlines by merging the lower timber edges into one solid black ground-contact underside. Match quiet broad nearly untextured wood faces, tiny two restrained iron highlights on upper left only, substantial BLACK under the opened lid, NO glow, grain, shiny trim or icon border. Transparent exterior, opaque object, no new backdrop/props/stones. It must read as the same coffer in a different physical view/state, rather than a separately designed item icon.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-39f5fea9-0a1b-4abd-bed5-99a969a25c89.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-08331683-94fc-4535-a640-4f189dc7cb48.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "key": "cofferOpenFrontFix",
+    "args": {
+      "prompt": "Correct FIRST target chest painting using SECOND image as the EXACT same physical coffer identity. Keep target's camera, pose, lid opening, silhouette, frame placement and canvas unchanged. The front central keyhole plate MUST be the same SMALL plain RECTANGLE with squared corners as second image, not a shield/diamond/pointed bottom. Same two thick simple matte dark iron lid/body straps and dull olive timber, no gold. Remove redundant frame-edge bands and little rows of round bolts that are not present in the second coffer; retain only the few strap fasteners physically necessary. Keep opening hinge mechanism plausible. Reduce uniform outside outlines by merging the lower timber edges into one solid black ground-contact underside. Match quiet broad nearly untextured wood faces, tiny two restrained iron highlights on upper left only, substantial BLACK under the opened lid, NO glow, grain, shiny trim or icon border. Transparent exterior, opaque object, no new backdrop/props/stones. It must read as the same coffer in a different physical view/state, rather than a separately designed item icon.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c7981cad-d3f2-4063-9922-39bb2fc0595f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "key": "cofferOpenSideFix",
+    "args": {
+      "prompt": "Correct FIRST target chest painting using SECOND image as the EXACT same physical coffer identity. Keep target's camera, pose, lid opening, silhouette, frame placement and canvas unchanged. The front central keyhole plate MUST be the same SMALL plain RECTANGLE with squared corners as second image, not a shield/diamond/pointed bottom. Same two thick simple matte dark iron lid/body straps and dull olive timber, no gold. Remove redundant frame-edge bands and little rows of round bolts that are not present in the second coffer; retain only the few strap fasteners physically necessary. Keep opening hinge mechanism plausible. Reduce uniform outside outlines by merging the lower timber edges into one solid black ground-contact underside. Match quiet broad nearly untextured wood faces, tiny two restrained iron highlights on upper left only, substantial BLACK under the opened lid, NO glow, grain, shiny trim or icon border. Transparent exterior, opaque object, no new backdrop/props/stones. It must read as the same coffer in a different physical view/state, rather than a separately designed item icon.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-b49c52b8-994c-4018-9b82-7d81c8f254bb.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-b197acdc-544f-4791-904e-1320e32b227b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  }
+]

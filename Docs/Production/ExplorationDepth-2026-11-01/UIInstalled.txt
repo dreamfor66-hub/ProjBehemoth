@@ -1,0 +1,2 @@
+v4
+Saved play-code panels, fixed ASCII code font, scrollable room details, copy/paste/validation, floor record labels and read-only world-view controls in both playable scenes.

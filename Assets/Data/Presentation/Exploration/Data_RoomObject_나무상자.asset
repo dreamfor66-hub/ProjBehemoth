@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: ui.explore.used.crate
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 25996a83bb14827439e4bca8da0f2065, type: 3}

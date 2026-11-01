@@ -1,0 +1,34 @@
+{
+  "canvas": [
+    1671,
+    941
+  ],
+  "alphaSolidBBox": [
+    280,
+    178,
+    423,
+    649
+  ],
+  "blackVoidEdges": {
+    "rows": [
+      320,
+      430
+    ],
+    "meanAbsPx": 0.46846846846846846,
+    "maxAbsPx": 3
+  },
+  "stoneSampleRect": [
+    379,
+    397,
+    385,
+    403
+  ],
+  "medianRGB": [
+    86.0,
+    80.0,
+    62.5
+  ],
+  "linear_sRGB_Y": 0.08069070747760305,
+  "noFit": true,
+  "sha256": "e45c2b8e807b7134099a7ef5872df918a3a57b920eed6adc5905317388ef859a"
+}

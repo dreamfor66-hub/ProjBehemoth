@@ -1,0 +1,48 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS 19 active encounters; mirror and rejected trap prototype excluded
+PASS retired premises cannot be drawn
+PASS nearby right-floor prop reserves the opposite support for companion
+SCREEN Hound-Prop-Clearance
+PASS world-space pointer target at (665.08, 543.80)
+PASS foreground NPC wins pointer ordering in front of larger doorway
+SCREEN NPC-Entrance-Interaction
+PASS reachable button ReturnToSelection
+PASS pointer reaches ReturnToSelection; actual ReturnToSelection
+PASS reachable button Choice_1
+PASS pointer reaches Choice_1; actual Choice_1
+PASS menu opens recording UI and non-event rooms are not marked unentered events
+PASS play code uses readable ASCII face rather than the gameplay calligraphy
+PASS reachable button Copy run code
+PASS pointer reaches Copy run code; actual Copy run code
+PASS reachable button Paste clipboard
+PASS pointer reaches Paste clipboard; actual Paste clipboard
+PASS reachable button Load pasted record
+PASS pointer reaches Load pasted record; actual Load pasted record
+SCREEN Play-Code-UI
+PASS reachable button View room
+PASS pointer reaches View room; actual View room
+PASS record preview uses actual consumed fountain state
+PASS reachable button Return to live run
+PASS pointer reaches Return to live run; actual Return to live run
+PASS new rendering/query controls preserve live run
+PASS natural seeded two-room secret corridor ending in chest
+PASS closed secret branch is absent from accessible map
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual input traverses secret corridor room 25
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual input traverses secret corridor room 26
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual input traverses secret corridor room 27
+PASS terminal reward is furnished and interactive
+SCREEN Secret-Corridor-Terminal
+PASS play record preserves actual secret traversal order

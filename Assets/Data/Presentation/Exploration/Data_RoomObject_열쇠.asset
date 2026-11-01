@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: ui.explore.key.found
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 45c33eb1eaa40e643a2cea5aa9068b8c, type: 3}

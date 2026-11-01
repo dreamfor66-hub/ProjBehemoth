@@ -1,1 +1,1 @@
-playing=False; scene=Assets/Scenes/MainGameScene.unity
+playing=True; scene=Assets/Scenes/OutGameScene.unity

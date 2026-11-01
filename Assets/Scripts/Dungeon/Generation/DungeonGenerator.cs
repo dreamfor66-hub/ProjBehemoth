@@ -15,7 +15,8 @@ namespace DungeonSlash
             {
                 var random = new Random(seed + attempt * 7919);
                 var graph = CreateGraph(random, floor);
-                if (TryAssignRooms(graph, random, floor))
+                if (TryAssignRooms(graph, random, floor) && EnsureExplorationAlcove(graph, random, floor)
+                    && DungeonRoutePacing.Distribute(graph, settings, random, floor))
                 { ExplorationGeneration.Populate(graph, settings.exploration, seed, floor); return new DungeonRunState(seed, graph, floor); }
             }
             throw new InvalidOperationException("Unable to create a dungeon that satisfies the configured distance constraints.");
@@ -172,6 +173,23 @@ namespace DungeonSlash
         }
 
         public static RoomEncounterType FacilityFamily(RoomEncounterType type) => type == RoomEncounterType.PoisonFountain ? RoomEncounterType.Fountain : type;
+        private bool EnsureExplorationAlcove(DungeonGraph graph, Random random, int floor)
+        {
+            if(graph.Rooms.Any(r=>r.Type==RoomEncounterType.Empty&&r.Connections.Count==1))return true;
+            var depths=graph.DistancesFrom(graph.StartRoom);
+            foreach(var parent in graph.Rooms.Where(r=>r!=graph.StartRoom&&r.Type is not (RoomEncounterType.Boss or RoomEncounterType.Camp)
+                && depths[r.RoomId]>=2&&r.Connections.Count<3&&(floor!=1||CanAddExit(graph,r,settings.firstActOpeningCombats)))
+                .OrderBy(r=>r.Connections.Count).ThenBy(_=>random.Next()).ToArray())
+                foreach(var offset in DirectionUtility.Offsets.OrderBy(_=>random.Next()))
+                {
+                    var position=parent.Position+offset;
+                    if(graph.HasRoom(position)||DirectionUtility.Offsets.Any(o=>{var r=graph.At(position+o);return r!=null&&r!=parent;}))continue;
+                    // This empty spatial pocket is additional to the growth-room budget.
+                    // No existing monster, reward or facility is replaced to make a secret origin.
+                    var alcove=graph.AddRoom(position);alcove.Type=RoomEncounterType.Empty;alcove.IsExplorationAlcove=true;graph.Connect(parent,alcove);return true;
+                }
+            return false;
+        }
         private bool CanPlaceFacility(DungeonGraph graph, DungeonRoom room, RoomEncounterType type)
         {
             var family = FacilityFamily(type);
@@ -226,7 +244,7 @@ namespace DungeonSlash
         {
             var graph = state.Graph;
             var distances = graph.DistancesFrom(graph.StartRoom);
-            var baseCount = graph.Rooms.Count(r => !r.IsOptionalAnnex);
+            var baseCount = graph.Rooms.Count(r => !r.IsOptionalAnnex && !r.IsExplorationAlcove);
             return baseCount >= settings.minRooms && baseCount <= settings.maxRooms &&
                    distances.Count == graph.Rooms.Count &&
                    graph.Rooms.Any(room => room.Type == RoomEncounterType.Boss && distances[room.RoomId] >= settings.minimumBossDistance) &&

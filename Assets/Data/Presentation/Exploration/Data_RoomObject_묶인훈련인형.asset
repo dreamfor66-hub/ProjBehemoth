@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uBB36\uC778\uD6C8\uB828\uC778\uD615"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.Training
+  labelKey: ui.encounter.subject.Training
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.Training
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 11400000, guid: f44a8f2a47b17cd4f82efaba354de447, type: 2}
   front: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}

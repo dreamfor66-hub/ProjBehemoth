@@ -33,4 +33,6 @@ MonoBehaviour:
   offerGroup: {fileID: 0}
   abilitySource: {fileID: 11400000, guid: f6a34c6a74da6af41a0afad00024d427, type: 2}
   maxStacks: 99
+  soldByMerchant: 1
+  shopPrice: 45
   modifiers: []

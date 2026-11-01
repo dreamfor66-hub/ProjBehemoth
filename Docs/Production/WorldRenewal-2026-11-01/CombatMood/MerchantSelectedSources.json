@@ -1,0 +1,86 @@
+[
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Idle",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-459ed717-5ab1-4e5a-9bec-df1ab2dfc3f7.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Idle.png"
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Ready",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-a8559563-f8d3-4901-a7b2-c73812588b4a.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Ready.png"
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Attack",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-d42c8961-0e96-4cd5-85b6-7d760f471721.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Attack.png"
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Stunned",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-59950f3d-84d4-4d24-9849-d0d83aa302d6.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Stunned.png"
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Dead",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-1124dab3-efc4-45bf-9f6f-4c082c5c4b99.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Dead.png"
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Idle",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-ceb5b736-42c0-4025-bccf-693bf8ad85af.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Idle.png"
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Ready",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-97eb58b1-6fcc-4825-9bf8-7fe838575850.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Ready.png"
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Attack",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-4eeb56af-1154-440e-b908-6f7e1fe6c084.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Attack.png"
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Stunned",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-ebfb3088-e3e3-4d7d-857b-860d22d3965e.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Stunned.png"
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Dead",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-13e19f7d-001f-4bba-84ce-1f65dabc9dac.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Dead.png"
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Idle",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-4d326100-db59-4903-8b33-43f1608f902f.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Idle.png"
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Ready",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-a0e190a7-e843-4d60-8ba8-f989e16a5e7f.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Ready.png"
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Attack",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-24db2b11-2f2c-44c9-a11a-b07f4c77fe8e.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Attack.png"
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Dead",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-d78b3e7b-735f-4f4e-b737-af7d619cc6cc.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Dead.png"
+  }
+]

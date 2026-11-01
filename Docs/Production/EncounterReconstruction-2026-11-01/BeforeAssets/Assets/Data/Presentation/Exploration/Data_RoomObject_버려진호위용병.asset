@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uBC84\uB824\uC9C4\uD638\uC704\uC6A9\uBCD1"
+  m_EditorClassIdentifier: 
+  labelKey: ui.lore.object.Shelter
+  usedLabelKey: 
+  resolvedTextKey: 
+  wallMounted: 0
+  fitsDoorway: 0
+  includesDoorframe: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 0}
+  roomInterior: 0
+  usedForm: {fileID: 0}
+  front: {fileID: 21300000, guid: b8a33f18f8cb4d647aa6ca94ea78412b, type: 3}
+  side: {fileID: 21300000, guid: 330604556589f5a4fb47c90dcca1893c, type: 3}
+  rear: {fileID: 21300000, guid: 74e8b6fc1fc89754d885c73f73802cff, type: 3}
+  usedFront: {fileID: 0}
+  usedSide: {fileID: 0}
+  usedRear: {fileID: 0}
+  displayHeight: 340
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: b8a33f18f8cb4d647aa6ca94ea78412b, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.016034985
+      y: 0.013994911
+      width: 0.95626825
+      height: 0.97201014
+    footprint:
+      serializedVersion: 2
+      x: 0.02478134
+      y: 0.022900764
+      width: 0.92565596
+      height: 0.21356234
+  - sprite: {fileID: 21300000, guid: 330604556589f5a4fb47c90dcca1893c, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.043809526
+      y: 0.014120667
+      width: 0.92190474
+      height: 0.9717587
+    footprint:
+      serializedVersion: 2
+      x: 0.06285714
+      y: 0.02182285
+      width: 0.8761905
+      height: 0.2135045
+  - sprite: {fileID: 21300000, guid: 74e8b6fc1fc89754d885c73f73802cff, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.03777336
+      y: 0.014138818
+      width: 0.9224652
+      height: 0.97172236
+    footprint:
+      serializedVersion: 2
+      x: 0.071570575
+      y: 0.023136247
+      width: 0.8727634
+      height: 0.21349615

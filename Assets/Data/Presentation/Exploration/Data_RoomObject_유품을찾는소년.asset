@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uC720\uD488\uC744\uCC3E\uB294\uC18C\uB144"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.LostBeliever
+  labelKey: ui.encounter.subject.LostBeliever
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.LostBeliever
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 11400000, guid: 061a68eea50cf1d49b5e12fae2fe1a8f, type: 2}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 11e0d1b3e1e6f5e43b7d9e30828e0d6b, type: 3}

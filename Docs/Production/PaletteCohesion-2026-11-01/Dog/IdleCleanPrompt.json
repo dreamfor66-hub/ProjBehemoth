@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: precise-object-edit. Image1 is exact EDIT TARGET. Preserve its directly-away REAR pose, head/neck/collar/spine direction, body proportions, four paws and hock structure, bandaged left foreleg, low tail, existing silhouette and camera. Correct the painted FORM/SHADOW SIMPLIFICATION, not exposure.\nImage2 is actual project original archer and installed background: match their quiet broad FLAT color regions and deliberate large silhouettes. Image3 is approved Warrior rear form reference. Image4 is user DD working-hound identity/mood reference ONLY, not fur-stroke density.\nThe target has TOO MANY SMALL BLACK FUR SLASHES, long zigzag fur teeth and clothlike chevrons. Remove most of those internal slashes and narrow repeated light/dark wedges. Group the grey wiry coat into 6–8 substantial large contiguous gray/taupe planes. Large connected near-black masses under neck, near shoulder and under haunches. Show rough adult coat through 6–10 purposeful coarse clumps along silhouette and a few broad cuts, not dozens of spikes. Keep black shadow integrated inside dog but stop rendering each tuft. Remove ALL grain, speckled texture, red collar scratches and mottled flecks. Collar is a single muted maroon leather band with dull buckle, not polished. Keep dog lean, tough, adult, alive and focused forward. No eyes visible from rear. No face turning. NO new anatomy, objects or scene. Retain healthy load-bearing paw contact, not floating feet. Full-body dog alone on true transparency, no ground shadow/halo. Same canvas composition.",
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-726f0d05-f8b4-449a-8d92-35ac5dab4d74.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/WorldRenewal-2026-11-01/CombatStyleInputs.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Idle.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-e0589781-5f61-456d-9962-8ca002c8efb6.webp"
+  ],
+  "transparent_background": true
+}

@@ -1,0 +1,54 @@
+{
+  "objects": [
+    {
+      "name": "저주받은금고",
+      "height": 290,
+      "wall": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Rear.png"
+    },
+    {
+      "name": "유리덮개",
+      "height": 400,
+      "wall": true,
+      "front": "Assets/Art/World/Exploration/T_UI_World_Fruit_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_Fruit_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_Fruit_Rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_Fruit_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_Fruit_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_Fruit_UsedRear.png"
+    },
+    {
+      "name": "떠있는책",
+      "height": 300,
+      "wall": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_Book_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_Book_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_Book_Rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_Book_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_Book_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_Book_UsedRear.png"
+    },
+    {
+      "name": "표식붙은두꾸러미",
+      "height": 180,
+      "wall": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedRear.png"
+    },
+    {
+      "name": "급료고의빈배수구",
+      "height": 0,
+      "wall": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_급료고의빈배수구_front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_급료고의빈배수구_side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_급료고의빈배수구_rear.png"
+    }
+  ],
+  "seedIcon": "Assets/Art/UI/Icons/T_UI_Icon_혈근의씨.png"
+}

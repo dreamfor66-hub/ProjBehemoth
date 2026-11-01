@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Input1 edit target geometry/identity. Input2 room perspective/material/color authority; Input3 original drawing simplification; Input4 DD pooled shadow/weight. Actual transparent cutout, no matte or shadow halo. Selective ink, simple large planes, restrained diffuse shading. No inventory-button look, little cracks, noisy facets or text. AFTER COLLECTION state of this EXACT FRONT delivery parcel. Preserve the horizontal wooden pack-frame, four short feet, ground line, framing, camera and dimensions of frame. Contents and iron tool are ALL REMOVED; canvas has been folded FLAT on the frame, with ONE broad collapsed grey-brown fold and the strap loose flat across it. The ownership tag has been removed (player took it). No new bundle, small chest, bag or visible loot. Clearly EMPTY wrappings on old frame. Keep same image canvas and frame pixel placement, do not crop or recenter. Pure transparent outside all physical material.",
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-14bd222c-50b3-4bd1-b13e-82bbf19df936.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-2219d079-ed6a-433b-b7b1-24d5d70b3553.png"
+}

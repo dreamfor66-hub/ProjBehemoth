@@ -1,0 +1,1 @@
+Installed8 exact unmodified built-in imagegen PNGs. Canvas and existing .meta/GUID preserved. Geometry must refresh from alpha before root live verification.

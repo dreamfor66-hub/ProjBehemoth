@@ -45,7 +45,7 @@ namespace DungeonSlash
                         room.ObjectFacing = (FacingDirection)(((int)state.Player.Facing + 2) % 4);
                     }
                 }
-                var used = room.Type == RoomEncounterType.Camp ? runController.State.Fatigue.CampUsed
+                var used = state.Inspection ? room.ObjectUsed : room.Type == RoomEncounterType.Camp ? runController.State.Fatigue.CampUsed
                     : room.Type == RoomEncounterType.Shop ? GetRoomMemory(room).MerchantDeparted
                     : room.Type == RoomEncounterType.Event ? room.ObjectUsed : room.IsCleared;
                 var corner = ExplorationPlacement.RelativeCorner(state.Player.Facing, room.ObjectCorner);
@@ -106,10 +106,12 @@ namespace DungeonSlash
             var consumed = room.Type == RoomEncounterType.Shop ? GetRoomMemory(room).MerchantDeparted : room.IsCleared;
             if (room.Type == RoomEncounterType.Camp)
             {
-                if (runController.State.Fatigue.CampUsed && runController.State.Fatigue.Value >= content.fatigue.shortRestCeiling)
+                if (runController.State.Fatigue.CampUsed && runController.State.Fatigue.Value >= runController.State.Fatigue.ShortRestCeiling)
                 { explorationView.Say(art.resolvedTextKey); return; }
             }
             else if (consumed) { explorationView.Say(string.IsNullOrEmpty(room.RevisitTextKey) ? art.resolvedTextKey : room.RevisitTextKey); return; }
+            if (TryShowRearApproach(room, art)) return;
+            if (art.rearApproach != null) GetRoomMemory(room).BeginConversation();
             BeginEventPhase();
             switch (room.Type)
             {
@@ -139,6 +141,8 @@ namespace DungeonSlash
         }
         private void ApplyRoomObjectOutcome(DungeonRoom room, EventOption choice)
         {
+            RecordRoomChoice(choice);
+            if (choice.KeepsEncounterAvailable) return;
             room.ObjectRemoved = choice.removeWorldObject;
             room.ObjectUsed = choice.useWorldObject;
             room.ObjectAftermath = choice.resultingWorldObject;

@@ -1,0 +1,157 @@
+[
+  {
+    "view": "Front",
+    "candidates": [
+      {
+        "label": "Closed authority",
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_Front.png",
+        "lowerMaterialBBox": [
+          121,
+          600,
+          1478,
+          939
+        ]
+      },
+      {
+        "label": "Installed open",
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_UsedFront.png",
+        "lowerMaterialBBox": [
+          144,
+          600,
+          1393,
+          1003
+        ]
+      },
+      {
+        "label": "Front-Attempt1",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-2c411820-698f-4c60-af22-663bda85114e.png",
+        "lowerMaterialBBox": [
+          119,
+          600,
+          1477,
+          940
+        ]
+      },
+      {
+        "label": "Front-Attempt2",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-267c953f-4a96-4024-87c6-2323ee77db3d.png",
+        "lowerMaterialBBox": [
+          119,
+          600,
+          1478,
+          940
+        ]
+      }
+    ]
+  },
+  {
+    "view": "Side",
+    "candidates": [
+      {
+        "label": "Closed authority",
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_Side.png",
+        "lowerMaterialBBox": [
+          133,
+          600,
+          1447,
+          1000
+        ]
+      },
+      {
+        "label": "Installed open",
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_UsedSide.png",
+        "lowerMaterialBBox": [
+          149,
+          600,
+          1344,
+          1004
+        ]
+      },
+      {
+        "label": "Side-Attempt1",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-5b746cfb-2e4f-497b-9d3e-2cabb9a0ed90.png",
+        "lowerMaterialBBox": [
+          161,
+          600,
+          1412,
+          993
+        ]
+      },
+      {
+        "label": "Side-Attempt2",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-dfd12490-84e8-4d10-a1dc-0c511c5e4ca0.png",
+        "lowerMaterialBBox": [
+          161,
+          600,
+          1417,
+          984
+        ]
+      },
+      {
+        "label": "Side-Attempt3",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-89cd0e1e-8310-4a9a-beee-e84ef9cd14d8.png",
+        "lowerMaterialBBox": [
+          133,
+          600,
+          1447,
+          1001
+        ]
+      }
+    ]
+  },
+  {
+    "view": "Rear",
+    "candidates": [
+      {
+        "label": "Closed authority",
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_Rear.png",
+        "lowerMaterialBBox": [
+          120,
+          600,
+          1457,
+          957
+        ]
+      },
+      {
+        "label": "Installed open",
+        "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Exploration\\T_UI_World_Chest_UsedRear.png",
+        "lowerMaterialBBox": [
+          204,
+          600,
+          1415,
+          1008
+        ]
+      },
+      {
+        "label": "Rear-Attempt1",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-7a94eeba-cec4-4fc2-a01a-55d2eb58cd16.png",
+        "lowerMaterialBBox": [
+          131,
+          600,
+          1401,
+          969
+        ]
+      },
+      {
+        "label": "Rear-Attempt2",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-b96defff-3eff-4612-a99f-0f547a797daa.png",
+        "lowerMaterialBBox": [
+          131,
+          600,
+          1402,
+          970
+        ]
+      },
+      {
+        "label": "Rear-Attempt3",
+        "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-c6efd8eb-81ff-4606-9cdf-2307f8b0fefe.png",
+        "lowerMaterialBBox": [
+          121,
+          600,
+          1451,
+          961
+        ]
+      }
+    ]
+  }
+]

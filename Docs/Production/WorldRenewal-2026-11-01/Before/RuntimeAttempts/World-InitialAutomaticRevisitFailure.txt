@@ -1,0 +1,355 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS 18 active authored encounters, retired contract/mirror/trap excluded
+PASS actual chapter travel B1
+PASS actual floor receives map-derived fatigue capacity 100
+PASS capacity route includes every actual room, including optional branches
+PASS live floor has a valid remaining fatigue amount
+PASS one complete finite exploration retains at least one movement cost without camp/potion
+PASS actual Unity fatigue curves use remaining percentage on this floor
+PASS one full camp restores the actual maximum and cannot repeat
+PASS brief rest restores the authored percentage rather than a fixed60
+PASS recovery clamps at the actual floor maximum
+PASS first movement after recovery immediately spends the authored cost
+PASS exhaustion still reaches exactly0 and ends survival
+PASS localized fatigue tooltip shows the actual denominator
+PASS B1 saved ordinary room variants
+Variant fixture not present in this natural floor: Data_RoomTheme_옛경비실
+Variant fixture not present in this natural floor: Data_RoomTheme_잊힌서약실
+PASS place Chest B1/0 used=False
+PASS actual sprite bound Chest B1/0 used=False
+PASS derived physical support T_UI_World_Chest_Front
+SCREEN B1-Chest-0-Ready
+PASS place Chest B1/1 used=False
+PASS actual sprite bound Chest B1/1 used=False
+PASS derived physical support T_UI_World_Chest_Side
+SCREEN B1-Chest-1-Ready
+PASS place Chest B1/2 used=False
+PASS actual sprite bound Chest B1/2 used=False
+PASS derived physical support T_UI_World_Chest_Rear
+SCREEN B1-Chest-2-Ready
+PASS place Chest B1/0 used=True
+PASS actual sprite bound Chest B1/0 used=True
+PASS derived physical support T_UI_World_Chest_UsedFront
+PASS aligned state preserves exact support/pixel scale Chest/0 B1
+SCREEN B1-Chest-0-Used
+PASS place Chest B1/1 used=True
+PASS actual sprite bound Chest B1/1 used=True
+PASS derived physical support T_UI_World_Chest_UsedSide
+PASS aligned state preserves exact support/pixel scale Chest/1 B1
+SCREEN B1-Chest-1-Used
+PASS place Chest B1/2 used=True
+PASS actual sprite bound Chest B1/2 used=True
+PASS derived physical support T_UI_World_Chest_UsedRear
+PASS aligned state preserves exact support/pixel scale Chest/2 B1
+SCREEN B1-Chest-2-Used
+PASS place Fountain B1/0 used=False
+PASS actual sprite bound Fountain B1/0 used=False
+PASS derived physical support T_UI_World_Fountain_Front
+SCREEN B1-Fountain-0-Ready
+PASS place Fountain B1/1 used=False
+PASS actual sprite bound Fountain B1/1 used=False
+PASS derived physical support T_UI_World_Fountain_Side
+SCREEN B1-Fountain-1-Ready
+PASS place Fountain B1/2 used=False
+PASS actual sprite bound Fountain B1/2 used=False
+PASS derived physical support T_UI_World_분수_rear
+SCREEN B1-Fountain-2-Ready
+PASS place Fountain B1/0 used=True
+PASS actual sprite bound Fountain B1/0 used=True
+PASS derived physical support T_UI_World_Fountain_UsedFront
+PASS aligned state preserves exact support/pixel scale Fountain/0 B1
+SCREEN B1-Fountain-0-Used
+PASS place Fountain B1/1 used=True
+PASS actual sprite bound Fountain B1/1 used=True
+PASS derived physical support T_UI_World_Fountain_UsedSide
+PASS aligned state preserves exact support/pixel scale Fountain/1 B1
+SCREEN B1-Fountain-1-Used
+PASS place Fountain B1/2 used=True
+PASS actual sprite bound Fountain B1/2 used=True
+PASS derived physical support T_UI_World_분수_usedRear
+PASS aligned state preserves exact support/pixel scale Fountain/2 B1
+SCREEN B1-Fountain-2-Used
+PASS saved purpose-built theme Well
+PASS B1 Well keeps event environment when facing North
+SCREEN B1-Room-Well-North
+PASS B1 Well keeps event environment when facing East
+SCREEN B1-Room-Well-East
+PASS B1 Well keeps event environment when facing South
+PASS B1 Well keeps event environment when facing West
+PASS saved purpose-built theme AmberSeed
+PASS B1 AmberSeed keeps event environment when facing North
+SCREEN B1-Room-AmberSeed-North
+PASS B1 AmberSeed keeps event environment when facing East
+SCREEN B1-Room-AmberSeed-East
+PASS B1 AmberSeed keeps event environment when facing South
+PASS B1 AmberSeed keeps event environment when facing West
+PASS saved purpose-built theme Scholar
+PASS B1 Scholar keeps event environment when facing North
+SCREEN B1-Room-Scholar-North
+PASS B1 Scholar keeps event environment when facing East
+SCREEN B1-Room-Scholar-East
+PASS B1 Scholar keeps event environment when facing South
+PASS B1 Scholar keeps event environment when facing West
+PASS saved purpose-built theme Delivery
+PASS B1 Delivery keeps event environment when facing North
+SCREEN B1-Room-Delivery-North
+PASS B1 Delivery keeps event environment when facing East
+SCREEN B1-Room-Delivery-East
+PASS B1 Delivery keeps event environment when facing South
+PASS B1 Delivery keeps event environment when facing West
+PASS saved purpose-built theme Training
+PASS B1 Training keeps event environment when facing North
+SCREEN B1-Room-Training-North
+PASS B1 Training keeps event environment when facing East
+SCREEN B1-Room-Training-East
+PASS B1 Training keeps event environment when facing South
+PASS B1 Training keeps event environment when facing West
+PASS play code records visible authored theme B1
+PASS current art/theme record can be copied B1
+PASS actual chapter travel B2
+PASS actual floor receives map-derived fatigue capacity 120
+PASS capacity route includes every actual room, including optional branches
+PASS live floor has a valid remaining fatigue amount
+PASS one complete finite exploration retains at least one movement cost without camp/potion
+PASS actual Unity fatigue curves use remaining percentage on this floor
+PASS one full camp restores the actual maximum and cannot repeat
+PASS brief rest restores the authored percentage rather than a fixed60
+PASS recovery clamps at the actual floor maximum
+PASS first movement after recovery immediately spends the authored cost
+PASS exhaustion still reaches exactly0 and ends survival
+PASS localized fatigue tooltip shows the actual denominator
+PASS B2 saved ordinary room variants
+PASS B2 fixed room 23 / North retains architecture
+SCREEN B2-Data_RoomTheme_옛경비실-North
+PASS B2 fixed room 23 / East retains architecture
+PASS B2 fixed room 23 / South retains architecture
+PASS B2 fixed room 23 / West retains architecture
+PASS B2 fixed room 22 / North retains architecture
+SCREEN B2-Data_RoomTheme_잊힌서약실-North
+PASS B2 fixed room 22 / East retains architecture
+PASS B2 fixed room 22 / South retains architecture
+PASS B2 fixed room 22 / West retains architecture
+PASS place Chest B2/0 used=False
+PASS actual sprite bound Chest B2/0 used=False
+PASS derived physical support T_UI_World_Chest_Front
+SCREEN B2-Chest-0-Ready
+PASS place Chest B2/1 used=False
+PASS actual sprite bound Chest B2/1 used=False
+PASS derived physical support T_UI_World_Chest_Side
+PASS place Chest B2/2 used=False
+PASS actual sprite bound Chest B2/2 used=False
+PASS derived physical support T_UI_World_Chest_Rear
+PASS place Chest B2/0 used=True
+PASS actual sprite bound Chest B2/0 used=True
+PASS derived physical support T_UI_World_Chest_UsedFront
+PASS aligned state preserves exact support/pixel scale Chest/0 B2
+SCREEN B2-Chest-0-Used
+PASS place Chest B2/1 used=True
+PASS actual sprite bound Chest B2/1 used=True
+PASS derived physical support T_UI_World_Chest_UsedSide
+PASS aligned state preserves exact support/pixel scale Chest/1 B2
+PASS place Chest B2/2 used=True
+PASS actual sprite bound Chest B2/2 used=True
+PASS derived physical support T_UI_World_Chest_UsedRear
+PASS aligned state preserves exact support/pixel scale Chest/2 B2
+PASS place Fountain B2/0 used=False
+PASS actual sprite bound Fountain B2/0 used=False
+PASS derived physical support T_UI_World_Fountain_Front
+SCREEN B2-Fountain-0-Ready
+PASS place Fountain B2/1 used=False
+PASS actual sprite bound Fountain B2/1 used=False
+PASS derived physical support T_UI_World_Fountain_Side
+PASS place Fountain B2/2 used=False
+PASS actual sprite bound Fountain B2/2 used=False
+PASS derived physical support T_UI_World_분수_rear
+PASS place Fountain B2/0 used=True
+PASS actual sprite bound Fountain B2/0 used=True
+PASS derived physical support T_UI_World_Fountain_UsedFront
+PASS aligned state preserves exact support/pixel scale Fountain/0 B2
+SCREEN B2-Fountain-0-Used
+PASS place Fountain B2/1 used=True
+PASS actual sprite bound Fountain B2/1 used=True
+PASS derived physical support T_UI_World_Fountain_UsedSide
+PASS aligned state preserves exact support/pixel scale Fountain/1 B2
+PASS place Fountain B2/2 used=True
+PASS actual sprite bound Fountain B2/2 used=True
+PASS derived physical support T_UI_World_분수_usedRear
+PASS aligned state preserves exact support/pixel scale Fountain/2 B2
+PASS saved purpose-built theme Well
+PASS B2 Well keeps event environment when facing North
+SCREEN B2-Room-Well-North
+PASS B2 Well keeps event environment when facing East
+PASS B2 Well keeps event environment when facing South
+PASS B2 Well keeps event environment when facing West
+PASS saved purpose-built theme AmberSeed
+PASS B2 AmberSeed keeps event environment when facing North
+SCREEN B2-Room-AmberSeed-North
+PASS B2 AmberSeed keeps event environment when facing East
+PASS B2 AmberSeed keeps event environment when facing South
+PASS B2 AmberSeed keeps event environment when facing West
+PASS saved purpose-built theme Scholar
+PASS B2 Scholar keeps event environment when facing North
+SCREEN B2-Room-Scholar-North
+PASS B2 Scholar keeps event environment when facing East
+PASS B2 Scholar keeps event environment when facing South
+PASS B2 Scholar keeps event environment when facing West
+PASS saved purpose-built theme Delivery
+PASS B2 Delivery keeps event environment when facing North
+SCREEN B2-Room-Delivery-North
+PASS B2 Delivery keeps event environment when facing East
+PASS B2 Delivery keeps event environment when facing South
+PASS B2 Delivery keeps event environment when facing West
+PASS saved purpose-built theme Training
+PASS B2 Training keeps event environment when facing North
+SCREEN B2-Room-Training-North
+PASS B2 Training keeps event environment when facing East
+PASS B2 Training keeps event environment when facing South
+PASS B2 Training keeps event environment when facing West
+PASS play code records visible authored theme B2
+PASS current art/theme record can be copied B2
+PASS actual chapter travel B3
+PASS actual floor receives map-derived fatigue capacity 100
+PASS capacity route includes every actual room, including optional branches
+PASS live floor has a valid remaining fatigue amount
+PASS one complete finite exploration retains at least one movement cost without camp/potion
+PASS actual Unity fatigue curves use remaining percentage on this floor
+PASS one full camp restores the actual maximum and cannot repeat
+PASS brief rest restores the authored percentage rather than a fixed60
+PASS recovery clamps at the actual floor maximum
+PASS first movement after recovery immediately spends the authored cost
+PASS exhaustion still reaches exactly0 and ends survival
+PASS localized fatigue tooltip shows the actual denominator
+PASS B3 saved ordinary room variants
+PASS B3 fixed room 25 / North retains architecture
+SCREEN B3-Data_RoomTheme_옛경비실-North
+PASS B3 fixed room 25 / East retains architecture
+PASS B3 fixed room 25 / South retains architecture
+PASS B3 fixed room 25 / West retains architecture
+Variant fixture not present in this natural floor: Data_RoomTheme_잊힌서약실
+PASS place Chest B3/0 used=False
+PASS actual sprite bound Chest B3/0 used=False
+PASS derived physical support T_UI_World_Chest_Front
+SCREEN B3-Chest-0-Ready
+PASS place Chest B3/1 used=False
+PASS actual sprite bound Chest B3/1 used=False
+PASS derived physical support T_UI_World_Chest_Side
+PASS place Chest B3/2 used=False
+PASS actual sprite bound Chest B3/2 used=False
+PASS derived physical support T_UI_World_Chest_Rear
+PASS place Chest B3/0 used=True
+PASS actual sprite bound Chest B3/0 used=True
+PASS derived physical support T_UI_World_Chest_UsedFront
+PASS aligned state preserves exact support/pixel scale Chest/0 B3
+SCREEN B3-Chest-0-Used
+PASS place Chest B3/1 used=True
+PASS actual sprite bound Chest B3/1 used=True
+PASS derived physical support T_UI_World_Chest_UsedSide
+PASS aligned state preserves exact support/pixel scale Chest/1 B3
+PASS place Chest B3/2 used=True
+PASS actual sprite bound Chest B3/2 used=True
+PASS derived physical support T_UI_World_Chest_UsedRear
+PASS aligned state preserves exact support/pixel scale Chest/2 B3
+PASS place Fountain B3/0 used=False
+PASS actual sprite bound Fountain B3/0 used=False
+PASS derived physical support T_UI_World_Fountain_Front
+SCREEN B3-Fountain-0-Ready
+PASS place Fountain B3/1 used=False
+PASS actual sprite bound Fountain B3/1 used=False
+PASS derived physical support T_UI_World_Fountain_Side
+PASS place Fountain B3/2 used=False
+PASS actual sprite bound Fountain B3/2 used=False
+PASS derived physical support T_UI_World_분수_rear
+PASS place Fountain B3/0 used=True
+PASS actual sprite bound Fountain B3/0 used=True
+PASS derived physical support T_UI_World_Fountain_UsedFront
+PASS aligned state preserves exact support/pixel scale Fountain/0 B3
+SCREEN B3-Fountain-0-Used
+PASS place Fountain B3/1 used=True
+PASS actual sprite bound Fountain B3/1 used=True
+PASS derived physical support T_UI_World_Fountain_UsedSide
+PASS aligned state preserves exact support/pixel scale Fountain/1 B3
+PASS place Fountain B3/2 used=True
+PASS actual sprite bound Fountain B3/2 used=True
+PASS derived physical support T_UI_World_분수_usedRear
+PASS aligned state preserves exact support/pixel scale Fountain/2 B3
+PASS saved purpose-built theme Well
+PASS B3 Well keeps event environment when facing North
+SCREEN B3-Room-Well-North
+PASS B3 Well keeps event environment when facing East
+PASS B3 Well keeps event environment when facing South
+PASS B3 Well keeps event environment when facing West
+PASS saved purpose-built theme AmberSeed
+PASS B3 AmberSeed keeps event environment when facing North
+SCREEN B3-Room-AmberSeed-North
+PASS B3 AmberSeed keeps event environment when facing East
+PASS B3 AmberSeed keeps event environment when facing South
+PASS B3 AmberSeed keeps event environment when facing West
+PASS saved purpose-built theme Scholar
+PASS B3 Scholar keeps event environment when facing North
+SCREEN B3-Room-Scholar-North
+PASS B3 Scholar keeps event environment when facing East
+PASS B3 Scholar keeps event environment when facing South
+PASS B3 Scholar keeps event environment when facing West
+PASS saved purpose-built theme Delivery
+PASS B3 Delivery keeps event environment when facing North
+SCREEN B3-Room-Delivery-North
+PASS B3 Delivery keeps event environment when facing East
+PASS B3 Delivery keeps event environment when facing South
+PASS B3 Delivery keeps event environment when facing West
+PASS saved purpose-built theme Training
+PASS B3 Training keeps event environment when facing North
+SCREEN B3-Room-Training-North
+PASS B3 Training keeps event environment when facing East
+PASS B3 Training keeps event environment when facing South
+PASS B3 Training keeps event environment when facing West
+PASS play code records visible authored theme B3
+PASS current art/theme record can be copied B3
+PASS event review sees exactly18 active encounters
+PASS all18 encounters own a unique visible subject
+PASS event fixture starts without unrelated pending level-up choices
+PASS event fixture chapter AmberSeed
+PASS F1 authors the actual event subject AmberSeed
+PASS AmberSeed actual room starts unresolved with its own subject
+SCREEN Event-AmberSeed-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS AmberSeed world-object pointer opens the actual encounter
+SCREEN Event-AmberSeed-FirstPage
+PASS AmberSeed first page has localized visible narrative
+PASS AmberSeed choices have no blank titles or unresolved text keys
+PASS AmberSeed every unavailable choice explains its authored requirement
+PASS AmberSeed visible cost is displayed: 살아 있는 뿌리를 손목에 붙인다.
+PASS AmberSeed visible cost is displayed: 살아 있는 뿌리를 손목에 붙인다.
+PASS event fixture chapter Banner
+PASS F1 authors the actual event subject Banner
+PASS Banner actual room starts unresolved with its own subject
+SCREEN Event-Banner-Entry
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS Banner world-object pointer opens the actual encounter
+SCREEN Event-Banner-FirstPage
+PASS Banner first page has localized visible narrative
+PASS Banner choices have no blank titles or unresolved text keys
+PASS Banner every unavailable choice explains its authored requirement
+PASS Banner has an available, free authored postponement on this entry page
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS event conclusion has its actual visible continuation
+PASS terminal event conclusion has one reachable Continue
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS Banner declining preserves the actual person/creature and unresolved encounter
+PASS Banner postponement grants and charges nothing
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+PASS actual room movement completes
+PASS reachable button RoomChoiceButton
+PASS pointer reaches RoomChoiceButton; actual RoomChoiceButton
+FAIL actual room movement completes
+FAIL System.InvalidOperationException: actual room movement completes
+  at DungeonSlash.ExplorationDepthLiveProbe.Require (System.Boolean value, System.String message) [0x00012] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthLiveProbe.cs:52 
+  at DungeonSlash.ExplorationDepthLiveProbe+<WrEventWalk>d__54.MoveNext () [0x001a7] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\WorldRenewalEventProbe.cs:235 
+  at DungeonSlash.ExplorationDepthLiveProbe+<Guarded>d__28.MoveNext () [0x0005c] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthLiveProbe.cs:43 
+SCREEN Failure
+300 checks; 2 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

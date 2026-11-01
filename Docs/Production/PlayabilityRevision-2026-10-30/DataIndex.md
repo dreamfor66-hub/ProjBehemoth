@@ -9,7 +9,7 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |ActGrowthBudget|1막 성장 예산| / Act1GrowthBudget|Assets/Data/Balance/Data_ActGrowthBudget_1막_성장_예산.asset|
 |ActGrowthBudget|2막 성장 예산| / Act2GrowthBudget|Assets/Data/Balance/Data_ActGrowthBudget_2막_성장_예산.asset|
 |ActGrowthBudget|3막 성장 예산| / Act3GrowthBudget|Assets/Data/Balance/Data_ActGrowthBudget_3막_성장_예산.asset|
-|CompanionData|길동무| / TrailDog|Assets/Data/Characters/Companions/Data_Companion_길동무.asset|
+|CompanionData|회수견| / TrailDog|Assets/Data/Characters/Companions/Data_Companion_회수견.asset|
 |PlayerCombatData|로그| / Rogue|Assets/Data/Characters/Data_Character_로그.asset|
 |PlayerCombatData|몽크| / Monk|Assets/Data/Characters/Data_Character_몽크.asset|
 |PlayerCombatData|바바리안| / Barbarian|Assets/Data/Characters/Data_Character_바바리안.asset|
@@ -239,30 +239,33 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |EncounterData|훈련 인형 · 75|TrainingLight / TrainingLight|Assets/Data/Dungeon/Encounters/Data_Encounter_훈련_인형_75.asset|
 |EncounterData|흡혈박쥐 · 거미|MazeLeeches / MazeLeeches|Assets/Data/Dungeon/Encounters/Data_Encounter_흡혈박쥐_거미.asset|
 |RandomEventData|거울이 먼저 벤다|Mirror / Mirror|Assets/Data/Dungeon/Events/Data_Event_거울이_먼저_벤다.asset|
+|RandomEventData|귀환로의 측량사|MagicTeacherFirst / MagicTeacherFirst|Assets/Data/Dungeon/Events/Data_Event_귀환로의_측량사.asset|
 |RandomEventData|그 돌에 적힌 이름|LostBeliever / LostBeliever|Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset|
-|RandomEventData|금빛 이빨의 내기|Tooth / Tooth|Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset|
-|RandomEventData|길 위의 노마법사|MagicTeacherFirst / MagicTeacherFirst|Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset|
-|RandomEventData|길가의 무거운 금고|Well / Well|Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset|
+|RandomEventData|금니패를 파는 중개인|Tooth / Tooth|Assets/Data/Dungeon/Events/Data_Event_금니패를_파는_중개인.asset|
+|RandomEventData|깃발을 지키는 짐승|Banner / Banner|Assets/Data/Dungeon/Events/Data_Event_깃발을_지키는_짐승.asset|
 |RandomEventData|꺼진 기도|QuietPrayer / Data_Event_꺼진_기도|Assets/Data/Dungeon/Events/Data_Event_꺼진_기도.asset|
 |RandomEventData|끊어진 호위|Shelter / Shelter|Assets/Data/Dungeon/Events/Data_Event_끊어진_호위.asset|
-|RandomEventData|끝까지 읽는 법|Scholar / Scholar|Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset|
+|RandomEventData|끊어진 회수선|SalvageTrap / Data_Event_끊어진_회수선|Assets/Data/Dungeon/Events/Data_Event_끊어진_회수선.asset|
 |RandomEventData|날이 아니라 버릇을 간다|Forge / Forge|Assets/Data/Dungeon/Events/Data_Event_날이_아니라_버릇을_간다.asset|
 |RandomEventData|내일의 한숨|Hourglass / Hourglass|Assets/Data/Dungeon/Events/Data_Event_내일의_한숨.asset|
+|RandomEventData|돌틈의 핏덩이|AmberSeed / AmberSeed|Assets/Data/Dungeon/Events/Data_Event_돌틈의_핏덩이.asset|
 |RandomEventData|두 번째 맥박|Symbiosis / Symbiosis|Assets/Data/Dungeon/Events/Data_Event_두_번째_맥박.asset|
-|RandomEventData|딱 하나 남은 열매|AmberSeed / AmberSeed|Assets/Data/Dungeon/Events/Data_Event_딱_하나_남은_열매.asset|
 |RandomEventData|문이 이름을 틀리게 부른다|MasterTrial / MasterTrial|Assets/Data/Dungeon/Events/Data_Event_문이_이름을_틀리게_부른다.asset|
-|RandomEventData|배달지는 다음 막|Investment / Investment|Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset|
 |RandomEventData|번개를 파는 행상|StormBottle / StormBottle|Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset|
-|RandomEventData|붉은 서명|Contract / Contract|Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset|
-|RandomEventData|상자가 두 개다|Delivery / Delivery|Assets/Data/Dungeon/Events/Data_Event_상자가_두_개다.asset|
+|RandomEventData|봉인된 교범|Scholar / Scholar|Assets/Data/Dungeon/Events/Data_Event_봉인된_교범.asset|
 |RandomEventData|성장한 제자|MagicTeacherReturn / MagicTeacherReturn|Assets/Data/Dungeon/Events/Data_Event_성장한_제자.asset|
 |RandomEventData|소리 나는 쪽을 받쳐라|Bell / Bell|Assets/Data/Dungeon/Events/Data_Event_소리_나는_쪽을_받쳐라.asset|
 |RandomEventData|어디까지 풀 것인가|Training / Training|Assets/Data/Dungeon/Events/Data_Event_어디까지_풀_것인가.asset|
+|RandomEventData|예약자의 표식|Delivery / Delivery|Assets/Data/Dungeon/Events/Data_Event_예약자의_표식.asset|
+|RandomEventData|운반틀의 저당|Investment / Investment|Assets/Data/Dungeon/Events/Data_Event_운반틀의_저당.asset|
 |RandomEventData|이름 없는 회수표|RecoveryCutpurse / Data_Event_이름_없는_회수표|Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset|
-|RandomEventData|젖은 발자국|StrayDog / StrayDog|Assets/Data/Dungeon/Events/Data_Event_젖은_발자국.asset|
-|RandomEventData|주인 잃은 깃발|Banner / Banner|Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset|
+|RandomEventData|지워지지 않는 서약|Contract / Contract|Assets/Data/Dungeon/Events/Data_Event_지워지지_않는_서약.asset|
 |RandomEventData|지팡이 끝의 수업|MagicTeacherAdvanced / MagicTeacherAdvanced|Assets/Data/Dungeon/Events/Data_Event_지팡이_끝의_수업.asset|
 |RandomEventData|짐 하나만 부탁하네|Pilgrim / Pilgrim|Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset|
+|RandomEventData|침하하는 급료고|Well / Well|Assets/Data/Dungeon/Events/Data_Event_침하하는_급료고.asset|
+|RandomEventData|회수표를 단 개|StrayDog / StrayDog|Assets/Data/Dungeon/Events/Data_Event_회수표를_단_개.asset|
+|EncounterData|금먹는 두꺼비|MerchantConcealedIdentity / Data_Encounter_행상의본색|Assets/Data/Dungeon/NpcApproaches/Data_Encounter_금먹는_두꺼비.asset|
+|RandomEventData|끊어진 거래|MerchantRearAmbush / Data_EventResponse_행상기습|Assets/Data/Dungeon/NpcApproaches/Data_Event_끊어진_거래.asset|
 |StageSetData|서리의 성소|Frost / Frost|Assets/Data/Dungeon/Stages/Data_Stage_서리의_성소.asset|
 |StageSetData|영혼의 잿더미|Ash / Ash|Assets/Data/Dungeon/Stages/Data_Stage_영혼의_잿더미.asset|
 |StageSetData|잊힌 미궁|Maze / Maze|Assets/Data/Dungeon/Stages/Data_Stage_잊힌_미궁.asset|
@@ -365,7 +368,6 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |EquipmentData|금강 호신|ShelterMaster / ShelterMaster|Assets/Data/Items/Relics/Data_Relic_금강_호신.asset|
 |EquipmentData|금빛 이빨|GoldenTooth / GoldenTooth|Assets/Data/Items/Relics/Data_Relic_금빛_이빨.asset|
 |EquipmentData|기다림의 칼|PatientSheath / PatientSheath|Assets/Data/Items/Relics/Data_Relic_기다림의_칼.asset|
-|EquipmentData|기억하는 거울 조각|MirrorShard / MirrorShard|Assets/Data/Items/Relics/Data_Relic_기억하는_거울_조각.asset|
 |EquipmentData|기혈 파쇄|PressurePoint / PressurePoint|Assets/Data/Items/Relics/Data_Relic_기혈_파쇄.asset|
 |EquipmentData|길잡이의 등불|GuidingWisp / GuidingWisp|Assets/Data/Items/Relics/Data_Relic_길잡이의_등불.asset|
 |EquipmentData|깨어진 모래시계|Hourglass / Hourglass|Assets/Data/Items/Relics/Data_Relic_깨어진_모래시계.asset|
@@ -381,6 +383,7 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |EquipmentData|되비치는 검광|PerfectRiposte / PerfectRiposte|Assets/Data/Items/Relics/Data_Relic_되비치는_검광.asset|
 |EquipmentData|맹독의 생명줄|PoisonLeech / PoisonLeech|Assets/Data/Items/Relics/Data_Relic_맹독의_생명줄.asset|
 |EquipmentData|맹호의 두루마리|LongTiger / LongTiger|Assets/Data/Items/Relics/Data_Relic_맹호의_두루마리.asset|
+|EquipmentData|반격 태엽|MirrorShard / MirrorShard|Assets/Data/Items/Relics/Data_Relic_반격_태엽.asset|
 |EquipmentData|방어 분쇄|Unstoppable / Unstoppable|Assets/Data/Items/Relics/Data_Relic_방어_분쇄.asset|
 |EquipmentData|방패의 칼날|ShieldEdge / ShieldEdge|Assets/Data/Items/Relics/Data_Relic_방패의_칼날.asset|
 |EquipmentData|백렬의 극의|HundredFists / HundredFists|Assets/Data/Items/Relics/Data_Relic_백렬의_극의.asset|
@@ -421,7 +424,6 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |EquipmentData|인챈트 아이스의 마도서|Tome_EnchantIce / Tome_EnchantIce|Assets/Data/Items/Relics/Data_Relic_인챈트_아이스의_마도서.asset|
 |EquipmentData|인챈트 파이어의 마도서|Tome_EnchantFire / Tome_EnchantFire|Assets/Data/Items/Relics/Data_Relic_인챈트_파이어의_마도서.asset|
 |EquipmentData|일섬|DrawMastery / DrawMastery|Assets/Data/Items/Relics/Data_Relic_일섬.asset|
-|EquipmentData|작은 발자국|StrayDog / StrayDog|Assets/Data/Items/Relics/Data_Relic_작은_발자국.asset|
 |EquipmentData|장거리 잔상|DistanceMomentum / DistanceMomentum|Assets/Data/Items/Relics/Data_Relic_장거리_잔상.asset|
 |EquipmentData|잿불 화살의 마도서|Tome_Ember / Tome_Ember|Assets/Data/Items/Relics/Data_Relic_잿불_화살의_마도서.asset|
 |EquipmentData|잿불의 왕관|EmberMaster / EmberMaster|Assets/Data/Items/Relics/Data_Relic_잿불의_왕관.asset|
@@ -448,8 +450,9 @@ Unity 메뉴 `Behemoth/데이터 찾기`에서 한국어명, 기존 영문명, I
 |EquipmentData|피의 연회|RageLeech / RageLeech|Assets/Data/Items/Relics/Data_Relic_피의_연회.asset|
 |EquipmentData|핵심 프리즘|CorePrism / CorePrism|Assets/Data/Items/Relics/Data_Relic_핵심_프리즘.asset|
 |EquipmentData|핵심 회수|Technique_CoreHarvest / Technique_CoreHarvest|Assets/Data/Items/Relics/Data_Relic_핵심_회수.asset|
-|EquipmentData|호박빛 싹|AmberSeed / AmberSeed|Assets/Data/Items/Relics/Data_Relic_호박빛_싹.asset|
+|EquipmentData|혈근의 씨|AmberSeed / AmberSeed|Assets/Data/Items/Relics/Data_Relic_혈근의_씨.asset|
 |EquipmentData|화염 개화의 마도서|Tome_FireBloom / Tome_FireBloom|Assets/Data/Items/Relics/Data_Relic_화염_개화의_마도서.asset|
+|EquipmentData|회수견의 목줄|StrayDog / StrayDog|Assets/Data/Items/Relics/Data_Relic_회수견의_목줄.asset|
 |SpellData|독안개|PoisonMist / PoisonMist|Assets/Data/Items/Spells/Data_Spell_독안개.asset|
 |SpellData|메테오|Meteor / Meteor|Assets/Data/Items/Spells/Data_Spell_메테오.asset|
 |SpellData|벼락표식|LightningMark / LightningMark|Assets/Data/Items/Spells/Data_Spell_벼락표식.asset|

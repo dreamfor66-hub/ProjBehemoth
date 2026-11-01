@@ -1,0 +1,19 @@
+[
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Idle.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Ready.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Attack.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Stunned.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Dead.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Idle.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Ready.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Attack.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Stunned.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Dead.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Idle.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Ready.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Attack.png",
+  "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Dead.png",
+  "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_고블린사냥꾼_Portrait.png",
+  "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_납골당의종_Portrait.png",
+  "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_철니미믹_Portrait.png"
+]

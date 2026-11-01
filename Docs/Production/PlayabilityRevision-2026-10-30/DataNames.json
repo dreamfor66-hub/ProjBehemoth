@@ -38,14 +38,15 @@
         },
         {
             "oldPath": "Assets/Data/Characters/Companions/TrailDog.asset",
-            "path": "Assets/Data/Characters/Companions/Data_Companion_길동무.asset",
+            "path": "Assets/Data/Characters/Companions/Data_Companion_회수견.asset",
             "guid": "c6d66f4a1e280544b805c94668f5f3e7",
             "id": "",
-            "displayName": "길동무",
+            "displayName": "회수견",
             "type": "CompanionData",
             "aliases": [
                 "Assets/Data/Characters/Companions/Data_Companion_길동무.asset",
-                "Assets/Data/Characters/Companions/TrailDog.asset"
+                "Assets/Data/Characters/Companions/TrailDog.asset",
+                "Assets/Data/Characters/Companions/Data_Companion_회수견.asset"
             ]
         },
         {
@@ -2942,6 +2943,20 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_귀환로의_측량사.asset",
+            "guid": "d44d100bc787aa84bbd8a0283197535e",
+            "id": "MagicTeacherFirst",
+            "displayName": "귀환로의 측량사",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset",
+                "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_귀환로의_측량사.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Dungeon/Events/LostBeliever.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_그_돌에_적힌_이름.asset",
             "guid": "be7331d68afcaaa4bbb16cc5d097b544",
@@ -2955,40 +2970,29 @@
         },
         {
             "oldPath": "Assets/Data/Dungeon/Events/Tooth.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_금니패를_파는_중개인.asset",
             "guid": "033c1f6e670bb4243ba8a1b237333eb4",
             "id": "Tooth",
-            "displayName": "금빛 이빨의 내기",
+            "displayName": "금니패를 파는 중개인",
             "type": "RandomEventData",
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_금빛_이빨의_내기.asset",
-                "Assets/Data/Dungeon/Events/Tooth.asset"
+                "Assets/Data/Dungeon/Events/Tooth.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_금니패를_파는_중개인.asset"
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset",
-            "guid": "d44d100bc787aa84bbd8a0283197535e",
-            "id": "MagicTeacherFirst",
-            "displayName": "길 위의 노마법사",
+            "oldPath": "Assets/Data/Dungeon/Events/Banner.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_깃발을_지키는_짐승.asset",
+            "guid": "08bea5284c5daf54293c46921b217cb9",
+            "id": "Banner",
+            "displayName": "깃발을 지키는 짐승",
             "type": "RandomEventData",
             "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_칠판_앞의_노인.asset",
-                "Assets/Data/Dungeon/Events/MagicTeacherFirst.asset",
-                "Assets/Data/Dungeon/Events/Data_Event_길_위의_노마법사.asset"
-            ]
-        },
-        {
-            "oldPath": "Assets/Data/Dungeon/Events/Well.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset",
-            "guid": "19ed6b76cfbf63140b64f653b48af782",
-            "id": "Well",
-            "displayName": "길가의 무거운 금고",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_밑바닥의_금고.asset",
-                "Assets/Data/Dungeon/Events/Well.asset",
-                "Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset"
+                "Assets/Data/Dungeon/Events/Data_Event_아직_교대_시간이_아니다.asset",
+                "Assets/Data/Dungeon/Events/Banner.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_깃발을_지키는_짐승.asset"
             ]
         },
         {
@@ -3017,15 +3021,14 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/Scholar.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset",
-            "guid": "9b653ceabb7d64a4a85d37c5bbef24fb",
-            "id": "Scholar",
-            "displayName": "끝까지 읽는 법",
+            "oldPath": "Assets/Data/Dungeon/Events/Data_Event_끊어진_회수선.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_끊어진_회수선.asset",
+            "guid": "8a303279e738b2842bc1e276263f8913",
+            "id": "SalvageTrap",
+            "displayName": "끊어진 회수선",
             "type": "RandomEventData",
             "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset",
-                "Assets/Data/Dungeon/Events/Scholar.asset"
+                "Assets/Data/Dungeon/Events/Data_Event_끊어진_회수선.asset"
             ]
         },
         {
@@ -3053,6 +3056,19 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Dungeon/Events/AmberSeed.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_돌틈의_핏덩이.asset",
+            "guid": "a04fa7615e63a844185ead2a471a79af",
+            "id": "AmberSeed",
+            "displayName": "돌틈의 핏덩이",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_딱_하나_남은_열매.asset",
+                "Assets/Data/Dungeon/Events/AmberSeed.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_돌틈의_핏덩이.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Dungeon/Events/Symbiosis.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_두_번째_맥박.asset",
             "guid": "eda3933d58a778a4ea71f2a79f6b6e5a",
@@ -3062,18 +3078,6 @@
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_두_번째_맥박.asset",
                 "Assets/Data/Dungeon/Events/Symbiosis.asset"
-            ]
-        },
-        {
-            "oldPath": "Assets/Data/Dungeon/Events/AmberSeed.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_딱_하나_남은_열매.asset",
-            "guid": "a04fa7615e63a844185ead2a471a79af",
-            "id": "AmberSeed",
-            "displayName": "딱 하나 남은 열매",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_딱_하나_남은_열매.asset",
-                "Assets/Data/Dungeon/Events/AmberSeed.asset"
             ]
         },
         {
@@ -3089,18 +3093,6 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/Investment.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset",
-            "guid": "069415c2c79b5f4449a6eae4ccbe75f3",
-            "id": "Investment",
-            "displayName": "배달지는 다음 막",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset",
-                "Assets/Data/Dungeon/Events/Investment.asset"
-            ]
-        },
-        {
             "oldPath": "Assets/Data/Dungeon/Events/StormBottle.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_번개를_파는_행상.asset",
             "guid": "cb0e211d7f24e3c4f841327d244641f0",
@@ -3113,27 +3105,16 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/Contract.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset",
-            "guid": "e8161cf9482d6114b94fca9cda9cfa9e",
-            "id": "Contract",
-            "displayName": "붉은 서명",
+            "oldPath": "Assets/Data/Dungeon/Events/Scholar.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_봉인된_교범.asset",
+            "guid": "9b653ceabb7d64a4a85d37c5bbef24fb",
+            "id": "Scholar",
+            "displayName": "봉인된 교범",
             "type": "RandomEventData",
             "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset",
-                "Assets/Data/Dungeon/Events/Contract.asset"
-            ]
-        },
-        {
-            "oldPath": "Assets/Data/Dungeon/Events/Delivery.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_상자가_두_개다.asset",
-            "guid": "a8a0118921996ec409b5302773362a91",
-            "id": "Delivery",
-            "displayName": "상자가 두 개다",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_상자가_두_개다.asset",
-                "Assets/Data/Dungeon/Events/Delivery.asset"
+                "Assets/Data/Dungeon/Events/Data_Event_끝까지_읽는_법.asset",
+                "Assets/Data/Dungeon/Events/Scholar.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_봉인된_교범.asset"
             ]
         },
         {
@@ -3174,6 +3155,32 @@
             ]
         },
         {
+            "oldPath": "Assets/Data/Dungeon/Events/Delivery.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_예약자의_표식.asset",
+            "guid": "a8a0118921996ec409b5302773362a91",
+            "id": "Delivery",
+            "displayName": "예약자의 표식",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_상자가_두_개다.asset",
+                "Assets/Data/Dungeon/Events/Delivery.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_예약자의_표식.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/Investment.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_운반틀의_저당.asset",
+            "guid": "069415c2c79b5f4449a6eae4ccbe75f3",
+            "id": "Investment",
+            "displayName": "운반틀의 저당",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_배달지는_다음_막.asset",
+                "Assets/Data/Dungeon/Events/Investment.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_운반틀의_저당.asset"
+            ]
+        },
+        {
             "oldPath": "Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset",
             "path": "Assets/Data/Dungeon/Events/Data_Event_이름_없는_회수표.asset",
             "guid": "40481cb43d034e94881cdd670ae9be45",
@@ -3185,28 +3192,16 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Dungeon/Events/StrayDog.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_젖은_발자국.asset",
-            "guid": "fa9f2abe524107b46a325db6b448a909",
-            "id": "StrayDog",
-            "displayName": "젖은 발자국",
+            "oldPath": "Assets/Data/Dungeon/Events/Contract.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_지워지지_않는_서약.asset",
+            "guid": "e8161cf9482d6114b94fca9cda9cfa9e",
+            "id": "Contract",
+            "displayName": "지워지지 않는 서약",
             "type": "RandomEventData",
             "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_젖은_발자국.asset",
-                "Assets/Data/Dungeon/Events/StrayDog.asset"
-            ]
-        },
-        {
-            "oldPath": "Assets/Data/Dungeon/Events/Banner.asset",
-            "path": "Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset",
-            "guid": "08bea5284c5daf54293c46921b217cb9",
-            "id": "Banner",
-            "displayName": "주인 잃은 깃발",
-            "type": "RandomEventData",
-            "aliases": [
-                "Assets/Data/Dungeon/Events/Data_Event_아직_교대_시간이_아니다.asset",
-                "Assets/Data/Dungeon/Events/Banner.asset",
-                "Assets/Data/Dungeon/Events/Data_Event_주인_잃은_깃발.asset"
+                "Assets/Data/Dungeon/Events/Data_Event_붉은_서명.asset",
+                "Assets/Data/Dungeon/Events/Contract.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_지워지지_않는_서약.asset"
             ]
         },
         {
@@ -3232,6 +3227,58 @@
             "aliases": [
                 "Assets/Data/Dungeon/Events/Data_Event_짐_하나만_부탁하네.asset",
                 "Assets/Data/Dungeon/Events/Pilgrim.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/Well.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_침하하는_급료고.asset",
+            "guid": "19ed6b76cfbf63140b64f653b48af782",
+            "id": "Well",
+            "displayName": "침하하는 급료고",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_밑바닥의_금고.asset",
+                "Assets/Data/Dungeon/Events/Well.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_길가의_무거운_금고.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_침하하는_급료고.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/Events/StrayDog.asset",
+            "path": "Assets/Data/Dungeon/Events/Data_Event_회수표를_단_개.asset",
+            "guid": "fa9f2abe524107b46a325db6b448a909",
+            "id": "StrayDog",
+            "displayName": "회수표를 단 개",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/Events/Data_Event_젖은_발자국.asset",
+                "Assets/Data/Dungeon/Events/StrayDog.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_끊어진_회수표.asset",
+                "Assets/Data/Dungeon/Events/Data_Event_회수표를_단_개.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/NpcApproaches/Data_Encounter_행상의본색.asset",
+            "path": "Assets/Data/Dungeon/NpcApproaches/Data_Encounter_금먹는_두꺼비.asset",
+            "guid": "c8cdb9767907c0a4aab040bdfd438c77",
+            "id": "MerchantConcealedIdentity",
+            "displayName": "금먹는 두꺼비",
+            "type": "EncounterData",
+            "aliases": [
+                "Assets/Data/Dungeon/NpcApproaches/Data_Encounter_행상의본색.asset",
+                "Assets/Data/Dungeon/NpcApproaches/Data_Encounter_금먹는_두꺼비.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Dungeon/NpcApproaches/Data_EventResponse_행상기습.asset",
+            "path": "Assets/Data/Dungeon/NpcApproaches/Data_Event_끊어진_거래.asset",
+            "guid": "e62230cd06fd7694a8f6fd5d06e409d3",
+            "id": "MerchantRearAmbush",
+            "displayName": "끊어진 거래",
+            "type": "RandomEventData",
+            "aliases": [
+                "Assets/Data/Dungeon/NpcApproaches/Data_EventResponse_행상기습.asset",
+                "Assets/Data/Dungeon/NpcApproaches/Data_Event_끊어진_거래.asset"
             ]
         },
         {
@@ -4498,18 +4545,6 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Items/Relics/MirrorShard.asset",
-            "path": "Assets/Data/Items/Relics/Data_Relic_기억하는_거울_조각.asset",
-            "guid": "52e81ec7b4bc7f549bbaa4977e8a1bcf",
-            "id": "MirrorShard",
-            "displayName": "기억하는 거울 조각",
-            "type": "EquipmentData",
-            "aliases": [
-                "Assets/Data/Items/Relics/Data_Relic_기억하는_거울_조각.asset",
-                "Assets/Data/Items/Relics/MirrorShard.asset"
-            ]
-        },
-        {
             "oldPath": "Assets/Data/Items/Relics/PressurePoint.asset",
             "path": "Assets/Data/Items/Relics/Data_Relic_기혈_파쇄.asset",
             "guid": "27431dcfe81008149a11ddd114ecfa4f",
@@ -4687,6 +4722,19 @@
             "aliases": [
                 "Assets/Data/Items/Relics/Data_Relic_맹호의_두루마리.asset",
                 "Assets/Data/Items/Relics/LongTiger.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Items/Relics/MirrorShard.asset",
+            "path": "Assets/Data/Items/Relics/Data_Relic_반격_태엽.asset",
+            "guid": "52e81ec7b4bc7f549bbaa4977e8a1bcf",
+            "id": "MirrorShard",
+            "displayName": "반격 태엽",
+            "type": "EquipmentData",
+            "aliases": [
+                "Assets/Data/Items/Relics/Data_Relic_기억하는_거울_조각.asset",
+                "Assets/Data/Items/Relics/MirrorShard.asset",
+                "Assets/Data/Items/Relics/Data_Relic_반격_태엽.asset"
             ]
         },
         {
@@ -5170,18 +5218,6 @@
             ]
         },
         {
-            "oldPath": "Assets/Data/Items/Relics/StrayDog.asset",
-            "path": "Assets/Data/Items/Relics/Data_Relic_작은_발자국.asset",
-            "guid": "9c0582da6d2611148855c1129d34d491",
-            "id": "StrayDog",
-            "displayName": "작은 발자국",
-            "type": "EquipmentData",
-            "aliases": [
-                "Assets/Data/Items/Relics/Data_Relic_작은_발자국.asset",
-                "Assets/Data/Items/Relics/StrayDog.asset"
-            ]
-        },
-        {
             "oldPath": "Assets/Data/Items/Relics/DistanceMomentum.asset",
             "path": "Assets/Data/Items/Relics/Data_Relic_장거리_잔상.asset",
             "guid": "8b38d71c4c546b8499683289e1a94130",
@@ -5495,14 +5531,15 @@
         },
         {
             "oldPath": "Assets/Data/Items/Relics/AmberSeed.asset",
-            "path": "Assets/Data/Items/Relics/Data_Relic_호박빛_싹.asset",
+            "path": "Assets/Data/Items/Relics/Data_Relic_혈근의_씨.asset",
             "guid": "2900393ef75c6e542881f42f9ee141ec",
             "id": "AmberSeed",
-            "displayName": "호박빛 싹",
+            "displayName": "혈근의 씨",
             "type": "EquipmentData",
             "aliases": [
                 "Assets/Data/Items/Relics/Data_Relic_호박빛_싹.asset",
-                "Assets/Data/Items/Relics/AmberSeed.asset"
+                "Assets/Data/Items/Relics/AmberSeed.asset",
+                "Assets/Data/Items/Relics/Data_Relic_혈근의_씨.asset"
             ]
         },
         {
@@ -5515,6 +5552,19 @@
             "aliases": [
                 "Assets/Data/Items/Relics/Data_Relic_화염_개화의_마도서.asset",
                 "Assets/Data/Items/Relics/Tome_FireBloom.asset"
+            ]
+        },
+        {
+            "oldPath": "Assets/Data/Items/Relics/StrayDog.asset",
+            "path": "Assets/Data/Items/Relics/Data_Relic_회수견의_목줄.asset",
+            "guid": "9c0582da6d2611148855c1129d34d491",
+            "id": "StrayDog",
+            "displayName": "회수견의 목줄",
+            "type": "EquipmentData",
+            "aliases": [
+                "Assets/Data/Items/Relics/Data_Relic_작은_발자국.asset",
+                "Assets/Data/Items/Relics/StrayDog.asset",
+                "Assets/Data/Items/Relics/Data_Relic_회수견의_목줄.asset"
             ]
         },
         {

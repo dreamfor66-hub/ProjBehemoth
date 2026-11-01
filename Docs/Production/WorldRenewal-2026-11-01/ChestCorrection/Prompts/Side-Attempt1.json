@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case: precise-object-edit. Animated-state continuity for a hand-painted game sprite, not a new chest design.\nIMAGE1 is the exact CLOSED Side chest to edit. IMAGE2 is the installed dungeon background for context/paint-language only.\nChange ONLY the hinged wooden lid: rotate it OPEN around its real rear hinge, showing the hollow EMPTY dark interior. Preserve the existing lower box as an immutable painted layer: exact canvas coordinates, every bottom corner, front/side proportions, plank seams, iron straps, rivets, lock plate, color planes, ink lines and shadows. No shortening or narrowing the box, no moving the base upward or downward. The lower box must overlap the input exactly when toggling states.\nKeep the exact camera, perspective and visible front/right side from the input. Retain the lock plate on the same front board. The lid rises on its existing back hinge; no detached or floating lid.\nKeep the exact 1536x1024 canvas, scale, position and ground-contact vertices. Lid may use transparent space above but do not recenter to fit. Keep original restrained brown/charcoal planes and broad selective black shadows. Avoid new bright metal, new rivets, extra cracks or warm highlights. Remove the original faint ambient halo outside the object: all exterior pixels truly transparent, no outline glow/matte, ground patch, new shadow cloud or background. Produce one independent transparent PNG.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Side.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-5b746cfb-2e4f-497b-9d3e-2cabb9a0ed90.png"
+}

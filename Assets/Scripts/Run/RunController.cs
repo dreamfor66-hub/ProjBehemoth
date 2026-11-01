@@ -29,9 +29,11 @@ namespace DungeonSlash
         public PerkSystem Perks { get; private set; }
         public ShopSystem Shop { get; private set; }
         private EquipmentSystem equipmentSystem;
-        [SerializeField, Range(5, 6)] private int shopStockSize = 6;
+        [SerializeField] private ShopInventorySettings shopInventory;
         private readonly Dictionary<(int Seed, int Act, int Room), IReadOnlyList<EquipmentData>> shopInventories = new();
-        public void ClearChapterShopCache() => shopInventories.Clear();
+        private readonly Dictionary<(int Seed, int Act, int Room), IReadOnlyList<ShopOffer>> shopStocks = new();
+        public ShopInventorySettings ShopInventory => shopInventory;
+        public void ClearChapterShopCache() { shopInventories.Clear(); shopStocks.Clear(); }
 
         public void Configure(PlayerCombatData player, RunBalanceSettings balance, List<PerkData> availablePerks, List<EquipmentData> availableEquipment)
         {
@@ -49,6 +51,7 @@ namespace DungeonSlash
             equipmentSystem = new EquipmentSystem();
             Shop = new ShopSystem(equipmentSystem);
             shopInventories.Clear();
+            shopStocks.Clear();
             if (playerData.startingRelic != null) State.TryEquip(playerData.startingRelic);
         }
 
@@ -134,31 +137,31 @@ namespace DungeonSlash
         {
             var key = (seed, State.CurrentAct, roomId);
             if (shopInventories.TryGetValue(key, out var inventory)) return inventory;
-            var random = new System.Random(seed + roomId * 4099);
-            var result = new List<EquipmentData>();
-            var premiumRelics = equipment.Where(CanOfferSharedRelic).OrderBy(item => OfferScore(item, random)).ToList();
-            // One expedition supplier carries the former separate merchants' stock.
-            var batches = Mathf.Clamp(State.CurrentAct, 1, 3);
-            var capacity = Mathf.Clamp(shopStockSize, 5, 6) * batches;
-            result.AddRange(premiumRelics.Take(Mathf.Min(3 * batches, capacity)));
-            var potionCandidates = equipment.Where(item => item != null && item.IsPotion && !result.Contains(item)).OrderBy(_ => random.Next()).ToList();
-            foreach (var candidate in potionCandidates)
-            {
-                if (result.Count >= capacity) break;
-                result.Add(candidate);
-            }
-            var fallbackCandidates = equipment.Where(item => CanOfferSharedRelic(item) && !result.Contains(item)).OrderBy(item => OfferScore(item, random)).ToList();
-            foreach (var candidate in fallbackCandidates)
-            {
-                if (result.Count >= capacity) break;
-                result.Add(candidate);
-            }
-            // Eligibility is evaluated only when this merchant's stock is first created.
-            // Purchases or later progression must never refill or reshuffle these slots.
-            inventory = result.AsReadOnly();
+            // Compatibility for equipment-only consumers. The shop itself renders the full typed stock.
+            inventory = GetShopStock(seed, roomId).Where(offer => offer.Item != null).Select(offer => offer.Item).ToList().AsReadOnly();
             shopInventories.Add(key, inventory);
             return inventory;
         }
+        public IReadOnlyList<ShopOffer> GetShopStock(int seed, int roomId)
+        {
+            var key = (seed, State.CurrentAct, roomId);
+            if (shopStocks.TryGetValue(key, out var stock)) return stock;
+            var random = new System.Random(unchecked(seed + roomId * 4099 + State.CurrentAct * 7919));
+            var potionSlots = shopInventory != null ? shopInventory.potionSlots : 3;
+            var perkSlots = shopInventory != null ? shopInventory.perkSlots : 3;
+            var relicSlots = shopInventory != null ? shopInventory.relicSlots : 4;
+            var result = new List<ShopOffer>();
+            result.AddRange(equipment.Where(item => item != null && item.IsPotion).Distinct()
+                .OrderBy(_ => random.Next()).Take(potionSlots).Select(item => new ShopOffer(item)));
+            result.AddRange(perks.Where(perk => perk != null && perk.soldByMerchant && PerkSystem.IsAvailable(perk, State)
+                && !State.ActivePerks.Any(active => active.Data == perk && !active.CanStack)).Distinct()
+                .OrderBy(_ => random.Next()).Take(perkSlots).Select(perk => new ShopOffer(perk)));
+            result.AddRange(equipment.Where(CanOfferSharedRelic).Distinct().OrderBy(item => OfferScore(item, random))
+                .Take(relicSlots).Select(item => new ShopOffer(item)));
+            // A merchant's first stock is frozen. Purchasing never refills or rerolls a slot.
+            stock = result.AsReadOnly(); shopStocks.Add(key, stock); return stock;
+        }
+        public bool TryBuy(ShopOffer offer) => Shop.TryPurchase(State, offer, Perks);
         private double OfferScore(EquipmentData item, System.Random random) => -System.Math.Log(System.Math.Max(.000001, random.NextDouble())) / (item.grantedSpell != null ? System.Math.Max(.001, State.MagicOfferWeight) : 1);
         private bool CanOfferSharedRelic(EquipmentData item) => item != null && State.CanOffer(item) && item.IsRelic && item.scope == RelicScope.Shared && !State.EquippedItems.Contains(item)
             && (item.grantedSpell == null || State.RuntimeFor(item.grantedSpell) == null);

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uC720\uB9AC\uB36E\uAC1C"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.AmberSeed
+  labelKey: ui.encounter.subject.AmberSeed
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.AmberSeed
-  wallMounted: 0
+  wallMounted: 1
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 9c61f1f0b6c57cf4081a2d1aa2017dd8, type: 3}
@@ -27,84 +29,84 @@ MonoBehaviour:
   usedFront: {fileID: 21300000, guid: 9416b6fbc2a413349aa6e523b67b3a19, type: 3}
   usedSide: {fileID: 21300000, guid: 09eab9de4af15fe488ef857e375b0da5, type: 3}
   usedRear: {fileID: 21300000, guid: a14afda19965b9b42b407c5811abadea, type: 3}
-  displayHeight: 245
+  displayHeight: 400
   hitPadding: 20
   geometry:
   - sprite: {fileID: 21300000, guid: 9c61f1f0b6c57cf4081a2d1aa2017dd8, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.12440191
-      y: 0
-      width: 0.7535885
-      height: 0.99282295
+      x: 0.0107421875
+      y: 0.029947916
+      width: 0.9785156
+      height: 0.96549475
     footprint:
       serializedVersion: 2
-      x: 0.13875598
-      y: 0.0071770335
-      width: 0.73046255
-      height: 0.21824561
+      x: 0.021484375
+      y: 0.033203125
+      width: 0.89160156
+      height: 0.21226563
   - sprite: {fileID: 21300000, guid: bdc480cbc396bcd4fb60b9567c5da2b6, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.15789473
-      y: 0.025518341
-      width: 0.68421054
-      height: 0.96411484
+      x: 0.15332031
+      y: 0.015625
+      width: 0.6933594
+      height: 0.9765625
     footprint:
       serializedVersion: 2
-      x: 0.16586922
-      y: 0.033492822
-      width: 0.6682615
-      height: 0.21192983
+      x: 0.16601562
+      y: 0.024088541
+      width: 0.6611328
+      height: 0.21470052
   - sprite: {fileID: 21300000, guid: 718ca5eb0ef43ba4a88ab5e878aeae1d, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.11642743
-      y: 0.0031897926
-      width: 0.76714516
-      height: 0.9832536
+      x: 0.01171875
+      y: 0.0234375
+      width: 0.9765625
+      height: 0.96940106
     footprint:
       serializedVersion: 2
-      x: 0.12519936
-      y: 0.011164274
-      width: 0.7503987
-      height: 0.21614034
+      x: 0.021484375
+      y: 0.028645834
+      width: 0.9560547
+      height: 0.213125
   - sprite: {fileID: 21300000, guid: 9416b6fbc2a413349aa6e523b67b3a19, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.12440191
-      y: 0
-      width: 0.7535885
-      height: 0.99441785
+      x: 0.01171875
+      y: 0.027994791
+      width: 0.98046875
+      height: 0.9667969
     footprint:
       serializedVersion: 2
-      x: 0.13795853
-      y: 0.005582137
-      width: 0.7320574
-      height: 0.21859649
+      x: 0.025390625
+      y: 0.032552082
+      width: 0.9550781
+      height: 0.21255209
   - sprite: {fileID: 21300000, guid: 09eab9de4af15fe488ef857e375b0da5, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.15470494
-      y: 0.025518341
-      width: 0.68899524
-      height: 0.9657097
+      x: 0.15332031
+      y: 0.013671875
+      width: 0.6953125
+      height: 0.9817708
     footprint:
       serializedVersion: 2
-      x: 0.16347687
-      y: 0.034290273
-      width: 0.6706539
-      height: 0.2122807
+      x: 0.16699219
+      y: 0.020182291
+      width: 0.67089844
+      height: 0.21584634
   - sprite: {fileID: 21300000, guid: a14afda19965b9b42b407c5811abadea, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.11722488
-      y: 0.0023923444
-      width: 0.7663477
-      height: 0.98405105
+      x: 0.01171875
+      y: 0.022135416
+      width: 0.97753906
+      height: 0.9720052
     footprint:
       serializedVersion: 2
-      x: 0.12519936
-      y: 0.010366826
-      width: 0.7503987
-      height: 0.21631579
+      x: 0.022460938
+      y: 0.02734375
+      width: 0.9560547
+      height: 0.21369791

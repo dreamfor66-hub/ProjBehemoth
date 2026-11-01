@@ -1,0 +1,44 @@
+[
+  {
+    "id": "WizardSelection",
+    "production": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png",
+    "framing": "full",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-af88039c-4def-4efb-8ad5-abe1769318c0.png"
+  },
+  {
+    "id": "WizardCardTransparent",
+    "production": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png",
+    "framing": "full",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-1ad29045-7618-43f5-aebc-9095d2ce02f5.png"
+  },
+  {
+    "id": "WizardPortrait",
+    "production": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png",
+    "framing": "full",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-10903e86-ce3d-4788-9eac-245b4069f337.png"
+  },
+  {
+    "id": "WizardIdle",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-e5b01518-b8c4-474a-b137-d5d0cfefe465.png"
+  },
+  {
+    "id": "WizardReady",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-6ba81116-fdf1-41f3-9f3b-cd1073be110a.png"
+  },
+  {
+    "id": "WizardAttack",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-bb9315b7-e425-4b47-bc25-465b59dead36.png"
+  },
+  {
+    "id": "WizardGuard",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-695a2766-ccaa-496f-bfd0-9f3a86b753b0.png"
+  }
+]

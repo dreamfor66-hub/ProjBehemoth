@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: ui.explore.used.goddess
   wallMounted: 1
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 886cae99549c262419a4ede7b6d32921, type: 3}
@@ -27,32 +29,32 @@ MonoBehaviour:
   usedFront: {fileID: 0}
   usedSide: {fileID: 0}
   usedRear: {fileID: 0}
-  displayHeight: 580
+  displayHeight: 550
   hitPadding: 20
   geometry:
   - sprite: {fileID: 21300000, guid: 886cae99549c262419a4ede7b6d32921, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.13574219
-      y: 0.020833334
-      width: 0.72558594
-      height: 0.9511719
+      x: 0.23144531
+      y: 0.029947916
+      width: 0.5371094
+      height: 0.9427083
     footprint:
       serializedVersion: 2
       x: 0.24316406
-      y: 0.037760418
+      y: 0.037109375
       width: 0.51464844
-      height: 0.20911458
+      height: 0.2072526
   - sprite: {fileID: 21300000, guid: 8761a476d8482ff46a18ce16fd6a1088, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.18554688
-      y: 0.015625
-      width: 0.65527344
-      height: 0.9733073
+      x: 0.2265625
+      y: 0.01953125
+      width: 0.578125
+      height: 0.9707031
     footprint:
       serializedVersion: 2
-      x: 0.18554688
-      y: 0.015625
-      width: 0.65527344
-      height: 0.21398437
+      x: 0.24121094
+      y: 0.026692709
+      width: 0.55078125
+      height: 0.21341147

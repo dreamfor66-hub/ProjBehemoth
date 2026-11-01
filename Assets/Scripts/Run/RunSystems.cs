@@ -307,7 +307,7 @@ namespace DungeonSlash
             if (potion.abilities.Count == 0) return !thrown && potion.trigger.triggerType is TriggerType.OnConsume or TriggerType.OnCombatStartAfterConsume;
             var actions = potion.abilities.Where(a => a.trigger.triggerType == trigger || !thrown && a.trigger.triggerType == TriggerType.OnCombatStartAfterConsume).ToArray();
             if (actions.Length == 0) return false;
-            if(actions.SelectMany(a=>a.effects).All(e=>e.effectType==EffectType.RecoverFatigue)&&Fatigue.Value>=100)return false;
+            if(actions.SelectMany(a=>a.effects).All(e=>e.effectType==EffectType.RecoverFatigue)&&Fatigue.Value>=Fatigue.Capacity)return false;
             return !actions.SelectMany(a => a.effects).All(e => e.effectType == EffectType.Heal) || Player.CurrentHp < Player.MaxHp;
         }
 
@@ -481,7 +481,7 @@ namespace DungeonSlash
             return buckets.OrderBy(group => -Math.Log(1 - random.NextDouble()) / group.Weight).Take(3)
                 .Select(group => group.Members[random.Next(group.Members.Length)]).ToList();
         }
-        public void Apply(RunState run, PerkData perk)
+        public void Apply(RunState run, PerkData perk, bool consumePendingChoice = true)
         {
             if (!IsAvailable(perk, run)) return;
             var existing = run.ActivePerks.FirstOrDefault(active => active.Data == perk);
@@ -489,7 +489,7 @@ namespace DungeonSlash
             if (existing != null) existing.AddStack(); else run.ActivePerks.Add(new PerkRuntime(perk));
             if (existing == null) run.RegisterPerkAbilities(perk);
             run.Player.ApplyModifiers(perk.modifiers);
-            run.ConsumePendingPerkChoice();
+            if (consumePendingChoice) run.ConsumePendingPerkChoice();
         }
     }
 
@@ -507,6 +507,31 @@ namespace DungeonSlash
         private readonly EquipmentSystem equipment;
         private readonly Dictionary<string, int> purchaseCounts = new();
         public ShopSystem(EquipmentSystem equipmentSystem) => equipment = equipmentSystem;
+        public bool TryPurchase(RunState run, ShopOffer offer, PerkSystem perks)
+        {
+            if (!CanPurchase(run, offer) || perks == null) return false;
+            if (offer.Perk != null) perks.Apply(run, offer.Perk, false);
+            else if (!equipment.Apply(run, offer.Item)) return false;
+            run.SpendGold(offer.Price); offer.Purchased = true; return true;
+        }
+        public bool CanPurchase(RunState run, ShopOffer offer) => offer != null && UnavailableReason(run, offer) == null;
+        public string UnavailableReason(RunState run, ShopOffer offer)
+        {
+            if (run == null || offer == null || offer.Perk == null && offer.Item == null) return GameText.Get("ui.shop.unavailablelabel");
+            if (offer.Purchased) return GameText.Get("ui.shop.soldout");
+            if (offer.Perk != null)
+            {
+                if (!PerkSystem.IsAvailable(offer.Perk, run) || run.ActivePerks.Any(active => active.Data == offer.Perk && !active.CanStack)) return GameText.Get("ui.shop.owned");
+            }
+            else
+            {
+                var item = offer.Item;
+                if (!item.IsPotion && run.EquippedItems.Contains(item)) return GameText.Get("ui.shop.owned");
+                if (item.grantedSpell != null && run.RuntimeFor(item.grantedSpell) != null) return GameText.Get("ui.shop.known");
+                if (item.IsPotion && !run.HasPotionSpace) return GameText.Get("ui.shop.potionfull");
+            }
+            return run.Gold < offer.Price ? GameText.Get("ui.shop.notenoughgold") : null;
+        }
         public bool TryPurchase(RunState run, EquipmentData item)
         {
             if (item == null) return false;

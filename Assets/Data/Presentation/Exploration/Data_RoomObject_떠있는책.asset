@@ -12,60 +12,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uB5A0\uC788\uB294\uCC45"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.Scholar
+  labelKey: ui.encounter.subject.Scholar
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.Scholar
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 9d0a0179eaa63d347904e13592bac241, type: 3}
   side: {fileID: 21300000, guid: c83fb8d4a23e038488decd12853c3f59, type: 3}
   rear: {fileID: 21300000, guid: a464c7e00285bc942af2a53e9259de40, type: 3}
-  usedFront: {fileID: 0}
-  usedSide: {fileID: 0}
-  usedRear: {fileID: 0}
-  displayHeight: 225
+  usedFront: {fileID: 21300000, guid: 934644528937cae498a26d11efb6cd3b, type: 3}
+  usedSide: {fileID: 21300000, guid: 4e838027bee73d74299e77c048c639ce, type: 3}
+  usedRear: {fileID: 21300000, guid: c3b108fb82f7b2348af4decb72ce3376, type: 3}
+  displayHeight: 300
   hitPadding: 20
   geometry:
   - sprite: {fileID: 21300000, guid: 9d0a0179eaa63d347904e13592bac241, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.224595
-      y: 0.033649698
-      width: 0.54860085
-      height: 0.88697153
+      x: 0.026928676
+      y: 0.04279476
+      width: 0.94541484
+      height: 0.88384277
     footprint:
       serializedVersion: 2
-      x: 0.2437408
-      y: 0.04314064
-      width: 0.5139912
-      height: 0.19494392
+      x: 0.041484717
+      y: 0.048034936
+      width: 0.8151383
+      height: 0.19425327
   - sprite: {fileID: 21300000, guid: c83fb8d4a23e038488decd12853c3f59, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.24153167
-      y: 0.031924073
-      width: 0.5412371
-      height: 0.9188956
+      x: 0.066229984
+      y: 0.031441048
+      width: 0.8966521
+      height: 0.93799126
     footprint:
       serializedVersion: 2
-      x: 0.26141384
-      y: 0.0405522
-      width: 0.5088365
-      height: 0.20196721
+      x: 0.082969435
+      y: 0.03930131
+      width: 0.80058223
+      height: 0.20616594
   - sprite: {fileID: 21300000, guid: a464c7e00285bc942af2a53e9259de40, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.23122239
-      y: 0.039689388
-      width: 0.53976434
-      height: 0.88697153
+      x: 0.02183406
+      y: 0.040174674
+      width: 0.95633185
+      height: 0.91528386
     footprint:
       serializedVersion: 2
-      x: 0.24079528
-      y: 0.05004314
-      width: 0.52061856
-      height: 0.19494392
+      x: 0.03930131
+      y: 0.050655022
+      width: 0.9024745
+      height: 0.20117031
+  - sprite: {fileID: 21300000, guid: 934644528937cae498a26d11efb6cd3b, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.030567685
+      y: 0.048908297
+      width: 0.937409
+      height: 0.32751092
+    footprint:
+      serializedVersion: 2
+      x: 0.040756915
+      y: 0.054148473
+      width: 0.9017467
+      height: 0.07186026
+  - sprite: {fileID: 21300000, guid: 4e838027bee73d74299e77c048c639ce, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.06768559
+      y: 0.031441048
+      width: 0.8879185
+      height: 0.330131
+    footprint:
+      serializedVersion: 2
+      x: 0.082969435
+      y: 0.03930131
+      width: 0.80276567
+      height: 0.072436675
+  - sprite: {fileID: 21300000, guid: c3b108fb82f7b2348af4decb72ce3376, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.023289666
+      y: 0.040174674
+      width: 0.95269287
+      height: 0.32838428
+    footprint:
+      serializedVersion: 2
+      x: 0.03930131
+      y: 0.050655022
+      width: 0.9046579
+      height: 0.072052404

@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: "Data_Event_\uC5B4\uB514\uAE4C\uC9C0_\uD480_\uAC83\uC778\uAC00"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.training.displayname
+    lastText: "\uC5B4\uB514\uAE4C\uC9C0 \uD480 \uAC83\uC778\uAC00"
+  - propertyPath: narrative
+    key: data.randomeventdata.training.narrative
+    lastText: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
+      \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
+      \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
+      \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
+      \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
+      \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
+      \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
+      \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
+      \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.training.options.0.title
+    lastText: "\uB048\uC744 \uD47C\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.training.options.0.description
+    lastText: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 75. \uC2B9\uB9AC \uD6C4 \uD3EC\uC158
+      1\uAC1C. \uD3EC\uC158\uC774 \uAC00\uB4DD\uD558\uBA74 \uCCB4\uB825 8 \uD68C\uBCF5."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.training.options.1.title
+    lastText: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.training.options.1.description
+    lastText: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 140. \uC2B9\uB9AC \uD6C4 \uBCF4\uC720
+      \uB2A5\uB825\uC744 \uB450 \uBC88 \uAC15\uD654."
+  - propertyPath: options.Array.data[2].title
+    key: data.randomeventdata.training.options.2.title
+    lastText: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+  - propertyPath: options.Array.data[2].description
+    key: data.randomeventdata.training.options.2.description
+    lastText: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 240. \uC2B9\uB9AC \uD6C4 \uACF5\uC6A9
+      \uC720\uBB3C \uD558\uB098 \uC120\uD0DD."
+  - propertyPath: options.Array.data[0].resultText
+    key: data.randomeventdata.training.options.0.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  - propertyPath: options.Array.data[1].resultText
+    key: data.randomeventdata.training.options.1.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  - propertyPath: options.Array.data[2].resultText
+    key: data.randomeventdata.training.options.2.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  - propertyPath: pages.Array.data[0].narrative
+    key: data.randomeventdata.training.pages.0.narrative
+    lastText: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
+      \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
+      \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
+      \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
+      \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
+      \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
+      \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
+      \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
+      \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[0].title
+    key: data.randomeventdata.training.pages.0.options.0.title
+    lastText: "\uB048\uC744 \uD47C\uB2E4"
+  - propertyPath: pages.Array.data[0].options.Array.data[0].description
+    key: data.randomeventdata.training.pages.0.options.0.description
+    lastText: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"
+  - propertyPath: pages.Array.data[0].options.Array.data[0].resultText
+    key: data.randomeventdata.training.pages.0.options.0.resulttext
+    lastText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4. \uC218\uB0A9\uD568\uC5D0\uC11C
+      \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740 \uAD6C\uC18D\uAD6C\uB3C4
+      \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[1].title
+    key: data.randomeventdata.training.pages.0.options.1.title
+    lastText: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
+  - propertyPath: pages.Array.data[0].options.Array.data[1].description
+    key: data.randomeventdata.training.pages.0.options.1.description
+    lastText: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654
+      \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
+  - propertyPath: pages.Array.data[0].options.Array.data[1].resultText
+    key: data.randomeventdata.training.pages.0.options.1.resulttext
+    lastText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4. \uC218\uB0A9\uD568\uC5D0\uC11C
+      \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740 \uAD6C\uC18D\uAD6C\uB3C4
+      \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[2].title
+    key: data.randomeventdata.training.pages.0.options.2.title
+    lastText: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+  - propertyPath: pages.Array.data[0].options.Array.data[2].description
+    key: data.randomeventdata.training.pages.0.options.2.description
+    lastText: "\uC804\uD22C \xB7 \uACF5\uC6A9 \uC720\uBB3C \uC120\uD0DD"
+  - propertyPath: pages.Array.data[0].options.Array.data[2].resultText
+    key: data.randomeventdata.training.pages.0.options.2.resulttext
+    lastText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4. \uC218\uB0A9\uD568\uC5D0\uC11C
+      \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740 \uAD6C\uC18D\uAD6C\uB3C4
+      \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[3].title
+    key: data.randomeventdata.training.pages.0.options.3.title
+    lastText: "\uB5A0\uB09C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[3].description
+    key: data.randomeventdata.training.pages.0.options.3.description
+    lastText: 
+  - propertyPath: pages.Array.data[0].options.Array.data[3].resultText
+    key: data.randomeventdata.training.pages.0.options.3.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  textOwnerGuid: f4744ac83644fda4abb9cf9f29823da9
+  id: Training
+  displayName: "\uC5B4\uB514\uAE4C\uC9C0 \uD480 \uAC83\uC778\uAC00"
+  discovery: 0
+  worldObject: {fileID: 11400000, guid: d620f8d08e1f7d74eaa2e0075a5c0d6c, type: 2}
+  encounterKind: 3
+  authoringLore: "\uD3D0\uC131 \uC6D0\uC815\uC5D0 \uC4F0\uC774\uB358 \uC6B4\uBC18\uC2DD
+    \uD6C8\uB828 \uC778\uD615. \uAD6C\uC18D \uB2E8\uACC4\uAC00 \uC2E4\uC81C \uC804\uD22C\uC758
+    \uAC15\uB3C4\uB97C \uBC14\uAFB8\uACE0 \uBCF4\uC0C1\uC740 \uC218\uB0A9\uD568\uC5D0
+    \uC788\uB2E4. \uC8FC\uBCC0 \uC6B4\uBC18 \uC7A5\uBE44\uB294 \uAC19\uC740 \uCE74\uBA54\uB77C\uC758
+    \uB9C9\uB2E4\uB978 \uBCF4\uAD00 \uACF5\uAC04\uC744 \uC774\uB8EC\uB2E4."
+  roomLayout: 1
+  roomInteriors:
+  - {fileID: 21300000, guid: fb9680f22ada6cd4080f9cc9fdfed712, type: 3}
+  - {fileID: 21300000, guid: bf486e7f598cfee4a86238c5007aacff, type: 3}
+  - {fileID: 21300000, guid: 6d030cb5ccff9514583c1cf53d33fadb, type: 3}
+  roomTheme: {fileID: 11400000, guid: cd7241d325576324b9c259c155be73d7, type: 2}
+  excludedFromRandomPool: 0
+  narrative: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
+    \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
+    \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
+    \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
+    \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
+    \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
+    \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
+    \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
+    \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+  illustration: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
+  minAct: 1
+  maxAct: 3
+  weight: 1
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/BattlewornDummy
+  referenceExperience: "\uCCB4\uB825\uC774 \uB2E4\uB978 \uC138 \uD6C8\uB828 \uC0C1\uB300\uC640
+    \uC11C\uB85C \uB2E4\uB978 \uBCF4\uC0C1\uC744 \uC9C1\uC811 \uACE0\uB974\uB294
+    \uC804\uD22C.\n\uC11C\uC0AC/\uC5F0\uCD9C: Docs/Production/EventSequences-Castle.md\n\uC11C\uC0AC/\uC5F0\uCD9C:
+    Docs/Production/EventSequences-Castle.md"
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uB048\uC744 \uD47C\uB2E4"
+    description: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 75. \uC2B9\uB9AC \uD6C4
+      \uD3EC\uC158 1\uAC1C. \uD3EC\uC158\uC774 \uAC00\uB4DD\uD558\uBA74 \uCCB4\uB825
+      8 \uD68C\uBCF5."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    leaveUnresolved: 0
+    revisitTextKey: ui.eventgrounding.revisit.Training.-1.0
+    requirements: []
+    effects:
+    - kind: 10
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 11400000, guid: 08b146d81293e764fbf2852f603b6af4, type: 2}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 16
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
+    description: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 140. \uC2B9\uB9AC \uD6C4
+      \uBCF4\uC720 \uB2A5\uB825\uC744 \uB450 \uBC88 \uAC15\uD654."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    leaveUnresolved: 0
+    revisitTextKey: ui.eventgrounding.revisit.Training.-1.1
+    requirements: []
+    effects:
+    - kind: 10
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 11400000, guid: 0e9f90aa618dd864dbc691b6d5b32d88, type: 2}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 13
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 13
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  - title: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+    description: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 240. \uC2B9\uB9AC \uD6C4
+      \uACF5\uC6A9 \uC720\uBB3C \uD558\uB098 \uC120\uD0DD."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    leaveUnresolved: 0
+    revisitTextKey: ui.eventgrounding.revisit.Training.-1.2
+    requirements: []
+    effects:
+    - kind: 10
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 11400000, guid: 5dacff03acfb2694fa0d38dae788275e, type: 2}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 1
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+  pages:
+  - narrative: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
+      \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
+      \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
+      \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
+      \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
+      \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
+      \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
+      \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
+      \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+    illustration: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}
+    options:
+    - title: "\uB048\uC744 \uD47C\uB2E4"
+      description: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4.
+        \uC218\uB0A9\uD568\uC5D0\uC11C \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740
+        \uAD6C\uC18D\uAD6C\uB3C4 \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 1
+      leaveUnresolved: 0
+      revisitTextKey: ui.eventgrounding.revisit.Training.0.0
+      requirements: []
+      effects:
+      - kind: 10
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 11400000, guid: 08b146d81293e764fbf2852f603b6af4, type: 2}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 16
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+    - title: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
+      description: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654
+        \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4.
+        \uC218\uB0A9\uD568\uC5D0\uC11C \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740
+        \uAD6C\uC18D\uAD6C\uB3C4 \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 1
+      leaveUnresolved: 0
+      revisitTextKey: ui.eventgrounding.revisit.Training.0.1
+      requirements: []
+      effects:
+      - kind: 10
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 11400000, guid: 0e9f90aa618dd864dbc691b6d5b32d88, type: 2}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 13
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 13
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+    - title: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+      description: "\uC804\uD22C \xB7 \uACF5\uC6A9 \uC720\uBB3C \uC120\uD0DD"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4.
+        \uC218\uB0A9\uD568\uC5D0\uC11C \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740
+        \uAD6C\uC18D\uAD6C\uB3C4 \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 1
+      leaveUnresolved: 0
+      revisitTextKey: ui.eventgrounding.revisit.Training.0.2
+      requirements: []
+      effects:
+      - kind: 10
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 11400000, guid: 5dacff03acfb2694fa0d38dae788275e, type: 2}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 1
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+    - title: "\uB5A0\uB09C\uB2E4."
+      description: 
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+        \uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      leaveUnresolved: 0
+      revisitTextKey: ui.eventgrounding.revisit.Training.0.3
+      requirements: []
+      effects: []
+    routes: []
+  entryRoutes: []

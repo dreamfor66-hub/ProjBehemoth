@@ -1,0 +1,170 @@
+{
+  "references": {
+    "count": 12,
+    "exactOriginalHashes": true
+  },
+  "installedPaintings": [
+    {
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_공용_서약실.png",
+      "sha256": "6bb57f1b72b9cf8d2fbb618584f5bfb4ecc73ccedf72f19bd89db99ee24eb7e5",
+      "guid": "6230db0b1e29ad145bfd7753e8baf787",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_서약실.png",
+      "sha256": "2cedb223d9c3be82386f7dab6cb111894f6975850ae0fe51d547688d26ce5684",
+      "guid": "06340d8952d90454d98a2e0d213a6051",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_서약실.png",
+      "sha256": "94433234f2545794b1032ab06e7e336361aec64124d48df737df3c4421e9e172",
+      "guid": "f56d22e3afaf3574abe83af7dfd9a45d",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_물자보관칸.png",
+      "sha256": "f0a84cd219fc1e93fac44f0e88b5af841017223059408e9d971a877bfdaf5786",
+      "guid": "fdc3e56908cd8ae4ca9736f5ac3c5c32",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_폐성급료고.png",
+      "sha256": "758ee259e01e95c7f7ee9a015fc9832a347eda5688923995b1b4590e7eb6c182",
+      "guid": "eff8cd842a9146a4ab64464eb4ac737f",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_혈근번식실.png",
+      "sha256": "033088ac7d42f7818d75a148c069932bc874d12b59cb27094945c9b0559b1d0a",
+      "guid": "0d9ac924238856045a58b86efd6078d7",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Idle.png",
+      "sha256": "8091d68310cb04a9c0ce0f9dee1f2a135cc845d6146fc9bcd1d1cf84bbf4ae98",
+      "guid": "591a1c416ff59c44ea8c26b1fa843609",
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Attack.png",
+      "sha256": "9f52703df5fdfa0ca39d8135387dc7438751bf12d3108b32b0783054290522a4",
+      "guid": "1c72c7c32ad869447ac01a8cf3dbc8eb",
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_Goddess_Front.png",
+      "sha256": "e094fc467ee20c7e4fda0a0e432755967eecc236eb58667fcdc0369b3ae2d6e4",
+      "guid": "886cae99549c262419a4ede7b6d32921",
+      "canvas": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_Goddess_Side.png",
+      "sha256": "c66a4bb51411db43b27bba0eb64bdab352050d713a15953828b0831fc1cfbb1e",
+      "guid": "8761a476d8482ff46a18ce16fd6a1088",
+      "canvas": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+      "sha256": "5d9650de22175a0da0c7254f24bc9efcd3f1684309c3ba33d96d8a5fd916e4c4",
+      "guid": "a0b7e74c09dcc0a48afa5cc45b9321f0",
+      "canvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+      "sha256": "f79153fffd3931524dfd4b7a7b11465e18d7bb2fa19abac5681c246f7a8f2402",
+      "guid": "b73bcf621e367aa4991ff7dcce85404f",
+      "canvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedFront.png",
+      "sha256": "8d260eea56970add1f9d394fd0118fce0c0981ad3c559b518a0af5cd013994ec",
+      "guid": "d48c5514f11941e45b3c482814534624",
+      "canvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedSide.png",
+      "sha256": "e83fe6c951beef0ec328836d013a24b6de23e548078fa7ee3e634ac41a98233f",
+      "guid": "bd1417411b1980b4dbd36e7da6d2967d",
+      "canvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+      "sha256": "ce34eee98223ba72f511f20ee068b60630a57a0cac64a538ee04495a761b6f5a",
+      "guid": "36c5f3564665bee41b99a46397bf21ea",
+      "canvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_usedRear.png",
+      "sha256": "93487fd4e1117f9223f02d81af571b0266f08d19cecc8379b660cced27f5fb21",
+      "guid": "e99fe64ad799175448bf1ae2957fb5f1",
+      "canvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/Restoration01/B1-Left.png",
+      "sha256": "77f0d5f25c67088311c6767678a5c6813f9bd81596fe3bac729723b9fabee868",
+      "guid": "c161cd99582d3ea469435989700ab8ec",
+      "canvas": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "Assets/Art/World/Angular/Restoration01/B1-Right.png",
+      "sha256": "71aa15105ab3487c0ac8438210a5df4d7cffbe11dbb523f203bc8274033d5799",
+      "guid": "211ad80267abc8d4ebe3b299f0976912",
+      "canvas": [
+        1672,
+        941
+      ]
+    }
+  ]
+}

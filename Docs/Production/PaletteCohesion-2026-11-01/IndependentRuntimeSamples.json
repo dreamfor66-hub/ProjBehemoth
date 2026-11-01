@@ -1,0 +1,2521 @@
+{
+  "status": "Historical15:34 composition failure preserved below. Post-correction16:06 B1 nine actual frames pass old rectangular-patch removal and composed door/material inspection; see postDoorCorrection.",
+  "method": "Absolute pixel ROI coordinates in1920x1080 screenshot; medianRGB and per-pixel linear-sRGB relativeY. Each actual image compared to same-act Base. No numeric acceptance threshold.",
+  "limitations": [
+    "Stone ROIs may be on different incident-light faces due to room geometry; differences are recorded, not treated as an automatic failure.",
+    "Door and adjacent wall are same broad material but have different normals/light; no universal equality expected.",
+    "JPEG and scale affect a few values; UI/flames/actor avoided.",
+    "Additional oathEast/goddess/fountain photos reviewed qualitatively; no false claim of numerical object calibration.",
+    "fixed_left_column_region is not the same face in B2: Base/Watch land on the lit face while Oath lands on a darker face. Raw deltas there cannot be interpreted as shadow-material drift."
+  ],
+  "primaryScreens": [
+    {
+      "file": "Final-B1-Base-Doors.jpg",
+      "sha256": "45b539b3eb7b9af41d164b7a7b1112f3669f4df99a20d351674e72a2407acd8c",
+      "mtimeLocal": "2026-11-01T15:34:50.590064",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            103,
+            93,
+            68
+          ],
+          "medianLinearY": 0.1113,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            84,
+            76,
+            58
+          ],
+          "medianLinearY": 0.07349,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            50,
+            44,
+            30
+          ],
+          "medianLinearY": 0.02536,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            50,
+            49,
+            44
+          ],
+          "medianLinearY": 0.03057,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            34,
+            34,
+            31
+          ],
+          "medianLinearY": 0.01588,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B1-Data_RoomTheme_잊힌서약실-North.jpg",
+      "sha256": "a1bcb4cce9e251c0fdd78969cc2b8e7b93b78d86aed91fd1c91e2fa521a934b7",
+      "mtimeLocal": "2026-11-01T15:34:53.609293",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            94,
+            82,
+            59
+          ],
+          "medianLinearY": 0.08741,
+          "deltaRGBversusActBase": [
+            -9,
+            -11,
+            -9
+          ],
+          "deltaLinearYversusActBase": -0.02389
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            84,
+            76,
+            58
+          ],
+          "medianLinearY": 0.07349,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            37,
+            32,
+            24
+          ],
+          "medianLinearY": 0.0153,
+          "deltaRGBversusActBase": [
+            -13,
+            -12,
+            -6
+          ],
+          "deltaLinearYversusActBase": -0.01006
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            37,
+            36,
+            32
+          ],
+          "medianLinearY": 0.01759,
+          "deltaRGBversusActBase": [
+            -13,
+            -13,
+            -12
+          ],
+          "deltaLinearYversusActBase": -0.01298
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            28,
+            27,
+            25
+          ],
+          "medianLinearY": 0.01101,
+          "deltaRGBversusActBase": [
+            -6,
+            -7,
+            -6
+          ],
+          "deltaLinearYversusActBase": -0.00487,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B1-Data_RoomTheme_옛경비실-North.jpg",
+      "sha256": "13363ab630edecd15ea87aad70e50140826a77f0f441a8cfa1a9785d1a887524",
+      "mtimeLocal": "2026-11-01T15:34:52.784875",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            105,
+            91,
+            63
+          ],
+          "medianLinearY": 0.10856,
+          "deltaRGBversusActBase": [
+            2,
+            -2,
+            -5
+          ],
+          "deltaLinearYversusActBase": -0.00274
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            84,
+            76,
+            58
+          ],
+          "medianLinearY": 0.07349,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            44,
+            38,
+            26
+          ],
+          "medianLinearY": 0.01996,
+          "deltaRGBversusActBase": [
+            -6,
+            -6,
+            -4
+          ],
+          "deltaLinearYversusActBase": -0.0054
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            49,
+            46,
+            41
+          ],
+          "medianLinearY": 0.02767,
+          "deltaRGBversusActBase": [
+            -1,
+            -3,
+            -3
+          ],
+          "deltaLinearYversusActBase": -0.0029
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            36,
+            35,
+            31
+          ],
+          "medianLinearY": 0.01676,
+          "deltaRGBversusActBase": [
+            2,
+            1,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.00088,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B2-Base-Doors.jpg",
+      "sha256": "a0965ea8a3d265aeb87537909a247df3b038e0ec610cd901c56a5bf70ac82470",
+      "mtimeLocal": "2026-11-01T15:35:02.422161",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            92,
+            109,
+            127
+          ],
+          "medianLinearY": 0.14745,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            57,
+            70,
+            82
+          ],
+          "medianLinearY": 0.05789,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            46,
+            59,
+            73
+          ],
+          "medianLinearY": 0.04169,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            52,
+            64,
+            79
+          ],
+          "medianLinearY": 0.04976,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            92,
+            109,
+            127
+          ],
+          "medianLinearY": 0.14745,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0,
+          "comparabilityNote": "NOT a matched shade comparison: Base/Watch are lit column faces here, Oath is a darker face. Use raw measurement only."
+        }
+      }
+    },
+    {
+      "file": "Final-B2-Data_RoomTheme_잊힌서약실-North.jpg",
+      "sha256": "94315310c81811881bdf84f6637b4164ddd34a24f0be1c572be78fc56e128a53",
+      "mtimeLocal": "2026-11-01T15:35:05.442660",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            93,
+            111,
+            129
+          ],
+          "medianLinearY": 0.15334,
+          "deltaRGBversusActBase": [
+            1,
+            2,
+            2
+          ],
+          "deltaLinearYversusActBase": 0.00589
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            56,
+            70,
+            83
+          ],
+          "medianLinearY": 0.05846,
+          "deltaRGBversusActBase": [
+            -1,
+            0,
+            1
+          ],
+          "deltaLinearYversusActBase": 0.00057
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            38,
+            49,
+            62
+          ],
+          "medianLinearY": 0.02993,
+          "deltaRGBversusActBase": [
+            -8,
+            -10,
+            -11
+          ],
+          "deltaLinearYversusActBase": -0.01176
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            56,
+            69,
+            85
+          ],
+          "medianLinearY": 0.05753,
+          "deltaRGBversusActBase": [
+            4,
+            5,
+            6
+          ],
+          "deltaLinearYversusActBase": 0.00777
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            36,
+            48,
+            62
+          ],
+          "medianLinearY": 0.02837,
+          "deltaRGBversusActBase": [
+            -56,
+            -61,
+            -65
+          ],
+          "deltaLinearYversusActBase": -0.11908,
+          "comparabilityNote": "NOT a matched shade comparison: Base/Watch are lit column faces here, Oath is a darker face. Use raw measurement only."
+        }
+      }
+    },
+    {
+      "file": "Final-B2-Data_RoomTheme_옛경비실-North.jpg",
+      "sha256": "1aa85910ffd06a4fac31e233b5aeb6504450290b9a6b4eb90f3ee426825c1c55",
+      "mtimeLocal": "2026-11-01T15:35:04.611727",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            91,
+            108,
+            128
+          ],
+          "medianLinearY": 0.14508,
+          "deltaRGBversusActBase": [
+            -1,
+            -1,
+            1
+          ],
+          "deltaLinearYversusActBase": -0.00237
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            56,
+            70,
+            83
+          ],
+          "medianLinearY": 0.05846,
+          "deltaRGBversusActBase": [
+            -1,
+            0,
+            1
+          ],
+          "deltaLinearYversusActBase": 0.00057
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            41,
+            54,
+            70
+          ],
+          "medianLinearY": 0.03552,
+          "deltaRGBversusActBase": [
+            -5,
+            -5,
+            -3
+          ],
+          "deltaLinearYversusActBase": -0.00617
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            51,
+            64,
+            80
+          ],
+          "medianLinearY": 0.0495,
+          "deltaRGBversusActBase": [
+            -1,
+            0,
+            1
+          ],
+          "deltaLinearYversusActBase": -0.00026
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            91,
+            108,
+            128
+          ],
+          "medianLinearY": 0.14508,
+          "deltaRGBversusActBase": [
+            -1,
+            -1,
+            1
+          ],
+          "deltaLinearYversusActBase": -0.00237,
+          "comparabilityNote": "NOT a matched shade comparison: Base/Watch are lit column faces here, Oath is a darker face. Use raw measurement only."
+        }
+      }
+    },
+    {
+      "file": "Final-B3-Base-Doors.jpg",
+      "sha256": "0497a38610b00a89697a069707cf3b6de280cf9b3129e764089c0db67bcd4646",
+      "mtimeLocal": "2026-11-01T15:35:14.420914",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            68,
+            61,
+            51
+          ],
+          "medianLinearY": 0.04805,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            52,
+            38,
+            24
+          ],
+          "medianLinearY": 0.02225,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            31,
+            27,
+            21
+          ],
+          "medianLinearY": 0.01113,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            51,
+            47,
+            43
+          ],
+          "medianLinearY": 0.02919,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            28,
+            28,
+            28
+          ],
+          "medianLinearY": 0.01161,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B3-Data_RoomTheme_잊힌서약실-North.jpg",
+      "sha256": "a7aba35751105a8e0392d1e6f006fdcb89b985082241fb5a1d6140c862c4898e",
+      "mtimeLocal": "2026-11-01T15:35:17.487946",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            62,
+            58,
+            47
+          ],
+          "medianLinearY": 0.04255,
+          "deltaRGBversusActBase": [
+            -6,
+            -3,
+            -4
+          ],
+          "deltaLinearYversusActBase": -0.0055
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            52,
+            38,
+            24
+          ],
+          "medianLinearY": 0.02225,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            33,
+            29,
+            23
+          ],
+          "medianLinearY": 0.01252,
+          "deltaRGBversusActBase": [
+            2,
+            2,
+            2
+          ],
+          "deltaLinearYversusActBase": 0.00139
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            36,
+            36,
+            34
+          ],
+          "medianLinearY": 0.01752,
+          "deltaRGBversusActBase": [
+            -15,
+            -11,
+            -9
+          ],
+          "deltaLinearYversusActBase": -0.01167
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            26,
+            26,
+            26
+          ],
+          "medianLinearY": 0.01033,
+          "deltaRGBversusActBase": [
+            -2,
+            -2,
+            -2
+          ],
+          "deltaLinearYversusActBase": -0.00128,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B3-Data_RoomTheme_옛경비실-North.jpg",
+      "sha256": "0b234104ee9137e50b2b67542ddcc112d5eb6125f811d34730b364f4d820ad3f",
+      "mtimeLocal": "2026-11-01T15:35:16.636405",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            68,
+            61,
+            51
+          ],
+          "medianLinearY": 0.04805,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            52,
+            38,
+            24
+          ],
+          "medianLinearY": 0.02225,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            32,
+            26,
+            19
+          ],
+          "medianLinearY": 0.01086,
+          "deltaRGBversusActBase": [
+            1,
+            -1,
+            -2
+          ],
+          "deltaLinearYversusActBase": -0.00027
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            51,
+            47,
+            44
+          ],
+          "medianLinearY": 0.02919,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            1
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            31,
+            31,
+            31
+          ],
+          "medianLinearY": 0.0137,
+          "deltaRGBversusActBase": [
+            3,
+            3,
+            3
+          ],
+          "deltaLinearYversusActBase": 0.00209,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B3-Data_RoomTheme_물자보관칸-North.jpg",
+      "sha256": "0f3b51c1abcf30a1b6b56f943159db0a0625ccbcfac952889e46d755f9011092",
+      "mtimeLocal": "2026-11-01T15:35:14.940720",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            84,
+            72,
+            58
+          ],
+          "medianLinearY": 0.06805,
+          "deltaRGBversusActBase": [
+            16,
+            11,
+            7
+          ],
+          "deltaLinearYversusActBase": 0.02
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            52,
+            38,
+            24
+          ],
+          "medianLinearY": 0.02225,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            49,
+            42,
+            34
+          ],
+          "medianLinearY": 0.02343,
+          "deltaRGBversusActBase": [
+            18,
+            15,
+            13
+          ],
+          "deltaLinearYversusActBase": 0.0123
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            48,
+            47,
+            43
+          ],
+          "medianLinearY": 0.02836,
+          "deltaRGBversusActBase": [
+            -3,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": -0.00083
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            28,
+            28,
+            28
+          ],
+          "medianLinearY": 0.01161,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": 0.0,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B3-Data_RoomTheme_폐성급료고-North.jpg",
+      "sha256": "98dc06a5cf575464d3480cc0b46b15ade9a78d1f10efe00d2f4288302a18364b",
+      "mtimeLocal": "2026-11-01T15:35:18.751624",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            86,
+            74,
+            60
+          ],
+          "medianLinearY": 0.07202,
+          "deltaRGBversusActBase": [
+            18,
+            13,
+            9
+          ],
+          "deltaLinearYversusActBase": 0.02397
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            52,
+            38,
+            24
+          ],
+          "medianLinearY": 0.0219,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": -0.00035
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            50,
+            43,
+            34
+          ],
+          "medianLinearY": 0.02532,
+          "deltaRGBversusActBase": [
+            19,
+            16,
+            13
+          ],
+          "deltaLinearYversusActBase": 0.01419
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            50,
+            49,
+            45
+          ],
+          "medianLinearY": 0.03064,
+          "deltaRGBversusActBase": [
+            -1,
+            2,
+            2
+          ],
+          "deltaLinearYversusActBase": 0.00145
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            38,
+            37,
+            36
+          ],
+          "medianLinearY": 0.01857,
+          "deltaRGBversusActBase": [
+            10,
+            9,
+            8
+          ],
+          "deltaLinearYversusActBase": 0.00696,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    },
+    {
+      "file": "Final-B3-Data_RoomTheme_혈근번식실-North.jpg",
+      "sha256": "2b21fd70afc9b90ed3b40b063ed3c25c6fabdf4ed6b327581b21820e9f422a55",
+      "mtimeLocal": "2026-11-01T15:35:19.608891",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "samples": {
+        "column_lit": {
+          "boundsPixels": [
+            255,
+            300,
+            290,
+            370
+          ],
+          "medianRGB": [
+            85,
+            76,
+            59
+          ],
+          "medianLinearY": 0.07437,
+          "deltaRGBversusActBase": [
+            17,
+            15,
+            8
+          ],
+          "deltaLinearYversusActBase": 0.02632
+        },
+        "front_door_stone": {
+          "boundsPixels": [
+            822,
+            470,
+            846,
+            520
+          ],
+          "medianRGB": [
+            52,
+            38,
+            24
+          ],
+          "medianLinearY": 0.02217,
+          "deltaRGBversusActBase": [
+            0,
+            0,
+            0
+          ],
+          "deltaLinearYversusActBase": -8e-05
+        },
+        "adjacent_wall_stone": {
+          "boundsPixels": [
+            765,
+            470,
+            790,
+            520
+          ],
+          "medianRGB": [
+            58,
+            50,
+            35
+          ],
+          "medianLinearY": 0.03239,
+          "deltaRGBversusActBase": [
+            27,
+            23,
+            14
+          ],
+          "deltaLinearYversusActBase": 0.02126
+        },
+        "floor_right_mid": {
+          "boundsPixels": [
+            1510,
+            825,
+            1540,
+            850
+          ],
+          "medianRGB": [
+            58,
+            55,
+            50
+          ],
+          "medianLinearY": 0.03862,
+          "deltaRGBversusActBase": [
+            7,
+            8,
+            7
+          ],
+          "deltaLinearYversusActBase": 0.00943
+        },
+        "fixed_left_column_region": {
+          "boundsPixels": [
+            180,
+            300,
+            220,
+            360
+          ],
+          "medianRGB": [
+            38,
+            38,
+            37
+          ],
+          "medianLinearY": 0.01926,
+          "deltaRGBversusActBase": [
+            10,
+            10,
+            9
+          ],
+          "deltaLinearYversusActBase": 0.00765,
+          "comparabilityNote": "Fixed screenshot coordinate only, not identical painted texel/normal in changed room geometry."
+        }
+      }
+    }
+  ],
+  "additionalScreensViewed": [
+    {
+      "file": "Final-B1-Data_RoomTheme_잊힌서약실-East.jpg",
+      "sha256": "a1bcb4cce9e251c0fdd78969cc2b8e7b93b78d86aed91fd1c91e2fa521a934b7"
+    },
+    {
+      "file": "Final-B2-Data_RoomTheme_잊힌서약실-East.jpg",
+      "sha256": "94315310c81811881bdf84f6637b4164ddd34a24f0be1c572be78fc56e128a53"
+    },
+    {
+      "file": "Final-B3-Data_RoomTheme_잊힌서약실-East.jpg",
+      "sha256": "a7aba35751105a8e0392d1e6f006fdcb89b985082241fb5a1d6140c862c4898e"
+    },
+    {
+      "file": "Final-B1-Goddess-0-Ready.jpg",
+      "sha256": "290d0e30f8639cadb17ffe476086d731cddc5d3f09fc5de95a42be8527ec5cf0"
+    },
+    {
+      "file": "Final-B2-Goddess-0-Ready.jpg",
+      "sha256": "bcad17ea3d0e0e54abc9ab981a56cc28276862d9b7c1bc02b207ce3bdd88a660"
+    },
+    {
+      "file": "Final-B3-Goddess-0-Ready.jpg",
+      "sha256": "8b663f8e0c784477d8fd45cda76c9c18987d18a3da1353ba8ffc0cf1721f1929"
+    },
+    {
+      "file": "Final-B1-Fountain-0-Ready.jpg",
+      "sha256": "6c34c9461636d8a0b9a6b2de253cef7fdefd449217dfde5e5507da9a3296229d"
+    },
+    {
+      "file": "Final-B1-Fountain-0-Used.jpg",
+      "sha256": "c2fd86ce4d7d1b22c329d256cb99bbdd9bc47aa58291c20f0594a2b662eff285"
+    },
+    {
+      "file": "Final-B2-Fountain-0-Ready.jpg",
+      "sha256": "ae9d5825e4aa42678fe12554f77416002298275cdc7e867bdd7487d15867a235"
+    },
+    {
+      "file": "Final-B2-Fountain-0-Used.jpg",
+      "sha256": "cc72d07dfcfd1bf984b4f1739b86a29e160f5cf20f59b357e8f04a00e0d22a08"
+    },
+    {
+      "file": "Final-B3-Fountain-0-Ready.jpg",
+      "sha256": "f0840dfb6b40408da0133f953cbdca66a5f6536ec64fad2c854225530f7143dd"
+    },
+    {
+      "file": "Final-B3-Fountain-0-Used.jpg",
+      "sha256": "96ff2bd406fe02a527b3e5908b62eea49ca3dbc7ccf81c169e73a5bd60e7fd27"
+    }
+  ],
+  "rightSideDoorSeam": {
+    "status": "B1 oath rejection: visible hard rectangular overlay edge; weaker on B1 Watch. No equivalent strong internal rectangle confirmed on B2/B3 oath.",
+    "approximateVisiblePatchBounds": [
+      1560,
+      540,
+      1593,
+      723
+    ],
+    "samples": [
+      {
+        "file": "Final-B1-Base-Doors.jpg",
+        "samples": {
+          "inside_overlay": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              84,
+              78,
+              62
+            ],
+            "medianLinearY": 0.07681
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              83,
+              77,
+              61
+            ],
+            "medianLinearY": 0.07484
+          },
+          "below_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              82,
+              77,
+              62
+            ],
+            "medianLinearY": 0.07506
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_잊힌서약실-North.jpg",
+        "samples": {
+          "inside_overlay": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              84,
+              78,
+              62
+            ],
+            "medianLinearY": 0.07681
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              67,
+              61,
+              48
+            ],
+            "medianLinearY": 0.04736
+          },
+          "below_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              63,
+              57,
+              44
+            ],
+            "medianLinearY": 0.04157
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_옛경비실-North.jpg",
+        "samples": {
+          "inside_overlay": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              84,
+              77,
+              62
+            ],
+            "medianLinearY": 0.07609
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              80,
+              73,
+              57
+            ],
+            "medianLinearY": 0.06766
+          },
+          "below_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              77,
+              70,
+              54
+            ],
+            "medianLinearY": 0.06224
+          }
+        }
+      },
+      {
+        "file": "Final-B2-Data_RoomTheme_잊힌서약실-North.jpg",
+        "samples": {
+          "inside_overlay": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              85,
+              103,
+              118
+            ],
+            "medianLinearY": 0.12893
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              85,
+              102,
+              118
+            ],
+            "medianLinearY": 0.12742
+          },
+          "below_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              79,
+              96,
+              113
+            ],
+            "medianLinearY": 0.11246
+          }
+        }
+      },
+      {
+        "file": "Final-B3-Data_RoomTheme_잊힌서약실-North.jpg",
+        "samples": {
+          "inside_overlay": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              58,
+              54,
+              45
+            ],
+            "medianLinearY": 0.03727
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              58,
+              54,
+              45
+            ],
+            "medianLinearY": 0.03727
+          },
+          "below_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              56,
+              52,
+              42
+            ],
+            "medianLinearY": 0.03457
+          }
+        }
+      }
+    ],
+    "inspection": "Original screenshots read directly; in-memory nearest-neighbor diagnostic crop only, no image files mutated."
+  },
+  "postDoorCorrection": {
+    "status": "Nine fresh B1 actual Unity frames directly reviewed after root installation16:06:11. Old rectangular pillar patch removed; corrected door palette, threshold placement and full room judged acceptable in these samples.",
+    "reviewedOnlyReadOnly": true,
+    "installationReference": "DoorSeams/Installed.json: B1 Left4 / Right2",
+    "limitations": [
+      "Earlier primary/side-seam hashes and values are historical15:34 screenshots; latest probe overwrote the same filenames. They remain as recorded failure evidence.",
+      "Left/right jamb are related stone materials with different plane normals and lighting; equality is not required.",
+      "Oath North/East are the same symmetric fixture composition; this is not a claim of independent directional geometry coverage."
+    ],
+    "screens": [
+      {
+        "file": "Final-B1-Base-Doors.jpg",
+        "sha256": "e899eb42ca3cefc9991c460d94482e8bb39556404629f09d3a2876df2d4a5564",
+        "mtimeLocal": "2026-11-01T16:06:36.343482",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              47,
+              42,
+              36
+            ],
+            "medianLinearY": 0.02388
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              83,
+              77,
+              61
+            ],
+            "medianLinearY": 0.07484
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              82,
+              77,
+              62
+            ],
+            "medianLinearY": 0.07506
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              103,
+              93,
+              68
+            ],
+            "medianLinearY": 0.1113
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_물자보관칸-North.jpg",
+        "sha256": "b75d5ea3e86d795277b0ef8248a71846d8adf63fe6165408e95c85ffa9030054",
+        "mtimeLocal": "2026-11-01T16:06:36.856540",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              47,
+              43,
+              39
+            ],
+            "medianLinearY": 0.02466
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              90,
+              83,
+              67
+            ],
+            "medianLinearY": 0.08765
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              89,
+              82,
+              68
+            ],
+            "medianLinearY": 0.08638
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              108,
+              96,
+              72
+            ],
+            "medianLinearY": 0.12022
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_봉인기록고-North.jpg",
+        "sha256": "5b1d2e6ad5815237126c7c05e7b7e76a4166153b89c1bea57be469b18161288b",
+        "mtimeLocal": "2026-11-01T16:06:37.703316",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              46,
+              42,
+              36
+            ],
+            "medianLinearY": 0.02365
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              84,
+              77,
+              61
+            ],
+            "medianLinearY": 0.07529
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              81,
+              74,
+              58
+            ],
+            "medianLinearY": 0.06952
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              101,
+              89,
+              65
+            ],
+            "medianLinearY": 0.10293
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_옛경비실-North.jpg",
+        "sha256": "fb10ab0788963556c0ed2b5e168bb164bb0622399b756dcb7dc05ce9e829fa37",
+        "mtimeLocal": "2026-11-01T16:06:38.558658",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              46,
+              42,
+              38
+            ],
+            "medianLinearY": 0.02347
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              80,
+              73,
+              57
+            ],
+            "medianLinearY": 0.06766
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              77,
+              70,
+              54
+            ],
+            "medianLinearY": 0.06224
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              105,
+              91,
+              63
+            ],
+            "medianLinearY": 0.10856
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_잊힌서약실-North.jpg",
+        "sha256": "6ab67e601c7ba80ae3ed9decaf0fdabe0c24c5fc06d858c8e2ed262e264873aa",
+        "mtimeLocal": "2026-11-01T16:06:39.393764",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              46,
+              41,
+              36
+            ],
+            "medianLinearY": 0.02288
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              67,
+              61,
+              47
+            ],
+            "medianLinearY": 0.04736
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              63,
+              57,
+              44
+            ],
+            "medianLinearY": 0.04157
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              94,
+              82,
+              59
+            ],
+            "medianLinearY": 0.08741
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_잊힌서약실-East.jpg",
+        "sha256": "6ab67e601c7ba80ae3ed9decaf0fdabe0c24c5fc06d858c8e2ed262e264873aa",
+        "mtimeLocal": "2026-11-01T16:06:39.901873",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              46,
+              41,
+              36
+            ],
+            "medianLinearY": 0.02288
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              67,
+              61,
+              47
+            ],
+            "medianLinearY": 0.04736
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              63,
+              57,
+              44
+            ],
+            "medianLinearY": 0.04157
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              94,
+              82,
+              59
+            ],
+            "medianLinearY": 0.08741
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_폐성급료고-North.jpg",
+        "sha256": "ffabc83476c289705c664ff481485dfd787ca92d2e103681716622d058ad56f8",
+        "mtimeLocal": "2026-11-01T16:06:40.614724",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              47,
+              42,
+              36
+            ],
+            "medianLinearY": 0.02385
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              87,
+              80,
+              64
+            ],
+            "medianLinearY": 0.08134
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              83,
+              76,
+              62
+            ],
+            "medianLinearY": 0.07311
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              102,
+              91,
+              70
+            ],
+            "medianLinearY": 0.10737
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_혈근번식실-North.jpg",
+        "sha256": "b6b1472e6da591f6476a933fd0f284c28757b67830e122c71a514c667648a688",
+        "mtimeLocal": "2026-11-01T16:06:41.432996",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              47,
+              42,
+              37
+            ],
+            "medianLinearY": 0.02436
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              92,
+              83,
+              66
+            ],
+            "medianLinearY": 0.08855
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              87,
+              79,
+              62
+            ],
+            "medianLinearY": 0.08014
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              107,
+              95,
+              69
+            ],
+            "medianLinearY": 0.1174
+          }
+        }
+      },
+      {
+        "file": "Final-B1-Data_RoomTheme_훈련보관실-North.jpg",
+        "sha256": "5e918019a14974f31269a59a48272df8985d2bd50d39c7189a65f8f2c3515c8d",
+        "mtimeLocal": "2026-11-01T16:06:42.305071",
+        "canvas": [
+          1920,
+          1080
+        ],
+        "samples": {
+          "old_overlay_area": {
+            "boundsPixels": [
+              1574,
+              670,
+              1587,
+              710
+            ],
+            "medianRGB": [
+              47,
+              42,
+              36
+            ],
+            "medianLinearY": 0.02388
+          },
+          "same_face_right": {
+            "boundsPixels": [
+              1600,
+              670,
+              1613,
+              710
+            ],
+            "medianRGB": [
+              86,
+              79,
+              61
+            ],
+            "medianLinearY": 0.07907
+          },
+          "below_old_overlay": {
+            "boundsPixels": [
+              1574,
+              730,
+              1587,
+              740
+            ],
+            "medianRGB": [
+              84,
+              77,
+              61
+            ],
+            "medianLinearY": 0.07529
+          },
+          "left_jamb": {
+            "boundsPixels": [
+              435,
+              430,
+              448,
+              460
+            ],
+            "medianRGB": [
+              58,
+              52,
+              40
+            ],
+            "medianLinearY": 0.03471
+          },
+          "right_jamb": {
+            "boundsPixels": [
+              1502,
+              430,
+              1515,
+              460
+            ],
+            "medianRGB": [
+              52,
+              50,
+              47
+            ],
+            "medianLinearY": 0.03182
+          },
+          "column_lit": {
+            "boundsPixels": [
+              255,
+              300,
+              290,
+              370
+            ],
+            "medianRGB": [
+              105,
+              93,
+              67
+            ],
+            "medianLinearY": 0.11237
+          }
+        }
+      }
+    ]
+  }
+}

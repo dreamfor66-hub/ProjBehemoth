@@ -52,7 +52,7 @@ namespace DungeonSlash
                     {
                         if (!RandomEventSystem.Pay(option, runController.State)) { ShowRandomEvent(room); return; }
                         // Resolve once, including when this choice opens a reward selector or a battle.
-                        room.IsCleared = true;
+                        room.IsCleared = !option.KeepsEncounterAvailable;
                         ApplyRoomObjectOutcome(room, option);
                         var messages = new List<string> { GameText.Get("ui.gameflowexpansion.5cf1ad0d") + option.title };
                         if (!string.IsNullOrWhiteSpace(option.resultText)) messages.Add(option.resultText);
@@ -93,6 +93,11 @@ namespace DungeonSlash
                 case EventEffectKind.Relic:
                     if (runController.TryGrantRelic(effect.relic)) messages.Add(GameText.Get("ui.gameflowexpansion.9f2ed0e0") + effect.relic.displayName + "\n" + effect.relic.description);
                     expansionView.ResolvePendingSpells(next); return;
+                case EventEffectKind.RandomSharedRelic:
+                    var foundRelic = runController.GetRelicChoices(run.Seed, StableHash(story.id, run.SeenEvents.Count * 997)).FirstOrDefault();
+                    if (foundRelic == null) { run.GainGold(20); messages.Add(GameText.Get("ui.gameflowexpansion.8dabb184")); break; }
+                    if (runController.TryGrantRelic(foundRelic)) messages.Add(GameText.Get("ui.gameflowexpansion.9f2ed0e0") + foundRelic.displayName + "\n" + foundRelic.description);
+                    expansionView.ResolvePendingSpells(next); return;
                 case EventEffectKind.SetFlag:
                     run.EventFlags.Add(effect.flag); if (!string.IsNullOrEmpty(effect.flag)) messages.Add(GameText.Get("ui.gameflowexpansion.75c6600c")); break;
                 case EventEffectKind.RemoveFlag:
@@ -132,6 +137,7 @@ namespace DungeonSlash
                     explorationView?.SetVisible(false);
                     eventCombatCompleted = next;
                     combatController.PrepareFixedEncounter(run, effect.encounter, dungeonController.Floor);
+                    RecordRoomMonsters(combatController.Enemies.Select(e => e.Data));
                     combatController.BeginCombatPresentation();
                     State = GameFlowState.Combat;
                     expansionView.ShowMessage(effect.encounter.displayName, effect.encounter.hint, () => { combatController.BeginPreparedCombat(); }); return;
@@ -144,6 +150,7 @@ namespace DungeonSlash
                 case EventEffectKind.RemovePerk:
                 case EventEffectKind.UpgradePerk:
                     var candidates = run.ActivePerks.Where(perk => effect.kind == EventEffectKind.RemovePerk || perk.CanStack).ToArray();
+                    if (candidates.Length == 0) { messages.Add(GameText.Get("ui.event.notready")); break; }
                     expansionView.ShowModal(effect.kind == EventEffectKind.RemovePerk ? GameText.Get("ui.gameflowexpansion.32ce9f51") : GameText.Get("ui.gameflowexpansion.a76f5823"), GameText.Get("ui.gameflowexpansion.c4b91a69"), candidates.Select(perk => new PresentationChoice {
                         Title = perk.Data.displayName, Description = perk.Data.description, Icon = perk.Data.icon,
                         Selected = () => { if (effect.kind == EventEffectKind.RemovePerk) runController.TryRemovePerk(perk.Data); else runController.TryGrantPerk(perk.Data); messages.Add((effect.kind == EventEffectKind.RemovePerk ? GameText.Get("ui.gameflowexpansion.61725663") : GameText.Get("ui.gameflowexpansion.62b8ab8c")) + perk.Data.displayName); next(); }

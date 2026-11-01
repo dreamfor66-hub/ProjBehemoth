@@ -12,10 +12,14 @@ namespace DungeonSlash
         public bool wallMounted;
         [Tooltip("The painting is a flat door leaf fitted inside the backdrop's existing aperture.")]
         public bool fitsDoorway;
+        [Tooltip("Complete entrance painting including replacement jambs and lintel; projected onto the wall plane, covering the ordinary masonry frame.")]
+        public bool includesDoorframe;
         [Tooltip("Mounted above the floor, e.g. a wall lever. No floor contact shadow.")]
         public bool wallSuspended;
         [Tooltip("A person or animal is placed facing the player on the first encounter. Its world position and facing are then preserved.")]
         public bool facePlayerOnFirstEncounter;
+        [Tooltip("Optional authored response to being approached from behind on a later visit. No profile means no invented hostile outcome.")]
+        public NpcApproachData rearApproach;
         [Tooltip("This subject is painted into a complete room interior; its sprite defines only the interaction area.")]
         public bool roomInterior;
         [Tooltip("Optional separately sized aftermath, e.g. luggage remaining after a person leaves.")]

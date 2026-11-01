@@ -1,0 +1,175 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS active combat catalog contains 고블린사냥꾼
+PASS authored leader is available for 고블린사냥꾼
+PASS actual combat art fixture 고블린사냥꾼
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 고블린사냥꾼
+PASS actual separate pose 고블린사냥꾼/Idle
+PASS editable PNG bound 고블린사냥꾼/Idle
+PASS authored species scale survives native pose bind 고블린사냥꾼/Idle
+SCREEN Combat-고블린사냥꾼-Idle
+PASS actual separate pose 고블린사냥꾼/Ready
+PASS editable PNG bound 고블린사냥꾼/Ready
+PASS authored species scale survives native pose bind 고블린사냥꾼/Ready
+SCREEN Combat-고블린사냥꾼-Ready
+PASS actual separate pose 고블린사냥꾼/Attack
+PASS editable PNG bound 고블린사냥꾼/Attack
+PASS authored species scale survives native pose bind 고블린사냥꾼/Attack
+SCREEN Combat-고블린사냥꾼-Attack
+PASS actual separate pose 고블린사냥꾼/Stunned
+PASS editable PNG bound 고블린사냥꾼/Stunned
+PASS authored species scale survives native pose bind 고블린사냥꾼/Stunned
+SCREEN Combat-고블린사냥꾼-Stunned
+PASS actual separate pose 고블린사냥꾼/Dead
+PASS editable PNG bound 고블린사냥꾼/Dead
+PASS authored species scale survives native pose bind 고블린사냥꾼/Dead
+SCREEN Combat-고블린사냥꾼-Dead
+PASS active combat catalog contains 납골당의종
+PASS authored leader is available for 납골당의종
+PASS actual combat art fixture 납골당의종
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 납골당의종
+PASS actual separate pose 납골당의종/Idle
+PASS editable PNG bound 납골당의종/Idle
+PASS authored species scale survives native pose bind 납골당의종/Idle
+SCREEN Combat-납골당의종-Idle
+PASS actual separate pose 납골당의종/Ready
+PASS editable PNG bound 납골당의종/Ready
+PASS authored species scale survives native pose bind 납골당의종/Ready
+SCREEN Combat-납골당의종-Ready
+PASS actual separate pose 납골당의종/Attack
+PASS editable PNG bound 납골당의종/Attack
+PASS authored species scale survives native pose bind 납골당의종/Attack
+SCREEN Combat-납골당의종-Attack
+PASS actual separate pose 납골당의종/Stunned
+PASS editable PNG bound 납골당의종/Stunned
+PASS authored species scale survives native pose bind 납골당의종/Stunned
+SCREEN Combat-납골당의종-Stunned
+PASS actual separate pose 납골당의종/Dead
+PASS editable PNG bound 납골당의종/Dead
+PASS authored species scale survives native pose bind 납골당의종/Dead
+SCREEN Combat-납골당의종-Dead
+PASS active combat catalog contains 철니미믹
+PASS authored leader is available for 철니미믹
+PASS actual combat art fixture 철니미믹
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 철니미믹
+PASS actual separate pose 철니미믹/Idle
+PASS editable PNG bound 철니미믹/Idle
+PASS authored species scale survives native pose bind 철니미믹/Idle
+SCREEN Combat-철니미믹-Idle
+PASS actual separate pose 철니미믹/Ready
+PASS editable PNG bound 철니미믹/Ready
+PASS authored species scale survives native pose bind 철니미믹/Ready
+SCREEN Combat-철니미믹-Ready
+PASS actual separate pose 철니미믹/Attack
+PASS editable PNG bound 철니미믹/Attack
+PASS authored species scale survives native pose bind 철니미믹/Attack
+SCREEN Combat-철니미믹-Attack
+PASS actual separate pose 철니미믹/Dead
+PASS editable PNG bound 철니미믹/Dead
+PASS authored species scale survives native pose bind 철니미믹/Dead
+SCREEN Combat-철니미믹-Dead
+PASS active combat catalog contains 실인형
+PASS authored leader is available for 실인형
+PASS actual combat art fixture 실인형
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 실인형
+PASS actual separate pose 실인형/Idle
+PASS editable PNG bound 실인형/Idle
+PASS authored species scale survives native pose bind 실인형/Idle
+SCREEN Combat-실인형-Idle
+PASS actual separate pose 실인형/Ready
+PASS editable PNG bound 실인형/Ready
+PASS authored species scale survives native pose bind 실인형/Ready
+SCREEN Combat-실인형-Ready
+PASS actual separate pose 실인형/Attack
+PASS editable PNG bound 실인형/Attack
+PASS authored species scale survives native pose bind 실인형/Attack
+SCREEN Combat-실인형-Attack
+PASS actual separate pose 실인형/Stunned
+PASS editable PNG bound 실인형/Stunned
+PASS authored species scale survives native pose bind 실인형/Stunned
+SCREEN Combat-실인형-Stunned
+PASS actual separate pose 실인형/Dead
+PASS editable PNG bound 실인형/Dead
+PASS authored species scale survives native pose bind 실인형/Dead
+SCREEN Combat-실인형-Dead
+PASS active combat catalog contains 종토끼
+PASS authored leader is available for 종토끼
+PASS actual combat art fixture 종토끼
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 종토끼
+PASS actual separate pose 종토끼/Idle
+PASS editable PNG bound 종토끼/Idle
+PASS authored species scale survives native pose bind 종토끼/Idle
+SCREEN Combat-종토끼-Idle
+PASS actual separate pose 종토끼/Ready
+PASS editable PNG bound 종토끼/Ready
+PASS authored species scale survives native pose bind 종토끼/Ready
+SCREEN Combat-종토끼-Ready
+PASS actual separate pose 종토끼/Attack
+PASS editable PNG bound 종토끼/Attack
+PASS authored species scale survives native pose bind 종토끼/Attack
+SCREEN Combat-종토끼-Attack
+PASS actual separate pose 종토끼/Dead
+PASS editable PNG bound 종토끼/Dead
+PASS authored species scale survives native pose bind 종토끼/Dead
+SCREEN Combat-종토끼-Dead
+PASS active combat catalog contains 공허의눈
+PASS authored leader is available for 공허의눈
+PASS actual combat art fixture 공허의눈
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 공허의눈
+PASS actual separate pose 공허의눈/Idle
+PASS editable PNG bound 공허의눈/Idle
+PASS authored species scale survives native pose bind 공허의눈/Idle
+SCREEN Combat-공허의눈-Idle
+PASS actual separate pose 공허의눈/Ready
+PASS editable PNG bound 공허의눈/Ready
+PASS authored species scale survives native pose bind 공허의눈/Ready
+SCREEN Combat-공허의눈-Ready
+PASS actual separate pose 공허의눈/Attack
+PASS editable PNG bound 공허의눈/Attack
+PASS authored species scale survives native pose bind 공허의눈/Attack
+SCREEN Combat-공허의눈-Attack
+PASS actual separate pose 공허의눈/Dead
+PASS editable PNG bound 공허의눈/Dead
+PASS authored species scale survives native pose bind 공허의눈/Dead
+SCREEN Combat-공허의눈-Dead
+PASS active combat catalog contains 숯불도롱뇽
+PASS authored leader is available for 숯불도롱뇽
+PASS actual combat art fixture 숯불도롱뇽
+PASS combat begins after actual confirmation/tutorial input
+PASS real combat animator 숯불도롱뇽
+PASS actual separate pose 숯불도롱뇽/Idle
+PASS editable PNG bound 숯불도롱뇽/Idle
+PASS authored species scale survives native pose bind 숯불도롱뇽/Idle
+SCREEN Combat-숯불도롱뇽-Idle
+PASS actual separate pose 숯불도롱뇽/Ready
+PASS editable PNG bound 숯불도롱뇽/Ready
+PASS authored species scale survives native pose bind 숯불도롱뇽/Ready
+SCREEN Combat-숯불도롱뇽-Ready
+PASS actual separate pose 숯불도롱뇽/Attack
+PASS editable PNG bound 숯불도롱뇽/Attack
+PASS authored species scale survives native pose bind 숯불도롱뇽/Attack
+SCREEN Combat-숯불도롱뇽-Attack
+PASS actual separate pose 숯불도롱뇽/Dead
+PASS editable PNG bound 숯불도롱뇽/Dead
+PASS authored species scale survives native pose bind 숯불도롱뇽/Dead
+SCREEN Combat-숯불도롱뇽-Dead
+SCREEN Player-Wizard-Navigation
+PASS actual wizard combat presentation
+PASS combat begins after actual confirmation/tutorial input
+PASS actual wizard PNG pose Idle
+SCREEN Player-Wizard-Idle
+PASS actual wizard PNG pose Ready
+SCREEN Player-Wizard-Ready
+PASS actual wizard PNG pose Attack
+SCREEN Player-Wizard-Attack
+PASS actual wizard PNG pose Guard
+SCREEN Player-Wizard-Guard
+PASS review returns to chapter start

@@ -124,6 +124,7 @@ namespace DungeonSlash
         /// <summary>Exposed for deterministic tests and optional debug UI hooks.</summary>
         public void TogglePanel()
         {
+            chapterFlow?.EndPlayRecordInspection();
             SetOpen(!IsOpen);
         }
 

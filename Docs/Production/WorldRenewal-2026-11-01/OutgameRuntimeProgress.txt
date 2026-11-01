@@ -1,0 +1,46 @@
+PASS actual saved OutGameScene menu
+PASS title is the start state
+SCREEN Outgame-Title
+PASS reachable button Options
+PASS pointer reaches Options; actual Options
+PASS actual options button opens options
+PASS options have no exposed legacy pixel background
+SCREEN Outgame-Options
+PASS reachable button Back
+PASS pointer reaches Back; actual Back
+PASS reachable button NewGame
+PASS pointer reaches NewGame; actual NewGame
+PASS actual six active character choices
+PASS reachable button Warrior
+PASS pointer reaches Warrior; actual Warrior
+PASS actual active character selection Data_Character_워리어
+PASS actual authored selection painting Data_Character_워리어
+SCREEN Outgame-Data_Character_워리어
+PASS reachable button Rogue
+PASS pointer reaches Rogue; actual Rogue
+PASS actual active character selection Data_Character_로그
+PASS actual authored selection painting Data_Character_로그
+SCREEN Outgame-Data_Character_로그
+PASS reachable button Barbarian
+PASS pointer reaches Barbarian; actual Barbarian
+PASS actual active character selection Data_Character_바바리안
+PASS actual authored selection painting Data_Character_바바리안
+SCREEN Outgame-Data_Character_바바리안
+PASS reachable button Samurai
+PASS pointer reaches Samurai; actual Samurai
+PASS actual active character selection Data_Character_사무라이
+PASS actual authored selection painting Data_Character_사무라이
+SCREEN Outgame-Data_Character_사무라이
+PASS reachable button Monk
+PASS pointer reaches Monk; actual Monk
+PASS actual active character selection Data_Character_몽크
+PASS actual authored selection painting Data_Character_몽크
+SCREEN Outgame-Data_Character_몽크
+PASS reachable button Wizard
+PASS pointer reaches Wizard; actual Wizard
+PASS actual active character selection Data_Character_위자드
+PASS actual authored selection painting Data_Character_위자드
+SCREEN Outgame-Data_Character_위자드
+PASS reachable button Back
+PASS pointer reaches Back; actual Back
+PASS selection returns to title normally

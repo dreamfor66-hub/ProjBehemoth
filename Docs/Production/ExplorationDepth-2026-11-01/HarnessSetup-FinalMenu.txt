@@ -1,0 +1,145 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS 19 active encounters; mirror and rejected trap prototype excluded
+PASS retired premises cannot be drawn
+PASS owned mature hound B1
+PASS right-side hound uses separately painted inward-facing idle
+PASS hound support is on right foreground floor
+SCREEN B1-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS hound click speaks
+PASS companion framing fixture
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS ground height persists across combat framing
+PASS hound is clear of actual combat gauges
+SCREEN B1-Hound-Combat-Idle
+SCREEN B1-Hound-Combat-Attack
+PASS authored inward-facing attack
+PASS complete projected frame B1/0
+PASS frame extends down to physical wall-floor support B1/0
+SCREEN B1-Elite-0
+PASS world-space pointer target at (761.64, 552.76)
+PASS actual entrance click travels to matching encounter
+PASS complete projected frame B1/1
+PASS frame extends down to physical wall-floor support B1/1
+SCREEN B1-Elite-1
+PASS complete projected frame B1/3
+PASS frame extends down to physical wall-floor support B1/3
+SCREEN B1-Elite-3
+PASS complete projected frame B1/0
+PASS frame extends down to physical wall-floor support B1/0
+SCREEN B1-Boss-0
+PASS complete projected frame B1/1
+PASS frame extends down to physical wall-floor support B1/1
+SCREEN B1-Boss-1
+PASS complete projected frame B1/3
+PASS frame extends down to physical wall-floor support B1/3
+SCREEN B1-Boss-3
+SCREEN B1-Investment-0
+SCREEN B1-Investment-1
+SCREEN B1-StormBottle-0
+SCREEN B1-StormBottle-1
+SCREEN B1-Tooth-0
+SCREEN B1-Tooth-1
+SCREEN B1-MagicTeacherFirst-0
+SCREEN B1-MagicTeacherFirst-1
+PASS owned mature hound B2
+PASS right-side hound uses separately painted inward-facing idle
+PASS hound support is on right foreground floor
+SCREEN B2-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS hound click speaks
+PASS companion framing fixture
+PASS combat begins after actual confirmation/tutorial input
+PASS ground height persists across combat framing
+PASS hound is clear of actual combat gauges
+SCREEN B2-Hound-Combat-Idle
+SCREEN B2-Hound-Combat-Attack
+PASS authored inward-facing attack
+PASS complete projected frame B2/0
+PASS frame extends down to physical wall-floor support B2/0
+SCREEN B2-Elite-0
+PASS complete projected frame B2/1
+PASS frame extends down to physical wall-floor support B2/1
+SCREEN B2-Elite-1
+PASS complete projected frame B2/3
+PASS frame extends down to physical wall-floor support B2/3
+SCREEN B2-Elite-3
+PASS complete projected frame B2/0
+PASS frame extends down to physical wall-floor support B2/0
+SCREEN B2-Boss-0
+PASS complete projected frame B2/1
+PASS frame extends down to physical wall-floor support B2/1
+SCREEN B2-Boss-1
+PASS complete projected frame B2/3
+PASS frame extends down to physical wall-floor support B2/3
+SCREEN B2-Boss-3
+SCREEN B2-Investment-0
+SCREEN B2-Investment-1
+SCREEN B2-StormBottle-0
+SCREEN B2-StormBottle-1
+SCREEN B2-Tooth-0
+SCREEN B2-Tooth-1
+SCREEN B2-MagicTeacherFirst-0
+SCREEN B2-MagicTeacherFirst-1
+PASS owned mature hound B3
+PASS right-side hound uses separately painted inward-facing idle
+PASS hound support is on right foreground floor
+SCREEN B3-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS hound click speaks
+PASS companion framing fixture
+PASS combat begins after actual confirmation/tutorial input
+PASS ground height persists across combat framing
+PASS hound is clear of actual combat gauges
+SCREEN B3-Hound-Combat-Idle
+SCREEN B3-Hound-Combat-Attack
+PASS authored inward-facing attack
+PASS complete projected frame B3/0
+PASS frame extends down to physical wall-floor support B3/0
+SCREEN B3-Elite-0
+PASS complete projected frame B3/1
+PASS frame extends down to physical wall-floor support B3/1
+SCREEN B3-Elite-1
+PASS complete projected frame B3/3
+PASS frame extends down to physical wall-floor support B3/3
+SCREEN B3-Elite-3
+PASS complete projected frame B3/0
+PASS frame extends down to physical wall-floor support B3/0
+SCREEN B3-Boss-0
+PASS world-space pointer target at (724.69, 543.40)
+PASS actual entrance click travels to matching encounter
+PASS boss interior appears during real entry
+SCREEN Boss-Actual-Entry
+PASS complete projected frame B3/1
+PASS frame extends down to physical wall-floor support B3/1
+SCREEN B3-Boss-1
+PASS complete projected frame B3/3
+PASS frame extends down to physical wall-floor support B3/3
+SCREEN B3-Boss-3
+SCREEN B3-Investment-0
+SCREEN B3-Investment-1
+SCREEN B3-StormBottle-0
+SCREEN B3-StormBottle-1
+SCREEN B3-Tooth-0
+SCREEN B3-Tooth-1
+SCREEN B3-MagicTeacherFirst-0
+SCREEN B3-MagicTeacherFirst-1
+PASS nearby right-floor prop reserves the opposite support for companion
+SCREEN Hound-Prop-Clearance
+PASS world-space pointer target at (665.08, 543.80)
+PASS foreground NPC wins pointer ordering in front of larger doorway
+SCREEN NPC-Entrance-Interaction
+PASS reachable button ReturnToSelection
+PASS pointer reaches ReturnToSelection; actual ReturnToSelection
+FAIL System.InvalidOperationException: Sequence contains no matching element
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x00011] in <9f5692804bed4122b102b53a993bfd3f>:0 
+  at DungeonSlash.ExplorationDepthLiveProbe+<FinalReview>d__3.MoveNext () [0x0133a] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthFinalProbe.cs:87 
+  at DungeonSlash.ExplorationDepthLiveProbe+<Guarded>d__26.MoveNext () [0x0005c] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthLiveProbe.cs:40 
+SCREEN Failure
+86 checks; 1 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

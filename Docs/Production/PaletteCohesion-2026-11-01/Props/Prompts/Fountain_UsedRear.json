@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case: precise-object-edit. Make a USED/DRY state of this exact Rear fountain.\nRemove ONLY the falling water arc and water filling the bowl. The pool becomes the empty shallow dark-grey stone basin bottom, with a small dim damp patch around the unchanged central spout, no reflective ripples. Every STONE part of this image is immutable: same chipped rim, spout, broad black bowl underside, column, base corners, material values, brush/ink shapes, same camera and every canvas coordinate. Do not brighten, relight, change silhouette, shrink, stretch or move anything to fill the emptied upper area. Keep full1324x1188 canvas and existing transparent padding. Alpha0 outside object, no ambient haze/halo/glow or background. One independent transparent PNG matching normal state exactly except absent water.",
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-ae540b18-53d8-4964-a93a-8397dfa61625.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-267bb596-bac7-4d63-9331-de39615aaef8.png",
+  "selected": true
+}

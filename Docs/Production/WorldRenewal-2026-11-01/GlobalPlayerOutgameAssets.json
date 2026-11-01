@@ -1,0 +1,223 @@
+{
+  "outgameScene": "Assets/Scenes/OutGameScene.unity",
+  "mainScene": "Assets/Scenes/MainGameScene.unity",
+  "sameGameContent": "Assets/Data/Data_GameContent_게임_콘텐츠_목록.asset",
+  "illustratedSelection": 1,
+  "characters": [
+    {
+      "index": 0,
+      "name": "워리어",
+      "characterData": "Assets/Data/Characters/Data_Character_워리어.asset",
+      "animationData": "Assets/Data/Presentation/Angular/Animations/Hero-Warrior.asset",
+      "images": {
+        "Selection": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Warrior.png",
+        "Card": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Warrior.png",
+        "Portrait / Front": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png",
+        "CombatSprite / Rear": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Idle.png",
+        "idle": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Idle.png",
+        "ready": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Ready.png",
+        "attack": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Attack.png",
+        "guard": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Guard.png",
+        "readyLeftToRight": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_ReadyLeftToRight.png",
+        "attackLeftToRight": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_AttackLeftToRight.png"
+      }
+    },
+    {
+      "index": 1,
+      "name": "로그",
+      "characterData": "Assets/Data/Characters/Data_Character_로그.asset",
+      "animationData": "Assets/Data/Presentation/Angular/Animations/Hero-Rogue.asset",
+      "images": {
+        "Selection": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Rogue.png",
+        "Card": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Rogue.png",
+        "Portrait / Front": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Rogue_Portrait.png",
+        "CombatSprite / Rear": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Idle.png",
+        "idle": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Idle.png",
+        "ready": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Ready.png",
+        "attack": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Attack.png",
+        "guard": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Guard.png"
+      }
+    },
+    {
+      "index": 2,
+      "name": "바바리안",
+      "characterData": "Assets/Data/Characters/Data_Character_바바리안.asset",
+      "animationData": "Assets/Data/Presentation/Angular/Animations/Hero-Barbarian.asset",
+      "images": {
+        "Selection": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Barbarian.png",
+        "Card": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Barbarian.png",
+        "Portrait / Front": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Barbarian_Portrait.png",
+        "CombatSprite / Rear": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Idle.png",
+        "idle": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Idle.png",
+        "ready": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Ready.png",
+        "attack": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Attack.png",
+        "guard": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Guard.png"
+      }
+    },
+    {
+      "index": 3,
+      "name": "사무라이",
+      "characterData": "Assets/Data/Characters/Data_Character_사무라이.asset",
+      "animationData": "Assets/Data/Presentation/Angular/Animations/Hero-Samurai.asset",
+      "images": {
+        "Selection": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Samurai.png",
+        "Card": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Samurai.png",
+        "Portrait / Front": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Samurai_Portrait.png",
+        "CombatSprite / Rear": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Idle.png",
+        "idle": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Idle.png",
+        "ready": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Ready.png",
+        "attack": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Attack.png",
+        "guard": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Guard.png"
+      }
+    },
+    {
+      "index": 4,
+      "name": "몽크",
+      "characterData": "Assets/Data/Characters/Data_Character_몽크.asset",
+      "animationData": "Assets/Data/Presentation/Angular/Animations/Hero-Monk.asset",
+      "images": {
+        "Selection": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Monk.png",
+        "Card": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Monk.png",
+        "Portrait / Front": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Monk_Portrait.png",
+        "CombatSprite / Rear": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Idle.png",
+        "idle": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Idle.png",
+        "ready": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Ready.png",
+        "attack": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Attack.png",
+        "guard": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Guard.png"
+      }
+    },
+    {
+      "index": 5,
+      "name": "위자드",
+      "characterData": "Assets/Data/Characters/Data_Character_위자드.asset",
+      "animationData": "Assets/Data/Presentation/Angular/Animations/Hero-Wizard.asset",
+      "images": {
+        "Selection": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png",
+        "Card": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png",
+        "Portrait / Front": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png",
+        "CombatSprite / Rear": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+        "idle": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+        "ready": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png",
+        "attack": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png",
+        "guard": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png"
+      }
+    }
+  ],
+  "titleImages": [
+    {
+      "hierarchy": "Canvas/Background",
+      "image": "Assets/Art/UI/Outgame/T_UI_Title_Backdrop.png",
+      "savedActiveSelf": true,
+      "savedActiveInHierarchy": true,
+      "material": "Assets/Art/Environments/LowColorBackground.mat",
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "hierarchy": "Canvas/TitlePage/Illustrated Title Backdrop",
+      "image": "Assets/Art/UI/Outgame/T_UI_Title_Backdrop.png",
+      "savedActiveSelf": true,
+      "savedActiveInHierarchy": true,
+      "material": null,
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "hierarchy": "Canvas/TitlePage/Logo",
+      "image": "Assets/Art/UI/Title/T_UI_Title_GrimheartLogo.png",
+      "savedActiveSelf": false,
+      "savedActiveInHierarchy": false,
+      "material": null,
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "hierarchy": "Canvas/TitlePage/MortalisLogo",
+      "image": "Assets/Art/UI/Title/T_UI_Title_DungeonMortalisLogo.png",
+      "savedActiveSelf": false,
+      "savedActiveInHierarchy": false,
+      "material": "Assets/Art/UI/Title/DungeonMortalisLogo.mat",
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "hierarchy": "Canvas/TitlePage/Illustrated Title Logo",
+      "image": "Assets/Art/UI/Outgame/T_UI_Title_Logo.png",
+      "savedActiveSelf": true,
+      "savedActiveInHierarchy": true,
+      "material": null,
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    }
+  ],
+  "sourceHashes": {
+    "Assets/Art/UI/Outgame/T_UI_CharacterButton_Barbarian.png": "7c7ab125b347a34546806d6a311a65d09edda2609f60826720f7f10bf5624204",
+    "Assets/Art/UI/Outgame/T_UI_CharacterButton_Monk.png": "40e81275f7a533a6f17976dac4215534cf018e8e8b5fd8830501de1455306bd9",
+    "Assets/Art/UI/Outgame/T_UI_CharacterButton_Rogue.png": "342c3fbcd392fb28e5ada9d537c890da9e78fd6aace886399f03905bcfab8abf",
+    "Assets/Art/UI/Outgame/T_UI_CharacterButton_Samurai.png": "f90ed327ea04b14c05b6b5712ef9182189e9412a9b0d15058fd3b1e3b6d348e0",
+    "Assets/Art/UI/Outgame/T_UI_CharacterButton_Warrior.png": "a2fd45b573e8e4c0440240b27d306305999dd82b2fbed4ce9374dcc7586df951",
+    "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png": "35ef4d2bd1eb54b84f60ba34a226cab135d1ccf950fa9d6055af8c45d44fe0af",
+    "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Barbarian.png": "aee0eeecc9a488b4db1ca75194c49c269957f40449bd1799a567abd51a26e9a1",
+    "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Monk.png": "e22ebc9106834151995abdc482cb61972122c485ce4e67c13a5e25c6547af417",
+    "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Rogue.png": "00f31755f859563debd3211279e4b83b4995f532660bb835a76ab4a0aa9ffebb",
+    "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Samurai.png": "29bac71b5714b8d3f2f1564fb49f63182bb15aa3359657bef7c8e552e3761a07",
+    "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Warrior.png": "92d5525d7ab1f5b7245712c79a6f0d80b07944701533b4443fc6bd38f4fbdab0",
+    "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png": "b54a3dfe5ddf0d8596da15af6eb45991d4381d83fb9a5d4aeee81a30b15146f5",
+    "Assets/Art/UI/Outgame/T_UI_Title_Backdrop.png": "42f6b89bf0ed26de8572bb27e0a7e5a4276d72b47bd99af8fca15e95e19241f3",
+    "Assets/Art/UI/Outgame/T_UI_Title_Logo.png": "b26f0cab4fd6f5bc43046aa1c6523c6a6afeb27947e0ab5347eaacacfb28f363",
+    "Assets/Art/UI/Title/T_UI_Title_DungeonMortalisLogo.png": "4d21faf72028795179dbaa8fc419fa2f2aac8a33da1b4fa6bf66ec612d0a69fa",
+    "Assets/Art/UI/Title/T_UI_Title_GrimheartLogo.png": "605022884f086d9c8c3b97f350131357106155e41dd32199265b37ecfc879690",
+    "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Barbarian_Portrait.png": "3f7b0c37ca6963895c99815bd8046d2dd87f9a04c2f716531899bf08554adba3",
+    "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Monk_Portrait.png": "0896f677b9ef8d96b800bfd745a681a5edc8c45f616a64f091d562b2cd472581",
+    "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Rogue_Portrait.png": "22b12b76cd935fb5d547d1ba581747ac2e07c4a70a1ec2506b083ef12004ea9d",
+    "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Samurai_Portrait.png": "79f2c3176b58750d4da24ed658900e00a168cf62862e13fd439c73fe4583a274",
+    "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Warrior_Portrait.png": "ecabf618d6e0ea8ec95cfe732442d08f413b1fd63d9cb405758737a8a2d537d1",
+    "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png": "729336e6421853d3618b7dd614e5254c4f51af4a29d50a6c17a82db430c0a388",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Attack.png": "2602e02d8e38a4f8584929fec0cb7d03bc1c8e2c0efe0e42d21d6d7d55cceb3f",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Guard.png": "e74eda97450091c5e8ff25c51a054f3ca0ae11f256be0e955d887d75e65d5e16",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Idle.png": "4044b656c35030baaf7d35cea95cf1bb0a29ea61d5a58df4cecad1383bbb76f3",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Barbarian_Ready.png": "4c397ee70f6369685aa4739ba92aeca3745ed2e0d04cd942939a6d255573e19a",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Attack.png": "4de2d08a70312252ac13c275b422c66d6276b33d325e3286c310bf8a1643dcdd",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Guard.png": "41c41f55bd7afa23ff9b5aced89814009ae56341f5c4291add2b95ff93ba723b",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Idle.png": "5e9e38dd05ce742bdc00194ccadacbe91888fd7ec6d260965dd7abbf005831ac",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Monk_Ready.png": "9884e565430cc23728af37ded34e1406a47f260b1fa96eb6408af80d5066f783",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Attack.png": "cb903f331ad8cde55075a23f1e91a03d22b8726e24e2b2b99d9f7c17c0c89cba",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Guard.png": "f32f64ad6bf50911e87719664685c3d9f9a398768fa02c446f1ba22f11494b52",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Idle.png": "561e968eae0b21819947aad00103c1da9970a8a43d963a27e9e1dac0b2692c7a",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Rogue_Ready.png": "9217d6d5a90f301fb5d612f36a7ac9d2819bf8ee21d6c536c1cb6733a44810b2",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Attack.png": "d0145726b41c90c1480978c63aea79ee762bd366a5f993990b8887a65b449d38",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Guard.png": "b53e029627eba6766dab1347030e99847428db1c16d8fd4c30057726b6fc3478",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Idle.png": "8e68746fe5210db844ba3e57c8b7fed0e104eb2679e381d7300b6b8b7cda47d5",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Samurai_Ready.png": "306c8d29b529d95e7eebf0fe82b11b0f5f6ed77bc728976ade1719587d4c040b",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Attack.png": "6a8865e11c287e98de79d75166ad6bbcba3af0ecc0522e4382b71e9a4ad0e0b3",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_AttackLeftToRight.png": "432ac67e05c0ff38aea3a4a170f838aa64a11397b8e484874e885c79e62bbe40",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Guard.png": "8d32e484d40d70cb8305b18849c1ca38aeb92ea2358a337b9a5ad3c6b72f7502",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Idle.png": "e5030dc88b3f319ddb2cdf1053186396210258401ecd77be409c981f51fdf7bf",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_Ready.png": "62a91f1b57b5c5a4e0371f4b8169b48eb770ae1744877a467b75678697f99449",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Warrior_ReadyLeftToRight.png": "15831d3a6ccb081be0a87ccae6bae307efff231b76b76f13f930eb1eb7542f51",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png": "dedf96019ab42305898c6484662eccbe44e8ad462c995bc507b3d57cd5d02c65",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png": "bb852e7d99937c2f52b4d52e10d25fa36b48aaf2ec0464542996ca9b0036b259",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png": "d0ec0ab9fa144710e1f0e06bedc84081577f826594a389acbe9cfe8be20ac27d",
+    "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png": "de48999865d411180b11d8ee5d546e265786d73c535990000657720d33d73f2d"
+  }
+}

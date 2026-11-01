@@ -1,0 +1,234 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS chapter travel B1
+PASS actual owned companion instantiated
+PASS B1 dog ground is near foreground floor, not airborne: (451.20, 67.62)
+SCREEN B1-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS companion click narration
+PASS begin companion combat presentation fixture
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS B1 ground remains stable across player framing
+PASS companion painting yields combat input
+SCREEN B1-Hound-Attack
+PASS place complete entrance B1 view 0
+PASS complete frame uses actual wall projection
+SCREEN B1-Elite-0
+PASS place complete entrance B1 view 1
+PASS complete frame uses actual wall projection
+SCREEN B1-Elite-1
+PASS place complete entrance B1 view 3
+PASS complete frame uses actual wall projection
+SCREEN B1-Elite-3
+PASS place complete entrance B1 view 0
+PASS complete frame uses actual wall projection
+SCREEN B1-Boss-0
+PASS place complete entrance B1 view 1
+PASS complete frame uses actual wall projection
+SCREEN B1-Boss-1
+PASS place complete entrance B1 view 3
+PASS complete frame uses actual wall projection
+SCREEN B1-Boss-3
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-0-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-1-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-2-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-0-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-1-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-2-Used
+PASS chapter travel B2
+PASS actual owned companion instantiated
+PASS B2 dog ground is near foreground floor, not airborne: (451.20, 67.62)
+SCREEN B2-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS companion click narration
+PASS begin companion combat presentation fixture
+PASS combat begins after actual confirmation/tutorial input
+PASS B2 ground remains stable across player framing
+PASS companion painting yields combat input
+SCREEN B2-Hound-Attack
+PASS place complete entrance B2 view 0
+PASS complete frame uses actual wall projection
+SCREEN B2-Elite-0
+PASS place complete entrance B2 view 1
+PASS complete frame uses actual wall projection
+SCREEN B2-Elite-1
+PASS place complete entrance B2 view 3
+PASS complete frame uses actual wall projection
+SCREEN B2-Elite-3
+PASS place complete entrance B2 view 0
+PASS complete frame uses actual wall projection
+SCREEN B2-Boss-0
+PASS place complete entrance B2 view 1
+PASS complete frame uses actual wall projection
+SCREEN B2-Boss-1
+PASS place complete entrance B2 view 3
+PASS complete frame uses actual wall projection
+SCREEN B2-Boss-3
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-0-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-1-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-2-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-0-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-1-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-2-Used
+PASS chapter travel B3
+PASS actual owned companion instantiated
+PASS B3 dog ground is near foreground floor, not airborne: (451.20, 67.62)
+SCREEN B3-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS companion click narration
+PASS begin companion combat presentation fixture
+PASS combat begins after actual confirmation/tutorial input
+PASS B3 ground remains stable across player framing
+PASS companion painting yields combat input
+SCREEN B3-Hound-Attack
+PASS place complete entrance B3 view 0
+PASS complete frame uses actual wall projection
+SCREEN B3-Elite-0
+PASS place complete entrance B3 view 1
+PASS complete frame uses actual wall projection
+SCREEN B3-Elite-1
+PASS place complete entrance B3 view 3
+PASS complete frame uses actual wall projection
+SCREEN B3-Elite-3
+PASS place complete entrance B3 view 0
+PASS complete frame uses actual wall projection
+SCREEN B3-Boss-0
+PASS place complete entrance B3 view 1
+PASS complete frame uses actual wall projection
+SCREEN B3-Boss-1
+PASS place complete entrance B3 view 3
+PASS complete frame uses actual wall projection
+SCREEN B3-Boss-3
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-0-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-1-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-2-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-0-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-1-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-2-Used
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button No
+PASS pointer reaches No; actual No
+PASS declining fountain leaves water and choice available
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Yes
+PASS pointer reaches Yes; actual Yes
+PASS reachable button Yes
+PASS pointer reaches Yes; actual Yes
+PASS drinking changes actual used state
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS used fountain narration does not reopen popup
+PASS reachable button Copy run code
+PASS pointer reaches Copy run code; actual Copy run code
+PASS copy actual complete play code
+PASS reachable button Paste clipboard
+PASS pointer reaches Paste clipboard; actual Paste clipboard
+PASS reachable button Load pasted record
+PASS pointer reaches Load pasted record; actual Load pasted record
+PASS pasted record loads
+PASS used room state survives code round trip
+SCREEN Play-Code-Imported
+PASS reachable button Load pasted record
+PASS pointer reaches Load pasted record; actual Load pasted record
+PASS malformed checksum rejected without replacing record
+PASS reachable button View room
+PASS pointer reaches View room; actual View room
+PASS room preview enters read-only state
+SCREEN Play-Code-Room-Preview
+PASS reachable button Turn view
+PASS pointer reaches Turn view; actual Turn view
+PASS reachable button Next room
+PASS pointer reaches Next room; actual Next room
+PASS record browsing grants/consumes nothing
+PASS reachable button Return to live run
+PASS pointer reaches Return to live run; actual Return to live run
+PASS live graph and position restored intact
+PASS reachable button Yes
+PASS pointer reaches Yes; actual Yes
+PASS reachable button Yes
+PASS pointer reaches Yes; actual Yes
+PASS one play record retains B1/B2/B3 actual maps
+PASS three-act code round trip
+PASS natural generated floor with independent secret and lock
+PASS empty secret origin initially has three intact visible walls
+PASS secret is actual wall with no accessible map exit
+SCREEN Secret-Before-Discovery
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS secret click 1
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS secret click 2
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS secret click 3
+PASS exact discovery narration
+PASS secret becomes accessible after third click
+SCREEN Secret-Discovered
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS key pickup does not unlock unseen door
+PASS lock is visibly discovered but inaccessible
+SCREEN Lock-Before-Unlock
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS click visible lock consumes its key and opens connection
+SCREEN Event-MagicTeacherFirst-World
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS visible subject opens matching event MagicTeacherFirst
+SCREEN Event-MagicTeacherFirst-Opening
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS departing surveyor is no longer painted in room
+SCREEN Event-SalvageTrap-World
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS visible subject opens matching event SalvageTrap
+SCREEN Event-SalvageTrap-Opening
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS trap aftermath actually shows inactive emptied mechanism
+SCREEN Event-Trap-Used
+SCREEN Event-StrayDog-World
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS visible subject opens matching event StrayDog
+SCREEN Event-StrayDog-Opening
+PASS reachable button Illustrated Event Choice 1
+PASS pointer reaches Illustrated Event Choice 1; actual Illustrated Event Choice 1
+PASS reachable button Illustrated Event Choice 0
+PASS pointer reaches Illustrated Event Choice 0; actual Illustrated Event Choice 0
+PASS unrescued hound remains in encounter
+179 checks; 0 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

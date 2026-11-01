@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: background-extraction. Image1 is the exact EDIT TARGET. Keep the same wizard, every painted hair/face/eye/mouth/clothing/hand/book/staff/shoulder owl pixel arrangement and same square crop. Remove ONLY the dark brown/black background outside wizard, owl, book and staff into clean true transparency. Preserve the dark navy and black ink INSIDE the cloak/neck/hair/feathers, do not punch holes in these opaque shapes. Keep exact current sober closed mouth and partly-lidded human/owl gaze; no redesign, no added elements. Transparent background cutout, no gray/white fill, no halo or shadow around silhouette. Same square framing.",
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-37915595-dc02-4c6f-bf4d-40e6ef579690.png"
+  ],
+  "transparent_background": true
+}

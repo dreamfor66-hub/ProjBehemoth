@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uD68C\uC218\uAFBC\uB3C4\uC801"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.RecoveryCutpurse
+  labelKey: ui.encounter.subject.RecoveryCutpurse
   usedLabelKey: 
   resolvedTextKey: 
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: eaa90a19765d0d841a7109170854b714, type: 3}

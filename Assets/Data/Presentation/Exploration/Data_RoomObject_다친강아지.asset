@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uB2E4\uCE5C\uAC15\uC544\uC9C0"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.StrayDog
+  labelKey: ui.encounter.subject.StrayDog
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.StrayDog
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 79f48b6679a5ee84698394050f282e51, type: 3}
@@ -27,45 +29,45 @@ MonoBehaviour:
   usedFront: {fileID: 0}
   usedSide: {fileID: 0}
   usedRear: {fileID: 0}
-  displayHeight: 180
+  displayHeight: 185
   hitPadding: 20
   geometry:
   - sprite: {fileID: 21300000, guid: 79f48b6679a5ee84698394050f282e51, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.04274809
-      y: 0.12471655
-      width: 0.86412215
-      height: 0.75396824
+      x: 0.061848957
+      y: 0.060546875
+      width: 0.8483073
+      height: 0.8457031
     footprint:
       serializedVersion: 2
-      x: 0.06412214
-      y: 0.13378684
-      width: 0.83053434
-      height: 0.16562359
+      x: 0.080729164
+      y: 0.07421875
+      width: 0.8203125
+      height: 0.18583983
   - sprite: {fileID: 21300000, guid: 558accdc9e7cc044892b569b01228a7f, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.09857143
-      y: 0.12642369
-      width: 0.83428574
-      height: 0.75284743
+      x: 0.020182291
+      y: 0.13085938
+      width: 0.96875
+      height: 0.75390625
     footprint:
       serializedVersion: 2
-      x: 0.122857146
-      y: 0.13553531
-      width: 0.7985714
-      height: 0.16537584
+      x: 0.031901043
+      y: 0.14453125
+      width: 0.9459635
+      height: 0.16564453
   - sprite: {fileID: 21300000, guid: f1ed62b9999b8ea4782035699124e569, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.18885449
-      y: 0.103526734
-      width: 0.7910217
-      height: 0.7633675
+      x: 0.035807293
+      y: 0.022460938
+      width: 0.9296875
+      height: 0.953125
     footprint:
       serializedVersion: 2
-      x: 0.20743035
-      y: 0.11149033
-      width: 0.7600619
-      height: 0.16769055
+      x: 0.057291668
+      y: 0.0546875
+      width: 0.7721354
+      height: 0.20947266

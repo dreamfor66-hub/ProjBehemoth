@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uBB36\uC778\uD6C8\uB828\uC778\uD615"
+  m_EditorClassIdentifier: 
+  labelKey: ui.lore.object.Training
+  usedLabelKey: 
+  resolvedTextKey: ui.eventgrounding.used.Training
+  wallMounted: 0
+  fitsDoorway: 0
+  includesDoorframe: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
+  roomInterior: 0
+  usedForm: {fileID: 11400000, guid: f44a8f2a47b17cd4f82efaba354de447, type: 2}
+  front: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}
+  side: {fileID: 21300000, guid: 56894aa6189a3684ea80b40a384de71a, type: 3}
+  rear: {fileID: 21300000, guid: c3d8b6b4206ccb440b9d443a0fccb2ef, type: 3}
+  usedFront: {fileID: 21300000, guid: 0ab99d83e9ec08445a20de90f4aab2a8, type: 3}
+  usedSide: {fileID: 21300000, guid: 20d113687ba2ede44bc1101a5e34ddb4, type: 3}
+  usedRear: {fileID: 21300000, guid: 7670e309040fd4e46ae88b950ac82748, type: 3}
+  displayHeight: 350
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.17384106
+      y: 0.11672474
+      width: 0.615894
+      height: 0.85365856
+    footprint:
+      serializedVersion: 2
+      x: 0.2963576
+      y: 0.12543555
+      width: 0.37417218
+      height: 0.1874216
+  - sprite: {fileID: 21300000, guid: 56894aa6189a3684ea80b40a384de71a, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.23895583
+      y: 0.16611843
+      width: 0.45983937
+      height: 0.80756575
+    footprint:
+      serializedVersion: 2
+      x: 0.31325302
+      y: 0.17434211
+      width: 0.36144575
+      height: 0.17730261
+  - sprite: {fileID: 21300000, guid: c3d8b6b4206ccb440b9d443a0fccb2ef, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.23916811
+      y: 0.12195122
+      width: 0.6152513
+      height: 0.84843206
+    footprint:
+      serializedVersion: 2
+      x: 0.34662044
+      y: 0.12891985
+      width: 0.3934142
+      height: 0.18627177
+  - sprite: {fileID: 21300000, guid: 0ab99d83e9ec08445a20de90f4aab2a8, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.025773196
+      y: 0.05263158
+      width: 0.8676976
+      height: 0.90448344
+    footprint:
+      serializedVersion: 2
+      x: 0.03780069
+      y: 0.07602339
+      width: 0.84707904
+      height: 0.1985575
+  - sprite: {fileID: 21300000, guid: 20d113687ba2ede44bc1101a5e34ddb4, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.06776181
+      y: 0.04263566
+      width: 0.8870636
+      height: 0.9205426
+    footprint:
+      serializedVersion: 2
+      x: 0.08829569
+      y: 0.05232558
+      width: 0.8542094
+      height: 0.20209303
+  - sprite: {fileID: 21300000, guid: 7670e309040fd4e46ae88b950ac82748, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.13123845
+      y: 0.041015625
+      width: 0.82994455
+      height: 0.9199219
+    footprint:
+      serializedVersion: 2
+      x: 0.17560074
+      y: 0.052734375
+      width: 0.76340115
+      height: 0.20195311

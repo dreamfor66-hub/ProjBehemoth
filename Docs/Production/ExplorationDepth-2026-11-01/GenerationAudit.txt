@@ -1,0 +1,6 @@
+B1: 24 seeded natural maps; mean base normal combats 10.83; added empty pockets 1.00.
+B2: 24 seeded natural maps; mean base normal combats 9.67; added empty pockets 1.00.
+B3: 24 seeded natural maps; mean base normal combats 9.67; added empty pockets 1.00.
+Presence neither,secret,locked,both: 15,21,16,20
+Branch lengths ordinary 0,1,2: 24,25,28
+937 checks; 0 failures; 2.66s. Changed generation only; no DPS/balance suite. Player-run feel remains for user feedback.

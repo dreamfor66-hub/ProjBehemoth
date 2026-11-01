@@ -1,0 +1,52 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS dog on actual B1
+PASS owned dog present
+PASS forward companion painting bound B1
+DOG B1 support=(1321.37, -80.76) actualPainting=(x:981.54, y:-137.00, width:680.11, height:453.40) source=T_Sprite_Character_길동무_Idle
+PASS companion support remains in near player floor B1
+SCREEN B1-Dog-Navigation
+PASS visible companion button available
+PASS visible companion upper-back pointer reaches actual button; first hit=Body
+PASS companion actual click narration B1
+PASS dog actual combat context B1
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS player painting yields input to actual interaction surfaces B1
+SCREEN B1-Dog-CombatIdle
+PASS dog uses a distinct authored attack painting B1
+SCREEN B1-Dog-Attack
+PASS dog on actual B2
+PASS owned dog present
+PASS forward companion painting bound B2
+DOG B2 support=(1321.37, -80.76) actualPainting=(x:981.54, y:-137.00, width:680.11, height:453.40) source=T_Sprite_Character_길동무_Idle
+PASS companion support remains in near player floor B2
+SCREEN B2-Dog-Navigation
+PASS visible companion button available
+PASS visible companion upper-back pointer reaches actual button; first hit=Body
+PASS companion actual click narration B2
+PASS dog actual combat context B2
+PASS combat begins after actual confirmation/tutorial input
+PASS player painting yields input to actual interaction surfaces B2
+SCREEN B2-Dog-CombatIdle
+PASS dog uses a distinct authored attack painting B2
+SCREEN B2-Dog-Attack
+PASS dog on actual B3
+PASS owned dog present
+PASS forward companion painting bound B3
+DOG B3 support=(1321.37, -80.76) actualPainting=(x:981.54, y:-137.00, width:680.11, height:453.40) source=T_Sprite_Character_길동무_Idle
+PASS companion support remains in near player floor B3
+SCREEN B3-Dog-Navigation
+PASS visible companion button available
+PASS visible companion upper-back pointer reaches actual button; first hit=Body
+PASS companion actual click narration B3
+PASS dog actual combat context B3
+PASS combat begins after actual confirmation/tutorial input
+PASS player painting yields input to actual interaction surfaces B3
+SCREEN B3-Dog-CombatIdle
+PASS dog uses a distinct authored attack painting B3
+SCREEN B3-Dog-Attack
+PASS return to chapter start
+Scoped visual composition/click checks only; source palette statistics are diagnostic. No DPS, broad balance suite or claim of user five-run feel validation.
+38 checks; 0 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

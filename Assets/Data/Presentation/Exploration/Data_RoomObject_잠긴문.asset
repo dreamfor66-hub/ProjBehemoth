@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: ui.explore.door.locked
   wallMounted: 1
   fitsDoorway: 1
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: a09946cfd76649446ab3b62b33993eab, type: 3}

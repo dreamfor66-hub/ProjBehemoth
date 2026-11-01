@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1557a8205cc53304d89feb0d45d7e4e6, type: 3}
   m_Name: "Data_Exploration_\uD0D0\uD5D8"
   m_EditorClassIdentifier: 
-  annexChance: 0.78
-  secondAnnexChance: 0.23
+  presentationRevision: 615F7542ABE37B8CEDBB4CDBDCF8399BD5208C05F55E3618DB387EFA9AE03535
   concealedEntranceChance: 0.62
   lockedEntranceChance: 0.48
   annexEventChance: 0.3
   annexCombatChance: 0.025
   maximumKeyDistance: 4
-  secretWallSearches: 5
+  secretWallSearches: 3
   roomObjects:
   - encounter: 5
     artwork: {fileID: 11400000, guid: 70bd897543c8ce640bcb879214ffc2a9, type: 2}

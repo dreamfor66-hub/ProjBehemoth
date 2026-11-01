@@ -1,0 +1,372 @@
+{
+  "files": [
+    {
+      "key": "Goddess_Front",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Goddess_Front.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-0d003ee9-f11f-443d-b87c-c0a735c7a707.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_Goddess_Front.png",
+      "beforeGeometry": {
+        "canvas": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          139,
+          32,
+          882,
+          1493
+        ],
+        "support": [
+          249,
+          58,
+          776
+        ],
+        "alphaMin": 0,
+        "alphaMax": 254
+      },
+      "afterGeometry": {
+        "canvas": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          237,
+          46,
+          787,
+          1494
+        ],
+        "support": [
+          249,
+          57,
+          776
+        ],
+        "alphaMin": 0,
+        "alphaMax": 254
+      },
+      "guid": "886cae99549c262419a4ede7b6d32921",
+      "sourceSha256": "e094fc467ee20c7e4fda0a0e432755967eecc236eb58667fcdc0369b3ae2d6e4"
+    },
+    {
+      "key": "Goddess_Side",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Goddess_Side.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-929d370b-92e6-4d3f-aacb-58bac703a69c.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_Goddess_Side.png",
+      "beforeGeometry": {
+        "canvas": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          190,
+          24,
+          861,
+          1519
+        ],
+        "support": [
+          190,
+          24,
+          861
+        ],
+        "alphaMin": 0,
+        "alphaMax": 254
+      },
+      "afterGeometry": {
+        "canvas": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          232,
+          30,
+          824,
+          1521
+        ],
+        "support": [
+          247,
+          41,
+          811
+        ],
+        "alphaMin": 0,
+        "alphaMax": 254
+      },
+      "guid": "8761a476d8482ff46a18ce16fd6a1088",
+      "sourceSha256": "c66a4bb51411db43b27bba0eb64bdab352050d713a15953828b0831fc1cfbb1e"
+    },
+    {
+      "key": "Fountain_Front2",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-8f9c7adb-8835-4638-b007-913ff2b1027b.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_Front.png",
+      "beforeGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          95,
+          48,
+          1227,
+          1033
+        ],
+        "support": [
+          361,
+          133,
+          930
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "afterGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          66,
+          41,
+          1253,
+          1055
+        ],
+        "support": [
+          339,
+          51,
+          999
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "guid": "a0b7e74c09dcc0a48afa5cc45b9321f0",
+      "sourceSha256": "5d9650de22175a0da0c7254f24bc9efcd3f1684309c3ba33d96d8a5fd916e4c4"
+    },
+    {
+      "key": "Fountain_Side",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-0e5cbd08-1bbc-4985-a263-63a7f95bec24.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_Side.png",
+      "beforeGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          37,
+          53,
+          1287,
+          1110
+        ],
+        "support": [
+          305,
+          123,
+          964
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "afterGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          35,
+          53,
+          1292,
+          1112
+        ],
+        "support": [
+          303,
+          61,
+          974
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "guid": "b73bcf621e367aa4991ff7dcce85404f",
+      "sourceSha256": "f79153fffd3931524dfd4b7a7b11465e18d7bb2fa19abac5681c246f7a8f2402"
+    },
+    {
+      "key": "Fountain_Rear",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-ae540b18-53d8-4964-a93a-8397dfa61625.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_분수_rear.png",
+      "beforeGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          96,
+          57,
+          1229,
+          1065
+        ],
+        "support": [
+          362,
+          67,
+          958
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "afterGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          91,
+          54,
+          1232,
+          1066
+        ],
+        "support": [
+          358,
+          64,
+          960
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "guid": "36c5f3564665bee41b99a46397bf21ea",
+      "sourceSha256": "ce34eee98223ba72f511f20ee068b60630a57a0cac64a538ee04495a761b6f5a"
+    },
+    {
+      "key": "Fountain_UsedFront",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedFront.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-c50cbf02-769e-46c5-bfb3-9272e1a2932d.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_UsedFront.png",
+      "beforeGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          95,
+          66,
+          1229,
+          1003
+        ],
+        "support": [
+          362,
+          133,
+          962
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "afterGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          65,
+          41,
+          1254,
+          1025
+        ],
+        "support": [
+          339,
+          50,
+          999
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "guid": "d48c5514f11941e45b3c482814534624",
+      "sourceSha256": "8d260eea56970add1f9d394fd0118fce0c0981ad3c559b518a0af5cd013994ec"
+    },
+    {
+      "key": "Fountain_UsedSide",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedSide.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-49cc4aa9-262f-4ea7-a11a-ef5fd7120d5c.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_Fountain_UsedSide.png",
+      "beforeGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          37,
+          54,
+          1288,
+          1066
+        ],
+        "support": [
+          304,
+          64,
+          966
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "afterGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          35,
+          51,
+          1292,
+          1068
+        ],
+        "support": [
+          303,
+          60,
+          974
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "guid": "bd1417411b1980b4dbd36e7da6d2967d",
+      "sourceSha256": "e83fe6c951beef0ec328836d013a24b6de23e548078fa7ee3e634ac41a98233f"
+    },
+    {
+      "key": "Fountain_UsedRear",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_usedRear.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-267bb596-bac7-4d63-9331-de39615aaef8.png",
+      "before": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\PaletteCohesion-2026-11-01\\Props\\Before\\Assets\\Art\\World\\Exploration\\T_UI_World_분수_usedRear.png",
+      "beforeGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          95,
+          56,
+          1229,
+          1024
+        ],
+        "support": [
+          362,
+          66,
+          959
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "afterGeometry": {
+        "canvas": [
+          1324,
+          1188
+        ],
+        "bounds": [
+          92,
+          53,
+          1232,
+          1022
+        ],
+        "support": [
+          358,
+          63,
+          960
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "guid": "e99fe64ad799175448bf1ae2957fb5f1",
+      "sourceSha256": "93487fd4e1117f9223f02d81af571b0266f08d19cecc8379b660cced27f5fb21"
+    }
+  ]
+}

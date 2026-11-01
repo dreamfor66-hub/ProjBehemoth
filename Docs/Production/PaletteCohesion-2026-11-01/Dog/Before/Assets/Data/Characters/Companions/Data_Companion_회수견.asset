@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee0b8ac17cb858428547c2e32588d13, type: 3}
+  m_Name: "Data_Companion_\uD68C\uC218\uACAC"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.companiondata.traildog.displayname
+    lastText: "\uD68C\uC218\uACAC"
+  textOwnerGuid: c6d66f4a1e280544b805c94668f5f3e7
+  displayName: "\uD68C\uC218\uACAC"
+  prefab: {fileID: 6474503742904246444, guid: a5dc20c1e5b3b164d873decb6b8a4fd0, type: 3}
+  combatSprite: {fileID: 21300000, guid: 591a1c416ff59c44ea8c26b1fa843609, type: 3}
+  combatAnimation: {fileID: 11400000, guid: 534d78141288f5e4f97b5871551b1355, type: 2}
+  oppositeAnimation: {fileID: 11400000, guid: 21a090742fc5b8c46a80521287c92279, type: 2}
+  displayHeight: 245
+  narrationKey: ui.companion.recoveryhound
+  geometry:
+  - sprite: {fileID: 21300000, guid: 591a1c416ff59c44ea8c26b1fa843609, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.12044271
+      y: 0.020507812
+      width: 0.8014323
+      height: 0.9746094
+    footprint:
+      serializedVersion: 2
+      x: 0.14192708
+      y: 0.03125
+      width: 0.68815106
+      height: 0.21419922
+  - sprite: {fileID: 21300000, guid: 1c72c7c32ad869447ac01a8cf3dbc8eb, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.0052083335
+      y: 0.03515625
+      width: 0.9811198
+      height: 0.90722656
+    footprint:
+      serializedVersion: 2
+      x: 0.050130207
+      y: 0.059570312
+      width: 0.9121094
+      height: 0.199375
+  - sprite: {fileID: 21300000, guid: b576043583e644043843c6d396f5d689, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.118489586
+      y: 0.018554688
+      width: 0.7571615
+      height: 0.96777344
+    footprint:
+      serializedVersion: 2
+      x: 0.2298177
+      y: 0.028320312
+      width: 0.6295573
+      height: 0.21269532
+  - sprite: {fileID: 21300000, guid: eab1b11ae2da6e841885f67cde19eda8, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.020182291
+      y: 0.051757812
+      width: 0.96875
+      height: 0.8378906
+    footprint:
+      serializedVersion: 2
+      x: 0.076171875
+      y: 0.064453125
+      width: 0.8300781
+      height: 0.18412109
+  playerOffset: {x: -430, y: 240}
+  idleBobHeight: 3
+  attackLungeDistance: 32

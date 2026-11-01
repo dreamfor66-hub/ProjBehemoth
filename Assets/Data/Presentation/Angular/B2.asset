@@ -16,6 +16,9 @@ MonoBehaviour:
   campInterior: {fileID: 21300000, guid: f1f649732755ae842ae00426900b87f8, type: 3}
   campUsedInterior: {fileID: 21300000, guid: f1f649732755ae842ae00426900b87f8, type: 3}
   bossInterior: {fileID: 21300000, guid: 8ee46e0d88a364f49b7ccb7cadfd950c, type: 3}
+  roomVariations:
+  - {fileID: 11400000, guid: 3f1dfcdd09874284c90adc4543df5514, type: 2}
+  - {fileID: 11400000, guid: 286e5f0460b3a0445b7d895b4daeb0a9, type: 2}
   imageOffset: {x: 0, y: 0}
   openings:
   - {fileID: 21300000, guid: 807f9e587ce6804419286a6ae23e171d, type: 3}

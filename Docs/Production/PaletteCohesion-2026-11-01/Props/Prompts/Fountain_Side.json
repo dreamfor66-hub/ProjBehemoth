@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Image1 is exact SIDE-VIEW fountain edit target. Image2 is approved new front material/shape identity. Image3 USER'S ORIGINAL B1 masonry is palette/drawing authority.\nKeep exact1324x1188 canvas, side-view camera/foreshortening, basin/spout/stem/base scale and bottom coordinates of image1. Repaint stone to match image2: low-chroma NEUTRAL cool grey matte masonry, a broad dull uneven hand-cut rim with just two large chips, NO continuous bright bevel, no shiny edge band. Simplify bowl underside into two pooled near-black masses connected to stem, no equal repeated triangular facets. Heavy plain stone blocks like B1 pillars, no ornament or grain/noisy cracks. Match image2's broad quiet planes and large blacks, never brown/yellow/olive/gold. Pool is a quiet dark slate-grey plane with just one broken dim ripple, thin low-brightness grey-blue water arc. No reflective zigzag tessellation or cyan glow. Preserve this different side camera, don't turn into front view. Exterior alpha0 with no matte/halo/glow/shadowcloud. One transparent PNG.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-8f9c7adb-8835-4638-b007-913ff2b1027b.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-b4ab1aa1-8b29-4972-a8ce-4150d740b2a7.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-0e5cbd08-1bbc-4985-a263-63a7f95bec24.png",
+  "selected": true
+}

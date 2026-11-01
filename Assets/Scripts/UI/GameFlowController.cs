@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace DungeonSlash
 {
-    public enum GameFlowState { RunStart, DungeonNavigation, RoomEntering, RoomEvent, Combat, RoomReward, PerkChoice, Shop, RunVictory, RunDefeat }
+    public enum GameFlowState { RunStart, DungeonNavigation, RoomEntering, RoomEvent, Combat, RoomReward, PerkChoice, Shop, RunVictory, RunDefeat, PlayRecordInspection }
 
     public sealed partial class GameFlowController : MonoBehaviour
     {
@@ -86,6 +86,7 @@ namespace DungeonSlash
 
         public void StartNewRun()
         {
+            EndPlayRecordInspection(); ResetPlayRecord();
             DebugInspectionArt = null;
             StopAllCoroutines();
             combatController.ResetEncounter();
@@ -138,6 +139,7 @@ namespace DungeonSlash
 
         private IEnumerator EnterRoomRoutine(DungeonRoom room)
         {
+            ObserveNpcRoomChange(room);
             runController.State.Fatigue.Step();
             if(runController.State.Fatigue.IsDead){runController.State.Player.DieFromExhaustion();ShowResult(false);yield break;}
             var travelDamage = runController.ApplyTravelHazard();
@@ -150,9 +152,10 @@ namespace DungeonSlash
             PrepareRoomStory(room);
             FindFirstObjectByType<StageBackdropView>()?.Refresh(dungeonController.Floor, dungeonController.State);
             RefreshExploration(); // The destination is already furnished during the walking beat.
+            RecordRoomEntry();
             if (roomTransitionView != null) yield return roomTransitionView.Play();
             if (IsWorldEncounter(room) || ExplorationEnabled && room.Type == RoomEncounterType.Event
-                && room.Story != null && room.Story.discovery != EventDiscovery.Automatic)
+                && room.Story != null && (room.Story.discovery != EventDiscovery.Automatic || room.StoryInvestigated))
             { ShowNavigation(); yield break; }
             if(room.Type==RoomEncounterType.Camp){ShowCamp(room);yield break;}
             if (room.IsCleared) { ShowNavigation(); yield break; }
@@ -214,6 +217,7 @@ namespace DungeonSlash
             var monster = forcedMonsters == null ? combatController.GetMonsterData(room.Type, room.EncounterOriginId, dungeonController.Floor) : forcedMonsters.Count > 0 ? forcedMonsters[0] : null;
             if (forcedMonsters == null) combatController.PrepareEncounter(runController.State, room.Type, room.EncounterOriginId, dungeonController.Floor);
             else combatController.PrepareEncounter(runController.State, forcedMonsters, dungeonController.Floor);
+            RecordRoomMonsters(combatController.Enemies.Select(e => e.Data));
             if (!combatController.HasPreparedMonsters)
             {
                 // A malformed encounter must never leave the flow parked behind an empty announcement.
@@ -348,16 +352,18 @@ namespace DungeonSlash
             if (roomEventView == null) { ShowNavigation(); return; }
             roomEventView.ShowChoice(GameText.Get("ui.gameflowcontroller.5db06efc"), merchantEventSprite, GameText.Get("ui.gameflowcontroller.ca483b7"), GameText.Get("ui.gameflowcontroller.9c8a9f7f"), () =>
             {
-                if (RollsMerchantMutantAmbush(dungeonController.State.Seed, room.RoomId, dungeonController.Floor) && combatController.MerchantMutant != null)
+                var response = dungeonController.Exploration?.For(RoomEncounterType.Shop)?.rearApproach;
+                var hiddenIdentity = response?.CombatIdentity(dungeonController.State.Seed, room.RoomId, dungeonController.Floor);
+                if (hiddenIdentity != null)
                 {
-                    memory.MarkMerchantDeparted();
-                    StartCoroutine(BeginMerchantMutantAmbush(room));
+                    BeginNpcIdentityCombat(room, response, hiddenIdentity);
                     return;
                 }
                 State = GameFlowState.Shop;
                 ShowShop(room);
             }, () =>
             {
+                memory.IgnoreConversation();
                 ShowNavigation();
             });
         }
@@ -512,6 +518,7 @@ namespace DungeonSlash
 
         private IEnumerator EnterNextFloorRoutine()
         {
+            CapturePlayRecord();
             State = GameFlowState.RoomEntering;
             var player = runController.State.Player;
             player.Heal(player.MaxHp);
@@ -530,21 +537,26 @@ namespace DungeonSlash
 
         private void ShowShop(DungeonRoom room)
         {
-            var inventory = runController.GetShopInventory(dungeonController.State.Seed, room.RoomId);
-            shopView.Show(inventory, runController.State, runController.Shop, item =>
+            State = GameFlowState.Shop;
+            var inventory = runController.GetShopStock(dungeonController.State.Seed, room.RoomId);
+            shopView.Show(inventory, runController.State, runController.Shop, offer =>
             {
-                void Purchase() { runController.TryBuy(item); expansionView.ResolvePendingSpells(() => { ShowShop(room); RefreshHud(); }); }
-                if (item.grantedSpell != null && runController.State.Slot(item.grantedSpell.defaultSlot) != null)
-                    expansionView.OfferSpell(item.grantedSpell, accepted =>
+                bool Purchase()
+                {
+                    if (!runController.TryBuy(offer)) return false;
+                    GetRoomMemory(room).MarkMerchantPurchase(); return true;
+                }
+                var spell = offer.Item != null ? offer.Item.grantedSpell : null;
+                if (spell != null && runController.State.Slot(spell.defaultSlot) != null)
+                    expansionView.OfferSpell(spell, accepted =>
                     {
                         expansionView.ResolvePendingSpells(() => { ShowShop(room); RefreshHud(); });
-                    }, () => runController.TryBuy(item));
-                else Purchase();
+                    }, Purchase);
+                else { Purchase(); expansionView.ResolvePendingSpells(() => { ShowShop(room); RefreshHud(); }); }
             }, () =>
             {
                 shopView.Hide();
-                GetRoomMemory(room).MarkMerchantDeparted();
-                room.IsCleared = true;
+                GetRoomMemory(room).IgnoreConversation();
                 ShowNavigation();
             });
         }
@@ -576,16 +588,19 @@ namespace DungeonSlash
             dungeonController.HideNavigation();
             HideTransientViews();
             RefreshHud();
+            CapturePlayRecord();
         }
 
         private void ShowNavigation()
         {
+            ObserveNpcRoomChange(dungeonController.State.Player.CurrentRoom);
             HideTransientViews();
             runController?.State?.Player?.RestoreShieldForNavigation();
             State = GameFlowState.DungeonNavigation;
             dungeonController.RefreshNavigation();
             RefreshExploration();
             RefreshHud();
+            CapturePlayRecord();
         }
 
         private void HideTransientViews()

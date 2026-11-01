@@ -1,0 +1,1 @@
+262 assertions passed. 19 authored stories / 18 active, captions/routes/unresolved-cost consistency, 22 unique transparent PNG files. This is content/static verification only; runtime and art acceptance remain root-owned.

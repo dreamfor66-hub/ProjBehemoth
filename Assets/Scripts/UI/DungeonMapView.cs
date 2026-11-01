@@ -49,14 +49,14 @@ namespace DungeonSlash
             var neighbours = state.Graph.Neighbors(current).Where(r => state.CanTravel(current, r)).ToHashSet();
             // Visits are permanent exploration memory. Generation-time IsRevealed marks a
             // known encounter identity, not permission to expose a distant, unvisited room.
-            var visible = state.Graph.Rooms.Where(r => r.IsVisited || r == current
+            var visible = state.Graph.Rooms.Where(r => state.Inspection || r.IsVisited || r == current
                 || showSelectionTargets && neighbours.Contains(r)).ToList();
             var visibleIds = visible.Select(r => r.RoomId).ToHashSet();
             var drawn = new HashSet<string>();
-            foreach (var room in visible.Where(r => r.IsVisited))
+            foreach (var room in visible.Where(r => state.Inspection || r.IsVisited))
                 foreach (var other in state.Graph.Neighbors(room))
                 {
-                    if (!state.CanTravel(room, other)) continue;
+                    if (!state.Inspection && !state.CanTravel(room, other)) continue;
                     var key = room.RoomId < other.RoomId ? $"{room.RoomId}:{other.RoomId}" : $"{other.RoomId}:{room.RoomId}";
                     if (!drawn.Add(key)) continue;
                     var highlighted = room == current && hoveredDirection == DirectionTo(room, other)

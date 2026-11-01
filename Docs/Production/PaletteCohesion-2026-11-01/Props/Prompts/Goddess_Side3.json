@@ -1,0 +1,9 @@
+{
+  "prompt": "Remove all shadow, aura and blurred haze OUTSIDE the statue's solid black drawn outline. Make the exterior fully transparent. Keep the actual opaque grey statue and pedestal COMPLETELY unchanged, including grey values, pose, drawing, size and every canvas coordinate. No white glow, no new reflections or relighting. True transparent PNG, same1024x1536 canvas.",
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-929d370b-92e6-4d3f-aacb-58bac703a69c.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-63cc95ee-15a7-4a5b-b944-f7c97f11b4a2.png",
+  "selected": false
+}

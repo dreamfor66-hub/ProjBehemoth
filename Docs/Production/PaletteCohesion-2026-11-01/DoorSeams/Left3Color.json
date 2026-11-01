@@ -1,0 +1,20 @@
+{
+  "Left2": {
+    "sameCoordinateSampleRGB": [
+      96.0,
+      84.5,
+      65.0
+    ],
+    "linearY": 0.09286995914722926,
+    "sourceSHA256": "094ff083052b3d0c549d2465334cba50e0df963512810279147e1a33bef97ace"
+  },
+  "Left3": {
+    "sameCoordinateSampleRGB": [
+      154.5,
+      137.0,
+      93.0
+    ],
+    "linearY": 0.25600825247302933,
+    "sourceSHA256": "641c77883792e3ab222f67d78227aa11710aa558892176d3728a9cd5e99491ce"
+  }
+}

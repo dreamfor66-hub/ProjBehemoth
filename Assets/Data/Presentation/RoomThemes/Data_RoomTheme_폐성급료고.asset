@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0138a26af49e19408d728af5a811786, type: 3}
+  m_Name: "Data_RoomTheme_\uD3D0\uC131\uAE09\uB8CC\uACE0"
+  m_EditorClassIdentifier: 
+  acts:
+  - walls: {fileID: 21300000, guid: b93d72ea3208da049a745a00d7633961, type: 3}
+    directionalWalls:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - walls: {fileID: 21300000, guid: 74bb5c2d1597bc84c9ca22bc73e2ddc3, type: 3}
+    directionalWalls:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - walls: {fileID: 21300000, guid: eff8cd842a9146a4ab64464eb4ac737f, type: 3}
+    directionalWalls:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  wallMarks: []
+  useFloorLighting: 0

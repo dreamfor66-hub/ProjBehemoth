@@ -15,47 +15,66 @@ namespace DungeonSlash
                 room.ObjectFacing = (FacingDirection)random.Next(4);
                 room.ObjectWall = ExplorationPlacement.WallFor(graph, room, random.Next());
             }
-            if (settings == null || random.NextDouble() >= settings.annexChance) return;
-            var count = random.NextDouble() < settings.secondAnnexChance ? 2 : 1;
-            for (var index = 0; index < count; index++)
+            if (settings == null) return;
+            // Two independent rolls: a floor can contain neither, either, or both.
+            // Secret origins remain genuinely empty dead ends, never key/prop rooms.
+            if (random.NextDouble() < settings.concealedEntranceChance) AddBranch(true);
+            if (random.NextDouble() < settings.lockedEntranceChance) AddBranch(false);
+
+            void AddBranch(bool hidden)
             {
                 var distances = graph.DistancesFrom(graph.StartRoom);
                 var accessible = BeforeBoss(graph);
                 var candidates = graph.Rooms.Where(r => !r.IsOptionalAnnex && r != graph.StartRoom
-                    && accessible.Contains(r.RoomId)
-                    && r.Type != RoomEncounterType.Boss && r.Type != RoomEncounterType.Goddess && r.Type != RoomEncounterType.Camp
-                    && distances[r.RoomId] >= 4 && r.Connections.Count < 3
+                    && accessible.Contains(r.RoomId) && distances[r.RoomId] >= 2
+                    && (hidden ? r.Type == RoomEncounterType.Empty && r.Connections.Count == 1 && r.KeyTokens.Count == 0
+                        : r.Type != RoomEncounterType.Boss && r.Type != RoomEncounterType.Goddess && r.Type != RoomEncounterType.Camp && r.Connections.Count < 3)
                     && !graph.Passages.Any(p => p.Origin == r)).OrderBy(_ => random.Next()).ToArray();
                 foreach (var origin in candidates)
                 {
-                    var free = DirectionUtility.Offsets.Select(o => origin.Position + o).Where(p => !graph.HasRoom(p)
-                        && DirectionUtility.Offsets.All(o => { var adjacent = graph.At(p + o); return adjacent == null || adjacent == origin; })).ToArray();
-                    if (free.Length == 0) continue;
-                    // Secret masonry and an openly locked door are different discoveries.
-                    var hidden = random.NextDouble() * (settings.concealedEntranceChance + settings.lockedEntranceChance)
-                        < settings.concealedEntranceChance;
-                    if (graph.Passages.Any(p => p.Locked)) hidden = true;
-                    var locked = !hidden;
+                    var ordinaryCount = random.Next(3);
+                    var positions = new List<DungeonPosition>();
+                    if (!FindPath(origin.Position, ordinaryCount + 1)) continue;
                     var nearby = graph.DistancesFrom(origin);
-                    var keyRoom = graph.Rooms.Where(r => !r.IsOptionalAnnex && r != origin && r.KeyTokens.Count == 0
-                        && accessible.Contains(r.RoomId)
-                        && r.Type != RoomEncounterType.Boss && nearby[r.RoomId] <= settings.maximumKeyDistance)
-                        .OrderBy(_ => random.Next()).FirstOrDefault();
-                    if (locked && keyRoom == null) continue;
-                    var annex = graph.AddRoom(free[random.Next(free.Length)]);
-                    annex.IsOptionalAnnex = true; annex.ObjectCorner = random.Next(4);
-                    annex.ObjectFacing = (FacingDirection)random.Next(4);
-                    var roll = random.NextDouble();
-                    annex.Type = roll < settings.annexCombatChance ? RoomEncounterType.Combat
-                        : roll < settings.annexCombatChance + settings.annexEventChance ? RoomEncounterType.Event : RoomEncounterType.Chest;
-                    // Hidden chests have their own low ambush roll; ordinary B2/B3 chests retain existing tuning.
-                    annex.ChestContent = floor >= 2 && random.NextDouble() < settings.annexCombatChance ? ChestContent.Mimic
-                        : random.NextDouble() < .55 ? ChestContent.Gold : ChestContent.Relic;
-                    graph.Connect(origin, annex);
-                    annex.ObjectWall = ExplorationPlacement.WallFor(graph, annex, random.Next());
-                    graph.Passages.Add(new DungeonPassage(origin, annex, hidden, locked, random.Next()));
-                    if (locked) keyRoom.KeyTokens.Add(annex.RoomId);
-                    break;
+                    var keyRoom = hidden ? null : graph.Rooms.Where(r => !r.IsOptionalAnnex && r != origin && r.KeyTokens.Count == 0
+                        && accessible.Contains(r.RoomId) && r.Type != RoomEncounterType.Boss
+                        && !graph.Passages.Any(p => p.Concealed && p.Origin == r)
+                        && nearby[r.RoomId] <= settings.maximumKeyDistance).OrderBy(_ => random.Next()).FirstOrDefault();
+                    if (!hidden && keyRoom == null) continue;
+                    var previous = origin; DungeonRoom entrance = null;
+                    for (var i = 0; i < positions.Count; i++)
+                    {
+                        var annex = graph.AddRoom(positions[i]);
+                        annex.IsOptionalAnnex = true; annex.ObjectCorner = random.Next(4); annex.ObjectFacing = (FacingDirection)random.Next(4);
+                        var terminal = i == positions.Count - 1;
+                        annex.Type = terminal ? (random.NextDouble() < settings.annexEventChance ? RoomEncounterType.Event : RoomEncounterType.Chest)
+                            : random.NextDouble() < settings.annexCombatChance ? RoomEncounterType.Combat : RoomEncounterType.Empty;
+                        annex.ChestContent = floor >= 2 && random.NextDouble() < settings.annexCombatChance ? ChestContent.Mimic
+                            : random.NextDouble() < .55 ? ChestContent.Gold : ChestContent.Relic;
+                        graph.Connect(previous, annex); previous = annex; entrance ??= annex;
+                    }
+                    graph.Passages.Add(new DungeonPassage(origin, entrance, hidden, !hidden, random.Next()));
+                    if (!hidden) keyRoom.KeyTokens.Add(entrance.RoomId);
+                    return;
+
+                    bool FindPath(DungeonPosition parent, int remaining)
+                    {
+                        if (remaining == 0) return true;
+                        foreach (var offset in DirectionUtility.Offsets.OrderBy(_ => random.Next()))
+                        {
+                            var p = parent + offset;
+                            if (graph.HasRoom(p) || positions.Contains(p)) continue;
+                            if (DirectionUtility.Offsets.Any(o =>
+                            {
+                                var adjacent = p + o;
+                                return !adjacent.Equals(parent) && (graph.HasRoom(adjacent) || positions.Contains(adjacent));
+                            })) continue;
+                            positions.Add(p);
+                            if (FindPath(p, remaining - 1)) return true;
+                            positions.RemoveAt(positions.Count - 1);
+                        }
+                        return false;
+                    }
                 }
             }
             // Annex doors can occupy a previously intact wall of their origin room.

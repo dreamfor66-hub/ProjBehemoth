@@ -1,0 +1,190 @@
+[
+  {
+    "data": "Data\\Characters\\Data_Character_로그.asset",
+    "name": "로그",
+    "paintings": [
+      "Art\\World\\Angular\\Heroes\\T_Sprite_Character_Rogue_Portrait.png",
+      "Art\\UI\\Outgame\\T_UI_CharacterSelection_Rogue.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Rogue_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Characters\\Data_Character_몽크.asset",
+    "name": "몽크",
+    "paintings": [
+      "Art\\World\\Angular\\Heroes\\T_Sprite_Character_Monk_Portrait.png",
+      "Art\\UI\\Outgame\\T_UI_CharacterSelection_Monk.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Monk_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Characters\\Data_Character_바바리안.asset",
+    "name": "바바리안",
+    "paintings": [
+      "Art\\World\\Angular\\Heroes\\T_Sprite_Character_Barbarian_Portrait.png",
+      "Art\\UI\\Outgame\\T_UI_CharacterSelection_Barbarian.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Barbarian_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Characters\\Data_Character_사무라이.asset",
+    "name": "사무라이",
+    "paintings": [
+      "Art\\World\\Angular\\Heroes\\T_Sprite_Character_Samurai_Portrait.png",
+      "Art\\UI\\Outgame\\T_UI_CharacterSelection_Samurai.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Samurai_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Characters\\Data_Character_워리어.asset",
+    "name": "워리어",
+    "paintings": [
+      "Art\\World\\Angular\\Heroes\\T_Sprite_Character_Warrior_Portrait.png",
+      "Art\\UI\\Outgame\\T_UI_CharacterSelection_Warrior.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Characters\\Data_Character_위자드.asset",
+    "name": "위자드",
+    "paintings": [
+      "Art\\World\\Angular\\Heroes\\T_Sprite_Character_Wizard_Portrait.png",
+      "Art\\UI\\Outgame\\T_UI_CharacterSelection_Wizard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Characters\\Companions\\Data_Companion_회수견.asset",
+    "name": "회수견",
+    "paintings": [
+      "Art\\Combat\\Lore01\\T_Sprite_Character_길동무_Idle.png",
+      "Art\\Combat\\Lore01\\T_Sprite_Character_길동무_Attack.png",
+      "Art\\Combat\\Lore01\\T_Sprite_Character_회수견_좌향_Idle.png",
+      "Art\\Combat\\Lore01\\T_Sprite_Character_회수견_좌향_Attack.png"
+    ]
+  },
+  {
+    "data": "Data\\Combat\\Monsters\\Data_Monster_Special_금먹는두꺼비.asset",
+    "name": "금먹는 두꺼비",
+    "paintings": [
+      "Art\\Combat\\Lore01\\T_Sprite_Monster_후드행상변이_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Combat\\Monsters\\Data_Monster_Special_회수꾼도적.asset",
+    "name": "회수꾼 도적",
+    "paintings": [
+      "Art\\Combat\\Lore01\\T_Sprite_Monster_회수꾼도적_Idle.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\B1.asset",
+    "name": "B1",
+    "paintings": [
+      "Art\\World\\Angular\\Restoration01\\B1-Walls.png",
+      "Art\\World\\Exploration\\T_UI_Room_B1_Camp.png",
+      "Art\\World\\Exploration\\T_UI_Room_B1보스내부.png",
+      "Art\\World\\Angular\\Restoration01\\B1-Forward.png",
+      "Art\\World\\Angular\\Restoration01\\B1-Left.png",
+      "Art\\World\\Angular\\Restoration01\\B1-Right.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\B2.asset",
+    "name": "B2",
+    "paintings": [
+      "Art\\World\\Angular\\Backdrops\\B2-Walls.png",
+      "Art\\World\\Exploration\\T_UI_Room_B2_Camp.png",
+      "Art\\World\\Exploration\\T_UI_Room_B2보스내부.png",
+      "Art\\World\\Angular\\Backdrops\\B2-Forward.png",
+      "Art\\World\\Angular\\Backdrops\\B2-Left.png",
+      "Art\\World\\Angular\\Backdrops\\B2-Right.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\B3.asset",
+    "name": "B3",
+    "paintings": [
+      "Art\\World\\Angular\\Backdrops\\B3-Walls.png",
+      "Art\\World\\Exploration\\T_UI_Room_B3_Camp.png",
+      "Art\\World\\Exploration\\T_UI_Room_B3보스내부.png",
+      "Art\\World\\Angular\\Backdrops\\B3-Forward.png",
+      "Art\\World\\Angular\\Backdrops\\B3-Left.png",
+      "Art\\World\\Angular\\Backdrops\\B3-Right.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\HeroFaces.asset",
+    "name": "HeroFaces",
+    "paintings": [
+      "Art\\UI\\Portraits\\Angular\\T_UI_Portrait_Warrior.png",
+      "Art\\UI\\Portraits\\Angular\\T_UI_Portrait_Rogue.png",
+      "Art\\UI\\Portraits\\Angular\\T_UI_Portrait_Barbarian.png",
+      "Art\\UI\\Portraits\\Angular\\T_UI_Portrait_Samurai.png",
+      "Art\\UI\\Portraits\\Angular\\T_UI_Portrait_Monk.png",
+      "Art\\UI\\Portraits\\Angular\\T_UI_Portrait_Wizard.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\Animations\\Hero-Barbarian.asset",
+    "name": "Hero-Barbarian",
+    "paintings": [
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Barbarian_Idle.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Barbarian_Attack.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Barbarian_Guard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Barbarian_Ready.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\Animations\\Hero-Monk.asset",
+    "name": "Hero-Monk",
+    "paintings": [
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Monk_Idle.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Monk_Attack.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Monk_Guard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Monk_Ready.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\Animations\\Hero-Rogue.asset",
+    "name": "Hero-Rogue",
+    "paintings": [
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Rogue_Idle.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Rogue_Attack.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Rogue_Guard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Rogue_Ready.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\Animations\\Hero-Samurai.asset",
+    "name": "Hero-Samurai",
+    "paintings": [
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Samurai_Idle.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Samurai_Attack.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Samurai_Guard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Samurai_Ready.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\Animations\\Hero-Warrior.asset",
+    "name": "Hero-Warrior",
+    "paintings": [
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_Idle.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_Attack.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_Guard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_Ready.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_ReadyLeftToRight.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Warrior_AttackLeftToRight.png"
+    ]
+  },
+  {
+    "data": "Data\\Presentation\\Angular\\Animations\\Hero-Wizard.asset",
+    "name": "Hero-Wizard",
+    "paintings": [
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Idle.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Attack.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Guard.png",
+      "Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Ready.png"
+    ]
+  }
+]

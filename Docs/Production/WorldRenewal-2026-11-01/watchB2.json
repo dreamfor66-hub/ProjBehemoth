@@ -1,0 +1,7 @@
+{
+  "transparent_background": false,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png"
+  ],
+  "prompt": "Create an alternate frost-sanctuary watch chamber: long shallow blind arrow slits and one heavy high cornice around the entire room, vault lost in black, blue-grey stone, weak cold light as the existing floor. Sparse strong architecture. No extra pillars across walkways, retain sourcefloor. Preserve the EXACT installed room camera, floor heights, floor perspective/paving, scale, wallsupport locations and vanishing point x.5 y.435 measured from bottom. Do NOT draw a new opening or doorway: front/left/right walls closed and intact because runtime paints real openings at the installed positions. Keep those lower/middle wall areas quiet and unobstructed so overlay junctions remain plausible. Architecture repeats on all FOUR walls, a consistent rotationally symmetric chamber; unique compass-wall markers are added as separate physical wall art. No clickable subject, chest, NPC, monster, altar or foreground furniture. Full 16:9 game background, no frame. Large quiet hand-inked forms, large connected pure BLACK shadow masses, restrained broad shading; deliberate selective lines and no little chips, cracks, brick noise, grit, rubbly spikes or decorative clutter."
+}

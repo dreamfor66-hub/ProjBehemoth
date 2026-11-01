@@ -12,6 +12,7 @@ namespace DungeonSlash
             var random = new System.Random(unchecked(run.Seed + act * 3571 + room * 1013));
             var candidates = content.events.Where(item => item != null && !item.excludedFromRandomPool && act >= item.minAct && act <= item.maxAct && !run.SeenEvents.Contains(item.id)
                 && (exits < 0 || item.roomLayout != EventRoomLayout.Alcove || exits == 1)
+                && (exits < 0 || item.worldObject == null || !item.worldObject.wallMounted || exits < 4)
                 && (string.IsNullOrEmpty(item.requiredFlag) || run.EventFlags.Contains(item.requiredFlag))
                 && (act > 1 || run.NormalCombatsInAct >= item.minNormalCombatsInAct)
                 && item.options.Any(option => UnavailableReason(option, run) == null)
@@ -32,6 +33,7 @@ namespace DungeonSlash
             if (option.consumeHealingPotion && !run.Potions.Any(RunState.IsHealingPotion)) return GameText.Get("ui.randomeventsystem.5844d85e");
             if (option.requiredRelic != null && !run.EquippedItems.Contains(option.requiredRelic)) return GameText.Get("ui.randomeventsystem.94f41882");
             if (option.effects.Any(effect => effect.kind == EventEffectKind.SpellChoice || effect.kind == EventEffectKind.Relic && effect.relic?.grantedSpell != null) && !run.MagicIntroduced) return GameText.Get("ui.randomeventsystem.94f41882");
+            if (option.effects.Any(effect => effect.kind == EventEffectKind.SpellChoice && effect.spellPool != null && effect.spellPool.Count > 0 && effect.spellPool.All(spell => spell == null || run.RuntimeFor(spell) != null))) return GameText.Get("ui.event.notready");
             if (!string.IsNullOrEmpty(option.requiredPerk) && !run.ActivePerks.Any(perk => perk.Data.id == option.requiredPerk)) return GameText.Get("ui.randomeventsystem.ad3c2ff");
             if (!string.IsNullOrEmpty(option.requiredFlag) && !run.EventFlags.Contains(option.requiredFlag)) return GameText.Get("ui.randomeventsystem.f87e5029");
             if (option.effects.Any(effect => effect.kind == EventEffectKind.ExclusiveChoice) && run.ExclusiveCount >= RunState.ExclusiveLimit) return GameText.Get("ui.randomeventsystem.209c6ec6");

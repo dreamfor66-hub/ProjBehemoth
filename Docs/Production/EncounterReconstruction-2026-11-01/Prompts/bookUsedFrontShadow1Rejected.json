@@ -1,0 +1,12 @@
+{
+  "prompt": "Use case: precise-object-edit.\nImage1 is edit target: empty stone pedestal. Image2 is the exact original scene before removal of its book. Image3 installed dungeon background is style reference.\nRestore only the dark masonry shadow of the LOWER RIGHT part of the pedestal in image1 to match image2. The original lower right end of the stone support and ground rubble were deeply black, while the current empty state accidentally brightened them. Reinstate the original near-black solid shadow over that lower right end (roughly image x=1178 to1335, y=990 to1105). The shadow is masonry darkness, not a missing book shadow. Keep the left foot and entire middle unchanged. The contact footing needs to stay visually identical when the book vanishes. Do not widen the lit footprint, do not create a new stone silhouette, no glow.\nDo NOT add the book back. Keep the empty slab and all other pixels, full transparent 1374x1145 canvas, exact pedestal geometry/position and background transparency unchanged. One transparent PNG.",
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-5ea4dd1b-4d3a-4439-affe-664bb426c86d.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Book_Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-c3916f29-890e-4ce0-8b1e-62cdffdc7a14.png",
+  "rejected": true,
+  "reason": "Rejected: fitting the brightness-based derived footprint changed painted stone shadows. Preserve the first empty pedestal edit and fix same-canvas support derivation in shared rendering instead."
+}

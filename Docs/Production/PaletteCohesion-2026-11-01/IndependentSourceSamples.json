@@ -1,0 +1,635 @@
+{
+  "status": "Source-only provisional visual review. Actual source9PNG viewed; no Unity run or gameplay composite claim.",
+  "method": "Median RGB and per-pixel linear-sRGB Y. Sampling supports actual form/color review; no acceptance threshold. Regions avoid flames, frame/door overlays and UI. Geometry/light vary; do not compare these as identical materials under calibrated light.",
+  "regionsNormalized": {
+    "near_column_shade": [
+      0.06,
+      0.25,
+      0.1,
+      0.35
+    ],
+    "near_column_lit": [
+      0.135,
+      0.27,
+      0.16,
+      0.35
+    ],
+    "rear_wall": [
+      0.45,
+      0.48,
+      0.5,
+      0.54
+    ],
+    "mid_floor": [
+      0.46,
+      0.69,
+      0.5,
+      0.74
+    ]
+  },
+  "images": [
+    {
+      "key": "base1",
+      "path": "Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+      "sha256": "9e643b32728da86a3a588ef34319391da08be731c3dbbe51f25d1ac05a57f31f",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            36,
+            35,
+            33
+          ],
+          "medianLinearY": 0.01693
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            108,
+            98,
+            71
+          ],
+          "medianLinearY": 0.12378
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            31,
+            30,
+            26
+          ],
+          "medianLinearY": 0.01299
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            78,
+            73,
+            58
+          ],
+          "medianLinearY": 0.0669
+        }
+      }
+    },
+    {
+      "key": "base2",
+      "path": "Assets/Art/World/Angular/Backdrops/B2-Walls.png",
+      "sha256": "7e9a1c16cc76b46ac5fc546d5fd906b61135ec840d272df105e38a954b0ee6a0",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            37,
+            48,
+            61
+          ],
+          "medianLinearY": 0.02855
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            96,
+            114,
+            132
+          ],
+          "medianLinearY": 0.16187
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            40,
+            53,
+            68
+          ],
+          "medianLinearY": 0.03415
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            81,
+            96,
+            112
+          ],
+          "medianLinearY": 0.11285
+        }
+      }
+    },
+    {
+      "key": "base3",
+      "path": "Assets/Art/World/Angular/Backdrops/B3-Walls.png",
+      "sha256": "766e1ce80b6b42f493311f8ee75c39f9b5f8d8beddec0659fa078861f0c5a9f1",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            30,
+            30,
+            29
+          ],
+          "medianLinearY": 0.01293
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            73,
+            66,
+            53
+          ],
+          "medianLinearY": 0.05579
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            31,
+            29,
+            26
+          ],
+          "medianLinearY": 0.01249
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            72,
+            65,
+            54
+          ],
+          "medianLinearY": 0.05434
+        }
+      }
+    },
+    {
+      "key": "oath1",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_공용_서약실.png",
+      "sha256": "6bb57f1b72b9cf8d2fbb618584f5bfb4ecc73ccedf72f19bd89db99ee24eb7e5",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            29,
+            28,
+            26
+          ],
+          "medianLinearY": 0.01166
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            103,
+            88,
+            62
+          ],
+          "medianLinearY": 0.102
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            25,
+            24,
+            21
+          ],
+          "medianLinearY": 0.00914
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            70,
+            64,
+            50
+          ],
+          "medianLinearY": 0.05171
+        }
+      }
+    },
+    {
+      "key": "oath2",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_서약실.png",
+      "sha256": "2cedb223d9c3be82386f7dab6cb111894f6975850ae0fe51d547688d26ce5684",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            38,
+            50,
+            63
+          ],
+          "medianLinearY": 0.03052
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            98,
+            118,
+            136
+          ],
+          "medianLinearY": 0.1736
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            32,
+            43,
+            54
+          ],
+          "medianLinearY": 0.02311
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            80,
+            98,
+            115
+          ],
+          "medianLinearY": 0.11679
+        }
+      }
+    },
+    {
+      "key": "oath3",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_서약실.png",
+      "sha256": "94433234f2545794b1032ab06e7e336361aec64124d48df737df3c4421e9e172",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            28,
+            27,
+            27
+          ],
+          "medianLinearY": 0.0111
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            67,
+            61,
+            50
+          ],
+          "medianLinearY": 0.0478
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            26,
+            26,
+            24
+          ],
+          "medianLinearY": 0.01024
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            60,
+            57,
+            49
+          ],
+          "medianLinearY": 0.04109
+        }
+      }
+    },
+    {
+      "key": "b3물자보관칸",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_물자보관칸.png",
+      "sha256": "f0a84cd219fc1e93fac44f0e88b5af841017223059408e9d971a877bfdaf5786",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            30,
+            30,
+            30
+          ],
+          "medianLinearY": 0.01298
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            94,
+            79,
+            61
+          ],
+          "medianLinearY": 0.08298
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            0,
+            0,
+            0
+          ],
+          "medianLinearY": 6e-05
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            70,
+            64,
+            54
+          ],
+          "medianLinearY": 0.05235
+        }
+      }
+    },
+    {
+      "key": "b3폐성급료고",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_폐성급료고.png",
+      "sha256": "758ee259e01e95c7f7ee9a015fc9832a347eda5688923995b1b4590e7eb6c182",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            41,
+            40,
+            39
+          ],
+          "medianLinearY": 0.02135
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            95,
+            82,
+            62
+          ],
+          "medianLinearY": 0.08732
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            49,
+            46,
+            40
+          ],
+          "medianLinearY": 0.02767
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            73,
+            67,
+            57
+          ],
+          "medianLinearY": 0.05746
+        }
+      }
+    },
+    {
+      "key": "b3혈근번식실",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_혈근번식실.png",
+      "sha256": "033088ac7d42f7818d75a148c069932bc874d12b59cb27094945c9b0559b1d0a",
+      "canvas": [
+        1672,
+        941
+      ],
+      "samples": {
+        "near_column_shade": {
+          "boundsPixels": [
+            100,
+            235,
+            167,
+            329
+          ],
+          "medianRGB": [
+            41,
+            41,
+            40
+          ],
+          "medianLinearY": 0.0219
+        },
+        "near_column_lit": {
+          "boundsPixels": [
+            226,
+            254,
+            268,
+            329
+          ],
+          "medianRGB": [
+            94,
+            81,
+            60
+          ],
+          "medianLinearY": 0.08644
+        },
+        "rear_wall": {
+          "boundsPixels": [
+            752,
+            452,
+            836,
+            508
+          ],
+          "medianRGB": [
+            41,
+            39,
+            35
+          ],
+          "medianLinearY": 0.02065
+        },
+        "mid_floor": {
+          "boundsPixels": [
+            769,
+            649,
+            836,
+            696
+          ],
+          "medianRGB": [
+            81,
+            74,
+            58
+          ],
+          "medianLinearY": 0.06909
+        }
+      }
+    }
+  ]
+}

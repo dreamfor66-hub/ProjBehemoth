@@ -1,0 +1,463 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS actual chapter travel B1
+PASS canonical background has one authored color pass B1
+PASS same three real opening overlays visible for palette comparison B1
+SCREEN B1-Base-Doors
+PASS B1 Data_RoomTheme_물자보관칸 fixed facing North
+PASS B1 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_물자보관칸 real forward/side doors
+SCREEN B1-Data_RoomTheme_물자보관칸-North
+PASS B1 Data_RoomTheme_물자보관칸 fixed facing East
+PASS B1 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B1 Data_RoomTheme_물자보관칸 fixed facing South
+PASS B1 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B1 Data_RoomTheme_물자보관칸 fixed facing West
+PASS B1 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B1 Data_RoomTheme_봉인기록고 fixed facing North
+PASS B1 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_봉인기록고 real forward/side doors
+SCREEN B1-Data_RoomTheme_봉인기록고-North
+PASS B1 Data_RoomTheme_봉인기록고 fixed facing East
+PASS B1 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B1 Data_RoomTheme_봉인기록고 fixed facing South
+PASS B1 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B1 Data_RoomTheme_봉인기록고 fixed facing West
+PASS B1 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B1 Data_RoomTheme_옛경비실 fixed facing North
+PASS B1 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_옛경비실 real forward/side doors
+SCREEN B1-Data_RoomTheme_옛경비실-North
+PASS B1 Data_RoomTheme_옛경비실 fixed facing East
+PASS B1 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B1 Data_RoomTheme_옛경비실 fixed facing South
+PASS B1 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B1 Data_RoomTheme_옛경비실 fixed facing West
+PASS B1 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B1 Data_RoomTheme_잊힌서약실 fixed facing North
+PASS B1 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_잊힌서약실 real forward/side doors
+SCREEN B1-Data_RoomTheme_잊힌서약실-North
+PASS B1 Data_RoomTheme_잊힌서약실 fixed facing East
+PASS B1 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_잊힌서약실 real forward/side doors
+SCREEN B1-Data_RoomTheme_잊힌서약실-East
+PASS B1 Data_RoomTheme_잊힌서약실 fixed facing South
+PASS B1 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_잊힌서약실 real forward/side doors
+PASS B1 Data_RoomTheme_잊힌서약실 fixed facing West
+PASS B1 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_잊힌서약실 real forward/side doors
+PASS B1 Data_RoomTheme_폐성급료고 fixed facing North
+PASS B1 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_폐성급료고 real forward/side doors
+SCREEN B1-Data_RoomTheme_폐성급료고-North
+PASS B1 Data_RoomTheme_폐성급료고 fixed facing East
+PASS B1 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B1 Data_RoomTheme_폐성급료고 fixed facing South
+PASS B1 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B1 Data_RoomTheme_폐성급료고 fixed facing West
+PASS B1 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B1 Data_RoomTheme_혈근번식실 fixed facing North
+PASS B1 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_혈근번식실 real forward/side doors
+SCREEN B1-Data_RoomTheme_혈근번식실-North
+PASS B1 Data_RoomTheme_혈근번식실 fixed facing East
+PASS B1 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B1 Data_RoomTheme_혈근번식실 fixed facing South
+PASS B1 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B1 Data_RoomTheme_혈근번식실 fixed facing West
+PASS B1 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B1 Data_RoomTheme_훈련보관실 fixed facing North
+PASS B1 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_훈련보관실 real forward/side doors
+SCREEN B1-Data_RoomTheme_훈련보관실-North
+PASS B1 Data_RoomTheme_훈련보관실 fixed facing East
+PASS B1 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS B1 Data_RoomTheme_훈련보관실 fixed facing South
+PASS B1 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS B1 Data_RoomTheme_훈련보관실 fixed facing West
+PASS B1 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B1 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS saved prop Goddess
+PASS place B1 Goddess/0 used=False
+PASS actual prop painting Goddess B1/0
+PASS PNG-derived physical support T_UI_World_Goddess_Front
+PASS statue hood remains below world/HUD boundary B1/0 top=885.5953 roof=1129.099
+SCREEN B1-Goddess-0-Ready
+PASS place B1 Goddess/1 used=False
+PASS actual prop painting Goddess B1/1
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS statue hood remains below world/HUD boundary B1/1 top=910.6917 roof=1129.099
+SCREEN B1-Goddess-1-Ready
+PASS place B1 Goddess/3 used=False
+PASS actual prop painting Goddess B1/3
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS statue hood remains below world/HUD boundary B1/3 top=910.6917 roof=1129.099
+SCREEN B1-Goddess-3-Ready
+PASS saved prop Fountain
+PASS place B1 Fountain/0 used=False
+PASS actual prop painting Fountain B1/0
+PASS PNG-derived physical support T_UI_World_Fountain_Front
+SCREEN B1-Fountain-0-Ready
+PASS place B1 Fountain/1 used=False
+PASS actual prop painting Fountain B1/1
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+SCREEN B1-Fountain-1-Ready
+PASS place B1 Fountain/2 used=False
+PASS actual prop painting Fountain B1/2
+PASS PNG-derived physical support T_UI_World_분수_rear
+SCREEN B1-Fountain-2-Ready
+PASS place B1 Fountain/0 used=True
+PASS actual prop painting Fountain B1/0
+PASS PNG-derived physical support T_UI_World_Fountain_UsedFront
+SCREEN B1-Fountain-0-Used
+PASS place B1 Fountain/1 used=True
+PASS actual prop painting Fountain B1/1
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+SCREEN B1-Fountain-1-Used
+PASS place B1 Fountain/2 used=True
+PASS actual prop painting Fountain B1/2
+PASS PNG-derived physical support T_UI_World_분수_usedRear
+SCREEN B1-Fountain-2-Used
+PASS actual chapter travel B2
+PASS canonical background has one authored color pass B2
+PASS same three real opening overlays visible for palette comparison B2
+SCREEN B2-Base-Doors
+PASS B2 Data_RoomTheme_물자보관칸 fixed facing North
+PASS B2 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_물자보관칸 real forward/side doors
+SCREEN B2-Data_RoomTheme_물자보관칸-North
+PASS B2 Data_RoomTheme_물자보관칸 fixed facing East
+PASS B2 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B2 Data_RoomTheme_물자보관칸 fixed facing South
+PASS B2 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B2 Data_RoomTheme_물자보관칸 fixed facing West
+PASS B2 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B2 Data_RoomTheme_봉인기록고 fixed facing North
+PASS B2 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_봉인기록고 real forward/side doors
+SCREEN B2-Data_RoomTheme_봉인기록고-North
+PASS B2 Data_RoomTheme_봉인기록고 fixed facing East
+PASS B2 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B2 Data_RoomTheme_봉인기록고 fixed facing South
+PASS B2 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B2 Data_RoomTheme_봉인기록고 fixed facing West
+PASS B2 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B2 Data_RoomTheme_옛경비실 fixed facing North
+PASS B2 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_옛경비실 real forward/side doors
+SCREEN B2-Data_RoomTheme_옛경비실-North
+PASS B2 Data_RoomTheme_옛경비실 fixed facing East
+PASS B2 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B2 Data_RoomTheme_옛경비실 fixed facing South
+PASS B2 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B2 Data_RoomTheme_옛경비실 fixed facing West
+PASS B2 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B2 Data_RoomTheme_잊힌서약실 fixed facing North
+PASS B2 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_잊힌서약실 real forward/side doors
+SCREEN B2-Data_RoomTheme_잊힌서약실-North
+PASS B2 Data_RoomTheme_잊힌서약실 fixed facing East
+PASS B2 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_잊힌서약실 real forward/side doors
+SCREEN B2-Data_RoomTheme_잊힌서약실-East
+PASS B2 Data_RoomTheme_잊힌서약실 fixed facing South
+PASS B2 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_잊힌서약실 real forward/side doors
+PASS B2 Data_RoomTheme_잊힌서약실 fixed facing West
+PASS B2 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_잊힌서약실 real forward/side doors
+PASS B2 Data_RoomTheme_폐성급료고 fixed facing North
+PASS B2 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_폐성급료고 real forward/side doors
+SCREEN B2-Data_RoomTheme_폐성급료고-North
+PASS B2 Data_RoomTheme_폐성급료고 fixed facing East
+PASS B2 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B2 Data_RoomTheme_폐성급료고 fixed facing South
+PASS B2 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B2 Data_RoomTheme_폐성급료고 fixed facing West
+PASS B2 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B2 Data_RoomTheme_혈근번식실 fixed facing North
+PASS B2 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_혈근번식실 real forward/side doors
+SCREEN B2-Data_RoomTheme_혈근번식실-North
+PASS B2 Data_RoomTheme_혈근번식실 fixed facing East
+PASS B2 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B2 Data_RoomTheme_혈근번식실 fixed facing South
+PASS B2 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B2 Data_RoomTheme_혈근번식실 fixed facing West
+PASS B2 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B2 Data_RoomTheme_훈련보관실 fixed facing North
+PASS B2 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_훈련보관실 real forward/side doors
+SCREEN B2-Data_RoomTheme_훈련보관실-North
+PASS B2 Data_RoomTheme_훈련보관실 fixed facing East
+PASS B2 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS B2 Data_RoomTheme_훈련보관실 fixed facing South
+PASS B2 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS B2 Data_RoomTheme_훈련보관실 fixed facing West
+PASS B2 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B2 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS saved prop Goddess
+PASS place B2 Goddess/0 used=False
+PASS actual prop painting Goddess B2/0
+PASS PNG-derived physical support T_UI_World_Goddess_Front
+PASS statue hood remains below world/HUD boundary B2/0 top=885.5953 roof=1129.099
+SCREEN B2-Goddess-0-Ready
+PASS place B2 Goddess/1 used=False
+PASS actual prop painting Goddess B2/1
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS statue hood remains below world/HUD boundary B2/1 top=910.6917 roof=1129.099
+SCREEN B2-Goddess-1-Ready
+PASS place B2 Goddess/3 used=False
+PASS actual prop painting Goddess B2/3
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS statue hood remains below world/HUD boundary B2/3 top=910.6917 roof=1129.099
+SCREEN B2-Goddess-3-Ready
+PASS saved prop Fountain
+PASS place B2 Fountain/0 used=False
+PASS actual prop painting Fountain B2/0
+PASS PNG-derived physical support T_UI_World_Fountain_Front
+SCREEN B2-Fountain-0-Ready
+PASS place B2 Fountain/1 used=False
+PASS actual prop painting Fountain B2/1
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+SCREEN B2-Fountain-1-Ready
+PASS place B2 Fountain/2 used=False
+PASS actual prop painting Fountain B2/2
+PASS PNG-derived physical support T_UI_World_분수_rear
+SCREEN B2-Fountain-2-Ready
+PASS place B2 Fountain/0 used=True
+PASS actual prop painting Fountain B2/0
+PASS PNG-derived physical support T_UI_World_Fountain_UsedFront
+SCREEN B2-Fountain-0-Used
+PASS place B2 Fountain/1 used=True
+PASS actual prop painting Fountain B2/1
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+SCREEN B2-Fountain-1-Used
+PASS place B2 Fountain/2 used=True
+PASS actual prop painting Fountain B2/2
+PASS PNG-derived physical support T_UI_World_분수_usedRear
+SCREEN B2-Fountain-2-Used
+PASS actual chapter travel B3
+PASS canonical background has one authored color pass B3
+PASS same three real opening overlays visible for palette comparison B3
+SCREEN B3-Base-Doors
+PASS B3 Data_RoomTheme_물자보관칸 fixed facing North
+PASS B3 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_물자보관칸 real forward/side doors
+SCREEN B3-Data_RoomTheme_물자보관칸-North
+PASS B3 Data_RoomTheme_물자보관칸 fixed facing East
+PASS B3 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B3 Data_RoomTheme_물자보관칸 fixed facing South
+PASS B3 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B3 Data_RoomTheme_물자보관칸 fixed facing West
+PASS B3 Data_RoomTheme_물자보관칸 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_물자보관칸 real forward/side doors
+PASS B3 Data_RoomTheme_봉인기록고 fixed facing North
+PASS B3 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_봉인기록고 real forward/side doors
+SCREEN B3-Data_RoomTheme_봉인기록고-North
+PASS B3 Data_RoomTheme_봉인기록고 fixed facing East
+PASS B3 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B3 Data_RoomTheme_봉인기록고 fixed facing South
+PASS B3 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B3 Data_RoomTheme_봉인기록고 fixed facing West
+PASS B3 Data_RoomTheme_봉인기록고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_봉인기록고 real forward/side doors
+PASS B3 Data_RoomTheme_옛경비실 fixed facing North
+PASS B3 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_옛경비실 real forward/side doors
+SCREEN B3-Data_RoomTheme_옛경비실-North
+PASS B3 Data_RoomTheme_옛경비실 fixed facing East
+PASS B3 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B3 Data_RoomTheme_옛경비실 fixed facing South
+PASS B3 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B3 Data_RoomTheme_옛경비실 fixed facing West
+PASS B3 Data_RoomTheme_옛경비실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_옛경비실 real forward/side doors
+PASS B3 Data_RoomTheme_잊힌서약실 fixed facing North
+PASS B3 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_잊힌서약실 real forward/side doors
+SCREEN B3-Data_RoomTheme_잊힌서약실-North
+PASS B3 Data_RoomTheme_잊힌서약실 fixed facing East
+PASS B3 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_잊힌서약실 real forward/side doors
+SCREEN B3-Data_RoomTheme_잊힌서약실-East
+PASS B3 Data_RoomTheme_잊힌서약실 fixed facing South
+PASS B3 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_잊힌서약실 real forward/side doors
+PASS B3 Data_RoomTheme_잊힌서약실 fixed facing West
+PASS B3 Data_RoomTheme_잊힌서약실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_잊힌서약실 real forward/side doors
+PASS B3 Data_RoomTheme_폐성급료고 fixed facing North
+PASS B3 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_폐성급료고 real forward/side doors
+SCREEN B3-Data_RoomTheme_폐성급료고-North
+PASS B3 Data_RoomTheme_폐성급료고 fixed facing East
+PASS B3 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B3 Data_RoomTheme_폐성급료고 fixed facing South
+PASS B3 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B3 Data_RoomTheme_폐성급료고 fixed facing West
+PASS B3 Data_RoomTheme_폐성급료고 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_폐성급료고 real forward/side doors
+PASS B3 Data_RoomTheme_혈근번식실 fixed facing North
+PASS B3 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_혈근번식실 real forward/side doors
+SCREEN B3-Data_RoomTheme_혈근번식실-North
+PASS B3 Data_RoomTheme_혈근번식실 fixed facing East
+PASS B3 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B3 Data_RoomTheme_혈근번식실 fixed facing South
+PASS B3 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B3 Data_RoomTheme_혈근번식실 fixed facing West
+PASS B3 Data_RoomTheme_혈근번식실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_혈근번식실 real forward/side doors
+PASS B3 Data_RoomTheme_훈련보관실 fixed facing North
+PASS B3 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_훈련보관실 real forward/side doors
+SCREEN B3-Data_RoomTheme_훈련보관실-North
+PASS B3 Data_RoomTheme_훈련보관실 fixed facing East
+PASS B3 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS B3 Data_RoomTheme_훈련보관실 fixed facing South
+PASS B3 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS B3 Data_RoomTheme_훈련보관실 fixed facing West
+PASS B3 Data_RoomTheme_훈련보관실 no second whole-frame color multiplication
+PASS B3 Data_RoomTheme_훈련보관실 real forward/side doors
+PASS saved prop Goddess
+PASS place B3 Goddess/0 used=False
+PASS actual prop painting Goddess B3/0
+PASS PNG-derived physical support T_UI_World_Goddess_Front
+PASS statue hood remains below world/HUD boundary B3/0 top=885.5953 roof=1129.099
+SCREEN B3-Goddess-0-Ready
+PASS place B3 Goddess/1 used=False
+PASS actual prop painting Goddess B3/1
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS statue hood remains below world/HUD boundary B3/1 top=944.9328 roof=1129.099
+SCREEN B3-Goddess-1-Ready
+PASS place B3 Goddess/3 used=False
+PASS actual prop painting Goddess B3/3
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS statue hood remains below world/HUD boundary B3/3 top=944.9328 roof=1129.099
+SCREEN B3-Goddess-3-Ready
+PASS saved prop Fountain
+PASS place B3 Fountain/0 used=False
+PASS actual prop painting Fountain B3/0
+PASS PNG-derived physical support T_UI_World_Fountain_Front
+SCREEN B3-Fountain-0-Ready
+PASS place B3 Fountain/1 used=False
+PASS actual prop painting Fountain B3/1
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+SCREEN B3-Fountain-1-Ready
+PASS place B3 Fountain/2 used=False
+PASS actual prop painting Fountain B3/2
+PASS PNG-derived physical support T_UI_World_분수_rear
+SCREEN B3-Fountain-2-Ready
+PASS place B3 Fountain/0 used=True
+PASS actual prop painting Fountain B3/0
+PASS PNG-derived physical support T_UI_World_Fountain_UsedFront
+SCREEN B3-Fountain-0-Used
+PASS place B3 Fountain/1 used=True
+PASS actual prop painting Fountain B3/1
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+SCREEN B3-Fountain-1-Used
+PASS place B3 Fountain/2 used=True
+PASS actual prop painting Fountain B3/2
+PASS PNG-derived physical support T_UI_World_분수_usedRear
+SCREEN B3-Fountain-2-Used
+PASS dog on actual B1
+PASS owned dog present
+PASS forward companion painting bound B1
+DOG B1 support=(1321.37, -80.76) actualPainting=(x:981.54, y:-137.00, width:680.11, height:453.40) source=T_Sprite_Character_길동무_Idle
+PASS companion support remains in near player floor B1
+SCREEN B1-Dog-Navigation
+PASS visible companion button available
+PASS visible companion upper-back pointer reaches actual button; first hit=Body
+PASS companion actual click narration B1
+PASS dog actual combat context B1
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS player painting yields input to actual interaction surfaces B1
+SCREEN B1-Dog-CombatIdle
+PASS dog uses a distinct authored attack painting B1
+SCREEN B1-Dog-Attack
+PASS dog on actual B2
+PASS owned dog present
+PASS forward companion painting bound B2
+DOG B2 support=(1321.37, -80.76) actualPainting=(x:981.54, y:-137.00, width:680.11, height:453.40) source=T_Sprite_Character_길동무_Idle
+PASS companion support remains in near player floor B2
+SCREEN B2-Dog-Navigation
+PASS visible companion button available
+PASS visible companion upper-back pointer reaches actual button; first hit=Body
+PASS companion actual click narration B2
+PASS dog actual combat context B2
+PASS combat begins after actual confirmation/tutorial input
+PASS player painting yields input to actual interaction surfaces B2
+SCREEN B2-Dog-CombatIdle
+PASS dog uses a distinct authored attack painting B2
+SCREEN B2-Dog-Attack
+PASS dog on actual B3
+PASS owned dog present
+PASS forward companion painting bound B3
+DOG B3 support=(1321.37, -80.76) actualPainting=(x:981.54, y:-137.00, width:680.11, height:453.40) source=T_Sprite_Character_길동무_Idle
+PASS companion support remains in near player floor B3
+SCREEN B3-Dog-Navigation
+PASS visible companion button available
+PASS visible companion upper-back pointer reaches actual button; first hit=Body
+PASS companion actual click narration B3
+PASS dog actual combat context B3
+PASS combat begins after actual confirmation/tutorial input
+PASS player painting yields input to actual interaction surfaces B3
+SCREEN B3-Dog-CombatIdle
+PASS dog uses a distinct authored attack painting B3
+SCREEN B3-Dog-Attack
+PASS return to chapter start
+Scoped visual composition/click checks only; source palette statistics are diagnostic. No DPS, broad balance suite or claim of user five-run feel validation.
+395 checks; 0 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

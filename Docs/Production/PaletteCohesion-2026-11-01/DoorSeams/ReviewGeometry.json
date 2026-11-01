@@ -1,0 +1,46 @@
+{
+  "Left": {
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-9ec55f7c-e3ec-488b-9963-f3d94b6ac191.png",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "094ff083052b3d0c549d2465334cba50e0df963512810279147e1a33bef97ace",
+    "void_profile_unoccluded_rows": [
+      320,
+      430
+    ],
+    "mean_abs_edge_delta_px": 0.24324324324324326,
+    "max_abs_edge_delta_px": 3,
+    "fit": {
+      "scale": 1,
+      "translation": [
+        0,
+        0
+      ]
+    },
+    "limits": "Only opaque dark interior edge on unoccluded vertical opening; not a stone-surface or upper arch shape equality test. Deleted old column in lower section must change previous occluded bounds."
+  },
+  "Right": {
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-ae81e7d3-804d-49ed-906e-8c052d98f7b2.png",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "71aa15105ab3487c0ac8438210a5df4d7cffbe11dbb523f203bc8274033d5799",
+    "void_profile_unoccluded_rows": [
+      340,
+      430
+    ],
+    "mean_abs_edge_delta_px": 0.5934065934065934,
+    "max_abs_edge_delta_px": 1,
+    "fit": {
+      "scale": 1,
+      "translation": [
+        0,
+        0
+      ]
+    },
+    "limits": "Only opaque dark interior edge on unoccluded vertical opening; not a stone-surface or upper arch shape equality test. Deleted old column in lower section must change previous occluded bounds."
+  }
+}

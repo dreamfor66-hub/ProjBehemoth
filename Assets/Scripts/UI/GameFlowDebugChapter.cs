@@ -9,6 +9,7 @@ namespace DungeonSlash
 
         private void ResetDebugChapterFlow()
         {
+            EndPlayRecordInspection();
             StopAllCoroutines(); combatController.ResetEncounter(); roomTransitionView?.Cancel();
             roomEvents.Clear(); eventCombatCompleted = null; activeEvent = null; activeStoryIllustration = null;
             isCheatCombat = false; HideTransientViews(); resultView?.Hide();
@@ -19,6 +20,7 @@ namespace DungeonSlash
             if (act < 1 || act > 3 || dungeonController == null || runController == null) return false;
             if (runController.State == null) StartNewRun();
             ResetDebugChapterFlow(); DebugInspectionArt = null;
+            ResetPlayRecord();
             seed = CreateRandomSeed(); var run = runController.State;
             run.Seed = seed; run.CurrentAct = act; run.NormalCombatsInAct = 0;
             run.SeenEvents.Clear(); runController.ClearChapterShopCache();
@@ -43,6 +45,7 @@ namespace DungeonSlash
         {
             if (!ExplorationEnabled || runController?.State == null) return false;
             ResetDebugChapterFlow(); DebugInspectionArt = art;
+            ResetPlayRecord();
             var settings = dungeonController.Exploration; view = (view % 4 + 4) % 4;
             var gate = DebugIsPassageArtwork(art);
             var entrance = art != null && (art == settings.bossEntrance || art == settings.eliteEntrance);

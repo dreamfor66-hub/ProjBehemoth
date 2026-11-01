@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: style-transfer. Production transparent combat sprite edit for Behemoth.\nImage1 is the EXACT pose and identity to edit. Image2 is actual installed B1 background, palette/large-form authority. Image3 is user-supplied Darkest Dungeon, selective heavy BLACK internal masses / severe worn threat authority. Image4 is original EV GANIN skeletal horse, clean shapes and restrained contour authority.\nRepaint only the rendering and face attitude of Image1. Preserve the SAME authored pose, limb/hand/foot/head centers, hanging-rod and cords geometry, body framing, total scale, canvas aspect and outer transparent margin. This is one separate hand-authored animation state; no pose motion or mirroring. Head must keep the same skull/hood identity and olive cloth/red binding palette. Make the skull a menacing mortuary puppet: hollow irregular deep-black eye sockets WITHOUT luminous rounded dots or cute highlights, angular cheek shadows and a dry irregular jaw line; not a happy stitched doll smile. Heavy pooled blacks beneath hood, jaw, palms, cloth overlapping and joint recesses; sparse broad muted bone color planes, dull oxblood ties. Keep giant articulated wooden claws and suspension cords readable. Simplify shading to large black shapes, no extra cracks/fur/hatching/noise, no realistic rendering, no uniform thick sticker outline. Contrast comes from deliberate lit planes against black, not global darkness. No scene, no pedestal, no text, no border. Genuine alpha background.\nState Attack: retain precisely the pose of Image1, including the rod tilt, skull tilt, both hands and feet; only mature ink rendering changes.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_실인형_Attack.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-305f3f01-9bf5-45f7-91e8-e9363617e716.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularMonsterStyle/Images/02.jpg"
+  ]
+}

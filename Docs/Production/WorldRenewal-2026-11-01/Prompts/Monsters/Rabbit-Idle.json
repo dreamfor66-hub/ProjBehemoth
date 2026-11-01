@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: style-transfer. Asset: transparent Behemoth combat monster sprite.\nImage1 EXACT edit target, composition/identity/pose authority; Image2 actual installed B1 environment for restrained palette and large forms; Image3 user-supplied Darkest Dungeon for pooled ink shadows/severe grim creature attitude; Image4 original EV GANIN skeletal horse for selective contour and quiet shape simplification.\nRepaint Image1 as a dangerous adult white bell-hare, NOT a toy rabbit or friendly mascot. Preserve EXACT pose, feet/hand/head centers, overall silhouette, the same two ears and ear bends, slate short mantle, diagonal leather strap and large brass BELL at precisely the same place and scale. Bell is a gameplay weakpoint: keep it clearly identifiable. Do not shrink creature or alter framing/camera/limb lengths. Coarse gaunt predator's face: narrowed small dull eyes embedded in a deep black brow, angular long cheek planes, black recessed muzzle/underjaw; no cute round cheeks, no pink nose, no shining eyes. A few large ragged fur shapes; DO NOT add tiny fur strokes, cracks or extra spike noise. Ivory/stone-gray fur with much broader INK BLACK masses at neck, armpits, belly undersides and legs, and quiet broad lit planes. Leather dark worn umber, bell dull aged brass with narrow restrained highlights, not glossy gold. Keep strong readable silhouette and full alpha cutout, no uniform sticker border, no background/groundplane/text. Follow mood and black masses of Image3 but retain simplified artwork of Image4, no photo-real detail or dirty global filter.\nIdle: preserve the poised standing pose, one tall ear and one bent ear, both lifted clawed hands and grounded feet. Eyes still face the player.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_종토끼_Idle.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-305f3f01-9bf5-45f7-91e8-e9363617e716.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularMonsterStyle/Images/02.jpg"
+  ]
+}

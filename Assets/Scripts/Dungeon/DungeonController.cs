@@ -30,6 +30,7 @@ namespace DungeonSlash
             var nextSeed = State == null ? nextFloor * 7919 : State.Seed + nextFloor * 7919;
             BeginFloor(nextSeed, nextFloor);
         }
+        public void SetRecordedState(DungeonRunState state) { State=state; Floor=state.Floor; hoveredDirection=null; HideNavigation(); }
         // Explicit F1 inspection room, separate from ordinary seeded generation.
         public void BeginDebugInspection(DungeonGraph graph)
         {
@@ -66,7 +67,7 @@ namespace DungeonSlash
         }
         private void MoveAbsolute(FacingDirection absolute)
         {
-            if (!navigationVisible || State == null) return;
+            if (!navigationVisible || State == null || State.Inspection) return;
             var target = State.Graph.At(State.Player.CurrentRoom.Position + DirectionUtility.Offset(absolute));
             if (target == null || !State.Player.CurrentRoom.Connections.Contains(target.RoomId)
                 || !State.CanTravel(State.Player.CurrentRoom, target)) return;

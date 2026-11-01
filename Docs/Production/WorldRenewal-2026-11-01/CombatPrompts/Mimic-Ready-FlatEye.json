@@ -1,0 +1,8 @@
+{
+  "prompt": "Edit the FIRST image, keeping all of its composition and artwork. Remove ONLY the little white teardrop sparkle on the UPPER RIGHT of the BLACK vertical pupil, inside the central eye on the square keyhole plate. This white glint is the defect. Paint that specific white teardrop in the same dull ochre as its immediately surrounding iris. The eye should have only black and one flat dull ochre, with NO WHITE OR CREAM MARK inside the iris. The second image shows the mood of unshiny eyes, not additional shapes to add. Keep absolutely all other body, iron, wood, teeth, tongue, pose, full canvas margins, alpha and clean rendering unchanged. Genuine transparent background. Do not return the original white glint.",
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-c42e5d7e-8257-4a68-81e2-a45e351de2e1.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-e0589781-5f61-456d-9962-8ca002c8efb6.webp"
+  ],
+  "transparent_background": true
+}

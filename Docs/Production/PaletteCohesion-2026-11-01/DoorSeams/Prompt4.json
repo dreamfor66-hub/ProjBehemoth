@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: lighting-weather. Change ONLY the COLOR/LIGHTING of the thin stone doorway in Image1. Preserve its EXACT1672×941 canvas, alpha silhouette, geometry, aperture, pixel locations and composition. No zoom, scaling, cropping, translation, additional stones or framing. Do not add background. Keep opaque door opening pure ink black. This must be exactly the same asset, just subdued DARK NEUTRAL STONE.\nImage1 is edit target: its stone is currently far too bright gold/beige. Image2 is the ORIGINAL dark stone material authority. Image3 is actual B1 gameplay display color/lighting authority. Image4/5 are mood references only.\nMatch Image2 original very dark neutral-grey stone: on the broad middle stone faces use approximately RGB(50,48,42), low saturation, almost grey. Dark recess faces around(22,22,20). Maximum near(98,94,84) ONLY on a tiny raised edge/lip, never a whole broad jamb or triangular arch fill. NO yellow, beige, golden ochre, fresh cream edges, or overall amber wash. Keep the original large flat shadow shapes and quiet matte material. The object must sit within Image3's dark room without drawing attention as a bright outlined button. Preserve every existing line, shape, narrow pointed arch and doorway opening. Color/light adjustment ONLY, no texture redesign, no ambient haze, no glows. Transparent output with exact original alpha and location.",
+  "inputs": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-172894ff-350c-49a4-b5e3-b445f3f08c6a.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/PaletteCohesion-2026-11-01/DoorSeams/Before/B1-Left.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/PaletteCohesion-2026-11-01/Screens/Final-B1-Base-Doors.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/DarkestDungeonVisual/Images/01-DarkDungeonCombat.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/DarkestDungeonVisual/Images/03-ColdRuinsCombat.png"
+  ]
+}

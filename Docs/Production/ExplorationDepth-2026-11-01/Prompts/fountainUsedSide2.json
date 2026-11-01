@@ -1,0 +1,5 @@
+{
+  "prompt": "Edit ONLY the water state of this exact fountain sprite. Keep the SAME three-quarter LEFT SIDE camera, DIAMOND-oriented two-step square plinth, pedestal facets, bowl rim, outline, stone cracks, scale, position and ink/color. Remove the arcing stream and blue standing water; reveal dark dry shallow stone bowl floor with central drain. No other changes. Full object genuine transparent background. Do not rotate base into frontal view. No statue/no new geometry/no scenery/text.",
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-12e49902-753c-462d-9a83-07adb2b36898.png",
+  "tool": "built-in image_gen"
+}

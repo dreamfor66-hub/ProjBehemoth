@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: style-transfer. Asset: Behemoth transparent combat creature.\nImage1 EXACT pose/identity edit target; Image2 installed B1 wall/floor palette and quiet big forms; Image3 user supplied Darkest Dungeon pooled-black threatening creature attitude; Image4 original EV GANIN skeletal horse selective contour/broad planes.\nRepaint Image1 as a grim dangerous adult charcoal salamander, not a collectible cute cartoon creature. Maintain EXACT quadrupedal pose, joints, claws, head/eye centers, jaw opening, dorsal plate outline, curled tail path and flame location, body framing, feet-contact endpoints. Head/forelimbs/tail are authored weakpoint regions; don't move or conceal these. Body slate charcoal with large BLACK shapes merging underneath plates, jaw, belly and limbs. Gold toy-like belly becomes dull ochre/ash broad planes cut by strong black underside; eyes small ember slits set deeply under heavy brow with no cute brow or shine. Face looks predatory and heavy; teeth look worn irregular fangs without extra exaggerated tooth count. Keep the mouth black, tongue dark umber-purple, not rosy or smiling. Keep source's tail flame as a few restrained ember-orange planes at the SAME tip, no extra flame effects. Preserve major plate construction, reduce internal facet lines to quiet broad flats; do not add scales/cracks/hatching/grain or tiny spikes. Sharp selective bold contours, solid internal ink masses rather than overall darkening. No glow aura, no scenery/floor/shadow pedestal, no text. Full alpha cutout, original canvas aspect and padding.\nIdle: preserve original forward-facing four-foot stance and raised tail pointing upper-left. Heavy watchful threat rather than cute smile.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_숯불도롱뇽_Idle.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-305f3f01-9bf5-45f7-91e8-e9363617e716.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularMonsterStyle/Images/02.jpg"
+  ]
+}

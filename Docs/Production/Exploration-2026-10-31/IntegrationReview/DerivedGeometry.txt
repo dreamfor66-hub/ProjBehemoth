@@ -1,7 +1,7 @@
 B1 illumination=RGBA(0.754, 0.699, 0.564, 1.000)
   aperture: (x:0.45, y:0.39, width:0.10, height:0.32); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
-  aperture: (x:0.17, y:0.35, width:0.06, height:0.36); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
-  aperture: (x:0.77, y:0.33, width:0.06, height:0.42); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
+  aperture: (x:0.17, y:0.35, width:0.06, height:0.37); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
+  aperture: (x:0.78, y:0.36, width:0.04, height:0.31); canvas=(1.00, 1.00)/(0.00, 0.00); exposure=1
 B2 illumination=RGBA(0.601, 0.730, 0.857, 1.000)
   aperture: (x:0.45, y:0.39, width:0.09, height:0.29); canvas=(0.56, 0.60)/(0.22, 0.25); exposure=0.7362638
   aperture: (x:0.18, y:0.36, width:0.03, height:0.35); canvas=(0.76, 0.86)/(0.04, 0.14); exposure=0.490566

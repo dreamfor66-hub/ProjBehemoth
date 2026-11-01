@@ -1,0 +1,9 @@
+[
+  "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png",
+  "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png",
+  "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png",
+  "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+  "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png",
+  "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png",
+  "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png"
+]

@@ -1,0 +1,9 @@
+{
+  "prompt": "Edit target: first input is the current CLOSED treasure chest, shown front three-quarter view. Supporting input: second is the actual installed dungeon room, and third is the Darkest Dungeon fountain as INK AND MATERIAL LANGUAGE reference only. Repaint the chest as a heavy, utilitarian abandoned expedition coffer that belongs physically on that room's floor. Keep the same low domed lid, two iron straps, central simple keyhole, front/right view and support-foot perspective. The rejected version is a polished inventory icon: uniform bold outline all around, too-bright metal, too many equally sharp chips and bevels. Correct those failures in the drawing, not by just darkening the whole picture. Use lost-and-found selective contours merging into broad black underside shadows, two or three large weathered dark olive-brown wooden planes, iron nearly the room stone's value with only one restrained upper-left light face, no bright rim, no regular rows of little bolts, no item-card silhouette glow, no bevel rendering. Draw a few believable structural divisions only. Clear grounded broad foot, thin flat contact shadow at floor, no surrounding stones/rubble/background. The top plane must have a shallow eye-level room-camera angle, not a top-down icon. A severe hand-inked dungeon object, large simple forms and substantial BLACK pooling inside the design. Transparent background; object only. Do not add gold ornaments, text, face, eyes, blood, sparkling loot, UI framing. High-quality ordinary PNG cutout with full object inside frame.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+  ],
+  "transparent_background": true
+}

@@ -72,7 +72,7 @@ internal static class ExplorationArtPreparation
         if (!texture.LoadImage(File.ReadAllBytes(AssetDatabase.GetAssetPath(sprite)))) throw new IOException("Cannot read " + sprite.name);
         return texture;
     }
-    static RoomObjectData.PaintingGeometry Geometry(Sprite sprite)
+    internal static RoomObjectData.PaintingGeometry Geometry(Sprite sprite)
     {
         var t = Read(sprite);
         try

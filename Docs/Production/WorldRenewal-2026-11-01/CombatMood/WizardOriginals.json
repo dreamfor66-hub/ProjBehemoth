@@ -1,0 +1,114 @@
+[
+  {
+    "production": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\UI\\Outgame\\T_UI_CharacterSelection_Wizard.png",
+    "canvas": [
+      1672,
+      941
+    ],
+    "alphaBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\UI\\Outgame\\T_UI_CharacterSelection_Wizard.png",
+    "sha256": "087a69001c79cc15caa3277b81b14413363eff72efc9fb142992e87c7ac18e92"
+  },
+  {
+    "production": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\UI\\Outgame\\T_UI_CharacterButton_Wizard.png",
+    "canvas": [
+      600,
+      600
+    ],
+    "alphaBounds": [
+      0,
+      30,
+      600,
+      600
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\UI\\Outgame\\T_UI_CharacterButton_Wizard.png",
+    "sha256": "807e7b4bd4b57f402bbb1e05aee8b9470dd9496fb57c408b16ca12e76dc9f281"
+  },
+  {
+    "production": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\Heroes\\T_Sprite_Character_Wizard_Portrait.png",
+    "canvas": [
+      640,
+      640
+    ],
+    "alphaBounds": [
+      0,
+      8,
+      640,
+      640
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\Heroes\\T_Sprite_Character_Wizard_Portrait.png",
+    "sha256": "584b1045d5ccc8640b26f9b585399b1f03c6d8f4dceb8762f7182c9c4aaa4db2"
+  },
+  {
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Idle.png",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "alphaBounds": [
+      1047,
+      234,
+      2055,
+      1304
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\CombatMood\\WizardInputs\\T_Sprite_Character_Wizard_Idle.png",
+    "sha256": "fab2db458096a907c1e2c1520bfc876498261d44fc23ea733d94dd2fe79fde42"
+  },
+  {
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Ready.png",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "alphaBounds": [
+      940,
+      221,
+      2172,
+      1296
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\CombatMood\\WizardInputs\\T_Sprite_Character_Wizard_Ready.png",
+    "sha256": "6ec377dbe8e1090d45935ccc9ba56f398fdd32f699cb117ff878639107e69b7f"
+  },
+  {
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Attack.png",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "alphaBounds": [
+      790,
+      292,
+      2155,
+      1304
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\CombatMood\\WizardInputs\\T_Sprite_Character_Wizard_Attack.png",
+    "sha256": "10b2cdfb1d9f5328d79b1e7fed9e2a33984f622ed41f74955d6ae699449c35ea"
+  },
+  {
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png",
+    "backup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Guard.png",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "alphaBounds": [
+      829,
+      268,
+      2135,
+      1304
+    ],
+    "editTarget": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\CombatMood\\WizardInputs\\T_Sprite_Character_Wizard_Guard.png",
+    "sha256": "f1c005415b8b61352cf7a87fcee5bd27c345e01b554b8082366abd21295aabad"
+  }
+]

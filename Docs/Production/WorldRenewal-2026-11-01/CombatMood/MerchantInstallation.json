@@ -1,0 +1,623 @@
+[
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Idle",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-459ed717-5ab1-4e5a-9bec-df1ab2dfc3f7.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Idle.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Idle.png",
+    "originalSha256": "050e13424e0d8c6c43a1a31a5f15fceedd7016c0aa60eb8878ae93dff4f6c50c",
+    "generatedSha256": "f720991db9cbd4e640db3a3a7fc816ee4382d28980f32004e1571cffaff4e014",
+    "productionSha256": "12c42b30c0795715d3ea1a3b54449d68e8becd20cc7c9b2ffebc5feb8bedc69b",
+    "canvas": [
+      1253,
+      1246
+    ],
+    "framing": {
+      "uniformScale": 0.9991941982272361,
+      "offset": [
+        0,
+        0
+      ],
+      "originalAlphaBounds": [
+        9,
+        4,
+        1249,
+        1242
+      ],
+      "generatedAlphaBounds": [
+        9,
+        5,
+        1250,
+        1243
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Idle.png.meta": "14ea4ea80f4804a332a14fc4f79d42d3dde50a0f345ebf7a468ab3dbfe3d48c8",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Idle.asset": "8d2d977a2964d917144c286efb5f00ef2bc6b5baba11c7085f01e0048b179ef2",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Idle.asset.meta": "4f1ff0550037d98491223822de35783a186797811cb8a9b637759b7bc907c460"
+    },
+    "silhouetteIntersectionOverUnion": 0.9809898478911395
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Ready",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-a8559563-f8d3-4901-a7b2-c73812588b4a.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Ready.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Ready.png",
+    "originalSha256": "5f195bd87ecc9b061add5e6b6f6990dce972b66f7e3e0afd86af078a34468b80",
+    "generatedSha256": "ebb0c919f1650fdfafe77cdd1dfd67d52205eeef265d67fab5ccbc18e2f1024f",
+    "productionSha256": "d165800f8ab3f744ebe65aecd304e522a169c3f51ebfc1780c81f9e79399a831",
+    "canvas": [
+      1253,
+      1151
+    ],
+    "framing": {
+      "uniformScale": 0.9525,
+      "offset": [
+        8,
+        3
+      ],
+      "originalAlphaBounds": [
+        10,
+        4,
+        1250,
+        1147
+      ],
+      "generatedAlphaBounds": [
+        2,
+        1,
+        1303,
+        1201
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Ready.png.meta": "8b2ae2e827d1cf7081521adec80d681dfda1e94aac0321acc001151a85140a5c",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Ready.asset": "b5feb8a6a4258e3bf0633da90ce8d2b82a8b20267a6a26d80149b1cbed7025f5",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Ready.asset.meta": "e882c83f4ffe37692f5ac0b4b377fe1293f8572b0f8b4602a73c19f7b6c61683"
+    },
+    "silhouetteIntersectionOverUnion": 0.9634853930305659
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Attack",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-d42c8961-0e96-4cd5-85b6-7d760f471721.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Attack.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Attack.png",
+    "originalSha256": "71996a8293080b7424067ca308e8396df53033ec9292877bee85ab93298e0d67",
+    "generatedSha256": "de4cc6f2a6663eeb02b61a2a060a1b8e202891ff8e012071182a1d3c4a96b5bc",
+    "productionSha256": "9143b70c09f57aea82789bfdf15a8859905c783b50c410f2a43ebec8f2b0016e",
+    "canvas": [
+      1253,
+      1172
+    ],
+    "framing": {
+      "uniformScale": 0.9650892164468581,
+      "offset": [
+        3,
+        3
+      ],
+      "originalAlphaBounds": [
+        4,
+        4,
+        1248,
+        1167
+      ],
+      "generatedAlphaBounds": [
+        1,
+        1,
+        1290,
+        1206
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Attack.png.meta": "8401978641c023f5fcd84c1ffeb0cdcf859b2a02eba1deb998a2143a1d5082f0",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Attack.asset": "13ea9515b8b7d45decd770c289a043373fecc62bb0b6563aa23eb0ea503cb884",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Attack.asset.meta": "45f4ca674db1607eaf85ef65861ea274d72eb3aeb440f8a50b46063f2218edc8"
+    },
+    "silhouetteIntersectionOverUnion": 0.8668518313411091
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Stunned",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-59950f3d-84d4-4d24-9849-d0d83aa302d6.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Stunned.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Stunned.png",
+    "originalSha256": "52223a3b55052c5c87a7f6577b9fe62328bafa72930bf789d9b2a08e61066e86",
+    "generatedSha256": "f176ab58b18f23aeb6c8b6423e5f0cb74bfd2efbd5a668c50386f5e0c45f2ee0",
+    "productionSha256": "f4a15c83cddbbebb1ffd0d9e1fe532778677e08cb2eebf11794f97a6beb83c94",
+    "canvas": [
+      1026,
+      1241
+    ],
+    "framing": {
+      "uniformScale": 0.8975290697674418,
+      "offset": [
+        0,
+        1
+      ],
+      "originalAlphaBounds": [
+        4,
+        3,
+        1023,
+        1238
+      ],
+      "generatedAlphaBounds": [
+        9,
+        2,
+        1135,
+        1378
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Stunned.png.meta": "95b471c63eac13c5bc254a89804b24120081a83abcc9d2e50f254ab703c1b874",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Stunned.asset": "791c1eda1a1b5234345e44dece99056f12cb8c58bc7f907402dad027821a84fd",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Stunned.asset.meta": "deaa6bb9eb1f2656e8ec02a75ac7e0f0f8b72bea6f294b784ceb2c2560995d9e"
+    },
+    "silhouetteIntersectionOverUnion": 0.9265773812461139
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Dead",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-1124dab3-efc4-45bf-9f6f-4c082c5c4b99.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Dead.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Dead.png",
+    "originalSha256": "66bff5f9fd88f9890b16a9b74ffc2a6baa4248b475d3d3f0d3d6a54b1068d16c",
+    "generatedSha256": "ce9a11d617e5a51eb350ab108c4009a347ae8bd039b8f826bf811b2042653af4",
+    "productionSha256": "e31fea5ebaa972fc0fc252bb835e56ee7ae979f45936f82c2b829608847cdd82",
+    "canvas": [
+      1253,
+      796
+    ],
+    "framing": {
+      "uniformScale": 0.7927565392354124,
+      "offset": [
+        6,
+        3
+      ],
+      "originalAlphaBounds": [
+        6,
+        4,
+        1253,
+        792
+      ],
+      "generatedAlphaBounds": [
+        6,
+        1,
+        1566,
+        995
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Dead.png.meta": "2b87183f19fe3327448bbcac2a062d1b2a28e58945c1a551f095be0814df93d4",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Dead.asset": "12ee1b1a1bfd8a424bdca406f553ffe97c12a3b856efa38528b88cb41ef59db9",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Dead.asset.meta": "d1c0d1ef0fdf0a665a622bdbc8a39c7371bea3c7628cfb433ba253337add273c"
+    },
+    "silhouetteIntersectionOverUnion": 0.9086249285780331
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Idle",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-ceb5b736-42c0-4025-bccf-693bf8ad85af.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Idle.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Idle.png",
+    "originalSha256": "c38170dc1dc760f693301f977136e7e0c4e306f63f804d534cfe54b9936fa0d4",
+    "generatedSha256": "c71d40b722cdce6168814a9cc49f181d736d1dd509c59624245ca1e43079967d",
+    "productionSha256": "785306e6e676409ad38f75244d3995489b334a5c8864547acf16d3ff59b99497",
+    "canvas": [
+      1239,
+      1228
+    ],
+    "framing": {
+      "uniformScale": 0.9886363636363636,
+      "offset": [
+        2,
+        6
+      ],
+      "originalAlphaBounds": [
+        4,
+        4,
+        1222,
+        1224
+      ],
+      "generatedAlphaBounds": [
+        2,
+        3,
+        1234,
+        1232
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Idle.png.meta": "2bbac6b4817a9db9df6801e36b2b7d21f66dc13fae6269092747ec638555c1d4",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Idle.asset": "37d7a38107efcd362ff4dfc749c34adf649a72ca97dada21e98f3750920341d0",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Idle.asset.meta": "7580b3ca9e49127b08a8a640b0ea45d618f54ed55c6bd178f19e4a19ac07b514"
+    },
+    "silhouetteIntersectionOverUnion": 0.9767192286281596
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Ready",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-97eb58b1-6fcc-4825-9bf8-7fe838575850.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Ready.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Ready.png",
+    "originalSha256": "dd597991b08cf34414b790825a6162d9b256ff23abe5da233c642b9b15890f6b",
+    "generatedSha256": "46030ba0b8d7d6e84b320f6a76c08e536c4966b0c8cba199555b81e9a1c1d063",
+    "productionSha256": "80f9c8220227c7a7a844fedbdb05e073ad2190be3cb8bb1bbecd9b8e7efc21b4",
+    "canvas": [
+      1239,
+      1216
+    ],
+    "framing": {
+      "uniformScale": 0.9787581699346405,
+      "offset": [
+        -1,
+        1
+      ],
+      "originalAlphaBounds": [
+        8,
+        4,
+        1206,
+        1212
+      ],
+      "generatedAlphaBounds": [
+        9,
+        5,
+        1233,
+        1237
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Ready.png.meta": "1c2269272f71cf6c0cd987b9420b473957fb5418e55fc7dd2e10c3795ffd0291",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Ready.asset": "df8d05c6223313985d9b918b04e1d86f58229ab1744fc952e7e2a4574c136b4c",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Ready.asset.meta": "e4ebcb6887d150b8a742e8e23e5c8a733e95f7df3679aec9c0ea2f71c9d3263f"
+    },
+    "silhouetteIntersectionOverUnion": 0.9624185914089469
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Attack",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-4eeb56af-1154-440e-b908-6f7e1fe6c084.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Attack.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Attack.png",
+    "originalSha256": "9053475850ebfda39ee342850682509a225d708821049d1d48344d84cb979608",
+    "generatedSha256": "4ccd6a46a8a10739727882d431d7f8de83a4401b6e27a3776bfcc1fd7f2ee37b",
+    "productionSha256": "ce8458986dafdc0d786208a31b8b42f5ec8317dd4583222d90fc4fdf4825e83e",
+    "canvas": [
+      1239,
+      1220
+    ],
+    "framing": {
+      "uniformScale": 0.9852941176470589,
+      "offset": [
+        1,
+        10
+      ],
+      "originalAlphaBounds": [
+        33,
+        4,
+        1239,
+        1216
+      ],
+      "generatedAlphaBounds": [
+        32,
+        3,
+        1256,
+        1224
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Attack.png.meta": "acf4422a060fa581170700ce50ddd7fbd638f239bc4d09c1a6f080801510d069",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Attack.asset": "f63e1bab0e599bdc4581de4eda6cc8e2454b39805bd09753995e97babba8ac0a",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Attack.asset.meta": "7e24401b3dac40d0a9a040dc12eef5b93e4b9aca3837a73348d279eee3c0d56a"
+    },
+    "silhouetteIntersectionOverUnion": 0.9435317287171288
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Stunned",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-ebfb3088-e3e3-4d7d-857b-860d22d3965e.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Stunned.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Stunned.png",
+    "originalSha256": "9af85c9750cc4684a0961fd24cdb43744ea42272b56a2d16c24d014cf8eba4a3",
+    "generatedSha256": "75f7c2f7b46394b334f9a8322dd5b0ca0429e7b622aea13ecad9a051ff79794c",
+    "productionSha256": "c20f7d59951f728e170364e415cc9e29adef53e51ed579b8fa5d3820e316c293",
+    "canvas": [
+      1038,
+      1162
+    ],
+    "framing": {
+      "uniformScale": 0.8701517706576728,
+      "offset": [
+        3,
+        4
+      ],
+      "originalAlphaBounds": [
+        3,
+        3,
+        1035,
+        1159
+      ],
+      "generatedAlphaBounds": [
+        0,
+        0,
+        1186,
+        1327
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Stunned.png.meta": "f7fbdff9025a1dc720fc055b99ac29f920c41955c21e2373b8f9913e7a5b195f",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Stunned.asset": "1af639f0ab6097b41c1e5351bad59673a90355d7fc30925713e46e175ef1ef97",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Stunned.asset.meta": "13f9aacea1729a095dfc39061ba5c1a3febedc5c71fa8140487a48617a26893e"
+    },
+    "silhouetteIntersectionOverUnion": 0.9191283236215039
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Dead",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-13e19f7d-001f-4bba-84ce-1f65dabc9dac.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Dead.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Dead.png",
+    "originalSha256": "0c03f9b07ac2c232c94a22a4741289028bef56594d5cf66c9da6e31690d869a5",
+    "generatedSha256": "c0d2918f0a8dd4d74789cf8e3c308178aa1061249d8b01d4eab8378b86d4ba9c",
+    "productionSha256": "b52bee96ec48fcd8754c88300e96988d40169719c0abc19ffad824d076251a02",
+    "canvas": [
+      1239,
+      833
+    ],
+    "framing": {
+      "uniformScale": 0.795484727755644,
+      "offset": [
+        4,
+        10
+      ],
+      "originalAlphaBounds": [
+        20,
+        4,
+        1218,
+        829
+      ],
+      "generatedAlphaBounds": [
+        20,
+        0,
+        1526,
+        1029
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Dead.png.meta": "1173c29654b219e732fc1356f8a63027e078af5dc716646e10a0564c20994a9e",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Dead.asset": "b9983a063a38ad68cd2f01d50812ec847b5f8dc55da61c13844a2c4112fd8dbf",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Dead.asset.meta": "eb402547e1e7dd8e03cc342a13f036690a62b3a34aedda9729a56e98baf19553"
+    },
+    "silhouetteIntersectionOverUnion": 0.961356077970341
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Idle",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-4d326100-db59-4903-8b33-43f1608f902f.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Idle.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Idle.png",
+    "originalSha256": "0701ce371c33bc445cac04b8b2303d4c269e37a30e079e9d352e48abaade28ee",
+    "generatedSha256": "820bf39e3f3ef3f38493eb9a8a6a73c5eb837ec4aa0187da205d5d6554ec4871",
+    "productionSha256": "e7bdd008010316031696115b677cfeceb81f5b3b7bc94e18a88e72c852fd9a9d",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "framing": {
+      "uniformScale": 0.9959644874899112,
+      "offset": [
+        1,
+        7
+      ],
+      "originalAlphaBounds": [
+        11,
+        89,
+        1245,
+        1211
+      ],
+      "generatedAlphaBounds": [
+        10,
+        91,
+        1249,
+        1209
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Idle.png.meta": "4cf93e0eded03454c2d5f3d8866bc79a0c4f36ee1e4d7c6c79a86afe4a6637d2",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Idle.asset": "f07c29ae8843b855e10584accb9f493539fdb1e405d51b10ef820e9e04aa8fda",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Idle.asset.meta": "4c9679dd0d0a7584147885300d452da7997dcfe65b56d49fd63b448f22a456c6"
+    },
+    "silhouetteIntersectionOverUnion": 0.9660707081539585
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Ready",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-a0e190a7-e843-4d60-8ba8-f989e16a5e7f.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Ready.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Ready.png",
+    "originalSha256": "dcdc6b17dbcefac6fb71bebd47b8ddb35785803fdc867ad6b2e0fbd45178fc77",
+    "generatedSha256": "d88b3b1c66cd3750818cba01fa0a874d3750796b3a9b09fee9ef8d2ae1c9d0b1",
+    "productionSha256": "ab78c738a5d72dc44075e312ce0e5e43f4a822174fafaf0cb045695d438f6ecc",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "framing": {
+      "uniformScale": 1.0,
+      "offset": [
+        0,
+        0
+      ],
+      "originalAlphaBounds": [
+        33,
+        152,
+        1238,
+        1213
+      ],
+      "generatedAlphaBounds": [
+        33,
+        152,
+        1238,
+        1213
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Ready.png.meta": "b045b4524163ea9507f5b6c804cae787aabbc0111e36af78e42d55159b30448f",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Ready.asset": "5dde7343f9ef88a570c5a95be6166c0282f0905a955e4d11d230e5e1238197b7",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Ready.asset.meta": "e6a3a3305f66c9463da16e551b3cc1931bc15f3977ea5940d379a8c780f0a938"
+    },
+    "silhouetteIntersectionOverUnion": 0.9924799360516043
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Attack",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-24db2b11-2f2c-44c9-a11a-b07f4c77fe8e.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Attack.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Attack.png",
+    "originalSha256": "4594d67da2be928eb7a8b8d1f3769367c88964b3257bb5c652116e8bef4f096b",
+    "generatedSha256": "78b74a00bd80d0c73e7f5c88d127e4b17ccb5d785e1eee61fda6197913ecca14",
+    "productionSha256": "5e989fe59cc1500a90f0d1834f7f552d022c5737002838761d1064803fb0f7c2",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "framing": {
+      "uniformScale": 0.9951807228915662,
+      "offset": [
+        3,
+        7
+      ],
+      "originalAlphaBounds": [
+        8,
+        85,
+        1247,
+        1210
+      ],
+      "generatedAlphaBounds": [
+        5,
+        84,
+        1250,
+        1209
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Attack.png.meta": "653947d11e474a5b4c04a931a690d160c966e74cb5e0449463174b2244c92933",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Attack.asset": "90cd6297306c50cd6dddb58ac784d305f1e994f0c04347f12b320649a951f735",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Attack.asset.meta": "7ec60ac219d0c75501ab28c6214fa37465a2d3f33df054952c639031689230c3"
+    },
+    "silhouetteIntersectionOverUnion": 0.9679955168215811
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Dead",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-d78b3e7b-735f-4f4e-b737-af7d619cc6cc.png",
+    "production": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Dead.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Dead.png",
+    "originalSha256": "e92f26a21017249d4ca2adf583b77f2d9aafe842ec838eed39b3f4c58b31be32",
+    "generatedSha256": "08885133e9d39057275382c78415c1b3afc069761bfb60e500b716eb3b5f1310",
+    "productionSha256": "48ed7a6133da3a16e7f35c584b453a1ea5abb5cfd0a113b2491159faf5e0c644",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "framing": {
+      "uniformScale": 0.9992019154030327,
+      "offset": [
+        1,
+        2
+      ],
+      "originalAlphaBounds": [
+        2,
+        420,
+        1254,
+        1201
+      ],
+      "generatedAlphaBounds": [
+        1,
+        433,
+        1254,
+        1200
+      ]
+    },
+    "preservedMetadata": {
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Dead.png.meta": "6cfa35304716575cf944fd2cdde3aae182aeea5c07ad235ed7483ae3740c710d",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Dead.asset": "b36563ba02ca91a85b406486b425558749d27cadef54900aa8e1c40c22c6d699",
+      "Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Dead.asset.meta": "793ad7e1afd423e894028f7faf01fbb0a5ce462d1fe0c1ae13d2ad21796aded3"
+    },
+    "silhouetteIntersectionOverUnion": 0.9688719465752935
+  },
+  {
+    "actor": "고블린사냥꾼",
+    "pose": "Portrait",
+    "production": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_고블린사냥꾼_Portrait.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_고블린사냥꾼_Portrait.png",
+    "originalSha256": "182047b891ef11f0285581cc817612e963dc3f33df8943636fada709aa3ce564",
+    "productionSha256": "1c5aa19a598d9d387662fea26b01c7859ccf5b96c8096a71c4d17a58c832d30d",
+    "sourceIdle": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_고블린사냥꾼_Idle.png",
+    "exactOriginalCrop": [
+      325,
+      172,
+      654,
+      654
+    ],
+    "originalCropMatch": 0.9999999403953552,
+    "canvas": [
+      654,
+      654
+    ],
+    "preservedMetadata": {
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_고블린사냥꾼_Portrait.png.meta": "0440ffecda26e21c48c619698a0c4d3cad6ec30feca67286db975d0399e21c30",
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_고블린사냥꾼_Portrait.asset": "cb2882441604579a288f87c67214d1c2fc854b4042d70c2d18cd94b9d032d65e",
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_고블린사냥꾼_Portrait.asset.meta": "7a65b8449a29cddeb6a229132847538ec4414c3238571879aa48b86a9a290e40"
+    }
+  },
+  {
+    "actor": "납골당의종",
+    "pose": "Portrait",
+    "production": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_납골당의종_Portrait.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_납골당의종_Portrait.png",
+    "originalSha256": "be3ef6fdacb1c993c802b2a9355322b021f231f331474b2bb9e89b8a614da3e5",
+    "productionSha256": "24cbab596e0eb2b71a3b0c92d8144122c6805bcb6beae76c2cd8df786ae2a534",
+    "sourceIdle": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_납골당의종_Idle.png",
+    "exactOriginalCrop": [
+      309,
+      241,
+      672,
+      672
+    ],
+    "originalCropMatch": 1.0,
+    "canvas": [
+      672,
+      672
+    ],
+    "preservedMetadata": {
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_납골당의종_Portrait.png.meta": "42f8a6e132d33b497a5ab626b145a5cacedf35deaecced63d62e9732651801c7",
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_납골당의종_Portrait.asset": "127751526b6d17a61998400aa6082016cdf6b62eb2ae5346ea04650e71d6cef1",
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_납골당의종_Portrait.asset.meta": "3eb6a462118a1a3d29e87e9d1ce699ad150342c1d2936b96104fbad74ddbaf95"
+    }
+  },
+  {
+    "actor": "철니미믹",
+    "pose": "Portrait",
+    "production": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_철니미믹_Portrait.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_철니미믹_Portrait.png",
+    "originalSha256": "33bd17a2aeb4ac444f92d8fed1f21035c4998dc904fb460be070cc426d4d1ce6",
+    "productionSha256": "b155ec56cc73ee02830a71b3d1bd831c258db3422e7de2975019f8579d31e816",
+    "sourceIdle": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_철니미믹_Idle.png",
+    "exactOriginalCrop": [
+      162,
+      124,
+      843,
+      843
+    ],
+    "originalCropMatch": 0.9999999403953552,
+    "canvas": [
+      843,
+      843
+    ],
+    "preservedMetadata": {
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_철니미믹_Portrait.png.meta": "164fc9c6c558741ebb0b8188085447f059f2a12c98ef53a678b4ff773999cee3",
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_철니미믹_Portrait.asset": "2f4db03dffa1a1406016706ba21451c76fb26a2b106914fdeab312d6dc419bb0",
+      "Assets\\Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_철니미믹_Portrait.asset.meta": "2823dda5dfeb42b8bb50b6bdf808bcc73028040d0925bd5c31803d0fab723be8"
+    }
+  }
+]

@@ -92,6 +92,7 @@ namespace DungeonSlash
             returnButton.onClick.RemoveAllListeners();
             returnButton.onClick.AddListener(() => ShowModal(GameText.Get("ui.runexpansionview.c2509e30"), GameText.Get("ui.runexpansionview.db812935"), new[] {
                 new PresentationChoice { Title = GameText.Get("ui.runexpansionview.7b8abde6"), Selected = HideModal },
+                new PresentationChoice { Title = GameText.Get("ui.playrecord.open"), Selected = () => { HideModal(); FindFirstObjectByType<PlayRecordView>()?.Open(); } },
                 new PresentationChoice { Title = GameText.Get("ui.runexpansionview.db5d33bd"), Selected = RunSession.ReturnToSelection }
             }));
             HideModal(); RefreshCombat(combat);

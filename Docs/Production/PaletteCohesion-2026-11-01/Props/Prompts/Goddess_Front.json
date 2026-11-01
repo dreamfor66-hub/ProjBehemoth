@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Production environment prop for this exact illustrated dungeon.\nImage1 is the edit target. Image2 is the USER'S ORIGINAL B1 gameplay palette/architecture, the PRIMARY authority. Image3 is the installed character source for bold selective ink language; its costume is not part of the prop.\nCorrect the yellow/olive idol into an old architectural STONE goddess. Preserve the exact front camera, solemn hooded woman holding a bowl, overall silhouette, fixed pedestal placement and original1024x1536 canvas. Change material/color/shadow drawing: restrained neutral-to-cool matte grey masonry, NOT gold, beige, ivory, olive, bronze or green. Broad cool grey planes (midtones approximately RGB90/94/100), quiet dark planes and substantial pooled near-black shapes under hood, bowl and robe. Match the original B1 stone wall's broad simplified drawing and selective broken contours. Simplify excess triangular robe facets into a few large stone masses, just two or three broad weathered chips. No fine cracks or smooth modeled face. The figure and plinth are carved from the same heavy stone. Do not add shining bevel trim around the robe, glossy edges, jewels, extra ornaments or light effects. It must belong against a dungeon wall, with the low plinth foreshortened like B1 floor stones. Preserve the base corners and ground contact; do not enlarge or center the statue.\nCRITICAL: true transparent background immediately outside the real object, no aura, yellow glow, ambient grey/brown halo, soft surrounding matte, new floor tile patch, painted backdrop, floating shadow cloud, vignette or UI outline. Preserve original canvas and ground-contact vertex positions. Interior solid ink shadows stay opaque. This is a dim environment object, not a collectible icon. Output one independently editable PNG.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Goddess_Front.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-b4ab1aa1-8b29-4972-a8ce-4150d740b2a7.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-0d003ee9-f11f-443d-b87c-c0a735c7a707.png",
+  "selected": true
+}

@@ -1,0 +1,18 @@
+{
+  "idle": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-27312372-a988-4987-a448-9be9aeb6d6e8.png",
+  "attack": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-629a71f6-478f-4f7b-a133-09d02303d654.png",
+  "rejected": [
+    {
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-726f0d05-f8b4-449a-8d92-35ac5dab4d74.png",
+      "reason": "retained dense fur slash noise"
+    },
+    {
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-48dbd623-9bc3-40e5-a4de-d32d92e9fa43.png",
+      "reason": "swapped left-foreleg wrap and angled away from matching forward camera"
+    },
+    {
+      "path": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-15864ebb-0ab1-4a58-aa48-8891827e36c5.png",
+      "reason": "forelegs read as lifted human arms; failed quadruped anatomy"
+    }
+  ]
+}

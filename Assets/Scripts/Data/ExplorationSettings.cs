@@ -16,16 +16,15 @@ namespace DungeonSlash
     [CreateAssetMenu(menuName = "Dungeon Slash/Exploration Settings")]
     public sealed class ExplorationSettings : ScriptableObject
     {
+        [SerializeField, HideInInspector] public string presentationRevision;
         [Header("Optional annexes; never replace the base floor's encounters")]
-        [Range(0, 1)] public float annexChance = .78f;
-        [Range(0, 1)] public float secondAnnexChance = .23f;
-        [Range(0, 1)] public float concealedEntranceChance = .62f;
-        [Range(0, 1)] public float lockedEntranceChance = .48f;
+        [Range(0, 1), Tooltip("Independent per-floor chance of an empty-dead-end secret branch, when space permits.")] public float concealedEntranceChance = .62f;
+        [Range(0, 1), Tooltip("Independent per-floor chance of an openly locked optional branch, when space permits.")] public float lockedEntranceChance = .48f;
         [Range(0, 1)] public float annexEventChance = .46f;
         [Range(0, 1)] public float annexCombatChance = .025f;
         [Min(1)] public int maximumKeyDistance = 4;
         [Min(1), Tooltip("Repeated investigation of a real wall before its secret entrance opens.")]
-        public int secretWallSearches = 5;
+        public int secretWallSearches = 3;
         [Header("World artwork")]
         public List<RoomObjectBinding> roomObjects = new();
         public RoomObjectData key, mechanism, lockedDoor, fallbackStory;

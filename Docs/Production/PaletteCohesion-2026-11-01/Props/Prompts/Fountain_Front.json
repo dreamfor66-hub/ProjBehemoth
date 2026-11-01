@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Production environment prop for this exact illustrated dungeon.\nImage1 is the edit target. Image2 is the USER'S ORIGINAL B1 gameplay palette/architecture, the PRIMARY authority. Image3 is the installed character source for bold selective ink language; its costume is not part of the prop.\nRedesign the icon-like stone fountain as a heavy architectural basin standing on the dungeon floor. Keep exact1324x1188 canvas, camera, octagonal basin footprint, central short spout, pedestal dimensions and bottom ground-contact coordinates. Use only neutral/cool MATTE GREY stone (quiet midtones approximately RGB75/80/86), with a few broad chipped planes and large integrated near-black shadow under the basin. Remove the continuous bright bevel that outlines the rim like a UI button; front lip should be a broad subdued uneven stone plane, interrupted by one or two broad chips, not many tiny cracks or uniform polygon facets. Base and stem should have fewer large solid forms, no jewel-like precision or polished highlights. Match the actual B1 masonry black/grey paint language and floor foreshortening. Water is a shallow very dark slate-grey pool; a small subdued cool-grey arc flows from spout, with at most two broad dim ripple marks. No luminous turquoise, sparkles or glassy reflection, no angel statue.\nCRITICAL: true transparent background immediately outside the real object, no aura, yellow glow, ambient grey/brown halo, soft surrounding matte, new floor tile patch, painted backdrop, floating shadow cloud, vignette or UI outline. Preserve original canvas and ground-contact vertex positions. Interior solid ink shadows stay opaque. This is a dim environment object, not a collectible icon. Output one independently editable PNG.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-b4ab1aa1-8b29-4972-a8ce-4150d740b2a7.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-a8949c6e-aaf5-4139-af6c-26f4192336da.png",
+  "selected": false
+}

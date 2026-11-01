@@ -1,0 +1,50 @@
+[
+  {
+    "pose": "Idle",
+    "production": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Idle.png",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-27312372-a988-4987-a448-9be9aeb6d6e8.png",
+    "canvas": [
+      1536,
+      1024
+    ],
+    "alphaBounds": [
+      535,
+      4,
+      1000,
+      1004
+    ],
+    "uniformScale": 0.8368200836820083,
+    "offset": [
+      178,
+      -16
+    ],
+    "beforeSha256": "afcccb9d9c84826f2e7f1f3311219e904b70227f495f4dd04c345b811d1b28d8",
+    "generatedSha256": "af0bdd0ecc4eb3af8b4287eb1fe50772933aae5b631d2b710c991accbb31caf0",
+    "sha256": "8091d68310cb04a9c0ce0f9dee1f2a135cc845d6146fc9bcd1d1cf84bbf4ae98",
+    "metaSha256": "686f2fa5d13bcc66f032b37412c2ad0324b1d4ba6bab93e5a49b5a6e68af2dc6"
+  },
+  {
+    "pose": "Attack",
+    "production": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Attack.png",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-629a71f6-478f-4f7b-a133-09d02303d654.png",
+    "canvas": [
+      1536,
+      1024
+    ],
+    "alphaBounds": [
+      409,
+      185,
+      1128,
+      1004
+    ],
+    "uniformScale": 0.8368200836820083,
+    "offset": [
+      180,
+      20
+    ],
+    "beforeSha256": "f6f5199266c2fee8693f6c43bffcff5c3ab7091c8bba8963f0887614e3e0e43d",
+    "generatedSha256": "ce5a69cdad58ea69e67f60d8d4f5f015f6426b8a22695ed600b4f75ff620b8f4",
+    "sha256": "9f52703df5fdfa0ca39d8135387dc7438751bf12d3108b32b0783054290522a4",
+    "metaSha256": "7a04117a900ab793d002ca691871bf4c811550686ab44b8f41747782d5737dd5"
+  }
+]

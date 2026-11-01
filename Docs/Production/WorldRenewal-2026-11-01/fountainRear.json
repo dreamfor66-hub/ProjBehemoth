@@ -1,0 +1,9 @@
+{
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "prompt": "First image REAR VIEW only, second exact new fountain design/material. Paint the same octagonal shallow stone font from the back. Central spout on far side orientation correct: narrow dark unlit trickle arcs away from camera and lands behind post in the shallow dull grey-green basin. No angel/statue. Short pedestal, broad base and plane proportions identical to secondreference. Large simple hand-inked environmental stone forms matching B1 room, not a UI icon. Two quiet stone values and deep pooled black under basin/plinth, selectively lost contours. No little chips/cracks/grain/noise, no bright bevel rim, no ornament. Broad load-bearing foot, low room eye height, no floor tile background, fully opaque solid object on truly transparent outside (no outer halo)."
+}

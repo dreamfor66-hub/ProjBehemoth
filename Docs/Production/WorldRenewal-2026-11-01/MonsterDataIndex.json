@@ -1,0 +1,4421 @@
+[
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Boss_납골당의종.asset",
+    "name": "납골당의 종",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Boss_납골당의종",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.bellkeeper.displayname",
+          "lastText": "납골당의 종"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.bellkeeper.encounterhint",
+          "lastText": "연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자."
+        }
+      ],
+      "textOwnerGuid": "4dc6b9d6f09c1f14594fda8127d02995",
+      "displayName": "납골당의 종",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "e7f40c5d1583fae45bc8cda03fb8f6c5",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "43ca2eed7e4af134eb144032f1eba259",
+        "type": 2
+      },
+      "encounterHint": "연속 타격 뒤 강타가 온다. 여러 약점을 한 궤적으로 노리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 820,
+      "normalAttackInterval": 2.4,
+      "chargeInterval": 4.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 44,
+      "goldReward": 21,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": -45
+          },
+          "radius": 165
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 165
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 45
+          },
+          "radius": 165
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "b307c58396569f3438211fd309cb8ce0",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "6c27259a14ccf25499b08f85f4bb2321",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_납골당의종_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Boss_미궁스핑크스.asset",
+    "name": "미궁 스핑크스",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Boss_미궁스핑크스",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b1_boss_mazeguardian.displayname",
+          "lastText": "미궁 스핑크스"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b1_boss_mazeguardian.encounterhint",
+          "lastText": "펼친 양 날개와 두 앞발의 약점을 이어 베어 거체의 강타를 끊자."
+        }
+      ],
+      "textOwnerGuid": "fb0cdacf025fd12468b40e7cc65b2ae7",
+      "displayName": "미궁 스핑크스",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "24381773f51d23847bfe2cab5f12b4d8",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "811a32153bc41ea4fa09b206cf888d91",
+        "type": 2
+      },
+      "encounterHint": "펼친 양 날개와 두 앞발의 약점을 이어 베어 거체의 강타를 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 1050,
+      "normalAttackInterval": 2.25,
+      "chargeInterval": 5.2,
+      "stunDuration": 4.5,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 100,
+      "goldReward": 11,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -7.072998,
+            "y": -8.841239
+          },
+          "radius": 205
+        },
+        {
+          "center": {
+            "x": -283.945,
+            "y": 96.15
+          },
+          "radius": 155
+        },
+        {
+          "center": {
+            "x": 291.48502,
+            "y": 107.46
+          },
+          "radius": 155
+        },
+        {
+          "center": {
+            "x": -188.84999,
+            "y": -162.45999
+          },
+          "radius": 95
+        },
+        {
+          "center": {
+            "x": 179.42499,
+            "y": -170
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "7c51db371df73224d901ccddb97f8ee4",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "8bcc1bfd690bf3c43a63d3d6df0cd6ae",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "56bae6f926e578048abb544ca89110e9",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_미궁스핑크스_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Boss_실인형.asset",
+    "name": "실인형",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Boss_실인형",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.orbitbat.displayname",
+          "lastText": "실인형"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.orbitbat.encounterhint",
+          "lastText": "본체 주위를 공전한다. 위치를 따라가며 노리자."
+        }
+      ],
+      "textOwnerGuid": "b71e49b7bfafade4fb74b71c6409e7b8",
+      "displayName": "실인형",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "bf4d7312f5b6d3045a047c32da6fa559",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "323f2a51c0c8ab74cb4848dc093cb8da",
+        "type": 2
+      },
+      "encounterHint": "본체 주위를 공전한다. 위치를 따라가며 노리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 1,
+      "useOrbit": 1,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 85,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 19,
+      "goldReward": 10,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -2.768036,
+            "y": 0
+          },
+          "radius": 35.984467
+        },
+        {
+          "center": {
+            "x": 2.768036,
+            "y": 0
+          },
+          "radius": 35.984467
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "ed4fe39422394454ba6003341496be71",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "f44f5091bac43cd489d93f73ecd6bb24",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_실인형_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Boss_실짜는공작부인.asset",
+    "name": "실짜는 공작부인",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Boss_실짜는공작부인",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.broodkeeper.displayname",
+          "lastText": "실짜는 공작부인"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.broodkeeper.encounterhint",
+          "lastText": "주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자."
+        }
+      ],
+      "textOwnerGuid": "508c88aa0e5982046bfdaef18729110a",
+      "displayName": "실짜는 공작부인",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "80df0869d256a064dbf426c4bb5ab537",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "be23e6a0d6c967a41a837c2ed293f1be",
+        "type": 2
+      },
+      "encounterHint": "주변 실인형이 공전한다. 본체의 약점을 끊어 공격을 멈추자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [
+        {
+          "fileID": 11400000,
+          "guid": "b71e49b7bfafade4fb74b71c6409e7b8",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "b71e49b7bfafade4fb74b71c6409e7b8",
+          "type": 2
+        }
+      ],
+      "reinforcementInterval": 12,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 760,
+      "normalAttackInterval": 2.6,
+      "chargeInterval": 4.6,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 40,
+      "goldReward": 20,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -55,
+            "y": 0
+          },
+          "radius": 155
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 155
+        },
+        {
+          "center": {
+            "x": 55,
+            "y": 0
+          },
+          "radius": 155
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "b514f027379ad424fbdcf499c2df4e00",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "59381c3e557c9124ca99ac20bfe93ee6",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_실짜는공작부인_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Elite_쌍두문지기.asset",
+    "name": "쌍두 문지기",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Elite_쌍두문지기",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b1_elite_minotaur.displayname",
+          "lastText": "쌍두 문지기"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b1_elite_minotaur.encounterhint",
+          "lastText": "두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자."
+        }
+      ],
+      "textOwnerGuid": "5803c6e2e3ecb6d45a6edf579959d88c",
+      "displayName": "쌍두 문지기",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "c0a3469769fd0f64eb82dc1e91dec268",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "28d161d8895812c43bdae9159dd1a006",
+        "type": 2
+      },
+      "encounterHint": "두 머리가 강타를 준비한다. 드러난 약점을 순서대로 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 520,
+      "normalAttackInterval": 2.7,
+      "chargeInterval": 5.8,
+      "stunDuration": 4,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 56,
+      "goldReward": 12,
+      "combatScale": 1.05,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": -30
+          },
+          "radius": 170
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 30
+          },
+          "radius": 170
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "46605fa33cecf6a4ebe3dcd0b8ce86dc",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "f7693fdf2ae4a104eb5d985300525a43",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_쌍두문지기_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Elite_움직이는갑옷.asset",
+    "name": "움직이는 갑옷",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Elite_움직이는갑옷",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.mirrorknight.displayname",
+          "lastText": "움직이는 갑옷"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.mirrorknight.encounterhint",
+          "lastText": "같은 방향으로 연속 공격하면 반격한다. 공격 방향을 바꾸자."
+        }
+      ],
+      "textOwnerGuid": "127cfd7704f940544a6713d4985b0a57",
+      "displayName": "움직이는 갑옷",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "1ed687dc69c520149935e351d0a8614f",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "1d672e3a9ff20d94db5aaa274a5b035c",
+        "type": 2
+      },
+      "encounterHint": "같은 방향으로 연속 공격하면 반격한다. 공격 방향을 바꾸자.",
+      "pattern": 1,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 420,
+      "normalAttackInterval": 2.4,
+      "chargeInterval": 4.4,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 29,
+      "goldReward": 14,
+      "combatScale": 0.78,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": -45
+          },
+          "radius": 125
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 125
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 45
+          },
+          "radius": 125
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "fbe8a2e9c4e9ee945b3d6bd02390b5cc",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "81a352bbd18876e43b9a8b3b317d2167",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_움직이는갑옷_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Elite_철갑사마귀.asset",
+    "name": "철갑 사마귀",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Elite_철갑사마귀",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.armoredexecutioner.displayname",
+          "lastText": "철갑 사마귀"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.armoredexecutioner.encounterhint",
+          "lastText": "필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자."
+        }
+      ],
+      "textOwnerGuid": "ecf1c349611a99341be2e93e20f059a6",
+      "displayName": "철갑 사마귀",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "91ac1c595177ea24e8085aa0728e6eca",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "1b607f1c6cef49c4984ef473340fbc95",
+        "type": 2
+      },
+      "encounterHint": "필수 약점으로 강타를 끊고, 보조 약점 세 개로 기절을 늘리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 420,
+      "normalAttackInterval": 2.6,
+      "chargeInterval": 4.5,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 31,
+      "goldReward": 16,
+      "combatScale": 1.04,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -65,
+            "y": 0
+          },
+          "radius": 135
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 135
+        },
+        {
+          "center": {
+            "x": 65,
+            "y": 0
+          },
+          "radius": 135
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "c9db2cc12f0f5854e868b2a16c63ffaf",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "7c87c2a36b027654d85b5a34941f15be",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_철갑사마귀_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Normal_거미.asset",
+    "name": "거미",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Normal_거미",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.tunnelrat.displayname",
+          "lastText": "거미"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.tunnelrat.encounterhint",
+          "lastText": "낮은 자세로 달려드는 거미. 강타를 준비하면 노출된 약점을 부수자."
+        }
+      ],
+      "textOwnerGuid": "e38eba67e08948347ab295b6c79c7e34",
+      "displayName": "거미",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "4db35ab1d9ce57c45a9047e257b6b1ba",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "688f27369cfa6cf4daf39ba750018f7e",
+        "type": 2
+      },
+      "encounterHint": "낮은 자세로 달려드는 거미. 강타를 준비하면 노출된 약점을 부수자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 100,
+      "normalAttackInterval": 1.7,
+      "chargeInterval": 3.4,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 17,
+      "goldReward": 9,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0.59373474,
+            "y": 44.705902
+          },
+          "radius": 74.49752
+        },
+        {
+          "center": {
+            "x": -53.08824,
+            "y": 44.719147
+          },
+          "radius": 72.14238
+        },
+        {
+          "center": {
+            "x": 54.205894,
+            "y": 44.160313
+          },
+          "radius": 69.799286
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "3f8fd5beba668cf4db53470b0f80c932",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "ad8a938afe16b9842be6fd85bed5715b",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_거미_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Normal_경종사냥개.asset",
+    "name": "경종 사냥개",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Normal_경종사냥개",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.alarmhound.displayname",
+          "lastText": "경종 사냥개"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.alarmhound.encounterhint",
+          "lastText": "경종 뒤의 공격에 대비하고 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "86403f7885618c84dbb121a953f0220b",
+      "displayName": "경종 사냥개",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "9a1760cd11b45d740afbcd1abc3bfe2d",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "51d1ef5bf1f07544386fa76805e34ab6",
+        "type": 2
+      },
+      "encounterHint": "경종 뒤의 공격에 대비하고 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 130,
+      "normalAttackInterval": 1.9,
+      "chargeInterval": 3.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 19,
+      "goldReward": 10,
+      "combatScale": 0.78,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -60,
+            "y": 0
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": -19.999998,
+            "y": 0
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": 20.000002,
+            "y": 0
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": 60,
+            "y": 0
+          },
+          "radius": 85
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "c431b5aae44000e4aa94904195fd43b4",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "0b06cd7071b080d40b597049c5fc49ae",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_경종사냥개_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Normal_고블린사냥꾼.asset",
+    "name": "고블린사냥꾼",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Normal_고블린사냥꾼",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b1_minion_bat.displayname",
+          "lastText": "고블린사냥꾼"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b1_minion_bat.encounterhint",
+          "lastText": "작은 창을 든 고블린 사냥꾼. 강타 준비 중 중심 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "59d88fb5cea09ae409b378a705c6c6e1",
+      "displayName": "고블린사냥꾼",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "7e0a646526817404180bd2bb90ba27fc",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "4a5c005a072ca9d4b88de2b358d4d085",
+        "type": 2
+      },
+      "encounterHint": "작은 창을 든 고블린 사냥꾼. 강타 준비 중 중심 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 120,
+      "normalAttackInterval": 1.25,
+      "chargeInterval": 2.75,
+      "stunDuration": 2.5,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 21,
+      "goldReward": 4,
+      "combatScale": 0.9,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": -20.061356
+          },
+          "radius": 93.61966
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 20.061356
+          },
+          "radius": 93.61966
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "6cfdc9c8f201f69438136c541c845ad2",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "2d45d503d480a7b4fbb0b44b890acbd4",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_고블린사냥꾼_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Normal_해골전사.asset",
+    "name": "해골 전사",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Normal_해골전사",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b1_minion_skeleton.displayname",
+          "lastText": "해골 전사"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b1_minion_skeleton.encounterhint",
+          "lastText": "검과 방패로 무장한 해골 전사. 노출되는 약점을 모두 부수자."
+        }
+      ],
+      "textOwnerGuid": "f71f3849353c3a741b7371d1d3419ed1",
+      "displayName": "해골 전사",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "77931542fe7f38e479d124fb98ca0847",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "44a76d8e47f172f4d9d53c71b983eca9",
+        "type": 2
+      },
+      "encounterHint": "검과 방패로 무장한 해골 전사. 노출되는 약점을 모두 부수자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 190,
+      "normalAttackInterval": 2,
+      "chargeInterval": 5,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 28,
+      "goldReward": 7,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": -30
+          },
+          "radius": 87.98143
+        },
+        {
+          "center": {
+            "x": -0.98783875,
+            "y": 19.75682
+          },
+          "radius": 100
+        },
+        {
+          "center": {
+            "x": 7.6293945e-06,
+            "y": 71.4893
+          },
+          "radius": 94.967705
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "cb5ed15f41d8b044fa4759d0d686e1f7",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "8d529269d90a95945b6a9d25871ed2e0",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_해골전사_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Normal_흡혈박쥐.asset",
+    "name": "흡혈박쥐",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Normal_흡혈박쥐",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b1_minion_leech.displayname",
+          "lastText": "흡혈박쥐"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b1_minion_leech.encounterhint",
+          "lastText": "체력 피해를 주면 회복한다. 강타 준비 중 노출되는 약점을 부수자."
+        }
+      ],
+      "textOwnerGuid": "d841fd1131349e1438084c0ab5b600d2",
+      "displayName": "흡혈박쥐",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "e693ce10ab1a4cb4d967d239a1aac533",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "ed05f4f45c845854388d6a16b9044232",
+        "type": 2
+      },
+      "encounterHint": "체력 피해를 주면 회복한다. 강타 준비 중 노출되는 약점을 부수자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 185,
+      "normalAttackInterval": 1.7,
+      "chargeInterval": 4.2,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 31,
+      "goldReward": 8,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -15.296272,
+            "y": 0
+          },
+          "radius": 40.79006
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 40.79006
+        },
+        {
+          "center": {
+            "x": 15.296272,
+            "y": 0
+          },
+          "radius": 40.79006
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "c90b6f105eb5d2542af6f42a2a2bf43b",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "8de2bc757db6d3146a902e66b15d4bd8",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_흡혈박쥐_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Boss_겨울의일각수.asset",
+    "name": "겨울의 일각수",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Boss_겨울의일각수",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b2_boss_frostqueen.displayname",
+          "lastText": "겨울의 일각수"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b2_boss_frostqueen.encounterhint",
+          "lastText": "긴 강타 준비 동안 노출된 약점을 모두 끊자."
+        }
+      ],
+      "textOwnerGuid": "54667eccb06d98746b603f33af299ab8",
+      "displayName": "겨울의 일각수",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "a552f9dad088f4342aa5c42f2f08f07d",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "cd2e19a4cd02cb74c986e0e5b4af6901",
+        "type": 2
+      },
+      "encounterHint": "긴 강타 준비 동안 노출된 약점을 모두 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [
+        {
+          "fileID": 11400000,
+          "guid": "9a8888d9e5c52744fb1d2f2302d20795",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "9a8888d9e5c52744fb1d2f2302d20795",
+          "type": 2
+        }
+      ],
+      "reinforcementInterval": 12,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 1080,
+      "normalAttackInterval": 2.7,
+      "chargeInterval": 7,
+      "stunDuration": 4.2,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 240,
+      "goldReward": 10,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -55,
+            "y": 285
+          },
+          "radius": 90
+        },
+        {
+          "center": {
+            "x": 35,
+            "y": 200
+          },
+          "radius": 130
+        },
+        {
+          "center": {
+            "x": -140,
+            "y": 75
+          },
+          "radius": 70
+        },
+        {
+          "center": {
+            "x": 75,
+            "y": 75
+          },
+          "radius": 70
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "56ad7c6c150565e4c83f0d39e3b32760",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "4544e97468072fe47a3054c7c0831abd",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_겨울의일각수_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Boss_수정등딱지.asset",
+    "name": "수정 등딱지",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Boss_수정등딱지",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.crystalspider.displayname",
+          "lastText": "수정 등딱지"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.crystalspider.encounterhint",
+          "lastText": "집게 사이 약점과 보조 약점을 연결해 부수자."
+        }
+      ],
+      "textOwnerGuid": "c16969a0aaa6ee74c8c39ea15262fa61",
+      "displayName": "수정 등딱지",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "25342a23099169d479f521adbe46b886",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "fc86f584042948644a09e1ce9417b06d",
+        "type": 2
+      },
+      "encounterHint": "집게 사이 약점과 보조 약점을 연결해 부수자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 620,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 64,
+      "goldReward": 30,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "4a1c9ec6e684b4e4aba719cf7055d3e6",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "0ba444b8c60af86488b590d6a2c19b6d",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_수정등딱지_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Boss_폭풍의대붕.asset",
+    "name": "폭풍의 대붕",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Boss_폭풍의대붕",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.stormmatriarch.displayname",
+          "lastText": "폭풍의 대붕"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.stormmatriarch.encounterhint",
+          "lastText": "공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자."
+        }
+      ],
+      "textOwnerGuid": "5946ee0bd997e36448ff353d80ebfdde",
+      "displayName": "폭풍의 대붕",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "0ade05111917fe745b4e4053879b6f9a",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "4659cae36027b1c4ab596368e02e62a9",
+        "type": 2
+      },
+      "encounterHint": "공전하는 폭풍 해파리와 본체의 공격 시차에 주의하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [
+        {
+          "fileID": 11400000,
+          "guid": "c082165dde8685f4ab9e002c0cb302e1",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "c082165dde8685f4ab9e002c0cb302e1",
+          "type": 2
+        }
+      ],
+      "reinforcementInterval": 12,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 580,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 60,
+      "goldReward": 28,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 20,
+            "y": 270
+          },
+          "radius": 145
+        },
+        {
+          "center": {
+            "x": 165,
+            "y": 285
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": -130,
+            "y": 70
+          },
+          "radius": 70
+        },
+        {
+          "center": {
+            "x": 180,
+            "y": 70
+          },
+          "radius": 70
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "e43b1b4bd100339469e88021d03615bc",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "98b5e69d4ef8c3348b5bf3788949ccc3",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_폭풍의대붕_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Boss_폭풍해파리.asset",
+    "name": "폭풍 해파리",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Boss_폭풍해파리",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.stormorb.displayname",
+          "lastText": "폭풍 해파리"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.stormorb.encounterhint",
+          "lastText": "본체 주위를 공전하며 공격한다."
+        }
+      ],
+      "textOwnerGuid": "c082165dde8685f4ab9e002c0cb302e1",
+      "displayName": "폭풍 해파리",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "77924d44523dfc948ae6680d1c45b5da",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "ae4b1afb2d4eaa649bb231fcb88f2023",
+        "type": 2
+      },
+      "encounterHint": "본체 주위를 공전하며 공격한다.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 1,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 1,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 100,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 22,
+      "goldReward": 12,
+      "combatScale": 0.62,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "4a0c200a49fb5b641bdcfa735065957e",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "415bad7bd2c07f646a16c7cbbc3531e2",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_폭풍해파리_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Elite_가면성가수.asset",
+    "name": "가면 성가수",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Elite_가면성가수",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.palewisp.displayname",
+          "lastText": "가면 성가수"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.palewisp.encounterhint",
+          "lastText": "세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자."
+        }
+      ],
+      "textOwnerGuid": "46b98f00984d8734d9b423a62a889bf8",
+      "displayName": "가면 성가수",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "9abc5d643eb955241ada87f97f82ddba",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "dd0339119eca27d48991ab8b3a60c1bd",
+        "type": 2
+      },
+      "encounterHint": "세 개체가 시차를 두고 공격한다. 준비 중인 대상을 먼저 노리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 145,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 26,
+      "goldReward": 13,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "7ce859cb071400e4d8bfa949b26169de",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "e13987b1099d2b74f8c6519643b1180b",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_가면성가수_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Elite_거울나방.asset",
+    "name": "거울나방",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Elite_거울나방",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.icemirror.displayname",
+          "lastText": "거울나방"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.icemirror.encounterhint",
+          "lastText": "같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자."
+        }
+      ],
+      "textOwnerGuid": "c395f3854537eb640a955b83be94c04b",
+      "displayName": "거울나방",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "fdc68eae0b10137418e4d7879b52f4fc",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "e5c909c70c0e2f4479def4bcb0f90921",
+        "type": 2
+      },
+      "encounterHint": "같은 방향의 베기를 반복하면 반격한다. 방향을 번갈아 쓰자.",
+      "pattern": 1,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 300,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 38,
+      "goldReward": 18,
+      "combatScale": 1.25,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "c99bc991805cb4e41b1e03b1056cdd63",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "0682342d817811841b61a0acae0dd415",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_거울나방_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Elite_쌍각파수꾼.asset",
+    "name": "쌍각 파수꾼",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Elite_쌍각파수꾼",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b2_elite_frostogre.displayname",
+          "lastText": "쌍각 파수꾼"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b2_elite_frostogre.encounterhint",
+          "lastText": "좌우 약점 두 개를 모두 끊어 강타를 취소하자."
+        }
+      ],
+      "textOwnerGuid": "b07761a94d2640a41ad472aecfdca930",
+      "displayName": "쌍각 파수꾼",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "0d5d8e4a5db0e1f4eb0254dde8d993ba",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "f6a61b9c489dd324fb8dc9e8fb312f66",
+        "type": 2
+      },
+      "encounterHint": "좌우 약점 두 개를 모두 끊어 강타를 취소하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 525,
+      "normalAttackInterval": 4.8,
+      "chargeInterval": 11,
+      "stunDuration": 4.5,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 117,
+      "goldReward": 14,
+      "combatScale": 1.65,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "80271b5ae42011a4e81af4bcba0aed98",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "b9d175529b186324b971c1e66c57bb9a",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_쌍각파수꾼_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Normal_결정성게.asset",
+    "name": "결정 성게",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Normal_결정성게",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.iceneedle.displayname",
+          "lastText": "결정 성게"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.iceneedle.encounterhint",
+          "lastText": "결정 사이에 열린 약점을 노려 찌르기를 끊자."
+        }
+      ],
+      "textOwnerGuid": "811d13f58aeee4747b1ee2e42a8f3c3a",
+      "displayName": "결정 성게",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "e3831e6dad1d9e447a3c487e98dfd546",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "8a72374dbeb36de46b3fc11a4d1a96c1",
+        "type": 2
+      },
+      "encounterHint": "결정 사이에 열린 약점을 노려 찌르기를 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 100,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 22,
+      "goldReward": 12,
+      "combatScale": 0.62,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "ae5174e5ec06df84790c552cfc909814",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "bddd4aedeb76caf40a1d243d071c3451",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_결정성게_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Normal_깃바늘정령.asset",
+    "name": "깃바늘 정령",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Normal_깃바늘정령",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b2_minion_frostbat.displayname",
+          "lastText": "깃바늘 정령"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b2_minion_frostbat.encounterhint",
+          "lastText": "날개를 접어 돌진하기 전 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "9a8888d9e5c52744fb1d2f2302d20795",
+      "displayName": "깃바늘 정령",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "cf0e49aa0f879ab42841fb04e83ef4f4",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "ac73c4a6102247049af9741dd2dd259f",
+        "type": 2
+      },
+      "encounterHint": "날개를 접어 돌진하기 전 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 114,
+      "normalAttackInterval": 2.2,
+      "chargeInterval": 8.5,
+      "stunDuration": 2.4,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 25,
+      "goldReward": 4,
+      "combatScale": 0.6,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "c8a31c3ca05382341b69f39fd1cbd4a4",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "fd9437c80b9f1a645a17c73069479b1d",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_깃바늘정령_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Normal_엄니순례자.asset",
+    "name": "엄니 순례자",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Normal_엄니순례자",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b2_minion_yeti.displayname",
+          "lastText": "엄니 순례자"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b2_minion_yeti.encounterhint",
+          "lastText": "곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "756c766eabf90b04192ff6bf4e09c953",
+      "displayName": "엄니 순례자",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "45ba2c2250f04e54cad27090a21f167e",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "9671cd9b76ad12749a667a32ba519e4b",
+        "type": 2
+      },
+      "encounterHint": "곁의 종토끼와 함께 공격한다. 강타 준비를 보고 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 277.5,
+      "normalAttackInterval": 5.2,
+      "chargeInterval": 11.8,
+      "stunDuration": 4,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 62,
+      "goldReward": 16,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "ea086871338de334db2f7a0194ef149d",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "ef742c2632257c64987c986d23754626",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_엄니순례자_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Normal_장막예언자.asset",
+    "name": "장막 예언자",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Normal_장막예언자",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b2_minion_icewraith.displayname",
+          "lastText": "장막 예언자"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b2_minion_icewraith.encounterhint",
+          "lastText": "장막이 열릴 때 나타나는 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "3767fc650961daa46940e81e17116958",
+      "displayName": "장막 예언자",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "a0919edebd9a75d46abbd1c29fffc32f",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "9308dd8a387889944b69bb80dbb2d01a",
+        "type": 2
+      },
+      "encounterHint": "장막이 열릴 때 나타나는 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 198,
+      "normalAttackInterval": 1.5,
+      "chargeInterval": 7,
+      "stunDuration": 3.2,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 44,
+      "goldReward": 8,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "f204897c63667fc43ac56bcf28fdd6bd",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "a765598eb3f2ecb4887ca8da09a15d54",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_장막예언자_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Normal_종토끼.asset",
+    "name": "종토끼",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Normal_종토끼",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.snowbell.displayname",
+          "lastText": "종토끼"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.snowbell.encounterhint",
+          "lastText": "본체 곁에서 박자를 어긋나게 공격한다."
+        }
+      ],
+      "textOwnerGuid": "acd4ec70882f8374a82bd485e96f27f1",
+      "displayName": "종토끼",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "ffefae7c2457dda40974fe4ea78ce0d2",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "b5aff5e6fbcea504bb7e2ec3ab874d3d",
+        "type": 2
+      },
+      "encounterHint": "본체 곁에서 박자를 어긋나게 공격한다.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 110,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 23,
+      "goldReward": 12,
+      "combatScale": 0.64,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "3b2a7a98ad76ee345aa5b30eb9b0f5eb",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "5f2ab43a2c619714a84b8384dd13d128",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_종토끼_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Boss_달우상.asset",
+    "name": "달 우상",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Boss_달우상",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.elderrightheart.displayname",
+          "lastText": "달 우상"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.elderrightheart.encounterhint",
+          "lastText": "강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다."
+        }
+      ],
+      "textOwnerGuid": "346a3087dc5c96d47a89151261f1e24a",
+      "displayName": "달 우상",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "e6bebb746aedd6c43a444c610c911fb0",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "0d4ee0e64dda21e4fa5bc719b3245cbe",
+        "type": 2
+      },
+      "encounterHint": "강타를 유지하는 보조 개체. 먼저 파괴하면 강타가 차단된다.",
+      "pattern": 4,
+      "supportId": "right_heart",
+      "diesWithLeader": 1,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 150,
+      "normalAttackInterval": 99999,
+      "chargeInterval": 99999,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 0,
+      "goldReward": 0,
+      "combatScale": 0.74,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 65
+        }
+      ],
+      "attacks": [],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_달우상_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Boss_일식의키메라.asset",
+    "name": "일식의 키메라",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Boss_일식의키메라",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.eclipsebeast.displayname",
+          "lastText": "일식의 키메라"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.eclipsebeast.encounterhint",
+          "lastText": "해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다."
+        }
+      ],
+      "textOwnerGuid": "a20162045cffe5a4b96a5816de5fbd16",
+      "displayName": "일식의 키메라",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "d760c4952a5f60548bf05c42e3aed459",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "4f148b6cac7fd0b4095e6e8bb2e1cf36",
+        "type": 2
+      },
+      "encounterHint": "해 우상을 부수면 연타, 달 우상을 부수면 강타가 막힌다. 둘 다 부수면 기절한다.",
+      "pattern": 4,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [
+        {
+          "fileID": 11400000,
+          "guid": "2c6f1640670ed9d49bff93c009950859",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "346a3087dc5c96d47a89151261f1e24a",
+          "type": 2
+        }
+      ],
+      "reinforcementInterval": 12,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 850,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 82,
+      "goldReward": 38,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "6b0bec5f81a965449bb3ae7537d411d3",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "eea3d16d2de02704296395ce546167e6",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "d143ebfbef622bd49a82d0a3bca7d970",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "f18c043afce121f4a826d76f3916d594",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_일식의키메라_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Boss_잿불왕.asset",
+    "name": "잿불 왕",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Boss_잿불왕",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.ashgeneral.displayname",
+          "lastText": "잿불 왕"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.ashgeneral.encounterhint",
+          "lastText": "소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자."
+        }
+      ],
+      "textOwnerGuid": "0f83843535eecd646a3cd8f4cc8fa6f8",
+      "displayName": "잿불 왕",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "a2a462549ec977a4e98d8fddd682eea9",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "3c4067ab731f9654ca541587613d293c",
+        "type": 2
+      },
+      "encounterHint": "소환 강타를 끊지 못하면 향로 망령이 합류한다. 소환과 후속 강타를 번갈아 대비하자.",
+      "pattern": 5,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 900,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 86,
+      "goldReward": 40,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "28cab95d708821a46948076539b906ce",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "735f899aee1341b40afdec5b66d5a558",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "d18961695ff32ab439f5b2b2c7c86b67",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_잿불왕_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Boss_잿불의용.asset",
+    "name": "잿불의 용",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Boss_잿불의용",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_boss_souleater.displayname",
+          "lastText": "잿불의 용"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_boss_souleater.encounterhint",
+          "lastText": "날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자."
+        }
+      ],
+      "textOwnerGuid": "b544a9bd660854044b65489c136cbc78",
+      "displayName": "잿불의 용",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "060e6d30effdf5740bb5de5eaf724a7f",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "dc2902a2089a35740b19896e1dfa2e7c",
+        "type": 2
+      },
+      "encounterHint": "날개 사이와 몸통에 열린 약점들을 끊어 강타를 취소하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 1800,
+      "normalAttackInterval": 2.6,
+      "chargeInterval": 7,
+      "stunDuration": 4.8,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 400,
+      "goldReward": 13,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 30,
+            "y": 255
+          },
+          "radius": 145
+        },
+        {
+          "center": {
+            "x": 140,
+            "y": 280
+          },
+          "radius": 90
+        },
+        {
+          "center": {
+            "x": -140,
+            "y": 80
+          },
+          "radius": 85
+        },
+        {
+          "center": {
+            "x": 155,
+            "y": 80
+          },
+          "radius": 80
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "1a792c665e2259749b6525ab8f7655bd",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "dccf4fd832dece645a161ca40b1ad15d",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_잿불의용_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Boss_해우상.asset",
+    "name": "해 우상",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Boss_해우상",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.elderleftheart.displayname",
+          "lastText": "해 우상"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.elderleftheart.encounterhint",
+          "lastText": "연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다."
+        }
+      ],
+      "textOwnerGuid": "2c6f1640670ed9d49bff93c009950859",
+      "displayName": "해 우상",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "e30690c4b7a8c374fb8877d5312cbed3",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "4aad3d22886e6f54ca44e8c4d6db13aa",
+        "type": 2
+      },
+      "encounterHint": "연타를 유지하는 보조 개체. 먼저 파괴하면 연타가 차단된다.",
+      "pattern": 4,
+      "supportId": "left_heart",
+      "diesWithLeader": 1,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 150,
+      "normalAttackInterval": 99999,
+      "chargeInterval": 99999,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 0,
+      "goldReward": 0,
+      "combatScale": 0.74,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 65
+        }
+      ],
+      "attacks": [],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_해우상_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Elite_재의대사제.asset",
+    "name": "재의 대사제",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Elite_재의대사제",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.lamppriest.displayname",
+          "lastText": "재의 대사제"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.lamppriest.encounterhint",
+          "lastText": "호위 가고일과 공격이 겹친다. 본체 강타를 끊자."
+        }
+      ],
+      "textOwnerGuid": "9177932eaa22ed644a46bfee82533abb",
+      "displayName": "재의 대사제",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "f7bd2b427d6fa404b867a05f6f4897fa",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "b950dd3cf69faa04c95e6be5ee5d013c",
+        "type": 2
+      },
+      "encounterHint": "호위 가고일과 공격이 겹친다. 본체 강타를 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 290,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 37,
+      "goldReward": 18,
+      "combatScale": 1.1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "2366d813a73987746959785e74e08966",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "227787eb241a50047934f377d197bde4",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_재의대사제_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Elite_파계기마수.asset",
+    "name": "파계 기마수",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Elite_파계기마수",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_elite_soulknight.displayname",
+          "lastText": "파계 기마수"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_elite_soulknight.encounterhint",
+          "lastText": "넓게 드러난 약점을 차례로 끊어 강타를 취소하자."
+        }
+      ],
+      "textOwnerGuid": "aa4d74befd776d949b9e6a0902de56ab",
+      "displayName": "파계 기마수",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "b3183c78ad260864989ee22f2dad16fe",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "6839cb4c8a2b82f4199b6d0b8f3f9ab2",
+        "type": 2
+      },
+      "encounterHint": "넓게 드러난 약점을 차례로 끊어 강타를 취소하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 645,
+      "normalAttackInterval": 4.5,
+      "chargeInterval": 10,
+      "stunDuration": 4.8,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 143,
+      "goldReward": 9,
+      "combatScale": 1.55,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "8e298519370076e4592387bdde1bf8b0",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "28f9bd2278df3424190d5ef2c52c41f8",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_파계기마수_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Elite_핏빛백작.asset",
+    "name": "핏빛 백작",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Elite_핏빛백작",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.bloodexecutioner.displayname",
+          "lastText": "핏빛 백작"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.bloodexecutioner.encounterhint",
+          "lastText": "무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자."
+        }
+      ],
+      "textOwnerGuid": "e839e9abbb14d7f42b4d17932c11d3f7",
+      "displayName": "핏빛 백작",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "71e1c079aa0bf5447bc9ca2eef1fdd5c",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "44df0ed24a99e624e8d3b8300fafbb61",
+        "type": 2
+      },
+      "encounterHint": "무기 공격 다섯 번을 맞을 때마다 다음 공격이 빨라진다. 약점 파괴로 흐름을 끊자.",
+      "pattern": 2,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 420,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 48,
+      "goldReward": 23,
+      "combatScale": 1.1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "e8a2d749192e37e41929535ec697caa6",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "8018fc5e5b08b684daf390e2301b57e4",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_핏빛백작_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_공허의눈.asset",
+    "name": "공허의 눈",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_공허의눈",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_minion_voidmaw.displayname",
+          "lastText": "공허의 눈"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_minion_voidmaw.encounterhint",
+          "lastText": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자."
+        }
+      ],
+      "textOwnerGuid": "74285b100b3b0f94ba2ebc118d2e4f77",
+      "displayName": "공허의 눈",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "49fc394b1b394914c9cfd0c18cd0e5cf",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "7ae3cf220b370fe4483696b0671fb346",
+        "type": 2
+      },
+      "encounterHint": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 300,
+      "normalAttackInterval": 1.45,
+      "chargeInterval": 8.5,
+      "stunDuration": 3.5,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 67,
+      "goldReward": 10,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "903e24ca22ca3624195845ad618d154f",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "1916aa8cd4a05df41814b94d1a95d72c",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_공허의눈_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_뱀수문장.asset",
+    "name": "뱀 수문장",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_뱀수문장",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_minion_shadelancer.displayname",
+          "lastText": "뱀 수문장"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_minion_shadelancer.encounterhint",
+          "lastText": "몸을 세울 때 노출되는 약점을 끊어 돌진을 막자."
+        }
+      ],
+      "textOwnerGuid": "b7ca2b2d5338d534fa09cb132ac0e0d4",
+      "displayName": "뱀 수문장",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "6b7344e1fccd039439f7f796c840cc4c",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "7aea3dc37e7ebc54ba5a6e5fa5b22dcc",
+        "type": 2
+      },
+      "encounterHint": "몸을 세울 때 노출되는 약점을 끊어 돌진을 막자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 330,
+      "normalAttackInterval": 5.8,
+      "chargeInterval": 12.5,
+      "stunDuration": 4,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 73,
+      "goldReward": 16,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "7f52841cd36e958468bb57c70cfce61c",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "76a5aff719ef3624282629c312945526",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_뱀수문장_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_숯불도롱뇽.asset",
+    "name": "숯불 도롱뇽",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_숯불도롱뇽",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_minion_ashhound.displayname",
+          "lastText": "숯불 도롱뇽"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_minion_ashhound.encounterhint",
+          "lastText": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자."
+        }
+      ],
+      "textOwnerGuid": "b26dee8bc7d43af4e8bc812b5bf6296e",
+      "displayName": "숯불 도롱뇽",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "1e9fff35087a6b24c83c4c53e3ebbe92",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "6a30e237e39957648b5e1a7df2b3026b",
+        "type": 2
+      },
+      "encounterHint": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 247.5,
+      "normalAttackInterval": 1.05,
+      "chargeInterval": 6.2,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 55,
+      "goldReward": 6,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "b1731ad5f26e4a645b0177f6c0d3732b",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "065591a495967304d927859fc5dc9bbd",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_숯불도롱뇽_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_재가고일.asset",
+    "name": "재 가고일",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_재가고일",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.ashcrow.displayname",
+          "lastText": "재 가고일"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.ashcrow.encounterhint",
+          "lastText": "짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자."
+        }
+      ],
+      "textOwnerGuid": "bb3b020db885c984995fc41f14641176",
+      "displayName": "재 가고일",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "6203674a8a60d6c4da10e0c34f0edeeb",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "6827169e526aad84ab24255a9298a9ad",
+        "type": 2
+      },
+      "encounterHint": "짧은 준비 뒤 날카롭게 공격한다. 시차를 보고 가드하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 125,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 24,
+      "goldReward": 12,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "b4a39cbbf09ea2d44920e75378f806dd",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "8d653e5484023a34093870831fcfa9c1",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_재가고일_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_향로망령.asset",
+    "name": "향로 망령",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_향로망령",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.soullamp.displayname",
+          "lastText": "향로 망령"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.soullamp.encounterhint",
+          "lastText": "다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "97653d32a637160438a293565ee49723",
+      "displayName": "향로 망령",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "6ba91e6e579b77c409b77e6323c143d3",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "9514a8c1350c5fc4ea9b32daf9156782",
+        "type": 2
+      },
+      "encounterHint": "다른 적 뒤에서 공격한다. 열린 향로의 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 145,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 26,
+      "goldReward": 13,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "75f54e4a7d767564ba8ad085f8babedb",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "0366c39d47fc1bb4a87330c272952dae",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_향로망령_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_가시등시련수.asset",
+    "name": "가시등 시련수",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_가시등시련수",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.trialguardian.displayname",
+          "lastText": "가시등 시련수"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.trialguardian.encounterhint",
+          "lastText": "시련의 강타를 약점 파괴로 막자."
+        }
+      ],
+      "textOwnerGuid": "52b7da8d0f282654c919a5530c4a2e8c",
+      "displayName": "가시등 시련수",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "2e4c9c798362e4f4a97c545114bfa03f",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "c387a38a621419b47810c417e7f4561f",
+        "type": 2
+      },
+      "encounterHint": "시련의 강타를 약점 파괴로 막자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 240,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 33,
+      "goldReward": 16,
+      "combatScale": 1.6,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "64e87b5877852e74ea7bece480c6f50b",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "586871847d096854c8fe5c0cd64abb56",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_가시등시련수_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_경량훈련인형.asset",
+    "name": "경량 훈련 인형",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_경량훈련인형",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.traininglight.displayname",
+          "lastText": "경량 훈련 인형"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.traininglight.encounterhint",
+          "lastText": null
+        }
+      ],
+      "textOwnerGuid": "71650604ee7500346bd2d47396f20812",
+      "displayName": "경량 훈련 인형",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "1bf91379023c86645a48772dcd756b1a",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "5d973f6634c62a342ae68f821ed6824b",
+        "type": 2
+      },
+      "encounterHint": null,
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 75,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 0,
+      "goldReward": 0,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "f7679910f4e90ce4fb9bdca3752b81a9",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "ecf75ad34038fb64bbb637b1fbc8f2e7",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_경량훈련인형_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_균형훈련인형.asset",
+    "name": "균형 훈련 인형",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_균형훈련인형",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.trainingmedium.displayname",
+          "lastText": "균형 훈련 인형"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.trainingmedium.encounterhint",
+          "lastText": null
+        }
+      ],
+      "textOwnerGuid": "b15a3143d4e410844a0609af2f5744f4",
+      "displayName": "균형 훈련 인형",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "f509c25349c2551439da5f18f5245209",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "f0db0acd67217104db55b87830882212",
+        "type": 2
+      },
+      "encounterHint": null,
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 140,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 0,
+      "goldReward": 0,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "f7679910f4e90ce4fb9bdca3752b81a9",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "ecf75ad34038fb64bbb637b1fbc8f2e7",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_균형훈련인형_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_금먹는두꺼비.asset",
+    "name": "금먹는 두꺼비",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_금먹는두꺼비",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_special_merchantmutant.displayname",
+          "lastText": "금먹는 두꺼비"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_special_merchantmutant.encounterhint",
+          "lastText": "큰 공격을 준비할 때 열린 약점을 노리자."
+        }
+      ],
+      "textOwnerGuid": "47d6d43ce99c4764985d63037cfb301e",
+      "displayName": "금먹는 두꺼비",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "94394aa0117f093488c246c95bf8a450",
+        "type": 3
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "502fc8cf1668a56409a1fe3aa7f3a970",
+        "type": 2
+      },
+      "encounterHint": "큰 공격을 준비할 때 열린 약점을 노리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 960,
+      "normalAttackInterval": 1.15,
+      "chargeInterval": 3.45,
+      "stunDuration": 4.8,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 213,
+      "goldReward": 25,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "c65ba8108a2e66340a634e26803d6ec7",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "a5d49a9d5f514be4fa14263820a031f7",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Combat\\Lore01\\T_Sprite_Monster_후드행상변이_Idle.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_왕관거신.asset",
+    "name": "왕관 거신",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_왕관거신",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.deeptrialguardian.displayname",
+          "lastText": "왕관 거신"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.deeptrialguardian.encounterhint",
+          "lastText": "심층 시련. 여러 약점을 연결해 끊자."
+        }
+      ],
+      "textOwnerGuid": "197b50c913a700645bf023916181a13f",
+      "displayName": "왕관 거신",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "6fd595f94f51d954f8da35dea3b107e3",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "16d04740c5297774d881cedd60d3b2be",
+        "type": 2
+      },
+      "encounterHint": "심층 시련. 여러 약점을 연결해 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 460,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 51,
+      "goldReward": 24,
+      "combatScale": 1.85,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "ff49583b440b7444b844ee8aa2c3ec03",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "7259083b0161a06419f4b2313bdcb740",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_왕관거신_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_중량훈련인형.asset",
+    "name": "중량 훈련 인형",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_중량훈련인형",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.trainingheavy.displayname",
+          "lastText": "중량 훈련 인형"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.trainingheavy.encounterhint",
+          "lastText": null
+        }
+      ],
+      "textOwnerGuid": "787679510883c7c4883af0dbb6f93640",
+      "displayName": "중량 훈련 인형",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "590495b4556d55742868089b9612dcd4",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "2f219e2cbfc6a0441a8dc2ecdd9b46d2",
+        "type": 2
+      },
+      "encounterHint": null,
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 240,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 0,
+      "goldReward": 0,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "f7679910f4e90ce4fb9bdca3752b81a9",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "ecf75ad34038fb64bbb637b1fbc8f2e7",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_중량훈련인형_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_철니미믹.asset",
+    "name": "철니 미믹",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_철니미믹",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_special_minion_mimic.displayname",
+          "lastText": "철니 미믹"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_special_minion_mimic.encounterhint",
+          "lastText": "뚜껑이 열리는 동안 드러난 약점을 끊자."
+        }
+      ],
+      "textOwnerGuid": "ca172d0cd76023441aebeb5e76e02585",
+      "displayName": "철니 미믹",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "7151398b7e32d5f4881f47f6a8904ffd",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "b7a5b9f6e13c5ae4cb24689cf36ec141",
+        "type": 2
+      },
+      "encounterHint": "뚜껑이 열리는 동안 드러난 약점을 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 525,
+      "normalAttackInterval": 1.55,
+      "chargeInterval": 5,
+      "stunDuration": 3.4,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 117,
+      "goldReward": 15,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "23a70be5a852c07428b16dcaf131fccb",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "e59ef47d85a69114abf51302475ac9f6",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_철니미믹_Portrait.png"
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_Special_회수꾼도적.asset",
+    "name": "회수꾼 도적",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_Special_회수꾼도적",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_special_회수꾼도적.displayname",
+          "lastText": "회수꾼 도적"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_special_회수꾼도적.encounterhint",
+          "lastText": "칼을 당길 때 드러나는 약점을 노리자."
+        }
+      ],
+      "textOwnerGuid": "ee38cb01c1c92764abeeb5bec77ec7a7",
+      "displayName": "회수꾼 도적",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "630f7d9e67979f741a3781a4acab5f4a",
+        "type": 3
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "bcb78f30a82a8e94abbb3e453b4b65ef",
+        "type": 2
+      },
+      "encounterHint": "칼을 당길 때 드러나는 약점을 노리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 190,
+      "normalAttackInterval": 2,
+      "chargeInterval": 5,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 28,
+      "goldReward": 7,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 115
+          },
+          "radius": 43
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": 15
+          },
+          "radius": 70
+        },
+        {
+          "center": {
+            "x": 0,
+            "y": -92
+          },
+          "radius": 62
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "b4d3025334b984749b5c4a37461d825b",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "1ce1b45442ce1bc4bb3de35b529bf341",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Combat\\Lore01\\T_Sprite_Monster_회수꾼도적_Idle.png"
+  }
+]

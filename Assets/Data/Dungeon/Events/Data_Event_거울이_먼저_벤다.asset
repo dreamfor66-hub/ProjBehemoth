@@ -185,7 +185,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  excludedFromRandomPool: 0
+  excludedFromRandomPool: 1
   narrative: "\uD1B5\uB85C \uAC00\uC7A5\uC790\uB9AC\uC5D0 \uCEE4\uB2E4\uB780 \uAC70\uC6B8\uC774
     \uAE30\uB300\uC5B4 \uC788\uB2E4.\n\n\uB098\uB294 \uBA48\uCDB0 \uC130\uB294\uB370
     \uAC70\uC6B8 \uC18D\uC758 \uB098\uB294 \uC544\uC9C1 \uC6C0\uC9C1\uC774\uACE0

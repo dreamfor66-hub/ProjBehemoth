@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1b859af187d7c4da98ea784ab19b75, type: 3}
+  m_Name: "Data_NpcApproach_\uD589\uC0C1"
+  m_EditorClassIdentifier: 
+  titleKey: ui.npc.approach.merchant.title
+  narrativeKey: ui.npc.approach.merchant.rear
+  eventResponses: []
+  standaloneResponse: {fileID: 11400000, guid: e62230cd06fd7694a8f6fd5d06e409d3, type: 2}
+  encounter: {fileID: 0}
+  concealedEncounter: {fileID: 11400000, guid: c8cdb9767907c0a4aab040bdfd438c77, type: 2}
+  concealedChance: 0.05
+  concealedMinAct: 2
+  combatAnnouncementKey: ui.npc.approach.merchant.reveal
+  victoryTextKey: ui.npc.approach.merchant.victory
+  aftermath: {fileID: 0}
+  removeAfterCombat: 1

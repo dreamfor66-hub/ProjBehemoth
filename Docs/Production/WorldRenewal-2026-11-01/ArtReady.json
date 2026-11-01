@@ -1,0 +1,251 @@
+{
+  "files": [
+    {
+      "key": "coffer",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+      "oldCanvas": [
+        1536,
+        1024
+      ],
+      "generatedCanvas": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "key": "cofferSide",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-39f5fea9-0a1b-4abd-bed5-99a969a25c89.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_Side.png",
+      "oldCanvas": [
+        1536,
+        1024
+      ],
+      "generatedCanvas": [
+        1536,
+        1024
+      ],
+      "rejectedCorrectionSource": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-08331683-94fc-4535-a640-4f189dc7cb48.png",
+      "correctionSource": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c3e0e074-991e-4739-99ae-11c6238413b8.png"
+    },
+    {
+      "key": "cofferRear",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-7b8d0059-9f79-47e3-a80b-23886720b3e2.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_Rear.png",
+      "oldCanvas": [
+        1536,
+        1024
+      ],
+      "generatedCanvas": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "key": "cofferOpenFront",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedFront.png",
+      "oldCanvas": [
+        1536,
+        1024
+      ],
+      "generatedCanvas": [
+        1536,
+        1024
+      ],
+      "rejectedCorrectionSource": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c7981cad-d3f2-4063-9922-39bb2fc0595f.png",
+      "correctionSource": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-2c411820-698f-4c60-af22-663bda85114e.png",
+      "previousCorrectionSources": [
+        "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-65190e6f-3746-4395-b913-be0e5cfc057d.png"
+      ]
+    },
+    {
+      "key": "cofferOpenSide",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-b49c52b8-994c-4018-9b82-7d81c8f254bb.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedSide.png",
+      "oldCanvas": [
+        1536,
+        1024
+      ],
+      "generatedCanvas": [
+        1536,
+        1024
+      ],
+      "rejectedCorrectionSource": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-b197acdc-544f-4791-904e-1320e32b227b.png",
+      "correctionSource": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-89cd0e1e-8310-4a9a-beee-e84ef9cd14d8.png",
+      "previousCorrectionSources": [
+        "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-858f0d12-4e9d-40da-9473-6bcec087c67f.png"
+      ]
+    },
+    {
+      "key": "cofferOpenRear",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-18130c8e-31a3-41e6-800b-c1b803acb12e.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedRear.png",
+      "oldCanvas": [
+        1536,
+        1024
+      ],
+      "generatedCanvas": [
+        1536,
+        1024
+      ],
+      "previousCorrectionSources": [
+        "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-18130c8e-31a3-41e6-800b-c1b803acb12e.png"
+      ],
+      "correctionSource": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-c6efd8eb-81ff-4606-9cdf-2307f8b0fefe.png"
+    },
+    {
+      "key": "fountainNew",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+      "oldCanvas": [
+        1324,
+        1188
+      ],
+      "generatedCanvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "key": "fountainSide",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-819c5eb5-8193-451e-b4a3-633ac5caf7b9.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+      "oldCanvas": [
+        1324,
+        1188
+      ],
+      "generatedCanvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "key": "fountainRear",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f2899834-6fa4-49f5-8513-6c31bc5fc4f4.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+      "oldCanvas": [
+        1324,
+        1188
+      ],
+      "generatedCanvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "key": "fountainUsedFront",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9133aca8-f82a-43f8-acb8-3163ffc4b847.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedFront.png",
+      "oldCanvas": [
+        1324,
+        1188
+      ],
+      "generatedCanvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "key": "fountainUsedSide",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f4df1899-f3e6-4934-a59b-b859263fd64a.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedSide.png",
+      "oldCanvas": [
+        1324,
+        1188
+      ],
+      "generatedCanvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "key": "fountainUsedRear",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a165dbf1-79f4-4c14-bb6e-f456531bc2bc.png",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_usedRear.png",
+      "oldCanvas": [
+        1324,
+        1188
+      ],
+      "generatedCanvas": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "key": "roomB1",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-1e321920-4d80-43c1-a923-97729daac190.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_옛경비실.png"
+    },
+    {
+      "key": "watchB2",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f9a532b3-ab53-4184-ada8-bba57099e1d2.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_옛경비실.png"
+    },
+    {
+      "key": "watchB3",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a5fb2e01-7f48-48d1-ba5f-df8ca7c8a5c5.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_옛경비실.png"
+    },
+    {
+      "key": "oathRoom",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-184bb75f-6b74-4563-816f-3ed883797480.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_공용_서약실.png"
+    },
+    {
+      "key": "fruitRoomClean",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a268b4bd-f455-4b86-a609-d8ba46f5be3a.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_혈근번식실.png"
+    },
+    {
+      "key": "fruitRoomCleanB2",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-6e86b88e-4189-4121-ac3e-87caf535bef4.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_혈근번식실.png"
+    },
+    {
+      "key": "fruitRoomCleanB3",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-069513b9-c994-4825-9e04-f0a438c6ceac.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_혈근번식실.png"
+    },
+    {
+      "key": "payrollRoom",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c13d95c5-7586-4272-b48b-8a11191ca3e5.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_폐성급료고.png"
+    },
+    {
+      "key": "payrollRoomB2",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8ca15055-508c-4645-8445-6934dcc4151d.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_폐성급료고.png"
+    },
+    {
+      "key": "payrollRoomB3",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a71c00b6-4267-48b2-8fa3-106c109c91c2.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_폐성급료고.png"
+    },
+    {
+      "key": "deliveryRoom",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-6021990e-4313-4f10-9fe5-e9ffbde4f052.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_물자보관칸.png"
+    },
+    {
+      "key": "deliveryRoomB2",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-ca610546-8b50-415e-a855-b16b1e6bc83e.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_물자보관칸.png"
+    },
+    {
+      "key": "deliveryRoomB3",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-60c9ccfa-2392-4d64-b25c-851b75a9c732.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_물자보관칸.png"
+    },
+    {
+      "key": "wallCloth",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-e288e1ad-d5d3-4a4e-ab90-8fd10338d972.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_장식_경비천.png"
+    },
+    {
+      "key": "wallRelief",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-74c86000-74d5-4880-85e3-5addba677486.png",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_장식_돌문장.png"
+    }
+  ]
+}

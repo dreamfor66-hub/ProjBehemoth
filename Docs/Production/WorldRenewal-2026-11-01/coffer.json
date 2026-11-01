@@ -1,0 +1,9 @@
+{
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+  ],
+  "transparent_background": true,
+  "prompt": "First reference is a REJECTED polished inventory-icon chest, content only. Second is installed game room geometry/material/line authority, third is strong hand-inked environment object reference. Create a REPLACEMENT closed ordinary treasure chest: a squat plain expedition coffer, flat slightly sloped wooden lid rather than a cute round barrel, a broad solid base in contact with the ground, 2 plain dark iron straps and a small central square lock. Front-right three-quarter view seen at the low room camera, very little of top surface visible. Entire object unobstructed transparent background. It must belong to the environment, NEVER a bright UI icon. Draw simple broad muted stone-grey metal faces and deep olive charcoal timber, large pools of pitch black below the lid and between construction pieces; one restrained upper-left plane catches weak torchlight. Selectively broken/lost contours on dark edges, thinner interior seams, no uniformly fat perimeter. Only 3 or4 plank divisions and 4 simple fastening heads maximum. NO surface texture/grain/speckles, no little chips, no bevel highlights, no silver edging, no tiny facets, no glowing rim, no gold, no fantasy ornament, no thick black sticker border. Mood: severe forgotten dungeon equipment, hand drawn, broad flat materials not material rendering. The source chest's pose viewpoint is useful but its rounded polished design is rejected. Output one complete object, no background floor slab or rubble. Do not crop."
+}

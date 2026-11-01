@@ -1,0 +1,9 @@
+{
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_UsedRear.png",
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "prompt": "Redraw the OPEN CHEST in FIRST reference with the exact coffer identity and materials in SECOND reference. Keep FIRST's REAR camera: broad blank back boards and two functional lid hinges visible, lid raised away from viewer; no keyhole on the back. It is the same 2-strapped chest after looting, not another chest. No gold trim. Style input is the installed B1 room, not inventory-icon art. Broad very quiet flat olive-charcoal wood/stone and matte dark iron. Massive black cavities and underside, selective contours of varied weight which disappear in shadow, NO regular bright bevel highlights or thick sticker outline. No grain/noise/speckles/tiny chips or jagged contour teeth. Entire object cutout, fully opaque object with truly transparent background and no outer halo or large floor slab."
+}

@@ -1,0 +1,21 @@
+{
+  "canvas": [
+    1672,
+    941
+  ],
+  "alphaSolidBBox": [
+    280,
+    179,
+    421,
+    649
+  ],
+  "blackVoidEdges": {
+    "rows": [
+      320,
+      430
+    ],
+    "meanAbsPx": 0.3333333333333333,
+    "maxAbsPx": 3
+  },
+  "noFit": true
+}

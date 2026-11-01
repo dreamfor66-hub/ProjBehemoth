@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uC5D8\uB9AC\uD2B8\uC785\uAD6C"
+  m_EditorClassIdentifier: 
+  labelKey: ui.explore.elitedoor
+  usedLabelKey: 
+  resolvedTextKey: 
+  wallMounted: 1
+  fitsDoorway: 1
+  includesDoorframe: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 0
+  roomInterior: 0
+  usedForm: {fileID: 0}
+  front: {fileID: 21300000, guid: bc32bed7561dc424aa0567111edad2ee, type: 3}
+  side: {fileID: 21300000, guid: bc32bed7561dc424aa0567111edad2ee, type: 3}
+  rear: {fileID: 21300000, guid: bc32bed7561dc424aa0567111edad2ee, type: 3}
+  usedFront: {fileID: 0}
+  usedSide: {fileID: 0}
+  usedRear: {fileID: 0}
+  displayHeight: 400
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: bc32bed7561dc424aa0567111edad2ee, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.0051660514
+      y: 0.018087855
+      width: 0.9896679
+      height: 0.97243756
+    footprint:
+      serializedVersion: 2
+      x: 0.019188192
+      y: 0.025839793
+      width: 0.96162367
+      height: 0.21374677

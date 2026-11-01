@@ -1,0 +1,247 @@
+[
+  {
+    "id": "WizardSelection",
+    "production": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png",
+    "framing": "full",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-af88039c-4def-4efb-8ad5-abe1769318c0.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\UI\\Outgame\\T_UI_CharacterSelection_Wizard.png",
+    "originalSha256": "087a69001c79cc15caa3277b81b14413363eff72efc9fb142992e87c7ac18e92",
+    "generatedSha256": "dead76c70987b722efe501f164ed9ee74280a54ad27c960ea764d0954d2885a5",
+    "productionSha256": "b54a3dfe5ddf0d8596da15af6eb45991d4381d83fb9a5d4aeee81a30b15146f5",
+    "canvas": [
+      1672,
+      941
+    ],
+    "uniformScale": 1.0,
+    "offset": [
+      0,
+      0
+    ],
+    "originalAlphaBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "newAlphaBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "silhouetteIoU": 1.0,
+    "preservedMetadata": {
+      "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png.meta": "4c6f8515b25bde23e6a016dd4fab70c6ae058b2ba0d74ba36efbcfffaf599f00"
+    }
+  },
+  {
+    "id": "WizardCardTransparent",
+    "production": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png",
+    "framing": "full",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-1ad29045-7618-43f5-aebc-9095d2ce02f5.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\UI\\Outgame\\T_UI_CharacterButton_Wizard.png",
+    "originalSha256": "807e7b4bd4b57f402bbb1e05aee8b9470dd9496fb57c408b16ca12e76dc9f281",
+    "generatedSha256": "a50f8489c0684bb916f6bcdd7f60ebca2dcdeb92d966033ae5c834fccfba78a7",
+    "productionSha256": "35ef4d2bd1eb54b84f60ba34a226cab135d1ccf950fa9d6055af8c45d44fe0af",
+    "canvas": [
+      600,
+      600
+    ],
+    "uniformScale": 0.4784688995215311,
+    "offset": [
+      0,
+      0
+    ],
+    "originalAlphaBounds": [
+      0,
+      30,
+      600,
+      600
+    ],
+    "newAlphaBounds": [
+      0,
+      27,
+      600,
+      600
+    ],
+    "silhouetteIoU": 0.9756835579745655,
+    "preservedMetadata": {
+      "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png.meta": "736ed1f4c865308ed852c1bfd417f6b4977bc45295a19dfaf67b121ce967d887"
+    }
+  },
+  {
+    "id": "WizardPortrait",
+    "production": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png",
+    "framing": "full",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-10903e86-ce3d-4788-9eac-245b4069f337.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\Heroes\\T_Sprite_Character_Wizard_Portrait.png",
+    "originalSha256": "584b1045d5ccc8640b26f9b585399b1f03c6d8f4dceb8762f7182c9c4aaa4db2",
+    "generatedSha256": "df56cfa8a975f9f0c54d0ce3cc8202801d39d09489350197b9e6453b5e3555a8",
+    "productionSha256": "729336e6421853d3618b7dd614e5254c4f51af4a29d50a6c17a82db430c0a388",
+    "canvas": [
+      640,
+      640
+    ],
+    "uniformScale": 0.5103668261562998,
+    "offset": [
+      0,
+      0
+    ],
+    "originalAlphaBounds": [
+      0,
+      8,
+      640,
+      640
+    ],
+    "newAlphaBounds": [
+      0,
+      6,
+      640,
+      640
+    ],
+    "silhouetteIoU": 0.9576390916382258,
+    "preservedMetadata": {
+      "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png.meta": "5f81dffe4bf9d3b73f56e17dc0bc9abaa71859d2538b09d958a14700045f20bd"
+    }
+  },
+  {
+    "id": "WizardIdle",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-e5b01518-b8c4-474a-b137-d5d0cfefe465.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Idle.png",
+    "originalSha256": "fab2db458096a907c1e2c1520bfc876498261d44fc23ea733d94dd2fe79fde42",
+    "generatedSha256": "3916af39a36f991ebc69c53e3b3c6c3d1b792e7a44095e38e54922cd620e6393",
+    "productionSha256": "d0ec0ab9fa144710e1f0e06bedc84081577f826594a389acbe9cfe8be20ac27d",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "uniformScale": 0.8281733746130031,
+    "offset": [
+      1054,
+      234
+    ],
+    "originalAlphaBounds": [
+      1047,
+      234,
+      2055,
+      1304
+    ],
+    "newAlphaBounds": [
+      1055,
+      234,
+      2047,
+      1304
+    ],
+    "silhouetteIoU": 0.9422598961385359,
+    "preservedMetadata": {
+      "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png.meta": "861fc57f3661e626834b21627903dbf1a26d07a9d8530903566501ea337d375e"
+    }
+  },
+  {
+    "id": "WizardReady",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-6ba81116-fdf1-41f3-9f3b-cd1073be110a.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Ready.png",
+    "originalSha256": "6ec377dbe8e1090d45935ccc9ba56f398fdd32f699cb117ff878639107e69b7f",
+    "generatedSha256": "bd4b47d14d9e6b6660b6aeddaa7f1c58df8e7cc485ac0b9b69f4b5f8fa69d5a3",
+    "productionSha256": "de48999865d411180b11d8ee5d546e265786d73c535990000657720d33d73f2d",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "uniformScale": 0.9180187873612298,
+    "offset": [
+      939,
+      221
+    ],
+    "originalAlphaBounds": [
+      940,
+      221,
+      2172,
+      1296
+    ],
+    "newAlphaBounds": [
+      944,
+      221,
+      2168,
+      1296
+    ],
+    "silhouetteIoU": 0.9413147987084937,
+    "preservedMetadata": {
+      "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png.meta": "955de3ae2dd82d80363b59456b54e9d5b586dfd7549614c13be6d00b1d7bc2ec"
+    }
+  },
+  {
+    "id": "WizardAttack",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-bb9315b7-e425-4b47-bc25-465b59dead36.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Attack.png",
+    "originalSha256": "10b2cdfb1d9f5328d79b1e7fed9e2a33984f622ed41f74955d6ae699449c35ea",
+    "generatedSha256": "d6ca3e5367af99769dacbbfff86bdd348ada256dda56547f52c8496a3564468a",
+    "productionSha256": "dedf96019ab42305898c6484662eccbe44e8ad462c995bc507b3d57cd5d02c65",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "uniformScale": 0.9407305306685044,
+    "offset": [
+      790,
+      298
+    ],
+    "originalAlphaBounds": [
+      790,
+      292,
+      2155,
+      1304
+    ],
+    "newAlphaBounds": [
+      790,
+      298,
+      2155,
+      1304
+    ],
+    "silhouetteIoU": 0.970680342450373,
+    "preservedMetadata": {
+      "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png.meta": "5b38d3c195f75390e6d3c3de3b2471ca1f30f146cc4d27fefcbb3c56bb27efad"
+    }
+  },
+  {
+    "id": "WizardGuard",
+    "production": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png",
+    "framing": "alpha",
+    "generated": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-695a2766-ccaa-496f-bfd0-9f3a86b753b0.png",
+    "sourceBackup": "E:\\Github\\Proj_Behemoth\\Docs\\Production\\WorldRenewal-2026-11-01\\Before\\Assets\\Art\\World\\Angular\\States\\Heroes\\T_Sprite_Character_Wizard_Guard.png",
+    "originalSha256": "f1c005415b8b61352cf7a87fcee5bd27c345e01b554b8082366abd21295aabad",
+    "generatedSha256": "520c05166ae51163a720734fd928fde5df9fefed4fb2fc3d9a971ff8bafef29d",
+    "productionSha256": "bb852e7d99937c2f52b4d52e10d25fa36b48aaf2ec0464542996ca9b0036b259",
+    "canvas": [
+      2896,
+      1304
+    ],
+    "uniformScale": 0.927484333034915,
+    "offset": [
+      829,
+      268
+    ],
+    "originalAlphaBounds": [
+      829,
+      268,
+      2135,
+      1304
+    ],
+    "newAlphaBounds": [
+      829,
+      268,
+      2135,
+      1304
+    ],
+    "silhouetteIoU": 0.9626471346057486,
+    "preservedMetadata": {
+      "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png.meta": "cff3cfd3ee3bc9dff00a9b4faed165b6c106d26701d12a080e508f6b1ca26b00"
+    }
+  }
+]

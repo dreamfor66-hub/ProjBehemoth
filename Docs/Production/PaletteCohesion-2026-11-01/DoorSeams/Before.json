@@ -1,0 +1,30 @@
+{
+  "Left": {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Restoration01\\B1-Left.png",
+    "size": [
+      1672,
+      941
+    ],
+    "bbox": [
+      282,
+      0,
+      419,
+      655
+    ],
+    "sha256": "f404ec08a1e2fb74a8472a23daa44aa379af21a618ad059303a906ae8dc6eff8"
+  },
+  "Right": {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Restoration01\\B1-Right.png",
+    "size": [
+      1672,
+      941
+    ],
+    "bbox": [
+      1284,
+      228,
+      1386,
+      636
+    ],
+    "sha256": "2dd77fa44bf1ddceda2289e517ff72c6b339d1d264e20814775e36e17ed35473"
+  }
+}

@@ -1,0 +1,188 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS actual chapter travel B1
+PASS saved prop Goddess
+PASS place B1 Goddess/0 used=False
+PASS actual prop painting Goddess B1/0
+PASS PNG-derived physical support T_UI_World_Goddess_Front
+PASS architectural wall marks remain behind physical prop layer Goddess B1/0
+PASS statue hood remains below world/HUD boundary B1/0 top=885.5953 roof=1129.099
+SCREEN B1-Goddess-0-Ready
+PASS place B1 Goddess/1 used=False
+PASS actual prop painting Goddess B1/1
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS architectural wall marks remain behind physical prop layer Goddess B1/1
+PASS statue hood remains below world/HUD boundary B1/1 top=910.6917 roof=1129.099
+SCREEN B1-Goddess-1-Ready
+PASS place B1 Goddess/3 used=False
+PASS actual prop painting Goddess B1/3
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS architectural wall marks remain behind physical prop layer Goddess B1/3
+PASS statue hood remains below world/HUD boundary B1/3 top=910.6917 roof=1129.099
+SCREEN B1-Goddess-3-Ready
+PASS saved prop Fountain
+PASS place B1 Fountain/0 used=False
+PASS actual prop painting Fountain B1/0
+PASS PNG-derived physical support T_UI_World_Fountain_Front
+PASS architectural wall marks remain behind physical prop layer Fountain B1/0
+SCREEN B1-Fountain-0-Ready
+PASS place B1 Fountain/1 used=False
+PASS actual prop painting Fountain B1/1
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+PASS architectural wall marks remain behind physical prop layer Fountain B1/1
+SCREEN B1-Fountain-1-Ready
+PASS place B1 Fountain/2 used=False
+PASS actual prop painting Fountain B1/2
+PASS PNG-derived physical support T_UI_World_분수_rear
+PASS architectural wall marks remain behind physical prop layer Fountain B1/2
+SCREEN B1-Fountain-2-Ready
+PASS place B1 Fountain/3 used=False
+PASS actual prop painting Fountain B1/3
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+PASS architectural wall marks remain behind physical prop layer Fountain B1/3
+SCREEN B1-Fountain-3-Ready
+PASS place B1 Fountain/0 used=True
+PASS actual prop painting Fountain B1/0
+PASS PNG-derived physical support T_UI_World_Fountain_UsedFront
+PASS architectural wall marks remain behind physical prop layer Fountain B1/0
+SCREEN B1-Fountain-0-Used
+PASS place B1 Fountain/1 used=True
+PASS actual prop painting Fountain B1/1
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+PASS architectural wall marks remain behind physical prop layer Fountain B1/1
+SCREEN B1-Fountain-1-Used
+PASS place B1 Fountain/2 used=True
+PASS actual prop painting Fountain B1/2
+PASS PNG-derived physical support T_UI_World_분수_usedRear
+PASS architectural wall marks remain behind physical prop layer Fountain B1/2
+SCREEN B1-Fountain-2-Used
+PASS place B1 Fountain/3 used=True
+PASS actual prop painting Fountain B1/3
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+PASS architectural wall marks remain behind physical prop layer Fountain B1/3
+SCREEN B1-Fountain-3-Used
+PASS actual chapter travel B2
+PASS saved prop Goddess
+PASS place B2 Goddess/0 used=False
+PASS actual prop painting Goddess B2/0
+PASS PNG-derived physical support T_UI_World_Goddess_Front
+PASS architectural wall marks remain behind physical prop layer Goddess B2/0
+PASS statue hood remains below world/HUD boundary B2/0 top=885.5953 roof=1129.099
+SCREEN B2-Goddess-0-Ready
+PASS place B2 Goddess/1 used=False
+PASS actual prop painting Goddess B2/1
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS architectural wall marks remain behind physical prop layer Goddess B2/1
+PASS statue hood remains below world/HUD boundary B2/1 top=910.6917 roof=1129.099
+SCREEN B2-Goddess-1-Ready
+PASS place B2 Goddess/3 used=False
+PASS actual prop painting Goddess B2/3
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS architectural wall marks remain behind physical prop layer Goddess B2/3
+PASS statue hood remains below world/HUD boundary B2/3 top=910.6917 roof=1129.099
+SCREEN B2-Goddess-3-Ready
+PASS saved prop Fountain
+PASS place B2 Fountain/0 used=False
+PASS actual prop painting Fountain B2/0
+PASS PNG-derived physical support T_UI_World_Fountain_Front
+PASS architectural wall marks remain behind physical prop layer Fountain B2/0
+SCREEN B2-Fountain-0-Ready
+PASS place B2 Fountain/1 used=False
+PASS actual prop painting Fountain B2/1
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+PASS architectural wall marks remain behind physical prop layer Fountain B2/1
+SCREEN B2-Fountain-1-Ready
+PASS place B2 Fountain/2 used=False
+PASS actual prop painting Fountain B2/2
+PASS PNG-derived physical support T_UI_World_분수_rear
+PASS architectural wall marks remain behind physical prop layer Fountain B2/2
+SCREEN B2-Fountain-2-Ready
+PASS place B2 Fountain/3 used=False
+PASS actual prop painting Fountain B2/3
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+PASS architectural wall marks remain behind physical prop layer Fountain B2/3
+SCREEN B2-Fountain-3-Ready
+PASS place B2 Fountain/0 used=True
+PASS actual prop painting Fountain B2/0
+PASS PNG-derived physical support T_UI_World_Fountain_UsedFront
+PASS architectural wall marks remain behind physical prop layer Fountain B2/0
+SCREEN B2-Fountain-0-Used
+PASS place B2 Fountain/1 used=True
+PASS actual prop painting Fountain B2/1
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+PASS architectural wall marks remain behind physical prop layer Fountain B2/1
+SCREEN B2-Fountain-1-Used
+PASS place B2 Fountain/2 used=True
+PASS actual prop painting Fountain B2/2
+PASS PNG-derived physical support T_UI_World_분수_usedRear
+PASS architectural wall marks remain behind physical prop layer Fountain B2/2
+SCREEN B2-Fountain-2-Used
+PASS place B2 Fountain/3 used=True
+PASS actual prop painting Fountain B2/3
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+PASS architectural wall marks remain behind physical prop layer Fountain B2/3
+SCREEN B2-Fountain-3-Used
+PASS actual chapter travel B3
+PASS saved prop Goddess
+PASS place B3 Goddess/0 used=False
+PASS actual prop painting Goddess B3/0
+PASS PNG-derived physical support T_UI_World_Goddess_Front
+PASS architectural wall marks remain behind physical prop layer Goddess B3/0
+PASS statue hood remains below world/HUD boundary B3/0 top=885.5953 roof=1129.099
+SCREEN B3-Goddess-0-Ready
+PASS place B3 Goddess/1 used=False
+PASS actual prop painting Goddess B3/1
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS architectural wall marks remain behind physical prop layer Goddess B3/1
+PASS statue hood remains below world/HUD boundary B3/1 top=944.9328 roof=1129.099
+SCREEN B3-Goddess-1-Ready
+PASS place B3 Goddess/3 used=False
+PASS actual prop painting Goddess B3/3
+PASS PNG-derived physical support T_UI_World_Goddess_Side
+PASS architectural wall marks remain behind physical prop layer Goddess B3/3
+PASS statue hood remains below world/HUD boundary B3/3 top=944.9328 roof=1129.099
+SCREEN B3-Goddess-3-Ready
+PASS saved prop Fountain
+PASS place B3 Fountain/0 used=False
+PASS actual prop painting Fountain B3/0
+PASS PNG-derived physical support T_UI_World_Fountain_Front
+PASS architectural wall marks remain behind physical prop layer Fountain B3/0
+SCREEN B3-Fountain-0-Ready
+PASS place B3 Fountain/1 used=False
+PASS actual prop painting Fountain B3/1
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+PASS architectural wall marks remain behind physical prop layer Fountain B3/1
+SCREEN B3-Fountain-1-Ready
+PASS place B3 Fountain/2 used=False
+PASS actual prop painting Fountain B3/2
+PASS PNG-derived physical support T_UI_World_분수_rear
+PASS architectural wall marks remain behind physical prop layer Fountain B3/2
+SCREEN B3-Fountain-2-Ready
+PASS place B3 Fountain/3 used=False
+PASS actual prop painting Fountain B3/3
+PASS PNG-derived physical support T_UI_World_Fountain_Side
+PASS architectural wall marks remain behind physical prop layer Fountain B3/3
+SCREEN B3-Fountain-3-Ready
+PASS place B3 Fountain/0 used=True
+PASS actual prop painting Fountain B3/0
+PASS PNG-derived physical support T_UI_World_Fountain_UsedFront
+PASS architectural wall marks remain behind physical prop layer Fountain B3/0
+SCREEN B3-Fountain-0-Used
+PASS place B3 Fountain/1 used=True
+PASS actual prop painting Fountain B3/1
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+PASS architectural wall marks remain behind physical prop layer Fountain B3/1
+SCREEN B3-Fountain-1-Used
+PASS place B3 Fountain/2 used=True
+PASS actual prop painting Fountain B3/2
+PASS PNG-derived physical support T_UI_World_분수_usedRear
+PASS architectural wall marks remain behind physical prop layer Fountain B3/2
+SCREEN B3-Fountain-2-Used
+PASS place B3 Fountain/3 used=True
+PASS actual prop painting Fountain B3/3
+PASS PNG-derived physical support T_UI_World_Fountain_UsedSide
+PASS architectural wall marks remain behind physical prop layer Fountain B3/3
+SCREEN B3-Fountain-3-Used
+PASS return to chapter start
+Scoped visual composition/click checks only; source palette statistics are diagnostic. No DPS, broad balance suite or claim of user five-run feel validation.
+153 checks; 0 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

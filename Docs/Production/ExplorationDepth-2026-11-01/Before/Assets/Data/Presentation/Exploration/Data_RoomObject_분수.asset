@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
+  m_Name: "Data_RoomObject_\uBD84\uC218"
+  m_EditorClassIdentifier: 
+  labelKey: ui.explore.object.fountain
+  usedLabelKey: 
+  resolvedTextKey: ui.explore.used.fountain
+  wallMounted: 1
+  fitsDoorway: 0
+  includesDoorframe: 0
+  wallSuspended: 0
+  facePlayerOnFirstEncounter: 0
+  roomInterior: 0
+  usedForm: {fileID: 0}
+  front: {fileID: 21300000, guid: a0b7e74c09dcc0a48afa5cc45b9321f0, type: 3}
+  side: {fileID: 21300000, guid: b73bcf621e367aa4991ff7dcce85404f, type: 3}
+  rear: {fileID: 0}
+  usedFront: {fileID: 21300000, guid: d48c5514f11941e45b3c482814534624, type: 3}
+  usedSide: {fileID: 21300000, guid: bd1417411b1980b4dbd36e7da6d2967d, type: 3}
+  usedRear: {fileID: 0}
+  displayHeight: 390
+  hitPadding: 20
+  geometry:
+  - sprite: {fileID: 21300000, guid: a0b7e74c09dcc0a48afa5cc45b9321f0, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.0929003
+      y: 0.04040404
+      width: 0.81571
+      height: 0.8493266
+    footprint:
+      serializedVersion: 2
+      x: 0.2907855
+      y: 0.077441074
+      width: 0.4267372
+      height: 0.18666667
+  - sprite: {fileID: 21300000, guid: b73bcf621e367aa4991ff7dcce85404f, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.07854985
+      y: 0.026094276
+      width: 0.84516615
+      height: 0.88804716
+    footprint:
+      serializedVersion: 2
+      x: 0.24169184
+      y: 0.04040404
+      width: 0.51586103
+      height: 0.19518518
+  - sprite: {fileID: 21300000, guid: d48c5514f11941e45b3c482814534624, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.049093656
+      y: 0.043771043
+      width: 0.8995468
+      height: 0.8181818
+    footprint:
+      serializedVersion: 2
+      x: 0.2907855
+      y: 0.074074075
+      width: 0.4206949
+      height: 0.1798148
+  - sprite: {fileID: 21300000, guid: bd1417411b1980b4dbd36e7da6d2967d, type: 3}
+    bounds:
+      serializedVersion: 2
+      x: 0.07779456
+      y: 0.022727273
+      width: 0.84592146
+      height: 0.82828283
+    footprint:
+      serializedVersion: 2
+      x: 0.24169184
+      y: 0.03787879
+      width: 0.51661634
+      height: 0.18203703

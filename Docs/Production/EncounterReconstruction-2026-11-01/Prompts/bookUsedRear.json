@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case: precise-object-edit. Production game sprite AFTERMATH state.\nImage 1 is the exact edit target: Rear view of the existing floating book and stone reading pedestal. Image 2 is the installed room background, style/context reference only.\nChange ONLY this: remove the entire hovering book, its covers, all pages, hanging ribbons and their cast shadow on the slab. Leave an EMPTY STONE READING PEDESTAL.\nCritical invariants: preserve the exact full 1376x1152 transparent canvas, the pedestal's pixel position, scale, perspective, slab outer contour, all stone seams, chips, broad shadow planes, rubble contact and every visible stone drawing. Do not recenter or enlarge the remaining pedestal. The empty pedestal must align exactly with the target when toggled as a sprite state. Newly exposed top surface is simple quiet charcoal-brown stone consistent with target.\nKeep original bold selective ink shadows and broad quiet planes; no new detail, glow, outline halo, vignette, ground patch or background. Do not add loose book/page remains. Preserve true transparency throughout the now-empty upper canvas. Output ONE independent transparent PNG, same camera and canvas, no frame or text.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Book_Rear.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-f7f86f84-59a6-49b5-b5df-f56b462dc8a7.png"
+}

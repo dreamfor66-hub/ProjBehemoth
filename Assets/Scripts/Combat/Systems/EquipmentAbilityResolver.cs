@@ -13,7 +13,11 @@ namespace DungeonSlash
             foreach (var data in run.Companions)
             {
                 if (data.prefab == null || companionViews.TryGetValue(data, out var existing) && existing != null) continue;
-                var view = Instantiate(data.prefab, playerSpawnRoot); view.Configure(data); companionViews[data] = view;
+                // The player framing anchor moves between navigation/combat. Companions
+                // stand on the room floor, in its stable coordinate system instead.
+                var view = Instantiate(data.prefab, playerSpawnRoot.parent);
+                view.transform.SetSiblingIndex(playerSpawnRoot.GetSiblingIndex());
+                view.Configure(data); companionViews[data] = view;
             }
         }
         private void ResolveQueuedAbilities(int depth)

@@ -43,6 +43,9 @@ namespace DungeonSlash
         public Vector2 GuardBodyOffset=>animator!=null&&animator.Available?new Vector2(0,-20)*ImageSizeMultiplier:Vector2.zero;
 
         public RectTransform Root => root;
+        public float CameraFramingZoom => ImageSizeMultiplier;
+        public Vector3 CameraFramingDisplacement => framingRoot!=null&&framingRoot.parent!=null
+            ? framingRoot.parent.TransformVector(framingRoot.anchoredPosition-framingRestPosition) : Vector3.zero;
         public bool IsCombatFramingReady => combatFraming && framingProgress >= 1f;
 
         public void SetCombatFraming(RectTransform anchor, bool inCombat, bool immediate = false)
@@ -102,6 +105,9 @@ namespace DungeonSlash
         public void Bind(PlayerCombatRuntime runtime)
         {
             if (runtime == null) return;
+            // The painting is decorative; its padded canvas must not intercept
+            // companion/world clicks or the dedicated combat gesture surface.
+            if(body!=null)body.raycastTarget=false;
             if (runtime.HoldingGuard) InterruptAttack();
             if (runtime.Data.combatSprite != null && body != null)
             {

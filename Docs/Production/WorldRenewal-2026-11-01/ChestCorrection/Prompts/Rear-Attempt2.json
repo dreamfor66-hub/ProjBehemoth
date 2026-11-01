@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: precise-object-edit. IMAGE1 CLOSED Rear chest is the exact target. IMAGE2 is an already generated open version that was REJECTED because it shortened/narrowed the lower box. It is only an example of opening the lid, NEVER a source for lower-body dimensions. IMAGE3 actual room style.\nMake the lid open while retaining the exact original LOWER BODY in IMAGE1 as a fixed pixel layer. Do NOT redraw its lower planks, outer corner vertices, metal straps, hinges or rivets. Copy them. Keep every original lower box vertex at the same canvas position, no new perspective. Original physical lower body x120..1457 below y600, lowest vertex y957. Keep the right lower corner reaching original x1457 and the bottom at original y957, not rejected x1401/y969. Rear hinges remain in their ORIGINAL exact positions. Lid rotates away from camera, retaining exterior wood/bands visible; never add a front keyhole to the back.\nEdit only the lid above the top rim. Hinge it open, reveal an empty black interior. Keep exact1536x1024 full canvas, ground contact, camera, body colors and every lower ink line. Absolutely no halo: remove faint ambient haze OUTSIDE the object silhouette, alpha0 outside, no brown/gray cloud around the chest. No new rivets, bright rimlight or decorative detail.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Rear.png",
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-7a94eeba-cec4-4fc2-a01a-55d2eb58cd16.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-b96defff-3eff-4612-a99f-0f547a797daa.png"
+}

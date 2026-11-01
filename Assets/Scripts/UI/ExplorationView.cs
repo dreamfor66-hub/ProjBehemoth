@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,12 +52,17 @@ namespace DungeonSlash
             var floor = Floor;
             var illumination = floor != null ? floor.objectIllumination : Color.white;
             var aperture = art.fitsDoorway && floor?.openingContours?.Length >= 3 ? floor.openingContours[view == 0 ? 0 : view == 1 ? 1 : 2] : null;
-            slot.Bind(art, view, used, anchor, height, illumination, aperture, clicked, Hover);
+            var frontDoor = floor?.openingContours?.Length >= 3 ? floor.openingContours[0].bounds : new Rect(0,0,.16f,.5f);
+            var frontAspect = objectLayer != null ? frontDoor.width*objectLayer.rect.width / Mathf.Max(1,frontDoor.height*objectLayer.rect.height) : .56f;
+            var frontGround=floor?.wallObjectSupports?.Length==3?floor.wallObjectSupports[0].y:.35f;
+            var heightFactor=(frontDoor.yMax+frontDoor.height*.14f-frontGround+.005f)/frontDoor.height;
+            var referenceFloor=backdrop?.artwork?.Length>0?backdrop.artwork[0]:null;
+            var sideRatio=referenceFloor?.openingContours?.Length>=3?referenceFloor.openingContours[view==1?1:2].bounds.width/referenceFloor.openingContours[0].bounds.width:.6f;
+            slot.Bind(art, view, used, anchor, height, illumination, aperture, clicked, Hover, frontAspect,heightFactor,frontDoor.width*sideRatio);
             if (art.roomInterior && Floor?.campInterior != null) slot.UseInteriorPainting();
-            // Paint rearward props before nearer props, regardless of content registration order.
-            for (var i = 0; i < nextSlot; i++) for (var j = i + 1; j < nextSlot; j++)
-                if (slots[i].Depth < slots[j].Depth && slots[i].transform.GetSiblingIndex() < slots[j].transform.GetSiblingIndex())
-                    slots[j].transform.SetSiblingIndex(slots[i].transform.GetSiblingIndex());
+            // Use the same depth order for pictures and their separate pointer surfaces.
+            foreach(var item in slots.Take(nextSlot).Where(s=>s!=null&&s.gameObject.activeSelf).OrderByDescending(s=>s.Depth))
+            {item.transform.SetAsLastSibling();if(item.hitArea!=null)item.hitArea.SetAsLastSibling();}
         }
         public void AddHiddenWall(RoomObjectData wall, int view, Vector2 anchor, Action clicked)
         {

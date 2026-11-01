@@ -1,0 +1,12 @@
+{
+  "prompt": "Use case: precise-object-edit. Exact sprite state edit, not a redraw.\nIMAGE1 is the ONLY edit target: original front-view floating book ABOVE a stone pedestal. IMAGE2 is the already generated empty-state example, to show ONLY what is removed, NOT a style or color target. IMAGE3 is the installed background, context only.\nRemove ONLY the airborne book, leather covers, pages and two hanging paper strips. The entire upper area occupied by that book becomes transparent. Fill ONLY the tiny stone slab area formerly obscured by the hanging paper ends.\nIMMUTABLE STONE: Copy ALL already-visible stone pedestal pixels directly from image1 without reinterpretation, recoloring or relighting. Its top slab, brick joints, right-side near-black masonry, chipped base and contact rubble MUST retain exactly the original tonal values and coordinates. In particular do not brighten the lower right blocks or rubble. Do not adjust the lower pedestal for the book's removal; its existing black shapes are permanent painted masonry shadows.\nKeep the exact input 1374x1145 canvas and pedestal coordinates, shape and ground-contact extent. No recentering, rescaling, extra margins, new stones, extra chips, glow or matte. One truly transparent PNG. The book disappears while ALL stone remains visually unchanged.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Book_Front.png",
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-e0986ca0-e73d-4634-b31e-d00976e56d13.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-5ea4dd1b-4d3a-4439-affe-664bb426c86d.png",
+  "rejected": true,
+  "reason": "Rejected: fitting the brightness-based derived footprint changed painted stone shadows. Preserve the first empty pedestal edit and fix same-canvas support derivation in shared rendering instead."
+}

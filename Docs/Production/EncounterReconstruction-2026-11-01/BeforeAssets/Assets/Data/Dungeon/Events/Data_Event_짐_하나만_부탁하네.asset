@@ -1,0 +1,456 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed321eba234b304691035266cf67c31, type: 3}
+  m_Name: "Data_Event_\uC9D0_\uD558\uB098\uB9CC_\uBD80\uD0C1\uD558\uB124"
+  m_EditorClassIdentifier: 
+  textKeys:
+  - propertyPath: displayName
+    key: data.randomeventdata.pilgrim.displayname
+    lastText: "\uC9D0 \uD558\uB098\uB9CC \uBD80\uD0C1\uD558\uB124"
+  - propertyPath: narrative
+    key: data.randomeventdata.pilgrim.narrative
+    lastText: "\uB178\uC778\uC774 \uBB34\uAC70\uC6B4 \uB3CC\uC790\uB8E8\uB97C \uACE0\uCCD0
+      \uC548\uB294\uB2E4. \uB3CC\uB9C8\uB2E4 \uC0AC\uB78C\uC758 \uC774\uB984\uACFC
+      \uB0A0\uC9DC\uAC00 \uC9E7\uAC8C \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uBAB8\uAE4C\uC9C0
+      \uB370\uB824\uC62C \uC218 \uC5C6\uC73C\uBA74, \uC774\uB984\uC774\uB77C\uB3C4
+      \uC788\uC5B4\uC57C \uB3C8\uC744 \uBC1B\uC9C0.\u201D\n\n\uBAA9\uC5D0 \uAC78\uB9B0
+      \uD68C\uC218 \uD45C\uC2DD\uC740 \uC624\uB798 \uB2F3\uC558\uACE0, \uC790\uB8E8
+      \uC548\uC5D0\uB294 \uC791\uC740 \uC720\uD488\uB4E4\uC774 \uCC9C\uC5D0 \uC2F8\uC5EC
+      \uC788\uB2E4.\n\n\uB178\uC778\uC740 \uB3CC\uC544\uAC08 \uC6B4\uC784\uC744 \uC138\uB2E4
+      \uB3D9\uC804\uC744 \uB2E4\uC2DC \uB123\uB294\uB2E4.\n\n\u201C\uC774 \uC774\uB984\uB4E4\uC744
+      \uAE30\uB2E4\uB9AC\uB294 \uC0AC\uB78C\uB4E4\uC774 \uC788\uC5B4. \uC9C0\uB984\uAE38\uC744
+      \uC54C\uBA74 \uC54C\uB824 \uC8FC\uACA0\uB098.\u201D"
+  - propertyPath: options.Array.data[0].title
+    key: data.randomeventdata.pilgrim.options.0.title
+    lastText: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
+  - propertyPath: options.Array.data[0].description
+    key: data.randomeventdata.pilgrim.options.0.description
+    lastText: "25\uACE8\uB4DC \uC18C\uBAA8. \uC21C\uB840\uC790\uC758 \uC11C\uC57D
+      \uD68D\uB4DD. \uAC00\uB4DC 3\uD68C\uB9C8\uB2E4 \uAC8C\uC774\uC9C0 +3. \uC778\uC5F0\uC744
+      \uB0A8\uAE34\uB2E4."
+  - propertyPath: options.Array.data[1].title
+    key: data.randomeventdata.pilgrim.options.1.title
+    lastText: "\uC0D8\uC758 \uC704\uCE58\uB97C \uC11C\uB85C \uB098\uB208\uB2E4"
+  - propertyPath: options.Array.data[1].description
+    key: data.randomeventdata.pilgrim.options.1.description
+    lastText: "\uCCB4\uB825 12 \uD68C\uBCF5. \uC11C\uC57D\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
+  - propertyPath: options.Array.data[2].title
+    key: data.randomeventdata.pilgrim.options.2.title
+    lastText: "\uC598\uAC00 \uC9C0\uB984\uAE38\uC744 \uCC3E\uC744 \uAC70\uC57C"
+  - propertyPath: options.Array.data[2].description
+    key: data.randomeventdata.pilgrim.options.2.description
+    lastText: "\uAC15\uC544\uC9C0\uAC00 \uAE38\uC744 \uCC3E\uB294\uB2E4. \uC11C\uC57D
+      \uD68D\uB4DD, \uCCB4\uB825 12 \uD68C\uBCF5, \uC778\uC5F0\uC744 \uB0A8\uAE34\uB2E4."
+  - propertyPath: options.Array.data[0].resultText
+    key: data.randomeventdata.pilgrim.options.0.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  - propertyPath: options.Array.data[1].resultText
+    key: data.randomeventdata.pilgrim.options.1.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  - propertyPath: options.Array.data[2].resultText
+    key: data.randomeventdata.pilgrim.options.2.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  - propertyPath: pages.Array.data[0].narrative
+    key: data.randomeventdata.pilgrim.pages.0.narrative
+    lastText: "\uB178\uC778\uC774 \uBB34\uAC70\uC6B4 \uB3CC\uC790\uB8E8\uB97C \uACE0\uCCD0
+      \uC548\uB294\uB2E4. \uB3CC\uB9C8\uB2E4 \uC0AC\uB78C\uC758 \uC774\uB984\uACFC
+      \uB0A0\uC9DC\uAC00 \uC9E7\uAC8C \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uBAB8\uAE4C\uC9C0
+      \uB370\uB824\uC62C \uC218 \uC5C6\uC73C\uBA74, \uC774\uB984\uC774\uB77C\uB3C4
+      \uC788\uC5B4\uC57C \uB3C8\uC744 \uBC1B\uC9C0.\u201D\n\n\uBAA9\uC5D0 \uAC78\uB9B0
+      \uD68C\uC218 \uD45C\uC2DD\uC740 \uC624\uB798 \uB2F3\uC558\uACE0, \uC790\uB8E8
+      \uC548\uC5D0\uB294 \uC791\uC740 \uC720\uD488\uB4E4\uC774 \uCC9C\uC5D0 \uC2F8\uC5EC
+      \uC788\uB2E4.\n\n\uB178\uC778\uC740 \uB3CC\uC544\uAC08 \uC6B4\uC784\uC744 \uC138\uB2E4
+      \uB3D9\uC804\uC744 \uB2E4\uC2DC \uB123\uB294\uB2E4.\n\n\u201C\uC774 \uC774\uB984\uB4E4\uC744
+      \uAE30\uB2E4\uB9AC\uB294 \uC0AC\uB78C\uB4E4\uC774 \uC788\uC5B4. \uC9C0\uB984\uAE38\uC744
+      \uC54C\uBA74 \uC54C\uB824 \uC8FC\uACA0\uB098.\u201D"
+  - propertyPath: pages.Array.data[0].options.Array.data[0].title
+    key: data.randomeventdata.pilgrim.pages.0.options.0.title
+    lastText: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
+  - propertyPath: pages.Array.data[0].options.Array.data[0].description
+    key: data.randomeventdata.pilgrim.pages.0.options.0.description
+    lastText: "\uC21C\uB840\uC790\uC758 \uC11C\uC57D \uD68D\uB4DD"
+  - propertyPath: pages.Array.data[0].options.Array.data[0].resultText
+    key: data.randomeventdata.pilgrim.pages.0.options.0.resulttext
+    lastText: "\uC21C\uB840\uC790\uB294 \uC5EC\uBE44\uB97C \uBC1B\uC544 \uD488\uC5D0
+      \uB123\uACE0 \uC791\uC740 \uD45C\uC2DD\uC744 \uAC74\uB138\uB2E4. \uB3CC\uC790\uB8E8\uB97C
+      \uACE0\uCCD0 \uBA58 \uADF8\uAC00 \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[1].title
+    key: data.randomeventdata.pilgrim.pages.0.options.1.title
+    lastText: "\uD5C8\uB9AC\uC758 \uC5EC\uBE44\uB97C \uAC15\uC81C\uB85C \uAC70\uB454\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[1].description
+    key: data.randomeventdata.pilgrim.pages.0.options.1.description
+    lastText: "\uACE8\uB4DC +18"
+  - propertyPath: pages.Array.data[0].options.Array.data[1].resultText
+    key: data.randomeventdata.pilgrim.pages.0.options.1.resulttext
+    lastText: "\uB178\uC778\uC774 \uB3CC\uC790\uB8E8\uB97C \uB193\uCE58\uC9C0 \uC54A\uC73C\uB824\uB294
+      \uD2C8\uC5D0 \uD5C8\uB9AC \uC8FC\uBA38\uB2C8\uB97C \uBE7C\uC557\uC558\uB2E4.
+      \u201C\uC774\uAC74 \uADF8 \uC0AC\uB78C\uB4E4 \uBAAB\uC774 \uC544\uB2CC\uB370.\u201D
+      \uADF8\uB294 \uBE48 \uD5C8\uB9AC\uB97C \uB354\uB4EC\uB2E4 \uB3CC\uC790\uB8E8\uB97C
+      \uACE0\uCCD0 \uC548\uACE0 \uAC78\uC5B4\uAC14\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[2].title
+    key: data.randomeventdata.pilgrim.pages.0.options.2.title
+    lastText: "\uC598\uAC00 \uC9C0\uB984\uAE38\uC744 \uCC3E\uC744 \uAC70\uC57C"
+  - propertyPath: pages.Array.data[0].options.Array.data[2].description
+    key: data.randomeventdata.pilgrim.pages.0.options.2.description
+    lastText: "\uC21C\uB840\uC790\uC758 \uC11C\uC57D \uD68D\uB4DD \xB7 \uCCB4\uB825
+      +12"
+  - propertyPath: pages.Array.data[0].options.Array.data[2].resultText
+    key: data.randomeventdata.pilgrim.pages.0.options.2.resulttext
+    lastText: "\uD68C\uC218\uACAC\uC774 \uB0C4\uC0C8\uB97C \uB9E1\uB354\uB2C8 \uC21C\uB840\uC790\uB97C
+      \uB2E4\uB978 \uD1B5\uB85C\uB85C \uC774\uB04C\uC5C8\uB2E4. \uAE38\uC744 \uD655\uC778\uD55C
+      \uC21C\uB840\uC790\uB294 \uC778\uC0AC\uB97C \uB0A8\uAE30\uACE0 \uB5A0\uB0AC\uACE0
+      \uD68C\uC218\uACAC\uC740 \uB0B4\uAC8C \uB3CC\uC544\uC654\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[3].title
+    key: data.randomeventdata.pilgrim.pages.0.options.3.title
+    lastText: "\uB5A0\uB09C\uB2E4."
+  - propertyPath: pages.Array.data[0].options.Array.data[3].description
+    key: data.randomeventdata.pilgrim.pages.0.options.3.description
+    lastText: 
+  - propertyPath: pages.Array.data[0].options.Array.data[3].resultText
+    key: data.randomeventdata.pilgrim.pages.0.options.3.resulttext
+    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+  textOwnerGuid: 044a1d8b41194c549b8ddf358bb40c65
+  id: Pilgrim
+  displayName: "\uC9D0 \uD558\uB098\uB9CC \uBD80\uD0C1\uD558\uB124"
+  discovery: 1
+  worldObject: {fileID: 11400000, guid: f79b1422a01ac4d46a8d92821be61945, type: 2}
+  encounterKind: 1
+  authoringLore: "\uADC0\uD658 \uACC4\uC57D\uC5D0 \uB530\uB77C \uC2E0\uC6D0\uACFC
+    \uC720\uD488\uC744 \uD68C\uC218\uD558\uB294 \uB299\uC740 \uC2E4\uBB34\uC790.
+    \uC0B4\uC544 \uB3CC\uC544\uC624\uC9C0 \uBABB\uD55C \uC774\uB4E4\uC758 \uC774\uB984\uC774
+    \uBCF4\uC0C1 \uBA85\uBD80\uC5D0\uC11C \uC0AC\uB77C\uC9C0\uC9C0 \uC54A\uB3C4\uB85D
+    \uB3CC\uACFC \uC720\uD488\uC744 \uAC00\uC871\uC5D0\uAC8C \uAC00\uC838\uAC04\uB2E4.
+    \uC2DC\uC2E0\uC744 \uBE7C\uB0BC \uC218 \uC5C6\uC5C8\uB358 \uD0D3\uC5D0 \uC774\uBC88
+    \uC9D0\uC740 \uD2B9\uD788 \uAC00\uBCCD\uACE0 \uB9C8\uC74C\uC740 \uBB34\uAC81\uB2E4.
+    \uB3CC\uC544\uAC08 \uC6B4\uC784\uACFC \uC548\uC804\uD55C \uAE38\uC744 \uAD6C\uD558\uBA70,
+    \uC774\uB984\uD45C\uB97C \uD6D4\uCCD0 \uB2E8 \uAC00\uC9DC \uD68C\uC218\uAFBC\uACFC
+    \uB300\uBE44\uB41C\uB2E4."
+  roomLayout: 0
+  roomInteriors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  excludedFromRandomPool: 0
+  narrative: "\uB178\uC778\uC774 \uBB34\uAC70\uC6B4 \uB3CC\uC790\uB8E8\uB97C \uACE0\uCCD0
+    \uC548\uB294\uB2E4. \uB3CC\uB9C8\uB2E4 \uC0AC\uB78C\uC758 \uC774\uB984\uACFC
+    \uB0A0\uC9DC\uAC00 \uC9E7\uAC8C \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uBAB8\uAE4C\uC9C0
+    \uB370\uB824\uC62C \uC218 \uC5C6\uC73C\uBA74, \uC774\uB984\uC774\uB77C\uB3C4
+    \uC788\uC5B4\uC57C \uB3C8\uC744 \uBC1B\uC9C0.\u201D\n\n\uBAA9\uC5D0 \uAC78\uB9B0
+    \uD68C\uC218 \uD45C\uC2DD\uC740 \uC624\uB798 \uB2F3\uC558\uACE0, \uC790\uB8E8
+    \uC548\uC5D0\uB294 \uC791\uC740 \uC720\uD488\uB4E4\uC774 \uCC9C\uC5D0 \uC2F8\uC5EC
+    \uC788\uB2E4.\n\n\uB178\uC778\uC740 \uB3CC\uC544\uAC08 \uC6B4\uC784\uC744 \uC138\uB2E4
+    \uB3D9\uC804\uC744 \uB2E4\uC2DC \uB123\uB294\uB2E4.\n\n\u201C\uC774 \uC774\uB984\uB4E4\uC744
+    \uAE30\uB2E4\uB9AC\uB294 \uC0AC\uB78C\uB4E4\uC774 \uC788\uC5B4. \uC9C0\uB984\uAE38\uC744
+    \uC54C\uBA74 \uC54C\uB824 \uC8FC\uACA0\uB098.\u201D"
+  illustration: {fileID: 21300000, guid: 0640b813254b6dc438986781fd7620a5, type: 3}
+  accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
+  illustratedPopup: 1
+  minAct: 1
+  maxAct: 3
+  weight: 0.35
+  minNormalCombatsInAct: 0
+  referenceUrl: https://op.gg/ko/slay-the-spire2/events/TheLegendsWereTrue
+  referenceExperience: "\uD604\uC7AC \uC790\uC6D0\uC744 \uBBF8\uB798 \uC778\uC5F0\uC5D0
+    \uD22C\uC790\uD558\uAC70\uB098 \uB2F9\uC7A5 \uD68C\uBCF5\uC744 \uC120\uD0DD.\n\uC11C\uC0AC/\uC5F0\uCD9C:
+    Docs/Production/EventSequences-Castle.md\n\uC11C\uC0AC/\uC5F0\uCD9C: Docs/Production/EventSequences-Castle.md"
+  requiredFlag: 
+  forbiddenFlag: 
+  options:
+  - title: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
+    description: "25\uACE8\uB4DC \uC18C\uBAA8. \uC21C\uB840\uC790\uC758 \uC11C\uC57D
+      \uD68D\uB4DD. \uAC00\uB4DC 3\uD68C\uB9C8\uB2E4 \uAC8C\uC774\uC9C0 +3. \uC778\uC5F0\uC744
+      \uB0A8\uAE34\uB2E4."
+    goldCost: 25
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.Pilgrim.-1.0
+    requirements: []
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 8
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: PilgrimMet
+      amount: 0
+      stat: 4
+  - title: "\uC0D8\uC758 \uC704\uCE58\uB97C \uC11C\uB85C \uB098\uB208\uB2E4"
+    description: "\uCCB4\uB825 12 \uD68C\uBCF5. \uC11C\uC57D\uC740 \uC5BB\uC9C0 \uC54A\uB294\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.Pilgrim.-1.1
+    requirements: []
+    effects:
+    - kind: 6
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 12
+      stat: 4
+  - title: "\uC598\uAC00 \uC9C0\uB984\uAE38\uC744 \uCC3E\uC744 \uAC70\uC57C"
+    description: "\uAC15\uC544\uC9C0\uAC00 \uAE38\uC744 \uCC3E\uB294\uB2E4. \uC11C\uC57D
+      \uD68D\uB4DD, \uCCB4\uB825 12 \uD68C\uBCF5, \uC778\uC5F0\uC744 \uB0A8\uAE34\uB2E4."
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+      \uD588\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 0
+    revisitTextKey: ui.eventgrounding.revisit.Pilgrim.-1.2
+    requirements: []
+    effects:
+    - kind: 0
+      relic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 0
+      stat: 4
+    - kind: 6
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: 
+      amount: 12
+      stat: 4
+    - kind: 8
+      relic: {fileID: 0}
+      spell: {fileID: 0}
+      spellPool: []
+      spellChoiceCount: 3
+      encounter: {fileID: 0}
+      flag: PilgrimMet
+      amount: 0
+      stat: 4
+  pages:
+  - narrative: "\uB178\uC778\uC774 \uBB34\uAC70\uC6B4 \uB3CC\uC790\uB8E8\uB97C \uACE0\uCCD0
+      \uC548\uB294\uB2E4. \uB3CC\uB9C8\uB2E4 \uC0AC\uB78C\uC758 \uC774\uB984\uACFC
+      \uB0A0\uC9DC\uAC00 \uC9E7\uAC8C \uC0C8\uACA8\uC838 \uC788\uB2E4.\n\n\u201C\uBAB8\uAE4C\uC9C0
+      \uB370\uB824\uC62C \uC218 \uC5C6\uC73C\uBA74, \uC774\uB984\uC774\uB77C\uB3C4
+      \uC788\uC5B4\uC57C \uB3C8\uC744 \uBC1B\uC9C0.\u201D\n\n\uBAA9\uC5D0 \uAC78\uB9B0
+      \uD68C\uC218 \uD45C\uC2DD\uC740 \uC624\uB798 \uB2F3\uC558\uACE0, \uC790\uB8E8
+      \uC548\uC5D0\uB294 \uC791\uC740 \uC720\uD488\uB4E4\uC774 \uCC9C\uC5D0 \uC2F8\uC5EC
+      \uC788\uB2E4.\n\n\uB178\uC778\uC740 \uB3CC\uC544\uAC08 \uC6B4\uC784\uC744 \uC138\uB2E4
+      \uB3D9\uC804\uC744 \uB2E4\uC2DC \uB123\uB294\uB2E4.\n\n\u201C\uC774 \uC774\uB984\uB4E4\uC744
+      \uAE30\uB2E4\uB9AC\uB294 \uC0AC\uB78C\uB4E4\uC774 \uC788\uC5B4. \uC9C0\uB984\uAE38\uC744
+      \uC54C\uBA74 \uC54C\uB824 \uC8FC\uACA0\uB098.\u201D"
+    illustration: {fileID: 21300000, guid: 0640b813254b6dc438986781fd7620a5, type: 3}
+    options:
+    - title: "\uC5EC\uBE44\uB97C \uBCF4\uD0E0\uB2E4"
+      description: "\uC21C\uB840\uC790\uC758 \uC11C\uC57D \uD68D\uB4DD"
+      goldCost: 25
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uC21C\uB840\uC790\uB294 \uC5EC\uBE44\uB97C \uBC1B\uC544 \uD488\uC5D0
+        \uB123\uACE0 \uC791\uC740 \uD45C\uC2DD\uC744 \uAC74\uB138\uB2E4. \uB3CC\uC790\uB8E8\uB97C
+        \uACE0\uCCD0 \uBA58 \uADF8\uAC00 \uB3CC\uC544\uAC08 \uAE38\uB85C \uD5A5\uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Pilgrim.0.0
+      requirements: []
+      effects:
+      - kind: 0
+        relic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 8
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: PilgrimMet
+        amount: 0
+        stat: 4
+    - title: "\uD5C8\uB9AC\uC758 \uC5EC\uBE44\uB97C \uAC15\uC81C\uB85C \uAC70\uB454\uB2E4."
+      description: "\uACE8\uB4DC +18"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uB178\uC778\uC774 \uB3CC\uC790\uB8E8\uB97C \uB193\uCE58\uC9C0
+        \uC54A\uC73C\uB824\uB294 \uD2C8\uC5D0 \uD5C8\uB9AC \uC8FC\uBA38\uB2C8\uB97C
+        \uBE7C\uC557\uC558\uB2E4. \u201C\uC774\uAC74 \uADF8 \uC0AC\uB78C\uB4E4 \uBAAB\uC774
+        \uC544\uB2CC\uB370.\u201D \uADF8\uB294 \uBE48 \uD5C8\uB9AC\uB97C \uB354\uB4EC\uB2E4
+        \uB3CC\uC790\uB8E8\uB97C \uACE0\uCCD0 \uC548\uACE0 \uAC78\uC5B4\uAC14\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.lore.revisit.Pilgrim.0.1
+      requirements: []
+      effects:
+      - kind: 5
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 18
+        stat: 0
+    - title: "\uC598\uAC00 \uC9C0\uB984\uAE38\uC744 \uCC3E\uC744 \uAC70\uC57C"
+      description: "\uC21C\uB840\uC790\uC758 \uC11C\uC57D \uD68D\uB4DD \xB7 \uCCB4\uB825
+        +12"
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 11400000, guid: 9c0582da6d2611148855c1129d34d491, type: 2}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uD68C\uC218\uACAC\uC774 \uB0C4\uC0C8\uB97C \uB9E1\uB354\uB2C8
+        \uC21C\uB840\uC790\uB97C \uB2E4\uB978 \uD1B5\uB85C\uB85C \uC774\uB04C\uC5C8\uB2E4.
+        \uAE38\uC744 \uD655\uC778\uD55C \uC21C\uB840\uC790\uB294 \uC778\uC0AC\uB97C
+        \uB0A8\uAE30\uACE0 \uB5A0\uB0AC\uACE0 \uD68C\uC218\uACAC\uC740 \uB0B4\uAC8C
+        \uB3CC\uC544\uC654\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 1
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Pilgrim.0.2
+      requirements: []
+      effects:
+      - kind: 0
+        relic: {fileID: 11400000, guid: 3a6e8f90b4471ea4dab5aeb6d4053371, type: 2}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 0
+        stat: 4
+      - kind: 6
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: 
+        amount: 12
+        stat: 4
+      - kind: 8
+        relic: {fileID: 0}
+        spell: {fileID: 0}
+        spellPool: []
+        spellChoiceCount: 3
+        encounter: {fileID: 0}
+        flag: PilgrimMet
+        amount: 0
+        stat: 4
+    - title: "\uB5A0\uB09C\uB2E4."
+      description: 
+      goldCost: 0
+      hpCost: 0
+      maxHpCost: 0
+      consumeHealingPotion: 0
+      requiredPower: 0
+      requiredRelic: {fileID: 0}
+      requiredPerk: 
+      requiredFlag: 
+      supply: {fileID: 0}
+      supplyCost: 0
+      nextPage: -1
+      failurePage: -1
+      resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
+        \uD588\uB2E4."
+      resultingWorldObject: {fileID: 0}
+      removeWorldObject: 0
+      useWorldObject: 0
+      revisitTextKey: ui.eventgrounding.revisit.Pilgrim.0.3
+      requirements: []
+      effects: []
+    routes: []
+  entryRoutes: []

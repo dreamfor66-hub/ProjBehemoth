@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 namespace DungeonSlash
 {
     public enum EventEncounterKind { Object, Person, Creature, Hostile }
     public enum EventRoomLayout { Any, Alcove }
-    public enum EventEffectKind { Relic, SharedRelicChoice, ExclusiveChoice, PerkChoice, SpellChoice, Gold, Heal, Stat, SetFlag, RemoveFlag, Fight, SacrificeRelic, RemovePerk, UpgradePerk, Burden, GoldDebt, Potion, LearnSpell }
+    public enum EventEffectKind { Relic, SharedRelicChoice, ExclusiveChoice, PerkChoice, SpellChoice, Gold, Heal, Stat, SetFlag, RemoveFlag, Fight, SacrificeRelic, RemovePerk, UpgradePerk, Burden, GoldDebt, Potion, LearnSpell, RandomSharedRelic }
     [Serializable]
     public sealed class EventEffect
     {
@@ -42,9 +42,13 @@ namespace DungeonSlash
         public RoomObjectData resultingWorldObject;
         public bool removeWorldObject;
         public bool useWorldObject;
+        [Tooltip("Decline without changing the subject. The encounter stays available on a later click; cannot be combined with costs, rewards or an aftermath.")]
+        public bool leaveUnresolved;
         public string revisitTextKey;
         public List<EventRequirement> requirements = new();
         public List<EventEffect> effects = new();
+        public bool KeepsEncounterAvailable => leaveUnresolved && nextPage < 0 && goldCost == 0 && hpCost == 0 && maxHpCost == 0
+            && !consumeHealingPotion && supplyCost == 0 && effects.Count == 0 && !removeWorldObject && !useWorldObject && resultingWorldObject == null;
     }
     public enum EventRequirementKind { MaxMp, SpellCasts, LearnedSpells, KnowsSpell, Flag, WonCombats, OwnsRelic, ChosenSpell }
     [Serializable] public sealed class EventRequirement
@@ -97,6 +101,7 @@ namespace DungeonSlash
         public EventRoomLayout roomLayout;
         [Tooltip("Optional complete room paintings, act 1 / 2 / 3, on each installed floor's camera.")]
         public Sprite[] roomInteriors = new Sprite[3];
+        public RoomThemeData roomTheme;
         [Tooltip("Keep authored pages but exclude this event from random encounters.")]
         public bool excludedFromRandomPool;
         [TextArea(3, 8)] public string narrative;

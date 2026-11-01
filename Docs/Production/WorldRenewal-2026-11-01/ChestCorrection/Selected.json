@@ -1,0 +1,32 @@
+[
+  {
+    "key": "cofferOpenFront",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-2c411820-698f-4c60-af22-663bda85114e.png",
+    "production": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedFront.png",
+    "sha256": "623ac5650d5433f4fffbc18f15cb15f4c823d217e15523a9c359f248af6f5b76",
+    "sameCanvas": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "key": "cofferOpenSide",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-89cd0e1e-8310-4a9a-beee-e84ef9cd14d8.png",
+    "production": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedSide.png",
+    "sha256": "6f4c7574a287811e86766424c42d141d8c4bc91e744bd5b2bd4754461254cba5",
+    "sameCanvas": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "key": "cofferOpenRear",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-c6efd8eb-81ff-4606-9cdf-2307f8b0fefe.png",
+    "production": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedRear.png",
+    "sha256": "24144f7509286b9c84a2b5421ef9a4e4fd9c236ddd5b63fa967ef5883f2ddcb0",
+    "sameCanvas": [
+      1536,
+      1024
+    ]
+  }
+]

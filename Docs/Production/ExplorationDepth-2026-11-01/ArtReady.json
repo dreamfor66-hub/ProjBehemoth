@@ -1,0 +1,115 @@
+{
+  "objects": [
+    {
+      "name": "다친강아지",
+      "height": 185,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": true,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_다친강아지_Rear.png"
+    },
+    {
+      "name": "길위의노마법사",
+      "height": 400,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": true,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_길위의노마법사_Rear.png"
+    },
+    {
+      "name": "분수",
+      "height": 260,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_분수_usedRear.png"
+    },
+    {
+      "name": "엘리트입구",
+      "height": 400,
+      "wall": true,
+      "door": true,
+      "frame": true,
+      "face": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_엘리트입구.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_엘리트입구.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_엘리트입구.png"
+    },
+    {
+      "name": "보스입구",
+      "height": 400,
+      "wall": true,
+      "door": true,
+      "frame": true,
+      "face": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_보스입구.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_보스입구.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_보스입구.png"
+    },
+    {
+      "name": "회수대의쇠덫",
+      "height": 115,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": false,
+      "front": "Assets/Art/World/Exploration/T_UI_World_회수대의쇠덫_front.png",
+      "side": "Assets/Art/World/Exploration/T_UI_World_회수대의쇠덫_side.png",
+      "rear": "Assets/Art/World/Exploration/T_UI_World_회수대의쇠덫_rear.png",
+      "usedFront": "Assets/Art/World/Exploration/T_UI_World_회수대의쇠덫_usedFront.png",
+      "usedSide": "Assets/Art/World/Exploration/T_UI_World_회수대의쇠덫_usedSide.png",
+      "usedRear": "Assets/Art/World/Exploration/T_UI_World_회수대의쇠덫_usedRear.png"
+    },
+    {
+      "name": "예약받는짐꾼",
+      "height": 400,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": true,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_예약받는짐꾼_Rear.png"
+    },
+    {
+      "name": "금니의도박꾼",
+      "height": 350,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": true,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_금니의도박꾼_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_금니의도박꾼_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_금니의도박꾼_Rear.png"
+    },
+    {
+      "name": "번개병장수",
+      "height": 400,
+      "wall": false,
+      "door": false,
+      "frame": false,
+      "face": true,
+      "front": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Front.png",
+      "side": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Side.png",
+      "rear": "Assets/Art/World/Exploration/T_Sprite_Character_번개병장수_Rear.png"
+    }
+  ],
+  "dogIdle": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Idle.png",
+  "dogAttack": "Assets/Art/Combat/Lore01/T_Sprite_Character_길동무_Attack.png",
+  "dogOppositeIdle": "Assets/Art/Combat/Lore01/T_Sprite_Character_회수견_좌향_Idle.png",
+  "dogOppositeAttack": "Assets/Art/Combat/Lore01/T_Sprite_Character_회수견_좌향_Attack.png",
+  "dogIcon": "Assets/Art/UI/Icons/T_UI_Icon_회수견.png",
+  "trapIcon": "Assets/Art/UI/Icons/T_UI_Icon_반격태엽.png"
+}

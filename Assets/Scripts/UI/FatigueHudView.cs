@@ -16,13 +16,13 @@ namespace DungeonSlash
             var state=run.State;if(state==null)return;var f=state.Fatigue;
             face.gameObject.SetActive(expansion==null||!expansion.IsDecisionOpen);
             face.sprite=faces.Face(state.Player.Data.character,f.Expression);face.color=Color.white;
-            if(faces.useStageTint)face.color=Color.Lerp(new Color(1f,.53f,.43f),Color.white,Mathf.Clamp01(f.Value/60f));
-            if(haze!=null){haze.intensity=f.Settings==null?0:f.Settings.peripheralHaze.Evaluate(f.Value);haze.SetVerticesDirty();}
-            var hash=Mathf.CeilToInt(f.Value)*10000+f.GraceRemaining;
+            if(faces.useStageTint)face.color=Color.Lerp(new Color(1f,.53f,.43f),Color.white,Mathf.Clamp01(f.Percent/60f));
+            if(haze!=null){haze.intensity=f.Settings==null?0:f.Settings.peripheralHaze.Evaluate(f.Percent);haze.SetVerticesDirty();}
+            var hash=Mathf.CeilToInt(f.Value)*10000+f.Capacity;
             if(previous==state&&last==hash)return;previous=state;last=hash;
             var stage=GameText.Get(f.Expression==0?"ui.fatigue.normal":f.Expression==1?"ui.fatigue.tired":f.Expression==2?"ui.fatigue.exhausted":"ui.fatigue.danger");
-            var body=GameText.Format("ui.fatigue.detail",Mathf.CeilToInt(f.Value),stage,((1-f.AttackSpeedMultiplier)*100).ToString("0.#"),((1-f.FinalDamageMultiplier)*100).ToString("0.#"));
-            if(f.Value<=10)body+="\n\n"+GameText.Get("ui.fatigue.warning");
+            var body=GameText.Format("ui.fatigue.detail",Mathf.CeilToInt(f.Value),stage,((1-f.AttackSpeedMultiplier)*100).ToString("0.#"),((1-f.FinalDamageMultiplier)*100).ToString("0.#"),f.Capacity);
+            if(f.Percent<=10)body+="\n\n"+GameText.Get("ui.fatigue.warning");
             hover.Bind(GameText.Get("ui.fatigue.title"),body);
         }
         void LateUpdate()=>Refresh();

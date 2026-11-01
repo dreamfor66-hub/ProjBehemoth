@@ -18,10 +18,12 @@ namespace DungeonSlash
         [SerializeField] private RoomOpeningPainting inlay;
         public float Depth { get; private set; }
         public RoomObjectData BoundData { get; private set; }
+        public int BoundView { get; private set; }
         public void Bind(RoomObjectData data, int view, bool used, Vector2 anchor, float height, Color illumination,
-            FloorArtwork.OpeningContour aperture, Action clicked, Action<string> onHover)
+            FloorArtwork.OpeningContour aperture, Action clicked, Action<string> onHover, float frontDoorAspect = .56f, float frontFrameHeightFactor = 1.155f, float referenceSideWidth = 0)
         {
             BoundData = data;
+            BoundView = view;
             label = data == null ? "" : GameText.Get(used && !string.IsNullOrEmpty(data.usedLabelKey) ? data.usedLabelKey : data.labelKey); hover = onHover;
             if (used && data != null && data.usedForm != null && data.usedForm != data)
             { height *= data.usedForm.displayHeight / Mathf.Max(1, data.displayHeight); data = data.usedForm; used = false; }
@@ -35,13 +37,18 @@ namespace DungeonSlash
             var normal = data.Painting(view, false);
             var reference = data.Geometry(normal); var current = data.Geometry(sprite);
             var pixelsPerUnit = height / Mathf.Max(1, normal.rect.height * reference.bounds.height);
+            // Aligned state paintings share their original support and pixel scale.
+            // Removing an upper object must not enlarge its remaining pedestal just
+            // because alpha-derived material bounds/foot sampling changed height.
+            var alignedState = used && normal != sprite && normal.rect.size == sprite.rect.size && normal.pivot == sprite.pivot;
+            var support = alignedState ? reference.footprint : current.footprint;
             // A lid, empty bowl, or collected item changes silhouette without moving/scaling its support.
-            if (used && normal != sprite)
+            if (used && normal != sprite && !alignedState)
                 pixelsPerUnit *= normal.rect.width * reference.footprint.width / Mathf.Max(1, sprite.rect.width * current.footprint.width);
             var fullSize = sprite.rect.size * pixelsPerUnit;
             rect.sizeDelta = Vector2.Scale(fullSize, current.bounds.size);
-            var supportX = (current.footprint.center.x - current.bounds.xMin) / current.bounds.width;
-            rect.pivot = new Vector2(view == 3 ? 1 - supportX : supportX, (current.footprint.yMin - current.bounds.yMin) / current.bounds.height);
+            var supportX = (support.center.x - current.bounds.xMin) / current.bounds.width;
+            rect.pivot = new Vector2(view == 3 ? 1 - supportX : supportX, (support.yMin - current.bounds.yMin) / current.bounds.height);
             var paintRect = painting.rectTransform;
             paintRect.anchorMin = paintRect.anchorMax = new Vector2(0, 0); paintRect.pivot = Vector2.zero;
             paintRect.sizeDelta = fullSize;
@@ -51,18 +58,22 @@ namespace DungeonSlash
             // Mirroring is around the physical painting center, independent of transparent margins.
             if (view == 3) paintRect.anchoredPosition = new Vector2(rect.rect.width + fullSize.x * current.bounds.xMin, paintRect.anchoredPosition.y);
             painting.color = illumination;
-            ConfigureContact(data, current, fullSize);
+            var contactGeometry = current; contactGeometry.footprint = support;
+            ConfigureContact(data, contactGeometry, fullSize);
             painting.enabled = !data.fitsDoorway || aperture == null;
             if (data.fitsDoorway && aperture != null)
             {
-                rect.anchorMin = rect.anchorMax = aperture.bounds.center;
+                var widthFactor = Mathf.Max(1.68f, sprite.rect.width * current.bounds.width / (sprite.rect.height * current.bounds.height) / Mathf.Max(.1f,frontDoorAspect) * frontFrameHeightFactor);
+                if(view!=0)widthFactor*=Mathf.Max(aperture.bounds.width,referenceSideWidth)/aperture.bounds.width;
+                var display=data.includesDoorframe?RoomOpeningPainting.FrameBounds(aperture,view!=0,widthFactor,anchor):aperture.bounds;
+                rect.anchorMin = rect.anchorMax = display.center;
                 rect.pivot = new Vector2(.5f, .5f);
                 var parent = (RectTransform)rect.parent;
-                rect.sizeDelta = Vector2.Scale(parent.rect.size, aperture.bounds.size);
+                rect.sizeDelta = Vector2.Scale(parent.rect.size, display.size);
                 PreparePresentation();
                 inlay.transform.SetParent(transform, false);
                 var surface = inlay.rectTransform; surface.anchorMin = Vector2.zero; surface.anchorMax = Vector2.one; surface.offsetMin = surface.offsetMax = Vector2.zero;
-                inlay.gameObject.SetActive(true); inlay.color = illumination; inlay.Set(sprite, current.bounds, aperture, view == 3, view != 0);
+                inlay.gameObject.SetActive(true); inlay.color = illumination; inlay.Set(sprite, current.bounds, aperture, view == 3, view != 0,data.includesDoorframe,widthFactor,anchor);
             }
             else if (inlay != null) inlay.gameObject.SetActive(false);
             hitArea.gameObject.SetActive(true);

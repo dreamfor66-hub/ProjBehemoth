@@ -1,0 +1,9 @@
+{
+  "prompt": "Precise local edit of IMAGE1 only. This is a fixed-frame videogame chest sprite. IMAGE2 room is context reference, not a background to paint.\nOPEN THE LID SLIGHTLY, about25 degrees, leaving a clear narrow empty black opening. The lower rectangular wooden box must remain COMPLETELY UNCHANGED, including its exact canvas position and all four corners, metal hardware, lower horizontal plank seams and colors. Preserve the original lower half as-is. Do not remake the chest, do not automatically center/scale the complete object, do not alter camera. Leave original hinge axes at their exact image positions; swing just the hinged lid. The lid is the only moving part. Same front-right three-quarter camera as input, do not narrow the left face or shift the left bottom corner.\nUse the exact1536x1024 transparent canvas. No glow, no fog, no painted ambient haze, no soft shadow surrounding the object: exterior alpha0 right up to the existing ink silhouette. Retain crisp broad drawing, original dark muted wood/iron and ground-contact vertices. One transparent PNG. No detached pieces, contents, gold, text or new decorations.",
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Side.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-89cd0e1e-8310-4a9a-beee-e84ef9cd14d8.png"
+}

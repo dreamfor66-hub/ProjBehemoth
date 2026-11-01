@@ -13,7 +13,9 @@ namespace DungeonSlash
             var occupied=new HashSet<int>();var moves=new List<(DungeonRoom from,DungeonRoom to)>();
             foreach(var from in origins)
             {
-                var to=state.Graph.Neighbors(from).Where(r=>r.Type==RoomEncounterType.Empty&&!r.IsOptionalAnnex&&r!=state.Player.CurrentRoom&&!occupied.Contains(r.RoomId)&&state.CanTravel(from,r)).OrderBy(_=>random.Next()).FirstOrDefault();
+                var to=state.Graph.Neighbors(from).Where(r=>r.Type==RoomEncounterType.Empty&&!r.IsOptionalAnnex&&!r.IsExplorationAlcove
+                    &&!state.Graph.Passages.Any(p=>p.Concealed&&p.Origin==r)
+                    &&r!=state.Player.CurrentRoom&&!occupied.Contains(r.RoomId)&&state.CanTravel(from,r)).OrderBy(_=>random.Next()).FirstOrDefault();
                 if(to==null)continue;occupied.Add(to.RoomId);moves.Add((from,to));
             }
             foreach(var (from,to) in moves)

@@ -1,0 +1,30 @@
+[
+  {
+    "side": "Left",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-e148308c-caf1-4c74-b4e6-745b35ea15da.png",
+    "size": [
+      1602,
+      981
+    ],
+    "alpha": [
+      129,
+      228,
+      1386,
+      863
+    ]
+  },
+  {
+    "side": "Right",
+    "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-3871ebdb-a08c-4de4-94ff-eaf6a5353580.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": [
+      178,
+      20,
+      1483,
+      704
+    ]
+  }
+]

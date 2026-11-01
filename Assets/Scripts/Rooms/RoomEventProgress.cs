@@ -19,10 +19,25 @@ namespace DungeonSlash
     {
         public bool MerchantDeparted { get; private set; }
         public bool MerchantGoneMessageShown { get; private set; }
+        public bool MerchantPurchased { get; private set; }
+        public bool HasLeftSinceFirstVisit { get; private set; }
+        public bool ConversationStarted { get; private set; }
+        public bool ConversationIgnored { get; private set; }
+        private bool rearApproachArmed;
         public bool FountainDrained { get; private set; }
         public bool FountainDriedMessageShown { get; private set; }
 
         public void MarkMerchantDeparted() => MerchantDeparted = true;
+        public void MarkMerchantPurchase() => MerchantPurchased = true;
+        public void BeginConversation() { ConversationStarted = true; ConversationIgnored = false; rearApproachArmed = false; }
+        public void IgnoreConversation() => ConversationIgnored = true;
+        public void LeaveRoom()
+        {
+            HasLeftSinceFirstVisit = true;
+            rearApproachArmed = !ConversationStarted || ConversationIgnored;
+            if (MerchantPurchased) MerchantDeparted = true;
+        }
+        public bool CanRearApproach => HasLeftSinceFirstVisit && rearApproachArmed;
 
         public MerchantRoomEvent ConsumeMerchantVisit()
         {

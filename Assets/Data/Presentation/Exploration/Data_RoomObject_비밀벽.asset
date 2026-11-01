@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: 
   wallMounted: 1
   fitsDoorway: 1
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 0fcccf9eeda02e84ca3356b59829b961, type: 3}

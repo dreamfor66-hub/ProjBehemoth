@@ -1,0 +1,146 @@
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS chapter travel B1
+PASS actual owned companion instantiated
+PASS B1 dog ground is near foreground floor, not airborne: (451.20, 67.62)
+SCREEN B1-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS companion click narration
+PASS begin companion combat presentation fixture
+PASS reachable button Choice_0
+PASS pointer reaches Choice_0; actual Choice_0
+PASS combat begins after actual confirmation/tutorial input
+PASS B1 ground remains stable across player framing
+PASS companion painting yields combat input
+SCREEN B1-Hound-Attack
+PASS place complete entrance B1 view 0
+PASS complete frame uses actual wall projection
+SCREEN B1-Elite-0
+PASS place complete entrance B1 view 1
+PASS complete frame uses actual wall projection
+SCREEN B1-Elite-1
+PASS place complete entrance B1 view 3
+PASS complete frame uses actual wall projection
+SCREEN B1-Elite-3
+PASS place complete entrance B1 view 0
+PASS complete frame uses actual wall projection
+SCREEN B1-Boss-0
+PASS place complete entrance B1 view 1
+PASS complete frame uses actual wall projection
+SCREEN B1-Boss-1
+PASS place complete entrance B1 view 3
+PASS complete frame uses actual wall projection
+SCREEN B1-Boss-3
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-0-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-1-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-2-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-0-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-1-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B1-Fountain-2-Used
+PASS chapter travel B2
+PASS actual owned companion instantiated
+PASS B2 dog ground is near foreground floor, not airborne: (451.20, 67.62)
+SCREEN B2-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS companion click narration
+PASS begin companion combat presentation fixture
+PASS combat begins after actual confirmation/tutorial input
+PASS B2 ground remains stable across player framing
+PASS companion painting yields combat input
+SCREEN B2-Hound-Attack
+PASS place complete entrance B2 view 0
+PASS complete frame uses actual wall projection
+SCREEN B2-Elite-0
+PASS place complete entrance B2 view 1
+PASS complete frame uses actual wall projection
+SCREEN B2-Elite-1
+PASS place complete entrance B2 view 3
+PASS complete frame uses actual wall projection
+SCREEN B2-Elite-3
+PASS place complete entrance B2 view 0
+PASS complete frame uses actual wall projection
+SCREEN B2-Boss-0
+PASS place complete entrance B2 view 1
+PASS complete frame uses actual wall projection
+SCREEN B2-Boss-1
+PASS place complete entrance B2 view 3
+PASS complete frame uses actual wall projection
+SCREEN B2-Boss-3
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-0-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-1-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-2-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-0-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-1-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B2-Fountain-2-Used
+PASS chapter travel B3
+PASS actual owned companion instantiated
+PASS B3 dog ground is near foreground floor, not airborne: (451.20, 67.62)
+SCREEN B3-Hound-Navigation
+PASS reachable button Body
+PASS pointer reaches Body; actual Body
+PASS companion click narration
+PASS begin companion combat presentation fixture
+PASS combat begins after actual confirmation/tutorial input
+PASS B3 ground remains stable across player framing
+PASS companion painting yields combat input
+SCREEN B3-Hound-Attack
+PASS place complete entrance B3 view 0
+PASS complete frame uses actual wall projection
+SCREEN B3-Elite-0
+PASS place complete entrance B3 view 1
+PASS complete frame uses actual wall projection
+SCREEN B3-Elite-1
+PASS place complete entrance B3 view 3
+PASS complete frame uses actual wall projection
+SCREEN B3-Elite-3
+PASS place complete entrance B3 view 0
+PASS complete frame uses actual wall projection
+SCREEN B3-Boss-0
+PASS place complete entrance B3 view 1
+PASS complete frame uses actual wall projection
+SCREEN B3-Boss-1
+PASS place complete entrance B3 view 3
+PASS complete frame uses actual wall projection
+SCREEN B3-Boss-3
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-0-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-1-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-2-Unused
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-0-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-1-Used
+PASS freestanding fountain correct directional/use painting
+SCREEN B3-Fountain-2-Used
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button No
+PASS pointer reaches No; actual No
+PASS declining fountain leaves water and choice available
+PASS reachable button Interaction Area
+PASS pointer reaches Interaction Area; actual Interaction Area
+PASS reachable button Yes
+PASS pointer reaches Yes; actual Yes
+FAIL System.InvalidOperationException: Sequence contains no matching element
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x00011] in <9f5692804bed4122b102b53a993bfd3f>:0 
+  at DungeonSlash.ExplorationDepthLiveProbe.Slot (DungeonSlash.RoomObjectData art) [0x0000d] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthLiveProbe.cs:66 
+  at DungeonSlash.ExplorationDepthLiveProbe+<Review>d__33.MoveNext () [0x00dcc] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthLiveProbe.cs:135 
+  at DungeonSlash.ExplorationDepthLiveProbe+<Guarded>d__20.MoveNext () [0x0005c] in E:\Github\Proj_Behemoth\Assets\Scripts\Debug\ExplorationDepthLiveProbe.cs:39 
+SCREEN Failure
+98 checks; 1 failures. Scoped Unity Canvas/event-system review; no extra Editor or balance suite.

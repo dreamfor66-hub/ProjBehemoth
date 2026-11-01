@@ -1,0 +1,9 @@
+{
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_UsedFront.png",
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "prompt": "Match the FRONT-RIGHT VIEW and OPEN LID of FIRST reference, but it is the exact same subdued broad iron-strapped coffer in SECOND reference, now looted. Lid fully raised at rear hinges; cavity and underside a large continuous BLACK opening, no remaining loot, no gold. Base/body are unmoved from the second reference. Keep believable hinge geometry and the same strap positions. Hand-inked architectural game prop: simplified large planes, matte dark iron/wood/stone, pooled black underneath, selectively lost thin contours on dark edges, subdued top-left light matching installed room. NOT a UI icon, no white rims, no bright trim, no noise/grain/tiny chips/facets, no fantasy ornament. TRULY transparent background outside the exact silhouette; all material surfaces fully opaque; NO outer glow or large ambient halo, only very narrow flat contact under base. Entire object inside canvas. Same low room-camera elevation and ground support."
+}

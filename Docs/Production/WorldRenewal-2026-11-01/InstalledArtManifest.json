@@ -1,0 +1,877 @@
+{
+  "files": [
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+      "sha256": "492952f69f541d579299c481e78cad24c5b6daec88a3847632a531f728d510ed",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_Side.png",
+      "sha256": "81a9bd67112be993658366ea453560ddbbc88452dd9d68659b1bdba7f587f5fa",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_Rear.png",
+      "sha256": "a51f88a4a731582763d6da1ea3ae2d6bc01ca7e46d6a5eba38e4b4e62d48f85d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedFront.png",
+      "sha256": "623ac5650d5433f4fffbc18f15cb15f4c823d217e15523a9c359f248af6f5b76",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedSide.png",
+      "sha256": "6f4c7574a287811e86766424c42d141d8c4bc91e744bd5b2bd4754461254cba5",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Chest_UsedRear.png",
+      "sha256": "24144f7509286b9c84a2b5421ef9a4e4fd9c236ddd5b63fa967ef5883f2ddcb0",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+      "sha256": "e1e511a0dc1ca7828c09b5c297e591d8f65eb03619c49222bceef72e1b6213ce",
+      "size": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+      "sha256": "56bf17c2409ee7f24ca4dd29891dc4bd714ec72802808d50daf411f3428d5137",
+      "size": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+      "sha256": "4c0360ca65a1ba1e0d8a29708679bc077a254235cc321f515543441c7bc9e8d7",
+      "size": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedFront.png",
+      "sha256": "f25d7c21b2e0a03022ea429bb80998965da34d293b62fe1ac5c4cde41b778edc",
+      "size": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedSide.png",
+      "sha256": "98eb4937cbf81f39efa8d26707c2e552df565e896ade6efb3fad2b73433bb026",
+      "size": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_usedRear.png",
+      "sha256": "8a753f58f80982e125e468e3f47ced148bbd67d62fcdb74cf29e754062493118",
+      "size": [
+        1324,
+        1188
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_옛경비실.png",
+      "sha256": "914918e7fca3000ba8fc3f8399cdfb5f76c4e71e17b3902467b35b57d8897e1a",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_옛경비실.png",
+      "sha256": "18ed3b02919486cdd4c4cda5448bf39b4c8dbb9a3d2b057fc481abbcb58f5fb3",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_옛경비실.png",
+      "sha256": "2f205ab3d1c85257d63345cf812dc7adc302dec4470795c22d3cb99157a7e32d",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_공용_서약실.png",
+      "sha256": "b760a88233dd7b8be63fcb54fc2e6832d6d1df3909cae25b00aa40147c7d9fc8",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_혈근번식실.png",
+      "sha256": "5f996dba6dcf14dc621b20b5c80d44f7d590b4881a67705bbc07a11d622a78c2",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_혈근번식실.png",
+      "sha256": "cf97097a1ccc7010963bdff04f9d2fb0ddbefca0baa06021571ce4e235079ac4",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_혈근번식실.png",
+      "sha256": "e104bb714297516f57d45e9de3c2e9406ba31bcfc33d148d23e84bfaff46a032",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_폐성급료고.png",
+      "sha256": "e865471eeed4c36651a707ce51d7d4e1d13e470c2bc4a15754e36869f08d3465",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_폐성급료고.png",
+      "sha256": "259393fe8235b4e1bf10dc40ca47edd084673368f9e6a50713e2c0da56a17a56",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_폐성급료고.png",
+      "sha256": "d911ad1f1a6a52666d0304a83e4b7e8d66908f63b98efe1d20e6b8ff9b7d8938",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B1_물자보관칸.png",
+      "sha256": "eeb5bba84360f88f72131949464cc8c259d65a13b8698f63e1cbdadba541a997",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B2_물자보관칸.png",
+      "sha256": "31ac71306ad16f172400f8c17a2ad535b94cbd0cf81a0ec199193142a4803e20",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_B3_물자보관칸.png",
+      "sha256": "a822cc03f69ab91f6e47ff1d072d1bdb899a177bac8d29b2068c7cc6511a3d6f",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_장식_경비천.png",
+      "sha256": "66198d45fe82e0af9790e06076de9362e702ced0d8f8a120713fcc5c23b566a5",
+      "size": [
+        887,
+        1774
+      ]
+    },
+    {
+      "group": "환경·상자·분수",
+      "path": "Assets/Art/World/Angular/RoomThemes/T_UI_Room_장식_돌문장.png",
+      "sha256": "6025b36e4e0951edb5e33bef19b047fc93c76a9f6d4907753e8828304a98702e",
+      "size": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Front.png",
+      "sha256": "e2507f168bdf47d38a9f1f75652b21bee1480b3ef706ea121f299aa415fce822",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Side.png",
+      "sha256": "f3e44c4313b205aa4c4db459407db9914c716c3a0be7e0b7a21b7f0172fb2a4e",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_저주받은금고_Rear.png",
+      "sha256": "d7aaa68fea341ec8171f68990d2dca726614c52bff81e859a3693d8a5cd5583d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fruit_Front.png",
+      "sha256": "dfff6a7926f1fe3fd09ee9a22c502277072af5d926b22807cdf5013dd02fdc1c",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fruit_Side.png",
+      "sha256": "d2335cbf4fd993722c269e20c6f9a91460f8b5bd0ba9cf629602d21d2b588797",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fruit_Rear.png",
+      "sha256": "b6d3891ea1056fc5ce7497e974be100161a9756f347082e23082fcd1306c92b3",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fruit_UsedFront.png",
+      "sha256": "35254d114c6b1d583ede1e7c1309a0c24c4ac80c68bbf7b7cf135beef408fa69",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fruit_UsedSide.png",
+      "sha256": "447a6688f0a66cbc1da5b0239f64ba34b555540c32d9cf154fdb77c38d38d8f6",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fruit_UsedRear.png",
+      "sha256": "1b80998bee79b640b2dbf6d117386658464fc4aae1138f8badd879db642ccd51",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Book_Front.png",
+      "sha256": "605fb741a3e7ecc489af4bea5a6630b77cd49e63ecdbe22d2f82ccd80474c11a",
+      "size": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Book_Side.png",
+      "sha256": "f7abb06712a0fd4249789fce5041514335bc04b07e4205c9ab1cf318b9d682b3",
+      "size": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Book_Rear.png",
+      "sha256": "5f517d18d94287f67862d59e687b863324aa88374afcc8d802e46574ec14c189",
+      "size": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Book_UsedFront.png",
+      "sha256": "e004c806dfa6b7cbda3ddd988feb098da341f861e40b372e8f7d8bb940484204",
+      "size": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Book_UsedSide.png",
+      "sha256": "d5dbce0431b010c08a1d68fbe3f8288b8e3cd27bbb062e7b0df8dfe17e40ab3a",
+      "size": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Book_UsedRear.png",
+      "sha256": "76615d9d3c1e98e2b5ab7f168dd5cfe1c0ef1647249551ee31ab4df8e19e6f90",
+      "size": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Front.png",
+      "sha256": "65d5d270bfd7408ba2c7afa0a5689e48b02cfda9384e18b1da7cda7add75d974",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Side.png",
+      "sha256": "573a3beede7fc0c6232e349d1d02f2ab2c1bc7465869e8c593215407b1551df1",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_Rear.png",
+      "sha256": "9c6988af9d14aeb020eff9c2a0df718b39b5e19d29a8d655b7b9f2b750b0cbe2",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedFront.png",
+      "sha256": "b40d48f48ccacbe1133c9004786c06404df7f562f3027772681ed6ea03987a63",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedSide.png",
+      "sha256": "a5d50cb23d49892c6c677ed3b1272416fac0f3ad2ad6e0fa84bb2dd937fd303d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_표식붙은두꾸러미_UsedRear.png",
+      "sha256": "9e62174cb1e04e3548d54de961e33d18eaed099e356546da42d498d41f43bfbb",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_급료고의빈배수구_front.png",
+      "sha256": "67692f03b761ffa19abc672195cf7870fa74b5a3d8ad8d7b748fc31dcc2d5ab8",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_급료고의빈배수구_side.png",
+      "sha256": "140982b0472bbfed097ab71343591a10593ee9a834e79c13c48a21894c177fdd",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/World/Exploration/T_UI_World_급료고의빈배수구_rear.png",
+      "sha256": "73b57bf94a9fa78a2ba29b7b95ffcd7952615b76bcc0e32cff1a5cff01a464e6",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "group": "사물 사건·후행",
+      "path": "Assets/Art/UI/Icons/T_UI_Icon_혈근의씨.png",
+      "sha256": "ab2dfbfdf1e3e670b984aa7832b497242c5b03158bafb4fbe88efecfdac99df7",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_실인형_Idle.png",
+      "sha256": "ea00c9258250dc66fcd70f809565d38b0d264089381e957f4044aad9dbd96c64",
+      "size": [
+        1236,
+        1238
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_실인형_Ready.png",
+      "sha256": "04fa52cab5fed16e6a2e8fbecb0eb13266714144f6eb8441c5b1eb61570d4f69",
+      "size": [
+        1236,
+        1234
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_실인형_Attack.png",
+      "sha256": "f04df38cdf161c2c1945d7ed739566adc91d2d7e74048d6f4b9bba4d595ac98f",
+      "size": [
+        1236,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_실인형_Dead.png",
+      "sha256": "b44d31576bd4bd1d9649e44ceaeb2a7bae8a43ee291badd016323bd0cff3aacc",
+      "size": [
+        1236,
+        929
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_실인형_Stunned.png",
+      "sha256": "4e5ffb943ce5efb522441a267b042031874eb49783799dad9080c233b4216543",
+      "size": [
+        848,
+        1268
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_종토끼_Idle.png",
+      "sha256": "c1b3662a82e2e0248beb7c1daf7fac50d644283dbec1c765528c943d310ac565",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_종토끼_Ready.png",
+      "sha256": "db8931e442c4c5db86cfa50de068af7cfb9f252af0d196e614b340d876daa682",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_종토끼_Attack.png",
+      "sha256": "542402ecf5230ebb087aca3503b3d7068c54ed5bf31600b7d3c18e03122cd4b8",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_종토끼_Dead.png",
+      "sha256": "d8ac645570d596e0be666634bea55dbfd8781d4d1ddd3450ff16cc6e1fcd0f44",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_공허의눈_Idle.png",
+      "sha256": "739fda629861dd19003a5d1dec4845e146e3ca3208b1c98b8ccf33c8ef4310fd",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_공허의눈_Ready.png",
+      "sha256": "c3d29e02223bb4b96c84bda50e85319b9b765786773c83655e79f1440ce3866d",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_공허의눈_Attack.png",
+      "sha256": "dbae3c9c20715f042472f1a96f1c9e086a8341a1679e026690283a9b77448ffe",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_공허의눈_Dead.png",
+      "sha256": "c80da9da299f9e3296a9b641ff8b1ff5563eb3441ad488661810753547e1bf73",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_숯불도롱뇽_Idle.png",
+      "sha256": "442f3a0c1b779e0a18b52c3240eb9490029d02087ba6cfca642557bf4be728dc",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_숯불도롱뇽_Ready.png",
+      "sha256": "e8e3f474f043dbf16bbb9cefedf771674d43411da887d3a2e49ecc6891f2d7ef",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_숯불도롱뇽_Attack.png",
+      "sha256": "8513d71a584e5f20f3895d317691d46d01fcca106e3daa4fca33a9098f7c9676",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_숯불도롱뇽_Dead.png",
+      "sha256": "41392f6103d58c14bb20b5eeedccf9e63185c04701c0de0ecc04e3ee1787ce2c",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_실인형_Portrait.png",
+      "sha256": "665045be5e06c65085283cab09345a4ecbc6787ff6a9d464c795c66e7eef71ed",
+      "size": [
+        522,
+        522
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_종토끼_Portrait.png",
+      "sha256": "4c7b9b1b5d4935ef2494668dbfc0f24e9bb30d24175bebd8e9e4a111a6007ffc",
+      "size": [
+        505,
+        504
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_공허의눈_Portrait.png",
+      "sha256": "7cb20ad68495b00568150f88198aa5cdb0f670e6e04e34d7540afe3f5f022161",
+      "size": [
+        805,
+        805
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_숯불도롱뇽_Portrait.png",
+      "sha256": "c2bb1d02ed64795fab92112188514f2817e3e1637b9fb8d00d64b8bdd524bae7",
+      "size": [
+        655,
+        655
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Idle.png",
+      "sha256": "12c42b30c0795715d3ea1a3b54449d68e8becd20cc7c9b2ffebc5feb8bedc69b",
+      "size": [
+        1253,
+        1246
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Ready.png",
+      "sha256": "d165800f8ab3f744ebe65aecd304e522a169c3f51ebfc1780c81f9e79399a831",
+      "size": [
+        1253,
+        1151
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Attack.png",
+      "sha256": "9143b70c09f57aea82789bfdf15a8859905c783b50c410f2a43ebec8f2b0016e",
+      "size": [
+        1253,
+        1172
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Stunned.png",
+      "sha256": "f4a15c83cddbbebb1ffd0d9e1fe532778677e08cb2eebf11794f97a6beb83c94",
+      "size": [
+        1026,
+        1241
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_고블린사냥꾼_Dead.png",
+      "sha256": "e31fea5ebaa972fc0fc252bb835e56ee7ae979f45936f82c2b829608847cdd82",
+      "size": [
+        1253,
+        796
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Idle.png",
+      "sha256": "785306e6e676409ad38f75244d3995489b334a5c8864547acf16d3ff59b99497",
+      "size": [
+        1239,
+        1228
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Ready.png",
+      "sha256": "80f9c8220227c7a7a844fedbdb05e073ad2190be3cb8bb1bbecd9b8e7efc21b4",
+      "size": [
+        1239,
+        1216
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Attack.png",
+      "sha256": "ce8458986dafdc0d786208a31b8b42f5ec8317dd4583222d90fc4fdf4825e83e",
+      "size": [
+        1239,
+        1220
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Stunned.png",
+      "sha256": "c20f7d59951f728e170364e415cc9e29adef53e51ed579b8fa5d3820e316c293",
+      "size": [
+        1038,
+        1162
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_납골당의종_Dead.png",
+      "sha256": "b52bee96ec48fcd8754c88300e96988d40169719c0abc19ffad824d076251a02",
+      "size": [
+        1239,
+        833
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Idle.png",
+      "sha256": "e7bdd008010316031696115b677cfeceb81f5b3b7bc94e18a88e72c852fd9a9d",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Ready.png",
+      "sha256": "ab78c738a5d72dc44075e312ce0e5e43f4a822174fafaf0cb045695d438f6ecc",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Attack.png",
+      "sha256": "5e989fe59cc1500a90f0d1834f7f552d022c5737002838761d1064803fb0f7c2",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_철니미믹_Dead.png",
+      "sha256": "48ed7a6133da3a16e7f35c584b453a1ea5abb5cfd0a113b2491159faf5e0c644",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_고블린사냥꾼_Portrait.png",
+      "sha256": "1c5aa19a598d9d387662fea26b01c7859ccf5b96c8096a71c4d17a58c832d30d",
+      "size": [
+        654,
+        654
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_납골당의종_Portrait.png",
+      "sha256": "24cbab596e0eb2b71a3b0c92d8144122c6805bcb6beae76c2cd8df786ae2a534",
+      "size": [
+        672,
+        672
+      ]
+    },
+    {
+      "group": "전투 몬스터",
+      "path": "Assets/Art/Enemies/Portraits/Catalog/T_Sprite_Monster_철니미믹_Portrait.png",
+      "sha256": "b155ec56cc73ee02830a71b3d1bd831c258db3422e7de2975019f8579d31e816",
+      "size": [
+        843,
+        843
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/UI/Outgame/T_UI_CharacterSelection_Wizard.png",
+      "sha256": "b54a3dfe5ddf0d8596da15af6eb45991d4381d83fb9a5d4aeee81a30b15146f5",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/UI/Outgame/T_UI_CharacterButton_Wizard.png",
+      "sha256": "35ef4d2bd1eb54b84f60ba34a226cab135d1ccf950fa9d6055af8c45d44fe0af",
+      "size": [
+        600,
+        600
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/World/Angular/Heroes/T_Sprite_Character_Wizard_Portrait.png",
+      "sha256": "729336e6421853d3618b7dd614e5254c4f51af4a29d50a6c17a82db430c0a388",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Idle.png",
+      "sha256": "d0ec0ab9fa144710e1f0e06bedc84081577f826594a389acbe9cfe8be20ac27d",
+      "size": [
+        2896,
+        1304
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Ready.png",
+      "sha256": "de48999865d411180b11d8ee5d546e265786d73c535990000657720d33d73f2d",
+      "size": [
+        2896,
+        1304
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Attack.png",
+      "sha256": "dedf96019ab42305898c6484662eccbe44e8ad462c995bc507b3d57cd5d02c65",
+      "size": [
+        2896,
+        1304
+      ]
+    },
+    {
+      "group": "위자드",
+      "path": "Assets/Art/World/Angular/States/Heroes/T_Sprite_Character_Wizard_Guard.png",
+      "sha256": "bb852e7d99937c2f52b4d52e10d25fa36b48aaf2ec0464542996ca9b0036b259",
+      "size": [
+        2896,
+        1304
+      ]
+    }
+  ]
+}

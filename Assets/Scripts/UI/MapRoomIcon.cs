@@ -195,7 +195,7 @@ namespace DungeonSlash
             _ => 90f
         };
 
-        private static string RoomLabel(RoomEncounterType type) => type switch
+        public static string RoomLabel(RoomEncounterType type) => type switch
         {
             RoomEncounterType.Start => GameText.Get("ui.maproomicon.5cc146fe"),
             RoomEncounterType.Empty => string.Empty,

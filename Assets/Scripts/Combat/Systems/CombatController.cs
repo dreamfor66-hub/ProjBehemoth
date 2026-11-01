@@ -112,11 +112,18 @@ namespace DungeonSlash
             .Concat(bossMonsters)
             .Append(mimicMonster)
             .Append(merchantMutant)
+            .Concat(StageMonsterCatalog())
             .Concat(EventMonsterCatalog())
             .Where(monster => monster != null)
             .Distinct()
             .OrderBy(monster => monster.displayName)
             .ToArray();
+
+        private IEnumerable<MonsterData> StageMonsterCatalog() => content == null ? Enumerable.Empty<MonsterData>() : content.stages
+            .Where(stage => stage != null)
+            .SelectMany(stage => stage.earlyCombats.Concat(stage.hardCombats).Concat(stage.elites).Concat(stage.bosses))
+            .Where(encounter => encounter != null).SelectMany(encounter => encounter.members)
+            .Where(member => member != null).Select(member => member.monster);
 
         private IEnumerable<MonsterData> EventMonsterCatalog() => content==null?Enumerable.Empty<MonsterData>():content.events
             .Where(e=>e!=null&&!e.excludedFromRandomPool).SelectMany(e=>e.options.Concat(e.pages.SelectMany(p=>p.options)))

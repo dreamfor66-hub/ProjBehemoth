@@ -18,125 +18,168 @@ MonoBehaviour:
     lastText: "\uC5B4\uB514\uAE4C\uC9C0 \uD480 \uAC83\uC778\uAC00"
   - propertyPath: narrative
     key: data.randomeventdata.training.narrative
-    lastText: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
-      \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
-      \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
-      \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
-      \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
-      \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
-      \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
-      \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
-      \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+    lastText: "\uBC29\uD328\uC640 \uCC3D\uC744 \uBCF4\uAD00\uD558\uB358 \uC120\uBC18
+      \uC0AC\uC774\uC5D0 \uD6C8\uB828 \uC778\uD615\uC774 \uACE0\uC815\uB418\uC5B4
+      \uC788\uB2E4. \uD2C0 \uC55E\uC758 \uBC1C\uD310\uC744 \uBC1F\uC790 \uAD6C\uB3D9\uCD95\uC774
+      \uB3CC\uC544\uAC00\uBA70 \uAC80\uC744 \uC954 \uD314\uC774 \uAD6C\uC18D\uAD6C\uB97C
+      \uB2F9\uAE34\uB2E4.\n\n\uC6B4\uBC18\uD2C0\uC758 \uAE08\uC18D\uD310\uC5D0 \uAE00\uC790\uAC00
+      \uCC0D\uD600 \uC788\uB2E4.\n\n\u201C\uC785\uBB38: \uB048 \uD574\uC81C / \uAC80\uC815:
+      \uCCA0\uC0AC \uC808\uB2E8 / \uC644\uC804\uAC00\uB3D9: \uC0AC\uC2AC \uD574\uC81C.
+      \uC778\uD615 \uC815\uC9C0 \uD6C4 \uD574\uB2F9 \uB2E8\uACC4\uC758 \uC9C0\uAE09\uD568
+      \uAC1C\uBC29. \uAE34\uAE09\uC815\uC9C0 \uC2DC \uAD6C\uB3D9\uCD95 \uC808\uB2E8.\u201D\n\n\uD2C0
+      \uC544\uB798\uC5D0\uB294 \uC57D\uC81C\uD568\uACFC \uB3C4\uD574\uD568, \uC7A5\uBE44\uD568\uC774
+      \uAC78\uC1E0\uC5D0 \uBB3C\uB824 \uC788\uB2E4. \uC606\uC758 \uAE34\uAE09\uC815\uC9C0
+      \uB808\uBC84\uC5D0\uB294 \uBD89\uC740 \uCE60\uC774 \uB0A8\uC544 \uC788\uB2E4."
   - propertyPath: options.Array.data[0].title
     key: data.randomeventdata.training.options.0.title
-    lastText: "\uB048\uC744 \uD47C\uB2E4"
+    lastText: "\uC785\uBB38\uC6A9 \uB048\uC744 \uD47C\uB2E4."
   - propertyPath: options.Array.data[0].description
     key: data.randomeventdata.training.options.0.description
-    lastText: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 75. \uC2B9\uB9AC \uD6C4 \uD3EC\uC158
-      1\uAC1C. \uD3EC\uC158\uC774 \uAC00\uB4DD\uD558\uBA74 \uCCB4\uB825 8 \uD68C\uBCF5."
+    lastText: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"
   - propertyPath: options.Array.data[1].title
     key: data.randomeventdata.training.options.1.title
-    lastText: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
+    lastText: "\uAC80\uC815\uC6A9 \uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4."
   - propertyPath: options.Array.data[1].description
     key: data.randomeventdata.training.options.1.description
-    lastText: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 140. \uC2B9\uB9AC \uD6C4 \uBCF4\uC720
-      \uB2A5\uB825\uC744 \uB450 \uBC88 \uAC15\uD654."
+    lastText: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
   - propertyPath: options.Array.data[2].title
     key: data.randomeventdata.training.options.2.title
-    lastText: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+    lastText: "\uC644\uC804\uAC00\uB3D9 \uC0AC\uC2AC\uC744 \uD47C\uB2E4."
   - propertyPath: options.Array.data[2].description
     key: data.randomeventdata.training.options.2.description
-    lastText: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 240. \uC2B9\uB9AC \uD6C4 \uACF5\uC6A9
-      \uC720\uBB3C \uD558\uB098 \uC120\uD0DD."
+    lastText: "\uC804\uD22C \xB7 \uACF5\uC6A9 \uC720\uBB3C \uC120\uD0DD"
   - propertyPath: options.Array.data[0].resultText
     key: data.randomeventdata.training.options.0.resulttext
-    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+    lastText: "\uC778\uD615\uC774 \uBA4E\uC790 \uC57D\uC81C\uD568\uC758 \uAC78\uC1E0\uAC00
+      \uD480\uB838\uB2E4. \uC57D\uBCD1\uC744 \uCC59\uAE30\uB294 \uB3D9\uC548 \uD0DC\uC5FD\uC774
+      \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00 \uB0AC\uB2E4. \uC778\uD615\uC758
+      \uD314\uC740 \uB298\uC5B4\uC9C4 \uCC44 \uC6C0\uC9C1\uC774\uC9C0 \uC54A\uB294\uB2E4."
   - propertyPath: options.Array.data[1].resultText
     key: data.randomeventdata.training.options.1.resulttext
-    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+    lastText: "\uC778\uD615\uC758 \uBE48\uD2C8\uC744 \uB05D\uAE4C\uC9C0 \uB530\uB77C\uBD99\uC5C8\uB2E4.
+      \uAC80\uC815\uC744 \uB9C8\uCE58\uC790 \uB3C4\uD574\uD568\uC774 \uC5F4\uB838\uB2E4.
+      \uBAB8\uC5D0 \uB0A8\uC740 \uC6C0\uC9C1\uC784\uC744 \uB3C4\uD574\uC640 \uB9DE\uCDB0
+      \uC775\uD614\uB2E4. \uD0DC\uC5FD\uC774 \uB04A\uC5B4\uC9C0\uACE0 \uAD6C\uC18D\uAD6C\uAC00
+      \uBC14\uB2E5\uC5D0 \uB5A8\uC5B4\uC84C\uB2E4."
   - propertyPath: options.Array.data[2].resultText
     key: data.randomeventdata.training.options.2.resulttext
-    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+    lastText: "\uC778\uD615\uC774 \uB9C8\uC9C0\uB9C9 \uC77C\uACA9 \uB4A4 \uBA48\uCDC4\uB2E4.
+      \uC7A5\uBE44\uD568\uC758 \uAC78\uC1E0\uAC00 \uD480\uB9AC\uACE0, \uBD80\uC11C\uC9C4
+      \uD0DC\uC5FD \uC870\uAC01\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798\uB85C \uC3DF\uC544\uC84C\uB2E4.
+      \uB0A8\uC740 \uC7A5\uBE44\uB97C \uCC59\uACBC\uB2E4."
   - propertyPath: pages.Array.data[0].narrative
     key: data.randomeventdata.training.pages.0.narrative
-    lastText: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
-      \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
-      \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
-      \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
-      \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
-      \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
-      \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
-      \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
-      \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+    lastText: "\uBC29\uD328\uC640 \uCC3D\uC744 \uBCF4\uAD00\uD558\uB358 \uC120\uBC18
+      \uC0AC\uC774\uC5D0 \uD6C8\uB828 \uC778\uD615\uC774 \uACE0\uC815\uB418\uC5B4
+      \uC788\uB2E4. \uD2C0 \uC55E\uC758 \uBC1C\uD310\uC744 \uBC1F\uC790 \uAD6C\uB3D9\uCD95\uC774
+      \uB3CC\uC544\uAC00\uBA70 \uAC80\uC744 \uC954 \uD314\uC774 \uAD6C\uC18D\uAD6C\uB97C
+      \uB2F9\uAE34\uB2E4.\n\n\uC6B4\uBC18\uD2C0\uC758 \uAE08\uC18D\uD310\uC5D0 \uAE00\uC790\uAC00
+      \uCC0D\uD600 \uC788\uB2E4.\n\n\u201C\uC785\uBB38: \uB048 \uD574\uC81C / \uAC80\uC815:
+      \uCCA0\uC0AC \uC808\uB2E8 / \uC644\uC804\uAC00\uB3D9: \uC0AC\uC2AC \uD574\uC81C.
+      \uC778\uD615 \uC815\uC9C0 \uD6C4 \uD574\uB2F9 \uB2E8\uACC4\uC758 \uC9C0\uAE09\uD568
+      \uAC1C\uBC29. \uAE34\uAE09\uC815\uC9C0 \uC2DC \uAD6C\uB3D9\uCD95 \uC808\uB2E8.\u201D\n\n\uD2C0
+      \uC544\uB798\uC5D0\uB294 \uC57D\uC81C\uD568\uACFC \uB3C4\uD574\uD568, \uC7A5\uBE44\uD568\uC774
+      \uAC78\uC1E0\uC5D0 \uBB3C\uB824 \uC788\uB2E4. \uC606\uC758 \uAE34\uAE09\uC815\uC9C0
+      \uB808\uBC84\uC5D0\uB294 \uBD89\uC740 \uCE60\uC774 \uB0A8\uC544 \uC788\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[0].title
     key: data.randomeventdata.training.pages.0.options.0.title
-    lastText: "\uB048\uC744 \uD47C\uB2E4"
+    lastText: "\uC785\uBB38\uC6A9 \uB048\uC744 \uD47C\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[0].description
     key: data.randomeventdata.training.pages.0.options.0.description
     lastText: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"
   - propertyPath: pages.Array.data[0].options.Array.data[0].resultText
     key: data.randomeventdata.training.pages.0.options.0.resulttext
-    lastText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4. \uC218\uB0A9\uD568\uC5D0\uC11C
-      \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740 \uAD6C\uC18D\uAD6C\uB3C4
-      \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+    lastText: "\uC778\uD615\uC774 \uBA4E\uC790 \uC57D\uC81C\uD568\uC758 \uAC78\uC1E0\uAC00
+      \uD480\uB838\uB2E4. \uC57D\uBCD1\uC744 \uCC59\uAE30\uB294 \uB3D9\uC548 \uD0DC\uC5FD\uC774
+      \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00 \uB0AC\uB2E4. \uC778\uD615\uC758
+      \uD314\uC740 \uB298\uC5B4\uC9C4 \uCC44 \uC6C0\uC9C1\uC774\uC9C0 \uC54A\uB294\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[1].title
     key: data.randomeventdata.training.pages.0.options.1.title
-    lastText: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
+    lastText: "\uAC80\uC815\uC6A9 \uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[1].description
     key: data.randomeventdata.training.pages.0.options.1.description
-    lastText: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654
-      \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
+    lastText: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
   - propertyPath: pages.Array.data[0].options.Array.data[1].resultText
     key: data.randomeventdata.training.pages.0.options.1.resulttext
-    lastText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4. \uC218\uB0A9\uD568\uC5D0\uC11C
-      \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740 \uAD6C\uC18D\uAD6C\uB3C4
-      \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+    lastText: "\uC778\uD615\uC758 \uBE48\uD2C8\uC744 \uB05D\uAE4C\uC9C0 \uB530\uB77C\uBD99\uC5C8\uB2E4.
+      \uAC80\uC815\uC744 \uB9C8\uCE58\uC790 \uB3C4\uD574\uD568\uC774 \uC5F4\uB838\uB2E4.
+      \uBAB8\uC5D0 \uB0A8\uC740 \uC6C0\uC9C1\uC784\uC744 \uB3C4\uD574\uC640 \uB9DE\uCDB0
+      \uC775\uD614\uB2E4. \uD0DC\uC5FD\uC774 \uB04A\uC5B4\uC9C0\uACE0 \uAD6C\uC18D\uAD6C\uAC00
+      \uBC14\uB2E5\uC5D0 \uB5A8\uC5B4\uC84C\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[2].title
     key: data.randomeventdata.training.pages.0.options.2.title
-    lastText: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+    lastText: "\uC644\uC804\uAC00\uB3D9 \uC0AC\uC2AC\uC744 \uD47C\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[2].description
     key: data.randomeventdata.training.pages.0.options.2.description
     lastText: "\uC804\uD22C \xB7 \uACF5\uC6A9 \uC720\uBB3C \uC120\uD0DD"
   - propertyPath: pages.Array.data[0].options.Array.data[2].resultText
     key: data.randomeventdata.training.pages.0.options.2.resulttext
-    lastText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4. \uC218\uB0A9\uD568\uC5D0\uC11C
-      \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740 \uAD6C\uC18D\uAD6C\uB3C4
-      \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+    lastText: "\uC778\uD615\uC774 \uB9C8\uC9C0\uB9C9 \uC77C\uACA9 \uB4A4 \uBA48\uCDC4\uB2E4.
+      \uC7A5\uBE44\uD568\uC758 \uAC78\uC1E0\uAC00 \uD480\uB9AC\uACE0, \uBD80\uC11C\uC9C4
+      \uD0DC\uC5FD \uC870\uAC01\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798\uB85C \uC3DF\uC544\uC84C\uB2E4.
+      \uB0A8\uC740 \uC7A5\uBE44\uB97C \uCC59\uACBC\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[3].title
     key: data.randomeventdata.training.pages.0.options.3.title
-    lastText: "\uB5A0\uB09C\uB2E4."
+    lastText: "\uAE34\uAE09\uC815\uC9C0 \uB808\uBC84\uB97C \uB2F9\uAE34\uB2E4."
   - propertyPath: pages.Array.data[0].options.Array.data[3].description
     key: data.randomeventdata.training.pages.0.options.3.description
-    lastText: 
+    lastText: "\uBCF4\uC0C1 \uC5C6\uC774 \uD6C8\uB828 \uC885\uB8CC"
   - propertyPath: pages.Array.data[0].options.Array.data[3].resultText
     key: data.randomeventdata.training.pages.0.options.3.resulttext
-    lastText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C \uD588\uB2E4."
+    lastText: "\uB808\uBC84\uB97C \uB05D\uAE4C\uC9C0 \uB2F9\uACBC\uB2E4. \uAD6C\uB3D9\uCD95
+      \uC548\uC5D0\uC11C \uAE08\uC18D\uC774 \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00
+      \uB0AC\uB2E4. \uC778\uD615\uC758 \uD314\uC774 \uB298\uC5B4\uC84C\uB2E4. \uC138
+      \uC9C0\uAE09\uD568\uC758 \uAC78\uC1E0\uB294 \uC7A0\uAE34 \uCC44\uB2E4. \uB2E4\uC2DC
+      \uBC1C\uD310\uC744 \uBC1F\uC544\uB3C4 \uCD95\uC740 \uB3CC\uC544\uAC00\uC9C0
+      \uC54A\uB294\uB2E4."
+  - propertyPath: options.Array.data[3].title
+    key: "data.randomeventdata.data_event_\uC5B4\uB514\uAE4C\uC9C0_\uD480_\uAC83\uC778\uAC00.options.3.title"
+    lastText: "\uAE34\uAE09\uC815\uC9C0 \uB808\uBC84\uB97C \uB2F9\uAE34\uB2E4."
+  - propertyPath: options.Array.data[3].description
+    key: "data.randomeventdata.data_event_\uC5B4\uB514\uAE4C\uC9C0_\uD480_\uAC83\uC778\uAC00.options.3.description"
+    lastText: "\uBCF4\uC0C1 \uC5C6\uC774 \uD6C8\uB828 \uC885\uB8CC"
+  - propertyPath: options.Array.data[3].resultText
+    key: "data.randomeventdata.data_event_\uC5B4\uB514\uAE4C\uC9C0_\uD480_\uAC83\uC778\uAC00.options.3.resulttext"
+    lastText: "\uB808\uBC84\uB97C \uB05D\uAE4C\uC9C0 \uB2F9\uACBC\uB2E4. \uAD6C\uB3D9\uCD95
+      \uC548\uC5D0\uC11C \uAE08\uC18D\uC774 \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00
+      \uB0AC\uB2E4. \uC778\uD615\uC758 \uD314\uC774 \uB298\uC5B4\uC84C\uB2E4. \uC138
+      \uC9C0\uAE09\uD568\uC758 \uAC78\uC1E0\uB294 \uC7A0\uAE34 \uCC44\uB2E4. \uB2E4\uC2DC
+      \uBC1C\uD310\uC744 \uBC1F\uC544\uB3C4 \uCD95\uC740 \uB3CC\uC544\uAC00\uC9C0
+      \uC54A\uB294\uB2E4."
   textOwnerGuid: f4744ac83644fda4abb9cf9f29823da9
   id: Training
   displayName: "\uC5B4\uB514\uAE4C\uC9C0 \uD480 \uAC83\uC778\uAC00"
   discovery: 0
   worldObject: {fileID: 11400000, guid: d620f8d08e1f7d74eaa2e0075a5c0d6c, type: 2}
   encounterKind: 3
-  authoringLore: "\uD3D0\uC131 \uC6D0\uC815\uC5D0 \uC4F0\uC774\uB358 \uC6B4\uBC18\uC2DD
-    \uD6C8\uB828 \uC778\uD615. \uAD6C\uC18D \uB2E8\uACC4\uAC00 \uC2E4\uC81C \uC804\uD22C\uC758
-    \uAC15\uB3C4\uB97C \uBC14\uAFB8\uACE0 \uBCF4\uC0C1\uC740 \uC218\uB0A9\uD568\uC5D0
-    \uC788\uB2E4. \uC8FC\uBCC0 \uC6B4\uBC18 \uC7A5\uBE44\uB294 \uAC19\uC740 \uCE74\uBA54\uB77C\uC758
-    \uB9C9\uB2E4\uB978 \uBCF4\uAD00 \uACF5\uAC04\uC744 \uC774\uB8EC\uB2E4."
+  authoringLore: "\uD3D0\uC131 \uC218\uBE44\uB300\uAC00 \uC804\uD22C \uAC80\uC815\uACFC
+    \uC7A5\uBE44 \uBD88\uCD9C\uC744 \uD568\uAED8 \uD558\uB358 \uC790\uB3D9 \uD6C8\uB828\uACE0.
+    \uAD6C\uC18D\uB048/\uCCA0\uC0AC/\uC0AC\uC2AC\uC758 \uAC80\uC815 \uB2E8\uACC4\uAC00
+    \uC2E4\uC81C \uC778\uD615\uC758 \uAC15\uB3C4\uC640 \uBCF4\uC0C1 \uC218\uB0A9\uD568\uC744
+    \uAD6C\uBD84\uD55C\uB2E4. \uD45C\uC758 \uBB38\uAD6C\uB97C \uC77D\uAE30 \uC804\uC5D0\uB294
+    \uAE30\uB2A5\uC744 \uB2E8\uC815\uD558\uC9C0 \uC54A\uB294\uB2E4. \uB3C4\uC804\uC744
+    \uC2DC\uC791\uD558\uBA74 \uD574\uB2F9 \uAC80\uC815\uC758 \uC77C\uD68C\uC6A9 \uD0DC\uC5FD\uC774
+    \uBD80\uC11C\uC838 \uAC19\uC740 \uC778\uD615\uC744 \uC7AC\uAC00\uB3D9\uD558\uC9C0
+    \uBABB\uD55C\uB2E4."
   roomLayout: 1
   roomInteriors:
   - {fileID: 21300000, guid: fb9680f22ada6cd4080f9cc9fdfed712, type: 3}
   - {fileID: 21300000, guid: bf486e7f598cfee4a86238c5007aacff, type: 3}
   - {fileID: 21300000, guid: 6d030cb5ccff9514583c1cf53d33fadb, type: 3}
+  roomTheme: {fileID: 11400000, guid: cd7241d325576324b9c259c155be73d7, type: 2}
   excludedFromRandomPool: 0
-  narrative: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
-    \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
-    \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
-    \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
-    \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
-    \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
-    \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
-    \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
-    \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+  narrative: "\uBC29\uD328\uC640 \uCC3D\uC744 \uBCF4\uAD00\uD558\uB358 \uC120\uBC18
+    \uC0AC\uC774\uC5D0 \uD6C8\uB828 \uC778\uD615\uC774 \uACE0\uC815\uB418\uC5B4 \uC788\uB2E4.
+    \uD2C0 \uC55E\uC758 \uBC1C\uD310\uC744 \uBC1F\uC790 \uAD6C\uB3D9\uCD95\uC774
+    \uB3CC\uC544\uAC00\uBA70 \uAC80\uC744 \uC954 \uD314\uC774 \uAD6C\uC18D\uAD6C\uB97C
+    \uB2F9\uAE34\uB2E4.\n\n\uC6B4\uBC18\uD2C0\uC758 \uAE08\uC18D\uD310\uC5D0 \uAE00\uC790\uAC00
+    \uCC0D\uD600 \uC788\uB2E4.\n\n\u201C\uC785\uBB38: \uB048 \uD574\uC81C / \uAC80\uC815:
+    \uCCA0\uC0AC \uC808\uB2E8 / \uC644\uC804\uAC00\uB3D9: \uC0AC\uC2AC \uD574\uC81C.
+    \uC778\uD615 \uC815\uC9C0 \uD6C4 \uD574\uB2F9 \uB2E8\uACC4\uC758 \uC9C0\uAE09\uD568
+    \uAC1C\uBC29. \uAE34\uAE09\uC815\uC9C0 \uC2DC \uAD6C\uB3D9\uCD95 \uC808\uB2E8.\u201D\n\n\uD2C0
+    \uC544\uB798\uC5D0\uB294 \uC57D\uC81C\uD568\uACFC \uB3C4\uD574\uD568, \uC7A5\uBE44\uD568\uC774
+    \uAC78\uC1E0\uC5D0 \uBB3C\uB824 \uC788\uB2E4. \uC606\uC758 \uAE34\uAE09\uC815\uC9C0
+    \uB808\uBC84\uC5D0\uB294 \uBD89\uC740 \uCE60\uC774 \uB0A8\uC544 \uC788\uB2E4."
   illustration: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}
   accent: {r: 0.65, g: 0.8, b: 0.65, a: 1}
   illustratedPopup: 1
@@ -148,14 +191,14 @@ MonoBehaviour:
   referenceExperience: "\uCCB4\uB825\uC774 \uB2E4\uB978 \uC138 \uD6C8\uB828 \uC0C1\uB300\uC640
     \uC11C\uB85C \uB2E4\uB978 \uBCF4\uC0C1\uC744 \uC9C1\uC811 \uACE0\uB974\uB294
     \uC804\uD22C.\n\uC11C\uC0AC/\uC5F0\uCD9C: Docs/Production/EventSequences-Castle.md\n\uC11C\uC0AC/\uC5F0\uCD9C:
-    Docs/Production/EventSequences-Castle.md"
+    Docs/Production/EventSequences-Castle.md\n2026-11-01 encounter reconstruction:
+    observable subject, real occupation/purpose, authored physical ending or an unresolved
+    NPC postponement. Original choices may be replaced; see EncounterReconstruction-2026-11-01/Review.md."
   requiredFlag: 
   forbiddenFlag: 
   options:
-  - title: "\uB048\uC744 \uD47C\uB2E4"
-    description: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 75. \uC2B9\uB9AC \uD6C4
-      \uD3EC\uC158 1\uAC1C. \uD3EC\uC158\uC774 \uAC00\uB4DD\uD558\uBA74 \uCCB4\uB825
-      8 \uD68C\uBCF5."
+  - title: "\uC785\uBB38\uC6A9 \uB048\uC744 \uD47C\uB2E4."
+    description: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"
     goldCost: 0
     hpCost: 0
     maxHpCost: 0
@@ -168,12 +211,15 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
-      \uD588\uB2E4."
+    resultText: "\uC778\uD615\uC774 \uBA4E\uC790 \uC57D\uC81C\uD568\uC758 \uAC78\uC1E0\uAC00
+      \uD480\uB838\uB2E4. \uC57D\uBCD1\uC744 \uCC59\uAE30\uB294 \uB3D9\uC548 \uD0DC\uC5FD\uC774
+      \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00 \uB0AC\uB2E4. \uC778\uD615\uC758
+      \uD314\uC740 \uB298\uC5B4\uC9C4 \uCC44 \uC6C0\uC9C1\uC774\uC9C0 \uC54A\uB294\uB2E4."
     resultingWorldObject: {fileID: 0}
     removeWorldObject: 0
-    useWorldObject: 0
-    revisitTextKey: ui.eventgrounding.revisit.Training.-1.0
+    useWorldObject: 1
+    leaveUnresolved: 0
+    revisitTextKey: ui.encounter.revisit.Training.0.0
     requirements: []
     effects:
     - kind: 10
@@ -194,9 +240,8 @@ MonoBehaviour:
       flag: 
       amount: 0
       stat: 4
-  - title: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
-    description: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 140. \uC2B9\uB9AC \uD6C4
-      \uBCF4\uC720 \uB2A5\uB825\uC744 \uB450 \uBC88 \uAC15\uD654."
+  - title: "\uAC80\uC815\uC6A9 \uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4."
+    description: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
     goldCost: 0
     hpCost: 0
     maxHpCost: 0
@@ -209,12 +254,16 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
-      \uD588\uB2E4."
+    resultText: "\uC778\uD615\uC758 \uBE48\uD2C8\uC744 \uB05D\uAE4C\uC9C0 \uB530\uB77C\uBD99\uC5C8\uB2E4.
+      \uAC80\uC815\uC744 \uB9C8\uCE58\uC790 \uB3C4\uD574\uD568\uC774 \uC5F4\uB838\uB2E4.
+      \uBAB8\uC5D0 \uB0A8\uC740 \uC6C0\uC9C1\uC784\uC744 \uB3C4\uD574\uC640 \uB9DE\uCDB0
+      \uC775\uD614\uB2E4. \uD0DC\uC5FD\uC774 \uB04A\uC5B4\uC9C0\uACE0 \uAD6C\uC18D\uAD6C\uAC00
+      \uBC14\uB2E5\uC5D0 \uB5A8\uC5B4\uC84C\uB2E4."
     resultingWorldObject: {fileID: 0}
     removeWorldObject: 0
-    useWorldObject: 0
-    revisitTextKey: ui.eventgrounding.revisit.Training.-1.1
+    useWorldObject: 1
+    leaveUnresolved: 0
+    revisitTextKey: ui.encounter.revisit.Training.0.1
     requirements: []
     effects:
     - kind: 10
@@ -235,18 +284,8 @@ MonoBehaviour:
       flag: 
       amount: 0
       stat: 4
-    - kind: 13
-      relic: {fileID: 0}
-      spell: {fileID: 0}
-      spellPool: []
-      spellChoiceCount: 3
-      encounter: {fileID: 0}
-      flag: 
-      amount: 0
-      stat: 4
-  - title: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
-    description: "\uC5F0\uC2B5 \uC778\uD615 \uCCB4\uB825 240. \uC2B9\uB9AC \uD6C4
-      \uACF5\uC6A9 \uC720\uBB3C \uD558\uB098 \uC120\uD0DD."
+  - title: "\uC644\uC804\uAC00\uB3D9 \uC0AC\uC2AC\uC744 \uD47C\uB2E4."
+    description: "\uC804\uD22C \xB7 \uACF5\uC6A9 \uC720\uBB3C \uC120\uD0DD"
     goldCost: 0
     hpCost: 0
     maxHpCost: 0
@@ -259,12 +298,15 @@ MonoBehaviour:
     supplyCost: 0
     nextPage: -1
     failurePage: -1
-    resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
-      \uD588\uB2E4."
+    resultText: "\uC778\uD615\uC774 \uB9C8\uC9C0\uB9C9 \uC77C\uACA9 \uB4A4 \uBA48\uCDC4\uB2E4.
+      \uC7A5\uBE44\uD568\uC758 \uAC78\uC1E0\uAC00 \uD480\uB9AC\uACE0, \uBD80\uC11C\uC9C4
+      \uD0DC\uC5FD \uC870\uAC01\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798\uB85C \uC3DF\uC544\uC84C\uB2E4.
+      \uB0A8\uC740 \uC7A5\uBE44\uB97C \uCC59\uACBC\uB2E4."
     resultingWorldObject: {fileID: 0}
     removeWorldObject: 0
-    useWorldObject: 0
-    revisitTextKey: ui.eventgrounding.revisit.Training.-1.2
+    useWorldObject: 1
+    leaveUnresolved: 0
+    revisitTextKey: ui.encounter.revisit.Training.0.2
     requirements: []
     effects:
     - kind: 10
@@ -285,19 +327,49 @@ MonoBehaviour:
       flag: 
       amount: 0
       stat: 4
+  - title: "\uAE34\uAE09\uC815\uC9C0 \uB808\uBC84\uB97C \uB2F9\uAE34\uB2E4."
+    description: "\uBCF4\uC0C1 \uC5C6\uC774 \uD6C8\uB828 \uC885\uB8CC"
+    goldCost: 0
+    hpCost: 0
+    maxHpCost: 0
+    consumeHealingPotion: 0
+    requiredPower: 0
+    requiredRelic: {fileID: 0}
+    requiredPerk: 
+    requiredFlag: 
+    supply: {fileID: 0}
+    supplyCost: 0
+    nextPage: -1
+    failurePage: -1
+    resultText: "\uB808\uBC84\uB97C \uB05D\uAE4C\uC9C0 \uB2F9\uACBC\uB2E4. \uAD6C\uB3D9\uCD95
+      \uC548\uC5D0\uC11C \uAE08\uC18D\uC774 \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00
+      \uB0AC\uB2E4. \uC778\uD615\uC758 \uD314\uC774 \uB298\uC5B4\uC84C\uB2E4. \uC138
+      \uC9C0\uAE09\uD568\uC758 \uAC78\uC1E0\uB294 \uC7A0\uAE34 \uCC44\uB2E4. \uB2E4\uC2DC
+      \uBC1C\uD310\uC744 \uBC1F\uC544\uB3C4 \uCD95\uC740 \uB3CC\uC544\uAC00\uC9C0
+      \uC54A\uB294\uB2E4."
+    resultingWorldObject: {fileID: 0}
+    removeWorldObject: 0
+    useWorldObject: 1
+    leaveUnresolved: 0
+    revisitTextKey: ui.encounter.revisit.Training.0.3
+    requirements: []
+    effects: []
   pages:
-  - narrative: "\uB0A1\uC740 \uC6B4\uBC18 \uC7A5\uBE44 \uC0AC\uC774\uC5D0 \uD6C8\uB828
-      \uC778\uD615 \uD558\uB098\uAC00 \uBB36\uC5EC \uC788\uB2E4. \uD68C\uC0C9 \uBAB8\uCCB4\uC758
-      \uC8FC\uD669\uC0C9 \uB760\uB294 \uC5EC\uB7EC \uBC88 \uC0C8\uB85C \uAC10\uC740
-      \uD754\uC801\uC774 \uC788\uB2E4.\n\n\uC6D0\uC815 \uBCF4\uAE09\uD488\uC5D0 \uC4F0\uB294
-      \uC218\uB0A9\uD568\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798 \uBD99\uC5B4 \uC788\uB2E4.\n\n\u201C\uAD6C\uC18D\uC744
-      \uB9CE\uC774 \uD480\uC218\uB85D \uAC15\uD558\uAC8C \uC6C0\uC9C1\uC784. \uB3C4\uC804
-      \uBCF4\uC0C1\uC740 \uB0B4\uBD80 \uC218\uB0A9\uD568\uC5D0 \uBCF4\uAD00.\u201D\n\n\uBA38\uB9AC\uAC00
-      \uC6C0\uC9C1\uC778\uB2E4. \uAC80\uACFC \uB465\uADFC \uBC29\uD328\uAC00 \uB048\uC744
-      \uB2F9\uAE30\uBA70 \uB35C\uCEE5\uAC70\uB9B0\uB2E4."
+  - narrative: "\uBC29\uD328\uC640 \uCC3D\uC744 \uBCF4\uAD00\uD558\uB358 \uC120\uBC18
+      \uC0AC\uC774\uC5D0 \uD6C8\uB828 \uC778\uD615\uC774 \uACE0\uC815\uB418\uC5B4
+      \uC788\uB2E4. \uD2C0 \uC55E\uC758 \uBC1C\uD310\uC744 \uBC1F\uC790 \uAD6C\uB3D9\uCD95\uC774
+      \uB3CC\uC544\uAC00\uBA70 \uAC80\uC744 \uC954 \uD314\uC774 \uAD6C\uC18D\uAD6C\uB97C
+      \uB2F9\uAE34\uB2E4.\n\n\uC6B4\uBC18\uD2C0\uC758 \uAE08\uC18D\uD310\uC5D0 \uAE00\uC790\uAC00
+      \uCC0D\uD600 \uC788\uB2E4.\n\n\u201C\uC785\uBB38: \uB048 \uD574\uC81C / \uAC80\uC815:
+      \uCCA0\uC0AC \uC808\uB2E8 / \uC644\uC804\uAC00\uB3D9: \uC0AC\uC2AC \uD574\uC81C.
+      \uC778\uD615 \uC815\uC9C0 \uD6C4 \uD574\uB2F9 \uB2E8\uACC4\uC758 \uC9C0\uAE09\uD568
+      \uAC1C\uBC29. \uAE34\uAE09\uC815\uC9C0 \uC2DC \uAD6C\uB3D9\uCD95 \uC808\uB2E8.\u201D\n\n\uD2C0
+      \uC544\uB798\uC5D0\uB294 \uC57D\uC81C\uD568\uACFC \uB3C4\uD574\uD568, \uC7A5\uBE44\uD568\uC774
+      \uAC78\uC1E0\uC5D0 \uBB3C\uB824 \uC788\uB2E4. \uC606\uC758 \uAE34\uAE09\uC815\uC9C0
+      \uB808\uBC84\uC5D0\uB294 \uBD89\uC740 \uCE60\uC774 \uB0A8\uC544 \uC788\uB2E4."
     illustration: {fileID: 21300000, guid: 901b8b4e6404b7348971810eb75daf48, type: 3}
     options:
-    - title: "\uB048\uC744 \uD47C\uB2E4"
+    - title: "\uC785\uBB38\uC6A9 \uB048\uC744 \uD47C\uB2E4."
       description: "\uC804\uD22C \xB7 \uD3EC\uC158 1\uAC1C"
       goldCost: 0
       hpCost: 0
@@ -311,13 +383,15 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4.
-        \uC218\uB0A9\uD568\uC5D0\uC11C \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740
-        \uAD6C\uC18D\uAD6C\uB3C4 \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+      resultText: "\uC778\uD615\uC774 \uBA4E\uC790 \uC57D\uC81C\uD568\uC758 \uAC78\uC1E0\uAC00
+        \uD480\uB838\uB2E4. \uC57D\uBCD1\uC744 \uCC59\uAE30\uB294 \uB3D9\uC548 \uD0DC\uC5FD\uC774
+        \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00 \uB0AC\uB2E4. \uC778\uD615\uC758
+        \uD314\uC740 \uB298\uC5B4\uC9C4 \uCC44 \uC6C0\uC9C1\uC774\uC9C0 \uC54A\uB294\uB2E4."
       resultingWorldObject: {fileID: 0}
       removeWorldObject: 0
       useWorldObject: 1
-      revisitTextKey: ui.eventgrounding.revisit.Training.0.0
+      leaveUnresolved: 0
+      revisitTextKey: ui.encounter.revisit.Training.0.0
       requirements: []
       effects:
       - kind: 10
@@ -338,9 +412,8 @@ MonoBehaviour:
         flag: 
         amount: 0
         stat: 4
-    - title: "\uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4"
-      description: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654
-        \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
+    - title: "\uAC80\uC815\uC6A9 \uCCA0\uC0AC\uB97C \uB04A\uB294\uB2E4."
+      description: "\uC804\uD22C \xB7 \uBCF4\uC720 \uB2A5\uB825 \uD558\uB098 \uAC15\uD654"
       goldCost: 0
       hpCost: 0
       maxHpCost: 0
@@ -353,13 +426,16 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4.
-        \uC218\uB0A9\uD568\uC5D0\uC11C \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740
-        \uAD6C\uC18D\uAD6C\uB3C4 \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+      resultText: "\uC778\uD615\uC758 \uBE48\uD2C8\uC744 \uB05D\uAE4C\uC9C0 \uB530\uB77C\uBD99\uC5C8\uB2E4.
+        \uAC80\uC815\uC744 \uB9C8\uCE58\uC790 \uB3C4\uD574\uD568\uC774 \uC5F4\uB838\uB2E4.
+        \uBAB8\uC5D0 \uB0A8\uC740 \uC6C0\uC9C1\uC784\uC744 \uB3C4\uD574\uC640 \uB9DE\uCDB0
+        \uC775\uD614\uB2E4. \uD0DC\uC5FD\uC774 \uB04A\uC5B4\uC9C0\uACE0 \uAD6C\uC18D\uAD6C\uAC00
+        \uBC14\uB2E5\uC5D0 \uB5A8\uC5B4\uC84C\uB2E4."
       resultingWorldObject: {fileID: 0}
       removeWorldObject: 0
       useWorldObject: 1
-      revisitTextKey: ui.eventgrounding.revisit.Training.0.1
+      leaveUnresolved: 0
+      revisitTextKey: ui.encounter.revisit.Training.0.1
       requirements: []
       effects:
       - kind: 10
@@ -380,16 +456,7 @@ MonoBehaviour:
         flag: 
         amount: 0
         stat: 4
-      - kind: 13
-        relic: {fileID: 0}
-        spell: {fileID: 0}
-        spellPool: []
-        spellChoiceCount: 3
-        encounter: {fileID: 0}
-        flag: 
-        amount: 0
-        stat: 4
-    - title: "\uC0AC\uC2AC\uC744 \uD47C\uB2E4"
+    - title: "\uC644\uC804\uAC00\uB3D9 \uC0AC\uC2AC\uC744 \uD47C\uB2E4."
       description: "\uC804\uD22C \xB7 \uACF5\uC6A9 \uC720\uBB3C \uC120\uD0DD"
       goldCost: 0
       hpCost: 0
@@ -403,13 +470,15 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uC778\uD615\uC758 \uC6C0\uC9C1\uC784\uC774 \uBA4E\uC5C8\uB2E4.
-        \uC218\uB0A9\uD568\uC5D0\uC11C \uBCF4\uC0C1\uC744 \uCC59\uAE30\uC790 \uB0A8\uC740
-        \uAD6C\uC18D\uAD6C\uB3C4 \uBC14\uB2E5\uC73C\uB85C \uB5A8\uC5B4\uC84C\uB2E4."
+      resultText: "\uC778\uD615\uC774 \uB9C8\uC9C0\uB9C9 \uC77C\uACA9 \uB4A4 \uBA48\uCDC4\uB2E4.
+        \uC7A5\uBE44\uD568\uC758 \uAC78\uC1E0\uAC00 \uD480\uB9AC\uACE0, \uBD80\uC11C\uC9C4
+        \uD0DC\uC5FD \uC870\uAC01\uC774 \uC6B4\uBC18\uD2C0 \uC544\uB798\uB85C \uC3DF\uC544\uC84C\uB2E4.
+        \uB0A8\uC740 \uC7A5\uBE44\uB97C \uCC59\uACBC\uB2E4."
       resultingWorldObject: {fileID: 0}
       removeWorldObject: 0
       useWorldObject: 1
-      revisitTextKey: ui.eventgrounding.revisit.Training.0.2
+      leaveUnresolved: 0
+      revisitTextKey: ui.encounter.revisit.Training.0.2
       requirements: []
       effects:
       - kind: 10
@@ -430,8 +499,8 @@ MonoBehaviour:
         flag: 
         amount: 0
         stat: 4
-    - title: "\uB5A0\uB09C\uB2E4."
-      description: 
+    - title: "\uAE34\uAE09\uC815\uC9C0 \uB808\uBC84\uB97C \uB2F9\uAE34\uB2E4."
+      description: "\uBCF4\uC0C1 \uC5C6\uC774 \uD6C8\uB828 \uC885\uB8CC"
       goldCost: 0
       hpCost: 0
       maxHpCost: 0
@@ -444,12 +513,17 @@ MonoBehaviour:
       supplyCost: 0
       nextPage: -1
       failurePage: -1
-      resultText: "\uB098\uB294 \uB0B4 \uAE38\uC744 \uACC4\uC18D \uAC00\uAE30\uB85C
-        \uD588\uB2E4."
+      resultText: "\uB808\uBC84\uB97C \uB05D\uAE4C\uC9C0 \uB2F9\uACBC\uB2E4. \uAD6C\uB3D9\uCD95
+        \uC548\uC5D0\uC11C \uAE08\uC18D\uC774 \uB04A\uC5B4\uC9C0\uB294 \uC18C\uB9AC\uAC00
+        \uB0AC\uB2E4. \uC778\uD615\uC758 \uD314\uC774 \uB298\uC5B4\uC84C\uB2E4. \uC138
+        \uC9C0\uAE09\uD568\uC758 \uAC78\uC1E0\uB294 \uC7A0\uAE34 \uCC44\uB2E4. \uB2E4\uC2DC
+        \uBC1C\uD310\uC744 \uBC1F\uC544\uB3C4 \uCD95\uC740 \uB3CC\uC544\uAC00\uC9C0
+        \uC54A\uB294\uB2E4."
       resultingWorldObject: {fileID: 0}
       removeWorldObject: 0
-      useWorldObject: 0
-      revisitTextKey: ui.eventgrounding.revisit.Training.0.3
+      useWorldObject: 1
+      leaveUnresolved: 0
+      revisitTextKey: ui.encounter.revisit.Training.0.3
       requirements: []
       effects: []
     routes: []

@@ -1,0 +1,521 @@
+[
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B1_Boss_실인형.asset",
+    "name": "실인형",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B1_Boss_실인형",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.orbitbat.displayname",
+          "lastText": "실인형"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.orbitbat.encounterhint",
+          "lastText": "본체 주위를 공전한다. 위치를 따라가며 노리자."
+        }
+      ],
+      "textOwnerGuid": "b71e49b7bfafade4fb74b71c6409e7b8",
+      "displayName": "실인형",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "bf4d7312f5b6d3045a047c32da6fa559",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "323f2a51c0c8ab74cb4848dc093cb8da",
+        "type": 2
+      },
+      "encounterHint": "본체 주위를 공전한다. 위치를 따라가며 노리자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 1,
+      "useOrbit": 1,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 85,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 19,
+      "goldReward": 10,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": -2.768036,
+            "y": 0
+          },
+          "radius": 35.984467
+        },
+        {
+          "center": {
+            "x": 2.768036,
+            "y": 0
+          },
+          "radius": 35.984467
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "ed4fe39422394454ba6003341496be71",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "f44f5091bac43cd489d93f73ecd6bb24",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_실인형_Portrait.png",
+    "library": "Data\\Presentation\\NativeMonsterFrames\\Data_MonsterAnimation_실인형.asset",
+    "poses": {
+      "Idle": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Idle.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Idle.png",
+        "size": [
+          1236,
+          1238
+        ]
+      },
+      "Ready": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Ready.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Ready.png",
+        "size": [
+          1236,
+          1234
+        ]
+      },
+      "Attack": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Attack.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Attack.png",
+        "size": [
+          1236,
+          1254
+        ]
+      },
+      "Dead": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Dead.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Dead.png",
+        "size": [
+          1236,
+          929
+        ]
+      },
+      "Stunned": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Stunned.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_실인형_Stunned.png",
+        "size": [
+          848,
+          1268
+        ]
+      }
+    }
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B2_Normal_종토끼.asset",
+    "name": "종토끼",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B2_Normal_종토끼",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.snowbell.displayname",
+          "lastText": "종토끼"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.snowbell.encounterhint",
+          "lastText": "본체 곁에서 박자를 어긋나게 공격한다."
+        }
+      ],
+      "textOwnerGuid": "acd4ec70882f8374a82bd485e96f27f1",
+      "displayName": "종토끼",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "ffefae7c2457dda40974fe4ea78ce0d2",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "b5aff5e6fbcea504bb7e2ec3ab874d3d",
+        "type": 2
+      },
+      "encounterHint": "본체 곁에서 박자를 어긋나게 공격한다.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 110,
+      "normalAttackInterval": 2.9,
+      "chargeInterval": 6.8,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.5,
+      "experienceReward": 23,
+      "goldReward": 12,
+      "combatScale": 0.64,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 95
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "3b2a7a98ad76ee345aa5b30eb9b0f5eb",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "5f2ab43a2c619714a84b8384dd13d128",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_종토끼_Portrait.png",
+    "library": "Data\\Presentation\\NativeMonsterFrames\\Data_MonsterAnimation_종토끼.asset",
+    "poses": {
+      "Idle": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Idle.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Idle.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Ready": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Ready.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Ready.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Attack": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Attack.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Attack.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Dead": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Dead.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_종토끼_Dead.png",
+        "size": [
+          1254,
+          1254
+        ]
+      }
+    }
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_공허의눈.asset",
+    "name": "공허의 눈",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_공허의눈",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_minion_voidmaw.displayname",
+          "lastText": "공허의 눈"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_minion_voidmaw.encounterhint",
+          "lastText": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자."
+        }
+      ],
+      "textOwnerGuid": "74285b100b3b0f94ba2ebc118d2e4f77",
+      "displayName": "공허의 눈",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "49fc394b1b394914c9cfd0c18cd0e5cf",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "7ae3cf220b370fe4483696b0671fb346",
+        "type": 2
+      },
+      "encounterHint": "중앙 눈이 드러나면 약점을 끊어 응시를 취소하자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 300,
+      "normalAttackInterval": 1.45,
+      "chargeInterval": 8.5,
+      "stunDuration": 3.5,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 67,
+      "goldReward": 10,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "903e24ca22ca3624195845ad618d154f",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "1916aa8cd4a05df41814b94d1a95d72c",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_공허의눈_Portrait.png",
+    "library": "Data\\Presentation\\NativeMonsterFrames\\Data_MonsterAnimation_공허의눈.asset",
+    "poses": {
+      "Idle": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Idle.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Idle.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Ready": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Ready.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Ready.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Attack": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Attack.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Attack.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Dead": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Dead.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_공허의눈_Dead.png",
+        "size": [
+          1254,
+          1254
+        ]
+      }
+    }
+  },
+  {
+    "path": "Data\\Combat\\Monsters\\Data_Monster_B3_Normal_숯불도롱뇽.asset",
+    "name": "숯불 도롱뇽",
+    "data": {
+      "m_ObjectHideFlags": 0,
+      "m_CorrespondingSourceObject": {
+        "fileID": 0
+      },
+      "m_PrefabInstance": {
+        "fileID": 0
+      },
+      "m_PrefabAsset": {
+        "fileID": 0
+      },
+      "m_GameObject": {
+        "fileID": 0
+      },
+      "m_Enabled": 1,
+      "m_EditorHideFlags": 0,
+      "m_Script": {
+        "fileID": 11500000,
+        "guid": "b9f0f94ec7d31d445aac87fc5f063460",
+        "type": 3
+      },
+      "m_Name": "Data_Monster_B3_Normal_숯불도롱뇽",
+      "m_EditorClassIdentifier": null,
+      "textKeys": [
+        {
+          "propertyPath": "displayName",
+          "key": "data.monsterdata.data_monster_b3_minion_ashhound.displayname",
+          "lastText": "숯불 도롱뇽"
+        },
+        {
+          "propertyPath": "encounterHint",
+          "key": "data.monsterdata.data_monster_b3_minion_ashhound.encounterhint",
+          "lastText": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자."
+        }
+      ],
+      "textOwnerGuid": "b26dee8bc7d43af4e8bc812b5bf6296e",
+      "displayName": "숯불 도롱뇽",
+      "portrait": {
+        "fileID": 21300000,
+        "guid": "1e9fff35087a6b24c83c4c53e3ebbe92",
+        "type": 2
+      },
+      "combatAnimation": {
+        "fileID": 11400000,
+        "guid": "6a30e237e39957648b5e1a7df2b3026b",
+        "type": 2
+      },
+      "encounterHint": "몸을 웅크린 뒤 덮친다. 강타 약점을 먼저 끊자.",
+      "pattern": 0,
+      "supportId": null,
+      "diesWithLeader": 0,
+      "supportRoster": [],
+      "reinforcementInterval": 0,
+      "useOrbit": 0,
+      "orbitRadius": 170,
+      "orbitSpeed": 0.55,
+      "maxHp": 247.5,
+      "normalAttackInterval": 1.05,
+      "chargeInterval": 6.2,
+      "stunDuration": 3,
+      "stunDamageMultiplier": 1.65,
+      "experienceReward": 55,
+      "goldReward": 6,
+      "combatScale": 1,
+      "hitBoxes": [
+        {
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 108
+        }
+      ],
+      "attacks": [
+        {
+          "fileID": 11400000,
+          "guid": "b1731ad5f26e4a645b0177f6c0d3732b",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "065591a495967304d927859fc5dc9bbd",
+          "type": 2
+        }
+      ],
+      "normalAttackSequence": []
+    },
+    "portraitPng": "Art\\Enemies\\Portraits\\Catalog\\T_Sprite_Monster_숯불도롱뇽_Portrait.png",
+    "library": "Data\\Presentation\\NativeMonsterFrames\\Data_MonsterAnimation_숯불도롱뇽.asset",
+    "poses": {
+      "Idle": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Idle.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Idle.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Ready": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Ready.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Ready.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Attack": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Attack.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Attack.png",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "Dead": {
+        "asset": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Dead.asset",
+        "png": "Art\\Combat\\NativeMonsterFrames\\T_Sprite_Monster_숯불도롱뇽_Dead.png",
+        "size": [
+          1254,
+          1254
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: background-extraction. Image1 is an approved cool-grey carved stone statue. Remove ONLY the blurred grey HALO / AURA / SOFT SHADOW surrounding the statue. Its backdrop is currently transparent with unwanted semitransparent grey haze. Cut that haze out completely, leaving ALPHA0 immediately outside the actual hard black drawn contour, including under the plinth. Do NOT preserve the ambient haze as an object shadow. This is a production cutout, no drop shadow or aura allowed. Keep every hard-edged stone and black ink pixel unchanged: neutralgrey colors, pose, simplified stone forms, face, bowl, pedestal geometry and exact1024x1536 canvas coordinates. Do not lighten or add light effects, white dots, new cracks or haze. Image2 original game background is context ONLY; do not composite it. Output one true-transparent PNG with clean unfeathered ink silhouette.",
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-929d370b-92e6-4d3f-aacb-58bac703a69c.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-b4ab1aa1-8b29-4972-a8ce-4150d740b2a7.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-a50515c9-54b0-4cba-8943-6e39eb70f596.png",
+  "selected": false
+}

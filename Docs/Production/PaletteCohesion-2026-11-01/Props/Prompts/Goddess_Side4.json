@@ -1,0 +1,11 @@
+{
+  "prompt": "Production sprite, transparent PNG, new clean painting from references. Image1 is CONTENT AND CAMERA REFERENCE ONLY: hooded stone goddess holding a small bowl on a two-step stone plinth, Side view. Do not reproduce the unwanted blurry grey aura around this reference. Image2 user-original B1 room is palette/stone/ink drawing authority, image3 original character is selective line/pooled black reference.\nPaint the same statue, same camera and pose in the exact1024x1536 canvas: top hood near y45, plinth lower edge near y1485, centered at x512. Same restrained NEUTRAL COOL GREY masonry. Quiet slate-grey surfaces aroundRGB80–110, substantial black inner hood and deep black sculpted robe shadows. Broad matte stone shapes with just two large weathered chips. Simplify triangular facets, no gold/yellow/olive tint, no glossy bevel, no modeled skin, no tiny cracks or texturegrain. Keep solemn simple face and carved stone bowl.\nHARD ALPHA SILHOUETTE: the object ends at its hard black ink outline. EVERYTHING OUTSIDE THE CARVED STONE SHAPE IS FULLY TRANSPARENT. No drop shadow, contact-shadow oval, ambient occlusion cloud, aura, rim glow, soft gray haze, gradient fog, vignette or studio backdrop. Black shadows are drawn ONLY INSIDE the actual statue/plinth shape. The alpha edge is crisp, like a hand-painted game cutout, not a product render with background shadow. Do not add any floor, wall, particles or surrounding marks. One single statue, no collage or variants.",
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a1951d-c033-7250-9cdf-3f14f50c5df6/exec-929d370b-92e6-4d3f-aacb-58bac703a69c.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-b4ab1aa1-8b29-4972-a8ce-4150d740b2a7.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularCharacterStyle/Images/06-hooded-archer.png"
+  ],
+  "transparent_background": true,
+  "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-1f90d3dd-1bdc-431d-b855-d7b5288a71e4.png",
+  "selected": false
+}

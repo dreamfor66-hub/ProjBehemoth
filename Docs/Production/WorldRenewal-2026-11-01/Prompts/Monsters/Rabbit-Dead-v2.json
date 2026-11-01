@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: precise-object-edit. Production Behemoth death-pose sprite. Image1 is the actual edit target. Images2/3/4 are installed background, user Darkest Dungeon mood and original EV GANIN broad-shape authorities. Image5 is original death pose showing shut eyes. ONLY close BOTH eyes on Image1: remove the pale visible iris slivers, replace with inert closed lids/black crease matching the original asleep-dead posture in Image5. This is a corpse of the bell-hare, not an alert angry hare looking down. Preserve every other pixel relationship: same exact collapsed pose, ears, forehead, mouth, fur, bell, hands, feet, color planes, line thickness, canvas framing and empty upper half. No new drawing detail, no texture or bright accents. Transparent background.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-4267-7de2-b699-6aa4f07064ed\\exec-c962173e-af29-420e-8241-1deef109d8ac.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-305f3f01-9bf5-45f7-91e8-e9363617e716.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularMonsterStyle/Images/02.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_종토끼_Dead.png"
+  ]
+}

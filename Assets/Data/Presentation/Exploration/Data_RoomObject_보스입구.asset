@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: 
   wallMounted: 1
   fitsDoorway: 1
+  includesDoorframe: 1
   wallSuspended: 0
   facePlayerOnFirstEncounter: 0
+  rearApproach: {fileID: 0}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: f76a0ad3cacff4e4995d69d13b376041, type: 3}
@@ -33,13 +35,13 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: f76a0ad3cacff4e4995d69d13b376041, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.11417624
-      y: 0.024896266
-      width: 0.77164745
-      height: 0.97510374
+      x: 0.015625
+      y: 0.037109375
+      width: 0.96875
+      height: 0.9580078
     footprint:
       serializedVersion: 2
-      x: 0.11800766
-      y: 0.032365147
-      width: 0.76475096
-      height: 0.21434025
+      x: 0.033203125
+      y: 0.043945312
+      width: 0.9329427
+      height: 0.21054688

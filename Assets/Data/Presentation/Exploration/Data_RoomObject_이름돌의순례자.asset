@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uC774\uB984\uB3CC\uC758\uC21C\uB840\uC790"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.Pilgrim
+  labelKey: ui.encounter.subject.Pilgrim
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.Pilgrim
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 11400000, guid: 50f5b73a175c9464599284a2735c29f4, type: 2}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 0640b813254b6dc438986781fd7620a5, type: 3}

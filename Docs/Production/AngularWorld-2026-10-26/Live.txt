@@ -576,3 +576,118 @@ PASS Wizard high-resolution approved-art crop
 PASS original Back returns to Title
 PASS original New Game opens selection
 SELECTION COMPLETE
+
+WORLD live saved MainGameScene
+PASS door mask=0, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=North; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=East; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=South; adjacent unconnected rooms stay walls
+PASS door mask=0, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=1, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=2, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=3, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=4, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=5, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=6, facing=West; adjacent unconnected rooms stay walls
+PASS door mask=7, facing=West; adjacent unconnected rooms stay walls
+FAIL LanternImp artwork + localized identity
+PASS LanternImp authored charge weak points
+FAIL BoneScorpion artwork + localized identity
+PASS BoneScorpion authored charge weak points
+FAIL StringRevenant artwork + localized identity
+PASS StringRevenant authored charge weak points
+FAIL CoffinSlime artwork + localized identity
+PASS CoffinSlime authored charge weak points
+FAIL BellHound artwork + localized identity
+PASS BellHound authored charge weak points
+FAIL EttinGatekeeper artwork + localized identity
+PASS EttinGatekeeper authored charge weak points
+FAIL MirrorShell artwork + localized identity
+PASS MirrorShell authored charge weak points
+FAIL IronMantis artwork + localized identity
+PASS IronMantis authored charge weak points
+FAIL StoneSphinx artwork + localized identity
+PASS StoneSphinx authored charge weak points
+FAIL OssuaryBell artwork + localized identity
+PASS OssuaryBell authored charge weak points
+FAIL WebDuchess artwork + localized identity
+PASS WebDuchess authored charge weak points
+FAIL Threadling artwork + localized identity
+PASS Threadling authored charge weak points
+FAIL QuillSprite artwork + localized identity
+PASS QuillSprite authored charge weak points
+FAIL CrystalUrchin artwork + localized identity
+PASS CrystalUrchin authored charge weak points
+FAIL VeilOracle artwork + localized identity
+PASS VeilOracle authored charge weak points
+FAIL TuskPilgrim artwork + localized identity
+PASS TuskPilgrim authored charge weak points
+FAIL BellHare artwork + localized identity
+PASS BellHare authored charge weak points
+FAIL TwinAntlerStag artwork + localized identity
+PASS TwinAntlerStag authored charge weak points
+FAIL MirrorMoth artwork + localized identity
+PASS MirrorMoth authored charge weak points
+FAIL MaskedChoir artwork + localized identity
+PASS MaskedChoir authored charge weak points
+FAIL WinterUnicorn artwork + localized identity
+PASS WinterUnicorn authored charge weak points
+FAIL PrismCrab artwork + localized identity
+PASS PrismCrab authored charge weak points
+FAIL TempestRoc artwork + localized identity
+PASS TempestRoc authored charge weak points
+FAIL StormJelly artwork + localized identity
+PASS StormJelly authored charge weak points
+FAIL CoalSalamander artwork + localized identity
+PASS CoalSalamander authored charge weak points
+FAIL SerpentWarden artwork + localized identity
+PASS SerpentWarden authored charge weak points
+FAIL AshGargoyle artwork + localized identity
+PASS AshGargoyle authored charge weak points
+FAIL HollowEye artwork + localized identity
+PASS HollowEye authored charge weak points
+FAIL CenserRevenant artwork + localized identity
+PASS CenserRevenant authored charge weak points
+FAIL OathlessCentaur artwork + localized identity
+PASS OathlessCentaur authored charge weak points
+FAIL CrimsonCount artwork + localized identity
+PASS CrimsonCount authored charge weak points
+FAIL AshHierophant artwork + localized identity
+PASS AshHierophant authored charge weak points
+FAIL AshDragon artwork + localized identity
+PASS AshDragon authored charge weak points
+FAIL EclipseChimera artwork + localized identity
+PASS EclipseChimera authored charge weak points
+FAIL SunIdol artwork + localized identity
+FAIL MoonIdol artwork + localized identity
+FAIL CinderLich artwork + localized identity
+PASS CinderLich authored charge weak points
+FAIL IronMimic artwork + localized identity
+PASS IronMimic authored charge weak points
+FAIL GildedToad artwork + localized identity
+PASS GildedToad authored charge weak points
+FAIL TarrasqueWhelp artwork + localized identity
+PASS TarrasqueWhelp authored charge weak points
+FAIL CrownColossus artwork + localized identity
+PASS CrownColossus authored charge weak points
+WORLD COMPLETE. Full balance/DPS regression and real-device input unrun.

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f70d2d8bf99c4f8e74a34a6a5fbfe, type: 3}
   m_Name: "Data_RoomObject_\uAE08\uB2C8\uC758\uB3C4\uBC15\uAFBC"
   m_EditorClassIdentifier: 
-  labelKey: ui.lore.object.Tooth
+  labelKey: ui.encounter.subject.Tooth
   usedLabelKey: 
   resolvedTextKey: ui.eventgrounding.used.Tooth
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 11400000, guid: 5411901f502442f478102e60d4a3d685, type: 2}
   roomInterior: 0
   usedForm: {fileID: 0}
   front: {fileID: 21300000, guid: 9a474d31e64aac1408d4c5c1586960a8, type: 3}
@@ -33,29 +35,29 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 9a474d31e64aac1408d4c5c1586960a8, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.05022831
-      y: 0.025191676
-      width: 0.8812786
-      height: 0.9539978
+      x: 0.044214487
+      y: 0.012846518
+      width: 0.9087488
+      height: 0.96010816
     footprint:
       serializedVersion: 2
-      x: 0.19482496
-      y: 0.04600219
-      width: 0.70624053
-      height: 0.20963855
+      x: 0.19567263
+      y: 0.038539555
+      width: 0.72342426
+      height: 0.21107504
   - sprite: {fileID: 21300000, guid: ad0348a8c17ca504d9a48bbea83e0f31, type: 3}
     bounds:
       serializedVersion: 2
-      x: 0.11269841
-      y: 0.03640257
-      width: 0.85555553
-      height: 0.9036403
+      x: 0.10301264
+      y: 0.034031413
+      width: 0.877551
+      height: 0.9306283
     footprint:
       serializedVersion: 2
-      x: 0.18730159
-      y: 0.05888651
-      width: 0.76031744
-      height: 0.19856532
+      x: 0.17784257
+      y: 0.059554975
+      width: 0.77648205
+      height: 0.20459424
   - sprite: {fileID: 21300000, guid: d72bf50e024642a41aa62250883ec1d0, type: 3}
     bounds:
       serializedVersion: 2

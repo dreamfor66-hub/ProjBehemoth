@@ -55,6 +55,7 @@ namespace DungeonSlash
         public bool IsMajorRoom { get; set; }
         public ChestContent ChestContent { get; set; } = ChestContent.Relic;
         public bool IsOptionalAnnex { get; set; }
+        public bool IsExplorationAlcove { get; set; }
         public int ObjectCorner { get; set; }
         public FacingDirection ObjectFacing { get; set; }
         public FacingDirection ObjectWall { get; set; }
@@ -122,6 +123,8 @@ namespace DungeonSlash
             CurrentRoom = destination;
             destination.IsVisited = true; destination.IsRevealed = true;
         }
+        // Record inspection changes viewpoint without pretending the player visited it.
+        public void Inspect(DungeonRoom room, FacingDirection facing) { CurrentRoom=room; Facing=facing; }
     }
 
     public sealed class DungeonRunState
@@ -131,6 +134,7 @@ namespace DungeonSlash
         public DungeonGraph Graph { get; }
         public PlayerDungeonState Player { get; }
         public HashSet<int> Keys { get; } = new();
+        public bool Inspection { get; set; }
         public bool CanSeePassage(DungeonRoom from, DungeonRoom to) => Graph.Passage(from, to) is not { Discovered: false };
         public bool CanTravel(DungeonRoom from, DungeonRoom to) => CanSeePassage(from, to) && Graph.Passage(from, to) is not { Locked: true };
         private readonly HashSet<string> revealedConnections = new();

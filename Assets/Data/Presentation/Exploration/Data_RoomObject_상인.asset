@@ -17,8 +17,10 @@ MonoBehaviour:
   resolvedTextKey: ui.explore.used.merchant
   wallMounted: 0
   fitsDoorway: 0
+  includesDoorframe: 0
   wallSuspended: 0
   facePlayerOnFirstEncounter: 1
+  rearApproach: {fileID: 11400000, guid: 9460a8eb45e35954fa5c096396a41f8f, type: 2}
   roomInterior: 0
   usedForm: {fileID: 11400000, guid: 8af8a3590dc84241839c61343f511f3f, type: 2}
   front: {fileID: 21300000, guid: 6da7edbccb384bf499d625e5c3f780b5, type: 3}

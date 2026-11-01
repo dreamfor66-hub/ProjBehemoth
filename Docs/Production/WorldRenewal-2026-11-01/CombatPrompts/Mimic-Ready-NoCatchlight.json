@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case: precise-object-edit. First input is the selected finished Behemoth mimic Ready sprite. Make exactly one correction: remove the tiny white sparkling specular dot inside its central yellow/ochre eye. Leave the iris as a flat dull ochre slit with black pupil and NO white catchlight. Preserve everything else, including the same entire pose, canvas dimensions, margins, source silhouette, limbs, mouth, palette, matte clean surfaces and broad ink shapes. Images 2 and 3 are the actual installed wall/original archer style board and the user's Darkest Dungeon reference for grave, empty, unshiny eyes. Do not add texture, highlights, extra lines, background or ground shadow. Genuine transparent background.",
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a1951d-1377-7631-bee1-057ac7b858de\\exec-a0e190a7-e843-4d60-8ba8-f989e16a5e7f.png",
+    "E:/Github/Proj_Behemoth/Docs/Production/WorldRenewal-2026-11-01/CombatStyleInputs.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-e0589781-5f61-456d-9962-8ca002c8efb6.webp"
+  ],
+  "transparent_background": true
+}

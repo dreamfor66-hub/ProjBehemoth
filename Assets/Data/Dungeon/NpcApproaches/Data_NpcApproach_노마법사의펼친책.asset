@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1b859af187d7c4da98ea784ab19b75, type: 3}
+  m_Name: "Data_NpcApproach_\uB178\uB9C8\uBC95\uC0AC\uC758\uD3BC\uCE5C\uCC45"
+  m_EditorClassIdentifier: 
+  titleKey: ui.encounter.subject.MagicTeacherReturn
+  narrativeKey: ui.npc.approach.rear.MagicTeacherReturn
+  eventResponses:
+  - story: {fileID: 11400000, guid: d09ac56f4521c064f8bfb369084d7bd1, type: 2}
+    narrativeKey: ui.npc.approach.rear.MagicTeacherReturn
+    page: 0
+    option: 2
+  standaloneResponse: {fileID: 0}
+  encounter: {fileID: 0}
+  concealedEncounter: {fileID: 0}
+  concealedChance: 0
+  concealedMinAct: 2
+  combatAnnouncementKey: 
+  victoryTextKey: 
+  aftermath: {fileID: 0}
+  removeAfterCombat: 1

@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "key": "Goddess_Front",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Goddess_Front.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-0d003ee9-f11f-443d-b87c-c0a735c7a707.png"
+    },
+    {
+      "key": "Goddess_Side",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Goddess_Side.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-929d370b-92e6-4d3f-aacb-58bac703a69c.png"
+    },
+    {
+      "key": "Fountain_Front2",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-8f9c7adb-8835-4638-b007-913ff2b1027b.png"
+    },
+    {
+      "key": "Fountain_Side",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-0e5cbd08-1bbc-4985-a263-63a7f95bec24.png"
+    },
+    {
+      "key": "Fountain_Rear",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-ae540b18-53d8-4964-a93a-8397dfa61625.png"
+    },
+    {
+      "key": "Fountain_UsedFront",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedFront.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-c50cbf02-769e-46c5-bfb3-9272e1a2932d.png"
+    },
+    {
+      "key": "Fountain_UsedSide",
+      "path": "Assets/Art/World/Exploration/T_UI_World_Fountain_UsedSide.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-49cc4aa9-262f-4ea7-a11a-ef5fd7120d5c.png"
+    },
+    {
+      "key": "Fountain_UsedRear",
+      "path": "Assets/Art/World/Exploration/T_UI_World_분수_usedRear.png",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a1951d-c033-7250-9cdf-3f14f50c5df6\\exec-267bb596-bac7-4d63-9331-de39615aaef8.png"
+    }
+  ]
+}

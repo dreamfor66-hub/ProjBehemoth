@@ -1,0 +1,8 @@
+{
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "prompt": "Edit FIRST fountain only to its DRAINED/USED state: EXACT camera/geometry/scale/stone cuts/material and base position unchanged. Water absent, stream absent, shallow empty grey-black bowl with ONE restrained damp mark. Central short stone spout remains intact, no water or shiny highlights. Do not change outer design, aspect ratio or support width. Large simple hand-inked environmental stone forms matching B1 room, not a UI icon. Two quiet stone values and deep pooled black under basin/plinth, selectively lost contours. No little chips/cracks/grain/noise, no bright bevel rim, no ornament. Broad load-bearing foot, low room eye height, no floor tile background, fully opaque solid object on truly transparent outside (no outer halo)."
+}

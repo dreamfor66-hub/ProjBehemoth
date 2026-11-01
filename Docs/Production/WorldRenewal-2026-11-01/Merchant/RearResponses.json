@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {"id":"MagicTeacherFirst","page":1,"option":1,"narrative":"측량사는 지도판 쪽으로 몸을 돌리고 있다. 교본과 매입금 주머니가 가방 입구에 보인다."},
+    {"id":"MagicTeacherReturn","page":0,"option":2,"narrative":"측량사는 돌아선 채 교본의 주석을 옮긴다. 펼친 기록의 끝이 팔 아래로 나와 있다."},
+    {"id":"MagicTeacherAdvanced","page":0,"option":4,"narrative":"측량사는 바닥의 길 표식을 살피고 있다. 지팡이의 수정과 가방 끈이 손 닿는 쪽에 놓였다."},
+    {"id":"LostBeliever","page":0,"option":3,"narrative":"소년은 등을 보인 채 회수표를 들여다보고 있다. 표를 쥔 손이 몸 옆으로 내려와 있다."},
+    {"id":"Tooth","page":0,"option":2,"narrative":"중개인은 내 쪽을 등지고 장부를 편다. 장부 밑에서 묵직한 동전 주머니가 반쯤 드러나 있다."},
+    {"id":"QuietPrayer","page":0,"option":1,"narrative":"성직자는 등을 돌린 채 약초주머니를 무릎 위에 놓고 있다. 고개를 들지는 않는다."},
+    {"id":"Shelter","page":0,"option":1,"narrative":"용병은 반대 통로를 보며 붕대를 누르고 있다. 품삯 주머니를 단 허리끈이 이쪽으로 드러난다."},
+    {"id":"Investment","page":0,"option":1,"narrative":"짐꾼은 운반틀을 내려놓고 어깨끈을 고친다. 약병을 감싼 꾸러미가 틀 바깥에 묶여 있다."},
+    {"id":"StormBottle","page":0,"option":2,"narrative":"행상은 등을 보이며 병마개의 밀랍을 누른다. 빈 병이 든 주머니는 그녀의 반대 손에 느슨하게 걸려 있다."},
+    {"id":"Pilgrim","page":0,"option":1,"narrative":"회수인은 등을 돌려 돌자루를 고쳐 안는다. 자루에 가려지지 않은 허리에는 작은 여비주머니가 달려 있다."}
+  ]
+}

@@ -1,0 +1,378 @@
+[
+  {
+    "key": "chestFront",
+    "args": {
+      "prompt": "Edit target: first input is the current CLOSED treasure chest, shown front three-quarter view. Supporting input: second is the actual installed dungeon room, and third is the Darkest Dungeon fountain as INK AND MATERIAL LANGUAGE reference only. Repaint the chest as a heavy, utilitarian abandoned expedition coffer that belongs physically on that room's floor. Keep the same low domed lid, two iron straps, central simple keyhole, front/right view and support-foot perspective. The rejected version is a polished inventory icon: uniform bold outline all around, too-bright metal, too many equally sharp chips and bevels. Correct those failures in the drawing, not by just darkening the whole picture. Use lost-and-found selective contours merging into broad black underside shadows, two or three large weathered dark olive-brown wooden planes, iron nearly the room stone's value with only one restrained upper-left light face, no bright rim, no regular rows of little bolts, no item-card silhouette glow, no bevel rendering. Draw a few believable structural divisions only. Clear grounded broad foot, thin flat contact shadow at floor, no surrounding stones/rubble/background. The top plane must have a shallow eye-level room-camera angle, not a top-down icon. A severe hand-inked dungeon object, large simple forms and substantial BLACK pooling inside the design. Transparent background; object only. Do not add gold ornaments, text, face, eyes, blood, sparkling loot, UI framing. High-quality ordinary PNG cutout with full object inside frame.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-453bcd68-d4c7-4459-a3d2-82dff43228ea.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": false
+  },
+  {
+    "key": "roomB1",
+    "args": {
+      "prompt": "Edit this actual installed dungeon WALLS background into an alternate ordinary chamber. Output one complete full-resolution 16:9 room painting. Preserve the EXACT camera, floor paving geometry, floor heights, scale of room, lower corners, central wall floor line, vanishing point (screen normalized x .5 y .435 from bottom), left/right wall positions and the 3 future doorway overlay positions of the source. No perspective/camera/ceiling-height changes. No doors or holes; all three visible walls remain closed, doors are overlaid by the game. Create an austere former watch chamber: a few large blind arrow-slit recesses high between the existing pillars, one broad worn stone cornice extending around ALL FOUR walls of the square room, a heavy shallow barrel vault barely emerging from deep pooled BLACK. Repeated identical architecture on all four walls makes the architecture physically consistent on every entry direction. The floor must stay clear and quiet as in original, no chest/altar/camp/person/monster, no central foreground prop. Deliberate large solid black shapes, fewer light facets than source, restrained grey-olive warm torch light, strong hard hand-drawn ink but NOT uniform thick outlines around every brick. Only two or three very large structural cracks, no small stone facets, no dense rubble, no texture grain. Focal area is the quiet floor and center wall. Oppressive intimacy of Darkest Dungeon medieval ink illustration while maintaining this installed project's geometry and simple angular shapes. This is an actual game background, not a framed concept painting, no vignette added as substitute for drawing.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-1e321920-4d80-43c1-a923-97729daac190.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "coffer",
+    "args": {
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Front.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+      ],
+      "transparent_background": true,
+      "prompt": "First reference is a REJECTED polished inventory-icon chest, content only. Second is installed game room geometry/material/line authority, third is strong hand-inked environment object reference. Create a REPLACEMENT closed ordinary treasure chest: a squat plain expedition coffer, flat slightly sloped wooden lid rather than a cute round barrel, a broad solid base in contact with the ground, 2 plain dark iron straps and a small central square lock. Front-right three-quarter view seen at the low room camera, very little of top surface visible. Entire object unobstructed transparent background. It must belong to the environment, NEVER a bright UI icon. Draw simple broad muted stone-grey metal faces and deep olive charcoal timber, large pools of pitch black below the lid and between construction pieces; one restrained upper-left plane catches weak torchlight. Selectively broken/lost contours on dark edges, thinner interior seams, no uniformly fat perimeter. Only 3 or4 plank divisions and 4 simple fastening heads maximum. NO surface texture/grain/speckles, no little chips, no bevel highlights, no silver edging, no tiny facets, no glowing rim, no gold, no fantasy ornament, no thick black sticker border. Mood: severe forgotten dungeon equipment, hand drawn, broad flat materials not material rendering. The source chest's pose viewpoint is useful but its rounded polished design is rejected. Output one complete object, no background floor slab or rubble. Do not crop."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fountainNew",
+    "args": {
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Fountain_Front.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+        "C:/Users/user/AppData/Local/Temp/codex-clipboard-cf722e49-9422-4c6c-9034-16313ce4c058.jpg"
+      ],
+      "transparent_background": true,
+      "prompt": "Edit the first installed fountain as one environmental stone object, keeping its low pedestal, broad octagonal shallow basin, central short spout, broad foot and front-three-quarter floor perspective. The supplied room is the actual scale and line authority; last Darkest Dungeon fountain shows built-in black shadow masses, not an angel design to copy. REMOVE the icon-like white-blue shiny water arc, strip all the little triangular chips and fine repeated edge marks, remove the uniformly thick contour and repeated shiny bevels. Dull deep grey-green water held in a dark basin, one slender unlit trickle bending back into the water; no white band, cyan glow or bold cartoon wave icon. Simple broad stone masses, one quiet upper plane, bottom and underside disappear into solid ink-black shadow rather than a sticker border. Restrained desaturated stone exactly belonging to the room; simplified structural silhouette, no material noise, no speckles, no tiny cracks. Fountain should look like heavy architecture someone can walk around, not a collectible button. A flat weight-bearing plinth and small grounded contact shadow only. No angel/statue, no face, no text, no grass, no rubble/floor tile background. Transparent cutout of whole fountain. Keep camera at the room's low eye height, very shallow visible top plane."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fruitRoom",
+    "args": {
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": false,
+      "prompt": "Edit the actual installed closed stone chamber into a complete game background for an underground blood-root colony. Preserve exact source camera, shared vanishing point x.5 y.435 from bottom, all floor heights/paving/slope, room width, structural columns and open central walking floor. Three visible walls are INTACT and closed; no doorway/hole drawn because runtime door overlays add real connections. Architecture is repeated on all four compass walls, so it stays physically consistent on entry from any side. A few enormous woody black root-cables push through existing upper wall seams and spread at the far wall bases, ONE or TWO broad dark red swollen root knots high beyond reach (NOT edible fruit, no clickable target embedded; the interactable will be a separate artwork). Damp quiet floor margins, old stone engulfed by a living colony with understandable organic growth direction. Keep roots large, sparse and load-bearing; no masses of tiny tentacles, roots, cracks, rubble or mushrooms. Darkest Dungeon hand-inked severity, deliberately large pooled BLACK, simple chalk-grey stone and dusky oxblood root planes, selective outlines merged in shadow. NO flowerpot, no labels, no paper instructions, no humanoid, no skull decor, no tentacle face, no gore. NO bright bioluminescence, no saturated red lighting. Final full-resolution 16:9 game background, no vignette frame."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-14bd139b-6dca-4ce5-95e8-f962e12aa090.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": false
+  },
+  {
+    "key": "cofferSide",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Side.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Match the VIEWPOINT and pose of the FIRST image, but redraw it as the exact same dark iron-strapped expedition coffer in SECOND reference. Front face recedes away to screen right, the other side is more visible, lock stays on its real front face. The closed lid and body remain the same coffer; do not keep old bright bolts. Hand-inked architectural game prop: simplified large planes, matte dark iron/wood/stone, pooled black underneath, selectively lost thin contours on dark edges, subdued top-left light matching installed room. NOT a UI icon, no white rims, no bright trim, no noise/grain/tiny chips/facets, no fantasy ornament. TRULY transparent background outside the exact silhouette; all material surfaces fully opaque; NO outer glow or large ambient halo, only very narrow flat contact under base. Entire object inside canvas. Same low room-camera elevation and ground support."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-39f5fea9-0a1b-4abd-bed5-99a969a25c89.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "cofferRear",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Rear.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Match the REAR VIEW of the FIRST image, but redraw as the exact same dark iron-strapped expedition coffer in SECOND reference. Show plain back boards, two real hinge straps, NO lock on the back. Closed lid. The back has no decorative metal plaque. Hand-inked architectural game prop: simplified large planes, matte dark iron/wood/stone, pooled black underneath, selectively lost thin contours on dark edges, subdued top-left light matching installed room. NOT a UI icon, no white rims, no bright trim, no noise/grain/tiny chips/facets, no fantasy ornament. TRULY transparent background outside the exact silhouette; all material surfaces fully opaque; NO outer glow or large ambient halo, only very narrow flat contact under base. Entire object inside canvas. Same low room-camera elevation and ground support."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-7b8d0059-9f79-47e3-a80b-23886720b3e2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "cofferOpenFront",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_UsedFront.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Match the FRONT-RIGHT VIEW and OPEN LID of FIRST reference, but it is the exact same subdued broad iron-strapped coffer in SECOND reference, now looted. Lid fully raised at rear hinges; cavity and underside a large continuous BLACK opening, no remaining loot, no gold. Base/body are unmoved from the second reference. Keep believable hinge geometry and the same strap positions. Hand-inked architectural game prop: simplified large planes, matte dark iron/wood/stone, pooled black underneath, selectively lost thin contours on dark edges, subdued top-left light matching installed room. NOT a UI icon, no white rims, no bright trim, no noise/grain/tiny chips/facets, no fantasy ornament. TRULY transparent background outside the exact silhouette; all material surfaces fully opaque; NO outer glow or large ambient halo, only very narrow flat contact under base. Entire object inside canvas. Same low room-camera elevation and ground support."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "cofferOpenSide",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_UsedSide.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Redraw the OPEN CHEST in FIRST reference with the exact coffer identity and materials in SECOND reference. Keep FIRST's side camera and hinge positions, raised lid revealing a BLACK empty cavity; front lock panel recedes from viewer. It is the same 2-strapped chest after looting, not another chest. No gold trim. Style input is the installed B1 room, not inventory-icon art. Broad very quiet flat olive-charcoal wood/stone and matte dark iron. Massive black cavities and underside, selective contours of varied weight which disappear in shadow, NO regular bright bevel highlights or thick sticker outline. No grain/noise/speckles/tiny chips or jagged contour teeth. Entire object cutout, fully opaque object with truly transparent background and no outer halo or large floor slab."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-b49c52b8-994c-4018-9b82-7d81c8f254bb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "cofferOpenRear",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_UsedRear.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-9b556ee7-edfd-4d7c-bf1c-225792a3460b.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Redraw the OPEN CHEST in FIRST reference with the exact coffer identity and materials in SECOND reference. Keep FIRST's REAR camera: broad blank back boards and two functional lid hinges visible, lid raised away from viewer; no keyhole on the back. It is the same 2-strapped chest after looting, not another chest. No gold trim. Style input is the installed B1 room, not inventory-icon art. Broad very quiet flat olive-charcoal wood/stone and matte dark iron. Massive black cavities and underside, selective contours of varied weight which disappear in shadow, NO regular bright bevel highlights or thick sticker outline. No grain/noise/speckles/tiny chips or jagged contour teeth. Entire object cutout, fully opaque object with truly transparent background and no outer halo or large floor slab."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-18130c8e-31a3-41e6-800b-c1b803acb12e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fountainSide",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Fountain_Side.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "First image supplies SIDE VIEW perspective ONLY; second is the exact NEW fountain design and subdued materials. Repaint the first to match second, including the sparse structural edges (no tiny repeated cracks), broad underside pitch black, dark green-grey quiet water and narrow unlit trickle; no cyan/white icon arc or white foamy wave symbol. A heavy short pedestal and octagonal shallow basin on broad ground plinth, NO angel. Same low camera with shallow top surface, physical floor contact. Style input is the installed B1 room, not inventory-icon art. Broad very quiet flat olive-charcoal wood/stone and matte dark iron. Massive black cavities and underside, selective contours of varied weight which disappear in shadow, NO regular bright bevel highlights or thick sticker outline. No grain/noise/speckles/tiny chips or jagged contour teeth. Entire object cutout, fully opaque object with truly transparent background and no outer halo or large floor slab."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-819c5eb5-8193-451e-b4a3-633ac5caf7b9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fountainRear",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_분수_rear.png",
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "First image REAR VIEW only, second exact new fountain design/material. Paint the same octagonal shallow stone font from the back. Central spout on far side orientation correct: narrow dark unlit trickle arcs away from camera and lands behind post in the shallow dull grey-green basin. No angel/statue. Short pedestal, broad base and plane proportions identical to secondreference. Large simple hand-inked environmental stone forms matching B1 room, not a UI icon. Two quiet stone values and deep pooled black under basin/plinth, selectively lost contours. No little chips/cracks/grain/noise, no bright bevel rim, no ornament. Broad load-bearing foot, low room eye height, no floor tile background, fully opaque solid object on truly transparent outside (no outer halo)."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f2899834-6fa4-49f5-8513-6c31bc5fc4f4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fountainUsedFront",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-8dff046b-ef3f-4e18-b893-58b4e99d95d6.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Edit FIRST fountain only to its DRAINED/USED state: EXACT camera/geometry/scale/stone cuts/material and base position unchanged. Water absent, stream absent, shallow empty grey-black bowl with ONE restrained damp mark. Central short stone spout remains intact, no water or shiny highlights. Do not change outer design, aspect ratio or support width. Large simple hand-inked environmental stone forms matching B1 room, not a UI icon. Two quiet stone values and deep pooled black under basin/plinth, selectively lost contours. No little chips/cracks/grain/noise, no bright bevel rim, no ornament. Broad load-bearing foot, low room eye height, no floor tile background, fully opaque solid object on truly transparent outside (no outer halo)."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-9133aca8-f82a-43f8-acb8-3163ffc4b847.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fountainUsedSide",
+    "args": {
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-819c5eb5-8193-451e-b4a3-633ac5caf7b9.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Edit FIRST side-view fountain only to its DRAINED/USED state: EXACT side camera/geometry/scale/stone cuts/material and base position unchanged. Water absent, stream absent, shallow empty grey-black bowl with ONE restrained damp mark. Central short stone spout remains intact, no water or shiny highlights. Do not change outer design, aspect ratio or support width. Large simple hand-inked environmental stone forms matching B1 room, not a UI icon. Two quiet stone values and deep pooled black under basin/plinth, selectively lost contours. No little chips/cracks/grain/noise, no bright bevel rim, no ornament. Broad load-bearing foot, low room eye height, no floor tile background, fully opaque solid object on truly transparent outside (no outer halo)."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f4df1899-f3e6-4934-a59b-b859263fd64a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "watchB2",
+    "args": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png"
+      ],
+      "prompt": "Create an alternate frost-sanctuary watch chamber: long shallow blind arrow slits and one heavy high cornice around the entire room, vault lost in black, blue-grey stone, weak cold light as the existing floor. Sparse strong architecture. No extra pillars across walkways, retain sourcefloor. Preserve the EXACT installed room camera, floor heights, floor perspective/paving, scale, wallsupport locations and vanishing point x.5 y.435 measured from bottom. Do NOT draw a new opening or doorway: front/left/right walls closed and intact because runtime paints real openings at the installed positions. Keep those lower/middle wall areas quiet and unobstructed so overlay junctions remain plausible. Architecture repeats on all FOUR walls, a consistent rotationally symmetric chamber; unique compass-wall markers are added as separate physical wall art. No clickable subject, chest, NPC, monster, altar or foreground furniture. Full 16:9 game background, no frame. Large quiet hand-inked forms, large connected pure BLACK shadow masses, restrained broad shading; deliberate selective lines and no little chips, cracks, brick noise, grit, rubbly spikes or decorative clutter."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-f9a532b3-ab53-4184-ada8-bba57099e1d2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "watchB3",
+    "args": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B3-Walls.png"
+      ],
+      "prompt": "Create an alternate ashen-fortress watch chamber: long shallow blind arrow slits and one heavy high cornice around the entire room, vault lost in black, broad charcoal stone with dull oxblood lintel accents, weak embers as source. Sparse strong architecture. No extra pillars across walkways, retain sourcefloor. Preserve the EXACT installed room camera, floor heights, floor perspective/paving, scale, wallsupport locations and vanishing point x.5 y.435 measured from bottom. Do NOT draw a new opening or doorway: front/left/right walls closed and intact because runtime paints real openings at the installed positions. Keep those lower/middle wall areas quiet and unobstructed so overlay junctions remain plausible. Architecture repeats on all FOUR walls, a consistent rotationally symmetric chamber; unique compass-wall markers are added as separate physical wall art. No clickable subject, chest, NPC, monster, altar or foreground furniture. Full 16:9 game background, no frame. Large quiet hand-inked forms, large connected pure BLACK shadow masses, restrained broad shading; deliberate selective lines and no little chips, cracks, brick noise, grit, rubbly spikes or decorative clutter."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a5fb2e01-7f48-48d1-ba5f-df8ca7c8a5c5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "oathRoom",
+    "args": {
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "prompt": "Create an old ordinary oath chamber long abandoned: high on each wall a broad worn flat stone frieze with simple repeating NOT readable text cuts, deep square blind recesses in upper stone, a heavy plain ceiling beam lost in black. All four walls repeat this same architecture. It is one incidental room variation, no magical sign, no active event, no glowing runes, no altar. Neutral desaturated grey stone with only very weak source light; remove visible flames (empty iron torch brackets allowed) to accept lighting from any act. Match source geometryexactly and keep centerfloor quiet. Preserve the EXACT installed room camera, floor heights, floor perspective/paving, scale, wallsupport locations and vanishing point x.5 y.435 measured from bottom. Do NOT draw a new opening or doorway: front/left/right walls closed and intact because runtime paints real openings at the installed positions. Keep those lower/middle wall areas quiet and unobstructed so overlay junctions remain plausible. Architecture repeats on all FOUR walls, a consistent rotationally symmetric chamber; unique compass-wall markers are added as separate physical wall art. No clickable subject, chest, NPC, monster, altar or foreground furniture. Full 16:9 game background, no frame. Large quiet hand-inked forms, large connected pure BLACK shadow masses, restrained broad shading; deliberate selective lines and no little chips, cracks, brick noise, grit, rubbly spikes or decorative clutter."
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-184bb75f-6b74-4563-816f-3ed883797480.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fountainUsedRear",
+    "args": {
+      "prompt": "First image is the NEW rear-view stone fountain. Produce its used/drained state. Preserve the entire outer body and exact silhouette, position, scale, brushwork, stone pedestal, bowl rim and camera angle. REMOVE the arcing stream and standing water; inside the bowl expose a dark dry stone basin with only two broad simple planar faces, no glow, wet shine or extra cracks. The thin central spout remains. Completely transparent background, one object only. Keep matte broad ink-black shapes and no texture noise.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-f2899834-6fa4-49f5-8513-6c31bc5fc4f4.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a165dbf1-79f4-4c14-bb6e-f456531bc2bc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fruitRoomClean",
+    "args": {
+      "prompt": "Use the first input's EXACT camera, floor paving, wall/floor horizon, room scale, side walls and pillar coordinates. Vanishing point normalized x .5 y .435 from bottom. Output 1672x941 full landscape. Three visible walls fully closed with no doors; separate game doors will overlay existing normal doorway locations. Do not move the floor, alter perspective, clutter the clear floor or put any foreground character/object/UI. One square chamber with SAME architecture on all four compass walls so entry from any direction is consistent. Match project bold hand-inked LARGE simple planes, substantial broad solid BLACK shadow shapes, very few contour teeth and facets, matte restrained stone values. NO grain, stone surface noise, tiny cracks, hatching, rubble piles, saturated color, vignette substitute, round icon shading or illustrative frame. Rebuild the source room as a sealed blood-root propagation chamber. A few VERY LARGE smooth woody roots, each wider than a man's arm, grip upper wall recesses and disappear into the ceiling BLACK. Use 3 or 4 roots per visible wall, with one broad flat colored face and black underside each, NO bark texture, fine tendrils or cracks. Roots follow the loadbearing arch/cornice, not crossing doorway overlay zones. NO fruit, pods, flowers, pots, faces, skulls or prominent individual object anywhere. The actual single interactive root-pod is a SEPARATE cutout supplied by the game. Need a quiet austere room where that one pod can be placed on a wall. Neutral grey-olive stone and very restrained dried burgundy roots.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a268b4bd-f455-4b86-a609-d8ba46f5be3a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "payrollRoom",
+    "args": {
+      "prompt": "Use the first input's EXACT camera, floor paving, wall/floor horizon, room scale, side walls and pillar coordinates. Vanishing point normalized x .5 y .435 from bottom. Output 1672x941 full landscape. Three visible walls fully closed with no doors; separate game doors will overlay existing normal doorway locations. Do not move the floor, alter perspective, clutter the clear floor or put any foreground character/object/UI. One square chamber with SAME architecture on all four compass walls so entry from any direction is consistent. Match project bold hand-inked LARGE simple planes, substantial broad solid BLACK shadow shapes, very few contour teeth and facets, matte restrained stone values. NO grain, stone surface noise, tiny cracks, hatching, rubble piles, saturated color, vignette substitute, round icon shading or illustrative frame. Rebuild as an abandoned castle paymaster's strongroom. Large plain reinforced stone walls, one wide heavy IRON band recessed horizontally into the stone at upper-wall height, broad square deep masonry blind recesses HIGH above the normal door arches. A few iron bracket slots and heavy crossbars as architecture; no decorative gold. Do not place a safe, coins, purse, chest or reward. The cracked slab, drain/pit and tilted coffer will all be supplied together as a separate interactive cutout, so keep the entire existing FLOOR clean, unchanged and UNBROKEN. The room should suggest austere secure storage, not a loot-filled treasure illustration. Neutral dark grey-olive stone, no fixed bright yellow flames; shared across differently lit dungeon floors.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-c13d95c5-7586-4272-b48b-8a11191ca3e5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "deliveryRoom",
+    "args": {
+      "prompt": "Use the first input's EXACT camera, floor paving, wall/floor horizon, room scale, side walls and pillar coordinates. Vanishing point normalized x .5 y .435 from bottom. Output 1672x941 full landscape. Three visible walls fully closed with no doors; separate game doors will overlay existing normal doorway locations. Do not move the floor, alter perspective, clutter the clear floor or put any foreground character/object/UI. One square chamber with SAME architecture on all four compass walls so entry from any direction is consistent. Match project bold hand-inked LARGE simple planes, substantial broad solid BLACK shadow shapes, very few contour teeth and facets, matte restrained stone values. NO grain, stone surface noise, tiny cracks, hatching, rubble piles, saturated color, vignette substitute, round icon shading or illustrative frame. Rebuild as an abandoned expedition supply store, believable purpose-built environment. Broad timber storage bays BUILT INTO upper side and rear stone walls, heavy squared wood beams with deep black empty shelves; sparse coarse rope loops hung high on each wall. All storage bays are empty and recessed, no box/pot/barrel/pouch/food/candle on the floor, no hanging foreground props. The single paid delivery parcel is supplied separately by the game and must be the only salient interactable. Quiet neutral grey-brown wood and grey stone, large planar shapes and very deep broad black shelf interiors. Fourfold symmetric architecture. Nothing crosses original door overlay positions, no extra openings.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-6021990e-4313-4f10-9fe5-e9ffbde4f052.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fruitRoomCleanB2",
+    "args": {
+      "prompt": "Edit the FIRST actual room painting, preserving ALL its architecture, objects, floor pattern, wall/floor intersections, proportions, camera, ink drawing and positions exactly. Change the physical scene's illumination to match the SECOND input dungeon floor background: cold desaturated blue-grey ice-lit masonry; BOTH torch flames must be dim icy CYAN with a dark blue core and few broad light faces, zero orange/gold flame, shadowed wood grey-blue, roots subdued charcoal-burgundy. Keep huge pooled BLACK shadows, large simple painted faces, no added textures/small cracks/props. This is a complete game room illustration 1672x941. The perspective and registration from first image MUST remain unchanged, not a new room composition.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-a268b4bd-f455-4b86-a609-d8ba46f5be3a.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-6e86b88e-4189-4121-ac3e-87caf535bef4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "fruitRoomCleanB3",
+    "args": {
+      "prompt": "Edit the FIRST actual room painting, preserving ALL its architecture, objects, floor pattern, wall/floor intersections, proportions, camera, ink drawing and positions exactly. Change the physical scene's illumination to match the SECOND input dungeon floor background: ashen desaturated grey masonry lit by deep faint blood-red embers; BOTH flames must be dim RED, not orange, no intense bloom, stone grey with subtle wine shadow, wood ashen brown, roots deep black-maroon. Keep huge pooled BLACK shadows, large simple painted faces, no added textures/small cracks/props. This is a complete game room illustration 1672x941. The perspective and registration from first image MUST remain unchanged, not a new room composition.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-a268b4bd-f455-4b86-a609-d8ba46f5be3a.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B3-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-069513b9-c994-4825-9e04-f0a438c6ceac.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "payrollRoomB2",
+    "args": {
+      "prompt": "Edit the FIRST actual room painting, preserving ALL its architecture, objects, floor pattern, wall/floor intersections, proportions, camera, ink drawing and positions exactly. Change the physical scene's illumination to match the SECOND input dungeon floor background: cold desaturated blue-grey ice-lit masonry; BOTH torch flames must be dim icy CYAN with a dark blue core and few broad light faces, zero orange/gold flame, shadowed wood grey-blue, roots subdued charcoal-burgundy. Keep huge pooled BLACK shadows, large simple painted faces, no added textures/small cracks/props. This is a complete game room illustration 1672x941. The perspective and registration from first image MUST remain unchanged, not a new room composition.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-c13d95c5-7586-4272-b48b-8a11191ca3e5.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-8ca15055-508c-4645-8445-6934dcc4151d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "payrollRoomB3",
+    "args": {
+      "prompt": "Edit the FIRST actual room painting, preserving ALL its architecture, objects, floor pattern, wall/floor intersections, proportions, camera, ink drawing and positions exactly. Change the physical scene's illumination to match the SECOND input dungeon floor background: ashen desaturated grey masonry lit by deep faint blood-red embers; BOTH flames must be dim RED, not orange, no intense bloom, stone grey with subtle wine shadow, wood ashen brown, roots deep black-maroon. Keep huge pooled BLACK shadows, large simple painted faces, no added textures/small cracks/props. This is a complete game room illustration 1672x941. The perspective and registration from first image MUST remain unchanged, not a new room composition.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-c13d95c5-7586-4272-b48b-8a11191ca3e5.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B3-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-a71c00b6-4267-48b2-8fa3-106c109c91c2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "deliveryRoomB2",
+    "args": {
+      "prompt": "Edit the FIRST actual room painting, preserving ALL its architecture, objects, floor pattern, wall/floor intersections, proportions, camera, ink drawing and positions exactly. Change the physical scene's illumination to match the SECOND input dungeon floor background: cold desaturated blue-grey ice-lit masonry; BOTH torch flames must be dim icy CYAN with a dark blue core and few broad light faces, zero orange/gold flame, shadowed wood grey-blue, roots subdued charcoal-burgundy. Keep huge pooled BLACK shadows, large simple painted faces, no added textures/small cracks/props. This is a complete game room illustration 1672x941. The perspective and registration from first image MUST remain unchanged, not a new room composition.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-6021990e-4313-4f10-9fe5-e9ffbde4f052.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B2-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-ca610546-8b50-415e-a855-b16b1e6bc83e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "deliveryRoomB3",
+    "args": {
+      "prompt": "Edit the FIRST actual room painting, preserving ALL its architecture, objects, floor pattern, wall/floor intersections, proportions, camera, ink drawing and positions exactly. Change the physical scene's illumination to match the SECOND input dungeon floor background: ashen desaturated grey masonry lit by deep faint blood-red embers; BOTH flames must be dim RED, not orange, no intense bloom, stone grey with subtle wine shadow, wood ashen brown, roots deep black-maroon. Keep huge pooled BLACK shadows, large simple painted faces, no added textures/small cracks/props. This is a complete game room illustration 1672x941. The perspective and registration from first image MUST remain unchanged, not a new room composition.",
+      "referenced_image_paths": [
+        "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-6021990e-4313-4f10-9fe5-e9ffbde4f052.png",
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Backdrops/B3-Walls.png"
+      ],
+      "transparent_background": false
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-60c9ccfa-2392-4d64-b25c-851b75a9c732.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "wallCloth",
+    "args": {
+      "prompt": "One FLAT front-on architectural wall mark, isolated on transparent background: a narrow old guard-station cloth strip hung from a single dull iron peg, about 1:2 width:height. Grey-brown coarse fabric, one very faint dark red horizontal stripe, one broad fold and one missing lower corner only. NO crest, face, text, buckle, symbol, gold, outline glow, UI border. It will be projected flat onto a stone wall in the referenced actual dungeon, so no floor, framing or cast drop shadow. Match actual installed background's restrained dark values, large simple ink-black underside, few broad flat faces; do not make an inventory item/button or render fabric texture, fraying teeth or tiny wrinkles. Camera straight flat wall-plane orthographic; full single cloth inside frame, opaque material, transparent exterior. Quiet incidental architecture, not a salient collectible.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-e288e1ad-d5d3-4a4e-ab90-8fd10338d972.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  },
+  {
+    "key": "wallRelief",
+    "args": {
+      "prompt": "One FLAT front-on small architectural stone wall relief, isolated on transparent background: a shallow primitive square shield-shaped plain guard insignia carved directly into dark stone, about 3:4 width:height. One broad recessed V shape, two very large carved planes; one worn edge, no writing, gems, eyes, face, glow, decorative border or shiny medal. It belongs embedded flush into the referenced room wall, NOT a loot item or UI button. Restrained same stone grey-olive and broad substantial BLACK carve shadow; no fine cracks, texture grain, emboss bevel modeling or scattered chips. Front-on orthographic flat projection, full carving within frame, transparent exterior, no background slab/drop shadow/frame. Quiet environment mark with lost edges blending into actual masonry.",
+      "referenced_image_paths": [
+        "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+      ],
+      "transparent_background": true
+    },
+    "hint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f as C:\\Users\\user\\.codex\\generated_images\\01a190b9-78ed-7b11-a7c7-21a97973500f\\exec-74c86000-74d5-4880-85e3-5addba677486.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "accepted": true
+  }
+]

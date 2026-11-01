@@ -1,0 +1,10 @@
+{
+  "prompt": "Use case: style-transfer. Asset: transparent Behemoth combat monster sprite.\nImage1 is EXACT edit target/pose and identity. Image2 actual B1 background is palette/large-shape authority. Image3 supplied Darkest Dungeon painting is severity and large pooled-black authority. Image4 original EV GANIN skeletal horse is simplification/line authority.\nRepaint Image1 into an uncanny predatory dungeon aberration, removing its goofy grinning cartoon face and glossy toy eyeballs. Preserve the SAME silhouette and gesture, exact central eye size/center, four eye stalks and tips, mouth opening and tongue path/end, body proportions and framing. Central eye is a weakpoint and must stay exposed at the same place. Dark slate-olive body painted in sparse broad lit planes over large solid INK BLACK masses beneath eye ridges, eye-stalk undersides, mouth corners and body underside. Eyes dull bone/murky ochre with black slit pupils and NO round white highlight dots, no glass sheen, no adorable expression. Main brow severe and irregular, not raised eyebrows. A deep irregular black oral cavity rather than a smile, a few long irregular bone fangs rather than rounded candy teeth. Tongue dry dull dark plum, no bubblegum pink, no shiny streaks. Existing pose and endpoint unchanged. Clean large forms, selective bold contour, minimal scars/folds, no hatching/grain/gore, no extra tentacles. True transparent background, full original canvas aspect/placement, no scene, no text.\nIdle: preserve the tilted body, open maw and extended curved tongue. An unsettling unblinking glare aimed at player, never a delighted face.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/Combat/NativeMonsterFrames/T_Sprite_Monster_공허의눈_Idle.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png",
+    "C:/Users/user/AppData/Local/Temp/codex-clipboard-305f3f01-9bf5-45f7-91e8-e9363617e716.jpg",
+    "E:/Github/Proj_Behemoth/Assets/Art/References/AngularMonsterStyle/Images/02.jpg"
+  ]
+}

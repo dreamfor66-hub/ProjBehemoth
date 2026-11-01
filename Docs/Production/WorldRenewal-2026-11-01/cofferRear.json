@@ -1,0 +1,9 @@
+{
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Exploration/T_UI_World_Chest_Rear.png",
+    "C:/Users/user/.codex/generated_images/01a190b9-78ed-7b11-a7c7-21a97973500f/exec-05b7b74a-c5cf-4db2-937b-d01e19115042.png",
+    "E:/Github/Proj_Behemoth/Assets/Art/World/Angular/Restoration01/B1-Walls.png"
+  ],
+  "prompt": "Match the REAR VIEW of the FIRST image, but redraw as the exact same dark iron-strapped expedition coffer in SECOND reference. Show plain back boards, two real hinge straps, NO lock on the back. Closed lid. The back has no decorative metal plaque. Hand-inked architectural game prop: simplified large planes, matte dark iron/wood/stone, pooled black underneath, selectively lost thin contours on dark edges, subdued top-left light matching installed room. NOT a UI icon, no white rims, no bright trim, no noise/grain/tiny chips/facets, no fantasy ornament. TRULY transparent background outside the exact silhouette; all material surfaces fully opaque; NO outer glow or large ambient halo, only very narrow flat contact under base. Entire object inside canvas. Same low room-camera elevation and ground support."
+}

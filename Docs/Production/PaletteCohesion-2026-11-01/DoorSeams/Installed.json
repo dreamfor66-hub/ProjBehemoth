@@ -1,0 +1,76 @@
+[
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Restoration01\\B1-Left.png",
+    "sha256": "77f0d5f25c67088311c6767678a5c6813f9bd81596fe3bac729723b9fabee868",
+    "canvas": [
+      1672,
+      941
+    ],
+    "metaSha256": "6b8f2e8921ea3042137ea04587705f9b39704534298b1e83f1f4c2b7fc01b0f2",
+    "metaUnchanged": true,
+    "thresholdAlphaBoxes": {
+      "1": [
+        121,
+        174,
+        1446,
+        819
+      ],
+      "16": [
+        279,
+        176,
+        424,
+        650
+      ],
+      "64": [
+        279,
+        177,
+        424,
+        649
+      ],
+      "200": [
+        280,
+        178,
+        423,
+        649
+      ]
+    },
+    "maxAlphaOutsideDoorROI": 1
+  },
+  {
+    "path": "E:\\Github\\Proj_Behemoth\\Assets\\Art\\World\\Angular\\Restoration01\\B1-Right.png",
+    "sha256": "71aa15105ab3487c0ac8438210a5df4d7cffbe11dbb523f203bc8274033d5799",
+    "canvas": [
+      1672,
+      941
+    ],
+    "metaSha256": "d77a29570c180c67f7078021a3d171f9f48e00c2af436b7740c101b6b17bdfb2",
+    "metaUnchanged": true,
+    "thresholdAlphaBoxes": {
+      "1": [
+        1191,
+        238,
+        1395,
+        819
+      ],
+      "16": [
+        1287,
+        241,
+        1391,
+        631
+      ],
+      "64": [
+        1288,
+        241,
+        1391,
+        631
+      ],
+      "200": [
+        1290,
+        242,
+        1390,
+        630
+      ]
+    },
+    "maxAlphaOutsideDoorROI": 1
+  }
+]

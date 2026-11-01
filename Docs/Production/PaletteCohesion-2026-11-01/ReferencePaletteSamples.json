@@ -1,0 +1,289 @@
+{
+  "method": "Unchanged screenshot RGB, normalized stone ROIs; median RGB and median linear-sRGB relative Y; no acceptance threshold. Not a texture/lighting calibration.",
+  "regionsNormalized": {
+    "left_near_column": [
+      0.147,
+      0.312,
+      0.164,
+      0.37
+    ],
+    "right_near_column": [
+      0.888,
+      0.31,
+      0.915,
+      0.37
+    ],
+    "left_mid_floor": [
+      0.29,
+      0.665,
+      0.33,
+      0.69
+    ]
+  },
+  "limitations": [
+    "Camera/layout/lighting and viewport differ slightly; these are paired visual aids, not a universal material certificate.",
+    "No whole-image histogram comparison: HUD/black framing/content differ and would bias the result."
+  ],
+  "samples": [
+    {
+      "file": "ProjectContext/B1-01-Original.png",
+      "sourceSha256": "8b5a98c0a8b8af5edc251d7f3e09a3a193228177b9fdf768741ef0d34cfd6941",
+      "role": "approved_project_baseline",
+      "samples": {
+        "left_near_column": {
+          "boundsPixels": [
+            206,
+            246,
+            230,
+            292
+          ],
+          "medianRGB": [
+            103,
+            93,
+            67
+          ],
+          "medianLinearY": 0.1113,
+          "warmBiasRminusB": 36
+        },
+        "right_near_column": {
+          "boundsPixels": [
+            1247,
+            245,
+            1285,
+            292
+          ],
+          "medianRGB": [
+            32,
+            32,
+            31
+          ],
+          "medianLinearY": 0.01455,
+          "warmBiasRminusB": 1
+        },
+        "left_mid_floor": {
+          "boundsPixels": [
+            407,
+            525,
+            463,
+            544
+          ],
+          "medianRGB": [
+            72,
+            67,
+            54
+          ],
+          "medianLinearY": 0.05658,
+          "warmBiasRminusB": 18
+        }
+      }
+    },
+    {
+      "file": "ProjectContext/B1-02-AcceptableGuardroom.png",
+      "sourceSha256": "91741644e3b89555d372e34f1b12c637694d0317d65c763eb3d8ea8a957f2c4f",
+      "role": "acceptable_palette_variation",
+      "samples": {
+        "left_near_column": {
+          "boundsPixels": [
+            204,
+            241,
+            228,
+            286
+          ],
+          "medianRGB": [
+            103,
+            90,
+            64
+          ],
+          "medianLinearY": 0.10566,
+          "warmBiasRminusB": 39
+        },
+        "right_near_column": {
+          "boundsPixels": [
+            1233,
+            240,
+            1271,
+            286
+          ],
+          "medianRGB": [
+            32,
+            32,
+            30
+          ],
+          "medianLinearY": 0.01439,
+          "warmBiasRminusB": 2
+        },
+        "left_mid_floor": {
+          "boundsPixels": [
+            403,
+            515,
+            458,
+            534
+          ],
+          "medianRGB": [
+            70,
+            65,
+            48
+          ],
+          "medianLinearY": 0.05296,
+          "warmBiasRminusB": 22
+        }
+      }
+    },
+    {
+      "file": "ProjectContext/B1-03-AcceptableBannerRoom.png",
+      "sourceSha256": "c3203bdf38dea66137b059c2b91d20e9634f3bcde668ba70584e520d9e3e6857",
+      "role": "acceptable_palette_variation",
+      "samples": {
+        "left_near_column": {
+          "boundsPixels": [
+            207,
+            245,
+            231,
+            290
+          ],
+          "medianRGB": [
+            103,
+            91,
+            64
+          ],
+          "medianLinearY": 0.10736,
+          "warmBiasRminusB": 39
+        },
+        "right_near_column": {
+          "boundsPixels": [
+            1253,
+            243,
+            1291,
+            290
+          ],
+          "medianRGB": [
+            33,
+            32,
+            31
+          ],
+          "medianLinearY": 0.01472,
+          "warmBiasRminusB": 2
+        },
+        "left_mid_floor": {
+          "boundsPixels": [
+            409,
+            521,
+            466,
+            541
+          ],
+          "medianRGB": [
+            63,
+            59,
+            45
+          ],
+          "medianLinearY": 0.04342,
+          "warmBiasRminusB": 18
+        }
+      }
+    },
+    {
+      "file": "ProjectContext/B1-04-RejectedOathRoom.png",
+      "sourceSha256": "5239f0a282f456e973025bd13e7e33ffc8739ca25f0879f61d1024878e50b137",
+      "role": "rejected_palette_drift",
+      "samples": {
+        "left_near_column": {
+          "boundsPixels": [
+            206,
+            249,
+            230,
+            295
+          ],
+          "medianRGB": [
+            70,
+            59,
+            35
+          ],
+          "medianLinearY": 0.04551,
+          "warmBiasRminusB": 35
+        },
+        "right_near_column": {
+          "boundsPixels": [
+            1243,
+            247,
+            1281,
+            295
+          ],
+          "medianRGB": [
+            29,
+            25,
+            16
+          ],
+          "medianLinearY": 0.00994,
+          "warmBiasRminusB": 13
+        },
+        "left_mid_floor": {
+          "boundsPixels": [
+            406,
+            531,
+            462,
+            551
+          ],
+          "medianRGB": [
+            55,
+            46,
+            28
+          ],
+          "medianLinearY": 0.0285,
+          "warmBiasRminusB": 27
+        }
+      }
+    },
+    {
+      "file": "ProjectContext/B1-05-RejectedDoorRoom.png",
+      "sourceSha256": "a2af7f2d97ada69ee72f53ed8d76aef35381217d0287c242e87213fde026f6a0",
+      "role": "rejected_palette_drift",
+      "samples": {
+        "left_near_column": {
+          "boundsPixels": [
+            206,
+            242,
+            230,
+            287
+          ],
+          "medianRGB": [
+            70,
+            59,
+            35
+          ],
+          "medianLinearY": 0.04551,
+          "warmBiasRminusB": 35
+        },
+        "right_near_column": {
+          "boundsPixels": [
+            1245,
+            241,
+            1283,
+            287
+          ],
+          "medianRGB": [
+            29,
+            25,
+            16
+          ],
+          "medianLinearY": 0.00991,
+          "warmBiasRminusB": 13
+        },
+        "left_mid_floor": {
+          "boundsPixels": [
+            407,
+            516,
+            463,
+            535
+          ],
+          "medianRGB": [
+            71,
+            56,
+            37
+          ],
+          "medianLinearY": 0.04334,
+          "warmBiasRminusB": 34
+        }
+      }
+    }
+  ]
+}
